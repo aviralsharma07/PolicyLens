@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-05-30 (DSE-005 — Heading Candidate Scorer v2 remediation)
+
+### Added
+- `structure_parser/` package — scored heading detection for logical document structure
+- `structure_parser/heading_patterns.py` — numbering regexes (decimal, compact, multi-dot, SECTION/PART prefix, Roman numeral), TOC dot pattern, 40+ heading dictionary terms, ALL CAPS and sentence case detection helpers
+- `structure_parser/heading_scorer.py` — `HeadingScorer` class with font, bold, caps, numbering, dictionary, TOC, spacing, sentence-case, length, position, boilerplate, and numbered-definition features. Candidate output includes bbox, span IDs, normalized text, numbering token, level hint, and contribution breakdown.
+- `scripts/run_heading_scorer.py` — CLI entry point to score all 5 gold PDFs, write a run summary, and fail loudly on missing physical outputs
+- `scripts/eval_heading_scorer.py` — evaluation script with one-to-one page-aware matching against DSE-005 visual-heading labels
+- `tests/test_heading_scorer.py` — tests covering numbering patterns, all-caps, sentence case, heading dictionary, TOC dots, text normalization, scorer unit tests, spacing feature, eval matching, CLI behavior, and 3 gold integration tests
+- `docs/adr/0004-scored-heading-detection.md` — ADR: scored heading with 6 weighted features + 4 penalties
+- `gold_corpus/policies/*/heading_labels.json` — 101 DSE-005 visual-heading labels separate from DSE-003 logical sections
+- `data/interim/logical/*/heading_candidates.json` — 5 policies scored with full feature breakdown
+- `runs/evals/2026-05-30-heading-scorer-v1.json` — failed first-pass eval retained for history
+- `runs/evals/2026-05-30-heading-scorer-v2.json` — passing remediation eval
+
+### Changed
+- `docs/tasks.md` — DSE-005 marked done only after v2 acceptance gates passed
+- `docs/evaluation.md` — split DSE-005 visual heading candidate gates from DSE-006 section tree / clause boundary gates
+- `docs/data_contracts.md` — added Heading Scorer Output contract for DSE-006
+- `scripts/validate_gold_corpus.py` — now validates DSE-005 `heading_labels.json` files and reports 30 policy JSON files
+- `pyproject.toml` — registered the `slow` pytest marker used by gold integration tests
+
+### Fixed
+- `heading_scorer.py` font_size_ratio: changed from continuous ratio (`ratio * 0.25`) to binary (`1.0 * 0.25` if ratio > 1.0 else 0). Fixed bug where every body-sized line got +0.25 for free.
+- `scripts/eval_heading_scorer.py` — removed broad substring/word-overlap matching that let one generic heading match many logical section rows
+- `heading_scorer.py` — added a boilerplate company-name penalty after Care produced a non-structural company-name candidate
+
+### Known Issues
+- DSE-005 evaluates visual headings only. DSE-006 must build section trees and clause boundaries from visual headings plus logical section labels.
+- ICICI headings use the same body font size and rely heavily on bold/spacing/numbering signals.
+
 ## 2026-05-29 (DSE-004 — review fixes)
 
 ### Added

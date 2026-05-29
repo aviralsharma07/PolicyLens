@@ -324,20 +324,20 @@ active
 
 ---
 
-## Eval: Heading / Section Parser
+## Eval: Heading Candidate Scorer
 
 ### Purpose
-Ensures the scored heading detector and section tree builder correctly identify document structure. This is the most critical layer — bad structure means bad clause boundaries, which means bad extraction.
+Ensures the scored heading detector identifies visual heading lines from DSE-004 physical layout before DSE-006 builds the section tree. This protects the logical parser from false structural anchors and missed major headings.
 
 ### Inputs
-- `document_logical_ast.json` per PDF
-- Gold section annotations (from gold corpus)
+- `document_physical.json` per PDF (from DSE-004 Physical Layout Extractor)
+- Gold visual heading labels (`gold_corpus/policies/{policy_slug}/heading_labels.json`)
 
 ### Metrics
 - Heading precision (target: >= 90%)
 - Heading recall (target: >= 80%)
-- Section tree accuracy (target: >= 85%)
-- Clause boundary F1 (target: >= 80%)
+- One-to-one page-aware label matching
+- `true_positives + false_negatives == total_gold_visual_headings`
 - Duplicate heading false positives
 - Missed critical heading count
 
@@ -355,28 +355,66 @@ Portability / Migration
 ```
 
 ### Hard Gates
-Do not build many extractors until:
+Do not proceed to DSE-006 until:
 ```
 heading precision >= 90%
 heading recall >= 80%
-clause boundary F1 >= 80%
+all 5 gold policies pass
+one-to-one match count invariant passes
 ```
+
+DSE-006 adds separate hard gates for section tree accuracy and clause boundary F1.
 
 ### Commands
 ```bash
-python -m pdf_parser.heading_detector --pdf <path>
-python -m pdf_parser.section_tree --ast <ast_path>
-python scripts/quality_report.py --layer headings
+# Score headings for all gold policies
+PYTHONPATH=. .venv/bin/python scripts/run_heading_scorer.py \
+  --physical-root data/interim/physical \
+  --output-root data/interim/logical \
+  --threshold 0.5
+
+# Run eval against gold corpus
+PYTHONPATH=. .venv/bin/python scripts/eval_heading_scorer.py \
+  --candidates-root data/interim/logical \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-05-30-heading-scorer-v2.json
+
+# Run tests
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_heading_scorer.py -v
 ```
 
 ### Output Artifacts
 ```
-logical/{policy_id}/heading_candidates.json
-logical/{policy_id}/section_tree.json
+data/interim/logical/{policy_id}/heading_candidates.json
+runs/evals/2026-05-30-heading-scorer-v2.json
+gold_corpus/policies/{policy_slug}/heading_labels.json
 ```
 
 ### Current Status
-planned
+active (DSE-005 done, DSE-006 pending)
+
+### DSE-005 v1 Result (failed)
+```
+Eval file: runs/evals/2026-05-30-heading-scorer-v1.json
+Passed: false
+Reason: v1 evaluated visual heading candidates against all logical section entries in sections.json.
+The matcher also allowed one generic candidate to match many gold rows, producing inconsistent TP/FN counts.
+```
+
+### DSE-005 v2 Result (threshold=0.5, visual-heading labels)
+```
+Policy                 Gold visual headings  Precision  Recall  F1
+Care Health Plus        49                    100.00%   100.00% 100.00%
+HDFC Arogya             15                    100.00%   100.00% 100.00%
+ICICI Family Shield     15                    100.00%   100.00% 100.00%
+New India Floater       11                    100.00%   100.00% 100.00%
+Star Medi Classic       11                    100.00%   100.00% 100.00%
+```
+
+### Notes
+- DSE-005 now evaluates visual headings only. Existing `sections.json` remains the logical structure gold source for DSE-006.
+- The scorer output includes bbox, span IDs, normalized text, numbering token, level hint, raw features, and feature contribution breakdown.
+- DSE-006 must convert visual heading candidates plus logical section labels into a section tree and clause boundaries.
 
 ---
 
@@ -618,7 +656,8 @@ planned
 |-------|------|--------|
 | Corpus Identity | 100% files have file_hash + document_type + insurer + source + match_status | Parsing |
 | Physical Parser | >= 95% pages produce text blocks, 0 catastrophic reading-order failures | Section building |
-| Headings/Sections | precision >= 90%, recall >= 80%, F1 >= 80% | Building extractors |
+| Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
+| Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
 | Tables | detection recall >= 85% for benefit/waiting tables | Fact extraction from tables |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |

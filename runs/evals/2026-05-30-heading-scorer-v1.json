@@ -1,0 +1,1078 @@
+{
+  "eval_name": "heading-scorer-v1",
+  "date": "2026-05-30",
+  "task_id": "DSE-005",
+  "git_commit": "66866e82facffbe0c376ff61eaa0a0c143c4892c",
+  "input_manifest": "gold_corpus (5 policies)",
+  "metrics": {
+    "policies_processed": 5,
+    "passed": 0,
+    "failed": 5
+  },
+  "policy_results": [
+    {
+      "slug": "care_health_care_plus",
+      "status": "failed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 2755,
+      "metrics": {
+        "total_candidates_above_threshold": 50,
+        "total_gold_headings": 90,
+        "true_positives": 13,
+        "false_positives": 37,
+        "false_negatives": 6,
+        "precision": 26.0,
+        "recall": 14.44,
+        "f1_score": 18.57,
+        "false_positive_examples": [
+          {
+            "text": "3.1.1Benefit : Hospitalization Expenses",
+            "page": 11,
+            "score": 0.6836,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5821,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.3Benefit : Ambulance Cover",
+            "page": 13,
+            "score": 0.7104,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4478,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.4Benefit : Organ Donor Cover",
+            "page": 13,
+            "score": 0.7045,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4776,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.5Benefit : Domiciliary Hospitalization",
+            "page": 13,
+            "score": 0.6746,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6269,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.6Benefit : Second Opinion",
+            "page": 14,
+            "score": 0.7134,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4328,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.7Benefit : Annual Health Check-up",
+            "page": 15,
+            "score": 0.6896,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5522,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.8Benefit : Unlimited Automatic Recharge",
+            "page": 16,
+            "score": 0.6716,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6418,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.11Benefit : No Claim Bonus Protect:",
+            "page": 17,
+            "score": 0.6836,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5821,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.12Benefit : OPD Coverage",
+            "page": 18,
+            "score": 0.7164,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4179,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.13Benefit : Personal Accident Cover (AD & PTD)",
+            "page": 19,
+            "score": 0.6507,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.7463,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.14Benefit: Inflation Shield",
+            "page": 20,
+            "score": 0.7075,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4627,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.15Benefit : Unlimited E-Consultation",
+            "page": 21,
+            "score": 0.6806,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.597,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.1.17Benefit : Health Services",
+            "page": 25,
+            "score": 0.7075,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4627,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2OPTIONAL BENEFITS:",
+            "page": 25,
+            "score": 0.8373,
+            "features": {
+              "font_size_ratio": 1.2717,
+              "max_font_size": 14.04,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.3134,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.2Optional Benefit : Daily Allowance",
+            "page": 26,
+            "score": 0.6836,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5821,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.3Optional Benefit : International Second Opinion",
+            "page": 27,
+            "score": 0.6448,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.7761,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.4Optional Benefit : Smart Select",
+            "page": 27,
+            "score": 0.6925,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5373,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.5Optional Benefit : Deductible Option",
+            "page": 27,
+            "score": 0.6776,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6119,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.6Optional Benefit : Co-Payment Option",
+            "page": 28,
+            "score": 0.6776,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6119,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "3.2.7Optional Benefit : Room Rent Modification",
+            "page": 28,
+            "score": 0.6627,
+            "features": {
+              "font_size_ratio": 1.087,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6866,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "heading_text": "GENERAL CONDITIONS APPLICABLE TO ALL THE BENEFITS AND OPTIONAL BENEFITS",
+            "level": 1,
+            "section_id": "care_health_care_plus_sec_081"
+          },
+          {
+            "heading_text": "II. For any single Claim during a Policy Year, the maximum Claim amount payable ",
+            "level": 2,
+            "section_id": "care_health_care_plus_sec_084"
+          },
+          {
+            "heading_text": "3. The Co-payment proportion (if applicable) shall be borne by the Insured Perso",
+            "level": 1,
+            "section_id": "care_health_care_plus_sec_086"
+          },
+          {
+            "heading_text": "4. Deductible Option (if opted) is applicable on the Benefits namely Hospitaliza",
+            "level": 1,
+            "section_id": "care_health_care_plus_sec_087"
+          },
+          {
+            "heading_text": "6. Admissibility of a Claim under Benefit \u201cHospitalization Expenses\u201d is a pre -c",
+            "level": 1,
+            "section_id": "care_health_care_plus_sec_089"
+          },
+          {
+            "heading_text": "7. If the Insured Person suffers a relapse within 45 days from the date of last ",
+            "level": 1,
+            "section_id": "care_health_care_plus_sec_090"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": false,
+        "recall_ge_80": false
+      }
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "status": "failed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 1392,
+      "metrics": {
+        "total_candidates_above_threshold": 11,
+        "total_gold_headings": 90,
+        "true_positives": 10,
+        "false_positives": 1,
+        "false_negatives": 6,
+        "precision": 90.91,
+        "recall": 11.11,
+        "f1_score": 19.8,
+        "false_positive_examples": [
+          {
+            "text": "10.14 Migration",
+            "page": 21,
+            "score": 0.5016,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 11.04,
+              "is_bold": 1.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.2419,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "heading_text": "9. Claim Procedure .............................................................",
+            "level": 1,
+            "section_id": "hdfc_arogya_sanjeevani_sec_009"
+          },
+          {
+            "heading_text": "2. In case of admission to a room/ICU/ICCU at rate s exceeding the aforesaid lim",
+            "level": 1,
+            "section_id": "hdfc_arogya_sanjeevani_sec_069"
+          },
+          {
+            "heading_text": "6.1. Pre-Existing Diseases(Code- Excl01)",
+            "level": 2,
+            "section_id": "hdfc_arogya_sanjeevani_sec_078"
+          },
+          {
+            "heading_text": "8. Benign prostate hypertrophy",
+            "level": 1,
+            "section_id": "hdfc_arogya_sanjeevani_sec_088"
+          },
+          {
+            "heading_text": "9. Cataract and age related eye ailments",
+            "level": 1,
+            "section_id": "hdfc_arogya_sanjeevani_sec_089"
+          },
+          {
+            "heading_text": "10. Gastric/ Duodenal Ulcer",
+            "level": 1,
+            "section_id": "hdfc_arogya_sanjeevani_sec_090"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": false
+      }
+    },
+    {
+      "slug": "icici_family_shield",
+      "status": "failed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 2785,
+      "metrics": {
+        "total_candidates_above_threshold": 9,
+        "total_gold_headings": 90,
+        "true_positives": 7,
+        "false_positives": 2,
+        "false_negatives": 68,
+        "precision": 77.78,
+        "recall": 7.78,
+        "f1_score": 14.14,
+        "false_positive_examples": [
+          {
+            "text": "SECTION B \u2013 HOSPITAL DAILY CASH - ILLNESS",
+            "page": 12,
+            "score": 0.5086,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 11.04,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.7069,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "SECTION C \u2013 ACCIDENTAL INJURY BENEFITS",
+            "page": 18,
+            "score": 0.519,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 11.04,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6552,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "heading_text": "1. PREAMBLE",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_003"
+          },
+          {
+            "heading_text": "1. Accident means sudden, unforeseen and involuntary event caused by external, v",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_005"
+          },
+          {
+            "heading_text": "3. Condition Precedent means a policy term or condition upon which the Insurer's",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_007"
+          },
+          {
+            "heading_text": "4. Deductible means a cost sharing requirement under a health insurance policy t",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_008"
+          },
+          {
+            "heading_text": "5. Disclosure to Information Norm means that the policy shall be void and all pr",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_009"
+          },
+          {
+            "heading_text": "6. Emergency Care means management for an illness or injury which results in sym",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_010"
+          },
+          {
+            "heading_text": "7. Grace Period means the specified period of time immediately fol lowing the pr",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_011"
+          },
+          {
+            "heading_text": "10. Illness means a sickness or disease or pathological condition leading to the",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_014"
+          },
+          {
+            "heading_text": "11. Injury means accidental physical bodily harm excluding illness or disease so",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_015"
+          },
+          {
+            "heading_text": "12. Medical Advice means any consultation or advice from a Medical Practitioner ",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_016"
+          },
+          {
+            "heading_text": "13. Medical Expenses means those expenses that an Insured Person has necessarily",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_017"
+          },
+          {
+            "heading_text": "14. Medical Practitioner is a person who holds a valid registration from Medical",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_018"
+          },
+          {
+            "heading_text": "16. Medically Necessary Treatment means any treatment, tests, medication, or sta",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_020"
+          },
+          {
+            "heading_text": "17. Network Provider means Hospitals or health care providers enlisted by an ins",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_021"
+          },
+          {
+            "heading_text": "18. Notification of Claim means the process of intimating a claim to the insurer",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_022"
+          },
+          {
+            "heading_text": "19. Pre Existing Disease means any condition, ailment, injury or disease:",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_023"
+          },
+          {
+            "heading_text": "22. Post-hospitalization Medical Expenses means medical expenses incurred during",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_025"
+          },
+          {
+            "heading_text": "23. Pre-hospitalization Medical Expenses means medical expenses incurred during ",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_026"
+          },
+          {
+            "heading_text": "24. Reasonable and Customary Charges means the charges for services or supplies,",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_027"
+          },
+          {
+            "heading_text": "25. Renewal means the terms on which the contract of insurance can be renewed on",
+            "level": 1,
+            "section_id": "icici_family_shield_sec_028"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": false,
+        "recall_ge_80": false
+      }
+    },
+    {
+      "slug": "new_india_floater",
+      "status": "failed",
+      "threshold": 0.5,
+      "body_font_mode": 12.0,
+      "total_lines_scored": 1413,
+      "metrics": {
+        "total_candidates_above_threshold": 11,
+        "total_gold_headings": 80,
+        "true_positives": 6,
+        "false_positives": 5,
+        "false_negatives": 18,
+        "precision": 54.55,
+        "recall": 7.5,
+        "f1_score": 13.19,
+        "false_positive_examples": [
+          {
+            "text": "3.HOW MUCH WE WILL REIMBURSE",
+            "page": 10,
+            "score": 0.7125,
+            "features": {
+              "font_size_ratio": 1.33,
+              "max_font_size": 15.96,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 0.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4375,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "4. WHAT ARE EXCLUDED UNDER THIS POLICY",
+            "page": 16,
+            "score": 0.6812,
+            "features": {
+              "font_size_ratio": 1.33,
+              "max_font_size": 15.96,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 0.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.5938,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "5.10RENEWAL CLAUSE:",
+            "page": 24,
+            "score": 0.5906,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.2969,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "5.13FREE LOOK PERIOD:",
+            "page": 25,
+            "score": 0.5844,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.3281,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          },
+          {
+            "text": "5.15PORTABILITY AND MIGRATION:",
+            "page": 26,
+            "score": 0.5562,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.4688,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "heading_text": "NEW INDIA FLOATER MEDICLAIM POLICY",
+            "level": 1,
+            "section_id": "new_india_floater_sec_001"
+          },
+          {
+            "heading_text": "THE NEW INDIA ASSURANCE CO. LTD.",
+            "level": 1,
+            "section_id": "new_india_floater_sec_002"
+          },
+          {
+            "heading_text": "REGISTERED & HEAD OFFICE: 87, MAHATMA GANDHI ROAD, MUMBAI 400001",
+            "level": 1,
+            "section_id": "new_india_floater_sec_003"
+          },
+          {
+            "heading_text": "I. A malignant tumour characterized by the uncontrolled growth and spread of mal",
+            "level": 2,
+            "section_id": "new_india_floater_sec_018"
+          },
+          {
+            "heading_text": "II. The following are excluded -",
+            "level": 2,
+            "section_id": "new_india_floater_sec_019"
+          },
+          {
+            "heading_text": "I. The first occurrence of heart attack or myocardial infarction, which means th",
+            "level": 2,
+            "section_id": "new_india_floater_sec_021"
+          },
+          {
+            "heading_text": "II. The following are excluded:",
+            "level": 2,
+            "section_id": "new_india_floater_sec_022"
+          },
+          {
+            "heading_text": "I. The actual undergoing of heart surgery to correct blockage or narrowing in on",
+            "level": 2,
+            "section_id": "new_india_floater_sec_024"
+          },
+          {
+            "heading_text": "I. The actual undergoing of open-heart valve Surgery is to replace or repair one",
+            "level": 2,
+            "section_id": "new_india_floater_sec_026"
+          },
+          {
+            "heading_text": "I. A state of unconsciousness with no reaction or response to external stimuli o",
+            "level": 2,
+            "section_id": "new_india_floater_sec_028"
+          },
+          {
+            "heading_text": "II. The condition has to be confirmed by a specialist Medica l Practitioner. Com",
+            "level": 2,
+            "section_id": "new_india_floater_sec_029"
+          },
+          {
+            "heading_text": "I. End stage renal disease presenting as chronic irreversible failure of both ki",
+            "level": 2,
+            "section_id": "new_india_floater_sec_031"
+          },
+          {
+            "heading_text": "I. Any cerebrovascular incident producing p ermanent neurological sequelae. This",
+            "level": 2,
+            "section_id": "new_india_floater_sec_033"
+          },
+          {
+            "heading_text": "I. The actual undergoing of a transplant of:",
+            "level": 2,
+            "section_id": "new_india_floater_sec_035"
+          },
+          {
+            "heading_text": "I. Total and irreversible loss of use of two or more limbs as a result of injury",
+            "level": 2,
+            "section_id": "new_india_floater_sec_037"
+          },
+          {
+            "heading_text": "I. Motor neurone disease diagnosed by a specialist Medical Practitioner as spina",
+            "level": 2,
+            "section_id": "new_india_floater_sec_039"
+          },
+          {
+            "heading_text": "I. The definite occurrence of multiple sclerosis. The diagnosis must be supporte",
+            "level": 2,
+            "section_id": "new_india_floater_sec_041"
+          },
+          {
+            "heading_text": "II. Other causes of neurological damage such as SLE and HIV are excluded.",
+            "level": 2,
+            "section_id": "new_india_floater_sec_042"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": false,
+        "recall_ge_80": false
+      }
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "status": "failed",
+      "threshold": 0.5,
+      "body_font_mode": 10.0,
+      "total_lines_scored": 2130,
+      "metrics": {
+        "total_candidates_above_threshold": 9,
+        "total_gold_headings": 90,
+        "true_positives": 8,
+        "false_positives": 1,
+        "false_negatives": 56,
+        "precision": 88.89,
+        "recall": 8.89,
+        "f1_score": 16.16,
+        "false_positive_examples": [
+          {
+            "text": "V.  CUMULATIVE BONUS",
+            "page": 13,
+            "score": 0.671,
+            "features": {
+              "font_size_ratio": 1.2,
+              "max_font_size": 12.0,
+              "is_bold": 1.0,
+              "is_all_caps": 1.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 0.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.6452,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "heading_text": "1.0 (A) (B) & (C)",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_001"
+          },
+          {
+            "heading_text": "1. Any hospital admission primarily for investigation diagnostic purpose",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_002"
+          },
+          {
+            "heading_text": "5. Refractive error correction, hearing impairment correction, corrective & cosm",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_005"
+          },
+          {
+            "heading_text": "6. Substance abuse, self-in\ufb02icted injuries, STDs and HIV/AIDS",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_006"
+          },
+          {
+            "heading_text": "7. Hazardous sports, war, terrorism, civil war or breach of law",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_007"
+          },
+          {
+            "heading_text": "8. Any kind of service charge, surcharge, admission fees, registration fees levi",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_008"
+          },
+          {
+            "heading_text": "I. All Pre-existing conditions VI (3)",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_009"
+          },
+          {
+            "heading_text": "II. Intentional self injury and use of intoxicating drugs/alcohol/HIV or AIDS HI",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_010"
+          },
+          {
+            "heading_text": "III. War, Biological nuclear and chemical terrorism and nuclear perils VI (7), V",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_011"
+          },
+          {
+            "heading_text": "IV. Engaging in Hazardous sports/activities VI (11)",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_012"
+          },
+          {
+            "heading_text": "1.0 (A),(B) & C",
+            "level": 2,
+            "section_id": "star_medi_classic_accident_sec_013"
+          },
+          {
+            "heading_text": "1. Room/ICU charges beyond",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_014"
+          },
+          {
+            "heading_text": "VIII (11)",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_018"
+          },
+          {
+            "heading_text": "VIII (8)",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_019"
+          },
+          {
+            "heading_text": "(VII (2))",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_020"
+          },
+          {
+            "heading_text": "(VIII (3))",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_021"
+          },
+          {
+            "heading_text": "MEDI CLASSIC ACCIDENT CARE (INDIVIDUAL) INSURANCE POLICY",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_023"
+          },
+          {
+            "heading_text": "5. Injury or disease directly or indirectly caused by or contributed to by nucle",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_030"
+          },
+          {
+            "heading_text": "7. Cost of spectacles and contact lens, hearing aids including cochlear implants",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_031"
+          },
+          {
+            "heading_text": "8. Dental treatment or surgery unless necessitated due to accidental injuries an",
+            "level": 1,
+            "section_id": "star_medi_classic_accident_sec_032"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": false,
+        "recall_ge_80": false
+      }
+    }
+  ],
+  "passed": false,
+  "failures": [
+    "care_health_care_plus",
+    "hdfc_arogya_sanjeevani",
+    "icici_family_shield",
+    "new_india_floater",
+    "star_medi_classic_accident"
+  ],
+  "notes": "Heading scorer v1 eval on 5 gold PDFs. Gates: precision >= 90%, recall >= 80%. Matching is normalized fuzzy (substring after TOC dot removal, case-insensitive)."
+}

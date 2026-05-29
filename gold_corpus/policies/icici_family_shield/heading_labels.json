@@ -1,0 +1,152 @@
+[
+  {
+    "label_id": "icici_family_shield_heading_001",
+    "source_section_id": "icici_family_shield_sec_001",
+    "page": 1,
+    "expected_text": "FAMILY SHIELD",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_5",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_002",
+    "source_section_id": "icici_family_shield_sec_002",
+    "page": 1,
+    "expected_text": "PART II OF THE POLICY SCHEDULE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_7",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_003",
+    "source_section_id": "icici_family_shield_sec_004",
+    "page": 1,
+    "expected_text": "2.  DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_19",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_004",
+    "source_section_id": "icici_family_shield_sec_061",
+    "page": 7,
+    "expected_text": "SECTION A: SPECIFIC INFECTIOUS DISEASES BENEFIT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_12",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_005",
+    "source_section_id": "icici_family_shield_sec_062",
+    "page": 7,
+    "expected_text": "SECTION A.1: SPECIFIC VECTOR BORNE DISEASE BENEFIT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_13",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_006",
+    "source_section_id": "icici_family_shield_sec_063",
+    "page": 8,
+    "expected_text": "SECTION A.2: RABIES AND TETANUS BENEFIT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_18",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_007",
+    "source_section_id": "icici_family_shield_sec_064",
+    "page": 9,
+    "expected_text": "SECTION A.3: SPECIFIC GASTRO INTESTINAL INFECTIONS BENEFIT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_34",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_008",
+    "source_section_id": "icici_family_shield_sec_066",
+    "page": 11,
+    "expected_text": "SECTION A.5: SPECIFIC NERVOUS SYSTEM INFECTIONS BENEFIT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_45",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_009",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "SECTION B \u2013 HOSPITAL DAILY CASH - ILLNESS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_36",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_010",
+    "source_section_id": null,
+    "page": 18,
+    "expected_text": "SECTION C \u2013 ACCIDENTAL INJURY BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_22",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_011",
+    "source_section_id": null,
+    "page": 47,
+    "expected_text": "PART III OF THE POLICY SCHEDULE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p47l_13",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_012",
+    "source_section_id": null,
+    "page": 47,
+    "expected_text": "5. Fraud",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p47l_50",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_013",
+    "source_section_id": null,
+    "page": 49,
+    "expected_text": "8. Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p49l_17",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_014",
+    "source_section_id": null,
+    "page": 49,
+    "expected_text": "9. Portability",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p49l_25",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "icici_family_shield_heading_015",
+    "source_section_id": null,
+    "page": 59,
+    "expected_text": "10. Notices",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p59l_22",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  }
+]

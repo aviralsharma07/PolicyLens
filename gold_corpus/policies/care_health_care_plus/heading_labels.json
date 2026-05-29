@@ -1,0 +1,492 @@
+[
+  {
+    "label_id": "care_health_care_plus_heading_001",
+    "source_section_id": "care_health_care_plus_sec_001",
+    "page": 1,
+    "expected_text": "1.PREAMBLE:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_7",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_002",
+    "source_section_id": "care_health_care_plus_sec_002",
+    "page": 2,
+    "expected_text": "2.DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_5",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_003",
+    "source_section_id": "care_health_care_plus_sec_003",
+    "page": 2,
+    "expected_text": "2.1Standard Definitions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_8",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_004",
+    "source_section_id": "care_health_care_plus_sec_050",
+    "page": 7,
+    "expected_text": "2.2Specific Definitions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_47",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_005",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "3.1BASE BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_6",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_006",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "3.1.1Benefit : Hospitalization Expenses",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_10",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_007",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "3.1.3Benefit : Ambulance Cover",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_25",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_008",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "3.1.4Benefit : Organ Donor Cover",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_43",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_009",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "3.1.5Benefit : Domiciliary Hospitalization",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_63",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_010",
+    "source_section_id": null,
+    "page": 14,
+    "expected_text": "3.1.6Benefit : Second Opinion",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p14l_47",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_011",
+    "source_section_id": null,
+    "page": 15,
+    "expected_text": "3.1.7Benefit : Annual Health Check-up",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_29",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_012",
+    "source_section_id": null,
+    "page": 16,
+    "expected_text": "3.1.8Benefit : Unlimited Automatic Recharge",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_6",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_013",
+    "source_section_id": null,
+    "page": 17,
+    "expected_text": "3.1.11Benefit : No Claim Bonus Protect:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_38",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_014",
+    "source_section_id": null,
+    "page": 18,
+    "expected_text": "3.1.12Benefit : OPD Coverage",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_40",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_015",
+    "source_section_id": null,
+    "page": 19,
+    "expected_text": "3.1.13Benefit : Personal Accident Cover (AD & PTD)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_17",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_016",
+    "source_section_id": null,
+    "page": 20,
+    "expected_text": "3.1.14Benefit: Inflation Shield",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p20l_51",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_017",
+    "source_section_id": null,
+    "page": 21,
+    "expected_text": "3.1.15Benefit : Unlimited E-Consultation",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_13",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_018",
+    "source_section_id": null,
+    "page": 25,
+    "expected_text": "3.1.17Benefit : Health Services",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p25l_34",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_019",
+    "source_section_id": null,
+    "page": 25,
+    "expected_text": "3.2OPTIONAL BENEFITS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p25l_44",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_020",
+    "source_section_id": null,
+    "page": 26,
+    "expected_text": "3.2.2Optional Benefit : Daily Allowance",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p26l_40",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_021",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "3.2.3Optional Benefit : International Second Opinion",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_6",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_022",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "3.2.4Optional Benefit : Smart Select",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_49",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_023",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "3.2.5Optional Benefit : Deductible Option",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_68",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_024",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "3.2.6Optional Benefit : Co-Payment Option",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_28",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_025",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "3.2.7Optional Benefit : Room Rent Modification",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_40",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_026",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_51",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_027",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "GENERAL TERMS AND CLAUSES",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_24",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_028",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "5.1Standard General Terms & Clauses",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_25",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_029",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "5.1.4Complete Discharge",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_14",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_030",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "5.1.5Multiple Policies",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_21",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_031",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "5.1.6Fraud",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_43",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_032",
+    "source_section_id": null,
+    "page": 36,
+    "expected_text": "5.1.7Cancellation / Termination",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p36l_15",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_033",
+    "source_section_id": null,
+    "page": 37,
+    "expected_text": "5.1.8Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p37l_19",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_034",
+    "source_section_id": null,
+    "page": 37,
+    "expected_text": "5.1.9Portability",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p37l_31",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_035",
+    "source_section_id": null,
+    "page": 38,
+    "expected_text": "5.1.12Moratorium Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p38l_17",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_036",
+    "source_section_id": null,
+    "page": 39,
+    "expected_text": "5.1.15Free Look Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p39l_9",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_037",
+    "source_section_id": null,
+    "page": 39,
+    "expected_text": "5.1.16Grievances",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p39l_30",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_038",
+    "source_section_id": null,
+    "page": 40,
+    "expected_text": "5.1.17Nomination:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p40l_12",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_039",
+    "source_section_id": null,
+    "page": 40,
+    "expected_text": "5.2Specific General Terms & Clauses",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p40l_23",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_040",
+    "source_section_id": null,
+    "page": 40,
+    "expected_text": "5.2.1Material Change",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p40l_27",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_041",
+    "source_section_id": null,
+    "page": 40,
+    "expected_text": "5.2.4Policy Disputes",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p40l_49",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_042",
+    "source_section_id": null,
+    "page": 41,
+    "expected_text": "5.2.6Communication",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p41l_14",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_043",
+    "source_section_id": null,
+    "page": 41,
+    "expected_text": "5.2.9Electronic Transactions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p41l_43",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_044",
+    "source_section_id": null,
+    "page": 42,
+    "expected_text": "6.1CLAIMS PROCEDURE AND MANAGEMENT",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p42l_9",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_045",
+    "source_section_id": null,
+    "page": 44,
+    "expected_text": "6.1.4Claims Intimation",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p44l_58",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_046",
+    "source_section_id": null,
+    "page": 46,
+    "expected_text": "6.1.6Claim Assessment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p46l_14",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_047",
+    "source_section_id": null,
+    "page": 46,
+    "expected_text": "6.1.7Payment Terms",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p46l_58",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_048",
+    "source_section_id": null,
+    "page": 47,
+    "expected_text": "6.2SPECIAL CONDITIONS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p47l_15",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "care_health_care_plus_heading_049",
+    "source_section_id": null,
+    "page": 47,
+    "expected_text": "6.2.1Early Bird Discount:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p47l_17",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  }
+]

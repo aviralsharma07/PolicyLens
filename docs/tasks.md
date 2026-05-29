@@ -9,7 +9,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-002 | UIN Matcher v1 | done | P0 | Phase 0 |
 | DSE-003 | Gold annotation of 5 policies | done | P0 | Phase 7 |
 | DSE-004 | Physical Layout Extractor v1 | done | P1 | Phase 1 |
-| DSE-005 | Heading Candidate Scorer | planned | P1 | Phase 2 |
+| DSE-005 | Heading Candidate Scorer | done | P1 | Phase 2 |
 | DSE-006 | Section Tree Builder | planned | P1 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | planned | P1 | Phase 6 |
 | DSE-008 | Normalizers Library (money, duration, percentage) | planned | P1 | Phase 6 |
@@ -39,6 +39,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-002 | UIN Matcher v1 | 2026-05-29 | Phase 0 |
 | DSE-003 | Gold annotation of 5 policies | 2026-05-29 | Phase 7 |
 | DSE-004 | Physical Layout Extractor v1 | 2026-05-29 | Phase 1 |
+| DSE-005 | Heading Candidate Scorer | 2026-05-30 | Phase 2 |
 
 ---
 
@@ -170,3 +171,36 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - Gold corpus validator: passed
 **Branch:** feat/physical-layout-extractor-v1
 **Related docs:** evaluation.md (Physical Parser eval), data_contracts.md (Contract 3), decisions.md (ADR-0011), runs/sessions/2026-05-29-physical-layout-extractor-v1.md
+
+### DSE-005 — Heading Candidate Scorer
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 2
+**Goal:** Implement scored heading detection using weighted feature signals (font size, bold, numbering, heading dictionary, TOC dots) to identify visual headings from physical layout lines. Penalize non-headings (sentence-case body text, footer/header regions, all-caps false positives).
+**ADR:** 0004-scored-heading-detection.md — weights: numbering +0.3, font above body +0.25, bold/italic +0.15, spacing +0.1, heading dict +0.1, TOC +0.1; penalties: sentence-like -0.3, too long -0.2, footer/header -0.3, all-caps FP -0.2; threshold 0.5
+**Files created:**
+- `structure_parser/__init__.py` — package init
+- `structure_parser/heading_patterns.py` — numbering regexes (decimal, compact, SECTION, PART, Roman), TOC dots, 40+ heading dictionary terms, ALL CAPS/sentence case detection, normalize_heading_text
+- `structure_parser/heading_scorer.py` — `HeadingScorer` class with scored features, spacing signal, candidate metadata, and contribution breakdown
+- `scripts/run_heading_scorer.py` — entry point: loads physical JSON, runs scorer, saves candidates, writes run summary, exits non-zero on missing inputs
+- `scripts/eval_heading_scorer.py` — eval against DSE-005 visual heading labels with one-to-one page-aware matching
+- `tests/test_heading_scorer.py` — 32 tests (unit, eval matching, CLI behavior, 3 gold integration)
+- `gold_corpus/policies/*/heading_labels.json` — DSE-005 visual-heading gold labels separate from DSE-003 logical sections
+**Results:**
+- v1 eval failed: 0/5 policies passed because visual heading candidates were evaluated against all logical section entries in `sections.json`, and the matcher allowed generic headings to overmatch many rows.
+- v2 eval passed: 5/5 policies passed against 101 visual-heading labels.
+- Precision/recall/F1: 100.00% on all 5 gold policies with one-to-one page-aware matching.
+- Tests: 54/54 pass in full suite.
+- Gold corpus validator: passed with 30 policy JSON files and 101 heading labels.
+**Outputs:**
+- `data/interim/logical/*/heading_candidates.json` — 5 policies scored
+- `data/interim/logical/heading_run_summary.json` — heading scoring run summary
+- `runs/evals/2026-05-30-heading-scorer-v1.json` — failed first-pass eval retained for history
+- `runs/evals/2026-05-30-heading-scorer-v2.json` — passing remediation eval
+**Known limitations:**
+- DSE-005 evaluates visual heading candidates only; DSE-006 must build section trees and clause boundaries from visual headings plus logical labels.
+- ICICI family_shield: headings same font size as body (11.04pt), relies solely on bold
+- All-caps and boilerplate penalties may need more tuning after expansion to 20-policy gold corpus.
+**Branch:** fix/dse-005-heading-scorer-gates
+**Related docs:** docs/adr/0004-scored-heading-detection.md, evaluation.md (Heading Candidate Scorer), runs/sessions/2026-05-30-heading-scorer-v1.md

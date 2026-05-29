@@ -1,0 +1,152 @@
+[
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_001",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_011",
+    "page": 2,
+    "expected_text": "1. Preamble",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_12",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_002",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_012",
+    "page": 2,
+    "expected_text": "2. Operative Clause",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_20",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_003",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page": 2,
+    "expected_text": "3. Definitions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_33",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_004",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_065",
+    "page": 9,
+    "expected_text": "4. Coverage",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_12",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_005",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_076",
+    "page": 10,
+    "expected_text": "5. Cumulative Bonus (CB)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_52",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_006",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_077",
+    "page": 11,
+    "expected_text": "6. Waiting Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_38",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_007",
+    "source_section_id": "hdfc_arogya_sanjeevani_sec_086",
+    "page": 12,
+    "expected_text": "6. Hysterectomy",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_43",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_008",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "13. Hydrocele",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_51",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_009",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "2. Age-related Osteoarthritis & Osteoporosis",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_15",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_010",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "7. Exclusions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_16",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_011",
+    "source_section_id": null,
+    "page": 16,
+    "expected_text": "8. Moratorium Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_10",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_012",
+    "source_section_id": null,
+    "page": 17,
+    "expected_text": "9.4 Co-payment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_47",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_013",
+    "source_section_id": null,
+    "page": 18,
+    "expected_text": "10. General Terms &Conditions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_21",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_014",
+    "source_section_id": null,
+    "page": 19,
+    "expected_text": "10.9 Fraud",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_39",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_heading_015",
+    "source_section_id": null,
+    "page": 21,
+    "expected_text": "10.14 Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_38",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  }
+]

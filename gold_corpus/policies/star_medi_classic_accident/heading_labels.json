@@ -1,0 +1,112 @@
+[
+  {
+    "label_id": "star_medi_classic_accident_heading_001",
+    "source_section_id": null,
+    "page": 4,
+    "expected_text": "Section I \u2013 Health Insurance Coverage",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_5",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_002",
+    "source_section_id": "star_medi_classic_accident_sec_022",
+    "page": 4,
+    "expected_text": "1.0.  COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_15",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_003",
+    "source_section_id": "star_medi_classic_accident_sec_024",
+    "page": 5,
+    "expected_text": "2. DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_16",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_004",
+    "source_section_id": "star_medi_classic_accident_sec_025",
+    "page": 6,
+    "expected_text": "3. EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_38",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_005",
+    "source_section_id": "star_medi_classic_accident_sec_046",
+    "page": 7,
+    "expected_text": "4.   CONDITIONS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_46",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_006",
+    "source_section_id": "star_medi_classic_accident_sec_064",
+    "page": 10,
+    "expected_text": "I.  DEFINITIONS OF WORDS AND EXPRESSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_10",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_007",
+    "source_section_id": "star_medi_classic_accident_sec_065",
+    "page": 11,
+    "expected_text": "II.  SCOPE OF COVER",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_15",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_008",
+    "source_section_id": "star_medi_classic_accident_sec_082",
+    "page": 12,
+    "expected_text": "III.  ADDITIONAL BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_58",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_009",
+    "source_section_id": "star_medi_classic_accident_sec_074",
+    "page": 12,
+    "expected_text": "1. EDUCATIONAL GRANT:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_5",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_010",
+    "source_section_id": "star_medi_classic_accident_sec_090",
+    "page": 13,
+    "expected_text": "IV.  OPTIONAL BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_48",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "star_medi_classic_accident_heading_011",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "V.  CUMULATIVE BONUS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_49",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  }
+]

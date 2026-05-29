@@ -26,6 +26,7 @@ EXPECTED_FILES = {
     "clauses.json",
     "tables.json",
     "facts.json",
+    "heading_labels.json",
 }
 
 GENERATED_DOCLING_POLICIES = {
@@ -273,6 +274,49 @@ def validate_facts(policy_dir: Path, page_count: int) -> tuple[int, dict[str, in
     return len(facts), {k: v for k, v in status_counts.items() if v}
 
 
+def validate_heading_labels(policy_dir: Path, page_count: int) -> int:
+    path = policy_dir / "heading_labels.json"
+    labels = load_json(path)
+    require(isinstance(labels, list) and labels, f"{path}: must be a non-empty array")
+    ids: set[str] = set()
+    line_refs: set[tuple[int, str]] = set()
+    for item in labels:
+        required = {
+            "label_id",
+            "source_section_id",
+            "page",
+            "expected_text",
+            "label_type",
+            "is_visual_heading",
+            "line_id",
+            "reviewer_note",
+        }
+        missing = sorted(required - item.keys())
+        require(not missing, f"{path}: heading label missing fields: {missing}")
+        require(item["label_id"] not in ids, f"{path}: duplicate label_id {item['label_id']}")
+        ids.add(item["label_id"])
+        validate_page_ref(path, "page", item["page"], page_count)
+        require(
+            isinstance(item["expected_text"], str) and item["expected_text"].strip(),
+            f"{path}: empty expected_text",
+        )
+        require(item["label_type"] == "visual_heading", f"{path}: label_type must be visual_heading")
+        require(item["is_visual_heading"] is True, f"{path}: is_visual_heading must be true")
+        require(isinstance(item["line_id"], str) and item["line_id"], f"{path}: line_id is required")
+        require(
+            item["source_section_id"] is None or isinstance(item["source_section_id"], str),
+            f"{path}: source_section_id must be string/null",
+        )
+        require(
+            isinstance(item["reviewer_note"], str) and item["reviewer_note"].strip(),
+            f"{path}: reviewer_note is required",
+        )
+        line_ref = (item["page"], item["line_id"])
+        require(line_ref not in line_refs, f"{path}: duplicate page/line_id label {line_ref}")
+        line_refs.add(line_ref)
+    return len(labels)
+
+
 def validate_gold_corpus() -> dict[str, Any]:
     require(GOLD_ROOT.exists(), f"gold corpus directory not found: {GOLD_ROOT}")
     policies_dir = GOLD_ROOT / "policies"
@@ -288,6 +332,7 @@ def validate_gold_corpus() -> dict[str, Any]:
         "clauses": 0,
         "tables": 0,
         "facts": 0,
+        "heading_labels": 0,
         "status_counts": {},
     }
 
@@ -304,12 +349,14 @@ def validate_gold_corpus() -> dict[str, Any]:
         totals["tables"] += validate_tables(policy_dir, page_count)
         fact_count, status_counts = validate_facts(policy_dir, page_count)
         totals["facts"] += fact_count
+        totals["heading_labels"] += validate_heading_labels(policy_dir, page_count)
         for status, count in status_counts.items():
             totals["status_counts"][status] = totals["status_counts"].get(status, 0) + count
 
     require(totals["policies"] == 5, "expected exactly 5 policies")
-    require(totals["json_files"] == 25, "expected exactly 25 policy JSON files")
+    require(totals["json_files"] == 30, "expected exactly 30 policy JSON files")
     require(totals["facts"] == 100, "expected exactly 100 fact annotations")
+    require(totals["heading_labels"] >= 25, "expected visual heading labels for every policy")
     require(totals["status_counts"].get("requires_manual_review", 0) == 0, "gold corpus still has requires_manual_review facts")
     return totals
 

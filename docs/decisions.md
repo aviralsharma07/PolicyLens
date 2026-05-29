@@ -221,3 +221,25 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Product B must handle 7 states in UI.
 
 **Revisit when:** Product B UX data shows users confused by 7 states.
+
+## 2026-05-30 — Separate Visual Heading Labels From Logical Sections
+
+**Status:** accepted
+
+**Decision:** DSE-005 evaluates heading candidates against dedicated visual-heading labels in `heading_labels.json`, not against every logical section row in `sections.json`.
+
+**Context:** The first DSE-005 eval used DSE-003 `sections.json` as the heading gold source. That mixed visual headings with logical clause/list/definition entries, producing low recall and inconsistent TP/FN counts. Heading detection and section-tree construction are adjacent but separate layers.
+
+**Options considered:**
+1. Keep using all `sections.json` rows for DSE-005
+2. Mutate `sections.json` to remove logical entries
+3. Add DSE-005 visual-heading labels while preserving DSE-003 logical sections
+
+**Reasoning:** Dedicated visual labels let DSE-005 test the exact behavior it owns: identifying visible heading lines from physical layout. Preserving `sections.json` keeps DSE-003 logical structure intact for DSE-006.
+
+**Consequences:**
+- Positive: Heading candidate precision/recall is measured against the right target.
+- Positive: DSE-006 can still evaluate logical section tree and clause boundaries against `sections.json`.
+- Negative: Gold corpus now has another label file per policy to maintain.
+
+**Revisit when:** DSE-006 defines a richer unified logical/visual annotation schema.

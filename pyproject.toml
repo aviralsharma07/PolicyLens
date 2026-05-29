@@ -22,6 +22,9 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = [
+    "slow: integration tests that read generated parser outputs",
+]
 
 [tool.ruff]
 line-length = 100

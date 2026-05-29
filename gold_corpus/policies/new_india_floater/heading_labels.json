@@ -1,0 +1,112 @@
+[
+  {
+    "label_id": "new_india_floater_heading_001",
+    "source_section_id": "new_india_floater_sec_004",
+    "page": 1,
+    "expected_text": "1.WHAT WE COVER",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_20",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_002",
+    "source_section_id": "new_india_floater_sec_005",
+    "page": 1,
+    "expected_text": "2.DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_31",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_003",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "3.HOW MUCH WE WILL REIMBURSE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_37",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_004",
+    "source_section_id": null,
+    "page": 16,
+    "expected_text": "4. WHAT ARE EXCLUDED UNDER THIS POLICY",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_54",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_005",
+    "source_section_id": null,
+    "page": 18,
+    "expected_text": "4.4EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_35",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_006",
+    "source_section_id": null,
+    "page": 22,
+    "expected_text": "5. CONDITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p22l_9",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_007",
+    "source_section_id": null,
+    "page": 22,
+    "expected_text": "5.2PREMIUM:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p22l_14",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_008",
+    "source_section_id": null,
+    "page": 24,
+    "expected_text": "5.10RENEWAL CLAUSE:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p24l_12",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_009",
+    "source_section_id": null,
+    "page": 25,
+    "expected_text": "5.13FREE LOOK PERIOD:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p25l_36",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_010",
+    "source_section_id": null,
+    "page": 25,
+    "expected_text": "5.14ARBITRATION:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p25l_48",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  },
+  {
+    "label_id": "new_india_floater_heading_011",
+    "source_section_id": null,
+    "page": 26,
+    "expected_text": "5.15PORTABILITY AND MIGRATION:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p26l_7",
+    "reviewer_note": "DSE-005 visual-heading gold label from manual review of physical heading candidate output; logical definition/list entries remain in sections.json for DSE-006."
+  }
+]

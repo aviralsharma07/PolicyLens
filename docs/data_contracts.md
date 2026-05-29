@@ -71,7 +71,7 @@ Each step produces files/tables consumed by the next. These are the contracts be
 ## Contract 3: Physical Parser → Structure Parser
 
 **Producer:** `pdf_parser/layout_extractor.py`
-**Consumer:** `pdf_parser/heading_detector.py`, `pdf_parser/section_tree.py`
+**Consumer:** `structure_parser/heading_scorer.py`, `structure_parser/section_tree.py` (DSE-006)
 
 ```json
 {
@@ -109,6 +109,50 @@ Each step produces files/tables consumed by the next. These are the contracts be
   "parser_version": "1.0.0"
 }
 ```
+
+---
+
+## Contract 3A: Heading Scorer Output
+
+**Producer:** `structure_parser/heading_scorer.py`
+**Consumer:** DSE-006 section tree builder
+
+```json
+{
+  "document_id": "sha256:abc123",
+  "policy_id": "HDFHLIP23024V072223",
+  "total_lines_scored": 1392,
+  "total_headings": 15,
+  "config": {
+    "threshold": 0.5,
+    "body_font_mode": 11.04,
+    "pipeline_run_id": "physical_v1_fixed"
+  },
+  "candidates": [
+    {
+      "candidate_id": "policy_candidate_00001",
+      "line_id": "p2l_12",
+      "text": "1. Preamble",
+      "page_number": 2,
+      "bbox": [50.0, 120.0, 130.0, 134.0],
+      "span_ids": ["p2s_101", "p2s_102"],
+      "normalized_text": "1. preamble",
+      "numbering_token": "1.",
+      "level_hint": 1,
+      "score": 0.865,
+      "features": {},
+      "feature_contributions": {},
+      "decision": "heading",
+      "threshold_applied": 0.5
+    }
+  ]
+}
+```
+
+Rules:
+- DSE-005 candidates are visual-heading candidates only.
+- DSE-006 must not treat all candidates as final sections without applying tree logic.
+- `heading_labels.json` is the DSE-005 visual-heading eval target; `sections.json` remains the logical structure eval target.
 
 ---
 
