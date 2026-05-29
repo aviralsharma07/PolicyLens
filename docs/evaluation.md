@@ -90,6 +90,79 @@ active
 
 ---
 
+## Eval: UIN Match
+
+### Purpose
+Ensures every active policy wording's UIN assignment is verified against the IRDAI lifecycle registry. Prevents incorrect insurer-product-UIN associations from propagating into extraction.
+
+### Inputs
+- `data/manifests/active_policy_wordings_v1.json` (647 entries)
+- `insurance-agent/data/uin_lifecycle.json` (1,099 records, 1,082 UIN bases)
+- `identity/insurer_normalizer.py` (23 folder→lifecycle mappings)
+
+### Metrics
+- Verified entries (insurer match confirmed)
+- High confidence (insurer + plan name match)
+- Medium confidence (insurer match, plan name fuzzy)
+- Conflict (folder insurer ≠ lifecycle insurer)
+- Unmatched (UIN not found in lifecycle)
+- Special case (non-policy-wordings folder)
+
+### Eval Logic
+1. Extract uin_base from full UIN (strip version suffix)
+2. Look up uin_base in lifecycle products
+3. Normalize folder insurer to lifecycle name via mapping table
+4. Compare normalized folder insurer vs lifecycle insurer
+5. Extract plan name from filename; fuzzy-match vs lifecycle product_name
+6. Assign confidence: high (insurer+plan), medium (insurer only), low (mismatch)
+
+### Hard Gates
+```
+verified_or_special >= 95%
+(verified + special_case) / total >= 0.95
+```
+
+### Commands
+```bash
+python scripts/uin_match_report.py
+```
+
+### Output Artifacts
+```
+data/manifests/uin_match_report_v1.json
+data/manifests/unmatched_triage_report_v1.csv
+data/manifests/uin_match_summary_v1.json
+```
+
+### Current Status
+active
+
+### 2026-05-29 Result
+
+```json
+{
+  "eval_name": "uin-match-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-002",
+  "input_manifest": "active_policy_wordings_v1.json (647 entries) + uin_lifecycle.json",
+  "metrics": {
+    "total_entries": 647,
+    "verified": 646,
+    "high_confidence": 584,
+    "medium_confidence": 62,
+    "special_case": 1,
+    "conflict": 0,
+    "unmatched": 0,
+    "verified_or_special_pct": 100.0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "All 647 entries verified. 1 special case (NivaBupa brochure in _non_policy_wordings). Insurer mapping complete (23/23). Plan name matching: 584 high (>=0.5 similarity), 62 medium (<0.5 or no extractable plan name)."
+}
+```
+
+---
+
 ## Eval: Physical Parser
 
 ### Purpose

@@ -3,6 +3,12 @@
 ## 2026-05-29
 
 ### Added
+- `identity/` package with insurer normalizer, plan name normalizer, and UIN matcher orchestrator
+- `scripts/uin_match_report.py` — DSE-002 CLI runner
+- `data/manifests/uin_match_report_v1.json` — full 647-entry UIN match report
+- `data/manifests/unmatched_triage_report_v1.csv` — triage CSV for entries needing review
+- `data/manifests/uin_match_summary_v1.json` — summary statistics
+- docs/evaluation.md — UIN Match eval layer with hard gates
 - Initial project scaffold: IMPLEMENTATION_PLAN.md v2, docs/ directory
 - docs/evaluation.md — 7 eval layers with hard gates
 - docs/database_strategy.md — SQLite → JSON → Supabase phases
@@ -23,6 +29,9 @@
 - `data/manifests/active_policy_wordings_v1.json` — 647 active policy wordings with SHA-256 hashes
 - `data/manifests/excluded_documents_v1.json` — 281 excluded documents with reasons
 - `data/manifests/status_unset_review_v1.csv` — 139 policy wordings for manual triage
+
+### Changed
+- docs/tasks.md — DSE-002 marked done with actual results (verified 646/647, 100% verified+special)
 
 ### Fixed
 - None
