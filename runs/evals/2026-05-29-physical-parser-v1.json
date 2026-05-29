@@ -2,7 +2,7 @@
   "eval_name": "physical-parser-v1",
   "date": "2026-05-29",
   "task_id": "DSE-004",
-  "git_commit": null,
+  "git_commit": "45d78a58eff3b3d75cc7efa97ff7e77027a324e6",
   "input_manifest": "gold_corpus (5 policies, 218 pages)",
   "metrics": {
     "policies_processed": 5,

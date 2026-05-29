@@ -1,8 +1,21 @@
 import argparse
 import json
 import os
+import subprocess
 import sys
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
+
+
+def _get_git_commit() -> Optional[str]:
+    try:
+        return (
+            subprocess.check_output(["git", "rev-parse", "HEAD"], stderr=subprocess.DEVNULL)
+            .decode()
+            .strip()
+        )
+    except Exception:
+        return None
+
 
 from pdf_parser.models import PhysicalDocument
 
@@ -221,7 +234,7 @@ def main():
         "eval_name": "physical-parser-v1",
         "date": "2026-05-29",
         "task_id": "DSE-004",
-        "git_commit": None,
+        "git_commit": _get_git_commit(),
         "input_manifest": "gold_corpus (5 policies, 218 pages)",
         "metrics": {
             "policies_processed": len(results),
