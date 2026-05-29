@@ -61,7 +61,32 @@ data/unmatched_triage_report.csv
 ```
 
 ### Current Status
-planned
+active
+
+### 2026-05-29 Result
+
+```json
+{
+  "eval_name": "corpus-identity-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-001",
+  "git_commit": "24a6320",
+  "input_manifest": "policy_index.json (1067 records)",
+  "metrics": {
+    "active_count": 647,
+    "needs_review_count": 139,
+    "excluded_count": 281,
+    "total_classified": 1067,
+    "duplicate_flagged": 70,
+    "brochure_flagged": 18,
+    "missing_hash": 0,
+    "missing_metadata": 0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "53 duplicate content groups found. 70 non-canonical entries flagged possible_duplicate. All PDFs exist on disk."
+}
+```
 
 ---
 

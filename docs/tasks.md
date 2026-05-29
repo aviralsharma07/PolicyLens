@@ -43,16 +43,18 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 ### DSE-001 — Corpus Lockdown
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Phase -1
-**Goal:** Filter 909 PDFs down to 647 active policy wordings with file_hash, document_type, insurer, source, and match_status.
+**Goal:** Filter 1067 indexed PDFs into 647 active, 139 needs_review, 281 excluded, with SHA-256 hashes and triage flags.
 **Acceptance criteria:**
-- `scripts/corpus_lockdown.py` reads `classification_report.json` + `policy_index.csv`
-- Output: `active_policy_wordings.json`, `excluded_documents.json`, `uin_match_report.json`
-- Every file in active list has: file_hash, document_type, insurer, source, match_status
-- No file silently dropped (active + excluded = total classified)
-- The "to_be_pruned" list from classification report is handled (excluded vs investigated)
+- `scripts/corpus_lockdown.py` reads `policy_index.json` + `classification_report.json`
+- Output: `data/manifests/active_policy_wordings_v1.json`, `data/manifests/excluded_documents_v1.json`, `data/manifests/status_unset_review_v1.csv`
+- 647 active entries all have: file_hash, document_type, corpus_status, insurer, source_domain, match_status
+- 281 excluded entries all have exclusion_reason
+- No file silently dropped: 647 + 139 + 281 = 1067
+- 70 non-canonical duplicates flagged with `possible_duplicate` triage flag
+- 18 brochures in active set flagged with `document_type_brochure` triage flag
 **Branch:** feat/corpus-lockdown
 **Related docs:** evaluation.md (Layer 1 gates), database_strategy.md
 

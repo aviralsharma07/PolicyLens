@@ -19,6 +19,10 @@
 - runs/sessions/ directory — Session logging
 - runs/evals/ directory — Eval result tracking
 - runs/experiments/ directory — Experiment tracking
+- `scripts/corpus_lockdown.py` — main corpus lockdown script
+- `data/manifests/active_policy_wordings_v1.json` — 647 active policy wordings with SHA-256 hashes
+- `data/manifests/excluded_documents_v1.json` — 281 excluded documents with reasons
+- `data/manifests/status_unset_review_v1.csv` — 139 policy wordings for manual triage
 
 ### Fixed
 - None
