@@ -156,6 +156,110 @@ Rules:
 
 ---
 
+## Contract 3B: Section Tree Output
+
+**Producer:** `structure_parser/section_tree.py` (DSE-006)
+**Consumer:** DSE-007 extractors, DSE-010 clause store
+
+```json
+{
+  "schema_version": "section_tree.v1",
+  "parser_version": "section_tree_builder.v2",
+  "document_id": "sha256:abc123",
+  "policy_id": "hdfc_arogya_sanjeevani",
+  "pipeline_run_id": "physical_v1_fixed",
+  "config": {
+    "heading_threshold": 0.5,
+    "synthetic_detection": "compact_numbered_iterative_v2",
+    "clause_segmentation": "numbered_prefix_and_paragraph_gap_v2"
+  },
+  "source_paths": {
+    "physical": "data/interim/physical/hdfc_arogya_sanjeevani/document_physical.json",
+    "heading_candidates": "data/interim/logical/hdfc_arogya_sanjeevani/heading_candidates.json"
+  },
+  "issues": [],
+  "total_sections": 67,
+  "total_clauses": 67,
+  "total_visual_headings": 15,
+  "total_synthetic_sections": 52,
+  "sections": [
+    {
+      "section_id": "hdfc_arogya_sanjeevani_sec_0001",
+      "heading_candidate_id": "policy_candidate_00001",
+      "heading_line_id": "p2l_12",
+      "number": "1",
+      "title": "1. Preamble",
+      "normalized_title": "1. preamble",
+      "level": 1,
+      "heading_type": "visual",
+      "heading_score": 0.865,
+      "parent_id": "hdfc_arogya_sanjeevani_root_0000",
+      "children": [],
+      "page_start": 2,
+      "page_end": 2,
+      "line_ids": ["p2l_12", "p2l_13", "p2l_14"],
+      "content_line_ids": ["p2l_13", "p2l_14"],
+      "text": "This Policy is a contract of insurance issued by..."
+    },
+    {
+      "section_id": "hdfc_arogya_sanjeevani_sec_0016",
+      "heading_candidate_id": null,
+      "heading_line_id": "p2l_45",
+      "number": "3.1",
+      "title": "3.1. Accident means a sudden unforeseen and involuntary event",
+      "normalized_title": "3.1. accident means a sudden unforeseen and involuntary event",
+      "level": 2,
+      "heading_type": "synthetic_body_numbered",
+      "heading_score": null,
+      "parent_id": "sec_abc789",
+      "children": [],
+      "page_start": 2,
+      "page_end": 2,
+      "line_ids": ["p2l_45", "p2l_46"],
+      "content_line_ids": ["p2l_46"],
+      "text": "caused by external visible means..."
+    }
+  ],
+  "section_tree": {
+    "section_id": "hdfc_arogya_sanjeevani_root_0000",
+    "level": 0,
+    "children": [
+      {
+        "section_id": "sec_abc123",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  "clauses": [
+    {
+      "clause_id": "clause_0001",
+      "section_id": "sec_abc123",
+      "clause_number": "1",
+      "title": "Preamble",
+      "page_start": 2,
+      "page_end": 2,
+      "line_ids": ["p2l_13", "p2l_14"],
+      "text": "This Policy is a contract...",
+      "segmentation_method": "default",
+      "confidence": 0.5
+    }
+  ]
+}
+```
+
+Rules:
+- Sections with `heading_type = "visual"` come from DSE-005 heading candidates.
+- Sections with `heading_type = "synthetic_body_numbered"` are detected from body-numbered lines inside leaf visual sections.
+- Sections with `heading_type = "synthetic_body_heading"` are detected from structural all-caps body headings missed by DSE-005.
+- Section and clause IDs are deterministic within the policy output.
+- Every section has `line_ids` (all lines owned by this section including children) and `content_line_ids` (this section's body lines excluding children).
+- Every clause has `segmentation_method` (numbered_body, paragraph_gap, default) and `confidence`.
+- TOC headings may appear in the tree; evaluators exclude TOC/CIS/cover rows from hard gates.
+- Clause `text` must not be truncated.
+
+---
+
 ## Contract 4: Clause Store → Extractor Candidates
 
 **Producer:** `clause_store/repository.py` (after Phase 2-3)

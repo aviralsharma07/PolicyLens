@@ -1,0 +1,526 @@
+{
+  "eval_name": "section-tree-v1",
+  "date": "2026-05-30",
+  "task_id": "DSE-006",
+  "git_commit": "d026ff9b109d21936ce0a5c6b1653d63872dcc85",
+  "git_dirty": true,
+  "input_manifest": "gold_corpus (5 policies)",
+  "metrics": {
+    "policies_processed": 5,
+    "passed": 3,
+    "failed": 2
+  },
+  "policy_results": [
+    {
+      "slug": "care_health_care_plus",
+      "status": "failed",
+      "total_predicted_sections": 206,
+      "total_predicted_clauses": 264,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 94,
+      "metrics": {
+        "total_gold_non_toc_sections": 90,
+        "total_gold_toc_sections": 0,
+        "total_predicted_non_root_sections": 205,
+        "true_positives": 4,
+        "false_positives": 201,
+        "false_negatives": 86,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 1.95,
+        "section_recall": 4.44,
+        "section_f1": 2.71,
+        "clause_precision": 60.0,
+        "clause_recall": 100.0,
+        "clause_f1": 75.0,
+        "clause_excluded_toc": 1,
+        "level_correct": 4,
+        "page_correct": 4,
+        "missed_critical_sections": 6,
+        "matched_examples": [
+          {
+            "gold_id": "care_health_care_plus_sec_001",
+            "pred_id": "sec_fe883cd6f182",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_002",
+            "pred_id": "sec_1f6bb764112a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_003",
+            "pred_id": "sec_a6821dc1b97a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_050",
+            "pred_id": "sec_58e58b1724e9",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "clause_f1_ge_80": false,
+        "critical_misses_eq_0": false
+      }
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "status": "passed",
+      "total_predicted_sections": 286,
+      "total_predicted_clauses": 334,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 90,
+      "metrics": {
+        "total_gold_non_toc_sections": 90,
+        "total_gold_toc_sections": 0,
+        "total_predicted_non_root_sections": 285,
+        "true_positives": 83,
+        "false_positives": 202,
+        "false_negatives": 7,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 89.16,
+        "section_precision": 29.12,
+        "section_recall": 92.22,
+        "section_f1": 44.27,
+        "clause_precision": 80.26,
+        "clause_recall": 100.0,
+        "clause_f1": 89.05,
+        "clause_excluded_toc": 9,
+        "level_correct": 83,
+        "page_correct": 74,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_001",
+            "pred_id": "sec_b587d7ab780a",
+            "match_score": 0.711
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_068",
+            "pred_id": "syn_2762c04d887a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_081",
+            "pred_id": "syn_6e7f66d38df8",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_002",
+            "pred_id": "sec_bbec3075308d",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_069",
+            "pred_id": "syn_7b2c0b7f8b15",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_082",
+            "pred_id": "syn_5759d2f759e8",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_003",
+            "pred_id": "sec_a6a8694799ca",
+            "match_score": 0.733
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_083",
+            "pred_id": "syn_0c6dc5f69abc",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_004",
+            "pred_id": "sec_f55ddf718579",
+            "match_score": 0.711
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_084",
+            "pred_id": "syn_de110fecf834",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_005",
+            "pred_id": "sec_14c5d83ec946",
+            "match_score": 0.716
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_085",
+            "pred_id": "syn_56d95c3e1af2",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_006",
+            "pred_id": "sec_ce9a45461e5e",
+            "match_score": 0.693
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_086",
+            "pred_id": "sec_d7adf4bcae2e",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_007",
+            "pred_id": "sec_921af4b78381",
+            "match_score": 0.667
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_087",
+            "pred_id": "syn_c0325cb0075d",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_008",
+            "pred_id": "sec_ccffaffd681d",
+            "match_score": 0.711
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_088",
+            "pred_id": "syn_5d7e48bbaf52",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_089",
+            "pred_id": "syn_3d2bffc811d1",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_010",
+            "pred_id": "sec_042a2d8ee1ec",
+            "match_score": 0.733
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "icici_family_shield",
+      "status": "passed",
+      "total_predicted_sections": 204,
+      "total_predicted_clauses": 466,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 89,
+      "metrics": {
+        "total_gold_non_toc_sections": 89,
+        "total_gold_toc_sections": 0,
+        "total_predicted_non_root_sections": 203,
+        "true_positives": 74,
+        "false_positives": 129,
+        "false_negatives": 15,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 36.45,
+        "section_recall": 83.15,
+        "section_f1": 50.68,
+        "clause_precision": 72.97,
+        "clause_recall": 100.0,
+        "clause_f1": 84.38,
+        "clause_excluded_toc": 8,
+        "level_correct": 74,
+        "page_correct": 74,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "icici_family_shield_sec_003",
+            "pred_id": "syn_f5714eae7f6e",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_031",
+            "pred_id": "syn_9480aafd3b97",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_068",
+            "pred_id": "syn_11b69480d1fc",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_072",
+            "pred_id": "syn_448f4d17b033",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_079",
+            "pred_id": "syn_dbcc032738bc",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_082",
+            "pred_id": "syn_7297e9bbfeb9",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_004",
+            "pred_id": "sec_3b933436ce66",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_006",
+            "pred_id": "syn_256d433cd3dd",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_032",
+            "pred_id": "syn_55009635cb53",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_069",
+            "pred_id": "syn_3e587b489698",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_071",
+            "pred_id": "syn_519fcc9eeec6",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_073",
+            "pred_id": "syn_491a55ca7357",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_080",
+            "pred_id": "syn_1a7a324cd531",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_007",
+            "pred_id": "syn_236f1bf7c609",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_033",
+            "pred_id": "syn_bd5634eba311",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_070",
+            "pred_id": "syn_9ce7871ed4c2",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_074",
+            "pred_id": "syn_6843e87b6063",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_076",
+            "pred_id": "syn_a7a0e21196dc",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_084",
+            "pred_id": "syn_93615e6ba346",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_088",
+            "pred_id": "syn_2c71eb9a01e8",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "new_india_floater",
+      "status": "failed",
+      "total_predicted_sections": 225,
+      "total_predicted_clauses": 281,
+      "total_gold_sections": 81,
+      "total_gold_clauses": 91,
+      "metrics": {
+        "total_gold_non_toc_sections": 80,
+        "total_gold_toc_sections": 0,
+        "total_predicted_non_root_sections": 224,
+        "true_positives": 2,
+        "false_positives": 222,
+        "false_negatives": 78,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 0.89,
+        "section_recall": 2.5,
+        "section_f1": 1.32,
+        "clause_precision": 0.0,
+        "clause_recall": 0.0,
+        "clause_f1": 0.0,
+        "clause_excluded_toc": 2,
+        "level_correct": 2,
+        "page_correct": 2,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "new_india_floater_sec_004",
+            "pred_id": "sec_6db53db34a1e",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_005",
+            "pred_id": "sec_2cb563ae7c4d",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "clause_f1_ge_80": false,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "status": "passed",
+      "total_predicted_sections": 197,
+      "total_predicted_clauses": 218,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 89,
+      "metrics": {
+        "total_gold_non_toc_sections": 90,
+        "total_gold_toc_sections": 0,
+        "total_predicted_non_root_sections": 196,
+        "true_positives": 58,
+        "false_positives": 138,
+        "false_negatives": 32,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 29.59,
+        "section_recall": 64.44,
+        "section_f1": 40.56,
+        "clause_precision": 79.66,
+        "clause_recall": 100.0,
+        "clause_f1": 88.68,
+        "clause_excluded_toc": 0,
+        "level_correct": 58,
+        "page_correct": 58,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "star_medi_classic_accident_sec_022",
+            "pred_id": "sec_5ef0c903b93a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_026",
+            "pred_id": "syn_d00488c262f2",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_047",
+            "pred_id": "syn_9528d700c32e",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_066",
+            "pred_id": "syn_99104867b7aa",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_068",
+            "pred_id": "syn_c09a60ff8d12",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_071",
+            "pred_id": "syn_467cf7e221b7",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_074",
+            "pred_id": "sec_973332c6681c",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_084",
+            "pred_id": "syn_1e4af95b3aef",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_024",
+            "pred_id": "sec_1784fba38e9a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_027",
+            "pred_id": "syn_e2d3a9ffbb8b",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_048",
+            "pred_id": "syn_864eb58cc33a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_067",
+            "pred_id": "syn_cac79567392f",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_069",
+            "pred_id": "syn_7e37fb8d062a",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_075",
+            "pred_id": "syn_6b529e18da92",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_085",
+            "pred_id": "syn_e9254cc19bf7",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_087",
+            "pred_id": "syn_52ee5f42eb4c",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_029",
+            "pred_id": "sec_2cdd13bf4af6",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_046",
+            "pred_id": "syn_fd0e727845f4",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_077",
+            "pred_id": "syn_a311d0bbc6d0",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_089",
+            "pred_id": "syn_8e04567eee63",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    }
+  ],
+  "passed": false,
+  "failures": [
+    "care_health_care_plus",
+    "new_india_floater"
+  ],
+  "notes": "DSE-006 Section Tree eval with page-aware compact-text matching. TOC sections excluded from hard gates. Gates: section_tree_accuracy >= 85%, clause_f1 >= 80%, missed_critical_sections == 0."
+}

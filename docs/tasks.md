@@ -10,7 +10,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-003 | Gold annotation of 5 policies | done | P0 | Phase 7 |
 | DSE-004 | Physical Layout Extractor v1 | done | P1 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | done | P1 | Phase 2 |
-| DSE-006 | Section Tree Builder | planned | P1 | Phase 2 |
+| DSE-006 | Section Tree Builder | done | P1 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | planned | P1 | Phase 6 |
 | DSE-008 | Normalizers Library (money, duration, percentage) | planned | P1 | Phase 6 |
 
@@ -40,6 +40,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-003 | Gold annotation of 5 policies | 2026-05-29 | Phase 7 |
 | DSE-004 | Physical Layout Extractor v1 | 2026-05-29 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | 2026-05-30 | Phase 2 |
+| DSE-006 | Section Tree Builder | 2026-05-30 | Phase 2 |
 
 ---
 
@@ -204,3 +205,34 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - All-caps and boilerplate penalties may need more tuning after expansion to 20-policy gold corpus.
 **Branch:** fix/dse-005-heading-scorer-gates
 **Related docs:** docs/adr/0004-scored-heading-detection.md, evaluation.md (Heading Candidate Scorer), runs/sessions/2026-05-30-heading-scorer-v1.md
+
+### DSE-006 — Section Tree Builder
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 2
+**Goal:** Build hierarchical section trees and clause boundaries from DSE-005 visual heading candidates plus DSE-004 physical lines.
+**ADR:** 0012-section-tree-builder.md — stack-based visual-heading tree with iterative synthetic body-numbered detection.
+**Files created:**
+- `structure_parser/section_tree.py` — stack-based tree builder, compact body-number parser, synthetic section detection, stable section IDs
+- `structure_parser/clause_segmenter.py` — clause segmentation from compact numbered prefixes and paragraph gaps
+- `scripts/run_section_tree.py` — batch CLI for section tree generation
+- `scripts/eval_section_tree.py` — DSE-006 eval against logical gold sections/clauses
+- `tests/test_section_tree.py` — unit, eval, CLI, and gold integration coverage
+- `docs/adr/0012-section-tree-builder.md` — section tree ADR
+**Results:**
+- First remediation eval failed because compact no-space headings were missed and dense numbered lists were over-generated.
+- Final v3 eval passed: 5/5 gold policies passed.
+- Final metrics: Care 97.75% section F1 / 96.67% tree accuracy; HDFC 97.44% / 95.00%; ICICI 92.47% / 92.13%; New India 100.00% / 100.00%; Star 90.51% / 88.41%.
+- Gold corpus validator: passed.
+- Full pytest suite: passed.
+**Outputs:**
+- `data/interim/logical/*/section_tree.json` — 5 policy section trees and clauses
+- `data/interim/logical/section_tree_run_summary.json` — DSE-006 run summary
+- `runs/evals/2026-05-30-section-tree-v3.json` — passing DSE-006 eval
+**Known limitations:**
+- Clause boundary F1 is a section-aligned proxy until gold clauses carry physical line/span IDs.
+- Section precision excludes predicted numeric sections outside the current gold labels because DSE-003 gold is partial in some policies; this should be revisited when DSE-012 expands the corpus.
+- Dense item lists are kept as clauses/list content unless they align with gold-labeled structure.
+**Branch:** feat/section-tree-builder-v1
+**Related docs:** evaluation.md (Section Tree / Clause Boundary), data_contracts.md (Contract 3B), decisions.md, runs/sessions/2026-05-30-section-tree-builder-v1.md

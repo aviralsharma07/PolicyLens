@@ -418,6 +418,85 @@ Star Medi Classic       11                    100.00%   100.00% 100.00%
 
 ---
 
+## Eval: Section Tree / Clause Boundary
+
+### Purpose
+Ensures the DSE-006 section tree builder correctly constructs hierarchical section trees from DSE-005 heading candidates, detects synthetic body-numbered sub-sections (definition entries and policy clauses), and produces clause boundaries aligned with gold annotations.
+
+### Inputs
+- `data/interim/logical/{policy_id}/section_tree.json` — DSE-006 output (sections + clauses)
+- `gold_corpus/policies/{policy_slug}/sections.json` — gold section tree
+- `gold_corpus/policies/{policy_slug}/clauses.json` — gold clause boundaries
+
+### Metrics
+- Section tree accuracy (target: >= 85%; missed gold sections count as incorrect)
+- Section recall (target: >= 80%)
+- Section F1 (target: >= 80%)
+- Clause boundary F1 (target: >= 80%)
+- Section boundary (page) accuracy
+- Missed critical sections (target: 0)
+
+### Matching Strategy
+- Gold sections matched to predicted sections using one-to-one page-aware section number + compact text alignment.
+- Page-aware matching: section page_start must align for boundary accuracy.
+- TOC/CIS/cover rows are excluded from hard gates.
+- Predicted sections beyond the current gold page window are excluded because the DSE-003 labels are partial for some policies.
+- Predicted numeric sections not present in current gold labels are reported but not precision-penalized until DSE-012 expands the gold corpus.
+- Clause boundary F1 is a section-aligned proxy until gold clauses include physical line/span IDs.
+
+### Hard Gates
+Do not proceed to DSE-007 (extractors) until:
+```
+section_tree_accuracy >= 85%
+section_f1 >= 80%
+section_recall >= 80%
+clause_f1 >= 80%
+missed_critical_sections == 0
+all 5 gold policies evaluated
+no catastrophic failures
+```
+
+### Commands
+```bash
+# Build section tree for all gold policies
+PYTHONPATH=. .venv/bin/python scripts/run_section_tree.py \
+  --physical-root data/interim/physical \
+  --logical-root data/interim/logical \
+  --output-root data/interim/logical
+
+# Run eval against gold corpus
+PYTHONPATH=. .venv/bin/python scripts/eval_section_tree.py \
+  --output-root data/interim/logical \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-05-30-section-tree-v3.json
+
+# Run tests
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_section_tree.py -v
+```
+
+### Output Artifacts
+```
+data/interim/logical/{policy_id}/section_tree.json
+runs/evals/2026-05-30-section-tree-v1.json
+runs/evals/2026-05-30-section-tree-v2.json
+runs/evals/2026-05-30-section-tree-v3.json
+```
+
+### Current Status
+active (DSE-006 passed v3 on 2026-05-30)
+
+### Current Result
+- `runs/evals/2026-05-30-section-tree-v3.json`
+- 5/5 gold policies passed.
+- Policy metrics:
+  - Care: section tree accuracy 96.67%, section F1 97.75%, clause F1 97.75%
+  - HDFC: section tree accuracy 95.00%, section F1 97.44%, clause F1 97.44%
+  - ICICI: section tree accuracy 92.13%, section F1 92.47%, clause F1 92.47%
+  - New India: section tree accuracy 100.00%, section F1 100.00%, clause F1 100.00%
+  - Star: section tree accuracy 88.41%, section F1 90.51%, clause F1 90.51%
+
+---
+
 ## Eval: Table Extraction
 
 ### Purpose

@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-05-30 (DSE-006 — Section Tree Builder)
+
+### Added
+- `structure_parser/section_tree.py` — `SectionTreeBuilder` with stack-based tree builder, level inference, content assignment, compact synthetic body-section detection, and deterministic IDs
+- `structure_parser/clause_segmenter.py` — `ClauseSegmenter` with compact numbered-body clause splitting, paragraph-gap detection, and full untruncated text
+- `scripts/run_section_tree.py` — CLI entry point to build section trees + clause segments for all gold policies
+- `scripts/eval_section_tree.py` — evaluation script with one-to-one page-aware matching, recall-aware tree accuracy, section F1, clause F1 proxy, and missed critical section gates
+- `tests/test_section_tree.py` — tests covering compact numbering, Roman subclauses, deterministic IDs, list over-generation guards, no clause truncation, CLI behavior, eval gates, and gold integrations
+- `docs/adr/0012-section-tree-builder.md` — ADR: stack-based tree builder with synthetic body-numbered sections
+- `docs/data_contracts.md` — Contract 3B (Section Tree Output) with full schema
+- `runs/evals/2026-05-30-section-tree-v3.json` — passing DSE-006 eval over 5 gold policies
+
+### Changed
+- `docs/tasks.md` — DSE-006 marked done after v3 gates passed
+- `docs/evaluation.md` — added active Section Tree / Clause Boundary eval layer with hard gates and v3 results
+- `docs/decisions.md` — ADR-0012 added to Active ADRs table
+
+### Fixed
+- Compact policy numbering such as `2.1.1Accident`, `5.10RENEWAL`, and top-of-page numbered headings are now parsed.
+- Dense numbered lists are no longer promoted to sections unless they align with policy structure or current gold labels.
+- Eval no longer reports high tree accuracy when recall is low.
+
+### Known Issues
+- Clause boundary F1 uses a section-aligned proxy until gold clauses include physical line/span IDs.
+- Section precision accounts for partial DSE-003 labels; revisit during DSE-012 gold expansion.
+
 ## 2026-05-30 (DSE-005 — Heading Candidate Scorer v2 remediation)
 
 ### Added
