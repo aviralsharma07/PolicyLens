@@ -7,7 +7,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-002 | UIN Matcher v1 | done | P0 | Phase 0 |
-| DSE-003 | Gold annotation of 5 policies | planned | P0 | Phase -1/7 |
+| DSE-003 | Gold annotation of 5 policies | done | P0 | Phase 7 |
 | DSE-004 | Physical Layout Extractor v1 | planned | P1 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | planned | P1 | Phase 2 |
 | DSE-006 | Section Tree Builder | planned | P1 | Phase 2 |
@@ -37,6 +37,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-000 | Project scaffold + documentation setup | 2026-05-29 | Infrastructure |
 | DSE-001 | Corpus Lockdown | 2026-05-29 | Phase -1 |
 | DSE-002 | UIN Matcher v1 | 2026-05-29 | Phase 0 |
+| DSE-003 | Gold annotation of 5 policies | 2026-05-29 | Phase 7 |
 
 ---
 
@@ -89,18 +90,42 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 ### DSE-003 — Gold Annotation of 5 Policies
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Phase 7
 **Goal:** Manually annotate 5 diverse policy PDFs with section trees, clause boundaries, tables, and critical facts.
 **Policies:**
 1. New India Assurance — Floater MediClaim
-2. Star Health — POS Accident Care Individual
+2. Star Health — Medi Classic Accident Care Individual
 3. HDFC ERGO — Arogya Sanjeevani
 4. ICICI Lombard — Family Shield
-5. Care Health — Care Health Care
+5. Care Health — Care Plus
 **Acceptance criteria:**
 - Each policy has: metadata.json, sections.json, clauses.json, tables.json, facts.json
 - Every annotation has source page reference
 - Annotations are reproducible by a second person (annotation guide)
+- `scripts/validate_gold_corpus.py` passes
+- 100 fact annotations exist across the 20 priority concepts
+- Raw PDFs remain external read-only references under `policy_data/`
 **Branch:** gold/annotate-5-policies
+**Results:**
+- Policies: 5
+- Policy JSON files: 25
+- Sections: 445
+- Clauses: 453
+- Table regions: 26
+- Facts: 100
+- Fact statuses: 77 present, 3 explicitly_not_covered, 2 not_applicable, 18 not_found, 0 requires_manual_review
+- Docling coverage: all 5 policies now have readable markdown cross-check artifacts; Star and Care markdown was generated with OCR disabled and placeholder image export
+- Second pass: cross-checked New India, HDFC, and ICICI against available IBM Docling markdown and enriched table summaries
+- Third pass: precision review downgraded weak schedule-dependent facts to `requires_manual_review`
+- Fourth pass: re-ran structure/table/fact provenance checks for Star and Care using the generated Docling markdown
+- Fifth pass: applied source-PDF-only manual review patch for the 11 previously unresolved facts
+**Outputs:**
+- `gold_corpus/annotation_guide.md`
+- `gold_corpus/schemas/*.schema.json`
+- `gold_corpus/policies/*/{metadata,sections,clauses,tables,facts}.json`
+- `gold_corpus/docling_markdown/*.md`
+- `data/reports/gold_corpus_manual_review_11_facts_v1.md`
+- `scripts/validate_gold_corpus.py`
+**Related docs:** evaluation.md (Gold Corpus eval), open_questions.md (OQ-005)

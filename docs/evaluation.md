@@ -163,6 +163,90 @@ active
 
 ---
 
+## Eval: Gold Corpus
+
+### Purpose
+Creates the first manually reviewed ground-truth corpus used by downstream parser, table, and fact extraction evals. Prevents parser work from optimizing against unverified examples or chat-only assumptions.
+
+### Inputs
+- `gold_corpus/policies/*/metadata.json`
+- `gold_corpus/policies/*/sections.json`
+- `gold_corpus/policies/*/clauses.json`
+- `gold_corpus/policies/*/tables.json`
+- `gold_corpus/policies/*/facts.json`
+- Raw PDFs referenced by `source_pdf_path` under `policy_data/` (read-only)
+
+### Metrics
+- Policy folders
+- Required JSON files
+- Section annotations
+- Clause annotations
+- Table region annotations
+- Fact annotations
+- Fact status distribution
+- Evidence coverage for `present` and `explicitly_not_covered`
+- Docling markdown coverage
+
+### Hard Gates
+Do not proceed to DSE-004 physical parser eval work until:
+```
+5 policy folders exist
+25 policy JSON files exist
+100 fact annotations exist
+all page references are valid
+all present/explicitly_not_covered facts have evidence_text and evidence_page
+0 facts remain in requires_manual_review for the 5-policy gold v1 corpus
+all 5 policies have readable Docling markdown cross-check artifacts
+python3 scripts/validate_gold_corpus.py passes
+```
+
+### Commands
+```bash
+python3 scripts/validate_gold_corpus.py
+pytest tests/ --tb=short
+```
+
+### Output Artifacts
+```
+gold_corpus/
+runs/evals/2026-05-29-gold-corpus-v1.json
+```
+
+### Current Status
+active
+
+### 2026-05-29 Result
+
+```json
+{
+  "eval_name": "gold-corpus-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-003",
+  "input_manifest": "active_policy_wordings_v1.json + uin_match_report_v1.json",
+  "metrics": {
+    "policies": 5,
+    "json_files": 25,
+    "sections": 445,
+    "clauses": 453,
+    "tables": 26,
+    "facts": 100,
+    "docling_markdown_files": 5,
+    "generated_docling_markdown_files": 2,
+    "status_counts": {
+      "present": 77,
+      "explicitly_not_covered": 3,
+      "not_applicable": 2,
+      "not_found": 18
+    }
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "Gold v1 uses text-layer review, Docling markdown cross-checks for all 5 policies, generated no-OCR Docling markdown for Star and Care, third-pass precision review, and source-PDF-only manual review patch for the 11 previously unresolved facts. Bbox and table cell coordinates remain null until DSE-004/DSE-009."
+}
+```
+
+---
+
 ## Eval: Physical Parser
 
 ### Purpose

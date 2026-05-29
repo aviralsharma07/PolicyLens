@@ -9,6 +9,8 @@ debug/
 # Track intentional manifests + history
 !data/manifests/
 !data/manifests/*.json
+!data/reports/
+!data/reports/*.md
 !runs/
 !runs/sessions/
 !runs/sessions/*.md

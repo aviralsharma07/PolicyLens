@@ -1,0 +1,104 @@
+{
+  "policy_id": "star_medi_classic_accident_care_individual",
+  "policy_slug": "star_medi_classic_accident",
+  "insurer": "Star Health",
+  "plan_name": "Medi Classic Accident Care Individual Insurance Policy",
+  "uin": "SHAHLIP18029V031718",
+  "uin_base": "SHAHLIP18029",
+  "lifecycle_product_name": "Medi Classic Accident Care Individual Insurance Policy",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+  "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+  "page_count": 28,
+  "source_domain": "website",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex manual text-layer review",
+  "human_reviewer": "Avi",
+  "annotation_date": "2026-05-29",
+  "pipeline_run_id": "gold_manual_v1",
+  "annotation_status": "gold_v1_manual_review_resolved",
+  "difficulty_notes": "Hybrid health plus accident wording with product tables, two coverage sections, and accident-specific benefits.",
+  "counts": {
+    "sections": 91,
+    "clauses": 89,
+    "tables": 6,
+    "facts": 20
+  },
+  "known_limitations": [
+    "No raw PDF copied into repository; source_pdf_path points to read-only policy_data.",
+    "BBox and cell coordinates are intentionally null until DSE-004/DSE-009 physical/table parsers exist.",
+    "Annotations are deep text-layer gold v1 labels but remain draft until human reviewer accepts them.",
+    "Generated Docling markdown is a secondary cross-check artifact, not the authoritative gold label source."
+  ],
+  "annotation_passes": [
+    {
+      "pass_id": "pass_2_structure_docling_crosscheck",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "existing IBM Docling markdown where available"
+      ],
+      "changes": "Cross-checked headings, added source-tool provenance, enriched table headers/rows where policy text supports them."
+    },
+    {
+      "pass_id": "pass_3_fact_precision_review",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "manual concept evidence audit",
+        "precision-first status review"
+      ],
+      "changes": "Downgraded weak schedule-dependent or definition-only fact labels to requires_manual_review; added fact quality notes."
+    },
+    {
+      "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+      "date": "2026-05-29",
+      "tools": [
+        "IBM Docling 2.69.1 markdown export",
+        "--no-ocr",
+        "--tables",
+        "--image-export-mode placeholder",
+        "manual secondary cross-check"
+      ],
+      "changes": "Generated missing Docling markdown for this policy and re-ran the structure/table/fact provenance cross-check against that markdown. No raw PDF was copied or modified."
+    },
+    {
+      "pass_id": "pass_5_human_style_manual_review_patch",
+      "date": "2026-05-29",
+      "tools": [
+        "source PDF text layer",
+        "pdftotext targeted page review",
+        "IBM Docling markdown cross-check where available",
+        "manual reviewer report"
+      ],
+      "changes": "Applied source-PDF-only manual review decisions for the 11 facts previously marked requires_manual_review."
+    }
+  ],
+  "docling_markdown_available": true,
+  "docling_markdown_path": "gold_corpus/docling_markdown/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.md",
+  "docling_heading_count": 55,
+  "docling_markdown_table_line_count": 518,
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_found": 4,
+    "present": 15
+  },
+  "docling_generation": {
+    "date": "2026-05-29",
+    "tool": "IBM Docling 2.69.1",
+    "command_options": [
+      "--from pdf",
+      "--to md",
+      "--no-ocr",
+      "--tables",
+      "--image-export-mode placeholder"
+    ],
+    "output_policy": "Generated markdown stored in repo; raw PDF remains read-only external input."
+  },
+  "manual_review_report": "data/reports/gold_corpus_manual_review_11_facts_v1.md"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "array",
+  "items_required": [
+    "table_id",
+    "page",
+    "table_type",
+    "source_page_refs",
+    "annotation_status"
+  ]
+}

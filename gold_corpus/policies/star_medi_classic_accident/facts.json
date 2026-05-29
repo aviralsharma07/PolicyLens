@@ -1,0 +1,1039 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 6,
+    "evidence_text": "atment, including drug Experimental therapy, which is not based on established medical practice in India, treatment experimental or unproven. 3. EXCLUSIONS The Company shall not be liable to make any payments under this policy in respect of any expenses what so ever incurred by the insured person in connection with or in respect of: 1. Pre Existing Diseases as deﬁned in the policy until 48 consecutive months of continuous coverage have elapsed, since inception of the ﬁrst policy with any Indian Insurer. However the limit of the Company's liability in respect of claim for pre-existing diseases under such portability shall be limited to the sum insured under ﬁrst policy",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 6,
+    "evidence_text": "inception of the ﬁrst policy with any Indian Insurer. However the limit of the Company's liability in respect of claim for pre-existing diseases under such portability shall be limited to the sum insured under ﬁrst policy with any Indian Insurance Company. 2. Any disease contracted by the insured person during the ﬁrst 30 days from the commencement date of the policy. This exclusion shall not apply in case of the insured person having been covered under any health insurance policy (Individual or Group insurance policy) with any of the Indian Insurance companies for a continuous period of preceding 12 months without a break. 3. During the First two Years of continuous",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 6,
+    "evidence_text": "person during the ﬁrst 30 days from the commencement date of the policy. This exclusion shall not apply in case of the insured person having been covered under any health insurance policy (Individual or Group insurance policy) with any of the Indian Insurance companies for a continuous period of preceding 12 months without a break. 3. During the First two Years of continuous operation of insurance cover, a. The expenses for treatment of cataract, glaucoma, retinal detachment/ macular degeneration, prolapse of intervertebral disc (other than caused by accident), varicose veins and varicose ulcers, benign prostatic hypertrophy, deviated nasal septum, sinusitis, tonsil",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "type": "policy_schedule_or_plan_limit"
+    },
+    "normalized_value_json": {
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 3,
+    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 3 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. Loss Sharing Section I In case of a claim, this policy requires you to share the following costs: Expenses exceeding the followings Sublimits 1. Room/ICU charges beyond 2. For the following speciﬁed diseases: 3. Deductible 4. Co-Payment 1.0(A) Nil Nil 3 (21) Loss Sharing Section II In case of a claim, this policy required you to share the costs No cost sharing applicable for this policy Renewal Condition (Section I) Lifelong renewal subject to payment of renew",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "type": "policy_schedule_or_plan_limit"
+    },
+    "normalized_value_json": {
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 3,
+    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 3 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. Loss Sharing Section I In case of a claim, this policy requires you to share the following costs: Expenses exceeding the followings Sublimits 1. Room/ICU charges beyond 2. For the following speciﬁed diseases: 3. Deductible 4. Co-Payment 1.0(A) Nil Nil 3 (21) Loss Sharing Section II In case of a claim, this policy required you to share the costs No cost sharing applicable for this policy Renewal Condition (Section I) Lifelong renewal subject to payment of renew",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "type": "age_based",
+      "percentage": 10,
+      "condition": "entry age beyond 60 years"
+    },
+    "normalized_value_json": {
+      "percentage": 10
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 7,
+    "evidence_text": "etic Resonance Therapy and such other similar therapies. 19. Stem cell implantation and / or therapy 20. Expenses incurred for treatment of diseases/illness/accidental injuries by system of medicines other than allopathic shall be restricted to 25% of the sum insured subject to a maximum of Rs 25000/- during entire policy period. 21. 10% of each and every claim amount for insured persons beyond 60 years at entry level and renewals thereafter 22. Other expenses as detailed elsewhere in the policy. 4. CONDITIONS: 1. The premium payable under this policy shall be payable in advance. No receipt of premium shall be valid except on the ofﬁcial form of the company signed",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "applies": true,
+      "amount": null,
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "deductible_status": "present_schedule_dependent",
+      "amount": null
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "benefit_scope": "claim_event_spanning_two_policy_periods"
+    },
+    "condition_json": {
+      "amount_not_stated_in_wording": true,
+      "supporting_summary_page": 3
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 8,
+    "evidence_text": "If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two policy periods, including the deductibles for each policy period.",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: deductible is present but no numeric amount is safely extractable from the wording.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown",
+      "pdftotext_targeted_page_review"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source",
+    "additional_evidence": [
+      {
+        "page": 3,
+        "text": "For the following specified diseases: Nil 3. Deductible 3 (21) 4. Co-Payment No cost sharing"
+      }
+    ]
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "increase_percent_per_claim_free_year": 5,
+      "maximum_percent": 25
+    },
+    "normalized_value_json": {
+      "increase_percent": 5,
+      "maximum_percent": 25
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 8,
+    "evidence_text": "In other words no protection is available between the policy expiry date and the date of payment of premium for renewal. In the event of this policy being withdrawn, the insured will be accommodated in any other equivalent health insurance policy offered by the Company at the relevant point of time 9. Bonus: The insured person will be eligible for Bonus calculated at 5% of the basic sum insured for every claim free year subject to a maximum of 25% .Such Bonus will be available on that part of the basic sum insured which is continuously renewed without any break. In the event of a claim, the Bonus will be reduced by 5% of the basic sum insured. However the basic sum i",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": {
+      "type": "automatic",
+      "percent_of_basic_sum_insured": 200,
+      "frequency": "once during policy period"
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered",
+      "percentage": 200
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 9,
+    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 9 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. 12. Automatic restoration of sum insured There shall be automatic restoration of the Basic Sum Insured by 200%, once during the policy period, immediately upon exhaustion of the limit of coverage which has otherwise been deﬁned. It is made clear that such restored sum insured can be utilized only for illness /disease directly or remotely u",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "explicitly_not_covered",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 2,
+    "evidence_text": "c Home Convalescence: The company will pay Rs 500/- for each completed day subject to a maximum of 15 days per occurrence and 60 days per policy period towards engaging one attendant at residence after discharge from hospital. Major exclusions Section I 1. Any hospital admission primarily for investigation diagnostic purpose 2. Pregnancy, infertility 3. treatment outside India 4. Circumcision, sex change surgery, cosmetic surgery & plastic surgery 5. Refractive error correction, hearing impairment correction, corrective & cosmetic dental surgeries 6. Substance abuse, self-inﬂicted injuries, STDs and HIV/AIDS 7. Hazardous sports, war, terrorism, civil war",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained explicitly_not_covered because policy text contains exclusion evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "amount": 750,
+      "currency": "INR",
+      "scope": "health section"
+    },
+    "normalized_value_json": {
+      "amount_inr": 750
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 4,
+    "evidence_text": "drugs, diagnostic materials and X-ray, diagnostic imaging modalities, dialysis, chemotherapy, radiotherapy, cost of pacemaker, stent, similar expenses. With regard to coronary stenting, the company will pay such amount up to the extent of cost of bare metal stent/drug eluting cobalt-chromium stent/drug eluting stainless steel stent. D) Emergency ambulance charges up-to a sum of Rs. 750/- per hospitalization and overall limit of Rs. 1,500/- per policy period for transportation of the insured person by private ambulance service when this is needed for medical reasons to go to hospital for treatment, provided however there is an admissible claim under the policy. E) Rele",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 8,
+    "evidence_text": "5% of the basic sum insured for every claim free year subject to a maximum of 25% .Such Bonus will be available on that part of the basic sum insured which is continuously renewed without any break. In the event of a claim, the Bonus will be reduced by 5% of the basic sum insured. However the basic sum insured will not be reduced. 10. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisﬁed with the terms and conditions, the insured may seek cancellation of the policy and in such an event the Company shall allow refund of pre",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 8,
+    "evidence_text": "Company for enhanced sum insured then the waiting period as applicable to a fresh policy will apply to additional sum insured as if a separate policy has been issued for the difference. In other words the enhanced sum insured will not be available for an illness, disease, injury already contracted under the preceding policy periods. A grace period of 30 days from the date of expiry of the policy is available for renewal. If renewal is made within this 30 days period the continuity of beneﬁts will be allowed. However the actual period of cover will start only from the date of payment of premium. In other words no protection is available between the policy expiry date",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "renewable"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 8,
+    "evidence_text": "ke any payment under the policy in respect of any claim if information furnished at the time of proposal is found to be incorrect or false or such claim is in any manner fraudulent or supported by any fraudulent means or device, misrepresentation whether by the Insured Person or by any other person acting on his behalf. 8. Renewal: The policy will be renewed except on grounds of misrepresentation / fraud committed, non-disclosure of material facts as declared in the proposal form. If the policy is to be renewed or ported from other Indian Insurance Company for enhanced sum insured then the waiting period as applicable to a fresh policy will apply to additional sum i",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "section_i_event_notice": {
+        "hours_from_occurrence": 24
+      },
+      "section_i_claim_filing": {
+        "days_from_discharge": 15
+      },
+      "section_ii_event_intimation": {
+        "days_from_happening": 30
+      },
+      "section_ii_benefit_submission": {
+        "months_after_treatment_completion_or_death_transport_or_burial": 1
+      }
+    },
+    "normalized_value_json": {
+      "section_i_event_notice": {
+        "hours_from_occurrence": 24
+      },
+      "section_i_claim_filing": {
+        "days_from_discharge": 15
+      },
+      "section_ii_event_intimation": {
+        "days_from_happening": 30
+      },
+      "section_ii_benefit_submission": {
+        "days_equivalent": 30,
+        "trigger": "completion_of_treatment_or_transport_of_mortal_remains_or_burial"
+      }
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "claim_stage": "intimation_and_submission",
+      "sections": [
+        "Section I",
+        "Section II"
+      ]
+    },
+    "condition_json": {
+      "time_limit_relaxation_on_merits": true
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 7,
+    "evidence_text": "Upon the happening of any event, which may give rise to a claim under this policy, notice with full particulars shall be sent to the Company within 24 hours from the date of occurrence of the event. Claim must be filed within 15 days from the date of discharge from the Hospital.",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: replaced incomplete single 15-day value with scoped Section I and Section II timelines; page 14 supports the 30-day Section II timeline.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown",
+      "pdftotext_targeted_page_review"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source",
+    "additional_evidence": [
+      {
+        "page": 14,
+        "text": "Intimation about an event or occurrence that may give rise to a claim under this policy must be given within 30 days of its happening. Claims for insurance benefits must be submitted to the Company not later than one (1) month after the completion of the treatment or after transportation of the mortal remains/burial in the event of Death."
+      }
+    ]
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 7,
+      "trigger": "receipt_of_all_required_documents"
+    },
+    "normalized_value_json": {
+      "days": 7,
+      "trigger": "receipt_of_all_required_documents"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "claim_stage": "claim_settlement"
+    },
+    "condition_json": {
+      "documents_required_by_company_received": true
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 15,
+    "evidence_text": "Benefits payable under this policy will be paid within 7 days from the time of receipt of all documents the Company requires.",
+    "source_document": {
+      "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "uin": "SHAHLIP18029V031718"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: settlement timeline is explicit and evidence-backed.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown",
+      "pdftotext_targeted_page_review"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  }
+]

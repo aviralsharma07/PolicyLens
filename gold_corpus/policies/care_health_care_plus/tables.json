@@ -1,0 +1,153 @@
+[
+  {
+    "table_id": "care_health_care_plus_table_001",
+    "page": 4,
+    "bbox": null,
+    "table_type": "waiting_period",
+    "headers": [
+      "Waiting period type",
+      "Duration"
+    ],
+    "rows": [
+      [
+        "PED",
+        "48 months"
+      ],
+      [
+        "Initial",
+        "30 days"
+      ],
+      [
+        "Specific waiting",
+        "24 months"
+      ],
+      [
+        "Maternity/New Born optional",
+        "24 months"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      4
+    ],
+    "evidence_text": "ate care by a medical practitioner to prevent death or serious long term impairment of the insured Person’s health. 2.1.17 Grace Period means the specified period of time immediately following the premium due date during which payment can be made to r enew or continue a Policy in force without loss of continuity benefits such as waiting periods and coverage of Pre -existing Diseases. Coverage is not available for the period for which no premium is received. 2.1.18 Hospital (not applicable for Overseas Travel Insurance) means any institution established for in-patient care and day care treatment of illness and/or injuries and which has been registered as a",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "care_health_care_plus_table_002",
+    "page": 12,
+    "bbox": null,
+    "table_type": "room_rent",
+    "headers": [
+      "Variant",
+      "Limit"
+    ],
+    "rows": [
+      [
+        "Base schedule",
+        "Policy Schedule"
+      ],
+      [
+        "Room Rent Modification",
+        "1% SI per day to Single Private AC Room"
+      ],
+      [
+        "ICU Modification",
+        "2% SI per day to no limit"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      12
+    ],
+    "evidence_text": "Care Plus – Policy Terms and Conditions 12 of 47 Care Health Insurance Limited UIN: CHIHLIP22047V012122 the Company is limited to 1% of the Sum Insured per day of Hospitalization. Any amount accrued under “No Claim Bonus Protect” or “Inflation Shield”, shall not be considered under this “Room Rent” limit. iv. The nomenclature of Room categories may vary from one hospital to the other. Hence, the final consideration will be as per the definition of the Rooms mentioned in the Policy. b) Intensive Care Unit Charges (ICU Charges): The Policy Schedule will specify the Limit of ICU Charges applicable for the Insured",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "care_health_care_plus_table_003",
+    "page": 1,
+    "bbox": null,
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": "nces to any statutory enactment include subsequent changes to the same and vice versa. The sentence construction and wordings in the Policy documents should be taken in its true sense and should not be taken in a way so as to take advantage of the Company by filing a claim which deviates fr om the purpose of Insurance. In return for premium paid, the Company will pay the Insured in case a valid claim is made: In consideration of the premium paid by the Policy Holder, subject to the terms & conditions contained herein, the Company agrees to pa y/indemnify the Insured Person(s), the amount of such expenses that are reasonably and necessarily incurred up to the limit",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "care_health_care_plus_table_004",
+    "page": 13,
+    "bbox": null,
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": "Health Insurance Limited UIN: CHIHLIP22047V012122 not be liable to make payment for any Pre -hospitalization Medical Expenses that were incurred before the Policy Start Date; and (ii) Under Post-hospitalization Medical Expenses, for a period of 90 days immediately after the Insured Person’s date of discharge from the Hospital and claim documents to be submitted within 30 days after completion of 90 days f rom the date of discharge from Hospital. (iii) If the provisions of Clause 6.1.7(d)(Payment terms) is applicable to a Claim, then: a) The date of admission to Hospital for the purpose of this Benefit shall be the date of the first admission to the Hospita",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "care_health_care_plus_table_005",
+    "page": 57,
+    "bbox": null,
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      57
+    ],
+    "evidence_text": "Care Plus – Annexure III to Policy Terms & Conditions 1 of 2 Care Health Insurance Limited UIN: CHIHLIP22047V012122 Annexure III –List of Hospitals where Co-Payment of 20% is not applicable under Optional Benefit “Smart Select” Note: The below is a Non-exhaustive list of Network Hospitals under Smart Select optional cover. Please check the latest & complete list of Network Ho spitals on https://www.careinsurance.com/smart-select-network-locator.html Hospital Na",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  }
+]

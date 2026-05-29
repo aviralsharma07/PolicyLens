@@ -1,0 +1,11 @@
+{
+  "type": "array",
+  "items_required": [
+    "clause_id",
+    "section_id",
+    "page_start",
+    "page_end",
+    "raw_text",
+    "source_page_refs"
+  ]
+}

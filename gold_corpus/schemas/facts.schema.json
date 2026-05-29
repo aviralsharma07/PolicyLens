@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items_required": [
+    "concept",
+    "value_json",
+    "normalized_value_json",
+    "fact_status",
+    "scope_json",
+    "condition_json",
+    "extraction_method",
+    "confidence",
+    "evidence_span_id",
+    "pipeline_run_id",
+    "evidence_page",
+    "evidence_text",
+    "source_document"
+  ]
+}

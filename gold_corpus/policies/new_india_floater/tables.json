@@ -1,0 +1,125 @@
+[
+  {
+    "table_id": "new_india_floater_table_001",
+    "page": 6,
+    "bbox": null,
+    "table_type": "waiting_period",
+    "headers": [
+      "Waiting period type",
+      "Duration"
+    ],
+    "rows": [
+      [
+        "Pre-existing diseases",
+        "48 months"
+      ],
+      [
+        "First thirty days",
+        "30 days"
+      ],
+      [
+        "Specific listed conditions",
+        "24/48 months"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      6
+    ],
+    "evidence_text": "immediate care by a medical practitioner to prevent death or serious long-term impairment of the Insured Person\u2019s health. 2.18 GRACE PERIOD means specified period of time immediately following the premium due d ate during which a payment can be made to renew or continue the Policy in force without loss of continuity benefits such as waiting period and coverage of pre -existing diseases. Coverage is not available for the period for which no premium is received. 2.19 HOSPITAL means any institution established for Inpatient Care and Day Care Treatment of Illness or Injury and which has been registered as a Hospital with the local authorities under the Clinical Esta",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "new_india_floater_table_002",
+    "page": 9,
+    "bbox": null,
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": "ccount the nature of the Illness / Injury involved. 2.44 RENEWAL means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods. 2.45 ROOM RENT means the amount charged by a hospital towards Room and Boarding expenses and shall include the associated medical expenses. 2.46 SUB-LIMIT means a cost sharing requirement under this policy in which We would not be liable to pay any amount in excess of the pre-defined limit 2.47 SUM INSURED means the pre-defined limit speci",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "new_india_floater_table_003",
+    "page": 25,
+    "bbox": null,
+    "table_type": "premium",
+    "headers": [
+      "Premium data"
+    ],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": "ct of any increase in Sum Insured, exclusion 4.1 , 4.2 and 4.3would apply to the additional Sum Insured from the date of such increase. 5.12 CANCELLATION CLAUSE: The policy shall be null and void, and no benefits shall be payable in case of Fraud, misrepresentation, misdescription or nondisclosure of any material fact / particular . Premium paid shall also stand forfeited. We may at any time cancel the Policy on non-cooperation by You by sending fifteen days\u2019 notice in writing by Registered A/D to You at the address stated in the Policy. Even if there are several insured persons, notice will be sent to You. We shall allow refund of premium, if no claim has been",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "new_india_floater_table_004",
+    "page": 23,
+    "bbox": null,
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      23
+    ],
+    "evidence_text": "Pathological tests / pathological. iv. Surgeon's certificate stating nature of operation performed and Surgeons\u2019 bill and receipt. v. Attending Doctor's/ Consultant's/ Specialist's / Anesthetist\u2019s bill and receipt, and certificate regarding diagnosis. d. In case of Post-Hospitalisation treatment (limited to sixty days), submit all claim documents within 7 days after completion of such treatment. e. Provide TPA with authorization to obtain medical and other records from any Hospital, Laboratory or other agency. Note: The above stipulations are not intended merel y to prejudice Your claims, but their compliance is of utmost importance and necessity for Us to",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "new_india_floater_table_005",
+    "page": 2,
+    "bbox": null,
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      2
+    ],
+    "evidence_text": "term, when the premium due for renewal on a given policy is not paid on or before the premium renewal date or within 30 days thereof. 2.8 CASHLESS FACILITY means a facility extended by Us to You where the payments, of the costs of treatment undergone by You in accordance with the policy terms and conditions, are directly made to the Network provider by Us to the extent of pre-authorization approved.",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  }
+]

@@ -1,0 +1,1751 @@
+[
+  {
+    "section_id": "icici_family_shield_sec_000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 60,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": null,
+    "annotation_status": "manual_container",
+    "notes": "Synthetic root for complete section hierarchy.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_001",
+    "section_number": null,
+    "title": "FAMILY SHIELD",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "FAMILY SHIELD",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_002",
+    "section_number": "PART II",
+    "title": "OF THE POLICY SCHEDULE",
+    "level": 0,
+    "parent_id": "icici_family_shield_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "PART II OF THE POLICY SCHEDULE",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_003",
+    "section_number": "1",
+    "title": "PREAMBLE",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. PREAMBLE",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_004",
+    "section_number": "2",
+    "title": "DEFINITIONS",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. DEFINITIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_005",
+    "section_number": "1",
+    "title": "Accident means sudden, unforeseen and involuntary event caused by external, visibl e and violent",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. Accident means sudden, unforeseen and involuntary event caused by external, visibl e and violent",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_006",
+    "section_number": "2",
+    "title": "Cashless facility means a facility extended by the insurer to the insured where the payments, of the",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. Cashless facility means a facility extended by the insurer to the insured where the payments, of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_007",
+    "section_number": "3",
+    "title": "Condition Precedent means a policy term or condition upon which the Insurer's liability under the policy",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "3. Condition Precedent means a policy term or condition upon which the Insurer's liability under the policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_008",
+    "section_number": "4",
+    "title": "Deductible means a cost sharing requirement under a health insurance policy that provides that the",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "4. Deductible means a cost sharing requirement under a health insurance policy that provides that the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_009",
+    "section_number": "5",
+    "title": "Disclosure to Information Norm means that the policy shall be void and all premium paid thereon shall",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "5. Disclosure to Information Norm means that the policy shall be void and all premium paid thereon shall",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_010",
+    "section_number": "6",
+    "title": "Emergency Care means management for an illness or injury which results in symptoms which occur",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "6. Emergency Care means management for an illness or injury which results in symptoms which occur",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_011",
+    "section_number": "7",
+    "title": "Grace Period means the specified period of time immediately fol lowing the premium due date during",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "7. Grace Period means the specified period of time immediately fol lowing the premium due date during",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_012",
+    "section_number": "8",
+    "title": "Hospital means any institution established for in-patient care and day care treatment of illness and/or",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "8. Hospital means any institution established for in-patient care and day care treatment of illness and/or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_013",
+    "section_number": "9",
+    "title": "Hospitalization means admission in a Hospital for a minimum period of 24 consecutive \u2018In-patient Care\u2019",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "9. Hospitalization means admission in a Hospital for a minimum period of 24 consecutive \u2018In-patient Care\u2019",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_014",
+    "section_number": "10",
+    "title": "Illness means a sickness or disease or pathological condition leading to the impairment of normal",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "10. Illness means a sickness or disease or pathological condition leading to the impairment of normal",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_015",
+    "section_number": "11",
+    "title": "Injury means accidental physical bodily harm excluding illness or disease solely and directly caused by",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "11. Injury means accidental physical bodily harm excluding illness or disease solely and directly caused by",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_016",
+    "section_number": "12",
+    "title": "Medical Advice means any consultation or advice from a Medical Practitioner including the issuance of",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "12. Medical Advice means any consultation or advice from a Medical Practitioner including the issuance of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_017",
+    "section_number": "13",
+    "title": "Medical Expenses means those expenses that an Insured Person has necessarily and actually incurred",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "13. Medical Expenses means those expenses that an Insured Person has necessarily and actually incurred",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_018",
+    "section_number": "14",
+    "title": "Medical Practitioner is a person who holds a valid registration from Medical Council of any State or",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "14. Medical Practitioner is a person who holds a valid registration from Medical Council of any State or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_019",
+    "section_number": "15",
+    "title": "Migration means, the right accorded to health insurance policyholders (including all members under",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "15. Migration means, the right accorded to health insurance policyholders (including all members under",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_020",
+    "section_number": "16",
+    "title": "Medically Necessary Treatment means any treatment, tests, medication, or stay in hospital or part of",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "16. Medically Necessary Treatment means any treatment, tests, medication, or stay in hospital or part of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_021",
+    "section_number": "17",
+    "title": "Network Provider means Hospitals or health care providers enlisted by an insurer, TPA or jointly by an",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "17. Network Provider means Hospitals or health care providers enlisted by an insurer, TPA or jointly by an",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_022",
+    "section_number": "18",
+    "title": "Notification of Claim means the process of intimating a claim to the insurer or TPA through any of the",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "18. Notification of Claim means the process of intimating a claim to the insurer or TPA through any of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_023",
+    "section_number": "19",
+    "title": "Pre Existing Disease means any condition, ailment, injury or disease:",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "19. Pre Existing Disease means any condition, ailment, injury or disease:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_024",
+    "section_number": "20",
+    "title": "Portability means the right accorded to an individual health insu rance policyholder (including all",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "20. Portability means the right accorded to an individual health insu rance policyholder (including all",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_025",
+    "section_number": "22",
+    "title": "Post-hospitalization Medical Expenses means medical expenses incurred during pre-defined number",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "22. Post-hospitalization Medical Expenses means medical expenses incurred during pre-defined number",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_026",
+    "section_number": "23",
+    "title": "Pre-hospitalization Medical Expenses means medical expenses incurred during predefined number",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "23. Pre-hospitalization Medical Expenses means medical expenses incurred during predefined number",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_027",
+    "section_number": "24",
+    "title": "Reasonable and Customary Charges means the charges for services or supplies, which are the",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "24. Reasonable and Customary Charges means the charges for services or supplies, which are the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_028",
+    "section_number": "25",
+    "title": "Renewal means the terms on which the contract of insurance can be renewed on mutual consent with",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "25. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_029",
+    "section_number": "26",
+    "title": "Surgery or Surgical Procedure means manual and/or operative procedure(s) required for treatment of",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "26. Surgery or Surgical Procedure means manual and/or operative procedure(s) required for treatment of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_030",
+    "section_number": "27",
+    "title": "Unproven/Experimental treatment means the treatment including drug experimental therapy which is",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "27. Unproven/Experimental treatment means the treatment including drug experimental therapy which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_031",
+    "section_number": "1",
+    "title": "Adventure Sport means sports/activities including but not limited to Sky Diving, Bungee Jumping,",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "1. Adventure Sport means sports/activities including but not limited to Sky Diving, Bungee Jumping,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_032",
+    "section_number": "2",
+    "title": "Age means the completed years on last birthday as per the English calendar calculated on the day of",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2. Age means the completed years on last birthday as per the English calendar calculated on the day of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_033",
+    "section_number": "3",
+    "title": "Air Ambulance means a specially equipped aircraft, typically a helicopter, which is equipped with life",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3. Air Ambulance means a specially equipped aircraft, typically a helicopter, which is equipped with life",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_034",
+    "section_number": "4",
+    "title": "Ambulance Charges means transportation costs incurred by the insured person towards availing",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "4. Ambulance Charges means transportation costs incurred by the insured person towards availing",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_035",
+    "section_number": "5",
+    "title": "Assault means any unlawful use of force inflicted by an individual(s) upon an Insured Person that is a",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "5. Assault means any unlawful use of force inflicted by an individual(s) upon an Insured Person that is a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_036",
+    "section_number": "6",
+    "title": "Break in policy means the period of gap that occurs at the end of the existing policy term, when the",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "6. Break in policy means the period of gap that occurs at the end of the existing policy term, when the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_037",
+    "section_number": "7",
+    "title": "Child means dependent child/children including adopted and step child/children of the Insured Person",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "7. Child means dependent child/children including adopted and step child/children of the Insured Person",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_038",
+    "section_number": "8",
+    "title": "Coma means a state of unconsciousness with no reaction or response to external stimuli or internal",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "8. Coma means a state of unconsciousness with no reaction or response to external stimuli or internal",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_039",
+    "section_number": "9",
+    "title": "Common Carrier shall mean any commercial public airline, railway, bus transport, or water borne vessel",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "9. Common Carrier shall mean any commercial public airline, railway, bus transport, or water borne vessel",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_040",
+    "section_number": "10",
+    "title": "EMI or EMI Amount means and includes the amount of monthly payment required to repay the principal",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "10. EMI or EMI Amount means and includes the amount of monthly payment required to repay the principal",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_041",
+    "section_number": "11",
+    "title": "Family Member means an Insured Person's legally wedded spouse, children, ward, step or adopted",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "11. Family Member means an Insured Person's legally wedded spouse, children, ward, step or adopted",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_042",
+    "section_number": "12",
+    "title": "Franchise means a per Insured event provision in the policy whereby the insurer will not pay unless",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "12. Franchise means a per Insured event provision in the policy whereby the insurer will not pay unless",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_043",
+    "section_number": "13",
+    "title": "Healthcare Service Provider Agreement means an agreement prescribing the terms and conditions of",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "13. Healthcare Service Provider Agreement means an agreement prescribing the terms and conditions of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_044",
+    "section_number": "14",
+    "title": "Immediate Family Member means spouse, children, step or adopted children, brother(s), sister(s) and",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "14. Immediate Family Member means spouse, children, step or adopted children, brother(s), sister(s) and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_045",
+    "section_number": "15",
+    "title": "Intensive Care Unit: means an identified section, ward or wing of a hospital which is under the constant",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "15. Intensive Care Unit: means an identified section, ward or wing of a hospital which is under the constant",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_046",
+    "section_number": "16",
+    "title": "Insured Event means any event specifically mentioned in the Policy Certificate as cove red under this",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "16. Insured Event means any event specifically mentioned in the Policy Certificate as cove red under this",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_047",
+    "section_number": "17",
+    "title": "Insured Person(s) means the persons named as insured persons in the Policy Schedule who are",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "17. Insured Person(s) means the persons named as insured persons in the Policy Schedule who are",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_048",
+    "section_number": "18",
+    "title": "Loan means the sum of money lent at an interest or otherwise to the Insured Person by any",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "18. Loan means the sum of money lent at an interest or otherwise to the Insured Person by any",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_049",
+    "section_number": "19",
+    "title": "Nominee means the person(s) nominated by the Insured Person to receive the Benefits payable under",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "19. Nominee means the person(s) nominated by the Insured Person to receive the Benefits payable under",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_050",
+    "section_number": "20",
+    "title": "Permanent Total Disablement means any of the following:",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "20. Permanent Total Disablement means any of the following:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_051",
+    "section_number": "22",
+    "title": "Policy Period means the period commencing from the Policy Start Date, Time and ending at the Policy",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "22. Policy Period means the period commencing from the Policy Start Date, Time and ending at the Policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_052",
+    "section_number": "23",
+    "title": "Period of Cover means the period specified in the Policy Certificate during which the insured Person is",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "23. Period of Cover means the period specified in the Policy Certificate during which the insured Person is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_053",
+    "section_number": "24",
+    "title": "Policy Schedule means the Policy Schedule attached to and forming part of the Policy.",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "24. Policy Schedule means the Policy Schedule attached to and forming part of the Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_054",
+    "section_number": "25",
+    "title": "Professional Sports means a sport which would remunerate a player in excess of 50% of his or her",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "25. Professional Sports means a sport which would remunerate a player in excess of 50% of his or her",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_055",
+    "section_number": "26",
+    "title": "Proposal and Declaration Form means any initial or subsequent declaration made by the policyholder",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "26. Proposal and Declaration Form means any initial or subsequent declaration made by the policyholder",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_056",
+    "section_number": "27",
+    "title": "Service Provider means any person, organization, institution, company providing services in individual",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "27. Service Provider means any person, organization, institution, company providing services in individual",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_057",
+    "section_number": "28",
+    "title": "Sum Insured means the amount specified in the Policy Certificate against a Benefit or set of Benefits",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "28. Sum Insured means the amount specified in the Policy Certificate against a Benefit or set of Benefits",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_058",
+    "section_number": "29",
+    "title": "Waiting Period means a time -bound exclusion period related to condition(s) specified in the Policy",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "29. Waiting Period means a time -bound exclusion period related to condition(s) specified in the Policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_059",
+    "section_number": "31",
+    "title": "You / Your means person or the entity named as the policyholder in the Policy Schedule and who is",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "31. You / Your means person or the entity named as the policyholder in the Policy Schedule and who is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_060",
+    "section_number": "II",
+    "title": "BENEFITS COVERED UNDER THE POLICY",
+    "level": 2,
+    "parent_id": "icici_family_shield_sec_059",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "II. BENEFITS COVERED UNDER THE POLICY",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_061",
+    "section_number": "SECTION A",
+    "title": "SPECIFIC INFECTIOUS DISEASES BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "SECTION A: SPECIFIC INFECTIOUS DISEASES BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_062",
+    "section_number": "SECTION A.1",
+    "title": "SPECIFIC VECTOR BORNE DISEASE BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "SECTION A.1: SPECIFIC VECTOR BORNE DISEASE BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_063",
+    "section_number": "SECTION A.2",
+    "title": "RABIES AND TETANUS BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "SECTION A.2: RABIES AND TETANUS BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_064",
+    "section_number": "SECTION A.3",
+    "title": "SPECIFIC GASTRO INTESTINAL INFECTIONS BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "SECTION A.3: SPECIFIC GASTRO INTESTINAL INFECTIONS BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_065",
+    "section_number": "SECTION A.4",
+    "title": "SPECIFIC VIRAL INFECTIONS BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "SECTION A.4: SPECIFIC VIRAL INFECTIONS BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_066",
+    "section_number": "SECTION A.5",
+    "title": "SPECIFIC NERVOUS SYSTEM INFECTIONS BENEFIT",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 11,
+    "page_end": 12,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "SECTION A.5: SPECIFIC NERVOUS SYSTEM INFECTIONS BENEFIT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_067",
+    "section_number": null,
+    "title": "EXCLUSIONS AND LIMITATIONS APPLICABLE TO SECTION B",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "EXCLUSIONS AND LIMITATIONS APPLICABLE TO SECTION B",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_068",
+    "section_number": "1",
+    "title": "Expenses related to the treatment of any illness within the initial waiting period shall be excluded",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "1. Expenses related to the treatment of any illness within the initial waiting period shall be excluded",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_069",
+    "section_number": "2",
+    "title": "This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "2. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_070",
+    "section_number": "3",
+    "title": "The within referred waiting period shall be applicable to the en hanced sum insured in the event",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "3. The within referred waiting period shall be applicable to the en hanced sum insured in the event",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_071",
+    "section_number": "2",
+    "title": "Pre-existing Diseases (Code \u2013 Excl 01) (Unless specifically covered and mentioned in the policy",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "2. Pre-existing Diseases (Code \u2013 Excl 01) (Unless specifically covered and mentioned in the policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_072",
+    "section_number": "1",
+    "title": "Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "1. Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_073",
+    "section_number": "2",
+    "title": "In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_074",
+    "section_number": "3",
+    "title": "If the Insured Person is continuously covered without any break as defined under the portability",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "3. If the Insured Person is continuously covered without any break as defined under the portability",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_075",
+    "section_number": "4",
+    "title": "Coverage under the policy after the expiry of 24 months for any pre -existing disease is subject to",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "4. Coverage under the policy after the expiry of 24 months for any pre -existing disease is subject to",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_076",
+    "section_number": "3",
+    "title": "Maternity (Code \u2013 Excl 18)",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "3. Maternity (Code \u2013 Excl 18)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_077",
+    "section_number": "4",
+    "title": "Cosmetic or plastic surgery (Code \u2013 Excl 08) - Expenses for cosmetic or plastic surgery or any",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "4. Cosmetic or plastic surgery (Code \u2013 Excl 08) - Expenses for cosmetic or plastic surgery or any",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_078",
+    "section_number": "5",
+    "title": "Investigation & Evaluation (Code \u2013 Excl 04) -",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "5. Investigation & Evaluation (Code \u2013 Excl 04) -",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_079",
+    "section_number": "1",
+    "title": "Expenses related to any admission primarily for diagnostics and evaluation purposes only are",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Expenses related to any admission primarily for diagnostics and evaluation purposes only are",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_080",
+    "section_number": "2",
+    "title": "Any diagnostic expenses which are not related or not incidental to the current diagnosis and",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. Any diagnostic expenses which are not related or not incidental to the current diagnosis and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_081",
+    "section_number": "6",
+    "title": "Obesity/Weight Control (Code \u2013 Excl 06) - Expenses related to the surgical treatment of obesity that",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "6. Obesity/Weight Control (Code \u2013 Excl 06) - Expenses related to the surgical treatment of obesity that",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_082",
+    "section_number": "1",
+    "title": "Surgery to be conducted is upon the advice of the Doctor",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Surgery to be conducted is upon the advice of the Doctor",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_083",
+    "section_number": "2",
+    "title": "The surgery/Procedure conducted should be supported by clinical protocols",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. The surgery/Procedure conducted should be supported by clinical protocols",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_084",
+    "section_number": "3",
+    "title": "The member has to be 18 years of age or older and",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "3. The member has to be 18 years of age or older and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "icici_family_shield_sec_085",
+    "section_number": "4",
+    "title": "Body Mass Index (BMI);",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "4. Body Mass Index (BMI);",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_086",
+    "section_number": "1",
+    "title": "Obesity-related cardiomyopathy",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Obesity-related cardiomyopathy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_087",
+    "section_number": "2",
+    "title": "Coronary heart disease",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "2. Coronary heart disease",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_088",
+    "section_number": "3",
+    "title": "Severe Sleep Apnea",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "3. Severe Sleep Apnea",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_089",
+    "section_number": "4",
+    "title": "Uncontrolled Type2 Diabetes",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "4. Uncontrolled Type2 Diabetes",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "icici_family_shield_sec_090",
+    "section_number": "7",
+    "title": "Rest Cure, rehabilitation and respite care (Code \u2013 Excl 05) - Expenses related to any admission",
+    "level": 1,
+    "parent_id": "icici_family_shield_sec_002",
+    "page_start": 15,
+    "page_end": 59,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "7. Rest Cure, rehabilitation and respite care (Code \u2013 Excl 05) - Expenses related to any admission",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  }
+]

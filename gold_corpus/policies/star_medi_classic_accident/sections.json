@@ -1,0 +1,1822 @@
+[
+  {
+    "section_id": "star_medi_classic_accident_sec_000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 28,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": null,
+    "annotation_status": "manual_container",
+    "notes": "Synthetic root for complete section hierarchy.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_applicable_document_root"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_001",
+    "section_number": "1.0",
+    "title": "(A) (B) & (C)",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1.0 (A) (B) & (C)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_002",
+    "section_number": "1",
+    "title": "Any hospital admission primarily for investigation diagnostic purpose",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "1. Any hospital admission primarily for investigation diagnostic purpose",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_003",
+    "section_number": "2",
+    "title": "Pregnancy, infertility",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2. Pregnancy, infertility",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_004",
+    "section_number": "4",
+    "title": "Circumcision, sex change surgery, cosmetic surgery & plastic surgery",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "4. Circumcision, sex change surgery, cosmetic surgery & plastic surgery",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_005",
+    "section_number": "5",
+    "title": "Refractive error correction, hearing impairment correction, corrective & cosmetic dental surgeries",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "5. Refractive error correction, hearing impairment correction, corrective & cosmetic dental surgeries",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_006",
+    "section_number": "6",
+    "title": "Substance abuse, self-inﬂicted injuries, STDs and HIV/AIDS",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "6. Substance abuse, self-inﬂicted injuries, STDs and HIV/AIDS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_007",
+    "section_number": "7",
+    "title": "Hazardous sports, war, terrorism, civil war or breach of law",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "7. Hazardous sports, war, terrorism, civil war or breach of law",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_008",
+    "section_number": "8",
+    "title": "Any kind of service charge, surcharge, admission fees, registration fees levied by the hospital.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "8. Any kind of service charge, surcharge, admission fees, registration fees levied by the hospital.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_009",
+    "section_number": "I",
+    "title": "All Pre-existing conditions VI (3)",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_008",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "I. All Pre-existing conditions VI (3)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_010",
+    "section_number": "II",
+    "title": "Intentional self injury and use of intoxicating drugs/alcohol/HIV or AIDS HIV VI (4), VI (5)",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_008",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "II. Intentional self injury and use of intoxicating drugs/alcohol/HIV or AIDS HIV VI (4), VI (5)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_011",
+    "section_number": "III",
+    "title": "War, Biological nuclear and chemical terrorism and nuclear perils VI (7), VI (9.D)",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_008",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "III. War, Biological nuclear and chemical terrorism and nuclear perils VI (7), VI (9.D)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_012",
+    "section_number": "IV",
+    "title": "Engaging in Hazardous sports/activities VI (11)",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_008",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "IV. Engaging in Hazardous sports/activities VI (11)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_013",
+    "section_number": "1.0",
+    "title": "(A),(B) & C",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_008",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "1.0 (A),(B) & C",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_014",
+    "section_number": "1",
+    "title": "Room/ICU charges beyond",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "1. Room/ICU charges beyond",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_015",
+    "section_number": "2",
+    "title": "For the following speciﬁed diseases:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2. For the following speciﬁed diseases:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_016",
+    "section_number": "3",
+    "title": "Deductible",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3. Deductible",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_017",
+    "section_number": "4",
+    "title": "Co-Payment",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "4. Co-Payment",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_018",
+    "section_number": null,
+    "title": "VIII (11)",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "VIII (11)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_019",
+    "section_number": null,
+    "title": "VIII (8)",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "VIII (8)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_020",
+    "section_number": null,
+    "title": "(VII (2))",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "(VII (2))",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_021",
+    "section_number": null,
+    "title": "(VIII (3))",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "(VIII (3))",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_022",
+    "section_number": "1.0",
+    "title": "COVERAGE",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_021",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "1.0. COVERAGE",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_023",
+    "section_number": null,
+    "title": "MEDI CLASSIC ACCIDENT CARE (INDIVIDUAL) INSURANCE POLICY",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "MEDI CLASSIC ACCIDENT CARE (INDIVIDUAL) INSURANCE POLICY",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_024",
+    "section_number": "2",
+    "title": "DEFINITIONS",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2. DEFINITIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_025",
+    "section_number": "3",
+    "title": "EXCLUSIONS",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3. EXCLUSIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_026",
+    "section_number": "1",
+    "title": "Pre Existing Diseases as deﬁned in the policy until 48 consecutive months of continuous coverage have elapsed, since inception of the ﬁrst",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "1. Pre Existing Diseases as deﬁned in the policy until 48 consecutive months of continuous coverage have elapsed, since inception of the ﬁrst",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_027",
+    "section_number": "2",
+    "title": "Any disease contracted by the insured person during the ﬁrst 30 days from the commencement date of the policy. This exclusion shall not apply",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2. Any disease contracted by the insured person during the ﬁrst 30 days from the commencement date of the policy. This exclusion shall not apply",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_028",
+    "section_number": "3",
+    "title": "During the First two Years of continuous operation of insurance cover,",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3. During the First two Years of continuous operation of insurance cover,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_029",
+    "section_number": "4",
+    "title": "Injury/disease directly or indirectly caused by or arising from or attributable to war, invasion, act of foreign enemy, warlike operations (whether",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "4. Injury/disease directly or indirectly caused by or arising from or attributable to war, invasion, act of foreign enemy, warlike operations (whether",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_030",
+    "section_number": "5",
+    "title": "Injury or disease directly or indirectly caused by or contributed to by nuclear weapons/materials",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "5. Injury or disease directly or indirectly caused by or contributed to by nuclear weapons/materials",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_031",
+    "section_number": "7",
+    "title": "Cost of spectacles and contact lens, hearing aids including cochlear implants, walkers, crutches wheel chairs including CPAP, CAPD, infusion",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "7. Cost of spectacles and contact lens, hearing aids including cochlear implants, walkers, crutches wheel chairs including CPAP, CAPD, infusion",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_032",
+    "section_number": "8",
+    "title": "Dental treatment or surgery unless necessitated due to accidental injuries and requiring hospitalization.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "8. Dental treatment or surgery unless necessitated due to accidental injuries and requiring hospitalization.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_033",
+    "section_number": "9",
+    "title": "Convalescence, general debility, run-down condition or rest cure, nutritional deﬁciency states, psychiatric, mental and behavioral disorders,",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "9. Convalescence, general debility, run-down condition or rest cure, nutritional deﬁciency states, psychiatric, mental and behavioral disorders,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_034",
+    "section_number": "10",
+    "title": "All expenses arising out of any condition directly or indirectly caused due to or associated with Human T-cell Lympho Trophic Virus type III",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "10. All expenses arising out of any condition directly or indirectly caused due to or associated with Human T-cell Lympho Trophic Virus type III",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_035",
+    "section_number": "11",
+    "title": "Charges incurred at Hospital or Nursing Home primarily for diagnostic, X-ray or laboratory examinations not consistent with or incidental to the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "11. Charges incurred at Hospital or Nursing Home primarily for diagnostic, X-ray or laboratory examinations not consistent with or incidental to the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_036",
+    "section_number": "12",
+    "title": "Expenses on vitamins and tonics unless forming part of treatment for injury or disease as certiﬁed by the attending physician.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "12. Expenses on vitamins and tonics unless forming part of treatment for injury or disease as certiﬁed by the attending physician.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_037",
+    "section_number": "13",
+    "title": "Treatment arising from or traceable to pregnancy, childbirth, miscarriage, abortion or complications of any of these (other than ectopic gestation",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "13. Treatment arising from or traceable to pregnancy, childbirth, miscarriage, abortion or complications of any of these (other than ectopic gestation",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_038",
+    "section_number": "14",
+    "title": "Naturopathy treatment, unconventional, untested/unproven therapies",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "14. Naturopathy treatment, unconventional, untested/unproven therapies",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_039",
+    "section_number": "15",
+    "title": "Hospital registration charges, admission charges, record charges, telephone charges and such other charges.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "15. Hospital registration charges, admission charges, record charges, telephone charges and such other charges.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_040",
+    "section_number": "16",
+    "title": "Expenses incurred on Lasik Laser or Refractive Error Correction, treatment of eye disorders requiring intra-vitreal injections.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "16. Expenses incurred on Lasik Laser or Refractive Error Correction, treatment of eye disorders requiring intra-vitreal injections.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_041",
+    "section_number": "17",
+    "title": "Expenses incurred on weight control services including surgical procedures for treatment of obesity and medical treatment for weight control",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "17. Expenses incurred on weight control services including surgical procedures for treatment of obesity and medical treatment for weight control",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_042",
+    "section_number": "18",
+    "title": "Expenses incurred on Enhanced External Counter Pulsation therapy and related therapies and Rotational Field Quantum Magnetic",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "18. Expenses incurred on Enhanced External Counter Pulsation therapy and related therapies and Rotational Field Quantum Magnetic",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_043",
+    "section_number": "19",
+    "title": "Stem cell implantation and / or therapy",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "19. Stem cell implantation and / or therapy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_044",
+    "section_number": "20",
+    "title": "Expenses incurred for treatment of diseases/illness/accidental injuries by system of medicines other than allopathic shall be restricted to 25%",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "20. Expenses incurred for treatment of diseases/illness/accidental injuries by system of medicines other than allopathic shall be restricted to 25%",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_045",
+    "section_number": "22",
+    "title": "Other expenses as detailed elsewhere in the policy.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "22. Other expenses as detailed elsewhere in the policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_046",
+    "section_number": "4",
+    "title": "CONDITIONS:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "4. CONDITIONS:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_047",
+    "section_number": "1",
+    "title": "The premium payable under this policy shall be payable in advance. No receipt of premium shall be valid except on the ofﬁcial form of the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "1. The premium payable under this policy shall be payable in advance. No receipt of premium shall be valid except on the ofﬁcial form of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_048",
+    "section_number": "2",
+    "title": "Upon the happening of any event, which may give rise to a claim under this policy, notice with full particulars shall be sent to the Company",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2. Upon the happening of any event, which may give rise to a claim under this policy, notice with full particulars shall be sent to the Company",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_049",
+    "section_number": "3",
+    "title": "Claim must be ﬁled within 15 days from the date of discharge from the Hospital.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3. Claim must be ﬁled within 15 days from the date of discharge from the Hospital.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_050",
+    "section_number": "4",
+    "title": "The Insured Person shall obtain and furnish the Company with all original bills, receipts and other documents upon which a claim is based and",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "4. The Insured Person shall obtain and furnish the Company with all original bills, receipts and other documents upon which a claim is based and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_051",
+    "section_number": "5",
+    "title": "Any medical practitioner authorized by the company shall be allowed to examine the Insured Person/s in case of any alleged injury or",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "5. Any medical practitioner authorized by the company shall be allowed to examine the Insured Person/s in case of any alleged injury or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_052",
+    "section_number": "6",
+    "title": "If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "6. If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_053",
+    "section_number": "7",
+    "title": "The Company shall not be liable to make any payment under the policy in respect of any claim if information furnished at the time of proposal",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "7. The Company shall not be liable to make any payment under the policy in respect of any claim if information furnished at the time of proposal",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_054",
+    "section_number": "8",
+    "title": "Renewal: The policy will be renewed except on grounds of misrepresentation / fraud committed, non-disclosure of material facts as declared",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "8. Renewal: The policy will be renewed except on grounds of misrepresentation / fraud committed, non-disclosure of material facts as declared",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_055",
+    "section_number": "9",
+    "title": "Bonus: The insured person will be eligible for Bonus calculated at 5% of the basic sum insured for every claim free year subject to a maximum",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "9. Bonus: The insured person will be eligible for Bonus calculated at 5% of the basic sum insured for every claim free year subject to a maximum",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_056",
+    "section_number": "10",
+    "title": "Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "10. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_057",
+    "section_number": "11",
+    "title": "Portability: This policy is portable. If the insured is desirous of porting this policy to another Insurer towards renewal, application in the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "11. Portability: This policy is portable. If the insured is desirous of porting this policy to another Insurer towards renewal, application in the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_058",
+    "section_number": "12",
+    "title": "Automatic restoration of sum insured",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "12. Automatic restoration of sum insured",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_059",
+    "section_number": "13",
+    "title": "Cancellation:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "13. Cancellation:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_060",
+    "section_number": "14",
+    "title": "Automatic Termination: The insurance under this policy with respect to each relevant insured person policy shall terminate immediately on",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "14. Automatic Termination: The insurance under this policy with respect to each relevant insured person policy shall terminate immediately on",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_061",
+    "section_number": "16",
+    "title": "Package Charges: The Company’s liability in respect of package charges will be restricted to 80% of such amount. (Package charges refer",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "16. Package Charges: The Company’s liability in respect of package charges will be restricted to 80% of such amount. (Package charges refer",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_062",
+    "section_number": "17",
+    "title": "Special conditions applicable to Family Package Plan",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "17. Special conditions applicable to Family Package Plan",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_063",
+    "section_number": "18",
+    "title": "Important Note:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "18. Important Note:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_064",
+    "section_number": "I",
+    "title": "DEFINITIONS OF WORDS AND EXPRESSIONS",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_063",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "I. DEFINITIONS OF WORDS AND EXPRESSIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_065",
+    "section_number": "II",
+    "title": "SCOPE OF COVER",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_063",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "II. SCOPE OF COVER",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_066",
+    "section_number": "1",
+    "title": "Accidental Death of Insured Person : If following an Accident that causes death of the Insured Person within 12 Calendar months from the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "1. Accidental Death of Insured Person : If following an Accident that causes death of the Insured Person within 12 Calendar months from the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_067",
+    "section_number": "2",
+    "title": "Permanent disablement of the Insured Person : If following an Accident which caused permanent impairment of the Insured's mental or",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2. Permanent disablement of the Insured Person : If following an Accident which caused permanent impairment of the Insured's mental or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_068",
+    "section_number": "1",
+    "title": "Accidental Death of Insured Person: If following an Accident that causes death of the Insured Person within 12 Calendar months from the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "1. Accidental Death of Insured Person: If following an Accident that causes death of the Insured Person within 12 Calendar months from the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_069",
+    "section_number": "2",
+    "title": "Permanent disablement of the Insured Person: If following an Accident which caused permanent impairment of the Insured's mental or",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2. Permanent disablement of the Insured Person: If following an Accident which caused permanent impairment of the Insured's mental or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_070",
+    "section_number": "3",
+    "title": "Temporary Total Disablement: If at any time during the period of insurance the insured person/s shall sustain Grievous injury arising solely",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "3. Temporary Total Disablement: If at any time during the period of insurance the insured person/s shall sustain Grievous injury arising solely",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_071",
+    "section_number": "1",
+    "title": "If the Accident affects any physical or mental function, which was already impaired prior to the accident, a deduction as certiﬁed by a",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "1. If the Accident affects any physical or mental function, which was already impaired prior to the accident, a deduction as certiﬁed by a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_072",
+    "section_number": "2",
+    "title": "If the accident impairs a number of physical or mental functions, the degree of disablement given in the Table of Beneﬁts will be added together,",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2. If the accident impairs a number of physical or mental functions, the degree of disablement given in the Table of Beneﬁts will be added together,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_073",
+    "section_number": "3",
+    "title": "In case of Permanent Partial Disablement claim the Sum Insured under the policy will be reduced by the amount of admissible claim under the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "3. In case of Permanent Partial Disablement claim the Sum Insured under the policy will be reduced by the amount of admissible claim under the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_074",
+    "section_number": "1",
+    "title": "EDUCATIONAL GRANT:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "1. EDUCATIONAL GRANT:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_075",
+    "section_number": "2",
+    "title": "AMBULANCE CHARGES / TRANSPORTATION EXPENSES OF MORTAL REMAINS",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "2. AMBULANCE CHARGES / TRANSPORTATION EXPENSES OF MORTAL REMAINS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_076",
+    "section_number": "3",
+    "title": "TRAVEL EXPENSES FOR ONE RELATIVE Following an admissible claim under the policy towards Death of the Insured Person due to an",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "3. TRAVEL EXPENSES FOR ONE RELATIVE Following an admissible claim under the policy towards Death of the Insured Person due to an",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_077",
+    "section_number": "4",
+    "title": "VEHICLE AND/OR RESIDENCE MODIFICATION : The Company will pay upto 10% of Table B and Table C sum insured subject to a maximum",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4. VEHICLE AND/OR RESIDENCE MODIFICATION : The Company will pay upto 10% of Table B and Table C sum insured subject to a maximum",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_078",
+    "section_number": "5",
+    "title": "PURCHASE OF BLOOD : The Company will pay up to 5% of the sum insured under relevant table/tables opted subject to a maximum of",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "5. PURCHASE OF BLOOD : The Company will pay up to 5% of the sum insured under relevant table/tables opted subject to a maximum of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_079",
+    "section_number": "4",
+    "title": "In the event of Permanent Disablement, the Insured Person will be under obligation:",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4. In the event of Permanent Disablement, the Insured Person will be under obligation:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_080",
+    "section_number": "5",
+    "title": "Where a claim for 100% of the Capital Sum Insured (150% for Permanent Total Disablement) is admitted / admissible the coverage under the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "5. Where a claim for 100% of the Capital Sum Insured (150% for Permanent Total Disablement) is admitted / admissible the coverage under the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_081",
+    "section_number": "6",
+    "title": "Where a claim for less than 100% of the Sum Insured is admitted / admissible, the coverage under the policy will continue until expiry for the",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "6. Where a claim for less than 100% of the Sum Insured is admitted / admissible, the coverage under the policy will continue until expiry for the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_082",
+    "section_number": "III",
+    "title": "ADDITIONAL BENEFITS",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_081",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "III. ADDITIONAL BENEFITS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_083",
+    "section_number": "6",
+    "title": "TRANSPORTATION OF IMPORTED MEDICINES: The Company will pay upto 5% of Total sum insured subject to a maximum of Rs.20,000/-",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "6. TRANSPORTATION OF IMPORTED MEDICINES: The Company will pay upto 5% of Total sum insured subject to a maximum of Rs.20,000/-",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_084",
+    "section_number": "1",
+    "title": "Speciﬁcally opted for by paying additional premium,",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "1. Speciﬁcally opted for by paying additional premium,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_085",
+    "section_number": "2",
+    "title": "Shown in the Policy Schedule and",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "2. Shown in the Policy Schedule and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_086",
+    "section_number": "3",
+    "title": "There is an admissible claim under the policy.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "3. There is an admissible claim under the policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_087",
+    "section_number": "2",
+    "title": "Shown in the Policy Schedule",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "2. Shown in the Policy Schedule",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_088",
+    "section_number": "3",
+    "title": "The hospitalization is arising out of Accident.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "3. The hospitalization is arising out of Accident.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_089",
+    "section_number": "4",
+    "title": "There is an admissible claim under the policy.",
+    "level": 1,
+    "parent_id": "star_medi_classic_accident_sec_000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "4. There is an admissible claim under the policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "star_medi_classic_accident_sec_090",
+    "section_number": "IV",
+    "title": "OPTIONAL BENEFITS",
+    "level": 2,
+    "parent_id": "star_medi_classic_accident_sec_089",
+    "page_start": 13,
+    "page_end": 27,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "IV. OPTIONAL BENEFITS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  }
+]

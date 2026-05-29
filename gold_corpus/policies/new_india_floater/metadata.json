@@ -1,0 +1,78 @@
+{
+  "policy_id": "new_india_floater_mediclaim",
+  "policy_slug": "new_india_floater",
+  "insurer": "New India Assurance",
+  "plan_name": "New India Floater Mediclaim Policy",
+  "uin": "NIAHLIP21278V042021",
+  "uin_base": "NIAHLIP21278",
+  "lifecycle_product_name": "New India Floater Mediclaim Policy",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+  "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+  "page_count": 33,
+  "source_domain": "irdai",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex manual text-layer review",
+  "human_reviewer": "Avi",
+  "annotation_date": "2026-05-29",
+  "pipeline_run_id": "gold_manual_v1",
+  "annotation_status": "gold_v1_manual_review_resolved",
+  "difficulty_notes": "Public-sector IRDAI wording with long definitions, indemnity benefits, optional maternity, and detailed exclusions.",
+  "counts": {
+    "sections": 81,
+    "clauses": 91,
+    "tables": 5,
+    "facts": 20
+  },
+  "known_limitations": [
+    "No raw PDF copied into repository; source_pdf_path points to read-only policy_data.",
+    "BBox and cell coordinates are intentionally null until DSE-004/DSE-009 physical/table parsers exist.",
+    "Annotations are deep text-layer gold v1 labels but remain draft until human reviewer accepts them."
+  ],
+  "annotation_passes": [
+    {
+      "pass_id": "pass_2_structure_docling_crosscheck",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "existing IBM Docling markdown where available"
+      ],
+      "changes": "Cross-checked headings, added source-tool provenance, enriched table headers/rows where policy text supports them."
+    },
+    {
+      "pass_id": "pass_3_fact_precision_review",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "manual concept evidence audit",
+        "precision-first status review"
+      ],
+      "changes": "Downgraded weak schedule-dependent or definition-only fact labels to requires_manual_review; added fact quality notes."
+    },
+    {
+      "pass_id": "pass_5_human_style_manual_review_patch",
+      "date": "2026-05-29",
+      "tools": [
+        "source PDF text layer",
+        "pdftotext targeted page review",
+        "IBM Docling markdown cross-check where available",
+        "manual reviewer report"
+      ],
+      "changes": "Applied source-PDF-only manual review decisions for the 11 facts previously marked requires_manual_review."
+    }
+  ],
+  "docling_markdown_available": true,
+  "docling_markdown_path": "insurance-agent/data/docling_markdown/01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf.md",
+  "docling_heading_count": 89,
+  "docling_markdown_table_line_count": 306,
+  "fact_status_counts": {
+    "not_found": 3,
+    "present": 17
+  },
+  "manual_review_report": "data/reports/gold_corpus_manual_review_11_facts_v1.md"
+}

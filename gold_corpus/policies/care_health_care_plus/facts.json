@@ -1,0 +1,1059 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 28,
+    "evidence_text": "ade the eligibility of Room Rent / Room Category from ‘1% of SI per day’ to ‘Single Private AC Room’, similarly ICU Charges limit from ‘2% of SI per day’ to ‘No limit’ Note: This Optional Benefit is applicable only for Insured Person whose SI is less than 5Lakhs. 4. EXCLUSIONS 4.1. Standard Exclusions: (a) Waiting Periods: (i) Pre-Existing Diseases: Code- Excl01 a. Expenses related to the treatment of a pre -existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with insurer.",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 29,
+    "evidence_text": "ted by malignancy 10. Internal tumours, skin tumours, cysts, nodules, polyps including breast lumps (each of any kind) unless malignant 11. Kidney Stone / Ureteric Stone / Lithotripsy / Gall Bladder Stone 12. Myomectomy for fibroids 13. Varicose veins and varicose ulcers 14. Parkinson's or Alzheimer's disease or Dementia (iii) 30-day waiting period- Code- Excl03",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 38,
+    "evidence_text": "riod of 15 days would be given to pay the installment premium due for the policy ii. During such grace period, coverage will not be available from the due date of installment premium till the date of receipt of premium by Company iii. The insured person will get the accrued continuity benefit in respect of the \"Waiting Periods\", \"Specific Waiting Periods\" in the event of payment of premium within the stipulated grace Period iv. No interest will be charged lf the installment premium is not paid on due date. v. In case of installment premium due not received within the grace period, the policy will get cancelled vi. In the event of a claim, all subsequent premi",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "basis": "policy_schedule",
+      "variants": [
+        "1% of SI per day",
+        "single private AC room",
+        "no limit option"
+      ]
+    },
+    "normalized_value_json": {
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 28,
+    "evidence_text": "son or all Insured Persons (in case of Floater) as specified in the Policy Schedule , in accordance with C lause 6.1.6 and Company’s liability shall be restricted to the balance amount payable. The Co -payment shall be applic able to each and every claim for each Insured Person as defined in the Policy 3.2.7 Optional Benefit : Room Rent Modification Notwithstanding anything to the contrary in the Policy, by choosing this Optional Benefit, the Company agrees to upgrade the eligibility of Room Rent / Room Category from ‘1% of SI per day’ to ‘Single Private AC Room’, similarly ICU Charges limit from ‘2% of SI per day’ to ‘No limit’ Note: This Optional Benef",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "basis": "policy_schedule",
+      "variants": [
+        "2% of SI per day",
+        "no limit option"
+      ]
+    },
+    "normalized_value_json": {
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 28,
+    "evidence_text": "laim for each Insured Person as defined in the Policy 3.2.7 Optional Benefit : Room Rent Modification Notwithstanding anything to the contrary in the Policy, by choosing this Optional Benefit, the Company agrees to upgrade the eligibility of Room Rent / Room Category from ‘1% of SI per day’ to ‘Single Private AC Room’, similarly ICU Charges limit from ‘2% of SI per day’ to ‘No limit’ Note: This Optional Benefit is applicable only for Insured Person whose SI is less than 5Lakhs. 4. EXCLUSIONS 4.1. Standard Exclusions: (a) Waiting Periods: (i) Pre-Existing Diseases: Code- Excl01 a. Expenses related to the treatment of a pre -existing Disease (PED) and it",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "components": [
+        {
+          "scope": "smart_select_non_annexure_iii_hospital",
+          "percentage": 20
+        },
+        {
+          "scope": "age_61_plus_optional_copayment",
+          "percentage": null,
+          "schedule_dependent": true
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "components": [
+        {
+          "scope": "smart_select_non_annexure_iii_hospital",
+          "percentage": 20
+        },
+        {
+          "scope": "age_61_plus_optional_copayment",
+          "percentage": null,
+          "schedule_dependent": true
+        }
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefits",
+      "benefits": [
+        "Smart Select",
+        "Co-Payment Option"
+      ]
+    },
+    "condition_json": {
+      "smart_select": "20% when treatment is in hospitals other than Annexure III listed hospitals",
+      "age_61_plus": "as specified in Policy Schedule"
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 27,
+    "evidence_text": "If the Insured Person takes Medical Treatment in hospitals other than those listed in Annexure - III to the Policy Terms and Conditions, then the Policyholder/Insured Person shall bear a Co-Payment of 20% on each and every Claim arising in such regard, which will be in addition to any other co-payment (if any) applicable in the Policy.",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: co-payment is present with a concrete Smart Select 20% condition and an age 61+ schedule-dependent optional co-payment.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown",
+      "pdftotext_targeted_page_review"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source",
+    "additional_evidence": [
+      {
+        "page": 28,
+        "text": "Notwithstanding anything to the contrary in the Policy, it is hereby stated that on opting this optional Benefit, the Insured Person or eldest Insured Person (in case of floater) whose age is 61 years or above will bear a Co-payment, which applies to such Insured Person or all Insured Persons (in case of Floater) as specified in the Policy Schedule."
+      }
+    ]
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "applies_if_opted": true,
+      "amount": null,
+      "schedule_dependent": true,
+      "basis": "aggregate_per_policy_year"
+    },
+    "normalized_value_json": {
+      "deductible_status": "present_if_opted",
+      "amount": null,
+      "schedule_dependent": true,
+      "basis": "aggregate_per_policy_year"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefit",
+      "benefit": "Deductible Option"
+    },
+    "condition_json": {
+      "optional_benefit_opted": true,
+      "amount_source": "Policy Schedule"
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 27,
+    "evidence_text": "Deductible Option If this Optional Benefit is opted, then Policyholder is entitled for a discount on the Premium payable. The claim amount assessed by the Company for a particular claim shall be reduced by the Deductible as specified in the Policy Schedule and the Company shall be liable to make payment under the Policy for any Claim only when the Deductible on that Claim is exhausted.",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: deductible is present when optional benefit is opted; amount is Policy Schedule-dependent and basis is aggregate per Policy Year.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown",
+      "pdftotext_targeted_page_review"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source",
+    "additional_evidence": [
+      {
+        "page": 28,
+        "text": "The Deductible shall be applicable on an aggregate basis for all Claims made by the Insured Person in a Policy Year."
+      }
+    ]
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "maximum_percent": 200
+    },
+    "normalized_value_json": {
+      "maximum_percent": 200
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 17,
+    "evidence_text": "provider, prescriptions and medical report by the attending Medical Practitioner furnishing the name of the Insured Person and details of treatment rendered along with the statement confirm the necessity of air ambulance services. c) Documentary proof for expenses incurred towards availing Air Ambulance services. 3.1.11 Benefit : No Claim Bonus Protect: At the end of each Policy Year, the Company will enhance the Sum Insured by 50% flat, on a cumulative basis, as a Cumulative Bonus for each completed and continuous Policy Year, provided that no Claim has been paid by the Company or total claim amount payable does not exceed the 25% of the base Sum Insured in t",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": {
+      "type": "recharge"
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 16,
+    "evidence_text": "IN: CHIHLIP22047V012122 3.1.8 Benefit : Unlimited Automatic Recharge If a Claim is payable under the Policy, then the Company agrees to automatically make the re - instatement of up to the base Sum Insured unlimited times in a policy year which is valid for that Policy Year only, subject to the conditions specified below: (i) The Recharge shall be utilized only after the base Sum Insured, ‘Cumulative Bonus’, ‘Inflation Shield’ has been completely exhausted in that Policy Year. (ii) A Claim will be admissible under the Recharge only if the Claim is admissible under Benefit ‘Hospitalization Expenses’. (iii) Recharge amount can be utilized for same illness exce",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 16,
+    "evidence_text": "(vi) ‘Cumulative Bonus’ and ‘Inflation Shield’ shall not be considered while calculating ‘Unlimited Automatic Recharge’. (vii) Any unutilized Recharge cannot be carried forward to any subsequent Policy Year. (viii) If the Policy is issued on a Floater basis, then the Recharge will also be available only on Floater basis. 3.1.9 Benefit : AYUSH Treatments The Company will indemnify the Insured Person, through Cashless or Reimbursement Facility, up to the amount specified in the Policy Schedule, towards Medical Expenses incurred with respect to the Insured Person’s medical treatment undergone at any AYUSH Hospit als or health care facilities for any of the",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": {
+      "months": 24,
+      "benefit_type": "optional"
+    },
+    "normalized_value_json": {
+      "months": 24
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefit"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 25,
+    "evidence_text": "etwork as available on the Company’s website. 3.2 OPTIONAL BENEFITS: The Policy provides the following Optional Benefits which can be opted either at the inception of the policy or at the time of renewal . The Policy Schedule will specify the Optional Benefits that are in force for the Insured Persons. 3.2.1 Optional Benefit : Maternity and New Born Baby Cover The Company shall indemnify , through Cashless or Reimbursement Facility, for the Medical Expenses assoc iated with Hospitalization for the delivery of a child, up to amount specified against this Benefit in the Policy Schedule, subject to the conditions specified below: (a) The Company shall be li",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": {
+      "covered": true,
+      "benefit_type": "optional"
+    },
+    "normalized_value_json": {
+      "coverage_status": "conditional"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefit"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 25,
+    "evidence_text": "etwork as available on the Company’s website. 3.2 OPTIONAL BENEFITS: The Policy provides the following Optional Benefits which can be opted either at the inception of the policy or at the time of renewal . The Policy Schedule will specify the Optional Benefits that are in force for the Insured Persons. 3.2.1 Optional Benefit : Maternity and New Born Baby Cover The Company shall indemnify , through Cashless or Reimbursement Facility, for the Medical Expenses assoc iated with Hospitalization for the delivery of a child, up to amount specified against this Benefit in the Policy Schedule, subject to the conditions specified below: (a) The Company shall be li",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 13,
+    "evidence_text": "ii) Such Transportation is from the place of occurrence of Medical Emergency of the Insured person, to the nearest Hospital; and/or (iii) Such Transportation is from one Hospital to another Hospital for the purpose of providing better Medical aid to the Insured Person subject to treating Medical Practitioner certification. 3.1.4 Benefit : Organ Donor Cover The Company will indemnify the Insured Person, through Cashless or Reimbursement Facility, up to the amount specified against this Benefit in the Policy Schedule, for the Medical Expenses incurred in respect of the donor, for any organ transplant surgery during the Policy Year, subject to the conditions sp",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 13,
+    "evidence_text": "be the date of the first admission to the Hospital for the Illness deemed or Injury sustained to be Any One Illness; and b) The date of discharge from Hospital for the purpose of this Benefit shall be the last date of discharge from the Hospital in relation to the Illness deemed or Injury sustained to be Any One Illness. 3.1.3 Benefit : Ambulance Cover The Company will indemnify the Insured Person, through Cashless or Reimbursement Facility, up to the amount specified against this Benefit in the Policy Schedule, provided that the Medical Expenses so incurred are related to the Illness or Injury for which the Company has accepted the Insured Person’s Claim u",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15,
+      "distance_marketing_days": 30
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 39,
+    "evidence_text": "Care Plus – Policy Terms and Conditions 39 of 47 Care Health Insurance Limited UIN: CHIHLIP22047V012122 The Company, with prior approval of IRDA, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. 5.1.15 Free Look Period The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days (Thirty days in case of distance marketing) from date of receipt of the policy document to revi",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 37,
+    "evidence_text": "shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years. iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period v. No loading shall apply on renewals based on individual claims experience",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "renewable"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 37,
+    "evidence_text": "link: https://www.careinsurance.com/other-disclosures.html 5.1.10 Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, misrepresentation by the insured person. i. The Company shall endeavor to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii. Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years. iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed withi",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "hours": 48,
+      "filing_days": 30
+    },
+    "normalized_value_json": {
+      "hours": 48,
+      "filing_days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 45,
+    "evidence_text": "Care Plus – Policy Terms and Conditions 45 of 47 Care Health Insurance Limited UIN: CHIHLIP22047V012122 shall be notified with full particulars within 48 hours from the date of occurrence of event either at the Company’s call center or in writing. (ii) Claim mus t be filed within 30 days from the date of discharge from the hospital in case of hospitalization and actual date of loss in case of non-hospitalization Benefits. Note: 6.1.4 (i) and 6.1",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30,
+      "investigation_days": 45
+    },
+    "normalized_value_json": {
+      "days": 30,
+      "investigation_days": 45
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 22,
+    "evidence_text": "range, Insured Person earns 200 reward points - If the result of any one test is not within the normal range as specified in the lab report, Insured earns 150 reward points - If two or more test results are not within the normal range, Insured earns 100 reward points only Note: These tests reports should be submitted together and within 30 days from the date of undergoing such Health Check-Up. List of mandatory tests under Preventive Risk Assessment 1. Complete Haemogram Test 2. Blood Sugar (Fasting Blood Sugar (FBS) + Postprandial (PP) [or] HbA1c) 3. Lipid profile (Total cholesterol, HDL, LDL, Triglycerides, Total Cholesterol / HDL Cholesterol Ratio)",
+    "source_document": {
+      "filename": "Care_Health_Care_Plus.pdf",
+      "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "uin": "CHIHLIP22047V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
+        "result": "reviewed",
+        "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "generated_markdown_reviewed_secondary_source"
+  }
+]

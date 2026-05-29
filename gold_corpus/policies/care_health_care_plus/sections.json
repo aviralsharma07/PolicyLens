@@ -1,0 +1,1822 @@
+[
+  {
+    "section_id": "care_health_care_plus_sec_000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 66,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": null,
+    "annotation_status": "manual_container",
+    "notes": "Synthetic root for complete section hierarchy.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_applicable_document_root"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_001",
+    "section_number": "1",
+    "title": "PREAMBLE: The proposal and declaration given by the proposer and other documents if any",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. PREAMBLE: The proposal and declaration given by the proposer and other documents if any",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_002",
+    "section_number": "2",
+    "title": "DEFINITIONS",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2. DEFINITIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_003",
+    "section_number": "2.1",
+    "title": "Standard Definitions:",
+    "level": 2,
+    "parent_id": "care_health_care_plus_sec_002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1 Standard Definitions:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_004",
+    "section_number": "2.1.1",
+    "title": "Accidental / Accident is a sudden, unforeseen and involuntary event caused by external,",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1.1 Accidental / Accident is a sudden, unforeseen and involuntary event caused by external,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_005",
+    "section_number": "2.1.2",
+    "title": "AYUSH Hospital is a healthcare facility wherein medical/surgical/para -surgical treatment",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1.2 AYUSH Hospital is a healthcare facility wherein medical/surgical/para -surgical treatment",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_006",
+    "section_number": "2.1.3",
+    "title": "AYUSH Day Care Centre means and includes Community Health Centre (CHC), Primary",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1.3 AYUSH Day Care Centre means and includes Community Health Centre (CHC), Primary",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_007",
+    "section_number": "2.1.4",
+    "title": "Any One Illness (not applicable for Travel and Personal Accident Insurance) means a",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1.4 Any One Illness (not applicable for Travel and Personal Accident Insurance) means a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_008",
+    "section_number": "2.1.5",
+    "title": "Cashless Facility means a facility extended by the insurer to the Insured where the",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.1.5 Cashless Facility means a facility extended by the insurer to the Insured where the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_009",
+    "section_number": "2.1.6",
+    "title": "Condition Precedent shall mean a Policy term or condition upon which the Insurer’s liability",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.6 Condition Precedent shall mean a Policy term or condition upon which the Insurer’s liability",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_010",
+    "section_number": "2.1.7",
+    "title": "Congenital Anomaly refers to a condition which is present since birth, and which is",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.7 Congenital Anomaly refers to a condition which is present since birth, and which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_011",
+    "section_number": "2.1.8",
+    "title": "Co-payment is a cost-sharing requirement under a health insurance policy that provides that",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.8 Co-payment is a cost-sharing requirement under a health insurance policy that provides that",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_012",
+    "section_number": "2.1.9",
+    "title": "Cumulative Bonus shall mean any increase or addition in the Sum Insured granted by the",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.9 Cumulative Bonus shall mean any increase or addition in the Sum Insured granted by the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_013",
+    "section_number": "2.1.10",
+    "title": "Day Care Centre means any institution established for day care treatment of illness and/or",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.10 Day Care Centre means any institution established for day care treatment of illness and/or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_014",
+    "section_number": "2.1.11",
+    "title": "Day Care Treatment means medical treatment, and/ or Surgical Procedure which is:",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.11 Day Care Treatment means medical treatment, and/ or Surgical Procedure which is:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_015",
+    "section_number": "2.1.12",
+    "title": "Deductible is a cost-sharing requirement under a health insurance policy t hat provides that",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.12 Deductible is a cost-sharing requirement under a health insurance policy t hat provides that",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_016",
+    "section_number": "2.1.13",
+    "title": "Dental Treatment means a treatment related to teeth or structures supporting teeth",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.13 Dental Treatment means a treatment related to teeth or structures supporting teeth",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_017",
+    "section_number": "2.1.14",
+    "title": "Disclosure to Information Norm: The Policy shall be void and all premium paid thereon shall",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.1.14 Disclosure to Information Norm: The Policy shall be void and all premium paid thereon shall",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_018",
+    "section_number": "2.1.15",
+    "title": "Domiciliary Hospitalization means medical treatment for an illness/disease /injury which in",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.15 Domiciliary Hospitalization means medical treatment for an illness/disease /injury which in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_019",
+    "section_number": "2.1.16",
+    "title": "Emergency Care (Emergency) means management for an illness or injury which results in",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.16 Emergency Care (Emergency) means management for an illness or injury which results in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_020",
+    "section_number": "2.1.17",
+    "title": "Grace Period means the specified period of time immediately following the premium due",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.17 Grace Period means the specified period of time immediately following the premium due",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_021",
+    "section_number": "2.1.18",
+    "title": "Hospital (not applicable for Overseas Travel Insurance) means any institution established for",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.18 Hospital (not applicable for Overseas Travel Insurance) means any institution established for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_022",
+    "section_number": "2.1.19",
+    "title": "Hospitalization (not applicable for Overseas Travel Insurance) means admission in a Hospital",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.19 Hospitalization (not applicable for Overseas Travel Insurance) means admission in a Hospital",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_023",
+    "section_number": "2.1.20",
+    "title": "Illness means a sickness or a disease or a pathological condition leading to the impairment of",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.1.20 Illness means a sickness or a disease or a pathological condition leading to the impairment of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_024",
+    "section_number": "2.1.21",
+    "title": "Injury means accidental physical bodily harm excluding illness or disease solely and directly",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.21 Injury means accidental physical bodily harm excluding illness or disease solely and directly",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_025",
+    "section_number": "2.1.22",
+    "title": "In-patient Care (not applicable for O verseas Travel Insurance) means treatment for which",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.22 In-patient Care (not applicable for O verseas Travel Insurance) means treatment for which",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_026",
+    "section_number": "2.1.23",
+    "title": "Intensive Care Unit (ICU) means an identified section, ward or wing of a Hospital which is",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.23 Intensive Care Unit (ICU) means an identified section, ward or wing of a Hospital which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_027",
+    "section_number": "2.1.24",
+    "title": "ICU Charges or (Intensive care Unit) Charges means the amount charged by a Hospital",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.24 ICU Charges or (Intensive care Unit) Charges means the amount charged by a Hospital",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_028",
+    "section_number": "2.1.25",
+    "title": "Maternity expenses shall include—",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.25 Maternity expenses shall include—",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_029",
+    "section_number": "2.1.26",
+    "title": "Medical Advice means any consultation or advice from a Medical Practitioner including the",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.26 Medical Advice means any consultation or advice from a Medical Practitioner including the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_030",
+    "section_number": "2.1.27",
+    "title": "Medical Expenses means those expenses that an Insured Person has necessarily and actually",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.27 Medical Expenses means those expenses that an Insured Person has necessarily and actually",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_031",
+    "section_number": "2.1.28",
+    "title": "Medical Practitioner (not applicable for Overseas Trave l Insurance) is a person who holds a",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.1.28 Medical Practitioner (not applicable for Overseas Trave l Insurance) is a person who holds a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_032",
+    "section_number": "2.1.29",
+    "title": "Medically Necessary Treatment (not applicable for Overseas Travel Insurance) means any",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.29 Medically Necessary Treatment (not applicable for Overseas Travel Insurance) means any",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_033",
+    "section_number": "2.1.30",
+    "title": "Migration means, the right accorded to health insurance policyholders (inc luding all",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.30 Migration means, the right accorded to health insurance policyholders (inc luding all",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_034",
+    "section_number": "2.1.31",
+    "title": "Network Provider (not applicable for Overseas Travel Insuranc e) means the Hospitals",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.31 Network Provider (not applicable for Overseas Travel Insuranc e) means the Hospitals",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_035",
+    "section_number": "2.1.32",
+    "title": "Newborn baby means baby born during the Policy Period and is aged up to 90 days.",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.32 Newborn baby means baby born during the Policy Period and is aged up to 90 days.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_036",
+    "section_number": "2.1.33",
+    "title": "Non - Network Provider : Non-Network means any hospital, day care centre or other",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.33 Non - Network Provider : Non-Network means any hospital, day care centre or other",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_037",
+    "section_number": "2.1.34",
+    "title": "Notification of Claim means the process of intimating a Claim to the Insurer or TPA through",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.34 Notification of Claim means the process of intimating a Claim to the Insurer or TPA through",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_038",
+    "section_number": "2.1.35",
+    "title": "OPD Treatment is one in which the Insured Person visits a clinic/Hospital or associated",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.35 OPD Treatment is one in which the Insured Person visits a clinic/Hospital or associated",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_039",
+    "section_number": "2.1.36",
+    "title": "Portability means the right accorded to individual health insurance policyholders (including",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.36 Portability means the right accorded to individual health insurance policyholders (including",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_040",
+    "section_number": "2.1.37",
+    "title": "Pre-existing Disease means any condition, ailment, injury or disease",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.37 Pre-existing Disease means any condition, ailment, injury or disease",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_041",
+    "section_number": "2.1.38",
+    "title": "Pre-hospitalization Medical Expenses means Medical Expenses incurred during pre -defined",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.1.38 Pre-hospitalization Medical Expenses means Medical Expenses incurred during pre -defined",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_042",
+    "section_number": "2.1.39",
+    "title": "Post-hospitalization Medical Expenses means Medical Expenses incurred during pre-defined",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.39 Post-hospitalization Medical Expenses means Medical Expenses incurred during pre-defined",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_043",
+    "section_number": "2.1.40",
+    "title": "Qualified Nurse (not applicable for Overseas Travel Insurance) is a person who holds a valid",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.40 Qualified Nurse (not applicable for Overseas Travel Insurance) is a person who holds a valid",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_044",
+    "section_number": "2.1.41",
+    "title": "Reasonable and Customary Charges (not applicable for Overseas Travel Insurance) means",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.41 Reasonable and Customary Charges (not applicable for Overseas Travel Insurance) means",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_045",
+    "section_number": "2.1.42",
+    "title": "Renewal defines the terms on which the contract of insurance can be renewed on mutual",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.42 Renewal defines the terms on which the contract of insurance can be renewed on mutual",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_046",
+    "section_number": "2.1.43",
+    "title": "Room Rent means the amount charged by a Hospital towards Room & Boarding expenses",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.43 Room Rent means the amount charged by a Hospital towards Room & Boarding expenses",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_047",
+    "section_number": "2.1.44",
+    "title": "Subrogation (Applicable to other than Health Policies and health sections of Travel and PA",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.44 Subrogation (Applicable to other than Health Policies and health sections of Travel and PA",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_048",
+    "section_number": "2.1.45",
+    "title": "Surgery/Surgical Procedure: means manual and/or operative procedure(s) required for",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.45 Surgery/Surgical Procedure: means manual and/or operative procedure(s) required for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_049",
+    "section_number": "2.1.46",
+    "title": "Unproven/Experimental Treatment means a treatment including drug experimental therapy",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_003",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.1.46 Unproven/Experimental Treatment means a treatment including drug experimental therapy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_050",
+    "section_number": "2.2",
+    "title": "Specific Definitions:",
+    "level": 2,
+    "parent_id": "care_health_care_plus_sec_002",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.2 Specific Definitions:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_051",
+    "section_number": "2.2.1",
+    "title": "Age means the completed age of the Insured Person as on his last birthday.",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.2.1 Age means the completed age of the Insured Person as on his last birthday.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_052",
+    "section_number": "2.2.2",
+    "title": "Ambulance means a vehicle operated by a licensed/ authorized service provider and",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.2.2 Ambulance means a vehicle operated by a licensed/ authorized service provider and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_053",
+    "section_number": "2.2.3",
+    "title": "Annexure means the document attached and marked as Annexure to this Policy.",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.2.3 Annexure means the document attached and marked as Annexure to this Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_054",
+    "section_number": "2.2.4",
+    "title": "Claim means a demand made in accordance with the terms and conditions of the Policy for",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.4 Claim means a demand made in accordance with the terms and conditions of the Policy for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_055",
+    "section_number": "2.2.5",
+    "title": "Claimant means a person who possesses a relevant and valid Insurance Policy which is",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.5 Claimant means a person who possesses a relevant and valid Insurance Policy which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_056",
+    "section_number": "2.2.6",
+    "title": "Company (also referred as Insurer/We/Us) means Care Health Insurance Limited.",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.6 Company (also referred as Insurer/We/Us) means Care Health Insurance Limited.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_057",
+    "section_number": "2.2.7",
+    "title": "Consumer Price Index - CPI is a measure of inflation; changes in the CPI are used to assess",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.7 Consumer Price Index - CPI is a measure of inflation; changes in the CPI are used to assess",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_058",
+    "section_number": "2.2.8",
+    "title": "Diagnosis means pathological conclusion drawn by a registered medical practitioner,",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.8 Diagnosis means pathological conclusion drawn by a registered medical practitioner,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_059",
+    "section_number": "2.2.9",
+    "title": "Hazardous Activities (or Adventure sports) means any sport or activity, which is potentially",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.9 Hazardous Activities (or Adventure sports) means any sport or activity, which is potentially",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_060",
+    "section_number": "2.2.10",
+    "title": "Indemnity/Indemnify means compensating the Insured Person up to the extent of Expenses",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.10 Indemnity/Indemnify means compensating the Insured Person up to the extent of Expenses",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_061",
+    "section_number": "2.2.11",
+    "title": "Inflation means a rise in the general level of prices, as measured against some baseline of",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.11 Inflation means a rise in the general level of prices, as measured against some baseline of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_062",
+    "section_number": "2.2.12",
+    "title": "Insured Event means an event that is covered under the Policy; and which is in accordance",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.12 Insured Event means an event that is covered under the Policy; and which is in accordance",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_063",
+    "section_number": "2.2.13",
+    "title": "Insured Person (Insured) means a self, legally married spouse, dependent children,",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.13 Insured Person (Insured) means a self, legally married spouse, dependent children,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_064",
+    "section_number": "2.2.14",
+    "title": "Mental Illness means a substantial disorder of thinking, mood, perception, orientation or",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.14 Mental Illness means a substantial disorder of thinking, mood, perception, orientation or",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_065",
+    "section_number": "2.2.15",
+    "title": "National Statistical Office (NSO) is a government agency in India under the Ministry of",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.2.15 National Statistical Office (NSO) is a government agency in India under the Ministry of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_066",
+    "section_number": "2.2.16",
+    "title": "Nominee means the person named in the Policy Schedule or as declared with the",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.16 Nominee means the person named in the Policy Schedule or as declared with the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_067",
+    "section_number": "2.2.17",
+    "title": "Preventive Care means any kind of treatment taken as a pro -active care measure without",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.17 Preventive Care means any kind of treatment taken as a pro -active care measure without",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_068",
+    "section_number": "2.2.18",
+    "title": "Policy means these Policy terms and conditions and Annexures thereto, the Proposal Form,",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.18 Policy means these Policy terms and conditions and Annexures thereto, the Proposal Form,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_069",
+    "section_number": "2.2.19",
+    "title": "Policy Schedule is a certificate attached to and forming part of this Policy.",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.19 Policy Schedule is a certificate attached to and forming part of this Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_070",
+    "section_number": "2.2.20",
+    "title": "Policy Year means a period of one year commencing on the Policy Period Start Date or any",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.20 Policy Year means a period of one year commencing on the Policy Period Start Date or any",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_071",
+    "section_number": "2.2.21",
+    "title": "Policyholder (also referred as You) means the person named in the Policy Schedule as the",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.21 Policyholder (also referred as You) means the person named in the Policy Schedule as the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_072",
+    "section_number": "2.2.22",
+    "title": "Policy Period means the period commencing from the Policy Period Start Date and ending",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.22 Policy Period means the period commencing from the Policy Period Start Date and ending",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_073",
+    "section_number": "2.2.23",
+    "title": "Policy Period End Date means the date on which the Policy expires, as specifically appearing",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.23 Policy Period End Date means the date on which the Policy expires, as specifically appearing",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_074",
+    "section_number": "2.2.24",
+    "title": "Policy Period Start Date means the date on which the Policy commences, as specifi cally",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.24 Policy Period Start Date means the date on which the Policy commences, as specifi cally",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_075",
+    "section_number": "2.2.25",
+    "title": "Rehabilitation means assisting an Insured Person who, following a Medical Condition,",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.25 Rehabilitation means assisting an Insured Person who, following a Medical Condition,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_076",
+    "section_number": "2.2.26",
+    "title": "Sum Insured means the amount specified in the Policy Schedule, for which premium is paid",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.26 Sum Insured means the amount specified in the Policy Schedule, for which premium is paid",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_077",
+    "section_number": "2.2.27",
+    "title": "Single Private AC Room means an air conditioned room in a Hospital where a single patient",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.27 Single Private AC Room means an air conditioned room in a Hospital where a single patient",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_078",
+    "section_number": "2.2.28",
+    "title": "Third Party Administrator or T PA means a company registered with the Authority, and",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.28 Third Party Administrator or T PA means a company registered with the Authority, and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_079",
+    "section_number": "2.2.29",
+    "title": "Associate Medical Expenses means those Medical Expenses as listed below which vary in",
+    "level": 3,
+    "parent_id": "care_health_care_plus_sec_050",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.2.29 Associate Medical Expenses means those Medical Expenses as listed below which vary in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_080",
+    "section_number": "3",
+    "title": "BENEFITS COVERED UNDER THE POLICY:",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "3. BENEFITS COVERED UNDER THE POLICY:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_081",
+    "section_number": null,
+    "title": "GENERAL CONDITIONS APPLICABLE TO ALL THE BENEFITS AND OPTIONAL BENEFITS",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "GENERAL CONDITIONS APPLICABLE TO ALL THE BENEFITS AND OPTIONAL BENEFITS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_082",
+    "section_number": "1",
+    "title": "Benefits / Optional Benefits (if opted) shall be available to the Insured Person, only if the",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "1. Benefits / Optional Benefits (if opted) shall be available to the Insured Person, only if the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_083",
+    "section_number": "2",
+    "title": "The maximum, total and cumulative liability of the Company in respect of an Insured Person for",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2. The maximum, total and cumulative liability of the Company in respect of an Insured Person for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_084",
+    "section_number": "II",
+    "title": "For any single Claim during a Policy Year, the maximum Claim amount payable shall be",
+    "level": 2,
+    "parent_id": "care_health_care_plus_sec_083",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "II. For any single Claim during a Policy Year, the maximum Claim amount payable shall be",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_085",
+    "section_number": "III",
+    "title": "All Claims shall be payable subject to the terms, condi tions, exclusions, sub -limits and",
+    "level": 2,
+    "parent_id": "care_health_care_plus_sec_083",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "III. All Claims shall be payable subject to the terms, condi tions, exclusions, sub -limits and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_086",
+    "section_number": "3",
+    "title": "The Co-payment proportion (if applicable) shall be borne by the Insured Person on each Claim",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "3. The Co-payment proportion (if applicable) shall be borne by the Insured Person on each Claim",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_087",
+    "section_number": "4",
+    "title": "Deductible Option (if opted) is applicable on the Benefits namely Hospitalization Expenses, Pre",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4. Deductible Option (if opted) is applicable on the Benefits namely Hospitalization Expenses, Pre",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_088",
+    "section_number": "5",
+    "title": "Any Claim paid for Benefits namely Hospitalization Expenses, Pre Hospitalization Medical",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "5. Any Claim paid for Benefits namely Hospitalization Expenses, Pre Hospitalization Medical",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_089",
+    "section_number": "6",
+    "title": "Admissibility of a Claim under Benefit “Hospitalization Expenses” is a pre -condition to the",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "6. Admissibility of a Claim under Benefit “Hospitalization Expenses” is a pre -condition to the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  },
+  {
+    "section_id": "care_health_care_plus_sec_090",
+    "section_number": "7",
+    "title": "If the Insured Person suffers a relapse within 45 days from the date of last discharge /",
+    "level": 1,
+    "parent_id": "care_health_care_plus_sec_000",
+    "page_start": 10,
+    "page_end": 65,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "7. If the Insured Person suffers a relapse within 45 days from the date of last discharge /",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_generated_markdown"
+  }
+]

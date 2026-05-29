@@ -1,0 +1,11 @@
+{
+  "type": "array",
+  "items_required": [
+    "section_id",
+    "title",
+    "level",
+    "page_start",
+    "page_end",
+    "source_page_refs"
+  ]
+}

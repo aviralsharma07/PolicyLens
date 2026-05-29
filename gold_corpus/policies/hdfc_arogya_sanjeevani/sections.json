@@ -1,0 +1,1755 @@
+[
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 31,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": null,
+    "annotation_status": "manual_container",
+    "notes": "Synthetic root for complete section hierarchy.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_001",
+    "section_number": "1",
+    "title": "Preamble ..................................................................................................................................... 2",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. Preamble ..................................................................................................................................... 2",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_002",
+    "section_number": "2",
+    "title": "Operative Clause ....................................................................................................................... 2",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. Operative Clause ....................................................................................................................... 2",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_003",
+    "section_number": "3",
+    "title": "Definitions ................................................................................................................................... 2",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "3. Definitions ................................................................................................................................... 2",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_004",
+    "section_number": "4",
+    "title": "Coverage ..................................................................................................................................... 9",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "4. Coverage ..................................................................................................................................... 9",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_005",
+    "section_number": "5",
+    "title": "Cumulative Bonus (CB) .......................................................................................................... 10",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "5. Cumulative Bonus (CB) .......................................................................................................... 10",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_006",
+    "section_number": "6",
+    "title": "Waiting Period .......................................................................................................................... 11",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "6. Waiting Period .......................................................................................................................... 11",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_007",
+    "section_number": "7",
+    "title": "Exclusions ................................................................................................................................. 13",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "7. Exclusions ................................................................................................................................. 13",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_008",
+    "section_number": "8",
+    "title": "Moratorium Period ................................................................................................................... 16",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "8. Moratorium Period ................................................................................................................... 16",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_009",
+    "section_number": "9",
+    "title": "Claim Procedure ...................................................................................................................... 16",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "9. Claim Procedure ...................................................................................................................... 16",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_010",
+    "section_number": "10",
+    "title": "General Terms &Conditions ................................................................................................... 18",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "10. General Terms &Conditions ................................................................................................... 18",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_011",
+    "section_number": "1",
+    "title": "Preamble",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "1. Preamble",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_012",
+    "section_number": "2",
+    "title": "Operative Clause",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2. Operative Clause",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_013",
+    "section_number": "3",
+    "title": "Definitions",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3. Definitions",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_014",
+    "section_number": "3.1",
+    "title": "Accident means a sudden, unforeseen and involuntary event caused by external,",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3.1. Accident means a sudden, unforeseen and involuntary event caused by external,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_015",
+    "section_number": "3.2",
+    "title": "Age means age of the Insured person on last birthday as on date of",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3.2. Age means age of the Insured person on last birthday as on date of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_016",
+    "section_number": "3.3",
+    "title": "Any One Illness means continuous period of illness and it includes relapse within",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3.3. Any One Illness means continuous period of illness and it includes relapse within",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_017",
+    "section_number": "3.4",
+    "title": "AYUSH Treatment refers to hospitalisation treatments given under Ayurveda, Yoga",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3.4. AYUSH Treatment refers to hospitalisation treatments given under Ayurveda, Yoga",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_018",
+    "section_number": "3.5",
+    "title": "An AYUSH Hospital is a healt hcare facility wherein medical/surgical/para -surgical",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "3.5. An AYUSH Hospital is a healt hcare facility wherein medical/surgical/para -surgical",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_019",
+    "section_number": "3.6",
+    "title": "AYUSH Day Care Centre means and includes Community Health Centre (CHC),",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3.6. AYUSH Day Care Centre means and includes Community Health Centre (CHC),",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_020",
+    "section_number": "3.7",
+    "title": "Break in Policy means the period of gap that occurs at the end of the existing",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3.7. Break in Policy means the period of gap that occurs at the end of the existing",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_021",
+    "section_number": "3.8",
+    "title": "Cashless Facility means a facility extended by the insurer to the insured where the",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3.8. Cashless Facility means a facility extended by the insurer to the insured where the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_022",
+    "section_number": "3.9",
+    "title": "Condition Precedent means a Policy term or condition upon which the Company\u2018s",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3.9. Condition Precedent means a Policy term or condition upon which the Company\u2018s",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_023",
+    "section_number": "3.10",
+    "title": "Congenital Anomaly refers to a condition(s) which is present since birth, and",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "3.10. Congenital Anomaly refers to a condition(s) which is present since birth, and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_024",
+    "section_number": "3.11",
+    "title": "Co-payment means a cost sharing requirement under a health insurance policy",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.11. Co-payment means a cost sharing requirement under a health insurance policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_025",
+    "section_number": "3.12",
+    "title": "Cumulative Bonus means any increase or addition in the Sum Insured granted by",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.12. Cumulative Bonus means any increase or addition in the Sum Insured granted by",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_026",
+    "section_number": "3.13",
+    "title": "Day Care Centre means any inst itution established for day care treatment of",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.13. Day Care Centre means any inst itution established for day care treatment of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_027",
+    "section_number": "3.14",
+    "title": "Day Care Treatment means medical treatment, and/or surgical procedure which is:",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.14. Day Care Treatment means medical treatment, and/or surgical procedure which is:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_028",
+    "section_number": "3.15",
+    "title": "Dental Treatment means a treatment carried out by a dental practitioner including",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.15. Dental Treatment means a treatment carried out by a dental practitioner including",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_029",
+    "section_number": "3.16",
+    "title": "Disclosure to information norm: The policy shall be void and al l premium paid",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.16. Disclosure to information norm: The policy shall be void and al l premium paid",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_030",
+    "section_number": "3.17",
+    "title": "Emergency Care: Emergency care means management for an illness or injury",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.17. Emergency Care: Emergency care means management for an illness or injury",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_031",
+    "section_number": "3.18",
+    "title": "Family means, the Family that consists of the proposer and any one or more of the",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "3.18. Family means, the Family that consists of the proposer and any one or more of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_032",
+    "section_number": "3.19",
+    "title": "Grace Period means specified period of time immediately following the premium",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "3.19. Grace Period means specified period of time immediately following the premium",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_033",
+    "section_number": "3.20",
+    "title": "Hospital means any institution establishe d for in -patient care and day care",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "3.20. Hospital means any institution establishe d for in -patient care and day care",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_034",
+    "section_number": "3.21",
+    "title": "Hospitalisation means admission in a hospital for a minimum period of twenty-four",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "3.21. Hospitalisation means admission in a hospital for a minimum period of twenty-four",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_035",
+    "section_number": "3.22",
+    "title": "Illness means a sickness or a disease or pathological condition leading to the",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "3.22. Illness means a sickness or a disease or pathological condition leading to the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_036",
+    "section_number": "3.23",
+    "title": "Injury means accidental physical bodily harm excluding illness or disease solely",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.23. Injury means accidental physical bodily harm excluding illness or disease solely",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_037",
+    "section_number": "3.24",
+    "title": "In-Patient Care means treatment for which the insured person has to stay in a",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.24. In-Patient Care means treatment for which the insured person has to stay in a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_038",
+    "section_number": "3.25",
+    "title": "Insured Person means person(s) named in the schedule of the Policy.",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.25. Insured Person means person(s) named in the schedule of the Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_039",
+    "section_number": "3.26",
+    "title": "Intensive Care Unit means an identified section, ward or wing of a hospital which is",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.26. Intensive Care Unit means an identified section, ward or wing of a hospital which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_040",
+    "section_number": "3.27",
+    "title": "ICU (Intensive Care Unit) Charges means the amount charged by a Hospital",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.27. ICU (Intensive Care Unit) Charges means the amount charged by a Hospital",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_041",
+    "section_number": "3.28",
+    "title": "Medical Advice means any consultation or advice from a Medical Practitioner",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.28. Medical Advice means any consultation or advice from a Medical Practitioner",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_042",
+    "section_number": "3.29",
+    "title": "Medical Expenses means those expenses that an insured person has necessarily",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.29. Medical Expenses means those expenses that an insured person has necessarily",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_043",
+    "section_number": "3.30",
+    "title": "Medical Practitioner means a person who holds a valid registration from the",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.30. Medical Practitioner means a person who holds a valid registration from the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_044",
+    "section_number": "3.31",
+    "title": "Medically Necessary Treatment means any treatm ent, tests, medication, or stay",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.31. Medically Necessary Treatment means any treatm ent, tests, medication, or stay",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_045",
+    "section_number": "3.32",
+    "title": "Migration means, the right accorded to health insurance policyholders (including all",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.32. Migration means, the right accorded to health insurance policyholders (including all",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_046",
+    "section_number": "3.33",
+    "title": "Network Provider means hospitals enlisted by insurer, TPA or jointly by an insurer",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.33. Network Provider means hospitals enlisted by insurer, TPA or jointly by an insurer",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_047",
+    "section_number": "3.34",
+    "title": "Non- Network Provider means any hospital that is not part of the network.",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.34. Non- Network Provider means any hospital that is not part of the network.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_048",
+    "section_number": "3.35",
+    "title": "Notification of Claim means the process of intimating a claim to the Insurer or TPA",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.35. Notification of Claim means the process of intimating a claim to the Insurer or TPA",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_049",
+    "section_number": "3.36",
+    "title": "Out-Patient (OPD) Treatment means treatment in which the insured visits a clinic /",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.36. Out-Patient (OPD) Treatment means treatment in which the insured visits a clinic /",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_050",
+    "section_number": "3.37",
+    "title": "Pre-Existing Disease (PED): Pre existing disease means any condition, ailment,",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.37. Pre-Existing Disease (PED): Pre existing disease means any condition, ailment,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_051",
+    "section_number": "3.38",
+    "title": "Pre-hospitalisation Medical Expenses means medical expenses incurred during",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.38. Pre-hospitalisation Medical Expenses means medical expenses incurred during",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_052",
+    "section_number": "3.39",
+    "title": "Post-hospitalisation Medical Expenses means medical expenses incurred during",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.39. Post-hospitalisation Medical Expenses means medical expenses incurred during",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_053",
+    "section_number": "3.41",
+    "title": "Policy period means period of one policy year as mentioned in the schedule for",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.41. Policy period means period of one policy year as mentioned in the schedule for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_054",
+    "section_number": "3.42",
+    "title": "Policy Schedule means the Policy Schedule attached to and forming part of Policy",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.42. Policy Schedule means the Policy Schedule attached to and forming part of Policy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_055",
+    "section_number": "3.43",
+    "title": "Policy year means a period of twelve months beginning from the date of",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.43. Policy year means a period of twelve months beginning from the date of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_056",
+    "section_number": "3.44",
+    "title": "Portability means the right accorded to an individual health insurance policyholder",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.44. Portability means the right accorded to an individual health insurance policyholder",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_057",
+    "section_number": "3.45",
+    "title": "Qualified Nurse means a person who holds a valid registration from the Nursing",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.45. Qualified Nurse means a person who holds a valid registration from the Nursing",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_058",
+    "section_number": "3.46",
+    "title": "Renewal means the terms on which the contract of insurance can be renewed on",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.46. Renewal means the terms on which the contract of insurance can be renewed on",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_059",
+    "section_number": "3.47",
+    "title": "Room Rent means the amount charged by a hospital towards Room and Boarding",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.47. Room Rent means the amount charged by a hospital towards Room and Boarding",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_060",
+    "section_number": "3.48",
+    "title": "Sub-limit means a cost sharing requirement under a health insurance policy in",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.48. Sub-limit means a cost sharing requirement under a health insurance policy in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_061",
+    "section_number": "3.49",
+    "title": "Sum Insured means the pre -defined limit specified in the Policy Schedule. Sum",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.49. Sum Insured means the pre -defined limit specified in the Policy Schedule. Sum",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_062",
+    "section_number": "3.50",
+    "title": "Surgery or Surgical Procedure means manual and / or operative proc edure (s)",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.50. Surgery or Surgical Procedure means manual and / or operative proc edure (s)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_063",
+    "section_number": "3.51",
+    "title": "Third Party Administrator (TPA) means a Company registered with the Authority,",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.51. Third Party Administrator (TPA) means a Company registered with the Authority,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_064",
+    "section_number": "3.52",
+    "title": "Waiting Period means a period f rom the inception of this Policy during which",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_013",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.52. Waiting Period means a period f rom the inception of this Policy during which",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_065",
+    "section_number": "4",
+    "title": "Coverage",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4. Coverage",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_066",
+    "section_number": "4.1",
+    "title": "Hospitalization",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_065",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.1. Hospitalization",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_067",
+    "section_number": "4.1.1",
+    "title": "Other expenses",
+    "level": 3,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_066",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.1.1. Other expenses",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_068",
+    "section_number": "1",
+    "title": "Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "1. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_069",
+    "section_number": "2",
+    "title": "In case of admission to a room/ICU/ICCU at rate s exceeding the aforesaid limits, the",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2. In case of admission to a room/ICU/ICCU at rate s exceeding the aforesaid limits, the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_070",
+    "section_number": "4.2",
+    "title": "AYUSH Treatment",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.2. AYUSH Treatment",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_071",
+    "section_number": "4.3",
+    "title": "Cataract Treatment",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.3. Cataract Treatment",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_072",
+    "section_number": "4.4",
+    "title": "Pre Hospitalization",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.4. Pre Hospitalization",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_073",
+    "section_number": "4.5",
+    "title": "Post Hospitalisation",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.5. Post Hospitalisation",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_074",
+    "section_number": "4.6",
+    "title": "The following procedures will be covered (wherever medically indicated) either as in",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.6. The following procedures will be covered (wherever medically indicated) either as in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_075",
+    "section_number": "4.7",
+    "title": "The expenses that are not covered in this policy are placed under List -I of Annexure",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_069",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.7. The expenses that are not covered in this policy are placed under List -I of Annexure",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_076",
+    "section_number": "5",
+    "title": "Cumulative Bonus (CB)",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "5. Cumulative Bonus (CB)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_077",
+    "section_number": "6",
+    "title": "Waiting Period",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "6. Waiting Period",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_078",
+    "section_number": "6.1",
+    "title": "Pre-Existing Diseases(Code- Excl01)",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_077",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "6.1. Pre-Existing Diseases(Code- Excl01)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_079",
+    "section_number": "6.2",
+    "title": "First Thirty Days Waiting Period(Code- Excl03)",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_077",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "6.2. First Thirty Days Waiting Period(Code- Excl03)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_080",
+    "section_number": "6.3",
+    "title": "Specific Waiting Period: (Code- Excl02)",
+    "level": 2,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_077",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "6.3. Specific Waiting Period: (Code- Excl02)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_081",
+    "section_number": "1",
+    "title": "Benign ENT disorders",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "1. Benign ENT disorders",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_082",
+    "section_number": "2",
+    "title": "Tonsillectomy",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "2. Tonsillectomy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_083",
+    "section_number": "3",
+    "title": "Adenoidectomy",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "3. Adenoidectomy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_084",
+    "section_number": "4",
+    "title": "Mastoidectomy",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4. Mastoidectomy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_085",
+    "section_number": "5",
+    "title": "Tympanoplasty",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "5. Tympanoplasty",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_086",
+    "section_number": "6",
+    "title": "Hysterectomy",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "6. Hysterectomy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_087",
+    "section_number": "7",
+    "title": "All internal and external benign tumours, cysts, polyps of any kind, including benign",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "7. All internal and external benign tumours, cysts, polyps of any kind, including benign",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_088",
+    "section_number": "8",
+    "title": "Benign prostate hypertrophy",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "8. Benign prostate hypertrophy",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_089",
+    "section_number": "9",
+    "title": "Cataract and age related eye ailments",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "9. Cataract and age related eye ailments",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "hdfc_arogya_sanjeevani_sec_090",
+    "section_number": "10",
+    "title": "Gastric/ Duodenal Ulcer",
+    "level": 1,
+    "parent_id": "hdfc_arogya_sanjeevani_sec_000",
+    "page_start": 12,
+    "page_end": 30,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "10. Gastric/ Duodenal Ulcer",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "table_id": "icici_family_shield_table_001",
+    "page": 1,
+    "bbox": null,
+    "table_type": "waiting_period",
+    "headers": [
+      "Waiting period type",
+      "Duration"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "up to 30 days"
+      ],
+      [
+        "PED",
+        "24 months"
+      ],
+      [
+        "Specified disease/procedure",
+        "2 years"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": "immediate care by a medical practitioner to prevent death or serious long term impairment of the insured person\u2019s health 7. Grace Period means the specified period of time immediately fol lowing the premium due date during which a payment can be made to renew or continue a policy in force without loss of continuity benefits such as waiting periods and coverage of pre-existing diseases. Coverage is not available for the period for which no premium is received.",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "icici_family_shield_table_002",
+    "page": 1,
+    "bbox": null,
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": "after called the \u2018Company\u2019) to the proposer mentioned in the schedule (hereinafter called the \u2018Insured\u2019) to cover the person(s) named in the schedule (hereinafter called the \u2018Insured Persons\u2019). The policy is based on the statements and declaration provided in the proposal Form by the proposer and is subject to receipt of the requisite premium. 2. DEFINITIONS Certain words are used in the policy and this Policy Schedule, which have a specific meaning and are shown below. They have this meaning wherever they appear in the Policy. Where the context so permits, references to the singular shall also include references to the plural and references to the male gender s",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "icici_family_shield_table_003",
+    "page": 18,
+    "bbox": null,
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      18
+    ],
+    "evidence_text": "Family Shield Policy Wordings UIN: ICIHLIP22092V032122 CIN: L67200MH2000PLC129408 18 Claim Documents for Section B (Applicable for Benefit B.1 and B.2) \uf0b7 On the occurrence of an Insured Event which may give rise to a claim under Section B of the Policy, We shall be provided with the following necessary and mandatory information and documentation specified in relation to the Benefit being claimed within 30 days of the o",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "icici_family_shield_table_004",
+    "page": 1,
+    "bbox": null,
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": "- 1. Accident means sudden, unforeseen and involuntary event caused by external, visibl e and violent means. 2. Cashless facility means a facility extended by the insurer to the insured where the payments, of the costs of treatment undergone by the insured in accordance with the policy terms and conditions, are directly made to the network provider by the insurer to the extent pre-authorization is approved. 3. Condition Precedent means a policy term or condition upon which the Insurer's liability under the policy is conditional upon. 4. Deductible means a cost sharing requirement under a health insurance policy that provides that the insurer will not be liable f",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  }
+]

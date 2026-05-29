@@ -77,7 +77,7 @@ This file tracks unresolved design/product questions. Do not let major unresolve
 
 ## OQ-005 — Should the gold corpus annotation interface be CLI or a web tool?
 
-**Status:** open
+**Status:** answered
 
 **Question:** Annotating 5 policy PDFs requires: marking section boundaries, clause boundaries, table regions, and fact values. The annotation format is JSON files. Should we use a CLI workflow (edit JSON manually with text editor) or build a lightweight web annotation UI?
 
@@ -89,4 +89,4 @@ This file tracks unresolved design/product questions. Do not let major unresolve
 3. LabelStudio — existing open-source annotation platform (overkill for now)
 
 **Decision needed by:** Gold corpus annotation start (Day 3 of 7-day sprint)
-**Resolution:** 
+**Resolution:** Use CLI/manual JSON annotation for the first 5 policies. DSE-003 created `gold_corpus/annotation_guide.md`, JSON schema files, and `scripts/validate_gold_corpus.py`. Revisit a Streamlit or LabelStudio interface only if expanding from 5 to 20 policies becomes too slow or review quality drops.

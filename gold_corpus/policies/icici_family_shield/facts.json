@@ -1,0 +1,798 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 24
+    },
+    "normalized_value_json": {
+      "months": 24
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 1,
+    "evidence_text": "ctitioner to prevent death or serious long term impairment of the insured person’s health 7. Grace Period means the specified period of time immediately fol lowing the premium due date during which a payment can be made to renew or continue a policy in force without loss of continuity benefits such as waiting periods and coverage of pre-existing diseases. Coverage is not available for the period for which no premium is received.",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 13,
+    "evidence_text": "limited to the Sum Insured. EXCLUSIONS AND LIMITATIONS APPLICABLE TO SECTION B We shall not be liable to make any payment for any claim under Section B of this Policy in respect of an Insured Person, directly or indirectly for, caused by, arising from or in any way attributable to any of the following: i. STANDARD EXCLUSIONS - 1. 30-day waiting period(Code – Excl 03) Any hospitalization falling within the initial waiting period as specified in the policy certificate subject to a maximum of 30 days- 1. Expenses related to the treatment of any illness within the initial waiting period shall be excluded except claims arising due to an accident, provided the same a",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 16,
+    "evidence_text": "Policy Wordings UIN: ICIHLIP22092V032122 CIN: L67200MH2000PLC129408 16 admissible. However, in case of life threate ning situations or following an accident, expenses up to the stage of stabilization are payable but not the complete claim. 31. . Specified disease/procedure waiting period (Code – Excl 02) -Two Years Exclusions- (Unless the waiting period is specifically waived off and mentioned in the policy certificate)- a. Expenses related to the treatment of the below listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous covera",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_applicable",
+    "scope_json": {
+      "policy_scope": "section_b_hospital_daily_cash"
+    },
+    "condition_json": {
+      "reason": "This wording provides hospital daily cash, not room-rent indemnity reimbursement."
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "Hospital Daily Cash Benefit If an Insured Person contracts an Illness or suffers an Injury due to an Accident that occurs during the Period of Cover and which solely and directly requires the Insured Person to be Hospitalized, then We will pay the daily amount specified in the Policy Certificate for each continuous and completed day of Hospitalization.",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: room-rent indemnity limit is not applicable because the cited benefit is certificate-defined hospital daily cash.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ]
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "benefit_type": "icu_cash",
+      "daily_amount": null,
+      "max_days": null,
+      "policy_certificate_dependent": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "present_schedule_dependent",
+      "benefit_type": "icu_cash",
+      "daily_amount": null,
+      "max_days": null
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "section_b_extension",
+      "benefit": "Intensive Care Unit Cash Benefit"
+    },
+    "condition_json": {
+      "amount_source": "Policy Certificate",
+      "max_days_source": "Policy Certificate",
+      "requires_icu_hospitalization": true
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "Intensive Care Unit (ICU) Cash Benefit If an Insured Person contracts an Illness or suffers an Injury due to an Accident that occurs during the Period of Cover and which solely and directly requires the Insured Person to be Hospitalized in an Intensive Care Unit, then We will pay the daily amount specified in the Policy Certificate for each continuous and completed day of confinement in the Intensive Care Unit.",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: ICU benefit is present as certificate-defined ICU cash, not as ICU room-rent percentage.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ],
+    "additional_evidence": [
+      {
+        "page": 13,
+        "text": "We shall not be liable to pay the daily amount for more than the maximum number of days specified in the Policy Certificate for each period of Hospitalization within the Period of Cover."
+      }
+    ]
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "applies": true,
+      "amount": null,
+      "policy_certificate_dependent": true,
+      "basis_options": [
+        "per_year",
+        "per_life",
+        "per_event",
+        "benefit_specific"
+      ]
+    },
+    "normalized_value_json": {
+      "deductible_status": "present_schedule_dependent",
+      "amount": null,
+      "basis_options": [
+        "per_year",
+        "per_life",
+        "per_event",
+        "benefit_specific"
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy_and_specific_benefits"
+    },
+    "condition_json": {
+      "amount_source": "Policy Certificate",
+      "applies_if_specified": true
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 1,
+    "evidence_text": "Deductible shall be applicable per year, per life or per event as stated in the policy certificate and specific benefit based deductible shall be applied if specified in the policy certificate.",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: deductible is present but amount and basis are Policy Certificate-dependent.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ]
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_applicable",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 6,
+    "evidence_text": "nder the benefits (including add -ons) to the Insured Person on cashless or reimbursement basis. These shall also include providers empanelled to form a part of network other than hospitals 28. Sum Insured means the amount specified in the Policy Certificate against a Benefit or set of Benefits that represents Our maximum, total and cumulative liability for any and all claims made in respect of that Insured Person during the Period of Cover under that Benefit/set of Benefits. 29. Waiting Period means a time -bound exclusion period related to condition(s) specified in the Policy Certificate which shall be served before a claim related to such condition becomes ad",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "explicitly_not_covered",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 14,
+    "evidence_text": "ortability norms of the extant IRDAI (Health Insurance) Regulations, then waiting period for the same would be reduced to the extent of prior coverage 4. Coverage under the policy after the expiry of 24 months for any pre -existing disease is subject to the same being declared at the time of application and accepted by Insurer. 3. Maternity (Code – Excl 18) a. Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; b. Expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period; 4. Co",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained explicitly_not_covered because policy text contains exclusion evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "type": "road_or_air_ambulance_benefit_if_selected"
+    },
+    "normalized_value_json": {
+      "coverage_status": "conditional"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 37,
+    "evidence_text": "charge Summary, Certificate from Treating Doctor (under whom the insured was admitted) mentioning the details of Diagnosis, Investigations and Date & Time of Admission and Discharge from the Hospital  Certificate from Medical Practitioner mentioning the details of the burns injury suffered by the insured C.2.11 Extension Benefit: Ambulance Charges Benefit If an Insured Person suffers an Injury due to an Accident that occurs during the Period of Cover and that Injury solely and directly requires the Insured Person to be Hospitalized , We will pay the Sum Insured specified against this Benefit in the Policy Certificate in respect of road Ambulance Services for",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15,
+      "distance_marketing_days": 30
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 49,
+    "evidence_text": "Family Shield Policy Wordings UIN: ICIHLIP22092V032122 CIN: L67200MH2000PLC129408 49 The insured person shall be allowed free look period of fifteen days (30 days if the Policy is sold through distance marketing) from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. lf the insured has not made any claim during the Free Look Period, the insured shall be entitled to i. a re",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 46,
+    "evidence_text": "dress, occupation, state of health, or of any other changes affecting the Insured Person (or his Nominee/ legal heir, as the case may be) Terms of Renewal  The Policy may be renewed by mutual consent and in such event the Renewal premium should be paid to Us on or before the date of expiry of the Policy and in no case later than the Grace Period of 30 days from the expiry of the Policy. We will not be liable to pay for any claim arising out of an Injury or Accident or Illness or Hospitalization that occurred during the Grace Period.  You shall on tendering any premium for the Renewal of this Policy give notice in writing to Us of any disease, physical defect or",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "renewable"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 50,
+    "evidence_text": "of misrepresentation, non-disclosure of material facts or fraud 11. Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, misrepresentation by the insured person.  The Company shall endeavor to give notice for renewal. However, the Company is not under obligation to give any notice for renewal.  Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years.  Request for renewal along with requisite premium shall be received by the Company before the end of the policy period.",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 18,
+    "evidence_text": "2000PLC129408 18 Claim Documents for Section B (Applicable for Benefit B.1 and B.2)  On the occurrence of an Insured Event which may give rise to a claim under Section B of the Policy, We shall be provided with the following necessary and mandatory information and documentation specified in relation to the Benefit being claimed within 30 days of the occurrence of the Insured Event: Duly filled claim form  Hospital Discharge summary filled and attested by Hospital  In case of incomplete and / or inconclusive Discharge Summary, Certificate from Treating Doctor (under whom the insured was admitted) mentioning the details of Diagnosis, Investigations and Date",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 47,
+    "evidence_text": "formed decision in the context of underwriting the risk) 2. Condition Precedent to Admission of Liability The terms and conditions of the policy must be fulfilled by the Insured person for the Company to make any payment for claim(s) arising under the policy. 3. Claim Settlement (provision for Penal Interest)  The Company shall settle or reject a claim, as the case may be, within 30 days f rom the date of receipt of last necessary document  In the case of delay in the payment of a claim, the Company shall be liable to pay interest to the policyholder from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the b",
+    "source_document": {
+      "filename": "ICICI_Family_Shield_IRDAI.pdf",
+      "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "uin": "ICIHLIP22092V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

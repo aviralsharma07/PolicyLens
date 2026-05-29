@@ -1,0 +1,160 @@
+[
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_001",
+    "page": 24,
+    "bbox": null,
+    "table_type": "schedule_of_benefits",
+    "headers": [
+      "Benefit",
+      "Limit"
+    ],
+    "rows": [
+      [
+        "Room Rent",
+        "2% of Sum Insured per day"
+      ],
+      [
+        "ICU/ICCU",
+        "5% of Sum Insured per day"
+      ],
+      [
+        "Road Ambulance",
+        "Rs. 2000"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": "d person may also approach the office of Insurance Ombudsman of the respective area/region for redressal of grievance. The contact details of the Insurance Ombudsman offices have been provided as Annexure-B No loading shall apply on renewals base d on individual claims experience.Insurance is the subject matter of solicitation 12 Table Of Benefits Name Arogya Sanjeevani Policy, HDFC ERGO Product Type Individual/ Floater Category of Cover Indemnity Sum insured INR On Individual basis \u2013 SI shall apply to each individual family member On Floater basis \u2013 SI shall apply to the entire family Policy Period 1 year Eligibility Policy can be availed by persons",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_002",
+    "page": 8,
+    "bbox": null,
+    "table_type": "waiting_period",
+    "headers": [
+      "Waiting period type",
+      "Duration"
+    ],
+    "rows": [
+      [
+        "PED",
+        "48 months"
+      ],
+      [
+        "Initial",
+        "30 days"
+      ],
+      [
+        "Specified conditions",
+        "24/48 months"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      8
+    ],
+    "evidence_text": "ursing Council of India or the Nursing Council of any state in India. 3.46. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre -existing diseases, time-bound exclusions and for all waiting periods. 3.47. Room Rent means the amount charged by a hospital towards Room and Boarding expenses and shall include the Associated Medical Expenses. 3.48. Sub-limit means a cost sharing requirement under a health insurance policy in which an insurer would not be liable to pay any amount in excess of the pre -defined lim",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_003",
+    "page": 8,
+    "bbox": null,
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      8
+    ],
+    "evidence_text": "r the Nursing Council of any state in India. 3.46. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre -existing diseases, time-bound exclusions and for all waiting periods. 3.47. Room Rent means the amount charged by a hospital towards Room and Boarding expenses and shall include the Associated Medical Expenses. 3.48. Sub-limit means a cost sharing requirement under a health insurance policy in which an insurer would not be liable to pay any amount in excess of the pre -defined limit 3.49. Sum Insured",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_004",
+    "page": 2,
+    "bbox": null,
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      2
+    ],
+    "evidence_text": "fter called the \u2017Company\u2018) to the proposer mentioned in the schedule (hereinafter called the \u2017Insured\u2018) to cover the person(s) named in the schedule (hereinafter called the \u2017Insured Persons\u2018). The policy is based on the statements and declaration provided in the proposal Form by the proposer and is subject to receipt of the requisite premium. 2. Operative Clause If during the policy period one or more Ins ured Person(s) is required to be hospitalized for treatment of an Illness or Injury at a Hospital/ Day Care Centre, following Medical Advice of a duly qualified Medical Practitioner, the Company shall indemnify Medically necessary, expenses towards the Cover",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_005",
+    "page": 16,
+    "bbox": null,
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      16
+    ],
+    "evidence_text": "ar ge papers, pay for non - medical and inadmissible expenses. (v) The Company reserves the right to deny pre - authorization in case the insured person is unable to provide the relevant medical details. (vi)In case of denial of cashless access, the insured perso n may obtain the treatment as per treating doctor\u2018s advice and submit the claim documents to the Company for reimbursement. 9.2 Procedure for reimbursement of claims: For reimbursement of claims the insured person may submit the necessary documents to the Company within the prescribed time limit as specified hereunder. Sl No Type of Claim Prescribed Time limit 1. Reimbursement of hospitalization, day",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  },
+  {
+    "table_id": "hdfc_arogya_sanjeevani_table_006",
+    "page": 3,
+    "bbox": null,
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      3
+    ],
+    "evidence_text": "newal on a given policy is not paid on or before the premium renewal date or within 30 days thereof 3.8. Cashless Facility means a facility extended by the insurer to the insured where the payments, of the costs of treatment undergone by the insured person in accordance with the Policy terms and conditions, are directly made to the network provider by the insurer to the extent pre-authorization is approved. 3.9. Condition Precedent means a Policy term or condition upon which the Company\u2018s liability under the Policy is conditional upon. 3.10. Congenital Anomaly refers to a condition(s) which is present since birth, and which is abnormal with reference to for",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text."
+  }
+]

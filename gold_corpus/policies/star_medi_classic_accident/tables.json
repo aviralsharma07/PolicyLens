@@ -1,0 +1,175 @@
+[
+  {
+    "table_id": "star_medi_classic_accident_table_001",
+    "page": 1,
+    "bbox": null,
+    "table_type": "schedule_of_benefits",
+    "headers": [
+      "Benefit",
+      "Limit/Condition"
+    ],
+    "rows": [
+      [
+        "Emergency ambulance",
+        "Rs. 750 per hospitalization"
+      ],
+      [
+        "Restoration",
+        "200% of basic SI once"
+      ],
+      [
+        "Bonus",
+        "5% per claim-free year, max 25%"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": "i n g The Health Insurance Specialist STAR HEALTH AND ALLIED INSURANCE COMPANY LIMITED Regd. & Corporate Ofﬁce: 1, New Tank Street, Valluvar Kottam High Road, Nungambakkam, Chennai - 600 034. « Phone : 044 - 28288800 « Email : support@starhealth.in Website : www.starhealth.in « CIN : U66010TN2005PLC056649 « IRDAI Regn. No. : 129 TITLE Description What am I covered for Section I a In-patient Treatment- Covers hospitalisation expenses for period more than 24 hrs. b Emergency Ambulance- Up to Rs. 750/- per hospitalization for utilizing ambulance service for transporting insured person to hospital in case of an emergency. c Pre-Hospitalisation- Medical Exp",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "star_medi_classic_accident_table_002",
+    "page": 2,
+    "bbox": null,
+    "table_type": "waiting_period",
+    "headers": [
+      "Waiting period type",
+      "Duration"
+    ],
+    "rows": [
+      [
+        "Pre-existing diseases",
+        "48 months"
+      ],
+      [
+        "Initial waiting",
+        "30 days"
+      ],
+      [
+        "Specified diseases",
+        "2 years"
+      ]
+    ],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      2
+    ],
+    "evidence_text": "icating drugs/alcohol/HIV or AIDS HIV VI (4), VI (5) III. War, Biological nuclear and chemical terrorism and nuclear perils VI (7), VI (9.D) IV. Engaging in Hazardous sports/activities VI (11) The exclusions given above are only a partial list. Please refer the policy clause for the complete list. Waiting Period Section I Initial waiting period 3(2) Speciﬁc waiting period 3 (3 [a,b,c,d,e,f,]) Pre-existing diseases 3 (1) Waiting Period Section II Initial Waiting Period Speciﬁc Waiting Period No waiting periods applicable for this policy Payment basis (Section I) Reimbursement of covered expenses up to speciﬁed limits AND/OR 1.0 (A),(B) & C Fi",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "star_medi_classic_accident_table_003",
+    "page": 5,
+    "bbox": null,
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      5
+    ],
+    "evidence_text": "to 5,00,000/- Above 5,00,000/- Limit for Cataract Surgery Rs.12,000/- per person per policy period Rs.20,000/- per eye per person and not exceeding Rs.30,000/- per policy period Rs.30,000/- per eye per person and not exceeding Rs.40,000/- per policy period Expenses relating to the hospitalization will be considered in proportion to the room rent stated in the policy. Company's liability in respect of all claims admitted during the period of insurance shall not exceed the sum insured per person mentioned in the schedule. 2. DEFINITIONS Accident/Accidental means sudden, unforeseen and involuntary event caused by external, visible and violent means. Attendant means any pe",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "star_medi_classic_accident_table_004",
+    "page": 9,
+    "bbox": null,
+    "table_type": "premium",
+    "headers": [
+      "Period on risk",
+      "Rate of premium retained"
+    ],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": "sclosure of material fact as declared in proposal form / at the time of claim, or non-co-operation by the insured person, by sending the insured 30 days notice by registered letter at the insured person's last known address. The insured may at any time cancel this policy and in such event the Company shall allow refund after retaining premium at Company's short period rate only (table given below) provided no claim has occurred up to the date of cancellation For policy with one year term PERIOD ON RISK RATE OF PREMIUM TO BE RETAINED Up to one-month ⅓ rd of annual premium Up to three Months ½ of annual premium Up to six months ¾ th of annual premium Exceeding si",
+    "annotation_status": "table_region_with_manual_header_row_summary",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "star_medi_classic_accident_table_005",
+    "page": 8,
+    "bbox": null,
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      8
+    ],
+    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 8 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. Documents to be submitted in support of claim are – For reimbursement claims a. Duly completed claim form, and b. Pre -admission investigations and treatment papers c. Discharge summary from the hospital in original d. Cash receipts from hospital, chemists e. Cash receipts and reports for tests done f. Receipts from doctors, surgeons, a",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  },
+  {
+    "table_id": "star_medi_classic_accident_table_006",
+    "page": 6,
+    "bbox": null,
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      6
+    ],
+    "evidence_text": "erson who holds a valid registration from the Medical Council of any State or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is there by entitled to practice medicine within its jurisdiction; and is acting within the scope and jurisdiction of license Network Hospital means hospitals or health care providers enlisted by an insurer, TPA or jointly by an insurer and TPA to provide medical services to an insured by a cashless facility. Non Network Hospital means any hospital, day care center or other provider that is not part of the network. Portability means the right accorded to an ind",
+    "annotation_status": "table_region_identified_cells_pending",
+    "notes": "Table-like region identified from text layer. Cell-level coordinates deferred until table engine exists.",
+    "cell_coordinates_status": "pending_physical_parser",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "second_pass_review": "table type and source page retained; headers/rows summarized when determinable from text.",
+    "docling_cross_check": "generated_markdown_table_context_available",
+    "fourth_pass_review": "Docling markdown generated for this policy; table region/type retained with cell coordinates deferred to physical parser."
+  }
+]

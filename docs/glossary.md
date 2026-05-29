@@ -37,7 +37,7 @@
 | **Fact Candidate** | A potential extracted value before acceptance. Multiple candidates per concept are scored and resolved. |
 | **Derived Policy Feature** | The final compiled 91-field view of a policy, consumed by Product B. |
 | **Gold Corpus** | A manually annotated set of policies used as the ground truth for evaluation. |
-| **Fact Status** | An 8-value enum describing whether a fact was found, absent, ambiguous, etc. |
+| **Fact Status** | A 7-value enum describing whether a fact was found, absent, ambiguous, conflicting, or needs review. |
 | **Scope** | The conditions under which a fact applies (base policy, optional cover, network/non-network). |
 | **Normalizer** | A function that converts raw extracted text into a typed canonical value (e.g., "₹5 lakh" → 500000). |
 | **Pipeline Run** | A versioned execution of the full extraction pipeline on one or more documents. |

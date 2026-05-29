@@ -1,0 +1,809 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 15,
+    "evidence_text": "the patient is in vegetative state shall be covered as per the terms and conditions of the policy contract). c) Treatment of mental illness, stress or psychological disorders and neurodegenerative disorders The Company shall indemnify the Hospital or the Insured the Medical Expenses related to following and they are covered after a waiting period of 48 months with a sub-limit up to 25% of Sum Insured per policy period. The below covers are subject to the patient exhibiting any of the following traits and requiring Hospitalisation as per the treating Psychiatrist’s advice 1. Major Depressive Disorder- when the patient is aggressive or violent. 2. Acute psychoti",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 18,
+    "evidence_text": "48 Months waiting period 1. Joint Replacement due to Degenerative Condition 2. Age-related Osteoarthritis & Osteoporosis 3. Treatment of mental illness, stress or psychological disorders and neurodegenerative disorders. 4. Age Related Macular Degeneration (ARMD) 5. Genetic diseases or disorders 6. External Congenital Diseases 4.3 FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03) a. Expenses related to the treatment of any i llness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        },
+        {
+          "months": 48
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24,
+        48
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 17,
+    "evidence_text": "NIAHLIP21278V042021 Page 17 of 33 NEW INDIA FLOATER MEDICLAIM POLICY for the same would be reduced to the extent of prior coverage. d. Coverage under the policy after the expiry of 48 months for any pre -existing disease is subject to the same being declared at the time of application and accepted by us. 4.2 SPECIFIC WAITING PERIOD (Code- Excl02) a. Expenses related to the treatment of the following listed conditio ns, surgeries / treatments shall be excluded until the expiry of Ninety Days / 24 / 48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall no",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "type": "percentage_of_sum_insured_per_day",
+      "percentage": 1
+    },
+    "normalized_value_json": {
+      "percentage": 1,
+      "unit": "percent_of_sum_insured_per_day"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 10,
+    "evidence_text": "mitted during the Period of Insurance in respect of all Insured Persons shall not exceed the aggregate of the Sum Insured and the Cumulative Bonus. Subject to this, for each claim We will reimburse the following Reasonable and Customary and Medically Necessary Expenses admissible as per the terms and conditions of the Policy: 3.1 (a) Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1% of the Sum Insured (without Cumulative Bonus) per day 3.1 (b) Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses not exceeding 2% of the Sum Insured (without Cumulative Bonus) per day 3.1 (c) Surgeon, Anesthetist, Medical Practit",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "type": "percentage_of_sum_insured_per_day",
+      "percentage": 2
+    },
+    "normalized_value_json": {
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 10,
+    "evidence_text": "ubject to this, for each claim We will reimburse the following Reasonable and Customary and Medically Necessary Expenses admissible as per the terms and conditions of the Policy: 3.1 (a) Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1% of the Sum Insured (without Cumulative Bonus) per day 3.1 (b) Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses not exceeding 2% of the Sum Insured (without Cumulative Bonus) per day 3.1 (c) Surgeon, Anesthetist, Medical Practitioner, Consultants’ Specialist fees. 3.1 (d) Anesthesia, Blood, Oxygen, Operation Theatre Charges, Surgical Appliances, Medicines & Drugs, Dialysi",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "increase_percent_per_claim_free_year": 25,
+      "maximum_percent": 50
+    },
+    "normalized_value_json": {
+      "increase_percent": 25,
+      "maximum_percent": 50
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 13,
+    "evidence_text": "wenty-four months of Continuous Coverage. Congenital External Disease or Defects or anomalies shall be covered after forty-eight months of Continuous Coverage, but such cover for Congenital External Disease or Defects or anomalies shall be limited to 10% of the average Sum Insured in the preceding four years. 3.10. CUMULATIVE BONUS Cumulative Bonus shall be increased by 25% at each renewal in respect of each claim free year of insurance, subject to maximum of 50%. If a claim is made in any particular year; the Cumulative Bonus accrued shall be reduced at the same rate at which it is accrued. Cumulative Bonus will be lost if policy is not renewed before or within",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true,
+      "facility": "AYUSH Hospital"
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 2,
+    "evidence_text": "NIAHLIP21278V042021 Page 2 of 33 NEW INDIA FLOATER MEDICLAIM POLICY 2.3 ANY ONE ILLNESS means continuous period of Illness and it includes relapse within forty -five days from the date of last consultation with the Hospital where treatment has been taken. 2.4 AYUSH TREATMENT refers to Hospitalisation treatments given under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems. 2.5 AYUSH HOSPITAL is a Healthcare facility wherein medical / surgical / para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 16,
+    "evidence_text": "ed per policy period with 48 months waiting periods. Note: For the c overages defined in 3.14, waiting period's, if any, shall be applicable afresh i.e. for both New and Existing Policyholders w.e.f 1st October 2020. Coverage for such illness or procedures shall only be available after completion of the said waiting periods. 3.15. COVERAGE FOR MODERN TREATMENTS or PROCEDURES: The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to the limit specified against each procedure during the policy period. S No Treatment or Procedure Limit (Per Policy Period) 3.15.1 Uterine Arter",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": {
+      "months": 36,
+      "benefit_type": "optional"
+    },
+    "normalized_value_json": {
+      "months": 36
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefit"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 14,
+    "evidence_text": "NIAHLIP21278V042021 Page 14 of 33 NEW INDIA FLOATER MEDICLAIM POLICY 3.12. OPTIONAL COVER II : MATERNITY EXPENSES BENEFIT On the payment of additional Premium as mentioned in Schedule, it is hereby agreed and declared that Clause 4.4.15 stands deleted for Insured Person as mentioned in the Schedule. Our liability for claim admitted for Maternity shall not exceed 10% of the average Sum Insured of the Insured Person in the prece",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": {
+      "covered": true,
+      "condition": "premium paid for newborn baby on renewal"
+    },
+    "normalized_value_json": {
+      "coverage_status": "conditional"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "optional_benefit"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "NIAHLIP21278V042021 Page 12 of 33 NEW INDIA FLOATER MEDICLAIM POLICY renewals are effected before or within thirty days of expiry of the Policy. No coverage for the New Born Baby would be available during subsequent renewals unless the child is declared for insurance and covered as an Insured Person. Note: New Born Baby means a baby born during the Policy Period to a female Insured Person, who has twenty-four months of Continuous Coverage with Us. 3.4. TREATMENTS UNDER AYURVEDIC/HOMEOPATHIC/UNAN",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 11,
+    "evidence_text": "cy periods, the claims shall be paid taking into consideration the available Sum Insured of the expiring Policy only. Sum Insured of the Renewed Policy will not be available for the Hospitalisation (including Pre & Post Hospitalisation Expenses), which has commenced in the expiring Polic y. Claim shall be settled on per event basis. MEDICAL EXPENSES FOR ORGAN TRANSPLANT: If treatment involves Organ Transplant to Insured Person, then We will also pay Hospitalisation Expenses (excluding cost of organ) incurred on the donor, provided Our liab ility towards expenses incurred on the donor and the insured recipient shall not exceed the aggregate of the Sum Insured, if",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "type": "percentage_of_sum_insured",
+      "percentage": 1
+    },
+    "normalized_value_json": {
+      "percentage": 1,
+      "unit": "percent_of_sum_insured"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "ong with the admissible claim amount. Critical Care Benefit is payable only once in the life time of each Insured Person and is not applicable to any Insured Persons for whom it is a Pre- Existing Condition/Disease. Any payment under this Clause would be in addition to the Sum Insured and shall not de plete the Sum Insured. 3.7. PAYMENT OF AMBULANCE CHARGES We will pay You the charges for Ambulance services not exceeding 1% of the Sum Insured, Medically N ecessarily incurred for shifting any Insured Person to Hospital for admission in Emergency Ward or ICU, or from one Hospital to another Hospitalfor better medical facilities. 3.8. PAYMENTS ONLY IF INCLUDED I",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 25,
+    "evidence_text": "emium, if no claim has been made or paid under the Policy, at short period rate which is tabulated below. PERIOD ON RISK RATE OF PREMIUM TO BE CHARGED (RETAINED) Up to one month 1/4th of the annual rate Up to three months 1/2 of the annual rate Up to six months 3/4th of the annual rate Exceeding six months Full annual rate 5.13 FREE LOOK PERIOD: The free look period shall be applicable at the inception of the first policy. You will be allowed a period of 15 days from the date of receipt of the policy to review the terms and conditions of the policy and to return the same if not acceptable. If You have not made any claim during the free look period, You shall",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 6,
+    "evidence_text": "esentation, mis-description or non-disclosure of any material fact. 2.17 EMERGENCY CARE means management for an Illness or Injury which results in symptoms which occur suddenly and unexpectedly, and requires immediate care by a medical practitioner to prevent death or serious long-term impairment of the Insured Person’s health. 2.18 GRACE PERIOD means specified period of time immediately following the premium due d ate during which a payment can be made to renew or continue the Policy in force without loss of continuity benefits such as waiting period and coverage of pre -existing diseases. Coverage is not available for the period for which no premium is received.",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "renewable"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 24,
+    "evidence_text": "nly be indemnified the Hospitalisation costs in accordance with the terms and conditions of the chosen policy. Note: The insured Person must disclose such other insurance at the time of making a claim under this Policy. None of the provisions of this Clause shall apply for payments under Clause 3.5 and Clause 3.6 of the Policy. 5.10 RENEWAL CLAUSE: We shall renew this Policy if You shall remit the requisite Premium to Us prior to expiry of the Period of Insurance stated in the Schedule. We shall be entitled to decline renewal if: 1. Any fraud, misrepresentation or suppression by You or any one acting on Your behalf is found either in obtaining insurance or subseq",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "planned_or_detected_disease_or_injury": {
+        "immediate": true,
+        "hours_before_hospitalisation": 48
+      },
+      "emergency_hospitalisation": {
+        "hours_from_hospitalisation": 24
+      }
+    },
+    "normalized_value_json": {
+      "planned_or_detected_disease_or_injury": {
+        "immediate": true,
+        "hours_before_hospitalisation": 48
+      },
+      "emergency_hospitalisation": {
+        "hours_from_hospitalisation": 24
+      }
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "claim_stage": "notice_of_claim"
+    },
+    "condition_json": {
+      "recipient": "TPA",
+      "mode": "in_writing"
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 22,
+    "evidence_text": "If You intend to make any claim under this Policy You must: a. Intimate TPA in writing on detection of any Disease/Injury being suffered immediately or forty-eight hours before Hospitalisation. b. In case of Hospitalisation due to medical emergency, intimate TPA within twenty-four hours from the time of Hospitalisation.",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: notice timelines are explicit for detected/planned hospitalization and emergency hospitalization.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ]
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 26,
+    "evidence_text": "es on portability. For detailed guidelines on Portability. Kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_NoYearList.aspx?DF=RL&mid=4.2 5.16 PROTECTION OF POLICY HOLDERS’ INTEREST: This policy is subject to IRDAI (Protection of Policyholders’ Interests) Regulation, 2017. 5.17 PAYMENT OF CLAIM: i. We shall settle or reject a claim, as may be the case, within thirty days of the receipt of the last ‘necessary’ document. ii. While efforts will be made by Us to not call for any document not listed in Clause 5.5, where any additional document or clarification is necessary to take a decision on the claim, such additional documents will be cal",
+    "source_document": {
+      "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "uin": "NIAHLIP21278V042021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "policy_id": "icici_lombard_family_shield",
+  "policy_slug": "icici_family_shield",
+  "insurer": "ICICI Lombard",
+  "plan_name": "Family Shield",
+  "uin": "ICIHLIP22092V032122",
+  "uin_base": "ICIHLIP22092",
+  "lifecycle_product_name": "Family Shield",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+  "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+  "page_count": 60,
+  "source_domain": "irdai",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex manual text-layer review",
+  "human_reviewer": "Avi",
+  "annotation_date": "2026-05-29",
+  "pipeline_run_id": "gold_manual_v1",
+  "annotation_status": "gold_v1_manual_review_resolved",
+  "difficulty_notes": "Long IRDAI wording with benefit sections, waiting period clauses, accident extensions, and schedules.",
+  "counts": {
+    "sections": 91,
+    "clauses": 89,
+    "tables": 4,
+    "facts": 20
+  },
+  "known_limitations": [
+    "No raw PDF copied into repository; source_pdf_path points to read-only policy_data.",
+    "BBox and cell coordinates are intentionally null until DSE-004/DSE-009 physical/table parsers exist.",
+    "Annotations are deep text-layer gold v1 labels but remain draft until human reviewer accepts them."
+  ],
+  "annotation_passes": [
+    {
+      "pass_id": "pass_2_structure_docling_crosscheck",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "existing IBM Docling markdown where available"
+      ],
+      "changes": "Cross-checked headings, added source-tool provenance, enriched table headers/rows where policy text supports them."
+    },
+    {
+      "pass_id": "pass_3_fact_precision_review",
+      "date": "2026-05-29",
+      "tools": [
+        "pypdf text layer",
+        "manual concept evidence audit",
+        "precision-first status review"
+      ],
+      "changes": "Downgraded weak schedule-dependent or definition-only fact labels to requires_manual_review; added fact quality notes."
+    },
+    {
+      "pass_id": "pass_5_human_style_manual_review_patch",
+      "date": "2026-05-29",
+      "tools": [
+        "source PDF text layer",
+        "pdftotext targeted page review",
+        "IBM Docling markdown cross-check where available",
+        "manual reviewer report"
+      ],
+      "changes": "Applied source-PDF-only manual review decisions for the 11 facts previously marked requires_manual_review."
+    }
+  ],
+  "docling_markdown_available": true,
+  "docling_markdown_path": "insurance-agent/data/docling_markdown/04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf.md",
+  "docling_heading_count": 155,
+  "docling_markdown_table_line_count": 119,
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_applicable": 2,
+    "not_found": 6,
+    "present": 11
+  },
+  "manual_review_report": "data/reports/gold_corpus_manual_review_11_facts_v1.md"
+}

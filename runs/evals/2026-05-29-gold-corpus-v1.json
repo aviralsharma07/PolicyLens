@@ -1,0 +1,26 @@
+{
+  "eval_name": "gold-corpus-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-003",
+  "git_commit": "566b2a9",
+  "input_manifest": "data/manifests/active_policy_wordings_v1.json + data/manifests/uin_match_report_v1.json",
+  "metrics": {
+    "policies": 5,
+    "json_files": 25,
+    "sections": 445,
+    "clauses": 453,
+    "tables": 26,
+    "facts": 100,
+    "docling_markdown_files": 5,
+    "generated_docling_markdown_files": 2,
+    "status_counts": {
+      "explicitly_not_covered": 3,
+      "not_applicable": 2,
+      "not_found": 18,
+      "present": 77
+    }
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "Validated with python3 scripts/validate_gold_corpus.py after pass 1 text-layer annotations, pass 2 Docling markdown cross-check where available, pass 3 precision review, pass 4 generated no-OCR Docling markdown cross-check for Star and Care, and pass 5 source-PDF-only manual review patch for the 11 previously unresolved facts. Bbox and table cell coordinates remain null until DSE-004/DSE-009."
+}

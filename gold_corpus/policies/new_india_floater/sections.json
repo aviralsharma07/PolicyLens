@@ -1,0 +1,1563 @@
+[
+  {
+    "section_id": "new_india_floater_sec_000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 33,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": null,
+    "annotation_status": "manual_container",
+    "notes": "Synthetic root for complete section hierarchy.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_001",
+    "section_number": null,
+    "title": "NEW INDIA FLOATER MEDICLAIM POLICY",
+    "level": 1,
+    "parent_id": "new_india_floater_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "NEW INDIA FLOATER MEDICLAIM POLICY",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_002",
+    "section_number": null,
+    "title": "THE NEW INDIA ASSURANCE CO. LTD.",
+    "level": 1,
+    "parent_id": "new_india_floater_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "THE NEW INDIA ASSURANCE CO. LTD.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_003",
+    "section_number": null,
+    "title": "REGISTERED & HEAD OFFICE: 87, MAHATMA GANDHI ROAD, MUMBAI 400001",
+    "level": 1,
+    "parent_id": "new_india_floater_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "REGISTERED & HEAD OFFICE: 87, MAHATMA GANDHI ROAD, MUMBAI 400001",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_004",
+    "section_number": "1",
+    "title": "WHAT WE COVER",
+    "level": 1,
+    "parent_id": "new_india_floater_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. WHAT WE COVER",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_005",
+    "section_number": "2",
+    "title": "DEFINITIONS",
+    "level": 1,
+    "parent_id": "new_india_floater_sec_000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. DEFINITIONS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_006",
+    "section_number": "2.1",
+    "title": "ACCIDENT means a sudden, unforeseen and involuntary event caused by external, visible and",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2.1 ACCIDENT means a sudden, unforeseen and involuntary event caused by external, visible and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_007",
+    "section_number": "2.2",
+    "title": "AGE means age of the Insured person on last birthday as on date of commencement of the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2.2 AGE means age of the Insured person on last birthday as on date of commencement of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_008",
+    "section_number": "2.3",
+    "title": "ANY ONE ILLNESS means continuous period of Illness and it includes relapse within forty -five",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.3 ANY ONE ILLNESS means continuous period of Illness and it includes relapse within forty -five",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_009",
+    "section_number": "2.4",
+    "title": "AYUSH TREATMENT refers to Hospitalisation treatments given under Ayurveda, Yoga and",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.4 AYUSH TREATMENT refers to Hospitalisation treatments given under Ayurveda, Yoga and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_010",
+    "section_number": "2.5",
+    "title": "AYUSH HOSPITAL is a Healthcare facility wherein medical / surgical / para-surgical treatment",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.5 AYUSH HOSPITAL is a Healthcare facility wherein medical / surgical / para-surgical treatment",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_011",
+    "section_number": "2.6",
+    "title": "AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.6 AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_012",
+    "section_number": "2.7",
+    "title": "BREAK IN POLICY means the period of gap that occurs at the end of the existing policy term,",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.7 BREAK IN POLICY means the period of gap that occurs at the end of the existing policy term,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_013",
+    "section_number": "2.8",
+    "title": "CASHLESS FACILITY means a facility extended by Us to You where the payments, of the costs",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "2.8 CASHLESS FACILITY means a facility extended by Us to You where the payments, of the costs",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_014",
+    "section_number": "2.9",
+    "title": "CONDITION PRECEDENT means a Policy term or condition upon which Our liability under the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.9 CONDITION PRECEDENT means a Policy term or condition upon which Our liability under the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_015",
+    "section_number": "2.10",
+    "title": "CONGENITAL ANOMALY refers to a condition(s) which is present since birth, and which is",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.10 CONGENITAL ANOMALY refers to a condition(s) which is present since birth, and which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_016",
+    "section_number": "2.11",
+    "title": "CRITICAL ILLNESSES means the following Illnesses:",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.11 CRITICAL ILLNESSES means the following Illnesses:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_017",
+    "section_number": "2.11.1",
+    "title": "CANCER means",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_016",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.11.1 CANCER means",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_018",
+    "section_number": "I",
+    "title": "A malignant tumour characterized by the uncontrolled growth and spread of malignant cells",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "I. A malignant tumour characterized by the uncontrolled growth and spread of malignant cells",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_019",
+    "section_number": "II",
+    "title": "The following are excluded -",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "II. The following are excluded -",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_020",
+    "section_number": "2.11.2",
+    "title": "MYOCARDIAL INFARCTION (FIRST HEART ATTACK OF SPECIFIED SEVERITY)",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_019",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "2.11.2 MYOCARDIAL INFARCTION (FIRST HEART ATTACK OF SPECIFIED SEVERITY)",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_021",
+    "section_number": "I",
+    "title": "The first occurrence of heart attack or myocardial infarction, which means the death of a",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "I. The first occurrence of heart attack or myocardial infarction, which means the death of a",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_022",
+    "section_number": "II",
+    "title": "The following are excluded:",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "II. The following are excluded:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_023",
+    "section_number": "2.11.3",
+    "title": "OPEN CHEST CABG",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_022",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.11.3 OPEN CHEST CABG",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_024",
+    "section_number": "I",
+    "title": "The actual undergoing of heart surgery to correct blockage or narrowing in one or more",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "I. The actual undergoing of heart surgery to correct blockage or narrowing in one or more",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_025",
+    "section_number": "2.11.4",
+    "title": "OPEN HEART REPLACEMENT OR REPAIR OF HEART VALVES",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_024",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.11.4 OPEN HEART REPLACEMENT OR REPAIR OF HEART VALVES",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_026",
+    "section_number": "I",
+    "title": "The actual undergoing of open-heart valve Surgery is to replace or repair one or more heart",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "I. The actual undergoing of open-heart valve Surgery is to replace or repair one or more heart",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_027",
+    "section_number": "2.11.5",
+    "title": "COMA OF SPECIFIED SEVERITY",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_026",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.11.5 COMA OF SPECIFIED SEVERITY",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_028",
+    "section_number": "I",
+    "title": "A state of unconsciousness with no reaction or response to external stimuli or internal",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "I. A state of unconsciousness with no reaction or response to external stimuli or internal",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_029",
+    "section_number": "II",
+    "title": "The condition has to be confirmed by a specialist Medica l Practitioner. Coma resulting",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "II. The condition has to be confirmed by a specialist Medica l Practitioner. Coma resulting",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_030",
+    "section_number": "2.11.6",
+    "title": "KIDNEY FAILURE REQUIRING REGULAR DIALYSIS",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_029",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.11.6 KIDNEY FAILURE REQUIRING REGULAR DIALYSIS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_031",
+    "section_number": "I",
+    "title": "End stage renal disease presenting as chronic irreversible failure of both kidneys to function,",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "I. End stage renal disease presenting as chronic irreversible failure of both kidneys to function,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_032",
+    "section_number": "2.11.7",
+    "title": "STROKE RESULTING IN PERMANENT SYMPTOMS",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_031",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "2.11.7 STROKE RESULTING IN PERMANENT SYMPTOMS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_033",
+    "section_number": "I",
+    "title": "Any cerebrovascular incident producing p ermanent neurological sequelae. This includes",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "I. Any cerebrovascular incident producing p ermanent neurological sequelae. This includes",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_034",
+    "section_number": "2.11.8",
+    "title": "MAJOR ORGAN /BONE MARROW TRANSPLANT",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_033",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.11.8 MAJOR ORGAN /BONE MARROW TRANSPLANT",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_035",
+    "section_number": "I",
+    "title": "The actual undergoing of a transplant of:",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "I. The actual undergoing of a transplant of:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_036",
+    "section_number": "2.11.9",
+    "title": "PERMANENT PARALYSIS OF LIMBS",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_035",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.11.9 PERMANENT PARALYSIS OF LIMBS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_037",
+    "section_number": "I",
+    "title": "Total and irreversible loss of use of two or more limbs as a result of injury or disease of the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "I. Total and irreversible loss of use of two or more limbs as a result of injury or disease of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_038",
+    "section_number": "2.11.10",
+    "title": "MOTOR NEURONE DISEASE WITH PERMANENT SYMPTOMS",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_037",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.11.10 MOTOR NEURONE DISEASE WITH PERMANENT SYMPTOMS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_039",
+    "section_number": "I",
+    "title": "Motor neurone disease diagnosed by a specialist Medical Practitioner as spinal muscular",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "I. Motor neurone disease diagnosed by a specialist Medical Practitioner as spinal muscular",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_040",
+    "section_number": "2.11.11",
+    "title": "MULTIPLE SCLEROSIS WITH PERSISTING SYMPTOMS",
+    "level": 3,
+    "parent_id": "new_india_floater_sec_039",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.11.11 MULTIPLE SCLEROSIS WITH PERSISTING SYMPTOMS",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_041",
+    "section_number": "I",
+    "title": "The definite occurrence of multiple sclerosis. The diagnosis must be supported by all of the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "I. The definite occurrence of multiple sclerosis. The diagnosis must be supported by all of the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_042",
+    "section_number": "II",
+    "title": "Other causes of neurological damage such as SLE and HIV are excluded.",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "II. Other causes of neurological damage such as SLE and HIV are excluded.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_043",
+    "section_number": "2.12",
+    "title": "CUMULATIVE BONUS means any increase or addition in the Sum Insured granted by Us without",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "2.12 CUMULATIVE BONUS means any increase or addition in the Sum Insured granted by Us without",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_044",
+    "section_number": "2.13",
+    "title": "DAY CARE CENTRE means any institution established for Day Care Treatment of Illness or Injury,",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.13 DAY CARE CENTRE means any institution established for Day Care Treatment of Illness or Injury,",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_045",
+    "section_number": "2.14",
+    "title": "DAY CARE TREATMENT refers to medical treatment or Surgery which are:",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.14 DAY CARE TREATMENT refers to medical treatment or Surgery which are:",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_046",
+    "section_number": "2.15",
+    "title": "DENTAL TREATMENT means treatment carried out by a dental practitioner including",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.15 DENTAL TREATMENT means treatment carried out by a dental practitioner including",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_047",
+    "section_number": "2.16",
+    "title": "DISCLOSURE TO INFORMATION NORM: The policy shall be void and all premium paid thereon",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.16 DISCLOSURE TO INFORMATION NORM: The policy shall be void and all premium paid thereon",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_048",
+    "section_number": "2.17",
+    "title": "EMERGENCY CARE means management for an Illness or Injury which results in symptoms which",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.17 EMERGENCY CARE means management for an Illness or Injury which results in symptoms which",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_049",
+    "section_number": "2.18",
+    "title": "GRACE PERIOD means specified period of time immediately following the premium due d ate",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.18 GRACE PERIOD means specified period of time immediately following the premium due d ate",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_050",
+    "section_number": "2.19",
+    "title": "HOSPITAL means any institution established for Inpatient Care and Day Care Treatment of",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2.19 HOSPITAL means any institution established for Inpatient Care and Day Care Treatment of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_051",
+    "section_number": "2.20",
+    "title": "HOSPITALISATION means admission as an Inpatient in a Hospital for a minimum period of 24",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.20 HOSPITALISATION means admission as an Inpatient in a Hospital for a minimum period of 24",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_052",
+    "section_number": "2.21",
+    "title": "ILLNESS means a sickness or a disease or pathological condition leading to the impairment of",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.21 ILLNESS means a sickness or a disease or pathological condition leading to the impairment of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_053",
+    "section_number": "2.22",
+    "title": "INJURY means accidental physical bodily harm excluding Illness solely and directly caused by",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.22 INJURY means accidental physical bodily harm excluding Illness solely and directly caused by",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_054",
+    "section_number": "2.23",
+    "title": "INPATIENT CARE means treatment for which the Insured Person has to stay in a Hospital for",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.23 INPATIENT CARE means treatment for which the Insured Person has to stay in a Hospital for",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_055",
+    "section_number": "2.24",
+    "title": "INSURED PERSON means person(s) named in the schedule of the Policy.",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.24 INSURED PERSON means person(s) named in the schedule of the Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_056",
+    "section_number": "2.25",
+    "title": "INTENSIVE CARE UNIT (ICU) means an identified section, ward or wing of a Hospital which is",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.25 INTENSIVE CARE UNIT (ICU) means an identified section, ward or wing of a Hospital which is",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_057",
+    "section_number": "2.26",
+    "title": "ICU (INTENSIVE CARE UNIT) CHARGES means the amount charged by a Hospital towards ICU",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.26 ICU (INTENSIVE CARE UNIT) CHARGES means the amount charged by a Hospital towards ICU",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_058",
+    "section_number": "2.27",
+    "title": "MEDICAL ADVICE means any consultation or advice from a Medical Practitioner including the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2.27 MEDICAL ADVICE means any consultation or advice from a Medical Practitioner including the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_059",
+    "section_number": "2.28",
+    "title": "MEDICAL EXPENSES means those expenses that an Insured Person has necessarily and actually",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.28 MEDICAL EXPENSES means those expenses that an Insured Person has necessarily and actually",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_060",
+    "section_number": "2.29",
+    "title": "MEDICALLY NECESSARY TREATMENT means any treatment, tests, medication, or stay in",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.29 MEDICALLY NECESSARY TREATMENT means any treatment, tests, medication, or stay in",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_061",
+    "section_number": "2.30",
+    "title": "MEDICAL PRACTITIONER means a person who holds a valid registration from the Medical",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.30 MEDICAL PRACTITIONER means a person who holds a valid registration from the Medical",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_062",
+    "section_number": "2.31",
+    "title": "NEW BORN BABY means a baby born during the Policy Period to a female Insured Person, who",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.31 NEW BORN BABY means a baby born during the Policy Period to a female Insured Person, who",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_063",
+    "section_number": "2.32",
+    "title": "NETWORK HOSPITAL means Hospitals enlisted by Us, TPA or jointly by Us and TPA to provide",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.32 NETWORK HOSPITAL means Hospitals enlisted by Us, TPA or jointly by Us and TPA to provide",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_064",
+    "section_number": "2.33",
+    "title": "NON-NETWORK HOSPITAL means any hospital that is not part of the network.",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.33 NON-NETWORK HOSPITAL means any hospital that is not part of the network.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_065",
+    "section_number": "2.34",
+    "title": "NOTIFICATION OF CLAIM means the process of intimating a claim to Us or TPA through any of",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.34 NOTIFICATION OF CLAIM means the process of intimating a claim to Us or TPA through any of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_066",
+    "section_number": "2.35",
+    "title": "PRE-EXISTING DISEASE (PED) means any condition, ailment, Injury or Illness",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.35 PRE-EXISTING DISEASE (PED) means any condition, ailment, Injury or Illness",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer",
+      "ibm_docling_markdown"
+    ],
+    "docling_cross_check": "matched_heading"
+  },
+  {
+    "section_id": "new_india_floater_sec_067",
+    "section_number": "2.36",
+    "title": "PRE-HOSPITALISATION MEDICAL EXPENSES means Medical Expenses incurred during the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2.36 PRE-HOSPITALISATION MEDICAL EXPENSES means Medical Expenses incurred during the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_068",
+    "section_number": "2.37",
+    "title": "POST-HOSPITALISATION MEDICAL EXPENSES means Medical Expenses incurred during the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.37 POST-HOSPITALISATION MEDICAL EXPENSES means Medical Expenses incurred during the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_069",
+    "section_number": "2.39",
+    "title": "POLICY PERIOD means period of one policy year as mentioned in the schedule for which the",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.39 POLICY PERIOD means period of one policy year as mentioned in the schedule for which the",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_070",
+    "section_number": "2.40",
+    "title": "POLICY SCHEDULE means the Policy Schedule attached to and forming part of Policy.",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.40 POLICY SCHEDULE means the Policy Schedule attached to and forming part of Policy.",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_071",
+    "section_number": "2.41",
+    "title": "POLICY YEAR means a period of twelve months beginning from the date of commencement of",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.41 POLICY YEAR means a period of twelve months beginning from the date of commencement of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_072",
+    "section_number": "2.42",
+    "title": "QUALIFIED NURSE means a person who holds a valid registration from the Nursing Council of",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.42 QUALIFIED NURSE means a person who holds a valid registration from the Nursing Council of",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_073",
+    "section_number": "2.43",
+    "title": "REASONABLE AND CUSTOMARY CHARGES mean the charges for services or supplies, which are",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.43 REASONABLE AND CUSTOMARY CHARGES mean the charges for services or supplies, which are",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_074",
+    "section_number": "2.44",
+    "title": "RENEWAL means the terms on which the contract of insurance can be renewed on mutual",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.44 RENEWAL means the terms on which the contract of insurance can be renewed on mutual",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_075",
+    "section_number": "2.45",
+    "title": "ROOM RENT means the amount charged by a hospital towards Room and Boarding expenses",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.45 ROOM RENT means the amount charged by a hospital towards Room and Boarding expenses",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_076",
+    "section_number": "2.46",
+    "title": "SUB-LIMIT means a cost sharing requirement under this policy in which We would not be liable",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.46 SUB-LIMIT means a cost sharing requirement under this policy in which We would not be liable",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_077",
+    "section_number": "2.47",
+    "title": "SUM INSURED means the pre-defined limit specified in the Policy Schedule. Sum Insured and",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2.47 SUM INSURED means the pre-defined limit specified in the Policy Schedule. Sum Insured and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_078",
+    "section_number": "2.48",
+    "title": "SURGERY OR SURGICAL PROCEDURE means manual and / or operative procedure (s) required",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2.48 SURGERY OR SURGICAL PROCEDURE means manual and / or operative procedure (s) required",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_079",
+    "section_number": "2.49",
+    "title": "TPA (THIRD PARTY ADMINISTRATORS) means a Company registered with the Authority, and",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2.49 TPA (THIRD PARTY ADMINISTRATORS) means a Company registered with the Authority, and",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  },
+  {
+    "section_id": "new_india_floater_sec_080",
+    "section_number": "2.50",
+    "title": "WAITING PERIOD means a period from the inception of this Policy during which specified",
+    "level": 2,
+    "parent_id": "new_india_floater_sec_005",
+    "page_start": 10,
+    "page_end": 32,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2.50 WAITING PERIOD means a period from the inception of this Policy during which specified",
+    "annotation_status": "gold_v1_text_layer_reviewed",
+    "notes": "Heading candidate selected from extracted text for gold parser evaluation.",
+    "source_tools": [
+      "pypdf_text_layer"
+    ],
+    "docling_cross_check": "not_matched_or_text_layer_detail"
+  }
+]

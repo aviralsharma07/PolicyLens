@@ -1,0 +1,800 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 11,
+    "evidence_text": "made in the expiring Policy Year, and is notified to Us after the acceptance of Renewal premium any awarded CB shall be withdrawn 6. Waiting Period The Company shall not be liable to make any payment under the policy in connection with or in respect of following expenses till the expiry of waiting period mentioned below: 6.1. Pre-Existing Diseases(Code- Excl01) a) Expenses related to the treatment of a pre -existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. b) In case of enhancement of sum i nsured the exclusion shall apply af",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "66 Backbay Reclamation, H. T. Parekh Marg, Churchgate, Mumbai – 400 020. Trade Logo displayed above belongs to HDFC Ltd and ERGO International AG and used by the Company under license. Arogya Sanjeevani Policy, HDFC ERGO I UIN - HDFHLIP20175V011920 12 6.2. First Thirty Days Waiting Period(Code- Excl03) i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii. This exclusion shall not, however, a pply if the Insured Person has Continuous Cover",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        },
+        {
+          "months": 48
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24,
+        48
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 12,
+    "evidence_text": "arising due to an accident, provided the same are covered. ii. This exclusion shall not, however, a pply if the Insured Person has Continuous Coverage for more than twelve months. iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently. 6.3. Specific Waiting Period: (Code- Excl02) a) Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable f",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "type": "percentage_of_sum_insured_per_day",
+      "percentage": 2
+    },
+    "normalized_value_json": {
+      "percentage": 2
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 9,
+    "evidence_text": "d shall be available to all Insured Persons in accordance with the procedures set out in this Policy. 4.1. Hospitalization The Company shall indemnify medical expenses incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured and Cumulative Bonus specified in the policy schedule, for, i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/-, per day. ii. Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of sum insured subject to maximum of Rs.10,000/- per day. iii. Surgeon, Anesthetist, Medical Practit",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "type": "percentage_of_sum_insured_per_day",
+      "percentage": 5
+    },
+    "normalized_value_json": {
+      "percentage": 5
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 9,
+    "evidence_text": "medical expenses incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured and Cumulative Bonus specified in the policy schedule, for, i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/-, per day. ii. Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of sum insured subject to maximum of Rs.10,000/- per day. iii. Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees whether paid directly to the treating doctor / surgeon or to the hospital iv. Anesthesia, blood, oxygen, operation thea",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "percentage": 5,
+      "applies_to": "each_and_every_claim"
+    },
+    "normalized_value_json": {
+      "percentage": 5,
+      "basis": "admissible_claim_amount"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "claim_scope": "all_claims"
+    },
+    "condition_json": {
+      "trigger": "claim_amount_admissible_and_payable_as_per_policy_terms"
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 17,
+    "evidence_text": "Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment.",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: policy wording gives a direct 5% co-payment on every claim.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ]
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "increase_percent_per_claim_free_year": 5,
+      "maximum_percent": 50
+    },
+    "normalized_value_json": {
+      "increase_percent": 5,
+      "maximum_percent": 50
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 10,
+    "evidence_text": "onditions to be covered. 4.7. The expenses that are not covered in this policy are placed under List -I of Annexure A. The list of expenses that are to be subsumed into room charges, or pr ocedure charges or costs of treatment are placed under List -II, List-III and List-IV of Annexure-A respectively. 5. Cumulative Bonus (CB) Cumulative Bonus will be increased by 5% in respect of each claim free policy year (where no claims are reported), provided the policy is renewed with the company without a break subject to maximum of 50% of the sum insured under the current policy year. If a claim is made in any particular year, the cumulative bonus accrued shall be r",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "percentage_or_policy_limit",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 9,
+    "evidence_text": "In case of admission to a room/ICU/ICCU at rate s exceeding the aforesaid limits, the reimbursement/payment of all other expenses incurred at the Hospital, with the exception of cost of medicines, shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent/ICU/ICCU charges. 4.2. AYUSH Treatment The Company shall indemnify medical expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems of medicines during each Policy Year up to the limit of sum insured as specified in the policy schedule in any AYUSH Hospital.",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": {
+      "covered": true,
+      "limit": {
+        "percent_of_sum_insured": 50
+      }
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered",
+      "limit_percent_of_sum_insured": 50
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy",
+      "benefit_scope": "listed_modern_treatments"
+    },
+    "condition_json": {
+      "where_medically_indicated": true,
+      "care_setting": [
+        "in_patient",
+        "day_care_treatment"
+      ],
+      "limit_source": "policy_schedule"
+    },
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 10,
+    "evidence_text": "The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to 50% of Sum Insured, specified in the policy schedule, during the policy period: A. Uterine Artery Embolization and HIFU (High intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy E. Immunotherapy- Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries H. Stereotactic radio surgeries I. BronchicalThermoplasty J. Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K. IONM - (Intra Operative Neuro Monitoring) L. Stem cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered.",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_manual_review_resolved",
+    "notes": "Manual review resolved: modern treatments are covered up to 50% of Sum Insured for listed procedures.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "pass_5_human_style_manual_review_patch",
+        "result": "resolved",
+        "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      }
+    ],
+    "human_review_priority": "normal",
+    "source_tools": [
+      "pdftotext_targeted_page_review"
+    ]
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "explicitly_not_covered",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 15,
+    "evidence_text": "ility and Infertility: (Code- Excl17) Expenses related to sterility and infertility. This includes: i. Any type of sterilization ii. Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI iii. Gestational Surrogacy iv. Reversal of sterilization 7.15 Maternity Expenses (Code - Excl 18): i. Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy; ii. expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy peri",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained explicitly_not_covered because policy text contains exclusion evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": null,
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 0.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "amount": 2000,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "amount_inr": 2000
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 9,
+    "evidence_text": "ostic imaging modalities and such similar other expenses. 4.1.1. Other expenses i. Expenses incurred on treatment of cataract subject to the sub limits ii. Dental treatment, necessitated due to disease or injury iii. Plastic surgery necessitated due to disease or injury iv. All the day care treatments v. Expenses incurred on road Ambulance subject to a maximum of Rs.2000/ - per hospitalisation. Note: 1. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible. However, the time limit shall not apply in respect of Day Care Treatment 2. In case of admission to a room/ICU/ICCU at rate s exceeding the aforesaid lim",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 23,
+    "evidence_text": "e Period, the Policy will get cancelled. 10.18 Possibility of Revision of Terms of the Policy Including the Premium Rates The Company, with prior approval of IRDAI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. 10.19 Free look period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the policy. The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If th",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 25,
+    "evidence_text": "165-166 Backbay Reclamation, H. T. Parekh Marg, Churchgate, Mumbai – 400 020. Trade Logo displayed above belongs to HDFC Ltd and ERGO International AG and used by the Company under license. Arogya Sanjeevani Policy, HDFC ERGO I UIN - HDFHLIP20175V011920 25 Grace Period For Yearly payment of mode, a fixed period of 30 days is to be allowed as Grace Period and for all other modes of payment a fixed period of 15 days be allowed as grace period. Hospitalisation Expenses Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible Time limit of 24 hrs",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "coverage_status": "renewable"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 22,
+    "evidence_text": "y, kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGuidelines_Layout.aspx?page=PageNo3987 10.16 Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, moral hazard, misrepresentation by the insured person. The Company is not bound to give notice that it is due for renewal. i. Renewal shall not be denied on the ground that the insured had made a claim or claims in the preceding policy years ii. Request for renewal along with requisite premium shall be received by the Company before the end of the Policy Period. iii. At the end of the Policy Period, the policy shall terminate and can be renewed w ithin",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "coverage_status_or_typed_value",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 16,
+    "evidence_text": "Sl No Type of Claim Prescribed Time limit 1. Reimbursement of hospitalization, day care and pre hospitalization expenses Within thirty days of date of discharge from hospital 2. Reimbursement of post hospitalization expenses Within fifteen days from completion of post hospitalization treatment 9.2 Notification of Claim Notice with full particulars shall be sent to the Company as under: i. Within 24 hours from the date of emergency hospitalization required or before the Insured Person‘s discharge from Hospital, whichever is earlier. ii. At least 48 hours prior to admission in Hospital in case of a planned Hospitalization.",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_v1",
+    "evidence_page": 17,
+    "evidence_text": "9.4 Co-payment Each and every claim under the Policy shall be subject to a Co -payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment. 9.5 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the bank rate. iii.",
+    "source_document": {
+      "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "uin": "HDFHLIP20175V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex manual text-layer review",
+    "review_status": "gold_v1_agent_reviewed",
+    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Evidence and status checked for precision-first gold corpus use."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

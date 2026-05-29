@@ -13,7 +13,7 @@ Product A: the data/context engineering layer behind the insurance assistant. Co
 
 ## Current Phase
 
-Phase -1: Corpus Lockdown + UIN Reconciliation
+Gold Corpus v1 complete. Next: Phase 1 Physical Layout Extractor.
 
 ## Setup
 
@@ -28,6 +28,7 @@ pip install -e ".[dev]"
 Tracked:
 
 - `data/manifests/*.json` — stable corpus manifests
+- `data/reports/*.md` — intentional human-review reports
 - `runs/sessions/*.md` — session logs
 - `runs/experiments/*.md` — experiment records
 - `runs/evals/*.json` — eval summaries

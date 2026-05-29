@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": [
+    "policy_id",
+    "source_pdf_path",
+    "file_hash",
+    "page_count",
+    "uin",
+    "annotation_status"
+  ]
+}
