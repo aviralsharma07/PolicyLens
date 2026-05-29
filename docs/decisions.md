@@ -25,6 +25,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 |----|-------|------|--------|
 | 0009 | Separate Supabase project for engine in production | TBD | Proposed |
 | 0010 | Regulatory compliance engine deferred | TBD | Proposed |
+| 0011 | Use pdfplumber for physical layout extraction | 2026-05-29 | Accepted |
 
 ---
 

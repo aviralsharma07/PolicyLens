@@ -22,6 +22,9 @@ debug/
 # Raw PDFs (stray copies inside repo)
 *.pdf
 
+# Generated physical parser debug outputs
+data/reports/physical_debug/
+
 # Local databases
 *.sqlite
 *.sqlite3

@@ -8,7 +8,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 |----|-------|--------|----------|-------|
 | DSE-002 | UIN Matcher v1 | done | P0 | Phase 0 |
 | DSE-003 | Gold annotation of 5 policies | done | P0 | Phase 7 |
-| DSE-004 | Physical Layout Extractor v1 | planned | P1 | Phase 1 |
+| DSE-004 | Physical Layout Extractor v1 | done | P1 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | planned | P1 | Phase 2 |
 | DSE-006 | Section Tree Builder | planned | P1 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | planned | P1 | Phase 6 |
@@ -38,6 +38,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-001 | Corpus Lockdown | 2026-05-29 | Phase -1 |
 | DSE-002 | UIN Matcher v1 | 2026-05-29 | Phase 0 |
 | DSE-003 | Gold annotation of 5 policies | 2026-05-29 | Phase 7 |
+| DSE-004 | Physical Layout Extractor v1 | 2026-05-29 | Phase 1 |
 
 ---
 
@@ -129,3 +130,43 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - `data/reports/gold_corpus_manual_review_11_facts_v1.md`
 - `scripts/validate_gold_corpus.py`
 **Related docs:** evaluation.md (Gold Corpus eval), open_questions.md (OQ-005)
+
+### DSE-004 — Physical Layout Extractor v1
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 1
+**Goal:** Extract page/block/line/span physical layout from PDFs using pdfplumber (no OCR/vision). Produce `document_physical.json` and debug HTML per page. Tag header/footer candidates without deleting text.
+**Acceptance criteria:**
+- `pdf_parser/layout_extractor.py` — core extraction (pages → blocks → lines → spans)
+- `pdf_parser/models.py` — Pydantic models for PhysicalDocument, Page, Block, Line, Span
+- `pdf_parser/header_footer_detector.py` — region classification + repeated-line tagging
+- `pdf_parser/debug_html_generator.py` — per-page text-block overlay HTML
+- `scripts/validate_physical_outputs.py` — schema, bbox, page count, font metadata validation
+- `scripts/run_physical_eval.py` — hard gate metrics against 5 gold PDFs
+- `tests/test_layout_extractor.py` — unit tests (bbox, IDs, header/footer, roundtrip)
+- Hard gates: all pages extracted, file hash/page count match, text coverage >= 95%, font metadata >= 90%, 0 catastrophic failures, debug HTML for every page, span referential integrity = 100%, no hardcoded absolute paths, session log and eval artifact present
+- Evidence coverage: reported metric only; hard gate deferred to DSE-010
+- Runs on 5 gold PDFs (218 pages total), produces eval report
+**Files created:**
+- `pdf_parser/__init__.py`
+- `pdf_parser/models.py`
+- `pdf_parser/layout_extractor.py`
+- `pdf_parser/header_footer_detector.py`
+- `pdf_parser/debug_html_generator.py`
+- `scripts/validate_physical_outputs.py`
+- `scripts/run_physical_eval.py`
+- `tests/test_layout_extractor.py`
+**Results:**
+- 5/5 gold PDFs processed (218 pages)
+- 5/5 file hashes match gold metadata
+- 5/5 page counts match gold metadata
+- Text coverage: 100% all policies
+- Font metadata: 100% all policies
+- Catastrophic failures: 0
+- Debug HTML: 218/218 pages
+- Span referential integrity: 100.0% all policies (617,060/617,060 refs valid)
+- Tests: 21/21 passed
+- Gold corpus validator: passed
+**Branch:** feat/physical-layout-extractor-v1
+**Related docs:** evaluation.md (Physical Parser eval), data_contracts.md (Contract 3), decisions.md (ADR-0011), runs/sessions/2026-05-29-physical-layout-extractor-v1.md

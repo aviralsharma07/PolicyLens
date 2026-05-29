@@ -269,6 +269,8 @@ Ensures the physical layout extraction produces complete, well-structured output
 5. Bbox values are within page bounds (0,0,width,height)
 6. Font-size distribution is captured per page
 7. Debug HTML renders correctly for every page
+8. All line.span_ids reference valid span_ids on the same page
+9. No hardcoded absolute path defaults in CLI arguments
 
 ### Hard Gates
 On 5 gold PDFs:
@@ -276,22 +278,49 @@ On 5 gold PDFs:
 95%+ pages produce text blocks
 0 catastrophic reading-order failures in critical sections
 debug HTML generated for every page
+span referential integrity = 100%
+no hardcoded absolute path defaults
+session log and eval artifact present
 ```
+
+Evidence coverage: reported metric only. Hard gate deferred to DSE-010 (source spans).
 
 ### Commands
 ```bash
-python -m pdf_parser.layout_extractor --pdf <path>
-python scripts/debug_html_generator.py --doc <doc_id>
+python -m pdf_parser.layout_extractor --gold-corpus gold_corpus --output-root data/interim/physical --debug-root data/reports/physical_debug
+python scripts/validate_physical_outputs.py --gold-corpus gold_corpus --physical-root data/interim/physical --debug-root data/reports/physical_debug
+python scripts/run_physical_eval.py --gold-corpus gold_corpus --physical-root data/interim/physical --debug-root data/reports/physical_debug --output runs/evals/2026-05-29-physical-parser-v1.json
 ```
 
 ### Output Artifacts
 ```
-physical/{policy_id}/document_physical.json
-debug/{policy_id}/page_*.html
+data/interim/physical/{policy_slug}/document_physical.json
+data/interim/physical/{policy_slug}/issues.json
+data/reports/physical_debug/{policy_slug}/page_*.html
+runs/evals/2026-05-29-physical-parser-v1.json
 ```
 
 ### Current Status
-planned
+active
+
+### 2026-05-29 Result
+
+```json
+{
+  "eval_name": "physical-parser-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-004",
+  "input_manifest": "gold_corpus (5 policies, 218 pages)",
+  "metrics": {
+    "policies_processed": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "Physical parser v1 processed all 5 gold PDFs. Hard gates: page count match, text coverage >= 95%, font metadata >= 90%, zero catastrophic failures, debug HTML for all pages, span referential integrity = 100%. Evidence coverage is reported_only; hard gate deferred to DSE-010."
+}
+```
 
 ---
 

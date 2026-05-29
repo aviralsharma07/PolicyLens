@@ -1,6 +1,28 @@
 # Changelog
 
-## 2026-05-29
+## 2026-05-29 (DSE-004 — review fixes)
+
+### Added
+- `pdf_parser/` package — physical layout extraction with pdfplumber
+- `pdf_parser/models.py` — Pydantic models for PhysicalDocument, Page, Block, Line, Span, ParserIssue
+- `pdf_parser/layout_extractor.py` — CLI entry point: extract PDF → document_physical.json, with gold corpus batch mode
+- `pdf_parser/header_footer_detector.py` — region classification (top/body/bottom) + repeated-line tagging (no deletion)
+- `pdf_parser/debug_html_generator.py` — per-page text-block overlay HTML with header/footer highlighting
+- `scripts/validate_physical_outputs.py` — schema, bbox, page count, font metadata, debug HTML validation
+- `scripts/run_physical_eval.py` — hard gate metrics against 5 gold PDFs with evidence coverage computation
+- `tests/test_layout_extractor.py` — unit tests for bbox validation, stable IDs, header/footer detection, model roundtrip
+- `docs/adr/0011-use-pdfplumber-for-physical-parsing.md` — ADR: pdfplumber over OCR/vision
+
+### Fixed
+- `pdf_parser/layout_extractor.py` — span ID linkage: `char_index` (always 0) replaced with `enumerate` counter. 617k line→span refs now resolve correctly.
+- `pdf_parser/layout_extractor.py` — hardcoded absolute path replaced with `pathlib`-based relative default
+- `scripts/run_physical_eval.py` — added span referential integrity gate (requires 100%). Evidence coverage set to `reported_only`, hard gate deferred to DSE-010.
+- `tests/test_layout_extractor.py` — replaced vacuous bbox test with proper assertion; added span integrity tests (resolve + dangling); added 2 gold PDF integration tests (Star, HDFC).
+
+### Changed
+- docs/tasks.md — DSE-004 marked done with review-fixed acceptance criteria and actual results
+- docs/evaluation.md — Physical Parser eval updated with active status and DSE-004 commands
+- docs/decisions.md — ADR-0011 added (pdfplumber physical parsing)
 
 ### Added
 - `gold_corpus/` — DSE-003 gold corpus with 5 policies, 25 annotation JSON files, schemas, and annotation guide
