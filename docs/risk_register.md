@@ -1,0 +1,22 @@
+# Risk Register
+
+| ID | Risk | Likelihood | Impact | Mitigation | Owner | Status |
+|----|------|-----------|--------|------------|-------|--------|
+| R01 | False positives in deterministic extraction | High | Very high | Score + evidence before emission; precision over recall; candidate scoring not first-match-wins | — | Active |
+| R02 | Clause segmentation silently wrong | High | High | Source spans + visual debug + structure metrics (precision/recall/F1) | — | Active |
+| R03 | UIN matching fails on 22% unmatched | High | Medium | Triage reports + manual decisions per file. Match tiers with confidence scores | — | Active |
+| R04 | Policy Schedule overrides body clauses | High | Very high | Precedence rules (Schedule > Benefit grid > Clause > Definition) + conflict table + source_span_type | — | Active |
+| R05 | Optional covers pollute base policy facts | High | High | `scope_json: {cover: "base"/"optional"/"add-on"/"variant"}` on every fact | — | Active |
+| R06 | Brochures misclassified as policy wordings | Medium | High | Document type firewall + manual audit of classification_report.json | — | Active |
+| R07 | Table headers misassociated with values | High | High | Cell-level coordinate storage + header lineage tracking + type-specific table extractors | — | Active |
+| R08 | "Not found" confused with "not applicable" | High | High | 7-status fact system (no binary found/not_found). Strict export rules for Product B | — | Active |
+| R09 | Regex improvements regress old PDFs | High | Medium | Regression test suite against gold corpus; pipeline_runs track version; versioned extractors | — | Active |
+| R10 | Regulatory defaults change over time | Medium | High | Versioned ontology with circular source + effective_date on product_versions | — | Active |
+| R11 | Insurer name variations cause duplicate products | High | Medium | Insurer normalizer with alias table; merged during UIN reconciliation | — | Active |
+| R12 | IRDAI updates UIN database breaking matches | Medium | Medium | uin_lifecycle.json has generated_at timestamp; re-run matcher on updates | — | Active |
+| R13 | pdfplumber version changes break layout | Low | High | Pin pdfplumber version in pyproject.toml; lock CI | — | Active |
+| R14 | Gold corpus annotations drift from actual policy | Low | High | Periodic re-validation; annotator + reviewer fields in validation_labels | — | Active |
+| R15 | LLM produces convincing but wrong evidence | Medium | High | Evidence must be verified in source text. Reject if not found. LLM facts get lower confidence | — | Active |
+| R16 | SQLite reaches file size limits (millions of spans) | Low | Medium | Monitor sqlite file size; migrate to PostgreSQL when > 10GB expected | — | Active |
+| R17 | Team members unfamiliar with insurance terminology | High | Medium | docs/glossary.md; gold annotation guide; pair annotation sessions | — | Active |
+| R18 | AI agent fails to follow execution protocol | Medium | Medium | docs/ai_execution_protocol.md; session logs are reviewed; hard gates prevent unchecked progress | — | Active |

@@ -1,0 +1,26 @@
+{
+  "eval_name": "heading-parser-v1",
+  "date": "2026-05-29",
+  "task_id": "DSE-005",
+  "git_commit": null,
+  "input_manifest": "gold_policies_v0",
+  "pipeline_run_id": null,
+  "module_versions": {
+    "heading_detector": "0.0.0",
+    "section_tree": "0.0.0",
+    "clause_segmenter": "0.0.0"
+  },
+  "gold_policies": [],
+  "metrics": {
+    "heading_precision": null,
+    "heading_recall": null,
+    "clause_boundary_f1": null,
+    "section_tree_accuracy": null,
+    "duplicate_heading_false_positives": null,
+    "missed_critical_headings": null
+  },
+  "passed": false,
+  "per_policy_results": {},
+  "failures": [],
+  "notes": "Placeholder. First eval will run after heading_detector.py and section_tree.py are implemented on 5 gold PDFs."
+}

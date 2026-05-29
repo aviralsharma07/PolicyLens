@@ -1,0 +1,43 @@
+# Loose generated data outputs
+data/*.json
+data/interim/
+data/processed/
+data/reports/
+data/tmp/
+debug/
+
+# Track intentional manifests + history
+!data/manifests/
+!data/manifests/*.json
+!runs/
+!runs/sessions/
+!runs/sessions/*.md
+!runs/experiments/
+!runs/experiments/*.md
+!runs/evals/
+!runs/evals/*.json
+
+# Raw PDFs (stray copies inside repo)
+*.pdf
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
