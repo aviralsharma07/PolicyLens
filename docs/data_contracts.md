@@ -364,6 +364,53 @@ Provisional evidence rule:
 
 ---
 
+## Contract 4A: Normalizer Result Shape
+
+**Producer:** `normalizers/`
+**Consumer:** deterministic extractors and eval scripts
+
+DSE-008 normalizers return dictionaries with a shared minimum shape:
+
+```json
+{
+  "value": 500000,
+  "normalized": {"amount": 500000, "currency": "INR"},
+  "span": [0, 7],
+  "text": "₹5 lakh"
+}
+```
+
+Type-specific normalized payloads:
+
+```json
+{"amount": 500000, "currency": "INR"}
+{"special_value": "actuals", "currency": "INR"}
+{"days": 30}
+{"months": 48}
+{"percentage": 20}
+{"age_years": 61, "comparator": "gte"}
+{"coverage_status": "conditional"}
+```
+
+Allowed money `special_value` statuses:
+- `actuals`
+- `as_charged`
+- `subject_to_limit`
+
+Allowed coverage statuses:
+- `covered`
+- `not_covered`
+- `conditional`
+- `covered_with_actuals`
+- `unknown`
+
+Compatibility rule:
+- DSE-007 APIs `find_durations`, `normalize_duration`, `find_percentages`, and `normalize_percentage` remain available.
+- Special money values must not be emitted as `0` or `null`.
+- Negated coverage phrases such as `not covered` and `not admissible` must normalize to `not_covered`, not `covered`.
+
+---
+
 ## Contract 6: Accepted Facts → Derived Export
 
 **Producer:** `extractors/` (after conflict resolution)

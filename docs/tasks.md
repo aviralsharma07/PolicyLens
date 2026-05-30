@@ -12,7 +12,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-005 | Heading Candidate Scorer | done | P1 | Phase 2 |
 | DSE-006 | Section Tree Builder | done | P1 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | done | P1 | Phase 6 |
-| DSE-008 | Normalizers Library (money, duration, percentage) | planned | P1 | Phase 6 |
+| DSE-008 | Normalizers Library (money, duration, percentage, age, coverage) | done | P1 | Phase 6 |
 
 ---
 
@@ -42,6 +42,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-005 | Heading Candidate Scorer | 2026-05-30 | Phase 2 |
 | DSE-006 | Section Tree Builder | 2026-05-30 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | 2026-05-30 | Phase 6 |
+| DSE-008 | Normalizers Library v1 | 2026-05-30 | Phase 6 |
 
 ---
 
@@ -277,3 +278,32 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - Tables, SQLite clause store, source-span DB, LLM refinement, derived export, and Product B integration remain untouched.
 **Branch:** feat/dse-007-first-extractors-v1
 **Related docs:** evaluation.md (Fact Extraction), data_contracts.md (Contract 5), decisions.md, runs/sessions/2026-05-30-first-five-extractors-v1.md
+
+### DSE-008 — Normalizers Library v1
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 6
+**Goal:** Expand the minimal DSE-007 duration/percentage helpers into reusable normalizers for future deterministic extractors.
+**Files created/changed:**
+- `normalizers/indian_number_words.py` — shared number-word parsing, Indian magnitudes, numeric cleanup
+- `normalizers/money.py` — INR amount and special money-value normalization
+- `normalizers/duration.py` — backward-compatible duration parsing with `yr/yrs` and hyphenated words
+- `normalizers/percentage.py` — backward-compatible percentage parsing with word percentages
+- `normalizers/age.py` — age and age-comparator normalization
+- `normalizers/coverage_status.py` — coverage status normalization with negation precedence
+- `scripts/eval_normalizers.py` — fixed-vector normalizer eval
+- `tests/test_normalizers/test_normalizers.py` — normalizer unit tests
+**Results:**
+- Normalizer eval passed: 35/35 vectors, 100% pass rate.
+- Full pytest suite passed: 110 tests.
+- DSE-007 fact extraction regression eval passed with no metric regression.
+- Gold corpus validator passed.
+**Outputs:**
+- `runs/evals/2026-05-30-normalizers-dse008-v1.json`
+- `runs/evals/2026-05-30-fact-extraction-dse007-regression-after-dse008.json`
+**Known limitations:**
+- DSE-008 normalizes scalar values and simple statuses only; it does not implement table extraction, source spans, SQLite storage, new fact extractors, LLM refinement, derived export, or Product B integration.
+- Money special values are explicit symbolic statuses (`actuals`, `as_charged`, `subject_to_limit`) and must be interpreted by future extractors/export code.
+**Branch:** feat/dse-008-normalizers-v1
+**Related docs:** evaluation.md (Normalizer Unit Tests), data_contracts.md (Contract 4A), runs/sessions/2026-05-30-normalizers-library-v1.md

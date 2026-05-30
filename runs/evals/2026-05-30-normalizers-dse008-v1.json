@@ -1,0 +1,457 @@
+{
+  "eval_name": "normalizers-dse008-v1",
+  "date": "2026-05-30",
+  "task_id": "DSE-008",
+  "git_commit": "cb6a89680499d043ce3118d98b2def1f4114c52a",
+  "metrics": {
+    "total_vectors": 35,
+    "passed_vectors": 35,
+    "pass_rate": 1.0,
+    "by_group": {
+      "money": {
+        "passed": 10,
+        "total": 10
+      },
+      "duration": {
+        "passed": 6,
+        "total": 6
+      },
+      "percentage": {
+        "passed": 5,
+        "total": 5
+      },
+      "age": {
+        "passed": 5,
+        "total": 5
+      },
+      "coverage_status": {
+        "passed": 5,
+        "total": 5
+      },
+      "indian_number_words": {
+        "passed": 4,
+        "total": 4
+      }
+    }
+  },
+  "passed": true,
+  "failures": [],
+  "cases": [
+    {
+      "group": "money",
+      "input": "₹5 lakh",
+      "expected": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "Rs. 5,00,000",
+      "expected": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "INR 5 lakhs",
+      "expected": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 500000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "1 crore",
+      "expected": {
+        "amount": 10000000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 10000000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "50 lacs",
+      "expected": {
+        "amount": 5000000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 5000000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "₹ 1,00,000",
+      "expected": {
+        "amount": 100000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 100000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "Rs. 2.5 lakhs",
+      "expected": {
+        "amount": 250000,
+        "currency": "INR"
+      },
+      "actual": {
+        "amount": 250000,
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "actuals",
+      "expected": {
+        "special_value": "actuals",
+        "currency": "INR"
+      },
+      "actual": {
+        "special_value": "actuals",
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "as charged",
+      "expected": {
+        "special_value": "as_charged",
+        "currency": "INR"
+      },
+      "actual": {
+        "special_value": "as_charged",
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "money",
+      "input": "subject to limit",
+      "expected": {
+        "special_value": "subject_to_limit",
+        "currency": "INR"
+      },
+      "actual": {
+        "special_value": "subject_to_limit",
+        "currency": "INR"
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "36 months",
+      "expected": {
+        "months": 36
+      },
+      "actual": {
+        "months": 36
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "2 years",
+      "expected": {
+        "months": 24
+      },
+      "actual": {
+        "months": 24
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "90 days",
+      "expected": {
+        "days": 90
+      },
+      "actual": {
+        "days": 90
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "thirty days",
+      "expected": {
+        "days": 30
+      },
+      "actual": {
+        "days": 30
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "one year",
+      "expected": {
+        "months": 12
+      },
+      "actual": {
+        "months": 12
+      },
+      "passed": true
+    },
+    {
+      "group": "duration",
+      "input": "1 yr",
+      "expected": {
+        "months": 12
+      },
+      "actual": {
+        "months": 12
+      },
+      "passed": true
+    },
+    {
+      "group": "percentage",
+      "input": "20%",
+      "expected": {
+        "percentage": 20
+      },
+      "actual": {
+        "percentage": 20
+      },
+      "passed": true
+    },
+    {
+      "group": "percentage",
+      "input": "20 per cent",
+      "expected": {
+        "percentage": 20
+      },
+      "actual": {
+        "percentage": 20
+      },
+      "passed": true
+    },
+    {
+      "group": "percentage",
+      "input": "twenty percent",
+      "expected": {
+        "percentage": 20
+      },
+      "actual": {
+        "percentage": 20
+      },
+      "passed": true
+    },
+    {
+      "group": "percentage",
+      "input": "1% of SI",
+      "expected": {
+        "percentage": 1
+      },
+      "actual": {
+        "percentage": 1
+      },
+      "passed": true
+    },
+    {
+      "group": "percentage",
+      "input": "20% of claim",
+      "expected": {
+        "percentage": 20
+      },
+      "actual": {
+        "percentage": 20
+      },
+      "passed": true
+    },
+    {
+      "group": "age",
+      "input": "60 years",
+      "expected": {
+        "age_years": 60,
+        "comparator": "eq"
+      },
+      "actual": {
+        "age_years": 60,
+        "comparator": "eq"
+      },
+      "passed": true
+    },
+    {
+      "group": "age",
+      "input": "18 yrs",
+      "expected": {
+        "age_years": 18,
+        "comparator": "eq"
+      },
+      "actual": {
+        "age_years": 18,
+        "comparator": "eq"
+      },
+      "passed": true
+    },
+    {
+      "group": "age",
+      "input": "aged 61 years",
+      "expected": {
+        "age_years": 61,
+        "comparator": "eq"
+      },
+      "actual": {
+        "age_years": 61,
+        "comparator": "eq"
+      },
+      "passed": true
+    },
+    {
+      "group": "age",
+      "input": "beyond 60 years",
+      "expected": {
+        "age_years": 60,
+        "comparator": "gt"
+      },
+      "actual": {
+        "age_years": 60,
+        "comparator": "gt"
+      },
+      "passed": true
+    },
+    {
+      "group": "age",
+      "input": "61 years or above",
+      "expected": {
+        "age_years": 61,
+        "comparator": "gte"
+      },
+      "actual": {
+        "age_years": 61,
+        "comparator": "gte"
+      },
+      "passed": true
+    },
+    {
+      "group": "coverage_status",
+      "input": "covered",
+      "expected": {
+        "coverage_status": "covered"
+      },
+      "actual": {
+        "coverage_status": "covered"
+      },
+      "passed": true
+    },
+    {
+      "group": "coverage_status",
+      "input": "not covered",
+      "expected": {
+        "coverage_status": "not_covered"
+      },
+      "actual": {
+        "coverage_status": "not_covered"
+      },
+      "passed": true
+    },
+    {
+      "group": "coverage_status",
+      "input": "covered after waiting period",
+      "expected": {
+        "coverage_status": "conditional"
+      },
+      "actual": {
+        "coverage_status": "conditional"
+      },
+      "passed": true
+    },
+    {
+      "group": "coverage_status",
+      "input": "up to actuals",
+      "expected": {
+        "coverage_status": "covered_with_actuals"
+      },
+      "actual": {
+        "coverage_status": "covered_with_actuals"
+      },
+      "passed": true
+    },
+    {
+      "group": "coverage_status",
+      "input": "not admissible",
+      "expected": {
+        "coverage_status": "not_covered"
+      },
+      "actual": {
+        "coverage_status": "not_covered"
+      },
+      "passed": true
+    },
+    {
+      "group": "indian_number_words",
+      "input": "lakh",
+      "expected": {
+        "multiplier": 100000
+      },
+      "actual": {
+        "multiplier": 100000
+      },
+      "passed": true
+    },
+    {
+      "group": "indian_number_words",
+      "input": "lac",
+      "expected": {
+        "multiplier": 100000
+      },
+      "actual": {
+        "multiplier": 100000
+      },
+      "passed": true
+    },
+    {
+      "group": "indian_number_words",
+      "input": "crore",
+      "expected": {
+        "multiplier": 10000000
+      },
+      "actual": {
+        "multiplier": 10000000
+      },
+      "passed": true
+    },
+    {
+      "group": "indian_number_words",
+      "input": "thousand",
+      "expected": {
+        "multiplier": 1000
+      },
+      "actual": {
+        "multiplier": 1000
+      },
+      "passed": true
+    }
+  ],
+  "notes": "DSE-008 fixed-vector eval for reusable normalizers. Hard gate is 100% vector pass rate."
+}

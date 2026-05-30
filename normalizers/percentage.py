@@ -3,9 +3,11 @@ from __future__ import annotations
 import re
 from typing import Dict, List
 
+from normalizers.indian_number_words import NUMBER_WORD_PATTERN, parse_number, to_int_if_whole
 
 PERCENTAGE_RE = re.compile(
-    r"(?<!\w)(?P<value>\d+(?:\.\d+)?)\s*(?:%|percent\b|per\s+cent\b)",
+    rf"(?<!\w)(?P<value>\d+(?:\.\d+)?|(?:{NUMBER_WORD_PATTERN})(?:[\s-]+(?:{NUMBER_WORD_PATTERN}))*)\s*"
+    r"(?:%|percent\b|per\s+cent\b)",
     re.IGNORECASE,
 )
 
@@ -19,10 +21,13 @@ def normalize_percentage(value: float) -> Dict[str, float | int]:
 def find_percentages(text: str) -> List[Dict[str, object]]:
     results: List[Dict[str, object]] = []
     for match in PERCENTAGE_RE.finditer(text):
-        value = float(match.group("value"))
+        parsed = parse_number(match.group("value"))
+        if parsed is None:
+            continue
+        value = float(parsed)
         results.append(
             {
-                "value": int(value) if value.is_integer() else value,
+                "value": to_int_if_whole(parsed),
                 "normalized": normalize_percentage(value),
                 "span": match.span(),
                 "text": match.group(0),

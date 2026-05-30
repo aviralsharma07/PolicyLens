@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-05-30 (DSE-008 — Normalizers Library v1)
+
+### Added
+- `normalizers/indian_number_words.py` — shared number-word parsing, Indian magnitude multipliers, numeric cleanup, and hyphenated word parsing.
+- `normalizers/money.py` — INR money parsing for rupee symbols, `Rs.`, `INR`, Indian comma grouping, decimals, lakh/lac/crore, and explicit special values.
+- `normalizers/age.py` — age extraction with exact, greater-than, and greater-than-or-equal comparator metadata.
+- `normalizers/coverage_status.py` — coverage status normalization with negation precedence.
+- `scripts/eval_normalizers.py` — fixed-vector DSE-008 normalizer eval harness.
+- `tests/test_normalizers/test_normalizers.py` — unit tests for money, duration, percentage, age, coverage status, and Indian number words.
+- `runs/evals/2026-05-30-normalizers-dse008-v1.json` — passing DSE-008 eval artifact.
+- `runs/evals/2026-05-30-fact-extraction-dse007-regression-after-dse008.json` — passing DSE-007 regression artifact after normalizer expansion.
+
+### Changed
+- `normalizers/duration.py` — preserved DSE-007 APIs while adding `yr/yrs`, hyphenated number words, and shared number parsing.
+- `normalizers/percentage.py` — preserved DSE-007 APIs while adding word percentages like `twenty percent`.
+- `docs/tasks.md` — DSE-008 marked done after hard gates passed.
+- `docs/evaluation.md` — Normalizer Unit Tests eval moved to active with DSE-008 commands and results.
+- `docs/data_contracts.md` — added normalizer result contract and allowed special statuses.
+
+### Fixed
+- Money special values such as `actuals`, `as charged`, and `subject to limit` now emit explicit symbolic normalized values instead of `0` or `null`.
+- Coverage negations such as `not covered` and `not admissible` win over naive positive coverage matching.
+
+### Known Issues
+- DSE-008 does not add new extractors or table/source-span/export behavior.
+- Money special values require future extractor/export interpretation before Product B display.
+
 ## 2026-05-30 (DSE-007 — First 5 Deterministic Extractors)
 
 ### Added

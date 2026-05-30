@@ -554,11 +554,13 @@ planned
 Normalizers are used by every extractor. If a normalizer is wrong, every extractor that uses it produces wrong facts. Test normalizers in isolation before any extractor uses them.
 
 ### Inputs
-- `tests/test_normalizers/` unit test file
+- `tests/test_normalizers/` unit tests
+- `scripts/eval_normalizers.py` fixed-vector eval harness
 
 ### Metrics
 - Unit test pass rate (target: 100%)
-- Test coverage of edge cases
+- Fixed-vector pass rate (target: 100%)
+- Coverage of money, duration, percentage, age, coverage status, and Indian magnitudes
 
 ### Money Tests
 ```
@@ -617,14 +619,29 @@ Normalizers are used by every extractor. If a normalizer is wrong, every extract
 
 ### Commands
 ```bash
-python -m pytest tests/test_normalizers/ -v
+PYTHONPATH=. .venv/bin/python scripts/eval_normalizers.py --output runs/evals/2026-05-30-normalizers-dse008-v1.json
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_normalizers/ -v
 ```
 
 ### Output Artifacts
-Test results in console. No persistent artifact file needed.
+```
+runs/evals/2026-05-30-normalizers-dse008-v1.json
+```
 
 ### Current Status
-planned
+active (DSE-008 passed v1 on 2026-05-30)
+
+### Current DSE-008 Result
+
+```json
+{
+  "total_vectors": 35,
+  "passed_vectors": 35,
+  "pass_rate": 1.0
+}
+```
+
+DSE-008 also requires the DSE-007 fact extraction regression eval to pass with no metric regression.
 
 ---
 
