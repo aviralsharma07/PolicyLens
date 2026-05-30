@@ -1,0 +1,533 @@
+{
+  "eval_name": "fact-extraction-dse007-v1",
+  "date": "2026-05-30",
+  "task_id": "DSE-007",
+  "git_commit": "d98d38a0f6921e633cf7203c7e7d44732b77a3e3",
+  "input_manifest": "data/interim/logical/*/section_tree.json",
+  "target_concepts": [
+    "free_look_period",
+    "grace_period",
+    "ped_waiting_period",
+    "initial_waiting_period",
+    "co_pay"
+  ],
+  "metrics": {
+    "gold_present": 23,
+    "present_tp": 23,
+    "present_fp": 0,
+    "present_fn": 0,
+    "status_correct": 25,
+    "status_total": 25,
+    "value_correct": 23,
+    "value_total": 23,
+    "evidence_verified": 23,
+    "evidence_total": 23,
+    "false_present_for_gold_not_found": 0,
+    "policy_count": 5,
+    "policies_passed": 5,
+    "deterministic_present_precision": 1.0,
+    "deterministic_present_recall": 1.0,
+    "normalized_value_accuracy": 1.0,
+    "status_accuracy": 1.0,
+    "evidence_accuracy": 1.0
+  },
+  "policies": [
+    {
+      "policy_slug": "care_health_care_plus",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "components": [
+              {
+                "scope": "smart_select_non_annexure_iii_hospital",
+                "percentage": 20
+              },
+              {
+                "scope": "age_61_plus_optional_copayment",
+                "percentage": null,
+                "schedule_dependent": true
+              }
+            ]
+          },
+          "predicted_normalized_value": {
+            "components": [
+              {
+                "scope": "smart_select_non_annexure_iii_hospital",
+                "percentage": 20
+              },
+              {
+                "scope": "age_61_plus_optional_copayment",
+                "percentage": null,
+                "schedule_dependent": true
+              }
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 5,
+        "present_tp": 5,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 5,
+        "status_total": 5,
+        "value_correct": 5,
+        "value_total": 5,
+        "evidence_verified": 5,
+        "evidence_total": 5,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "hdfc_arogya_sanjeevani",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "predicted_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 5,
+        "present_tp": 5,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 5,
+        "status_total": 5,
+        "value_correct": 5,
+        "value_total": 5,
+        "evidence_verified": 5,
+        "evidence_total": 5,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "icici_family_shield",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 24
+          },
+          "predicted_normalized_value": {
+            "months": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 4,
+        "present_tp": 4,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 5,
+        "status_total": 5,
+        "value_correct": 4,
+        "value_total": 4,
+        "evidence_verified": 4,
+        "evidence_total": 4,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "new_india_floater",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 4,
+        "present_tp": 4,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 5,
+        "status_total": 5,
+        "value_correct": 4,
+        "value_total": 4,
+        "evidence_verified": 4,
+        "evidence_total": 4,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "star_medi_classic_accident",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 10
+          },
+          "predicted_normalized_value": {
+            "percentage": 10
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 5,
+        "present_tp": 5,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 5,
+        "status_total": 5,
+        "value_correct": 5,
+        "value_total": 5,
+        "evidence_verified": 5,
+        "evidence_total": 5,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    }
+  ],
+  "passed": true,
+  "failures": [],
+  "notes": "DSE-007 evaluates first five deterministic extractors. Evidence is verified against DSE-006 clause text enriched with section heading context because true source spans are deferred to DSE-010."
+}

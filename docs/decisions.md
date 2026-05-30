@@ -18,6 +18,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0008 | 7-status fact system (not present/absent binary) | 2026-05-29 | Accepted |
 | 0011 | Use pdfplumber for physical layout extraction | 2026-05-29 | Accepted |
 | 0012 | Stack-based section tree builder with synthetic body-numbered sections | 2026-05-30 | Accepted |
+| 0013 | Provisional clause evidence IDs for DSE-007 | 2026-05-30 | Accepted |
 
 ---
 
@@ -290,3 +291,26 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Section precision is less strict until DSE-012 expands gold coverage.
 
 **Revisit when:** DSE-012 expands the gold corpus or adds exhaustive physical line/span labels for section and clause boundaries.
+
+## 2026-05-30 — Provisional Clause Evidence IDs for DSE-007
+
+**Status:** accepted
+
+**Decision:** Accepted DSE-007 deterministic facts use provisional evidence IDs in the form `clause:{clause_id}` until DSE-010 creates true source spans.
+
+**Context:** DSE-007 needs evidence-constrained deterministic facts now, but DSE-010 source spans and SQLite clause storage are not implemented yet. DSE-006 section trees provide clause IDs, page ranges, line IDs, and clause text.
+
+**Options considered:**
+1. Block all fact extraction until DSE-010.
+2. Emit facts without evidence IDs.
+3. Use provisional clause evidence IDs with verified evidence text.
+
+**Reasoning:** Provisional clause IDs preserve the evidence rule while keeping DSE-007 independently testable. Every accepted `present` fact still verifies its `evidence_text` against DSE-006 extraction text.
+
+**Consequences:**
+- Positive: Deterministic facts are auditable before the source-span DB exists.
+- Positive: DSE-010 can replace provisional IDs with true spans.
+- Negative: Clause-level evidence is coarser than final source spans.
+- Negative: Fact-bearing heading lines are represented through the owning clause until DSE-010.
+
+**Revisit when:** DSE-010 builds `source_spans` and the local SQLite clause store.

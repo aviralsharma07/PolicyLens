@@ -631,50 +631,82 @@ planned
 ## Eval: Fact Extraction
 
 ### Purpose
-The primary quality gate for the engine. Ensures extracted facts are correct, evidence is accurate, and scope/conditions are properly captured. This is where we must be ruthless.
+The primary quality gate for the engine. Ensures extracted facts are correct, evidence is verified against source clause text, and scope/conditions are captured before Product B can consume any derived facts.
 
 ### Inputs
-- `extracted_facts` from gold policies
-- Gold fact annotations
+- `data/interim/logical/{policy_slug}/section_tree.json`
+- `data/interim/facts/{policy_slug}/fact_candidates.json`
+- `data/interim/facts/{policy_slug}/accepted_facts.json`
+- `gold_corpus/policies/{policy_slug}/facts.json`
+
+For DSE-007, the active target concepts are:
+- `free_look_period`
+- `grace_period`
+- `ped_waiting_period`
+- `initial_waiting_period`
+- `co_pay`
 
 ### Metrics
-- Fact precision (target: >= 95% deterministic, >= 85% LLM)
-- Fact recall (target: >= 50-60% start, improve over time)
+- Deterministic present precision
+- Deterministic present recall
 - Normalized value accuracy
-- Unit accuracy
-- Evidence accuracy (target: >= 95% deterministic, >= 85% LLM)
-- Scope accuracy
-- Condition accuracy
-- False positive rate
+- Status accuracy
+- Evidence accuracy
+- False-present count for gold `not_found`
+- Per-policy and per-concept breakdown
 
 ### Hard Rules
 Deterministic extractors:
-```
-precision >= 95%
-evidence accuracy >= 95%
-recall can be low initially (50-60% acceptable)
-```
+- all 5 gold policies evaluated
+- all 5 DSE-007 concepts attempted for every policy
+- no `present` fact without verified evidence text
+- no false present for gold `not_found` concepts
+- deterministic present precision >= 95%
+- evidence accuracy >= 95%
+- normalized value accuracy >= 95% for matched present facts
+- present recall >= 60%
 
 LLM-assisted facts:
-```
-precision >= 85%
-evidence string must be verified in source text
-confidence lower by default (0.70-0.85)
-```
+- precision >= 85%
+- evidence string must be verified in source text
+- confidence lower by default (0.70-0.85)
+- not active in DSE-007
 
 ### Commands
 ```bash
-python -m extractors.candidate_registry --policy <policy_id>
-python scripts/quality_report.py --layer facts
+PYTHONPATH=. python3 scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. python3 scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Output Artifacts
 ```
-runs/evals/<date>-fact-extraction-<version>.json
+data/interim/facts/{policy_slug}/fact_candidates.json
+data/interim/facts/{policy_slug}/accepted_facts.json
+data/interim/facts/fact_extraction_run_summary.json
+runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-planned
+active (DSE-007 passed v1 on 2026-05-30)
+
+### Current DSE-007 Result
+
+```json
+{
+  "policies_passed": 5,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 1.0,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 1.0,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0
+}
+```
+
+Notes:
+- DSE-007 uses provisional evidence IDs in the form `clause:{clause_id}` because DSE-010 source spans are not built yet.
+- DSE-007 extraction text enriches each clause with its section heading because DSE-006 can carry fact-bearing text in heading lines. Evidence line IDs include the heading line when used.
+- During DSE-007 eval, the Care Health PED gold normalized value was corrected from 48 months to 36 months because the stored gold evidence text itself states 36 months.
 
 ---
 

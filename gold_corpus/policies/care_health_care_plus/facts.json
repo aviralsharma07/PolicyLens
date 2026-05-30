@@ -2,10 +2,10 @@
   {
     "concept": "ped_waiting_period",
     "value_json": {
-      "months": 48
+      "months": 36
     },
     "normalized_value_json": {
-      "months": 48
+      "months": 36
     },
     "fact_status": "present",
     "scope_json": {
@@ -28,7 +28,7 @@
     "value_type": "duration",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-007 source-backed correction: the original normalized value was 48 months, but the stored gold evidence and DSE-006 clause text both state 36 months.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -39,6 +39,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse_007_fact_eval_gold_correction",
+        "result": "corrected",
+        "note": "Corrected PED waiting period from 48 months to 36 months because the evidence text says 'expiry of 36 months of continuous coverage'."
       }
     ],
     "human_review_priority": "normal",

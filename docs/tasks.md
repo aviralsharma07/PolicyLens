@@ -11,7 +11,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-004 | Physical Layout Extractor v1 | done | P1 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | done | P1 | Phase 2 |
 | DSE-006 | Section Tree Builder | done | P1 | Phase 2 |
-| DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | planned | P1 | Phase 6 |
+| DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | done | P1 | Phase 6 |
 | DSE-008 | Normalizers Library (money, duration, percentage) | planned | P1 | Phase 6 |
 
 ---
@@ -41,6 +41,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-004 | Physical Layout Extractor v1 | 2026-05-29 | Phase 1 |
 | DSE-005 | Heading Candidate Scorer | 2026-05-30 | Phase 2 |
 | DSE-006 | Section Tree Builder | 2026-05-30 | Phase 2 |
+| DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | 2026-05-30 | Phase 6 |
 
 ---
 
@@ -236,3 +237,43 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - Dense item lists are kept as clauses/list content unless they align with gold-labeled structure.
 **Branch:** feat/section-tree-builder-v1
 **Related docs:** evaluation.md (Section Tree / Clause Boundary), data_contracts.md (Contract 3B), decisions.md, runs/sessions/2026-05-30-section-tree-builder-v1.md
+
+### DSE-007 — First 5 Deterministic Extractors
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 6
+**Goal:** Extract the first five deterministic policy facts from DSE-006 section trees using a candidate-first, evidence-verified pipeline.
+**Concepts:**
+- `free_look_period`
+- `grace_period`
+- `ped_waiting_period`
+- `initial_waiting_period`
+- `co_pay`
+**Files created:**
+- `normalizers/duration.py` — minimal day/month/year duration parsing for DSE-007 concepts
+- `normalizers/percentage.py` — minimal percentage parsing for co-pay values
+- `extractors/models.py` — candidate and accepted fact models with AGENTS §14 fields
+- `extractors/evidence.py` — evidence text verification helpers
+- `extractors/deterministic.py` — first five deterministic concept extractors
+- `extractors/registry.py` — candidate-first registry and conflict resolution
+- `scripts/run_fact_extractors.py` — batch extractor CLI
+- `scripts/eval_fact_extractors.py` — DSE-007 gold eval
+- `tests/test_fact_extractors.py` — normalizer, extractor, registry, and integration tests
+**Results:**
+- 5/5 gold policies processed.
+- 25/25 target concepts attempted.
+- Gold corpus validator passed.
+- DSE-007 eval passed: deterministic present precision 100%, present recall 100%, normalized value accuracy 100%, status accuracy 100%, evidence accuracy 100%, false present for gold `not_found`: 0.
+- Full pytest suite passed.
+**Outputs:**
+- `data/interim/facts/*/fact_candidates.json`
+- `data/interim/facts/*/accepted_facts.json`
+- `data/interim/facts/fact_extraction_run_summary.json`
+- `runs/evals/2026-05-30-fact-extraction-dse007-v1.json`
+**Known limitations:**
+- Evidence spans are provisional `clause:{clause_id}` IDs until DSE-010 creates true source spans.
+- DSE-007 only implements duration and percentage normalization needed by the five concepts; broader money, age, and coverage-status normalization remains DSE-008.
+- Tables, SQLite clause store, source-span DB, LLM refinement, derived export, and Product B integration remain untouched.
+**Branch:** feat/dse-007-first-extractors-v1
+**Related docs:** evaluation.md (Fact Extraction), data_contracts.md (Contract 5), decisions.md, runs/sessions/2026-05-30-first-five-extractors-v1.md

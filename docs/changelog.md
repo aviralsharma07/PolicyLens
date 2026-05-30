@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-05-30 (DSE-007 — First 5 Deterministic Extractors)
+
+### Added
+- `normalizers/duration.py` — minimal duration parsing for days, months, years, and common number words used by DSE-007.
+- `normalizers/percentage.py` — minimal percentage parsing for co-pay extraction.
+- `extractors/` package — candidate models, evidence verification, deterministic extractors, and registry/conflict resolution for `free_look_period`, `grace_period`, `ped_waiting_period`, `initial_waiting_period`, and `co_pay`.
+- `scripts/run_fact_extractors.py` — batch CLI that reads DSE-006 `section_tree.json` and writes fact candidates, accepted facts, and a run summary.
+- `scripts/eval_fact_extractors.py` — DSE-007 eval with precision, recall, normalized value accuracy, status accuracy, evidence accuracy, and false-present gates.
+- `tests/test_fact_extractors.py` — unit and integration coverage for normalizers, extractors, registry behavior, and DSE-006 input availability.
+- `runs/evals/2026-05-30-fact-extraction-dse007-v1.json` — passing DSE-007 eval over 5 gold policies.
+
+### Changed
+- `docs/tasks.md` — DSE-007 marked done after hard gates passed.
+- `docs/evaluation.md` — Fact Extraction eval updated from planned to active with DSE-007 commands and results.
+- `docs/data_contracts.md` — Contract 5 expanded for candidate and accepted fact schemas.
+- `docs/decisions.md` — ADR-0013 added for provisional clause evidence IDs before DSE-010 source spans.
+- Care Health gold fact correction: `ped_waiting_period` normalized value changed from 48 months to 36 months because the stored evidence text states 36 months.
+
+### Fixed
+- DSE-007 handles fact-bearing section headings from DSE-006 by enriching clause extraction text with the section heading line.
+- Evidence text is verified before a deterministic `present` fact can be accepted.
+- Co-pay extraction rejects definition-only clauses without a concrete percentage.
+
+### Known Issues
+- Evidence IDs are provisional `clause:{clause_id}` links until DSE-010 creates true source spans.
+- DSE-007 intentionally does not implement table extraction, SQLite clause storage, source-span DB, LLM refinement, derived export, or Product B integration.
+- DSE-008 broader normalizer work remains planned.
+
 ## 2026-05-30 (DSE-006 — Section Tree Builder)
 
 ### Added

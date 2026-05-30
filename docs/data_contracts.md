@@ -293,27 +293,74 @@ Rules:
 
 ## Contract 5: Fact Candidates → Accepted Facts
 
-**Producer:** `extractors/candidate_registry.py`
-**Consumer:** Internal (scoring + conflict resolution within extractors module)
+**Producer:** `extractors/` and `scripts/run_fact_extractors.py`
+**Consumer:** Internal evals, later DSE-010 clause/source-span store and DSE-013 derived export.
+
+DSE-007 writes candidate-first extraction output under:
+
+```text
+data/interim/facts/{policy_slug}/fact_candidates.json
+data/interim/facts/{policy_slug}/accepted_facts.json
+data/interim/facts/fact_extraction_run_summary.json
+```
+
+Every candidate is retained, including rejected candidates, so error analysis can inspect why a match was rejected or lost conflict resolution.
 
 ```json
 {
-  "candidates": [
-    {
-      "candidate_id": "uuid-4",
-      "clause_id": "uuid-2",
-      "concept": "PED_WAITING_MONTHS",
-      "value_json": {"months": 36},
-      "evidence_span_id": "uuid-3",
-      "extractor_name": "ped_waiting",
-      "extractor_version": "1.0.0",
-      "pattern_id": "ped_waiting_v1",
-      "score": 0.96,
-      "normalizer_version": "1.0.0"
-    }
-  ]
+  "candidate_id": "ped_waiting_period_0000",
+  "concept": "ped_waiting_period",
+  "value_json": {"months": 36},
+  "normalized_value_json": {"months": 36},
+  "fact_status": "present",
+  "scope_json": {"cover": "base_policy"},
+  "condition_json": null,
+  "extraction_method": "deterministic",
+  "confidence": 0.96,
+  "evidence_span_id": "clause:clause_0064",
+  "pipeline_run_id": "physical_v1_fixed",
+  "evidence_page": 28,
+  "evidence_text": "Expenses related to the treatment of a pre-existing Disease (PED) ... expiry of 36 months ...",
+  "evidence_clause_id": "clause_0064",
+  "evidence_line_ids": ["p28l_41", "p28l_42"],
+  "extractor_name": "ped_waiting_period",
+  "extractor_version": "1.0.0",
+  "pattern_id": "ped_waiting_duration",
+  "source": "section_tree_clause",
+  "accepted": true,
+  "rejection_reason": null,
+  "debug": {}
 }
 ```
+
+Accepted facts use the same AGENTS §14 fields as candidates. If no safe candidate exists for a concept, emit one accepted `not_found` fact:
+
+```json
+{
+  "concept": "co_pay",
+  "value_json": null,
+  "normalized_value_json": null,
+  "fact_status": "not_found",
+  "scope_json": null,
+  "condition_json": null,
+  "extraction_method": "deterministic",
+  "confidence": 0.0,
+  "evidence_span_id": null,
+  "pipeline_run_id": "physical_v1_fixed",
+  "evidence_page": null,
+  "evidence_text": null,
+  "evidence_clause_id": null,
+  "evidence_line_ids": [],
+  "extractor_name": "co_pay",
+  "extractor_version": "1.0.0"
+}
+```
+
+Provisional evidence rule:
+- Until DSE-010 builds true source spans, deterministic facts use `evidence_span_id = "clause:{clause_id}"`.
+- `evidence_clause_id` and `evidence_line_ids` must also be stored.
+- Evidence text must be an exact normalized substring of the DSE-006 clause extraction text.
+- DSE-007 may enrich clause extraction text with the section heading line because some policies put fact-bearing values in the heading itself.
 
 ---
 
