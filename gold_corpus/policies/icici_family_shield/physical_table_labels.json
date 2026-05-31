@@ -1,0 +1,58 @@
+[
+  {
+    "label_id": "icici_family_shield_phys_table_001",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 19,
+    "bbox": [64.831389, 594.364006, 505.881082, 713.97601],
+    "table_type": "schedule_of_benefits",
+    "headers": ["SR No.", "LOSSES COVERED", "% OF SUM INSURED payable"],
+    "rows": [["1", "Loss of one entire hand", "70"]],
+    "header_rows": [0],
+    "column_count": 5,
+    "row_count": 8,
+    "priority": true,
+    "reviewer_note": "Physical losses-covered benefit percentage grid."
+  },
+  {
+    "label_id": "icici_family_shield_phys_table_002",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 30,
+    "bbox": [73.344, 63.12, 320.44999, 137.9],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Continuous Hospitalization for atleast", "% of Sum Insured Payable"],
+    "rows": [["5 Days", "25"], ["10 Days", "Additional 25"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": true,
+    "reviewer_note": "Physical hospital cash / hospitalization duration benefit grid."
+  },
+  {
+    "label_id": "icici_family_shield_phys_table_003",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 34,
+    "bbox": [60.48, 338.21001, 565.53999, 718.65601],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Sr No.", "Region", "Fracture", "% of the Sum Insured payable"],
+    "rows": [["1", "Skull", "Compound fractures of skull", "100%"]],
+    "header_rows": [0],
+    "column_count": 4,
+    "row_count": 16,
+    "priority": true,
+    "reviewer_note": "Physical fracture benefit percentage grid."
+  },
+  {
+    "label_id": "icici_family_shield_phys_table_004",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 50,
+    "bbox": [41.76, 63.12, 586.31999, 415.969995],
+    "table_type": "premium",
+    "headers": ["Day of cancellation", "Policy Period"],
+    "rows": [["From 16 days to 1 month", "75.0%", "80.0%", "80.0%"]],
+    "header_rows": [0],
+    "column_count": 4,
+    "row_count": 15,
+    "priority": false,
+    "reviewer_note": "Physical cancellation premium-refund table."
+  }
+]

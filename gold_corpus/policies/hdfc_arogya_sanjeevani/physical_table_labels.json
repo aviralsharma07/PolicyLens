@@ -1,0 +1,30 @@
+[
+  {
+    "label_id": "hdfc_arogya_sanjeevani_phys_table_001",
+    "source_table_id": "hdfc_arogya_sanjeevani_table_005",
+    "page": 16,
+    "bbox": [83.664, 562.42001, 509.980005, 652.54001],
+    "table_type": "claims_documents",
+    "headers": ["Sl No", "Type of Claim", "Prescribed Time limit"],
+    "rows": [["1.", "Reimbursement of hospitalization", "Within thirty days of date of discharge from hospital"]],
+    "header_rows": [0],
+    "column_count": 3,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Physical claim timeline table with three columns."
+  },
+  {
+    "label_id": "hdfc_arogya_sanjeevani_phys_table_002",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 26,
+    "bbox": [66.624, 151.7, 528.840015, 757.200015],
+    "table_type": "claims_documents",
+    "headers": ["Sl No", "Item"],
+    "rows": [["1", "BABY FOOD"], ["2", "BABY UTILITIES CHARGES"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 44,
+    "priority": false,
+    "reviewer_note": "Physical non-medical item list table; table-like claims/expense appendix."
+  }
+]

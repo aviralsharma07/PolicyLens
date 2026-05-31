@@ -1,0 +1,104 @@
+{
+  "eval_name": "table-engine-dse009-v1",
+  "date": "2026-05-31",
+  "task_id": "DSE-009",
+  "input_manifest": "gold_corpus (5 policies, 26 gold table annotations)",
+  "hard_gates": {
+    "priority_detection_recall_target": 0.85,
+    "priority_detection_recall_actual": 0.8571,
+    "hard_gate_result": "PASS",
+    "header_lineage_gate": "manual_inspection_required"
+  },
+  "metrics": {
+    "total_gold_tables": 26,
+    "total_detected": 24,
+    "detection_recall_all": 0.9231,
+    "type_accuracy_on_detected": 0.5417,
+    "priority_tables_total": 7,
+    "priority_tables_detected": 6,
+    "priority_detection_recall": 0.8571,
+    "priority_type_accuracy": 0.5714
+  },
+  "per_policy": {
+    "care_health_care_plus": {
+      "total_gold_tables": 5,
+      "detected": 3,
+      "detection_recall": 0.6,
+      "type_ok": 2,
+      "type_accuracy": 0.6667,
+      "priority_total": 1,
+      "priority_detected": 0,
+      "priority_detection_recall": 0.0,
+      "priority_type_ok": 0,
+      "structured_tables_extracted": 36,
+      "candidate_tables_extracted": 25,
+      "total_tables_extracted": 61
+    },
+    "hdfc_arogya_sanjeevani": {
+      "total_gold_tables": 6,
+      "detected": 6,
+      "detection_recall": 1.0,
+      "type_ok": 3,
+      "type_accuracy": 0.5,
+      "priority_total": 2,
+      "priority_detected": 2,
+      "priority_detection_recall": 1.0,
+      "priority_type_ok": 1,
+      "structured_tables_extracted": 14,
+      "candidate_tables_extracted": 10,
+      "total_tables_extracted": 24
+    },
+    "icici_family_shield": {
+      "total_gold_tables": 4,
+      "detected": 4,
+      "detection_recall": 1.0,
+      "type_ok": 2,
+      "type_accuracy": 0.5,
+      "priority_total": 1,
+      "priority_detected": 1,
+      "priority_detection_recall": 1.0,
+      "priority_type_ok": 0,
+      "structured_tables_extracted": 15,
+      "candidate_tables_extracted": 25,
+      "total_tables_extracted": 40
+    },
+    "new_india_floater": {
+      "total_gold_tables": 5,
+      "detected": 5,
+      "detection_recall": 1.0,
+      "type_ok": 3,
+      "type_accuracy": 0.6,
+      "priority_total": 1,
+      "priority_detected": 1,
+      "priority_detection_recall": 1.0,
+      "priority_type_ok": 1,
+      "structured_tables_extracted": 16,
+      "candidate_tables_extracted": 18,
+      "total_tables_extracted": 34
+    },
+    "star_medi_classic_accident": {
+      "total_gold_tables": 6,
+      "detected": 6,
+      "detection_recall": 1.0,
+      "type_ok": 3,
+      "type_accuracy": 0.5,
+      "priority_total": 2,
+      "priority_detected": 2,
+      "priority_detection_recall": 1.0,
+      "priority_type_ok": 2,
+      "structured_tables_extracted": 36,
+      "candidate_tables_extracted": 2,
+      "total_tables_extracted": 38
+    }
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "Detection recall for priority tables (waiting_period + schedule_of_benefits): 6/7 = 85.7%. Overall type accuracy is 54% due to text_alignment_candidates classifying page body text (without extractable cells) \u2014 a known v1 limitation. Hard gate (detection recall >= 85%) is PASS. 2 gold tables missed (care_health p4 waiting_period, care_health p12 room_rent): these are text-formatted definition lists with no physical table structure (0 lattice tables, no column-aligned text detected by fallback). Header lineage requires manual inspection per AGENTS.md rules.",
+  "known_limitations": [
+    "text_alignment_candidates have cells=[] (column split ambiguous); type classification based on page text is noisy",
+    "care_health_care_plus p4 (waiting_period) and p12 (room_rent) are text-format lists with no detectable table structure",
+    "hdfc_arogya_sanjeevani p24: pdfplumber detects a product summary table, not the gold-annotated SOB table",
+    "Gold bbox is null for all 26 tables; bbox accuracy deferred to DSE-012",
+    "parent_clause_id assignment is provisional (page-range lookup); bbox overlap deferred to DSE-010"
+  ]
+}

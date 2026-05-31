@@ -20,7 +20,6 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-009 | Table Engine v1 | planned | P2 | Phase 3 |
 | DSE-010 | Clause Store + Source Spans | planned | P2 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | planned | P2 | Phase 5 |
 | DSE-012 | Expand gold corpus 5 → 20 | planned | P2 | Phase 7 |
@@ -43,6 +42,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-006 | Section Tree Builder | 2026-05-30 | Phase 2 |
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | 2026-05-30 | Phase 6 |
 | DSE-008 | Normalizers Library v1 | 2026-05-30 | Phase 6 |
+| DSE-009 | Table Engine v1 | 2026-05-31 | Phase 3 |
 
 ---
 
@@ -50,7 +50,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 ### DSE-001 — Corpus Lockdown
 
-**Status:** done
+**Status:** in_progress
 **Priority:** P0
 **Phase:** Phase -1
 **Goal:** Filter 1067 indexed PDFs into 647 active, 139 needs_review, 281 excluded, with SHA-256 hashes and triage flags.
@@ -307,3 +307,61 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - Money special values are explicit symbolic statuses (`actuals`, `as_charged`, `subject_to_limit`) and must be interpreted by future extractors/export code.
 **Branch:** feat/dse-008-normalizers-v1
 **Related docs:** evaluation.md (Normalizer Unit Tests), data_contracts.md (Contract 4A), runs/sessions/2026-05-30-normalizers-library-v1.md
+
+### DSE-009 — Table Engine v1
+
+**Status:** done
+**Priority:** P2
+**Phase:** Phase 3
+**Goal:** Build a two-tier table detection and extraction engine for 5 gold policies.
+**Approach:**
+- Primary: pdfplumber lattice extraction for tables with visible grid lines (`pdfplumber_lattice`).
+- Fallback: text alignment heuristic for borderless tables (`text_alignment_candidate`).
+- Secondary: conservative `pdfplumber_text` strategy, retained only for small headered grids.
+- Keyword-based type classifier (no ML): 6 types + unknown.
+- Header row detection across the first 3 table rows with per-cell column/row header lineage.
+- Parent clause assignment by shortest containing clause page span plus owning section depth (provisional).
+- DSE-009-specific physical table labels split from DSE-003 semantic `tables.json`.
+**Files created:**
+- `table_engine/__init__.py`
+- `table_engine/models.py` — Pydantic models (TableCell, ExtractedTable, TableDocument, ExtractionMethod, TableType, ColumnCluster)
+- `table_engine/table_detector.py` — pdfplumber lattice extraction
+- `table_engine/text_alignment_detector.py` — column x-cluster fallback
+- `table_engine/table_type_classifier.py` — keyword scorer
+- `table_engine/cell_extractor.py` — cell grid → TableCell list
+- `scripts/run_table_engine.py` — batch CLI
+- `scripts/eval_table_engine.py` — eval against gold corpus
+- `tests/test_table_engine.py` — 49 focused non-slow unit tests
+- `data/reports/dse009_table_bbox_review_candidates.json` — bbox review for DSE-012
+- `data/reports/dse009_header_lineage_review.json` — header lineage review
+- `data/reports/dse009_gold_table_annotation_audit.json` — gold/table mismatch audit
+- `data/reports/dse009_gold_table_source_review.md` — legacy table disposition report
+**Results:**
+- 5/5 gold policies processed.
+- Strict v3 eval passed against 18 physical table labels.
+- Physical table detection recall: 100%.
+- Priority physical table detection recall: 100%.
+- Header lineage pass rate: 100%.
+- Type accuracy on matched physical labels: 94.44%.
+- 42 tables with missing cell bboxes now record explicit `cell_bbox_missing:<count>` issues.
+- Unrecorded missing cell bbox count: 0.
+- Focused non-slow table tests passed: 57/57.
+**Outputs:**
+- `data/interim/tables/*/document_tables.json` — 5 policies
+- `data/interim/tables/*/document_table_cells.json` — 5 policies
+- `data/interim/tables/table_run_summary.json`
+- `runs/evals/2026-05-31-table-engine-dse009-v1.json`
+- `runs/evals/2026-05-31-table-engine-dse009-v2.json`
+- `runs/evals/2026-05-31-table-engine-dse009-v3.json`
+- `data/reports/dse009_table_bbox_review_candidates.json`
+- `data/reports/dse009_header_lineage_review.json`
+- `data/reports/dse009_gold_table_annotation_audit.json`
+- `data/reports/dse009_gold_table_source_review.json`
+- `data/reports/dse009_gold_table_source_review.md`
+**Known limitations:**
+- DSE-003 `tables.json` remains semantic/manual annotation history. DSE-009 hard gates now use `physical_table_labels.json`.
+- `text_alignment_candidate` preserves raw lines but intentionally emits `cells=[]` when borderless column splitting is unreliable.
+- Legacy gold table source dispositions are documented, including prose summaries that should be handled by clause/fact extraction rather than physical table parsing.
+- Parent clause ID is provisional (page-range lookup); replaced by bbox overlap in DSE-010.
+**Branch:** fix/dse-009-table-engine-gates
+**Related docs:** evaluation.md (Table Extraction), data_contracts.md (Contract 3C), decisions.md (ADR-0014, ADR-0015), runs/sessions/2026-05-31-table-engine-v1.md

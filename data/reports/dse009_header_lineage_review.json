@@ -1,0 +1,310 @@
+[
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_001",
+    "gold_headers": [
+      "Sr. No.",
+      "Insured Events",
+      "Amount payable = % of the Sum insured under this Benefit."
+    ],
+    "extracted_table_id": "care_health_care_plus_p19_t2",
+    "extracted_headers": [
+      "Sr.\nNo.",
+      "Insured Events",
+      "Amount payable = % of\nthe Sum insured under\nthis Benefit."
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_002",
+    "gold_headers": [
+      "Case",
+      "Sum Insured",
+      "Deductible",
+      "Claim 1",
+      "Claim 2",
+      "Claim 3",
+      "Payable 1",
+      "Payable 2",
+      "Payable 3"
+    ],
+    "extracted_table_id": "care_health_care_plus_p28_t1",
+    "extracted_headers": [
+      "Case",
+      "Sum Insured",
+      "Deductible",
+      "Claim 1",
+      "Claim 2",
+      "Claim 3",
+      "Payable 1",
+      "Payable 2",
+      "Payable 3"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_003",
+    "gold_headers": [
+      "Cancellation date from Policy Period Start Date",
+      "Policy Tenure - 1 Year",
+      "Policy Tenure - 2 Years",
+      "Policy Tenure - 3 Years"
+    ],
+    "extracted_table_id": "care_health_care_plus_p36_t1",
+    "extracted_headers": [
+      "Cancellation date from\nPolicy Period Start Date",
+      "Policy Tenure –\n1 Year",
+      "Policy Tenure –\n2 Years",
+      "Policy Tenure –\n3 Years"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_004",
+    "gold_headers": [
+      "Hospital Name",
+      "Address"
+    ],
+    "extracted_table_id": "care_health_care_plus_p53_t1",
+    "extracted_headers": [
+      "Hospital Name",
+      "Address"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "gold_table_id": "hdfc_arogya_sanjeevani_phys_table_001",
+    "gold_headers": [
+      "Sl No",
+      "Type of Claim",
+      "Prescribed Time limit"
+    ],
+    "extracted_table_id": "hdfc_ergo_arogya_sanjeevani_p16_t2",
+    "extracted_headers": [
+      "Sl\nNo",
+      "Type of Claim",
+      "Prescribed Time limit"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "gold_table_id": "hdfc_arogya_sanjeevani_phys_table_002",
+    "gold_headers": [
+      "Sl No",
+      "Item"
+    ],
+    "extracted_table_id": "hdfc_ergo_arogya_sanjeevani_p26_t1",
+    "extracted_headers": [
+      "Sl No",
+      "Item"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_001",
+    "gold_headers": [
+      "SR No.",
+      "LOSSES COVERED",
+      "% OF SUM INSURED payable"
+    ],
+    "extracted_table_id": "icici_lombard_family_shield_p19_t1",
+    "extracted_headers": [
+      "SR\nNo.",
+      "LOSSES COVERED",
+      "",
+      "% OF SUM",
+      ""
+    ],
+    "passed": true,
+    "match_rate": 0.6,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_002",
+    "gold_headers": [
+      "Continuous Hospitalization for atleast",
+      "% of Sum Insured Payable"
+    ],
+    "extracted_table_id": "icici_lombard_family_shield_p30_t1",
+    "extracted_headers": [
+      "Continuous Hospitalization\nfor atleast",
+      "% of Sum Insured\nPayable"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_003",
+    "gold_headers": [
+      "Sr No.",
+      "Region",
+      "Fracture",
+      "% of the Sum Insured payable"
+    ],
+    "extracted_table_id": "icici_lombard_family_shield_p34_t1",
+    "extracted_headers": [
+      "Sr\nNo.",
+      "Region",
+      "Fracture",
+      "% of the Sum\nInsured payable"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_004",
+    "gold_headers": [
+      "Day of cancellation",
+      "Policy Period"
+    ],
+    "extracted_table_id": "icici_lombard_family_shield_p50_t1",
+    "extracted_headers": [
+      "Day of cancellation",
+      "Policy Period",
+      "",
+      ""
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_002",
+    "gold_headers": [
+      "Sum Insured",
+      "Additional Cataract limit"
+    ],
+    "extracted_table_id": "new_india_floater_mediclaim_p14_t1",
+    "extracted_headers": [
+      "Sum Insured",
+      "Additional Cataract limit"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_003",
+    "gold_headers": [
+      "S No",
+      "Treatment or Procedure",
+      "Limit (Per Policy Period)"
+    ],
+    "extracted_table_id": "new_india_floater_mediclaim_p16_t1",
+    "extracted_headers": [
+      "S No",
+      "Treatment or Procedure",
+      "Limit (Per Policy Period)"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_004",
+    "gold_headers": [
+      "PERIOD ON RISK",
+      "RATE OF PREMIUM TO BE CHARGED (RETAINED)"
+    ],
+    "extracted_table_id": "new_india_floater_mediclaim_p25_t1",
+    "extracted_headers": [
+      "PERIOD ON RISK",
+      "RATE OF PREMIUM TO BE CHARGED (RETAINED)"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_001",
+    "gold_headers": [
+      "Sum Insured (Rs)",
+      "Limit for Cataract Surgery"
+    ],
+    "extracted_table_id": "star_medi_classic_accident_care_individual_p5_t2",
+    "extracted_headers": [
+      "Sum Insured (Rs)",
+      "Limit for Cataract Surgery"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_002",
+    "gold_headers": [
+      "PERIOD ON RISK",
+      "RATE OF PREMIUM TO BE RETAINED"
+    ],
+    "extracted_table_id": "star_medi_classic_accident_care_individual_p9_t1",
+    "extracted_headers": [
+      "PERIOD ON RISK",
+      "RATE OF PREMIUM TO BE RETAINED"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_003",
+    "gold_headers": [
+      "For policy with one year term",
+      "Period on Risk",
+      "Rate of premium to be retained"
+    ],
+    "extracted_table_id": "star_medi_classic_accident_care_individual_p16_t1",
+    "extracted_headers": [
+      "For policy\nwith one\nyear term",
+      "Period on Risk",
+      "Rate of premium to be retained"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_004",
+    "gold_headers": [
+      "Benefits",
+      "Percentage of Sum Insured"
+    ],
+    "extracted_table_id": "star_medi_classic_accident_care_individual_p20_t1",
+    "extracted_headers": [
+      "Benefits",
+      "Percentage of Sum Insured"
+    ],
+    "passed": true,
+    "match_rate": 1.0,
+    "note": "header tokens matched"
+  }
+]

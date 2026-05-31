@@ -411,6 +411,171 @@ Compatibility rule:
 
 ---
 
+## Contract 3C: Table Engine Output
+
+**Producer:** `table_engine/table_detector.py`, `table_engine/text_alignment_detector.py`
+**Consumer:** DSE-010 Clause Store, DSE-011 Fact Candidate Scoring (table-origin facts)
+**Task:** DSE-009
+**Date:** 2026-05-31
+
+### Output files per policy
+
+```
+data/interim/tables/{policy_slug}/document_tables.json
+data/interim/tables/{policy_slug}/document_table_cells.json
+```
+
+### Extraction method enum
+
+| Value | Meaning |
+|---|---|
+| `pdfplumber_lattice` | Table has visible grid lines; cells reliably extracted via pdfplumber |
+| `pdfplumber_text` | Conservative pdfplumber text-strategy candidate retained only for small headered grids |
+| `text_alignment_candidate` | Borderless table detected by column x-cluster heuristics; cells may be partial |
+
+### Table type enum
+
+| Value | Description |
+|---|---|
+| `waiting_period` | Waiting period durations by type (PED, initial, specific disease) |
+| `schedule_of_benefits` | Benefit schedule with limits (room rent, ICU, ambulance, NCB) |
+| `room_rent` | Room rent sub-limits by room category or variant |
+| `premium` | Premium rate tables by age/sum-insured band |
+| `claims_documents` | Document checklist for claim submission |
+| `network_list` | List of network hospitals |
+| `unknown` | Could not classify with confidence |
+
+### `ExtractedTable` shape
+
+```json
+{
+  "table_id": "care_health_care_plus_p4_t1",
+  "document_id": "sha256:...",
+  "policy_id": "care_health_care_plus",
+  "page": 4,
+  "bbox": [72.0, 234.5, 480.0, 310.2],
+  "table_type": "waiting_period",
+  "table_type_confidence": 0.91,
+  "extraction_method": "pdfplumber_lattice",
+  "row_count": 5,
+  "col_count": 2,
+  "has_header_row": true,
+  "header_row_index": 0,
+  "header_rows": [0],
+  "column_headers": ["Waiting period type", "Duration"],
+  "cells": [...],
+  "raw_lines": [],
+  "column_clusters": null,
+  "parent_clause_id": "care_health_care_plus_s4_c2",
+  "parent_clause_confidence": 0.75,
+  "issues": []
+}
+```
+
+### `TableCell` shape
+
+```json
+{
+  "cell_id": "care_health_care_plus_p4_t1_r0_c0",
+  "table_id": "care_health_care_plus_p4_t1",
+  "row_index": 0,
+  "col_index": 0,
+  "text": "Waiting period type",
+  "bbox": [72.0, 234.5, 280.0, 248.0],
+  "is_header": true,
+  "column_header_text": null,
+  "row_header_text": null,
+  "row_span": 1,
+  "col_span": 1
+}
+```
+
+### `ColumnCluster` shape (text_alignment_candidate only)
+
+```json
+{
+  "col_index": 0,
+  "x_center": 90.5,
+  "x_min": 72.0,
+  "x_max": 110.0
+}
+```
+
+### `raw_lines` shape (text_alignment_candidate only)
+
+When borderless table structure is detected but cells cannot be safely split,
+`cells` must remain `[]` and the source physical lines must be preserved:
+
+```json
+{
+  "line_id": "p8l_59",
+  "text": "3.52. Waiting Period means a period from the inception...",
+  "bbox": [75.144, 735.12528, 523.07432, 746.16528]
+}
+```
+
+### `TableDocument` shape (document_tables.json)
+
+```json
+{
+  "schema_version": "1.0.0",
+  "pipeline_run_id": "table_v1_...",
+  "document_id": "sha256:...",
+  "policy_id": "care_health_care_plus",
+  "source_pdf_path": "...",
+  "page_count": 57,
+  "tables_found": 5,
+  "structured_tables": 3,
+  "candidate_tables": 2,
+  "tables": [...],
+  "issues": []
+}
+```
+
+### Rules
+
+1. `bbox` may be `null` for text_alignment_candidate tables where line bounds are insufficient.
+2. `cells` may be `[]` for text_alignment_candidate tables where column split is ambiguous; in this case `issues` must contain `"cells_not_reliably_split"` and `raw_lines` must preserve the source lines.
+3. `None` cell values from pdfplumber are normalized to `""` before storage.
+4. `pdfplumber_text` tables are retained only when they have a reliable header row, 2-8 columns, 2-30 rows, and a bounded table area.
+5. Missing pdfplumber cell coordinates must be recorded as `cell_bbox_missing:<count>` in the table `issues` array.
+6. `parent_clause_id` is provisional (shortest containing clause page span plus owning section depth); will be replaced by bbox overlap in DSE-010.
+7. All table IDs are stable: `{policy_id}_p{page}_t{n}` where n is 1-based per page.
+8. `document_table_cells.json` is the flat list of all cells from `document_tables.json` for easier downstream lookup.
+
+### `physical_table_labels.json` shape
+
+DSE-009 evaluates physical tables against a separate label file per policy. Legacy
+`tables.json` remains semantic/manual annotation history and is not the hard-gate
+target for physical table extraction.
+
+```json
+{
+  "label_id": "new_india_floater_phys_table_003",
+  "source_table_id": "dse009_physical_review_added",
+  "page": 16,
+  "bbox": [53.88, 210.5, 561.22, 571.03],
+  "table_type": "schedule_of_benefits",
+  "headers": ["S No", "Treatment or Procedure", "Limit (Per Policy Period)"],
+  "rows": [["3.15.1", "Uterine Artery Embolization and HIFU", "Upto 20% of Sum Insured"]],
+  "header_rows": [0],
+  "column_count": 3,
+  "row_count": 13,
+  "priority": true,
+  "reviewer_note": "Physical modern-treatment limit table."
+}
+```
+
+### Bbox note
+
+All gold `tables.json` entries have `bbox = null` until DSE-012 manual review. DSE-009 produces machine-suggested bboxes in `document_tables.json`. A review report at `data/reports/dse009_table_bbox_review_candidates.json` lists predicted bboxes for manual verification before gold commit.
+
+### DSE-009 v3 gate note
+
+The strict DSE-009 eval treats same-page table presence as diagnostic only. A physical label is detected only when the extracted table has matching bbox/type/content signature. DSE-003 `tables.json` rows that summarize prose are documented in `data/reports/dse009_gold_table_source_review.md` and excluded from DSE-009 hard gates.
+
+---
+
 ## Contract 6: Accepted Facts → Derived Export
 
 **Producer:** `extractors/` (after conflict resolution)

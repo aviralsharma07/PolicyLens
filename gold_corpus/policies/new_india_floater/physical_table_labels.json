@@ -1,0 +1,58 @@
+[
+  {
+    "label_id": "new_india_floater_phys_table_001",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 10,
+    "bbox": [59.544, 656.37998, 550.17999, 775.53601],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [["3.1 (a)", "Room Rent, boarding and nursing expenses"], ["3.1 (b)", "Intensive Care Unit"]],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": true,
+    "reviewer_note": "Physical two-column benefit clause table without a separate header row."
+  },
+  {
+    "label_id": "new_india_floater_phys_table_002",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 14,
+    "bbox": [157.82, 592.02998, 437.49999, 678.81998],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Sum Insured", "Additional Cataract limit"],
+    "rows": [["Rs. 8,00,000", "Rs. 80,000"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": true,
+    "reviewer_note": "Physical cataract sublimit table."
+  },
+  {
+    "label_id": "new_india_floater_phys_table_003",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 16,
+    "bbox": [53.88, 210.5, 561.21999, 571.02998],
+    "table_type": "schedule_of_benefits",
+    "headers": ["S No", "Treatment or Procedure", "Limit (Per Policy Period)"],
+    "rows": [["3.15.1", "Uterine Artery Embolization and HIFU", "Upto 20% of Sum Insured"]],
+    "header_rows": [0],
+    "column_count": 3,
+    "row_count": 13,
+    "priority": true,
+    "reviewer_note": "Physical modern-treatment limit table."
+  },
+  {
+    "label_id": "new_india_floater_phys_table_004",
+    "source_table_id": "new_india_floater_table_003",
+    "page": 25,
+    "bbox": [86.544, 393.409995, 541.29999, 469.15001],
+    "table_type": "premium",
+    "headers": ["PERIOD ON RISK", "RATE OF PREMIUM TO BE CHARGED (RETAINED)"],
+    "rows": [["Up to one month", "1/4th of the annual rate"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Physical premium retention table linked to legacy premium annotation."
+  }
+]
