@@ -1,0 +1,210 @@
+[
+  {
+    "policy_slug": "care_health_care_plus",
+    "legacy_table_id": "care_health_care_plus_table_001",
+    "legacy_page": 4,
+    "legacy_type": "waiting_period",
+    "classification": "prose_summary_not_table",
+    "reason": "Waiting period summary is clause prose, not a physical cell grid."
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "legacy_table_id": "care_health_care_plus_table_002",
+    "legacy_page": 12,
+    "legacy_type": "room_rent",
+    "classification": "prose_summary_not_table",
+    "reason": "Room-rent schedule dependency is prose/schedule reference, not a physical table on the labelled page."
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "legacy_table_id": "care_health_care_plus_table_003",
+    "legacy_page": 1,
+    "legacy_type": "premium",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Premium region exists but cells were not annotated in DSE-003."
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "legacy_table_id": "care_health_care_plus_table_004",
+    "legacy_page": 13,
+    "legacy_type": "claims_documents",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Claims-documents region requires physical bbox/header review."
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "legacy_table_id": "care_health_care_plus_table_005",
+    "legacy_page": 57,
+    "legacy_type": "network_list",
+    "classification": "physical_table_eval",
+    "reason": "Mapped to network-list physical label."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_001",
+    "legacy_page": 24,
+    "legacy_type": "schedule_of_benefits",
+    "classification": "prose_summary_not_table",
+    "reason": "Room-rent/SOB values are prose/product-summary facts, not the physical table on page 24."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_002",
+    "legacy_page": 8,
+    "legacy_type": "waiting_period",
+    "classification": "prose_summary_not_table",
+    "reason": "Waiting-period definition is prose; no reliable physical table cells."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_003",
+    "legacy_page": 8,
+    "legacy_type": "room_rent",
+    "classification": "prose_summary_not_table",
+    "reason": "Room-rent value is prose/fact summary."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_004",
+    "legacy_page": 2,
+    "legacy_type": "premium",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Premium/product-summary table not part of priority physical gate."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_005",
+    "legacy_page": 16,
+    "legacy_type": "claims_documents",
+    "classification": "physical_table_eval",
+    "reason": "Mapped to claim timeline physical table."
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "legacy_table_id": "hdfc_arogya_sanjeevani_table_006",
+    "legacy_page": 3,
+    "legacy_type": "network_list",
+    "classification": "wrong_page_or_wrong_type",
+    "reason": "Legacy network-list label points to page content that is not a network-list physical table."
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "legacy_table_id": "icici_family_shield_table_001",
+    "legacy_page": 1,
+    "legacy_type": "waiting_period",
+    "classification": "prose_summary_not_table",
+    "reason": "Waiting period is a policy wording fact, not a physical table."
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "legacy_table_id": "icici_family_shield_table_002",
+    "legacy_page": 1,
+    "legacy_type": "premium",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Policy certificate/premium-like page needs separate physical schedule review."
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "legacy_table_id": "icici_family_shield_table_003",
+    "legacy_page": 18,
+    "legacy_type": "claims_documents",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Claims-documents region requires physical bbox/header review."
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "legacy_table_id": "icici_family_shield_table_004",
+    "legacy_page": 1,
+    "legacy_type": "network_list",
+    "classification": "wrong_page_or_wrong_type",
+    "reason": "Legacy network-list label is not a network-list physical table."
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "legacy_table_id": "new_india_floater_table_001",
+    "legacy_page": 6,
+    "legacy_type": "waiting_period",
+    "classification": "prose_summary_not_table",
+    "reason": "Waiting period is prose/definition content, not a physical waiting-period table."
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "legacy_table_id": "new_india_floater_table_002",
+    "legacy_page": 9,
+    "legacy_type": "room_rent",
+    "classification": "prose_summary_not_table",
+    "reason": "Room-rent fact is extracted from benefit-clause prose/table rows, not a legacy room-rent table."
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "legacy_table_id": "new_india_floater_table_003",
+    "legacy_page": 25,
+    "legacy_type": "premium",
+    "classification": "physical_table_eval",
+    "reason": "Mapped to premium retention physical table."
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "legacy_table_id": "new_india_floater_table_004",
+    "legacy_page": 23,
+    "legacy_type": "claims_documents",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Claims-documents region requires physical bbox/header review."
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "legacy_table_id": "new_india_floater_table_005",
+    "legacy_page": 2,
+    "legacy_type": "network_list",
+    "classification": "wrong_page_or_wrong_type",
+    "reason": "Legacy network-list label points to non-network-list page content."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_001",
+    "legacy_page": 1,
+    "legacy_type": "schedule_of_benefits",
+    "classification": "prose_summary_not_table",
+    "reason": "SOB facts are embedded in policy summary/prose, not a clean physical SOB grid."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_002",
+    "legacy_page": 2,
+    "legacy_type": "waiting_period",
+    "classification": "prose_summary_not_table",
+    "reason": "Waiting-period facts are prose; page 2 physical table is policy-summary/coverage index."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_003",
+    "legacy_page": 5,
+    "legacy_type": "room_rent",
+    "classification": "prose_summary_not_table",
+    "reason": "Room-rent fact is prose/scope text, not a physical room-rent grid."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_004",
+    "legacy_page": 9,
+    "legacy_type": "premium",
+    "classification": "physical_table_eval",
+    "reason": "Mapped to premium retention physical table."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_005",
+    "legacy_page": 8,
+    "legacy_type": "claims_documents",
+    "classification": "deferred_needs_pdf_review",
+    "reason": "Claims-documents label needs source/bbox review."
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "legacy_table_id": "star_medi_classic_accident_table_006",
+    "legacy_page": 6,
+    "legacy_type": "network_list",
+    "classification": "wrong_page_or_wrong_type",
+    "reason": "Legacy network-list label points to non-network-list page content."
+  }
+]

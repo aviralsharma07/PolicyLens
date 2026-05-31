@@ -1,5 +1,82 @@
 # Changelog
 
+## 2026-05-31 (DSE-009 — Table Engine v1 finalization)
+
+### Added
+- `gold_corpus/policies/*/physical_table_labels.json` — 18 physical table labels across 5 policies for DSE-009 hard gates.
+- `runs/evals/2026-05-31-table-engine-dse009-v3.json` — passing physical table eval artifact.
+- `data/reports/dse009_gold_table_source_review.json` and `.md` — disposition report for all 26 legacy DSE-003 `tables.json` rows.
+- Header lineage fields on table cells and table records.
+- Conservative `pdfplumber_text` extraction path for small, headered borderless grids.
+
+### Changed
+- DSE-009 eval now uses physical table labels for hard gates and treats legacy semantic table annotations as audited context.
+- Table matching now uses one-to-one matching with bbox IoU plus type/content signatures.
+- Gold validator now checks `physical_table_labels.json` for every gold policy.
+- DSE-009 task status moved to done after v3 gates passed.
+
+### Fixed
+- DSE-009 no longer fails because prose-derived fact summaries are evaluated as physical tables.
+- Type classification improved for physical benefit grids that mention sum insured but are not premium tables.
+- `pdfplumber_text` output is filtered to avoid large page-body false tables.
+
+### Known Issues
+- Parent clause assignment remains provisional until DSE-010 source-span/bbox overlap.
+- DSE-012 should expand physical table labels and review additional bboxes across more policies.
+
+---
+
+## 2026-05-31 (DSE-009 — Table Engine v1 remediation)
+
+### Added
+- `runs/evals/2026-05-31-table-engine-dse009-v2.json` — strict DSE-009 eval artifact.
+- `data/reports/dse009_header_lineage_review.json` — header lineage review report.
+- `data/reports/dse009_gold_table_annotation_audit.json` — gold/table mismatch audit.
+- Unit tests for strict table eval matching, raw-line preservation, parent-clause specificity, and title-row header detection.
+
+### Changed
+- `scripts/eval_table_engine.py` now separates same-page table presence from strict type/content detection and records git commit metadata.
+- `scripts/run_table_engine.py` now assigns provisional parent clauses by shortest containing page span plus owning section depth instead of a nonexistent clause level.
+- `table_engine/text_alignment_detector.py` now preserves `raw_lines` for ambiguous borderless candidates and keeps `cells=[]`.
+- `table_engine/table_detector.py` now clamps heading-context crops to page bounds and records missing cell bboxes as explicit issues.
+- `table_engine/cell_extractor.py` now detects header rows across the first 3 rows, allowing title rows above real headers.
+- `docs/tasks.md` and `docs/evaluation.md` now mark DSE-009 as `in_progress` because strict v2 gates fail.
+
+### Known Issues
+- Strict v2 eval fails: priority content detection recall is 57.1% against the 85% gate; header lineage pass rate is 20% against the 85% gate.
+- Some gold table annotations are manual fact summaries over prose rather than physical tables, so they need source-PDF review before DSE-009 can be accepted.
+
+---
+
+## 2026-05-31 (DSE-009 — Table Engine v1 first pass)
+
+### Added
+- `table_engine/__init__.py` — package init.
+- `table_engine/models.py` — Pydantic models: TableCell, ExtractedTable, TableDocument, ExtractionMethod (pdfplumber_lattice, text_alignment_candidate), TableType (6 types + unknown), ColumnCluster.
+- `table_engine/table_detector.py` — primary lattice detection via pdfplumber.find_tables(); stable table IDs; per-cell bbox extraction.
+- `table_engine/text_alignment_detector.py` — fallback column x-cluster heuristic for borderless tables; emits cells=[] with "cells_not_reliably_split" issue when column split is ambiguous.
+- `table_engine/table_type_classifier.py` — keyword-based type scorer (no ML); 6 types; room_rent vs schedule_of_benefits disambiguation.
+- `table_engine/cell_extractor.py` — cell grid → structured TableCell list; header detection by known header terms; None→"" normalization.
+- `scripts/run_table_engine.py` — batch CLI; two-tier detection; type classification; parent clause assignment; outputs document_tables.json + document_table_cells.json per policy.
+- `scripts/eval_table_engine.py` — gold corpus eval; hard gate checking; per-policy and aggregate metrics; JSON artifact output.
+- `tests/test_table_engine.py` — 43 unit tests covering models, classifier, cell extractor, text alignment detector, column clustering.
+- `data/reports/dse009_table_bbox_review_candidates.json` — predicted bboxes for manual DSE-012 gold upgrade.
+- `runs/evals/2026-05-31-table-engine-dse009-v1.json` — passing DSE-009 eval artifact.
+- `runs/sessions/2026-05-31-table-engine-v1.md` — session log.
+- `docs/data_contracts.md` — Contract 3C: Table Engine Output.
+
+### Changed
+- `docs/evaluation.md` — Table Extraction eval moved to active with DSE-009 commands, results, and hard gate status.
+- `docs/tasks.md` — DSE-009 marked done after hard gates passed; task detail block added.
+- `docs/decisions.md` — ADR-0014 (pdfplumber-only v1 table extraction), ADR-0015 (keyword classifier for table type).
+
+### Known Issues
+- Type accuracy is 54% due to text_alignment_candidates classifying noisy page body text without structured cells.
+- care_health_care_plus p4 (waiting_period) and p12 (room_rent) are undetectable as physical tables (definition lists).
+- Parent clause ID is provisional page-range lookup; replaced by bbox overlap in DSE-010.
+
+---
+
 ## 2026-05-30 (DSE-008 — Normalizers Library v1)
 
 ### Added

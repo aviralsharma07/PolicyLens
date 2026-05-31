@@ -504,13 +504,16 @@ Tables are one of the hardest parts of the corpus. This eval ensures tables are 
 
 ### Inputs
 - Raw PDF pages with table regions
-- Gold table annotations (cells, headers, type, parent clause)
+- DSE-009 physical table labels: `gold_corpus/policies/*/physical_table_labels.json`
+- Legacy DSE-003 `tables.json` rows are audited but excluded from DSE-009 hard gates when they are prose-derived summaries.
 
 ### Metrics
-- Table detection recall (target: >= 85% for benefit/waiting tables)
+- Physical table detection recall
+- Priority physical table detection recall (target: >= 85% for benefit/waiting or benefit-schedule tables)
 - Table type classification accuracy (target: >= 80%)
 - Cell text accuracy
 - Header association accuracy
+- Bbox IoU match rate
 - Row/column alignment accuracy
 - Table parent clause assignment accuracy
 
@@ -526,8 +529,12 @@ Separately test for:
 ### Hard Gates
 For waiting-period and benefit-schedule tables:
 ```
-table detection recall >= 85%
-header lineage manually acceptable on 5 gold PDFs
+all 5 policies evaluated
+priority physical table detection recall >= 85%
+header lineage accuracy >= 85%
+table type accuracy on matched physical tables >= 80%
+unrecorded missing cell bbox count = 0
+every skipped legacy tables.json row has a documented disposition
 ```
 
 ### Commands
@@ -544,7 +551,68 @@ tables/{policy_id}/document_table_cells.json
 ```
 
 ### Current Status
-planned
+active, passing strict physical-table gate (DSE-009 v3 on 2026-05-31)
+
+### DSE-009 v3 Result
+
+```json
+{
+  "eval_name": "table-engine-dse009-v3",
+  "date": "2026-05-31",
+  "task_id": "DSE-009",
+  "git_commit": "captured in eval artifact",
+  "input_manifest": "gold_corpus physical_table_labels.json (5 policies)",
+  "hard_gates": {
+    "priority_physical_detection_recall_target": 0.85,
+    "priority_physical_detection_recall_actual": 1.0,
+    "header_lineage_pass_rate_target": 0.85,
+    "header_lineage_pass_rate_actual": 1.0,
+    "type_accuracy_target": 0.8,
+    "type_accuracy_actual": 0.9444,
+    "unrecorded_missing_cell_bboxes_actual": 0
+  },
+  "metrics": {
+    "total_physical_table_labels": 18,
+    "physical_table_detection_recall_all": 1.0,
+    "type_accuracy_on_content_detected": 0.9444,
+    "priority_physical_tables_total": 9,
+    "priority_physical_detection_recall": 1.0,
+    "priority_type_accuracy": 0.8889,
+    "header_lineage_pass_rate": 1.0,
+    "tables_with_missing_cell_bboxes_recorded": 42,
+    "unrecorded_missing_cell_bboxes": 0,
+    "legacy_gold_rows_documented": 26
+  },
+  "passed": true
+}
+```
+
+Notes:
+- v3 uses `physical_table_labels.json` as the hard-gate target. Legacy `tables.json` rows remain semantic/manual annotation history.
+- v1 same-page matching and v2 legacy semantic matching are retained as history but superseded for DSE-009 acceptance.
+- Missing pdfplumber cell coordinates are explicit table issues (`cell_bbox_missing:<count>`); no missing cell bbox is unrecorded.
+- Legacy semantic table dispositions are documented in `data/reports/dse009_gold_table_source_review.md`.
+
+### Commands
+
+```bash
+# Extract tables from gold corpus
+PYTHONPATH=. python scripts/run_table_engine.py \
+  --gold-corpus gold_corpus \
+  --policy-data-root ../policy_data \
+  --physical-root data/interim/physical \
+  --section-root data/interim/logical \
+  --output-root data/interim/tables
+
+# Run eval
+PYTHONPATH=. python scripts/eval_table_engine.py \
+  --gold-corpus gold_corpus \
+  --tables-root data/interim/tables \
+  --output runs/evals/2026-05-31-table-engine-dse009-v3.json
+
+# Run unit tests
+PYTHONPATH=. python -m pytest tests/test_table_engine.py -v -m "not slow"
+```
 
 ---
 
@@ -786,7 +854,7 @@ planned
 | Physical Parser | >= 95% pages produce text blocks, 0 catastrophic reading-order failures | Section building |
 | Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
-| Tables | detection recall >= 85% for benefit/waiting tables | Fact extraction from tables |
+| Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |

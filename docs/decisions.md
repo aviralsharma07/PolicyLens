@@ -19,6 +19,9 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0011 | Use pdfplumber for physical layout extraction | 2026-05-29 | Accepted |
 | 0012 | Stack-based section tree builder with synthetic body-numbered sections | 2026-05-30 | Accepted |
 | 0013 | Provisional clause evidence IDs for DSE-007 | 2026-05-30 | Accepted |
+| 0014 | pdfplumber-only table extraction for DSE-009 v1 (no camelot) | 2026-05-31 | Accepted |
+| 0015 | Keyword-based table type classifier (no ML) with two-tier detection | 2026-05-31 | Accepted |
+| 0016 | Split physical table labels from semantic table summaries | 2026-05-31 | Accepted |
 
 ---
 
@@ -314,3 +317,105 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Fact-bearing heading lines are represented through the owning clause until DSE-010.
 
 **Revisit when:** DSE-010 builds `source_spans` and the local SQLite clause store.
+
+---
+
+## 2026-05-31 — pdfplumber-only table extraction for DSE-009 v1
+
+**Status:** accepted
+
+**Decision:** Use pdfplumber as the sole table extraction tool for DSE-009. Do not add camelot-py.
+
+**Context:** IMPLEMENTATION_PLAN.md lists camelot-py as a potential tool. DSE-009 needed to choose whether to add camelot (lattice + stream modes) or stay with pdfplumber.
+
+**Options considered:**
+1. pdfplumber only (find_tables + text alignment fallback)
+2. pdfplumber primary + camelot fallback
+3. camelot primary
+
+**Reasoning:** pdfplumber is already a dependency with working `find_tables()`. Adding camelot adds a significant dependency (requires Ghostscript, image libraries). The 5-policy gold corpus shows that most misses are text-formatted lists (no physical table structure), not tables that camelot would find better. Precision-first: camelot's stream mode risks false positives on definition lists.
+
+**Consequences:**
+- Positive: No new dependencies. Keeps pipeline simple and fast.
+- Positive: Known infrastructure; pdfplumber already imports Table API.
+- Negative: Borderless tables with no column structure are detected only as `text_alignment_candidate` with cells=[].
+- Negative: Type accuracy is limited for text_alignment_candidates.
+
+**Revisit when:** Gold corpus expands to 20 policies (DSE-012) and there is evidence that camelot would improve recall without hurting precision.
+
+---
+
+## 2026-05-31 — Keyword-based table type classifier with two-tier detection
+
+**Status:** accepted
+
+**Decision:** Use a keyword-based type classifier (no ML) and a two-tier detection strategy (pdfplumber lattice + text alignment fallback).
+
+**Context:** Need to classify tables into 6 types (waiting_period, schedule_of_benefits, room_rent, premium, claims_documents, network_list) without a training dataset.
+
+**Options considered:**
+1. No classification — emit all tables as unknown
+2. Keyword-based scorer with normalized hit count
+3. ML classifier trained on gold corpus
+4. Rule-based classifier using structural signals (row/column count, header patterns)
+
+**Reasoning:** Gold corpus has 26 tables across 6 types — insufficient for ML training. Keyword matching is transparent, debuggable, and precise for lattice tables with actual cell content. The two-tier approach (lattice + text alignment fallback) ensures no silent failure for borderless tables; the fallback marks cells as unreliable rather than fabricating structure.
+
+**Text alignment fallback design:** Detect column x-clusters from body line x0 positions. If a run of 3+ lines shares 2+ stable cluster positions, emit as `text_alignment_candidate`. Cells=[] when column split is ambiguous (i.e., row-to-cell assignment is unreliable). Always logs `cells_not_reliably_split` issue when cells are omitted.
+
+**Consequences:**
+- Positive: No training data needed. Transparent and auditable.
+- Positive: Clear distinction between structured (lattice) and candidate (fallback) tables.
+- Negative: Type accuracy is 54% overall — text_alignment_candidates classify from noisy page body text.
+- Negative: Premium/SOB disambiguation requires careful keyword tuning.
+
+**Revisit when:** DSE-012 expands gold corpus to 20 policies. At that scale, a simple rule-based classifier with structural features (header content, row count, column count patterns) may outperform pure keyword matching.
+
+---
+
+## 2026-05-31 — Strict table eval separates page presence from content detection
+
+**Status:** accepted
+
+**Decision:** DSE-009 table evaluation must not count a gold table as detected merely because any extracted table exists on the same page. The strict gate uses type/content matching for detection and reports same-page table presence only as a diagnostic `page_region_recall` metric.
+
+**Context:** The first DSE-009 eval passed by matching any table on the gold page. Review showed this inflated priority detection recall even when the extracted table type and header/cell content did not match the gold annotation.
+
+**Options considered:**
+1. Keep same-page matching as the hard gate.
+2. Use strict type/content matching as the hard gate and page-region matching as a diagnostic.
+3. Remove DSE-009 hard gates until DSE-012 adds bboxes.
+
+**Reasoning:** Same-page matching hides real parser gaps and would let bad table evidence flow into downstream fact extraction. Strict matching is noisier against current gold annotations, but it protects the pipeline from false confidence.
+
+**Consequences:**
+- Positive: Eval now catches wrong-type matches, conceptual gold summaries, and missing header lineage.
+- Positive: DSE-009 remains aligned with the Product A table rule that tables must preserve cells, coordinates, and headers.
+- Negative: Current DSE-003 table annotations are not sufficient for full DSE-009 acceptance because some rows summarize prose rather than physical tables.
+
+**Revisit when:** Gold `tables.json` entries have reviewed bboxes/header rows, or the project explicitly splits physical table extraction from prose-derived table-like fact summaries.
+
+---
+
+## 2026-05-31 — Split physical table labels from semantic table summaries
+
+**Status:** accepted
+
+**Decision:** DSE-009 hard gates evaluate `physical_table_labels.json`, not DSE-003 `tables.json`. Legacy `tables.json` remains semantic/manual annotation history for prose-derived table-like facts and high-level summaries.
+
+**Context:** DSE-009 v2 failed because several DSE-003 table annotations summarized facts from prose or definitions rather than physical PDF tables with cells, headers, and bboxes. A physical table parser should not fabricate cells for those annotations.
+
+**Options considered:**
+1. Loosen DSE-009 eval back to same-page matching.
+2. Rewrite DSE-003 `tables.json` to make the table engine pass.
+3. Split physical-table labels from semantic/manual summaries and audit every legacy table row.
+
+**Reasoning:** The implementation plan defines Phase 3 as physical table intelligence: raw cells, coordinates, and header lineage. Keeping semantic summaries in the hard gate would punish the correct parser behavior and reward fake structure.
+
+**Consequences:**
+- Positive: DSE-009 now measures the correct layer: physical table extraction.
+- Positive: Prose-derived facts remain available to deterministic clause/fact extractors.
+- Positive: Every legacy table row has an explicit disposition in `data/reports/dse009_gold_table_source_review.md`.
+- Negative: DSE-012 must expand/review physical table labels, not just semantic summaries.
+
+**Revisit when:** DSE-012 expands the gold corpus to 20 policies or introduces a dedicated prose-summary/table-like-fact annotation layer.

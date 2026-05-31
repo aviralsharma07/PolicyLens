@@ -1,0 +1,1150 @@
+{
+  "eval_name": "table-engine-dse009-v3",
+  "date": "2026-05-31",
+  "task_id": "DSE-009",
+  "git_commit": "493de933f0feea6a30a22114b1ae066a0e9bc999",
+  "input_manifest": "gold_corpus physical_table_labels.json (5 policies)",
+  "hard_gates": {
+    "policies_evaluated_target": 5,
+    "policies_evaluated_actual": 5,
+    "priority_physical_detection_recall_target": 0.85,
+    "priority_physical_detection_recall_actual": 1.0,
+    "header_lineage_pass_rate_target": 0.85,
+    "header_lineage_pass_rate_actual": 1.0,
+    "type_accuracy_target": 0.8,
+    "type_accuracy_actual": 0.9444,
+    "unrecorded_missing_cell_bboxes_target": 0,
+    "unrecorded_missing_cell_bboxes_actual": 0,
+    "legacy_gold_rows_without_disposition_target": 0,
+    "legacy_gold_rows_without_disposition_actual": 0
+  },
+  "metrics": {
+    "total_physical_table_labels": 18,
+    "total_detected": 18,
+    "physical_table_detection_recall_all": 1.0,
+    "page_region_detected": 18,
+    "page_region_recall_all": 1.0,
+    "type_accuracy_on_content_detected": 0.9444,
+    "priority_physical_tables_total": 9,
+    "priority_physical_tables_detected": 9,
+    "priority_physical_detection_recall": 1.0,
+    "priority_page_region_detected": 9,
+    "priority_page_region_recall": 1.0,
+    "priority_type_accuracy": 0.8889,
+    "header_lineage_required": 17,
+    "header_lineage_passed": 17,
+    "header_lineage_pass_rate": 1.0,
+    "tables_with_missing_cell_bboxes_recorded": 42,
+    "unrecorded_missing_cell_bboxes": 0,
+    "false_positive_tables": 179,
+    "legacy_gold_rows_documented": 26
+  },
+  "per_policy": {
+    "care_health_care_plus": {
+      "total_gold_tables": 4,
+      "detected": 4,
+      "detection_recall": 1.0,
+      "page_region_detected": 4,
+      "page_region_recall": 1.0,
+      "type_ok": 4,
+      "type_accuracy": 1.0,
+      "priority_total": 1,
+      "priority_detected": 1,
+      "priority_detection_recall": 1.0,
+      "priority_page_region_detected": 1,
+      "priority_page_region_recall": 1.0,
+      "priority_type_ok": 1,
+      "header_required": 4,
+      "header_passed": 4,
+      "header_lineage_pass_rate": 1.0,
+      "structured_tables_extracted": 36,
+      "candidate_tables_extracted": 25,
+      "total_tables_extracted": 61,
+      "tables_with_missing_cell_bboxes": 14,
+      "unrecorded_missing_cell_bboxes": 0,
+      "false_positive_tables": 57
+    },
+    "hdfc_arogya_sanjeevani": {
+      "total_gold_tables": 2,
+      "detected": 2,
+      "detection_recall": 1.0,
+      "page_region_detected": 2,
+      "page_region_recall": 1.0,
+      "type_ok": 2,
+      "type_accuracy": 1.0,
+      "priority_total": 0,
+      "priority_detected": 0,
+      "priority_detection_recall": 0,
+      "priority_page_region_detected": 0,
+      "priority_page_region_recall": 0,
+      "priority_type_ok": 0,
+      "header_required": 2,
+      "header_passed": 2,
+      "header_lineage_pass_rate": 1.0,
+      "structured_tables_extracted": 14,
+      "candidate_tables_extracted": 10,
+      "total_tables_extracted": 24,
+      "tables_with_missing_cell_bboxes": 4,
+      "unrecorded_missing_cell_bboxes": 0,
+      "false_positive_tables": 22
+    },
+    "icici_family_shield": {
+      "total_gold_tables": 4,
+      "detected": 4,
+      "detection_recall": 1.0,
+      "page_region_detected": 4,
+      "page_region_recall": 1.0,
+      "type_ok": 4,
+      "type_accuracy": 1.0,
+      "priority_total": 3,
+      "priority_detected": 3,
+      "priority_detection_recall": 1.0,
+      "priority_page_region_detected": 3,
+      "priority_page_region_recall": 1.0,
+      "priority_type_ok": 3,
+      "header_required": 4,
+      "header_passed": 4,
+      "header_lineage_pass_rate": 1.0,
+      "structured_tables_extracted": 15,
+      "candidate_tables_extracted": 25,
+      "total_tables_extracted": 40,
+      "tables_with_missing_cell_bboxes": 5,
+      "unrecorded_missing_cell_bboxes": 0,
+      "false_positive_tables": 36
+    },
+    "new_india_floater": {
+      "total_gold_tables": 4,
+      "detected": 4,
+      "detection_recall": 1.0,
+      "page_region_detected": 4,
+      "page_region_recall": 1.0,
+      "type_ok": 3,
+      "type_accuracy": 0.75,
+      "priority_total": 3,
+      "priority_detected": 3,
+      "priority_detection_recall": 1.0,
+      "priority_page_region_detected": 3,
+      "priority_page_region_recall": 1.0,
+      "priority_type_ok": 2,
+      "header_required": 3,
+      "header_passed": 3,
+      "header_lineage_pass_rate": 1.0,
+      "structured_tables_extracted": 16,
+      "candidate_tables_extracted": 18,
+      "total_tables_extracted": 34,
+      "tables_with_missing_cell_bboxes": 0,
+      "unrecorded_missing_cell_bboxes": 0,
+      "false_positive_tables": 30
+    },
+    "star_medi_classic_accident": {
+      "total_gold_tables": 4,
+      "detected": 4,
+      "detection_recall": 1.0,
+      "page_region_detected": 4,
+      "page_region_recall": 1.0,
+      "type_ok": 4,
+      "type_accuracy": 1.0,
+      "priority_total": 2,
+      "priority_detected": 2,
+      "priority_detection_recall": 1.0,
+      "priority_page_region_detected": 2,
+      "priority_page_region_recall": 1.0,
+      "priority_type_ok": 2,
+      "header_required": 4,
+      "header_passed": 4,
+      "header_lineage_pass_rate": 1.0,
+      "structured_tables_extracted": 36,
+      "candidate_tables_extracted": 2,
+      "total_tables_extracted": 38,
+      "tables_with_missing_cell_bboxes": 19,
+      "unrecorded_missing_cell_bboxes": 0,
+      "false_positive_tables": 34
+    }
+  },
+  "policies": [
+    {
+      "slug": "care_health_care_plus",
+      "status": "ok",
+      "policy_metrics": {
+        "total_gold_tables": 4,
+        "detected": 4,
+        "detection_recall": 1.0,
+        "page_region_detected": 4,
+        "page_region_recall": 1.0,
+        "type_ok": 4,
+        "type_accuracy": 1.0,
+        "priority_total": 1,
+        "priority_detected": 1,
+        "priority_detection_recall": 1.0,
+        "priority_page_region_detected": 1,
+        "priority_page_region_recall": 1.0,
+        "priority_type_ok": 1,
+        "header_required": 4,
+        "header_passed": 4,
+        "header_lineage_pass_rate": 1.0,
+        "structured_tables_extracted": 36,
+        "candidate_tables_extracted": 25,
+        "total_tables_extracted": 61,
+        "tables_with_missing_cell_bboxes": 14,
+        "unrecorded_missing_cell_bboxes": 0,
+        "false_positive_tables": 57
+      },
+      "tables": [
+        {
+          "table_id": "care_health_care_plus_phys_table_001",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 19,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "care_health_care_plus_p19_t2",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            94.58399999999999,
+            389.569995,
+            540.11999,
+            601.05998
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sr. No.",
+              "Insured Events",
+              "Amount payable = % of the Sum insured under this Benefit."
+            ],
+            "extracted_headers": [
+              "Sr.\nNo.",
+              "Insured Events",
+              "Amount payable = % of\nthe Sum insured under\nthis Benefit."
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "care_health_care_plus_phys_table_002",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 28,
+          "gold_type": "unknown",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "care_health_care_plus_p28_t1",
+          "extracted_type": "unknown",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            57.864000000000004,
+            217.93999499999995,
+            558.6000200000001,
+            307.369995
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Case",
+              "Sum Insured",
+              "Deductible",
+              "Claim 1",
+              "Claim 2",
+              "Claim 3",
+              "Payable 1",
+              "Payable 2",
+              "Payable 3"
+            ],
+            "extracted_headers": [
+              "Case",
+              "Sum Insured",
+              "Deductible",
+              "Claim 1",
+              "Claim 2",
+              "Claim 3",
+              "Payable 1",
+              "Payable 2",
+              "Payable 3"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "care_health_care_plus_phys_table_003",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 36,
+          "gold_type": "premium",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "care_health_care_plus_p36_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            108.02000000000001,
+            307.61000999999993,
+            481.65999,
+            460.389995
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Cancellation date from Policy Period Start Date",
+              "Policy Tenure - 1 Year",
+              "Policy Tenure - 2 Years",
+              "Policy Tenure - 3 Years"
+            ],
+            "extracted_headers": [
+              "Cancellation date from\nPolicy Period Start Date",
+              "Policy Tenure –\n1 Year",
+              "Policy Tenure –\n2 Years",
+              "Policy Tenure –\n3 Years"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "care_health_care_plus_phys_table_004",
+          "source_table_id": "care_health_care_plus_table_005",
+          "gold_page": 53,
+          "gold_type": "network_list",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "care_health_care_plus_p53_t1",
+          "extracted_type": "network_list",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            66.6,
+            149.29999500000002,
+            724.0542761904757,
+            530.61598
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Hospital Name",
+              "Address"
+            ],
+            "extracted_headers": [
+              "Hospital Name",
+              "Address"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "status": "ok",
+      "policy_metrics": {
+        "total_gold_tables": 2,
+        "detected": 2,
+        "detection_recall": 1.0,
+        "page_region_detected": 2,
+        "page_region_recall": 1.0,
+        "type_ok": 2,
+        "type_accuracy": 1.0,
+        "priority_total": 0,
+        "priority_detected": 0,
+        "priority_detection_recall": 0,
+        "priority_page_region_detected": 0,
+        "priority_page_region_recall": 0,
+        "priority_type_ok": 0,
+        "header_required": 2,
+        "header_passed": 2,
+        "header_lineage_pass_rate": 1.0,
+        "structured_tables_extracted": 14,
+        "candidate_tables_extracted": 10,
+        "total_tables_extracted": 24,
+        "tables_with_missing_cell_bboxes": 4,
+        "unrecorded_missing_cell_bboxes": 0,
+        "false_positive_tables": 22
+      },
+      "tables": [
+        {
+          "table_id": "hdfc_arogya_sanjeevani_phys_table_001",
+          "source_table_id": "hdfc_arogya_sanjeevani_table_005",
+          "gold_page": 16,
+          "gold_type": "claims_documents",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "hdfc_ergo_arogya_sanjeevani_p16_t2",
+          "extracted_type": "claims_documents",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            83.664,
+            562.4200099999999,
+            509.98000500000006,
+            652.5400099999998
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sl No",
+              "Type of Claim",
+              "Prescribed Time limit"
+            ],
+            "extracted_headers": [
+              "Sl\nNo",
+              "Type of Claim",
+              "Prescribed Time limit"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "hdfc_arogya_sanjeevani_phys_table_002",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 26,
+          "gold_type": "claims_documents",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "hdfc_ergo_arogya_sanjeevani_p26_t1",
+          "extracted_type": "claims_documents",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            66.62400000000008,
+            151.69999999999993,
+            528.8400150000003,
+            757.2000149999999
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sl No",
+              "Item"
+            ],
+            "extracted_headers": [
+              "Sl No",
+              "Item"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 2,
+            "rows_total": 2
+          }
+        }
+      ]
+    },
+    {
+      "slug": "icici_family_shield",
+      "status": "ok",
+      "policy_metrics": {
+        "total_gold_tables": 4,
+        "detected": 4,
+        "detection_recall": 1.0,
+        "page_region_detected": 4,
+        "page_region_recall": 1.0,
+        "type_ok": 4,
+        "type_accuracy": 1.0,
+        "priority_total": 3,
+        "priority_detected": 3,
+        "priority_detection_recall": 1.0,
+        "priority_page_region_detected": 3,
+        "priority_page_region_recall": 1.0,
+        "priority_type_ok": 3,
+        "header_required": 4,
+        "header_passed": 4,
+        "header_lineage_pass_rate": 1.0,
+        "structured_tables_extracted": 15,
+        "candidate_tables_extracted": 25,
+        "total_tables_extracted": 40,
+        "tables_with_missing_cell_bboxes": 5,
+        "unrecorded_missing_cell_bboxes": 0,
+        "false_positive_tables": 36
+      },
+      "tables": [
+        {
+          "table_id": "icici_family_shield_phys_table_001",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 19,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "icici_lombard_family_shield_p19_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            64.83138923076923,
+            594.364006,
+            505.88108153846156,
+            713.97601
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "SR No.",
+              "LOSSES COVERED",
+              "% OF SUM INSURED payable"
+            ],
+            "extracted_headers": [
+              "SR\nNo.",
+              "LOSSES COVERED",
+              "",
+              "% OF SUM",
+              ""
+            ],
+            "match_rate": 0.6,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "icici_family_shield_phys_table_002",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 30,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "icici_lombard_family_shield_p30_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            73.344,
+            63.120000000000005,
+            320.44999,
+            137.89999999999998
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Continuous Hospitalization for atleast",
+              "% of Sum Insured Payable"
+            ],
+            "extracted_headers": [
+              "Continuous Hospitalization\nfor atleast",
+              "% of Sum Insured\nPayable"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 2,
+            "rows_total": 2
+          }
+        },
+        {
+          "table_id": "icici_family_shield_phys_table_003",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 34,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "icici_lombard_family_shield_p34_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            60.48000000000001,
+            338.21001,
+            565.5399899999996,
+            718.6560099999999
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sr No.",
+              "Region",
+              "Fracture",
+              "% of the Sum Insured payable"
+            ],
+            "extracted_headers": [
+              "Sr\nNo.",
+              "Region",
+              "Fracture",
+              "% of the Sum\nInsured payable"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "icici_family_shield_phys_table_004",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 50,
+          "gold_type": "premium",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "icici_lombard_family_shield_p50_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            41.76,
+            63.120000000000005,
+            586.31999,
+            415.969995
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Day of cancellation",
+              "Policy Period"
+            ],
+            "extracted_headers": [
+              "Day of cancellation",
+              "Policy Period",
+              "",
+              ""
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        }
+      ]
+    },
+    {
+      "slug": "new_india_floater",
+      "status": "ok",
+      "policy_metrics": {
+        "total_gold_tables": 4,
+        "detected": 4,
+        "detection_recall": 1.0,
+        "page_region_detected": 4,
+        "page_region_recall": 1.0,
+        "type_ok": 3,
+        "type_accuracy": 0.75,
+        "priority_total": 3,
+        "priority_detected": 3,
+        "priority_detection_recall": 1.0,
+        "priority_page_region_detected": 3,
+        "priority_page_region_recall": 1.0,
+        "priority_type_ok": 2,
+        "header_required": 3,
+        "header_passed": 3,
+        "header_lineage_pass_rate": 1.0,
+        "structured_tables_extracted": 16,
+        "candidate_tables_extracted": 18,
+        "total_tables_extracted": 34,
+        "tables_with_missing_cell_bboxes": 0,
+        "unrecorded_missing_cell_bboxes": 0,
+        "false_positive_tables": 30
+      },
+      "tables": [
+        {
+          "table_id": "new_india_floater_phys_table_001",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 10,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "new_india_floater_mediclaim_p10_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            59.544,
+            656.3799799999999,
+            550.1799900000001,
+            775.53601
+          ],
+          "header_lineage": {
+            "required": false,
+            "passed": true,
+            "gold_headers": [],
+            "extracted_headers": [
+              "3.1 (a)",
+              "Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1%\nof the Sum Insured (without Cumulative Bonus) per day"
+            ],
+            "match_rate": null,
+            "note": "gold headers not annotated"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 2,
+            "rows_total": 2
+          }
+        },
+        {
+          "table_id": "new_india_floater_phys_table_002",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 14,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": false,
+          "match_score": 0.85,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "new_india_floater_mediclaim_p14_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            157.82,
+            592.02998,
+            437.49998999999997,
+            678.81998
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sum Insured",
+              "Additional Cataract limit"
+            ],
+            "extracted_headers": [
+              "Sum Insured",
+              "Additional Cataract limit"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "new_india_floater_phys_table_003",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 16,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "new_india_floater_mediclaim_p16_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            53.879999999999995,
+            210.5,
+            561.2199899999997,
+            571.02998
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "S No",
+              "Treatment or Procedure",
+              "Limit (Per Policy Period)"
+            ],
+            "extracted_headers": [
+              "S No",
+              "Treatment or Procedure",
+              "Limit (Per Policy Period)"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "new_india_floater_phys_table_004",
+          "source_table_id": "new_india_floater_table_003",
+          "gold_page": 25,
+          "gold_type": "premium",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "new_india_floater_mediclaim_p25_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            86.544,
+            393.409995,
+            541.2999899999999,
+            469.15000999999995
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "PERIOD ON RISK",
+              "RATE OF PREMIUM TO BE CHARGED (RETAINED)"
+            ],
+            "extracted_headers": [
+              "PERIOD ON RISK",
+              "RATE OF PREMIUM TO BE CHARGED (RETAINED)"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        }
+      ]
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "status": "ok",
+      "policy_metrics": {
+        "total_gold_tables": 4,
+        "detected": 4,
+        "detection_recall": 1.0,
+        "page_region_detected": 4,
+        "page_region_recall": 1.0,
+        "type_ok": 4,
+        "type_accuracy": 1.0,
+        "priority_total": 2,
+        "priority_detected": 2,
+        "priority_detection_recall": 1.0,
+        "priority_page_region_detected": 2,
+        "priority_page_region_recall": 1.0,
+        "priority_type_ok": 2,
+        "header_required": 4,
+        "header_passed": 4,
+        "header_lineage_pass_rate": 1.0,
+        "structured_tables_extracted": 36,
+        "candidate_tables_extracted": 2,
+        "total_tables_extracted": 38,
+        "tables_with_missing_cell_bboxes": 19,
+        "unrecorded_missing_cell_bboxes": 0,
+        "false_positive_tables": 34
+      },
+      "tables": [
+        {
+          "table_id": "star_medi_classic_accident_phys_table_001",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 5,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "star_medi_classic_accident_care_individual_p5_t2",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            77.60549999999995,
+            39.68540000000007,
+            517.6695,
+            107.71640000000014
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Sum Insured (Rs)",
+              "Limit for Cataract Surgery"
+            ],
+            "extracted_headers": [
+              "Sum Insured (Rs)",
+              "Limit for Cataract Surgery"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "star_medi_classic_accident_phys_table_002",
+          "source_table_id": "star_medi_classic_accident_table_004",
+          "gold_page": 9,
+          "gold_type": "premium",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.01,
+          "signature_overlap": 0.8,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "star_medi_classic_accident_care_individual_p9_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            158.7937,
+            193.17410000000007,
+            436.4817,
+            380.26090000000005
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "PERIOD ON RISK",
+              "RATE OF PREMIUM TO BE RETAINED"
+            ],
+            "extracted_headers": [
+              "PERIOD ON RISK",
+              "RATE OF PREMIUM TO BE RETAINED"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "star_medi_classic_accident_phys_table_003",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 16,
+          "gold_type": "premium",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": false,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "star_medi_classic_accident_care_individual_p16_t1",
+          "extracted_type": "premium",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            133.67360000000002,
+            434.3559,
+            461.6016,
+            655.4581000000001
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "For policy with one year term",
+              "Period on Risk",
+              "Rate of premium to be retained"
+            ],
+            "extracted_headers": [
+              "For policy\nwith one\nyear term",
+              "Period on Risk",
+              "Rate of premium to be retained"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        },
+        {
+          "table_id": "star_medi_classic_accident_phys_table_004",
+          "source_table_id": "dse009_physical_review_added",
+          "gold_page": 20,
+          "gold_type": "schedule_of_benefits",
+          "gold_annotation_status": "physical_table_label",
+          "is_priority": true,
+          "page_region_detected": true,
+          "detected": true,
+          "type_ok": true,
+          "match_score": 1.05,
+          "signature_overlap": 1.0,
+          "bbox_iou": 1.0,
+          "match_reason": "bbox_type_or_signature_match",
+          "extracted_table_id": "star_medi_classic_accident_care_individual_p20_t1",
+          "extracted_type": "schedule_of_benefits",
+          "extraction_method": "pdfplumber_lattice",
+          "extracted_bbox": [
+            39.68529999999999,
+            39.68540000000007,
+            555.59005,
+            464.88540000000006
+          ],
+          "header_lineage": {
+            "required": true,
+            "passed": true,
+            "gold_headers": [
+              "Benefits",
+              "Percentage of Sum Insured"
+            ],
+            "extracted_headers": [
+              "Benefits",
+              "Percentage of Sum Insured"
+            ],
+            "match_rate": 1.0,
+            "note": "header tokens matched"
+          },
+          "cell_accuracy": {
+            "required": true,
+            "row_match_rate": 1.0,
+            "rows_matched": 1,
+            "rows_total": 1
+          }
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "failures": [],
+  "notes": "v3 evaluates DSE-009 physical_table_labels.json only. Legacy semantic tables.json rows are documented in the source review and excluded from hard gates.",
+  "known_limitations": [
+    "Legacy DSE-003 tables.json still includes conceptual/non-physical table summaries.",
+    "text_alignment_candidate tables preserve raw lines and cells=[] when split is unreliable.",
+    "Physical labels cover the initial 5-policy gold set; DSE-012 should expand and review more bboxes.",
+    "parent_clause_id assignment remains provisional until DSE-010 bbox/source-span overlap."
+  ]
+}

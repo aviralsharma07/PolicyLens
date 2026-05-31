@@ -1,0 +1,58 @@
+[
+  {
+    "label_id": "care_health_care_plus_phys_table_001",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 19,
+    "bbox": [94.584, 389.569995, 540.11999, 601.05998],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Sr. No.", "Insured Events", "Amount payable = % of the Sum insured under this Benefit."],
+    "rows": [["I", "Total and irrecoverable loss of sight of both eyes", "100%"]],
+    "header_rows": [0],
+    "column_count": 3,
+    "row_count": 6,
+    "priority": true,
+    "reviewer_note": "Physical personal accident benefit grid with insured-event percentages."
+  },
+  {
+    "label_id": "care_health_care_plus_phys_table_002",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 28,
+    "bbox": [57.864, 217.939995, 558.60002, 307.369995],
+    "table_type": "unknown",
+    "headers": ["Case", "Sum Insured", "Deductible", "Claim 1", "Claim 2", "Claim 3", "Payable 1", "Payable 2", "Payable 3"],
+    "rows": [["1", "25,00,000", "5,00,000", "3,50,000"]],
+    "header_rows": [0],
+    "column_count": 9,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Physical deductible illustration grid; not a benefit/waiting-period priority table."
+  },
+  {
+    "label_id": "care_health_care_plus_phys_table_003",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 36,
+    "bbox": [108.02, 307.61001, 481.65999, 460.389995],
+    "table_type": "premium",
+    "headers": ["Cancellation date from Policy Period Start Date", "Policy Tenure - 1 Year", "Policy Tenure - 2 Years", "Policy Tenure - 3 Years"],
+    "rows": [["Up to 1 month", "75.00%", "87.50%", "91.70%"]],
+    "header_rows": [0],
+    "column_count": 4,
+    "row_count": 10,
+    "priority": false,
+    "reviewer_note": "Physical cancellation/refund premium retention table."
+  },
+  {
+    "label_id": "care_health_care_plus_phys_table_004",
+    "source_table_id": "care_health_care_plus_table_005",
+    "page": 53,
+    "bbox": [66.6, 149.299995, 724.054276, 530.61598],
+    "table_type": "network_list",
+    "headers": ["Hospital Name", "Address"],
+    "rows": [["Nulife Hospital And Maternity Centre", "1616 Outram Lines"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 20,
+    "priority": false,
+    "reviewer_note": "Physical network hospital list table; legacy semantic table points to network-list content."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_002",
+    "gold_page": 14,
+    "gold_type": "schedule_of_benefits",
+    "gold_annotation_status": "physical_table_label",
+    "is_priority": true,
+    "page_region_detected": true,
+    "content_detected": true,
+    "type_ok": false,
+    "header_lineage_passed": true,
+    "review_reason": [
+      "matched_content_but_type_disagrees"
+    ],
+    "recommended_action": "inspect_extractor_or_gold_bbox_in_dse012"
+  }
+]

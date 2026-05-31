@@ -1,0 +1,362 @@
+[
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_001",
+    "gold_page": 19,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "care_health_care_plus_p19_t2",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      94.58399999999999,
+      389.569995,
+      540.11999,
+      601.05998
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_002",
+    "gold_page": 28,
+    "gold_type": "unknown",
+    "predicted_table_id": "care_health_care_plus_p28_t1",
+    "predicted_type": "unknown",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      57.864000000000004,
+      217.93999499999995,
+      558.6000200000001,
+      307.369995
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_003",
+    "gold_page": 36,
+    "gold_type": "premium",
+    "predicted_table_id": "care_health_care_plus_p36_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      108.02000000000001,
+      307.61000999999993,
+      481.65999,
+      460.389995
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "care_health_care_plus",
+    "gold_table_id": "care_health_care_plus_phys_table_004",
+    "gold_page": 53,
+    "gold_type": "network_list",
+    "predicted_table_id": "care_health_care_plus_p53_t1",
+    "predicted_type": "network_list",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      66.6,
+      149.29999500000002,
+      724.0542761904757,
+      530.61598
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "gold_table_id": "hdfc_arogya_sanjeevani_phys_table_001",
+    "gold_page": 16,
+    "gold_type": "claims_documents",
+    "predicted_table_id": "hdfc_ergo_arogya_sanjeevani_p16_t2",
+    "predicted_type": "claims_documents",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      83.664,
+      562.4200099999999,
+      509.98000500000006,
+      652.5400099999998
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "hdfc_arogya_sanjeevani",
+    "gold_table_id": "hdfc_arogya_sanjeevani_phys_table_002",
+    "gold_page": 26,
+    "gold_type": "claims_documents",
+    "predicted_table_id": "hdfc_ergo_arogya_sanjeevani_p26_t1",
+    "predicted_type": "claims_documents",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      66.62400000000008,
+      151.69999999999993,
+      528.8400150000003,
+      757.2000149999999
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_001",
+    "gold_page": 19,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "icici_lombard_family_shield_p19_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      64.83138923076923,
+      594.364006,
+      505.88108153846156,
+      713.97601
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_002",
+    "gold_page": 30,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "icici_lombard_family_shield_p30_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      73.344,
+      63.120000000000005,
+      320.44999,
+      137.89999999999998
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_003",
+    "gold_page": 34,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "icici_lombard_family_shield_p34_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      60.48000000000001,
+      338.21001,
+      565.5399899999996,
+      718.6560099999999
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "icici_family_shield",
+    "gold_table_id": "icici_family_shield_phys_table_004",
+    "gold_page": 50,
+    "gold_type": "premium",
+    "predicted_table_id": "icici_lombard_family_shield_p50_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      41.76,
+      63.120000000000005,
+      586.31999,
+      415.969995
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_001",
+    "gold_page": 10,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "new_india_floater_mediclaim_p10_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      59.544,
+      656.3799799999999,
+      550.1799900000001,
+      775.53601
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_002",
+    "gold_page": 14,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "new_india_floater_mediclaim_p14_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      157.82,
+      592.02998,
+      437.49998999999997,
+      678.81998
+    ],
+    "match_score": 0.85,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": true,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_003",
+    "gold_page": 16,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "new_india_floater_mediclaim_p16_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      53.879999999999995,
+      210.5,
+      561.2199899999997,
+      571.02998
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "new_india_floater",
+    "gold_table_id": "new_india_floater_phys_table_004",
+    "gold_page": 25,
+    "gold_type": "premium",
+    "predicted_table_id": "new_india_floater_mediclaim_p25_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      86.544,
+      393.409995,
+      541.2999899999999,
+      469.15000999999995
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_001",
+    "gold_page": 5,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "star_medi_classic_accident_care_individual_p5_t2",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      77.60549999999995,
+      39.68540000000007,
+      517.6695,
+      107.71640000000014
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_002",
+    "gold_page": 9,
+    "gold_type": "premium",
+    "predicted_table_id": "star_medi_classic_accident_care_individual_p9_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      158.7937,
+      193.17410000000007,
+      436.4817,
+      380.26090000000005
+    ],
+    "match_score": 1.01,
+    "signature_overlap": 0.8,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_003",
+    "gold_page": 16,
+    "gold_type": "premium",
+    "predicted_table_id": "star_medi_classic_accident_care_individual_p16_t1",
+    "predicted_type": "premium",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      133.67360000000002,
+      434.3559,
+      461.6016,
+      655.4581000000001
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  },
+  {
+    "policy_slug": "star_medi_classic_accident",
+    "gold_table_id": "star_medi_classic_accident_phys_table_004",
+    "gold_page": 20,
+    "gold_type": "schedule_of_benefits",
+    "predicted_table_id": "star_medi_classic_accident_care_individual_p20_t1",
+    "predicted_type": "schedule_of_benefits",
+    "extraction_method": "pdfplumber_lattice",
+    "predicted_bbox": [
+      39.68529999999999,
+      39.68540000000007,
+      555.59005,
+      464.88540000000006
+    ],
+    "match_score": 1.05,
+    "signature_overlap": 1.0,
+    "bbox_iou": 1.0,
+    "needs_manual_review": false,
+    "notes": "bbox_type_or_signature_match"
+  }
+]

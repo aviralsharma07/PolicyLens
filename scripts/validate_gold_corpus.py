@@ -27,6 +27,7 @@ EXPECTED_FILES = {
     "tables.json",
     "facts.json",
     "heading_labels.json",
+    "physical_table_labels.json",
 }
 
 GENERATED_DOCLING_POLICIES = {
@@ -317,6 +318,61 @@ def validate_heading_labels(policy_dir: Path, page_count: int) -> int:
     return len(labels)
 
 
+def validate_physical_table_labels(policy_dir: Path, page_count: int) -> int:
+    path = policy_dir / "physical_table_labels.json"
+    labels = load_json(path)
+    require(isinstance(labels, list) and labels, f"{path}: must be a non-empty array")
+    ids: set[str] = set()
+    allowed_table_types = {
+        "waiting_period",
+        "schedule_of_benefits",
+        "room_rent",
+        "premium",
+        "claims_documents",
+        "network_list",
+        "unknown",
+    }
+    for item in labels:
+        required = {
+            "label_id",
+            "source_table_id",
+            "page",
+            "bbox",
+            "table_type",
+            "headers",
+            "rows",
+            "header_rows",
+            "column_count",
+            "row_count",
+            "priority",
+            "reviewer_note",
+        }
+        missing = sorted(required - item.keys())
+        require(not missing, f"{path}: physical table label missing fields: {missing}")
+        require(item["label_id"] not in ids, f"{path}: duplicate label_id {item['label_id']}")
+        ids.add(item["label_id"])
+        require(isinstance(item["source_table_id"], str) and item["source_table_id"], f"{path}: source_table_id required")
+        validate_page_ref(path, "page", item["page"], page_count)
+        bbox = item["bbox"]
+        require(isinstance(bbox, list) and len(bbox) == 4, f"{path}: bbox must be [x0, top, x1, bottom]")
+        require(all(isinstance(v, (int, float)) for v in bbox), f"{path}: bbox values must be numeric")
+        require(bbox[0] < bbox[2] and bbox[1] < bbox[3], f"{path}: invalid bbox order")
+        require(item["table_type"] in allowed_table_types, f"{path}: invalid table_type {item['table_type']}")
+        require(isinstance(item["headers"], list), f"{path}: headers must be an array")
+        require(isinstance(item["rows"], list), f"{path}: rows must be an array")
+        require(isinstance(item["header_rows"], list), f"{path}: header_rows must be an array")
+        require(isinstance(item["column_count"], int) and item["column_count"] > 0, f"{path}: invalid column_count")
+        require(isinstance(item["row_count"], int) and item["row_count"] > 0, f"{path}: invalid row_count")
+        require(isinstance(item["priority"], bool), f"{path}: priority must be boolean")
+        require(isinstance(item["reviewer_note"], str) and item["reviewer_note"].strip(), f"{path}: reviewer_note required")
+        if item["priority"]:
+            require(
+                item["table_type"] in {"waiting_period", "schedule_of_benefits"},
+                f"{path}: priority physical labels must be waiting_period or schedule_of_benefits",
+            )
+    return len(labels)
+
+
 def validate_gold_corpus() -> dict[str, Any]:
     require(GOLD_ROOT.exists(), f"gold corpus directory not found: {GOLD_ROOT}")
     policies_dir = GOLD_ROOT / "policies"
@@ -331,6 +387,7 @@ def validate_gold_corpus() -> dict[str, Any]:
         "sections": 0,
         "clauses": 0,
         "tables": 0,
+        "physical_table_labels": 0,
         "facts": 0,
         "heading_labels": 0,
         "status_counts": {},
@@ -347,6 +404,7 @@ def validate_gold_corpus() -> dict[str, Any]:
         totals["sections"] += validate_sections(policy_dir, page_count)
         totals["clauses"] += validate_clauses(policy_dir, page_count)
         totals["tables"] += validate_tables(policy_dir, page_count)
+        totals["physical_table_labels"] += validate_physical_table_labels(policy_dir, page_count)
         fact_count, status_counts = validate_facts(policy_dir, page_count)
         totals["facts"] += fact_count
         totals["heading_labels"] += validate_heading_labels(policy_dir, page_count)
@@ -354,9 +412,10 @@ def validate_gold_corpus() -> dict[str, Any]:
             totals["status_counts"][status] = totals["status_counts"].get(status, 0) + count
 
     require(totals["policies"] == 5, "expected exactly 5 policies")
-    require(totals["json_files"] == 30, "expected exactly 30 policy JSON files")
+    require(totals["json_files"] == 35, "expected exactly 35 policy JSON files")
     require(totals["facts"] == 100, "expected exactly 100 fact annotations")
     require(totals["heading_labels"] >= 25, "expected visual heading labels for every policy")
+    require(totals["physical_table_labels"] >= 10, "expected physical table labels for every policy")
     require(totals["status_counts"].get("requires_manual_review", 0) == 0, "gold corpus still has requires_manual_review facts")
     return totals
 

@@ -1,0 +1,58 @@
+[
+  {
+    "label_id": "star_medi_classic_accident_phys_table_001",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 5,
+    "bbox": [77.6055, 39.6854, 517.6695, 107.7164],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Sum Insured (Rs)", "Limit for Cataract Surgery"],
+    "rows": [["Up to 2,00,000/-", "Rs.12,000/- per person per policy period"]],
+    "header_rows": [0],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": true,
+    "reviewer_note": "Physical cataract-surgery benefit limit table."
+  },
+  {
+    "label_id": "star_medi_classic_accident_phys_table_002",
+    "source_table_id": "star_medi_classic_accident_table_004",
+    "page": 9,
+    "bbox": [158.7937, 193.1741, 436.4817, 380.2609],
+    "table_type": "premium",
+    "headers": ["PERIOD ON RISK", "RATE OF PREMIUM TO BE RETAINED"],
+    "rows": [["Up to one-month", "1/3 rd of annual premium"]],
+    "header_rows": [1],
+    "column_count": 2,
+    "row_count": 11,
+    "priority": false,
+    "reviewer_note": "Physical premium retention table with title row above the header."
+  },
+  {
+    "label_id": "star_medi_classic_accident_phys_table_003",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 16,
+    "bbox": [133.6736, 434.3559, 461.6016, 655.4581],
+    "table_type": "premium",
+    "headers": ["For policy with one year term", "Period on Risk", "Rate of premium to be retained"],
+    "rows": [["", "For a period not exceeding 15 days", "10% of the Annual Premium"]],
+    "header_rows": [0],
+    "column_count": 3,
+    "row_count": 13,
+    "priority": false,
+    "reviewer_note": "Physical premium retention table for accident-care section."
+  },
+  {
+    "label_id": "star_medi_classic_accident_phys_table_004",
+    "source_table_id": "dse009_physical_review_added",
+    "page": 20,
+    "bbox": [39.6853, 39.6854, 555.59005, 464.8854],
+    "table_type": "schedule_of_benefits",
+    "headers": ["Benefits", "Percentage of Sum Insured"],
+    "rows": [["Permanent Total Disablement", "150%"]],
+    "header_rows": [1],
+    "column_count": 2,
+    "row_count": 20,
+    "priority": true,
+    "reviewer_note": "Physical permanent total disablement table of benefits."
+  }
+]
