@@ -265,6 +265,34 @@ Rules:
 **Producer:** `clause_store/repository.py` (after Phase 2-3)
 **Consumer:** `extractors/candidate_registry.py`
 
+### SQLite ID Rules
+
+DSE-006/DSE-007 artifacts use document-local IDs such as `p1l_1`,
+`sec_0001`, and `clause_0001`. DSE-010 must not store those as global
+primary keys because they repeat across policies.
+
+SQLite stores globally namespaced UIDs:
+
+```text
+document_lines.line_id      = "{document_id}:{source_line_id}"
+document_sections.section_id = "{document_id}:{source_section_id}"
+policy_clauses.clause_id    = "{document_id}:{source_clause_id}"
+```
+
+The original source-local IDs are preserved in:
+
+```text
+document_lines.source_line_id
+document_sections.source_section_id
+policy_clauses.source_clause_id
+policy_clauses.source_line_ids_json
+```
+
+Resolved facts may keep source-local `evidence_clause_id` and
+`evidence_line_ids` for compatibility, but must also include
+`evidence_clause_uid`, `evidence_document_id`, and `evidence_line_uids` once
+DSE-010 has resolved evidence.
+
 ```json
 {
   "document_id": "sha256:abc123",

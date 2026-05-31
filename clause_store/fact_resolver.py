@@ -16,6 +16,7 @@ Rules:
 from __future__ import annotations
 
 import copy
+import json
 from typing import Dict, List, Tuple
 
 from clause_store.models import SourceSpan
@@ -60,7 +61,21 @@ def resolve_facts(
             # Preserve provisional ID for audit trail
             rf["provisional_evidence_span_id"] = fact.get("evidence_span_id")
             rf["evidence_span_id"] = span.span_id
+            rf["evidence_clause_uid"] = span.clause_id
+            rf["evidence_document_id"] = span.document_id
             rf["evidence_resolution_status"] = "resolved"
+            try:
+                regions = json.loads(span.page_regions_json or "[]")
+            except json.JSONDecodeError:
+                regions = []
+            evidence_line_uids = []
+            evidence_source_line_ids = []
+            for region in regions:
+                evidence_line_uids.extend(region.get("line_ids") or [])
+                evidence_source_line_ids.extend(region.get("source_line_ids") or [])
+            rf["evidence_line_uids"] = evidence_line_uids
+            if evidence_source_line_ids:
+                rf["evidence_source_line_ids"] = evidence_source_line_ids
 
         elif status != "present":
             # not_found / not_applicable / etc. — no evidence span expected

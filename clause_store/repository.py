@@ -48,7 +48,8 @@ def init_db(db_path: str) -> sqlite3.Connection:
     conn = sqlite3.connect(db_path, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
-    conn.execute("PRAGMA journal_mode = WAL")
+    # Keep generated DB output to a single ignored file; WAL sidecars pollute git status.
+    conn.execute("PRAGMA journal_mode = DELETE")
     schema_sql = _SCHEMA_PATH.read_text(encoding="utf-8")
     conn.executescript(schema_sql)
     conn.commit()
@@ -186,12 +187,13 @@ def insert_blocks(conn: sqlite3.Connection, blocks: List[DocumentBlock]) -> None
 def insert_lines(conn: sqlite3.Connection, lines: List[DocumentLine]) -> None:
     conn.executemany(
         """INSERT OR REPLACE INTO document_lines
-           (line_id, block_id, document_id, page_number,
+           (line_id, source_line_id, block_id, document_id, page_number,
             bbox_json, text, region, is_header_candidate, is_footer_candidate)
-           VALUES (?,?,?,?,?,?,?,?,?)""",
+           VALUES (?,?,?,?,?,?,?,?,?,?)""",
         [
             (
                 ln.line_id,
+                ln.source_line_id or ln.line_id,
                 ln.block_id,
                 ln.document_id,
                 ln.page_number,
@@ -218,13 +220,14 @@ def insert_sections(conn: sqlite3.Connection, sections: List[DocumentSection]) -
     """
     conn.executemany(
         """INSERT OR REPLACE INTO document_sections
-           (section_id, document_id, parent_id, section_number,
+           (section_id, source_section_id, document_id, parent_id, section_number,
             title, normalized_title, level, heading_type,
             heading_score, heading_line_id, page_start, page_end, pipeline_run_id)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
         [
             (
                 s.section_id,
+                s.source_section_id or s.section_id,
                 s.document_id,
                 s.parent_id,
                 s.section_number,
@@ -246,13 +249,14 @@ def insert_sections(conn: sqlite3.Connection, sections: List[DocumentSection]) -
 def insert_clauses(conn: sqlite3.Connection, clauses: List[PolicyClause]) -> None:
     conn.executemany(
         """INSERT OR REPLACE INTO policy_clauses
-           (clause_id, document_id, section_id, clause_number,
+           (clause_id, source_clause_id, document_id, section_id, clause_number,
             title, raw_text, page_start, page_end,
-            line_ids_json, segmentation_method, confidence, pipeline_run_id)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+            line_ids_json, source_line_ids_json, segmentation_method, confidence, pipeline_run_id)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
         [
             (
                 c.clause_id,
+                c.source_clause_id or c.clause_id,
                 c.document_id,
                 c.section_id,
                 c.clause_number,
@@ -261,6 +265,7 @@ def insert_clauses(conn: sqlite3.Connection, clauses: List[PolicyClause]) -> Non
                 c.page_start,
                 c.page_end,
                 c.line_ids_json,
+                c.source_line_ids_json or c.line_ids_json,
                 c.segmentation_method,
                 c.confidence,
                 c.pipeline_run_id,
@@ -492,8 +497,8 @@ def query_clauses_with_spans(conn: sqlite3.Connection, document_id: str) -> List
     source_span data.
     """
     cursor = conn.execute(
-        """SELECT c.clause_id, c.section_id, c.clause_number, c.title,
-                  c.raw_text, c.page_start, c.page_end, c.line_ids_json,
+        """SELECT c.clause_id, c.source_clause_id, c.section_id, c.clause_number, c.title,
+                  c.raw_text, c.page_start, c.page_end, c.line_ids_json, c.source_line_ids_json,
                   c.segmentation_method, c.confidence,
                   s.span_id, s.page_regions_json, s.char_start, s.char_end
            FROM policy_clauses c

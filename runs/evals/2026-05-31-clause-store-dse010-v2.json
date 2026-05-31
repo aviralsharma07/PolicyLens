@@ -1,0 +1,143 @@
+{
+  "eval_name": "clause-store-dse010-v2",
+  "date": "2026-05-31",
+  "task_id": "DSE-010",
+  "git_commit": "1c82f12b8de544b677d34b7fb0d5b95537085146",
+  "hard_gates": {
+    "policies_ingested_target": 5,
+    "policies_ingested_actual": 5,
+    "dangling_fk_count_target": 0,
+    "dangling_fk_count_actual": 0,
+    "unresolved_present_facts_target": 0,
+    "unresolved_present_facts_actual": 0,
+    "total_present_facts": 23,
+    "clause_span_coverage_target": 0.95,
+    "clause_span_coverage_actual": 1.0,
+    "provisional_ids_in_resolved_target": 0,
+    "provisional_ids_in_resolved_actual": 0,
+    "db_size_limit_bytes": 31457280,
+    "db_size_bytes_actual": 19312640,
+    "source_count_parity_expected": {
+      "document_lines": 12715,
+      "document_sections": 1156,
+      "policy_clauses": 2522
+    },
+    "source_count_parity_actual": {
+      "document_lines": 12715,
+      "document_sections": 1156,
+      "policy_clauses": 2522
+    },
+    "cross_document_mismatches": {
+      "clause_span_mismatches": 0,
+      "table_cell_span_mismatches": 0
+    },
+    "resolved_fact_span_integrity": {
+      "present_facts_checked": 23,
+      "missing_or_mismatched": 0
+    }
+  },
+  "metrics": {
+    "clauses_with_spans": 2522,
+    "total_clauses": 2522,
+    "clause_span_coverage": 1.0,
+    "span_type_distribution": {
+      "clause_body": 2522,
+      "fact_evidence": 23,
+      "table_cell": 3591
+    },
+    "table_parent_clause": {
+      "total_tables": 197,
+      "tables_with_bbox_resolved_parent": 192,
+      "tables_pct_resolved": 0.9746,
+      "avg_iou_resolved_parents": 0.4802
+    },
+    "span_char_offset_coverage": {
+      "total_source_spans": 6136,
+      "spans_with_char_offsets": 6136,
+      "char_offset_coverage_rate": 1.0
+    },
+    "cross_page_clauses": {
+      "cross_page_clauses": 113,
+      "total_clauses": 2522,
+      "cross_page_clause_spans": 113
+    },
+    "evidence_degradation": {
+      "fact_evidence_spans_total": 23,
+      "evidence_exact_match": 7,
+      "evidence_clause_level_precision": 16
+    },
+    "source_count_parity": {
+      "expected_totals": {
+        "document_lines": 12715,
+        "document_sections": 1156,
+        "policy_clauses": 2522
+      },
+      "actual_totals": {
+        "document_lines": 12715,
+        "document_sections": 1156,
+        "policy_clauses": 2522
+      },
+      "per_document_actual": {
+        "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95": {
+          "document_lines": 3832,
+          "document_sections": 280,
+          "policy_clauses": 554
+        },
+        "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0": {
+          "document_lines": 1800,
+          "document_sections": 115,
+          "policy_clauses": 435
+        },
+        "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7": {
+          "document_lines": 3032,
+          "document_sections": 187,
+          "policy_clauses": 589
+        },
+        "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885": {
+          "document_lines": 1850,
+          "document_sections": 187,
+          "policy_clauses": 525
+        },
+        "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976": {
+          "document_lines": 2201,
+          "document_sections": 387,
+          "policy_clauses": 419
+        }
+      },
+      "mismatches": []
+    },
+    "db_size_mb": 18.42
+  },
+  "table_row_counts": {
+    "derived_policy_features": 0,
+    "document_blocks": 66,
+    "document_issues": 242,
+    "document_lines": 12715,
+    "document_pages": 218,
+    "document_sections": 1156,
+    "document_table_cells": 4298,
+    "document_tables": 197,
+    "document_text_spans": 0,
+    "extracted_fact_candidates": 0,
+    "extracted_facts": 0,
+    "fact_conflicts": 0,
+    "pipeline_runs": 1,
+    "policy_clauses": 2522,
+    "product_versions": 5,
+    "products": 5,
+    "source_documents": 5,
+    "source_spans": 6136,
+    "sqlite_sequence": 1,
+    "validation_labels": 0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "ADR-0017: document_text_spans not populated (char-level spans deferred). ADR-0018: page_regions_json handles cross-page clauses. ADR-0019: char_start/char_end are clause-text offsets. ADR-0020: resolved facts written to data/interim/facts_resolved/ (DSE-007 output unchanged). Degraded fact evidence char offsets occur when DSE-007 evidence_text boundaries differ from current clause segmentation — location (clause, page, bbox) is correct.",
+  "known_limitations": [
+    "document_text_spans not populated (ADR-0017)",
+    "One block per page (physical parser limitation)",
+    "fact_evidence char offsets may be clause-level (not subspan-level) when evidence_text predates current clause boundaries",
+    "parent_clause_id for tables uses bbox IoU threshold 0.10 — tables fully outside any clause bbox retain null",
+    "extracted_facts, fact_conflicts, derived_policy_features not populated (DSE-011/013)"
+  ]
+}

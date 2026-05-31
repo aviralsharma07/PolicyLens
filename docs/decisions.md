@@ -439,6 +439,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 
 **Consequences:**
 - Positive: DB stays bounded (7.92 MB for 5 policies).
+- Positive: After ADR-0022 fixed ID collision and preserved all source rows, DB remains bounded (18.42 MB for 5 policies).
 - Positive: No complex char-grouping logic needed.
 - Negative: Character-level font signals (bold, italic) not queryable from SQLite directly.
 
@@ -524,3 +525,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Rejected candidate details not queryable from SQLite.
 
 **Revisit when:** A heading quality analysis query needs rejected candidates from the DB.
+
+---
+
+## 2026-05-31 — Namespace document-local IDs in SQLite (ADR-0022)
+
+**Status:** accepted
+
+**Decision:** DSE-010 stores globally unique SQLite IDs for document-local artifacts by prefixing the source-local ID with `document_id`, e.g. `{document_id}:p1l_1`, `{document_id}:sec_0001`, and `{document_id}:clause_0001`. The original local IDs are preserved in `source_line_id`, `source_section_id`, `source_clause_id`, and `source_line_ids_json`.
+
+**Context:** DSE-006/DSE-007 artifacts intentionally use policy-local IDs. During DSE-010 review, `document_lines.line_id` and `policy_clauses.clause_id` were discovered as global primary keys even though values like `p1l_1` and `clause_0000` repeat across all five policies. This caused silent row replacement and made DB self-consistency checks pass while source rows were missing.
+
+**Options considered:**
+1. Rewrite upstream DSE-006/DSE-007 artifacts to use global IDs.
+2. Use composite primary keys such as `(document_id, clause_id)` everywhere.
+3. Namespace local IDs during DSE-010 ingestion and preserve source-local IDs in explicit columns.
+
+**Reasoning:** Option 3 keeps upstream artifacts stable, minimizes downstream query complexity, and makes every SQLite FK unambiguous. It also preserves source-local IDs for audit/debug compatibility.
+
+**Consequences:**
+- Positive: SQLite now preserves all 12,715 lines, 1,156 sections, and 2,522 clauses across the five gold policies.
+- Positive: Source spans and resolved facts cannot accidentally link across documents.
+- Negative: DSE-010 consumers must distinguish DB UIDs from source-local IDs.
+
+**Revisit when:** A future schema migration introduces composite keys throughout the local engine store.

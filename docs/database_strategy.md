@@ -32,7 +32,7 @@ doc-structure-engine/data/engine.sqlite
 
 ### Tables
 
-All 18 tables live here in a single SQLite file:
+All 19 tables live here in a single SQLite file:
 - source_documents, document_pages, document_blocks, document_lines, document_text_spans
 - document_sections, policy_clauses
 - document_tables, document_table_cells
@@ -46,7 +46,22 @@ All 18 tables live here in a single SQLite file:
 
 ### Schema
 
-`clause_store/schema.sql` contains DDL for all 18 tables. Run once at init.
+`clause_store/schema.sql` contains DDL for all 19 tables. Run once at init.
+
+### ID strategy
+
+Source artifacts may use document-local IDs such as `p1l_1`, `sec_0001`, and
+`clause_0001`. SQLite primary keys must be globally unique, so DSE-010 stores
+namespaced IDs:
+
+```text
+{document_id}:{source_line_id}
+{document_id}:{source_section_id}
+{document_id}:{source_clause_id}
+```
+
+The original artifact IDs remain available in `source_line_id`,
+`source_section_id`, `source_clause_id`, and `source_line_ids_json`.
 
 ### Debugging
 
@@ -91,7 +106,7 @@ Only compiled, product-facing data goes into the **existing** insurance-agent Su
 Product A: doc-structure-engine          Product B: insurance-agent
 ┌─────────────────────────────┐          ┌──────────────────────┐
 │ Local SQLite                │          │ Supabase Project     │
-│  (all 18 raw tables)        │ ──JSON──►│  public schema:      │
+│  (all 19 raw tables)        │ ──JSON──►│  public schema:      │
 │                             │          │  policy_features     │
 │ Exports:                    │          │  product_versions    │
 │  policy_features.json ──────┘          │  (compiled only)     │
