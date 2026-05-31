@@ -99,13 +99,15 @@ def build_clause_span(
     Build one SourceSpan (span_type='clause_body') for a clause.
 
     span_id    = "ss_{policy_id}_{clause_id}"
+    clause_id  = global SQLite clause UID when clause["clause_uid"] is present
     char_start = 0
     char_end   = len(clause['text'])
     page_regions: one entry per page, with union bbox of lines on that page.
 
     Returns None (and appends a DocumentIssue) if no lines resolve.
     """
-    clause_id = clause.get("clause_id", "")
+    source_clause_id = clause.get("clause_id", "")
+    clause_uid = clause.get("clause_uid") or source_clause_id
     clause_text = clause.get("text", "")
     line_ids = clause.get("line_ids", [])
 
@@ -122,8 +124,8 @@ def build_clause_span(
                     pipeline_run_id=pipeline_run_id,
                     issue_type="line_id_not_in_physical_index",
                     severity="warning",
-                    description=f"Clause {clause_id}: line_id {lid!r} not found in physical doc",
-                    raw_context=clause_id,
+                    description=f"Clause {source_clause_id}: line_id {lid!r} not found in physical doc",
+                    raw_context=source_clause_id,
                 )
             )
 
@@ -134,11 +136,32 @@ def build_clause_span(
                 pipeline_run_id=pipeline_run_id,
                 issue_type="clause_span_no_lines",
                 severity="warning",
-                description=f"Clause {clause_id}: no line_ids resolved — span not created",
-                raw_context=clause_id,
+                description=(
+                    f"Clause {source_clause_id}: no line_ids resolved — using page-range "
+                    "fallback region with null bbox"
+                ),
+                raw_context=source_clause_id,
             )
         )
-        return None
+        page_start = int(clause.get("page_start") or 0)
+        page_end = int(clause.get("page_end") or page_start)
+        if page_start <= 0:
+            page_start = page_end = 0
+        page_regions = [
+            {"page": page, "bbox": None, "line_ids": [], "source_line_ids": []}
+            for page in range(page_start, page_end + 1)
+        ] or [{"page": page_start, "bbox": None, "line_ids": [], "source_line_ids": []}]
+        return SourceSpan(
+            span_id=f"ss_{policy_id}_{source_clause_id}",
+            document_id=document_id,
+            clause_id=clause_uid,
+            span_type="clause_body",
+            text=clause_text,
+            char_start=0,
+            char_end=len(clause_text),
+            page_regions_json=json.dumps(page_regions),
+            pipeline_run_id=pipeline_run_id,
+        )
 
     page_regions = []
     for page in sorted(page_groups):
@@ -148,14 +171,15 @@ def build_clause_span(
             {
                 "page": page,
                 "bbox": compute_bbox_union(bboxes),
-                "line_ids": lids,
+                "line_ids": [line_index[lid].get("line_uid", lid) for lid in lids],
+                "source_line_ids": lids,
             }
         )
 
     return SourceSpan(
-        span_id=f"ss_{policy_id}_{clause_id}",
+        span_id=f"ss_{policy_id}_{source_clause_id}",
         document_id=document_id,
-        clause_id=clause_id,
+        clause_id=clause_uid,
         span_type="clause_body",
         text=clause_text,
         char_start=0,
@@ -260,16 +284,17 @@ def build_fact_evidence_span(
     match_quality flag stored in the span's pipeline_run_id context (logged by caller).
     """
     candidate_id = fact.get("candidate_id", "unknown")
-    clause_id = fact.get("evidence_clause_id")
+    source_clause_id = fact.get("evidence_clause_id")
 
-    if not clause_id:
+    if not source_clause_id:
         raise ValueError(f"Fact {candidate_id}: evidence_clause_id is empty")
-    if clause_id not in clause_lookup:
+    if source_clause_id not in clause_lookup:
         raise ValueError(
-            f"Fact {candidate_id}: evidence_clause_id {clause_id!r} not found in clause_lookup"
+            f"Fact {candidate_id}: evidence_clause_id {source_clause_id!r} not found in clause_lookup"
         )
 
-    clause = clause_lookup[clause_id]
+    clause = clause_lookup[source_clause_id]
+    clause_uid = clause.get("clause_uid") or source_clause_id
     evidence_text = fact.get("evidence_text") or ""
 
     if not evidence_text.strip():
@@ -279,7 +304,7 @@ def build_fact_evidence_span(
     norm_evidence = _clean_space(evidence_text)
 
     char_start, char_end, match_quality = _find_char_offsets(
-        norm_clause, norm_evidence, candidate_id, clause_id
+        norm_clause, norm_evidence, candidate_id, source_clause_id
     )
 
     # Build page_regions from evidence_line_ids
@@ -304,7 +329,8 @@ def build_fact_evidence_span(
             {
                 "page": page,
                 "bbox": compute_bbox_union(bboxes),
-                "line_ids": lids,
+                "line_ids": [line_index[lid].get("line_uid", lid) for lid in lids if lid in line_index],
+                "source_line_ids": lids,
             }
         )
 
@@ -316,7 +342,7 @@ def build_fact_evidence_span(
     return SourceSpan(
         span_id=f"ss_{policy_id}_{candidate_id}_evidence",
         document_id=document_id,
-        clause_id=clause_id,
+        clause_id=clause_uid,
         span_type="fact_evidence",
         text=evidence_text,
         char_start=char_start,

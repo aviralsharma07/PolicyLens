@@ -42,6 +42,7 @@ from typing import Any, Dict, List, Optional, Tuple
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 _DB_SIZE_LIMIT_BYTES = 30 * 1024 * 1024  # 30 MB
 _SPAN_COVERAGE_TARGET = 0.95
+_EXPECTED_COUNTS = {"document_lines": 12715, "document_sections": 1156, "policy_clauses": 2522}
 
 
 def _git_commit() -> str:
@@ -92,7 +93,7 @@ def compute_dangling_fks(conn: sqlite3.Connection) -> int:
 def compute_unresolved_present_facts(facts_root: str) -> Tuple[int, int]:
     """Returns (total_present, unresolved_present)."""
     if not os.path.isdir(facts_root):
-        return 0, 0
+        return 0, 999999
     total_present = 0
     unresolved = 0
     for slug in os.listdir(facts_root):
@@ -119,6 +120,120 @@ def compute_span_coverage(conn: sqlite3.Connection) -> Tuple[int, int, float]:
     ).fetchone()[0]
     rate = clauses_with_spans / total_clauses if total_clauses else 0.0
     return clauses_with_spans, total_clauses, round(rate, 4)
+
+
+def collect_source_counts(gold_corpus: str, physical_root: str, logical_root: str) -> dict:
+    counts = {}
+    policies_dir = os.path.join(gold_corpus, "policies")
+    for slug in sorted(os.listdir(policies_dir)):
+        meta_path = os.path.join(policies_dir, slug, "metadata.json")
+        physical_path = os.path.join(physical_root, slug, "document_physical.json")
+        logical_path = os.path.join(logical_root, slug, "section_tree.json")
+        if not os.path.isfile(meta_path):
+            continue
+        physical = _load_json(physical_path)
+        logical = _load_json(logical_path)
+        document_id = physical["document_id"]
+        counts[document_id] = {
+            "slug": slug,
+            "document_lines": sum(len(page.get("lines", [])) for page in physical.get("pages", [])),
+            "document_sections": len(logical.get("sections", [])),
+            "policy_clauses": len(logical.get("clauses", [])),
+        }
+    return counts
+
+
+def compute_source_count_parity(conn: sqlite3.Connection, expected: dict) -> dict:
+    actual = {}
+    mismatches = []
+    for document_id, exp in expected.items():
+        got = {
+            "document_lines": conn.execute(
+                "SELECT COUNT(*) FROM document_lines WHERE document_id = ?", (document_id,)
+            ).fetchone()[0],
+            "document_sections": conn.execute(
+                "SELECT COUNT(*) FROM document_sections WHERE document_id = ?", (document_id,)
+            ).fetchone()[0],
+            "policy_clauses": conn.execute(
+                "SELECT COUNT(*) FROM policy_clauses WHERE document_id = ?", (document_id,)
+            ).fetchone()[0],
+        }
+        actual[document_id] = got
+        for key, exp_value in exp.items():
+            if key == "slug":
+                continue
+            if got[key] != exp_value:
+                mismatches.append(
+                    {
+                        "document_id": document_id,
+                        "slug": exp["slug"],
+                        "table": key,
+                        "expected": exp_value,
+                        "actual": got[key],
+                    }
+                )
+    expected_totals = {
+        key: sum(v[key] for v in expected.values())
+        for key in ("document_lines", "document_sections", "policy_clauses")
+    }
+    actual_totals = {
+        key: sum(v[key] for v in actual.values())
+        for key in ("document_lines", "document_sections", "policy_clauses")
+    }
+    return {
+        "expected_totals": expected_totals,
+        "actual_totals": actual_totals,
+        "per_document_actual": actual,
+        "mismatches": mismatches,
+    }
+
+
+def compute_cross_document_mismatches(conn: sqlite3.Connection) -> dict:
+    bad_clause = conn.execute(
+        """SELECT COUNT(*)
+           FROM source_spans s
+           LEFT JOIN policy_clauses c ON c.clause_id = s.clause_id
+           WHERE s.clause_id IS NOT NULL
+             AND (c.clause_id IS NULL OR c.document_id != s.document_id)"""
+    ).fetchone()[0]
+    bad_cell = conn.execute(
+        """SELECT COUNT(*)
+           FROM source_spans s
+           LEFT JOIN document_table_cells cell ON cell.cell_id = s.table_cell_id
+           LEFT JOIN document_tables t ON t.table_id = cell.table_id
+           WHERE s.table_cell_id IS NOT NULL
+             AND (cell.cell_id IS NULL OR t.document_id != s.document_id)"""
+    ).fetchone()[0]
+    return {"clause_span_mismatches": bad_clause, "table_cell_span_mismatches": bad_cell}
+
+
+def compute_resolved_fact_span_integrity(conn: sqlite3.Connection, facts_root: str) -> dict:
+    if not os.path.isdir(facts_root):
+        return {"present_facts_checked": 0, "missing_or_mismatched": 999999}
+    checked = 0
+    bad = 0
+    for slug in os.listdir(facts_root):
+        path = os.path.join(facts_root, slug, "accepted_facts.json")
+        if not os.path.isfile(path):
+            continue
+        for fact in _load_json(path):
+            if fact.get("fact_status") != "present":
+                continue
+            checked += 1
+            row = conn.execute(
+                "SELECT document_id, clause_id, text FROM source_spans WHERE span_id = ?",
+                (fact.get("evidence_span_id"),),
+            ).fetchone()
+            if row is None:
+                bad += 1
+                continue
+            if fact.get("evidence_document_id") and fact["evidence_document_id"] != row["document_id"]:
+                bad += 1
+            elif fact.get("evidence_clause_uid") and fact["evidence_clause_uid"] != row["clause_id"]:
+                bad += 1
+            elif (fact.get("evidence_text") or "") != row["text"]:
+                bad += 1
+    return {"present_facts_checked": checked, "missing_or_mismatched": bad}
 
 
 def compute_no_provisional_in_resolved(facts_root: str) -> int:
@@ -248,6 +363,8 @@ def main() -> int:
     parser.add_argument("--db", default="data/engine.sqlite")
     parser.add_argument("--facts-root", default="data/interim/facts_resolved")
     parser.add_argument("--gold-corpus", default="gold_corpus")
+    parser.add_argument("--physical-root", default="data/interim/physical")
+    parser.add_argument("--logical-root", default="data/interim/logical")
     parser.add_argument(
         "--output",
         default=f"runs/evals/{time.strftime('%Y-%m-%d')}-clause-store-dse010-v1.json",
@@ -269,6 +386,10 @@ def main() -> int:
     clauses_with_spans, total_clauses, span_coverage = compute_span_coverage(conn)
     provisional_in_resolved = compute_no_provisional_in_resolved(args.facts_root)
     db_size_bytes = compute_db_size(args.db)
+    source_counts = collect_source_counts(args.gold_corpus, args.physical_root, args.logical_root)
+    source_count_parity = compute_source_count_parity(conn, source_counts)
+    cross_document_mismatches = compute_cross_document_mismatches(conn)
+    resolved_fact_span_integrity = compute_resolved_fact_span_integrity(conn, args.facts_root)
 
     # -----------------------------------------------------------------------
     # Reported-only metrics
@@ -299,6 +420,25 @@ def main() -> int:
         failures.append(f"provisional_ids_in_resolved={provisional_in_resolved} (expected 0)")
     if db_size_bytes >= _DB_SIZE_LIMIT_BYTES:
         failures.append(f"db_size={db_size_bytes / 1024 / 1024:.1f}MB (limit 30MB)")
+    if source_count_parity["mismatches"]:
+        failures.append(f"source_count_parity mismatches={source_count_parity['mismatches'][:5]}")
+    if source_count_parity["actual_totals"] != source_count_parity["expected_totals"]:
+        failures.append(
+            f"source_count_totals actual={source_count_parity['actual_totals']} "
+            f"expected={source_count_parity['expected_totals']}"
+        )
+    if source_count_parity["actual_totals"] != _EXPECTED_COUNTS:
+        failures.append(
+            f"source_count_totals actual={source_count_parity['actual_totals']} "
+            f"expected_fixed={_EXPECTED_COUNTS}"
+        )
+    if (
+        cross_document_mismatches["clause_span_mismatches"]
+        or cross_document_mismatches["table_cell_span_mismatches"]
+    ):
+        failures.append(f"cross_document_mismatches={cross_document_mismatches}")
+    if resolved_fact_span_integrity["missing_or_mismatched"] != 0:
+        failures.append(f"resolved_fact_span_integrity={resolved_fact_span_integrity}")
 
     passed = len(failures) == 0
 
@@ -306,7 +446,7 @@ def main() -> int:
     # Output
     # -----------------------------------------------------------------------
     result_doc = {
-        "eval_name": "clause-store-dse010-v1",
+        "eval_name": "clause-store-dse010-v2",
         "date": time.strftime("%Y-%m-%d"),
         "task_id": "DSE-010",
         "git_commit": _git_commit(),
@@ -324,6 +464,10 @@ def main() -> int:
             "provisional_ids_in_resolved_actual": provisional_in_resolved,
             "db_size_limit_bytes": _DB_SIZE_LIMIT_BYTES,
             "db_size_bytes_actual": db_size_bytes,
+            "source_count_parity_expected": source_count_parity["expected_totals"],
+            "source_count_parity_actual": source_count_parity["actual_totals"],
+            "cross_document_mismatches": cross_document_mismatches,
+            "resolved_fact_span_integrity": resolved_fact_span_integrity,
         },
         "metrics": {
             "clauses_with_spans": clauses_with_spans,
@@ -334,6 +478,7 @@ def main() -> int:
             "span_char_offset_coverage": char_coverage,
             "cross_page_clauses": cross_page,
             "evidence_degradation": evidence_degradation,
+            "source_count_parity": source_count_parity,
             "db_size_mb": round(db_size_bytes / 1024 / 1024, 2),
         },
         "table_row_counts": row_counts,

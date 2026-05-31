@@ -376,11 +376,14 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 **Acceptance criteria:**
 - 5/5 gold policies ingested into SQLite — PASS
 - 0 dangling FK references — PASS
+- Source artifact count parity — PASS (`document_lines=12,715`, `document_sections=1,156`, `policy_clauses=2,522`)
+- 0 cross-document source span mismatches — PASS
+- 0 resolved fact span mismatches — PASS
 - 0 unresolved present facts — PASS
 - Clause span coverage >= 95% — PASS (100%)
 - 0 provisional IDs in resolved facts — PASS
-- DB size < 30 MB — PASS (7.92 MB)
-- 220/220 tests (new + prior) — PASS
+- DB size < 30 MB — PASS (18.42 MB)
+- 232/232 tests (new + prior) — PASS
 - Gold corpus validator — PASS
 **Files created:**
 - `clause_store/__init__.py`
@@ -391,24 +394,25 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - `clause_store/fact_resolver.py` — provisional → real evidence ID resolution
 - `scripts/run_clause_store.py` — batch ingest CLI
 - `scripts/validate_source_spans.py` — structural integrity validator
-- `scripts/eval_clause_store.py` — hard gate eval
-- `tests/test_clause_store.py` — 59 unit tests
+- `scripts/eval_clause_store.py` — hard gate eval with source-count parity and cross-document checks
+- `tests/test_clause_store.py` — 60 unit tests
 **Results:**
-- 5,915 total source_spans (2,301 clause_body, 3,591 table_cell, 23 fact_evidence)
-- 192/197 tables (97.5%) parent_clause_id resolved via bbox overlap (avg IoU: 0.67)
+- 6,136 total source_spans (2,522 clause_body, 3,591 table_cell, 23 fact_evidence)
+- 192/197 tables (97.5%) parent_clause_id resolved via bbox overlap (avg IoU: 0.48)
 - 23/23 accepted present facts resolved to real span IDs
 - 113 cross-page clause spans across 5 policies
-- DB size: 7.92 MB
+- DB size: 18.42 MB
 **Key design decisions (ADRs):**
 - ADR-0017: `document_text_spans` deferred (char-level spans stay in physical JSON)
 - ADR-0018: `page_regions_json` handles cross-page clauses
 - ADR-0019: `char_start`/`char_end` are clause-text offsets
 - ADR-0020: resolved facts are a separate artifact; DSE-007 output is immutable
 - ADR-0021: heading score in `document_sections`; OQ-001 closed
+- ADR-0022: document-local IDs are namespaced in SQLite and original IDs are preserved in source_* columns
 **Known limitations:**
 - 16/23 (69.6%) fact evidence spans have clause-level char offsets (not subspan-level) because DSE-007 evidence_text boundaries shifted slightly with clause re-segmentation
 - `document_text_spans` DDL exists but is not populated (ADR-0017)
 - One block per page (physical parser limitation)
 - `extracted_facts`, `fact_conflicts`, `derived_policy_features` not populated (DSE-011/013)
-**Branch:** feat/dse-010-clause-store-source-spans
-**Related docs:** evaluation.md (Clause Store + Source Spans), decisions.md (ADR-0017 through ADR-0021), docs/open_questions.md (OQ-001 closed), runs/sessions/2026-05-31-clause-store-source-spans.md
+**Branch:** fix/dse-010-global-sqlite-ids
+**Related docs:** evaluation.md (Clause Store + Source Spans), decisions.md (ADR-0017 through ADR-0022), docs/open_questions.md (OQ-001 closed), runs/sessions/2026-05-31-clause-store-source-spans-v2.md

@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-05-31 (DSE-010 — SQLite identity remediation)
+
+### Added
+- Source-artifact count parity gates for DSE-010: `document_lines=12,715`, `document_sections=1,156`, `policy_clauses=2,522`.
+- Cross-document source span consistency checks.
+- Resolved fact span existence/document/clause/text validation.
+- ADR-0022 documenting SQLite namespaced IDs for document-local artifacts.
+- `runs/evals/2026-05-31-clause-store-dse010-v2.json` — passing DSE-010 v2 eval artifact.
+- `runs/sessions/2026-05-31-clause-store-source-spans-v2.md` — remediation session log.
+
+### Changed
+- `document_lines`, `document_sections`, and `policy_clauses` now use globally namespaced DB IDs while preserving original local IDs in `source_*` columns.
+- `source_spans.clause_id` and `document_tables.parent_clause_id` now point to global clause UIDs.
+- Resolved facts now include `evidence_clause_uid`, `evidence_document_id`, and `evidence_line_uids`.
+- SQLite runs use rollback journal mode to avoid generated WAL/SHM sidecars in `git status`.
+- `docs/database_strategy.md` now documents the 19-table SQLite store and namespaced ID strategy.
+
+### Fixed
+- Fixed silent cross-policy overwrites caused by repeated local IDs such as `p1l_1` and `clause_0000`.
+- Fixed validators/eval that previously compared the DB to itself instead of checking source JSON row parity.
+- Added fallback clause source spans for clauses without resolvable line IDs so clauses are not silently dropped.
+
+### Known Issues
+- 16/23 (69.6%) fact evidence spans still have clause-level char offsets because exact DSE-007 evidence snippets do not always align with current clause text boundaries.
+- `document_text_spans` remains intentionally unpopulated per ADR-0017.
+
+---
+
 ## 2026-05-31 (DSE-010 — Clause Store + Source Spans)
 
 ### Added

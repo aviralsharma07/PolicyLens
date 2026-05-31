@@ -114,6 +114,11 @@ def _make_page_id(document_id: str, page_number: int) -> str:
     return f"{document_id}_p{page_number}"
 
 
+def _uid(document_id: str, source_id: str) -> str:
+    """Convert a document-local artifact ID into a globally unique SQLite UID."""
+    return f"{document_id}:{source_id}"
+
+
 # ---------------------------------------------------------------------------
 # Per-policy ingestion
 # ---------------------------------------------------------------------------
@@ -222,13 +227,14 @@ def ingest_policy(
             else f"{document_id}_p{pnum}_b1"
         )
         for ln in page_data.get("lines", []):
-            line_id = ln.get("line_id")
-            if not line_id:
+            source_line_id = ln.get("line_id")
+            if not source_line_id:
                 continue
             raw_bbox = ln.get("bbox", [])
             lines_to_insert.append(
                 DocumentLine(
-                    line_id=line_id,
+                    line_id=_uid(document_id, source_line_id),
+                    source_line_id=source_line_id,
                     block_id=default_block_id,
                     document_id=document_id,
                     page_number=pnum,
@@ -266,6 +272,8 @@ def ingest_policy(
     # 3. Build line index (needed for span construction)
     # -----------------------------------------------------------------------
     line_index = build_line_index(physical_doc)
+    for source_line_id, info in line_index.items():
+        info["line_uid"] = _uid(document_id, source_line_id)
 
     # -----------------------------------------------------------------------
     # 4. Section tree: sections + clauses
@@ -275,6 +283,13 @@ def ingest_policy(
 
     raw_sections = section_tree.get("sections", [])
     raw_clauses = section_tree.get("clauses", [])
+    enriched_clauses = []
+    for c in raw_clauses:
+        enriched = dict(c)
+        enriched["clause_uid"] = _uid(document_id, c["clause_id"])
+        enriched["section_uid"] = _uid(document_id, c.get("section_id", ""))
+        enriched["line_uids"] = [_uid(document_id, lid) for lid in c.get("line_ids", [])]
+        enriched_clauses.append(enriched)
     # Always use the DSE-010 pipeline_run_id for SQLite rows.
     # The source artifact's own pipeline_run_id (e.g. "physical_v1_fixed") is stored
     # in the JSON file but is not a FK in the store.
@@ -302,12 +317,15 @@ def ingest_policy(
         _visit_section(s["section_id"])
 
     for sec in ordered_sections:
+        source_section_id = sec["section_id"]
+        parent_source_id = sec.get("parent_id")
         sections_to_insert.append(
             DocumentSection(
-                section_id=sec["section_id"],
+                section_id=_uid(document_id, source_section_id),
+                source_section_id=source_section_id,
                 document_id=document_id,
                 pipeline_run_id=tree_pipeline_run_id,
-                parent_id=sec.get("parent_id"),
+                parent_id=_uid(document_id, parent_source_id) if parent_source_id else None,
                 section_number=sec.get("number"),
                 title=sec.get("title"),
                 normalized_title=sec.get("normalized_title"),
@@ -322,18 +340,22 @@ def ingest_policy(
 
     clauses_to_insert: List[PolicyClause] = []
     for clause in raw_clauses:
+        source_clause_id = clause["clause_id"]
+        source_line_ids = clause.get("line_ids", [])
         clauses_to_insert.append(
             PolicyClause(
-                clause_id=clause["clause_id"],
+                clause_id=_uid(document_id, source_clause_id),
+                source_clause_id=source_clause_id,
                 document_id=document_id,
-                section_id=clause.get("section_id", ""),
+                section_id=_uid(document_id, clause.get("section_id", "")),
                 pipeline_run_id=tree_pipeline_run_id,
                 clause_number=clause.get("clause_number"),
                 title=clause.get("title"),
                 raw_text=clause.get("text", ""),
                 page_start=clause.get("page_start", 0),
                 page_end=clause.get("page_end", 0),
-                line_ids_json=json.dumps(clause.get("line_ids", [])),
+                line_ids_json=json.dumps([_uid(document_id, lid) for lid in source_line_ids]),
+                source_line_ids_json=json.dumps(source_line_ids),
                 segmentation_method=clause.get("segmentation_method"),
                 confidence=clause.get("confidence"),
             )
@@ -349,7 +371,7 @@ def ingest_policy(
     # 5. Build clause source_spans
     # -----------------------------------------------------------------------
     clause_spans = build_clause_spans(
-        raw_clauses, line_index, policy_id, document_id, pipeline_run_id, issues
+        enriched_clauses, line_index, policy_id, document_id, pipeline_run_id, issues
     )
     insert_source_spans(conn, clause_spans)
     logger.info("  %s: %d clause_body source_spans", slug, len(clause_spans))
@@ -365,6 +387,7 @@ def ingest_policy(
     tables_to_insert: List[DocumentTable] = []
     for t in tables_doc.get("tables", []):
         raw_bbox = t.get("bbox")
+        source_parent_clause_id = t.get("parent_clause_id")
         tables_to_insert.append(
             DocumentTable(
                 table_id=t["table_id"],
@@ -378,7 +401,9 @@ def ingest_policy(
                 has_header_row=bool(t.get("has_header_row", False)),
                 bbox_json=json.dumps(raw_bbox) if raw_bbox else None,
                 # Provisional — will be overwritten by backfill_table_parent_clauses()
-                parent_clause_id=t.get("parent_clause_id"),
+                parent_clause_id=_uid(document_id, source_parent_clause_id)
+                if source_parent_clause_id
+                else None,
                 parent_clause_confidence=t.get("parent_clause_confidence"),
                 issues_json=json.dumps(t.get("issues", [])) if t.get("issues") else None,
             )
@@ -427,7 +452,7 @@ def ingest_policy(
     facts_path = os.path.join(facts_root, slug, "accepted_facts.json")
     accepted_facts = _load_json_opt(facts_path) or []
 
-    clause_lookup: Dict[str, dict] = {c["clause_id"]: c for c in raw_clauses}
+    clause_lookup: Dict[str, dict] = {c["clause_id"]: c for c in enriched_clauses}
 
     evidence_spans = build_fact_evidence_spans(
         accepted_facts, clause_lookup, line_index, policy_id, document_id, pipeline_run_id, issues

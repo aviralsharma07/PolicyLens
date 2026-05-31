@@ -406,6 +406,101 @@ class TestRepositoryInserts:
         conn.commit()
         assert conn.execute("SELECT COUNT(*) FROM policy_clauses").fetchone()[0] == 1
 
+    def test_document_local_ids_can_repeat_across_documents(self, conn, base_run):
+        """DSE-010 must preserve both policies when source-local IDs collide."""
+        insert_pipeline_run(conn, base_run)
+        for suffix in ("a", "b"):
+            product = Product(
+                product_id=f"policy_{suffix}",
+                uin_base="X",
+                normalized_insurer="insurer",
+                normalized_plan_name=f"plan {suffix}",
+            )
+            version = ProductVersion(
+                version_id=f"policy_{suffix}_v1",
+                product_id=f"policy_{suffix}",
+                full_uin="X",
+            )
+            doc_id = f"sha256:{suffix}"
+            doc = SourceDocument(
+                document_id=doc_id,
+                policy_id=f"policy_{suffix}",
+                source_pdf_path=f"{suffix}.pdf",
+                file_hash=doc_id,
+                page_count=1,
+                version_id=f"policy_{suffix}_v1",
+            )
+            insert_product(conn, product)
+            insert_product_version(conn, version)
+            insert_source_document(conn, doc)
+            insert_pages(
+                conn,
+                [
+                    DocumentPage(
+                        page_id=f"{doc_id}_p1",
+                        document_id=doc_id,
+                        page_number=1,
+                        width=595,
+                        height=842,
+                    )
+                ],
+            )
+            insert_blocks(
+                conn,
+                [DocumentBlock(block_id=f"{doc_id}_b1", page_id=f"{doc_id}_p1", document_id=doc_id)],
+            )
+            insert_lines(
+                conn,
+                [
+                    DocumentLine(
+                        line_id=f"{doc_id}:p1l_1",
+                        source_line_id="p1l_1",
+                        block_id=f"{doc_id}_b1",
+                        document_id=doc_id,
+                        page_number=1,
+                        bbox_json="[0,0,100,10]",
+                        text="same local line id",
+                    )
+                ],
+            )
+            insert_sections(
+                conn,
+                [
+                    DocumentSection(
+                        section_id=f"{doc_id}:sec_1",
+                        source_section_id="sec_1",
+                        document_id=doc_id,
+                        pipeline_run_id=base_run.id,
+                    )
+                ],
+            )
+            insert_clauses(
+                conn,
+                [
+                    PolicyClause(
+                        clause_id=f"{doc_id}:clause_0001",
+                        source_clause_id="clause_0001",
+                        document_id=doc_id,
+                        section_id=f"{doc_id}:sec_1",
+                        pipeline_run_id=base_run.id,
+                        raw_text="same local clause id",
+                        page_start=1,
+                        page_end=1,
+                        line_ids_json=json.dumps([f"{doc_id}:p1l_1"]),
+                        source_line_ids_json=json.dumps(["p1l_1"]),
+                    )
+                ],
+            )
+        conn.commit()
+        assert conn.execute("SELECT COUNT(*) FROM document_lines").fetchone()[0] == 2
+        assert conn.execute("SELECT COUNT(*) FROM policy_clauses").fetchone()[0] == 2
+        assert (
+            conn.execute(
+                "SELECT COUNT(DISTINCT source_clause_id) FROM policy_clauses"
+            ).fetchone()[0]
+            == 1
+        )
+
     def test_insert_source_span(self, conn, base_run, base_product, base_version, base_doc):
         _seed_minimal(conn, base_run, base_product, base_version, base_doc)
         section = DocumentSection(
@@ -616,8 +711,10 @@ class TestSpanBuilderClause:
         clause = self._make_clause("c1", 1, 1, ["p1l_99"])
         issues: list = []
         span = build_clause_span(clause, idx, "pol", "sha256:abc123", "run_001", issues)
-        assert span is None
-        # Should have issues: line_id_not_in_physical_index + clause_span_no_lines
+        assert span is not None
+        regions = json.loads(span.page_regions_json)
+        assert regions == [{"page": 1, "bbox": None, "line_ids": [], "source_line_ids": []}]
+        # Should have issues: line_id_not_in_physical_index + clause_span_no_lines fallback
         issue_types = [i.issue_type for i in issues]
         assert "clause_span_no_lines" in issue_types
 

@@ -80,12 +80,13 @@ class DocumentBlock:
 
 @dataclass
 class DocumentLine:
-    line_id: str
+    line_id: str  # global UID
     block_id: str
     document_id: str
     page_number: int
     bbox_json: str  # JSON "[x0, top, x1, bottom]"
     text: str
+    source_line_id: str = ""
     region: Optional[str] = None
     is_header_candidate: bool = False
     is_footer_candidate: bool = False
@@ -93,9 +94,10 @@ class DocumentLine:
 
 @dataclass
 class DocumentSection:
-    section_id: str
+    section_id: str  # global UID
     document_id: str
     pipeline_run_id: str
+    source_section_id: str = ""
     level: int = 0
     heading_type: str = "root"
     page_start: int = 0
@@ -110,14 +112,16 @@ class DocumentSection:
 
 @dataclass
 class PolicyClause:
-    clause_id: str
+    clause_id: str  # global UID
     document_id: str
     section_id: str
     pipeline_run_id: str
     raw_text: str
     page_start: int
     page_end: int
-    line_ids_json: str  # JSON array of line IDs
+    line_ids_json: str  # JSON array of global line UIDs
+    source_clause_id: str = ""
+    source_line_ids_json: str = ""  # JSON array of source-local line IDs
     clause_number: Optional[str] = None
     title: Optional[str] = None
     segmentation_method: Optional[str] = None

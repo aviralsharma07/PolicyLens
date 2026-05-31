@@ -109,7 +109,8 @@ CREATE TABLE IF NOT EXISTS document_blocks (
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS document_lines (
-    line_id               TEXT PRIMARY KEY,
+    line_id               TEXT PRIMARY KEY,  -- global UID: "{document_id}:{source_line_id}"
+    source_line_id        TEXT NOT NULL,     -- source-local ID from document_physical.json
     block_id              TEXT NOT NULL,
     document_id           TEXT NOT NULL,
     page_number           INTEGER NOT NULL,
@@ -123,6 +124,8 @@ CREATE TABLE IF NOT EXISTS document_lines (
 );
 CREATE INDEX IF NOT EXISTS idx_lines_doc_page
     ON document_lines(document_id, page_number);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_lines_doc_source_line
+    ON document_lines(document_id, source_line_id);
 
 -- ============================================================
 -- Tier 5: DEFERRED — ADR-0017 (character-level spans not persisted)
@@ -148,7 +151,8 @@ CREATE TABLE IF NOT EXISTS document_text_spans (
 -- heading_score and heading_type stored here per ADR-0021 (resolves OQ-001).
 -- No separate heading_candidates table.
 CREATE TABLE IF NOT EXISTS document_sections (
-    section_id          TEXT PRIMARY KEY,
+    section_id          TEXT PRIMARY KEY,  -- global UID: "{document_id}:{source_section_id}"
+    source_section_id   TEXT NOT NULL,     -- source-local ID from section_tree.json
     document_id         TEXT NOT NULL,
     parent_id           TEXT,
     section_number      TEXT,
@@ -167,13 +171,16 @@ CREATE TABLE IF NOT EXISTS document_sections (
 );
 CREATE INDEX IF NOT EXISTS idx_sections_doc
     ON document_sections(document_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_sections_doc_source_section
+    ON document_sections(document_id, source_section_id);
 
 -- ============================================================
 -- Tier 7
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS policy_clauses (
-    clause_id           TEXT PRIMARY KEY,
+    clause_id           TEXT PRIMARY KEY,  -- global UID: "{document_id}:{source_clause_id}"
+    source_clause_id    TEXT NOT NULL,     -- source-local ID from section_tree.json
     document_id         TEXT NOT NULL,
     section_id          TEXT NOT NULL,
     clause_number       TEXT,
@@ -181,7 +188,8 @@ CREATE TABLE IF NOT EXISTS policy_clauses (
     raw_text            TEXT NOT NULL,   -- full clause text, never truncated
     page_start          INTEGER NOT NULL,
     page_end            INTEGER NOT NULL,
-    line_ids_json       TEXT NOT NULL,   -- JSON array of line IDs
+    line_ids_json       TEXT NOT NULL,   -- JSON array of global line UIDs
+    source_line_ids_json TEXT NOT NULL,  -- JSON array of source-local line IDs
     segmentation_method TEXT,
     confidence          REAL,
     pipeline_run_id     TEXT NOT NULL,
@@ -191,6 +199,8 @@ CREATE TABLE IF NOT EXISTS policy_clauses (
 );
 CREATE INDEX IF NOT EXISTS idx_clauses_doc_page
     ON policy_clauses(document_id, page_start, page_end);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_clauses_doc_source_clause
+    ON policy_clauses(document_id, source_clause_id);
 
 -- ============================================================
 -- Tier 8
@@ -252,6 +262,7 @@ CREATE TABLE IF NOT EXISTS source_spans (
     pipeline_run_id     TEXT NOT NULL,
     FOREIGN KEY(document_id)     REFERENCES source_documents(document_id),
     FOREIGN KEY(clause_id)       REFERENCES policy_clauses(clause_id),
+    FOREIGN KEY(table_cell_id)   REFERENCES document_table_cells(cell_id),
     FOREIGN KEY(pipeline_run_id) REFERENCES pipeline_runs(id)
 );
 CREATE INDEX IF NOT EXISTS idx_spans_clause
