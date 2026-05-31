@@ -6,7 +6,7 @@ This file tracks unresolved design/product questions. Do not let major unresolve
 
 ## OQ-001 — Should the heading scorer output be stored as a separate table or as JSON in document_sections?
 
-**Status:** open
+**Status:** answered
 
 **Question:** The heading detector produces candidates with scores and feature breakdowns. Should these be stored in a separate `heading_candidates` table (which then gets resolved into accepted/rejected) or embedded as JSON in `document_sections`?
 
@@ -17,7 +17,7 @@ This file tracks unresolved design/product questions. Do not let major unresolve
 2. JSON field in `document_sections` → simpler queries. Harder to query rejected candidates.
 
 **Decision needed by:** Phase 2 implementation (heading_detector.py + section_tree.py)
-**Resolution:** 
+**Resolution:** Answered by ADR-0021 (2026-05-31, DSE-010). Heading score and heading_type are stored as fields on `document_sections`. No separate `heading_candidates` SQLite table.
 
 ---
 

@@ -1,5 +1,37 @@
 # Changelog
 
+## 2026-05-31 (DSE-010 — Clause Store + Source Spans)
+
+### Added
+- `clause_store/` package: `schema.sql` (19-table SQLite DDL), `models.py` (dataclasses), `repository.py` (init_db, insert_*, query_*, backfill_table_parent_clauses), `span_builder.py` (clause/evidence/cell spans), `fact_resolver.py` (provisional ID resolution).
+- `scripts/run_clause_store.py` — batch ingest CLI for 5 gold policies.
+- `scripts/validate_source_spans.py` — structural integrity validator.
+- `scripts/eval_clause_store.py` — hard gate eval with 6 gates.
+- `tests/test_clause_store.py` — 59 unit tests (schema, inserts, span builder, fact resolver, table parent clause, bbox IoU).
+- `data/reports/dse010_sqlite_build_summary.json` — committed build summary artifact.
+- `runs/sessions/2026-05-31-clause-store-source-spans.md` — session log.
+- `runs/evals/2026-05-31-clause-store-dse010-v1.json` — passing eval artifact.
+
+### Changed
+- `docs/evaluation.md` — Clause Store + Source Spans eval layer added; hard gates table updated.
+- `docs/tasks.md` — DSE-010 marked done; detail block added; completed table updated.
+- `docs/changelog.md` — DSE-010 entry.
+- `docs/decisions.md` — ADR-0017 through ADR-0021 added.
+- `docs/open_questions.md` — OQ-001 marked answered (ADR-0021).
+
+### Key results
+- 5,915 source_spans across 5 gold policies (2,301 clause_body, 3,591 table_cell, 23 fact_evidence).
+- 23/23 accepted present facts resolved to real source_span_ids (0 provisional IDs remaining).
+- 192/197 tables (97.5%) parent_clause_id resolved via bbox overlap (avg IoU 0.67).
+- DB size: 7.92 MB. FK violations: 0. Clause span coverage: 100%.
+
+### Known Issues
+- 16/23 (69.6%) fact evidence spans have clause-level char offsets (char_start=0) because DSE-007 evidence_text boundaries predate current clause segmentation.
+- `document_text_spans` DDL exists but not populated (ADR-0017).
+- `extracted_facts`, `fact_conflicts`, `derived_policy_features` deferred to DSE-011/DSE-013.
+
+---
+
 ## 2026-05-31 (DSE-009 — Table Engine v1 finalization)
 
 ### Added

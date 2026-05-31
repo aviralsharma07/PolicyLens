@@ -20,7 +20,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-010 | Clause Store + Source Spans | planned | P2 | Phase 4 |
+| DSE-010 | Clause Store + Source Spans | done | P2 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | planned | P2 | Phase 5 |
 | DSE-012 | Expand gold corpus 5 → 20 | planned | P2 | Phase 7 |
 | DSE-013 | Derived 91-Field Export | planned | P2 | Phase 8 |
@@ -43,6 +43,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | 2026-05-30 | Phase 6 |
 | DSE-008 | Normalizers Library v1 | 2026-05-30 | Phase 6 |
 | DSE-009 | Table Engine v1 | 2026-05-31 | Phase 3 |
+| DSE-010 | Clause Store + Source Spans | 2026-05-31 | Phase 4 |
 
 ---
 
@@ -365,3 +366,49 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - Parent clause ID is provisional (page-range lookup); replaced by bbox overlap in DSE-010.
 **Branch:** fix/dse-009-table-engine-gates
 **Related docs:** evaluation.md (Table Extraction), data_contracts.md (Contract 3C), decisions.md (ADR-0014, ADR-0015), runs/sessions/2026-05-31-table-engine-v1.md
+
+### DSE-010 — Clause Store + Source Spans
+
+**Status:** done
+**Priority:** P2
+**Phase:** Phase 4
+**Goal:** Persist all 5 gold-policy interim JSON into SQLite (`data/engine.sqlite`), build real `source_spans` records (clause → lines → bbox coordinates), replace provisional `"clause:{id}"` evidence IDs with real span IDs, and resolve table parent clause assignment via bbox spatial overlap.
+**Acceptance criteria:**
+- 5/5 gold policies ingested into SQLite — PASS
+- 0 dangling FK references — PASS
+- 0 unresolved present facts — PASS
+- Clause span coverage >= 95% — PASS (100%)
+- 0 provisional IDs in resolved facts — PASS
+- DB size < 30 MB — PASS (7.92 MB)
+- 220/220 tests (new + prior) — PASS
+- Gold corpus validator — PASS
+**Files created:**
+- `clause_store/__init__.py`
+- `clause_store/schema.sql` — 19-table SQLite DDL (15 populated, 4 deferred)
+- `clause_store/models.py` — Python dataclasses for SQLite row types
+- `clause_store/repository.py` — init_db(), insert_*, query_*, backfill_table_parent_clauses()
+- `clause_store/span_builder.py` — clause spans, fact evidence spans, table cell spans
+- `clause_store/fact_resolver.py` — provisional → real evidence ID resolution
+- `scripts/run_clause_store.py` — batch ingest CLI
+- `scripts/validate_source_spans.py` — structural integrity validator
+- `scripts/eval_clause_store.py` — hard gate eval
+- `tests/test_clause_store.py` — 59 unit tests
+**Results:**
+- 5,915 total source_spans (2,301 clause_body, 3,591 table_cell, 23 fact_evidence)
+- 192/197 tables (97.5%) parent_clause_id resolved via bbox overlap (avg IoU: 0.67)
+- 23/23 accepted present facts resolved to real span IDs
+- 113 cross-page clause spans across 5 policies
+- DB size: 7.92 MB
+**Key design decisions (ADRs):**
+- ADR-0017: `document_text_spans` deferred (char-level spans stay in physical JSON)
+- ADR-0018: `page_regions_json` handles cross-page clauses
+- ADR-0019: `char_start`/`char_end` are clause-text offsets
+- ADR-0020: resolved facts are a separate artifact; DSE-007 output is immutable
+- ADR-0021: heading score in `document_sections`; OQ-001 closed
+**Known limitations:**
+- 16/23 (69.6%) fact evidence spans have clause-level char offsets (not subspan-level) because DSE-007 evidence_text boundaries shifted slightly with clause re-segmentation
+- `document_text_spans` DDL exists but is not populated (ADR-0017)
+- One block per page (physical parser limitation)
+- `extracted_facts`, `fact_conflicts`, `derived_policy_features` not populated (DSE-011/013)
+**Branch:** feat/dse-010-clause-store-source-spans
+**Related docs:** evaluation.md (Clause Store + Source Spans), decisions.md (ADR-0017 through ADR-0021), docs/open_questions.md (OQ-001 closed), runs/sessions/2026-05-31-clause-store-source-spans.md
