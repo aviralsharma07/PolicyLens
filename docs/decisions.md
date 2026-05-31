@@ -419,3 +419,108 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: DSE-012 must expand/review physical table labels, not just semantic summaries.
 
 **Revisit when:** DSE-012 expands the gold corpus to 20 policies or introduces a dedicated prose-summary/table-like-fact annotation layer.
+
+---
+
+## 2026-05-31 — Defer document_text_spans population (character-level spans)
+
+**Status:** accepted
+
+**Decision:** `document_text_spans` DDL exists in `clause_store/schema.sql` but is not populated by DSE-010. Character-level spans (617K rows across 5 gold policies) stay in `document_physical.json`. SQLite source_spans are built from line-level data only.
+
+**Context:** The physical parser produces one span per character. Loading 617K character-level rows into SQLite would make `engine.sqlite` very large and slow, with no current consumer of that granularity.
+
+**Options considered:**
+1. Load all character-level spans as-is → 617K rows, ~100MB+ DB, no consumer
+2. Group consecutive chars with same font into word/run-level spans → significant complexity
+3. Skip population, use physical JSON for char-level on demand → simple, bounded DB
+
+**Reasoning:** Source spans need to answer "where in the PDF did this fact come from?" Line-level bboxes are sufficient for that. Character-level detail is a debugging/inspection concern available from physical JSON.
+
+**Consequences:**
+- Positive: DB stays bounded (7.92 MB for 5 policies).
+- Positive: No complex char-grouping logic needed.
+- Negative: Character-level font signals (bold, italic) not queryable from SQLite directly.
+
+**Revisit when:** A downstream consumer (fact refinement, layout ML) requires font-level signals at query time.
+
+---
+
+## 2026-05-31 — source_spans uses page_regions_json (ADR-0018)
+
+**Status:** accepted
+
+**Decision:** `source_spans.page_regions_json` stores a JSON array of `{page, bbox, line_ids}` objects, replacing the flat `page_number + bbox_json` fields in the IMPLEMENTATION_PLAN.md v1 schema.
+
+**Context:** 37/554 (7%) of care_health clauses span multiple pages. A single `page_number + bbox_json` cannot represent cross-page location accurately.
+
+**Options considered:**
+1. Flat `page_number + bbox_json` → simple, breaks for cross-page clauses
+2. `page_regions_json` array → handles any number of pages, slightly more complex to query
+3. One row per (clause, page) → cleaner query, more rows
+
+**Reasoning:** Option 2 gives one row per span with complete multi-page location. Querying a specific page requires `json_extract` in SQLite, which is acceptable since cross-page clauses are a minority.
+
+**Consequences:**
+- Positive: Cross-page clauses correctly represented.
+- Positive: Single span_id per clause.
+- Negative: Page-specific bbox requires JSON parsing in queries.
+
+**Revisit when:** Performance profiling shows `json_extract` on `page_regions_json` is a bottleneck.
+
+---
+
+## 2026-05-31 — char_start/char_end are clause-text offsets, not PDF character stream offsets (ADR-0019)
+
+**Status:** accepted
+
+**Decision:** `source_spans.char_start` and `char_end` measure the offset of evidence_text within `clause.text` (after `clean_space()` normalization), not within the PDF character stream.
+
+**Context:** The physical parser's `Span.char_start` was never populated (always `None`). PDF character offsets from pdfplumber are page-relative and not globally stable.
+
+**Reasoning:** Clause-text offsets are stable, verifiable, and don't require character-level span data. Any verifier can reconstruct the evidence location by: open `policy_clauses.raw_text`, index at `[char_start:char_end]`.
+
+**Consequences:**
+- Positive: No dependency on pdfplumber character index.
+- Positive: Verification is simple string comparison.
+- Negative: Cannot map directly to a PDF character index for rendering.
+- Negative: 16/23 accepted facts (69.6%) have degraded clause-level offsets (char_start=0, char_end=len(clause_text)) because DSE-007 evidence_text boundaries shifted with clause re-segmentation.
+
+**Revisit when:** A PDF rendering use case requires pixel-level evidence highlighting.
+
+---
+
+## 2026-05-31 — Resolved facts as separate artifact, DSE-007 output immutable (ADR-0020)
+
+**Status:** accepted
+
+**Decision:** `data/interim/facts/{slug}/accepted_facts.json` (DSE-007 output) is never overwritten. DSE-010 writes `data/interim/facts_resolved/{slug}/accepted_facts.json` with real source_span_ids. DSE-011+ and Product B consume resolved facts only.
+
+**Context:** DSE-007 facts have provisional `evidence_span_id = "clause:{id}"`. DSE-010 must replace these with real span IDs but must not mutate the extractor's output.
+
+**Reasoning:** Immutable extractor outputs are essential for debugging and re-running. Separation of raw extractor output from resolved/enriched output follows the pipeline's overall immutability principle.
+
+**Consequences:**
+- Positive: DSE-007 output can always be re-resolved by re-running DSE-010.
+- Positive: Audit trail preserved (provisional_evidence_span_id field in resolved facts).
+- Negative: Two fact JSON files per policy (raw + resolved).
+
+**Revisit when:** DSE-011 redesigns fact candidate management.
+
+---
+
+## 2026-05-31 — OQ-001 resolved: heading score embedded in document_sections (ADR-0021)
+
+**Status:** accepted
+
+**Decision:** `document_sections.heading_score` and `document_sections.heading_type` store the heading scorer output. No separate `heading_candidates` table is created.
+
+**Context:** OQ-001 asked whether heading candidates should be a separate table or embedded in sections.
+
+**Reasoning:** Only accepted headings become sections. Rejected candidates are logged in `heading_candidates.json` but don't need SQLite persistence — no current query needs rejected candidates. Embedding heading score avoids an extra JOIN for the common case.
+
+**Consequences:**
+- Positive: Simpler schema — one table for sections (no candidates table).
+- Negative: Rejected candidate details not queryable from SQLite.
+
+**Revisit when:** A heading quality analysis query needs rejected candidates from the DB.

@@ -846,6 +846,101 @@ planned
 
 ---
 
+## Eval: Clause Store + Source Spans (DSE-010)
+
+### Purpose
+Ensures the provenance layer is correct: every clause has a physical location (bbox + page), every accepted fact has a real source_span_id, and the SQLite store has referential integrity.
+
+### Inputs
+- `data/engine.sqlite` — clause store database
+- `data/interim/facts_resolved/{slug}/accepted_facts.json` — resolved facts (5 policies)
+
+### Metrics
+- `policies_ingested` — source_documents count
+- `dangling_fk_count` — FK violation count
+- `clause_span_coverage` — % of policy_clauses with >= 1 clause_body source_span
+- `unresolved_present_facts` — present facts with no real evidence_span_id
+- `provisional_ids_in_resolved` — count of "clause:{id}" remaining in resolved facts
+- `db_size_bytes` — SQLite file size
+- `tables_with_bbox_resolved_parent_pct` — % of tables with bbox-resolved parent clause
+- `avg_iou_resolved_parents` — spatial accuracy of parent clause assignments
+- `evidence_degradation` — % of fact evidence spans with clause-level vs exact char offsets
+
+### Hard Gates
+- `policies_ingested == 5` — all gold policies ingested
+- `dangling_fk_count == 0` — referential integrity
+- `unresolved_present_facts == 0` — all present facts have real span IDs
+- `clause_span_coverage >= 95%` — near-complete clause location
+- `provisional_ids_in_resolved == 0` — no provisional IDs in resolved facts
+- `db_size_bytes < 30MB` — DB stays bounded
+
+### Commands
+
+```bash
+# Ingest all 5 gold policies
+PYTHONPATH=. python scripts/run_clause_store.py \
+  --gold-corpus gold_corpus \
+  --physical-root data/interim/physical \
+  --logical-root data/interim/logical \
+  --tables-root data/interim/tables \
+  --facts-root data/interim/facts \
+  --output-db data/engine.sqlite \
+  --output-facts-resolved data/interim/facts_resolved
+
+# Structural integrity validation
+PYTHONPATH=. python scripts/validate_source_spans.py \
+  --db data/engine.sqlite \
+  --facts-root data/interim/facts_resolved
+
+# Hard gate eval
+PYTHONPATH=. python scripts/eval_clause_store.py \
+  --db data/engine.sqlite \
+  --facts-root data/interim/facts_resolved \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-05-31-clause-store-dse010-v1.json
+```
+
+### Output Artifacts
+- `data/engine.sqlite` (gitignored — reproduced by run_clause_store.py)
+- `data/interim/facts_resolved/{slug}/accepted_facts.json` (gitignored — reproduced)
+- `runs/evals/2026-05-31-clause-store-dse010-v1.json` (committed)
+- `data/reports/dse010_sqlite_build_summary.json` (committed)
+
+### DSE-010 v1 Result
+
+```json
+{
+  "eval_name": "clause-store-dse010-v1",
+  "date": "2026-05-31",
+  "passed": true,
+  "hard_gates": {
+    "policies_ingested": 5,
+    "dangling_fk_count": 0,
+    "unresolved_present_facts": 0,
+    "clause_span_coverage": 1.0,
+    "provisional_ids_in_resolved": 0,
+    "db_size_mb": 7.92
+  },
+  "metrics": {
+    "total_source_spans": 5915,
+    "clause_body_spans": 2301,
+    "table_cell_spans": 3591,
+    "fact_evidence_spans": 23,
+    "tables_with_bbox_resolved_parent": 192,
+    "tables_bbox_resolved_pct": 97.5,
+    "avg_iou_resolved_parents": 0.6659,
+    "cross_page_clause_spans": 113,
+    "evidence_exact_match": 7,
+    "evidence_clause_level_precision": 16
+  }
+}
+```
+
+### Current Status
+active (DSE-010 v1 PASS on 2026-05-31)
+
+---
+
 ## Summary of Hard Gates
 
 | Layer | Gate | Blocks |
@@ -855,6 +950,7 @@ planned
 | Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
 | Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
+| Clause Store + Source Spans | 5/5 policies, 0 FK violations, 0 unresolved facts, span coverage >= 95%, DB < 30MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-010 v1 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |
