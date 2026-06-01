@@ -542,3 +542,159 @@ def get_table_counts(conn: sqlite3.Connection) -> dict:
 def get_db_size_bytes(db_path: str) -> int:
     """Return the SQLite file size in bytes."""
     return pathlib.Path(db_path).stat().st_size
+
+
+# ---------------------------------------------------------------------------
+# DSE-011: Fact candidates, extracted facts, conflicts
+# ---------------------------------------------------------------------------
+
+
+def insert_fact_candidates(
+    conn: sqlite3.Connection, candidates: List["ExtractedFactCandidate"]
+) -> None:
+    from clause_store.models import ExtractedFactCandidate  # noqa: F811
+
+    conn.executemany(
+        """INSERT OR REPLACE INTO extracted_fact_candidates
+           (id, source_candidate_id, clause_id, source_clause_id, document_id,
+            concept, candidate_value_json, normalized_value_json, fact_status,
+            scope_json, condition_json, evidence_span_id, evidence_text, evidence_page,
+            extractor_name, extractor_version, pattern_id,
+            confidence, score, accepted, rejection_reason, pipeline_run_id)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+        [
+            (
+                c.id,
+                c.source_candidate_id,
+                c.clause_id,
+                c.source_clause_id,
+                c.document_id,
+                c.concept,
+                c.candidate_value_json,
+                c.normalized_value_json,
+                c.fact_status,
+                c.scope_json,
+                c.condition_json,
+                c.evidence_span_id,
+                c.evidence_text,
+                c.evidence_page,
+                c.extractor_name,
+                c.extractor_version,
+                c.pattern_id,
+                c.confidence,
+                c.score,
+                int(c.accepted),
+                c.rejection_reason,
+                c.pipeline_run_id,
+            )
+            for c in candidates
+        ],
+    )
+
+
+def insert_extracted_facts(conn: sqlite3.Connection, facts: List["ExtractedFact"]) -> None:
+    from clause_store.models import ExtractedFact  # noqa: F811
+
+    conn.executemany(
+        """INSERT OR REPLACE INTO extracted_facts
+           (id, source_candidate_id, clause_id, source_clause_id, document_id,
+            concept, value_json, normalized_value_json, value_type,
+            scope_json, condition_json, extraction_method,
+            confidence, evidence_span_id, pipeline_run_id,
+            fact_status, validated, validator)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+        [
+            (
+                f.id,
+                f.source_candidate_id,
+                f.clause_id,
+                f.source_clause_id,
+                f.document_id,
+                f.concept,
+                f.value_json,
+                f.normalized_value_json,
+                f.value_type,
+                f.scope_json,
+                f.condition_json,
+                f.extraction_method,
+                f.confidence,
+                f.evidence_span_id,
+                f.pipeline_run_id,
+                f.fact_status,
+                int(f.validated),
+                f.validator,
+            )
+            for f in facts
+        ],
+    )
+
+
+def insert_fact_conflicts(conn: sqlite3.Connection, conflicts: List["FactConflict"]) -> None:
+    from clause_store.models import FactConflict  # noqa: F811
+
+    conn.executemany(
+        """INSERT INTO fact_conflicts
+           (document_id, concept, fact_a_id, fact_b_id, conflict_type,
+            resolution, resolved_by, resolution_notes, pipeline_run_id)
+           VALUES (?,?,?,?,?,?,?,?,?)""",
+        [
+            (
+                c.document_id,
+                c.concept,
+                c.fact_a_id,
+                c.fact_b_id,
+                c.conflict_type,
+                c.resolution,
+                c.resolved_by,
+                c.resolution_notes,
+                c.pipeline_run_id,
+            )
+            for c in conflicts
+        ],
+    )
+
+
+def query_facts_for_document(conn: sqlite3.Connection, document_id: str) -> List[dict]:
+    cursor = conn.execute(
+        """SELECT id, source_candidate_id, clause_id, source_clause_id,
+                  concept, value_json, normalized_value_json, fact_status,
+                  confidence, evidence_span_id, extraction_method
+           FROM extracted_facts
+           WHERE document_id = ?
+           ORDER BY concept""",
+        (document_id,),
+    )
+    return [dict(row) for row in cursor.fetchall()]
+
+
+def query_candidates_for_document(conn: sqlite3.Connection, document_id: str) -> List[dict]:
+    cursor = conn.execute(
+        """SELECT id, source_candidate_id, clause_id, source_clause_id,
+                  concept, candidate_value_json, normalized_value_json, fact_status,
+                  confidence, score, accepted, rejection_reason,
+                  extractor_name, pattern_id, evidence_span_id
+           FROM extracted_fact_candidates
+           WHERE document_id = ?
+           ORDER BY concept, score DESC""",
+        (document_id,),
+    )
+    return [dict(row) for row in cursor.fetchall()]
+
+
+def query_conflicts_for_document(conn: sqlite3.Connection, document_id: str) -> List[dict]:
+    cursor = conn.execute(
+        """SELECT id, concept, fact_a_id, fact_b_id, conflict_type,
+                  resolution, resolved_by, resolution_notes
+           FROM fact_conflicts
+           WHERE document_id = ?
+           ORDER BY concept""",
+        (document_id,),
+    )
+    return [dict(row) for row in cursor.fetchall()]
+
+
+def count_facts_by_concept(conn: sqlite3.Connection) -> dict:
+    cursor = conn.execute(
+        """SELECT concept, COUNT(*) c FROM extracted_facts GROUP BY concept ORDER BY concept"""
+    )
+    return {row[0]: row[1] for row in cursor.fetchall()}

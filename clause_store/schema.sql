@@ -290,33 +290,50 @@ CREATE TABLE IF NOT EXISTS document_issues (
 );
 
 -- ============================================================
--- Tiers 11–15: DEFERRED — DSE-011 / DSE-013
--- DDL exists for schema completeness; not populated by DSE-010.
+-- Tiers 11–13: Fact candidates, facts, conflicts — DSE-011
+-- Refined from placeholder DDL. Tables were empty until DSE-011.
+-- ADR-0023: expanded candidate DDL to carry scoring/eval fields.
+-- ADR-0024: extracted_facts stores only present/explicitly_not_covered.
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS extracted_fact_candidates (
-    id               TEXT PRIMARY KEY,
-    clause_id        TEXT NOT NULL,
-    document_id      TEXT NOT NULL,
-    concept          TEXT NOT NULL,
-    candidate_value_json TEXT,
-    evidence_span_id TEXT,
-    extractor_name   TEXT,
-    extractor_version TEXT,
-    pattern_id       TEXT,
-    normalizer_version TEXT,
-    score            REAL DEFAULT 0.0,
-    accepted         INTEGER DEFAULT 0,
-    rejection_reason TEXT,
-    pipeline_run_id  TEXT NOT NULL,
-    FOREIGN KEY(clause_id)       REFERENCES policy_clauses(clause_id),
+    id                    TEXT PRIMARY KEY,  -- global UID: "{document_id}:{source_candidate_id}"
+    source_candidate_id   TEXT NOT NULL,     -- DSE-007 candidate_id e.g. "free_look_period_0000"
+    clause_id             TEXT NOT NULL,     -- global UID (FK to policy_clauses)
+    source_clause_id      TEXT NOT NULL,     -- source-local clause ID from DSE-007
+    document_id           TEXT NOT NULL,
+    concept               TEXT NOT NULL,
+    candidate_value_json  TEXT,
+    normalized_value_json TEXT,
+    fact_status           TEXT NOT NULL DEFAULT 'present',
+    scope_json            TEXT,
+    condition_json        TEXT,
+    evidence_span_id      TEXT,             -- real span ID (FK) or NULL for rejected candidates
+    evidence_text         TEXT,
+    evidence_page         INTEGER,
+    extractor_name        TEXT NOT NULL,
+    extractor_version     TEXT,
+    pattern_id            TEXT,
+    confidence            REAL NOT NULL DEFAULT 0.0,  -- extractor-assigned
+    score                 REAL DEFAULT 0.0,           -- composite score (DSE-011 computed)
+    accepted              INTEGER NOT NULL DEFAULT 0,
+    rejection_reason      TEXT,
+    pipeline_run_id       TEXT NOT NULL,
+    FOREIGN KEY(clause_id)        REFERENCES policy_clauses(clause_id),
+    FOREIGN KEY(document_id)      REFERENCES source_documents(document_id),
     FOREIGN KEY(evidence_span_id) REFERENCES source_spans(span_id),
-    FOREIGN KEY(pipeline_run_id) REFERENCES pipeline_runs(id)
+    FOREIGN KEY(pipeline_run_id)  REFERENCES pipeline_runs(id)
 );
+CREATE INDEX IF NOT EXISTS idx_candidates_doc_concept
+    ON extracted_fact_candidates(document_id, concept);
+CREATE INDEX IF NOT EXISTS idx_candidates_accepted
+    ON extracted_fact_candidates(accepted, concept);
 
 CREATE TABLE IF NOT EXISTS extracted_facts (
-    id                    TEXT PRIMARY KEY,
-    clause_id             TEXT NOT NULL,
+    id                    TEXT PRIMARY KEY,  -- global UID: "{document_id}:{source_candidate_id}"
+    source_candidate_id   TEXT NOT NULL,     -- links back to the winning candidate
+    clause_id             TEXT NOT NULL,     -- global UID (FK)
+    source_clause_id      TEXT NOT NULL,     -- source-local clause ID
     document_id           TEXT NOT NULL,
     concept               TEXT NOT NULL,
     value_json            TEXT,
@@ -326,26 +343,37 @@ CREATE TABLE IF NOT EXISTS extracted_facts (
     condition_json        TEXT,
     extraction_method     TEXT,
     confidence            REAL DEFAULT 0.0,
-    evidence_span_id      TEXT,
+    evidence_span_id      TEXT,             -- real span ID (FK)
     pipeline_run_id       TEXT NOT NULL,
-    fact_status           TEXT NOT NULL DEFAULT 'not_found',
+    fact_status           TEXT NOT NULL DEFAULT 'present'
+        CHECK(fact_status IN ('present', 'explicitly_not_covered')),
     validated             INTEGER DEFAULT 0,
     validator             TEXT,
     FOREIGN KEY(clause_id)        REFERENCES policy_clauses(clause_id),
+    FOREIGN KEY(document_id)      REFERENCES source_documents(document_id),
     FOREIGN KEY(evidence_span_id) REFERENCES source_spans(span_id),
     FOREIGN KEY(pipeline_run_id)  REFERENCES pipeline_runs(id)
 );
+CREATE UNIQUE INDEX IF NOT EXISTS idx_facts_doc_concept
+    ON extracted_facts(document_id, concept);
 
 CREATE TABLE IF NOT EXISTS fact_conflicts (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    document_id   TEXT NOT NULL,
+    concept       TEXT NOT NULL,
     fact_a_id     TEXT NOT NULL,
     fact_b_id     TEXT NOT NULL,
-    conflict_type TEXT,
-    resolution    TEXT DEFAULT 'unresolved',
+    conflict_type TEXT NOT NULL
+        CHECK(conflict_type IN ('value_disagreement', 'status_disagreement', 'scope_disagreement')),
+    resolution    TEXT NOT NULL DEFAULT 'unresolved'
+        CHECK(resolution IN ('unresolved', 'higher_score_wins', 'manual_review_required', 'merged')),
     resolved_by   TEXT,
     resolution_notes TEXT,
-    FOREIGN KEY(fact_a_id) REFERENCES extracted_facts(id),
-    FOREIGN KEY(fact_b_id) REFERENCES extracted_facts(id)
+    pipeline_run_id TEXT NOT NULL,
+    FOREIGN KEY(document_id)    REFERENCES source_documents(document_id),
+    FOREIGN KEY(fact_a_id)      REFERENCES extracted_fact_candidates(id),
+    FOREIGN KEY(fact_b_id)      REFERENCES extracted_fact_candidates(id),
+    FOREIGN KEY(pipeline_run_id) REFERENCES pipeline_runs(id)
 );
 
 CREATE TABLE IF NOT EXISTS validation_labels (

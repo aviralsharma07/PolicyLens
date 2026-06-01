@@ -1,0 +1,91 @@
+{
+  "pipeline_run_id": "dse011_v1_1780283968",
+  "date": "2026-06-01",
+  "policies_processed": 5,
+  "policies_ok": 5,
+  "fk_violations": 0,
+  "table_row_counts": {
+    "derived_policy_features": 0,
+    "document_blocks": 66,
+    "document_issues": 242,
+    "document_lines": 12715,
+    "document_pages": 218,
+    "document_sections": 1156,
+    "document_table_cells": 4298,
+    "document_tables": 197,
+    "document_text_spans": 0,
+    "extracted_fact_candidates": 76,
+    "extracted_facts": 23,
+    "fact_conflicts": 0,
+    "pipeline_runs": 2,
+    "policy_clauses": 2522,
+    "product_versions": 5,
+    "products": 5,
+    "source_documents": 5,
+    "source_spans": 6136,
+    "sqlite_sequence": 1,
+    "validation_labels": 0
+  },
+  "policy_results": [
+    {
+      "slug": "care_health_care_plus",
+      "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "status": "ok",
+      "json_candidates": 16,
+      "db_candidates": 16,
+      "candidate_parity": true,
+      "json_present_facts": 5,
+      "db_facts": 5,
+      "fact_parity": true,
+      "conflicts_detected": 0
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "document_id": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "status": "ok",
+      "json_candidates": 20,
+      "db_candidates": 20,
+      "candidate_parity": true,
+      "json_present_facts": 5,
+      "db_facts": 5,
+      "fact_parity": true,
+      "conflicts_detected": 0
+    },
+    {
+      "slug": "icici_family_shield",
+      "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "status": "ok",
+      "json_candidates": 17,
+      "db_candidates": 17,
+      "candidate_parity": true,
+      "json_present_facts": 4,
+      "db_facts": 4,
+      "fact_parity": true,
+      "conflicts_detected": 0
+    },
+    {
+      "slug": "new_india_floater",
+      "document_id": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "status": "ok",
+      "json_candidates": 10,
+      "db_candidates": 10,
+      "candidate_parity": true,
+      "json_present_facts": 4,
+      "db_facts": 4,
+      "fact_parity": true,
+      "conflicts_detected": 0
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "status": "ok",
+      "json_candidates": 13,
+      "db_candidates": 13,
+      "candidate_parity": true,
+      "json_present_facts": 5,
+      "db_facts": 5,
+      "fact_parity": true,
+      "conflicts_detected": 0
+    }
+  ]
+}

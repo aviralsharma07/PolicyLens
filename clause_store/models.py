@@ -181,3 +181,71 @@ class DocumentIssue:
     document_id: Optional[str] = None
     page_number: Optional[int] = None
     raw_context: Optional[str] = None
+
+
+# ---------------------------------------------------------------------------
+# DSE-011: Fact candidates, extracted facts, conflicts
+# ---------------------------------------------------------------------------
+
+
+@dataclass
+class ExtractedFactCandidate:
+    id: str  # global UID: "{document_id}:{source_candidate_id}"
+    source_candidate_id: str  # DSE-007 candidate_id
+    clause_id: str  # global UID (FK)
+    source_clause_id: str  # source-local clause ID
+    document_id: str
+    concept: str
+    extractor_name: str
+    pipeline_run_id: str
+    confidence: float = 0.0  # extractor-assigned
+    score: float = 0.0  # composite score
+    accepted: bool = False
+    candidate_value_json: Optional[str] = None
+    normalized_value_json: Optional[str] = None
+    fact_status: str = "present"
+    scope_json: Optional[str] = None
+    condition_json: Optional[str] = None
+    evidence_span_id: Optional[str] = None
+    evidence_text: Optional[str] = None
+    evidence_page: Optional[int] = None
+    extractor_version: Optional[str] = None
+    pattern_id: Optional[str] = None
+    rejection_reason: Optional[str] = None
+
+
+@dataclass
+class ExtractedFact:
+    id: str  # global UID: "{document_id}:{source_candidate_id}"
+    source_candidate_id: str
+    clause_id: str  # global UID (FK)
+    source_clause_id: str
+    document_id: str
+    concept: str
+    extraction_method: str
+    pipeline_run_id: str
+    fact_status: str = "present"  # only present | explicitly_not_covered
+    confidence: float = 0.0
+    value_json: Optional[str] = None
+    normalized_value_json: Optional[str] = None
+    value_type: Optional[str] = None
+    scope_json: Optional[str] = None
+    condition_json: Optional[str] = None
+    evidence_span_id: Optional[str] = None
+    validated: bool = False
+    validator: Optional[str] = None
+
+
+@dataclass
+class FactConflict:
+    document_id: str
+    concept: str
+    fact_a_id: str  # FK to extracted_fact_candidates
+    fact_b_id: str  # FK to extracted_fact_candidates
+    conflict_type: str  # value_disagreement | status_disagreement | scope_disagreement
+    pipeline_run_id: str
+    resolution: str = (
+        "unresolved"  # unresolved | higher_score_wins | manual_review_required | merged
+    )
+    resolved_by: Optional[str] = None
+    resolution_notes: Optional[str] = None

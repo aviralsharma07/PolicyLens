@@ -954,6 +954,91 @@ active (DSE-010 v2 PASS on 2026-05-31)
 
 ---
 
+## Eval: Fact Candidate Scoring + Conflict Resolution (DSE-011)
+
+### Purpose
+Ensures the fact candidate/fact persistence layer is correct, every persisted fact matches gold annotations, scoring and conflict infrastructure works, and no cross-document fact links exist.
+
+### Hard Gates
+- `policies_evaluated == 5`
+- `candidate_persistence_parity == 100%` (per-document: JSON candidates == SQLite candidates)
+- `fact_persistence_parity == 100%` (per-document: resolved present facts == SQLite extracted_facts)
+- `FK violations == 0`
+- `fact_status_accuracy >= 95%` (status matches gold for 5 concepts × 5 policies)
+- `normalized_value_accuracy >= 95%` (present fact values match gold)
+- `evidence_accuracy >= 95%` (every present fact has valid evidence_span_id)
+- `false_present_count == 0`
+- `conflicts resolved or zero`
+- `no cross-document fact links`
+- `accepted_candidate_min_score >= 0.85` (every accepted candidate's composite score meets threshold)
+
+### Commands
+
+```bash
+# Step 1: Rebuild DB with DSE-010 data
+rm -f data/engine.sqlite
+PYTHONPATH=. python scripts/run_clause_store.py \
+  --gold-corpus gold_corpus \
+  --physical-root data/interim/physical \
+  --logical-root data/interim/logical \
+  --tables-root data/interim/tables \
+  --facts-root data/interim/facts \
+  --output-db data/engine.sqlite \
+  --output-facts-resolved data/interim/facts_resolved
+
+# Step 2: Ingest fact candidates and extracted facts (DSE-011)
+PYTHONPATH=. python scripts/run_fact_scoring.py \
+  --gold-corpus gold_corpus \
+  --candidates-root data/interim/facts \
+  --resolved-root data/interim/facts_resolved \
+  --db data/engine.sqlite
+
+# Step 3: Eval against gold
+PYTHONPATH=. python scripts/eval_fact_scoring.py \
+  --db data/engine.sqlite \
+  --candidates-root data/interim/facts \
+  --resolved-root data/interim/facts_resolved \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-06-01-fact-scoring-dse011-v2.json
+
+# Step 4: Unit tests
+PYTHONPATH=. python -m pytest tests/test_fact_scoring.py -v -m "not slow"
+```
+
+### DSE-011 v2 Result
+
+v1 eval (`2026-06-01-fact-scoring-dse011-v1.json`) lacked the `accepted_candidate_min_score` gate. v2 is the final passing artifact.
+
+```json
+{
+  "eval_name": "fact-scoring-dse011-v2",
+  "passed": true,
+  "hard_gates": {
+    "policies_evaluated": 5,
+    "candidate_persistence_parity": true,
+    "fact_persistence_parity": true,
+    "fk_violations": 0,
+    "fact_status_accuracy": 1.0,
+    "normalized_value_accuracy": 1.0,
+    "evidence_accuracy": 1.0,
+    "false_present_count": 0,
+    "conflicts_total": 0,
+    "conflicts_unresolved": 0,
+    "cross_document_fact_links": 0,
+    "accepted_candidate_min_score": 0.9800
+  },
+  "metrics": {
+    "total_db_candidates": 76,
+    "total_db_facts": 23
+  }
+}
+```
+
+### Current Status
+active (DSE-011 v2 PASS on 2026-06-01)
+
+---
+
 ## Summary of Hard Gates
 
 | Layer | Gate | Blocks |
@@ -964,6 +1049,7 @@ active (DSE-010 v2 PASS on 2026-05-31)
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
 | Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
 | Clause Store + Source Spans | 5/5 policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 30MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-010 v2 PASS) |
+| Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding to 15+ extractors | active (DSE-011 v2 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |

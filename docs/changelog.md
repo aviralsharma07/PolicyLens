@@ -1,5 +1,41 @@
 # Changelog
 
+## 2026-06-01 (DSE-011 — Fact Candidate Scoring + Conflict Resolution)
+
+### Added
+- `extractors/scoring.py` — composite scoring: confidence (0.50) + evidence quality (0.30) + pattern specificity (0.15) + source priority (0.05). ADR-0025.
+- `extractors/conflict_detector.py` — detects value/status/scope disagreements among accepted candidates for same (document, concept). Resolves via higher_score_wins or manual_review. ADR-0026.
+- `scripts/run_fact_scoring.py` — batch ingest: scores 76 candidates, inserts into `extracted_fact_candidates` (76 rows) and `extracted_facts` (23 rows), runs conflict detection (0 conflicts for v1).
+- `scripts/eval_fact_scoring.py` — 12 hard gates: parity, FK, precision, status/value/evidence accuracy, false-present, conflict resolution, cross-doc links, accepted candidate min score.
+- `tests/test_fact_scoring.py` — 48 unit tests covering scoring, conflict detection (synthetic conflicts), persistence, gold comparison, end-to-end pipeline flow, and accepted-candidate threshold validation.
+- `data/reports/dse011_fact_scoring_summary.json` — committed build summary.
+- `runs/evals/2026-06-01-fact-scoring-dse011-v1.json` — initial eval artifact (pre-min-score gate).
+- `runs/evals/2026-06-01-fact-scoring-dse011-v2.json` — final passing eval artifact (includes accepted_candidate_min_score gate).
+- ADR-0023 through ADR-0026 documenting schema refinement, fact storage policy, scoring formula, conflict detection.
+
+### Changed
+- `clause_store/schema.sql` — refined deferred DDL for `extracted_fact_candidates` (expanded from 14 to 22 columns), `extracted_facts` (added source_candidate_id, source_clause_id, CHECK constraint on fact_status), `fact_conflicts` (added document_id, concept, pipeline_run_id, CHECK constraints on conflict_type and resolution). Added indexes.
+- `clause_store/models.py` — added ExtractedFactCandidate, ExtractedFact, FactConflict dataclasses.
+- `clause_store/repository.py` — added insert_fact_candidates(), insert_extracted_facts(), insert_fact_conflicts(), query_facts_for_document(), query_candidates_for_document(), query_conflicts_for_document(), count_facts_by_concept().
+
+### Results
+- 76 candidates persisted (parity: 100% per-document)
+- 23 extracted facts persisted (parity: 100% per-document)
+- Fact status accuracy: 100% (25/25 concept-policy pairs match gold)
+- Normalized value accuracy: 100% (23/23 present facts match gold)
+- Evidence accuracy: 100% (23/23 evidence_span_ids point to valid source_spans)
+- False present: 0
+- Conflicts: 0 (expected — single extractor per concept)
+- FK violations: 0
+- Cross-document fact links: 0
+
+### Known Issues
+- 0 production conflicts (proven via synthetic tests only — 1 extractor per concept)
+- Only 5 of 20 gold concepts evaluated; remaining 15 need new extractors (future task)
+- Composite score weights (0.50/0.30/0.15/0.05) are reasonable defaults, not empirically tuned
+
+---
+
 ## 2026-05-31 (DSE-010 — SQLite identity remediation)
 
 ### Added

@@ -549,3 +549,77 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: DSE-010 consumers must distinguish DB UIDs from source-local IDs.
 
 **Revisit when:** A future schema migration introduces composite keys throughout the local engine store.
+
+---
+
+## 2026-06-01 — Refine deferred DDL for fact tables (ADR-0023)
+
+**Status:** accepted
+
+**Decision:** DSE-011 expands the IMPLEMENTATION_PLAN.md placeholder DDL for `extracted_fact_candidates` (14 → 22 columns), `extracted_facts` (added source_candidate_id, source_clause_id, CHECK on fact_status), and `fact_conflicts` (added document_id, concept, pipeline_run_id, CHECK constraints). These tables were empty (never populated), so no migration is needed.
+
+**Context:** DSE-007 fact candidates carry 21 fields; the v1 DDL only had 14 columns, missing fields needed for scoring, evidence tracking, and gold evaluation.
+
+**Reasoning:** DSE-011 is the first consumer of these tables. Refining the DDL now (while tables are empty) is zero-risk and avoids lossy data insertion.
+
+**Consequences:**
+- Positive: Full candidate data persisted for debugging and eval.
+- Positive: CHECK constraints enforce valid fact_status and conflict_type values.
+
+**Revisit when:** DSE-012+ adds new fact statuses or conflict types.
+
+---
+
+## 2026-06-01 — extracted_facts stores only present/explicitly_not_covered facts (ADR-0024)
+
+**Status:** accepted
+
+**Decision:** `extracted_facts` stores only facts with affirmative evidence (fact_status IN ('present', 'explicitly_not_covered')). `not_found` status is derived at query time: if a concept has no row in `extracted_facts` for a document, it's not_found.
+
+**Context:** `extracted_facts.clause_id` is NOT NULL, but not_found facts have no clause reference.
+
+**Reasoning:** Architecturally cleaner — the table stores findings with provenance, not absences. The concept list is known (TARGET_CONCEPTS), so deriving not_found is trivial.
+
+**Consequences:**
+- Positive: No dummy clause references for not_found facts.
+- Positive: UNIQUE INDEX on (document_id, concept) guarantees one fact per concept per document.
+- Negative: Consumers must derive not_found by checking absence.
+
+**Revisit when:** A consumer needs to store explicit not_found records with metadata (e.g., "searched 554 clauses, none matched").
+
+---
+
+## 2026-06-01 — Composite scoring formula (ADR-0025)
+
+**Status:** accepted
+
+**Decision:** composite_score = 0.50 × confidence + 0.30 × evidence_quality + 0.15 × pattern_specificity + 0.05 × source_priority. Acceptance threshold: 0.85.
+
+**Context:** DSE-007 extractors assign confidence per candidate. DSE-011 needs a multi-dimensional score for ranking and future multi-extractor conflict resolution.
+
+**Reasoning:** Confidence alone is insufficient when multiple extractors with different calibration produce candidates for the same concept. Adding evidence quality and pattern specificity prevents high-confidence garbage from winning over low-confidence quality.
+
+**Consequences:**
+- Positive: Extensible — future dimensions (LLM confidence, cross-reference, etc.) can be added.
+- Negative: Weights are not empirically tuned (no training data for weight optimization).
+
+**Revisit when:** DSE-012+ has 20 concepts with diverse extractor patterns and enough data to tune weights empirically.
+
+---
+
+## 2026-06-01 — Conflict detection logic (ADR-0026)
+
+**Status:** accepted
+
+**Decision:** A conflict is two or more accepted candidates for the same (document, concept) with different normalized values, different statuses, or different scopes. Resolution strategies: higher_score_wins, manual_review_required, merged.
+
+**Context:** Current pipeline has 1 extractor per concept → 0 conflicts. But the infrastructure must be proven correct for future multi-extractor scenarios.
+
+**Reasoning:** Building the conflict machinery now (with synthetic test coverage) means future extractors plug in safely. The conflict_detector finds disagreements; the resolver applies a strategy; both are tested with synthetic conflicting candidates.
+
+**Consequences:**
+- Positive: Infrastructure ready for 15+ extractors.
+- Positive: Proven correct via 10 synthetic conflict tests.
+- Negative: 0 production conflicts — the machinery is exercised only in tests until DSE-012+.
+
+**Revisit when:** Adding a second extractor for any concept (e.g., LLM + deterministic for room_rent).

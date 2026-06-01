@@ -1,0 +1,297 @@
+{
+  "eval_name": "fact-scoring-dse011-v2",
+  "date": "2026-06-01",
+  "task_id": "DSE-011",
+  "git_commit": "a07924ad480ad13a7cc2ad34697bb3aca34b766e",
+  "hard_gates": {
+    "policies_evaluated": 5,
+    "candidate_persistence_parity": true,
+    "fact_persistence_parity": true,
+    "fk_violations": 0,
+    "fact_status_accuracy": 1.0,
+    "normalized_value_accuracy": 1.0,
+    "evidence_accuracy": 1.0,
+    "false_present_count": 0,
+    "conflicts_total": 0,
+    "conflicts_unresolved": 0,
+    "cross_document_fact_links": 0,
+    "accepted_candidate_min_score": 0.98
+  },
+  "metrics": {
+    "total_db_candidates": 76,
+    "total_db_facts": 23,
+    "total_concept_policy_pairs": 25,
+    "status_correct": 25,
+    "value_correct": 23,
+    "evidence_valid": 23,
+    "false_not_found": 0,
+    "candidate_parity": [
+      {
+        "slug": "care_health_care_plus",
+        "json": 16,
+        "db": 16,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json": 20,
+        "db": 20,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json": 17,
+        "db": 17,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json": 13,
+        "db": 13,
+        "ok": true
+      }
+    ],
+    "fact_parity": [
+      {
+        "slug": "care_health_care_plus",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      }
+    ]
+  },
+  "gold_comparison": [
+    {
+      "slug": "care_health_care_plus",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "icici_family_shield",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "new_india_floater",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "failures": []
+}
