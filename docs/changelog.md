@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-06-01 (DSE-013 — Derived Export, 20-Concept Skeleton)
+
+### Added
+- `derived/__init__.py`, `derived/field_mapping.py` — 20-concept → export field mapping with scalar/compound value extraction.
+- `derived/export_builder.py` — builds policy_features.json (20-concept view with evidence provenance), policy_fact_sources.json (full candidate provenance), policy_clauses_minimal.json (lightweight clause context).
+- `derived/schema_validator.py` — validates exported JSON against export_contract.md shape.
+- `scripts/run_export.py` — batch CLI: reads from SQLite, writes 3 JSON files per policy to data/export/{policy_id}/, persists to derived_policy_features table.
+- `scripts/eval_export.py` — 14 hard gates: schema completeness, evidence integrity (including evidence_clause), cross-file page consistency, gold value/status comparison, false-present detection.
+- `tests/test_export.py` — 41 unit tests covering field mapping, export builder (including evidence_clause fallback), fact sources, clauses minimal, schema validator, cross-file page consistency, end-to-end.
+- `data/reports/dse013_export_summary.json` — committed build summary.
+- `runs/evals/2026-06-01-export-dse013-v1.json` — initial eval artifact (pre-evidence_clause and cross-file gates).
+- `runs/evals/2026-06-01-export-dse013-v2.json` — final passing eval artifact (14 gates).
+- ADR-0027 through ADR-0029 documenting export design decisions.
+
+### Results
+- 5/5 policies exported with 20 concepts each (100 feature entries total).
+- Fill rate: 25% (5/20 concepts have extractors; 15 are not_found — correct and expected).
+- Schema validation: 0 errors across 5 exports.
+- Gold status accuracy (5 concepts): 100% (25/25).
+- Gold value accuracy (5 concepts): 100% (23/23).
+- Evidence integrity: 23/23 source_span_ids exist in SQLite.
+- False present: 0.
+- derived_policy_features table: 5 rows populated.
+
+### Known Issues
+- 15/20 concepts are not_found (no extractors yet).
+- evidence_clause shows source-local clause number (e.g., "4.1") not a stable ID.
+- policy_clauses_minimal truncates clause text to 500 chars.
+
+---
+
 ## 2026-06-01 (DSE-011 — Fact Candidate Scoring + Conflict Resolution)
 
 ### Added

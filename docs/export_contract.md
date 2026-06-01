@@ -3,8 +3,8 @@
 ## Contract Version
 
 **Version:** 1.0
-**Last updated:** 2026-05-29
-**Status:** draft
+**Last updated:** 2026-06-01
+**Status:** active (DSE-013 implemented)
 
 ---
 
@@ -29,11 +29,11 @@
 
 ```
 data/export/{policy_id}/
-  policy_features.json         # 91-field derived view
+  policy_features.json         # 20-concept derived view (expandable to full Product B schema)
   policy_fact_sources.json     # Evidence mapping for every field
   policy_clauses_minimal.json  # Clauses for context (lighter, no spans)
 
-data/export/batch_{run_id}.json  # All policies from a pipeline run
+data/export/batch_{run_id}.json  # Deferred — not produced by DSE-013 v1. Per-policy files are the primary export.
 ```
 
 ---
@@ -283,3 +283,4 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
 | Version | Changes | Date | Status |
 |---------|---------|------|--------|
 | 1.0 | Initial contract | 2026-05-29 | Current |
+| 1.0 | DSE-013 implements 20-concept export skeleton | 2026-06-01 | Active — 5/20 concepts populated |

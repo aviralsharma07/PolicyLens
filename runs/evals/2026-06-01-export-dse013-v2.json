@@ -1,0 +1,194 @@
+{
+  "eval_name": "export-dse013-v2",
+  "date": "2026-06-01",
+  "task_id": "DSE-013",
+  "git_commit": "111d7cb82be10a4d658ab68c18c383f89bc0edb1",
+  "hard_gates": {
+    "policies_exported": 5,
+    "concepts_missing_fields": 0,
+    "schema_validation_errors": 0,
+    "present_missing_evidence": 0,
+    "not_found_with_value": 0,
+    "invalid_fact_status_count": 0,
+    "span_ids_missing_from_db": 0,
+    "gold_value_accuracy": 1.0,
+    "gold_status_accuracy": 1.0,
+    "false_present": 0,
+    "schema_version_ok": true,
+    "derived_policy_features_count": 5,
+    "present_missing_evidence_clause": 0,
+    "cross_file_page_disagreement": 0
+  },
+  "metrics": {
+    "span_ids_checked": 23,
+    "gold_status_total": 25,
+    "gold_status_correct": 25,
+    "gold_value_total": 23,
+    "gold_value_correct": 23
+  },
+  "gold_value_details": [
+    {
+      "slug": "care_health_care_plus",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "co_pay",
+      "gold_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "export_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    }
+  ],
+  "passed": true,
+  "failures": []
+}

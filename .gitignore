@@ -1,6 +1,7 @@
 # Loose generated data outputs
 data/*.json
 data/interim/
+data/export/
 data/processed/
 data/reports/
 data/tmp/
