@@ -1,0 +1,22 @@
+[
+  {
+    "label_id": "niva_bupa_health_recharge_heading_0009",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "2. Definitions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_16",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "niva_bupa_health_recharge_heading_1578",
+    "source_section_id": null,
+    "page": 29,
+    "expected_text": "X. Multiple Policies",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p29l_48",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

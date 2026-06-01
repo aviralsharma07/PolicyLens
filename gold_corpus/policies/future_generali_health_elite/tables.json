@@ -1,0 +1,952 @@
+[
+  {
+    "table_id": "future_generali_health_elite_p13_t1",
+    "page": 13,
+    "bbox": [
+      55.199998875000006,
+      141.71999525,
+      551.8799973750001,
+      186.899999375
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p13_t2",
+    "page": 13,
+    "bbox": [
+      34.64249968359377,
+      297.959994875,
+      525.0,
+      444.59998662499993
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p13_t3",
+    "page": 13,
+    "bbox": [
+      34.64249968359377,
+      461.879993375,
+      351.83999625,
+      506.2799795
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p13_t4",
+    "page": 13,
+    "bbox": [
+      34.64249968359377,
+      523.56000875,
+      543.7578976381579,
+      604.56000875
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p13_t5",
+    "page": 13,
+    "bbox": [
+      34.64249968359377,
+      613.4399832500001,
+      543.7578976381579,
+      691.9199941249999
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p13_t6",
+    "page": 13,
+    "bbox": [
+      34.64249968359377,
+      709.2000005,
+      543.7578976381579,
+      745.3200031249999
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p14_t1",
+    "page": 14,
+    "bbox": [
+      34.679999625,
+      66.119995625,
+      543.0,
+      102.239995625
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p14_t2",
+    "page": 14,
+    "bbox": [
+      34.679999625,
+      111.11999300000002,
+      555.9599992499999,
+      190.67999450000002
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p14_t3",
+    "page": 14,
+    "bbox": [
+      75.959998875,
+      384.1799885,
+      475.9199981250001,
+      437.51998512499995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p19_t1",
+    "page": 19,
+    "bbox": [
+      120.36000262499999,
+      510.599986625,
+      365.640003,
+      563.4000053750001
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      19
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p19_t2",
+    "page": 19,
+    "bbox": [
+      79.4399985,
+      623.03999675,
+      555.3599853750002,
+      710.8799933750001
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      19
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p20_t1",
+    "page": 20,
+    "bbox": [
+      79.4399985,
+      66.119995625,
+      586.2000044999999,
+      172.799997125
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      20
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p24_t1",
+    "page": 24,
+    "bbox": [
+      34.800000000000026,
+      81.7499975,
+      568.733330341667,
+      90.47999725
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p24_t2",
+    "page": 24,
+    "bbox": [
+      34.800000000000026,
+      108.071999,
+      568.733330341667,
+      744.2933359166667
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p24_t3",
+    "page": 24,
+    "bbox": [
+      66.84000225,
+      639.8999935625001,
+      160.2000045,
+      656.8800162499999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p25_t1",
+    "page": 25,
+    "bbox": [
+      34.78372876271188,
+      66.407995325,
+      568.7555542500003,
+      258.09333133333337
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p25_t2",
+    "page": 25,
+    "bbox": [
+      34.78372876271188,
+      269.83999225,
+      562.875,
+      614.759990375
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p25_t3",
+    "page": 25,
+    "bbox": [
+      114.4581870681818,
+      386.66999440624994,
+      510.69334925,
+      433.2000005
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p25_t4",
+    "page": 25,
+    "bbox": [
+      152.65263311842102,
+      494.640010625,
+      334.979999625,
+      541.859981375
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p25_t5",
+    "page": 25,
+    "bbox": [
+      152.65263311842102,
+      627.56000875,
+      439.2933398333334,
+      662.999996
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p31_t1",
+    "page": 31,
+    "bbox": [
+      111.48000524999976,
+      125.03999112500003,
+      498.3599853750008,
+      737.8799933750001
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      31
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p32_t1",
+    "page": 32,
+    "bbox": [
+      81.95999887500007,
+      70.3199975,
+      514.2000044999999,
+      407.999996
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p33_t1",
+    "page": 33,
+    "bbox": [
+      99.23999962500005,
+      70.3199975,
+      502.56001275000017,
+      283.5599975
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p33_t2",
+    "page": 33,
+    "bbox": [
+      90.11999962499999,
+      309.240001625,
+      507.83999624999984,
+      478.079997875
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t1",
+    "page": 34,
+    "bbox": [
+      190.9854563181818,
+      114.079999,
+      441.7599945,
+      131.31999949999994
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t2",
+    "page": 34,
+    "bbox": [
+      37.65176433088236,
+      167.15999412500003,
+      560.1317812058822,
+      211.079997875
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t3",
+    "page": 34,
+    "bbox": [
+      37.65176433088236,
+      248.39999375000002,
+      560.1317812058822,
+      311.15999975
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t4",
+    "page": 34,
+    "bbox": [
+      37.65176433088236,
+      348.47999525,
+      560.1317812058822,
+      431.879993375
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t5",
+    "page": 34,
+    "bbox": [
+      143.59999475000004,
+      463.2800025625,
+      397.88999175000004,
+      480.51998474999976
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p34_t6",
+    "page": 34,
+    "bbox": [
+      37.65176433088236,
+      515.15999975,
+      560.1317812058822,
+      620.15999975
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p35_t1",
+    "page": 35,
+    "bbox": [
+      36.239999624999996,
+      91.43999450000001,
+      558.7200164999998,
+      279.119998625
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      35
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p36_t1",
+    "page": 36,
+    "bbox": [
+      27.890525486842105,
+      242.039997125,
+      554.099991,
+      320.999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      36
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p36_t2",
+    "page": 36,
+    "bbox": [
+      27.890525486842105,
+      409.919994125,
+      568.2000045,
+      458.57999787499995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      36
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p36_t3",
+    "page": 36,
+    "bbox": [
+      27.890525486842105,
+      606.83999225,
+      572.6400146249999,
+      752.1599997500001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      36
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p37_t1",
+    "page": 37,
+    "bbox": [
+      27.839999250000005,
+      62.27999675000001,
+      572.5199891250002,
+      689.6549910312501
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      37
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p38_t1",
+    "page": 38,
+    "bbox": [
+      149.0640015,
+      180.70153971153835,
+      348.7599945,
+      197.43999874999986
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      38
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p38_t2",
+    "page": 38,
+    "bbox": [
+      105.840001875,
+      488.519985125,
+      271.28000625,
+      500.0399967500001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      38
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "future_generali_health_elite_p38_t3",
+    "page": 38,
+    "bbox": [
+      400.400009,
+      598.4215230384617,
+      565.480011,
+      612.2799795000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      38
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

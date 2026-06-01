@@ -1,0 +1,1225 @@
+[
+  {
+    "section_id": "future_generali_health_elite_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 25,
+    "page_end": 38,
+    "source_page_refs": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0001",
+    "section_number": "0",
+    "title": "0 to 35 years",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 25,
+    "page_end": 27,
+    "source_page_refs": [
+      25,
+      26,
+      27
+    ],
+    "heading_text": "0 to 35 years",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0002",
+    "section_number": null,
+    "title": "II. ENT Related:",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "II. ENT Related:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0003",
+    "section_number": "51",
+    "title": "51. ERCP 120. URS + LL",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 27,
+    "page_end": 30,
+    "source_page_refs": [
+      27,
+      28,
+      29,
+      30
+    ],
+    "heading_text": "51. ERCP 120. URS + LL",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0004",
+    "section_number": "404",
+    "title": "404. Surgery For Fournier's Gangrene Scrotum",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "404. Surgery For Fournier's Gangrene Scrotum",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0005",
+    "section_number": "405",
+    "title": "405. Surgery Filarial Scrotum",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "405. Surgery Filarial Scrotum",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0006",
+    "section_number": "406",
+    "title": "406. Surgery For Watering Can Perineum",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "406. Surgery For Watering Can Perineum",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0007",
+    "section_number": "409",
+    "title": "409. Orchiectomy",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 30,
+    "page_end": 34,
+    "source_page_refs": [
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "heading_text": "409. Orchiectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0008",
+    "section_number": "3",
+    "title": "3. Mobile No",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "3. Mobile No",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0009",
+    "section_number": "4",
+    "title": "4. Permanent Account Number (PAN)",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "4. Permanent Account Number (PAN)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0010",
+    "section_number": "4",
+    "title": "4. Residential Address:",
+    "level": 1,
+    "parent_id": "future_generali_health_elite_root_0000",
+    "page_start": 34,
+    "page_end": 38,
+    "source_page_refs": [
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "heading_text": "4. Residential Address:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0011",
+    "section_number": "66",
+    "title": "66. Surgical Treatment Of Anal Fistulas",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "66. Surgical Treatment Of Anal Fistulas",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0012",
+    "section_number": "2",
+    "title": "2. Myringotomy With Grommet Insertion 67. Division Of The Anal Sphincter (sphincterotomy)",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "2. Myringotomy With Grommet Insertion 67. Division Of The Anal Sphincter (sphincterotomy)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0013",
+    "section_number": "3",
+    "title": "3. Tympanoplasty (closure Of An Eardrum Perforation reconstruction Of 68. Epididymectomy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "3. Tympanoplasty (closure Of An Eardrum Perforation reconstruction Of 68. Epididymectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0014",
+    "section_number": "4",
+    "title": "4. Removal Of A Tympanic Drain 70. Operations On The Nipple",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "4. Removal Of A Tympanic Drain 70. Operations On The Nipple",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0015",
+    "section_number": "5",
+    "title": "5. Operations On The Turbinates (nasal Concha) 71. Excision Of Single Breast Lump",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "5. Operations On The Turbinates (nasal Concha) 71. Excision Of Single Breast Lump",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0016",
+    "section_number": "6",
+    "title": "6. Stapedotomy To Treat Various Lesions In Middle Ear 72. Incision And Excision Of Tissue In The Perianal Region",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "6. Stapedotomy To Treat Various Lesions In Middle Ear 72. Incision And Excision Of Tissue In The Perianal Region",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0017",
+    "section_number": "7",
+    "title": "7. Revision Of A Stapedectomy 73. Surgical Treatment Of Hemorrhoids",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "7. Revision Of A Stapedectomy 73. Surgical Treatment Of Hemorrhoids",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0018",
+    "section_number": "8",
+    "title": "8. Other Operations On The Auditory Ossicles 74. Sclerotherapy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "8. Other Operations On The Auditory Ossicles 74. Sclerotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0019",
+    "section_number": "9",
+    "title": "9. Myringoplasty (post-aura/endaural Approach As Well As Simple Type-I 75. Wound Debridement And Cover",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "9. Myringoplasty (post-aura/endaural Approach As Well As Simple Type-I 75. Wound Debridement And Cover",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0020",
+    "section_number": "10",
+    "title": "10. Fenestration Of The Inner Ear 77. Infected Sebaceous Cyst",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "10. Fenestration Of The Inner Ear 77. Infected Sebaceous Cyst",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0021",
+    "section_number": "11",
+    "title": "11. Revision Of A Fenestration Of The Inner Ear 78. Incision And Drainage Of Abscess",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "11. Revision Of A Fenestration Of The Inner Ear 78. Incision And Drainage Of Abscess",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0022",
+    "section_number": "12",
+    "title": "12. Palatoplasty 79. Suturing Of Lacerations",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "12. Palatoplasty 79. Suturing Of Lacerations",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0023",
+    "section_number": "13",
+    "title": "13. Transoral Incision And Drainage Of A Pharyngeal Abscess 80. Scalp Suturing",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "13. Transoral Incision And Drainage Of A Pharyngeal Abscess 80. Scalp Suturing",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0024",
+    "section_number": "14",
+    "title": "14. Tonsillectomy Without Adenoidectomy 81. Infected Lipoma Excision",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "14. Tonsillectomy Without Adenoidectomy 81. Infected Lipoma Excision",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0025",
+    "section_number": "15",
+    "title": "15. Tonsillectomy With Adenoidectomy 82. Maximal Anal Dilatation",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "15. Tonsillectomy With Adenoidectomy 82. Maximal Anal Dilatation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0026",
+    "section_number": "16",
+    "title": "16. Excision And Destruction Of A Lingual Tonsil 83. Piles Scleroptherapy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "16. Excision And Destruction Of A Lingual Tonsil 83. Piles Scleroptherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0027",
+    "section_number": "17",
+    "title": "17. Revision Of A Tympanoplasty 84. Liver Abscess- Catheter Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "17. Revision Of A Tympanoplasty 84. Liver Abscess- Catheter Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0028",
+    "section_number": "18",
+    "title": "18. Other Microsurgical Operations On The Middle Ear 85. Fissure In Ano- Fissurectomy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "18. Other Microsurgical Operations On The Middle Ear 85. Fissure In Ano- Fissurectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0029",
+    "section_number": "19",
+    "title": "19. Incision Of The Mastoid Process And Middle Ear 86. Fibroadenoma Breast Excision",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "19. Incision Of The Mastoid Process And Middle Ear 86. Fibroadenoma Breast Excision",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0030",
+    "section_number": "20",
+    "title": "20. Mastoidectomy 87. Oesophageal Varices Sclerotherapy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "20. Mastoidectomy 87. Oesophageal Varices Sclerotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0031",
+    "section_number": "21",
+    "title": "21. Reconstruction Of The Middle Ear 88. ERCP - Pancreatic Duct Stone Removal",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "21. Reconstruction Of The Middle Ear 88. ERCP - Pancreatic Duct Stone Removal",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0032",
+    "section_number": "22",
+    "title": "22. Other Excisions Of The Middle And Inner Ear 89. Perianal Abscess I & D",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "22. Other Excisions Of The Middle And Inner Ear 89. Perianal Abscess I & D",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0033",
+    "section_number": "23",
+    "title": "23. Other Operations On The Middle And Inner Ear 90. Perianal Hematoma Evacuation",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "23. Other Operations On The Middle And Inner Ear 90. Perianal Hematoma Evacuation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0034",
+    "section_number": "24",
+    "title": "24. Excision And Destruction Of Diseased Tissue Of The Nose 91. UGI Scopy And Polypectomy Oesophagus",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "24. Excision And Destruction Of Diseased Tissue Of The Nose 91. UGI Scopy And Polypectomy Oesophagus",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0035",
+    "section_number": "25",
+    "title": "25. Nasal Sinus Aspiration 92. Breast Abscess I & D",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "25. Nasal Sinus Aspiration 92. Breast Abscess I & D",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0036",
+    "section_number": "26",
+    "title": "26. Foreign Body Removal From Nose 93. Oesophagoscopy And Biopsy Of Growth Oesophagus",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "26. Foreign Body Removal From Nose 93. Oesophagoscopy And Biopsy Of Growth Oesophagus",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0037",
+    "section_number": "27",
+    "title": "27. Adenoidectomy 94. ERCP - Bile Duct Stone Removal",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "27. Adenoidectomy 94. ERCP - Bile Duct Stone Removal",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0038",
+    "section_number": "28",
+    "title": "28. Stapedectomy Under GA 95. Splenic Abscesses Laparoscopic Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "28. Stapedectomy Under GA 95. Splenic Abscesses Laparoscopic Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0039",
+    "section_number": "29",
+    "title": "29. Stapedectomy Under LA 96. UGI Scopy And Polypectomy Stomach",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "29. Stapedectomy Under LA 96. UGI Scopy And Polypectomy Stomach",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0040",
+    "section_number": "30",
+    "title": "30. Tympanoplasty (type IV) 97. Feeding Jejunostomy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "30. Tympanoplasty (type IV) 97. Feeding Jejunostomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0041",
+    "section_number": "31",
+    "title": "31. Turbinectomy 98. Varicose Veins Legs - Injection Sclerotherapy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "31. Turbinectomy 98. Varicose Veins Legs - Injection Sclerotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0042",
+    "section_number": "32",
+    "title": "32. Endoscopic Stapedectomy 99. Pancreatic Pseudocysts Endoscopic Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "32. Endoscopic Stapedectomy 99. Pancreatic Pseudocysts Endoscopic Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0043",
+    "section_number": "33",
+    "title": "33. Incision And Drainage Of Perichondritis 100. Zadek's Nail Bed Excision",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "33. Incision And Drainage Of Perichondritis 100. Zadek's Nail Bed Excision",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0044",
+    "section_number": "34",
+    "title": "34. Septoplasty 101. Rigid Oesophagoscopy For Dilation Of Benign Strictures",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "34. Septoplasty 101. Rigid Oesophagoscopy For Dilation Of Benign Strictures",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0045",
+    "section_number": "35",
+    "title": "35. Thyroplasty Type I 102. Lord's Plication",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "35. Thyroplasty Type I 102. Lord's Plication",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0046",
+    "section_number": "36",
+    "title": "36. Pseudocyst Of The Pinna - Excision 103. Jaboulay's Procedure",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "36. Pseudocyst Of The Pinna - Excision 103. Jaboulay's Procedure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0047",
+    "section_number": "37",
+    "title": "37. Incision And Drainage - Haematoma Auricle 104. Scrotoplasty",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "37. Incision And Drainage - Haematoma Auricle 104. Scrotoplasty",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0048",
+    "section_number": "38",
+    "title": "38. Reduction Of Fracture Of Nasal Bone 105. Circumcision For Trauma",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "38. Reduction Of Fracture Of Nasal Bone 105. Circumcision For Trauma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0049",
+    "section_number": "39",
+    "title": "39. Excision Of Angioma Septum 106. Meatoplasty",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "39. Excision Of Angioma Septum 106. Meatoplasty",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0050",
+    "section_number": "40",
+    "title": "40. Turbinoplasty 107. Intersphincteric Abscess Incision And Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "40. Turbinoplasty 107. Intersphincteric Abscess Incision And Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0051",
+    "section_number": "41",
+    "title": "41. Incision & Drainage Of Retro Pharyngeal Abscess 108. PSOAS Abscess Incision And Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "41. Incision & Drainage Of Retro Pharyngeal Abscess 108. PSOAS Abscess Incision And Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0052",
+    "section_number": "42",
+    "title": "42. Uvulo Palato Pharyngo Plasty 109. Thyroid Abscess Incision And Drainage",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "42. Uvulo Palato Pharyngo Plasty 109. Thyroid Abscess Incision And Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0053",
+    "section_number": "43",
+    "title": "43. Adenoidectomy With Grommet Insertion 110. Tips Procedure For Portal Hypertension",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "43. Adenoidectomy With Grommet Insertion 110. Tips Procedure For Portal Hypertension",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0054",
+    "section_number": "44",
+    "title": "44. Adenoidectomy Without Grommet Insertion 111. Esophageal Growth Stent",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "44. Adenoidectomy Without Grommet Insertion 111. Esophageal Growth Stent",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0055",
+    "section_number": "45",
+    "title": "45. Incision & Drainage Of Para Pharyngeal Abscess 112. Pair Procedure Of Hydatid Cyst Liver",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "45. Incision & Drainage Of Para Pharyngeal Abscess 112. Pair Procedure Of Hydatid Cyst Liver",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0056",
+    "section_number": "113",
+    "title": "113. Tru Cut Liver Biopsy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "113. Tru Cut Liver Biopsy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0057",
+    "section_number": "114",
+    "title": "114. Laparoscopic Reduction Of Intussusception",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "114. Laparoscopic Reduction Of Intussusception",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0058",
+    "section_number": "46",
+    "title": "46. Pancreatic Pseudocyst Eus & Drainage 115. Microdochectomy Breast",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "46. Pancreatic Pseudocyst Eus & Drainage 115. Microdochectomy Breast",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0059",
+    "section_number": "47",
+    "title": "47. RF Ablation For Barrett's Oesophagus 116. Sentinel Node Biopsy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "47. RF Ablation For Barrett's Oesophagus 116. Sentinel Node Biopsy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0060",
+    "section_number": "48",
+    "title": "48. EUS + Aspiration Pancreatic Cyst 117. Testicular Biopsy",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "48. EUS + Aspiration Pancreatic Cyst 117. Testicular Biopsy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0061",
+    "section_number": "49",
+    "title": "49. Small Bowel Endoscopy (therapeutic) 118. Sentinel Node Biopsy Malignant Melanoma",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "49. Small Bowel Endoscopy (therapeutic) 118. Sentinel Node Biopsy Malignant Melanoma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "future_generali_health_elite_sec_0062",
+    "section_number": "50",
+    "title": "50. Colonoscopy, Lesion Removal 119. TURBT",
+    "level": 2,
+    "parent_id": "future_generali_health_elite_sec_0002",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "50. Colonoscopy, Lesion Removal 119. TURBT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "label_id": "future_generali_health_elite_heading_1725",
+    "source_section_id": null,
+    "page": 25,
+    "expected_text": "0 to 35 years",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p25l_69",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_1781",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "II. ENT Related:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_12",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_1837",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "51. ERCP 120. URS + LL",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_66",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2025",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "404. Surgery For Fournier's Gangrene Scrotum",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_8",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2026",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "405. Surgery Filarial Scrotum",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_9",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2027",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "406. Surgery For Watering Can Perineum",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_10",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2030",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "409. Orchiectomy",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_13",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2211",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "3. Mobile No.",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_24",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2212",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "4. Permanent Account Number (PAN)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_25",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "future_generali_health_elite_heading_2225",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "4. Residential Address:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_42",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

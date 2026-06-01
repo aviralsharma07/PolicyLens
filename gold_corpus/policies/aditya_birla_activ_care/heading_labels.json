@@ -1,0 +1,802 @@
+[
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0000",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0000",
+    "page": 1,
+    "expected_text": "Section A. PREAMBLE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_4",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0001",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0001",
+    "page": 1,
+    "expected_text": "Key Notes:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_10",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0002",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0002",
+    "page": 1,
+    "expected_text": "Section B. BENEFITS UNDER THE POLICY",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_15",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0003",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0003",
+    "page": 1,
+    "expected_text": "Section I: Basic Covers:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_16",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0004",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0004",
+    "page": 1,
+    "expected_text": "(a) In-patient Hospitalization:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_25",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0005",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0005",
+    "page": 1,
+    "expected_text": "(b) Pre – hospitalization Medical Expenses:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_49",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0006",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0006",
+    "page": 1,
+    "expected_text": "(c) Post – hospitalization Medical Expenses:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_58",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0007",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0007",
+    "page": 2,
+    "expected_text": "(d) Day Care Treatment:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_2",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0008",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0008",
+    "page": 2,
+    "expected_text": "(e) Domiciliary Hospitalization:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_13",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0009",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0009",
+    "page": 2,
+    "expected_text": "(f) Road Ambulance Cover:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_36",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0010",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0010",
+    "page": 2,
+    "expected_text": "(g) Organ Donor Expenses:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_52",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0011",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0011",
+    "page": 2,
+    "expected_text": "(h) Reload of Sum Insured:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_70",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0012",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0012",
+    "page": 3,
+    "expected_text": "(i) Ayush (In-patient Hospitalization)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_24",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0013",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0013",
+    "page": 3,
+    "expected_text": "(i) The treatment has been undergone in any of the following:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_29",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0014",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0014",
+    "page": 3,
+    "expected_text": "(j) Sublimit for listed illnesses:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_48",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0015",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0015",
+    "page": 3,
+    "expected_text": "(k) Home Treatment:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_54",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0016",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0016",
+    "page": 3,
+    "expected_text": "What is covered:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_55",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0017",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0017",
+    "page": 4,
+    "expected_text": "Section II: Additional Benefits",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_5",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0018",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0018",
+    "page": 4,
+    "expected_text": "(l) No Claim Bonus:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_10",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0019",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0019",
+    "page": 4,
+    "expected_text": "(m) Domestic Emergency Assistance Services (including Air Ambulance)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_41",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0020",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0020",
+    "page": 4,
+    "expected_text": "We will not provide the foregoing services in the following instances:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_59",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0021",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0021",
+    "page": 5,
+    "expected_text": "(n) International Emergency Assistance Services (including Air Ambulance)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_2",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0022",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0022",
+    "page": 5,
+    "expected_text": "We will not provide the foregoing services in the following instances:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_20",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0023",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0023",
+    "page": 5,
+    "expected_text": "(o) OPD Treatment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_36",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0024",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0024",
+    "page": 5,
+    "expected_text": "Section III: Care Benefits",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_49",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0025",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0025",
+    "page": 5,
+    "expected_text": "(p) Health Assessment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_55",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0026",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0026",
+    "page": 6,
+    "expected_text": "(q) Comprehensive Health Check-up",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_11",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0027",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0027",
+    "page": 6,
+    "expected_text": "Schedule/ Product Benefit Table in accordance with the table below :",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_14",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0028",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0028",
+    "page": 6,
+    "expected_text": "I. The Comprehensive Health Check-up shall be arranged by Us only on cashless basis at Our Network Providers/ Empanelled Service",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_21",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0029",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0029",
+    "page": 6,
+    "expected_text": "(r) Health Coach",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_34",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0030",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0030",
+    "page": 6,
+    "expected_text": "(s) Personal Health Coach",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_47",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0031",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0031",
+    "page": 7,
+    "expected_text": "(t) HealthReturns",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_3",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0032",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0032",
+    "page": 8,
+    "expected_text": "How can one spend HealthReturnsTM:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_9",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0033",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0033",
+    "page": 8,
+    "expected_text": "(u) Second E-Opinion on major Illnesses",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_26",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0034",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0034",
+    "page": 8,
+    "expected_text": "Conditions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_35",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0035",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0035",
+    "page": 8,
+    "expected_text": "(v) Health and Wellness discount",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_48",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0036",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0036",
+    "page": 8,
+    "expected_text": "Section IV: Optional Care Benefits",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_51",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0037",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0037",
+    "page": 8,
+    "expected_text": "(w) Nursing at Home:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_64",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0038",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0038",
+    "page": 9,
+    "expected_text": "Conditions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_2",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0039",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0039",
+    "page": 9,
+    "expected_text": "(x) Lifestyle support equipment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_15",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0040",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0040",
+    "page": 9,
+    "expected_text": "Conditions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_21",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0041",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0041",
+    "page": 9,
+    "expected_text": "Documents to be submitted for any Claim under this Benefit:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_32",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0042",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0042",
+    "page": 9,
+    "expected_text": "(y) Portable medical equipment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_39",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0043",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0043",
+    "page": 9,
+    "expected_text": "Conditions:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_45",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0044",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0044",
+    "page": 9,
+    "expected_text": "Documents to be submitted for any Claim under this Benefit:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_56",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0045",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0045",
+    "page": 9,
+    "expected_text": "(z) Advance Health Check-up",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_63",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0046",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0046",
+    "page": 10,
+    "expected_text": "Section V: Optional Covers",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_21",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0047",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0047",
+    "page": 10,
+    "expected_text": "Section C. Terms and Conditions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_45",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0048",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0048",
+    "page": 10,
+    "expected_text": "A. Co-payment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_46",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0049",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0049",
+    "page": 10,
+    "expected_text": "B. Waiting periods and Permanent Exclusions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_52",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0050",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0050",
+    "page": 13,
+    "expected_text": "C. Claims Administration & Process",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_41",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0051",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0051",
+    "page": 13,
+    "expected_text": "I. Claims Procedure",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_53",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0052",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0052",
+    "page": 14,
+    "expected_text": "In case of Multiple Policy claims:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p14l_73",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0053",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0053",
+    "page": 14,
+    "expected_text": "Road Ambulance Cover:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p14l_77",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0054",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0054",
+    "page": 15,
+    "expected_text": "D. Portability & Continuity Benefits",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_26",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0055",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0055",
+    "page": 15,
+    "expected_text": "E. Free Look Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_73",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0056",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0056",
+    "page": 16,
+    "expected_text": "F. Fraudulent Claims",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_1",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0057",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0057",
+    "page": 16,
+    "expected_text": "G. Material Change",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_6",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0058",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0058",
+    "page": 16,
+    "expected_text": "H. Alterations in the Policy",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_11",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0059",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0059",
+    "page": 16,
+    "expected_text": "I. No Constructive Notice",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_14",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0060",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0060",
+    "page": 16,
+    "expected_text": "J. Multiple Policies",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_18",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0061",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0061",
+    "page": 16,
+    "expected_text": "K. Special Provisions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_34",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0062",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0062",
+    "page": 16,
+    "expected_text": "L. Records to be maintained",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_37",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0063",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0063",
+    "page": 16,
+    "expected_text": "M. Cancellation (other than Free Look Cancellation)",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_42",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0064",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0064",
+    "page": 17,
+    "expected_text": "N. Endorsements",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_5",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0065",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0065",
+    "page": 17,
+    "expected_text": "O. Grace Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_37",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0066",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0066",
+    "page": 17,
+    "expected_text": "P. Renewal Terms",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_44",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0067",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0067",
+    "page": 18,
+    "expected_text": "Q. Communications & Notices",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_6",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0068",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0068",
+    "page": 18,
+    "expected_text": "R. Electronic Transactions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_13",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0069",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0069",
+    "page": 18,
+    "expected_text": "S. Policy Dispute",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_25",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0070",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0070",
+    "page": 18,
+    "expected_text": "T. Complete Discharge",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_28",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0071",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0071",
+    "page": 18,
+    "expected_text": "U. Grievances Redressal Procedure",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_32",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0072",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0072",
+    "page": 18,
+    "expected_text": "V. Assignment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_48",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0073",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0073",
+    "page": 18,
+    "expected_text": "W. Duty of Disclosure",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_50",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0074",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0074",
+    "page": 18,
+    "expected_text": "X. Territorial Jurisdiction",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_55",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0075",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0075",
+    "page": 18,
+    "expected_text": "Y. Sequence of Sum Insured Utilisation",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_57",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0076",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0076",
+    "page": 18,
+    "expected_text": "Z. Payment of premium in case of instalment",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_64",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0077",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0077",
+    "page": 19,
+    "expected_text": "Section D. DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_7",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0078",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0078",
+    "page": 23,
+    "expected_text": "LUCKNOW - Districts of Uttar Pradesh :",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p23l_1",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_review_heading_0079",
+    "source_section_id": "aditya_birla_activ_care_review_sec_0079",
+    "page": 34,
+    "expected_text": "Contact us:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_1",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  }
+]

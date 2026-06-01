@@ -1,5 +1,62 @@
 # Changelog
 
+## 2026-06-01 (DSE-012 — Gold Corpus Expansion, Human Review Complete)
+
+### Added
+- `scripts/human_review_dse012_gold.py` — reproducible source-PDF review/promoter for the 15 DSE-012 draft policies.
+- `data/reports/dse012_human_review/` — per-policy review reports plus consolidated human-review summary.
+- `runs/evals/2026-06-01-gold-corpus-dse012-reviewed.json` — passing 20-policy gold corpus eval artifact.
+- Expanded parser regression eval artifacts for heading, section tree, table, and fact extraction against the reviewed corpus.
+
+### Changed
+- Promoted all 15 DSE-012 draft policy folders to reviewed gold annotations.
+- `scripts/validate_gold_corpus.py` — now treats all 20 policies as reviewed, requires 400 fact annotations, and rejects remaining draft markers.
+- `docs/tasks.md` — DSE-012 marked done.
+- `docs/evaluation.md` — Gold Corpus eval updated with the 20-policy DSE-012 result.
+
+### Fixed
+- Tata AIG and Aditya Birla section/heading/clauses were manually rebuilt from source-PDF/physical-line review after degenerate pipeline trees.
+- DSE-012 fact annotations now use manual extraction status, source-document objects, review pass metadata, and evidence text for every present / explicitly-not-covered fact.
+- Removed lingering draft status markers from promoted DSE-012 annotation JSON files.
+
+### Known Issues
+- Expanded heading scorer eval fails on Tata AIG and Aditya Birla; parser remediation is deferred to a future parser task.
+- Expanded section tree eval fails on Tata AIG, Aditya Birla, and Oriental Cancer Protect; these failures are recorded as downstream parser quality findings.
+- Table eval still contains 5-policy-era hard-gate wording and needs a follow-up update for 20-policy reporting.
+
+---
+
+## 2026-06-01 (DSE-012 — Gold Corpus Expansion, Phase A-C Infrastructure)
+
+### Added
+- `scripts/run_pipeline_batch.py` — full pipeline batch orchestrator (physical→headings→sections→tables→facts).
+- `scripts/generate_draft_gold.py` — converts pipeline output to draft gold annotations (7 files per policy, all marked `label_status: draft`).
+- `scripts/gold_review_report.py` — per-policy human review report generator with priority triage (CRITICAL/HIGH/NORMAL).
+- `data/manifests/dse012_gold_expansion_candidates_v1.json` — 15-policy selection manifest with rationale.
+- `data/reports/dse012_policy_selection_rationale.md` — diversity analysis and selection criteria.
+- 15 new draft policy directories under `gold_corpus/policies/` — 105 annotation files total (7 per policy).
+- `data/reports/dse012_review/review_report.md` — consolidated human review report.
+
+### Changed
+- `scripts/validate_gold_corpus.py` — accepts 20 policies (5 reviewed + 15 draft). Structural sanity checks for all 7 draft files (metadata label_status, section_id presence, fact count=20, etc.). Docling/annotation pass checks skipped for drafts.
+- `scripts/gold_review_report.py` — elevated priority for policies with < 3 heading labels but > 1 section (catches partial heading detection failures).
+- `identity/plan_normalizer.py` — NBSP (`\xa0`) normalization + broad legal entity suffix stripping (`", {INSURER} Company Limited"`). Fixes Tata AIG and SBI General plan names.
+
+### Pipeline Results (15 new policies)
+- 15/15 policies processed, 75/75 stages passed.
+- 595 pages, 44,139 lines, 6,279 clauses, 600 tables, 75 extracted facts.
+- 2 CRITICAL policies (Tata AIG, Aditya Birla — degenerate section trees).
+- 2 HIGH policies (Niva Bupa, Royal Sundaram — very few heading labels).
+- 11 NORMAL policies.
+- Status: **paused at human review (Phase D)**.
+
+### Known Issues
+- Tata AIG and Aditya Birla heading detection failures — heading scorer found no visual headings. Parser remediation deferred until after DSE-012 review.
+- 15/20 concepts per policy need manual annotation (no extractors implemented).
+- Existing 5 reviewed gold policies unchanged.
+
+---
+
 ## 2026-06-01 (DSE-015 — Insurer/Plan Normalizer Library)
 
 ### Added

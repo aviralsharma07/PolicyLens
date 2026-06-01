@@ -1,0 +1,1019 @@
+[
+  {
+    "section_id": "oriental_cancer_protect_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 44,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0001",
+    "section_number": "2",
+    "title": "2. COVERAGE/BENEFITS",
+    "level": 1,
+    "parent_id": "oriental_cancer_protect_root_0000",
+    "page_start": 1,
+    "page_end": 5,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "heading_text": "2. COVERAGE/BENEFITS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0002",
+    "section_number": "2.1",
+    "title": "2.1TREATMENT METHODS :",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 5,
+    "page_end": 7,
+    "source_page_refs": [
+      5,
+      6,
+      7
+    ],
+    "heading_text": "2.1TREATMENT METHODS :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0003",
+    "section_number": "2.4",
+    "title": "2.4 EMERGENCY EVACUATION COVER:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 7,
+    "page_end": 10,
+    "source_page_refs": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "heading_text": "2.4 EMERGENCY EVACUATION COVER:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0004",
+    "section_number": "2.11",
+    "title": "2.11 CANCER CARE BENEFIT:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2.11 CANCER CARE BENEFIT:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0005",
+    "section_number": "2.12",
+    "title": "2.12 CUMULATIVE BONUS:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 10,
+    "page_end": 11,
+    "source_page_refs": [
+      10,
+      11
+    ],
+    "heading_text": "2.12 CUMULATIVE BONUS:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0006",
+    "section_number": "2.14",
+    "title": "2.14 TELEMEDICINE/TELECONSULTATION :",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2.14 TELEMEDICINE/TELECONSULTATION :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0007",
+    "section_number": "2.15",
+    "title": "2.15 WAITING PERIOD:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0001",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2.15 WAITING PERIOD:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0008",
+    "section_number": "3",
+    "title": "3. DEFINITIONS",
+    "level": 1,
+    "parent_id": "oriental_cancer_protect_root_0000",
+    "page_start": 11,
+    "page_end": 15,
+    "source_page_refs": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "heading_text": "3. DEFINITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0009",
+    "section_number": "3.21",
+    "title": "3.21 ILLNESS:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0008",
+    "page_start": 15,
+    "page_end": 18,
+    "source_page_refs": [
+      15,
+      16,
+      17,
+      18
+    ],
+    "heading_text": "3.21 ILLNESS:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0010",
+    "section_number": "4",
+    "title": "4. GENERAL EXCLUSIONS:",
+    "level": 1,
+    "parent_id": "oriental_cancer_protect_root_0000",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4. GENERAL EXCLUSIONS:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0011",
+    "section_number": "5",
+    "title": "5. CONDITIONS",
+    "level": 1,
+    "parent_id": "oriental_cancer_protect_root_0000",
+    "page_start": 20,
+    "page_end": 21,
+    "source_page_refs": [
+      20,
+      21
+    ],
+    "heading_text": "5. CONDITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0012",
+    "section_number": "5.6",
+    "title": "5.6 CLAIMS PROCEDURE:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 21,
+    "page_end": 27,
+    "source_page_refs": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "heading_text": "5.6 CLAIMS PROCEDURE:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0013",
+    "section_number": "5.7",
+    "title": "5.7 CONTRIBUTION:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 27,
+    "page_end": 28,
+    "source_page_refs": [
+      27,
+      28
+    ],
+    "heading_text": "5.7 CONTRIBUTION:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0014",
+    "section_number": "5.9",
+    "title": "5.9 REPUDIATION/REJECTION OF CLAIM:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "5.9 REPUDIATION/REJECTION OF CLAIM:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0015",
+    "section_number": "5.10",
+    "title": "5.10 DISCLAIMER OF CLAIM:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "5.10 DISCLAIMER OF CLAIM:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0016",
+    "section_number": "5.11",
+    "title": "5.11 ARBITRATION CLAUSE :",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 28,
+    "page_end": 29,
+    "source_page_refs": [
+      28,
+      29
+    ],
+    "heading_text": "5.11 ARBITRATION CLAUSE :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0017",
+    "section_number": "5.13",
+    "title": "5.13 MEDICAL RECORDS:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "5.13 MEDICAL RECORDS:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0018",
+    "section_number": "5.14",
+    "title": "5.14 CANCELLATION CLAUSE:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 29,
+    "page_end": 31,
+    "source_page_refs": [
+      29,
+      30,
+      31
+    ],
+    "heading_text": "5.14 CANCELLATION CLAUSE:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0019",
+    "section_number": "6.2",
+    "title": "6.2 SUM INSURED:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 31,
+    "page_end": 32,
+    "source_page_refs": [
+      31,
+      32
+    ],
+    "heading_text": "6.2 SUM INSURED:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0020",
+    "section_number": "6.6",
+    "title": "6.6 FREE LOOK PERIOD:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "6.6 FREE LOOK PERIOD:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0021",
+    "section_number": "6.7",
+    "title": "6.7 GRACE PERIOD:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "6.7 GRACE PERIOD:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0022",
+    "section_number": "6.8",
+    "title": "6.8 RENEWAL OF POLICY:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 32,
+    "page_end": 33,
+    "source_page_refs": [
+      32,
+      33
+    ],
+    "heading_text": "6.8 RENEWAL OF POLICY:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0023",
+    "section_number": "6.9",
+    "title": "6.9 PORTABILITY:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "6.9 PORTABILITY:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0024",
+    "section_number": "6.10",
+    "title": "6.10 CHANGE OF ADDRESS:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "6.10 CHANGE OF ADDRESS:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0025",
+    "section_number": "6.11",
+    "title": "6.11 QUALITY OF TREATMENT:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 33,
+    "page_end": 35,
+    "source_page_refs": [
+      33,
+      34,
+      35
+    ],
+    "heading_text": "6.11 QUALITY OF TREATMENT:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0026",
+    "section_number": "6.17",
+    "title": "6.17 SINGLE POLICY:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0011",
+    "page_start": 35,
+    "page_end": 44,
+    "source_page_refs": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "heading_text": "6.17 SINGLE POLICY:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0027",
+    "section_number": "4.1",
+    "title": "4.1. Any Treatment other than for Cancer",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4.1. Any Treatment other than for Cancer",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0028",
+    "section_number": "4.2",
+    "title": "4.2. Pre-Existing Condition for Cancer for which Insured Person :",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4.2. Pre-Existing Condition for Cancer for which Insured Person :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0029",
+    "section_number": "4.3",
+    "title": "4.3. Insured person Diagnosed of suffering from Cancer during the first Seventy Five",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4.3. Insured person Diagnosed of suffering from Cancer during the first Seventy Five",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0030",
+    "section_number": "4.4",
+    "title": "4.4. Any treatment for Cancer caused by or arising from or attributable to War, invasion,",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 18,
+    "page_end": 19,
+    "source_page_refs": [
+      18,
+      19
+    ],
+    "heading_text": "4.4. Any treatment for Cancer caused by or arising from or attributable to War, invasion,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0031",
+    "section_number": "4.5",
+    "title": "4.5. Cost of external prosthetic devices, non-durable implants external medical",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.5. Cost of external prosthetic devices, non-durable implants external medical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0032",
+    "section_number": "4.6",
+    "title": "4.6. Dental treatment or Surgery of any kind unless necessitated due to treatment of",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.6. Dental treatment or Surgery of any kind unless necessitated due to treatment of",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0033",
+    "section_number": "4.7",
+    "title": "4.7. Kaposi Sarcoma",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.7. Kaposi Sarcoma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0034",
+    "section_number": "4.8",
+    "title": "4.8. Investigation & Evaluation- Code- Excl. 04",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.8. Investigation & Evaluation- Code- Excl. 04",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0035",
+    "section_number": "4.9",
+    "title": "4.9. Non Allopathic treatment",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.9. Non Allopathic treatment",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0036",
+    "section_number": "4.10",
+    "title": "4.10. Any expenses relating to cost of items detailed in List 1 of Annexure A. ",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.10. Any expenses relating to cost of items detailed in List 1 of Annexure A. ",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0037",
+    "section_number": "4.11",
+    "title": "4.11. Any kind of Service charges, Surcharges, Luxury Tax and similar charges levied by",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.11. Any kind of Service charges, Surcharges, Luxury Tax and similar charges levied by",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0038",
+    "section_number": "4.12",
+    "title": "4.12. Treatment including investigation/diagnostic services availed outside India",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.12. Treatment including investigation/diagnostic services availed outside India",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0039",
+    "section_number": "4.13",
+    "title": "4.13. Rest Cure, rehabilitation and respite care- Code- Excl. 05",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.13. Rest Cure, rehabilitation and respite care- Code- Excl. 05",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0040",
+    "section_number": "4.14",
+    "title": "4.14. Cosmetic or plastic Surgery: Code- Excl. 08:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.14. Cosmetic or plastic Surgery: Code- Excl. 08:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0041",
+    "section_number": "4.15",
+    "title": "4.15. Breach of law: Code- Excl. 10",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "4.15. Breach of law: Code- Excl. 10",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0042",
+    "section_number": "4.16",
+    "title": "4.16. Excluded Providers: Code- Excl. 11",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 19,
+    "page_end": 20,
+    "source_page_refs": [
+      19,
+      20
+    ],
+    "heading_text": "4.16. Excluded Providers: Code- Excl. 11",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0043",
+    "section_number": "4.17",
+    "title": "4.17. Code- Excl. 13",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.17. Code- Excl. 13",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0044",
+    "section_number": "4.18",
+    "title": "4.18. Code- Excl. 14",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.18. Code- Excl. 14",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0045",
+    "section_number": "4.19",
+    "title": "4.19. Unproven Treatments: Code- Excl. 16",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.19. Unproven Treatments: Code- Excl. 16",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0046",
+    "section_number": "4.20",
+    "title": "4.20. Specified healthcare providers:",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.20. Specified healthcare providers:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0047",
+    "section_number": "4.21",
+    "title": "4.21. Any treatment or part of a treatment that is not of a reasonable charge, not",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.21. Any treatment or part of a treatment that is not of a reasonable charge, not",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "oriental_cancer_protect_sec_0048",
+    "section_number": "4.22",
+    "title": "4.22. Charges related to a Hospital stay not expressly mentioned as being covered in",
+    "level": 2,
+    "parent_id": "oriental_cancer_protect_sec_0010",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4.22. Charges related to a Hospital stay not expressly mentioned as being covered in",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

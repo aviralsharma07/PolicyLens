@@ -1,0 +1,19 @@
+{
+  "slug": "bajaj_allianz_silver_health",
+  "insurer": "Bajaj Allianz",
+  "plan_name": "Silver Health",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+  "pages_reviewed": 33,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "not_found": 6,
+    "present": 14
+  },
+  "evidence_bearing_facts": 14,
+  "remaining_known_issues": []
+}

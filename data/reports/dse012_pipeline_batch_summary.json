@@ -1,0 +1,430 @@
+{
+  "date": "2026-06-01",
+  "task_id": "DSE-012",
+  "total_policies": 15,
+  "ok": 15,
+  "partial": 0,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "reliance_health_gain",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "united_india_individual_health",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "status": "ok",
+      "stages_ok": 5,
+      "stages_total": 5,
+      "stages": [
+        {
+          "stage": "physical_parser",
+          "status": "ok"
+        },
+        {
+          "stage": "heading_scorer",
+          "status": "ok"
+        },
+        {
+          "stage": "section_tree",
+          "status": "ok"
+        },
+        {
+          "stage": "table_engine",
+          "status": "ok"
+        },
+        {
+          "stage": "fact_extractors",
+          "status": "ok"
+        }
+      ]
+    }
+  ]
+}

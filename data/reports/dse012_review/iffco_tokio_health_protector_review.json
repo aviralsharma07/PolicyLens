@@ -1,0 +1,38 @@
+{
+  "slug": "iffco_tokio_health_protector",
+  "insurer": "IFFCO Tokio",
+  "plan": "Health Protector",
+  "pages": 45,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 249,
+  "clauses": 485,
+  "tables": 28,
+  "facts_present": 5,
+  "facts_not_found": 15,
+  "heading_labels": 9,
+  "physical_table_labels": 28,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "5 present, 15 not_found. 5 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "28 semantic tables, 28 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "9 visual heading labels detected."
+    }
+  ]
+}

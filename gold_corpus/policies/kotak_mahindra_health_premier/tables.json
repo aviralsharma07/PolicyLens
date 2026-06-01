@@ -1,0 +1,852 @@
+[
+  {
+    "table_id": "kotak_mahindra_health_premier_p1_t1",
+    "page": 1,
+    "bbox": [
+      72.024,
+      320.809995,
+      540.09999,
+      633.3400099999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      1
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p2_t1",
+    "page": 2,
+    "bbox": [
+      72.02400000000002,
+      79.20000000000005,
+      540.09999,
+      670.3000099999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      2
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p3_t1",
+    "page": 3,
+    "bbox": [
+      72.02400000000003,
+      79.20000000000005,
+      540.09999,
+      672.1000099999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      3
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p4_t1",
+    "page": 4,
+    "bbox": [
+      72.024,
+      79.20000000000005,
+      540.0999899999999,
+      671.6199799999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      4
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p5_t1",
+    "page": 5,
+    "bbox": [
+      72.02400000000003,
+      79.20000000000005,
+      540.09999,
+      672.5800099999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      5
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p6_t1",
+    "page": 6,
+    "bbox": [
+      72.02400000000004,
+      79.20000000000005,
+      540.0999900000002,
+      683.8600099999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      6
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p7_t1",
+    "page": 7,
+    "bbox": [
+      72.02400000000003,
+      79.20000000000005,
+      540.09999,
+      400.849995
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      7
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p12_t1",
+    "page": 12,
+    "bbox": [
+      90.26400000000001,
+      620.49998,
+      539.8599899999999,
+      692.0160099999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      12
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p13_t1",
+    "page": 13,
+    "bbox": [
+      90.14400000000006,
+      79.20000000000005,
+      539.8599899999999,
+      151.22000000000003
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p13_t2",
+    "page": 13,
+    "bbox": [
+      90.14400000000006,
+      370.249995,
+      513.0999899999999,
+      476.83000999999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p14_t1",
+    "page": 14,
+    "bbox": [
+      72.264,
+      424.969995,
+      539.85999,
+      544.51001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p37_t1",
+    "page": 37,
+    "bbox": [
+      79.22399999999999,
+      590.7099800000001,
+      546.8200200000001,
+      638.74001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      37
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p43_t1",
+    "page": 43,
+    "bbox": [
+      67.58399999999999,
+      113.89999999999998,
+      558.0199933333336,
+      683.6371485714286
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p43_t2",
+    "page": 43,
+    "bbox": [
+      324.88999999999993,
+      369.31181636363635,
+      552.6999999999999,
+      392.57
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p43_t3",
+    "page": 43,
+    "bbox": [
+      324.88999999999993,
+      427.2820000000001,
+      552.6999999999999,
+      450.55
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p43_t4",
+    "page": 43,
+    "bbox": [
+      324.88999999999993,
+      555.6893807692309,
+      552.6999999999999,
+      579.43
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p43_t5",
+    "page": 43,
+    "bbox": [
+      324.88999999999993,
+      614.2054581818182,
+      552.6999999999999,
+      637.42
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p44_t1",
+    "page": 44,
+    "bbox": [
+      67.58399999999999,
+      79.31800000000001,
+      558.0199933333334,
+      634.9399877777778
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      44
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p44_t2",
+    "page": 44,
+    "bbox": [
+      324.89000000000004,
+      577.1232269230769,
+      552.7000000000003,
+      600.5799999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      44
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p45_t1",
+    "page": 45,
+    "bbox": [
+      72.26400000000002,
+      113.77999999999997,
+      567.3316850847457,
+      684.10001
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      45
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p46_t1",
+    "page": 46,
+    "bbox": [
+      72.26400000000005,
+      79.20000000000005,
+      567.33999,
+      686.1400100000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      46
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p47_t1",
+    "page": 47,
+    "bbox": [
+      72.26400000000005,
+      79.20000000000005,
+      567.33999,
+      672.3400099999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      47
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p48_t1",
+    "page": 48,
+    "bbox": [
+      72.26400000000004,
+      79.20000000000005,
+      567.33999,
+      689.37998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      48
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p49_t1",
+    "page": 49,
+    "bbox": [
+      72.26400000000004,
+      79.20000000000005,
+      567.33999,
+      691.8960099999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      49
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p50_t1",
+    "page": 50,
+    "bbox": [
+      72.26400000000005,
+      79.20000000000005,
+      567.33999,
+      678.10001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      50
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p51_t1",
+    "page": 51,
+    "bbox": [
+      72.26399999999998,
+      79.20000000000005,
+      567.3399899999996,
+      433.02999499999993
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      51
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p52_t1",
+    "page": 52,
+    "bbox": [
+      71.66400000000002,
+      125.29999999999995,
+      567.0999900000003,
+      692.85601
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      52
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p53_t1",
+    "page": 53,
+    "bbox": [
+      71.66400000000002,
+      79.20000000000005,
+      567.0999900000003,
+      689.37998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      53
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p54_t1",
+    "page": 54,
+    "bbox": [
+      72.28114285714287,
+      79.20000000000005,
+      567.0999857142862,
+      191.77999999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      54
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p54_t2",
+    "page": 54,
+    "bbox": [
+      72.28114285714287,
+      226.93999999999994,
+      567.0999857142862,
+      681.579985
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      54
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p55_t1",
+    "page": 55,
+    "bbox": [
+      72.38400000000001,
+      79.31999999999994,
+      567.0999850000005,
+      103.87999999999994
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      55
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p55_t2",
+    "page": 55,
+    "bbox": [
+      72.38400000000001,
+      139.22000000000003,
+      567.0999850000005,
+      454.99001499999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      55
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p55_t3",
+    "page": 55,
+    "bbox": [
+      72.38400000000001,
+      490.15,
+      567.0999850000005,
+      687.819985
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      55
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "kotak_mahindra_health_premier_p56_t1",
+    "page": 56,
+    "bbox": [
+      72.384,
+      79.31999999999994,
+      567.099985,
+      133.58000000000004
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      56
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

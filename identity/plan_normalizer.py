@@ -67,6 +67,10 @@ def clean_plan_name(raw_name: str, insurer_canonical: Optional[str] = None) -> s
 
     name = raw_name.strip()
 
+    # Normalize non-breaking spaces and collapse whitespace
+    name = name.replace("\xa0", " ")
+    name = re.sub(r"\s+", " ", name).strip()
+
     # If a specific insurer is provided, strip it first (most precise)
     if insurer_canonical:
         from identity.insurer_registry import get_all_name_variants
@@ -81,6 +85,12 @@ def clean_plan_name(raw_name: str, insurer_canonical: Optional[str] = None) -> s
             # Strip as prefix
             pattern = re.compile(r"^" + re.escape(variant) + r"\s+", re.IGNORECASE)
             name = pattern.sub("", name)
+
+    # Strip broad insurer legal entity suffixes:
+    # ", TATA AIG General Insurance Company Limited" etc.
+    name = re.sub(
+        r"[,\s]+[A-Z][A-Za-z\s]*(?:Company|Co\.)\s+Limited\s*$", "", name, flags=re.IGNORECASE
+    )
 
     # Strip generic boilerplate suffixes
     for pattern_str in _BOILERPLATE_SUFFIXES:

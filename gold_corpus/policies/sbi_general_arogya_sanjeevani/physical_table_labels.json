@@ -1,0 +1,325 @@
+[
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0008",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p14_t1",
+    "page": 14,
+    "bbox": [
+      82.920001125,
+      411.23998237499995,
+      516.719993625,
+      487.440010125
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0009",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p17_t1",
+    "page": 17,
+    "bbox": [
+      199.080001875,
+      595.319984625,
+      394.44001012500013,
+      708.36000825
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 6,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0010",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p18_t1",
+    "page": 18,
+    "bbox": [
+      199.080001875,
+      67.79999850000002,
+      394.44001012499996,
+      86.640000375
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 1,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0011",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p21_t1",
+    "page": 21,
+    "bbox": [
+      75.78000075,
+      424.02001162500005,
+      518.5200120000003,
+      694.319984625
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 6,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0012",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p22_t1",
+    "page": 22,
+    "bbox": [
+      75.78000075,
+      67.79999850000002,
+      518.5200120000005,
+      497.39998612500005
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 11,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0013",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p22_t2",
+    "page": 22,
+    "bbox": [
+      81.83999925,
+      546.479988,
+      527.2800063750001,
+      712.919998125
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 11,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0014",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p23_t1",
+    "page": 23,
+    "bbox": [
+      81.65333275833328,
+      67.79999850000002,
+      527.2240050916671,
+      716.0400011250001
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 45,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0015",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p24_t1",
+    "page": 24,
+    "bbox": [
+      79.7609303459303,
+      67.79999850000002,
+      526.9199981250001,
+      258.83999625
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 13,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0016",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p24_t2",
+    "page": 24,
+    "bbox": [
+      79.7609303459303,
+      322.620002625,
+      503.1600037500005,
+      715.3799973749999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 30,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0017",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p25_t1",
+    "page": 25,
+    "bbox": [
+      80.67428735714299,
+      67.919998125,
+      503.1600037499999,
+      172.6799985
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 8,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0018",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p25_t2",
+    "page": 25,
+    "bbox": [
+      80.67428735714299,
+      236.39999775,
+      546.4799879999995,
+      579.959998875
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 24,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0019",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p25_t3",
+    "page": 25,
+    "bbox": [
+      80.67428735714299,
+      628.440010125,
+      485.5800018750001,
+      707.8200075
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0020",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p26_t1",
+    "page": 26,
+    "bbox": [
+      79.21384753846154,
+      67.79999850000002,
+      485.58000187500016,
+      161.39999775
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 6,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0021",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p26_t2",
+    "page": 26,
+    "bbox": [
+      79.21384753846154,
+      619.320007125,
+      537.0,
+      631.2000045
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 1,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0022",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p27_t1",
+    "page": 27,
+    "bbox": [
+      79.38,
+      67.919998125,
+      537.0,
+      715.2000045
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 6,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0023",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p28_t1",
+    "page": 28,
+    "bbox": [
+      79.38,
+      67.919998125,
+      537.0,
+      723.0600127499999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_phys_table_0024",
+    "source_table_id": "sbi_general_arogya_sanjeevani_p29_t1",
+    "page": 29,
+    "bbox": [
+      79.38,
+      67.919998125,
+      537.0,
+      529.259994375
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

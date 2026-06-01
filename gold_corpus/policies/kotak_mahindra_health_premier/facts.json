@@ -1,0 +1,884 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 24
+    },
+    "normalized_value_json": {
+      "months": 24
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 21,
+    "evidence_text": "3.1 Pre-Existing Diseases (Code – Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48/ 36/ 24 months (as mentioned in the Policy Schedule) of continuous coverage after the date of inception of the first policy with insurer. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c) If the Insured",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 21,
+    "evidence_text": "dule) for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer. 3.2 30 Day Waiting Period (Code – Excl03) a) Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months. c) The within referred waiting period",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 21,
+    "evidence_text": "nsured in the event of granting higher sum insured subsequently. 3.3 Specified disease/ procedure waiting period (Code – Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum in",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "llness the date of last consultation with the Hospital/Nursing Home where treatment was taken Associated Medical means Room Rent, nursing charges, operation theatre charges, fees of Expenses Medical Practitioners (including surgeons, anesthetists and specialists) a. For Individual sum insured basis (Individual Policy), the amount specifi",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "percentage": 10
+    },
+    "normalized_value_json": {
+      "percentage": 10
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 37,
+    "evidence_text": "to select a Zone higher than that of the actual Zone is available on payment of relevant premium at the time of buying the Policy or at the time of Renewal.  Aforesaid Co-payments for claims occurring outside of the Zone will not apply in case of Hospitalisation due to an Accident. Co-payment  Persons paying Zone I premium can avail treatment all over India without any Co-payment.  Persons paying Zone II premium can avail treatment in Zone II and Zone III without any co-payment  Persons paying Zone III premium can avail treatment in Zone III only without any co-payment Co-payment for treatment in a Higher Zone In case of treatment taken in a city, in a Zone higher than the eligible Zone for the Insured Person, the Co- payment percentages as below shall apply: Applicable Zone Treatment Taken at Co-payment applicable Zone II Zone I 10% Zone III Zone I 20% Zone III Zone II 10% Kotak Health Premier UIN: KOTHLIP21065V032021",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "percentage",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment percentage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 3,
+    "evidence_text": "means a cost sharing requirement under a health insurance policy that provides that the insurer will not be liable for a specified rupee amount in Deductible case of indemnity policies and for a specified number of days/hours in case of hospital cash policies which will apply before any benefits are payable by the insurer. A deductible does not reduce the Sum Insured. means a treatment",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: deductible search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "he Insured Person, only if that particular cover is specifically mentioned in the Policy Schedule as per the Plan opted by You, subject to (a) availability of Base Sum Insured and Cumulative Bonus(if any) (b) the terms, conditions and exclusions of this Policy and (c) any sum insured or sub-limits specified in respect of that Cover and any limits applicable under the Plan in force for the Insured Person as specified in the Policy Schedule 2.1 In-patient Treatment We will indemnify the Medical Expenses incurred on the Insured Per",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: cumulative/no-claim bonus search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "discretion and will be communicated to Insured Person(s). (a) CBC; (b) MER; (c) Serum Cholesterol; (d) Serum Creatinine; (e) SGPT /SGOT (f) ECG; (g) Random Blood Sugar. 2.9 Restoration Benefit We will provide a 100% restoration of the Base Sum Insured amount once in a Policy Year if the Base Sum Insured and the Cumulative Bonus (if any) is insufficient as a result of previous Claims in that Policy Year, provided that: (a) The restored sum insured will not be available in respect of any Illness (including",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: restoration/reload/recharge benefit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "purpose of medical treatment of an Injury and/or Illness Alternative Treatment refers to the medical and/ or hospitalization treatments given under (AYUSH) Ayurveda, Yoga and Naturopathy, Unani, Sidha and Homeopathy systems is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the following: a. Central or State Government AYUSH Hospital or",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "ver and above the Base Sum Insured. (c) For the purpose of this Benefit, the term “Immediate Relative” would mean the Insured Person’s spouse, children or parents. 2.19 Maternity Benefit We will indemnify the Medical Expenses incurred up to the Maternity Benefit Sum Insured specified in the Policy Schedule for the delivery of the Insured Person’s child (including cesarean section) or the Medically Necessary and lawful medical termination of pregnancy during the Policy Period provided that: (a) The treatment is taken as an In-patient in a Hospital; (b) The cover shall be",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: maternity search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "The payment under this benefit is over and above the Base Sum Insured. Permanent Exclusion 3.5(15) of the Policy Wordings stands deleted to the extent of this Benefit only. 2.20 New Born Baby Cover We will indemnify the Medical Expenses incurred on the Hospitalization of the Insured Person’s New Born Baby during the Policy Period within the limits of the Maternity Sum Insured subject to the following: (a) We have accepted a Claim for Maternity Benefit under the Policy. Further, (a) This benefit is applicable on an individual basis irrespective of type of policy (Individual/ Floater). (b) Any pre and post hospital",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: newborn coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "normalized_value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 9,
+    "evidence_text": "pital. (b) In case of Individual Policy, this payout will available on individual basis and in case of Floater Policy the payout will be available on floater basis. 2.5 Organ Donor Cover We will indemnify the In-patient Hospitalisation Medical Expenses towards the donor for harvesting the organ up to the limits of the Base Sum Insured (subject to availability), provided that: (a) We have accepted a Claim for In-patient Treatment under the Po",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: organ donor coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "ible to the insurance company’s authorized representative. means a road vehicle operated by a healthcare/ ambulance service provider Ambulance and equipped for the transport and paramedical treatment of the person requiring medical attention means continuous period of illness and includes relapse within 45 days from Any one Illness the date of last co",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "months": 24
+    },
+    "normalized_value_json": {
+      "months": 24
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 38,
+    "evidence_text": "epted with loadings, waiting period for Pre-Existing Disease Waiting Period (Section 3.1) as well as 2 Year Waiting Period (Section 3.3) shall continue to be applicable. 12. Free Look Period The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. If the insured has not made any claim during the Free Look Period, the insured shall be entitled to i. a refund of",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 39,
+    "evidence_text": "hall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of atleast 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. Kotak Health Premier UIN: KOTHLIP21065V032021 Page 39 of 60 Kotak Mahindra General In",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "nto account the nature of the illness / injury involved. means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal Renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 19,
+    "evidence_text": "sion to the contrary in the Policy, this Cover will be applicable on a worldwide basis; (e) In the event of a Claim arising under this Cover, We shall be given written notice of the Claim within 30 days from the date of the first diagnosis of the Critical Illness and We shall be provided the following information and documentation: (i) The Claim documents stated in the Policy, provided that We will accept duly certified copies",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 27,
+    "evidence_text": "request for pre-authorisation as there is insufficient Base Sum Insured or there is insufficient information to determine the admissibility of the request for pre-authorisation, a claim for reimbursement may be submitted to Us in accordance with the procedure set out below and We will consider the Claim in accordance with the policy terms, conditions and exclusions. Turn Around Time (TAT) for settlement of Reimbursement is within 30 days from the receipt of the complete documents. We reserve the right to modify, add or restrict any Network Provider for Cashless Facilities in Our sole discretion. Before availing Cashless Facilities, please check the applicable updated list of Network Provider",
+    "source_document": {
+      "filename": "Kotak_Kotak_Health_premier.pdf",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "uin": "KOTHLIP21065V032021"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

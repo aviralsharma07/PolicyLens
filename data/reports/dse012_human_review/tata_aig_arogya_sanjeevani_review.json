@@ -1,0 +1,21 @@
+{
+  "slug": "tata_aig_arogya_sanjeevani",
+  "insurer": "Tata AIG",
+  "plan_name": "Arogya Sanjeevani",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
+  "pages_reviewed": 28,
+  "structure_fallback": true,
+  "removed_sections": 0,
+  "added_heading_labels": 25,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "not_found": 8,
+    "present": 12
+  },
+  "evidence_bearing_facts": 12,
+  "remaining_known_issues": [
+    "section_tree_manually_rebuilt_from_source_pdf"
+  ]
+}

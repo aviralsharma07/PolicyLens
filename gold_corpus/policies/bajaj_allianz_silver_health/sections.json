@@ -1,0 +1,4873 @@
+[
+  {
+    "section_id": "bajaj_allianz_silver_health_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 33,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0001",
+    "section_number": null,
+    "title": "SECTION A) PREAMBLE",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "SECTION A) PREAMBLE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0002",
+    "section_number": null,
+    "title": "SECTION B) DEFINITIONS- STANDARD DEFINITIONS",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "SECTION B) DEFINITIONS- STANDARD DEFINITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0003",
+    "section_number": "18",
+    "title": "18. Illness",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "18. Illness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0004",
+    "section_number": "19",
+    "title": "19. Injury",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 3,
+    "page_end": 5,
+    "source_page_refs": [
+      3,
+      4,
+      5
+    ],
+    "heading_text": "19. Injury",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0005",
+    "section_number": "42",
+    "title": "42. Renewal",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "42. Renewal",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0006",
+    "section_number": null,
+    "title": "SECTION B) DEFINITIONS- SPECIFIC DEFINITIONS",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "SECTION B) DEFINITIONS- SPECIFIC DEFINITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0007",
+    "section_number": "6",
+    "title": "6. Injury",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 6,
+    "page_end": 7,
+    "source_page_refs": [
+      6,
+      7
+    ],
+    "heading_text": "6. Injury",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0008",
+    "section_number": null,
+    "title": "SECTION C) COVERAGE",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "SECTION C) COVERAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0009",
+    "section_number": null,
+    "title": "I. BASE COVERAGE",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "I. BASE COVERAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0010",
+    "section_number": null,
+    "title": "II. ADD-ON COVERAGE",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 9,
+    "page_end": 10,
+    "source_page_refs": [
+      9,
+      10
+    ],
+    "heading_text": "II. ADD-ON COVERAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0011",
+    "section_number": null,
+    "title": "SECTION D) EXCLUSIONS UNDER THE POLICY - STANDARD EXCLUSIONS",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "SECTION D) EXCLUSIONS UNDER THE POLICY - STANDARD EXCLUSIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0012",
+    "section_number": null,
+    "title": "SECTION E) GENERAL TERMS AND CLAUSES - STANDARD GENERAL TERMS AND CLAUSES",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "SECTION E) GENERAL TERMS AND CLAUSES - STANDARD GENERAL TERMS AND CLAUSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0013",
+    "section_number": null,
+    "title": "SECTION E) GENERAL TERMS AND CLAUSES – SPECIFIC TERMS AND CLAUSES",
+    "level": 1,
+    "parent_id": "bajaj_allianz_silver_health_root_0000",
+    "page_start": 17,
+    "page_end": 17,
+    "source_page_refs": [
+      17
+    ],
+    "heading_text": "SECTION E) GENERAL TERMS AND CLAUSES – SPECIFIC TERMS AND CLAUSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0014",
+    "section_number": "1",
+    "title": "1. Accident, Accidental :",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. Accident, Accidental :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0015",
+    "section_number": "2",
+    "title": "2. Any one illness",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. Any one illness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0016",
+    "section_number": "3",
+    "title": "3. AYUSH Hospital:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "3. AYUSH Hospital:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0017",
+    "section_number": "4",
+    "title": "4. AYUSH Day Care Centre:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "4. AYUSH Day Care Centre:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0018",
+    "section_number": "5",
+    "title": "5. Cashless facility:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 1,
+    "page_end": 2,
+    "source_page_refs": [
+      1,
+      2
+    ],
+    "heading_text": "5. Cashless facility:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0019",
+    "section_number": "6",
+    "title": "6. Condition Precedent:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "6. Condition Precedent:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0020",
+    "section_number": "7",
+    "title": "7. Congenital Anomaly:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "7. Congenital Anomaly:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0021",
+    "section_number": "8",
+    "title": "8. Co-Payment:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "8. Co-Payment:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0022",
+    "section_number": "9",
+    "title": "9. Cumulative Bonus:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "9. Cumulative Bonus:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0023",
+    "section_number": "10",
+    "title": "10. Day care centre:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "10. Day care centre:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0024",
+    "section_number": "11",
+    "title": "11. Day Care Treatment:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "11. Day Care Treatment:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0025",
+    "section_number": "12",
+    "title": "12. Dental Treatment:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "12. Dental Treatment:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0026",
+    "section_number": "13",
+    "title": "13. Disclosure to information norm:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "13. Disclosure to information norm:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0027",
+    "section_number": "14",
+    "title": "14. Emergency Care:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "14. Emergency Care:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0028",
+    "section_number": "15",
+    "title": "15. Grace Period:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 2,
+    "page_end": 3,
+    "source_page_refs": [
+      2,
+      3
+    ],
+    "heading_text": "15. Grace Period:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0029",
+    "section_number": "16",
+    "title": "16. Hospital:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "16. Hospital:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0030",
+    "section_number": "17",
+    "title": "17. Hospitalization:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0002",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "17. Hospitalization:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0031",
+    "section_number": "1",
+    "title": "1. Act of Terrorism:-",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0006",
+    "page_start": 5,
+    "page_end": 6,
+    "source_page_refs": [
+      5,
+      6
+    ],
+    "heading_text": "1. Act of Terrorism:-",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0032",
+    "section_number": "2",
+    "title": "2. Bajaj Allianz Network Hospitals / Network Hospitals/Network Providers",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0006",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "2. Bajaj Allianz Network Hospitals / Network Hospitals/Network Providers",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0033",
+    "section_number": "3",
+    "title": "3. Bajaj Allianz Diagnostic Centre",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0006",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3. Bajaj Allianz Diagnostic Centre",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0034",
+    "section_number": "4",
+    "title": "4. Endorsement",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0006",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "4. Endorsement",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0035",
+    "section_number": "5",
+    "title": "5. Family or Family Members",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0006",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "5. Family or Family Members",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0036",
+    "section_number": "1",
+    "title": "1. In-patient Hospitalization Treatment – (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 7,
+    "page_end": 8,
+    "source_page_refs": [
+      7,
+      8
+    ],
+    "heading_text": "1. In-patient Hospitalization Treatment – (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0037",
+    "section_number": "2",
+    "title": "2. Pre- & Post Hospitalization: (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "2. Pre- & Post Hospitalization: (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0038",
+    "section_number": "3",
+    "title": "3. Road Ambulance (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3. Road Ambulance (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0039",
+    "section_number": "4",
+    "title": "4. Day Care Procedures (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "4. Day Care Procedures (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0040",
+    "section_number": "5",
+    "title": "5. Preventive Health Check Up (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 8,
+    "page_end": 9,
+    "source_page_refs": [
+      8,
+      9
+    ],
+    "heading_text": "5. Preventive Health Check Up (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0041",
+    "section_number": "6",
+    "title": "6. Modern Treatment Methods and Advancement in Technologies (Applicable for Plan A & Plan B):",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "6. Modern Treatment Methods and Advancement in Technologies (Applicable for Plan A & Plan B):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0042",
+    "section_number": "7",
+    "title": "7. Domiciliary Expense (Applicable only for Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "7. Domiciliary Expense (Applicable only for Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0043",
+    "section_number": "1",
+    "title": "1. The condition of the patient is such that he/she is not in a condition to be moved to a Hospital, or",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "1. The condition of the patient is such that he/she is not in a condition to be moved to a Hospital, or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0044",
+    "section_number": "2",
+    "title": "2. The patient takes treatment at home on account of non-availability of room in a hospital",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0009",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "2. The patient takes treatment at home on account of non-availability of room in a hospital",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0045",
+    "section_number": "1",
+    "title": "1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0046",
+    "section_number": "2",
+    "title": "2. Specified disease/procedure waiting period (Excl02) (Applicable for Plan A & Plan B)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2. Specified disease/procedure waiting period (Excl02) (Applicable for Plan A & Plan B)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0047",
+    "section_number": "1",
+    "title": "1. Surgery for gastric or duodenal",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "1. Surgery for gastric or duodenal",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0048",
+    "section_number": "14",
+    "title": "14. Fissure in ano",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "14. Fissure in ano",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0049",
+    "section_number": "2",
+    "title": "2. Benign prostatic hypertrophy 15. Fibromyoma",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "2. Benign prostatic hypertrophy 15. Fibromyoma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0050",
+    "section_number": "3",
+    "title": "3. Hydrocele 16. Hysterectomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "3. Hydrocele 16. Hysterectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0051",
+    "section_number": "17",
+    "title": "17. Surgery on skin/ all internal or external tumours/cysts/",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "17. Surgery on skin/ all internal or external tumours/cysts/",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0052",
+    "section_number": "4",
+    "title": "4. Haemorrhoids",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4. Haemorrhoids",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0053",
+    "section_number": "18",
+    "title": "18. Treatment for benign tumors or malignant conditions or for",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "18. Treatment for benign tumors or malignant conditions or for",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0054",
+    "section_number": "5",
+    "title": "5. Dysfunctional uterine bleeding",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "5. Dysfunctional uterine bleeding",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0055",
+    "section_number": "6",
+    "title": "6. Endometriosis 19. Surgery on joints",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "6. Endometriosis 19. Surgery on joints",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0056",
+    "section_number": "7",
+    "title": "7. Stones in the urinary and biliary systems 20. Mental Illness*",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "7. Stones in the urinary and biliary systems 20. Mental Illness*",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0057",
+    "section_number": "8",
+    "title": "8. Prolapse of genitourinary/intra",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "8. Prolapse of genitourinary/intra",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0058",
+    "section_number": "21",
+    "title": "21. Genetic disorders",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "21. Genetic disorders",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0059",
+    "section_number": "9",
+    "title": "9. Surgery on ears 22. Macular Degeneration",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "9. Surgery on ears 22. Macular Degeneration",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0060",
+    "section_number": "10",
+    "title": "10. Treatment for prolapsed",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "10. Treatment for prolapsed",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0061",
+    "section_number": "23",
+    "title": "23. Parkinson’s Disease",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "23. Parkinson’s Disease",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0062",
+    "section_number": "11",
+    "title": "11. Cataracts, 24. Alzheimer’s disease",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "11. Cataracts, 24. Alzheimer’s disease",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0063",
+    "section_number": "12",
+    "title": "12. Hernia of all types 25. Bariatric Surgery",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "12. Hernia of all types 25. Bariatric Surgery",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0064",
+    "section_number": "13",
+    "title": "13. Fistulae",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 10,
+    "page_end": 11,
+    "source_page_refs": [
+      10,
+      11
+    ],
+    "heading_text": "13. Fistulae",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0065",
+    "section_number": "3",
+    "title": "3. We will not pay any Medical Expenses incurred during the first 48 consecutive months for Plan A during which",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "3. We will not pay any Medical Expenses incurred during the first 48 consecutive months for Plan A during which",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0066",
+    "section_number": "1",
+    "title": "1. Investigation & Evaluation (Excl04)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "1. Investigation & Evaluation (Excl04)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0067",
+    "section_number": "2",
+    "title": "2. Rest Cure, rehabilitation and respite care- (Excl05)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2. Rest Cure, rehabilitation and respite care- (Excl05)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0068",
+    "section_number": "3",
+    "title": "3. Obesity/Weight Control (Excl06)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "3. Obesity/Weight Control (Excl06)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0069",
+    "section_number": "1",
+    "title": "1. Surgery to be conducted is upon the advice of the Doctor",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "1. Surgery to be conducted is upon the advice of the Doctor",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0070",
+    "section_number": "2",
+    "title": "2. The surgery/Procedure conducted should be supported by clinical protocols",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "2. The surgery/Procedure conducted should be supported by clinical protocols",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0071",
+    "section_number": "3",
+    "title": "3. The member has to be 18 years of age or older and",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "3. The member has to be 18 years of age or older and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0072",
+    "section_number": "4",
+    "title": "4. Body Mass Index (BMI);",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 11,
+    "page_end": 12,
+    "source_page_refs": [
+      11,
+      12
+    ],
+    "heading_text": "4. Body Mass Index (BMI);",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0073",
+    "section_number": "4",
+    "title": "4. Change-of-gender treatments (Excl07)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4. Change-of-gender treatments (Excl07)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0074",
+    "section_number": "5",
+    "title": "5. Cosmetic or plastic Surgery (Excl08)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "5. Cosmetic or plastic Surgery (Excl08)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0075",
+    "section_number": "6",
+    "title": "6. Breach of law (Excl10)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "6. Breach of law (Excl10)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0076",
+    "section_number": "7",
+    "title": "7. Excluded Providers (Excl11)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "7. Excluded Providers (Excl11)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0077",
+    "section_number": "8",
+    "title": "8. Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "8. Treatment for Alcoholism, drug or substance abuse or any addictive condition and consequences thereof",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0078",
+    "section_number": "9",
+    "title": "9. Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "9. Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0079",
+    "section_number": "10",
+    "title": "10. Dietary supplements and substances that can be purchased without prescription, including but not limited to",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "10. Dietary supplements and substances that can be purchased without prescription, including but not limited to",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0080",
+    "section_number": "11",
+    "title": "11. Refractive Error (Excl15)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "11. Refractive Error (Excl15)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0081",
+    "section_number": "12",
+    "title": "12. Unproven Treatments (Excl16)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "12. Unproven Treatments (Excl16)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0082",
+    "section_number": "13",
+    "title": "13. Sterility and Infertility (Excl17)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "13. Sterility and Infertility (Excl17)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0083",
+    "section_number": "14",
+    "title": "14. Maternity (Excl 18) :",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 12,
+    "page_end": 13,
+    "source_page_refs": [
+      12,
+      13
+    ],
+    "heading_text": "14. Maternity (Excl 18) :",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0084",
+    "section_number": "15",
+    "title": "15. Any dental treatment that comprises of cosmetic surgery, dentures, dental prosthesis, dental implants, orthodontics,",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "15. Any dental treatment that comprises of cosmetic surgery, dentures, dental prosthesis, dental implants, orthodontics,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0085",
+    "section_number": "16",
+    "title": "16. Medical expenses where Inpatient care is not warranted and does not require supervision of qualified nursing staff",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "16. Medical expenses where Inpatient care is not warranted and does not require supervision of qualified nursing staff",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0086",
+    "section_number": "17",
+    "title": "17. War, invasion, acts of foreign enemies, hostilities (whether war be declared or not), civil war, commotion, unrest,",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "17. War, invasion, acts of foreign enemies, hostilities (whether war be declared or not), civil war, commotion, unrest,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0087",
+    "section_number": "18",
+    "title": "18. The cost of spectacles, contact lenses, hearing aids, crutches, dentures, artificial teeth and all other external",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "18. The cost of spectacles, contact lenses, hearing aids, crutches, dentures, artificial teeth and all other external",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0088",
+    "section_number": "19",
+    "title": "19. External medical equipment of any kind used at home as post Hospitalization care including cost of instrument used",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "19. External medical equipment of any kind used at home as post Hospitalization care including cost of instrument used",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0089",
+    "section_number": "20",
+    "title": "20. Congenital external diseases or defects or anomalies, growth hormone therapy, stem cell implantation or surgery",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "20. Congenital external diseases or defects or anomalies, growth hormone therapy, stem cell implantation or surgery",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0090",
+    "section_number": "21",
+    "title": "21. Intentional self-injury (including but not limited to the use or misuse of any intoxicating drugs or alcohol)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "21. Intentional self-injury (including but not limited to the use or misuse of any intoxicating drugs or alcohol)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0091",
+    "section_number": "22",
+    "title": "22. Vaccination or inoculation unless forming a part of post bite treatment or if medically necessary and forming a part",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "22. Vaccination or inoculation unless forming a part of post bite treatment or if medically necessary and forming a part",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0092",
+    "section_number": "23",
+    "title": "23. Circumcision unless required for the treatment of Illness or Accidental bodily injury,",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "23. Circumcision unless required for the treatment of Illness or Accidental bodily injury,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0093",
+    "section_number": "24",
+    "title": "24. All non-medical Items as per Annexure II",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "24. All non-medical Items as per Annexure II",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0094",
+    "section_number": "25",
+    "title": "25. Any treatment received outside India is not covered under this Policy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0011",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "25. Any treatment received outside India is not covered under this Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0095",
+    "section_number": "1",
+    "title": "1. Disclosure of information",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "1. Disclosure of information",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0096",
+    "section_number": "2",
+    "title": "2. Condition Precedent to Admission of Liability",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "2. Condition Precedent to Admission of Liability",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0097",
+    "section_number": "3",
+    "title": "3. Claim Settlement. (provision for Penal interest)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "heading_text": "3. Claim Settlement. (provision for Penal interest)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0098",
+    "section_number": "4",
+    "title": "4. Complete Discharge",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 13,
+    "page_end": 14,
+    "source_page_refs": [
+      13,
+      14
+    ],
+    "heading_text": "4. Complete Discharge",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0099",
+    "section_number": "5",
+    "title": "5. Multiple Policies",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "5. Multiple Policies",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0100",
+    "section_number": "6",
+    "title": "6. Fraud",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "6. Fraud",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0101",
+    "section_number": "7",
+    "title": "7. Cancellation",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 14,
+    "page_end": 15,
+    "source_page_refs": [
+      14,
+      15
+    ],
+    "heading_text": "7. Cancellation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0102",
+    "section_number": "8",
+    "title": "8. Migration",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "8. Migration",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0103",
+    "section_number": "9",
+    "title": "9. Portability",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "9. Portability",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0104",
+    "section_number": "10",
+    "title": "10. Renewal of Policy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 15,
+    "page_end": 16,
+    "source_page_refs": [
+      15,
+      16
+    ],
+    "heading_text": "10. Renewal of Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0105",
+    "section_number": "11",
+    "title": "11. Withdrawal of Policy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "11. Withdrawal of Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0106",
+    "section_number": "12",
+    "title": "12. Moratorium Period:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "12. Moratorium Period:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0107",
+    "section_number": "13",
+    "title": "13. Premium Payment in Instalments (Wherever applicable)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "13. Premium Payment in Instalments (Wherever applicable)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0108",
+    "section_number": "14",
+    "title": "14. Possibility of Revision of Terms of the Policy lncluding the Premium Rates:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "14. Possibility of Revision of Terms of the Policy lncluding the Premium Rates:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0109",
+    "section_number": "15",
+    "title": "15. Free Look Period",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "15. Free Look Period",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0110",
+    "section_number": "16",
+    "title": "16. Grievance Redressal Procedure",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 16,
+    "page_end": 17,
+    "source_page_refs": [
+      16,
+      17
+    ],
+    "heading_text": "16. Grievance Redressal Procedure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0111",
+    "section_number": "17",
+    "title": "17. Nomination",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0012",
+    "page_start": 17,
+    "page_end": 17,
+    "source_page_refs": [
+      17
+    ],
+    "heading_text": "17. Nomination",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0112",
+    "section_number": "1",
+    "title": "1. Conditions Precedent",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 17,
+    "page_end": 17,
+    "source_page_refs": [
+      17
+    ],
+    "heading_text": "1. Conditions Precedent",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0113",
+    "section_number": "2",
+    "title": "2. Insured",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 17,
+    "page_end": 18,
+    "source_page_refs": [
+      17,
+      18
+    ],
+    "heading_text": "2. Insured",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0114",
+    "section_number": "3",
+    "title": "3. Communications",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "3. Communications",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0115",
+    "section_number": "4",
+    "title": "4. Claims Procedure",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 18,
+    "page_end": 19,
+    "source_page_refs": [
+      18,
+      19
+    ],
+    "heading_text": "4. Claims Procedure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0116",
+    "section_number": "5",
+    "title": "5. Paying a Claim",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "5. Paying a Claim",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0117",
+    "section_number": "6",
+    "title": "6. Basis of Claims Payment",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "6. Basis of Claims Payment",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0118",
+    "section_number": "7",
+    "title": "7. Cost Sharing and Sub limits",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 19,
+    "page_end": 20,
+    "source_page_refs": [
+      19,
+      20
+    ],
+    "heading_text": "7. Cost Sharing and Sub limits",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0119",
+    "section_number": "8",
+    "title": "8. Discounts and Loadings:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "8. Discounts and Loadings:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0120",
+    "section_number": "9",
+    "title": "9. Cumulative Bonus:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 20,
+    "page_end": 21,
+    "source_page_refs": [
+      20,
+      21
+    ],
+    "heading_text": "9. Cumulative Bonus:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0121",
+    "section_number": "10",
+    "title": "10. Endorsements",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "10. Endorsements",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0122",
+    "section_number": "11",
+    "title": "11. Sum Insured Enhancement:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "11. Sum Insured Enhancement:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0123",
+    "section_number": "12",
+    "title": "12. Inclusion of members under the Policy:",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "12. Inclusion of members under the Policy:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0124",
+    "section_number": "13",
+    "title": "13. Territorial Limits & Governing Law",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "13. Territorial Limits & Governing Law",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0125",
+    "section_number": "14",
+    "title": "14. Arbitration and Reconciliation",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 21,
+    "page_end": 22,
+    "source_page_refs": [
+      21,
+      22
+    ],
+    "heading_text": "14. Arbitration and Reconciliation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0126",
+    "section_number": "7",
+    "title": "7. Myringotomy with Grommet Insertion 210 infected sebaceous cyst",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "7. Myringotomy with Grommet Insertion 210 infected sebaceous cyst",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0127",
+    "section_number": "15",
+    "title": "15. Endoscopic Stapedectomy A)Injection Sclerotherapy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "15. Endoscopic Stapedectomy A)Injection Sclerotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0128",
+    "section_number": "16",
+    "title": "16. Fenestration of the inner ear B)Piles banding",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "16. Fenestration of the inner ear B)Piles banding",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0129",
+    "section_number": "230",
+    "title": "230. UGI scopy and injection of adrenaline, sclerosants -",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "230. UGI scopy and injection of adrenaline, sclerosants -",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0130",
+    "section_number": "29",
+    "title": "29. Tracheostomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 22,
+    "page_end": 23,
+    "source_page_refs": [
+      22,
+      23
+    ],
+    "heading_text": "29. Tracheostomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0131",
+    "section_number": "40",
+    "title": "40. Transoral incision and drainage of a pharyngeal",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "40. Transoral incision and drainage of a pharyngeal",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0132",
+    "section_number": "46",
+    "title": "46. Excision and destruction of the diseased tissue of",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "46. Excision and destruction of the diseased tissue of",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0133",
+    "section_number": "247",
+    "title": "247. ZADEK's Nail bed excision",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "247. ZADEK's Nail bed excision",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0134",
+    "section_number": "51",
+    "title": "51. Removal of foreign body from conjunctiva a) Unilateral",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "51. Removal of foreign body from conjunctiva a) Unilateral",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0135",
+    "section_number": "52",
+    "title": "52. Biopsy of tear gland b)Bilateral",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "52. Biopsy of tear gland b)Bilateral",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0136",
+    "section_number": "57",
+    "title": "57. Removal of foreign body from the orbit and the eye",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "57. Removal of foreign body from the orbit and the eye",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0137",
+    "section_number": "256",
+    "title": "256. Epididymectomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "256. Epididymectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0138",
+    "section_number": "60",
+    "title": "60. Removal of foreign body from the posterior",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "60. Removal of foreign body from the posterior",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0139",
+    "section_number": "259",
+    "title": "259. Intersphincteric abscess incision and drainage",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "259. Intersphincteric abscess incision and drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0140",
+    "section_number": "260",
+    "title": "260. Psoas Abscess Incision and Drainage",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "260. Psoas Abscess Incision and Drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0141",
+    "section_number": "266",
+    "title": "266. Photodynamic therapy or esophageal tumour and Lung",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "266. Photodynamic therapy or esophageal tumour and Lung",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0142",
+    "section_number": "66",
+    "title": "66. Continuous Infusional Chemotherapy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 23,
+    "source_page_refs": [
+      23
+    ],
+    "heading_text": "66. Continuous Infusional Chemotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0143",
+    "section_number": "68",
+    "title": "68. CCRT-Concurrent Chemo + RT 268 laparoscopic reduction of intussusception",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 23,
+    "page_end": 24,
+    "source_page_refs": [
+      23,
+      24
+    ],
+    "heading_text": "68. CCRT-Concurrent Chemo + RT 268 laparoscopic reduction of intussusception",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0144",
+    "section_number": "76",
+    "title": "76. Tele gamma therapy 276 laparoscopic cardiomyotomy( Hellers)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "76. Tele gamma therapy 276 laparoscopic cardiomyotomy( Hellers)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0145",
+    "section_number": "78",
+    "title": "78. VMAT-Volumetric Modulated Arc Therapy 278 laparoscopic pyloromyotomy( Ramstedt)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "78. VMAT-Volumetric Modulated Arc Therapy 278 laparoscopic pyloromyotomy( Ramstedt)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0146",
+    "section_number": "79",
+    "title": "79. SBRT-Stereotactic Body Radiotherapy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "79. SBRT-Stereotactic Body Radiotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0147",
+    "section_number": "100",
+    "title": "100. Extracorporeal Irradiation to the Homologous",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "100. Extracorporeal Irradiation to the Homologous",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0148",
+    "section_number": "299",
+    "title": "299. Syme's amputation",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "299. Syme's amputation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0149",
+    "section_number": "109",
+    "title": "109. Adjuvant chemotherapy 308 calcaneum spur hydrocort injection",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "109. Adjuvant chemotherapy 308 calcaneum spur hydrocort injection",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0150",
+    "section_number": "313",
+    "title": "313. Amputation follow-up surgery",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 24,
+    "page_end": 25,
+    "source_page_refs": [
+      24,
+      25
+    ],
+    "heading_text": "313. Amputation follow-up surgery",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0151",
+    "section_number": "327",
+    "title": "327. Surgery of bunion",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "327. Surgery of bunion",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0152",
+    "section_number": "127",
+    "title": "127. AV fistula - wrist 328 intra articular steroid injection",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "127. AV fistula - wrist 328 intra articular steroid injection",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0153",
+    "section_number": "160",
+    "title": "160. Orchiectomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "160. Orchiectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0154",
+    "section_number": "361",
+    "title": "361. D&C",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "361. D&C",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0155",
+    "section_number": "163",
+    "title": "163. Nerve biopsy 363 thermal Cauterisation of Cervix",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 25,
+    "page_end": 26,
+    "source_page_refs": [
+      25,
+      26
+    ],
+    "heading_text": "163. Nerve biopsy 363 thermal Cauterisation of Cervix",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0156",
+    "section_number": "172",
+    "title": "172. Entrapment neuropathy Release 372 polypectomy cervix",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "172. Entrapment neuropathy Release 372 polypectomy cervix",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0157",
+    "section_number": "177",
+    "title": "177. Excision of cervical sympathetic Chain",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "177. Excision of cervical sympathetic Chain",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0158",
+    "section_number": "378",
+    "title": "378. Laparoscopic cystectomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "378. Laparoscopic cystectomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0159",
+    "section_number": "180",
+    "title": "180. Thoracoscopy and pleural biopsy 381 vaginal wall cyst excision",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "180. Thoracoscopy and pleural biopsy 381 vaginal wall cyst excision",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0160",
+    "section_number": "385",
+    "title": "385. Hysteroscopy, removal of myoma",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "385. Hysteroscopy, removal of myoma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0161",
+    "section_number": "193",
+    "title": "193. ERCP",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "193. ERCP",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0162",
+    "section_number": "396",
+    "title": "396. Insert PICC cath ( peripherally inserted central catheter",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "396. Insert PICC cath ( peripherally inserted central catheter",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0163",
+    "section_number": "195",
+    "title": "195. Percutaneous Endoscopic Gastrostomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "195. Percutaneous Endoscopic Gastrostomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0164",
+    "section_number": "397",
+    "title": "397. Replace PICC cath ( peripherally inserted central",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "397. Replace PICC cath ( peripherally inserted central",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0165",
+    "section_number": "196",
+    "title": "196. EUS and pancreatic pseudo cyst drainage",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "196. EUS and pancreatic pseudo cyst drainage",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0166",
+    "section_number": "199",
+    "title": "199. ERCP and sphincterotomy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "199. ERCP and sphincterotomy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0167",
+    "section_number": "200",
+    "title": "200. Esophageal stent placement",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "200. Esophageal stent placement",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0168",
+    "section_number": "201",
+    "title": "201. ERCP + placement of biliary stents",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "201. ERCP + placement of biliary stents",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0169",
+    "section_number": "202",
+    "title": "202. Sigmoidoscopy w / stent",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "202. Sigmoidoscopy w / stent",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0170",
+    "section_number": "203",
+    "title": "203. EUS + coeliac node biopsy",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 26,
+    "page_end": 27,
+    "source_page_refs": [
+      26,
+      27
+    ],
+    "heading_text": "203. EUS + coeliac node biopsy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0171",
+    "section_number": "1",
+    "title": "1. BABY FOOD Not Payable",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "1. BABY FOOD Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0172",
+    "section_number": "2",
+    "title": "2. BABY UTILITIES CHARGES Not Payable",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "2. BABY UTILITIES CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0173",
+    "section_number": "4",
+    "title": "4. BELTS/ BRACES Not Payable",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "4. BELTS/ BRACES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0174",
+    "section_number": "7",
+    "title": "7. CARRY BAGS Not Payable",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 27,
+    "page_end": 28,
+    "source_page_refs": [
+      27,
+      28
+    ],
+    "heading_text": "7. CARRY BAGS Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0175",
+    "section_number": "1",
+    "title": "1. BABY CHARGES (UNLESS SPECIFIED /INDICATED)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "1. BABY CHARGES (UNLESS SPECIFIED /INDICATED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0176",
+    "section_number": "2",
+    "title": "2. HAND WASH",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "2. HAND WASH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0177",
+    "section_number": "3",
+    "title": "3. SHOE COVER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "3. SHOE COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0178",
+    "section_number": "4",
+    "title": "4. CAPS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "4. CAPS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0179",
+    "section_number": "5",
+    "title": "5. CARDLE CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "5. CARDLE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0180",
+    "section_number": "6",
+    "title": "6. COMB",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "6. COMB",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0181",
+    "section_number": "7",
+    "title": "7. EAU-DE-COLOGNE/ROOM FRESHNERS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "7. EAU-DE-COLOGNE/ROOM FRESHNERS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0182",
+    "section_number": "8",
+    "title": "8. FOOT COVER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "8. FOOT COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0183",
+    "section_number": "9",
+    "title": "9. GOWN",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "9. GOWN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0184",
+    "section_number": "10",
+    "title": "10. SLIPPERS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "10. SLIPPERS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0185",
+    "section_number": "11",
+    "title": "11. TISSUE PAPPER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "11. TISSUE PAPPER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0186",
+    "section_number": "12",
+    "title": "12. TOOTH PASTE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "12. TOOTH PASTE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0187",
+    "section_number": "13",
+    "title": "13. TOOTH BRUSH",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "13. TOOTH BRUSH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0188",
+    "section_number": "14",
+    "title": "14. BED PAN",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "14. BED PAN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0189",
+    "section_number": "15",
+    "title": "15. FACE MASK",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "15. FACE MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0190",
+    "section_number": "16",
+    "title": "16. FLEXI MASK",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "heading_text": "16. FLEXI MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0191",
+    "section_number": "17",
+    "title": "17. HAND HOLDER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 28,
+    "page_end": 29,
+    "source_page_refs": [
+      28,
+      29
+    ],
+    "heading_text": "17. HAND HOLDER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0192",
+    "section_number": "18",
+    "title": "18. SPUTUM CUP",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "18. SPUTUM CUP",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0193",
+    "section_number": "19",
+    "title": "19. DISINEFCTANT LOTIONS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "19. DISINEFCTANT LOTIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0194",
+    "section_number": "20",
+    "title": "20. LUXURY TAX",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "20. LUXURY TAX",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0195",
+    "section_number": "21",
+    "title": "21. HVAC",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "21. HVAC",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0196",
+    "section_number": "22",
+    "title": "22. HOUSE KEEPING CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "22. HOUSE KEEPING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0197",
+    "section_number": "23",
+    "title": "23. AIR CONDITIONER CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "23. AIR CONDITIONER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0198",
+    "section_number": "24",
+    "title": "24. IM IV INJECTION CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "24. IM IV INJECTION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0199",
+    "section_number": "25",
+    "title": "25. CLEAN SHEET",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "25. CLEAN SHEET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0200",
+    "section_number": "26",
+    "title": "26. BLANKET/WARMER BLANKET",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "26. BLANKET/WARMER BLANKET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0201",
+    "section_number": "27",
+    "title": "27. ADMISSION KIT",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "27. ADMISSION KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0202",
+    "section_number": "28",
+    "title": "28. DIABETIC CHART CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "28. DIABETIC CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0203",
+    "section_number": "29",
+    "title": "29. DOCUMENTATION CHARGES/ADMINISTRATIVE EXPENSES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "29. DOCUMENTATION CHARGES/ADMINISTRATIVE EXPENSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0204",
+    "section_number": "30",
+    "title": "30. DISCHARGE PROCEDURE CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "30. DISCHARGE PROCEDURE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0205",
+    "section_number": "31",
+    "title": "31. DAILY CHART CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "31. DAILY CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0206",
+    "section_number": "32",
+    "title": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0207",
+    "section_number": "33",
+    "title": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0208",
+    "section_number": "34",
+    "title": "34. FILE OPENING CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "34. FILE OPENING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0209",
+    "section_number": "35",
+    "title": "35. EXPLATNED)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "35. EXPLATNED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0210",
+    "section_number": "36",
+    "title": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0211",
+    "section_number": "37",
+    "title": "37. PULSEOXYMETER CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "37. PULSEOXYMETER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0212",
+    "section_number": "1",
+    "title": "1. HAIR REMOVAL CREAM",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "1. HAIR REMOVAL CREAM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0213",
+    "section_number": "2",
+    "title": "2. DISPOSABLES RAZORS CHARGES(for site preparations)",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "2. DISPOSABLES RAZORS CHARGES(for site preparations)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0214",
+    "section_number": "3",
+    "title": "3. EYE PAD",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "3. EYE PAD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0215",
+    "section_number": "4",
+    "title": "4. EYE SHEILD",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "4. EYE SHEILD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0216",
+    "section_number": "5",
+    "title": "5. CAMERA COVER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "5. CAMERA COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0217",
+    "section_number": "6",
+    "title": "6. DVD ,CD CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "6. DVD ,CD CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0218",
+    "section_number": "7",
+    "title": "7. GAUSE SOFT",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "7. GAUSE SOFT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0219",
+    "section_number": "8",
+    "title": "8. GAUZE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "8. GAUZE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0220",
+    "section_number": "9",
+    "title": "9. WARD AND THEATRE BOOKING CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "9. WARD AND THEATRE BOOKING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0221",
+    "section_number": "10",
+    "title": "10. ARTHROSCOPE AND ENDOSCOPY INSTRUMENTS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "10. ARTHROSCOPE AND ENDOSCOPY INSTRUMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0222",
+    "section_number": "11",
+    "title": "11. MICROSCOPE COVER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "11. MICROSCOPE COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0223",
+    "section_number": "12",
+    "title": "12. SURGICAL BLADES,HARMONICSCALPEL,SHAVER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "12. SURGICAL BLADES,HARMONICSCALPEL,SHAVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0224",
+    "section_number": "13",
+    "title": "13. SURGICAL DRILL",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "13. SURGICAL DRILL",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0225",
+    "section_number": "14",
+    "title": "14. EYE KIT",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "14. EYE KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0226",
+    "section_number": "15",
+    "title": "15. EYE DRAPE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "15. EYE DRAPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0227",
+    "section_number": "16",
+    "title": "16. X-RAY FILM",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "16. X-RAY FILM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0228",
+    "section_number": "17",
+    "title": "17. BOYLES APPARATUS CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "17. BOYLES APPARATUS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0229",
+    "section_number": "18",
+    "title": "18. COTTON",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "18. COTTON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0230",
+    "section_number": "19",
+    "title": "19. COTTON BANDAGE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "heading_text": "19. COTTON BANDAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0231",
+    "section_number": "20",
+    "title": "20. SURGICAL TAPE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 29,
+    "page_end": 30,
+    "source_page_refs": [
+      29,
+      30
+    ],
+    "heading_text": "20. SURGICAL TAPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0232",
+    "section_number": "21",
+    "title": "21. APRON",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "21. APRON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0233",
+    "section_number": "22",
+    "title": "22. TORNIQUET",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "22. TORNIQUET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0234",
+    "section_number": "23",
+    "title": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0235",
+    "section_number": "1",
+    "title": "1. ADMISSION/REGISTRATION CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "1. ADMISSION/REGISTRATION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0236",
+    "section_number": "2",
+    "title": "2. HOSPITALIZATION FOR EVALUATION/DIAGNOSTIC PURPOSE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "2. HOSPITALIZATION FOR EVALUATION/DIAGNOSTIC PURPOSE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0237",
+    "section_number": "3",
+    "title": "3. URINE CONTAINER",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "3. URINE CONTAINER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0238",
+    "section_number": "4",
+    "title": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0239",
+    "section_number": "5",
+    "title": "5. BIPAP MACHINE",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "5. BIPAP MACHINE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0240",
+    "section_number": "6",
+    "title": "6. CPAP/CAPD EQUIPMENTS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "6. CPAP/CAPD EQUIPMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0241",
+    "section_number": "7",
+    "title": "7. INFUSION PUMP-COST",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "7. INFUSION PUMP-COST",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0242",
+    "section_number": "8",
+    "title": "8. HYDROGEN PERPOXIDE\\SPIRIT\\DISINFECTION ETC",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "8. HYDROGEN PERPOXIDE\\SPIRIT\\DISINFECTION ETC",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0243",
+    "section_number": "9",
+    "title": "9. CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "9. CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0244",
+    "section_number": "10",
+    "title": "10. HIV KIT",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "10. HIV KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0245",
+    "section_number": "11",
+    "title": "11. ANTISEPTIC MOUTHWASH",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "11. ANTISEPTIC MOUTHWASH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0246",
+    "section_number": "12",
+    "title": "12. LOZENGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "12. LOZENGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0247",
+    "section_number": "13",
+    "title": "13. MOUTH PAINT",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "13. MOUTH PAINT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0248",
+    "section_number": "14",
+    "title": "14. VACCINATION CHARGES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "14. VACCINATION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0249",
+    "section_number": "15",
+    "title": "15. ALCOHOL SWABES",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "15. ALCOHOL SWABES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0250",
+    "section_number": "16",
+    "title": "16. SCRUB SOLUTION / STERILLIUM",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "16. SCRUB SOLUTION / STERILLIUM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0251",
+    "section_number": "17",
+    "title": "17. GLUCOMETER & STRIPS",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "heading_text": "17. GLUCOMETER & STRIPS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "bajaj_allianz_silver_health_sec_0252",
+    "section_number": "18",
+    "title": "18. URINE BAG",
+    "level": 2,
+    "parent_id": "bajaj_allianz_silver_health_sec_0013",
+    "page_start": 30,
+    "page_end": 33,
+    "source_page_refs": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "heading_text": "18. URINE BAG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

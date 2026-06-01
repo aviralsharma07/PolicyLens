@@ -1,0 +1,830 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 32,
+    "evidence_text": "gnosed before the start of the Policy Period, or for which a claim has or could have been made under any earlier policy o 48-months Waiting Period for Pre-Existing Conditions declared and/or accepted at the time of application, from policy commencement date. Pre-Existing Conditions or diseases (as defined in Section 1), and any complications arising from the same, will be covered after a 48 month waiting period. This means that 48 months of continuous coverage must elapse, from the start of your first policy with us. o 48- months Waiting Period for Insured conditions Related to HIV/AIDS, shall apply from t",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 4,
+    "evidence_text": "inical examination and expected to last throughout your life. Symptoms that are covered include numbness, increased sensitivity, paralysis, localized weakness, difficulty with speech, inability to speak, difficulty in swallowing, visual impairment, difficulty in walking, lack of coordination, tremor, seizures, lethargy, dementia, delirium and coma. 29. Nominee means the person named in the proposal or schedule to whom the benefits under the Policy is nominated by the Insured Person. 30. Notification of Claim is the process of intimating a claim to the Insurer or TPA through any of the recognized modes of comm",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_applicable",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 32,
+    "evidence_text": "lnesses / conditions / supplies as otherwise specified in the Policy: o Congenital external diseases, defects or anomalies o Treatment arising from pregnancy (including voluntary termination), miscarriage, maternity or birth (including caesarean section) iii. Time bound exclusion(s) applied by us and specified in the Policy Schedule and accepted by you, as per the board approved underwriting policy of the Company o Any insured condition or critical illness diagnosed within the first 90 days of the date of commencement of the Policy is excluded. This exclusion will not apply to you if your coverage has been renewed, without a break, for subsequent years. o Any insured condition or critical illness for which care, treatment, or advice was recommended by o",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: maternity search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 35,
+    "evidence_text": "ble part of the premium received for such person “if and only if” there are no claims in respect of that Insured person under the policy. Part E: General Conditions a) Free Look Period of 15 days: A period of 15 days from the date of receipt of the Policy document is available to review the Terms and Conditions of this Policy. You have the option of cancelling the Policy by stating the reasons for cancellation in writing. If there are no Claims report",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 43,
+    "evidence_text": "ur Policy terms may be altered based on the information received. 4. All applications for renewal of the policy must be received by us before the end of the Policy Period. A Grace Period of 30 days for renewing the policy is available under this policy. Any insured condition or critical illness diagnosed, or any claim incurred, during this break-in period will not be payable under this policy. 5. Sum Insured Enhancement: Your Sum Insured can be en",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "ire policy carefully so you understand how this insurance works. Please retain these Policy Wordings for current and future use. Any change to the contract wordings at the time of renewal, after approval from the Regulator, will be updated and available on our website: www.libertyinsurance.in i) Conditions precedent to the contract Insuring Agreement In consideration of your application for insurance and of the payment of premiums when due, we have issued this policy to you. In this policy, “you”, “your”, or “yourself” means the Insured Person(s) in the Policy Schedule. “We”, “our” or “us” means Liberty General Insurance Limited. To help you understand the insurance terms used in this policy, please refer to the explanati",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 38,
+    "evidence_text": "the event of non-payment of any installment on its Half Yearly 51% due date, this policy will cease to operate from the time and date of default in payment. In which case, we will Quarterly 26% have no liability for any claim occurring after that, and Monthly 8.75% we will not refund any premium under the policy. The policy can be revived within the Revival period of 15 days by payment of the Installment due amount. During this Revival Period, we will not be liable for any Claims which are incurred between the due date of instalment and the date and time that you revive the Policy. In addition, in the event of claim on this Polic",
+    "source_document": {
+      "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "uin": "LIBHLIP20100V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

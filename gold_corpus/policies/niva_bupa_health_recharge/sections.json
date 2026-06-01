@@ -1,0 +1,4498 @@
+[
+  {
+    "section_id": "niva_bupa_health_recharge_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 45,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0001",
+    "section_number": "2",
+    "title": "2. Definitions",
+    "level": 1,
+    "parent_id": "niva_bupa_health_recharge_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. Definitions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0002",
+    "section_number": null,
+    "title": "X. Multiple Policies",
+    "level": 1,
+    "parent_id": "niva_bupa_health_recharge_root_0000",
+    "page_start": 29,
+    "page_end": 35,
+    "source_page_refs": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "heading_text": "X. Multiple Policies",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0003",
+    "section_number": "2.1",
+    "title": "2.1. Standard Definitions",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 1,
+    "page_end": 4,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "heading_text": "2.1. Standard Definitions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0004",
+    "section_number": "2.2",
+    "title": "2.2. Specific Definitions",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 4,
+    "page_end": 13,
+    "source_page_refs": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "heading_text": "2.2. Specific Definitions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0005",
+    "section_number": "2",
+    "title": "2. Lac",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 13,
+    "page_end": 14,
+    "source_page_refs": [
+      13,
+      14
+    ],
+    "heading_text": "2. Lac",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0006",
+    "section_number": "4",
+    "title": "4. Optional Benefits",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "4. Optional Benefits",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0007",
+    "section_number": "1",
+    "title": "1. Accident Death (AD)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Accident Death (AD)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0008",
+    "section_number": "2",
+    "title": "2. Accident Permanent Total Disability (APTD)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. Accident Permanent Total Disability (APTD)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0009",
+    "section_number": "1",
+    "title": "1. Loss of use of limbs or sight",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Loss of use of limbs or sight",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0010",
+    "section_number": "1",
+    "title": "1. The use of two limbs (including paraplegia and hemiplegia) OR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. The use of two limbs (including paraplegia and hemiplegia) OR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0011",
+    "section_number": "2",
+    "title": "2. The sight in both eyes OR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. The sight in both eyes OR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0012",
+    "section_number": "3",
+    "title": "3. The use of one limb and the sight in one eye",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "3. The use of one limb and the sight in one eye",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0013",
+    "section_number": "2",
+    "title": "2. Loss of independent living",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. Loss of independent living",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0014",
+    "section_number": "1",
+    "title": "1. Washing: the ability to maintain an adequate level of cleanliness and personal hygiene",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "1. Washing: the ability to maintain an adequate level of cleanliness and personal hygiene",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0015",
+    "section_number": "2",
+    "title": "2. Dressing: the ability to put on and take off all necessary garments, artificial limbs or other",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "2. Dressing: the ability to put on and take off all necessary garments, artificial limbs or other",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0016",
+    "section_number": "3",
+    "title": "3. Feeding: the ability to transfer food from a plate or bowl to the mouth once food has been",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "heading_text": "3. Feeding: the ability to transfer food from a plate or bowl to the mouth once food has been",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0017",
+    "section_number": "4",
+    "title": "4. Toileting: the ability to manage bowel and bladder function, maintaining an adequate and",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 14,
+    "page_end": 15,
+    "source_page_refs": [
+      14,
+      15
+    ],
+    "heading_text": "4. Toileting: the ability to manage bowel and bladder function, maintaining an adequate and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0018",
+    "section_number": "5",
+    "title": "5. Mobility: the ability to move indoors from room to room on level surfaces at the normal place of",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "5. Mobility: the ability to move indoors from room to room on level surfaces at the normal place of",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0019",
+    "section_number": "6",
+    "title": "6. Transferring: the ability to move from a lying position in a bed to a sitting position in an upright",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "6. Transferring: the ability to move from a lying position in a bed to a sitting position in an upright",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0020",
+    "section_number": "1",
+    "title": "1. The Permanent Total Disability is proved through a disability certificate issued by a Medical",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "1. The Permanent Total Disability is proved through a disability certificate issued by a Medical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0021",
+    "section_number": "2",
+    "title": "2. We will admit a claim under this optional benefit only if the Permanent Total Disability continues",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "2. We will admit a claim under this optional benefit only if the Permanent Total Disability continues",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0022",
+    "section_number": "3",
+    "title": "3. If the Insured Person dies before a claim has been admitted under this optional benefit, no",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "3. If the Insured Person dies before a claim has been admitted under this optional benefit, no",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0023",
+    "section_number": "4",
+    "title": "4. We will not make payment under Accident Permanent Total Disability more than once in the",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "4. We will not make payment under Accident Permanent Total Disability more than once in the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0024",
+    "section_number": "5",
+    "title": "5. If a claim under this optional benefit is admitted, then coverage for the Insured Person will",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "5. If a claim under this optional benefit is admitted, then coverage for the Insured Person will",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0025",
+    "section_number": "3",
+    "title": "3. Accident Permanent Partial Disability (APPD)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "3. Accident Permanent Partial Disability (APPD)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0026",
+    "section_number": "1",
+    "title": "1. The Permanent Partial Disability is proved through a disability certificate issued by a Medical",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "1. The Permanent Partial Disability is proved through a disability certificate issued by a Medical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0027",
+    "section_number": "2",
+    "title": "2. We will admit a claim under this optional benefit only if the Permanent Partial Disability",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "2. We will admit a claim under this optional benefit only if the Permanent Partial Disability",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0028",
+    "section_number": "3",
+    "title": "3. If the Insured Person dies before a claim has been admitted under this optional benefit, no",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "3. If the Insured Person dies before a claim has been admitted under this optional benefit, no",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0029",
+    "section_number": "4",
+    "title": "4. If a claim under this optional benefit has been admitted, then no further claim in respect of the",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "4. If a claim under this optional benefit has been admitted, then no further claim in respect of the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0030",
+    "section_number": "5",
+    "title": "5. If a claim under this optional benefit is paid and the entire Personal Accident Sum Insured",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 15,
+    "page_end": 16,
+    "source_page_refs": [
+      15,
+      16
+    ],
+    "heading_text": "5. If a claim under this optional benefit is paid and the entire Personal Accident Sum Insured",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0031",
+    "section_number": "1",
+    "title": "1. Loss or total and permanent loss of use of both the hands from 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "1. Loss or total and permanent loss of use of both the hands from 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0032",
+    "section_number": "2",
+    "title": "2. Loss or total and permanent loss of use of both feet from the 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "2. Loss or total and permanent loss of use of both feet from the 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0033",
+    "section_number": "3",
+    "title": "3. Loss or total and permanent loss of use of one hand from the 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "3. Loss or total and permanent loss of use of one hand from the 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0034",
+    "section_number": "4",
+    "title": "4. Loss or total and permanent loss of use of one hand from the 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "4. Loss or total and permanent loss of use of one hand from the 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0035",
+    "section_number": "5",
+    "title": "5. Loss or total and permanent loss of use of one foot from the 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "5. Loss or total and permanent loss of use of one foot from the 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0036",
+    "section_number": "6",
+    "title": "6. Total and permanent loss of speech and hearing in both ears 100%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "6. Total and permanent loss of speech and hearing in both ears 100%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0037",
+    "section_number": "7",
+    "title": "7. Total and permanent loss of hearing in both ears 50%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "7. Total and permanent loss of hearing in both ears 50%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0038",
+    "section_number": "8",
+    "title": "8. Loss or total and permanent loss of use of one hand from wrist 50%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "8. Loss or total and permanent loss of use of one hand from wrist 50%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0039",
+    "section_number": "9",
+    "title": "9. Loss or total and permanent loss of use of one foot from ankle 50%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "9. Loss or total and permanent loss of use of one foot from ankle 50%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0040",
+    "section_number": "10",
+    "title": "10. Total and permanent loss of sight in one eye 50%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "10. Total and permanent loss of sight in one eye 50%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0041",
+    "section_number": "11",
+    "title": "11. Total and permanent loss of speech 50%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "11. Total and permanent loss of speech 50%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0042",
+    "section_number": "12",
+    "title": "12. Permanent total loss of use of four fingers and thumb of either 40%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "12. Permanent total loss of use of four fingers and thumb of either 40%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0043",
+    "section_number": "14",
+    "title": "14. Uniplegia 25%",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "heading_text": "14. Uniplegia 25%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0044",
+    "section_number": "15",
+    "title": "15. Permanent total loss of use of one thumb of either hand",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 16,
+    "page_end": 17,
+    "source_page_refs": [
+      16,
+      17
+    ],
+    "heading_text": "15. Permanent total loss of use of one thumb of either hand",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0045",
+    "section_number": "1",
+    "title": "1. Cancer of Specified Severity",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 17,
+    "page_end": 17,
+    "source_page_refs": [
+      17
+    ],
+    "heading_text": "1. Cancer of Specified Severity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0046",
+    "section_number": "2",
+    "title": "2. Myocardial Infarction",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 17,
+    "page_end": 18,
+    "source_page_refs": [
+      17,
+      18
+    ],
+    "heading_text": "2. Myocardial Infarction",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0047",
+    "section_number": "3",
+    "title": "3. Open Chest CABG",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "3. Open Chest CABG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0048",
+    "section_number": "4",
+    "title": "4. Open Heart Replacement or Repair of Heart Valves",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4. Open Heart Replacement or Repair of Heart Valves",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0049",
+    "section_number": "5",
+    "title": "5. Coma of Specified Severity",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "5. Coma of Specified Severity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0050",
+    "section_number": "6",
+    "title": "6. Kidney Failure requiring Regular Dialysis",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "6. Kidney Failure requiring Regular Dialysis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0051",
+    "section_number": "7",
+    "title": "7. Stroke resulting in Permanent Symptoms",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "7. Stroke resulting in Permanent Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0052",
+    "section_number": "8",
+    "title": "8. Major Organ /Bone Marrow Transplant",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 18,
+    "page_end": 19,
+    "source_page_refs": [
+      18,
+      19
+    ],
+    "heading_text": "8. Major Organ /Bone Marrow Transplant",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0053",
+    "section_number": "9",
+    "title": "9. Permanent Paralysis of Limbs",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "9. Permanent Paralysis of Limbs",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0054",
+    "section_number": "10",
+    "title": "10. Motor Neuron Disease with Permanent Symptoms",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "10. Motor Neuron Disease with Permanent Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0055",
+    "section_number": "11",
+    "title": "11. Multiple Sclerosis with Persisting Symptoms",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "11. Multiple Sclerosis with Persisting Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0056",
+    "section_number": "12",
+    "title": "12. Deafness",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "12. Deafness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0057",
+    "section_number": "13",
+    "title": "13. End Stage Lung Failure",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 19,
+    "source_page_refs": [
+      19
+    ],
+    "heading_text": "13. End Stage Lung Failure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0058",
+    "section_number": "14",
+    "title": "14. End Stage Liver Failure",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 19,
+    "page_end": 20,
+    "source_page_refs": [
+      19,
+      20
+    ],
+    "heading_text": "14. End Stage Liver Failure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0059",
+    "section_number": "15",
+    "title": "15. Loss of Speech",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "15. Loss of Speech",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0060",
+    "section_number": "16",
+    "title": "16. Third Degree Burns",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "16. Third Degree Burns",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0061",
+    "section_number": "17",
+    "title": "17. Fulminant Viral Hepatitis",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "17. Fulminant Viral Hepatitis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0062",
+    "section_number": "18",
+    "title": "18. Aplastic Anemia",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "18. Aplastic Anemia",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0063",
+    "section_number": "19",
+    "title": "19. Muscular Dystrophy",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 20,
+    "page_end": 21,
+    "source_page_refs": [
+      20,
+      21
+    ],
+    "heading_text": "19. Muscular Dystrophy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0064",
+    "section_number": "20",
+    "title": "20. Bacterial Meningitis",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 21,
+    "page_end": 22,
+    "source_page_refs": [
+      21,
+      22
+    ],
+    "heading_text": "20. Bacterial Meningitis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0065",
+    "section_number": "5",
+    "title": "5. Claim Cost Sharing",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 22,
+    "page_end": 23,
+    "source_page_refs": [
+      22,
+      23
+    ],
+    "heading_text": "5. Claim Cost Sharing",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0066",
+    "section_number": "6",
+    "title": "6. Exclusions",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 23,
+    "page_end": 24,
+    "source_page_refs": [
+      23,
+      24
+    ],
+    "heading_text": "6. Exclusions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0067",
+    "section_number": "1",
+    "title": "1. Obesity-related cardiomyopathy",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "1. Obesity-related cardiomyopathy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0068",
+    "section_number": "2",
+    "title": "2. Coronary heart disease",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "2. Coronary heart disease",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0069",
+    "section_number": "3",
+    "title": "3. Severe Sleep Apnea",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 24,
+    "page_end": 24,
+    "source_page_refs": [
+      24
+    ],
+    "heading_text": "3. Severe Sleep Apnea",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0070",
+    "section_number": "4",
+    "title": "4. Uncontrolled Type2 Diabetes",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 24,
+    "page_end": 26,
+    "source_page_refs": [
+      24,
+      25,
+      26
+    ],
+    "heading_text": "4. Uncontrolled Type2 Diabetes",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0071",
+    "section_number": "1",
+    "title": "1. Suicide or self inflicted Injury, whether the Insured Person is medically sane or insane",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "1. Suicide or self inflicted Injury, whether the Insured Person is medically sane or insane",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0072",
+    "section_number": "2",
+    "title": "2. Treatment for any Injury or Illness resulting directly or indirectly from nuclear, radiological emissions,",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "2. Treatment for any Injury or Illness resulting directly or indirectly from nuclear, radiological emissions,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0073",
+    "section_number": "3",
+    "title": "3. Service in the armed forces, or any police organization, of any country at war or at peace or service",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "3. Service in the armed forces, or any police organization, of any country at war or at peace or service",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0074",
+    "section_number": "4",
+    "title": "4. Any change of profession after inception of the Policy or any Renewal which results in the",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "4. Any change of profession after inception of the Policy or any Renewal which results in the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0075",
+    "section_number": "5",
+    "title": "5. Committing an assault, a criminal offence or any breach of law with criminal intent",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "5. Committing an assault, a criminal offence or any breach of law with criminal intent",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0076",
+    "section_number": "6",
+    "title": "6. Taking or absorbing, accidentally or otherwise, any intoxicating liquor, drug, narcotic, medicine,",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "6. Taking or absorbing, accidentally or otherwise, any intoxicating liquor, drug, narcotic, medicine,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0077",
+    "section_number": "7",
+    "title": "7. Participation in aviation/marine activities (including crew) other than as a passenger in an",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "heading_text": "7. Participation in aviation/marine activities (including crew) other than as a passenger in an",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0078",
+    "section_number": "8",
+    "title": "8. Engaging in or taking part in professional/adventure sports or any hazardous pursuits, speed contest",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 26,
+    "page_end": 27,
+    "source_page_refs": [
+      26,
+      27
+    ],
+    "heading_text": "8. Engaging in or taking part in professional/adventure sports or any hazardous pursuits, speed contest",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0079",
+    "section_number": "9",
+    "title": "9. Body or mental infirmity or any Illness except where such condition arises directly as a result of an",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "heading_text": "9. Body or mental infirmity or any Illness except where such condition arises directly as a result of an",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0080",
+    "section_number": "7",
+    "title": "7. General Terms and Clauses",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0001",
+    "page_start": 27,
+    "page_end": 29,
+    "source_page_refs": [
+      27,
+      28,
+      29
+    ],
+    "heading_text": "7. General Terms and Clauses",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0081",
+    "section_number": "1",
+    "title": "1. Accident Death",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 35,
+    "page_end": 35,
+    "source_page_refs": [
+      35
+    ],
+    "heading_text": "1. Accident Death",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0082",
+    "section_number": "2",
+    "title": "2. Accident Permanent Total Disability or Accident Permanent Partial Disability",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 35,
+    "page_end": 35,
+    "source_page_refs": [
+      35
+    ],
+    "heading_text": "2. Accident Permanent Total Disability or Accident Permanent Partial Disability",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0083",
+    "section_number": "1",
+    "title": "1. Treating Medical Practitioner’s certification for insured person’s survival post survival",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 35,
+    "page_end": 37,
+    "source_page_refs": [
+      35,
+      36,
+      37
+    ],
+    "heading_text": "1. Treating Medical Practitioner’s certification for insured person’s survival post survival",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0084",
+    "section_number": "5",
+    "title": "5. L / 7.5 L / 10L / 15L / 25L / 40L /",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "5. L / 7.5 L / 10L / 15L / 25L / 40L /",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0085",
+    "section_number": "45",
+    "title": "45. L / 65L / 70L / 90L / 95L",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 37,
+    "page_end": 39,
+    "source_page_refs": [
+      37,
+      38,
+      39
+    ],
+    "heading_text": "45. L / 65L / 70L / 90L / 95L",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0086",
+    "section_number": "1",
+    "title": "1. BABY FOOD",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "1. BABY FOOD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0087",
+    "section_number": "2",
+    "title": "2. BABY UTILITIES CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "2. BABY UTILITIES CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0088",
+    "section_number": "3",
+    "title": "3. BEAUTY SERVICES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "3. BEAUTY SERVICES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0089",
+    "section_number": "4",
+    "title": "4. BELTS/ BRACES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "4. BELTS/ BRACES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0090",
+    "section_number": "5",
+    "title": "5. BUDS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "5. BUDS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0091",
+    "section_number": "6",
+    "title": "6. COLD PACK/HOT PACK",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "6. COLD PACK/HOT PACK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0092",
+    "section_number": "7",
+    "title": "7. CARRY BAGS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "7. CARRY BAGS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0093",
+    "section_number": "8",
+    "title": "8. EMAIL / INTERNET CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "8. EMAIL / INTERNET CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0094",
+    "section_number": "9",
+    "title": "9. FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY HOSPITAL)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "9. FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY HOSPITAL)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0095",
+    "section_number": "10",
+    "title": "10. LEGGINGS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "10. LEGGINGS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0096",
+    "section_number": "11",
+    "title": "11. LAUNDRY CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "11. LAUNDRY CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0097",
+    "section_number": "12",
+    "title": "12. MINERAL WATER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "12. MINERAL WATER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0098",
+    "section_number": "13",
+    "title": "13. SANITARY PAD",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "13. SANITARY PAD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0099",
+    "section_number": "14",
+    "title": "14. TELEPHONE CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "14. TELEPHONE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0100",
+    "section_number": "15",
+    "title": "15. GUEST SERVICES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "15. GUEST SERVICES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0101",
+    "section_number": "16",
+    "title": "16. CREPE BANDAGE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "16. CREPE BANDAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0102",
+    "section_number": "17",
+    "title": "17. DIAPER OF ANY TYPE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "17. DIAPER OF ANY TYPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0103",
+    "section_number": "18",
+    "title": "18. EYELET COLLAR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "18. EYELET COLLAR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0104",
+    "section_number": "19",
+    "title": "19. SLINGS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "19. SLINGS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0105",
+    "section_number": "20",
+    "title": "20. BLOOD GROUPING AND CROSS MATCHING OF DONORS SAMPLES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "20. BLOOD GROUPING AND CROSS MATCHING OF DONORS SAMPLES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0106",
+    "section_number": "21",
+    "title": "21. SERVICE CHARGES WHERE NURSING CHARGE ALSO CHARGED",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "21. SERVICE CHARGES WHERE NURSING CHARGE ALSO CHARGED",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0107",
+    "section_number": "22",
+    "title": "22. TELEVISION CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "22. TELEVISION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0108",
+    "section_number": "23",
+    "title": "23. SURCHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "23. SURCHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0109",
+    "section_number": "24",
+    "title": "24. ATTENDANT CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "24. ATTENDANT CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0110",
+    "section_number": "25",
+    "title": "25. EXTRA DIET OF PATIENT (OTHER THAN THAT WHICH FORMS PART OF BED",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "25. EXTRA DIET OF PATIENT (OTHER THAN THAT WHICH FORMS PART OF BED",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0111",
+    "section_number": "26",
+    "title": "26. BIRTH CERTIFICATE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "26. BIRTH CERTIFICATE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0112",
+    "section_number": "27",
+    "title": "27. CERTIFICATE CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "27. CERTIFICATE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0113",
+    "section_number": "28",
+    "title": "28. COURIER CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "28. COURIER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0114",
+    "section_number": "29",
+    "title": "29. CONVEYANCE CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "29. CONVEYANCE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0115",
+    "section_number": "30",
+    "title": "30. MEDICAL CERTIFICATE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "30. MEDICAL CERTIFICATE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0116",
+    "section_number": "31",
+    "title": "31. MEDICAL RECORDS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "31. MEDICAL RECORDS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0117",
+    "section_number": "32",
+    "title": "32. PHOTOCOPIES CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "32. PHOTOCOPIES CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0118",
+    "section_number": "33",
+    "title": "33. MORTUARY CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "33. MORTUARY CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0119",
+    "section_number": "34",
+    "title": "34. WALKING AIDS CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "34. WALKING AIDS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0120",
+    "section_number": "35",
+    "title": "35. OXYGEN CYLINDER (FOR USAGE OUTSIDE THE HOSPITAL)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "35. OXYGEN CYLINDER (FOR USAGE OUTSIDE THE HOSPITAL)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0121",
+    "section_number": "36",
+    "title": "36. SPACER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "36. SPACER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0122",
+    "section_number": "37",
+    "title": "37. SPIROMETRE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "37. SPIROMETRE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0123",
+    "section_number": "38",
+    "title": "38. NEBULIZER KIT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "38. NEBULIZER KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0124",
+    "section_number": "39",
+    "title": "39. STEAM INHALER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "39. STEAM INHALER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0125",
+    "section_number": "40",
+    "title": "40. ARMSLING",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "40. ARMSLING",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0126",
+    "section_number": "41",
+    "title": "41. THERMOMETER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "41. THERMOMETER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0127",
+    "section_number": "42",
+    "title": "42. CERVICAL COLLAR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "42. CERVICAL COLLAR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0128",
+    "section_number": "43",
+    "title": "43. SPLINT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "43. SPLINT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0129",
+    "section_number": "44",
+    "title": "44. DIABETIC FOOT WEAR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "44. DIABETIC FOOT WEAR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0130",
+    "section_number": "45",
+    "title": "45. KNEE BRACES (LONG/ SHORT/ HINGED)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "45. KNEE BRACES (LONG/ SHORT/ HINGED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0131",
+    "section_number": "46",
+    "title": "46. KNEE IMMOBILIZER/SHOULDER IMMOBILIZER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "46. KNEE IMMOBILIZER/SHOULDER IMMOBILIZER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0132",
+    "section_number": "47",
+    "title": "47. LUMBO SACRAL BELT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "47. LUMBO SACRAL BELT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0133",
+    "section_number": "48",
+    "title": "48. NIMBUS BED OR WATER OR AIR BED CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "48. NIMBUS BED OR WATER OR AIR BED CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0134",
+    "section_number": "49",
+    "title": "49. AMBULANCE COLLAR",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 39,
+    "page_end": 40,
+    "source_page_refs": [
+      39,
+      40
+    ],
+    "heading_text": "49. AMBULANCE COLLAR",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0135",
+    "section_number": "50",
+    "title": "50. AMBULANCE EQUIPMENT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "50. AMBULANCE EQUIPMENT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0136",
+    "section_number": "51",
+    "title": "51. ABDOMINAL BINDER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "51. ABDOMINAL BINDER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0137",
+    "section_number": "52",
+    "title": "52. PRIVATE NURSES CHARGES- SPECIAL NURSING CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "52. PRIVATE NURSES CHARGES- SPECIAL NURSING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0138",
+    "section_number": "53",
+    "title": "53. SUGAR FREE Tablets",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "53. SUGAR FREE Tablets",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0139",
+    "section_number": "54",
+    "title": "54. CREAMS POWDERS LOTIONS (Toiletries are not payable, only prescribed medical",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "54. CREAMS POWDERS LOTIONS (Toiletries are not payable, only prescribed medical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0140",
+    "section_number": "55",
+    "title": "55. ECG ELECTRODES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "55. ECG ELECTRODES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0141",
+    "section_number": "56",
+    "title": "56. GLOVES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "56. GLOVES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0142",
+    "section_number": "57",
+    "title": "57. NEBULISATION KIT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "57. NEBULISATION KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0143",
+    "section_number": "58",
+    "title": "58. ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, ORTHOKIT,",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "58. ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, ORTHOKIT,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0144",
+    "section_number": "59",
+    "title": "59. KIDNEY TRAY",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "59. KIDNEY TRAY",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0145",
+    "section_number": "60",
+    "title": "60. MASK",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "60. MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0146",
+    "section_number": "61",
+    "title": "61. OUNCE GLASS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "61. OUNCE GLASS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0147",
+    "section_number": "62",
+    "title": "62. OXYGEN MASK",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "62. OXYGEN MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0148",
+    "section_number": "63",
+    "title": "63. PELVIC TRACTION BELT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "63. PELVIC TRACTION BELT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0149",
+    "section_number": "64",
+    "title": "64. PAN CAN",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "64. PAN CAN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0150",
+    "section_number": "65",
+    "title": "65. TROLLY COVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "65. TROLLY COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0151",
+    "section_number": "66",
+    "title": "66. UROMETER, URINE JUG",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "66. UROMETER, URINE JUG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0152",
+    "section_number": "67",
+    "title": "67. AMBULANCE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "67. AMBULANCE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0153",
+    "section_number": "68",
+    "title": "68. VASOFIX SAFETY",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "68. VASOFIX SAFETY",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0154",
+    "section_number": "1",
+    "title": "1. BABY CHARGES (UNLESS SPECIFIED/INDICATED)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "1. BABY CHARGES (UNLESS SPECIFIED/INDICATED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0155",
+    "section_number": "2",
+    "title": "2. HAND WASH",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "2. HAND WASH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0156",
+    "section_number": "3",
+    "title": "3. SHOE COVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "3. SHOE COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0157",
+    "section_number": "4",
+    "title": "4. CAPS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "4. CAPS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0158",
+    "section_number": "5",
+    "title": "5. CRADLE CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "5. CRADLE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0159",
+    "section_number": "6",
+    "title": "6. COMB",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "6. COMB",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0160",
+    "section_number": "7",
+    "title": "7. EAU-DE-COLOGNE / ROOM FRESHNERS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "7. EAU-DE-COLOGNE / ROOM FRESHNERS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0161",
+    "section_number": "8",
+    "title": "8. FOOT COVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "8. FOOT COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0162",
+    "section_number": "9",
+    "title": "9. GOWN",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "9. GOWN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0163",
+    "section_number": "10",
+    "title": "10. SLIPPERS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "10. SLIPPERS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0164",
+    "section_number": "11",
+    "title": "11. TISSUE PAPER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "11. TISSUE PAPER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0165",
+    "section_number": "12",
+    "title": "12. TOOTH PASTE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "12. TOOTH PASTE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0166",
+    "section_number": "13",
+    "title": "13. TOOTH BRUSH",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "13. TOOTH BRUSH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0167",
+    "section_number": "14",
+    "title": "14. BED PAN",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "14. BED PAN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0168",
+    "section_number": "15",
+    "title": "15. FACE MASK",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "15. FACE MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0169",
+    "section_number": "16",
+    "title": "16. FLEXI MASK",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "16. FLEXI MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0170",
+    "section_number": "17",
+    "title": "17. HAND HOLDER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "17. HAND HOLDER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0171",
+    "section_number": "18",
+    "title": "18. SPUTUM CUP",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "18. SPUTUM CUP",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0172",
+    "section_number": "19",
+    "title": "19. DISINFECTANT LOTIONS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "19. DISINFECTANT LOTIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0173",
+    "section_number": "20",
+    "title": "20. LUXURY TAX",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "20. LUXURY TAX",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0174",
+    "section_number": "21",
+    "title": "21. HVAC",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "21. HVAC",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0175",
+    "section_number": "22",
+    "title": "22. HOUSE KEEPING CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "22. HOUSE KEEPING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0176",
+    "section_number": "23",
+    "title": "23. AIR CONDITIONER CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "23. AIR CONDITIONER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0177",
+    "section_number": "24",
+    "title": "24. IM IV INJECTION CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "24. IM IV INJECTION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0178",
+    "section_number": "25",
+    "title": "25. CLEAN SHEET",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "25. CLEAN SHEET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0179",
+    "section_number": "26",
+    "title": "26. BLANKET/WARMER BLANKET",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "26. BLANKET/WARMER BLANKET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0180",
+    "section_number": "27",
+    "title": "27. ADMISSION KIT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "27. ADMISSION KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0181",
+    "section_number": "28",
+    "title": "28. DIABETIC CHART CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "28. DIABETIC CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0182",
+    "section_number": "29",
+    "title": "29. DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "29. DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0183",
+    "section_number": "30",
+    "title": "30. DISCHARGE PROCEDURE CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "30. DISCHARGE PROCEDURE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0184",
+    "section_number": "31",
+    "title": "31. DAILY CHART CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 40,
+    "page_end": 41,
+    "source_page_refs": [
+      40,
+      41
+    ],
+    "heading_text": "31. DAILY CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0185",
+    "section_number": "32",
+    "title": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0186",
+    "section_number": "33",
+    "title": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0187",
+    "section_number": "34",
+    "title": "34. FILE OPENING CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "34. FILE OPENING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0188",
+    "section_number": "35",
+    "title": "35. INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "35. INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0189",
+    "section_number": "36",
+    "title": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0190",
+    "section_number": "37",
+    "title": "37. PULSEOXYMETER CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "37. PULSEOXYMETER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0191",
+    "section_number": "1",
+    "title": "1. HAIR REMOVAL CREAM",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "1. HAIR REMOVAL CREAM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0192",
+    "section_number": "2",
+    "title": "2. DISPOSABLES RAZORS CHARGES (for site preparations)",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "2. DISPOSABLES RAZORS CHARGES (for site preparations)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0193",
+    "section_number": "3",
+    "title": "3. EYE PAD",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "3. EYE PAD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0194",
+    "section_number": "4",
+    "title": "4. EYE SHEILD",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "4. EYE SHEILD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0195",
+    "section_number": "5",
+    "title": "5. CAMERA COVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "5. CAMERA COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0196",
+    "section_number": "6",
+    "title": "6. DVD, CD CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "6. DVD, CD CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0197",
+    "section_number": "7",
+    "title": "7. GAUSE SOFT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "7. GAUSE SOFT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0198",
+    "section_number": "8",
+    "title": "8. GAUZE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "8. GAUZE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0199",
+    "section_number": "9",
+    "title": "9. WARD AND THEATRE BOOKING CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "9. WARD AND THEATRE BOOKING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0200",
+    "section_number": "10",
+    "title": "10. ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "10. ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0201",
+    "section_number": "11",
+    "title": "11. MICROSCOPE COVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "11. MICROSCOPE COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0202",
+    "section_number": "12",
+    "title": "12. SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "12. SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0203",
+    "section_number": "13",
+    "title": "13. SURGICAL DRILL",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "13. SURGICAL DRILL",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0204",
+    "section_number": "14",
+    "title": "14. EYE KIT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "14. EYE KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0205",
+    "section_number": "15",
+    "title": "15. EYE DRAPE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "15. EYE DRAPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0206",
+    "section_number": "16",
+    "title": "16. X-RAY FILM",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "16. X-RAY FILM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0207",
+    "section_number": "17",
+    "title": "17. BOYLES APPARATUS CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "17. BOYLES APPARATUS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0208",
+    "section_number": "18",
+    "title": "18. COTTON",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "18. COTTON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0209",
+    "section_number": "19",
+    "title": "19. COTTON BANDAGE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "19. COTTON BANDAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0210",
+    "section_number": "20",
+    "title": "20. SURGICAL TAPE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "20. SURGICAL TAPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0211",
+    "section_number": "21",
+    "title": "21. APRON",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "21. APRON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0212",
+    "section_number": "22",
+    "title": "22. TORNIQUET",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "22. TORNIQUET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0213",
+    "section_number": "23",
+    "title": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0214",
+    "section_number": "1",
+    "title": "1. ADMISSION/REGISTRATION CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "1. ADMISSION/REGISTRATION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0215",
+    "section_number": "2",
+    "title": "2. HOSPITALISATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "2. HOSPITALISATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0216",
+    "section_number": "3",
+    "title": "3. URINE CONTAINER",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "3. URINE CONTAINER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0217",
+    "section_number": "4",
+    "title": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0218",
+    "section_number": "5",
+    "title": "5. BIPAP MACHINE",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "5. BIPAP MACHINE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0219",
+    "section_number": "6",
+    "title": "6. CPAP/ CAPD EQUIPMENTS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "6. CPAP/ CAPD EQUIPMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0220",
+    "section_number": "7",
+    "title": "7. INFUSION PUMP– COST",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "7. INFUSION PUMP– COST",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0221",
+    "section_number": "8",
+    "title": "8. HYDROGEN PEROXIDE\\SPIRIT\\ DISINFECTANTS ETC",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "8. HYDROGEN PEROXIDE\\SPIRIT\\ DISINFECTANTS ETC",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0222",
+    "section_number": "9",
+    "title": "9. NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "9. NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0223",
+    "section_number": "10",
+    "title": "10. HIV KIT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "10. HIV KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0224",
+    "section_number": "11",
+    "title": "11. ANTISEPTIC MOUTHWASH",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "11. ANTISEPTIC MOUTHWASH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0225",
+    "section_number": "12",
+    "title": "12. LOZENGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "12. LOZENGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0226",
+    "section_number": "13",
+    "title": "13. MOUTH PAINT",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "13. MOUTH PAINT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0227",
+    "section_number": "14",
+    "title": "14. VACCINATION CHARGES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "14. VACCINATION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0228",
+    "section_number": "15",
+    "title": "15. ALCOHOL SWABES",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "15. ALCOHOL SWABES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0229",
+    "section_number": "16",
+    "title": "16. SCRUB SOLUTION/STERILLIUM",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "16. SCRUB SOLUTION/STERILLIUM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0230",
+    "section_number": "17",
+    "title": "17. GLUCOMETER & STRIPS",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 41,
+    "source_page_refs": [
+      41
+    ],
+    "heading_text": "17. GLUCOMETER & STRIPS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "niva_bupa_health_recharge_sec_0231",
+    "section_number": "18",
+    "title": "18. URINE BAG",
+    "level": 2,
+    "parent_id": "niva_bupa_health_recharge_sec_0002",
+    "page_start": 41,
+    "page_end": 45,
+    "source_page_refs": [
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "heading_text": "18. URINE BAG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

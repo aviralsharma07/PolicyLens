@@ -1,0 +1,458 @@
+[
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0004",
+    "source_table_id": "aditya_birla_activ_care_p5_t1",
+    "page": 5,
+    "bbox": [
+      28.3465,
+      640.0758000000001,
+      441.9975,
+      698.7255
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0005",
+    "source_table_id": "aditya_birla_activ_care_p6_t1",
+    "page": 6,
+    "bbox": [
+      28.346499999999995,
+      164.7913000000001,
+      184.25199999999998,
+      326.0784
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 11,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0006",
+    "source_table_id": "aditya_birla_activ_care_p7_t1",
+    "page": 7,
+    "bbox": [
+      28.346499999999995,
+      542.2519,
+      578.1013000000002,
+      635.9604
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0007",
+    "source_table_id": "aditya_birla_activ_care_p8_t1",
+    "page": 8,
+    "bbox": [
+      28.3465,
+      65.45460000000003,
+      360.0062,
+      94.77949999999998
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0008",
+    "source_table_id": "aditya_birla_activ_care_p9_t1",
+    "page": 9,
+    "bbox": [
+      28.346499999999995,
+      714.3307,
+      578.1013000000002,
+      816.9679
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0010",
+    "source_table_id": "aditya_birla_activ_care_p11_t1",
+    "page": 11,
+    "bbox": [
+      28.346499999999995,
+      14.592800000000011,
+      578.1011211538455,
+      804.4200999999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 51,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0011",
+    "source_table_id": "aditya_birla_activ_care_p12_t1",
+    "page": 12,
+    "bbox": [
+      28.3465,
+      14.593200000000062,
+      578.1013,
+      94.91410000000003
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0015",
+    "source_table_id": "aditya_birla_activ_care_p16_t1",
+    "page": 16,
+    "bbox": [
+      28.346499999999995,
+      556.4251,
+      436.09920000000005,
+      663.5206000000001
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 8,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0021",
+    "source_table_id": "aditya_birla_activ_care_p22_t1",
+    "page": 22,
+    "bbox": [
+      16.8415,
+      28.491899999999987,
+      578.1004538461539,
+      790.3202
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 13,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0022",
+    "source_table_id": "aditya_birla_activ_care_p23_t1",
+    "page": 23,
+    "bbox": [
+      16.8415,
+      12.543099999999981,
+      578.1002,
+      363.13290000000006
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0023",
+    "source_table_id": "aditya_birla_activ_care_p23_t2",
+    "page": 23,
+    "bbox": [
+      29.73829999999999,
+      460.10670000000005,
+      564.3777136363639,
+      821.4883
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 22,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0024",
+    "source_table_id": "aditya_birla_activ_care_p24_t1",
+    "page": 24,
+    "bbox": [
+      29.738299999999988,
+      16.292400000000043,
+      564.3778744186051,
+      803.3193
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 43,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0025",
+    "source_table_id": "aditya_birla_activ_care_p25_t1",
+    "page": 25,
+    "bbox": [
+      29.738299999999985,
+      16.292400000000043,
+      564.3780000000004,
+      804.3478
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 47,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0026",
+    "source_table_id": "aditya_birla_activ_care_p26_t1",
+    "page": 26,
+    "bbox": [
+      28.320900000000012,
+      16.292400000000043,
+      562.9605999999997,
+      804.3523
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 42,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0027",
+    "source_table_id": "aditya_birla_activ_care_p27_t1",
+    "page": 27,
+    "bbox": [
+      28.320900000000012,
+      16.292400000000043,
+      562.9605999999998,
+      804.3523
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 41,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0028",
+    "source_table_id": "aditya_birla_activ_care_p28_t1",
+    "page": 28,
+    "bbox": [
+      28.283947619047613,
+      16.292400000000043,
+      562.9606,
+      63.57600000000002
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0029",
+    "source_table_id": "aditya_birla_activ_care_p28_t2",
+    "page": 28,
+    "bbox": [
+      28.283947619047613,
+      123.01290000000006,
+      566.9932000000005,
+      799.4676000000001
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 43,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0030",
+    "source_table_id": "aditya_birla_activ_care_p29_t1",
+    "page": 29,
+    "bbox": [
+      28.282099999999986,
+      26.206300000000056,
+      566.9932000000005,
+      812.778
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 50,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0031",
+    "source_table_id": "aditya_birla_activ_care_p30_t1",
+    "page": 30,
+    "bbox": [
+      28.282099999999986,
+      26.206300000000056,
+      566.9932000000005,
+      812.778
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 50,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0032",
+    "source_table_id": "aditya_birla_activ_care_p31_t1",
+    "page": 31,
+    "bbox": [
+      28.28209999999999,
+      26.206300000000056,
+      566.9932000000005,
+      797.0466
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 49,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0033",
+    "source_table_id": "aditya_birla_activ_care_p32_t1",
+    "page": 32,
+    "bbox": [
+      28.282099999999986,
+      26.206300000000056,
+      566.9932000000005,
+      812.8196499999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 50,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0034",
+    "source_table_id": "aditya_birla_activ_care_p33_t1",
+    "page": 33,
+    "bbox": [
+      28.282099999999982,
+      26.206300000000056,
+      566.9932000000005,
+      812.8196499999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 50,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0035",
+    "source_table_id": "aditya_birla_activ_care_p34_t1",
+    "page": 34,
+    "bbox": [
+      28.28210000000001,
+      26.206300000000056,
+      566.8063266666668,
+      199.26229999999998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 11,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "aditya_birla_activ_care_phys_table_0036",
+    "source_table_id": "aditya_birla_activ_care_p34_t2",
+    "page": 34,
+    "bbox": [
+      360.5136,
+      785.4738,
+      586.7717,
+      827.7166
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 1,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

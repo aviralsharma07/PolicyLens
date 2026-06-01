@@ -1,12 +1,12 @@
 # Gold Corpus Annotation Guide
 
-Date: 2026-05-29
-Task ID: DSE-003
-Status: gold_v1_manual_review_resolved
+Date: 2026-06-01
+Task ID: DSE-003 / DSE-012
+Status: gold_v2_20_policy_reviewed
 
 ## Purpose
 
-This guide defines the first gold corpus annotation workflow for doc-structure-engine. The corpus is used to evaluate physical parsing, heading detection, section tree construction, table detection, and fact extraction.
+This guide defines the gold corpus annotation workflow for doc-structure-engine. The corpus is used to evaluate physical parsing, heading detection, section tree construction, table detection, and fact extraction.
 
 ## Source Data Rules
 
@@ -14,11 +14,11 @@ This guide defines the first gold corpus annotation workflow for doc-structure-e
 - Gold files store relative `source_pdf_path` references only.
 - Do not copy source PDFs into `gold_corpus/`.
 - Page numbers are 1-based and refer to the PDF page order.
-- BBox and cell coordinates are nullable in DSE-003 because the physical parser has not been implemented.
+- BBox and cell coordinates are nullable in semantic `tables.json`, but DSE-009 `physical_table_labels.json` stores physical table bboxes where a visual table was verified.
 
 ## Policy Selection
 
-The first five policies intentionally cover public/private insurers, standardized and non-standard structures, shorter and longer documents, accident coverage, tables, optional benefits, and regulatory clauses.
+The first five policies intentionally cover public/private insurers, standardized and non-standard structures, shorter and longer documents, accident coverage, tables, optional benefits, and regulatory clauses. DSE-012 expands the reviewed corpus to 20 policies across additional insurers and specialty product types.
 
 ## Annotation Files
 
@@ -29,6 +29,8 @@ Each policy folder contains:
 - `clauses.json` — legal text chunks linked to sections and pages.
 - `tables.json` — identified table-like regions and table type labels.
 - `facts.json` — 20 priority concept labels with AGENTS §14 fields.
+- `heading_labels.json` — visual heading labels used by heading scorer evals.
+- `physical_table_labels.json` — verified physical table labels used by table engine evals.
 
 ## Fact Status Rules
 
@@ -60,7 +62,8 @@ A fact with `present` or `explicitly_not_covered` must include `evidence_text` a
 - Pass 3: re-reviewed facts with precision-first rules and downgraded schedule-dependent or definition-only values to `requires_manual_review`.
 - Pass 4: generated missing IBM Docling markdown for Star and Care with OCR disabled and placeholder image export; re-ran structure, table, and fact provenance cross-checks for those two policies.
 - Pass 5: applied the source-PDF-only manual review report for the 11 `requires_manual_review` facts; 10 became `present` and 1 became `not_applicable`.
+- Pass 6: DSE-012 expanded the corpus from 5 to 20 reviewed policies. The 15 new policies were drafted from pipeline output, then promoted after source-PDF text review with per-policy review reports.
 
 ## Known Limitations
 
-Gold v1 is intentionally text-layer first. Physical bboxes, table cell coordinates, and full row/column lineage will be added after DSE-004 and DSE-009 provide parser outputs.
+Gold v2 is still text-layer first for facts and clauses. Physical table bboxes are available where DSE-009 provided reliable labels, while parser failures discovered by the 20-policy expansion are tracked in DSE-012 eval artifacts and risk register entries.

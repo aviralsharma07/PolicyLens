@@ -1,0 +1,22 @@
+{
+  "slug": "aditya_birla_activ_care",
+  "insurer": "Aditya Birla",
+  "plan_name": "Active Care",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+  "pages_reviewed": 34,
+  "structure_fallback": true,
+  "removed_sections": 0,
+  "added_heading_labels": 80,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_found": 3,
+    "present": 16
+  },
+  "evidence_bearing_facts": 17,
+  "remaining_known_issues": [
+    "section_tree_manually_rebuilt_from_source_pdf"
+  ]
+}

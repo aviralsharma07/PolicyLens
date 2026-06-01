@@ -1,0 +1,880 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 12,
+    "evidence_text": "enital Anomaly or internal congenital Medical & Surgical treatment diseases If any of the Illness/conditions listed above are Pre-Existing Diseases, then they shall be covered only after the completion of the Pre-Existing Disease Waiting Period described in Section C.B.iii below. iii. Pre-Existing Disease waiting Period Pre-Existing Diseases shall not be covered until the time period specified in the Policy Schedule / Product Benefit Table of this Policy in this regard has elapsed since the inception of the first Policy with Us, provided that the Insured Person(s) has/have been insured continuously under the Policy without any break with Us. iv. Permanent Excl",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "Activ Care, Product UIN: ADIHLIP20001V011920. i. First 30 days Waiting Period We shall not be liable for any claim arising due to any condition for which consultation, investigation, diagnosis, treatment or admission commencing within 30 days from Policy Commencement Date, except for the claims arising due to an Accide",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "ly for any Insured Person that is accepted under Portability, and/or for subsequent and continuous Renewals of the Policy with Us. ii. Two Year Waiting Periods The conditions listed below, whether medical or surgical and of the Illness/conditions and their complications mentioned below, will be subject to a waiting period of 24 months from the commencement of the 1st Policy Year and will be covered from the commencement of the 3rd Policy Year as long as the Insured Person has been insured continuously under the Policy without any break.",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "n Insured Person’s Hospitalization during the Policy Period following an Illness or Injury that occurs during the Policy Period: (1) Reasonable and Customary Charges for Room Rent for accommodation in Hospital room and other boarding charges up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy; (2) ICU Charges; (3) Operation theatre expenses; (4) Medical Practitioner’s fees, including fees of surgeon, consultants, physicians, specialists and anaesthetists treating the Insured Person; (5) Qu",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "Rent for accommodation in Hospital room and other boarding charges up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy; (2) ICU Charges; (3) Operation theatre expenses; (4) Medical Practitioner’s fees, including fees of surgeon, consultants, physicians, specialists and anaesthetists treating the Insured Person; (5) Qualified Nurses charges; (6) Medicines, drugs and other allowable consumables prescribed by the treating Medical Practitioner; (7) Investigative tests or diagnostic procedures directly related to the Injury/Illness for which the Insured",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "percentage": 15
+    },
+    "normalized_value_json": {
+      "percentage": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "n treatment as applicable under section B(I)(a) in a Hospital other than those listed as “Preferred Provider Network”, then the Policyholder / Insured Person shall bear a Co-Payment of 15% on each and every claim arising in such regard, which will be in addition to any other Co-Payment applicable under the Policy. ii. The updated list of Hospitals listed as “Preferred Provider Network” can be referred to on Our website. Section C",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "percentage",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment percentage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "e limits as specified in the Policy Schedule / Product Benefit Table of this Policy, in case the available Sum Insured which shall be considered to be inclusive of accumulated No Claim Bonus (if any), is insufficient for covering a claim under the Policy as a result of previous claims in that Policy Year. Such reloading of Sum Insured shall be available only once during a Policy Year. 02",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: cumulative/no-claim bonus search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "onal. (6) Expenses related to organ transportation or preservation. (7) Any other medical treatment or complication in respect of the donor, consequent to harvesting. (h) Reload of Sum Insured: What is covered Once in the Policy Year, We shall provide for a reload of the Sum Insured up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, in case the available Sum Insured which shall be considered to",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: restoration/reload/recharge benefit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 3,
+    "evidence_text": "eed the sum of: (1) The Sum Insured; and (2) No Claim Bonus; and (3) The reloaded Sum Insured; and (4) HealthReturnsTM(If earned). (i) Ayush (In-patient Hospitalization) What is covered We shall cover on a reimbursement basis, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards the Medical Expenses for In-patient Hospitalization incurred with respect to the Insured",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 27,
+    "evidence_text": "SWABES Not Payable 166 SCRUB SOLUTION/STERILLIUM Not Payable OTHERS 167 VACCINE CHARGES FOR BABY Not Payable 168 TPA CHARGES Not Payable 169 VISCO BELT CHARGES Not Payable 170 ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, Not Payable ORTHOKIT, RECOVERY KIT, ETC] 171 EXAMINATION GLOVES Not Payable 172 KIDNEY TRAY Not Payable 173 MASK",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: newborn coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "normalized_value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "at is not covered Any expenses in relation to transportation of the Insured Person from Hospital to the Insured Person’s residence are not payable under this Benefit. (g) Organ Donor Expenses: What is covered We shall cover the Medical Expenses, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, incurred by or in respect of the organ donor, for organ transplant Surgery accepted by Us under Sect",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: organ donor coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "(5) Diabetes mellitus and insipidus; (6) Epilepsy; (7) Hypertension; (8) Psychiatric or psychosomatic disorders of all kinds; (9) Pyrexia of unknown origin. (f) Road Ambulance Cover: What is covered We shall cover the costs incurred up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards transportation of the Insured Person by road Ambulance to a nearest Hospital from the place of",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 15,
+    "evidence_text": "and the applicability of the Portability benefit in accordance with the provisions of the regulations, circulars and guidelines issued by the IRDAI from time to time. E. Free Look Period We shall provide You a period of 15 days (30 days if the Policy is sold through distance marketing), from the date of receipt of the Policy document to review the terms and conditions of this Policy. If You have any objections to any of the terms and conditions, You may cancel the Policy stati",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "the case may be for addition of Insured person. All endorsement requests may be assessed by Us and if required additional information/documents may be requested. O. Grace Period The Policy may be Renewed by mutual consent and in such event the Renewal premium should be paid to Us on or before the expiry date of the Policy and in no case later than the Grace Period of 30 days from the expiry date. We shall not be liable to pay for any claim arising out of an Illness/Injury/ Accident that occurred during the Grace Period. The provisions of Section 64VB of the Insurance Act 1938 shall be applicable. All policies Renewed within",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 4,
+    "evidence_text": "Section B(I) in the Policy Schedule on a cumulative basis, provided that the Insured Person(s) has not made any claim under Section B(I) in a Policy Year and has successfully Renewed the Policy with Us continuously and without any break. The accumulated No Claim Bonus shall not exceed 50% of the Sum Insured on the Renewed Policy. In the event of a claim impacting the eligibility of a No Claim Bonus, the accumulated No Claim Bonus shall be re",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "timeline_text": "For all claims for which Cashless Facilities have not been pre-authorized or for which treatment has not been taken at a Network Provider, We shall be given wri"
+    },
+    "normalized_value_json": {
+      "timeline_text": "For all claims for which Cashless Facilities have not been pre-authorized or for which treatment has not been taken at a Network Provider, We shall be given wri"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "For all claims for which Cashless Facilities have not been pre-authorized or for which treatment has not been taken at a Network Provider, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hospital or before discharge from the Hospital, whichever is earlier: (1) The Policy Number; (2) Name of the Policyholder; (3) Name and address of the Insured Person in respect of whom the reques",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "have obtained sufficient details to assess the request, We will issue the authorization letter specifying the sanctioned amount, any specific limitation on the claim and non-payable items, if applicable, or reject the request for pre-authorisation specifying reasons for the rejection. (iv) Once the request for pre-authorisation has been granted, the treatment must take place within 15 days of the pre-authorization date at a Network Provider and pre-authorization shall be valid only if all the details of the authorized treatment, including dates, Hospital and locations, match with the details of the actual t",
+    "source_document": {
+      "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "uin": "ADIHLIP20001V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "slug": "reliance_health_gain",
+  "insurer": "Reliance",
+  "plan_name": "Health Gain",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
+  "pages_reviewed": 36,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "not_found": 6,
+    "present": 14
+  },
+  "evidence_bearing_facts": 14,
+  "remaining_known_issues": []
+}

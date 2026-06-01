@@ -1,0 +1,42 @@
+[
+  {
+    "label_id": "universal_sompo_loan_secure_heading_0461",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "2.SECTION II: PERSONAL ACCIDENT:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_49",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "universal_sompo_loan_secure_heading_0518",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "3.SECTION III: LOSS OF JOB",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_58",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "universal_sompo_loan_secure_heading_1323",
+    "source_section_id": null,
+    "page": 29,
+    "expected_text": "12.Subrogation",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p29l_43",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "universal_sompo_loan_secure_heading_1375",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "15.Renewal",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_51",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

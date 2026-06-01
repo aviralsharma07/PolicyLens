@@ -1,0 +1,38 @@
+{
+  "slug": "oriental_cancer_protect",
+  "insurer": "Oriental",
+  "plan": "Cancer Protect",
+  "pages": 44,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 49,
+  "clauses": 403,
+  "tables": 18,
+  "facts_present": 2,
+  "facts_not_found": 18,
+  "heading_labels": 26,
+  "physical_table_labels": 18,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "2 present, 18 not_found. 2 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "18 semantic tables, 18 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "26 visual heading labels detected."
+    }
+  ]
+}

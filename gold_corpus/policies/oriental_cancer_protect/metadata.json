@@ -1,0 +1,148 @@
+{
+  "policy_id": "oriental_cancer_protect",
+  "policy_slug": "oriental_cancer_protect",
+  "insurer": "Oriental",
+  "plan_name": "Cancer Protect",
+  "uin": "OICHLIP21007V012122",
+  "uin_base": "OICHLIP21007",
+  "lifecycle_product_name": "Oriental Cancer Protect",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+  "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+  "page_count": 44,
+  "source_domain": "website",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex DSE-012 source-PDF human review",
+  "human_reviewer": "Avi-authorized Codex reviewer",
+  "annotation_date": "2026-06-01",
+  "pipeline_run_id": "gold_manual_dse012",
+  "annotation_status": "reviewed",
+  "label_status": "reviewed",
+  "review_status": "gold_v2_agent_reviewed",
+  "known_issues": [],
+  "annotation_method": "source_pdf_human_review",
+  "counts": {
+    "sections": 49,
+    "clauses": 398,
+    "tables": 18,
+    "facts": 20,
+    "heading_labels": 26,
+    "physical_table_labels": 18
+  },
+  "annotation_passes": [
+    {
+      "pass_id": "dse012_pipeline_seed_reviewed",
+      "date": "2026-06-01",
+      "tools": [
+        "pdfplumber",
+        "heading_scorer",
+        "section_tree_builder",
+        "table_engine",
+        "fact_extractors"
+      ],
+      "changes": "Automated pipeline draft. Requires human review before promotion to gold."
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/oriental_cancer_protect_review.md"
+    }
+  ],
+  "docling_markdown_available": false
+}

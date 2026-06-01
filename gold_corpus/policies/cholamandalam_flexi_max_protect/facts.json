@@ -1,0 +1,826 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 28,
+    "evidence_text": "Wordings contestable except for proven fraud and permanent exclusions specified in the policy contract. The policies would however be subject to all limits, sublimits, co-payments as per the policy. II. CONDITIONS APPLICABLE DURING THE CONTRACT 9. Notice and Communication: i. Any notice ,direction ,instruction or any other communication related to the Policy should be made in writing ii. Such communication shall be sent to the address of the Company or through any other electronic modes specified in the Policy Schedule iii. The Company shall communicate to the Insured Person at the address or through any other electronic mode mentioned in the schedule 10. Transfer: Transferring of interest in this Policy to anyone else is not allowed.",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment schedule search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 27,
+    "evidence_text": "ncurred by the Insurer for the purpose of Pre Policy Medical Check up will be deducted from the Insured’s premium and the balance premium would be refunded. 7. Free Look Period: The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. lf the insured has not made any claim during the Free Look Period, the insured shall be entitled to",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 31,
+    "evidence_text": "eived by the Company before the end of the policy period. ii. At the end of the policy period, the policy shall terminate and can be renewed within the Grace period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. iii. No loading shall apply on renewals based on individual claims experience. iv. If a claim was paid under",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "datory under the policy  If the child above 18 years of age is financially independent, he or she shall be ineligible for coverage in the subsequent renewals.  Loss of Job and Loss of Income for Self Employed can be opted only by and for the earning member’s upto the age of 65 years only. SECTION 2: POLICY COVERAGE 2.1 BASE COVER The Insured has to mandatorily opt for the Base cover to be eligible to take this policy a. Diagnosis Benefit: If at any time during the currency of this Policy, the Insured Person is diagnosed as suffering",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 29,
+    "evidence_text": "all be to make payment within India. 16. Assignment: The policy can be assigned subject to applicable laws. III. CONDITIONS WHEN A CLAIM ARISES 17. i. Claim Notification: a. It shall be a condition precedent for any claim to be made by the Insured Person under this policy or for liability attaching to us hereunder that claim intimation is provided to the Insurer within 30 days from the date of diagnosis/occurrence of the event by telephone through toll free number (1800-208-5544) or in writing by email (customercare@cholams.murugappa.com) / letter). The intimation should contain the foll",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 29,
+    "evidence_text": "at may be made by the Insurer shall be evidenced by a duly signed and sealed endorsement on the Policy. 15. Territorial Limits: The Insurer’s liability to make any payment towards illness shall be to make payment within India. 16. Assignment: The policy can be assigned subject to applicable laws. III. CONDITIONS WHEN A CLAIM ARISES 17. i. Claim Notification: a. It shall be a condition precedent for any claim to be made by the Insured Person under this policy or for liability attaching to us hereunder that claim intimation is provided to the Insurer within 30 days from the date of diagnosis/occurrence of the event by telephone through toll free number (1800-208-5544) or in writing by email (customercare@cholams.murugappa.com) / letter). The intimation should contain the foll",
+    "source_document": {
+      "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "uin": "CHOHLIP21017V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

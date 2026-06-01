@@ -1,0 +1,56 @@
+{
+  "slug": "aditya_birla_activ_care",
+  "insurer": "Aditya Birla",
+  "plan": "Active Care",
+  "pages": 34,
+  "status": "analyzed",
+  "priority": "critical",
+  "sections": 1,
+  "clauses": 0,
+  "tables": 24,
+  "facts_present": 0,
+  "facts_not_found": 20,
+  "heading_labels": 0,
+  "physical_table_labels": 24,
+  "known_issues": [
+    "section_tree_failed_or_degenerate",
+    "no_clauses_segmented"
+  ],
+  "findings": [
+    {
+      "category": "CRITICAL",
+      "area": "section_tree",
+      "detail": "Section tree is degenerate (1 sections, 0 clauses). Heading scorer found no visual headings. All sections/clauses need manual annotation."
+    },
+    {
+      "category": "CRITICAL",
+      "area": "clauses",
+      "detail": "Zero clauses segmented. All clauses need manual annotation."
+    },
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "0 present, 20 not_found. 0 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "24 semantic tables, 24 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "0 visual heading labels detected."
+    },
+    {
+      "category": "WARNING",
+      "area": "headings",
+      "detail": "Zero heading labels. Heading scorer may have failed for this document format."
+    }
+  ]
+}

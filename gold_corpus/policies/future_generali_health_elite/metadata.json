@@ -1,0 +1,148 @@
+{
+  "policy_id": "future_generali_health_elite",
+  "policy_slug": "future_generali_health_elite",
+  "insurer": "Future Generali",
+  "plan_name": "FG Health Elite",
+  "uin": "FGIHLIP22234V012122",
+  "uin_base": "FGIHLIP22234",
+  "lifecycle_product_name": "FG Health Elite",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
+  "document_id": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
+  "page_count": 38,
+  "source_domain": "irdai",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex DSE-012 source-PDF human review",
+  "human_reviewer": "Avi-authorized Codex reviewer",
+  "annotation_date": "2026-06-01",
+  "pipeline_run_id": "gold_manual_dse012",
+  "annotation_status": "reviewed",
+  "label_status": "reviewed",
+  "review_status": "gold_v2_agent_reviewed",
+  "known_issues": [],
+  "annotation_method": "source_pdf_human_review",
+  "counts": {
+    "sections": 63,
+    "clauses": 361,
+    "tables": 38,
+    "facts": 20,
+    "heading_labels": 10,
+    "physical_table_labels": 38
+  },
+  "annotation_passes": [
+    {
+      "pass_id": "dse012_pipeline_seed_reviewed",
+      "date": "2026-06-01",
+      "tools": [
+        "pdfplumber",
+        "heading_scorer",
+        "section_tree_builder",
+        "table_engine",
+        "fact_extractors"
+      ],
+      "changes": "Automated pipeline draft. Requires human review before promotion to gold."
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/future_generali_health_elite_review.md"
+    }
+  ],
+  "docling_markdown_available": false
+}

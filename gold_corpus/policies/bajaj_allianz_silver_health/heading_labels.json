@@ -1,0 +1,132 @@
+[
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0006",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "SECTION A) PREAMBLE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_15",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0017",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "SECTION B) DEFINITIONS- STANDARD DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_28",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0118",
+    "source_section_id": null,
+    "page": 3,
+    "expected_text": "18. Illness",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_24",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0131",
+    "source_section_id": null,
+    "page": 3,
+    "expected_text": "19. Injury",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p3l_38",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0230",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "42. Renewal",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_33",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0244",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "SECTION B) DEFINITIONS- SPECIFIC DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_51",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0279",
+    "source_section_id": null,
+    "page": 6,
+    "expected_text": "6. Injury",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p6l_30",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0318",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "SECTION C) COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_20",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0356",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "I. BASE COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_64",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0468",
+    "source_section_id": null,
+    "page": 9,
+    "expected_text": "II. ADD-ON COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_52",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0488",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "SECTION D) EXCLUSIONS UNDER THE POLICY - STANDARD EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_10",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0673",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "SECTION E) GENERAL TERMS AND CLAUSES - STANDARD GENERAL TERMS AND CLAUSES",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_36",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_heading_0931",
+    "source_section_id": null,
+    "page": 17,
+    "expected_text": "SECTION E) GENERAL TERMS AND CLAUSES – SPECIFIC TERMS AND CLAUSES",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_56",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

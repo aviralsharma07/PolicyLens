@@ -1,0 +1,43 @@
+{
+  "slug": "reliance_health_gain",
+  "insurer": "Reliance",
+  "plan": "Health Gain",
+  "pages": 36,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 391,
+  "clauses": 747,
+  "tables": 36,
+  "facts_present": 5,
+  "facts_not_found": 15,
+  "heading_labels": 11,
+  "physical_table_labels": 36,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "WARNING",
+      "area": "section_tree",
+      "detail": "Unusually many sections (391). May indicate over-segmentation."
+    },
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "5 present, 15 not_found. 5 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "36 semantic tables, 36 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "11 visual heading labels detected."
+    }
+  ]
+}

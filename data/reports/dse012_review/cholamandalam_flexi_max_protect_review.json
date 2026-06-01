@@ -1,0 +1,38 @@
+{
+  "slug": "cholamandalam_flexi_max_protect",
+  "insurer": "Cholamandalam",
+  "plan": "Flexi Max Protect",
+  "pages": 40,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 174,
+  "clauses": 462,
+  "tables": 10,
+  "facts_present": 3,
+  "facts_not_found": 17,
+  "heading_labels": 16,
+  "physical_table_labels": 10,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "3 present, 17 not_found. 3 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "10 semantic tables, 10 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "16 visual heading labels detected."
+    }
+  ]
+}

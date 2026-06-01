@@ -1,0 +1,20 @@
+{
+  "slug": "niva_bupa_health_recharge",
+  "insurer": "Niva Bupa",
+  "plan_name": "Health Recharge",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
+  "pages_reviewed": 45,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_found": 5,
+    "present": 14
+  },
+  "evidence_bearing_facts": 15,
+  "remaining_known_issues": []
+}

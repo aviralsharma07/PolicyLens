@@ -1,0 +1,786 @@
+[
+  {
+    "section_id": "liberty_critical_connect_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 21,
+    "page_end": 52,
+    "source_page_refs": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0001",
+    "section_number": "9",
+    "title": "9 Cover 25 Cover 43 Cover",
+    "level": 1,
+    "parent_id": "liberty_critical_connect_root_0000",
+    "page_start": 21,
+    "page_end": 30,
+    "source_page_refs": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "heading_text": "9 Cover 25 Cover 43 Cover",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0002",
+    "section_number": null,
+    "title": "Part C: “Related”",
+    "level": 1,
+    "parent_id": "liberty_critical_connect_root_0000",
+    "page_start": 30,
+    "page_end": 31,
+    "source_page_refs": [
+      30,
+      31
+    ],
+    "heading_text": "Part C: “Related”",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0003",
+    "section_number": null,
+    "title": "Part A: Medical Exclusions",
+    "level": 1,
+    "parent_id": "liberty_critical_connect_root_0000",
+    "page_start": 32,
+    "page_end": 34,
+    "source_page_refs": [
+      32,
+      33,
+      34
+    ],
+    "heading_text": "Part A: Medical Exclusions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0004",
+    "section_number": null,
+    "title": "Part E: General Conditions",
+    "level": 1,
+    "parent_id": "liberty_critical_connect_root_0000",
+    "page_start": 35,
+    "page_end": 37,
+    "source_page_refs": [
+      35,
+      36,
+      37
+    ],
+    "heading_text": "Part E: General Conditions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0005",
+    "section_number": "9",
+    "title": "9 Cover 25 Cover 43 Cover",
+    "level": 1,
+    "parent_id": "liberty_critical_connect_root_0000",
+    "page_start": 50,
+    "page_end": 52,
+    "source_page_refs": [
+      50,
+      51,
+      52
+    ],
+    "heading_text": "9 Cover 25 Cover 43 Cover",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0006",
+    "section_number": "2",
+    "title": "2. Western blot testing is reactive",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0002",
+    "page_start": 31,
+    "page_end": 31,
+    "source_page_refs": [
+      31
+    ],
+    "heading_text": "2. Western blot testing is reactive",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0007",
+    "section_number": "1",
+    "title": "1. HIV/AIDS j)Tumors",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0002",
+    "page_start": 31,
+    "page_end": 32,
+    "source_page_refs": [
+      31,
+      32
+    ],
+    "heading_text": "1. HIV/AIDS j)Tumors",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0008",
+    "section_number": "3",
+    "title": "3. Year Policy",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0003",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "3. Year Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0009",
+    "section_number": "2",
+    "title": "2. Year Policy",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0003",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "2. Year Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0010",
+    "section_number": "1",
+    "title": "1. Year Policy",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0003",
+    "page_start": 34,
+    "page_end": 35,
+    "source_page_refs": [
+      34,
+      35
+    ],
+    "heading_text": "1. Year Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0011",
+    "section_number": "1",
+    "title": "1. Fulfillment of the terms and conditions of this policy, as far as they relate to anything that you must do",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "1. Fulfillment of the terms and conditions of this policy, as far as they relate to anything that you must do",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0012",
+    "section_number": "2",
+    "title": "2. The premium will remain the same for the policy period mentioned in the policy schedule",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "2. The premium will remain the same for the policy period mentioned in the policy schedule",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0013",
+    "section_number": "3",
+    "title": "3. The policy will be issued for 1, 2 and 3 year(s) based on the Policy Period selected and mentioned on",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "3. The policy will be issued for 1, 2 and 3 year(s) based on the Policy Period selected and mentioned on",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0014",
+    "section_number": "4",
+    "title": "4. The policy shall cover the Insured condition/critical illnesses diagnosis within India and all the benefits",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "4. The policy shall cover the Insured condition/critical illnesses diagnosis within India and all the benefits",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0015",
+    "section_number": "5",
+    "title": "5. Entry Age:",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 37,
+    "page_end": 39,
+    "source_page_refs": [
+      37,
+      38,
+      39
+    ],
+    "heading_text": "5. Entry Age:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0016",
+    "section_number": "1",
+    "title": "1. Family Discount: A Family discount of 10% will be given if 2 or more family members are",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "1. Family Discount: A Family discount of 10% will be given if 2 or more family members are",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0017",
+    "section_number": "2",
+    "title": "2. Long Term Policy Discount: A discount of 7.5% and 10% will be given on selection of 2 year or 3 year",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "2. Long Term Policy Discount: A discount of 7.5% and 10% will be given on selection of 2 year or 3 year",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0018",
+    "section_number": "3",
+    "title": "3. Employee Discount: 10% discount will be given if you are an employee of the Company at start date of the",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "3. Employee Discount: 10% discount will be given if you are an employee of the Company at start date of the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0019",
+    "section_number": "4",
+    "title": "4. Direct Policy Purchase Discount- 10% discount will be given if you are purchasing this Policy as a New or",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "4. Direct Policy Purchase Discount- 10% discount will be given if you are purchasing this Policy as a New or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0020",
+    "section_number": "1",
+    "title": "1. This policy may be assigned, wholly or in part, with or without consideration",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "1. This policy may be assigned, wholly or in part, with or without consideration",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0021",
+    "section_number": "2",
+    "title": "2. An Assignment may be effected in a policy by an endorsement upon the policy itself or by a separate",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "2. An Assignment may be effected in a policy by an endorsement upon the policy itself or by a separate",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0022",
+    "section_number": "3",
+    "title": "3. The instrument of assignment should indicate the fact of transfer or assignment and the reasons for the",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "3. The instrument of assignment should indicate the fact of transfer or assignment and the reasons for the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0023",
+    "section_number": "4",
+    "title": "4. The assignment must be signed by the assignor or duly authorized agent and attested by at least one witness",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 39,
+    "source_page_refs": [
+      39
+    ],
+    "heading_text": "4. The assignment must be signed by the assignor or duly authorized agent and attested by at least one witness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0024",
+    "section_number": "5",
+    "title": "5. Upon receipt of request, the insurer may accept or decline to act upon any assignment or endorsement, if it",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 39,
+    "page_end": 40,
+    "source_page_refs": [
+      39,
+      40
+    ],
+    "heading_text": "5. Upon receipt of request, the insurer may accept or decline to act upon any assignment or endorsement, if it",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0025",
+    "section_number": "6",
+    "title": "6. Before refusing to act upon endorsement, the Insurer should record the reasons in writing and communicate",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "6. Before refusing to act upon endorsement, the Insurer should record the reasons in writing and communicate",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0026",
+    "section_number": "7",
+    "title": "7. In case of refusal to act upon the endorsement by the Insurer, any person aggrieved by the refusal may",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "7. In case of refusal to act upon the endorsement by the Insurer, any person aggrieved by the refusal may",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0027",
+    "section_number": "8",
+    "title": "8. The priority of claims of persons interested in an insurance policy would depend on the date on which the",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 40,
+    "page_end": 40,
+    "source_page_refs": [
+      40
+    ],
+    "heading_text": "8. The priority of claims of persons interested in an insurance policy would depend on the date on which the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0028",
+    "section_number": "9",
+    "title": "9. Every assignment shall be deemed to be absolute assignment and the assignee shall be deemed to be absolute",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 40,
+    "page_end": 43,
+    "source_page_refs": [
+      40,
+      41,
+      42,
+      43
+    ],
+    "heading_text": "9. Every assignment shall be deemed to be absolute assignment and the assignee shall be deemed to be absolute",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0029",
+    "section_number": "1",
+    "title": "1. This Policy is ordinarily renewable unless you or anyone acting on your behalf has acted in an improper,",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 43,
+    "source_page_refs": [
+      43
+    ],
+    "heading_text": "1. This Policy is ordinarily renewable unless you or anyone acting on your behalf has acted in an improper,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0030",
+    "section_number": "2",
+    "title": "2. We are not under any obligation to:",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 43,
+    "source_page_refs": [
+      43
+    ],
+    "heading_text": "2. We are not under any obligation to:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0031",
+    "section_number": "3",
+    "title": "3. We shall be entitled to call for any information or documentation before agreeing to renew the Policy. Your",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 43,
+    "source_page_refs": [
+      43
+    ],
+    "heading_text": "3. We shall be entitled to call for any information or documentation before agreeing to renew the Policy. Your",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0032",
+    "section_number": "4",
+    "title": "4. All applications for renewal of the policy must be received by us before the end of the Policy Period. A",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 43,
+    "source_page_refs": [
+      43
+    ],
+    "heading_text": "4. All applications for renewal of the policy must be received by us before the end of the Policy Period. A",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0033",
+    "section_number": "6",
+    "title": "6. We will not apply any additional loading on your policy premium at renewalbased on claim experience",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 43,
+    "source_page_refs": [
+      43
+    ],
+    "heading_text": "6. We will not apply any additional loading on your policy premium at renewalbased on claim experience",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0034",
+    "section_number": "10",
+    "title": "10. Floor, Tower A, Peninsula Business Park, Lower Parel, Mumbai",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 43,
+    "page_end": 48,
+    "source_page_refs": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "heading_text": "10. Floor, Tower A, Peninsula Business Park, Lower Parel, Mumbai",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0035",
+    "section_number": "3",
+    "title": "3. Floor, Jeevan Seva Annexe, S. V. Road, Santacruz (W), Mumbai – 400 054",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 48,
+    "page_end": 50,
+    "source_page_refs": [
+      48,
+      49,
+      50
+    ],
+    "heading_text": "3. Floor, Jeevan Seva Annexe, S. V. Road, Santacruz (W), Mumbai – 400 054",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0036",
+    "section_number": "4",
+    "title": "4. Years",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 50,
+    "page_end": 50,
+    "source_page_refs": [
+      50
+    ],
+    "heading_text": "4. Years",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "liberty_critical_connect_sec_0037",
+    "section_number": "2",
+    "title": "2. Years between two claims",
+    "level": 2,
+    "parent_id": "liberty_critical_connect_sec_0004",
+    "page_start": 50,
+    "page_end": 50,
+    "source_page_refs": [
+      50
+    ],
+    "heading_text": "2. Years between two claims",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]
