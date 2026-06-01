@@ -392,6 +392,122 @@ Provisional evidence rule:
 
 ---
 
+## Contract 5B: Fact Candidate & Fact Persistence (DSE-011)
+
+**Producer:** `scripts/run_fact_scoring.py`
+**Consumer:** `scripts/eval_fact_scoring.py`, DSE-013 (91-Field Export)
+**Task:** DSE-011
+**Date:** 2026-06-01
+
+### `extracted_fact_candidates` (22 columns)
+
+All DSE-007 candidates (accepted + rejected) are persisted in SQLite.
+
+```json
+{
+  "id": "{document_id}:{source_candidate_id}",
+  "source_candidate_id": "free_look_period_0000",
+  "clause_id": "{document_id}:{source_clause_id}",
+  "source_clause_id": "clause_0050",
+  "document_id": "sha256:...",
+  "concept": "free_look_period",
+  "candidate_value_json": "{\"days\": 15}",
+  "normalized_value_json": "{\"days\": 15}",
+  "fact_status": "present",
+  "scope_json": "{\"cover\": \"base_policy\"}",
+  "condition_json": null,
+  "evidence_span_id": "ss_pol_free_look_period_0000_evidence",
+  "evidence_text": "Free look period of 15 days...",
+  "evidence_page": 8,
+  "extractor_name": "free_look_period",
+  "extractor_version": "1.0.0",
+  "pattern_id": "free_look_15_days",
+  "confidence": 0.98,
+  "score": 0.99,
+  "accepted": 1,
+  "rejection_reason": null,
+  "pipeline_run_id": "dse011_v1_..."
+}
+```
+
+FKs: `clause_id → policy_clauses`, `document_id → source_documents`, `evidence_span_id → source_spans` (nullable), `pipeline_run_id → pipeline_runs`.
+
+### `extracted_facts` (18 columns)
+
+Only `present` or `explicitly_not_covered` facts are stored. One row per (document_id, concept) enforced by UNIQUE INDEX.
+
+```json
+{
+  "id": "{document_id}:{source_candidate_id}",
+  "source_candidate_id": "free_look_period_0000",
+  "clause_id": "{document_id}:{source_clause_id}",
+  "source_clause_id": "clause_0050",
+  "document_id": "sha256:...",
+  "concept": "free_look_period",
+  "value_json": "{\"days\": 15}",
+  "normalized_value_json": "{\"days\": 15}",
+  "fact_status": "present",
+  "confidence": 0.98,
+  "evidence_span_id": "ss_pol_free_look_period_0000_evidence",
+  "extraction_method": "deterministic",
+  "pipeline_run_id": "dse011_v1_..."
+}
+```
+
+`fact_status` CHECK constraint: `IN ('present', 'explicitly_not_covered')`.
+
+### `not_found` derivation rule (ADR-0024)
+
+`not_found` facts are **not stored** in `extracted_facts`. They are derived at query time:
+
+> If a concept in TARGET_CONCEPTS has no row in `extracted_facts` for a given `document_id`, that concept's status is `not_found` for that document.
+
+This avoids dummy clause references for absent facts and keeps the table clean.
+
+### `fact_conflicts` (10 columns)
+
+Records disagreements among accepted candidates for the same (document_id, concept).
+
+```json
+{
+  "id": 1,
+  "document_id": "sha256:...",
+  "concept": "free_look_period",
+  "fact_a_id": "{document_id}:fl_0000",
+  "fact_b_id": "{document_id}:fl_0001",
+  "conflict_type": "value_disagreement",
+  "resolution": "higher_score_wins",
+  "resolved_by": "scoring_engine",
+  "resolution_notes": "Winner: ... (score_a=0.95, score_b=0.70)",
+  "pipeline_run_id": "dse011_v1_..."
+}
+```
+
+`conflict_type` CHECK: `IN ('value_disagreement', 'status_disagreement', 'scope_disagreement')`.
+`resolution` CHECK: `IN ('unresolved', 'higher_score_wins', 'manual_review_required', 'merged')`.
+
+FKs: `fact_a_id → extracted_fact_candidates`, `fact_b_id → extracted_fact_candidates`, `document_id → source_documents`.
+
+### Scoring rule (ADR-0025)
+
+Every candidate receives a composite score:
+
+```
+score = 0.50 × confidence + 0.30 × evidence_quality + 0.15 × pattern_specificity + 0.05 × source_priority
+```
+
+Accepted candidates must have `score >= 0.85` and no `rejection_reason`.
+
+### Rules
+
+1. All 76 candidates (accepted + rejected) must be in `extracted_fact_candidates`. Per-document parity with `fact_candidates.json` is a hard gate.
+2. Rejected candidates have `evidence_span_id = NULL` (no real span built for them) and `rejection_reason` explaining why.
+3. `source_candidate_id` and `source_clause_id` preserve DSE-007 local IDs. `id` and `clause_id` use global UIDs (ADR-0022).
+4. `extracted_facts` has exactly one row per (document_id, concept). Overwrite on re-run via INSERT OR REPLACE + UNIQUE INDEX.
+5. `fact_conflicts` rows reference `extracted_fact_candidates`, not `extracted_facts`.
+
+---
+
 ## Contract 4A: Normalizer Result Shape
 
 **Producer:** `normalizers/`
