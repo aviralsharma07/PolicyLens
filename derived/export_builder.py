@@ -105,7 +105,8 @@ def build_policy_features(
     doc_row = conn.execute(
         """SELECT sd.source_pdf_path, sd.file_hash, sd.page_count,
                   p.normalized_insurer, p.normalized_plan_name, p.uin_base,
-                  pv.full_uin
+                  p.display_name, p.short_name, p.match_confidence, p.match_method,
+                  pv.full_uin, pv.version_number, pv.approval_date
            FROM source_documents sd
            JOIN products p ON p.product_id = sd.policy_id
            JOIN product_versions pv ON pv.version_id = sd.version_id
@@ -123,8 +124,13 @@ def build_policy_features(
     product_identity = {
         "insurer": doc_row["normalized_insurer"] if doc_row else None,
         "plan_name": doc_row["normalized_plan_name"] if doc_row else None,
+        "display_name": doc_row["display_name"] if doc_row else None,
         "uin": doc_row["full_uin"] if doc_row else None,
         "uin_base": doc_row["uin_base"] if doc_row else None,
+        "product_version": doc_row["version_number"] if doc_row else None,
+        "effective_date": doc_row["approval_date"] if doc_row else None,
+        "match_confidence": doc_row["match_confidence"] if doc_row else None,
+        "match_method": doc_row["match_method"] if doc_row else None,
     }
 
     # Build features for all 20 concepts

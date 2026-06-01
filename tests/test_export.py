@@ -68,9 +68,13 @@ def conn():
         db,
         Product(
             product_id=POLICY_ID,
-            uin_base="TSTHLIP00000V000000",
+            uin_base="TSTHLIP00000",
             normalized_insurer="Test Insurer",
             normalized_plan_name="Test Plan",
+            display_name="Test Insurer Test Plan",
+            short_name="Test Plan",
+            match_confidence="high",
+            match_method="uin_insurer_plan_verified",
         ),
     )
     insert_product_version(
@@ -79,6 +83,8 @@ def conn():
             version_id=f"{POLICY_ID}_v1",
             product_id=POLICY_ID,
             full_uin="TSTHLIP00000V000000",
+            version_number=1,
+            approval_date="01-01-2025",
         ),
     )
     insert_source_document(
@@ -297,6 +303,24 @@ class TestExportBuilder:
         assert pi["insurer"] == "Test Insurer"
         assert pi["plan_name"] == "Test Plan"
         assert pi["uin"] == "TSTHLIP00000V000000"
+
+    def test_product_identity_has_all_9_fields(self, conn):
+        """All 9 contract fields must be present as keys in product_identity."""
+        result = build_policy_features(conn, DOC_ID, POLICY_ID, RUN_ID)
+        pi = result["product_identity"]
+        required = [
+            "insurer",
+            "plan_name",
+            "display_name",
+            "uin",
+            "uin_base",
+            "product_version",
+            "effective_date",
+            "match_confidence",
+            "match_method",
+        ]
+        for field in required:
+            assert field in pi, f"product_identity missing key: {field}"
 
     def test_parse_quality_fill_rate(self, conn):
         result = build_policy_features(conn, DOC_ID, POLICY_ID, RUN_ID)

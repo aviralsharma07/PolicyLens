@@ -35,6 +35,10 @@ class Product:
     normalized_plan_name: str
     product_type: str = "health"
     insurance_type: str = "individual"
+    display_name: Optional[str] = None
+    short_name: Optional[str] = None
+    match_confidence: Optional[str] = None
+    match_method: Optional[str] = None
 
 
 @dataclass
@@ -43,6 +47,9 @@ class ProductVersion:
     product_id: str
     full_uin: str
     version_label: Optional[str] = None
+    version_number: Optional[int] = None
+    approval_date: Optional[str] = None
+    financial_year: Optional[str] = None
     active_status: str = "active"
 
 

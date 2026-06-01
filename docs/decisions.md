@@ -679,3 +679,51 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Engineers must run `run_export.py` locally to inspect exports.
 
 **Revisit when:** A CI/CD pipeline needs committed export artifacts for deployment.
+
+---
+
+## 2026-06-01 — UIN base extraction uses V-delimiter (ADR-0030)
+
+**Status:** accepted
+
+**Decision:** `extract_uin_base(full_uin)` splits at the first `V` followed by digits, not at a fixed character position. DSE-010's `full_uin[:11]` was a bug producing truncated 11-char bases.
+
+**Context:** IRDAI UINs have format `{INSURER_CODE}{PRODUCT_CODE}V{VERSION}{FISCAL_YEAR}`. The base is everything before `V`. Most bases are 12 chars but the format doesn't guarantee a fixed length.
+
+**Consequences:**
+- Positive: Correct uin_base for all 5 gold policies (12 chars each).
+- Positive: No hardcoded length assumption — future UINs with different base lengths will work.
+
+**Revisit when:** IRDAI changes UIN format.
+
+---
+
+## 2026-06-01 — Plan name normalization strips insurer suffix and boilerplate (ADR-0031)
+
+**Status:** accepted
+
+**Decision:** `clean_plan_name()` strips insurer name suffixes (`, HDFC ERGO`), insurer prefixes (`New India `), and generic boilerplate (`Insurance Policy`, `Policy`, `Individual`).
+
+**Context:** Lifecycle product names include insurer names and generic suffixes that are redundant when displayed alongside the insurer field. Product B needs clean plan names for comparison UI.
+
+**Consequences:**
+- Positive: "Arogya Sanjeevani Policy, HDFC ERGO" → "Arogya Sanjeevani" — clean and display-ready.
+- Negative: Rule-based — unusual product names may need manual override.
+
+**Revisit when:** Expanding to 647 corpus reveals plan names the rules can't handle.
+
+---
+
+## 2026-06-01 — Insurer registry is canonical source of truth (ADR-0032)
+
+**Status:** accepted
+
+**Decision:** `identity/insurer_registry.py` contains 32 `InsurerRecord` entries covering all lifecycle insurers. It subsumes DSE-002's `FOLDER_TO_LIFECYCLE` mapping. Old `insurer_normalizer.py` API is preserved for backward compatibility.
+
+**Context:** DSE-002 had 23 folder→lifecycle mappings. 9 lifecycle insurers had no mapping (no corpus files). The registry adds them and provides display_name, legal_name, and IRDAI prefix.
+
+**Consequences:**
+- Positive: Single source of truth for insurer identity across the pipeline.
+- Positive: Backward compatible — `normalize("HDFC_ERGO")` still returns `"HDFC ERGO"`.
+
+**Revisit when:** A new insurer appears in the corpus.

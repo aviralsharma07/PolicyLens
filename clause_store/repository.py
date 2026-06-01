@@ -111,15 +111,20 @@ def insert_product(conn: sqlite3.Connection, product: Product) -> None:
     conn.execute(
         """INSERT OR REPLACE INTO products
            (product_id, uin_base, normalized_insurer, normalized_plan_name,
-            product_type, insurance_type)
-           VALUES (?,?,?,?,?,?)""",
+            display_name, short_name, product_type, insurance_type,
+            match_confidence, match_method)
+           VALUES (?,?,?,?,?,?,?,?,?,?)""",
         (
             product.product_id,
             product.uin_base,
             product.normalized_insurer,
             product.normalized_plan_name,
+            product.display_name,
+            product.short_name,
             product.product_type,
             product.insurance_type,
+            product.match_confidence,
+            product.match_method,
         ),
     )
 
@@ -127,13 +132,17 @@ def insert_product(conn: sqlite3.Connection, product: Product) -> None:
 def insert_product_version(conn: sqlite3.Connection, version: ProductVersion) -> None:
     conn.execute(
         """INSERT OR REPLACE INTO product_versions
-           (version_id, product_id, full_uin, version_label, active_status)
-           VALUES (?,?,?,?,?)""",
+           (version_id, product_id, full_uin, version_label,
+            version_number, approval_date, financial_year, active_status)
+           VALUES (?,?,?,?,?,?,?,?)""",
         (
             version.version_id,
             version.product_id,
             version.full_uin,
             version.version_label,
+            version.version_number,
+            version.approval_date,
+            version.financial_year,
             version.active_status,
         ),
     )
