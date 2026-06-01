@@ -23,7 +23,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-010 | Clause Store + Source Spans | done | P2 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | done | P2 | Phase 5 |
 | DSE-012 | Expand gold corpus 5 → 20 | planned | P2 | Phase 7 |
-| DSE-013 | Derived 91-Field Export | planned | P2 | Phase 8 |
+| DSE-013 | Derived Export (20-Concept Skeleton) | done | P2 | Phase 8 |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
 | DSE-015 | Insurer/Plan Normalizer Library | planned | P1 | Phase 0 |
 
@@ -45,6 +45,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-009 | Table Engine v1 | 2026-05-31 | Phase 3 |
 | DSE-010 | Clause Store + Source Spans | 2026-05-31 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | 2026-06-01 | Phase 5 |
+| DSE-013 | Derived Export (20-Concept Skeleton) | 2026-06-01 | Phase 8 |
 
 ---
 

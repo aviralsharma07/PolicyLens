@@ -1039,6 +1039,52 @@ active (DSE-011 v2 PASS on 2026-06-01)
 
 ---
 
+## Eval: Derived Export — 20-Concept Skeleton (DSE-013)
+
+### Purpose
+Ensures the Product B consumable export is structurally correct, all 20 concepts are present, evidence links are valid, and extracted values match gold for implemented concepts.
+
+### Hard Gates
+- `policies_exported == 5`
+- `all_20_concepts_present_per_policy` (no missing field keys)
+- `schema_validation_errors == 0`
+- `present_facts_have_evidence` (evidence + evidence_page + source_span_id non-null)
+- `not_found_facts_have_null_value`
+- `no_invalid_fact_status` (only 7 valid statuses)
+- `evidence_span_ids_exist_in_db`
+- `gold_value_match_for_5_concepts >= 95%`
+- `gold_status_match_for_5_concepts >= 95%`
+- `false_present == 0`
+- `export_schema_version == "1.0"` in every file
+- `derived_policy_features_parity == 5`
+- `present_missing_evidence_clause == 0` (every present fact has non-null evidence_clause)
+- `cross_file_page_disagreement == 0` (features and fact_sources agree on evidence page)
+
+### Commands
+
+```bash
+PYTHONPATH=. python scripts/run_export.py \
+  --db data/engine.sqlite \
+  --output-root data/export
+
+PYTHONPATH=. python scripts/eval_export.py \
+  --db data/engine.sqlite \
+  --export-root data/export \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-06-01-export-dse013-v1.json
+```
+
+### DSE-013 v2 Result
+
+All 14 gates pass. 5/5 policies exported. 20/20 concepts per policy. Gold accuracy 100%. Fill rate 25% (5/20 concepts implemented). 0 false present. 0 schema errors. 23/23 evidence span IDs valid. 0 evidence_clause missing. 0 cross-file page disagreements.
+
+v1 eval lacked `evidence_clause` and `cross_file_page_disagreement` gates. v2 is the final passing artifact.
+
+### Current Status
+active (DSE-013 v2 PASS on 2026-06-01)
+
+---
+
 ## Summary of Hard Gates
 
 | Layer | Gate | Blocks |
@@ -1053,4 +1099,4 @@ active (DSE-011 v2 PASS on 2026-06-01)
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |
-| Export | Every field has value or fact_status. No silent empties. | Product B consumption |
+| Export | 20/20 concepts, schema valid, evidence spans exist, evidence_clause required, cross-file consistency, gold accuracy >= 95%, 0 false-present | Product B consumption | active (DSE-013 v2 PASS) |

@@ -623,3 +623,59 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: 0 production conflicts — the machinery is exercised only in tests until DSE-012+.
 
 **Revisit when:** Adding a second extractor for any concept (e.g., LLM + deterministic for room_rent).
+
+---
+
+## 2026-06-01 — All 20 concepts emitted in every export (ADR-0027)
+
+**Status:** accepted
+
+**Decision:** Every policy export contains exactly 20 feature keys in `features`. Concepts without extractors are emitted with `fact_status = "not_found"` and `value = null`. No concept key is ever omitted.
+
+**Context:** Only 5/20 concepts have extractors. Product B needs a stable schema shape.
+
+**Reasoning:** A stable shape means Product B never encounters a missing key. "Not found" is explicit and honest — Product B can display "Not found in policy text" rather than silently omitting a comparison field.
+
+**Consequences:**
+- Positive: Product B always sees 20 fields, regardless of extractor coverage.
+- Positive: Fill rate is measurable (concepts_resolved / 20).
+- Negative: 75% of fields are currently not_found.
+
+**Revisit when:** Concept list grows beyond 20.
+
+---
+
+## 2026-06-01 — Scalar extraction for simple types, full JSON for compound types (ADR-0028)
+
+**Status:** accepted
+
+**Decision:** For concepts with a single scalar value key (e.g., `free_look_period` → `days`), the export `value` field is the scalar number. For compound concepts (co-pay components, room rent structures), the export `value` is the full normalized_value_json dict.
+
+**Context:** Product B needs both simple numbers for display ("15 days") and structured objects for complex benefits.
+
+**Reasoning:** A uniform approach (always dict) would complicate display. A uniform approach (always scalar) would lose compound structure. This hybrid maps naturally to how Product B will render each concept.
+
+**Consequences:**
+- Positive: Simple values are easy to display ("15 days").
+- Positive: Compound values carry full structure for rich rendering.
+- Negative: Product B must handle both types per concept.
+
+**Revisit when:** Product B requests a different value format.
+
+---
+
+## 2026-06-01 — Export is gitignored; build summary committed (ADR-0029)
+
+**Status:** accepted
+
+**Decision:** `data/export/` is generated output (gitignored). `data/reports/dse013_export_summary.json` and `runs/evals/` artifacts are committed. Engineers regenerate exports by running `run_export.py`.
+
+**Context:** Export JSON files change every pipeline run (timestamps, run IDs). Committing them would create noise.
+
+**Reasoning:** Same pattern as `data/engine.sqlite` (gitignored, reproducible). The eval artifact captures the quality metrics for review.
+
+**Consequences:**
+- Positive: No binary/JSON churn in git history.
+- Negative: Engineers must run `run_export.py` locally to inspect exports.
+
+**Revisit when:** A CI/CD pipeline needs committed export artifacts for deployment.

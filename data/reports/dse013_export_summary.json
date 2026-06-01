@@ -1,0 +1,50 @@
+{
+  "pipeline_run_id": "dse013_v1_1780296610",
+  "git_commit": "111d7cb82be10a4d658ab68c18c383f89bc0edb1",
+  "date": "2026-06-01",
+  "output_root": "data/export",
+  "policies_exported": 5,
+  "policies_total": 5,
+  "policy_results": [
+    {
+      "policy_id": "care_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "hdfc_ergo_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "icici_lombard_family_shield",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "new_india_floater_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "star_medi_classic_accident_care_individual",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    }
+  ]
+}
