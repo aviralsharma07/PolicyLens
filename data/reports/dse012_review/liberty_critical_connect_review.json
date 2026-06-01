@@ -1,0 +1,38 @@
+{
+  "slug": "liberty_critical_connect",
+  "insurer": "Liberty",
+  "plan": "Critical Connect",
+  "pages": 52,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 38,
+  "clauses": 360,
+  "tables": 41,
+  "facts_present": 4,
+  "facts_not_found": 16,
+  "heading_labels": 5,
+  "physical_table_labels": 41,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "4 present, 16 not_found. 4 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "41 semantic tables, 41 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "5 visual heading labels detected."
+    }
+  ]
+}

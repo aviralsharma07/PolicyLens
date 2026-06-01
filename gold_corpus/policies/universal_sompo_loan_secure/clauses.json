@@ -1,0 +1,2085 @@
+[
+  {
+    "clause_id": "clause_0000",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": null,
+    "title": "",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "raw_text": "Insured Event:  For the purposes of this Section and the determination of the Company‟s liability under it, Insured Event in relation to any Insured Person, shall mean Injury sustained during the Policy Period which shall within twelve months of its occurrence be the sole and direct cause of a)Death or b)Permanent Total Disablement (more specifically defined herein below). For the purposes of this Section, Permanent Total Disablement shall mean total and irrecoverable:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0001",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "I",
+    "title": "Loss of sight of both eyes; or",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "raw_text": "i)Loss of sight of both eyes; or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0002",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "II",
+    "title": "Actual loss by Physical Separation of both hands or both feet or one entire hand and one",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "raw_text": "ii)Actual loss by Physical Separation of both hands or both feet or one entire hand and one entire foot; or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0003",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "III",
+    "title": "Loss of use of both hands or both feet or of one hand and one foot without Physical",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "raw_text": "iii)Loss of use of both hands or both feet or of one hand and one foot without Physical Separation; Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 11 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0004",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": null,
+    "title": "",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "Provided that, such disablement shall as a direct consequence thereof permanently disable the Insured person from resuming his normal occupation or engaging in similar gainful employment.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0005",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "2.1",
+    "title": "Benefit Payable Under Section II:",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "2.1     Benefit Payable Under Section II: The Company hereby agrees, subject to the terms, conditions and exclusions applicable to this Section and the terms, conditions, General Exclusions stated in the Policy, to pay the Sum Insured as stated against Section II under Schedule, on occurrence of the Insured Event as stated above under this Section.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0006",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "2.2.1",
+    "title": "Exclusions Applicable To Section II:",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "2.2.1 Exclusions Applicable To Section II: The Company shall not be liable under this Section for:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0007",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "I",
+    "title": "We shall not be liable for Payment under more than one of the categories specified (Death",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "i.We shall not be liable for Payment under more than one of the categories specified (Death or Permanent Total Disablement) in the Benefit Payable in respect of the Insured Person.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0008",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "II",
+    "title": "Payment of Compensation in respect of Insured Event which occurs whilst the Insured",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "ii.Payment of Compensation in respect of Insured Event which occurs whilst the Insured person is operating or learning to operate any aircraft, or performing duties as a member of the crew on any aircraft, or Scheduled Airlines or is engaging in aviation or ballooning, or whilst the Insured person is mounting into, or dismounting from or traveling in any balloon or aircraft other than as a passenger (fare-paying or otherwise) in any Scheduled Airline anywhere in the world;",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0009",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "III",
+    "title": "Payment of Compensation in respect of death, Injury or disablement of Insured person (a)",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "iii.Payment of Compensation in respect of death, Injury or disablement of Insured person (a) from engaging in or participation in adventure sports including but not limited to winter sports, skydiving/parachuting, hang gliding, bungee jumping, scuba diving, mountain climbing (where ropes or guides are customarily used), riding or driving in races or rallies using a motorized vehicle or bicycle, caving or pot-holing, hunting or equestrian activities, skin diving or other underwater activity, rafting or canoeing involving white water rapids, yachting or boating outside coastal waters, participation in any Professional Sports, any bodily contact sport or any other hazardous or potentially dangerous sport for which the Insured is untrained, unless specifically covered under the Policy (b) directly or indirectly caused by venereal disease or insanity;",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0010",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "IV",
+    "title": "Payment of Compensation in respect of death or Permanent Total Disablement arising",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "iv.Payment of Compensation in respect of death or Permanent Total Disablement arising from or resulting directly or indirectly from any Illness to any Insured Person.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0011",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "V",
+    "title": "No sum shall be payable under this Section in case of any Permanent Total Disability for",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "v.No sum shall be payable under this Section in case of any Permanent Total Disability for which medical care, treatment, or advice was recommended by or received from a Medical Practitioner or from which the Insured person suffered or which was present before the commencement of the Policy Period",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0012",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": "2.2.2",
+    "title": "Special Conditions Applicable To Section II:",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "2.2.2Special Conditions Applicable To Section II:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0013",
+    "section_id": "universal_sompo_loan_secure_sec_0001",
+    "clause_number": null,
+    "title": "",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "The coverages under this Policy, for the specific Insured Person, shall terminate in the event of claim in respect of that Insured Person becoming admissible and accepted by the Company under this Section. In consequence thereof no benefit shall be payable under any other section of this Policy except under Section iv: fire and allied perils- dwelling & household contents, coverage under which shall be continued till the expiry of the policy. .",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0014",
+    "section_id": "universal_sompo_loan_secure_sec_0002",
+    "clause_number": null,
+    "title": "",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "raw_text": "Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 12 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0015",
+    "section_id": "universal_sompo_loan_secure_sec_0002",
+    "clause_number": null,
+    "title": "",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "Insured Event: For the purposes of this Section and the determination of the Company‟s liability under it, Insured Event in relation to any Insured Person, shall mean termination from employment of the Insured Person or his dismissal, temporary suspension or retrenchment from employment imposed on him by the employer during the Policy Period as per the employer‟s rules/regulations or executed/implemented by the employer in compliance of any laws for the time being in force or any directives by any Public Authority.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0016",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": null,
+    "title": "",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "raw_text": "Insured shall do or concur in doing or permit to be done all such acts and things that may be necessary or reasonably required by the company for the purpose of enforcing and/or securing any civil or criminal rights and remedies or obtaining relief or indemnity from any other party to which the company are or would become entitled upon the company making reimbursement under this Policy, whether such acts or things shall be or become necessary or required before or after Our payment. Insured shall not prejudice these subrogation rights in any manner and shall provide the company with whatever assistance or cooperation is required to enforce such rights. Any recovery the company make pursuant to this clause shall first be applied to the amounts paid or payable by the company under this Policy and Our costs and expenses of affecting a recovery, where after the company shall pay any balance remaining to the insured. This clause will not be applicable for Section I, II and III under the policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0017",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": "13",
+    "title": "Free Look period",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "raw_text": "13.Free Look period Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 30 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0018",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": null,
+    "title": "",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "raw_text": "We shall give insured a Free Look Period at the inception of the Policy and:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0019",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": "1",
+    "title": "Insured will be allowed a period of at least 15 days from the date of receipt of the Policy",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "raw_text": "1.Insured will be allowed a period of at least 15 days from the date of receipt of the Policy to review the terms and conditions of the Policy and to return the same if not acceptable.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0020",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": "2",
+    "title": "If insured have not made any claim during the Free Look period, insured shall be entitled",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "raw_text": "2.If insured have not made any claim during the Free Look period, insured shall be entitled to a)A refund of the premium paid less any expenses incurred by the company on insured‟s medical examination and the stamp duty charges or; b)where the risk has already commenced and the option of return of the Policy is exercised by insured, a deduction towards the proportionate risk premium for period on cover or; c)Where only a part of the risk has commenced, such proportionate risk premium commensurate with the risk covered during such period.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0021",
+    "section_id": "universal_sompo_loan_secure_sec_0003",
+    "clause_number": "14",
+    "title": "Cancellation/Termination",
+    "page_start": 30,
+    "page_end": 30,
+    "source_page_refs": [
+      30
+    ],
+    "raw_text": "14.Cancellation/Termination The Company may at any time cancel this Policy on the grounds of mis-representation, fraud, non-disclosure of material facts as sought to be declared on the Proposal Form or non- cooperation by the Insured/ Policyholder, by giving fifteen(15) days‟ notice in writing by registered post / acknowledgement due post to the Insured at his last known address in which case the Company shall be liable to repay on demand a rateable proportion of the premium for the unexpired term from the date of cancellation. The Insured may also cancel this Policy by giving fifteen (15) days‟ notice in writing to the Company, for the cancellation of this Policy, in which case the Company shall from the date of receipt of the notice cancel the Policy and retain the premium for the period his Policy has been in force at the Company‟s short period scale as mentioned in Schedule provided that no refund of premium shall be made if any claim has been made under the Policy by or on behalf of the insured. Premium Refund: Particulars 1 year 2 year 3 year Within 1 Month 60% 65% 65% From 1 Month to 3 Months 50% 60% 60% From 3 Months to 6 Months 35% 50% 55% From 6 Months to 9 Months 15% 40% 50% From 9 Months to 12 Months Nil 35% 45% From 12 Months to 18 Months Nil 15% 35% From 18 Months to 24 Months Nil Nil 20% From 24 Months to 30 Months Nil Nil 10% From 30 Months to 36 Months Nil Nil 0%",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0022",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 30,
+    "page_end": 31,
+    "source_page_refs": [
+      30,
+      31
+    ],
+    "raw_text": "a.All the covers opted for shall be renewed till the loan tenure or lifetime of  insured whichever is earlier, except on grounds of fraud, moral hazard or misrepresentation or non‐cooperation by any Insured Persons b.The Renewal of a Policy sought by Insured shall not be denied arbitrarily. If denied, Company shall provide Insured with cogent reasons for such denial of Renewal. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 31 of 41 c.This policy shall not be renewed and the insured shall not be eligible for any new similar policy(ies) if the claim is paid or admitted  under section I or section II. d.The company may condone delay in Renewal up to 30 days from the due date of Renewal without deeming such condo nation as a Break in Policy. However coverage shall not be available for such period. e.If the insured move into a higher age band, the premium will increase at the next Renewal. However, this Policy will not be subject to any alteration in premium rates generally introduced until the next Renewal. f.If the Policy is not renewed within the Grace Period then Company may agree to issue a fresh Policy subject to underwriting criteria and no continuing benefits shall be available from the expired Policy. g.We shall provide the insured with a substitute health insurance product if the insured have reached maximum renewable age under the Policy. h.All premiums are payable in advance of any cover under this Policy being provided.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0023",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "I",
+    "title": "The basic premium applicable under the Policy may be revised at a later stage subject to",
+    "page_start": 31,
+    "page_end": 31,
+    "source_page_refs": [
+      31
+    ],
+    "raw_text": "i.The basic premium applicable under the Policy may be revised at a later stage subject to approval from IRDAI. j.If a claim is ascertained in case of loss of employment cover and the insured is eligible for renewal, the insured can renew the loss of employment cover subject to him/her being employed at the time of renewal.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0024",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "16",
+    "title": "Continuity",
+    "page_start": 31,
+    "page_end": 31,
+    "source_page_refs": [
+      31
+    ],
+    "raw_text": "16.Continuity In the event of the Policy where insured have attained maximum Renewal age under the Policy, Insured shall have the option of taking a substitute health insurance Policy from the company without any benefit of continuity of cover for any additional benefits that insured may have enjoyed under the Loan Secure Insurance Policy and for which additional premium has been charged. In such an event, all the waiting periods as stipulated under the substitute policy will be applicable with due adjustment for the uninterrupted period in completed years for which insured were covered under the Loan Secure Insurance Policy issued by the company. However, any such benefit would be restricted to the maximum of insured‟s eligibility of Sum Insured under the substitute policy or the Sum Insured enjoyed by insured under the Loan Secure Insurance Policy whichever is lower. Also, all the underwriting rules and regulations of the substitute health insurance Policy issued by the company would be applicable for acceptance of such risk. We also agree that no loading on premium shall be applicable on the insured‟s individual claims experience basis.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0025",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "17",
+    "title": "Substitute Product",
+    "page_start": 31,
+    "page_end": 31,
+    "source_page_refs": [
+      31
+    ],
+    "raw_text": "17.Substitute Product In case the company may decide to withdraw this product under which this Policy is issued to insured or where insured have reached the maximum renewal age under the Policy issued by the company, The company shall provide insured with an option to buy a substitute health insurance Policy from the company. Insured will be given the Portability credit based on the number of years of continuous and uninterrupted insurance cover under this Policy towards the waiting periods in the new substitute health insurance Policy issued by the company.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0026",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "23",
+    "title": "Withdrawal/Modifications:",
+    "page_start": 31,
+    "page_end": 31,
+    "source_page_refs": [
+      31
+    ],
+    "raw_text": "23. Withdrawal/Modifications: We shall give insured notice in the event the company may decide to revise, modify or withdraw the product. Such notice shall be given to insured at least three months prior the Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 32 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0027",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "date when such modification or revision or withdrawal comes into effect. the company also promise insured that",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0028",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "I",
+    "title": "In case of modification or revision, the notice given to insured shall detail the reasons",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "i.In case of modification or revision, the notice given to insured shall detail the reasons for such revision or modification, in particular the reason for an increase in premium (if any) and the quantum of such increase.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0029",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "II",
+    "title": "The product shall be withdrawn only after due approval from the Insurance",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "ii.The product shall be withdrawn only after due approval from the Insurance Regulatory and Development Authority of India. However, if insured do not respond to the company‟s intimation in case of such withdrawal, the Policy shall be withdrawn on the Renewal date and the company shall provide insured with an option to migrate to a substitute product offered by the company, subject to portability conditions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0030",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "III",
+    "title": "Policies whose renewal will be within 90 days of withdrawal will be given choice for",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "iii.Policies whose renewal will be within 90 days of withdrawal will be given choice for one time renewal of existing policy, others will have the choice to migration to substitute health insurance policy/modified product.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0031",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "24",
+    "title": "Notices and Claims",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "24. Notices and Claims",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0032",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "raw_text": "Any notice, direction or instruction given under this Policy shall be in writing and delivered by hand, post, or facsimile to: In case of any grievance the insured person may contact the company through:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0033",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 32,
+    "page_end": 33,
+    "source_page_refs": [
+      32,
+      33
+    ],
+    "raw_text": "Website : www.universalsompo.com Toll free : 1 - 800 - 224030 (For MTNL/BSNL Users) or 1 - 800 – 2004030 or on chargeable numbers at +91-22-27639800/+91-22-39133700 E-mail : contactus@universalsompo.com Fax :     (022) 39171419 Courier :  Universal Sompo General Insurance Co. Ltd, Unit No- 601 & 602 A Wing, 6th Floor, Reliable Tech Park, Cloud City Campus; Thane- Belapur Road, Airoli- 400708 Insured person may also approach the grievance cell at any of the company‟s branches with the details of grievance If Insured person is not satisfied with the redressal of grievance through one of the above methods, insured person may contact the grievance officer at grievance@universalsompo.com For updated details of grievance officer, kindly refer the link www.universalsompo.com Grievance may also be lodged at IRDAI Integrated Grievance Management System - https://igms.irda.gov.in/ Insurance Ombudsman – If Insured person is not satisfied with the redressal of grievance through above methods, the insured person may also approach the office of Insurance Ombudsman of the respective area/region for redressal of grievance as per Insurance Ombudsman Rules 2017.The contact details of the Insurance Ombudsman offices have been provided as Annexure-A. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 33 of 41 The contact details of the Insurance Ombudsman offices are as below- Areas of Jurisdiction Office of the Insurance Ombudsman",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0034",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "raw_text": "Office of the Insurance Ombudsman, Gujarat , UT of Dadra and Nagar Haveli, JeevanPrakash Building, 6th floor, Daman and Diu TilakMarg, Relief Road, Ahmedabad – 380 001. Tel.: 079 - 25501201/02/05/06 Email: bimalokpal.ahmedabad@ecoi.co.in Office of the Insurance Ombudsman, Karnataka JeevanSoudhaBuilding,PID No. 57-27-N- 19, Ground Floor, 19/19, 24th Main Road,JP Nagar, Ist Phase, Bengaluru – 560 078. Tel.: 080 - 26652048 / 26652049 Email: bimalokpal.bengaluru@ecoi.co.in Madhya Pradesh and Chhattisgarh  Office of the Insurance Ombudsman, JanakVihar Complex, 2nd Floor, 6, Malviya Nagar, Opp. Airtel Office, Near New Market, Bhopal – 462 003. Tel.: 0755 - 2769201 / 2769202 Fax: 0755 - 2769203 Email: bimalokpal.bhopal@ecoi.co.in Odisha Office of the Insurance Ombudsman, 62, Forest park, Bhubneshwar – 751 009. Tel.: 0674 - 2596461 /2596455 Fax: 0674 - 2596429 Email: bimalokpal.bhubaneswar@ecoi.co.in Punjab , Haryana, Himachal Pradesh, Jammu Office of the Insurance Ombudsman, and Kashmir, UT of Chandigarh  S.C.O. No. 101, 102 & 103, 2nd Floor, Batra Building, Sector 17 – D, Chandigarh – 160 017. Tel.: 0172 - 2706196 / 2706468 Fax: 0172 - 2708274 Email: bimalokpal.chandigarh@ecoi.co.in Tamil Nadu,   UT–Pondicherry Town and Office of the Insurance Ombudsman, Karaikal (which are part of UT of Pondicherry)  Fatima Akhtar Court, 4th Floor, 453, Anna Salai, Teynampet, CHENNAI – 600 018. Tel.: 044 - 24333668 / 24335284 Fax: 044 - 24333664 Email: bimalokpal.chennai@ecoi.co.in Delhi  Office of the Insurance Ombudsman, 2/2 A, Universal Insurance Building, Asaf Ali Road, New Delhi – 110 002. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 34 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0035",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "raw_text": "Tel.: 011 - 23232481/23213504 Email: bimalokpal.delhi@ecoi.co.in Assam , Meghalaya, Manipur, Mizoram, Office of the Insurance Ombudsman, Arunachal Pradesh, Nagaland and Tripura  JeevanNivesh, 5th Floor, Nr. Panbazar over bridge, S.S. Road, Guwahati – 781001(ASSAM). Tel.: 0361 - 2632204 / 2602205 Email: bimalokpal.guwahati@ecoi.co.in Andhra Pradesh, Telangana and UT of Yanam Office of the Insurance Ombudsman, – a part of the UT of Pondicherry  6-2-46, 1st floor, \"Moin Court\", Lane Opp. Saleem Function Palace, A. C. Guards, Lakdi-Ka-Pool, Hyderabad - 500 004. Tel.: 040 - 67504123 / 23312122 Fax: 040 - 23376599 Email: bimalokpal.hyderabad@ecoi.co.in Rajasthan Office of the Insurance Ombudsman, JeevanNidhi – II Bldg., Gr. Floor, Bhawani Singh Marg, Jaipur - 302 005. Tel.: 0141 - 2740363 Email: Bimalokpal.jaipur@ecoi.co.in Kerala , UT of  (a) Lakshadweep, (b) Mahe – a Office of the Insurance Ombudsman, part of UT of Pondicherry  2nd Floor, Pulinat Bldg., Opp. Cochin Shipyard, M. G. Road, Ernakulam-682015. Tel.: 0484 - 2358759/2359338 Fax: 0484-2359336 Email: bimalokpal.ernakulam@ecoi.co.in West Bengal, UT of Andaman and Nicobar Office of the Insurance Ombudsman, Islands, Sikkim  Hindustan Bldg. Annexe, 4th Floor, 4, C.R. Avenue, KOLKATA - 700 072. Tel.: 033 - 22124339 / 22124340 Fax : 033 - 22124341 Email: bimalokpal.kolkata@ecoi.co.in Districts of Uttar Pradesh : Office of the Insurance Ombudsman, Laitpur, Jhansi, Mahoba, Hamirpur, Banda, 6th Floor, JeevanBhawan, Phase-II, Chitrakoot, Allahabad, Mirzapur, Sonbhabdra, Nawal Kishore Road, Hazratganj, Fatehpur, Pratapgarh, Jaunpur,Varanasi, Lucknow - 226 001. Gazipur, Jalaun, Kanpur, Lucknow, Unnao, Tel.: 0522 - 2231330 / 2231331 Sitapur, Lakhimpur, Bahraich, Barabanki,  Fax: 0522 - 2231310 Email: bimalokpal.lucknow@ecoi.co.in Raebareli, Sravasti, Gonda, Faizabad, Amethi, Kaushambi, Balrampur, Basti, Ambedkarnagar, Sultanpur, Maharajgang, Santkabirnagar, Azamgarh, Kushinagar, Gorkhpur, Deoria, Mau, Ghazipur, Chandauli, Ballia, Sidharathnagar. Goa,  Office of the Insurance Ombudsman, Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 35 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0036",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 35,
+    "page_end": 35,
+    "source_page_refs": [
+      35
+    ],
+    "raw_text": "Mumbai Metropolitan Region  3rd Floor, JeevanSevaAnnexe, excluding Navi Mumbai & Thane S. V. Road, Santacruz (W), Mumbai - 400 054. Tel.: 022 - 26106552 / 26106960 Fax: 022 - 26106052 Email: bimalokpal.mumbai@ecoi.co.in State of Uttaranchal and the following Districts Office of the Insurance Ombudsman, of Uttar Pradesh: BhagwanSahai Palace Agra, Aligarh, Bagpat, Bareilly, Bijnor, 4th Floor, Main Road, Budaun, Bulandshehar, Etah, Kanooj, Naya Bans, Sector 15, Mainpuri, Mathura, Meerut, Moradabad, Distt: GautamBuddh Nagar, Muzaffarnagar, Oraiyya, Pilibhit, Etawah, U.P-201301. Farrukhabad, Firozbad, Gautambodhanagar, Tel.: 0120-2514250 / 2514252 / 2514253 Ghaziabad, Hardoi, Shahjahanpur, Hapur, Email: bimalokpal.noida@ecoi.co.in Shamli, Rampur, Kashganj, Sambhal, Amroha, Hathras, Kanshiramnagar, Saharanpur. Bihar, Office of the Insurance Ombudsman, Jharkhand. 1st Floor,Kalpana Arcade Building,, Bazar Samiti Road, Bahadurpur, Patna 800 006. Tel.: 0612-2680952 Email: bimalokpal.patna@ecoi.co.in Maharashtra, Office of the Insurance Ombudsman, Area of Navi Mumbai and Thane JeevanDarshan Bldg., 3rd Floor, excluding Mumbai Metropolitan Region C.T.S. No.s. 195 to 198, N.C. Kelkar Road, Narayan Peth, Pune – 411 030. Tel.: 020-41312555 Email: bimalokpal.pune@ecoi.co.in Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 36 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0037",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "raw_text": "Annexure I",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0038",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "raw_text": "ADDITIONAL CLAUSES AC1: For Reducing Sum Insured covers Notwithstanding anything contrary stated in the Policy, the Sum Insured under the Policy on the date of the Insured Event covered under Sections I & II for the purpose of calculation of claim shall be the least of the following:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0039",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "I",
+    "title": "The Principal Outstanding in the books of the Bank/Financial Institution as on the date of",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "raw_text": "i)The Principal Outstanding in the books of the Bank/Financial Institution as on the date of occurrence of the Insured Event; or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0040",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "II",
+    "title": "The Principal Outstanding as per the amortization Schedule prepared by Bank/Financial",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "raw_text": "ii)The Principal Outstanding as per the amortization Schedule prepared by Bank/Financial Institution. In the event the Sum Insured as appearing against Section I & II of the Schedule  of the Policy is less than the total of the actual Loan disbursed upto the date of the occurrence of the Insured Event, then the Amortization Schedule shall be calculated as if the actual Loan disbursed was equivalent to the Sum Insured; or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0041",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": "III",
+    "title": "The Sum Insured as appearing against Section I & II of the Schedule",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "raw_text": "iii)The Sum Insured as appearing against Section I & II of the Schedule N.B. Reducing Sum Insured option is available only for 3 year policy tenure. AC2: Premium Refunds: Notwithstanding anything to the contrary contained in the Policy, the refund of premium under the Policy shall be as under In the event of full prepayment of the Loan by the Insured, the Company shall refund a portion of the premium subject to the terms and conditions of the Policy as per the rates mentioned below: Particulars 1 year 2 year 3 year Within 1 Month 60% 65% 65% From 1 Month to 3 Months 50% 60% 60% From 3 Months to 6 Months 35% 50% 55% From 6 Months to 9 Months 15% 40% 50% From 9 Months to 12 Months Nil 35% 45% From 12 Months to 18 Months Nil 15% 35% From 18 Months to 24 Months Nil Nil 20% From 24 Months to 30 Months Nil Nil 10% From 30 Months to 36 Months Nil Nil 0% In event of part prepayment of the Loan, no refunds of premium shall be made under this Policy. No refunds of premium will be made under the Policy during the last year of the Policy Period. Additional Clauses – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                     IRDAI Reg. No 134",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0042",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "raw_text": "Upon making any refund of premium under this Policy in accordance with the terms and conditions hereof in respect of the Insured, the cover in respect of that Insured shall forthwith terminate and the Company shall not be liable hereunder. Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect of the Insured where any claim has been admitted by the Company or has been lodged with the Company. AC3: Survival Period: Notwithstanding anything to the contrary stated herein the Company shall not be liable to make any payment arising out of any claim under Section I for any Insured if the Insured does not survive a period of at least 90 days after the date of occurrence Insured Event. Endorsements – Available with Section IV on payment of additional Premium Terrorism Damage Cover Endorsement (Material Damage only) INSURING CLAUSE Subject otherwise to the terms, exclusions, provisions and conditions contained in the Policy and in consideration of the payment by the Insured to the Company of additional premium as stated in the Schedule, it is hereby agreed and declared that notwithstanding anything stated in the 'Terrorism Risk Exclusion\" of this Policy to the contrary, this Policy is extended to cover physical loss or physical damage occurring during the period of this Policy caused by an act of terrorism to the location /s mentioned in the schedule subject to the exclusions, limits and excess described hereinafter. For the purpose of this cover, an act of terrorism means an act or series of acts, including but not limited to the use of force or violence and/or the threat thereof, of any person or group(s) of persons, whether acting alone or on behalf of or in connection with any organization(s) or government(s), or unlawful associations, recognized under Unlawful Activities (Prevention) Amendment Act, 2008 or any other related and applicable national or state legislation formulated to combat unlawful and terrorist activities in the nation for the time being in force, committed for political, religious, ideological or similar purposes including the intention to influence any government and/or to put the public or any section of the public in fear for such purposes. This cover also includes loss, damage, cost or expense directly caused by, resulting from or in connection with any action taken in suppressing, controlling, preventing or minimizing the consequences of an act of terrorism by the duly empowered government or Military Authority. Provided that if the Insured is eligible for indemnity under any government compensation plan or other similar scheme in respect of the damage described above, this Policy shall be excess of any recovery due from such plan or scheme. For the purpose of the aforesaid inclusion clause, \"Military Authority\" shall mean armed forces, para military forces, police or any other authority constituted by the government for maintaining law and order. Additional Clauses – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                     IRDAI Reg. No 134",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0043",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "raw_text": "LOSSES EXCLUDED This cover shall not indemnify loss of or damage to property caused by any or all of the following:- 1. loss by seizure or legal or illegal occupation; 2. loss or damage caused by: (i)  voluntary abandonment or vacation, (ii) confiscation, commandeering, nationalisation, requisition, detention, embargo, quarantine, or any result       of any order of public or government authority, which deprives the Insured of the use or value of its property; 3. loss or damage arising from acts of contraband or illegal transportation or illegal trade; 4. loss or damage directly or indirectly arising from or in consequence of the seepage and or discharge of  pollutants or contaminants, which pollutants and contaminants shall include but not be limited to any solid, liquid, gaseous or thermal irritant, contaminant or toxic or hazardous substance or any substance the presence, existence or release of which endangers or threatens to endanger the health, safety or welfare of persons or the environment; 5. loss or damage arising directly or indirectly from or in consequence of chemical or biological emission, release, discharge, dispersal or escape or chemical or biological exposure of any kind; 6. loss or damage arising directly or indirectly from or in consequence of asbestos emission, release, discharge, dispersal or escape or asbestos exposure of any kind; 7. any fine, levy, duty, interest or penalty or cost or compensation/damages and/or other assessment which is incurred by the Insured or which is imposed by any court, government agency, public or civil authority or any other person; 8. loss or damage by electronic means including but not limited to computer hacking or the introduction of any form of computer virus or corrupting or unauthorised instructions or code or the use of any electromagnetic weapon. This exclusion shall not operate to exclude losses (which would otherwise be covered under this Policy) arising from the use of any computer, computer system or computer software programme or any other electronic system in the launch and/or guidance system and/or firing mechanism of any weapon or missile; 9. loss or damage caused by vandals or other persons acting maliciously or by way of protest or strikes, labour unrest, riots or civil commotion; 10. loss or increased cost occasioned by any public or government or local or civil authority's enforcement of any ordinance or law regulating the reconstruction, repair or demolition of any property insured hereunder; 11. any consequential loss or damage, loss of use, delay or loss of markets, loss of income, depreciation, reduction in functionality, or increased cost of working; 12. loss or damage caused by factors including but not limited to cessation, fluctuation or variation in, or insufficiency of, water, gas or electricity supplies and telecommunications or any type of service; 13. loss or increased cost as a result of threat or hoax; 14. loss or damage caused by or arising out of burglary, house - breaking, looting, theft, larceny or any such attempt or any omission of any kind of any person (whether or not such act is committed in the course of a disturbance of public peace) in any action taken in respect of an act of terrorism; 15. loss or damage caused by mysterious disappearance or unexplained loss; Additional Clauses – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                     IRDAI Reg. No 134",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0044",
+    "section_id": "universal_sompo_loan_secure_sec_0004",
+    "clause_number": null,
+    "title": "",
+    "page_start": 39,
+    "page_end": 40,
+    "source_page_refs": [
+      39,
+      40
+    ],
+    "raw_text": "16. loss or damage directly or indirectly caused by mould, mildew, fungus, spores or other micro-organism of any type, nature or description, including but not limited to any substance whose presence poses an actual or potential threat to human health; 17. total or partial cessation of work or the retardation or interruption or cessation of any process or operations or omissions of any kind. LIMIT OF INDEMNITY The limit of indemnity under this cover shall not exceed the Total Sum Insured given in the Policy Schedule or INR 20,000,000,000 per compound/location whichever is lower. In respect of terrorism cover for dwellings, limit of indemnity shall not exceed Total Sum Insured as mentioned in the Policy Schedule or INR 4,000,000,000 per compound/location whichever is lower. In respect of several locations being covered under a single policy on a floater basis, the maximum aggregate loss suffered from all the locations mentioned in the Policy schedule shall not exceed Total Sum Insured as mentioned in the Policy Schedule or INR 20,000,000,000/- whichever is lower. In respect of several insurance policies within the same compound/location with one or different insurers, the maximum aggregate loss payable per compound/location by any one or all insurers shall be INR 20,000,000,000. If the actual aggregate loss suffered at one compound/location is more than INR 20,000,000,000, the amounts payable towards individual policies shall be reduced in proportion to the sum insured of the policies. EXCESS* 1% of the claim amount for each and every claim subject to Minimum of INR 25,000 and Maximum of INR 1,000,000 ADD ON COVERS It is further declared and agreed that the limit of indemnity including the claim on add on cover(s) shall not exceed total sum insured plus separate sublimit opted for add on cover(s) or INR 20,000,000,000 whichever is lower. In respect of several insurance policies with in the same compound/location, the maximum aggregate loss payable per compound/location by any one or all insurers shall be INR 20,000,000,000. In respect of terrorism cover for long term dwellings, limit of indemnity including the claim on add on cover(s) shall not exceed total sum insured plus separate sublimit opted for add on cover(s) or INR 4,000,000,000/- whichever is lower. In respect of several insurance policies with in the same compound/location, the maximum aggregate loss payable per compound/location by any one or all insurers shall be INR 4,000,000,000/- MID TERM COVER In case the coverage under this endorsement is granted during the currency of the policy, no claims will be payable for loss or damage to property caused by an act of terrorism occurring during the first 15 (fifteen) days from the date of granting such cover. SANCTION, LIMITATION AND EXCLUSION CLAUSE Additional Clauses – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                     IRDAI Reg. No 134 No (re)insurer shall be deemed to provide cover and no (re)insurer shall be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim or provision of such benefit would expose that (re)insurer to any sanction, prohibition or restriction under United Nations resolutions or the trade or economic sanctions, laws or regulations of the European Union, United Kingdom or United States of America. CANCELLATION CLAUSE Notwithstanding the cancellation provisions relating to the basic insurance policy on which this endorsement is issued, there shall be no refund of premium allowed for cancellation of the Terrorism risk insurance during the period of insurance except where such cancellation is done along with the cancellation of the basic insurance. Where a policy is cancelled and rewritten mid-term purely for the purpose of coinciding with the accounting year of the insured, pro-rate refund of the cancelled policy premium will be allowed. If the cancellation is for any other purpose, refund of premium will only be allowed after charging short term scale rates. Note: The definitions, terms and conditions of main Policy save as modified or endorsed herein shall apply. Additional Clauses – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                     IRDAI Reg. No 134",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0045",
+    "section_id": "universal_sompo_loan_secure_sec_0005",
+    "clause_number": null,
+    "title": "",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "The Company hereby agrees, subject to the terms, conditions and exclusions applicable to this Section and the terms, conditions, General Exclusions stated in the Policy, to pay, on occurrence of the Insured Event as stated above under this Section, in relation to the Insured Person maximum of 3 EMI Amount(s) falling  due in respect of the Loan (Loan account number as stated in Schedule  of this Policy) after the commencement of the Insured Event till the reinstatement of employment with the same employer or new employer or expiry of Policy Period, whichever is earlier, subject to a maximum of Sum Insured as stated under Schedule against Section III for the Insured Person mentioned in the Policy. In case of term loan, the amount payable is 3 months pro-rata proportion of total loan amount.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0046",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "I",
+    "title": "The Company shall not be liable to make any payment under this Section in the event of",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "i)The Company shall not be liable to make any payment under this Section in the event of termination, dismissal, temporary suspension or retrenchment from employment of the Insured person being attributed to any dishonesty or fraud or poor performance on the part of the Insured person or his willful violation of any rules of the employer or laws for the time being in force or any disciplinary action against the Insured person by the employer.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0047",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "II",
+    "title": "The Company shall not be liable to make any payment under this Policy in connection with",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "ii)The Company shall not be liable to make any payment under this Policy in connection with or in respect of: a)Self-employed persons; b)Any claim relating to unemployment from a job which is casual, temporary, seasonal or contractual in nature or any claim relating to an employee not on the direct rolls of the employer; c)Any voluntary unemployment; d)Unemployment at the time of inception of the Policy Period or arising within the first 90 days of inception of the Policy Period (Waiting period is not applicable on renewal or for accidents).",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0048",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "III",
+    "title": "Any unemployment from a job under which no salary or any remuneration is provided to",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "iii)Any unemployment from a job under which no salary or any remuneration is provided to the Insured person.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0049",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "IV",
+    "title": "Any suspension from employment on account of any pending enquiry being conducted by",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "iv)Any suspension from employment on account of any pending enquiry being conducted by the employer/ Public Authority",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0050",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "V",
+    "title": "Any unemployment due to resignation, retirement whether voluntary or otherwise",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "v)Any unemployment due to resignation, retirement whether voluntary or otherwise",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0051",
+    "section_id": "universal_sompo_loan_secure_sec_0006",
+    "clause_number": "VI",
+    "title": "Any unemployment due to non-confirmation of employment after or during such period",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "vi)Any unemployment due to non-confirmation of employment after or during such period under which the Insured was under probation.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0052",
+    "section_id": "universal_sompo_loan_secure_sec_0007",
+    "clause_number": "I",
+    "title": "A claim under this section shall become admissible provided the period of termination,",
+    "page_start": 13,
+    "page_end": 13,
+    "source_page_refs": [
+      13
+    ],
+    "raw_text": "i)A claim under this section shall become admissible provided the period of termination, dismissal, temporary suspension or retrenchment from employment of the Insured Person shall not be less 30 consecutive days (“Retrenchment Period”). Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 13 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0053",
+    "section_id": "universal_sompo_loan_secure_sec_0007",
+    "clause_number": "II",
+    "title": "The benefit under Section III is available only for salaried employees.",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "raw_text": "ii)The benefit under Section III is available only for salaried employees.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0054",
+    "section_id": "universal_sompo_loan_secure_sec_0007",
+    "clause_number": "III",
+    "title": "The cover as described under this Section, for specific Insured Person, shall terminate in the",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "raw_text": "iii)The cover as described under this Section, for specific Insured Person, shall terminate in the event of claim in respect of that Insured becoming admissible and accepted by the Company under this Section and the Company admitting liability against Section III for the Insured Person under Schedule. CLAIMS SETTLEMENT PROCESS APPLICABLE TO SECTION I, SECTION II and SECTION III Claim Documents for Section I CLAIMS SETTLEMENT PROCESS APPLICABLE TO SECTION I In the event of a claim arising out of an Insured Event covered under this Section, the Insured Event as described above shall be intimated to the Company within forty five (45) days date of first diagnosis of the Illness, date of surgical procedure or date of occurrence of the medical event as the case may be and the Insured shall arrange for submission of the following documents to the Company:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0055",
+    "section_id": "universal_sompo_loan_secure_sec_0008",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 17,
+    "source_page_refs": [
+      16,
+      17
+    ],
+    "raw_text": "Age Limit: To be eligible to be covered under the Policy or get any benefits under the Policy, the Insured should have attained the age of at least 20 years and maximum entry age under policy is 65 years on the date of commencement of the Policy Period as applicable to such Insured. Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 16 of 41 SECTION IV: FIRE AND ALLIED PERILS - DWELLING & HOUSEHOLD CONTENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0056",
+    "section_id": "universal_sompo_loan_secure_sec_0008",
+    "clause_number": null,
+    "title": "",
+    "page_start": 17,
+    "page_end": 20,
+    "source_page_refs": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "raw_text": "Clause A. This Policy and the Insurance Contract 1. Your Policy: This Policy is a contract between You and Us as stated in the following: a. This Policy document, b. The Policy Schedule attached to this Policy document, c. Any Endorsement attached to and forming part of this Policy document, d. Any Add-on to this Policy that You may have purchased from Us, e. The proposals and all declarations made by You or on Your behalf. 2. To whom this Policy is issued and what it covers: a. This Policy is issued to You and covers You and/or Your Home Building and/or Home Contents as mentioned in the Policy Schedule. b. If more than one person is insured under this Policy, each of You is a joint policyholder. Any notice or letter We give to any of You will be considered as given to all of You. Any request, statement, representation, claim or action of any one of You will bind all of You as if made by all of You. c. If You have mortgaged, pledged or hypothecated Your Home Building and/or Home Contents with a Bank, the Policy Schedule will show an „Agreed Bank Clause‟ and the name of such Bank. The terms and conditions of this arrangement will be added to this Policy as an additional clause. 3. The Policy Schedule: The Policy Schedule is an important document about Your insurance cover. It contains: a. Your personal details, b. the Policy Period, c. the description of Your Insured Property, d. the total Sum Insured, the Sum Insured for each cover or item covered, and any limits and sub-limits, e. the insurance covers You have purchased, f. the premium You have paid for these insurance covers, g. add-on covers opted by You, h. other important and relevant aspects and information. 4. Special meaning of certain words: Words stated in the table below have a special meaning throughout this Policy, the Policy Schedule and Endorsements. These words with special meaning are stated in the Policy with the first letter in capitals. Word /s Specific meaning Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 17 of 41 A bank or any financial institution Bank 1. for the main building unit of Your Home, it is the net Carpet Area usable floor area, excluding the area covered by the external walls, areas under services shafts, exclusive balcony or verandah area and exclusive open terrace area, but including the area covered by the internal partition walls of the residential unit; 2. for any enclosed structure on the same site, it is the net usable floor area of such structure; and 3. for any balcony, verandah area, terrace area, parking area, or any enclosed structure that is part of Your Home, it is 25% of its net usable floor area. It is the date and time from which the insurance cover Commencement under this Policy begins.It is shown in the Policy Date Schedule. The amount required to construct Your Home Building Cost of at the Commencement Date. Construction This amount is calculated as follows: a. For residential structure of Your Home including Fittings and Fixtures: Carpet Area of the structure in square metres X Rate of Cost of Construction at the Commencement Date. The Rate of Cost of Construction is the prevailing rate of cost of construction of Your Home Building at the Commencement   Date   as  declared  by You and accepted by Us and shown in the Policy schedule. b. For additional structures : the amount that is based on the prevailing rate of Cost of Construction at the Commencement Date as declared by You and accepted by Us. A written amendment to the Policy that We make Endorsement (additions, deletions, modifications, exclusions or conditions of an insurance Policy) which may change the terms or scope of the original policy. Those articles or things in Your Home that are not Home Contents permanently attached or fixed to the structure of Your Home. Home Contents may consist of General Contents and/or Valuable Contents. Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 18 of 41 Word /s Specific meaning General Contents are all the contents of household use General Contents in Your Home, e.g., furniture, electronic items and goods, antennae, solar panels, water storage equipment, kitchen equipment, electrical equipment (including those fitted on walls ), clothing and apparel and items of similar nature. Valuable Contents of Your Home consist of items Valuable Contents such as jewellery, silverware, paintings, works of art, antique items, curios and items of similar nature. The Person/s who has/have purchased Insurance Insured Cover under this Policy. Your Home Building and Home Contents, or any item Insured Property of property covered by this Policy. Building(s) having walls and/or roofs of wooden Kutcha Construction planks/thatched leaves and/or grass/hay of any kind/bamboo/plastic cloth/asphalt/canvas/tarpaulin and the like. Policy Period Policy period means the period commencing from the effective date and time as shown in the Policy Schedule and terminating at Midnight on the expiry date as shown in the Policy Schedule or on the termination of or the cancellation of insurance as provided for in Clause G (III) of this Policy, whichever is earlier. The document accompanying and forming part of the Policy Schedule Policy that gives Your details and of Your insurance cover, as described in Clause A (3) of this Policy. The premium is the amount You pay Us for this Premium insurance. The Policy Schedule shows the amount of premium for the Policy Period and all other taxes and levies. Construction other than Kutcha Construction. Pucca Construction Your wife or husband. Spouse The amount shown as Sum Insured in the Policy Sum Insured Schedule and as described in Clause C (4) and Clause D (2) of this Policy. It represents Our maximum liability for each cover or part of cover and for each loss. A  situation  where  the  Insured  Property  or  item  is Total Loss completely destroyed, lost or damaged beyond Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 20 of 41 Word /s Specific meaning retrieval or repair or the cost of repairing it is more than the Sum Insured for that item or in total. Universal Sompo General Insurance Company that We, Us, Our, Insurer has provided Insurance Cover under this Policy; of the Company. The Insured Person/s who has/have You, Your, Insured purchased Insurance Cover under this Policy; of such Insured Person/s. Your Home Building is a building consisting of a Your Home Building residential unit, having an enclosed structure and a roof, basement (if any) and used as a dwelling place described in detail as per Clause C (2) of this Policy. Clause B. Insured Events We give insurance cover for physical loss or damage, or destruction caused to Insured Property by the following unforeseen events occurring during the Policy Period. The events covered are given in Column A and those not covered in respect of these events are given in Column B. Column A Column B We cover physical loss or damage, We do not cover any loss or damage, or destruction caused to the Insured or destruction caused to the Insured Property by Property",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0057",
+    "section_id": "universal_sompo_loan_secure_sec_0009",
+    "clause_number": null,
+    "title": "",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "raw_text": "a.name of the Insured person; b.name, date of occurrence and medical details of the Insured Event c.confirmation that the Insured Event does not relate to any Pre-Existing Illness or any Illness or Injury which existed within the first 90 days of commencement of Period of Insurance.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0058",
+    "section_id": "universal_sompo_loan_secure_sec_0010",
+    "clause_number": null,
+    "title": "",
+    "page_start": 14,
+    "page_end": 14,
+    "source_page_refs": [
+      14
+    ],
+    "raw_text": "schedule, the EMI Amounts, Principal Outstanding, etc.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0062",
+    "section_id": "universal_sompo_loan_secure_sec_0014",
+    "clause_number": null,
+    "title": "",
+    "page_start": 14,
+    "page_end": 15,
+    "source_page_refs": [
+      14,
+      15
+    ],
+    "raw_text": "Claims documents for Section II (i)Upon the happening of any Injury giving rise or likely to give rise to a claim under this Policy, the Injury as described above shall be intimated to the Company as soon as possible but not later than 30 days from the date of its occurrence. (ii)The Insured shall deliver to the Company, within 30 days of the date of occurrence of the Insured Event, a detailed statement in writing as per the claim form and any other material particular, relevant to the making of such claim. (iii)The Insured shall tender to the Company all reasonable information, assistance and proofs in connection with any claim hereunder. (iv)Proof satisfactory to the Company shall be furnished in connection with all matters upon which a claim is based. Any medical or other agent of the Company shall be allowed to examine the Insured person on the occasion of any alleged Injury when and so often as the same may reasonably be required on behalf of the Company. Such evidence as the Company may from time to time require shall be furnished and a post-mortem examination report wherever applicable, shall be furnished to the Company within a period of thirty days. Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 14 of 41 The Company shall not be liable to pay any claims under this Section II unless the claim under the Policy is accompanied by the following documents: 1. Duly completed claim form; 2. Doctor‟s Report; 3. First Information Report and Final Police report, wherever necessary; 4. Death certificate, wherever applicable; 5. Investigation Reports like Laboratory test, X-rays and reports essential of confirmation of the Injury etc.; 6. Disability certificate from a Doctor or hospital confirming the extent and nature of disability; 7. Post mortem report, if the same was conducted; 8. Certificate, from the Insured stating the amortization schedule, the EMI Amount, Principal Outstanding, etc. Claim documents for Section III In the event of a claim arising out of an Insured Event covered under this Section, the Insured Event as described above shall be intimated by the Insured to the Company within thirty (30) days from the date of termination from employment of the Insured person or his dismissal, temporary suspension or retrenchment from employment as the case may be and the Insured shall arrange for submission of the following documents to the Company: Duly completed claim form;",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0063",
+    "section_id": "universal_sompo_loan_secure_sec_0014",
+    "clause_number": "I",
+    "title": "Certificate if applicable from the Bank stating the amortization schedule, the EMI Amounts,",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "i)Certificate if applicable from the Bank stating the amortization schedule, the EMI Amounts, Principal Outstanding, etc.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0064",
+    "section_id": "universal_sompo_loan_secure_sec_0014",
+    "clause_number": "II",
+    "title": "Certificate from the employer of the Insured person confirming the termination, dismissal,",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "ii)Certificate from the employer of the Insured person confirming the termination, dismissal, temporary suspension or retrenchment from employment of the Insured person furnishing the date of termination, dismissal, temporary suspension or retrenchment from employment of the Insured person with the reasons for the same. In case of temporary suspension the period of suspension should also be mentioned in such certificate Insurer’s obligations",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0065",
+    "section_id": "universal_sompo_loan_secure_sec_0015",
+    "clause_number": null,
+    "title": "",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "the last necessary claim document",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0066",
+    "section_id": "universal_sompo_loan_secure_sec_0016",
+    "clause_number": null,
+    "title": "",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "Liability) with respect to any of the Sections, is exhausted by Insured.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0067",
+    "section_id": "universal_sompo_loan_secure_sec_0017",
+    "clause_number": null,
+    "title": "",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "date of acceptance of such a claim. In case of delay in the payment, Insurer shall be liable to pay interest at a rate which is 2% above bank rate prevalent at the beginning of the financial year in which claim is reviewed by Insurer.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0068",
+    "section_id": "universal_sompo_loan_secure_sec_0018",
+    "clause_number": null,
+    "title": "",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "raw_text": "Insured‟s control. EXCLUSIONS APPLICABLE TO SECTION I, SECTION II AND SECTION III The Company shall not be liable for any loss or damage under this Policy:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0069",
+    "section_id": "universal_sompo_loan_secure_sec_0019",
+    "clause_number": null,
+    "title": "",
+    "page_start": 15,
+    "page_end": 16,
+    "source_page_refs": [
+      15,
+      16
+    ],
+    "raw_text": "intent Policy Wordings – Loan Secure Insurance Policy UIN:    UNIHLIP22139V032122                                                                                                                                            Page 15 of 41 2.“War, invasion, act of foreign enemy, hostilities (whether War be declared or not) Civil War, rebellion, evolution, insurrection, mutiny, military or usurped power, seizure, capture, arrests, restraints and detainment of all Heads of State and citizens of whatever nation and all kind and acts of Terrorism, Nuclear weapon induced treatment or taking active part in Riot, Strike, malicious acts”.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0070",
+    "section_id": "universal_sompo_loan_secure_sec_0020",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "contamination by radioactivity from any nuclear fuel or from any nuclear waste or from the combustion of nuclear fuel. For the purpose of this exclusion, combustion shall include any self-sustaining process of nuclear fission",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0071",
+    "section_id": "universal_sompo_loan_secure_sec_0021",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "materials.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0072",
+    "section_id": "universal_sompo_loan_secure_sec_0022",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "abuse of alcohol and/or drugs.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0073",
+    "section_id": "universal_sompo_loan_secure_sec_0023",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "suicide or suicide.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0074",
+    "section_id": "universal_sompo_loan_secure_sec_0024",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "unless otherwise covered in the policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0075",
+    "section_id": "universal_sompo_loan_secure_sec_0025",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "treatment traceable to pregnancy and childbirth, abortion, miscarriage and its consequences except if arises out of an accident, tests and treatment relating to infertility and in vitro fertilization.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0076",
+    "section_id": "universal_sompo_loan_secure_sec_0026",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "Armed Forces of any country during War or warlike operations.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0077",
+    "section_id": "universal_sompo_loan_secure_sec_0027",
+    "clause_number": null,
+    "title": "",
+    "page_start": 16,
+    "page_end": 16,
+    "source_page_refs": [
+      16
+    ],
+    "raw_text": "with any act of Terrorism/sabotage regardless of any other cause or event contributing concurrently or in any other sequence to the loss. The Policy also excludes loss, damage, cost or expenses of whatsoever nature directly or indirectly caused by, resulting from or in connection with any action taken in controlling, preventing, suppressing or in any way relating to action taken in respect of any act of Terrorism/sabotage.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0078",
+    "section_id": "universal_sompo_loan_secure_sec_0028",
+    "clause_number": null,
+    "title": "",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "raw_text": "caused by burning of Insured Property by order of any Public Authority.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0081",
+    "section_id": "universal_sompo_loan_secure_sec_0031",
+    "clause_number": null,
+    "title": "",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "raw_text": "other convulsions of nature",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0082",
+    "section_id": "universal_sompo_loan_secure_sec_0032",
+    "clause_number": null,
+    "title": "",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "raw_text": "Hurricane, Tornado, Tsunami, Flood and Inundation Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 21 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0083",
+    "section_id": "universal_sompo_loan_secure_sec_0033",
+    "clause_number": null,
+    "title": "",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "raw_text": "a. normal cracking, settlement or Your Home Building stands, Landslide, Rockslide bedding down of new structures, b. the settlement or movement of made up ground, c. coastal or river erosion, d. defective design or workmanship or use of defective materials, or e. demolition, construction, structural alterations or repair of any property, or groundworks or excavations.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0085",
+    "section_id": "universal_sompo_loan_secure_sec_0035",
+    "clause_number": null,
+    "title": "",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "raw_text": "damage caused by impact of, or aircraft or other aerial or space collision caused by any external devices travelling at sonic or physical object (e.g. vehicle, falling supersonic speeds. trees, aircraft, wall etc.)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0087",
+    "section_id": "universal_sompo_loan_secure_sec_0037",
+    "clause_number": null,
+    "title": "",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "raw_text": "a. temporary or permanent dispossession, confiscation, commandeering, requisition or destruction by order of the government or any lawful authority, or b. temporary or permanent dispossession of Your Home by unlawful occupation by any person.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0088",
+    "section_id": "universal_sompo_loan_secure_sec_0038",
+    "clause_number": null,
+    "title": "",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "raw_text": "(Coverage as per Terrorism Clause Terrorism Clause attached. attached) 12. Bursting or overflowing of water - tanks, apparatus and pipes. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 22 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0089",
+    "section_id": "universal_sompo_loan_secure_sec_0039",
+    "clause_number": null,
+    "title": "",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "raw_text": "installations. or the building in which Your Home is located, b.repairs, removal or extension of any sprinkler installation, or c.defects in the construction known to You.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0090",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 22,
+    "page_end": 24,
+    "source_page_refs": [
+      22,
+      23,
+      24
+    ],
+    "raw_text": "occurrence of and proximately a.of any article or thing outside Your caused by any of the above Insured Home, or Events. b. of any article or thing attached from the outside of the outer walls or the roof of Your Home, unless securely mounted. Clause C: Home Building Cover 1. What We cover We cover physical loss or damage, or destruction of Your Home Building because of any Insured Event listed in Clause B of this Policy. We also cover architect‟s, surveyor‟s, consulting engineer‟s fees, cost of removing debris as specified under Clause C (5) (f) of this Policy. Further, We pay for Loss of rent and Rent for Alternative Accommodation, which will be paid to the extent declared by You and agreed by Us as specified under Clause C (6) of this Policy while Your Home Building is not fit for living following loss or damage due to an insured event. 2. Your Home Building a. Your Home Building is a building consisting of a residential unit, having an enclosed structure and a roof, basement (if any) and used as a dwelling place. b. Your Home Building includes i. fixtures and fittings permanently attached to the floor, walls or roof, like fixed sanitary fittings, electrical wiring and other permanent fittings. ii. the following „additional structures‟ if they are on the same site, and are used as part of Your Home Building: a) garage, domestic out-houses used for residence, parking spaces or areas, if any b) compound walls, fences, gates, retaining walls and internal roads, c) verandah or porch and the like, d) septic tanks, bio-gas plants, fixed water storage units or tanks, e) solar panels, wind turbines and air conditioning systems, central heating systems and the like, if not included in Home Contents Cover, Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 23 of 41 iii. any other structure shown in the Policy Schedule. c. Your Home Building does not include Contents of Your Home. 3. Use for residence a. We will pay only if Your Home Building is used for the purpose of residence of Yourself and Your family, or of Your tenant, licensee or employee. b. We will not pay if i. Your Home Building is used as a holiday home, or for lodging and boarding, or ii. Your Home Building or any part of Your Home Building is used for purposes other than residential except where it is used both for Your residence and for the purposes of earning Your livelihood if You are self- employed or You have shifted Your office to Your Home Building for a temporary period due to lockdown or closure of Your office ordered by a public authority. 4. Sum Insured a. The Sum Insured for the Home Building Cover is the prevailing Cost of Construction of Your Home Building at the Commencement Date as declared by You and accepted by Us and will be the maximum amount payable in the event the Home Building is a Total Loss. b. If the Policy Period is more than one year, We will automatically increase Your Sum Insured during the Policy Period by 10% per annum on each anniversary of Your Policy without additional premium for a maximum of 100% of the Sum Insured at the Policy Commencement Date. c. The Sum Insured will be automatically increased each day by an amount representing 1/365th of 10% of Sum Insured at the Policy Commencement Date for annual policies. d. Restoration of Sum Insured : Except as stated in Clause G (III) (3) (b) of this Policy, the insurance cover will at all times be maintained during the Policy Period to the full extent of the respective Sum Insured. This means that after We have paid for any loss, the policy shall be restored to the full original amount of Sum Insured. You must pay to Us proportionate premium for the unexpired Policy Period from the date of loss. We can also deduct this premium from the net claim that We must pay You. 5. What We pay a. If You make a claim under the policy for damage to Your Home Building due to any of the insured perils, We reimburse the cost to repair it to a condition substantially the same as its condition at the time of damage. You must spend for repairs, and claim that amount from Us. b. We will calculate the amount of claim on the basis of the actual Carpet Area subject to the Carpet Area not exceeding that declared by You in the Proposal Form and stated in the Policy Schedule. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 24 of 41 c. The maximum We will pay for all items together is the Sum Insured shown in the Policy Schedule for Home Building Cover. If the Policy Schedule shows any limit for any item, such limit is the maximum We will pay for that item. d. If Your Home Building is a Total Loss, We will pay You the Sum Insured of the Home Building. e. If only an additional structure is destroyed, We will pay You an amount equal to the Cost of Construction of the additional structure. f. In addition to what Clause C (5) (c) of this Policy provides for, We will pay You the following expenses: i. up to 5% of the claim amount for reasonable fees of architect, surveyor, consulting engineer; ii. up to 2 % of the claim amount for reasonable costs of removing debris from the site. 6. Loss of Rent and Rent for Alternative Accommodation: In addition to what Clause C (5) (c) of this Policy provides for, We will pay the amount of rent You lose or alternative rent You pay while Your Home Building is not fit for living because of physical loss arising out of an Insured Event as follows: a. If You are living in Your Home as a tenant, and You are required to pay higher rent for the alternative accommodation, We will pay the difference between the rent for alternative accommodation and the rent of Your Home Building. b. We will pay the loss under this cover for an accommodation that is not superior to Your Home Building in any way and in the same city as Your Home Building. c. The    amount    of    lost    rent    shall    be    calculated     as     follows:  Sum Insured for Cover for Loss of Rent (as declared by You in the Proposal Form and specified by Us in the Policy Schedule) X Period necessary for repairs ÷ Loss of Rent Period opted for.This cover will be available for the reasonable time required to repair Your Home Building to make it fit for living. The maximum period of this cover is three years from the date Your Home Building becomes unfit for living. You must submit a certificate from an architect or the local authority to show that Your Home Building is not fit for living. d. Claim for loss of rent will be accepted only if We have accepted Your claim for loss for physical damage to Your Home under the Home Building Cover.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0091",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 24,
+    "page_end": 25,
+    "source_page_refs": [
+      24,
+      25
+    ],
+    "raw_text": "Clause D: Home Contents Cover 1. What We cover: We cover the physical loss or damage to or destruction of the General Contents of Your Home caused by an Insured Event as listed in Clause B of this Policy. Valuable Contents of Your Home are not covered under this Policy unless You have purchased the optional cover for the Valuable Contents. 2. Sum Insured: a. The Sum Insured for the Home Contents Cover is shown in the Policy Schedule Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 25 of 41 and will be the maximum amount payable in the event the Home Contents are destroyed/lost completely. b. The policy has a built-in cover for the General Contents of Your home equal to ₹ 20% of the Sum Insured for Home Building Cover subject to a maximum of  10 Lakh (Rupees Ten Lakh) provided You have opted for both Home Building and Home Contents cover. If You choose to have a higher Sum Insured for Home Contents, You have to declare the Sum Insured in the Proposal Form and pay additional premium. c. If You have purchased only Home Contents Cover, You have to declare the Sum Insured for the General Contents in the Proposal Form. d. The Sum Insured You have chosen for General Contents must be enough to cover the cost of replacement of the General Contents. e. If You want to cover the Valuable Contents in Your Home, You must opt for the Optional Cover for Valuable Contents as given in Clause E (1) (a) of this Policy. f. Restoration of Sum Insured: Except as stated in Clause G (III) (3) (b) of this Clause below, the insurance cover will at all times be maintained during the Policy Period to the full extent of the respective Sum Insured. This means that after We have paid for any loss, the policy shall be restored to the full original amount of Sum Insured. You must pay to Us proportionate premium for the unexpired Policy Period from the date of loss. We can also deduct this premium from the net claim that We must pay You. 3. What We pay a. If the General Contents of Your Home are physically damaged by any Insured Event, We will at Our option, i. reimburse to You the cost of repairs to a condition substantially the same as its condition at the time of damage, or ii. pay You the cost of replacing that item with a same or similar item, or iii. repair the damaged item to a condition substantially the same as its condition at the time of damage. b. The maximum We will pay for Home Contents is the Sum Insured shown in the Policy Schedule for Home Contents Cover. If the Policy Schedule shows any limit for any item, or category or groups of items, such limit is the maximum We will pay for that item. Clause E: Additional Covers 1. Optional Covers:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0092",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 25,
+    "page_end": 26,
+    "source_page_refs": [
+      25,
+      26
+    ],
+    "raw_text": "a. Cover for Valuable Contents on Agreed Value Basis (under Home Contents cover): Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 26 of 41 For Valuable Contents, a value may be agreed upon by You and Us based on a valuation certificate submitted by You and accepted by Us. However, We shall waive the requirement of valuation certificate if the Sum Insured opted for is up to ₹₹",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0093",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": "5",
+    "title": "Lakh (Rupees Five Lakh) and Individual item value does not exceed  1 Lakh",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "5 Lakh (Rupees Five Lakh) and Individual item value does not exceed  1 Lakh (Rupees One Lakh).",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0094",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "i. If the Valuable Contents of Your Home are physically damaged by any Insured Event, We will pay the cost of repairing the item/s.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0095",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "ii. If the Valuable Contents of Your Home are a Total Loss We will pay the Sum Insured shown in the Policy Schedule for the Valuable item/s. If the Policy Schedule shows any limit for any item, or category or groups of items, such limit is the maximum We will pay for that item. Loss to only one item of a pair or set does not constitute loss or damage to the entire pair or set.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0096",
+    "section_id": "universal_sompo_loan_secure_sec_0040",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "Clause F. Exclusions (What We do not cover) for all covers under this policy We do not cover losses and expenses for any loss or damage or destruction of the Insured Property that is directly or indirectly as a result of or is caused by or arising from events, stated below:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0097",
+    "section_id": "universal_sompo_loan_secure_sec_0041",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "with Your connivance.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0098",
+    "section_id": "universal_sompo_loan_secure_sec_0042",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "declared or not), civil war, mutiny, civil commotion amounting to a popular rising, military rising, rebellion, revolution, insurrection or military or usurped power.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0099",
+    "section_id": "universal_sompo_loan_secure_sec_0043",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "nuclear waste from combustion of nuclear fuel, or the radioactive, toxic, explosive or other hazardous properties of any explosive nuclear assembly or nuclear component that is part of it.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0100",
+    "section_id": "universal_sompo_loan_secure_sec_0044",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "i. the pollution or contamination itself has resulted from an Insured Event, or ii. an Insured Event itself results from pollution or contamination.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0101",
+    "section_id": "universal_sompo_loan_secure_sec_0045",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "fitting by over-running, excessive pressure, short circuiting, arcing, self- heating or leakage of electricity from whatever cause (lightning included). This exclusion applies only to the particular machine so lost, damaged or destroyed.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0102",
+    "section_id": "universal_sompo_loan_secure_sec_0046",
+    "clause_number": null,
+    "title": "",
+    "page_start": 26,
+    "page_end": 26,
+    "source_page_refs": [
+      26
+    ],
+    "raw_text": "securities, obligations or documents of any kind, coins or paper money, cheques, vehicles, and explosive substances unless otherwise expressly stated in the policy. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 27 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0103",
+    "section_id": "universal_sompo_loan_secure_sec_0047",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "disappearance cannot be linked to any single identifiable event.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0105",
+    "section_id": "universal_sompo_loan_secure_sec_0049",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "or damage of any kind or description whatsoever.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0107",
+    "section_id": "universal_sompo_loan_secure_sec_0051",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "increases its Carpet Area by more than 10% of the Carpet Area existing at the Commencement Date or on the date of renewal of this Policy, unless You have paid additional premium and such addition, extension or alteration is added by Endorsement.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0108",
+    "section_id": "universal_sompo_loan_secure_sec_0052",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "Clause I. Waiver of Underinsurance",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0109",
+    "section_id": "universal_sompo_loan_secure_sec_0052",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "Underinsurance does not apply to the Policy. Thus, if Your Sum Insured calculated on the basis of the information that You  provided, is less than the actual value at risk, the difference will not affect the amount We pay. Conditions Change of use of Your Home Building or Home Contents: The Cover will end",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0110",
+    "section_id": "universal_sompo_loan_secure_sec_0052",
+    "clause_number": "I",
+    "title": "if You change the use of Your Home Building from personal residence to any other",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "i.if You change the use of Your Home Building from personal residence to any other purpose, or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0111",
+    "section_id": "universal_sompo_loan_secure_sec_0052",
+    "clause_number": "II",
+    "title": "if You use any item of Home Contents for use that is not personal.",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "ii.if You use any item of Home Contents for use that is not personal. Effect of death In the event of the unfortunate death of the Insured during the Policy Period, the Home Building Cover and the Home Contents Cover that You have purchased will continue for the benefit of Your legal representative/s during the Policy Period subject to all the terms and conditions of this Policy. STANDARD TERMS AND CONDITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0112",
+    "section_id": "universal_sompo_loan_secure_sec_0053",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "The Geographical Limit of this Policy and jurisdiction shall be India except Personal accident cover, under which Accidental Bodily Injuries sustained during the Policy Period anywhere in the World (subject to the travel and other restrictions that the Indian Government may impose) are covered. All claims under this Policy shall be settled in Indian Rupees only.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0113",
+    "section_id": "universal_sompo_loan_secure_sec_0054",
+    "clause_number": null,
+    "title": "",
+    "page_start": 27,
+    "page_end": 27,
+    "source_page_refs": [
+      27
+    ],
+    "raw_text": "Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 28 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0114",
+    "section_id": "universal_sompo_loan_secure_sec_0054",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "The Policy shall be null and void and no benefit shall be payable in the event of untrue or incorrect statements, misrepresentation, mis-description or on non-disclosure in any material particular in the proposal form, personal statement, declaration and connected documents, or any material information having been withheld, or a claim being fraudulent or any fraudulent means or devices being used by the Insured or any one acting on his behalf to obtain any benefit under this Policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0115",
+    "section_id": "universal_sompo_loan_secure_sec_0055",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "The due observance and fulfillment of the terms, conditions and endorsement of this Policy in so far as they relate to anything to be done or complied with by the Insured, shall be a Condition Precedent to any liability of the Company to make any payment under this Policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0116",
+    "section_id": "universal_sompo_loan_secure_sec_0056",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "Any of the circumstances in relation to these conditions coming to the knowledge of any official of the Company shall not be construed as notice to or be held to bind or prejudicially affect the Company notwithstanding subsequent acceptance of any premium. Every notice and other communication required must be given in written to the company.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0117",
+    "section_id": "universal_sompo_loan_secure_sec_0057",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "The Company shall not be bound to notice or be affected by any notice of any trust, charge, lien, assignment or other dealing with or relating to this Policy but the receipt of the Insured or his legal personal representative shall in all cases be an effectual discharge to the Company. The condition shall not be applicable for Section IV.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0118",
+    "section_id": "universal_sompo_loan_secure_sec_0058",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "Any special provisions subject to which this Policy has been entered into and endorsed in the Policy or in any separate instrument shall be deemed to be part of this Policy and shall have effect accordingly.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0119",
+    "section_id": "universal_sompo_loan_secure_sec_0059",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "If required by the Company, an agent/representative of the Company including a loss assessor or a Surveyor appointed in that behalf shall, in case of any loss or any circumstances that have given rise to the claim to the Insured be permitted at all reasonable times to examine into the circumstances of such loss. The Insured shall on being required to do so by the Company produce all books of accounts, receipts, documents relating to or containing entries relating to the loss or such circumstance in his possession and furnish copies of or extracts from such of them as may be required by the Company so far as they relate to such claims or will in any way assist the Company to ascertain in the correctness thereof or the liability of the Company under the Policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0120",
+    "section_id": "universal_sompo_loan_secure_sec_0060",
+    "clause_number": null,
+    "title": "",
+    "page_start": 28,
+    "page_end": 28,
+    "source_page_refs": [
+      28
+    ],
+    "raw_text": "If any claim is in any respect fraudulent, or if any false statement, or declaration is made or used in support thereof, or if any fraudulent means or devices are used by the Insured, or anyone acting on his/her behalf to obtain any benefit under this Policy, or if a claim is made and rejected and no court action or suit is commenced within twelve months after such rejection or, in case of arbitration taking place as provided therein, within twelve (12) calendar months after the Arbitrator or Arbitrators have made their award, all benefits under this Policy shall be forfeited. Policy Wordings – Loan Secure Insurance Policy UIN:   UNIHLIP22139V032122                                                                                                                                           Page 29 of 41",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0121",
+    "section_id": "universal_sompo_loan_secure_sec_0061",
+    "clause_number": null,
+    "title": "",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "raw_text": "Any dispute concerning the interpretation of the terms, conditions, limitations and/or exclusions contained herein is understood and agreed to by both the Insured and the Company to be subject to Indian Law. Each party agrees to submit such dispute to a Court of competent jurisdiction and to comply with all requirements necessary to give such Court the jurisdiction. All matters arising hereunder shall be determined in accordance with the law and practice of such Court.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0122",
+    "section_id": "universal_sompo_loan_secure_sec_0062",
+    "clause_number": null,
+    "title": "",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "raw_text": "If any dispute or difference shall arise as to the quantum to be paid under this Policy (liability being otherwise admitted) such difference shall independently of all other questions be referred to the decision of a sole arbitrator to be appointed in writing by the parties to the dispute/ difference, or if they cannot agree upon a single arbitrator within 30 days of any party invoking arbitration, the same shall be referred to a panel of three arbitrators, comprising of two arbitrators, one to be appointed by each of the parties to the dispute/ difference and the third arbitrator to be appointed by such two arbitrators. Arbitration shall be conducted under and in accordance with the provisions of the Arbitration and Conciliation Act, 1996. It is clearly agreed and understood that no difference or dispute shall be referable to arbitration, as hereinbefore provided, if the Company has disputed or not accepted liability under or in respect of this Policy. It is hereby expressly stipulated and declared that it shall be a condition precedent to any right of action or suit upon this Policy that the award by such arbitrator/ arbitrators of the amount of the loss or damage shall be first obtained.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "clause_id": "clause_0123",
+    "section_id": "universal_sompo_loan_secure_sec_0063",
+    "clause_number": null,
+    "title": "",
+    "page_start": 29,
+    "page_end": 29,
+    "source_page_refs": [
+      29
+    ],
+    "raw_text": "If at the time of a claim there is another insurance Policy or other contract in the insured‟s name which covers insured for the same expense or loss, the company will only pay it‟s proportionate share of the loss. The company‟s Proportionate share will be calculated by determining the percentage Our Policy maximum bears to the total amount of insurance in force as to the loss. This clause will not be applicable for Section I, II and III under the policy.",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

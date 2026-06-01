@@ -1,0 +1,20 @@
+{
+  "slug": "iffco_tokio_health_protector",
+  "insurer": "IFFCO Tokio",
+  "plan_name": "Health Protector",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "12_IFFCO_Tokio/IFFCO_Tokio_Health_Protector.pdf",
+  "pages_reviewed": 45,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_found": 6,
+    "present": 13
+  },
+  "evidence_bearing_facts": 14,
+  "remaining_known_issues": []
+}

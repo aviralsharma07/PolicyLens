@@ -1,0 +1,844 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 4,
+    "evidence_text": "4 NOTE – A . PROPORTIONATE CLAUSE: If the Insured Person is admitted in the hospital in a room where the room category or the Room Rent incurred is higher than the eligibility as specified in the Policy Schedule/ Certificate of Insurance, then the Policyholder/ Insured Person shall bear a rateable proportion of the total & specified Associated Medical Expenses (including surcharge or taxes thereon) in the proportion of the difference between the Room Rent of the entitled room ca",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "25000/- per Day or actual expenses incurred, whichever is less iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home. iv. Surgeon, Anesthetist, Medical Practitioner, As per the limits of Sum Insured & subject to Consultants, Specialists Fees Proportionate Clause wherever applicable v. Anesthesia, Blood, Oxygen, Operation",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_applicable",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 3,
+    "evidence_text": "ditions as per Clause 2.4 ix. Reconstruction of Affected Body Part Post Within the aggregate of the Sum Insured and Cancer Surgery Cumulative Bonus, if any, of the Insured Person receiving the organ. ** Detailed terms & conditions as per Clause 2.5 x. Organ Donor Expenses – When Insured Person Within the aggregate of the Sum Insured and is Recipient Cumulative Bonus, if any, of the Insured Person receiving the organ. ** Detailed terms & c",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: cumulative/no-claim bonus search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "benefit": "restoration_or_reload",
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 8,
+    "evidence_text": "5 RECONSTRUCTION OF AFFECTED BODY PART POST SURGERY: Policy Covers reasonable & customary Medical Expenses incurred for the reconstruction of affected body part to restore essential physical functioning as a direct result of Cancer Surgery, provided the claim for cancer surgery is admissible and the policy is in force without a break. Limit of indemnity will be the aggregate of the Sum Insured and Cumulative Bonus, if any, of the Insured Person receiving the organ. 2.6 ORGAN DONOR EXP",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: restoration/reload/recharge benefit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "normalized_value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 3,
+    "evidence_text": "receiving the organ. ** Detailed terms & conditions as per Clause 2.5 x. Organ Donor Expenses – When Insured Person Within the aggregate of the Sum Insured and is Recipient Cumulative Bonus, if any, of the Insured Person receiving the organ.",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: organ donor coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "amount": 3000,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "amount": 3000,
+      "currency": "INR"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "etic devices implanted during Surgery, Relevant Laboratory / Diagnostic test, X-Ray and similar expenses related to the treatment of Cancer vi. Road Ambulance Cover a) For Sum Insured of 5, 10 and 15 Lakhs – INR 3000/- per Hospitalization or actuals, whichever is le",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 32,
+    "evidence_text": "on cover or; 3. Where only a part of the risk has commenced, such proportionate risk premium commensurate with the risk covered during such period. 6.7 GRACE PERIOD: In the event of delay in renewal of the Policy, a grace period of 30 days is allowed. However, no coverage shall be available during the grace period and any disease/Injury contracted during the break period shall not be covered and shall be treated as Pre-existing. 6.8 RENEWAL OF POLICY: i. The Company s",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "Condition. Any payment under this Clause would be in addition to the Sum Insured. 2.12 CUMULATIVE BONUS: The Sum Insured under Policy shall be increased by 5% at each renewal in respect of each claim free year of Insurance, subject to maximum of 50%. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it is accrued. Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case Sum Insured under the policy is reduced at the time of renewal, the percentage of Cumulative Bonus shall be applicable on such reduced Sum Insured. 2.13 GEOGRAPH",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 26,
+    "evidence_text": "bility of the claim and is limited to payment of certain expenditure only, the Claim will be paid after reducing such amount from the admissible amount. F. CLAIM PAYMENT TERMS: i. All medical treatment for the purpose of this insurance will have to be taken in India only (except where the Policy has been extended to SAARC countries) and all claims shall be payable in Indian currency only. For the purpose of claims settlement, currency conversion rate on the date of admission to Hospital would apply. ii. The Company shall settle the claim within 30 days from the date of the receipt of last/Final necessary documents in accordance with the provisions of Regulation 27 of IRDAI (Health Insurance) Regulations, 2016. iii. However, where the circumstances of a claim warrant an investigation,",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

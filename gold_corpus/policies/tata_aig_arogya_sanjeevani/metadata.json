@@ -1,0 +1,150 @@
+{
+  "policy_id": "tata_aig_arogya_sanjeevani",
+  "policy_slug": "tata_aig_arogya_sanjeevani",
+  "insurer": "Tata AIG",
+  "plan_name": "Arogya Sanjeevani",
+  "uin": "TATHLIP20169V011920",
+  "uin_base": "TATHLIP20169",
+  "lifecycle_product_name": "Arogya Sanjeevani Policy, TATA AIG General Insurance  Company Limited",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
+  "document_id": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
+  "page_count": 28,
+  "source_domain": "website",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex DSE-012 source-PDF human review",
+  "human_reviewer": "Avi-authorized Codex reviewer",
+  "annotation_date": "2026-06-01",
+  "pipeline_run_id": "gold_manual_dse012",
+  "annotation_status": "reviewed",
+  "label_status": "reviewed",
+  "review_status": "gold_v2_agent_reviewed",
+  "known_issues": [
+    "section_tree_manually_rebuilt_from_source_pdf"
+  ],
+  "annotation_method": "source_pdf_human_review",
+  "counts": {
+    "sections": 25,
+    "clauses": 99,
+    "tables": 0,
+    "facts": 20,
+    "heading_labels": 25,
+    "physical_table_labels": 0
+  },
+  "annotation_passes": [
+    {
+      "pass_id": "dse012_pipeline_seed_reviewed",
+      "date": "2026-06-01",
+      "tools": [
+        "pdfplumber",
+        "heading_scorer",
+        "section_tree_builder",
+        "table_engine",
+        "fact_extractors"
+      ],
+      "changes": "Automated pipeline draft. Requires human review before promotion to gold."
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/tata_aig_arogya_sanjeevani_review.md"
+    }
+  ],
+  "docling_markdown_available": false
+}

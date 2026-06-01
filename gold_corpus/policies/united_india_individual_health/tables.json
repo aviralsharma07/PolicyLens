@@ -1,0 +1,502 @@
+[
+  {
+    "table_id": "united_india_individual_health_p5_t1",
+    "page": 5,
+    "bbox": [
+      36.0,
+      145.57999999999993,
+      559.4200000000001,
+      184.0999999999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      5
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p6_t1",
+    "page": 6,
+    "bbox": [
+      57.36,
+      564.7330024999999,
+      559.0839960000001,
+      651.100005
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      6
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p7_t1",
+    "page": 7,
+    "bbox": [
+      36.12705882352942,
+      571.0046038461538,
+      559.0529364705885,
+      760.680005
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      7
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p7_t2",
+    "page": 7,
+    "bbox": [
+      239.93,
+      571.0046038461538,
+      553.6600000000001,
+      582.0999999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      7
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p8_t1",
+    "page": 8,
+    "bbox": [
+      36.120000000000005,
+      87.01999999999998,
+      559.0599950000002,
+      231.02000499999994
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      8
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p8_t2",
+    "page": 8,
+    "bbox": [
+      92.20114285714284,
+      664.6000025,
+      503.2428528571428,
+      714.220005
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      8
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p9_t1",
+    "page": 9,
+    "bbox": [
+      85.104,
+      542.4700049999999,
+      510.3399950000001,
+      616.900005
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p9_t2",
+    "page": 9,
+    "bbox": [
+      85.104,
+      651.4600049999999,
+      510.3399950000001,
+      688.540005
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p13_t1",
+    "page": 13,
+    "bbox": [
+      145.35091363636363,
+      300.4699949999999,
+      450.08908636363634,
+      362.80998999999997
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p17_t1",
+    "page": 17,
+    "bbox": [
+      36.13333333333334,
+      425.7700024999999,
+      559.0466622222224,
+      499.870005
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      17
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p20_t1",
+    "page": 20,
+    "bbox": [
+      36.122666666666674,
+      182.00000249999994,
+      559.0571062222224,
+      661.180005
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      20
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p21_t1",
+    "page": 21,
+    "bbox": [
+      36.12123711340202,
+      159.1999975,
+      559.2987579381447,
+      764.400005
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      21
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p22_t1",
+    "page": 22,
+    "bbox": [
+      36.12249999999995,
+      56.15999999999997,
+      559.2974951041671,
+      369.17000499999995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      22
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p22_t2",
+    "page": 22,
+    "bbox": [
+      36.12249999999995,
+      420.84999499999986,
+      559.2974951041671,
+      645.5800049999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      22
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p22_t3",
+    "page": 22,
+    "bbox": [
+      36.12249999999995,
+      697.2400024999998,
+      559.2974951041671,
+      775.560005
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      22
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p23_t1",
+    "page": 23,
+    "bbox": [
+      36.123428571428576,
+      56.15999999999997,
+      559.2962808571428,
+      134.899995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      23
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p23_t2",
+    "page": 23,
+    "bbox": [
+      36.123428571428576,
+      186.55999749999995,
+      559.2962808571428,
+      298.96998999999994
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      23
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p24_t1",
+    "page": 24,
+    "bbox": [
+      134.6636315151515,
+      139.39999749999993,
+      460.77635878787873,
+      411.78999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p25_t1",
+    "page": 25,
+    "bbox": [
+      36.123870967741944,
+      139.39999749999993,
+      559.0561241935488,
+      771.4200066666666
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "united_india_individual_health_p26_t1",
+    "page": 26,
+    "bbox": [
+      36.120000000000005,
+      56.15999999999997,
+      559.0599950000001,
+      221.35999499999994
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      26
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

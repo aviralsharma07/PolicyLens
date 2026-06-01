@@ -1,0 +1,20 @@
+{
+  "slug": "universal_sompo_loan_secure",
+  "insurer": "Universal Sompo",
+  "plan_name": "Loan Secure",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
+  "pages_reviewed": 40,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "not_applicable": 1,
+    "not_found": 15,
+    "present": 4
+  },
+  "evidence_bearing_facts": 4,
+  "remaining_known_issues": []
+}

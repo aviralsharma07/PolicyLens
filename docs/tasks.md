@@ -22,7 +22,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 |----|-------|--------|----------|-------|
 | DSE-010 | Clause Store + Source Spans | done | P2 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | done | P2 | Phase 5 |
-| DSE-012 | Expand gold corpus 5 → 20 | planned | P2 | Phase 7 |
+| DSE-012 | Expand gold corpus 5 → 20 | done | P2 | Phase 7 |
 | DSE-013 | Derived Export (20-Concept Skeleton) | done | P2 | Phase 8 |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
 | DSE-015 | Insurer/Plan Normalizer Library | done | P1 | Phase 0 |
@@ -45,6 +45,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-009 | Table Engine v1 | 2026-05-31 | Phase 3 |
 | DSE-010 | Clause Store + Source Spans | 2026-05-31 | Phase 4 |
 | DSE-011 | Fact Candidate Scoring + Conflict Resolution | 2026-06-01 | Phase 5 |
+| DSE-012 | Expand gold corpus 5 → 20 | 2026-06-01 | Phase 7 |
 | DSE-013 | Derived Export (20-Concept Skeleton) | 2026-06-01 | Phase 8 |
 | DSE-015 | Insurer/Plan Normalizer Library | 2026-06-01 | Phase 0 |
 
@@ -419,3 +420,37 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 - `extracted_facts`, `fact_conflicts`, `derived_policy_features` not populated (DSE-011/013)
 **Branch:** fix/dse-010-global-sqlite-ids
 **Related docs:** evaluation.md (Clause Store + Source Spans), decisions.md (ADR-0017 through ADR-0022), docs/open_questions.md (OQ-001 closed), runs/sessions/2026-05-31-clause-store-source-spans-v2.md
+
+### DSE-012 — Expand Gold Corpus 5 → 20
+
+**Status:** done
+**Priority:** P2
+**Phase:** Phase 7
+**Goal:** Expand the reviewed gold corpus from 5 to 20 policy wordings with 7 annotation files per policy.
+**Approach:**
+- Selected 15 additional policies for insurer/product diversity.
+- Ran the existing pipeline to generate draft annotations.
+- Performed source-PDF human review using `pdftotext`, physical JSON, pipeline drafts, and targeted page checks.
+- Promoted all 15 new policies from draft to reviewed gold.
+**Results:**
+- 20/20 policies reviewed.
+- 140 annotation JSON files present (20 policies × 7 files).
+- 400 reviewed fact labels present (20 policies × 20 concepts).
+- Status distribution: 257 `present`, 11 `explicitly_not_covered`, 5 `not_applicable`, 127 `not_found`.
+- Tata AIG and Aditya Birla degenerate section trees manually rebuilt from source-PDF/physical-line review.
+- Gold corpus validator passed with 20 reviewed policies and 0 draft policies.
+- Full pytest suite passed.
+**Outputs:**
+- `data/manifests/dse012_gold_expansion_candidates_v1.json`
+- `data/reports/dse012_human_review/human_review_summary.md`
+- `runs/evals/2026-06-01-gold-corpus-dse012-reviewed.json`
+- `runs/evals/2026-06-01-heading-scorer-dse012-reviewed.json`
+- `runs/evals/2026-06-01-section-tree-dse012-reviewed.json`
+- `runs/evals/2026-06-01-table-engine-dse012-reviewed.json`
+- `runs/evals/2026-06-01-fact-extraction-dse012-reviewed.json`
+**Known limitations:**
+- Expanded heading/section evals now fail on Tata AIG and Aditya Birla, exposing parser gaps discovered by the larger gold corpus.
+- Table eval script still has 5-policy-era hard-gate wording and reports DSE-012 run failure despite strong detection metrics on the expanded labels.
+- DSE-012 is annotation completion only; parser remediation is deferred.
+**Branch:** feat/dse-012-gold-corpus-expansion
+**Related docs:** evaluation.md (Gold Corpus / expanded parser regression), risk_register.md, runs/sessions/2026-06-01-gold-corpus-human-review.md

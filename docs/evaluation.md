@@ -61,7 +61,7 @@ data/unmatched_triage_report.csv
 ```
 
 ### Current Status
-active
+active (20-policy reviewed corpus as of DSE-012)
 
 ### 2026-05-29 Result
 
@@ -87,6 +87,44 @@ active
   "notes": "53 duplicate content groups found. 70 non-canonical entries flagged possible_duplicate. All PDFs exist on disk."
 }
 ```
+
+### 2026-06-01 Result — DSE-012 Expansion
+
+```json
+{
+  "eval_name": "gold-corpus-dse012-reviewed",
+  "date": "2026-06-01",
+  "task_id": "DSE-012",
+  "metrics": {
+    "policies": 20,
+    "reviewed_policies": 20,
+    "draft_policies": 0,
+    "json_files": 140,
+    "sections": 2739,
+    "clauses": 6251,
+    "tables": 395,
+    "physical_table_labels": 387,
+    "heading_labels": 322,
+    "facts": 400,
+    "status_counts": {
+      "present": 257,
+      "explicitly_not_covered": 11,
+      "not_applicable": 5,
+      "not_found": 127
+    }
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "DSE-012 promoted 15 additional policies from draft to reviewed using source-PDF text review. Original 5 reviewed policies were unchanged."
+}
+```
+
+Expanded parser regression artifacts from the 20-policy corpus:
+
+- `runs/evals/2026-06-01-heading-scorer-dse012-reviewed.json` — FAIL, 18/20 policies pass; Tata AIG and Aditya Birla expose heading scorer format gaps.
+- `runs/evals/2026-06-01-section-tree-dse012-reviewed.json` — FAIL, 17/20 policies pass; failures trace to the same two degenerate heading cases plus Oriental tree-accuracy threshold.
+- `runs/evals/2026-06-01-table-engine-dse012-reviewed.json` — diagnostic FAIL because the eval still has 5-policy-era hard-gate checks, while detection/header metrics are recorded for the expanded labels.
+- `runs/evals/2026-06-01-fact-extraction-dse012-reviewed.json` — PASS for the original 5-policy DSE-007 extractor gate.
 
 ---
 

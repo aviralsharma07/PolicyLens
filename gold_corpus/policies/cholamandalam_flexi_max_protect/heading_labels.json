@@ -1,0 +1,162 @@
+[
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0010",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "POLICY SECTIONS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_64",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0012",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Section 2: Policy Coverage",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_66",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0013",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Section 3: Definitions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_67",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0015",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Section 5: General Conditions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_69",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0016",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Section 6: Grievance Redressal Mechanism",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_70",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0017",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Section 7: Medical Second Opinion-Add-on Cover",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_71",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0033",
+    "source_section_id": null,
+    "page": 2,
+    "expected_text": "SECTION 1: PERSONS WHO CAN BE COVERED",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_21",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0057",
+    "source_section_id": null,
+    "page": 2,
+    "expected_text": "SECTION 2: POLICY COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_55",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0058",
+    "source_section_id": null,
+    "page": 2,
+    "expected_text": "2.1 BASE COVER",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p2l_57",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_0446",
+    "source_section_id": null,
+    "page": 9,
+    "expected_text": "SECTION 3: DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_26",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1322",
+    "source_section_id": null,
+    "page": 26,
+    "expected_text": "SECTION 5: GENERAL CONDITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p26l_74",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1660",
+    "source_section_id": null,
+    "page": 33,
+    "expected_text": "23. Portability:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p33l_47",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1668",
+    "source_section_id": null,
+    "page": 33,
+    "expected_text": "24. Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p33l_55",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1716",
+    "source_section_id": null,
+    "page": 34,
+    "expected_text": "SECTION 6: GRIEVANCE REDRESSAL MECHANISM",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p34l_54",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1877",
+    "source_section_id": null,
+    "page": 37,
+    "expected_text": "3. COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p37l_61",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_heading_1936",
+    "source_section_id": null,
+    "page": 39,
+    "expected_text": "4. DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p39l_15",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

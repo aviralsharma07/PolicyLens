@@ -1,0 +1,148 @@
+{
+  "policy_id": "united_india_individual_health",
+  "policy_slug": "united_india_individual_health",
+  "insurer": "United India",
+  "plan_name": "Individual Health Insurance Policy - Platinum / Gold / Senior Citizen",
+  "uin": "UIIHLIP22180V042122",
+  "uin_base": "UIIHLIP22180",
+  "lifecycle_product_name": "Individual Health Insurance Policy - Platinum / Gold / Senior Citizen",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+  "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+  "page_count": 26,
+  "source_domain": "irdai",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex DSE-012 source-PDF human review",
+  "human_reviewer": "Avi-authorized Codex reviewer",
+  "annotation_date": "2026-06-01",
+  "pipeline_run_id": "gold_manual_dse012",
+  "annotation_status": "reviewed",
+  "label_status": "reviewed",
+  "review_status": "gold_v2_agent_reviewed",
+  "known_issues": [],
+  "annotation_method": "source_pdf_human_review",
+  "counts": {
+    "sections": 185,
+    "clauses": 343,
+    "tables": 20,
+    "facts": 20,
+    "heading_labels": 10,
+    "physical_table_labels": 20
+  },
+  "annotation_passes": [
+    {
+      "pass_id": "dse012_pipeline_seed_reviewed",
+      "date": "2026-06-01",
+      "tools": [
+        "pdfplumber",
+        "heading_scorer",
+        "section_tree_builder",
+        "table_engine",
+        "fact_extractors"
+      ],
+      "changes": "Automated pipeline draft. Requires human review before promotion to gold."
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/united_india_individual_health_review.md"
+    }
+  ],
+  "docling_markdown_available": false
+}

@@ -1,0 +1,858 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 12
+    },
+    "normalized_value_json": {
+      "months": 12
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "claim directly or indirectly caused by, based on, arising out of or attributable to any of the following I. Waiting Period (Applicable for Silver, Gold and Platinum Plan) 1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver Health Policy with us. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If the Insured is continuously cov",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 11,
+    "evidence_text": ", the above listed procedure will be covered only after completion of 48 consecutive months under the Silver Health Policy. 4. 30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion shall not, however apply if the Insured has Continuous Coverage for more than twelve months. c) The within referred waiting period is",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "percentage": 3
+    },
+    "normalized_value_json": {
+      "percentage": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "3 Lacs / 5 Lacs / 7.5 Lacs / 10 Lacs 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "n the transcript of the Proposal, which shall be the basis of this Contract and is deemed to be incorporated herein, containing certain undertakings, declarations, information/particulars and statements, which is hereby agreed to be the basis of this Contract and be considered as incorporated herein, for the insurance Contract hereinafter contained and has paid the premium specified in the Policy Schedule hereto as consideration for such insur",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "percentage": 20
+    },
+    "normalized_value_json": {
+      "percentage": 20
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 20,
+    "evidence_text": "Plan A Plan B 20% co-payment PED co-payment NA (Note: Each and every admissible claim arising out of Pre-Existing Diseases) 10% co-payment Co-payment on all other NA (Each and every admissible claim, other claims (other than PED)",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "percentage",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment percentage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "t, now the Company agrees, subject always to the Policy Schedule and the following terms, conditions, exclusions, and limitations of the Policy, and in excess of the amount of the Deductible, to indemnify the Insured in the manner and to the extent hereinafter stated: SECTION B) DEFINITIONS- STANDARD DEFINITIONS 1. Accident, Accidental : An accident means sudden, unforeseen and involuntary event caused by external, visible and violent means. 2. Any one illness Any one illness means continuous Period of illness and includes relapse within 45 days from the date of last consultation with the Hospital/Nursing Home where treatment was taken. 3. AYUSH Hospital: An AYUSH Hospital is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the fol",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: deductible search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "surance Policy that provides that the Policyholder/Insured will bear a specified percentage of the admissible claim amount. A co-payment does not reduce the Sum Insured. 9. Cumulative Bonus: Cumulative Bonus means any increase or addition in the Sum Insured granted by the insurer without an associated increase in premium. 10. Day care centre: A day care centre means any institution established for day care treatment of illness and / or injuries or a medical set - up with a hospital and which has been",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: cumulative/no-claim bonus search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "illness means continuous Period of illness and includes relapse within 45 days from the date of last consultation with the Hospital/Nursing Home where treatment was taken. 3. AYUSH Hospital: An AYUSH Hospital is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the following: a. Central or State Government AYUSH Hospital; or b. Teaching hospital attached to AYUSH College recognized by the Central Government/Ce",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": {
+      "percentage": 50
+    },
+    "normalized_value_json": {
+      "percentage": 50
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "ntive Health Check Up After every 4 Claim Free Year max 5000 Whichever is lower Modern Treatment Methods and Covered, up to 50% of Sum Insured or Maximum upto 5 Lacs whichever is lower Advancement in Technologies Domiciliary Expense Not Covered Covered up to 10% of Sum Insured",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "percentage": 3
+    },
+    "normalized_value_json": {
+      "percentage": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or Preventive Health Check Up After every 4 Claim Free Year",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "months": 3
+    },
+    "normalized_value_json": {
+      "months": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "Year Within 15 Days As per Free Look Period Condition Exceeding 15 days but less than or equal to 3 65.00% 75.00% 80.00% months Exceeding 3 months but less than or equal to 6",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 16,
+    "evidence_text": "premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience 11. Withdrawal of Policy i. ln the likelihood of this product",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 5,
+    "evidence_text": "er and consistent with the prevailing charges in the geographical area for identical or similar services, taking into account the nature of the illness / injury involved. 42. Renewal Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods. 43. Room rent Room Rent means the amount charged by a Hospital to",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 13,
+    "evidence_text": "icyholder. 2. Condition Precedent to Admission of Liability The terms and conditions of the policy must be fulfilled by the Insured Person for the Company to make any payment for claim(s) arising under the policy 3. Claim Settlement. (provision for Penal interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. ln the case of delay in the payment of a claim, the Company shall be liable to pay interest to the policyholder from the date of receipt of last necessary document to the date",
+    "source_document": {
+      "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "uin": "BAJHLIP22192V032122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

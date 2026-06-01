@@ -1,0 +1,862 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "he Company shall not be liable to make any payment under the policy in connection with or in respect of following expenses till the expiry of waiting period mentioned below: 6.1. Pre-Existing Diseases (Code- Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of Sum insured increase. c) If the insured Person is",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "e under the policy after the expiry of 48 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by us. 6.2. First Thirty Days Waiting Period Code Excl03) i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii. This ex",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 48
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        48
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "e months. iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently. 6.3. Specific Waiting Period: (Code- Excl02) a) Expenses related to the treatment of the following listed conditions, Surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of sum insured the exc",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and tor all waiting periods. 3.47. Room Rent means the amount charged by a hospital towards Room and Boarding expenses and shall include the associated medical expenses. 3.48. Sub-limit means a cost sharing requirement under a health insurance policy in which an insurer would not be liable to pay any amount in excess of the pre-defined limit 3.49. Sum Insured means the pre-defined limit specified in the Policy Schedule. Sum Insured and Cumulative Bonus represents the maximum, total and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person (on I",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": {
+      "percentage": 5
+    },
+    "normalized_value_json": {
+      "percentage": 5
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 15,
+    "evidence_text": "the Company 3. Any delay in notification or submission may be condoned on merit where delay is proved to be for reasons beyond the control of the Insured Person 9.3 Co-payment Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment. 9.4 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a cl",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "percentage",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment percentage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 3,
+    "evidence_text": "that the policyholder/insured will bear a specified percentage of the admissible claims amount. A co- payment does not reduce the Sum Insured. 3.12. Cumulative Bonus means any increase or addition in the Sum Insured granted by the insurer without an associated increase in premium. 3.13. Day Care Centre means any institution established for day care treatment of disease injuries or medical setup within a hospital and which has been registered with the local a",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "schedule_dependent",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: cumulative/no-claim bonus search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "ns continuous period of illness and it includes relapse within forty-five days from the date or last consultation with the hospital where treatment has been taken. 3.4. AYUSH Treatment refers to hospitalisation treatments given under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems. 3.5. An AYUSH Hospital is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and intervention",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "amount": 2000,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "amount": 2000,
+      "currency": "INR"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 8,
+    "evidence_text": "nt necessitated due to disease or injury iii. Plastic surgery necessitated due to disease or injury iv. All the day care treatments v. Expenses incurred on road Ambulance subject to a maximum of Rs.2000/- per hospitalisation. Note: 1. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible. However, the time limit shall not apply in respect of Day Care Treatment. 2. In case of admissi",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "months": 3
+    },
+    "normalized_value_json": {
+      "months": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 20,
+    "evidence_text": "AI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. 10.19 Free look period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the policy. The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If the insured has not made any claim during the Free Look Period, the insured shall be entitled to i. a refund of",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 20,
+    "evidence_text": "i. Grace Period of 15 days would be given to pay the installment premium due for the Policy. ii. During such grace period, Coverage will not be available from the installment premium payment due date till the date of receipt of premium by Company. iii. The Benefits provided un",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "e insurance company’s authorized representative. 3.7. Break in Policy means the period of gap that occurs at the end of the existing policy term, when the premium due for renewal on a given policy is not paid on or before the premium renewal date or within 30 days thereof 3.8. Cashless Facility means a facility extended by the insurer to the insured where the payments, of the costs of treatment undergone by the insured person in accordance",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 15
+    },
+    "normalized_value_json": {
+      "days": 15
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "Within fifteen days from of expenses post hospitalization treatment 9.1 Notification of Claim Notice with full particulars shall be sent to the Company/TPA (if applicable) as under: i. Within 24 hours from the date of emergency hospitalization required or before the Insured Person’s discharge from Hospital, whichever is earlier. ii. At least 48 hours prior to admission in Hospital in case of a planned Hospitalization. 9.2 Documents to be submitte",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 15,
+    "evidence_text": "on merit where delay is proved to be for reasons beyond the control of the Insured Person 9.3 Co-payment Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment. 9.4 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest from the date of receipt of last necessary document to the date of payment of claim at a rate 2%",
+    "source_document": {
+      "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "document_id": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "uin": "SBIHLIP20180V011920"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

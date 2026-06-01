@@ -1,0 +1,252 @@
+[
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0000",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0000",
+    "page": 1,
+    "expected_text": "Preamble",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_3",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0001",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0001",
+    "page": 1,
+    "expected_text": "Operative Clause",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_16",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0002",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0002",
+    "page": 1,
+    "expected_text": "Section 1 -Definitions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_34",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0003",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0003",
+    "page": 7,
+    "expected_text": "Section 2 -Benefits",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_9",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0004",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0004",
+    "page": 7,
+    "expected_text": "Note:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_56",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0005",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0005",
+    "page": 8,
+    "expected_text": "H.Stereotactic radio surgeries",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_46",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0006",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0006",
+    "page": 8,
+    "expected_text": "K.ION M -(Intra Operative Neuro",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_53",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0007",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0007",
+    "page": 8,
+    "expected_text": "A.Uterine Artery Embolization and HIFU",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_35",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0008",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0008",
+    "page": 8,
+    "expected_text": "B.Balloon Sinoplasty",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_37",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0009",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0009",
+    "page": 8,
+    "expected_text": "Notes:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_84",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0010",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0010",
+    "page": 8,
+    "expected_text": "C.Deep Brain stimulation",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_38",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0011",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0011",
+    "page": 8,
+    "expected_text": "D.Oral chemotherapy",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_39",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0012",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0012",
+    "page": 8,
+    "expected_text": "F.Intra vitreal injections",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_42",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0013",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0013",
+    "page": 8,
+    "expected_text": "G.Robotic surgeries",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_43",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0014",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0014",
+    "page": 9,
+    "expected_text": "Section 3 -Exclusions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_44",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0015",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0015",
+    "page": 13,
+    "expected_text": "Section 4-General Terms and Clauses",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_111",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0016",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0016",
+    "page": 15,
+    "expected_text": "Nomination:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_34",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0017",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0017",
+    "page": 15,
+    "expected_text": "Section 3 shall be reduced by the",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_92",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0018",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0018",
+    "page": 16,
+    "expected_text": "Section 3 shall be reduced by the",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_42",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0019",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0019",
+    "page": 19,
+    "expected_text": "Bima Bharosa Grievance Redressal Portal:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_48",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0020",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0020",
+    "page": 19,
+    "expected_text": "Section 5 -Claims Procedure and Claims",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_69",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0021",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0021",
+    "page": 19,
+    "expected_text": "Procedure for Cashless Claims:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p19l_72",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0022",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0022",
+    "page": 20,
+    "expected_text": "X.MLR(Medico Legal Report copy if",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p20l_69",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0023",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0023",
+    "page": 20,
+    "expected_text": "Note:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p20l_85",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  },
+  {
+    "label_id": "tata_aig_arogya_sanjeevani_review_heading_0024",
+    "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0024",
+    "page": 21,
+    "expected_text": "Section 6 • Dispute Resolution",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_48",
+    "reviewer_note": "DSE-012 human review label from physical line scan."
+  }
+]

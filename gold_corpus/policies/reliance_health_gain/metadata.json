@@ -1,0 +1,148 @@
+{
+  "policy_id": "reliance_health_gain",
+  "policy_slug": "reliance_health_gain",
+  "insurer": "Reliance",
+  "plan_name": "Health Gain",
+  "uin": "RELHLIP22229V032122",
+  "uin_base": "RELHLIP22229",
+  "lifecycle_product_name": "Reliance Health Gain Policy",
+  "match_status": "verified",
+  "match_confidence": "high",
+  "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
+  "raw_pdf_policy": "read_only_external_reference",
+  "file_hash": "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176",
+  "document_id": "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176",
+  "page_count": 36,
+  "source_domain": "website_policy_wording",
+  "document_type": "policy_wording",
+  "corpus_status": "active",
+  "triage_flags": [],
+  "annotator": "Codex DSE-012 source-PDF human review",
+  "human_reviewer": "Avi-authorized Codex reviewer",
+  "annotation_date": "2026-06-01",
+  "pipeline_run_id": "gold_manual_dse012",
+  "annotation_status": "reviewed",
+  "label_status": "reviewed",
+  "review_status": "gold_v2_agent_reviewed",
+  "known_issues": [],
+  "annotation_method": "source_pdf_human_review",
+  "counts": {
+    "sections": 391,
+    "clauses": 607,
+    "tables": 36,
+    "facts": 20,
+    "heading_labels": 11,
+    "physical_table_labels": 36
+  },
+  "annotation_passes": [
+    {
+      "pass_id": "dse012_pipeline_seed_reviewed",
+      "date": "2026-06-01",
+      "tools": [
+        "pdfplumber",
+        "heading_scorer",
+        "section_tree_builder",
+        "table_engine",
+        "fact_extractors"
+      ],
+      "changes": "Automated pipeline draft. Requires human review before promotion to gold."
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    },
+    {
+      "pass_id": "pass_dse012_source_pdf_human_review",
+      "date": "2026-06-01",
+      "tools": [
+        "pdftotext",
+        "physical_json",
+        "pipeline_seed_reviewed",
+        "targeted_page_review"
+      ],
+      "changes": "Promoted DSE-012 draft labels after source-PDF text review; facts, status markers, and obvious structure defects corrected.",
+      "review_report": "data/reports/dse012_human_review/reliance_health_gain_review.md"
+    }
+  ],
+  "docling_markdown_available": false
+}

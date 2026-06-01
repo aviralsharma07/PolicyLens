@@ -1,0 +1,20 @@
+{
+  "slug": "future_generali_health_elite",
+  "insurer": "Future Generali",
+  "plan_name": "FG Health Elite",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
+  "pages_reviewed": 38,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "explicitly_not_covered": 2,
+    "not_found": 3,
+    "present": 15
+  },
+  "evidence_bearing_facts": 17,
+  "remaining_known_issues": []
+}

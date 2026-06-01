@@ -1,0 +1,3567 @@
+[
+  {
+    "section_id": "united_india_individual_health_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 26,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0001",
+    "section_number": null,
+    "title": "Policy Terms & Conditions",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "Policy Terms & Conditions",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0002",
+    "section_number": "1",
+    "title": "1.PREAMBLE",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1.PREAMBLE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0003",
+    "section_number": "2",
+    "title": "2.DEFINITIONS",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2.DEFINITIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0004",
+    "section_number": "3",
+    "title": "3.COVERAGE",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "3.COVERAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0005",
+    "section_number": "4",
+    "title": "4.PERMANENT EXCLUSIONS & WAITING PERIODS",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.PERMANENT EXCLUSIONS & WAITING PERIODS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0006",
+    "section_number": "5",
+    "title": "5.GENERAL TERMS & CLAUSES",
+    "level": 1,
+    "parent_id": "united_india_individual_health_root_0000",
+    "page_start": 12,
+    "page_end": 13,
+    "source_page_refs": [
+      12,
+      13
+    ],
+    "heading_text": "5.GENERAL TERMS & CLAUSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0007",
+    "section_number": "5.8",
+    "title": "5.8 Migration",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0006",
+    "page_start": 13,
+    "page_end": 15,
+    "source_page_refs": [
+      13,
+      14,
+      15
+    ],
+    "heading_text": "5.8 Migration",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0008",
+    "section_number": "5.18",
+    "title": "5.18 Premium",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0006",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "5.18 Premium",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0009",
+    "section_number": "5.19",
+    "title": "5.19 Discount",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0006",
+    "page_start": 15,
+    "page_end": 16,
+    "source_page_refs": [
+      15,
+      16
+    ],
+    "heading_text": "5.19 Discount",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0010",
+    "section_number": "5.21",
+    "title": "5.21 Claims Procedure",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0006",
+    "page_start": 16,
+    "page_end": 19,
+    "source_page_refs": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "heading_text": "5.21 Claims Procedure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0011",
+    "section_number": "1",
+    "title": "1. ACCIDENT is a sudden, unforeseen, and involuntary event caused by external, visible, and violent means",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "1. ACCIDENT is a sudden, unforeseen, and involuntary event caused by external, visible, and violent means",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0012",
+    "section_number": "2",
+    "title": "2. ANY ONE ILLNESS will be deemed to mean continuous period of illness and it includes relapse within 45 days from the date",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "2. ANY ONE ILLNESS will be deemed to mean continuous period of illness and it includes relapse within 45 days from the date",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0013",
+    "section_number": "3",
+    "title": "3. AYUSH HOSPITAL is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "3. AYUSH HOSPITAL is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0014",
+    "section_number": "4",
+    "title": "4. CASHLESS FACILITY means a facility extended by the Insurer to the Insured where the payment, of the costs of treatment",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "4. CASHLESS FACILITY means a facility extended by the Insurer to the Insured where the payment, of the costs of treatment",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0015",
+    "section_number": "5",
+    "title": "5. CONDITION PRECEDENT shall mean a policy term or condition upon which the Insurer’s liability under the policy is conditional",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 1,
+    "page_end": 2,
+    "source_page_refs": [
+      1,
+      2
+    ],
+    "heading_text": "5. CONDITION PRECEDENT shall mean a policy term or condition upon which the Insurer’s liability under the policy is conditional",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0016",
+    "section_number": "6",
+    "title": "6. CONGENITAL ANOMALY refers to a condition(s) which is present since birth, and which is abnormal with reference to form,",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "6. CONGENITAL ANOMALY refers to a condition(s) which is present since birth, and which is abnormal with reference to form,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0017",
+    "section_number": "7",
+    "title": "7. CO-PAYMENT means a cost of sharing requirement under a health insurance policy that provides that the Policyholder/Insured",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "7. CO-PAYMENT means a cost of sharing requirement under a health insurance policy that provides that the Policyholder/Insured",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0018",
+    "section_number": "8",
+    "title": "8. DAY CARE CENTRE means any institution established for day care treatment of illness and/or injuries or a medical set-up",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "8. DAY CARE CENTRE means any institution established for day care treatment of illness and/or injuries or a medical set-up",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0019",
+    "section_number": "9",
+    "title": "9. DAY CARE TREATMENT means medical treatment, and/or surgical procedure which is:",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "9. DAY CARE TREATMENT means medical treatment, and/or surgical procedure which is:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0020",
+    "section_number": "10",
+    "title": "10. DEDUCTIBLE is a cost sharing requirement under a Health Insurance Policy that provides that the Insurer will not be liable for",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "10. DEDUCTIBLE is a cost sharing requirement under a Health Insurance Policy that provides that the Insurer will not be liable for",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0021",
+    "section_number": "11",
+    "title": "11. DENTAL TREATMENT means a treatment related to teeth or structures supporting teeth including examinations, fillings",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "11. DENTAL TREATMENT means a treatment related to teeth or structures supporting teeth including examinations, fillings",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0022",
+    "section_number": "12",
+    "title": "12. EMERGENCY CARE means management for an illness or injury which results in symptoms which occur suddenly and",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "12. EMERGENCY CARE means management for an illness or injury which results in symptoms which occur suddenly and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0023",
+    "section_number": "13",
+    "title": "13. GRACE PERIOD means the specified period of time immediately following the premium due date during which a payment can",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "13. GRACE PERIOD means the specified period of time immediately following the premium due date during which a payment can",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0024",
+    "section_number": "14",
+    "title": "14. HOSPITAL/NURSING HOME means any institution established for in-patient care and day care treatment of illness and/or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 2,
+    "source_page_refs": [
+      2
+    ],
+    "heading_text": "14. HOSPITAL/NURSING HOME means any institution established for in-patient care and day care treatment of illness and/or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0025",
+    "section_number": "16",
+    "title": "16. ILLNESS means a sickness or a disease or pathological condition leading to the impairment of normal physiological function",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 2,
+    "page_end": 3,
+    "source_page_refs": [
+      2,
+      3
+    ],
+    "heading_text": "16. ILLNESS means a sickness or a disease or pathological condition leading to the impairment of normal physiological function",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0026",
+    "section_number": "17",
+    "title": "17. INJURY means accidental physical bodily harm excluding illness or disease solely and directly caused by external, violent, and",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "17. INJURY means accidental physical bodily harm excluding illness or disease solely and directly caused by external, violent, and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0027",
+    "section_number": "18",
+    "title": "18. IN-PATIENT CARE means treatment for which the Insured Person has to stay in a hospital for more than 24 hours for a covered",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "18. IN-PATIENT CARE means treatment for which the Insured Person has to stay in a hospital for more than 24 hours for a covered",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0028",
+    "section_number": "19",
+    "title": "19. INTENSIVE CARE UNIT means an identified section, ward or wing of a hospital which is under the constant supervision of a",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "19. INTENSIVE CARE UNIT means an identified section, ward or wing of a hospital which is under the constant supervision of a",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0029",
+    "section_number": "20",
+    "title": "20. INTENSIVE CARE UNIT (ICU) CHARGES means the amount charged by a Hospital towards ICU expenses which shall include the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "20. INTENSIVE CARE UNIT (ICU) CHARGES means the amount charged by a Hospital towards ICU expenses which shall include the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0030",
+    "section_number": "21",
+    "title": "21. MEDICAL ADVICE means any consultation or advice from a Medical Practitioner including the issue of any prescription or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "21. MEDICAL ADVICE means any consultation or advice from a Medical Practitioner including the issue of any prescription or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0031",
+    "section_number": "22",
+    "title": "22. MEDICAL EXPENSES means those expenses that an Insured Person has necessarily and actually incurred for medical treatment",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "22. MEDICAL EXPENSES means those expenses that an Insured Person has necessarily and actually incurred for medical treatment",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0032",
+    "section_number": "23",
+    "title": "23. MEDICALLY NECESSARY TREATMENT is defined as any treatment, tests, medication, or stay in hospital or part of a stay in",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "23. MEDICALLY NECESSARY TREATMENT is defined as any treatment, tests, medication, or stay in hospital or part of a stay in",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0033",
+    "section_number": "24",
+    "title": "24. MEDICAL PRACTITIONER means a person who holds a valid registration from the Medical Council of any State of India or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "24. MEDICAL PRACTITIONER means a person who holds a valid registration from the Medical Council of any State of India or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0034",
+    "section_number": "25",
+    "title": "25. MIGRATION means the right accorded to health insurance policyholders (including all members under family cover and",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "25. MIGRATION means the right accorded to health insurance policyholders (including all members under family cover and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0035",
+    "section_number": "26",
+    "title": "26. NETWORK PROVIDER means the hospital/nursing home or health care providers enlisted by an Insurer or by a TPA and Insurer",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "26. NETWORK PROVIDER means the hospital/nursing home or health care providers enlisted by an Insurer or by a TPA and Insurer",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0036",
+    "section_number": "27",
+    "title": "27. NON-NETWORK HOSPITALS means any hospital, day care centre or other provider that is not part of the network",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "27. NON-NETWORK HOSPITALS means any hospital, day care centre or other provider that is not part of the network",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0037",
+    "section_number": "28",
+    "title": "28. NOTIFICATION OF CLAIM is the process of notifying a claim to the Insurer or TPA within specified timelines through any of the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 3,
+    "source_page_refs": [
+      3
+    ],
+    "heading_text": "28. NOTIFICATION OF CLAIM is the process of notifying a claim to the Insurer or TPA within specified timelines through any of the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0038",
+    "section_number": "29",
+    "title": "29. PORTABILITY means the right accorded to individual health insurance policyholders (including all members under family",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 3,
+    "page_end": 4,
+    "source_page_refs": [
+      3,
+      4
+    ],
+    "heading_text": "29. PORTABILITY means the right accorded to individual health insurance policyholders (including all members under family",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0039",
+    "section_number": "30",
+    "title": "30. PRE-EXISTING DISEASE means any condition, ailment, injury or disease:",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "30. PRE-EXISTING DISEASE means any condition, ailment, injury or disease:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0040",
+    "section_number": "31",
+    "title": "31. PRE-HOSPITALISATION MEDICAL EXPENSES means relevant medical expenses incurred immediately 30 days before the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "31. PRE-HOSPITALISATION MEDICAL EXPENSES means relevant medical expenses incurred immediately 30 days before the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0041",
+    "section_number": "32",
+    "title": "32. POST-HOSPITALISATION MEDICAL EXPENSES means relevant medical expenses incurred immediately 60 days after the Insured",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "32. POST-HOSPITALISATION MEDICAL EXPENSES means relevant medical expenses incurred immediately 60 days after the Insured",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0042",
+    "section_number": "33",
+    "title": "33. QUALIFIED NURSE means a person who holds a valid registration from the Nursing Council of India or the Nursing Council of",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "33. QUALIFIED NURSE means a person who holds a valid registration from the Nursing Council of India or the Nursing Council of",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0043",
+    "section_number": "34",
+    "title": "34. REASONABLE AND CUSTOMARY CHARGES mean the charges for services or supplies, which are the standard charges for the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "34. REASONABLE AND CUSTOMARY CHARGES mean the charges for services or supplies, which are the standard charges for the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0044",
+    "section_number": "35",
+    "title": "35. RENEWAL defines the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "35. RENEWAL defines the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0045",
+    "section_number": "36",
+    "title": "36. ROOM RENT shall mean the amount charged by a hospital towards room and boarding expenses basis and shall include",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "36. ROOM RENT shall mean the amount charged by a hospital towards room and boarding expenses basis and shall include",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0046",
+    "section_number": "37",
+    "title": "37. SURGERY OR SURGICAL PROCEDURE means manual and/or operative procedure(s) required for treatment of an illness or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "37. SURGERY OR SURGICAL PROCEDURE means manual and/or operative procedure(s) required for treatment of an illness or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0047",
+    "section_number": "38",
+    "title": "38. THIRD PARTY ADMINISTRATOR (TPA) means a Company registered under the IRDAI (Third Party Administrators – Health",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "38. THIRD PARTY ADMINISTRATOR (TPA) means a Company registered under the IRDAI (Third Party Administrators – Health",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0048",
+    "section_number": "39",
+    "title": "39. UNPROVEN/EXPERIMENTAL TREATMENT means any treatment including drug experimental therapy which is not based on",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "39. UNPROVEN/EXPERIMENTAL TREATMENT means any treatment including drug experimental therapy which is not based on",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0049",
+    "section_number": "40",
+    "title": "40. AGE means age of the Insured person on last birthday as on date of commencement of the Policy",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "40. AGE means age of the Insured person on last birthday as on date of commencement of the Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0050",
+    "section_number": "41",
+    "title": "41. AIDS means Acquired Immune Deficiency Syndrome, a condition characterised by a combination of signs and symptoms,",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "41. AIDS means Acquired Immune Deficiency Syndrome, a condition characterised by a combination of signs and symptoms,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0051",
+    "section_number": "42",
+    "title": "42. ASSOCIATED MEDICAL EXPENSES means hospitalisation related expenses on Surgeon, Anaesthetist, Medical Practitioner,",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 4,
+    "source_page_refs": [
+      4
+    ],
+    "heading_text": "42. ASSOCIATED MEDICAL EXPENSES means hospitalisation related expenses on Surgeon, Anaesthetist, Medical Practitioner,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0052",
+    "section_number": "43",
+    "title": "43. AYUSH Treatment refers to hospitalisation treatments given under Ayurvedic system of Medicine (covered under the Policy)",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 4,
+    "page_end": 5,
+    "source_page_refs": [
+      4,
+      5
+    ],
+    "heading_text": "43. AYUSH Treatment refers to hospitalisation treatments given under Ayurvedic system of Medicine (covered under the Policy)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0053",
+    "section_number": "44",
+    "title": "44. BREAK IN POLICY means the period of gap that occurs at the end of the existing policy term, when the premium due for",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "44. BREAK IN POLICY means the period of gap that occurs at the end of the existing policy term, when the premium due for",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0054",
+    "section_number": "45",
+    "title": "45. CANCELLATION defines the terms on which the policy contract can be terminated either by the Insurer or the Insured person",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "45. CANCELLATION defines the terms on which the policy contract can be terminated either by the Insurer or the Insured person",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0055",
+    "section_number": "46",
+    "title": "46. CONTINUOUS COVERAGE means uninterrupted coverage of the Insured person under the Health Insurance Policy from the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "46. CONTINUOUS COVERAGE means uninterrupted coverage of the Insured person under the Health Insurance Policy from the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0056",
+    "section_number": "47",
+    "title": "47. INSURED PERSON means person(s) named in the schedule of the Policy",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "47. INSURED PERSON means person(s) named in the schedule of the Policy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0057",
+    "section_number": "48",
+    "title": "48. PERIOD OF INSURANCE means the period for which this policy is taken and is in force as specified in the Schedule",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "48. PERIOD OF INSURANCE means the period for which this policy is taken and is in force as specified in the Schedule",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0058",
+    "section_number": "49",
+    "title": "49. POLICY means these Policy wordings, the Policy Schedule and any applicable endorsements or extensions attaching to or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "49. POLICY means these Policy wordings, the Policy Schedule and any applicable endorsements or extensions attaching to or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0059",
+    "section_number": "50",
+    "title": "50. PSYCHIATRIC DISORDER means clinically significant Psychological or behavioural syndrome that causes significant distress,",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "50. PSYCHIATRIC DISORDER means clinically significant Psychological or behavioural syndrome that causes significant distress,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0060",
+    "section_number": "51",
+    "title": "51. PSYCHOSOMATIC DISORDER means one or more psychological or behavioural problems that adversely and significantly affect",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "51. PSYCHOSOMATIC DISORDER means one or more psychological or behavioural problems that adversely and significantly affect",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0061",
+    "section_number": "52",
+    "title": "52. SUB-LIMIT means a cost sharing requirement under a health insurance policy in which an Insurer would not be liable to pay",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "52. SUB-LIMIT means a cost sharing requirement under a health insurance policy in which an Insurer would not be liable to pay",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0062",
+    "section_number": "53",
+    "title": "53. SUM INSURED means the pre-defined limit specified in the Policy Schedule that represents, the maximum, total and",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "53. SUM INSURED means the pre-defined limit specified in the Policy Schedule that represents, the maximum, total and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0063",
+    "section_number": "54",
+    "title": "54. WAITING PERIOD means a period from the inception of this Policy during which specified diseases/treatments are not",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "54. WAITING PERIOD means a period from the inception of this Policy during which specified diseases/treatments are not",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0064",
+    "section_number": "55",
+    "title": "55. WE/OUR/US/COMPANY means UNITED INDIA INSURANCE COMPANY LIMITED",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "55. WE/OUR/US/COMPANY means UNITED INDIA INSURANCE COMPANY LIMITED",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0065",
+    "section_number": "56",
+    "title": "56. YOU/YOUR means the person who has taken this Policy and is shown as Insured Person or the first Insured Person (if more",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0003",
+    "page_start": 5,
+    "page_end": 5,
+    "source_page_refs": [
+      5
+    ],
+    "heading_text": "56. YOU/YOUR means the person who has taken this Policy and is shown as Insured Person or the first Insured Person (if more",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0066",
+    "section_number": "3.1",
+    "title": "3.1. In-Patient Hospitalisation Expenses Cover",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 5,
+    "page_end": 6,
+    "source_page_refs": [
+      5,
+      6
+    ],
+    "heading_text": "3.1. In-Patient Hospitalisation Expenses Cover",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0067",
+    "section_number": "3.2",
+    "title": "3.2. Pre-Hospitalisation and Post-hospitalisation Expenses",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 6,
+    "page_end": 7,
+    "source_page_refs": [
+      6,
+      7
+    ],
+    "heading_text": "3.2. Pre-Hospitalisation and Post-hospitalisation Expenses",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0068",
+    "section_number": "3.3",
+    "title": "3.3. Domiciliary Hospitalisation",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.3. Domiciliary Hospitalisation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0069",
+    "section_number": "3.4",
+    "title": "3.4. Ayurvedic Treatment",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.4. Ayurvedic Treatment",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0070",
+    "section_number": "3.5",
+    "title": "3.5. Modern Treatment Methods & Advancement in Technologies",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3.5. Modern Treatment Methods & Advancement in Technologies",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0071",
+    "section_number": "2",
+    "title": "2. Balloon Sinuplasty",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "2. Balloon Sinuplasty",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0072",
+    "section_number": "3",
+    "title": "3. Deep Brain Stimulation Up to 70% of Sum Insured per policy period for claims involving Deep Brain Stimulation",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "3. Deep Brain Stimulation Up to 70% of Sum Insured per policy period for claims involving Deep Brain Stimulation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0073",
+    "section_number": "4",
+    "title": "4. Oral Chemotherapy",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 7,
+    "source_page_refs": [
+      7
+    ],
+    "heading_text": "4. Oral Chemotherapy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0074",
+    "section_number": "5",
+    "title": "5. Up to 20% of Sum Insured subject to a maximum of Rs.2 Lacs per policy period",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 7,
+    "page_end": 8,
+    "source_page_refs": [
+      7,
+      8
+    ],
+    "heading_text": "5. Up to 20% of Sum Insured subject to a maximum of Rs.2 Lacs per policy period",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0075",
+    "section_number": "8",
+    "title": "8. Stereotactic Radio Surgeries",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "8. Stereotactic Radio Surgeries",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0076",
+    "section_number": "9",
+    "title": "9. Bronchial Thermoplasty",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "9. Bronchial Thermoplasty",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0077",
+    "section_number": "12",
+    "title": "12. No additional sub-limit",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "12. No additional sub-limit",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0078",
+    "section_number": "3.6",
+    "title": "3.6. Cost of Health Check-Up",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.6. Cost of Health Check-Up",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0079",
+    "section_number": "3.7",
+    "title": "3.7. Road Ambulance Cover",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 8,
+    "source_page_refs": [
+      8
+    ],
+    "heading_text": "3.7. Road Ambulance Cover",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0080",
+    "section_number": "3.8",
+    "title": "3.8. Daily Cash Allowance on Hospitalisation",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0004",
+    "page_start": 8,
+    "page_end": 9,
+    "source_page_refs": [
+      8,
+      9
+    ],
+    "heading_text": "3.8. Daily Cash Allowance on Hospitalisation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0081",
+    "section_number": "4.1",
+    "title": "4.1. Pre-Existing Disease (Code- Excl01):",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.1. Pre-Existing Disease (Code- Excl01):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0082",
+    "section_number": "4.2",
+    "title": "4.2. Specific Disease/ Procedure Waiting Period (Code- Excl02):",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 9,
+    "page_end": 9,
+    "source_page_refs": [
+      9
+    ],
+    "heading_text": "4.2. Specific Disease/ Procedure Waiting Period (Code- Excl02):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0083",
+    "section_number": "4.3",
+    "title": "4.3. First Thirty Days Waiting Period (Code- Excl03):",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 9,
+    "page_end": 10,
+    "source_page_refs": [
+      9,
+      10
+    ],
+    "heading_text": "4.3. First Thirty Days Waiting Period (Code- Excl03):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0084",
+    "section_number": "4.4",
+    "title": "4.4. Investigation & Evaluation (Code- Excl04):",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.4. Investigation & Evaluation (Code- Excl04):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0085",
+    "section_number": "4.5",
+    "title": "4.5. Rest Cure, rehabilitation and respite care (Code- Excl05): Expenses related to any admission primarily for enforced bed",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.5. Rest Cure, rehabilitation and respite care (Code- Excl05): Expenses related to any admission primarily for enforced bed",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0086",
+    "section_number": "4.6",
+    "title": "4.6. Obesity/ Weight Control (Code- Excl06): Expenses related to the surgical treatment of obesity that does not fulfil all the",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.6. Obesity/ Weight Control (Code- Excl06): Expenses related to the surgical treatment of obesity that does not fulfil all the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0087",
+    "section_number": "4.7",
+    "title": "4.7. Change-of-Gender treatments (Code- Excl07): Expenses related to any treatment, including surgical management, to",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.7. Change-of-Gender treatments (Code- Excl07): Expenses related to any treatment, including surgical management, to",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0088",
+    "section_number": "4.8",
+    "title": "4.8. Cosmetic or Plastic Surgery (Code- Excl08): Expenses for cosmetic or plastic surgery or any treatment to change",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.8. Cosmetic or Plastic Surgery (Code- Excl08): Expenses for cosmetic or plastic surgery or any treatment to change",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0089",
+    "section_number": "4.9",
+    "title": "4.9. Breach of law (Code- Excl10): Expenses for treatment directly arising from or consequent upon any Insured Person",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.9. Breach of law (Code- Excl10): Expenses for treatment directly arising from or consequent upon any Insured Person",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0090",
+    "section_number": "4.10",
+    "title": "4.10. Excluded Providers (Code-Excl11): Expenses incurred towards treatment in any hospital or by any Medical Practitioner",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.10. Excluded Providers (Code-Excl11): Expenses incurred towards treatment in any hospital or by any Medical Practitioner",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0091",
+    "section_number": "4.11",
+    "title": "4.11. Treatment for, Alcoholism, drug or substance abuse or any addictive condition and consequences thereof. (Code- Excl12)",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.11. Treatment for, Alcoholism, drug or substance abuse or any addictive condition and consequences thereof. (Code- Excl12)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0092",
+    "section_number": "4.12",
+    "title": "4.12. Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 10,
+    "source_page_refs": [
+      10
+    ],
+    "heading_text": "4.12. Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0093",
+    "section_number": "4.13",
+    "title": "4.13. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins,",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 10,
+    "page_end": 11,
+    "source_page_refs": [
+      10,
+      11
+    ],
+    "heading_text": "4.13. Dietary supplements and substances that can be purchased without prescription, including but not limited to Vitamins,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0094",
+    "section_number": "4.14",
+    "title": "4.14. Refractive Error (Code- Excl15): Expenses related to the treatment for correction of eyesight due to refractive error less",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.14. Refractive Error (Code- Excl15): Expenses related to the treatment for correction of eyesight due to refractive error less",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0095",
+    "section_number": "4.15",
+    "title": "4.15. Unproven Treatments (Code- Excl16): Expenses related to any unproven treatment, services and supplies for or in",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.15. Unproven Treatments (Code- Excl16): Expenses related to any unproven treatment, services and supplies for or in",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0096",
+    "section_number": "4.16",
+    "title": "4.16. Sterility and Infertility (Code- Excl17): Expenses related to sterility and infertility. This includes:",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.16. Sterility and Infertility (Code- Excl17): Expenses related to sterility and infertility. This includes:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0097",
+    "section_number": "4.17",
+    "title": "4.17. Maternity (Code- Excl18):",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.17. Maternity (Code- Excl18):",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0098",
+    "section_number": "4.18",
+    "title": "4.18. All expenses caused by or arising from or attributable to foreign invasion, act of foreign enemies, hostilities, warlike",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.18. All expenses caused by or arising from or attributable to foreign invasion, act of foreign enemies, hostilities, warlike",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0099",
+    "section_number": "4.19",
+    "title": "4.19. All Illness/expenses caused by ionizing radiation or contamination by radioactivity from any nuclear fuel (explosive or",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.19. All Illness/expenses caused by ionizing radiation or contamination by radioactivity from any nuclear fuel (explosive or",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0100",
+    "section_number": "4.21",
+    "title": "4.21. Congenital External Diseases, Defects or anomalies",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.21. Congenital External Diseases, Defects or anomalies",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0101",
+    "section_number": "4.22",
+    "title": "4.22. Circumcision unless necessary for Treatment of an Illness or Injury not excluded hereunder or due to an Accident",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.22. Circumcision unless necessary for Treatment of an Illness or Injury not excluded hereunder or due to an Accident",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0102",
+    "section_number": "4.23",
+    "title": "4.23. Cost of routine medical examination and preventive health check-up unless as provided for in Base Cover 3.6",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.23. Cost of routine medical examination and preventive health check-up unless as provided for in Base Cover 3.6",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0103",
+    "section_number": "4.24",
+    "title": "4.24. Vaccination or inoculation of any kind unless it is post animal bite",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.24. Vaccination or inoculation of any kind unless it is post animal bite",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0104",
+    "section_number": "4.26",
+    "title": "4.26. Treatments other than Allopathy and Ayurvedic branches of medicine",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.26. Treatments other than Allopathy and Ayurvedic branches of medicine",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0105",
+    "section_number": "4.27",
+    "title": "4.27. Intentional self-inflicted Injury, attempted suicide",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.27. Intentional self-inflicted Injury, attempted suicide",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0106",
+    "section_number": "4.28",
+    "title": "4.28. Unless used intra-operatively, any expenses incurred on prosthesis, corrective devices; External and/or durable Medical",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 11,
+    "source_page_refs": [
+      11
+    ],
+    "heading_text": "4.28. Unless used intra-operatively, any expenses incurred on prosthesis, corrective devices; External and/or durable Medical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0107",
+    "section_number": "4.29",
+    "title": "4.29. Change of treatment from one system of medicine to another system unless recommended by the consultant/hospital",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 11,
+    "page_end": 12,
+    "source_page_refs": [
+      11,
+      12
+    ],
+    "heading_text": "4.29. Change of treatment from one system of medicine to another system unless recommended by the consultant/hospital",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0108",
+    "section_number": "4.30",
+    "title": "4.30. Treatments including Rotational Field Quantum Magnetic Resonance (RFQMR), External Counter Pulsation (ECP),",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4.30. Treatments including Rotational Field Quantum Magnetic Resonance (RFQMR), External Counter Pulsation (ECP),",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0109",
+    "section_number": "4.31",
+    "title": "4.31. Artificial life maintenance including life support machine use, from the date of confirmation by the treating doctor that",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4.31. Artificial life maintenance including life support machine use, from the date of confirmation by the treating doctor that",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0110",
+    "section_number": "4.32",
+    "title": "4.32. Any item(s) or treatment specified in ‘List of Non-Medical Expenses– Payable/Non-Payable’ as per Annexure – 1 and",
+    "level": 2,
+    "parent_id": "united_india_individual_health_sec_0005",
+    "page_start": 12,
+    "page_end": 12,
+    "source_page_refs": [
+      12
+    ],
+    "heading_text": "4.32. Any item(s) or treatment specified in ‘List of Non-Medical Expenses– Payable/Non-Payable’ as per Annexure – 1 and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0111",
+    "section_number": "6",
+    "title": "6. REGULATIONS",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 19,
+    "page_end": 21,
+    "source_page_refs": [
+      19,
+      20,
+      21
+    ],
+    "heading_text": "6. REGULATIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0112",
+    "section_number": "1",
+    "title": "1. BABY FOOD Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "1. BABY FOOD Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0113",
+    "section_number": "2",
+    "title": "2. BABY UTILITIES CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "2. BABY UTILITIES CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0114",
+    "section_number": "3",
+    "title": "3. BEAUTY SERVICES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "3. BEAUTY SERVICES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0115",
+    "section_number": "4",
+    "title": "4. BELTS/ BRACES",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "4. BELTS/ BRACES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0116",
+    "section_number": "5",
+    "title": "5. BUDS Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "5. BUDS Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0117",
+    "section_number": "6",
+    "title": "6. COLD PACK/HOT PACK Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "6. COLD PACK/HOT PACK Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0118",
+    "section_number": "7",
+    "title": "7. CARRY BAGS Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "7. CARRY BAGS Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0119",
+    "section_number": "8",
+    "title": "8. EMAIL / INTERNET CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "8. EMAIL / INTERNET CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0120",
+    "section_number": "10",
+    "title": "10. LEGGINGS Payable in case of varicose vein surgery",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "10. LEGGINGS Payable in case of varicose vein surgery",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0121",
+    "section_number": "11",
+    "title": "11. LAUNDRY CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "11. LAUNDRY CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0122",
+    "section_number": "12",
+    "title": "12. MINERAL WATER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "12. MINERAL WATER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0123",
+    "section_number": "13",
+    "title": "13. SANITARY PAD Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "13. SANITARY PAD Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0124",
+    "section_number": "14",
+    "title": "14. TELEPHONE CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "14. TELEPHONE CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0125",
+    "section_number": "15",
+    "title": "15. GUEST SERVICES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "15. GUEST SERVICES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0126",
+    "section_number": "16",
+    "title": "16. CREPE BANDAGE Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "16. CREPE BANDAGE Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0127",
+    "section_number": "17",
+    "title": "17. DIAPER OF ANY TYPE Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "17. DIAPER OF ANY TYPE Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0128",
+    "section_number": "18",
+    "title": "18. EYELET COLLAR Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "18. EYELET COLLAR Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0129",
+    "section_number": "19",
+    "title": "19. SLINGS Reasonable costs for one sling in case of upper arm fractures is payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "19. SLINGS Reasonable costs for one sling in case of upper arm fractures is payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0130",
+    "section_number": "20",
+    "title": "20. Part of Cost of Blood, not payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "20. Part of Cost of Blood, not payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0131",
+    "section_number": "21",
+    "title": "21. Part of room charge not payable separately",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "21. Part of room charge not payable separately",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0132",
+    "section_number": "22",
+    "title": "22. Television Charges Payable under room charges not if separately levied",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "22. Television Charges Payable under room charges not if separately levied",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0133",
+    "section_number": "23",
+    "title": "23. SURCHARGES Part of Room Charge, Not payable separately",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "23. SURCHARGES Part of Room Charge, Not payable separately",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0134",
+    "section_number": "24",
+    "title": "24. ATTENDANT CHARGES Not Payable - Part of Room Charges",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "24. ATTENDANT CHARGES Not Payable - Part of Room Charges",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0135",
+    "section_number": "26",
+    "title": "26. BIRTH CERTIFICATE Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "26. BIRTH CERTIFICATE Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0136",
+    "section_number": "27",
+    "title": "27. CERTIFICATE CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "27. CERTIFICATE CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0137",
+    "section_number": "28",
+    "title": "28. COURIER CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "28. COURIER CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0138",
+    "section_number": "29",
+    "title": "29. CONVEYANCE CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "29. CONVEYANCE CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0139",
+    "section_number": "30",
+    "title": "30. MEDICAL CERTIFICATE Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "30. MEDICAL CERTIFICATE Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0140",
+    "section_number": "31",
+    "title": "31. MEDICAL RECORDS Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "31. MEDICAL RECORDS Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0141",
+    "section_number": "32",
+    "title": "32. PHOTOCOPIES CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "32. PHOTOCOPIES CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0142",
+    "section_number": "33",
+    "title": "33. MORTUARY CHARGES Payable up to 24 hrs, shifting charges not payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "33. MORTUARY CHARGES Payable up to 24 hrs, shifting charges not payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0143",
+    "section_number": "34",
+    "title": "34. WALKING AIDS CHARGES Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "34. WALKING AIDS CHARGES Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0144",
+    "section_number": "35",
+    "title": "35. Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "35. Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0145",
+    "section_number": "36",
+    "title": "36. SPACER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "36. SPACER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0146",
+    "section_number": "37",
+    "title": "37. SPIROMETRE Device not payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "37. SPIROMETRE Device not payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0147",
+    "section_number": "38",
+    "title": "38. NEBULIZER KIT Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "38. NEBULIZER KIT Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0148",
+    "section_number": "39",
+    "title": "39. STEAM INHALER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "39. STEAM INHALER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0149",
+    "section_number": "40",
+    "title": "40. ARMSLING Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "40. ARMSLING Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0150",
+    "section_number": "41",
+    "title": "41. THERMOMETER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "41. THERMOMETER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0151",
+    "section_number": "42",
+    "title": "42. CERVICAL COLLAR Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "42. CERVICAL COLLAR Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0152",
+    "section_number": "43",
+    "title": "43. SPLINT Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "43. SPLINT Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0153",
+    "section_number": "44",
+    "title": "44. DIABETIC FOOT WEAR Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "44. DIABETIC FOOT WEAR Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0154",
+    "section_number": "45",
+    "title": "45. KNEE BRACES (LONG/ SHORT/ HINGED) Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "45. KNEE BRACES (LONG/ SHORT/ HINGED) Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0155",
+    "section_number": "46",
+    "title": "46. KNEE IMMOBILIZER/SHOULDER IMMOBILIZER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "46. KNEE IMMOBILIZER/SHOULDER IMMOBILIZER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0156",
+    "section_number": "47",
+    "title": "47. LUMBO SACRAL BELT Payable for cases who have undergone surgery of lumbar spine",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 21,
+    "page_end": 22,
+    "source_page_refs": [
+      21,
+      22
+    ],
+    "heading_text": "47. LUMBO SACRAL BELT Payable for cases who have undergone surgery of lumbar spine",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0157",
+    "section_number": "48",
+    "title": "48. NIMBUS BED OR WATER OR AIR BED CHARGES patients with paraplegia/quadriplegia for any reason and at reasonable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "48. NIMBUS BED OR WATER OR AIR BED CHARGES patients with paraplegia/quadriplegia for any reason and at reasonable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0158",
+    "section_number": "49",
+    "title": "49. AMBULANCE COLLAR Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "49. AMBULANCE COLLAR Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0159",
+    "section_number": "50",
+    "title": "50. AMBULANCE EQUIPMENT Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "50. AMBULANCE EQUIPMENT Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0160",
+    "section_number": "51",
+    "title": "51. ABDOMINAL BINDER Payable for cases who have undergone surgery of lumbar spine",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "51. ABDOMINAL BINDER Payable for cases who have undergone surgery of lumbar spine",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0161",
+    "section_number": "52",
+    "title": "52. Payable in Post-hospitalisation",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "52. Payable in Post-hospitalisation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0162",
+    "section_number": "53",
+    "title": "53. SUGAR FREE Tablets Payable -Sugar free variants of admissible medicines are not excluded",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "53. SUGAR FREE Tablets Payable -Sugar free variants of admissible medicines are not excluded",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0163",
+    "section_number": "54",
+    "title": "54. Payable when prescribed",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "54. Payable when prescribed",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0164",
+    "section_number": "55",
+    "title": "55. ECG ELECTRODES longer stay in ICU, may require a change and at least one set every",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "55. ECG ELECTRODES longer stay in ICU, may require a change and at least one set every",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0165",
+    "section_number": "56",
+    "title": "56. GLOVES Sterilized Gloves payable / unsterilized gloves not payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "56. GLOVES Sterilized Gloves payable / unsterilized gloves not payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0166",
+    "section_number": "57",
+    "title": "57. NEBULISATION KIT Payable reasonably if used during hospitalisation",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "57. NEBULISATION KIT Payable reasonably if used during hospitalisation",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0167",
+    "section_number": "58",
+    "title": "58. Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "58. Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0168",
+    "section_number": "59",
+    "title": "59. KIDNEY TRAY Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "59. KIDNEY TRAY Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0169",
+    "section_number": "60",
+    "title": "60. MASK Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "60. MASK Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0170",
+    "section_number": "61",
+    "title": "61. OUNCE GLASS Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "61. OUNCE GLASS Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0171",
+    "section_number": "62",
+    "title": "62. OXYGEN MASK Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "62. OXYGEN MASK Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0172",
+    "section_number": "63",
+    "title": "63. PELVIC TRACTION BELT Payable in case of PIVD requiring traction",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "63. PELVIC TRACTION BELT Payable in case of PIVD requiring traction",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0173",
+    "section_number": "64",
+    "title": "64. PAN CAN Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "64. PAN CAN Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0174",
+    "section_number": "65",
+    "title": "65. TROLLEY COVER Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "65. TROLLEY COVER Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0175",
+    "section_number": "66",
+    "title": "66. UROMETER, URINE JUG Not Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "66. UROMETER, URINE JUG Not Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0176",
+    "section_number": "67",
+    "title": "67. AMBULANCE Payable",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "67. AMBULANCE Payable",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0177",
+    "section_number": "68",
+    "title": "68. VASOFIX SAFETY Payable - maximum of 3 in 48 hrs and then 1 in 24 hrs",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "68. VASOFIX SAFETY Payable - maximum of 3 in 48 hrs and then 1 in 24 hrs",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0178",
+    "section_number": "19",
+    "title": "19. DISINFECTANT LOTIONS",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 22,
+    "page_end": 23,
+    "source_page_refs": [
+      22,
+      23
+    ],
+    "heading_text": "19. DISINFECTANT LOTIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0179",
+    "section_number": "12",
+    "title": "12. SURGICAL BLADES, HARMONIC SCALPEL, SHAVER",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0010",
+    "page_start": 23,
+    "page_end": 26,
+    "source_page_refs": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "heading_text": "12. SURGICAL BLADES, HARMONIC SCALPEL, SHAVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0180",
+    "section_number": "3.1.1",
+    "title": "3.1.1. Other expenses covered:",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0066",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.1.1. Other expenses covered:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0181",
+    "section_number": "3.1.2",
+    "title": "3.1.2. Expenses in respect of the following specified illnesses will be restricted as detailed below:",
+    "level": 3,
+    "parent_id": "united_india_individual_health_sec_0066",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "3.1.2. Expenses in respect of the following specified illnesses will be restricted as detailed below:",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0182",
+    "section_number": "I",
+    "title": "I. Dental treatment, necessitated due to injury",
+    "level": 4,
+    "parent_id": "united_india_individual_health_sec_0180",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "I. Dental treatment, necessitated due to injury",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0183",
+    "section_number": "II",
+    "title": "II. Plastic surgery necessitated due to disease or injury",
+    "level": 4,
+    "parent_id": "united_india_individual_health_sec_0180",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "II. Plastic surgery necessitated due to disease or injury",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "united_india_individual_health_sec_0184",
+    "section_number": "III",
+    "title": "III. All day care treatments as per standard definition no. 2.A.9",
+    "level": 4,
+    "parent_id": "united_india_individual_health_sec_0180",
+    "page_start": 6,
+    "page_end": 6,
+    "source_page_refs": [
+      6
+    ],
+    "heading_text": "III. All day care treatments as per standard definition no. 2.A.9",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-01",
+  "task_id": "DSE-012",
+  "reviewed_policies": 15,
+  "reports": [
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "insurer": "Tata AIG",
+      "plan_name": "Arogya Sanjeevani",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
+      "pages_reviewed": 28,
+      "structure_fallback": true,
+      "removed_sections": 0,
+      "added_heading_labels": 25,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 8,
+        "present": 12
+      },
+      "evidence_bearing_facts": 12,
+      "remaining_known_issues": [
+        "section_tree_manually_rebuilt_from_source_pdf"
+      ]
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "insurer": "Aditya Birla",
+      "plan_name": "Active Care",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
+      "pages_reviewed": 34,
+      "structure_fallback": true,
+      "removed_sections": 0,
+      "added_heading_labels": 80,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 3,
+        "present": 16
+      },
+      "evidence_bearing_facts": 17,
+      "remaining_known_issues": [
+        "section_tree_manually_rebuilt_from_source_pdf"
+      ]
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "insurer": "Niva Bupa",
+      "plan_name": "Health Recharge",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
+      "pages_reviewed": 45,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 5,
+        "present": 14
+      },
+      "evidence_bearing_facts": 15,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "insurer": "Royal Sundaram",
+      "plan_name": "Advanced Topup Health Insurance",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "pages_reviewed": 45,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 6,
+        "present": 14
+      },
+      "evidence_bearing_facts": 14,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "insurer": "Bajaj Allianz",
+      "plan_name": "Silver Health",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
+      "pages_reviewed": 33,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 6,
+        "present": 14
+      },
+      "evidence_bearing_facts": 14,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "reliance_health_gain",
+      "insurer": "Reliance",
+      "plan_name": "Health Gain",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
+      "pages_reviewed": 36,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 6,
+        "present": 14
+      },
+      "evidence_bearing_facts": 14,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "united_india_individual_health",
+      "insurer": "United India",
+      "plan_name": "Individual Health Insurance Policy - Platinum / Gold / Senior Citizen",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "pages_reviewed": 26,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 6,
+        "present": 14
+      },
+      "evidence_bearing_facts": 14,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "insurer": "Oriental",
+      "plan_name": "Cancer Protect",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "pages_reviewed": 44,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_applicable": 1,
+        "not_found": 10,
+        "present": 9
+      },
+      "evidence_bearing_facts": 9,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "insurer": "Cholamandalam",
+      "plan_name": "Flexi Max Protect",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
+      "pages_reviewed": 40,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 14,
+        "present": 6
+      },
+      "evidence_bearing_facts": 6,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "insurer": "Future Generali",
+      "plan_name": "FG Health Elite",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
+      "pages_reviewed": 38,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 2,
+        "not_found": 3,
+        "present": 15
+      },
+      "evidence_bearing_facts": 17,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "insurer": "IFFCO Tokio",
+      "plan_name": "Health Protector",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "12_IFFCO_Tokio/IFFCO_Tokio_Health_Protector.pdf",
+      "pages_reviewed": 45,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 6,
+        "present": 13
+      },
+      "evidence_bearing_facts": 14,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "insurer": "Kotak Mahindra",
+      "plan_name": "Kotak Health premier",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
+      "pages_reviewed": 60,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 2,
+        "not_found": 2,
+        "present": 16
+      },
+      "evidence_bearing_facts": 18,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "insurer": "SBI General",
+      "plan_name": "Arogya Sanjeevani",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+      "pages_reviewed": 29,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_found": 7,
+        "present": 13
+      },
+      "evidence_bearing_facts": 13,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "insurer": "Universal Sompo",
+      "plan_name": "Loan Secure",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
+      "pages_reviewed": 40,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "not_applicable": 1,
+        "not_found": 15,
+        "present": 4
+      },
+      "evidence_bearing_facts": 4,
+      "remaining_known_issues": []
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "insurer": "Liberty",
+      "plan_name": "Critical Connect",
+      "review_date": "2026-06-01",
+      "reviewer": "Avi-authorized Codex reviewer",
+      "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+      "pages_reviewed": 52,
+      "structure_fallback": false,
+      "removed_sections": 0,
+      "added_heading_labels": 0,
+      "fact_changes": [],
+      "fact_status_counts": {
+        "explicitly_not_covered": 1,
+        "not_applicable": 1,
+        "not_found": 12,
+        "present": 6
+      },
+      "evidence_bearing_facts": 7,
+      "remaining_known_issues": []
+    }
+  ]
+}

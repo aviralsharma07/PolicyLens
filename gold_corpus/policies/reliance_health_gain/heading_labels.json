@@ -1,0 +1,112 @@
+[
+  {
+    "label_id": "reliance_health_gain_heading_0701",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "3.1.1  HOSPITALIZATION EXPENSES",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_132",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_0995",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "3.2   COVER",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_44",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1155",
+    "source_section_id": null,
+    "page": 8,
+    "expected_text": "3.5  RENEWAL BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_106",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1157",
+    "source_section_id": null,
+    "page": 8,
+    "expected_text": "3.5.1  CUMULATIVE BONUS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p8l_107",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1531",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "3.5.3.1  ACCIDENTAL DEATH",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_53",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1540",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "3.5.3.4  HOSPITAL CASH",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_139",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1815",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "3.7  OPTIONAL COVERS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_42",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_1827",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "3.7.1  ENHANCED COVERS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_47",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_2026",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "3.7.7  HOSPITAL CASH",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_67",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_2488",
+    "source_section_id": null,
+    "page": 17,
+    "expected_text": "4.1.   STANDARD EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p17l_105",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "reliance_health_gain_heading_3133",
+    "source_section_id": null,
+    "page": 21,
+    "expected_text": "5.1.12. MORATORIUM PERIOD",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_122",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

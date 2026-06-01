@@ -1,0 +1,38 @@
+{
+  "slug": "united_india_individual_health",
+  "insurer": "United India",
+  "plan": "Individual Health Insurance Policy - Platinum / Gold / Senior Citizen",
+  "pages": 26,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 185,
+  "clauses": 407,
+  "tables": 20,
+  "facts_present": 4,
+  "facts_not_found": 16,
+  "heading_labels": 10,
+  "physical_table_labels": 20,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "4 present, 16 not_found. 4 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "20 semantic tables, 20 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "10 visual heading labels detected."
+    }
+  ]
+}

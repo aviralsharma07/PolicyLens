@@ -1,0 +1,192 @@
+[
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0000",
+    "source_table_id": "cholamandalam_flexi_max_protect_p1_t1",
+    "page": 1,
+    "bbox": [
+      39.48,
+      165.74,
+      565.08,
+      382.85
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0001",
+    "source_table_id": "cholamandalam_flexi_max_protect_p2_t1",
+    "page": 2,
+    "bbox": [
+      76.96581818181816,
+      628.4200050000003,
+      586.7785363636361,
+      716.2559799999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 18,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0002",
+    "source_table_id": "cholamandalam_flexi_max_protect_p3_t1",
+    "page": 3,
+    "bbox": [
+      76.94400000000005,
+      159.5,
+      586.7999900000002,
+      719.0226733333334
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 12,
+    "row_count": 35,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0003",
+    "source_table_id": "cholamandalam_flexi_max_protect_p4_t1",
+    "page": 4,
+    "bbox": [
+      76.94399999999997,
+      159.6533333333333,
+      586.7999899999996,
+      312.6140060000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 14,
+    "row_count": 11,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0007",
+    "source_table_id": "cholamandalam_flexi_max_protect_p8_t1",
+    "page": 8,
+    "bbox": [
+      144.02,
+      208.10000000000002,
+      540.09,
+      232.46000000000004
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0031",
+    "source_table_id": "cholamandalam_flexi_max_protect_p32_t1",
+    "page": 32,
+    "bbox": [
+      163.81999999999996,
+      520.3899799999999,
+      448.30000500000006,
+      710.49598
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 14,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0032",
+    "source_table_id": "cholamandalam_flexi_max_protect_p33_t1",
+    "page": 33,
+    "bbox": [
+      163.82489795918374,
+      159.53272727272727,
+      448.3000050000003,
+      464.54199600000004
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 24,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0034",
+    "source_table_id": "cholamandalam_flexi_max_protect_p35_t1",
+    "page": 35,
+    "bbox": [
+      72.26400000000001,
+      452.589995,
+      539.8599899999999,
+      698.67601
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0035",
+    "source_table_id": "cholamandalam_flexi_max_protect_p36_t1",
+    "page": 36,
+    "bbox": [
+      72.26399999999998,
+      159.5,
+      539.8599900000002,
+      701.7360100000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 10,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "cholamandalam_flexi_max_protect_phys_table_0036",
+    "source_table_id": "cholamandalam_flexi_max_protect_p37_t1",
+    "page": 37,
+    "bbox": [
+      72.19854545454547,
+      159.5,
+      539.8599899999999,
+      392.98999499999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

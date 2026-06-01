@@ -1,0 +1,32 @@
+[
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_heading_0006",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "2) OPERATIVECLAUSE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_15",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_heading_0247",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "4. COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_32",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "sbi_general_arogya_sanjeevani_heading_0401",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "7. EXCLUSIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_32",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

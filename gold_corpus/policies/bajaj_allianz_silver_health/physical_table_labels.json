@@ -1,0 +1,971 @@
+[
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0000",
+    "source_table_id": "bajaj_allianz_silver_health_p1_t1",
+    "page": 1,
+    "bbox": [
+      34.71724137931032,
+      36.0,
+      577.0652331666669,
+      741.216
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 57,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0001",
+    "source_table_id": "bajaj_allianz_silver_health_p2_t1",
+    "page": 2,
+    "bbox": [
+      34.56,
+      36.0,
+      577.5390000000004,
+      413.09
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 32,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0002",
+    "source_table_id": "bajaj_allianz_silver_health_p2_t2",
+    "page": 2,
+    "bbox": [
+      34.56,
+      421.12600000000003,
+      577.5390000000004,
+      750.456
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 28,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0003",
+    "source_table_id": "bajaj_allianz_silver_health_p3_t1",
+    "page": 3,
+    "bbox": [
+      34.56,
+      36.0,
+      577.5385245901643,
+      748.4159999999999
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 61,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0004",
+    "source_table_id": "bajaj_allianz_silver_health_p4_t1",
+    "page": 4,
+    "bbox": [
+      34.56000000000001,
+      36.0,
+      577.539409836066,
+      756.696
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 61,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0005",
+    "source_table_id": "bajaj_allianz_silver_health_p5_t1",
+    "page": 5,
+    "bbox": [
+      34.55999999999998,
+      36.0,
+      577.5400000000006,
+      522.9100000000001
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 41,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0006",
+    "source_table_id": "bajaj_allianz_silver_health_p5_t2",
+    "page": 5,
+    "bbox": [
+      20.4,
+      530.95,
+      577.5400000000006,
+      752.616
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 19,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0007",
+    "source_table_id": "bajaj_allianz_silver_health_p6_t1",
+    "page": 6,
+    "bbox": [
+      34.559999999999974,
+      36.0,
+      577.3286800000004,
+      567.31
+    ],
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 46,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0008",
+    "source_table_id": "bajaj_allianz_silver_health_p6_t2",
+    "page": 6,
+    "bbox": [
+      34.559999999999974,
+      567.31,
+      568.54,
+      707.136
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 12,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0009",
+    "source_table_id": "bajaj_allianz_silver_health_p6_t3",
+    "page": 6,
+    "bbox": [
+      34.559999999999974,
+      707.136,
+      577.3286800000004,
+      753.216
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0010",
+    "source_table_id": "bajaj_allianz_silver_health_p7_t1",
+    "page": 7,
+    "bbox": [
+      35.47636363636363,
+      36.0,
+      576.7335952,
+      750.9359999999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 11,
+    "row_count": 60,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0011",
+    "source_table_id": "bajaj_allianz_silver_health_p8_t1",
+    "page": 8,
+    "bbox": [
+      34.62545454545452,
+      36.0,
+      577.3860000000006,
+      726.096
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 60,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0012",
+    "source_table_id": "bajaj_allianz_silver_health_p9_t1",
+    "page": 9,
+    "bbox": [
+      34.59512195121948,
+      36.0,
+      577.4520000000007,
+      733.776
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 60,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0013",
+    "source_table_id": "bajaj_allianz_silver_health_p10_t1",
+    "page": 10,
+    "bbox": [
+      35.98628571428573,
+      36.0,
+      578.4113003076927,
+      487.51
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 38,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0014",
+    "source_table_id": "bajaj_allianz_silver_health_p10_t2",
+    "page": 10,
+    "bbox": [
+      35.98628571428573,
+      495.789995,
+      578.4113003076927,
+      741.216
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 14,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0015",
+    "source_table_id": "bajaj_allianz_silver_health_p11_t1",
+    "page": 11,
+    "bbox": [
+      36.27076923076923,
+      57.04,
+      577.5383500000003,
+      274.61
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 18,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0016",
+    "source_table_id": "bajaj_allianz_silver_health_p11_t2",
+    "page": 11,
+    "bbox": [
+      36.27076923076923,
+      282.65,
+      577.5383500000003,
+      745.296
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 38,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0017",
+    "source_table_id": "bajaj_allianz_silver_health_p12_t1",
+    "page": 12,
+    "bbox": [
+      52.559999999999974,
+      36.0,
+      577.5364406779661,
+      737.256
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 59,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0018",
+    "source_table_id": "bajaj_allianz_silver_health_p13_t1",
+    "page": 13,
+    "bbox": [
+      34.56,
+      36.0,
+      577.5370000000001,
+      374.57
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 29,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0019",
+    "source_table_id": "bajaj_allianz_silver_health_p13_t2",
+    "page": 13,
+    "bbox": [
+      34.56,
+      382.61,
+      577.5370000000001,
+      745.2959999999999
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 30,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0020",
+    "source_table_id": "bajaj_allianz_silver_health_p14_t1",
+    "page": 14,
+    "bbox": [
+      34.56,
+      36.0,
+      577.5374285714289,
+      748.3626844444444
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 12,
+    "row_count": 48,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0021",
+    "source_table_id": "bajaj_allianz_silver_health_p14_t2",
+    "page": 14,
+    "bbox": [
+      302.45,
+      562.4699999999999,
+      379.99399999999997,
+      585.67
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0022",
+    "source_table_id": "bajaj_allianz_silver_health_p14_t3",
+    "page": 14,
+    "bbox": [
+      387.90999999999997,
+      562.4699999999999,
+      470.134,
+      585.67
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0023",
+    "source_table_id": "bajaj_allianz_silver_health_p15_t1",
+    "page": 15,
+    "bbox": [
+      47.52,
+      36.0,
+      577.5354666666667,
+      154.97999666666666
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 10,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0024",
+    "source_table_id": "bajaj_allianz_silver_health_p15_t2",
+    "page": 15,
+    "bbox": [
+      474.10000999999994,
+      59.51999999999998,
+      542.14001,
+      107.53999999999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0025",
+    "source_table_id": "bajaj_allianz_silver_health_p15_t3",
+    "page": 15,
+    "bbox": [
+      86.42399999999999,
+      154.97999666666666,
+      525.6999900000001,
+      257.90074625
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 12,
+    "row_count": 8,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0026",
+    "source_table_id": "bajaj_allianz_silver_health_p15_t4",
+    "page": 15,
+    "bbox": [
+      90.384,
+      160.94000000000005,
+      300.1667738461537,
+      183.98000000000002
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0027",
+    "source_table_id": "bajaj_allianz_silver_health_p15_t5",
+    "page": 15,
+    "bbox": [
+      51.96,
+      257.90074625,
+      577.5354666666667,
+      736.056
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 41,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0028",
+    "source_table_id": "bajaj_allianz_silver_health_p16_t1",
+    "page": 16,
+    "bbox": [
+      56.519999999999996,
+      36.0,
+      577.5363157894736,
+      98.05999999999995
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0029",
+    "source_table_id": "bajaj_allianz_silver_health_p16_t2",
+    "page": 16,
+    "bbox": [
+      51.96,
+      106.10000000000002,
+      577.5363157894736,
+      736.776
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 52,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0030",
+    "source_table_id": "bajaj_allianz_silver_health_p17_t1",
+    "page": 17,
+    "bbox": [
+      34.56,
+      36.0,
+      577.5354444444445,
+      508.39
+    ],
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 41,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0031",
+    "source_table_id": "bajaj_allianz_silver_health_p17_t2",
+    "page": 17,
+    "bbox": [
+      34.56,
+      516.4300000000001,
+      577.5354444444445,
+      749.616
+    ],
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 20,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0032",
+    "source_table_id": "bajaj_allianz_silver_health_p18_t1",
+    "page": 18,
+    "bbox": [
+      34.55999999999998,
+      36.0,
+      577.5400000000006,
+      753.096
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 62,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0033",
+    "source_table_id": "bajaj_allianz_silver_health_p19_t1",
+    "page": 19,
+    "bbox": [
+      35.42709677419356,
+      36.0,
+      577.4794350000004,
+      731.5131514285715
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 13,
+    "row_count": 57,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0034",
+    "source_table_id": "bajaj_allianz_silver_health_p20_t1",
+    "page": 20,
+    "bbox": [
+      36.010434782608684,
+      36.720000000000006,
+      576.4749238805974,
+      753.096
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 10,
+    "row_count": 56,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0035",
+    "source_table_id": "bajaj_allianz_silver_health_p21_t1",
+    "page": 21,
+    "bbox": [
+      34.55999999999997,
+      36.0,
+      577.5398378378384,
+      383.69
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 30,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0036",
+    "source_table_id": "bajaj_allianz_silver_health_p21_t2",
+    "page": 21,
+    "bbox": [
+      34.55999999999997,
+      391.73,
+      577.5398378378384,
+      748.2959999999999
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 31,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0037",
+    "source_table_id": "bajaj_allianz_silver_health_p22_t1",
+    "page": 22,
+    "bbox": [
+      35.93714285714287,
+      36.0,
+      576.1636062650603,
+      747.7360066666666
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 50,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0038",
+    "source_table_id": "bajaj_allianz_silver_health_p23_t1",
+    "page": 23,
+    "bbox": [
+      36.24000000000001,
+      36.919999999999995,
+      575.85999,
+      742.2160066666665
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 48,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0039",
+    "source_table_id": "bajaj_allianz_silver_health_p24_t1",
+    "page": 24,
+    "bbox": [
+      36.24000000000001,
+      36.919999999999995,
+      575.8599900000002,
+      741.1759866666667
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 46,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0040",
+    "source_table_id": "bajaj_allianz_silver_health_p25_t1",
+    "page": 25,
+    "bbox": [
+      36.24000000000001,
+      36.919999999999995,
+      575.8599900000002,
+      748.6959866666666
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 46,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0041",
+    "source_table_id": "bajaj_allianz_silver_health_p26_t1",
+    "page": 26,
+    "bbox": [
+      36.14344827586208,
+      36.919999999999995,
+      575.9565422988506,
+      753.576
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 49,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0042",
+    "source_table_id": "bajaj_allianz_silver_health_p27_t1",
+    "page": 27,
+    "bbox": [
+      36.2993258426966,
+      36.0,
+      575.6274516279071,
+      745.1760099999998
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 49,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0043",
+    "source_table_id": "bajaj_allianz_silver_health_p28_t1",
+    "page": 28,
+    "bbox": [
+      37.40846715328468,
+      36.519999999999996,
+      575.6756192682928,
+      751.4560066666667
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 9,
+    "row_count": 50,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0044",
+    "source_table_id": "bajaj_allianz_silver_health_p29_t1",
+    "page": 29,
+    "bbox": [
+      35.838139534883716,
+      37.07999999999993,
+      577.54,
+      746.3759866666666
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 8,
+    "row_count": 46,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0045",
+    "source_table_id": "bajaj_allianz_silver_health_p30_t1",
+    "page": 30,
+    "bbox": [
+      37.2045112781955,
+      40.07999999999993,
+      577.54,
+      745.3760000000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 10,
+    "row_count": 55,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0046",
+    "source_table_id": "bajaj_allianz_silver_health_p31_t1",
+    "page": 31,
+    "bbox": [
+      34.56,
+      36.0,
+      577.54,
+      59.35999999999998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0047",
+    "source_table_id": "bajaj_allianz_silver_health_p31_t2",
+    "page": 31,
+    "bbox": [
+      89.2906666666667,
+      59.35999999999998,
+      538.4333288888885,
+      747.066005
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 73,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0048",
+    "source_table_id": "bajaj_allianz_silver_health_p32_t1",
+    "page": 32,
+    "bbox": [
+      89.29066666666671,
+      36.360000000000014,
+      538.4333288888888,
+      748.656005
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 87,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0049",
+    "source_table_id": "bajaj_allianz_silver_health_p33_t1",
+    "page": 33,
+    "bbox": [
+      89.29066666666668,
+      36.360000000000014,
+      538.4333288888885,
+      687.3795599999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 70,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "bajaj_allianz_silver_health_phys_table_0050",
+    "source_table_id": "bajaj_allianz_silver_health_p33_t2",
+    "page": 33,
+    "bbox": [
+      34.56,
+      687.3795599999999,
+      577.54,
+      744.73601
+    ],
+    "table_type": "network_list",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

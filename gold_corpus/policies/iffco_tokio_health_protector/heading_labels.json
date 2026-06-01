@@ -1,0 +1,92 @@
+[
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0020",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "1. Accident",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_36",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0025",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "3.Age",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_43",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0120",
+    "source_section_id": null,
+    "page": 4,
+    "expected_text": "22. Disease",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p4l_12",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0181",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "32. Illness",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_39",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0195",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "33.Injury",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_56",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0247",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "44.Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_13",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0270",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "50.Policy",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_45",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0329",
+    "source_section_id": null,
+    "page": 9,
+    "expected_text": "63. Renewal",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_16",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "iffco_tokio_health_protector_heading_0374",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "74. Waiting Period",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_24",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "label_id": "liberty_critical_connect_heading_1076",
+    "source_section_id": null,
+    "page": 21,
+    "expected_text": "9 Cover 25 Cover 43 Cover",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_29",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_heading_1593",
+    "source_section_id": null,
+    "page": 30,
+    "expected_text": "Part C: “Related”",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p30l_53",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_heading_1651",
+    "source_section_id": null,
+    "page": 32,
+    "expected_text": "Part A: Medical Exclusions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p32l_17",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_heading_1849",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "Part E: General Conditions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_64",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_heading_2571",
+    "source_section_id": null,
+    "page": 50,
+    "expected_text": "9 Cover 25 Cover 43 Cover",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p50l_63",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

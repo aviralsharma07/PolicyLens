@@ -1,0 +1,702 @@
+[
+  {
+    "table_id": "iffco_tokio_health_protector_p9_t1",
+    "page": 9,
+    "bbox": [
+      80.808,
+      418.96999999999997,
+      524.3033333333334,
+      448.48999999999995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p9_t2",
+    "page": 9,
+    "bbox": [
+      80.808,
+      694.29999,
+      524.3033333333334,
+      724.1199999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      9
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p13_t1",
+    "page": 13,
+    "bbox": [
+      59.664,
+      188.41999999999996,
+      551.3999899999999,
+      757.73098625
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      13
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p14_t1",
+    "page": 14,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      757.4910012500001
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p15_t1",
+    "page": 15,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      757.4910012500001
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      15
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p16_t1",
+    "page": 16,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      757.4910012500001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      16
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p17_t1",
+    "page": 17,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      740.61998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      17
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p18_t1",
+    "page": 18,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      740.61998
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      18
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p19_t1",
+    "page": 19,
+    "bbox": [
+      59.664,
+      72.2399999999999,
+      551.3999899999999,
+      566.3500099999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      19
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p25_t1",
+    "page": 25,
+    "bbox": [
+      90.26400000000001,
+      574.26998,
+      488.860005,
+      731.14001
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p26_t1",
+    "page": 26,
+    "bbox": [
+      100.58000000000001,
+      324.77001,
+      541.6799900000001,
+      427.7299949999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      26
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p27_t1",
+    "page": 27,
+    "bbox": [
+      110.42000000000002,
+      204.8599999999999,
+      405.9399899999999,
+      283.61000999999993
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      27
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p27_t2",
+    "page": 27,
+    "bbox": [
+      84.74400000000001,
+      477.18999499999995,
+      523.7208822222221,
+      554.47001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      27
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p28_t1",
+    "page": 28,
+    "bbox": [
+      113.18,
+      223.69999999999993,
+      393.07000500000004,
+      302.45000999999996
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      28
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p28_t2",
+    "page": 28,
+    "bbox": [
+      100.33999999999999,
+      454.49001,
+      476.1400049999999,
+      530.7099799999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      28
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p32_t1",
+    "page": 32,
+    "bbox": [
+      99.024,
+      623.9499799999999,
+      437.740005,
+      708.69998
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p38_t1",
+    "page": 38,
+    "bbox": [
+      73.50102127659585,
+      73.28399999999999,
+      499.72999784615405,
+      754.9634993750001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      38
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p39_t1",
+    "page": 39,
+    "bbox": [
+      73.50102127659585,
+      73.28399999999999,
+      499.63117441176485,
+      755.2079993333334
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      39
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p40_t1",
+    "page": 40,
+    "bbox": [
+      73.45184810126591,
+      73.28399999999999,
+      499.19958739726053,
+      747.2814563636363
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      40
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p41_t1",
+    "page": 41,
+    "bbox": [
+      72.94348051948053,
+      73.28399999999999,
+      499.6794715789473,
+      400.11153538461537
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      41
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p41_t2",
+    "page": 41,
+    "bbox": [
+      72.94348051948053,
+      532.9900150000001,
+      550.8000150000004,
+      746.7359849999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      41
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p42_t1",
+    "page": 42,
+    "bbox": [
+      72.34309090909092,
+      72.3599999999999,
+      550.8000149999999,
+      748.656015
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      42
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p43_t1",
+    "page": 43,
+    "bbox": [
+      72.34114285714287,
+      72.3599999999999,
+      550.8000150000003,
+      256.4599999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p43_t2",
+    "page": 43,
+    "bbox": [
+      72.34114285714287,
+      300.77,
+      560.1600149999996,
+      743.6159849999999
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      43
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p44_t1",
+    "page": 44,
+    "bbox": [
+      72.33784615384616,
+      72.3599999999999,
+      560.1600149999999,
+      209.77999999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      44
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p44_t2",
+    "page": 44,
+    "bbox": [
+      72.33784615384616,
+      254.05999999999995,
+      540.7200150000002,
+      626.949985
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      44
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p44_t3",
+    "page": 44,
+    "bbox": [
+      72.33784615384616,
+      671.2599849999999,
+      431.74000000000007,
+      747.575985
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      44
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "iffco_tokio_health_protector_p45_t1",
+    "page": 45,
+    "bbox": [
+      72.26400000000002,
+      72.3599999999999,
+      431.74000000000007,
+      288.89
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      45
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

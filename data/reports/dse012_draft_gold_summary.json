@@ -1,0 +1,192 @@
+{
+  "date": "2026-06-01",
+  "total_policies": 15,
+  "results": [
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 253,
+      "clauses": 590,
+      "tables": 51,
+      "facts": 20,
+      "heading_labels": 13,
+      "physical_table_labels": 51,
+      "known_issues": []
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 1,
+      "clauses": 0,
+      "tables": 0,
+      "facts": 20,
+      "heading_labels": 0,
+      "physical_table_labels": 0,
+      "known_issues": [
+        "section_tree_failed_or_degenerate",
+        "no_clauses_segmented"
+      ]
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 232,
+      "clauses": 516,
+      "tables": 18,
+      "facts": 20,
+      "heading_labels": 2,
+      "physical_table_labels": 18,
+      "known_issues": []
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 1,
+      "clauses": 0,
+      "tables": 24,
+      "facts": 20,
+      "heading_labels": 0,
+      "physical_table_labels": 24,
+      "known_issues": [
+        "section_tree_failed_or_degenerate",
+        "no_clauses_segmented"
+      ]
+    },
+    {
+      "slug": "reliance_health_gain",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 391,
+      "clauses": 747,
+      "tables": 36,
+      "facts": 20,
+      "heading_labels": 11,
+      "physical_table_labels": 36,
+      "known_issues": []
+    },
+    {
+      "slug": "united_india_individual_health",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 185,
+      "clauses": 407,
+      "tables": 20,
+      "facts": 20,
+      "heading_labels": 10,
+      "physical_table_labels": 20,
+      "known_issues": []
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 49,
+      "clauses": 403,
+      "tables": 18,
+      "facts": 20,
+      "heading_labels": 26,
+      "physical_table_labels": 18,
+      "known_issues": []
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 174,
+      "clauses": 462,
+      "tables": 10,
+      "facts": 20,
+      "heading_labels": 16,
+      "physical_table_labels": 10,
+      "known_issues": []
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 63,
+      "clauses": 414,
+      "tables": 38,
+      "facts": 20,
+      "heading_labels": 10,
+      "physical_table_labels": 38,
+      "known_issues": []
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 249,
+      "clauses": 485,
+      "tables": 28,
+      "facts": 20,
+      "heading_labels": 9,
+      "physical_table_labels": 28,
+      "known_issues": []
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 136,
+      "clauses": 860,
+      "tables": 34,
+      "facts": 20,
+      "heading_labels": 6,
+      "physical_table_labels": 34,
+      "known_issues": []
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 184,
+      "clauses": 503,
+      "tables": 18,
+      "facts": 20,
+      "heading_labels": 1,
+      "physical_table_labels": 18,
+      "known_issues": []
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 216,
+      "clauses": 408,
+      "tables": 17,
+      "facts": 20,
+      "heading_labels": 3,
+      "physical_table_labels": 17,
+      "known_issues": []
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 64,
+      "clauses": 124,
+      "tables": 16,
+      "facts": 20,
+      "heading_labels": 4,
+      "physical_table_labels": 16,
+      "known_issues": []
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "status": "draft_generated",
+      "files_written": 7,
+      "sections": 38,
+      "clauses": 360,
+      "tables": 41,
+      "facts": 20,
+      "heading_labels": 5,
+      "physical_table_labels": 41,
+      "known_issues": []
+    }
+  ]
+}

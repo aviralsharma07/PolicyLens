@@ -1,0 +1,902 @@
+[
+  {
+    "table_id": "reliance_health_gain_p10_t1",
+    "page": 10,
+    "bbox": [
+      36.25,
+      36.250194444444396,
+      298.0256,
+      570.8462999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      10
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p14_t1",
+    "page": 14,
+    "bbox": [
+      303.88780000000014,
+      36.25017999999996,
+      559.0256000000002,
+      179.82960000000003
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p14_t2",
+    "page": 14,
+    "bbox": [
+      36.25,
+      653.18018,
+      291.3878000000001,
+      800.8895
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      14
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p17_t1",
+    "page": 17,
+    "bbox": [
+      303.8878,
+      651.9800875,
+      559.0256,
+      699.31
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      17
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p18_t1",
+    "page": 18,
+    "bbox": [
+      36.25,
+      36.25019374999996,
+      291.3878,
+      748.2997999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      18
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p18_t2",
+    "page": 18,
+    "bbox": [
+      303.8878,
+      36.25019374999996,
+      559.0256,
+      232.23990000000003
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      18
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p21_t1",
+    "page": 21,
+    "bbox": [
+      36.25,
+      366.3800999999999,
+      291.4066999999999,
+      537.2792
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      21
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p24_t1",
+    "page": 24,
+    "bbox": [
+      303.8878,
+      371.1800875,
+      562.6633,
+      702.1697999999999
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      24
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p25_t1",
+    "page": 25,
+    "bbox": [
+      36.25,
+      36.25018749999995,
+      295.02560000000017,
+      773.1492
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p25_t2",
+    "page": 25,
+    "bbox": [
+      303.88780000000025,
+      36.25018749999995,
+      562.6633999999998,
+      496.4894
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      25
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p26_t1",
+    "page": 26,
+    "bbox": [
+      303.88785,
+      36.250138888888856,
+      559.0257,
+      109.30999999999995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      26
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p26_t2",
+    "page": 26,
+    "bbox": [
+      36.25,
+      180.3800611111111,
+      291.38784516129056,
+      767.3987666666665
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      26
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p27_t1",
+    "page": 27,
+    "bbox": [
+      336.0170666666667,
+      268.78009999999995,
+      559.2327411764711,
+      354.2296999999999
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      27
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p27_t2",
+    "page": 27,
+    "bbox": [
+      36.25,
+      469.07789375000016,
+      559.2327411764711,
+      777.5171000000003
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      27
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p28_t1",
+    "page": 28,
+    "bbox": [
+      36.25,
+      36.25019999999995,
+      559.0256000000005,
+      779.0584999999998
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      28
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p29_t1",
+    "page": 29,
+    "bbox": [
+      36.25,
+      36.25019999999995,
+      559.0256000000005,
+      752.7286000000003
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      29
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p30_t1",
+    "page": 30,
+    "bbox": [
+      36.25,
+      36.25019999999995,
+      559.0256000000006,
+      495.32869999999997
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      30
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p30_t2",
+    "page": 30,
+    "bbox": [
+      5.368899999999997,
+      568.1785000000006,
+      589.9066999999997,
+      796.4778000000003
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      30
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p31_t1",
+    "page": 31,
+    "bbox": [
+      6.369599999999998,
+      35.248597826086936,
+      592.3547999999997,
+      264.8377999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      31
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p31_t2",
+    "page": 31,
+    "bbox": [
+      32.9017,
+      290.9784916666667,
+      557.0147000000002,
+      398.02799999999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      31
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p31_t3",
+    "page": 31,
+    "bbox": [
+      32.9017,
+      531.727996153846,
+      557.0147000000002,
+      661.9671999999996
+    ],
+    "table_type": "schedule_of_benefits",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      31
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p31_t4",
+    "page": 31,
+    "bbox": [
+      32.9017,
+      729.66719375,
+      557.0147000000002,
+      789.3868000000001
+    ],
+    "table_type": "room_rent",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      31
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p32_t1",
+    "page": 32,
+    "bbox": [
+      4.054381818181816,
+      36.250197727272685,
+      591.2212666666662,
+      268.6196
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p32_t2",
+    "page": 32,
+    "bbox": [
+      4.054381818181816,
+      279.91969500000016,
+      591.2212666666662,
+      509.5087999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p32_t3",
+    "page": 32,
+    "bbox": [
+      303.88780000000025,
+      532.558875,
+      557.8982450000004,
+      802.4373
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p32_t4",
+    "page": 32,
+    "bbox": [
+      36.25,
+      566.288775,
+      291.3878000000002,
+      802.4373
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      32
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p33_t1",
+    "page": 33,
+    "bbox": [
+      36.25,
+      36.25019999999998,
+      291.38780000000037,
+      625.1864
+    ],
+    "table_type": "claims_documents",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p33_t2",
+    "page": 33,
+    "bbox": [
+      303.88780000000037,
+      36.25019999999998,
+      559.0256000000007,
+      454.28749999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p33_t3",
+    "page": 33,
+    "bbox": [
+      303.88780000000037,
+      494.387475,
+      559.0256000000007,
+      792.9855
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p33_t4",
+    "page": 33,
+    "bbox": [
+      36.25,
+      648.4864749999999,
+      291.38780000000037,
+      797.7855
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      33
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p34_t1",
+    "page": 34,
+    "bbox": [
+      36.25,
+      36.25019999999998,
+      291.38780000000014,
+      95.96979999999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p34_t2",
+    "page": 34,
+    "bbox": [
+      303.88780000000025,
+      36.25019999999998,
+      559.0256000000006,
+      241.139
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p34_t3",
+    "page": 34,
+    "bbox": [
+      36.25,
+      136.3496875,
+      291.38780000000014,
+      247.24919999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p34_t4",
+    "page": 34,
+    "bbox": [
+      36.25,
+      281.180175,
+      559.0256000000006,
+      762.0002999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      34
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p35_t1",
+    "page": 35,
+    "bbox": [
+      27.25,
+      36.25022499999997,
+      550.0256000000004,
+      661.8296
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      35
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "table_id": "reliance_health_gain_p36_t1",
+    "page": 36,
+    "bbox": [
+      36.25,
+      74.78016249999996,
+      559.0256000000005,
+      783.0785999999999
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "parent_clause_id": null,
+    "source_page_refs": [
+      36
+    ],
+    "evidence_text": null,
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "cell_coordinates_status": "pipeline_detected",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

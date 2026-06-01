@@ -1,0 +1,872 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 48
+    },
+    "normalized_value_json": {
+      "months": 48
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 9,
+    "evidence_text": "he Company shall not be liable to make any payment under the policy in connection with or in respect of any expenses till the expiry of waiting period mentioned below: 4.1 Pre-Existing Disease (Code- Excl01): i. Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. ii. In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. iii. If the Insured Person is continuously covered w",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 9,
+    "evidence_text": "rosis unless necessitated due to an accident. Age-related Macular Degeneration (ARMD) All Neurodegenerative disorders 4.3 First Thirty Days Waiting Period (Code- Excl03): i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. ii. This exc",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        },
+        {
+          "months": 48
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24,
+        48
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 9,
+    "evidence_text": "the policy after the expiry of 48 months for any pre-existing disease is subject to the same being declared at the time of application and accepted by us. 4.2 Specific Disease/ Procedure Waiting Period (Code- Excl02): i. Expenses related to the treatment of the listed Conditions, surgeries/treatments as per Table A and Table B below, shall be excluded until the expiry of 24 months and 48 months respectively of continuous coverage after the date of inception of the first policy with us. This exclusion shall not be applicable for claims arising due to an accident. ii. In case of enhancement of sum insured the exclusion",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "percentage": 1
+    },
+    "normalized_value_json": {
+      "percentage": 1
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 20,
+    "evidence_text": "Lakh and 20 Lakh Policy Period 1 Year Base Cover Room Rent 1% of SI 1% of SI 1% of SI ICU/ICCU 2% of SI 2% of SI 2% of SI Proportionate Deduction",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "ave otherwise required a hospitalisation of more than twenty-four hours. Treatment normally taken on an out-patient basis is not included in the scope of this definition. 10. DEDUCTIBLE is a cost sharing requirement under a Health Insurance Policy that provides that the Insurer will not be liable for a specified rupee amount in case of Indemnity policies and for a specified number of days/hours in case of hospital cash policies which will apply before any benefits are payable by the Insurer. A deductible does not reduce the sum insured. 11. DENTAL TREATMENT means a treatment related to teeth or structures supporting teeth including examinations,",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: deductible search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "n continuous period of illness and it includes relapse within 45 days from the date of last consultation with the Hospital / Nursing Home where treatment has been taken. 3. AYUSH HOSPITAL is a healthcare facility wherein medical/surgical/para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising any of the following i. Central or State Government AYUSH Hospital; or ii. Teaching hospital attached to AYUSH College recognised by the Centr",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "t to the condition that the hospitalisation expenses are admissible only when the treatment has been undergone in an AYUSH Hospital as defined in Clause 2.A.3 above. 3.5 Modern Treatment Methods & Advancement in Technologies In case of an admissible claim under section 3.1, expenses incurred on the following procedures (wherever medically indicated) either as in-patient or as part of day care treatment in a hospital, shall be covered. The claim shall be subject to additional sub- limits indicated against them in the table below: Sr. No. Modern Treatment Methods & Limits Advancem",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "normalized_value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 20,
+    "evidence_text": "2% of SI 2% of SI Proportionate Deduction Applicable Applicable Applicable Organ Donor Medical Expenses Covered Covered Covered Day Care Treatments All as per Definition All as per Definition All as per Definition",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: organ donor coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "amount": 3,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "amount": 3,
+      "currency": "INR"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 8,
+    "evidence_text": "prejudice the Company's right to deal with a claim in case of non-disclosure of material fact and/or Pre-Existing Diseases in terms of the policy. OPTIONAL COVERS 3.7 Road Ambulance Cover We will cover the costs incurred up to Rs. 2500 per person per policy period on transportation of the Insured Person by road Ambulance to a Hospital for treatment in an Emergency following an Illness or Injury which occurs during the Policy Period. The necess",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "months": 3
+    },
+    "normalized_value_json": {
+      "months": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "of IRDAI, may revise or modify the terms of the policy including the premium rates. The Insured Person shall be notified three months before the changes are effected. 5.14 Free Look Period The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The Insured Person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. If the Insured has not made any claim during the Free Look Period, the Insured shall be entitled to: i. A refund of th",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "uisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience. 5.11 Withdrawal of Policy i. In the likelihood of",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 4,
+    "evidence_text": "provider and consistent with the prevailing charges in the geographical area for identical or similar services, taking into account the nature of illness/injury involved. 35. RENEWAL defines the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of all waiting periods. 36. ROOM RENT shall mean the amount charged by a hospital towards room and boarding expenses basis and shall include associated medical expens",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "ion, non-disclosure of material facts by the Insured Person. i. The Company shall endeavour to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii. Renewal shall not be denied on the ground that the Insured Person had made a claim or claims in the preceding policy years. iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience. 5.11 Withdrawal of Policy i. In the likelihood of",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 15,
+    "evidence_text": "to the legal heirs or legal representatives of the policyholder whose discharge shall be treated as full and final discharge of its liability under the policy. 5.17 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest to the Policyholder from the date of receipt of last necessary document to the date",
+    "source_document": {
+      "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
+      "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "document_id": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "uin": "UIIHLIP22180V042122"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]

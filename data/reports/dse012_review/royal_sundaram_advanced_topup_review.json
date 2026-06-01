@@ -1,0 +1,43 @@
+{
+  "slug": "royal_sundaram_advanced_topup",
+  "insurer": "Royal Sundaram",
+  "plan": "Advanced Topup Health Insurance",
+  "pages": 45,
+  "status": "analyzed",
+  "priority": "high",
+  "sections": 184,
+  "clauses": 503,
+  "tables": 18,
+  "facts_present": 3,
+  "facts_not_found": 17,
+  "heading_labels": 1,
+  "physical_table_labels": 18,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "3 present, 17 not_found. 3 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "18 semantic tables, 18 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "1 visual heading labels detected."
+    },
+    {
+      "category": "WARNING",
+      "area": "headings_low",
+      "detail": "Only 1 heading labels detected despite 184 sections. Heading scorer may have missed visual headings in this document format."
+    }
+  ]
+}

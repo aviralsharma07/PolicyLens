@@ -1,0 +1,62 @@
+[
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_0007",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "PART I",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_21",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_0008",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "1. DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_23",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_0401",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "PART II",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_46",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_1329",
+    "source_section_id": null,
+    "page": 26,
+    "expected_text": "5. CLAIMS PROCEDURE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p26l_10",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_1791",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "PART III",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_39",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "kotak_mahindra_health_premier_heading_1968",
+    "source_section_id": null,
+    "page": 39,
+    "expected_text": "17. Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p39l_37",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "label_id": "united_india_individual_health_heading_0005",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "Policy Terms & Conditions",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_14",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0006",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "1.PREAMBLE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_17",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0017",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "2.DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_32",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0252",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "3.COVERAGE",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_57",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0444",
+    "source_section_id": null,
+    "page": 9,
+    "expected_text": "4.PERMANENT EXCLUSIONS & WAITING PERIODS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p9l_16",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0599",
+    "source_section_id": null,
+    "page": 12,
+    "expected_text": "5.GENERAL TERMS & CLAUSES",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p12l_21",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0663",
+    "source_section_id": null,
+    "page": 13,
+    "expected_text": "5.8 Migration",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p13l_47",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0768",
+    "source_section_id": null,
+    "page": 15,
+    "expected_text": "5.18 Premium",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_56",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0773",
+    "source_section_id": null,
+    "page": 15,
+    "expected_text": "5.19 Discount",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_66",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "united_india_individual_health_heading_0799",
+    "source_section_id": null,
+    "page": 16,
+    "expected_text": "5.21 Claims Procedure",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p16l_33",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "slug": "liberty_critical_connect",
+  "insurer": "Liberty",
+  "plan_name": "Critical Connect",
+  "review_date": "2026-06-01",
+  "reviewer": "Avi-authorized Codex reviewer",
+  "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
+  "pages_reviewed": 52,
+  "structure_fallback": false,
+  "removed_sections": 0,
+  "added_heading_labels": 0,
+  "fact_changes": [],
+  "fact_status_counts": {
+    "explicitly_not_covered": 1,
+    "not_applicable": 1,
+    "not_found": 12,
+    "present": 6
+  },
+  "evidence_bearing_facts": 7,
+  "remaining_known_issues": []
+}

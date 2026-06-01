@@ -1,0 +1,31 @@
+{
+  "eval_name": "gold-corpus-dse012-reviewed",
+  "date": "2026-06-01",
+  "task_id": "DSE-012",
+  "git_commit": "pending",
+  "input_manifest": "data/manifests/dse012_gold_expansion_candidates_v1.json",
+  "metrics": {
+    "policies": 20,
+    "reviewed_policies": 20,
+    "draft_policies": 0,
+    "json_files": 140,
+    "sections": 2739,
+    "clauses": 6251,
+    "tables": 395,
+    "physical_table_labels": 387,
+    "heading_labels": 322,
+    "facts": 400,
+    "status_counts": {
+      "present": 257,
+      "explicitly_not_covered": 11,
+      "not_applicable": 5,
+      "not_found": 127
+    },
+    "source_pdf_human_reviewed_new_policies": 15,
+    "original_reviewed_policies_unchanged": true,
+    "draft_markers_remaining": 0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "Gold corpus validator passed after DSE-012 source-PDF human review. Expanded parser evals are recorded separately and expose deferred parser remediation needs."
+}

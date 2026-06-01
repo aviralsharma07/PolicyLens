@@ -1,0 +1,781 @@
+[
+  {
+    "label_id": "liberty_critical_connect_phys_table_0007",
+    "source_table_id": "liberty_critical_connect_p18_t1",
+    "page": 18,
+    "bbox": [
+      63.104000000000006,
+      673.0589900000001,
+      605.2000133333332,
+      710.976005
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 9,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0008",
+    "source_table_id": "liberty_critical_connect_p19_t1",
+    "page": 19,
+    "bbox": [
+      63.072,
+      123.11899999999999,
+      605.232016,
+      707.49598
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 32,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0009",
+    "source_table_id": "liberty_critical_connect_p20_t1",
+    "page": 20,
+    "bbox": [
+      63.07938461538462,
+      123.13999999999999,
+      605.2246307692308,
+      544.173988
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 23,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0010",
+    "source_table_id": "liberty_critical_connect_p21_t1",
+    "page": 21,
+    "bbox": [
+      72.34400000000001,
+      343.18999749999995,
+      571.5366600000001,
+      717.0087327272727
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 9,
+    "row_count": 45,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0011",
+    "source_table_id": "liberty_critical_connect_p22_t1",
+    "page": 22,
+    "bbox": [
+      72.34400000000001,
+      123.13999999999999,
+      571.53666,
+      458.49399700000004
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 24,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0012",
+    "source_table_id": "liberty_critical_connect_p22_t2",
+    "page": 22,
+    "bbox": [
+      77.664,
+      123.13999999999999,
+      170.06400000000002,
+      164.012
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0013",
+    "source_table_id": "liberty_critical_connect_p22_t3",
+    "page": 22,
+    "bbox": [
+      180.86000000000004,
+      123.13999999999999,
+      336.67,
+      259.13
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 10,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0014",
+    "source_table_id": "liberty_critical_connect_p22_t4",
+    "page": 22,
+    "bbox": [
+      72.34400000000001,
+      688.7780049999998,
+      539.77666,
+      717.336005
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 12,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0015",
+    "source_table_id": "liberty_critical_connect_p23_t1",
+    "page": 23,
+    "bbox": [
+      72.34400000000001,
+      123.14249999999998,
+      539.77666,
+      716.52368
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 8,
+    "row_count": 44,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0016",
+    "source_table_id": "liberty_critical_connect_p23_t2",
+    "page": 23,
+    "bbox": [
+      77.66400000000007,
+      123.14249999999998,
+      188.06400000000014,
+      374.45
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 19,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0017",
+    "source_table_id": "liberty_critical_connect_p23_t3",
+    "page": 23,
+    "bbox": [
+      198.89,
+      123.14249999999998,
+      287.09,
+      162.38
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0018",
+    "source_table_id": "liberty_critical_connect_p23_t4",
+    "page": 23,
+    "bbox": [
+      297.88999999999993,
+      123.14249999999998,
+      390.674,
+      282.49
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 12,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0019",
+    "source_table_id": "liberty_critical_connect_p23_t5",
+    "page": 23,
+    "bbox": [
+      198.89,
+      395.12352190476184,
+      287.09,
+      463.27
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0020",
+    "source_table_id": "liberty_critical_connect_p25_t1",
+    "page": 25,
+    "bbox": [
+      74.47200000000001,
+      209.89999749999998,
+      542.210016,
+      245.77999999999997
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0021",
+    "source_table_id": "liberty_critical_connect_p26_t1",
+    "page": 26,
+    "bbox": [
+      98.86500000000001,
+      192.51000000000002,
+      121.685,
+      227.04999999999995
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0022",
+    "source_table_id": "liberty_critical_connect_p28_t1",
+    "page": 28,
+    "bbox": [
+      72.26400000000001,
+      328.49001,
+      581.8599899999999,
+      679.05998
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0023",
+    "source_table_id": "liberty_critical_connect_p29_t1",
+    "page": 29,
+    "bbox": [
+      72.26399999999995,
+      123.01999999999998,
+      581.85999,
+      710.73601
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 18,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0024",
+    "source_table_id": "liberty_critical_connect_p30_t1",
+    "page": 30,
+    "bbox": [
+      72.26400000000001,
+      123.01999999999998,
+      581.8599899999999,
+      217.58000000000013
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0025",
+    "source_table_id": "liberty_critical_connect_p30_t2",
+    "page": 30,
+    "bbox": [
+      90.26399999999998,
+      296.21001,
+      539.8599899999999,
+      543.91001
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 8,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0026",
+    "source_table_id": "liberty_critical_connect_p31_t1",
+    "page": 31,
+    "bbox": [
+      63.104000000000006,
+      292.01000500000004,
+      605.2000133333332,
+      454.29399699999993
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 9,
+    "row_count": 13,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0027",
+    "source_table_id": "liberty_critical_connect_p34_t1",
+    "page": 34,
+    "bbox": [
+      141.98000499999998,
+      201.259995,
+      474.57999500000005,
+      373.249995
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 12,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0028",
+    "source_table_id": "liberty_critical_connect_p34_t2",
+    "page": 34,
+    "bbox": [
+      72.26399999999997,
+      387.289995,
+      544.2999899999996,
+      695.4959800000003
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 10,
+    "row_count": 13,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0030",
+    "source_table_id": "liberty_critical_connect_p37_t1",
+    "page": 37,
+    "bbox": [
+      108.25999999999999,
+      376.729995,
+      544.29999,
+      415.369995
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 3,
+    "row_count": 3,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0031",
+    "source_table_id": "liberty_critical_connect_p38_t1",
+    "page": 38,
+    "bbox": [
+      312.9554472727273,
+      427.9299975,
+      544.2318109090909,
+      511.6699966666667
+    ],
+    "table_type": "premium",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0033",
+    "source_table_id": "liberty_critical_connect_p44_t1",
+    "page": 44,
+    "bbox": [
+      72.26400000000001,
+      352.969995,
+      553.4199900000001,
+      686.1400100000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 4,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0034",
+    "source_table_id": "liberty_critical_connect_p45_t1",
+    "page": 45,
+    "bbox": [
+      72.26399999999997,
+      123.01999999999998,
+      553.4199900000002,
+      707.37598
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0035",
+    "source_table_id": "liberty_critical_connect_p46_t1",
+    "page": 46,
+    "bbox": [
+      72.26399999999997,
+      123.01999999999998,
+      553.4199900000002,
+      715.29601
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 7,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0036",
+    "source_table_id": "liberty_critical_connect_p47_t1",
+    "page": 47,
+    "bbox": [
+      72.26399999999998,
+      123.01999999999998,
+      553.4199900000001,
+      679.66001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0037",
+    "source_table_id": "liberty_critical_connect_p48_t1",
+    "page": 48,
+    "bbox": [
+      72.27288888888886,
+      123.01999999999998,
+      553.4199899999999,
+      278.92999499999996
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 2,
+    "row_count": 2,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0038",
+    "source_table_id": "liberty_critical_connect_p48_t2",
+    "page": 48,
+    "bbox": [
+      72.27288888888886,
+      559.390005,
+      562.5255199999999,
+      706.0559800000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 4,
+    "row_count": 8,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0039",
+    "source_table_id": "liberty_critical_connect_p49_t1",
+    "page": 49,
+    "bbox": [
+      72.27048648648643,
+      123.01999999999998,
+      562.5215292307688,
+      704.49598
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 8,
+    "row_count": 17,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0040",
+    "source_table_id": "liberty_critical_connect_p50_t1",
+    "page": 50,
+    "bbox": [
+      72.29599999999996,
+      123.01999999999998,
+      562.5194908333331,
+      399.649995
+    ],
+    "table_type": "waiting_period",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 6,
+    "row_count": 11,
+    "priority": true,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0041",
+    "source_table_id": "liberty_critical_connect_p50_t2",
+    "page": 50,
+    "bbox": [
+      72.29599999999996,
+      442.99000499999994,
+      571.5366600000001,
+      716.0400060000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 9,
+    "row_count": 31,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0042",
+    "source_table_id": "liberty_critical_connect_p51_t1",
+    "page": 51,
+    "bbox": [
+      72.34400000000001,
+      123.13999999999999,
+      571.53666,
+      557.1340060000001
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 5,
+    "row_count": 31,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0043",
+    "source_table_id": "liberty_critical_connect_p51_t2",
+    "page": 51,
+    "bbox": [
+      77.664,
+      123.13999999999999,
+      170.06400000000005,
+      202.86
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 6,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0044",
+    "source_table_id": "liberty_critical_connect_p51_t3",
+    "page": 51,
+    "bbox": [
+      180.86000000000007,
+      123.13999999999999,
+      336.67,
+      396.77
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 20,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0045",
+    "source_table_id": "liberty_critical_connect_p51_t4",
+    "page": 51,
+    "bbox": [
+      72.34400000000001,
+      626.49999,
+      539.77666,
+      712.6836984615383
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 12,
+    "row_count": 6,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0046",
+    "source_table_id": "liberty_critical_connect_p52_t1",
+    "page": 52,
+    "bbox": [
+      72.34400000000001,
+      123.13466666666665,
+      539.77666,
+      659.0476984615385
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 8,
+    "row_count": 40,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0047",
+    "source_table_id": "liberty_critical_connect_p52_t2",
+    "page": 52,
+    "bbox": [
+      77.66400000000006,
+      123.13466666666665,
+      188.0640000000001,
+      306.53
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 14,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0048",
+    "source_table_id": "liberty_critical_connect_p52_t3",
+    "page": 52,
+    "bbox": [
+      297.88999999999993,
+      123.13466666666665,
+      390.674,
+      257.09000000000003
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 10,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "liberty_critical_connect_phys_table_0049",
+    "source_table_id": "liberty_critical_connect_p52_t4",
+    "page": 52,
+    "bbox": [
+      198.89,
+      337.6442895238096,
+      287.09,
+      405.6499999999999
+    ],
+    "table_type": "unknown",
+    "headers": [],
+    "rows": [],
+    "header_rows": [],
+    "column_count": 1,
+    "row_count": 5,
+    "priority": false,
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

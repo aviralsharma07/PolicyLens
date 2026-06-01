@@ -1,0 +1,38 @@
+{
+  "slug": "future_generali_health_elite",
+  "insurer": "Future Generali",
+  "plan": "FG Health Elite",
+  "pages": 38,
+  "status": "analyzed",
+  "priority": "normal",
+  "sections": 63,
+  "clauses": 414,
+  "tables": 38,
+  "facts_present": 1,
+  "facts_not_found": 19,
+  "heading_labels": 10,
+  "physical_table_labels": 38,
+  "known_issues": [],
+  "findings": [
+    {
+      "category": "INFO",
+      "area": "facts_summary",
+      "detail": "1 present, 19 not_found. 1 from extractors, 15 need manual annotation."
+    },
+    {
+      "category": "ACTION",
+      "area": "facts_manual_required",
+      "detail": "15 concepts have no extractor. All are marked not_found and need manual search: specific_disease_waiting_periods, room_rent_limit, icu_limit, deductible, cumulative_bonus_ncb..."
+    },
+    {
+      "category": "INFO",
+      "area": "tables",
+      "detail": "38 semantic tables, 38 physical table labels detected."
+    },
+    {
+      "category": "INFO",
+      "area": "headings",
+      "detail": "10 visual heading labels detected."
+    }
+  ]
+}

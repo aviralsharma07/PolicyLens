@@ -1,0 +1,2687 @@
+[
+  {
+    "section_id": "royal_sundaram_advanced_topup_root_0000",
+    "section_number": null,
+    "title": "Document root",
+    "level": 0,
+    "parent_id": null,
+    "page_start": 1,
+    "page_end": 45,
+    "source_page_refs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "heading_text": "Document root",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0001",
+    "section_number": null,
+    "title": "Part II- Policy Document",
+    "level": 1,
+    "parent_id": "royal_sundaram_advanced_topup_root_0000",
+    "page_start": 1,
+    "page_end": 1,
+    "source_page_refs": [
+      1
+    ],
+    "heading_text": "Part II- Policy Document",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0016",
+    "section_number": "1",
+    "title": "1. Cancer of Specified Severity",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "1. Cancer of Specified Severity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0017",
+    "section_number": "2",
+    "title": "2. First Heart Attack of Specified Severity",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "2. First Heart Attack of Specified Severity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0018",
+    "section_number": "3",
+    "title": "3. Open Chest CABG",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "3. Open Chest CABG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0019",
+    "section_number": "4",
+    "title": "4. Open Heart Replacement or Repair of Heart Valves",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "4. Open Heart Replacement or Repair of Heart Valves",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0020",
+    "section_number": "5",
+    "title": "5. Coma of Specified Severity",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "5. Coma of Specified Severity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0021",
+    "section_number": "6",
+    "title": "6. Kidney Failure requiring Regular Dialysis",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "6. Kidney Failure requiring Regular Dialysis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0022",
+    "section_number": "7",
+    "title": "7. Stroke resulting in Permanent Symptoms",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "7. Stroke resulting in Permanent Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0023",
+    "section_number": "8",
+    "title": "8. Major Organ/Bone Marrow Transplant",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "8. Major Organ/Bone Marrow Transplant",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0024",
+    "section_number": "9",
+    "title": "9. Permanent paralysis of Limbs",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "9. Permanent paralysis of Limbs",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0025",
+    "section_number": "10",
+    "title": "10. Motor Neurone Disease with Permanent Symptoms",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "10. Motor Neurone Disease with Permanent Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0026",
+    "section_number": "11",
+    "title": "11. Multiple Sclerosis with Persisting Symptoms",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "11. Multiple Sclerosis with Persisting Symptoms",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0027",
+    "section_number": "12",
+    "title": "12. Angioplasty",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "12. Angioplasty",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0028",
+    "section_number": "13",
+    "title": "13. Benign brain Tumor",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "13. Benign brain Tumor",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0029",
+    "section_number": "14",
+    "title": "14. Blindness",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "14. Blindness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0030",
+    "section_number": "15",
+    "title": "15. Deafness",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "15. Deafness",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0031",
+    "section_number": "16",
+    "title": "16. End stage lung Failure",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "16. End stage lung Failure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0032",
+    "section_number": "17",
+    "title": "17. End stage liver failure",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "17. End stage liver failure",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0033",
+    "section_number": "18",
+    "title": "18. Loss of speech",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "18. Loss of speech",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0034",
+    "section_number": "19",
+    "title": "19. Loss of limbs",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "19. Loss of limbs",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0035",
+    "section_number": "20",
+    "title": "20. Major head trauma",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "20. Major head trauma",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0036",
+    "section_number": "21",
+    "title": "21. Primary (idiopathic) pulmonary hypertension",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "21. Primary (idiopathic) pulmonary hypertension",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0037",
+    "section_number": "22",
+    "title": "22. Third degree burns",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 15,
+    "page_end": 15,
+    "source_page_refs": [
+      15
+    ],
+    "heading_text": "22. Third degree burns",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0041",
+    "section_number": "1",
+    "title": "1. Surgery to be conducted is upon the advice of the Doctor",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "1. Surgery to be conducted is upon the advice of the Doctor",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0042",
+    "section_number": "2",
+    "title": "2. The surgery/Procedure conducted should be supported by clinical",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "2. The surgery/Procedure conducted should be supported by clinical",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0043",
+    "section_number": "3",
+    "title": "3. The member has to be 18 years of age or older and",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "3. The member has to be 18 years of age or older and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0044",
+    "section_number": "4",
+    "title": "4. Body Mass Index (BMI);",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 18,
+    "page_end": 18,
+    "source_page_refs": [
+      18
+    ],
+    "heading_text": "4. Body Mass Index (BMI);",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0047",
+    "section_number": "1",
+    "title": "1. Sarcoidosis D86.0-D86.9",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "1. Sarcoidosis D86.0-D86.9",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0048",
+    "section_number": "2",
+    "title": "2. Malignant Neoplasms C00-C14 Malignant neoplasms of lip, oral cavity",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "2. Malignant Neoplasms C00-C14 Malignant neoplasms of lip, oral cavity",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0049",
+    "section_number": "3",
+    "title": "3. Epilepsy G40 Epilepsy",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "3. Epilepsy G40 Epilepsy",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0050",
+    "section_number": "4",
+    "title": "4. Heart Ailment Congenital heart I49 Other cardiac arrhythmias, (I20-",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 20,
+    "page_end": 20,
+    "source_page_refs": [
+      20
+    ],
+    "heading_text": "4. Heart Ailment Congenital heart I49 Other cardiac arrhythmias, (I20-",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0052",
+    "section_number": "5",
+    "title": "5. Cerebrovascular disease (Stroke) I67 Other cerebrovascular diseases, (I60-I69)",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "5. Cerebrovascular disease (Stroke) I67 Other cerebrovascular diseases, (I60-I69)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0053",
+    "section_number": "6",
+    "title": "6. Inflammatory Bowel K 50.0 to K 50.9 (including Crohn's and",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "6. Inflammatory Bowel K 50.0 to K 50.9 (including Crohn's and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0054",
+    "section_number": "7",
+    "title": "7. Chronic Liver diseases K70.0 To K74.6 Fibrosis and cirrhosis of liver;",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "7. Chronic Liver diseases K70.0 To K74.6 Fibrosis and cirrhosis of liver;",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0055",
+    "section_number": "8",
+    "title": "8. Pancreatic diseases K85-Acute pancreatitis; (Q 45.0 to Q 45.1)",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "8. Pancreatic diseases K85-Acute pancreatitis; (Q 45.0 to Q 45.1)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0056",
+    "section_number": "9",
+    "title": "9. Chronic Kidney disease N17-N19) Renal failure; I12.0 - Hypertensive",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 21,
+    "page_end": 21,
+    "source_page_refs": [
+      21
+    ],
+    "heading_text": "9. Chronic Kidney disease N17-N19) Renal failure; I12.0 - Hypertensive",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0058",
+    "section_number": "10",
+    "title": "10. Hepatitis B B16.0 - Acute hepatitis B with delta-agent",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "10. Hepatitis B B16.0 - Acute hepatitis B with delta-agent",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0059",
+    "section_number": "11",
+    "title": "11. Alzheimer's Disease, Parkinson's G30.9 - Alzheimer's disease, unspecified; F00.9",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "11. Alzheimer's Disease, Parkinson's G30.9 - Alzheimer's disease, unspecified; F00.9",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0060",
+    "section_number": "12",
+    "title": "12. Demyelinating disease G.35 to G 37",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "12. Demyelinating disease G.35 to G 37",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0061",
+    "section_number": "13",
+    "title": "13. Loss of Hearing H90.0 - Conductive hearing loss, bilateral; H90.1",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "13. Loss of Hearing H90.0 - Conductive hearing loss, bilateral; H90.1",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0062",
+    "section_number": "14",
+    "title": "14. Papulosquamous disorder of the L40 - L45 Papulosquamous disorder of the skin",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "14. Papulosquamous disorder of the L40 - L45 Papulosquamous disorder of the skin",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0063",
+    "section_number": "15",
+    "title": "15. Avascular necrosis",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 22,
+    "page_end": 22,
+    "source_page_refs": [
+      22
+    ],
+    "heading_text": "15. Avascular necrosis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0067",
+    "section_number": "1",
+    "title": "1. In case of multiple policies taken by an insured during a period from the same or one or more",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "1. In case of multiple policies taken by an insured during a period from the same or one or more",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0068",
+    "section_number": "2",
+    "title": "2. Policy holder having multiple policies shall also have the right to prefer claims under this",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "2. Policy holder having multiple policies shall also have the right to prefer claims under this",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0069",
+    "section_number": "3",
+    "title": "3. If the amount to be claimed exceeds the sum insured under a single policy after, the",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "3. If the amount to be claimed exceeds the sum insured under a single policy after, the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0070",
+    "section_number": "4",
+    "title": "4. Where an insured has policies from more than one insurer to cover the same risk on",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 25,
+    "page_end": 25,
+    "source_page_refs": [
+      25
+    ],
+    "heading_text": "4. Where an insured has policies from more than one insurer to cover the same risk on",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0078",
+    "section_number": "1",
+    "title": "1. Discharge summary (detailed) describing the nature of the complaints and its duration,",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "1. Discharge summary (detailed) describing the nature of the complaints and its duration,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0079",
+    "section_number": "2",
+    "title": "2. Original Settlement letter from the primary Insurer",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "2. Original Settlement letter from the primary Insurer",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0080",
+    "section_number": "3",
+    "title": "3. Death summary in case of death of the insured person at the hospital",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "3. Death summary in case of death of the insured person at the hospital",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0081",
+    "section_number": "4",
+    "title": "4. First consultation papers",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "4. First consultation papers",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0082",
+    "section_number": "5",
+    "title": "5. Doctor’s prescriptions confirming diagnosis/advising hospitalization",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "5. Doctor’s prescriptions confirming diagnosis/advising hospitalization",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0083",
+    "section_number": "6",
+    "title": "6. All test reports such as X-rays, ECG, Scan, MRI, Pathology etc, including doctor’s",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "6. All test reports such as X-rays, ECG, Scan, MRI, Pathology etc, including doctor’s",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0084",
+    "section_number": "7",
+    "title": "7. Hospital Final Bill and advance and final hospital payment receipts, in Original",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "7. Hospital Final Bill and advance and final hospital payment receipts, in Original",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0085",
+    "section_number": "8",
+    "title": "8. Doctor’s prescriptions with cash bills for medicines purchased from outside the hospital",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "8. Doctor’s prescriptions with cash bills for medicines purchased from outside the hospital",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0086",
+    "section_number": "9",
+    "title": "9. F.I.R/MLC. in the case of Accidental injury and English translation of the same, if in",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "9. F.I.R/MLC. in the case of Accidental injury and English translation of the same, if in",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0087",
+    "section_number": "10",
+    "title": "10. Detailed self-description stating the date, time, circumstances and nature of",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "10. Detailed self-description stating the date, time, circumstances and nature of",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0088",
+    "section_number": "11",
+    "title": "11. Legal heir certificate in the absence of nomination under the policy, in case of death of the",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "11. Legal heir certificate in the absence of nomination under the policy, in case of death of the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0089",
+    "section_number": "12",
+    "title": "12. For b) Cataract claims - IOL sticker c) PTCA claims - Stent sticker. d) Implant sticker for",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "12. For b) Cataract claims - IOL sticker c) PTCA claims - Stent sticker. d) Implant sticker for",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0090",
+    "section_number": "13",
+    "title": "13. If a claim is partially settled by any other insurer, a certificate from the other insurer",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "13. If a claim is partially settled by any other insurer, a certificate from the other insurer",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0091",
+    "section_number": "14",
+    "title": "14. Complete medical records of past hospitalization/treatment, if any",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "14. Complete medical records of past hospitalization/treatment, if any",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0092",
+    "section_number": "15",
+    "title": "15. For domiciliary hospitalization claims, a certificate from the attending doctor confirming",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "15. For domiciliary hospitalization claims, a certificate from the attending doctor confirming",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0093",
+    "section_number": "16",
+    "title": "16. Cancelled cheque leaf in the name of the proposer clearing showing the IFSC code and",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 32,
+    "page_end": 32,
+    "source_page_refs": [
+      32
+    ],
+    "heading_text": "16. Cancelled cheque leaf in the name of the proposer clearing showing the IFSC code and",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0095",
+    "section_number": "17",
+    "title": "17. CKYC number of the proposer. If the insured is not having an existing CKYC number –",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "17. CKYC number of the proposer. If the insured is not having an existing CKYC number –",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0096",
+    "section_number": "1",
+    "title": "1. Copy of indoor case records (including nurse's notes, OT notes and anesthetists' notes,",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "1. Copy of indoor case records (including nurse's notes, OT notes and anesthetists' notes,",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0097",
+    "section_number": "2",
+    "title": "2. Copy of extract of Inpatient Register",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "2. Copy of extract of Inpatient Register",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0098",
+    "section_number": "3",
+    "title": "3. Attendance records of employer/educational institution",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "3. Attendance records of employer/educational institution",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0099",
+    "section_number": "4",
+    "title": "4. Attending Physician’s certificate clarifying",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "4. Attending Physician’s certificate clarifying",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0100",
+    "section_number": "5",
+    "title": "5. Previous master health check-up records/pre-employment medical records, if any",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "5. Previous master health check-up records/pre-employment medical records, if any",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0101",
+    "section_number": "6",
+    "title": "6. Any other document necessary in support of the claim on case to case basis",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "6. Any other document necessary in support of the claim on case to case basis",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0102",
+    "section_number": "1",
+    "title": "1. As per Policy terms and conditions and exclusions, sub-limits under the",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "1. As per Policy terms and conditions and exclusions, sub-limits under the",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0103",
+    "section_number": "2",
+    "title": "2. The deductible opted under the policy against the sum insured, shall be",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "2. The deductible opted under the policy against the sum insured, shall be",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0104",
+    "section_number": "3",
+    "title": "3. The amount assessed under G 2 (2) shall be subject to availability of sum",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 33,
+    "page_end": 33,
+    "source_page_refs": [
+      33
+    ],
+    "heading_text": "3. The amount assessed under G 2 (2) shall be subject to availability of sum",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0106",
+    "section_number": "1",
+    "title": "1. BABY FOOD",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "1. BABY FOOD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0107",
+    "section_number": "4",
+    "title": "4. BELTS/ BRACES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "4. BELTS/ BRACES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0108",
+    "section_number": "5",
+    "title": "5. BUDS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "5. BUDS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0109",
+    "section_number": "7",
+    "title": "7. CARRY BAGS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "7. CARRY BAGS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0110",
+    "section_number": "8",
+    "title": "8. EMAIL / INTERNET CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "8. EMAIL / INTERNET CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0111",
+    "section_number": "9",
+    "title": "9. FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 34,
+    "page_end": 34,
+    "source_page_refs": [
+      34
+    ],
+    "heading_text": "9. FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0114",
+    "section_number": "2",
+    "title": "2. HAND WASH",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "2. HAND WASH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0115",
+    "section_number": "4",
+    "title": "4. CAPS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "4. CAPS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0116",
+    "section_number": "5",
+    "title": "5. CRADLE CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "5. CRADLE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0117",
+    "section_number": "6",
+    "title": "6. COMB",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "6. COMB",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0118",
+    "section_number": "8",
+    "title": "8. FOOT COVER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "8. FOOT COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0119",
+    "section_number": "9",
+    "title": "9. GOWN",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "9. GOWN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0120",
+    "section_number": "10",
+    "title": "10. SLIPPERS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "10. SLIPPERS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0121",
+    "section_number": "11",
+    "title": "11. TISSUE PAPER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "11. TISSUE PAPER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0122",
+    "section_number": "12",
+    "title": "12. TOOTH PASTE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "12. TOOTH PASTE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0123",
+    "section_number": "13",
+    "title": "13. TOOTH BRUSH",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "13. TOOTH BRUSH",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0124",
+    "section_number": "14",
+    "title": "14. BED PAN",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "14. BED PAN",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0125",
+    "section_number": "15",
+    "title": "15. FACE MASK",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "15. FACE MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0126",
+    "section_number": "16",
+    "title": "16. FLEXI MASK",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "16. FLEXI MASK",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0127",
+    "section_number": "18",
+    "title": "18. SPUTUM CUP",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 36,
+    "page_end": 36,
+    "source_page_refs": [
+      36
+    ],
+    "heading_text": "18. SPUTUM CUP",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0129",
+    "section_number": "19",
+    "title": "19. DISINFECTANT LOTIONS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "19. DISINFECTANT LOTIONS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0130",
+    "section_number": "20",
+    "title": "20. LUXURY TAX",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "20. LUXURY TAX",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0131",
+    "section_number": "21",
+    "title": "21. HVAC",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "21. HVAC",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0132",
+    "section_number": "22",
+    "title": "22. HOUSE KEEPING CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "22. HOUSE KEEPING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0133",
+    "section_number": "24",
+    "title": "24. IM IV INJECTION CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "24. IM IV INJECTION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0134",
+    "section_number": "25",
+    "title": "25. CLEAN SHEET",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "25. CLEAN SHEET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0135",
+    "section_number": "26",
+    "title": "26. BLANKETS/WARMER BLANKET",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "26. BLANKETS/WARMER BLANKET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0136",
+    "section_number": "27",
+    "title": "27. ADMISSION KIT",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "27. ADMISSION KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0137",
+    "section_number": "28",
+    "title": "28. DIABETIC CHART CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "28. DIABETIC CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0138",
+    "section_number": "29",
+    "title": "29. DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "29. DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0139",
+    "section_number": "30",
+    "title": "30. DISCHARGE PROCEDURE CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "30. DISCHARGE PROCEDURE CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0140",
+    "section_number": "31",
+    "title": "31. DAILY CHART CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "31. DAILY CHART CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0141",
+    "section_number": "32",
+    "title": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "32. ENTRANCE PASS / VISITORS PASS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0142",
+    "section_number": "33",
+    "title": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "33. EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0143",
+    "section_number": "34",
+    "title": "34. FILE OPENING CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "34. FILE OPENING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0144",
+    "section_number": "35",
+    "title": "35. INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "35. INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0145",
+    "section_number": "36",
+    "title": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "36. PATIENT IDENTIFICATION BAND / NAME TAG",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0146",
+    "section_number": "37",
+    "title": "37. PULSEOXYMETER CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "37. PULSEOXYMETER CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0147",
+    "section_number": "1",
+    "title": "1. HAIR REMOVAL CREAM",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "1. HAIR REMOVAL CREAM",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0148",
+    "section_number": "2",
+    "title": "2. DISPOSABLES RAZORS CHARGES (for site preparations)",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "2. DISPOSABLES RAZORS CHARGES (for site preparations)",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0149",
+    "section_number": "3",
+    "title": "3. EYE PAD",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "3. EYE PAD",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0150",
+    "section_number": "5",
+    "title": "5. CAMERA COVER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "5. CAMERA COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0151",
+    "section_number": "7",
+    "title": "7. GAUSE SOFT",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "7. GAUSE SOFT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0152",
+    "section_number": "8",
+    "title": "8. GAUZE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "8. GAUZE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0153",
+    "section_number": "9",
+    "title": "9. WARD AND THEATRE BOOKING CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "9. WARD AND THEATRE BOOKING CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0154",
+    "section_number": "10",
+    "title": "10. ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "10. ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0155",
+    "section_number": "11",
+    "title": "11. MICROSCOPE COVER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "11. MICROSCOPE COVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0156",
+    "section_number": "12",
+    "title": "12. SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 37,
+    "page_end": 37,
+    "source_page_refs": [
+      37
+    ],
+    "heading_text": "12. SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0158",
+    "section_number": "13",
+    "title": "13. SURGICAL DRILL",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "13. SURGICAL DRILL",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0159",
+    "section_number": "14",
+    "title": "14. EYE KIT",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "14. EYE KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0160",
+    "section_number": "17",
+    "title": "17. BOYLES APPARATUS CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "17. BOYLES APPARATUS CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0161",
+    "section_number": "18",
+    "title": "18. COTTON",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "18. COTTON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0162",
+    "section_number": "19",
+    "title": "19. COTTON BANDAGE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "19. COTTON BANDAGE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0163",
+    "section_number": "20",
+    "title": "20. SURGICAL TAPE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "20. SURGICAL TAPE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0164",
+    "section_number": "21",
+    "title": "21. APRON",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "21. APRON",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0165",
+    "section_number": "22",
+    "title": "22. TORNIQUET",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "22. TORNIQUET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0166",
+    "section_number": "23",
+    "title": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "23. ORTHOBUNDLE, GYNAEC BUNDLE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0167",
+    "section_number": "1",
+    "title": "1. ADMISSION/REGISTRATION CHARGES",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "1. ADMISSION/REGISTRATION CHARGES",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0168",
+    "section_number": "2",
+    "title": "2. HOSPITALIZATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "2. HOSPITALIZATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0169",
+    "section_number": "3",
+    "title": "3. URINE CONTAINER",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "3. URINE CONTAINER",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0170",
+    "section_number": "4",
+    "title": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "4. BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0171",
+    "section_number": "5",
+    "title": "5. BIPAP MACHINE",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "5. BIPAP MACHINE",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0172",
+    "section_number": "6",
+    "title": "6. CPAP/ CAPD EQUIPMENTS",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "6. CPAP/ CAPD EQUIPMENTS",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0173",
+    "section_number": "7",
+    "title": "7. INFUSION PUMP— COST",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "7. INFUSION PUMP— COST",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0174",
+    "section_number": "9",
+    "title": "9. NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "9. NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  },
+  {
+    "section_id": "royal_sundaram_advanced_topup_sec_0175",
+    "section_number": "10",
+    "title": "10. HIV KIT",
+    "level": 2,
+    "parent_id": "royal_sundaram_advanced_topup_sec_0001",
+    "page_start": 38,
+    "page_end": 38,
+    "source_page_refs": [
+      38
+    ],
+    "heading_text": "10. HIV KIT",
+    "annotation_status": "reviewed",
+    "notes": "Reviewed during DSE-012 source-PDF human review.",
+    "source_tools": [
+      "pipeline_seed_reviewed",
+      "source_pdf_human_review"
+    ]
+  }
+]

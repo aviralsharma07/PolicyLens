@@ -1,0 +1,262 @@
+[
+  {
+    "label_id": "oriental_cancer_protect_heading_0031",
+    "source_section_id": null,
+    "page": 1,
+    "expected_text": "2. COVERAGE/BENEFITS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p1l_44",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0189",
+    "source_section_id": null,
+    "page": 5,
+    "expected_text": "2.1TREATMENT METHODS :",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p5l_28",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0253",
+    "source_section_id": null,
+    "page": 7,
+    "expected_text": "2.4 EMERGENCY EVACUATION COVER:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p7l_20",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0369",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "2.11 CANCER CARE BENEFIT:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_18",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0377",
+    "source_section_id": null,
+    "page": 10,
+    "expected_text": "2.12 CUMULATIVE BONUS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p10l_26",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0403",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "2.14 TELEMEDICINE/TELECONSULTATION :",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_11",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0416",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "2.15 WAITING PERIOD:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_27",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0420",
+    "source_section_id": null,
+    "page": 11,
+    "expected_text": "3. DEFINITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p11l_31",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0563",
+    "source_section_id": null,
+    "page": 15,
+    "expected_text": "3.21 ILLNESS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p15l_13",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0705",
+    "source_section_id": null,
+    "page": 18,
+    "expected_text": "4. GENERAL EXCLUSIONS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p18l_30",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0793",
+    "source_section_id": null,
+    "page": 20,
+    "expected_text": "5. CONDITIONS",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p20l_41",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_0835",
+    "source_section_id": null,
+    "page": 21,
+    "expected_text": "5.6 CLAIMS PROCEDURE:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p21l_45",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1084",
+    "source_section_id": null,
+    "page": 27,
+    "expected_text": "5.7 CONTRIBUTION:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p27l_33",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1107",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "5.9 REPUDIATION/REJECTION OF CLAIM:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_14",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1124",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "5.10 DISCLAIMER OF CLAIM:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_31",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1130",
+    "source_section_id": null,
+    "page": 28,
+    "expected_text": "5.11 ARBITRATION CLAUSE :",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p28l_37",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1164",
+    "source_section_id": null,
+    "page": 29,
+    "expected_text": "5.13 MEDICAL RECORDS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p29l_27",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1178",
+    "source_section_id": null,
+    "page": 29,
+    "expected_text": "5.14 CANCELLATION CLAUSE:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p29l_41",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1239",
+    "source_section_id": null,
+    "page": 31,
+    "expected_text": "6.2 SUM INSURED:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p31l_17",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1283",
+    "source_section_id": null,
+    "page": 32,
+    "expected_text": "6.6 FREE LOOK PERIOD:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p32l_21",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1298",
+    "source_section_id": null,
+    "page": 32,
+    "expected_text": "6.7 GRACE PERIOD:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p32l_36",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1302",
+    "source_section_id": null,
+    "page": 32,
+    "expected_text": "6.8 RENEWAL OF POLICY:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p32l_40",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1332",
+    "source_section_id": null,
+    "page": 33,
+    "expected_text": "6.9 PORTABILITY:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p33l_30",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1339",
+    "source_section_id": null,
+    "page": 33,
+    "expected_text": "6.10 CHANGE OF ADDRESS:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p33l_37",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1341",
+    "source_section_id": null,
+    "page": 33,
+    "expected_text": "6.11 QUALITY OF TREATMENT:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p33l_39",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  },
+  {
+    "label_id": "oriental_cancer_protect_heading_1406",
+    "source_section_id": null,
+    "page": 35,
+    "expected_text": "6.17 SINGLE POLICY:",
+    "label_type": "visual_heading",
+    "is_visual_heading": true,
+    "line_id": "p35l_23",
+    "reviewer_note": "Reviewed during DSE-012 source-PDF human review."
+  }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "concept": "ped_waiting_period",
+    "value_json": {
+      "months": 36
+    },
+    "normalized_value_json": {
+      "months": 36
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "hall not be liable to make any payment under the policy in connection with or in respect of following expenses till the expiry of waiting period mentioned below: E.1.1 Pre-Existing Diseases (Code- Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c) lf the",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "initial_waiting_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "ng disease is subject to the same being declared at the time of application and accepted by us. E.1.2 30 Days Waiting Period (Code- Excl03) i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an Accident, provided the same are covered. ii. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve mon",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: initial waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "specific_disease_waiting_periods",
+    "value_json": {
+      "waiting_periods": [
+        {
+          "months": 24
+        }
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        24
+      ]
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 17,
+    "evidence_text": "iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently. E.1.3 Specific Waiting Period: (Code- Excl02) a) Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. The exclusion shall not be applicable for claims arising due to an Accident. b)",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "room_rent_limit",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 12,
+    "evidence_text": "ify medical expenses incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured specified in the policy schedule, for i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home. ii. Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses. iii. Surgeon, Anaesthetist, Medical Practitioner, Consultants, Specialist Fees whether paid",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "co_pay",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "deductible",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 7,
+    "evidence_text": "of more than twenty-four hours. Treatment normally taken on an out-patient basis is not included in the scope of this definition. C.1.10 Deductible: Deductible means a cost sharing requirement under a health insurance policy that provides that the insurer will not be liable for a specified rupee amount in case of indemnity policies and for a specified number of days/hours in case of hospital cash policies which will apply before any benefits are payable by the insurer. A deductible does not reduce the Sum Insured. The deductible will apply on aggregate of all admissible claims under the policy per annum on an",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: deductible search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "cumulative_bonus_ncb",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "restoration_benefit",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ayush_coverage",
+    "value_json": {
+      "covered": true
+    },
+    "normalized_value_json": {
+      "covered": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 1,
+    "evidence_text": "s to the same. Standard Definitions C.1.1 Accident means a sudden, unforeseen and involuntary event caused by external, visible and violent means. C.1.2 An AYUSH Hospital is a health care facility wherein medical/surgical/para-surgical treatment procedures and interventions are carried out by AYUSH Medical Practitioner(s) comprising of any of the following: a) Central or State Government AYUSH Hospital or b) Teaching hospital attached to AYUSH Coll",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: AYUSH coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "modern_treatment_coverage",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 13,
+    "evidence_text": "ration theatre charges, surgical appliances, medicines and drugs, costs towards diagnostics, diagnostic imaging modalities and such similar other expenses. Modern Treatments The following procedures will be covered (whichever medically indicated) either as in patient or as part of day care treatment in a hospital up to Sum Insured as specified in the policy schedule, during the policy period: A. Uterine Artery Embolization and HIFU (High intensity fo",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "maternity_waiting",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "newborn_coverage",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": null,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": null,
+    "evidence_text": null,
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": null,
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "organ_donor_coverage",
+    "value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "normalized_value_json": {
+      "covered": true,
+      "scope": "organ_donor_expenses"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 13,
+    "evidence_text": "ner. Any OPD Treatment undertaken in a Hospital/Day Care Centre will not be covered. Pre and Post-hospitalization Medical Expenses are payable up to 30 days under this benefit. Organ Donor Expenses We will cover Inpatient Care Medical Expenses towards the donor for the harvesting of the organ donated provided that: (a) the organ donor is any person in accordance with the Transplantation of Human Organs Act, 1994 and other applicable laws.",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: organ donor coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "ambulance_coverage",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 14,
+    "evidence_text": "inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy system of medicines during each Policy Year up to sum insured in any AYUSH Hospital. Ambulance Cover including App-based Cab cover We will cover Reasonable and Customary Charges for ambulance expenses that are incurred towards transportation of an Insured Person by surface transport following an Emergency to the nearest Hospital with adequate facilities.",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "free_look_period",
+    "value_json": {
+      "months": 3
+    },
+    "normalized_value_json": {
+      "months": 3
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 28,
+    "evidence_text": ", may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. F.1.14 Free look period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the policy. The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If the insured has not made any claim during the Free Look Period, the insured shall be entitled to",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "grace_period",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 27,
+    "evidence_text": "nd of the Policy Period. iii. At the end of the Policy Period, the policy shall terminate and can be renewed with in the Grace Period of 30 days to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period. iv. If not renewed with in Grace Period after due renewa",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "renewability",
+    "value_json": {
+      "renewable": true
+    },
+    "normalized_value_json": {
+      "renewable": true
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 10,
+    "evidence_text": "stent with the prevailing charges in the geographical area for identical or similar services, taking into account the nature of the illness / injury involved. C.1.38 Renewal Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods. C.1.39 Room Rent means the amount charged by a hospital towards",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "coverage_status",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: renewability search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_intimation_timeline",
+    "value_json": {
+      "timeline_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of cla"
+    },
+    "normalized_value_json": {
+      "timeline_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of cla"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 32,
+    "evidence_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of claim: Preliminary notice of claim with particulars relating to Policy number, Name of the Insured Person in respect of whom claim is made, nature of illness/injury and name and address of the attending hospital, should be given to the Insurer within 72 hours before admission in case of planned hospitalization, and not later than 48 hours or before discharge, in case of emergency hospitalization.  Submission of claim: The insured shall submit the claim form along with attending physician’s certificate duly filled and signed in all respects with the following claim documents",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "claim_settlement_timeline",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 24,
+    "evidence_text": "due observance and fulfilment of the terms and conditions of the policy, by the insured person, shall be a condition precedent to any liability of the Company to make any payment for claim(s) arising under the policy. F.1.3 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. 24 UIN- RSAHLIP23029V012223",
+    "source_document": {
+      "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "document_id": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "uin": "RSAHLIP23029V012223"
+    },
+    "value_type": "duration",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      }
+    ],
+    "human_review_priority": "normal"
+  }
+]
