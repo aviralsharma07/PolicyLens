@@ -642,14 +642,14 @@
   {
     "concept": "free_look_period",
     "value_json": {
-      "months": 3
+      "days": 15
     },
     "normalized_value_json": {
-      "months": 3
+      "days": 15
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
@@ -657,7 +657,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 14,
-    "evidence_text": "Year Within 15 Days As per Free Look Period Condition Exceeding 15 days but less than or equal to 3 65.00% 75.00% 80.00% months Exceeding 3 months but less than or equal to 6",
+    "evidence_text": "mium received on annual basis or full premium received at policy inception are as under  Premium Refund Policy Period in Risk Policy Period 1 Policy Period 2 Period 3 Year Year Year Within 15 Days As per Free Look Period Condition Exceeding 15 days but less than or equal to 3 65.00% 75.00% 80.00% months Exceeding 3 months but less than or equal to 6 45.00% 65.00% 75.00% months Exceed",
     "source_document": {
       "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
       "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
@@ -667,8 +667,8 @@
     },
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: free-look period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 3}, old_page=14.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -679,6 +679,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 3}, old_page=14."
       }
     ],
     "human_review_priority": "normal"

@@ -642,14 +642,14 @@
   {
     "concept": "free_look_period",
     "value_json": {
-      "months": 3
+      "days": 15
     },
     "normalized_value_json": {
-      "months": 3
+      "days": 15
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
@@ -657,7 +657,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 20,
-    "evidence_text": "AI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. 10.19 Free look period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the policy. The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If the insured has not made any claim during the Free Look Period, the insured shall be entitled to i. a refund of",
+    "evidence_text": "2. Upon exhaustion of sum insured and cumulative bonus, for the policy year. However, the policy is The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable.",
     "source_document": {
       "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
       "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
@@ -667,8 +667,8 @@
     },
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: free-look period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 3}, old_page=20.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -679,6 +679,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 3}, old_page=20."
       }
     ],
     "human_review_priority": "normal"

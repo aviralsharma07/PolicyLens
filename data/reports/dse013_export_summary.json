@@ -1,13 +1,45 @@
 {
-  "pipeline_run_id": "dse013_v1_1780296610",
-  "git_commit": "111d7cb82be10a4d658ab68c18c383f89bc0edb1",
-  "date": "2026-06-01",
+  "pipeline_run_id": "export_dse017_remediation_2026_06_02",
+  "git_commit": "2b9a1910ad3987e38a6f9626f553128273eaad81",
+  "date": "2026-06-02",
   "output_root": "data/export",
-  "policies_exported": 5,
-  "policies_total": 5,
+  "policies_exported": 20,
+  "policies_total": 20,
   "policy_results": [
     {
+      "policy_id": "aditya_birla_activ_care",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "bajaj_allianz_silver_health",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
       "policy_id": "care_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "cholamandalam_flexi_max_protect",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "future_generali_health_elite",
       "status": "ok",
       "concepts_resolved": 5,
       "concepts_not_found": 15,
@@ -31,6 +63,30 @@
       "validation_errors": 0
     },
     {
+      "policy_id": "iffco_tokio_health_protector",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "kotak_mahindra_health_premier",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "liberty_critical_connect",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
       "policy_id": "new_india_floater_mediclaim",
       "status": "ok",
       "concepts_resolved": 4,
@@ -39,11 +95,75 @@
       "validation_errors": 0
     },
     {
+      "policy_id": "niva_bupa_health_recharge",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "oriental_cancer_protect",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "reliance_health_gain",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "royal_sundaram_advanced_topup",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "sbi_general_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
       "policy_id": "star_medi_classic_accident_care_individual",
       "status": "ok",
       "concepts_resolved": 5,
       "concepts_not_found": 15,
       "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "tata_aig_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "united_india_individual_health",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "universal_sompo_loan_secure",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
       "validation_errors": 0
     }
   ]

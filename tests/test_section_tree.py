@@ -211,6 +211,35 @@ class TestSectionTreeSingle:
         assert non_root[0]["number"] == "1"
         assert non_root[0]["heading_type"] == "visual"
 
+    def test_late_first_heading_preserves_preheading_body(self):
+        pre_lines = [
+            _make_line(f"p{1 + i // 20}l_{i}", f"Policy body text before headings {i}", bbox=[50, 80 + i, 300, 90 + i])
+            for i in range(60)
+        ]
+        heading = _make_line("p5l_1", "1. BENEFITS", bbox=[50, 100, 300, 115])
+        body = _make_line("p5l_2", "Benefits text", bbox=[50, 130, 300, 145])
+        pages = [
+            _make_page(1, pre_lines[:20]),
+            _make_page(2, pre_lines[20:40]),
+            _make_page(3, pre_lines[40:]),
+            _make_page(5, [heading, body]),
+        ]
+        headings = [
+            _make_heading("p5l_1", "1. BENEFITS", 5, [50, 100, 300, 115], numbering_token="1."),
+        ]
+        builder = SectionTreeBuilder(
+            heading_candidates=headings,
+            physical_pages=pages,
+            policy_id="late_heading",
+        )
+        result = builder.build()
+        preheading = next(
+            section for section in result["sections"] if section["heading_type"] == "synthetic_preheading_body"
+        )
+        assert preheading["page_start"] == 1
+        assert preheading["page_end"] == 3
+        assert len(preheading["content_line_ids"]) == 60
+
 
 class TestSectionTreeHierarchy:
     def test_one_two_level(self):

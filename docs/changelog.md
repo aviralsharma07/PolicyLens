@@ -1,5 +1,38 @@
 # Changelog
 
+## 2026-06-02 (DSE-017 — 20-Policy End-to-End Pipeline Rebuild + Fact Regression Remediation)
+
+### Changed
+- `scripts/eval_clause_store.py` — removed hardcoded 5-policy count and `_EXPECTED_COUNTS` constant. Policy count derived dynamically from gold_corpus. DB size limit raised 30MB → 120MB (ADR-0035).
+- `scripts/eval_fact_scoring.py` — removed hardcoded 5-policy count. Dynamic from gold_corpus.
+- `scripts/eval_export.py` — removed hardcoded 5-policy count. Dynamic from gold_corpus.
+- `scripts/eval_fact_extractors.py` — removed hardcoded `GOLD_POLICIES` set for gate count. Uses `_discover_reviewed_policies()`.
+- `scripts/validate_source_spans.py` — removed hardcoded `_EXPECTED_POLICY_COUNT = 5`. Dynamic from gold_corpus.
+- `scripts/run_clause_store.py`, `scripts/run_fact_scoring.py` — updated docstrings from "5 policies" to "all reviewed policies".
+- `scripts/eval_fact_extractors.py`, `scripts/eval_fact_scoring.py`, `scripts/eval_export.py` — value comparison now allows predicted metadata supersets only when all gold scalar keys match exactly.
+- `structure_parser/section_tree.py` — preserves pre-heading body content when the first detected heading appears very late.
+- `extractors/deterministic.py` — tightened 5 existing deterministic extractors for the 20-policy corpus without adding new concepts.
+- `normalizers/duration.py` — supports hyphenated durations and adjective-separated durations such as `30-day` and `48 consecutive months`.
+
+### Added
+- `data/reports/dse017_fact_regression_audit.md` — source-backed audit of every failed concept-policy pair from the first 20-policy semantic run.
+
+### Results
+- Initial DSE-017 rebuild exposed semantic regressions: precision 76.9%, value accuracy 82.2%, 5 false present. This failed run is preserved in the `*-dse017-20-policy.json` eval artifacts.
+- Remediation rebuilt SQLite at 20-policy scale: 82.31 MB, 20 source_documents, 56,854 lines, 4,190 sections, 10,330 clauses, 26,405 source_spans.
+- 282 fact candidates, 83 extracted facts, 0 conflicts, 0 FK violations.
+- 20 policy exports, each with 20 concept fields.
+- Structural evals (clause store, source spans): **PASS**.
+- Gold-comparison evals after remediation (fact extraction, fact scoring, export): **PASS** — 100% status accuracy, 100% normalized value accuracy, 100% evidence accuracy, 0 false present for the 5 implemented concepts.
+
+### Known Issues
+- DSE-017 still validates only the 5 implemented deterministic concepts. The remaining 15 export concepts remain explicit `not_found` until extractor expansion.
+- Some fact evidence spans are clause-level degraded because the source text is column-interleaved; source-span validation records these as resolved but not exact substring offsets.
+- Diagnostic section-tree regression eval is 19/20; Oriental Cancer Protect still misses the tree-accuracy threshold while section and clause F1 remain 100%.
+- Table engine eval (R20) still uses 5-policy assumptions.
+
+---
+
 ## 2026-06-01 (DSE-012 — Gold Corpus Expansion, Human Review Complete)
 
 ### Added

@@ -33,12 +33,15 @@ ACCEPT_THRESHOLD = 0.85
 PATTERN_SPECIFICITY: Dict[str, float] = {
     # High specificity — pattern targets a single concrete value form
     "free_look_15_days": 1.0,
+    "free_look_30_days": 1.0,
     "renewal_grace_days": 1.0,
     "ped_waiting_duration": 1.0,
+    "ped_schedule_dependent": 0.8,
     "initial_wait_30_days": 1.0,
     "copay_percentage": 1.0,
     "star_age_based_copay": 1.0,
     "care_smart_select_copay_components": 1.0,
+    "copay_schedule_dependent": 0.8,
     # Medium specificity — generic or non-primary
     "free_look_non_primary_duration": 0.5,
     "care_age_schedule_copay_component": 0.5,

@@ -2,22 +2,22 @@
   {
     "concept": "ped_waiting_period",
     "value_json": {
-      "months": 3
+      "months": 36
     },
     "normalized_value_json": {
-      "months": 3
+      "months": 36
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 4,
-    "evidence_text": "iii. maximum six dependent children(i.e. biological or adopted) Period for treating the renewal continuous for the purpose of between the age of 3 months to 25 years. If the child is gaining credit for pre-existing diseases, time-bound exclusions above 18 years of age is financially independent, he or she and for all waiting periods. shall be ineligible for coverage in the subsequent renewals. 56) Room Rent means the amount charged by a Hospital towards 11) Insured Person/Insured means a person accepted by the",
+    "evidence_page": 13,
+    "evidence_text": "I. The additional Daily Cash amount shall be payable for 3.7.4 REDUCTION IN PRE-EXISTING WAITING PERIODICU In-Patient Hospitalization Under this option, the shall reduce the 36 months CompanyWaiting for as mentioned in Clause 4.1.1, to 24 ii. In a given , the amount under this benefit shall be PeriodPre-Existing DiseasesPolicy Year or 12 months (as opted). Such reduction, if allowed, shall be expressly payable for a max",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -27,8 +27,8 @@
     },
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'months': 3}, old_page=4.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -39,6 +39,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'months': 3}, old_page=4."
       }
     ],
     "human_review_priority": "normal"

@@ -1,0 +1,1081 @@
+{
+  "eval_name": "fact-scoring-dse011-v2",
+  "date": "2026-06-02",
+  "task_id": "DSE-011",
+  "git_commit": "2b9a1910ad3987e38a6f9626f553128273eaad81",
+  "hard_gates": {
+    "policies_evaluated": 20,
+    "candidate_persistence_parity": true,
+    "fact_persistence_parity": true,
+    "fk_violations": 0,
+    "fact_status_accuracy": 0.84,
+    "normalized_value_accuracy": 0.8219,
+    "evidence_accuracy": 1.0,
+    "false_present_count": 5,
+    "conflicts_total": 0,
+    "conflicts_unresolved": 0,
+    "cross_document_fact_links": 0,
+    "accepted_candidate_min_score": 0.97
+  },
+  "metrics": {
+    "total_db_candidates": 273,
+    "total_db_facts": 78,
+    "total_concept_policy_pairs": 100,
+    "status_correct": 84,
+    "value_correct": 60,
+    "evidence_valid": 78,
+    "false_not_found": 11,
+    "candidate_parity": [
+      {
+        "slug": "aditya_birla_activ_care",
+        "json": 21,
+        "db": 21,
+        "ok": true
+      },
+      {
+        "slug": "bajaj_allianz_silver_health",
+        "json": 16,
+        "db": 16,
+        "ok": true
+      },
+      {
+        "slug": "care_health_care_plus",
+        "json": 16,
+        "db": 16,
+        "ok": true
+      },
+      {
+        "slug": "cholamandalam_flexi_max_protect",
+        "json": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "future_generali_health_elite",
+        "json": 1,
+        "db": 1,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json": 20,
+        "db": 20,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json": 17,
+        "db": 17,
+        "ok": true
+      },
+      {
+        "slug": "iffco_tokio_health_protector",
+        "json": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "kotak_mahindra_health_premier",
+        "json": 18,
+        "db": 18,
+        "ok": true
+      },
+      {
+        "slug": "liberty_critical_connect",
+        "json": 14,
+        "db": 14,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "niva_bupa_health_recharge",
+        "json": 17,
+        "db": 17,
+        "ok": true
+      },
+      {
+        "slug": "oriental_cancer_protect",
+        "json": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "reliance_health_gain",
+        "json": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "royal_sundaram_advanced_topup",
+        "json": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "sbi_general_arogya_sanjeevani",
+        "json": 20,
+        "db": 20,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json": 13,
+        "db": 13,
+        "ok": true
+      },
+      {
+        "slug": "tata_aig_arogya_sanjeevani",
+        "json": 15,
+        "db": 15,
+        "ok": true
+      },
+      {
+        "slug": "united_india_individual_health",
+        "json": 16,
+        "db": 16,
+        "ok": true
+      },
+      {
+        "slug": "universal_sompo_loan_secure",
+        "json": 4,
+        "db": 4,
+        "ok": true
+      }
+    ],
+    "fact_parity": [
+      {
+        "slug": "aditya_birla_activ_care",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "bajaj_allianz_silver_health",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "care_health_care_plus",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "cholamandalam_flexi_max_protect",
+        "json_present": 3,
+        "db": 3,
+        "ok": true
+      },
+      {
+        "slug": "future_generali_health_elite",
+        "json_present": 1,
+        "db": 1,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "iffco_tokio_health_protector",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "kotak_mahindra_health_premier",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "liberty_critical_connect",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "niva_bupa_health_recharge",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "oriental_cancer_protect",
+        "json_present": 2,
+        "db": 2,
+        "ok": true
+      },
+      {
+        "slug": "reliance_health_gain",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "royal_sundaram_advanced_topup",
+        "json_present": 3,
+        "db": 3,
+        "ok": true
+      },
+      {
+        "slug": "sbi_general_arogya_sanjeevani",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json_present": 5,
+        "db": 5,
+        "ok": true
+      },
+      {
+        "slug": "tata_aig_arogya_sanjeevani",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "united_india_individual_health",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "universal_sompo_loan_secure",
+        "json_present": 2,
+        "db": 2,
+        "ok": true
+      }
+    ]
+  },
+  "gold_comparison": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "care_health_care_plus",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "present",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        }
+      ]
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "icici_family_shield",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "present",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "new_india_floater",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "present",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "reliance_health_gain",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        }
+      ]
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        }
+      ]
+    },
+    {
+      "slug": "united_india_individual_health",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "not_found",
+          "extracted_status": "present",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "present",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    }
+  ],
+  "passed": false,
+  "failures": [
+    "fact_status_accuracy=84.00% (target >= 95%)",
+    "normalized_value_accuracy=82.19% (target >= 95%)",
+    "false_present_count=5"
+  ]
+}

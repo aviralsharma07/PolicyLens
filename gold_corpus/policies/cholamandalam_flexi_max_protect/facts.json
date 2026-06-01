@@ -201,13 +201,9 @@
   },
   {
     "concept": "co_pay",
-    "value_json": {
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -216,8 +212,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 28,
-    "evidence_text": "Wordings contestable except for proven fraud and permanent exclusions specified in the policy contract. The policies would however be subject to all limits, sublimits, co-payments as per the policy. II. CONDITIONS APPLICABLE DURING THE CONTRACT 9. Notice and Communication: i. Any notice ,direction ,instruction or any other communication related to the Policy should be made in writing ii. Such communication shall be sent to the address of the Company or through any other electronic modes specified in the Policy Schedule iii. The Company shall communicate to the Insured Person at the address or through any other electronic mode mentioned in the schedule 10. Transfer: Transferring of interest in this Policy to anyone else is not allowed.",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Cholamandalam_Flexi_Max_Protect.pdf",
       "source_pdf_path": "18_Cholamandalam/Cholamandalam_Flexi_Max_Protect.pdf",
@@ -225,10 +221,10 @@
       "document_id": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
       "uin": "CHOHLIP21017V012122"
     },
-    "value_type": "schedule_dependent",
+    "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: co-payment schedule search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment schedule search DSE-017 fact regression audit corrected co_pay: old_status=present, old_value={'schedule_dependent': True}, old_page=28.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -239,6 +235,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected co_pay: old_status=present, old_value={'schedule_dependent': True}, old_page=28."
       }
     ],
     "human_review_priority": "normal"

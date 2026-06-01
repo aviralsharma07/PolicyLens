@@ -650,14 +650,15 @@
   {
     "concept": "free_look_period",
     "value_json": {
-      "months": 36
+      "days": 15,
+      "distance_marketing_days": 30
     },
     "normalized_value_json": {
-      "months": 36
+      "days": 15
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
@@ -665,7 +666,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 27,
-    "evidence_text": "under Section 4.1(3) (Permanent Partial Disability). 7. General Terms and Clauses 7.1. Standard General Terms and Clauses I. Free Look Period The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days (thirty days for policies with a term of 3 years, if sold through distance marketing) from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. lf",
+    "evidence_text": "d shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days (thirty days for policies with a term of 3 years, if sold through distance marketing) from date of receipt of the policy document to review the terms and conditions of the policy, and to re",
     "source_document": {
       "filename": "NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
       "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
@@ -675,8 +676,8 @@
     },
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: free-look period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: free-look period search DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 36}, old_page=27.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -687,6 +688,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected free_look_period: old_status=present, old_value={'months': 36}, old_page=27."
       }
     ],
     "human_review_priority": "normal"

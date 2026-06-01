@@ -32,7 +32,7 @@ def resolve_concept(
         candidate
         for candidate in candidates
         if candidate.concept == concept
-        and candidate.fact_status == "present"
+        and candidate.fact_status in {"present", "explicitly_not_covered"}
         and not candidate.rejection_reason
         and candidate.confidence >= MIN_ACCEPT_CONFIDENCE
         and candidate.evidence_text
@@ -93,4 +93,3 @@ def run_extractors(
             raise ValueError(f"Invalid fact_status for {fact['concept']}: {fact['fact_status']}")
 
     return candidate_dicts, accepted
-

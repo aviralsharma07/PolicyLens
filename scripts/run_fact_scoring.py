@@ -14,7 +14,7 @@ Usage:
     --resolved-root data/interim/facts_resolved \\
     --db data/engine.sqlite
 
-Exit 0 if all 5 policies processed. Exit 1 if parity check fails.
+Exit 0 if all policies processed. Exit 1 if parity check fails.
 """
 
 from __future__ import annotations

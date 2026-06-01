@@ -1,0 +1,548 @@
+{
+  "eval_name": "export-dse013-v2",
+  "date": "2026-06-02",
+  "task_id": "DSE-013",
+  "git_commit": "2b9a1910ad3987e38a6f9626f553128273eaad81",
+  "hard_gates": {
+    "policies_exported": 20,
+    "concepts_missing_fields": 0,
+    "schema_validation_errors": 0,
+    "present_missing_evidence": 0,
+    "not_found_with_value": 0,
+    "invalid_fact_status_count": 0,
+    "span_ids_missing_from_db": 0,
+    "gold_value_accuracy": 0.8219,
+    "gold_status_accuracy": 0.84,
+    "false_present": 5,
+    "schema_version_ok": true,
+    "derived_policy_features_count": 20,
+    "present_missing_evidence_clause": 0,
+    "cross_file_page_disagreement": 0
+  },
+  "metrics": {
+    "span_ids_checked": 78,
+    "gold_status_total": 100,
+    "gold_status_correct": 84,
+    "gold_value_total": 73,
+    "gold_value_correct": 60
+  },
+  "gold_value_details": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "ped_waiting_period",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "24",
+      "match": false
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":15}",
+      "export_value": "{\"percentage\":15}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "free_look_period",
+      "gold_value": "{\"months\":3}",
+      "export_value": "15",
+      "match": false
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":20}",
+      "export_value": "{\"percentage\":20}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "co_pay",
+      "gold_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "export_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":50}",
+      "export_value": "{\"percentage\":20}",
+      "match": false
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "free_look_period",
+      "gold_value": "{\"months\":3}",
+      "export_value": "15",
+      "match": false
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "free_look_period",
+      "gold_value": "{\"months\":24}",
+      "export_value": "15",
+      "match": false
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "48",
+      "match": false
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "free_look_period",
+      "gold_value": "{\"months\":36}",
+      "export_value": "15",
+      "match": false
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "ped_waiting_period",
+      "gold_value": "3",
+      "export_value": "36",
+      "match": false
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":20}",
+      "export_value": "{\"percentage\":20}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "15",
+      "export_value": "30",
+      "match": false
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": false
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "48",
+      "match": false
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": false
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "free_look_period",
+      "gold_value": "{\"months\":3}",
+      "export_value": "15",
+      "match": false
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    }
+  ],
+  "passed": false,
+  "failures": [
+    "gold_value_accuracy=82.19% (target >= 95%)",
+    "gold_status_accuracy=84.00% (target >= 95%)",
+    "false_present=5"
+  ]
+}

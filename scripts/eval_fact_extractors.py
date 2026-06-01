@@ -22,6 +22,18 @@ GOLD_POLICIES = {
 }
 
 
+def _discover_reviewed_policies(gold_corpus: Path) -> set:
+    """Discover all reviewed policy slugs from gold_corpus/policies/."""
+    policies_dir = gold_corpus / "policies"
+    if not policies_dir.is_dir():
+        return GOLD_POLICIES
+    return {
+        slug
+        for slug in sorted(d.name for d in policies_dir.iterdir() if d.is_dir())
+        if (policies_dir / slug / "metadata.json").is_file()
+    }
+
+
 def _read_json(path: Path) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -49,7 +61,9 @@ def _canonical(value: Any) -> Any:
         normalized = {}
         for key, item in sorted(value.items()):
             if key == "components" and isinstance(item, list):
-                normalized[key] = sorted((_canonical(x) for x in item), key=lambda x: json.dumps(x, sort_keys=True))
+                normalized[key] = sorted(
+                    (_canonical(x) for x in item), key=lambda x: json.dumps(x, sort_keys=True)
+                )
             else:
                 normalized[key] = _canonical(item)
         return normalized
@@ -59,7 +73,31 @@ def _canonical(value: Any) -> Any:
 
 
 def _values_match(predicted: Any, gold: Any) -> bool:
-    return _canonical(predicted) == _canonical(gold)
+    predicted_c = _canonical(predicted)
+    gold_c = _canonical(gold)
+    if predicted_c == gold_c:
+        return True
+    return _is_subset_value(gold_c, predicted_c)
+
+
+def _is_subset_value(expected: Any, actual: Any) -> bool:
+    """Allow predicted values to carry extra metadata while preserving gold value equality."""
+    if isinstance(expected, dict) and isinstance(actual, dict):
+        return all(key in actual and _is_subset_value(value, actual[key]) for key, value in expected.items())
+    if isinstance(expected, list) and isinstance(actual, list):
+        if len(expected) != len(actual):
+            return False
+        unmatched = list(actual)
+        for expected_item in expected:
+            match_idx = next(
+                (idx for idx, actual_item in enumerate(unmatched) if _is_subset_value(expected_item, actual_item)),
+                None,
+            )
+            if match_idx is None:
+                return False
+            unmatched.pop(match_idx)
+        return True
+    return expected == actual
 
 
 def _load_clause_texts(section_root: Path, slug: str) -> Dict[str, str]:
@@ -128,7 +166,9 @@ def evaluate_policy(
             "gold_status": gold_fact.get("fact_status") if gold_fact else None,
             "predicted_status": pred_fact.get("fact_status") if pred_fact else None,
             "gold_normalized_value": gold_fact.get("normalized_value_json") if gold_fact else None,
-            "predicted_normalized_value": pred_fact.get("normalized_value_json") if pred_fact else None,
+            "predicted_normalized_value": pred_fact.get("normalized_value_json")
+            if pred_fact
+            else None,
             "status_match": False,
             "value_match": False,
             "evidence_verified": False,
@@ -241,7 +281,9 @@ def _aggregate(policy_results: List[Dict[str, Any]]) -> Dict[str, Any]:
         **totals,
         "policy_count": len(policy_results),
         "policies_passed": sum(1 for policy in policy_results if policy.get("passed")),
-        "deterministic_present_precision": _safe_div(totals["present_tp"], totals["present_tp"] + totals["present_fp"]),
+        "deterministic_present_precision": _safe_div(
+            totals["present_tp"], totals["present_tp"] + totals["present_fp"]
+        ),
         "deterministic_present_recall": _safe_div(totals["present_tp"], totals["gold_present"]),
         "normalized_value_accuracy": _safe_div(totals["value_correct"], totals["value_total"]),
         "status_accuracy": _safe_div(totals["status_correct"], totals["status_total"]),
@@ -263,14 +305,16 @@ def _git_commit() -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Evaluate DSE-007 fact extraction against gold facts.")
+    parser = argparse.ArgumentParser(
+        description="Evaluate DSE-007 fact extraction against gold facts."
+    )
     parser.add_argument("--facts-root", type=Path, required=True)
     parser.add_argument("--gold-corpus", type=Path, required=True)
     parser.add_argument("--section-root", type=Path, default=Path("data/interim/logical"))
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    policies = sorted(GOLD_POLICIES)
+    policies = sorted(_discover_reviewed_policies(args.gold_corpus))
     results = [
         evaluate_policy(
             slug=slug,
@@ -281,11 +325,12 @@ def main() -> int:
         for slug in policies
     ]
     metrics = _aggregate(results)
+    expected_count = len(policies)
     failures = []
-    if len(results) != 5:
-        failures.append("Expected 5 gold policies evaluated")
-    if metrics["policies_passed"] != 5:
-        failures.append(f"Only {metrics['policies_passed']}/5 policies passed")
+    if len(results) != expected_count:
+        failures.append(f"Expected {expected_count} gold policies evaluated, got {len(results)}")
+    if metrics["policies_passed"] != expected_count:
+        failures.append(f"Only {metrics['policies_passed']}/{expected_count} policies passed")
     if metrics["false_present_for_gold_not_found"] != 0:
         failures.append("False present emitted for at least one gold not_found fact")
     if metrics["deterministic_present_precision"] < 0.95:
@@ -315,7 +360,9 @@ def main() -> int:
         ),
     }
     _write_json(args.output, output)
-    print(json.dumps({"passed": output["passed"], "metrics": metrics, "failures": failures}, indent=2))
+    print(
+        json.dumps({"passed": output["passed"], "metrics": metrics, "failures": failures}, indent=2)
+    )
     return 0 if output["passed"] else 1
 
 

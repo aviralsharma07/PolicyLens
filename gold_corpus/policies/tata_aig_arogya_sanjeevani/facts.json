@@ -2,14 +2,14 @@
   {
     "concept": "ped_waiting_period",
     "value_json": {
-      "schedule_dependent": true
+      "months": 36
     },
     "normalized_value_json": {
-      "schedule_dependent": true
+      "months": 36
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
@@ -17,7 +17,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 9,
-    "evidence_text": "e available only if the Policy is mentioned below: renewed/ premium paid within the Grace Period. I. Pre-Existing Diseases(Code- Exel 01) iv. If the Insured Persons in the expiring a) Expenses related to the treatment policy are covered on an individual basis as of a pre-existing Disease (PED) specified in the Policy Schedule and there and its direct complications shall is an accumulated CB for such Insured be excluded until the expiry of 36 Person under the expiring policy, and months of",
+    "evidence_text": "surgeries iv.If the Insured Persons in the expiring of a pre-existing Disease (PED) policy are covered on an individual basis as and its direct complications shall specified in the Policy Schedule and there be excluded until the expiry of 36 is an accumulated CB for such Insured months of continuous coverage after Person under the expiring policy, and the date of inception of the first policy such expiring policy has been Renewed with us. on a floater policy basis as specified",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -25,10 +25,10 @@
       "document_id": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
       "uin": "TATHLIP20169V011920"
     },
-    "value_type": "schedule_dependent",
+    "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'schedule_dependent': True}, old_page=9.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -39,6 +39,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'schedule_dependent': True}, old_page=9."
       }
     ],
     "human_review_priority": "normal"

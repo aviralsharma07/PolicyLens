@@ -780,7 +780,7 @@ For DSE-007, the active target concepts are:
 
 ### Hard Rules
 Deterministic extractors:
-- all 5 gold policies evaluated
+- all reviewed gold policies evaluated for the active concept set
 - all 5 DSE-007 concepts attempted for every policy
 - no `present` fact without verified evidence text
 - no false present for gold `not_found` concepts
@@ -810,7 +810,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-007 passed v1 on 2026-05-30)
+active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -830,6 +830,27 @@ Notes:
 - DSE-007 uses provisional evidence IDs in the form `clause:{clause_id}` because DSE-010 source spans are not built yet.
 - DSE-007 extraction text enriches each clause with its section heading because DSE-006 can carry fact-bearing text in heading lines. Evidence line IDs include the heading line when used.
 - During DSE-007 eval, the Care Health PED gold normalized value was corrected from 48 months to 36 months because the stored gold evidence text itself states 36 months.
+
+### Current DSE-017 Result
+
+The 20-policy scale run initially failed semantic gates. DSE-017 remediation audited every failed concept-policy pair against source PDFs, corrected demonstrably wrong gold labels, narrowed the 5 existing extractors, and reran the gates.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 100,
+  "gold_present": 83,
+  "present_tp": 83,
+  "present_fp": 0,
+  "present_fn": 0,
+  "status_accuracy": 1.0,
+  "normalized_value_accuracy": 1.0,
+  "evidence_accuracy": 1.0,
+  "passed": true
+}
+```
+
+Value comparison rule added in DSE-017: predicted normalized values may include harmless extra metadata only when every scalar key present in gold matches exactly. Different durations, units, percentages, statuses, or schedule-dependent values are not equivalent.
 
 ---
 
@@ -998,11 +1019,11 @@ active (DSE-010 v2 PASS on 2026-05-31)
 Ensures the fact candidate/fact persistence layer is correct, every persisted fact matches gold annotations, scoring and conflict infrastructure works, and no cross-document fact links exist.
 
 ### Hard Gates
-- `policies_evaluated == 5`
+- `policies_evaluated == reviewed gold policy count`
 - `candidate_persistence_parity == 100%` (per-document: JSON candidates == SQLite candidates)
 - `fact_persistence_parity == 100%` (per-document: resolved present facts == SQLite extracted_facts)
 - `FK violations == 0`
-- `fact_status_accuracy >= 95%` (status matches gold for 5 concepts × 5 policies)
+- `fact_status_accuracy >= 95%` (status matches gold for implemented concepts across reviewed policies)
 - `normalized_value_accuracy >= 95%` (present fact values match gold)
 - `evidence_accuracy >= 95%` (every present fact has valid evidence_span_id)
 - `false_present_count == 0`
@@ -1073,7 +1094,25 @@ v1 eval (`2026-06-01-fact-scoring-dse011-v1.json`) lacked the `accepted_candidat
 ```
 
 ### Current Status
-active (DSE-011 v2 PASS on 2026-06-01)
+active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
+
+### Current DSE-017 Result
+
+```json
+{
+  "policies_evaluated": 20,
+  "total_db_candidates": 282,
+  "total_db_facts": 83,
+  "fact_status_accuracy": 1.0,
+  "normalized_value_accuracy": 1.0,
+  "evidence_accuracy": 1.0,
+  "false_present_count": 0,
+  "conflicts_total": 0,
+  "cross_document_fact_links": 0,
+  "accepted_candidate_min_score": 0.94,
+  "passed": true
+}
+```
 
 ---
 
@@ -1083,7 +1122,7 @@ active (DSE-011 v2 PASS on 2026-06-01)
 Ensures the Product B consumable export is structurally correct, all 20 concepts are present, evidence links are valid, and extracted values match gold for implemented concepts.
 
 ### Hard Gates
-- `policies_exported == 5`
+- `policies_exported == reviewed gold policy count`
 - `all_20_concepts_present_per_policy` (no missing field keys)
 - `schema_validation_errors == 0`
 - `present_facts_have_evidence` (evidence + evidence_page + source_span_id non-null)
@@ -1094,7 +1133,7 @@ Ensures the Product B consumable export is structurally correct, all 20 concepts
 - `gold_status_match_for_5_concepts >= 95%`
 - `false_present == 0`
 - `export_schema_version == "1.0"` in every file
-- `derived_policy_features_parity == 5`
+- `derived_policy_features_parity == reviewed gold policy count`
 - `present_missing_evidence_clause == 0` (every present fact has non-null evidence_clause)
 - `cross_file_page_disagreement == 0` (features and fact_sources agree on evidence page)
 
@@ -1119,7 +1158,11 @@ All 14 gates pass. 5/5 policies exported. 20/20 concepts per policy. Gold accura
 v1 eval lacked `evidence_clause` and `cross_file_page_disagreement` gates. v2 is the final passing artifact.
 
 ### Current Status
-active (DSE-013 v2 PASS on 2026-06-01)
+active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
+
+### Current DSE-017 Result
+
+20/20 policies exported. Every policy has all 20 concept fields. Gold status/value accuracy for the 5 implemented concepts is 100%, false-present count is 0, evidence span IDs exist for all present facts, and `derived_policy_features` parity is 20/20.
 
 ---
 
@@ -1132,9 +1175,9 @@ active (DSE-013 v2 PASS on 2026-06-01)
 | Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
 | Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
-| Clause Store + Source Spans | 5/5 policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 30MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-010 v2 PASS) |
-| Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding to 15+ extractors | active (DSE-011 v2 PASS) |
+| Clause Store + Source Spans | all reviewed policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 120MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-017 PASS) |
+| Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding to 15+ extractors | active (DSE-017 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |
-| Export | 20/20 concepts, schema valid, evidence spans exist, evidence_clause required, cross-file consistency, gold accuracy >= 95%, 0 false-present | Product B consumption | active (DSE-013 v2 PASS) |
+| Export | all reviewed policies, 20/20 concepts per policy, schema valid, evidence spans exist, evidence_clause required, cross-file consistency, gold accuracy >= 95%, 0 false-present | Product B consumption | active (DSE-017 PASS) |

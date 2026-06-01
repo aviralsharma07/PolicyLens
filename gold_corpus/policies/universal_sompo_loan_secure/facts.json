@@ -1,13 +1,9 @@
 [
   {
     "concept": "ped_waiting_period",
-    "value_json": {
-      "months": 24
-    },
-    "normalized_value_json": {
-      "months": 24
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -16,8 +12,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 11,
-    "evidence_text": "t directly or indirectly arising out of the following events: a) Any Pre-Existing Illness- Any Insured Event arising on account of or in connection with any Pre-Existing Illness b) If the Insured does not submit a medical certificate from the Medical Practitioner evidencing diagnosis of Illness or Injury or occurrence of the medical event or the undergoing of the medical / Surgical Procedure in relation to the claim of the particular Insured person. c) The Company shall not be liable to make any payment under this Policy in connection with or in respect of any Insured Event, as stated in this Section, occurred or suffered before the commencement of Period of Insurance or arising within the first 90 days of the commencement of the Period of Insurance (Waiting period is not applicable on renewal). d) “Expenses arising out of or howsoever connected to the internal congenital diseases or illnesses for the first 2 years of the Policy e) Any medical procedure or treatment, which is not medically necessary or not performed by a Medical Practitioner. f) Treatment relating to external congenital Illnesses. g) Birth control procedures and hormon",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
       "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
@@ -25,10 +21,10 @@
       "document_id": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
       "uin": "UNIHLIP22139V032122"
     },
-    "value_type": "duration",
+    "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: pre-existing disease waiting period search DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'months': 24}, old_page=11.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -39,6 +35,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected ped_waiting_period: old_status=present, old_value={'months': 24}, old_page=11."
       }
     ],
     "human_review_priority": "normal"
@@ -655,19 +656,23 @@
   },
   {
     "concept": "grace_period",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 30,
+    "evidence_text": "nsured with cogent reasons for such denial of Renewal. policy(ies) if the claim is paid or admitted under section I or section II. d.The company may condone delay in Renewal up to 30 days from the due date of Renewal without deeming such condo nation as a Break in Policy. However coverage shall not be available for such period. e.If the insured move into a higher a",
     "source_document": {
       "filename": "Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
       "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
@@ -675,10 +680,10 @@
       "document_id": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
       "uin": "UNIHLIP22139V032122"
     },
-    "value_type": null,
+    "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review found no safe supporting policy text. DSE-017 fact regression audit corrected grace_period: old_status=not_found, old_value=None, old_page=None.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -689,6 +694,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected grace_period: old_status=not_found, old_value=None, old_page=None."
       }
     ],
     "human_review_priority": "normal"

@@ -1,0 +1,218 @@
+{
+  "eval_name": "clause-store-dse010-v2",
+  "date": "2026-06-02",
+  "task_id": "DSE-010",
+  "git_commit": "2b9a1910ad3987e38a6f9626f553128273eaad81",
+  "hard_gates": {
+    "policies_ingested_target": 20,
+    "policies_ingested_actual": 20,
+    "dangling_fk_count_target": 0,
+    "dangling_fk_count_actual": 0,
+    "unresolved_present_facts_target": 0,
+    "unresolved_present_facts_actual": 0,
+    "total_present_facts": 83,
+    "clause_span_coverage_target": 0.95,
+    "clause_span_coverage_actual": 1.0,
+    "provisional_ids_in_resolved_target": 0,
+    "provisional_ids_in_resolved_actual": 0,
+    "db_size_limit_bytes": 125829120,
+    "db_size_bytes_actual": 86310912,
+    "source_count_parity_expected": {
+      "document_lines": 56854,
+      "document_sections": 4190,
+      "policy_clauses": 10330
+    },
+    "source_count_parity_actual": {
+      "document_lines": 56854,
+      "document_sections": 4190,
+      "policy_clauses": 10330
+    },
+    "cross_document_mismatches": {
+      "clause_span_mismatches": 0,
+      "table_cell_span_mismatches": 0
+    },
+    "resolved_fact_span_integrity": {
+      "present_facts_checked": 83,
+      "missing_or_mismatched": 0
+    }
+  },
+  "metrics": {
+    "clauses_with_spans": 10330,
+    "total_clauses": 10330,
+    "clause_span_coverage": 1.0,
+    "span_type_distribution": {
+      "clause_body": 10330,
+      "fact_evidence": 83,
+      "table_cell": 15992
+    },
+    "table_parent_clause": {
+      "total_tables": 797,
+      "tables_with_bbox_resolved_parent": 642,
+      "tables_pct_resolved": 0.8055,
+      "avg_iou_resolved_parents": 0.3936
+    },
+    "span_char_offset_coverage": {
+      "total_source_spans": 26405,
+      "spans_with_char_offsets": 26405,
+      "char_offset_coverage_rate": 1.0
+    },
+    "cross_page_clauses": {
+      "cross_page_clauses": 380,
+      "total_clauses": 10330,
+      "cross_page_clause_spans": 380
+    },
+    "evidence_degradation": {
+      "fact_evidence_spans_total": 83,
+      "evidence_exact_match": 28,
+      "evidence_clause_level_precision": 55
+    },
+    "source_count_parity": {
+      "expected_totals": {
+        "document_lines": 56854,
+        "document_sections": 4190,
+        "policy_clauses": 10330
+      },
+      "actual_totals": {
+        "document_lines": 56854,
+        "document_sections": 4190,
+        "policy_clauses": 10330
+      },
+      "per_document_actual": {
+        "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56": {
+          "document_lines": 3637,
+          "document_sections": 699,
+          "policy_clauses": 854
+        },
+        "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472": {
+          "document_lines": 2229,
+          "document_sections": 253,
+          "policy_clauses": 544
+        },
+        "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95": {
+          "document_lines": 3832,
+          "document_sections": 280,
+          "policy_clauses": 554
+        },
+        "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29": {
+          "document_lines": 2922,
+          "document_sections": 174,
+          "policy_clauses": 427
+        },
+        "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394": {
+          "document_lines": 3137,
+          "document_sections": 64,
+          "policy_clauses": 832
+        },
+        "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0": {
+          "document_lines": 1800,
+          "document_sections": 115,
+          "policy_clauses": 435
+        },
+        "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7": {
+          "document_lines": 3032,
+          "document_sections": 187,
+          "policy_clauses": 589
+        },
+        "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0": {
+          "document_lines": 2558,
+          "document_sections": 249,
+          "policy_clauses": 449
+        },
+        "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154": {
+          "document_lines": 3602,
+          "document_sections": 136,
+          "policy_clauses": 856
+        },
+        "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940": {
+          "document_lines": 4062,
+          "document_sections": 39,
+          "policy_clauses": 482
+        },
+        "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885": {
+          "document_lines": 1850,
+          "document_sections": 187,
+          "policy_clauses": 525
+        },
+        "sha256:8e692c4c84b8eb44c403268ff99d85035daf5b92571e852d22d2e4e5bfee39f9": {
+          "document_lines": 2720,
+          "document_sections": 232,
+          "policy_clauses": 452
+        },
+        "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af": {
+          "document_lines": 2129,
+          "document_sections": 49,
+          "policy_clauses": 336
+        },
+        "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176": {
+          "document_lines": 4758,
+          "document_sections": 392,
+          "policy_clauses": 771
+        },
+        "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2": {
+          "document_lines": 2630,
+          "document_sections": 184,
+          "policy_clauses": 466
+        },
+        "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7": {
+          "document_lines": 1541,
+          "document_sections": 216,
+          "policy_clauses": 387
+        },
+        "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976": {
+          "document_lines": 2201,
+          "document_sections": 388,
+          "policy_clauses": 445
+        },
+        "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f": {
+          "document_lines": 3978,
+          "document_sections": 96,
+          "policy_clauses": 274
+        },
+        "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803": {
+          "document_lines": 1735,
+          "document_sections": 185,
+          "policy_clauses": 393
+        },
+        "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2": {
+          "document_lines": 2501,
+          "document_sections": 65,
+          "policy_clauses": 259
+        }
+      },
+      "mismatches": []
+    },
+    "db_size_mb": 82.31
+  },
+  "table_row_counts": {
+    "derived_policy_features": 0,
+    "document_blocks": 66,
+    "document_issues": 1575,
+    "document_lines": 56854,
+    "document_pages": 813,
+    "document_sections": 4190,
+    "document_table_cells": 30491,
+    "document_tables": 797,
+    "document_text_spans": 0,
+    "extracted_fact_candidates": 0,
+    "extracted_facts": 0,
+    "fact_conflicts": 0,
+    "pipeline_runs": 1,
+    "policy_clauses": 10330,
+    "product_versions": 20,
+    "products": 20,
+    "source_documents": 20,
+    "source_spans": 26405,
+    "sqlite_sequence": 1,
+    "validation_labels": 0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": "ADR-0017: document_text_spans not populated (char-level spans deferred). ADR-0018: page_regions_json handles cross-page clauses. ADR-0019: char_start/char_end are clause-text offsets. ADR-0020: resolved facts written to data/interim/facts_resolved/ (DSE-007 output unchanged). Degraded fact evidence char offsets occur when DSE-007 evidence_text boundaries differ from current clause segmentation — location (clause, page, bbox) is correct.",
+  "known_limitations": [
+    "document_text_spans not populated (ADR-0017)",
+    "One block per page (physical parser limitation)",
+    "fact_evidence char offsets may be clause-level (not subspan-level) when evidence_text predates current clause boundaries",
+    "parent_clause_id for tables uses bbox IoU threshold 0.10 — tables fully outside any clause bbox retain null",
+    "extracted_facts, fact_conflicts, derived_policy_features not populated (DSE-011/013)"
+  ]
+}

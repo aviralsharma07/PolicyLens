@@ -220,22 +220,22 @@
   {
     "concept": "co_pay",
     "value_json": {
-      "percentage": 50
+      "percentage": 20
     },
     "normalized_value_json": {
-      "percentage": 50
+      "percentage": 20
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 7,
-    "evidence_text": "s for payment of claim. i. Our total, cumulative and maximum liability in first Policy year since inception of the Policy with Us will be limited to 50% of Sum Insured. However, Co-payment of 20% shall also be applicable on such claims j. Claims related to Pre-existing Diseases (i) Waiting period of 2 years is applicable from the date of inception of the Policy with Us, (ii) Our liability in respect of a claim arising due to any Pre-existi",
+    "evidence_page": 4,
+    "evidence_text": "essarily incurred by the Insured Person for treatment of the Insured Person outside India, in the manner specified and subject to the terms and conditions below. All claims admitted under this Benefit will be subject to 20% Co-payment.",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -245,8 +245,8 @@
     },
     "value_type": "percentage",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: co-payment percentage search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: co-payment percentage search DSE-017 fact regression audit corrected co_pay: old_status=present, old_value={'percentage': 50}, old_page=7.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -257,6 +257,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected co_pay: old_status=present, old_value={'percentage': 50}, old_page=7."
       }
     ],
     "human_review_priority": "normal"
@@ -704,22 +709,22 @@
   {
     "concept": "grace_period",
     "value_json": {
-      "days": 15
+      "days": 30
     },
     "normalized_value_json": {
-      "days": 15
+      "days": 30
     },
     "fact_status": "present",
     "scope_json": {
-      "policy_scope": "base_policy"
+      "cover": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 20,
-    "evidence_text": "ntioned in the policy Schedule/Certificate of Insurance, the following Conditions shall apply (notwithstanding any terms contrary elsewhere in the policy) i. Grace Period of 15 days would be given to pay the instalment premium due for the policy. ii. During such grace period, coverage will not be available from the due date of instalment premium till the date of receipt of premium by Company. iii. The Insured Person",
+    "evidence_page": 23,
+    "evidence_text": "7. Other terms on Renewal iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy.",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -729,8 +734,8 @@
     },
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: grace period search",
+    "review_status": "gold_v3_dse017_regression_reviewed",
+    "notes": "DSE-012 source-PDF review: grace period search DSE-017 fact regression audit corrected grace_period: old_status=present, old_value={'days': 15}, old_page=20.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -741,6 +746,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse017_fact_regression_audit",
+        "result": "reviewed",
+        "note": "DSE-017 fact regression audit corrected grace_period: old_status=present, old_value={'days': 15}, old_page=20."
       }
     ],
     "human_review_priority": "normal"

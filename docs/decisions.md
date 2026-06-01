@@ -22,6 +22,8 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0014 | pdfplumber-only table extraction for DSE-009 v1 (no camelot) | 2026-05-31 | Accepted |
 | 0015 | Keyword-based table type classifier (no ML) with two-tier detection | 2026-05-31 | Accepted |
 | 0016 | Split physical table labels from semantic table summaries | 2026-05-31 | Accepted |
+| 0035 | Scale eval gates derive reviewed policy count dynamically | 2026-06-02 | Accepted |
+| 0036 | Fact value comparison allows metadata supersets only | 2026-06-02 | Accepted |
 
 ---
 
@@ -43,6 +45,50 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 ---
 
 ## Decision Records
+
+### 2026-06-02 — ADR-0035: Scale Eval Gates Derive Reviewed Policy Count Dynamically
+
+**Status:** accepted
+
+**Decision:** DSE-017 eval scripts derive the expected policy count from reviewed policies in `gold_corpus/` instead of hardcoding 5. The SQLite size gate is raised from 30 MB to 120 MB for the reviewed 20-policy corpus.
+
+**Context:** After DSE-012, the authoritative gold corpus grew from 5 to 20 reviewed policies. DSE-010 through DSE-013 evals still contained 5-policy assumptions, which made the structural pipeline look smaller than the current acceptance target.
+
+**Options considered:**
+1. Keep 5-policy evals and treat 20-policy runs as diagnostic.
+2. Add separate 20-policy eval scripts.
+3. Make existing evals corpus-driven.
+
+**Reasoning:** Corpus-driven gates keep one source of truth and prevent future expansion from leaving stale constants behind. Separate scripts would duplicate gate logic.
+
+**Consequences:**
+- Positive: Clause-store, fact-scoring, extraction, source-span, and export gates now scale with reviewed gold.
+- Positive: Future gold expansion should not require changing count constants.
+- Negative: Generated SQLite size grows with corpus size and must remain monitored.
+
+**Revisit when:** The gold corpus exceeds 100 reviewed policies or SQLite size exceeds the documented gate.
+
+### 2026-06-02 — ADR-0036: Fact Value Comparison Allows Metadata Supersets Only
+
+**Status:** accepted
+
+**Decision:** A predicted normalized fact value may match gold when it includes harmless extra metadata, but only if every scalar key in the gold value matches exactly. Different durations, units, percentages, schedule-dependent markers, or statuses remain mismatches.
+
+**Context:** DSE-017 found values such as extracted `{"percentage": 5, "basis": "admissible_claim_amount"}` versus gold `{"percentage": 5}`. Treating those as mismatches punished useful extractor provenance without improving correctness.
+
+**Options considered:**
+1. Require exact JSON equality.
+2. Allow loose semantic matching for many shapes.
+3. Allow metadata supersets only when gold scalar keys match exactly.
+
+**Reasoning:** Exact equality is too brittle for richer extractor output. Broad semantic matching risks hiding real insurance-value errors. Scalar-key subset matching is narrow and auditable.
+
+**Consequences:**
+- Positive: Extractors can carry basis/scope metadata without failing gold value accuracy.
+- Positive: Value differences that matter to Product B still fail.
+- Negative: Eval code must preserve concept-specific caution when future nested values are introduced.
+
+**Revisit when:** New extractors emit nested compound values that need concept-specific comparison rules.
 
 ### 2026-05-29 — ADR-0001: Use SQLite for Engine Storage (Not Supabase)
 

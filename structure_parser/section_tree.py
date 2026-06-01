@@ -240,6 +240,13 @@ class SectionTreeBuilder:
         stack: List[Dict[str, Any]] = [root]
         id_map: Dict[str, Dict[str, Any]] = {section_id: root}
 
+        if self._needs_preheading_body_section():
+            preheading = self._preheading_body_section(len(sections))
+            preheading["parent_id"] = root["section_id"]
+            root["children"].append(preheading["section_id"])
+            sections.append(preheading)
+            id_map[preheading["section_id"]] = preheading
+
         for heading in self._filtered_headings:
             sec = self._heading_to_section(heading, len(sections))
             level = sec["level"]
@@ -257,6 +264,51 @@ class SectionTreeBuilder:
             stack.append(sec)
 
         return sections
+
+    def _needs_preheading_body_section(self) -> bool:
+        if not self._filtered_headings:
+            return False
+        first_heading = self._filtered_headings[0]
+        first_line_id = first_heading.get("line_id", "")
+        first_idx = self._line_to_idx.get(first_line_id, -1)
+        first_page = first_heading.get("page_number", 0)
+        if first_idx <= 0 or first_page <= 3:
+            return False
+
+        meaningful_lines = 0
+        for _, flat_idx, lid in self._all_ordered_lines:
+            if flat_idx >= first_idx:
+                break
+            line = self._line_index.get(lid)
+            if not line or _is_header_footer(line):
+                continue
+            text = line.get("text", "").strip()
+            if len(text) >= 4:
+                meaningful_lines += 1
+            if meaningful_lines >= 50:
+                return True
+        return False
+
+    def _preheading_body_section(self, index: int) -> Dict[str, Any]:
+        return {
+            "section_id": self._make_section_id(index, "sec"),
+            "heading_candidate_id": None,
+            "heading_line_id": None,
+            "number": None,
+            "title": "Pre-heading body text",
+            "normalized_title": "pre-heading body text",
+            "level": 1,
+            "heading_type": "synthetic_preheading_body",
+            "heading_score": None,
+            "parent_id": None,
+            "children": [],
+            "page_start": 1,
+            "page_end": 1,
+            "line_ids": [],
+            "content_line_ids": [],
+            "text": "",
+            "pipeline_run_id": self.pipeline_run_id,
+        }
 
     def _make_section_id(self, index: int, prefix: str = "sec") -> str:
         return f"{self._policy_id_safe}_{prefix}_{index:04d}"
@@ -390,7 +442,13 @@ class SectionTreeBuilder:
         for _ in range(5):
             existing_line_ids = {s.get("heading_line_id") for s in sections if s.get("heading_line_id")}
             new_sections: List[Dict[str, Any]] = []
-            leaf_sections = [s for s in sections if s["level"] > 0 and not s.get("children")]
+            leaf_sections = [
+                s
+                for s in sections
+                if s["level"] > 0
+                and not s.get("children")
+                and s.get("heading_type") != "synthetic_preheading_body"
+            ]
 
             for leaf in leaf_sections:
                 numbered_lines = self._synthetic_candidates_for_leaf(leaf, existing_line_ids)

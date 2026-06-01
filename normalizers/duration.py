@@ -9,7 +9,8 @@ from normalizers.indian_number_words import NUMBER_WORD_PATTERN, parse_number, t
 NUMBER_TOKEN = rf"\d+(?:\.\d+)?|(?:{NUMBER_WORD_PATTERN})(?:[\s-]+(?:{NUMBER_WORD_PATTERN}))*"
 
 DURATION_RE = re.compile(
-    rf"\b(?P<num>{NUMBER_TOKEN})\s+"
+    rf"\b(?P<num>{NUMBER_TOKEN})(?:\s*-\s*|\s+)"
+    r"(?:(?:calendar|consecutive|continuous|completed|fixed)\s+)?"
     r"(?P<unit>day|days|month|months|year|years|yr|yrs)\b",
     re.IGNORECASE,
 )

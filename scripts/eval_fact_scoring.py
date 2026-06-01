@@ -1,15 +1,15 @@
 """
-Eval Fact Scoring — DSE-011
+Eval Fact Scoring — DSE-011 / DSE-017
 
 Hard-gate evaluation for the fact candidate scoring and conflict resolution layer.
 
 Hard gates (any failure blocks merge):
-  1.  policies_evaluated == 5
+  1.  policies_evaluated == reviewed gold count (corpus-driven)
   2.  candidate_persistence_parity == 100% (per-document, JSON == SQLite)
   3.  fact_persistence_parity == 100% (per-document, resolved present == SQLite)
   4.  FK violations == 0
   5.  deterministic_precision >= 95% (present facts match gold)
-  6.  fact_status_accuracy >= 95% (correct status for 5 concepts × 5 policies)
+  6.  fact_status_accuracy >= 95% (correct status for 5 concepts × N policies)
   7.  normalized_value_accuracy >= 95% (present fact values match gold)
   8.  evidence_accuracy >= 95% (every present fact has valid evidence_span_id in SQLite)
   9.  false_present_count == 0
@@ -48,6 +48,18 @@ _TARGET_CONCEPTS = [
 ]
 
 
+def _count_reviewed_policies(gold_corpus: str) -> int:
+    """Count reviewed policy directories in gold_corpus."""
+    policies_dir = os.path.join(gold_corpus, "policies")
+    if not os.path.isdir(policies_dir):
+        return 0
+    return sum(
+        1
+        for slug in os.listdir(policies_dir)
+        if os.path.isfile(os.path.join(policies_dir, slug, "metadata.json"))
+    )
+
+
 def _git_commit() -> str:
     try:
         r = subprocess.run(
@@ -82,6 +94,58 @@ def _norm_json(obj: Any) -> str:
         except (json.JSONDecodeError, TypeError):
             return obj
     return json.dumps(obj, sort_keys=True, separators=(",", ":"))
+
+
+def _json_obj(obj: Any) -> Any:
+    if obj is None:
+        return None
+    if isinstance(obj, str):
+        try:
+            return json.loads(obj)
+        except (json.JSONDecodeError, TypeError):
+            return obj
+    return obj
+
+
+def _canonical(value: Any) -> Any:
+    if isinstance(value, dict):
+        normalized = {}
+        for key, item in sorted(value.items()):
+            if key == "components" and isinstance(item, list):
+                normalized[key] = sorted(
+                    (_canonical(x) for x in item), key=lambda x: json.dumps(x, sort_keys=True)
+                )
+            else:
+                normalized[key] = _canonical(item)
+        return normalized
+    if isinstance(value, list):
+        return [_canonical(item) for item in value]
+    return value
+
+
+def _is_subset_value(expected: Any, actual: Any) -> bool:
+    if isinstance(expected, dict) and isinstance(actual, dict):
+        return all(key in actual and _is_subset_value(value, actual[key]) for key, value in expected.items())
+    if isinstance(expected, list) and isinstance(actual, list):
+        if len(expected) != len(actual):
+            return False
+        unmatched = list(actual)
+        for expected_item in expected:
+            match_idx = next(
+                (idx for idx, actual_item in enumerate(unmatched) if _is_subset_value(expected_item, actual_item)),
+                None,
+            )
+            if match_idx is None:
+                return False
+            unmatched.pop(match_idx)
+        return True
+    return expected == actual
+
+
+def _values_match(expected: Any, actual: Any) -> bool:
+    expected_c = _canonical(_json_obj(expected))
+    actual_c = _canonical(_json_obj(actual))
+    return expected_c == actual_c or _is_subset_value(expected_c, actual_c)
 
 
 def open_db(db_path: str) -> sqlite3.Connection:
@@ -224,9 +288,10 @@ def compute_gold_comparison(
             # Value comparison for present facts
             val_ok = None
             if g_status == "present" and ext and e_status == "present":
-                g_val = _norm_json(gold.get("normalized_value_json"))
-                e_val = _norm_json(ext.get("normalized_value_json"))
-                val_ok = g_val == e_val
+                val_ok = _values_match(
+                    gold.get("normalized_value_json"),
+                    ext.get("normalized_value_json"),
+                )
                 if val_ok:
                     value_correct += 1
 
@@ -345,9 +410,12 @@ def main() -> int:
     conn.close()
 
     # Hard gate evaluation
+    expected_policy_count = _count_reviewed_policies(args.gold_corpus)
     failures = []
-    if policies_evaluated != 5:
-        failures.append(f"policies_evaluated={policies_evaluated} (expected 5)")
+    if policies_evaluated != expected_policy_count:
+        failures.append(
+            f"policies_evaluated={policies_evaluated} (expected {expected_policy_count})"
+        )
     if not cand_parity_ok:
         failures.append(f"candidate_parity FAIL: {[d for d in cand_parity_detail if not d['ok']]}")
     if not fact_parity_ok:

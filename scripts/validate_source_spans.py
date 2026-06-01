@@ -35,7 +35,7 @@ from typing import Dict, List, Tuple
 
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-_EXPECTED_POLICY_COUNT = 5
+_EXPECTED_POLICY_COUNT = None  # Derived dynamically from gold_corpus at runtime
 
 
 class ValidationError(Exception):
@@ -56,11 +56,11 @@ def open_db(db_path: str) -> sqlite3.Connection:
     return conn
 
 
-def check_source_documents(conn: sqlite3.Connection) -> int:
+def check_source_documents(conn: sqlite3.Connection, expected_count: int) -> int:
     count = conn.execute("SELECT COUNT(*) FROM source_documents").fetchone()[0]
     require(
-        count == _EXPECTED_POLICY_COUNT,
-        f"Expected {_EXPECTED_POLICY_COUNT} source_documents, found {count}",
+        count == expected_count,
+        f"Expected {expected_count} source_documents, found {count}",
     )
     return count
 
@@ -256,8 +256,8 @@ def check_source_span_document_consistency(conn: sqlite3.Connection) -> Tuple[in
     require(
         len(bad_clause) == 0 and len(bad_cell) == 0,
         "Found source_spans linked across documents or to missing parents: "
-        f"clause={ [dict(r) for r in bad_clause[:3]] }, "
-        f"table_cell={ [dict(r) for r in bad_cell[:3]] }",
+        f"clause={[dict(r) for r in bad_clause[:3]]}, "
+        f"table_cell={[dict(r) for r in bad_cell[:3]]}",
     )
     return len(bad_clause), len(bad_cell)
 
@@ -283,7 +283,10 @@ def check_resolved_fact_spans_exist(conn: sqlite3.Connection, facts_root: str) -
             if row is None:
                 bad.append(f"{slug}:{fact.get('concept')} missing span {span_id}")
                 continue
-            if fact.get("evidence_document_id") and fact["evidence_document_id"] != row["document_id"]:
+            if (
+                fact.get("evidence_document_id")
+                and fact["evidence_document_id"] != row["document_id"]
+            ):
                 bad.append(f"{slug}:{fact.get('concept')} evidence_document_id mismatch")
             if fact.get("evidence_clause_uid") and fact["evidence_clause_uid"] != row["clause_id"]:
                 bad.append(f"{slug}:{fact.get('concept')} evidence_clause_uid mismatch")
@@ -320,9 +323,10 @@ def main() -> int:
         return 1
 
     expected_counts = collect_source_counts(args.gold_corpus, args.physical_root, args.logical_root)
+    expected_policy_count = len(expected_counts)
 
     checks = [
-        ("source_documents_count", lambda: check_source_documents(conn)),
+        ("source_documents_count", lambda: check_source_documents(conn, expected_policy_count)),
         ("foreign_key_violations", lambda: check_foreign_keys(conn)),
         ("source_artifact_count_parity", lambda: check_source_count_parity(conn, expected_counts)),
         ("span_char_offsets_valid", lambda: check_span_char_offsets(conn)),

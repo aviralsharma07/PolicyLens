@@ -1,10 +1,10 @@
 """
-Eval Export — DSE-013
+Eval Export — DSE-013 / DSE-017
 
 Hard-gate evaluation for the derived 20-concept export.
 
 Hard gates (any failure blocks merge):
-  1.  policies_exported == 5
+  1.  policies_exported == reviewed gold count (corpus-driven)
   2.  all_20_concepts_present_per_policy
   3.  schema_validation_errors == 0
   4.  present_facts_have_evidence (evidence + evidence_page + evidence_clause + source_span_id non-null)
@@ -15,7 +15,7 @@ Hard gates (any failure blocks merge):
   9.  gold_status_match_for_5_concepts >= 95%
   10. false_present_for_gold_not_found == 0
   11. export_schema_version_present ("1.0")
-  12. derived_policy_features_parity == 5
+  12. derived_policy_features_parity == reviewed gold count
   13. present_missing_evidence_clause == 0
   14. cross_file_page_disagreement == 0
 
@@ -43,6 +43,20 @@ from derived.field_mapping import ALL_EXPORT_CONCEPTS, CONCEPT_FIELD_MAP, VALID_
 from derived.schema_validator import validate_policy_features
 
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+
+def _count_reviewed_policies(gold_corpus: str) -> int:
+    """Count reviewed policy directories in gold_corpus."""
+    policies_dir = os.path.join(gold_corpus, "policies")
+    if not os.path.isdir(policies_dir):
+        return 0
+    return sum(
+        1
+        for slug in os.listdir(policies_dir)
+        if os.path.isfile(os.path.join(policies_dir, slug, "metadata.json"))
+    )
+
+
 _TARGET_CONCEPTS_5 = [
     "free_look_period",
     "grace_period",
@@ -86,6 +100,47 @@ def _norm_json(obj: Any) -> str:
         except (json.JSONDecodeError, TypeError):
             return obj
     return json.dumps(obj, sort_keys=True, separators=(",", ":"))
+
+
+def _canonical(value: Any) -> Any:
+    if isinstance(value, dict):
+        normalized = {}
+        for key, item in sorted(value.items()):
+            if key == "components" and isinstance(item, list):
+                normalized[key] = sorted(
+                    (_canonical(x) for x in item), key=lambda x: json.dumps(x, sort_keys=True)
+                )
+            else:
+                normalized[key] = _canonical(item)
+        return normalized
+    if isinstance(value, list):
+        return [_canonical(item) for item in value]
+    return value
+
+
+def _is_subset_value(expected: Any, actual: Any) -> bool:
+    if isinstance(expected, dict) and isinstance(actual, dict):
+        return all(key in actual and _is_subset_value(value, actual[key]) for key, value in expected.items())
+    if isinstance(expected, list) and isinstance(actual, list):
+        if len(expected) != len(actual):
+            return False
+        unmatched = list(actual)
+        for expected_item in expected:
+            match_idx = next(
+                (idx for idx, actual_item in enumerate(unmatched) if _is_subset_value(expected_item, actual_item)),
+                None,
+            )
+            if match_idx is None:
+                return False
+            unmatched.pop(match_idx)
+        return True
+    return expected == actual
+
+
+def _values_match(expected: Any, actual: Any) -> bool:
+    expected_c = _canonical(expected)
+    actual_c = _canonical(actual)
+    return expected_c == actual_c or _is_subset_value(expected_c, actual_c)
 
 
 def open_db(db_path: str) -> sqlite3.Connection:
@@ -251,9 +306,12 @@ def evaluate_exports(
                 gold_value_total += 1
                 from derived.field_mapping import extract_scalar_value
 
-                g_val = _norm_json(extract_scalar_value(concept, gold.get("normalized_value_json")))
-                e_val = _norm_json(exported.get("value"))
-                if g_val == e_val:
+                raw_gold_value = extract_scalar_value(concept, gold.get("normalized_value_json"))
+                raw_export_value = exported.get("value")
+                values_match = _values_match(raw_gold_value, raw_export_value)
+                g_val = _norm_json(raw_gold_value)
+                e_val = _norm_json(raw_export_value)
+                if values_match:
                     gold_value_correct += 1
                 gold_details.append(
                     {
@@ -261,7 +319,7 @@ def evaluate_exports(
                         "concept": concept,
                         "gold_value": g_val,
                         "export_value": e_val,
-                        "match": g_val == e_val,
+                        "match": values_match,
                     }
                 )
 
@@ -322,9 +380,12 @@ def main() -> int:
     results = evaluate_exports(args.db, args.export_root, args.gold_corpus)
 
     # Hard gate evaluation
+    expected_policy_count = _count_reviewed_policies(args.gold_corpus)
     failures = []
-    if results["policies_exported"] != 5:
-        failures.append(f"policies_exported={results['policies_exported']} (expected 5)")
+    if results["policies_exported"] != expected_policy_count:
+        failures.append(
+            f"policies_exported={results['policies_exported']} (expected {expected_policy_count})"
+        )
     if results["concepts_missing_fields"] != 0:
         failures.append(f"concepts_missing_fields={results['concepts_missing_fields']}")
     if results["schema_errors_total"] != 0:
@@ -349,9 +410,9 @@ def main() -> int:
         failures.append(f"false_present={results['false_present']}")
     if not results["schema_version_ok"]:
         failures.append("export_schema_version not '1.0' in all exports")
-    if results["derived_policy_features_count"] != 5:
+    if results["derived_policy_features_count"] != expected_policy_count:
         failures.append(
-            f"derived_policy_features_count={results['derived_policy_features_count']} (expected 5)"
+            f"derived_policy_features_count={results['derived_policy_features_count']} (expected {expected_policy_count})"
         )
     if results["present_missing_evidence_clause"] != 0:
         failures.append(

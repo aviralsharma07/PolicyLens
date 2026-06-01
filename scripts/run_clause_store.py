@@ -1,7 +1,7 @@
 """
 Run Clause Store — DSE-010
 
-Batch ingest all 5 gold-policy interim JSON outputs into SQLite (data/engine.sqlite).
+Batch ingest all reviewed gold-policy interim JSON outputs into SQLite (data/engine.sqlite).
 Also builds source_spans, resolves provisional evidence IDs, and writes
 data/interim/facts_resolved/{slug}/accepted_facts.json.
 
@@ -15,7 +15,7 @@ Usage:
     --output-db data/engine.sqlite \\
     --output-facts-resolved data/interim/facts_resolved
 
-Exit 0 if all 5 policies processed.
+Exit 0 if all policies processed.
 Exit 1 if any policy fails a critical check (unverifiable evidence, FK violation).
 """
 

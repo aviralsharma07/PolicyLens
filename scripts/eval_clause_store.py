@@ -1,15 +1,15 @@
 """
-Eval Clause Store — DSE-010
+Eval Clause Store — DSE-010 / DSE-017
 
 Hard-gate evaluation and metric computation for the clause store and source spans.
 
 Hard gates (any failure blocks merge):
-  1. policies_ingested == 5
+  1. policies_ingested == reviewed gold count (corpus-driven)
   2. dangling_fk_count == 0
   3. unresolved_present_facts == 0
   4. clauses_with_spans / total_clauses >= 0.95
   5. no_provisional_ids_in_resolved_facts == 0
-  6. db_size_bytes < 30MB
+  6. db_size_bytes <= 120MB
 
 Reported-only (not blocking):
   - tables with bbox-resolved parent_clause_id
@@ -40,9 +40,21 @@ import time
 from typing import Any, Dict, List, Optional, Tuple
 
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-_DB_SIZE_LIMIT_BYTES = 30 * 1024 * 1024  # 30 MB
+_DB_SIZE_LIMIT_BYTES = 120 * 1024 * 1024  # 120 MB (scaled for 20 policies)
 _SPAN_COVERAGE_TARGET = 0.95
-_EXPECTED_COUNTS = {"document_lines": 12715, "document_sections": 1156, "policy_clauses": 2522}
+
+
+def _count_reviewed_policies(gold_corpus: str) -> int:
+    """Count reviewed (non-draft) policy directories in gold_corpus."""
+    policies_dir = os.path.join(gold_corpus, "policies")
+    if not os.path.isdir(policies_dir):
+        return 0
+    count = 0
+    for slug in os.listdir(policies_dir):
+        meta_path = os.path.join(policies_dir, slug, "metadata.json")
+        if os.path.isfile(meta_path):
+            count += 1
+    return count
 
 
 def _git_commit() -> str:
@@ -227,9 +239,14 @@ def compute_resolved_fact_span_integrity(conn: sqlite3.Connection, facts_root: s
             if row is None:
                 bad += 1
                 continue
-            if fact.get("evidence_document_id") and fact["evidence_document_id"] != row["document_id"]:
+            if (
+                fact.get("evidence_document_id")
+                and fact["evidence_document_id"] != row["document_id"]
+            ):
                 bad += 1
-            elif fact.get("evidence_clause_uid") and fact["evidence_clause_uid"] != row["clause_id"]:
+            elif (
+                fact.get("evidence_clause_uid") and fact["evidence_clause_uid"] != row["clause_id"]
+            ):
                 bad += 1
             elif (fact.get("evidence_text") or "") != row["text"]:
                 bad += 1
@@ -405,9 +422,10 @@ def main() -> int:
     # -----------------------------------------------------------------------
     # Hard gate evaluation
     # -----------------------------------------------------------------------
+    expected_policy_count = _count_reviewed_policies(args.gold_corpus)
     failures = []
-    if policies_ingested != 5:
-        failures.append(f"policies_ingested={policies_ingested} (expected 5)")
+    if policies_ingested != expected_policy_count:
+        failures.append(f"policies_ingested={policies_ingested} (expected {expected_policy_count})")
     if dangling_fks != 0:
         failures.append(f"dangling_fk_count={dangling_fks} (expected 0)")
     if unresolved_present != 0:
@@ -419,18 +437,15 @@ def main() -> int:
     if provisional_in_resolved != 0:
         failures.append(f"provisional_ids_in_resolved={provisional_in_resolved} (expected 0)")
     if db_size_bytes >= _DB_SIZE_LIMIT_BYTES:
-        failures.append(f"db_size={db_size_bytes / 1024 / 1024:.1f}MB (limit 30MB)")
+        failures.append(
+            f"db_size={db_size_bytes / 1024 / 1024:.1f}MB (limit {_DB_SIZE_LIMIT_BYTES // (1024 * 1024)}MB)"
+        )
     if source_count_parity["mismatches"]:
         failures.append(f"source_count_parity mismatches={source_count_parity['mismatches'][:5]}")
     if source_count_parity["actual_totals"] != source_count_parity["expected_totals"]:
         failures.append(
             f"source_count_totals actual={source_count_parity['actual_totals']} "
             f"expected={source_count_parity['expected_totals']}"
-        )
-    if source_count_parity["actual_totals"] != _EXPECTED_COUNTS:
-        failures.append(
-            f"source_count_totals actual={source_count_parity['actual_totals']} "
-            f"expected_fixed={_EXPECTED_COUNTS}"
         )
     if (
         cross_document_mismatches["clause_span_mismatches"]
@@ -451,7 +466,7 @@ def main() -> int:
         "task_id": "DSE-010",
         "git_commit": _git_commit(),
         "hard_gates": {
-            "policies_ingested_target": 5,
+            "policies_ingested_target": expected_policy_count,
             "policies_ingested_actual": policies_ingested,
             "dangling_fk_count_target": 0,
             "dangling_fk_count_actual": dangling_fks,
