@@ -101,6 +101,44 @@ def validate_policy_features(features_doc: dict) -> List[str]:
         if status == "not_found" and feature.get("value") is not None:
             errors.append(f"Feature {field_name}: not_found fact has non-null value")
 
+    # Product identity validation (DSE-015)
+    # All 9 contract fields must be present as keys.
+    # Core fields (insurer, plan_name, uin, uin_base) must be non-null.
+    # Lifecycle-dependent fields (product_version, effective_date) may be null
+    # but the key must exist.
+    _PI_ALL_KEYS = (
+        "insurer",
+        "plan_name",
+        "display_name",
+        "uin",
+        "uin_base",
+        "product_version",
+        "effective_date",
+        "match_confidence",
+        "match_method",
+    )
+    _PI_REQUIRED_NON_NULL = ("insurer", "plan_name", "uin", "uin_base", "display_name")
+
+    pi = features_doc.get("product_identity", {})
+    if isinstance(pi, dict):
+        for key in _PI_ALL_KEYS:
+            if key not in pi:
+                errors.append(f"product_identity missing key: {key}")
+        for key in _PI_REQUIRED_NON_NULL:
+            if key in pi and not pi.get(key):
+                errors.append(f"product_identity.{key} is null or empty")
+        # uin_base should be 12 chars for standard IRDAI UINs
+        uin_base = pi.get("uin_base") or ""
+        if uin_base and len(uin_base) < 12:
+            errors.append(
+                f"product_identity.uin_base too short: {len(uin_base)} chars (expected >= 12)"
+            )
+        # plan_name should not contain insurer name
+        plan = pi.get("plan_name") or ""
+        insurer = pi.get("insurer") or ""
+        if insurer and plan and insurer in plan:
+            errors.append(f"product_identity.plan_name contains insurer name: {plan!r}")
+
     # Parse quality
     pq = features_doc.get("parse_quality", {})
     if not isinstance(pq, dict):

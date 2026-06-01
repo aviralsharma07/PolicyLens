@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-06-01 (DSE-015 — Insurer/Plan Normalizer Library)
+
+### Added
+- `identity/uin_utils.py` — canonical UIN base extraction via V-delimiter (ADR-0030). Replaces buggy `[:11]` hardcoded slice.
+- `identity/insurer_registry.py` — 32-insurer registry with canonical_name, legal_name, display_name, folder_aliases, IRDAI prefix (ADR-0032). Subsumes DSE-002 FOLDER_TO_LIFECYCLE.
+- `identity/plan_normalizer.py` — plan name cleanup: strips insurer suffixes, generic boilerplate, produces display_name and short_name (ADR-0031).
+- `tests/test_identity.py` — 45 unit tests (UIN parsing, registry, plan normalization, backward compat, regression).
+- `runs/evals/2026-06-01-export-dse015-v1.json` — passing export eval with identity gates.
+
+### Changed
+- `clause_store/schema.sql` — products table: +display_name, +short_name, +match_confidence, +match_method. product_versions table: +version_number, +approval_date, +financial_year.
+- `clause_store/models.py` — Product and ProductVersion dataclasses extended with new fields.
+- `clause_store/repository.py` — insert_product() and insert_product_version() updated for new columns.
+- `scripts/run_clause_store.py` — uses identity library for UIN parsing, plan cleaning, lifecycle enrichment. Fixes uin_base truncation bug (ADR-0030).
+- `derived/export_builder.py` — product_identity block now emits all 9 fields: insurer, plan_name, display_name, uin, uin_base, product_version, effective_date, match_confidence, match_method.
+- `derived/schema_validator.py` — validates product_identity completeness: uin_base >= 12 chars, display_name required, plan_name must not contain insurer.
+- `tests/test_export.py` — fixture updated with display_name, version_number, approval_date.
+
+### Fixed
+- **uin_base truncation**: `run_clause_store.py:157` hardcoded `full_uin[:11]` producing 11-char bases. Now uses V-delimiter via `identity.uin_utils.extract_uin_base()` producing correct 12-char bases for all 5 gold policies.
+- **Plan name insurer contamination**: "Arogya Sanjeevani Policy, HDFC ERGO" → "Arogya Sanjeevani". "Medi Classic Accident Care Individual Insurance Policy" → "Medi Classic Accident Care".
+- **Missing export fields**: product_version, effective_date, match_confidence, match_method now populated from lifecycle data and UIN match report.
+
+---
+
 ## 2026-06-01 (DSE-013 — Derived Export, 20-Concept Skeleton)
 
 ### Added

@@ -154,21 +154,100 @@ def ingest_policy(
     document_id = physical_doc["document_id"]
     file_hash = physical_doc["file_hash"]
     full_uin = meta.get("uin", "")
-    uin_base = full_uin[:11] if full_uin else policy_id
+
+    # DSE-015: Use canonical identity library for UIN parsing, insurer/plan normalization
+    from identity.uin_utils import extract_uin_base, extract_version_number
+    from identity.insurer_registry import get_display_name, lookup_by_canonical
+    from identity.plan_normalizer import clean_plan_name, make_display_name, make_short_name
+
+    # Correct UIN base via V-delimiter (fixes DSE-010 [:11] truncation bug — ADR-0030)
+    uin_base = meta.get("uin_base") or extract_uin_base(full_uin) or policy_id
+
+    raw_insurer = meta.get("insurer", "")
+    raw_plan = meta.get("plan_name", "")
+    canonical_plan = clean_plan_name(raw_plan, raw_insurer)
+    insurer_display = get_display_name(raw_insurer)
+    display_name = make_display_name(canonical_plan, insurer_display)
+    short_name = make_short_name(canonical_plan)
+
+    # Match confidence and method from gold metadata
+    match_confidence = meta.get("match_confidence", "none")
+    match_method = (
+        "uin_insurer_plan_verified" if meta.get("match_status") == "verified" else "uin_only"
+    )
 
     # Products / versions / source_documents
     product = Product(
         product_id=policy_id,
         uin_base=uin_base,
-        normalized_insurer=meta.get("insurer", ""),
-        normalized_plan_name=meta.get("plan_name", ""),
+        normalized_insurer=raw_insurer,
+        normalized_plan_name=canonical_plan,
+        display_name=display_name,
+        short_name=short_name,
+        match_confidence=match_confidence,
+        match_method=match_method,
     )
     insert_product(conn, product)
+
+    # Version info from lifecycle data if available
+    version_number = extract_version_number(full_uin)
+    # Lifecycle approval_date and financial_year from UIN lifecycle registry.
+    # Enrichment is optional but failures must be recorded (AGENTS.md: no silent failure).
+    lifecycle_approval_date = None
+    lifecycle_financial_year = None
+    try:
+        lifecycle_path = os.path.join(
+            str(_PROJECT_ROOT.parent / "insurance-agent" / "data" / "uin_lifecycle.json")
+        )
+        if os.path.isfile(lifecycle_path):
+            lifecycle_data = _load_json(lifecycle_path)
+            lifecycle_product = lifecycle_data.get("products", {}).get(uin_base)
+
+            # Fallback: if primary key lookup fails, scan all products for matching full_uin.
+            # Handles malformed lifecycle keys where the base doesn't match extract_uin_base().
+            if lifecycle_product is None and full_uin:
+                for _base, _prod in lifecycle_data.get("products", {}).items():
+                    for _v in _prod.get("versions", []):
+                        if _v.get("uin") == full_uin:
+                            lifecycle_product = _prod
+                            logger.info(
+                                "  %s: lifecycle fallback matched uin_base=%s via full_uin scan",
+                                slug,
+                                _base,
+                            )
+                            break
+                    if lifecycle_product:
+                        break
+
+            if lifecycle_product:
+                for v in lifecycle_product.get("versions", []):
+                    if v.get("uin") == full_uin:
+                        lifecycle_approval_date = v.get("approval_date")
+                        lifecycle_financial_year = v.get("financial_year")
+                        break
+        else:
+            logger.info(
+                "  %s: lifecycle file not found at %s — skipping enrichment", slug, lifecycle_path
+            )
+    except Exception as exc:
+        logger.warning("  %s: lifecycle enrichment failed: %s", slug, exc)
+        issues.append(
+            DocumentIssue(
+                document_id=document_id,
+                pipeline_run_id=pipeline_run_id,
+                issue_type="lifecycle_enrichment_failed",
+                severity="warning",
+                description=f"Could not enrich product identity from lifecycle data: {exc}",
+            )
+        )
 
     version = ProductVersion(
         version_id=f"{policy_id}_v1",
         product_id=policy_id,
         full_uin=full_uin,
+        version_number=version_number,
+        approval_date=lifecycle_approval_date,
+        financial_year=lifecycle_financial_year,
     )
     insert_product_version(conn, version)
 

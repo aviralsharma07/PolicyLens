@@ -293,6 +293,31 @@ Resolved facts may keep source-local `evidence_clause_id` and
 `evidence_clause_uid`, `evidence_document_id`, and `evidence_line_uids` once
 DSE-010 has resolved evidence.
 
+### Product Identity Columns (DSE-015)
+
+`products` table — identity fields added by DSE-015:
+
+```text
+products.display_name          TEXT  — "{insurer} {clean_plan}" for Product B UI
+products.short_name            TEXT  — compact plan name (max 35 chars)
+products.match_confidence      TEXT  — high|medium|low|none (from UIN match)
+products.match_method          TEXT  — uin_insurer_plan_verified|uin_only|...
+```
+
+`product_versions` table — lifecycle enrichment fields added by DSE-015:
+
+```text
+product_versions.version_number  INTEGER — IRDAI version number (from lifecycle)
+product_versions.approval_date   TEXT    — IRDAI approval date (from lifecycle)
+product_versions.financial_year  TEXT    — fiscal year of approval (from lifecycle)
+```
+
+These fields are populated by `scripts/run_clause_store.py` using the
+identity library (`identity/uin_utils.py`, `identity/insurer_registry.py`,
+`identity/plan_normalizer.py`) and the UIN lifecycle registry at
+`insurance-agent/data/uin_lifecycle.json`. Lifecycle enrichment is optional —
+failures are recorded as `DocumentIssue` records, not silently swallowed.
+
 ```json
 {
   "document_id": "sha256:abc123",

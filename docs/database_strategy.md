@@ -42,11 +42,24 @@ All 19 tables live here in a single SQLite file:
 - derived_policy_features
 - document_issues
 - pipeline_runs
-- products, product_versions
+- products (+ display_name, short_name, match_confidence, match_method — DSE-015)
+- product_versions (+ version_number, approval_date, financial_year — DSE-015)
 
 ### Schema
 
 `clause_store/schema.sql` contains DDL for all 19 tables. Run once at init.
+
+### Product identity enrichment (DSE-015)
+
+`products` and `product_versions` are enriched at ingest time by
+`scripts/run_clause_store.py` using:
+- `identity/uin_utils.py` — canonical UIN base extraction (V-delimiter, not fixed-length)
+- `identity/insurer_registry.py` — 32-insurer registry with display names
+- `identity/plan_normalizer.py` — strips insurer suffixes and boilerplate
+- `insurance-agent/data/uin_lifecycle.json` — IRDAI approval date, version number
+
+Lifecycle enrichment is optional. Failures are recorded as `DocumentIssue`
+records with `issue_type = 'lifecycle_enrichment_failed'`.
 
 ### ID strategy
 

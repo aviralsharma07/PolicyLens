@@ -44,8 +44,12 @@ CREATE TABLE IF NOT EXISTS products (
     uin_base              TEXT NOT NULL,
     normalized_insurer    TEXT NOT NULL,
     normalized_plan_name  TEXT NOT NULL,
+    display_name          TEXT,              -- DSE-015: "{insurer} {clean_plan}" for Product B UI
+    short_name            TEXT,              -- DSE-015: compact name (max 35 chars)
     product_type          TEXT NOT NULL DEFAULT 'health',
-    insurance_type        TEXT NOT NULL DEFAULT 'individual'
+    insurance_type        TEXT NOT NULL DEFAULT 'individual',
+    match_confidence      TEXT,              -- DSE-015: high|medium|low|none from UIN match
+    match_method          TEXT               -- DSE-015: uin_insurer_plan_verified|uin_only|...
 );
 
 -- ============================================================
@@ -57,6 +61,9 @@ CREATE TABLE IF NOT EXISTS product_versions (
     product_id      TEXT NOT NULL,
     full_uin        TEXT NOT NULL,
     version_label   TEXT,
+    version_number  INTEGER,           -- DSE-015: from lifecycle data
+    approval_date   TEXT,              -- DSE-015: IRDAI approval date
+    financial_year  TEXT,              -- DSE-015: fiscal year of approval
     active_status   TEXT NOT NULL DEFAULT 'active',
     FOREIGN KEY(product_id) REFERENCES products(product_id)
 );
