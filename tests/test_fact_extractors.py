@@ -2,12 +2,16 @@ import json
 from pathlib import Path
 
 from extractors.deterministic import (
+    ClaimSettlementTimelineExtractor,
     CoPayExtractor,
     FreeLookExtractor,
     GracePeriodExtractor,
     InitialWaitingPeriodExtractor,
+    MaternityWaitingExtractor,
     PedWaitingPeriodExtractor,
+    SpecificDiseaseWaitingPeriodsExtractor,
 )
+from extractors.models import TARGET_CONCEPTS
 from extractors.registry import run_extractors
 from normalizers.duration import find_durations
 from normalizers.percentage import find_percentages
@@ -261,16 +265,100 @@ def test_value_match_allows_predicted_metadata_superset():
     assert not _values_match({"months": 48}, {"months": 36})
 
 
+def test_claim_settlement_rejects_preauthorization_validity():
+    fact = accepted_for(
+        "claim_settlement_timeline",
+        [
+            clause(
+                "Once the request for pre-authorisation has been granted, the treatment "
+                "must take place within 15 days of the pre-authorization date."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_settlement_keeps_normal_and_investigation_days():
+    fact = accepted_for(
+        "claim_settlement_timeline",
+        [
+            clause(
+                "Claim Settlement (provision for Penal Interest). The Company shall settle "
+                "or reject a claim, as the case may be, within 30 days from the date of "
+                "receipt of last necessary document. However, where the circumstances of a "
+                "claim warrant an investigation, the Company shall settle the claim within "
+                "45 days from the date of receipt of last necessary document."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"days": 30, "investigation_days": 45}
+
+
+def test_claim_settlement_handles_noisy_settle_text():
+    fact = accepted_for(
+        "claim_settlement_timeline",
+        [
+            clause(
+                "Claim Settlement (provision for Penal Interest) i. The Company shall "
+                "settle or reject a clam, as the case may be, w i thin 15 days fom the "
+                "date of recept of last necessary document."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"days": 15}
+
+
+def test_specific_disease_parses_slash_separated_month_options():
+    fact = accepted_for(
+        "specific_disease_waiting_periods",
+        [
+            clause(
+                "Specified disease/procedure waiting period - Code Excl02. Expenses related "
+                "to listed conditions, surgeries/treatments shall be excluded until the "
+                "expiry of 24/48 months of continuous coverage."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"months_options": [24, 48]}
+
+
+def test_specific_disease_rejects_ped_definition_duration():
+    fact = accepted_for(
+        "specific_disease_waiting_periods",
+        [
+            clause(
+                "Specified disease/procedure waiting period applies for cataract after "
+                "24 months. Pre-existing Disease means any condition diagnosed within "
+                "48 months prior to the policy."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"months_options": [24]}
+
+
+def test_maternity_not_covered_until_duration_is_waiting_period():
+    fact = accepted_for(
+        "maternity_waiting",
+        [
+            clause(
+                "Maternity Benefit Waiting Period. Any treatment arising from pregnancy, "
+                "childbirth including caesarean section will not be covered until 36 months "
+                "of continuous coverage has elapsed."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"months": 36}
+
+
 def test_registry_emits_not_found_for_missing_safe_candidate():
     _, accepted = run_extractors([clause("This policy has no relevant co-payment percentage.")], "test_run")
     facts = {fact["concept"]: fact for fact in accepted}
-    assert set(facts) == {
-        "free_look_period",
-        "grace_period",
-        "ped_waiting_period",
-        "initial_waiting_period",
-        "co_pay",
-    }
+    assert set(facts) == set(TARGET_CONCEPTS)
     assert facts["co_pay"]["fact_status"] == "not_found"
 
 

@@ -1,0 +1,2197 @@
+{
+  "eval_name": "fact-scoring-dse011-v2",
+  "date": "2026-06-02",
+  "task_id": "DSE-011",
+  "git_commit": "94d8680239b52b605e658a7f4a59247193bf13f8",
+  "hard_gates": {
+    "policies_evaluated": 20,
+    "candidate_persistence_parity": true,
+    "fact_persistence_parity": true,
+    "fk_violations": 0,
+    "fact_status_accuracy": 0.9846,
+    "normalized_value_accuracy": 0.9745,
+    "evidence_accuracy": 1.0,
+    "false_present_count": 0,
+    "conflicts_total": 0,
+    "conflicts_unresolved": 0,
+    "cross_document_fact_links": 0,
+    "accepted_candidate_min_score": 0.875
+  },
+  "metrics": {
+    "total_db_candidates": 746,
+    "total_db_facts": 203,
+    "total_concept_policy_pairs": 260,
+    "status_correct": 256,
+    "value_correct": 191,
+    "evidence_valid": 196,
+    "false_not_found": 1,
+    "candidate_parity": [
+      {
+        "slug": "aditya_birla_activ_care",
+        "json": 40,
+        "db": 40,
+        "ok": true
+      },
+      {
+        "slug": "bajaj_allianz_silver_health",
+        "json": 39,
+        "db": 39,
+        "ok": true
+      },
+      {
+        "slug": "care_health_care_plus",
+        "json": 52,
+        "db": 52,
+        "ok": true
+      },
+      {
+        "slug": "cholamandalam_flexi_max_protect",
+        "json": 19,
+        "db": 19,
+        "ok": true
+      },
+      {
+        "slug": "future_generali_health_elite",
+        "json": 69,
+        "db": 69,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json": 46,
+        "db": 46,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json": 42,
+        "db": 42,
+        "ok": true
+      },
+      {
+        "slug": "iffco_tokio_health_protector",
+        "json": 33,
+        "db": 33,
+        "ok": true
+      },
+      {
+        "slug": "kotak_mahindra_health_premier",
+        "json": 44,
+        "db": 44,
+        "ok": true
+      },
+      {
+        "slug": "liberty_critical_connect",
+        "json": 22,
+        "db": 22,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json": 34,
+        "db": 34,
+        "ok": true
+      },
+      {
+        "slug": "niva_bupa_health_recharge",
+        "json": 34,
+        "db": 34,
+        "ok": true
+      },
+      {
+        "slug": "oriental_cancer_protect",
+        "json": 32,
+        "db": 32,
+        "ok": true
+      },
+      {
+        "slug": "reliance_health_gain",
+        "json": 51,
+        "db": 51,
+        "ok": true
+      },
+      {
+        "slug": "royal_sundaram_advanced_topup",
+        "json": 38,
+        "db": 38,
+        "ok": true
+      },
+      {
+        "slug": "sbi_general_arogya_sanjeevani",
+        "json": 35,
+        "db": 35,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json": 30,
+        "db": 30,
+        "ok": true
+      },
+      {
+        "slug": "tata_aig_arogya_sanjeevani",
+        "json": 41,
+        "db": 41,
+        "ok": true
+      },
+      {
+        "slug": "united_india_individual_health",
+        "json": 38,
+        "db": 38,
+        "ok": true
+      },
+      {
+        "slug": "universal_sompo_loan_secure",
+        "json": 7,
+        "db": 7,
+        "ok": true
+      }
+    ],
+    "fact_parity": [
+      {
+        "slug": "aditya_birla_activ_care",
+        "json_present": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "bajaj_allianz_silver_health",
+        "json_present": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "care_health_care_plus",
+        "json_present": 13,
+        "db": 13,
+        "ok": true
+      },
+      {
+        "slug": "cholamandalam_flexi_max_protect",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      },
+      {
+        "slug": "future_generali_health_elite",
+        "json_present": 13,
+        "db": 13,
+        "ok": true
+      },
+      {
+        "slug": "hdfc_arogya_sanjeevani",
+        "json_present": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "icici_family_shield",
+        "json_present": 9,
+        "db": 9,
+        "ok": true
+      },
+      {
+        "slug": "iffco_tokio_health_protector",
+        "json_present": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "kotak_mahindra_health_premier",
+        "json_present": 13,
+        "db": 13,
+        "ok": true
+      },
+      {
+        "slug": "liberty_critical_connect",
+        "json_present": 6,
+        "db": 6,
+        "ok": true
+      },
+      {
+        "slug": "new_india_floater",
+        "json_present": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "niva_bupa_health_recharge",
+        "json_present": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "oriental_cancer_protect",
+        "json_present": 6,
+        "db": 6,
+        "ok": true
+      },
+      {
+        "slug": "reliance_health_gain",
+        "json_present": 12,
+        "db": 12,
+        "ok": true
+      },
+      {
+        "slug": "royal_sundaram_advanced_topup",
+        "json_present": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "sbi_general_arogya_sanjeevani",
+        "json_present": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "star_medi_classic_accident",
+        "json_present": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "tata_aig_arogya_sanjeevani",
+        "json_present": 10,
+        "db": 10,
+        "ok": true
+      },
+      {
+        "slug": "united_india_individual_health",
+        "json_present": 11,
+        "db": 11,
+        "ok": true
+      },
+      {
+        "slug": "universal_sompo_loan_secure",
+        "json_present": 4,
+        "db": 4,
+        "ok": true
+      }
+    ]
+  },
+  "gold_comparison": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "care_health_care_plus",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "icici_family_shield",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_applicable",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "new_india_floater",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "reliance_health_gain",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "not_found",
+          "status_ok": false,
+          "value_ok": null
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": false
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    },
+    {
+      "slug": "united_india_individual_health",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "explicitly_not_covered",
+          "extracted_status": "explicitly_not_covered",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        }
+      ]
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "results": [
+        {
+          "concept": "free_look_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "grace_period",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ped_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "initial_waiting_period",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "co_pay",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "renewability",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "claim_settlement_timeline",
+          "gold_status": "present",
+          "extracted_status": "present",
+          "status_ok": true,
+          "value_ok": true
+        },
+        {
+          "concept": "ayush_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "ambulance_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "cumulative_bonus_ncb",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "specific_disease_waiting_periods",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "maternity_waiting",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        },
+        {
+          "concept": "organ_donor_coverage",
+          "gold_status": "not_found",
+          "extracted_status": "not_found",
+          "status_ok": true,
+          "value_ok": null
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "failures": []
+}

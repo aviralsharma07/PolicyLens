@@ -24,6 +24,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0016 | Split physical table labels from semantic table summaries | 2026-05-31 | Accepted |
 | 0035 | Scale eval gates derive reviewed policy count dynamically | 2026-06-02 | Accepted |
 | 0036 | Fact value comparison allows metadata supersets only | 2026-06-02 | Accepted |
+| 0037 | Wave 1 deterministic fact value shapes | 2026-06-02 | Accepted |
 
 ---
 
@@ -45,6 +46,28 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 ---
 
 ## Decision Records
+
+### 2026-06-02 — ADR-0037: Wave 1 Deterministic Fact Value Shapes
+
+**Status:** accepted
+
+**Decision:** DSE-018 defines canonical normalized value shapes for the Wave 1 deterministic concepts. Claim settlement uses primary settlement/rejection days as `{"days": N}` and may include `{"investigation_days": M}` only when the same accepted evidence safely supports the extension. Specific disease waiting periods use `{"months_options": [...]}`. Maternity language such as "not covered until 36 months" is treated as `present` waiting-period evidence, not an absolute exclusion.
+
+**Context:** The 20-policy corpus exposed inconsistent gold labels and extractor outputs for claim settlement, specific disease waiting periods, and maternity waiting. Some policies contain normal settlement plus investigation extension clauses; some split those clauses across section-tree fragments. Some waiting period clauses use compact slash notation such as `24/48 months`.
+
+**Options considered:**
+1. Store only the maximum duration.
+2. Store all durations found near a concept keyword.
+3. Store concept-specific canonical shapes with precision-first evidence requirements.
+
+**Reasoning:** Maximum-duration extraction hides the primary policy rule. Collecting every nearby duration creates false positives from claim intimation, premium, PED definitions, and unrelated benefit wording. Concept-specific shapes preserve useful values while keeping evidence requirements strict.
+
+**Consequences:**
+- Positive: Product B receives stable Wave 1 shapes for comparison.
+- Positive: Extractors can reject unsafe values instead of forcing a misleading present fact.
+- Negative: If a source PDF value is lost by section-tree clause segmentation, the fact may remain `not_found` until the parser is improved.
+
+**Revisit when:** DSE-014 LLM refinement or a later parser task can safely merge adjacent evidence spans into one accepted fact.
 
 ### 2026-06-02 — ADR-0035: Scale Eval Gates Derive Reviewed Policy Count Dynamically
 

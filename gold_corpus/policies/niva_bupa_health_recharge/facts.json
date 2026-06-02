@@ -92,13 +92,13 @@
     "value_json": {
       "waiting_periods": [
         {
-          "months": 48
+          "months": 24
         }
       ]
     },
     "normalized_value_json": {
       "months_options": [
-        48
+        24
       ]
     },
     "fact_status": "present",
@@ -110,8 +110,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 21,
-    "evidence_text": "t to Underwriting Guidelines and in accordance with the existing guidelines of the IRDAI. We shall not be liable to make any payment under this Policy for covered listed Critical Illnesses directly or indirectly caused by, based on, arising out of or howsoever attributable to any of the following: i. Pre-existing Diseases: a. All the listed Critical Illnesses under the optional benefit, which occurs or manifests itself as a result of any Pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first Policy with Us. b. In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c. If the Insured Person",
+    "evidence_page": 23,
+    "evidence_text": "II. Specified disease/procedure waiting period- Code- Excl02 Expenses related to the treatment of the listed conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first Policy with us.",
     "source_document": {
       "filename": "NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
       "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
@@ -122,7 +122,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "notes": "DSE-018 source-PDF audit: previous 48-month evidence was PED/critical-illness waiting language, not the base specific disease/procedure waiting period.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -133,6 +133,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"

@@ -486,12 +486,12 @@
   {
     "concept": "maternity_waiting",
     "value_json": {
-      "covered": false
+      "months": 36
     },
     "normalized_value_json": {
-      "covered": false
+      "months": 36
     },
-    "fact_status": "explicitly_not_covered",
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -501,7 +501,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 17,
-    "evidence_text": "ver and above the Base Sum Insured. (c) For the purpose of this Benefit, the term “Immediate Relative” would mean the Insured Person’s spouse, children or parents. 2.19 Maternity Benefit We will indemnify the Medical Expenses incurred up to the Maternity Benefit Sum Insured specified in the Policy Schedule for the delivery of the Insured Person’s child (including cesarean section) or the Medically Necessary and lawful medical termination of pregnancy during the Policy Period provided that: (a) The treatment is taken as an In-patient in a Hospital; (b) The cover shall be",
+    "evidence_text": "3.4 Maternity Benefit Waiting Period Any treatment arising from or traceable to pregnancy, childbirth including caesarean section will not be covered until 36 months of continuous coverage has elapsed for that particular Insured Person since the inception of the Maternity Expenses Benefit under the Policy",
     "source_document": {
       "filename": "Kotak_Kotak_Health_premier.pdf",
       "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
@@ -509,10 +509,10 @@
       "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
       "uin": "KOTHLIP21065V032021"
     },
-    "value_type": "coverage_status",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "opencode DSE-018 gold patch",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: maternity search",
+    "notes": "DSE-018 gold patch: corrected from explicitly_not_covered to present(36mo) — source evidence shows coverage language",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

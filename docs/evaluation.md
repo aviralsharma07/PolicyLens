@@ -762,12 +762,20 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-For DSE-007, the active target concepts are:
+As of DSE-018, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
 - `initial_waiting_period`
 - `co_pay`
+- `renewability`
+- `claim_settlement_timeline`
+- `ayush_coverage`
+- `ambulance_coverage`
+- `cumulative_bonus_ncb`
+- `specific_disease_waiting_periods`
+- `maternity_waiting`
+- `organ_donor_coverage`
 
 ### Metrics
 - Deterministic present precision
@@ -781,13 +789,13 @@ For DSE-007, the active target concepts are:
 ### Hard Rules
 Deterministic extractors:
 - all reviewed gold policies evaluated for the active concept set
-- all 5 DSE-007 concepts attempted for every policy
+- all active deterministic concepts attempted for every policy
 - no `present` fact without verified evidence text
 - no false present for gold `not_found` concepts
 - deterministic present precision >= 95%
 - evidence accuracy >= 95%
 - normalized value accuracy >= 95% for matched present facts
-- present recall >= 60%
+- present recall >= 70%
 
 LLM-assisted facts:
 - precision >= 85%
@@ -810,7 +818,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
+active (DSE-018 Wave 1 PASS on 2026-06-02 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -830,6 +838,37 @@ Notes:
 - DSE-007 uses provisional evidence IDs in the form `clause:{clause_id}` because DSE-010 source spans are not built yet.
 - DSE-007 extraction text enriches each clause with its section heading because DSE-006 can carry fact-bearing text in heading lines. Evidence line IDs include the heading line when used.
 - During DSE-007 eval, the Care Health PED gold normalized value was corrected from 48 months to 36 months because the stored gold evidence text itself states 36 months.
+
+### Current DSE-018 Result
+
+DSE-018 expanded deterministic extraction from 5 to 13 concepts and audited the last 10 mismatches against source PDF text. Gold labels were corrected only where the source evidence proved the prior label wrong. Extractor changes remained narrow and concept-specific.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 260,
+  "gold_present": 197,
+  "present_tp": 196,
+  "present_fp": 0,
+  "present_fn": 1,
+  "policies_passed": 20,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 0.994924,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 0.984615,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0,
+  "passed": true
+}
+```
+
+Wave 1 canonical value notes:
+
+- `claim_settlement_timeline` uses the primary settlement/rejection duration as `{"days": N}`. If the same evidence clause safely contains an investigation settlement extension, it may add `{"investigation_days": M}`.
+- `specific_disease_waiting_periods` uses `{"months_options": [...]}` and supports compact source formats such as `24/48 months` and `Ninety Days / 24 / 48 months`.
+- `maternity_waiting` treats language such as `not covered until 36 months` as a waiting-period `present` fact, not as `explicitly_not_covered`.
+
+Known limitation: Reliance Health Gain source PDF contains the normal 30-day claim-settlement clause, but the current section-tree clauses omit that duration and retain only a 45-day investigation fragment. DSE-018 emits `not_found` instead of a wrong-present 45-day value; this is retained as a parser-quality follow-up.
 
 ### Current DSE-017 Result
 
@@ -1094,22 +1133,22 @@ v1 eval (`2026-06-01-fact-scoring-dse011-v1.json`) lacked the `accepted_candidat
 ```
 
 ### Current Status
-active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
+active (DSE-018 final PASS on 2026-06-02 across 20 reviewed policies)
 
-### Current DSE-017 Result
+### Current DSE-018 Result
 
 ```json
 {
   "policies_evaluated": 20,
-  "total_db_candidates": 282,
-  "total_db_facts": 83,
-  "fact_status_accuracy": 1.0,
-  "normalized_value_accuracy": 1.0,
+  "total_db_candidates": 746,
+  "total_db_facts": 203,
+  "fact_status_accuracy": 0.985,
+  "normalized_value_accuracy": 0.975,
   "evidence_accuracy": 1.0,
   "false_present_count": 0,
   "conflicts_total": 0,
   "cross_document_fact_links": 0,
-  "accepted_candidate_min_score": 0.94,
+  "accepted_candidate_min_score": 0.875,
   "passed": true
 }
 ```
@@ -1129,8 +1168,8 @@ Ensures the Product B consumable export is structurally correct, all 20 concepts
 - `not_found_facts_have_null_value`
 - `no_invalid_fact_status` (only 7 valid statuses)
 - `evidence_span_ids_exist_in_db`
-- `gold_value_match_for_5_concepts >= 95%`
-- `gold_status_match_for_5_concepts >= 95%`
+- `gold_value_match_for_active_deterministic_concepts >= 95%`
+- `gold_status_match_for_active_deterministic_concepts >= 95%`
 - `false_present == 0`
 - `export_schema_version == "1.0"` in every file
 - `derived_policy_features_parity == reviewed gold policy count`
@@ -1158,11 +1197,11 @@ All 14 gates pass. 5/5 policies exported. 20/20 concepts per policy. Gold accura
 v1 eval lacked `evidence_clause` and `cross_file_page_disagreement` gates. v2 is the final passing artifact.
 
 ### Current Status
-active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
+active (DSE-018 final PASS on 2026-06-02 across 20 reviewed policies)
 
-### Current DSE-017 Result
+### Current DSE-018 Result
 
-20/20 policies exported. Every policy has all 20 concept fields. Gold status/value accuracy for the 5 implemented concepts is 100%, false-present count is 0, evidence span IDs exist for all present facts, and `derived_policy_features` parity is 20/20.
+20/20 policies exported. Every policy has all 20 concept fields. Gold status accuracy for the 13 active deterministic concepts is 98.5%, gold value accuracy is 97.5%, false-present count is 0, evidence span IDs exist for all evidence-bearing facts, and `derived_policy_features` parity is 20/20.
 
 ---
 
@@ -1175,9 +1214,9 @@ active (DSE-017 remediation PASS on 2026-06-02 across 20 reviewed policies)
 | Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
 | Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
-| Clause Store + Source Spans | all reviewed policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 120MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-017 PASS) |
-| Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding to 15+ extractors | active (DSE-017 PASS) |
+| Clause Store + Source Spans | all reviewed policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 120MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-018 PASS) |
+| Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding remaining concepts or LLM refinement | active (DSE-018 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |
 | Facts: Deterministic | precision >= 95%, evidence accuracy >= 95% | LLM refinement |
 | Facts: LLM | precision >= 85%, evidence verified in source text | Export to Product B |
-| Export | all reviewed policies, 20/20 concepts per policy, schema valid, evidence spans exist, evidence_clause required, cross-file consistency, gold accuracy >= 95%, 0 false-present | Product B consumption | active (DSE-017 PASS) |
+| Export | all reviewed policies, 20/20 concepts per policy, schema valid, evidence spans exist, evidence_clause required, cross-file consistency, gold accuracy >= 95%, 0 false-present | Product B consumption | active (DSE-018 PASS) |

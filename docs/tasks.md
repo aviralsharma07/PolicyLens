@@ -27,6 +27,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
 | DSE-015 | Insurer/Plan Normalizer Library | done | P1 | Phase 0 |
 | DSE-017 | 20-Policy Pipeline Rebuild + Scale Validation | done | P1 | Scale |
+| DSE-018 | Deterministic Extractor Expansion Wave 1 | done | P1 | Phase 6 |
 
 ---
 
@@ -50,10 +51,29 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-013 | Derived Export (20-Concept Skeleton) | 2026-06-01 | Phase 8 |
 | DSE-015 | Insurer/Plan Normalizer Library | 2026-06-01 | Phase 0 |
 | DSE-017 | 20-Policy Pipeline Rebuild + Scale Validation | 2026-06-02 | Scale |
+| DSE-018 | Deterministic Extractor Expansion Wave 1 | 2026-06-02 | Phase 6 |
 
 ---
 
 ## Task Detail
+
+### DSE-018 — Deterministic Extractor Expansion Wave 1
+
+**Status:** done
+**Priority:** P1
+**Phase:** Phase 6
+**Goal:** Expand deterministic extraction from the original 5 concepts to 13 Wave 1 concepts across the 20-policy reviewed gold corpus.
+**Concepts:** free look, grace period, PED waiting, initial waiting, co-pay, renewability, claim settlement timeline, AYUSH coverage, ambulance coverage, cumulative bonus/NCB, specific disease waiting periods, maternity waiting, organ donor coverage.
+**Acceptance criteria:**
+- Fact extraction eval passes on all 20 reviewed policies.
+- Precision >= 95%, recall >= 70%, normalized value accuracy >= 95%, status accuracy >= 95%, evidence accuracy >= 95%.
+- False-present count is 0.
+- Full clause-store, source-span, fact-scoring, export, and pytest regression chain passes.
+- Mismatch audit, session log, changelog, evaluation docs, decisions, and risk register updated.
+**Results:** final fact extraction eval passed with 20/20 policies, precision 100.00%, recall 99.49%, normalized value accuracy 100.00%, status accuracy 98.46%, evidence accuracy 100.00%, false-present count 0. Full acceptance chain passed: clause store/source spans, fact scoring, export, and 382/382 pytest tests.
+**Known limitation:** Reliance Health Gain claim-settlement primary 30-day source text is present in the PDF but missing from current section-tree clauses, so DSE-018 emits `not_found` rather than a wrong 45-day investigation value.
+**Branch:** feat/dse-018-extractor-expansion-wave1
+**Related docs:** evaluation.md, decisions.md, risk_register.md, data/reports/dse018_wave1_mismatch_audit.md, runs/sessions/2026-06-02-extractor-expansion-wave1.md
 
 ### DSE-001 — Corpus Lockdown
 

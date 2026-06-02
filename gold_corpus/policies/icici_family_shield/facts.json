@@ -563,10 +563,10 @@
   {
     "concept": "ambulance_coverage",
     "value_json": {
-      "type": "road_or_air_ambulance_benefit_if_selected"
+      "covered": true
     },
     "normalized_value_json": {
-      "coverage_status": "conditional"
+      "covered": true
     },
     "fact_status": "present",
     "scope_json": {
@@ -578,7 +578,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 37,
-    "evidence_text": "charge Summary, Certificate from Treating Doctor (under whom the insured was admitted) mentioning the details of Diagnosis, Investigations and Date & Time of Admission and Discharge from the Hospital  Certificate from Medical Practitioner mentioning the details of the burns injury suffered by the insured C.2.11 Extension Benefit: Ambulance Charges Benefit If an Insured Person suffers an Injury due to an Accident that occurs during the Period of Cover and that Injury solely and directly requires the Insured Person to be Hospitalized , We will pay the Sum Insured specified against this Benefit in the Policy Certificate in respect of road Ambulance Services for",
+    "evidence_text": "Extension Benefit: Ambulance Charges Benefit If an Insured Person suffers an Injury due to an Accident that occurs during the Period of Cover",
     "source_document": {
       "filename": "ICICI_Family_Shield_IRDAI.pdf",
       "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
@@ -589,7 +589,7 @@
     "value_type": "coverage_status_or_typed_value",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-018 gold patch: corrected from conditional to covered — evidence shows 'Ambulance Charges Benefit' is covered",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

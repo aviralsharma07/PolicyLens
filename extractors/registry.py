@@ -76,11 +76,7 @@ def run_extractors(
         )
 
     candidate_dicts = [candidate.to_dict() for candidate in candidates]
-    accepted_ids = {
-        fact.get("candidate_id")
-        for fact in accepted
-        if fact.get("candidate_id")
-    }
+    accepted_ids = {fact.get("candidate_id") for fact in accepted if fact.get("candidate_id")}
     for candidate in candidate_dicts:
         if candidate["candidate_id"] in accepted_ids:
             candidate["accepted"] = True

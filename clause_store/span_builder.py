@@ -362,8 +362,9 @@ def build_fact_evidence_spans(
     issues: List[DocumentIssue],
 ) -> List[SourceSpan]:
     """
-    Build fact_evidence SourceSpans for all 'present' accepted facts.
-    Non-present facts (not_found etc.) do not get evidence spans.
+    Build fact_evidence SourceSpans for all evidence-bearing accepted facts.
+    `present` and `explicitly_not_covered` facts carry evidence; `not_found`,
+    `not_applicable`, and other non-evidence statuses do not get evidence spans.
 
     Evidence text mismatch (clause boundary shifted between DSE-007 run and now) is
     handled gracefully — degrades to clause-level precision and logs a warning.
@@ -371,7 +372,7 @@ def build_fact_evidence_spans(
     """
     spans = []
     for fact in accepted_facts:
-        if fact.get("fact_status") != "present":
+        if fact.get("fact_status") not in {"present", "explicitly_not_covered"}:
             continue
         if not fact.get("evidence_clause_id"):
             continue

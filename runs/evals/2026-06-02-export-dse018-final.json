@@ -1,0 +1,1405 @@
+{
+  "eval_name": "export-dse013-v2",
+  "date": "2026-06-02",
+  "task_id": "DSE-013",
+  "git_commit": "94d8680239b52b605e658a7f4a59247193bf13f8",
+  "hard_gates": {
+    "policies_exported": 20,
+    "concepts_missing_fields": 0,
+    "schema_validation_errors": 0,
+    "present_missing_evidence": 0,
+    "not_found_with_value": 0,
+    "invalid_fact_status_count": 0,
+    "span_ids_missing_from_db": 0,
+    "gold_value_accuracy": 0.9745,
+    "gold_status_accuracy": 0.9846,
+    "false_present": 0,
+    "schema_version_ok": true,
+    "derived_policy_features_count": 20,
+    "present_missing_evidence_clause": 0,
+    "cross_file_page_disagreement": 0
+  },
+  "metrics": {
+    "span_ids_checked": 203,
+    "gold_status_total": 260,
+    "gold_status_correct": 256,
+    "gold_value_total": 196,
+    "gold_value_correct": 191
+  },
+  "gold_value_details": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "ped_waiting_period",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":15}",
+      "export_value": "{\"percentage\":15}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30,\"investigation_days\":45}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "aditya_birla_activ_care",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "ped_waiting_period",
+      "gold_value": "12",
+      "export_value": "12",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":20}",
+      "export_value": "{\"percentage\":20}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount\":1000,\"currency\":\"INR\"}",
+      "export_value": "{\"amount\":1000,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":10,\"maximum_percent\":100,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[12]}",
+      "export_value": "{\"months_options\":[12]}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "co_pay",
+      "gold_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "export_value": "{\"components\":[{\"percentage\":20,\"scope\":\"smart_select_non_annexure_iii_hospital\"},{\"percentage\":null,\"schedule_dependent\":true,\"scope\":\"age_61_plus_optional_copayment\"}]}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "renewability",
+      "gold_value": "{\"coverage_status\":\"renewable\"}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"maximum_percent\":200}",
+      "export_value": "{\"increase_percent\":50,\"maximum_percent\":200,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "maternity_waiting",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "care_health_care_plus",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":20}",
+      "export_value": "{\"percentage\":20}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30,\"investigation_days\":45}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"amount\":50000,\"currency\":\"INR\"}",
+      "match": false
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":10,\"maximum_percent\":100,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "maternity_waiting",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "renewability",
+      "gold_value": "{\"coverage_status\":\"renewable\"}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount_inr\":2000}",
+      "export_value": "{\"amount\":2000,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"increase_percent\":5,\"maximum_percent\":50}",
+      "export_value": "{\"increase_percent\":5,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "renewability",
+      "gold_value": "{\"coverage_status\":\"renewable\"}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "icici_family_shield",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[12]}",
+      "export_value": "{\"months_options\":[12]}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "ped_waiting_period",
+      "gold_value": "24",
+      "export_value": "24",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": false
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "maternity_waiting",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "renewability",
+      "gold_value": "{\"coverage_status\":\"renewable\"}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"percentage\":1,\"unit\":\"percent_of_sum_insured\"}",
+      "export_value": "{\"percentage\":1,\"unit\":\"percent_of_sum_insured\"}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"increase_percent\":25,\"maximum_percent\":50}",
+      "export_value": "{\"increase_percent\":25,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "maternity_waiting",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "new_india_floater",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"coverage_status\":\"covered\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30,\"investigation_days\":45}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"amount\":1500,\"currency\":\"INR\"}",
+      "match": false
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"maximum_percent\":5,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount\":3000,\"currency\":\"INR\"}",
+      "export_value": "{\"amount\":3000,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":5,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":20}",
+      "export_value": "{\"percentage\":20}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"percentage\":5}",
+      "match": false
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":20,\"maximum_percent\":430,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "reliance_health_gain",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": false
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount\":2000,\"currency\":\"INR\"}",
+      "export_value": "{\"amount\":2000,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":5,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":10}",
+      "export_value": "{\"percentage\":10}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "renewability",
+      "gold_value": "{\"coverage_status\":\"renewable\"}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":7}",
+      "export_value": "{\"days\":7}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount_inr\":750}",
+      "export_value": "{\"amount\":750,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"increase_percent\":5,\"maximum_percent\":50}",
+      "export_value": "{\"increase_percent\":5,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24]}",
+      "export_value": "{\"months_options\":[24]}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "free_look_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "ped_waiting_period",
+      "gold_value": "36",
+      "export_value": "36",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "co_pay",
+      "gold_value": "{\"percentage\":5}",
+      "export_value": "{\"basis\":\"admissible_claim_amount\",\"percentage\":5}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":15}",
+      "export_value": "{\"days\":15}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount\":2000,\"currency\":\"INR\"}",
+      "export_value": "{\"amount\":2000,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "concept": "cumulative_bonus_ncb",
+      "gold_value": "{\"schedule_dependent\":true}",
+      "export_value": "{\"increase_percent\":5,\"maximum_percent\":50,\"schedule_dependent\":true}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "ped_waiting_period",
+      "gold_value": "48",
+      "export_value": "48",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "initial_waiting_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "ayush_coverage",
+      "gold_value": "{\"covered\":true}",
+      "export_value": "{\"covered\":true}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "ambulance_coverage",
+      "gold_value": "{\"amount\":2500,\"currency\":\"INR\"}",
+      "export_value": "{\"amount\":2500,\"currency\":\"INR\"}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "specific_disease_waiting_periods",
+      "gold_value": "{\"months_options\":[24,48]}",
+      "export_value": "{\"months_options\":[24,48]}",
+      "match": true
+    },
+    {
+      "slug": "united_india_individual_health",
+      "concept": "organ_donor_coverage",
+      "gold_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "export_value": "{\"covered\":true,\"scope\":\"organ_donor_expenses\"}",
+      "match": true
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "concept": "free_look_period",
+      "gold_value": "15",
+      "export_value": "15",
+      "match": true
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "concept": "grace_period",
+      "gold_value": "30",
+      "export_value": "30",
+      "match": true
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "concept": "renewability",
+      "gold_value": "{\"renewable\":true}",
+      "export_value": "{\"renewable\":true}",
+      "match": true
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "concept": "claim_settlement_timeline",
+      "gold_value": "{\"days\":30}",
+      "export_value": "{\"days\":30}",
+      "match": true
+    }
+  ],
+  "passed": true,
+  "failures": []
+}

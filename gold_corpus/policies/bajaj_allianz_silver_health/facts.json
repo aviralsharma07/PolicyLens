@@ -89,19 +89,27 @@
   },
   {
     "concept": "specific_disease_waiting_periods",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "months_options": [
+        12
+      ]
+    },
+    "normalized_value_json": {
+      "months_options": [
+        12
+      ]
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
-    "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "pipeline_run_id": "gold_manual_dse018_patch",
+    "evidence_page": 10,
+    "evidence_text": "2. Specified disease/procedure waiting period (Excl02) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver Health Policy with Us. This exclusion shall not be applicable for claims arising due to an accident.",
     "source_document": {
       "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
       "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
@@ -109,10 +117,10 @@
       "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
       "uin": "BAJHLIP22192V032122"
     },
-    "value_type": null,
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "Codex DSE-018 AI execution source-PDF verification",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF verification found 'Specified disease/procedure waiting period (Excl02)' at 12 months with disease list on PDF page 10. Previous gold not_found was a DSE-012 miss; corrected to present with months_options=[12].",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -122,7 +130,12 @@
       {
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
-        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+        "note": "DSE-018 source-PDF verification corrected this fact."
+      },
+      {
+        "pass_id": "pass_dse018_source_pdf_verification",
+        "result": "corrected",
+        "note": "Source PDF page 10 verified: explicit specified disease waiting period clause (Excl02) at 12 months present."
       }
     ],
     "human_review_priority": "normal"
@@ -477,9 +490,13 @@
   },
   {
     "concept": "maternity_waiting",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -488,8 +505,8 @@
     "confidence": null,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 12,
+    "evidence_text": "14. Maternity (Excl 18) : Medical Treatment Expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy.",
     "source_document": {
       "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
       "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
@@ -500,7 +517,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF audit: source contains explicit maternity exclusion under Excl18, so status corrected from not_found to explicitly_not_covered.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -511,6 +528,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final scoring audit; maternity exclusion is explicit."
       }
     ],
     "human_review_priority": "normal"
@@ -598,10 +620,12 @@
   {
     "concept": "ambulance_coverage",
     "value_json": {
-      "percentage": 3
+      "amount": 1000,
+      "currency": "INR"
     },
     "normalized_value_json": {
-      "percentage": 3
+      "amount": 1000,
+      "currency": "INR"
     },
     "fact_status": "present",
     "scope_json": {
@@ -613,7 +637,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 7,
-    "evidence_text": "3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or Preventive Health Check Up After every 4 Claim Free Year",
+    "evidence_text": "3. Road Ambulance (Applicable for Plan A & Plan B) We will pay the reasonable cost to a maximum of Rs. 1000/- per claim incurred on an ambulance",
     "source_document": {
       "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
       "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
@@ -624,7 +648,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "notes": "DSE-018 gold patch: corrected from 3% to 1000 INR — evidence shows Rs. 1000 per claim",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

@@ -92,12 +92,16 @@
     "value_json": {
       "waiting_periods": [
         {
+          "months": 24
+        },
+        {
           "months": 48
         }
       ]
     },
     "normalized_value_json": {
       "months_options": [
+        24,
         48
       ]
     },
@@ -111,7 +115,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 10,
-    "evidence_text": "e months. iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently. 6.3. Specific Waiting Period: (Code- Excl02) a) Expenses related to the treatment of the following listed conditions, Surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of sum insured the exc",
+    "evidence_text": "6.3. Specific Waiting Period: (Code- Excl02) Expenses related to the treatment of the following listed conditions, Surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer.",
     "source_document": {
       "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
       "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
@@ -122,7 +126,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "notes": "DSE-018 source-PDF audit: gold evidence already said 24/48 months; normalized value corrected from [48] to [24, 48].",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -133,6 +137,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"

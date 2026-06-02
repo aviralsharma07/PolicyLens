@@ -372,12 +372,12 @@
   {
     "concept": "cumulative_bonus_ncb",
     "value_json": {
-      "increase_percent_per_claim_free_year": 5,
-      "maximum_percent": 25
+      "increase_percent": 5,
+      "maximum_percent": 50
     },
     "normalized_value_json": {
       "increase_percent": 5,
-      "maximum_percent": 25
+      "maximum_percent": 50
     },
     "fact_status": "present",
     "scope_json": {
@@ -389,7 +389,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 8,
-    "evidence_text": "In other words no protection is available between the policy expiry date and the date of payment of premium for renewal. In the event of this policy being withdrawn, the insured will be accommodated in any other equivalent health insurance policy offered by the Company at the relevant point of time 9. Bonus: The insured person will be eligible for Bonus calculated at 5% of the basic sum insured for every claim free year subject to a maximum of 25% .Such Bonus will be available on that part of the basic sum insured which is continuously renewed without any break. In the event of a claim, the Bonus will be reduced by 5% of the basic sum insured. However the basic sum i",
+    "evidence_text": "V. CUMULATIVE BONUS Compensation payable for an admissible claim for Death or Permanent Total disablement arising out of accidental injuries shall be increased by 5% thereof in respect of each completed year during which the policy shall have been in force prior to the occurrence of an accident for which the capital sum insured becomes payable but the amount of such increase shall not exceed 50%",
     "source_document": {
       "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
       "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
@@ -400,7 +400,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-018 gold patch: corrected maximum_percent from 25 to 50 — policy text states 'shall not exceed 50%'",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -979,12 +979,10 @@
   {
     "concept": "claim_settlement_timeline",
     "value_json": {
-      "days": 7,
-      "trigger": "receipt_of_all_required_documents"
+      "days": 7
     },
     "normalized_value_json": {
-      "days": 7,
-      "trigger": "receipt_of_all_required_documents"
+      "days": 7
     },
     "fact_status": "present",
     "scope_json": {
@@ -1010,7 +1008,7 @@
     "value_type": "duration",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: settlement timeline is explicit and evidence-backed.",
+    "notes": "DSE-018 gold patch: removed trigger field — extractor only captures days value",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

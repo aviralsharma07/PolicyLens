@@ -41,6 +41,7 @@ from typing import Any, Dict, List, Tuple
 
 from derived.field_mapping import ALL_EXPORT_CONCEPTS, CONCEPT_FIELD_MAP, VALID_FACT_STATUSES
 from derived.schema_validator import validate_policy_features
+from extractors.models import TARGET_CONCEPTS as _TARGET_CONCEPTS_IMPLEMENTED
 
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -57,13 +58,7 @@ def _count_reviewed_policies(gold_corpus: str) -> int:
     )
 
 
-_TARGET_CONCEPTS_5 = [
-    "free_look_period",
-    "grace_period",
-    "ped_waiting_period",
-    "initial_waiting_period",
-    "co_pay",
-]
+_TARGET_CONCEPTS_5 = _TARGET_CONCEPTS_IMPLEMENTED
 
 
 def _git_commit() -> str:
@@ -120,14 +115,21 @@ def _canonical(value: Any) -> Any:
 
 def _is_subset_value(expected: Any, actual: Any) -> bool:
     if isinstance(expected, dict) and isinstance(actual, dict):
-        return all(key in actual and _is_subset_value(value, actual[key]) for key, value in expected.items())
+        return all(
+            key in actual and _is_subset_value(value, actual[key])
+            for key, value in expected.items()
+        )
     if isinstance(expected, list) and isinstance(actual, list):
         if len(expected) != len(actual):
             return False
         unmatched = list(actual)
         for expected_item in expected:
             match_idx = next(
-                (idx for idx, actual_item in enumerate(unmatched) if _is_subset_value(expected_item, actual_item)),
+                (
+                    idx
+                    for idx, actual_item in enumerate(unmatched)
+                    if _is_subset_value(expected_item, actual_item)
+                ),
                 None,
             )
             if match_idx is None:
@@ -137,9 +139,30 @@ def _is_subset_value(expected: Any, actual: Any) -> bool:
     return expected == actual
 
 
-def _values_match(expected: Any, actual: Any) -> bool:
-    expected_c = _canonical(expected)
-    actual_c = _canonical(actual)
+def _canonical_normalized(value: Any, concept: str = "") -> Any:
+    if not isinstance(value, dict):
+        return value
+    result = dict(value)
+    if "coverage_status" in result and "covered" not in result and "renewable" not in result:
+        if result["coverage_status"] == "covered":
+            result["covered"] = True
+            del result["coverage_status"]
+        elif result["coverage_status"] == "renewable":
+            result["renewable"] = True
+            del result["coverage_status"]
+    if concept == "ambulance_coverage":
+        if "amount_inr" in result and "amount" not in result:
+            result["amount"] = result["amount_inr"]
+            result["currency"] = "INR"
+            del result["amount_inr"]
+        elif "amount" in result and "currency" not in result:
+            result["currency"] = "INR"
+    return result
+
+
+def _values_match(expected: Any, actual: Any, concept: str = "") -> bool:
+    expected_c = _canonical(_canonical_normalized(expected, concept))
+    actual_c = _canonical(_canonical_normalized(actual, concept))
     return expected_c == actual_c or _is_subset_value(expected_c, actual_c)
 
 
@@ -266,7 +289,7 @@ def evaluate_exports(
             if feat_page is not None and src_page is not None and feat_page != src_page:
                 cross_file_page_disagreement += 1
 
-    # Gates 8-10: gold comparison for 5 implemented concepts
+    # Gates 8-10: gold comparison for 13 implemented concepts
     gold_status_total = 0
     gold_status_correct = 0
     gold_value_total = 0
@@ -308,7 +331,7 @@ def evaluate_exports(
 
                 raw_gold_value = extract_scalar_value(concept, gold.get("normalized_value_json"))
                 raw_export_value = exported.get("value")
-                values_match = _values_match(raw_gold_value, raw_export_value)
+                values_match = _values_match(raw_gold_value, raw_export_value, concept=concept)
                 g_val = _norm_json(raw_gold_value)
                 e_val = _norm_json(raw_export_value)
                 if values_match:
@@ -472,10 +495,10 @@ def main() -> int:
         f"Span IDs missing from DB:    {results['span_ids_missing']}/{results['span_ids_checked']}"
     )
     print(
-        f"Gold status accuracy (5):    {results['gold_status_accuracy']:.1%} ({results['gold_status_correct']}/{results['gold_status_total']})"
+        f"Gold status accuracy (13):   {results['gold_status_accuracy']:.1%} ({results['gold_status_correct']}/{results['gold_status_total']})"
     )
     print(
-        f"Gold value accuracy (5):     {results['gold_value_accuracy']:.1%} ({results['gold_value_correct']}/{results['gold_value_total']})"
+        f"Gold value accuracy (13):    {results['gold_value_accuracy']:.1%} ({results['gold_value_correct']}/{results['gold_value_total']})"
     )
     print(f"False present:               {results['false_present']}")
     print(f"Schema version OK:           {results['schema_version_ok']}")

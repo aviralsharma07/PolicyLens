@@ -89,19 +89,23 @@
   },
   {
     "concept": "specific_disease_waiting_periods",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "months_options": [12]
+    },
+    "normalized_value_json": {
+      "months_options": [12]
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
-    "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "pipeline_run_id": "gold_manual_dse018_patch",
+    "evidence_page": 14,
+    "evidence_text": "a) Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 12 months of continuous coverage...f) List of specific diseases/procedures (i) Cataract, Benign Prostatic Hypertrophy, Hysterectomy for Menorrhagia or Fibromyoma (ii) Hernia, Hydrocele, Congenital Internal Disease (iii) Fistula in Anus, Piles, Sinusitis (iv) Cholelithiasis and Cholecystectomy",
     "source_document": {
       "filename": "IFFCO_Tokio_Health_Protector.pdf",
       "source_pdf_path": "12_IFFCO_Tokio/IFFCO_Tokio_Health_Protector.pdf",
@@ -109,10 +113,10 @@
       "document_id": "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0",
       "uin": "IFFHLIP22197V042122"
     },
-    "value_type": null,
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "Codex DSE-018 AI execution source-PDF verification",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF verification found specific disease waiting period with disease list at 12 months on PDF page 14. Previous gold not_found was a DSE-012 miss; corrected to present with months_options=[12].",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -122,7 +126,12 @@
       {
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
-        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+        "note": "DSE-018 source-PDF verification corrected this fact."
+      },
+      {
+        "pass_id": "pass_dse018_source_pdf_verification",
+        "result": "corrected",
+        "note": "Source PDF page 14 verified: specific disease waiting period with 12-month exclusion and disease list present."
       }
     ],
     "human_review_priority": "normal"

@@ -480,9 +480,13 @@
   },
   {
     "concept": "maternity_waiting",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -491,8 +495,8 @@
     "confidence": null,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 19,
+    "evidence_text": "4.1.18. MATERNITY EXPENSES (CODE - EXCL 18): Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy.",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -503,7 +507,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF audit: source contains explicit maternity exclusion under Excl18, so status corrected from not_found to explicitly_not_covered.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -514,6 +518,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final scoring audit; maternity exclusion is explicit."
       }
     ],
     "human_review_priority": "normal"

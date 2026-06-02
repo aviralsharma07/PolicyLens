@@ -789,19 +789,23 @@
   },
   {
     "concept": "claim_settlement_timeline",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "days": 30
+    },
+    "normalized_value_json": {
+      "days": 30
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
-    "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "pipeline_run_id": "gold_manual_dse018_patch",
+    "evidence_page": 15,
+    "evidence_text": "Insurer shall settle claim(s), including its rejection, within 30 (thirty days) of the receipt of the last necessary claim document",
     "source_document": {
       "filename": "Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
       "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
@@ -809,10 +813,10 @@
       "document_id": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
       "uin": "UNIHLIP22139V032122"
     },
-    "value_type": null,
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "Codex DSE-018 AI execution source-PDF verification",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF verification found claim settlement timeline: 'Insurer shall settle claim(s), including its rejection, within 30 (thirty days) of the receipt of the last necessary claim document' on PDF page 15. Previous gold not_found was a DSE-012 miss; corrected to present with 30 days.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -822,7 +826,12 @@
       {
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
-        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+        "note": "DSE-018 source-PDF verification corrected this fact."
+      },
+      {
+        "pass_id": "pass_dse018_source_pdf_verification",
+        "result": "corrected",
+        "note": "Source PDF page 15 verified: explicit 30-day claim settlement clause present."
       }
     ],
     "human_review_priority": "normal"
