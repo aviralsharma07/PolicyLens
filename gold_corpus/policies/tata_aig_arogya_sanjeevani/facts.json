@@ -813,10 +813,10 @@
   {
     "concept": "claim_settlement_timeline",
     "value_json": {
-      "days": 30
+      "days": 15
     },
     "normalized_value_json": {
-      "days": 30
+      "days": 15
     },
     "fact_status": "present",
     "scope_json": {
@@ -827,8 +827,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 14,
-    "evidence_text": "rant an investigation insured is not exhausted. Then the in the opinion of the Company, it lnsurer(s) shall independently settle shall initiate and complete such the claim subject to the terms and investigation at the earliest in any conditions of this policy. case not later than 30 days from the date of receipt of last necessary 3. If the amount to be claimed exceeds document. In such cases, the the sum insured under a single policy Company shall settle the cla",
+    "evidence_page": 13,
+    "evidence_text": "Claim Settlement (provision for Penal Interest) The Company shall settle or reject a claim, as the case may be, within 15 days from the date of receipt of last necessary document.",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -839,7 +839,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "notes": "DSE-018 source-PDF audit: previous 30-day value was investigation-completion timing. Source text states normal settlement/rejection within 15 days; investigation settlement extension appears separately.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -850,6 +850,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"

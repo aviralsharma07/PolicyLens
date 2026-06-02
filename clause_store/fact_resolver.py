@@ -8,9 +8,11 @@ DSE-007 accepted_facts.json is NEVER overwritten (ADR-0020).
 DSE-010 writes resolved facts to data/interim/facts_resolved/{slug}/accepted_facts.json.
 
 Rules:
-  - fact_status == "present": must resolve → evidence_resolution_status = "resolved"
-  - fact_status != "present": evidence_resolution_status = "not_applicable"
-  - Missing evidence span for a 'present' fact → LOUD failure, not silent
+  - fact_status in {"present", "explicitly_not_covered"} with evidence must resolve
+    → evidence_resolution_status = "resolved"
+  - fact_status without evidence (not_found, not_applicable, etc.) gets
+    evidence_resolution_status = "not_applicable"
+  - Missing evidence span for an evidence-bearing fact → LOUD failure, not silent
 """
 
 from __future__ import annotations
@@ -49,11 +51,13 @@ def resolve_facts(
         status = fact.get("fact_status", "not_found")
         candidate_id = fact.get("candidate_id", "")
 
-        if status == "present" and fact.get("evidence_clause_id"):
+        evidence_bearing = status in {"present", "explicitly_not_covered"}
+
+        if evidence_bearing and fact.get("evidence_clause_id"):
             span = evidence_spans_by_candidate.get(candidate_id)
             if span is None:
                 raise ValueError(
-                    f"Fact {candidate_id} (status=present) has no evidence span. "
+                    f"Fact {candidate_id} (status={status}) has no evidence span. "
                     f"This means span_builder.build_fact_evidence_spans() "
                     f"did not produce a span for this candidate. "
                     f"Check for prior errors."
@@ -77,15 +81,15 @@ def resolve_facts(
             if evidence_source_line_ids:
                 rf["evidence_source_line_ids"] = evidence_source_line_ids
 
-        elif status != "present":
+        elif not evidence_bearing:
             # not_found / not_applicable / etc. — no evidence span expected
             rf["provisional_evidence_span_id"] = fact.get("evidence_span_id")
             rf["evidence_resolution_status"] = "not_applicable"
 
         else:
-            # present but no evidence_clause_id — shouldn't happen for valid DSE-007 output
+            # evidence-bearing but no evidence_clause_id — shouldn't happen for valid output
             warnings.append(
-                f"Fact {candidate_id}: status=present but no evidence_clause_id — not resolved"
+                f"Fact {candidate_id}: status={status} but no evidence_clause_id — not resolved"
             )
             rf["provisional_evidence_span_id"] = fact.get("evidence_span_id")
             rf["evidence_resolution_status"] = "unresolved_no_clause_id"

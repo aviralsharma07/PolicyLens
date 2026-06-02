@@ -93,12 +93,16 @@
       "waiting_periods": [
         {
           "months": 24
+        },
+        {
+          "months": 48
         }
       ]
     },
     "normalized_value_json": {
       "months_options": [
-        24
+        24,
+        48
       ]
     },
     "fact_status": "present",
@@ -111,7 +115,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 10,
-    "evidence_text": "ly for any Insured Person that is accepted under Portability, and/or for subsequent and continuous Renewals of the Policy with Us. ii. Two Year Waiting Periods The conditions listed below, whether medical or surgical and of the Illness/conditions and their complications mentioned below, will be subject to a waiting period of 24 months from the commencement of the 1st Policy Year and will be covered from the commencement of the 3rd Policy Year as long as the Insured Person has been insured continuously under the Policy without any break.",
+    "evidence_text": "Two Year Waiting Periods The conditions listed below will be subject to a waiting period of 24 months from the commencement of the 1st Policy Year. Joint Replacement Surgery (48 months waiting period for Standard Plan). Four Year waiting period The conditions listed below will be subject to a waiting period of 48 months from the commencement of the 1st Policy Year.",
     "source_document": {
       "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
       "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
@@ -122,7 +126,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "notes": "DSE-018 source-PDF audit: specific disease/procedure waiting periods include the general 24-month list and 48-month Standard Plan/four-year listed conditions.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -133,6 +137,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"
@@ -836,10 +845,10 @@
   {
     "concept": "claim_settlement_timeline",
     "value_json": {
-      "days": 15
+      "days": 30
     },
     "normalized_value_json": {
-      "days": 15
+      "days": 30
     },
     "fact_status": "present",
     "scope_json": {
@@ -850,8 +859,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 14,
-    "evidence_text": "have obtained sufficient details to assess the request, We will issue the authorization letter specifying the sanctioned amount, any specific limitation on the claim and non-payable items, if applicable, or reject the request for pre-authorisation specifying reasons for the rejection. (iv) Once the request for pre-authorisation has been granted, the treatment must take place within 15 days of the pre-authorization date at a Network Provider and pre-authorization shall be valid only if all the details of the authorized treatment, including dates, Hospital and locations, match with the details of the actual t",
+    "evidence_page": 15,
+    "evidence_text": "III. Claims Assessment & Repudiation: (c) We shall settle or repudiate a claim within 30 days of the receipt of the last necessary information and documentation set out above (in case of investigation being carried out, 45 days from the date of receipt of last necessary document) in the manner prescribed under applicable Regulations.",
     "source_document": {
       "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
       "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
@@ -862,7 +871,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "notes": "DSE-018 source-PDF audit: previous 15-day value was pre-authorisation validity, not claim settlement. Canonical v1 gold keeps the primary 30-day settlement value; investigation extension is visible in evidence.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -873,6 +882,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"

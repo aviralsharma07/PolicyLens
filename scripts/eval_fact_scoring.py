@@ -38,14 +38,9 @@ import sys
 import time
 from typing import Any, Dict, List, Optional, Tuple
 
+from extractors.models import TARGET_CONCEPTS as _TARGET_CONCEPTS
+
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
-_TARGET_CONCEPTS = [
-    "free_look_period",
-    "grace_period",
-    "ped_waiting_period",
-    "initial_waiting_period",
-    "co_pay",
-]
 
 
 def _count_reviewed_policies(gold_corpus: str) -> int:
@@ -125,14 +120,21 @@ def _canonical(value: Any) -> Any:
 
 def _is_subset_value(expected: Any, actual: Any) -> bool:
     if isinstance(expected, dict) and isinstance(actual, dict):
-        return all(key in actual and _is_subset_value(value, actual[key]) for key, value in expected.items())
+        return all(
+            key in actual and _is_subset_value(value, actual[key])
+            for key, value in expected.items()
+        )
     if isinstance(expected, list) and isinstance(actual, list):
         if len(expected) != len(actual):
             return False
         unmatched = list(actual)
         for expected_item in expected:
             match_idx = next(
-                (idx for idx, actual_item in enumerate(unmatched) if _is_subset_value(expected_item, actual_item)),
+                (
+                    idx
+                    for idx, actual_item in enumerate(unmatched)
+                    if _is_subset_value(expected_item, actual_item)
+                ),
                 None,
             )
             if match_idx is None:
@@ -142,9 +144,30 @@ def _is_subset_value(expected: Any, actual: Any) -> bool:
     return expected == actual
 
 
-def _values_match(expected: Any, actual: Any) -> bool:
-    expected_c = _canonical(_json_obj(expected))
-    actual_c = _canonical(_json_obj(actual))
+def _canonical_normalized(value: Any, concept: str = "") -> Any:
+    if not isinstance(value, dict):
+        return value
+    result = dict(value)
+    if "coverage_status" in result and "covered" not in result and "renewable" not in result:
+        if result["coverage_status"] == "covered":
+            result["covered"] = True
+            del result["coverage_status"]
+        elif result["coverage_status"] == "renewable":
+            result["renewable"] = True
+            del result["coverage_status"]
+    if concept == "ambulance_coverage":
+        if "amount_inr" in result and "amount" not in result:
+            result["amount"] = result["amount_inr"]
+            result["currency"] = "INR"
+            del result["amount_inr"]
+        elif "amount" in result and "currency" not in result:
+            result["currency"] = "INR"
+    return result
+
+
+def _values_match(expected: Any, actual: Any, concept: str = "") -> bool:
+    expected_c = _canonical(_canonical_normalized(_json_obj(expected), concept))
+    actual_c = _canonical(_canonical_normalized(_json_obj(actual), concept))
     return expected_c == actual_c or _is_subset_value(expected_c, actual_c)
 
 
@@ -291,6 +314,7 @@ def compute_gold_comparison(
                 val_ok = _values_match(
                     gold.get("normalized_value_json"),
                     ext.get("normalized_value_json"),
+                    concept=concept,
                 )
                 if val_ok:
                     value_correct += 1

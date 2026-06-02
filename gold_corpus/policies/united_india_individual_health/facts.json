@@ -479,9 +479,13 @@
   },
   {
     "concept": "maternity_waiting",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "covered": false
+    },
+    "normalized_value_json": {
+      "covered": false
+    },
+    "fact_status": "explicitly_not_covered",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -490,8 +494,8 @@
     "confidence": null,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 11,
+    "evidence_text": "4.17. Maternity (Code- Excl18): Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy.",
     "source_document": {
       "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
       "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
@@ -502,7 +506,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-018 source-PDF audit: source contains explicit maternity exclusion under Excl18, so status corrected from not_found to explicitly_not_covered.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -513,6 +517,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final scoring audit; maternity exclusion is explicit."
       }
     ],
     "human_review_priority": "normal"
@@ -606,11 +615,11 @@
   {
     "concept": "ambulance_coverage",
     "value_json": {
-      "amount": 3,
+      "amount": 2500,
       "currency": "INR"
     },
     "normalized_value_json": {
-      "amount": 3,
+      "amount": 2500,
       "currency": "INR"
     },
     "fact_status": "present",
@@ -623,7 +632,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 8,
-    "evidence_text": "prejudice the Company's right to deal with a claim in case of non-disclosure of material fact and/or Pre-Existing Diseases in terms of the policy. OPTIONAL COVERS 3.7 Road Ambulance Cover We will cover the costs incurred up to Rs. 2500 per person per policy period on transportation of the Insured Person by road Ambulance to a Hospital for treatment in an Emergency following an Illness or Injury which occurs during the Policy Period. The necess",
+    "evidence_text": "3.7. Road Ambulance Cover We will cover the costs incurred up to Rs. 2500 per person per policy period on transportation of the Insured Person by road Ambulance to a Hospital",
     "source_document": {
       "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
       "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
@@ -634,7 +643,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: ambulance coverage search",
+    "notes": "DSE-018 gold patch: corrected from 3 INR to 2500 INR — evidence text shows Rs. 2500",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

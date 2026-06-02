@@ -1013,12 +1013,10 @@
   {
     "concept": "claim_settlement_timeline",
     "value_json": {
-      "days": 30,
-      "investigation_days": 45
+      "days": 30
     },
     "normalized_value_json": {
-      "days": 30,
-      "investigation_days": 45
+      "days": 30
     },
     "fact_status": "present",
     "scope_json": {
@@ -1029,8 +1027,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 22,
-    "evidence_text": "range, Insured Person earns 200 reward points - If the result of any one test is not within the normal range as specified in the lab report, Insured earns 150 reward points - If two or more test results are not within the normal range, Insured earns 100 reward points only Note: These tests reports should be submitted together and within 30 days from the date of undergoing such Health Check-Up. List of mandatory tests under Preventive Risk Assessment 1. Complete Haemogram Test 2. Blood Sugar (Fasting Blood Sugar (FBS) + Postprandial (PP) [or] HbA1c) 3. Lipid profile (Total cholesterol, HDL, LDL, Triglycerides, Total Cholesterol / HDL Cholesterol Ratio)",
+    "evidence_page": 34,
+    "evidence_text": "5.1.3 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -1041,7 +1039,7 @@
     "value_type": "duration",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-018 source-PDF audit: previous evidence was a health-check submission timeline. Canonical v1 gold uses primary claim settlement days; investigation extension appears in the following clause.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -1052,6 +1050,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal",

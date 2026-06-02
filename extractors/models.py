@@ -3,11 +3,21 @@ from typing import Any, Dict, List, Optional
 
 
 TARGET_CONCEPTS = [
+    # Wave 0 — original 5
     "free_look_period",
     "grace_period",
     "ped_waiting_period",
     "initial_waiting_period",
     "co_pay",
+    # Wave 1 — DSE-018
+    "renewability",
+    "claim_settlement_timeline",
+    "ayush_coverage",
+    "ambulance_coverage",
+    "cumulative_bonus_ncb",
+    "specific_disease_waiting_periods",
+    "maternity_waiting",
+    "organ_donor_coverage",
 ]
 
 FACT_STATUSES = {

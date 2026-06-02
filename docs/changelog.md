@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-06-02 (DSE-018 — Deterministic Extractor Expansion Wave 1)
+
+### Added
+- Wave 1 deterministic extractors for renewability, claim settlement timeline, AYUSH coverage, ambulance coverage, cumulative bonus/NCB, specific disease waiting periods, maternity waiting, and organ donor coverage.
+- Regression tests for claim-settlement false positives, slash-separated specific disease waiting periods, PED-definition leakage, and maternity `not covered until N months` wording.
+- `data/reports/dse018_wave1_mismatch_audit.md` — source-backed audit of the final 10 mismatch rows.
+- `runs/evals/2026-06-02-fact-extraction-dse018-final.json` — final passing 20-policy fact extraction eval for 13 concepts.
+
+### Changed
+- `extractors/deterministic.py` — tightened claim-settlement, specific disease, and maternity extraction for expanded-corpus formats and column-interleaved PDF text.
+- `gold_corpus/policies/*/facts.json` — corrected source-proven fact labels for the final DSE-018 mismatch audit.
+- `tests/test_fact_extractors.py` — updated registry coverage test from 5 concepts to all 13 active deterministic concepts.
+- `docs/evaluation.md` — updated Fact Extraction eval to the DSE-018 13-concept Wave 1 gate and result.
+
+### Results
+- Fact extraction eval: **PASS** — 20/20 policies, precision 100.00%, recall 99.49%, normalized value accuracy 100.00%, status accuracy 98.46%, evidence accuracy 100.00%, false-present count 0.
+- Clause-store/source-span evals: **PASS** — 20 policies, 56,854 lines, 4,190 sections, 10,330 clauses, 0 FK violations, 0 provisional resolved evidence IDs, DB 82.45 MB.
+- Fact scoring eval: **PASS** — 746 candidates, 203 facts, status accuracy 98.5%, normalized value accuracy 97.5%, evidence accuracy 100.0%, false-present count 0.
+- Export eval: **PASS** — 20 exports, 20/20 concepts per policy, 0 present facts missing evidence, gold status accuracy 98.5%, gold value accuracy 97.5%, false-present count 0.
+- Full pytest: **PASS** — 382/382.
+
+### Known Issues
+- Reliance Health Gain claim-settlement primary 30-day source text is present in the PDF but absent from the current section-tree clauses. The extractor emits `not_found` rather than a wrong 45-day investigation value.
+- Remaining 7 non-Wave-1 concepts stay explicit `not_found` until later extractor or LLM-refinement tasks.
+
 ## 2026-06-02 (DSE-017 — 20-Policy End-to-End Pipeline Rebuild + Fact Regression Remediation)
 
 ### Changed

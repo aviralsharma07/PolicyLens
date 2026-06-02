@@ -92,12 +92,16 @@
     "value_json": {
       "waiting_periods": [
         {
+          "months": 24
+        },
+        {
           "months": 48
         }
       ]
     },
     "normalized_value_json": {
       "months_options": [
+        24,
         48
       ]
     },
@@ -111,7 +115,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 15,
-    "evidence_text": "ined under the applicable norms on portability stipulated by IRDAI, then waiting period for the same would be reduced to the extent of prior coverage. vi. List of specific diseases/procedures: I. Waiting period of 48 months: a) Rheumatoid Arthritis b) Gout c) Joint replacement Surgery due to degenerative condition d) Age related Osteoarthritis and Osteoporosis unless such joint replacement Surgery is",
+    "evidence_text": "Specified disease/procedure waiting period- Code- Excl02 Expenses related to the treatment of the listed conditions; surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage. List of specific diseases/procedures: I. Waiting period of 48 months ... II. Waiting period of 24 months.",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -122,7 +126,7 @@
     "value_type": "duration",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: specific disease/treatment waiting period search",
+    "notes": "DSE-018 source-PDF audit: Excl02 explicitly states 24/48 months and lists both 48-month and 24-month disease/procedure groups.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -133,6 +137,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "pass_dse018_wave1_mismatch_audit",
+        "result": "reviewed",
+        "note": "Source PDF text checked during DSE-018 final mismatch audit; value/evidence patched where prior gold label was wrong or non-canonical."
       }
     ],
     "human_review_priority": "normal"
@@ -487,12 +496,12 @@
   {
     "concept": "maternity_waiting",
     "value_json": {
-      "covered": false
+      "months": 48
     },
     "normalized_value_json": {
-      "covered": false
+      "months": 48
     },
-    "fact_status": "explicitly_not_covered",
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -502,7 +511,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 10,
-    "evidence_text": "We will pay the Reasonable and Customary Charges incurred towards Maternity Expenses for the Insured Person’s delivery, subject to the following: a) If You and Your Spouse are covered under the Policy this Benefit will be applicable provided that We have received at least 3 continuous annual premiums under the Policy in respect of You and Your Spouse and provid",
+    "evidence_text": "4 Maternity Expenses - 24 Months if Self and Spouse are covered /48 Months if only Self covered",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -510,10 +519,10 @@
       "document_id": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
       "uin": "FGIHLIP22234V012122"
     },
-    "value_type": "coverage_status",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "opencode DSE-018 gold patch",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: maternity search",
+    "notes": "DSE-018 gold patch: corrected from explicitly_not_covered (24mo) to present(48mo) — max waiting period",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",

@@ -786,10 +786,10 @@
   {
     "concept": "claim_settlement_timeline",
     "value_json": {
-      "days": 15
+      "days": 30
     },
     "normalized_value_json": {
-      "days": 15
+      "days": 30
     },
     "fact_status": "present",
     "scope_json": {
@@ -800,8 +800,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 38,
-    "evidence_text": "the event of non-payment of any installment on its Half Yearly 51% due date, this policy will cease to operate from the time and date of default in payment. In which case, we will Quarterly 26% have no liability for any claim occurring after that, and Monthly 8.75% we will not refund any premium under the policy. The policy can be revived within the Revival period of 15 days by payment of the Installment due amount. During this Revival Period, we will not be liable for any Claims which are incurred between the due date of instalment and the date and time that you revive the Policy. In addition, in the event of claim on this Polic",
+    "evidence_page": 39,
+    "evidence_text": "On receipt of all the documents and on being satisfied with regard to the admissibility of the claim as per policy terms and conditions, we shall offer within a period of 30 days a settlement of the claim to you.",
     "source_document": {
       "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
       "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
@@ -810,9 +810,9 @@
       "uin": "LIBHLIP20100V011920"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim settlement timeline search",
+    "annotator": "Codex DSE-018 session patch",
+    "review_status": "gold_v3_dse018_patched",
+    "notes": "DSE-018: Previously 15 days with 'Revival period' evidence (policy revival, not claim settlement). Patched to 30 days from clause_0437: 'we shall offer within a period of 30 days a settlement of the claim'.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -820,9 +820,9 @@
         "note": "Retained for compatibility with gold corpus validation."
       },
       {
-        "pass_id": "pass_dse012_source_pdf_human_review",
+        "pass_id": "pass_dse018_gold_patch",
         "result": "reviewed",
-        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+        "note": "Gold evidence was 'Revival period of 15 days' (policy revival, not claim settlement). Corrected to 30 days from actual claim settlement clause."
       }
     ],
     "human_review_priority": "normal"
