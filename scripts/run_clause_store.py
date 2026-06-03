@@ -26,6 +26,7 @@ import json
 import logging
 import os
 import pathlib
+import shutil
 import subprocess
 import sys
 import time
@@ -110,6 +111,26 @@ def _write_json(path: str, data: Any) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def _metadata_from_manifest_entry(slug: str, entry: Dict[str, Any]) -> Dict[str, Any]:
+    """Build minimal metadata for non-gold DSE-020 manifest policies."""
+    filename = entry.get("filename") or os.path.basename(entry.get("file_path", ""))
+    plan_name = os.path.splitext(filename)[0].replace("_", " ").strip() or slug
+    return {
+        "policy_id": slug,
+        "insurer": entry.get("insurer", ""),
+        "plan_name": plan_name,
+        "uin": entry.get("uin", ""),
+        "uin_base": None,
+        "source_pdf_path": entry.get("file_path", ""),
+        "source_domain": entry.get("source_domain"),
+        "file_hash": entry.get("file_hash"),
+        "document_id": entry.get("document_id"),
+        "page_count": entry.get("page_count"),
+        "match_status": entry.get("match_status"),
+        "match_confidence": entry.get("match_confidence", "manifest"),
+    }
+
+
 def _make_page_id(document_id: str, page_number: int) -> str:
     return f"{document_id}_p{page_number}"
 
@@ -134,6 +155,7 @@ def ingest_policy(
     output_facts_resolved: str,
     conn,
     pipeline_run_id: str,
+    manifest_entry: Optional[Dict[str, Any]] = None,
 ) -> dict:
     """
     Ingest one policy's interim JSON outputs into SQLite.
@@ -146,7 +168,13 @@ def ingest_policy(
     # -----------------------------------------------------------------------
     # 1. Load metadata + physical
     # -----------------------------------------------------------------------
-    meta = _load_json(os.path.join(gold_corpus, "policies", slug, "metadata.json"))
+    metadata_path = os.path.join(gold_corpus, "policies", slug, "metadata.json")
+    if os.path.isfile(metadata_path):
+        meta = _load_json(metadata_path)
+    elif manifest_entry is not None:
+        meta = _metadata_from_manifest_entry(slug, manifest_entry)
+    else:
+        raise FileNotFoundError(f"metadata.json not found for {slug}: {metadata_path}")
     physical_path = os.path.join(physical_root, slug, "document_physical.json")
     physical_doc = _load_json(physical_path)
 
@@ -616,6 +644,10 @@ def ingest_policy(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Clause Store Ingest — DSE-010")
     parser.add_argument("--gold-corpus", default="gold_corpus")
+    parser.add_argument(
+        "--manifest",
+        help="Optional DSE-020 manifest; preserves old gold-corpus behavior when omitted",
+    )
     parser.add_argument("--physical-root", default="data/interim/physical")
     parser.add_argument("--logical-root", default="data/interim/logical")
     parser.add_argument("--tables-root", default="data/interim/tables")
@@ -623,6 +655,9 @@ def main() -> int:
     parser.add_argument("--output-db", default="data/engine.sqlite")
     parser.add_argument("--output-facts-resolved", default="data/interim/facts_resolved")
     parser.add_argument("--pipeline-run-id")
+    parser.add_argument("--summary-output", default="data/reports/dse010_sqlite_build_summary.json")
+    parser.add_argument("--limit", type=int)
+    parser.add_argument("--slug", action="append")
     args = parser.parse_args()
 
     pipeline_run_id = args.pipeline_run_id or f"dse010_v1_{int(time.time())}"
@@ -643,18 +678,62 @@ def main() -> int:
     )
     insert_pipeline_run(conn, run)
 
-    policies_dir = os.path.join(args.gold_corpus, "policies")
-    slugs = sorted(
-        s
-        for s in os.listdir(policies_dir)
-        if os.path.isfile(os.path.join(policies_dir, s, "metadata.json"))
-    )
+    manifest_by_slug: Dict[str, Dict[str, Any]] = {}
+    if args.manifest:
+        manifest = _load_json(args.manifest)
+        policies = manifest.get("policies", [])
+        manifest_by_slug = {policy["slug"]: policy for policy in policies}
+        slugs = [policy["slug"] for policy in policies if not policy.get("skip_reason")]
+    else:
+        policies_dir = os.path.join(args.gold_corpus, "policies")
+        slugs = sorted(
+            s
+            for s in os.listdir(policies_dir)
+            if os.path.isfile(os.path.join(policies_dir, s, "metadata.json"))
+        )
+
+    if args.slug:
+        wanted = set(args.slug)
+        slugs = [slug for slug in slugs if slug in wanted]
+    if args.limit is not None:
+        slugs = slugs[: args.limit]
 
     policy_results = []
     had_fatal = False
     success_count = 0
+    skipped_duplicate_count = 0
+    seen_document_ids: set = set()
 
     for slug in slugs:
+        # Skip duplicate-hash entries (same PDF ingested under different slugs)
+        if args.manifest:
+            manifest_entry = manifest_by_slug.get(slug)
+            if manifest_entry:
+                doc_id = manifest_entry.get("document_id")
+                if doc_id:
+                    if doc_id in seen_document_ids:
+                        logger.warning(
+                            "SKIP %s: duplicate document_id=%s (already processed)",
+                            slug,
+                            doc_id[:20],
+                        )
+                        policy_results.append(
+                            {
+                                "slug": slug,
+                                "status": "skipped",
+                                "reason": f"duplicate document_id {doc_id[:20]}",
+                                "document_id": doc_id,
+                            }
+                        )
+                        skipped_duplicate_count += 1
+                        # Clean stale resolved facts dir from previous run
+                        stale_dir = os.path.join(args.output_facts_resolved, slug)
+                        if os.path.isdir(stale_dir):
+                            shutil.rmtree(stale_dir)
+                            logger.info("  Removed stale resolved facts dir: %s", stale_dir)
+                        continue
+                    seen_document_ids.add(doc_id)
+
         try:
             result = ingest_policy(
                 slug=slug,
@@ -666,6 +745,7 @@ def main() -> int:
                 output_facts_resolved=args.output_facts_resolved,
                 conn=conn,
                 pipeline_run_id=pipeline_run_id,
+                manifest_entry=manifest_by_slug.get(slug),
             )
             policy_results.append(result)
             success_count += 1
@@ -688,7 +768,7 @@ def main() -> int:
         final_status,
         finished_at,
         success_count=success_count,
-        failure_count=len(slugs) - success_count,
+        failure_count=len(slugs) - success_count - skipped_duplicate_count,
     )
     conn.close()
 
@@ -707,18 +787,20 @@ def main() -> int:
         "db_gitignored": True,
         "policies_ingested": success_count,
         "policies_total": len(slugs),
+        "policies_skipped_duplicate_hash": skipped_duplicate_count,
         "db_size_bytes": db_size,
         "db_size_mb": round(db_size / 1024 / 1024, 2),
         "table_row_counts": counts,
         "policy_results": policy_results,
     }
-    summary_path = "data/reports/dse010_sqlite_build_summary.json"
+    summary_path = args.summary_output
     _write_json(summary_path, summary)
     logger.info("Build summary written to %s", summary_path)
     logger.info(
-        "Done: %d/%d policies ingested | DB size: %.2f MB",
+        "Done: %d/%d policies ingested (%d skipped as duplicate hash) | DB size: %.2f MB",
         success_count,
         len(slugs),
+        skipped_duplicate_count,
         db_size / 1024 / 1024,
     )
 

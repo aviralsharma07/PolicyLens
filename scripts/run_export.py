@@ -67,6 +67,7 @@ def main() -> int:
     parser.add_argument("--db", default="data/engine.sqlite")
     parser.add_argument("--output-root", default="data/export")
     parser.add_argument("--pipeline-run-id")
+    parser.add_argument("--summary-output", default="data/reports/dse013_export_summary.json")
     args = parser.parse_args()
 
     if not os.path.isfile(args.db):
@@ -178,8 +179,8 @@ def main() -> int:
         "policies_total": len(docs),
         "policy_results": results,
     }
-    _write_json("data/reports/dse013_export_summary.json", summary)
-    logger.info("Summary written to data/reports/dse013_export_summary.json")
+    _write_json(args.summary_output, summary)
+    logger.info("Summary written to %s", args.summary_output)
     logger.info("Done: %d/%d policies exported", success_count, len(docs))
 
     return 1 if had_failure else 0

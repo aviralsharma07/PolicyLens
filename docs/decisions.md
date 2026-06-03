@@ -26,6 +26,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0036 | Fact value comparison allows metadata supersets only | 2026-06-02 | Accepted |
 | 0037 | Wave 1 deterministic fact value shapes | 2026-06-02 | Accepted |
 | 0038 | Ontology registry is canonical concept source | 2026-06-02 | Accepted |
+| 0039 | Duplicate-hash entries skipped at clause store ingestion | 2026-06-04 | Accepted |
 
 ---
 
@@ -35,6 +36,32 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 |----|-------|------|--------|
 | 0009 | Separate Supabase project for engine in production | TBD | Proposed |
 | 0010 | Regulatory compliance engine deferred | TBD | Proposed |
+
+---
+
+## 2026-06-04 — ADR-0039: Duplicate-hash entries are skipped at clause store ingestion
+
+**Status:** accepted
+
+**Decision:** When the DSE-020 manifest has multiple slugs sharing the same `document_id` (same SHA-256 file hash), the clause store ingests only the first slug encountered. Subsequent slugs are skipped with a "duplicate document_id" result recorded in the build summary and their stale resolved facts directories are removed.
+
+**Context:** The DSE-020 manifest (647 entries) has 591 unique document hashes. 56 entries share an SHA-256 hash with another entry because the same PDF file was obtained from different sources (e.g., IRDAI filing vs insurer website download) and appears under two different slugs. Without deduplication, `document_sections`, `policy_clauses`, and `document_lines` accumulated 2× the correct row count for shared-document_id policies because `INSERT OR REPLACE` on the primary key preserves the first row in `source_documents` but the downstream tables use UIDs that include the slug-specific clause/section IDs and thus both sets of rows persist.
+
+**Options considered:**
+1. Skip duplicate-hash entries entirely at clause store ingestion.
+2. Filter duplicate-hash entries at validation time only.
+3. Add a `manifest_policy_id` layer so each slug is tracked independently from `source_document` identity.
+
+**Reasoning:** Option 1 is simplest and safest. The downstream validator already deduplicates expected counts by `document_id` (via dict key overwrite in `collect_source_counts_from_manifest`), so skipping at ingestion makes the validator's deduplicated expectation match the DB state exactly. Option 2 would leave the DB bloated with doubled data. Option 3 adds schema complexity that is not needed because the duplicate slugs represent the same underlying document with no additional content value.
+
+**Consequences:**
+- Positive: DB contains exactly one set of sections/clauses per unique document.
+- Positive: Source-span validation passes without special-casing the count parity check.
+- Positive: 56 entries recorded in the build summary as intentional skips.
+- Negative: The per-policy run still processes all 647 slugs through the 5 per-policy stages (physical, heading, section, tables, facts), so some CPU/storage is "wasted" on duplicate entries at the JSON-output layer.
+- Negative: Export count (566/591) is based on unique documents, not manifest entries.
+
+**Revisit when:** The corpus identity system is enhanced to detect and merge duplicate-source entries at the manifest level instead of the clause store level.
 
 ---
 

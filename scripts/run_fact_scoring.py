@@ -68,6 +68,14 @@ def _write_json(path: str, data: Any) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def _metadata_from_manifest_entry(slug: str, entry: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "policy_id": slug,
+        "file_hash": entry.get("file_hash"),
+        "document_id": entry.get("document_id"),
+    }
+
+
 def _uid(document_id: str, source_id: str) -> str:
     """Global UID from document-local ID (ADR-0022)."""
     return f"{document_id}:{source_id}"
@@ -97,15 +105,23 @@ def process_policy(
     gold_corpus: str,
     candidates_root: str,
     resolved_root: str,
+    physical_root: str,
     conn,
     pipeline_run_id: str,
+    manifest_entry: Optional[Dict[str, Any]] = None,
 ) -> dict:
     """Ingest candidates + facts for one policy."""
     logger.info("Processing %s", slug)
 
     # Load metadata for document_id
-    meta = _load_json(os.path.join(gold_corpus, "policies", slug, "metadata.json"))
-    physical_path = os.path.join("data/interim/physical", slug, "document_physical.json")
+    metadata_path = os.path.join(gold_corpus, "policies", slug, "metadata.json")
+    if os.path.isfile(metadata_path):
+        meta = _load_json(metadata_path)
+    elif manifest_entry is not None:
+        meta = _metadata_from_manifest_entry(slug, manifest_entry)
+    else:
+        raise FileNotFoundError(f"metadata.json not found for {slug}: {metadata_path}")
+    physical_path = os.path.join(physical_root, slug, "document_physical.json")
     physical = _load_json(physical_path)
     document_id = physical["document_id"]
     policy_id = meta.get("policy_id", slug)
@@ -279,10 +295,15 @@ def process_policy(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fact Scoring Ingest — DSE-011")
     parser.add_argument("--gold-corpus", default="gold_corpus")
+    parser.add_argument("--manifest", help="Optional DSE-020 manifest; preserves old gold-corpus behavior when omitted")
     parser.add_argument("--candidates-root", default="data/interim/facts")
     parser.add_argument("--resolved-root", default="data/interim/facts_resolved")
+    parser.add_argument("--physical-root", default="data/interim/physical")
     parser.add_argument("--db", default="data/engine.sqlite")
     parser.add_argument("--pipeline-run-id")
+    parser.add_argument("--summary-output", default="data/reports/dse011_fact_scoring_summary.json")
+    parser.add_argument("--limit", type=int)
+    parser.add_argument("--slug", action="append")
     args = parser.parse_args()
 
     if not os.path.isfile(args.db):
@@ -295,12 +316,25 @@ def main() -> int:
     conn = init_db(args.db)
     insert_pipeline_run(conn, PipelineRun(id=pipeline_run_id, started_at=started_at))
 
-    policies_dir = os.path.join(args.gold_corpus, "policies")
-    slugs = sorted(
-        s
-        for s in os.listdir(policies_dir)
-        if os.path.isfile(os.path.join(policies_dir, s, "metadata.json"))
-    )
+    manifest_by_slug: Dict[str, Dict[str, Any]] = {}
+    if args.manifest:
+        manifest = _load_json(args.manifest)
+        policies = manifest.get("policies", [])
+        manifest_by_slug = {policy["slug"]: policy for policy in policies}
+        slugs = [policy["slug"] for policy in policies if not policy.get("skip_reason")]
+    else:
+        policies_dir = os.path.join(args.gold_corpus, "policies")
+        slugs = sorted(
+            s
+            for s in os.listdir(policies_dir)
+            if os.path.isfile(os.path.join(policies_dir, s, "metadata.json"))
+        )
+
+    if args.slug:
+        wanted = set(args.slug)
+        slugs = [slug for slug in slugs if slug in wanted]
+    if args.limit is not None:
+        slugs = slugs[: args.limit]
 
     results = []
     had_failure = False
@@ -312,8 +346,10 @@ def main() -> int:
                 args.gold_corpus,
                 args.candidates_root,
                 args.resolved_root,
+                args.physical_root,
                 conn,
                 pipeline_run_id,
+                manifest_entry=manifest_by_slug.get(slug),
             )
             results.append(result)
             if result["status"] != "ok":
@@ -347,7 +383,7 @@ def main() -> int:
         "table_row_counts": table_counts,
         "policy_results": results,
     }
-    summary_path = "data/reports/dse011_fact_scoring_summary.json"
+    summary_path = args.summary_output
     _write_json(summary_path, summary)
     logger.info("Summary written to %s", summary_path)
 

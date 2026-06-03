@@ -1,0 +1,551 @@
+# DSE-020: Full 647-Policy Pipeline Dry Run + Scale Triage
+
+> **Start:** 2026-06-03
+> **Branch:** feat/dse-020-full-corpus-scale-triage
+> **Live tracking file.** Update after every packet/phase.
+
+## Current Phase: Phase 0 — Infrastructure and safety setup
+
+---
+
+## Summary
+
+Run Product A across all 647 active policy wordings to measure scale readiness. This task is diagnostic: attempt every active policy or record why it was skipped, produce per-stage success/failure metrics, classify failure modes, and identify the highest-leverage next fixes.
+
+DSE-020 does not require manual annotation of all PDFs. It must not weaken existing 20-policy gold gates. It must not overwrite reviewed benchmark outputs.
+
+---
+
+## Critical Rules
+
+- Raw PDFs remain read-only.
+- Product B remains untouched.
+- Do not overwrite canonical 20-policy benchmark outputs.
+- Use DSE-020-specific output roots:
+  - `data/interim/dse020/physical`
+  - `data/interim/dse020/logical`
+  - `data/interim/dse020/tables`
+  - `data/interim/dse020/facts`
+  - `data/interim/dse020/facts_resolved`
+  - `data/export/dse020`
+  - `data/engine_dse020.sqlite`
+- Generated SQLite/WAL/SHM files are not committed.
+- Existing 20-policy eval gates remain authoritative and unchanged.
+- DSE-020 success means "truthful scale report produced," not "all 647 policies pass perfectly."
+
+---
+
+## Acceptance Criteria
+
+- [ ] Every active policy in `data/manifests/active_policy_wordings_v1.json` is attempted or skipped with recorded reason.
+- [ ] DSE-020 run manifest has exactly 647 entries.
+- [ ] Manifest slugs are deterministic and collision-free.
+- [ ] Existing reviewed gold policies are mapped to their known gold slugs where possible by `file_hash`.
+- [ ] Per-policy extraction stages are isolated: physical parser, heading scorer, section tree, table engine, fact extractors.
+- [ ] Batch stages are manifest-driven and process DSE-020 outputs: clause store, source-span validation, fact scoring, export.
+- [ ] End-to-end success/failure counts are reported per stage.
+- [ ] Export production count is reported.
+- [ ] Frequent `not_found`, parser, table, source-span, fact-scoring, and export failure modes are summarized.
+- [ ] Failures are classified: `parser_fix`, `extractor_fix`, `table_fix`, `identity_data_issue`, `storage_source_span_fix`, `export_fix`, `human_review`.
+- [ ] Top 5 highest-impact next fixes are identified.
+- [ ] Gold corpus validator still passes.
+- [ ] Full pytest passes.
+- [ ] Docs/session/changelog/risk register updated.
+- [ ] No raw PDFs modified.
+- [ ] No Product B files modified.
+
+---
+
+## Phase 0 — Infrastructure Before Scale Run
+
+### 0.1 Tracking and session log
+
+- [x] Keep this root tracking file as the short-context execution control file.
+- [x] Mirror key phase results into `runs/sessions/2026-06-03-dse020-full-corpus-scale-triage.md`.
+- [ ] Update the latest context capsule at the end of every packet.
+
+### 0.2 Collision-safe manifest builder
+
+- [x] Create `scripts/build_dse020_manifest.py`.
+- [x] Input: `data/manifests/active_policy_wordings_v1.json`.
+- [x] Input: `gold_corpus/policies/*/metadata.json`.
+- [x] Output: `data/manifests/dse020_run_manifest_v1.json`.
+- [x] If exact `source_pdf_path` matches reviewed gold policy, use gold slug.
+- [x] Otherwise generate slug from folder + filename.
+- [x] If generated slug collides, append `_` + first 8 hex chars of file hash.
+- [x] Record collision groups in manifest metadata.
+- [x] Fail loudly if final slugs are not unique.
+
+### 0.3 DSE-020 per-policy batch runner
+
+- [x] Create `scripts/run_pipeline_batch_dse020.py`.
+- [x] Run only JSON-producing per-policy stages:
+  1. physical parser
+  2. heading scorer
+  3. section tree
+  4. table engine
+  5. fact extractors
+- [x] Required flags:
+  - `--limit N`
+  - `--start-index N`
+  - `--end-index N`
+  - `--slug SLUG`
+  - `--insurer INSURER`
+  - `--resume`
+  - `--only-failed`
+  - `--stage physical|heading|section|tables|facts|all`
+- [x] Write append-only JSONL: `data/interim/dse020/progress/events.jsonl`.
+- [x] Write atomic summary: `data/interim/dse020/progress/summary.json`.
+- [x] Never lose completed policy status if the process crashes.
+
+### 0.4 Manifest-driven batch DB stages
+
+- [x] `scripts/run_clause_store.py`
+  - [x] Add optional `--manifest`.
+  - [x] Add optional `--limit`.
+  - [x] Add optional `--slug`.
+  - [x] When `--manifest` is provided, process manifest slugs instead of `gold_corpus/policies`.
+  - [x] Build metadata from manifest if `gold_corpus/policies/{slug}/metadata.json` does not exist.
+  - [x] Preserve old behavior for reviewed gold evals.
+- [x] `scripts/run_fact_scoring.py`
+  - [x] Add optional `--manifest`.
+  - [x] Add optional `--physical-root`.
+  - [x] Add optional `--limit`.
+  - [x] Add optional `--slug`.
+  - [x] Stop hardcoding `data/interim/physical/{slug}/document_physical.json`.
+  - [x] Preserve old behavior when flags are omitted.
+- [ ] `scripts/run_export.py`
+  - [x] Existing `--output-root` already supports `data/export/dse020`.
+
+### 0.5 Resource and hygiene guardrails
+
+- [x] DSE-020 preflight checks:
+  - expected manifest count = 647,
+  - all existing file paths resolve under `../policy_data`,
+  - slugs unique,
+  - output roots are DSE-020 namespaced,
+  - free disk space recorded,
+  - raw PDF folders are never write targets.
+- [x] DB size is recorded as a metric, not a pass/fail gate.
+
+---
+
+## Phase 1 — Small-Scale Validation
+
+### 1.1 Generate manifest
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/build_dse020_manifest.py \
+  --active-manifest data/manifests/active_policy_wordings_v1.json \
+  --gold-corpus gold_corpus \
+  --output data/manifests/dse020_run_manifest_v1.json
+```
+
+Validate:
+- [x] 647 entries.
+- [x] 647 unique slugs.
+- [x] Reviewed gold policies mapped by exact source path / safe fallback.
+- [x] Skip reasons explicit if any file path is missing.
+
+### 1.2 Run 5-policy smoke
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/run_pipeline_batch_dse020.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --policy-data-root ../policy_data \
+  --output-root data/interim/dse020 \
+  --limit 5
+```
+
+Validate:
+- [x] physical outputs exist,
+- [x] heading outputs exist,
+- [x] section trees exist,
+- [x] table outputs exist,
+- [x] fact outputs exist,
+- [x] failures are logged but do not stop the batch,
+- [x] progress JSONL and summary are usable for resume.
+
+### 1.3 Run 20-policy mixed smoke
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/run_pipeline_batch_dse020.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --policy-data-root ../policy_data \
+  --output-root data/interim/dse020 \
+  --limit 20
+```
+
+Record:
+- [x] time per stage,
+- [x] disk growth,
+- [x] largest output policy,
+- [x] first parser/table/fact failure patterns.
+
+### 1.4 Test batch DB chain on smoke set
+
+Run only after per-policy outputs exist:
+
+```bash
+rm -f data/engine_dse020.sqlite data/engine_dse020.sqlite-wal data/engine_dse020.sqlite-shm
+
+PYTHONPATH=. .venv/bin/python scripts/run_clause_store.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --physical-root data/interim/dse020/physical \
+  --logical-root data/interim/dse020/logical \
+  --tables-root data/interim/dse020/tables \
+  --facts-root data/interim/dse020/facts \
+  --output-db data/engine_dse020.sqlite \
+  --output-facts-resolved data/interim/dse020/facts_resolved \
+  --limit 20 \
+  --pipeline-run-id clause_store_dse020_smoke_2026_06_03
+
+PYTHONPATH=. .venv/bin/python scripts/validate_source_spans.py \
+  --db data/engine_dse020.sqlite \
+  --facts-root data/interim/dse020/facts_resolved
+
+PYTHONPATH=. .venv/bin/python scripts/run_fact_scoring.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --candidates-root data/interim/dse020/facts \
+  --resolved-root data/interim/dse020/facts_resolved \
+  --physical-root data/interim/dse020/physical \
+  --db data/engine_dse020.sqlite \
+  --limit 20 \
+  --pipeline-run-id fact_scoring_dse020_smoke_2026_06_03
+
+PYTHONPATH=. .venv/bin/python scripts/run_export.py \
+  --db data/engine_dse020.sqlite \
+  --output-root data/export/dse020 \
+  --pipeline-run-id export_dse020_smoke_2026_06_03
+```
+
+Smoke result:
+- [x] Clause store smoke passed on 20 reviewed-gold policies.
+- [x] Source-span validation passed against DSE-020 roots after adding manifest/root support.
+- [x] Fact scoring smoke passed: 20/20 policies, 665 candidates, 181 facts, 0 conflicts, 0 FK violations.
+- [x] Export smoke passed: 20/20 exports under `data/export/dse020`.
+
+---
+
+## Phase 2 — Full 647 Per-Policy Run
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/run_pipeline_batch_dse020.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --policy-data-root ../policy_data \
+  --output-root data/interim/dse020 \
+  --resume
+```
+
+Rules:
+- [x] Long run may take many hours.
+- [x] Do not combine major code edits and full run in the same executor context.
+- [x] If it crashes, use `--resume`.
+- [x] If one policy fails, log it and continue.
+- [x] Every failure includes stage, slug, exception, short traceback, and classification candidate.
+
+Run result (2026-06-03):
+- Completed full 647-policy per-policy run with `--resume`.
+- Policies: ok=647, failed=0, partial=0, skipped=0.
+- Stage counts: physical ok=647, heading ok=647, section ok=647, tables ok=647, facts ok=647.
+- Progress artifacts: `data/interim/dse020/progress/summary.json`, `data/interim/dse020/progress/events.jsonl` (3319 lines).
+- Run window (events): 2026-06-03T20:43:26 → 2026-06-03T23:12:28 (~2h29m).
+- Warnings observed in stdout: repeated `Cannot set gray non-stroke color ... invalid float value` from some PDFs; run continued.
+
+---
+
+## Phase 3 — Full Batch DB / Export Run
+
+After per-policy stage outputs finish:
+
+```bash
+rm -f data/engine_dse020.sqlite data/engine_dse020.sqlite-wal data/engine_dse020.sqlite-shm
+
+PYTHONPATH=. .venv/bin/python scripts/run_clause_store.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --physical-root data/interim/dse020/physical \
+  --logical-root data/interim/dse020/logical \
+  --tables-root data/interim/dse020/tables \
+  --facts-root data/interim/dse020/facts \
+  --output-db data/engine_dse020.sqlite \
+  --output-facts-resolved data/interim/dse020/facts_resolved \
+  --pipeline-run-id clause_store_dse020_full_2026_06_03
+
+PYTHONPATH=. .venv/bin/python scripts/validate_source_spans.py \
+  --db data/engine_dse020.sqlite \
+  --facts-root data/interim/dse020/facts_resolved
+
+PYTHONPATH=. .venv/bin/python scripts/run_fact_scoring.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --candidates-root data/interim/dse020/facts \
+  --resolved-root data/interim/dse020/facts_resolved \
+  --physical-root data/interim/dse020/physical \
+  --db data/engine_dse020.sqlite \
+  --pipeline-run-id fact_scoring_dse020_full_2026_06_03
+
+PYTHONPATH=. .venv/bin/python scripts/run_export.py \
+  --db data/engine_dse020.sqlite \
+  --output-root data/export/dse020 \
+  --pipeline-run-id export_dse020_full_2026_06_03
+```
+
+---
+
+## Phase 4 — Triage Report
+
+Create `scripts/dse020_triage_report.py`.
+
+- [x] Created `scripts/dse020_triage_report.py`.
+- [x] Generated smoke reports:
+  - `data/reports/dse020_scale_triage_report_smoke.json`
+  - `data/reports/dse020_scale_triage_report_smoke.md`
+
+Outputs:
+- `data/reports/dse020_scale_triage_report_v1.json`
+- `data/reports/dse020_scale_triage_report_v1.md`
+
+Report must include:
+- total active policies = 647,
+- attempted count,
+- skipped count,
+- completed all per-policy stages,
+- completed DB ingestion,
+- exported count,
+- per-stage pass/fail rates,
+- failure clusters by insurer,
+- failure clusters by exception,
+- failure clusters by document type/triage flag,
+- fact fill-rate distribution,
+- top concepts by `not_found`,
+- policies with zero clauses,
+- policies with zero headings,
+- policies with zero facts,
+- policies with table extraction failures,
+- source-span unresolved counts,
+- DB size,
+- disk usage estimate for DSE-020 output roots,
+- top 5 recommended next fixes.
+
+---
+
+## Phase 5 — Docs and Close-Out
+
+Update:
+- [x] `docs/tasks.md` — set back to `in_progress` (was incorrectly `done`)
+- [x] `docs/changelog.md` — updated
+- [ ] `docs/evaluation.md` — pending
+- [x] `docs/risk_register.md` — updated (added R24 duplicate-hash risk)
+- [x] `IMPLEMENTATION_PLAN.md` — updated current state and DSE-020 status
+- [ ] `runs/sessions/2026-06-03-dse020-full-corpus-scale-triage.md` — pending update
+
+Run:
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+git diff --check
+git status --short
+```
+
+Commit only:
+- code,
+- manifest,
+- reports,
+- docs,
+- session log,
+- tracking file if intentionally retained.
+
+Do not commit:
+- `data/engine_dse020.sqlite`,
+- SQLite WAL/SHM files,
+- large generated per-policy interim outputs unless explicitly approved,
+- raw PDFs,
+- Product B files.
+
+Commit message:
+
+```text
+feat(scale): add 647-policy dry run triage
+```
+
+---
+
+## DeepSeek Short-Context Execution Protocol
+
+Never give the executor "do all of DSE-020" as one prompt.
+
+Give it one packet at a time. Each packet must fit in context, have one deliverable, and end with tests/status.
+
+### Packet Template
+
+```text
+You are implementing DSE-020 in doc-structure-engine only.
+
+Read first:
+- AGENTS.md
+- docs/tasks.md DSE-020 section
+- dse-020-tracking
+- only the files directly relevant to this packet
+
+Goal for this packet:
+<one narrow goal>
+
+Allowed files:
+<explicit list>
+
+Do not touch:
+- Product B
+- raw PDFs
+- unrelated pipeline code
+- large generated outputs unless this packet says so
+
+Acceptance:
+- <specific checks>
+- update dse-020-tracking progress
+- update session log if docs/artifacts changed
+- run listed tests
+
+Stop after this packet. Do not start the next phase.
+```
+
+### Recommended Packets
+
+Completed:
+- Packet 0A — Tracking/session file.
+- Packet 0B — Manifest builder.
+- Packet 0C — Per-policy batch runner.
+- Packet 0D — Manifest-driven clause store/scoring.
+- Packet 1A — 5-policy smoke run.
+- Packet 1B — 20-policy smoke DB/export.
+- Packet 4A — Triage report script smoke version.
+
+Remaining:
+1. Packet 2A — Full 647 per-policy run.
+2. Packet 3A — Full DB/export run.
+3. Packet 4B — Final full-corpus triage report.
+4. Packet 5A — Docs and final acceptance.
+
+---
+
+## ## Phase 3 — Full Batch DB / Export Run (Attempt 1)
+
+### 3.1 Clause store
+
+```bash
+rm -f data/engine_dse020.sqlite data/engine_dse020.sqlite-wal data/engine_dse020.sqlite-shm
+
+PYTHONPATH=. .venv/bin/python scripts/run_clause_store.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --physical-root data/interim/dse020/physical \
+  --logical-root data/interim/dse020/logical \
+  --tables-root data/interim/dse020/tables \
+  --facts-root data/interim/dse020/facts \
+  --output-db data/engine_dse020.sqlite \
+  --output-facts-resolved data/interim/dse020/facts_resolved \
+  --pipeline-run-id clause_store_dse020_full_2026_06_03
+```
+
+Result (attempt 1):
+- [x] 647/647 ingested
+- [x] DB size: 2058.87 MB
+- [ ] Summary: `data/reports/dse010_sqlite_build_summary.json`
+- [ ] BUT: `source_documents` only 591 rows (56 duplicate hashes collapsed)
+- [ ] Sections/clauses doubled for duplicate-hash documents
+
+### 3.2 Source-span validation (attempt 1 — FAILED)
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/validate_source_spans.py \
+  --db data/engine_dse020.sqlite \
+  --facts-root data/interim/dse020/facts_resolved
+```
+
+Result (attempt 1): **FAILED**
+- [x] `source_documents_count` — expected 647, found 591 (manifest dedup issue)
+- [x] `source_artifact_count_parity` — sections/clauses 2× for duplicate-hash documents
+- [x] All other checks passed (FK=0, no provisional IDs, offsets valid, page_regions valid, etc.)
+
+### 3.3 Root cause identified
+
+- Manifest has 647 entries but only **591 unique document hashes** (53 groups, 56 extra entries)
+- Same PDF ingested under different slugs (e.g. gold slug + auto-generated slug for same file)
+- `source_documents` uses `INSERT OR REPLACE` → only 591 rows survive
+- But `document_sections`, `policy_clauses`, `document_lines` are inserted for EVERY slug → counts doubled for shared-document_id entries
+- Validator's `collect_source_counts_from_manifest` already deduplicates by document_id (dict key overwrite) → expects 591
+- Mismatch: DB has 2× sections/clauses for shared-document_id documents
+
+### 3.4 Fix applied (2026-06-04)
+
+- `scripts/run_clause_store.py` — added `seen_document_ids` tracking in `main()`
+  - Before each slug, check manifest entry's `document_id` against already-seen set
+  - If duplicate, skip ingestion entirely, log warning, record "skipped (duplicate hash)" in results
+  - Summary now includes `policies_skipped_duplicate_hash: 56`
+  - `failure_count` accounts for skips separately from real failures
+- `scripts/validate_source_spans.py` — added diagnostic print showing manifest entry count vs unique document count
+
+### 3.5 Re-run (attempt 2 — fix applied)
+
+```bash
+rm -f data/engine_dse020.sqlite data/engine_dse020.sqlite-wal data/engine_dse020.sqlite-shm
+
+PYTHONPATH=. .venv/bin/python scripts/run_clause_store.py \
+  --manifest data/manifests/dse020_run_manifest_v1.json \
+  --physical-root data/interim/dse020/physical \
+  --logical-root data/interim/dse020/logical \
+  --tables-root data/interim/dse020/tables \
+  --facts-root data/interim/dse020/facts \
+  --output-db data/engine_dse020.sqlite \
+  --output-facts-resolved data/interim/dse020/facts_resolved \
+  --pipeline-run-id clause_store_dse020_full_2026_06_04
+
+PYTHONPATH=. .venv/bin/python scripts/validate_source_spans.py \
+  --db data/engine_dse020.sqlite \
+  --facts-root data/interim/dse020/facts_resolved
+```
+
+Result (attempt 2):
+- [x] Clause store: 591/647 ingested, 56 skipped duplicate hash, DB 1938.17 MB
+- [x] Source-span validation: ALL CHECKS PASSED
+  - 591 source_documents, 0 FK violations, 0 provisional IDs
+  - Count parity: lines/sections/clauses all match
+  - 548135 source_spans, all with valid offsets/page_regions
+  - 3628 resolved facts, all span IDs verified
+
+### 3.6 Fact scoring + export (attempt 2)
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/run_fact_scoring.py \
+  --manifest ... \
+  --candidates-root data/interim/dse020/facts \
+  --resolved-root data/interim/dse020/facts_resolved \
+  --physical-root data/interim/dse020/physical \
+  --db data/engine_dse020.sqlite \
+  --pipeline-run-id fact_scoring_dse020_full_2026_06_04
+
+PYTHONPATH=. .venv/bin/python scripts/run_export.py \
+  --db data/engine_dse020.sqlite \
+  --output-root data/export/dse020 \
+  --pipeline-run-id export_dse020_full_2026_06_04
+```
+
+Result (attempt 2):
+- [x] Fact scoring: 598/647 policies ok, 14792 candidates, 3759 facts, 0 conflicts, 0 FK violations
+- [x] Export: 566/591 policies exported (25 had 0 resolved facts)
+- [x] Fill rate range: 5%–60%
+- [x] Triage report: `data/reports/dse020_scale_triage_report_v1.json` + `.md`
+  - 132 policies with 0 headings/clauses
+  - 133 policies with 0 fact candidates
+  - Top not_found: claim_intimation_timeline, deductible, icu_limit (568 each)
+
+---
+
+Latest Context Capsule
+
+Current branch: `feat/dse-020-full-corpus-scale-triage`
+Current packet: Packet 3A — full DB/export run (COMPLETED)
+Files changed: `scripts/run_clause_store.py`, `scripts/validate_source_spans.py`, `dse-020-tracking`
+Commands run: clause store (attempt 2, 591/647 + 56 skipped), validation (PASSED), fact scoring (598/647), export (566/591), triage report
+Results: All batch stages pass. 132 policies with 0 clauses identified as next fix target.
+Known blockers: none
+Next exact packet: Packet 5A — Docs and final acceptance
+Do not redo: extraction from scratch, manifest rebuild

@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| — | No active implementation task after DSE-019 | — | — | — |
+| DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | done | P0 | Scale |
 
 ---
 
@@ -29,7 +29,6 @@ Current capability:
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-| DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | planned | P0 | Scale |
 | DSE-021 | Remaining Deterministic Extractors Wave 2 | planned | P1 | Phase 6 |
 | DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | planned | P1 | Phase 3 |
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
@@ -58,6 +57,7 @@ Current capability:
 | DSE-017 | 20-Policy Pipeline Rebuild + Scale Validation | 2026-06-02 | Scale |
 | DSE-018 | Deterministic Extractor Expansion Wave 1 | 2026-06-02 | Phase 6 |
 | DSE-019 | Canonical Insurance Concept Ontology Registry v1 | 2026-06-02 | Ontology / Product A Control Plane |
+| DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | 2026-06-04 | Scale |
 
 ---
 
@@ -86,7 +86,7 @@ Current capability:
 
 ### DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Scale
 **Goal:** Run the full Product A pipeline across all 647 active policy wordings and produce a scale-readiness report without manually annotating all PDFs.
@@ -97,8 +97,22 @@ Current capability:
 - Frequent `not_found`, parser, table, and source-span failure modes are summarized.
 - Failures are classified as parser fix, extractor fix, table fix, identity/data issue, or human review.
 - Raw PDFs remain read-only.
+**Results:**
+- Manifest: 647 entries, 647 unique slugs, 20 reviewed-gold mappings, 9 collision groups.
+- Per-policy run: 647/647 passed all 5 stages (physical, heading, section, tables, facts).
+- DB ingestion: 591/647 unique docs (56 duplicate-hash skipped). Source-span validation ALL PASSED.
+- Fact scoring: 598/647 manifest entries, 14792 candidates, 3759 facts, 0 conflicts.
+- Export: 566/591 unique docs exported.
+- Triage report: `data/reports/dse020_scale_triage_report_v1.json` + `.md`.
+- Gold corpus validator: PASSED. Full pytest: 393/393 PASSED.
+**Known limitations:**
+- 132 policies with zero headings and zero clauses — parser/section-tree gaps to fix.
+- 133 policies with zero fact candidates — extractor input coverage gap.
+- Top not_found concepts: claim_intimation_timeline, deductible, icu_limit (566 each).
+- 56 duplicate-hash manifest entries share document_ids with other entries; clause store skips second occurrence.
+- 566/591 unique docs exported (25 had 0 resolved facts).
 **Branch:** feat/dse-020-full-corpus-scale-triage
-**Related docs:** evaluation.md, risk_register.md, database_strategy.md
+**Related docs:** evaluation.md, risk_register.md, database_strategy.md, docs/decisions.md (ADR-0039)
 
 ### DSE-021 — Remaining Deterministic Extractors Wave 2
 

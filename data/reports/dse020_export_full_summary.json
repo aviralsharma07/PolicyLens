@@ -1,0 +1,4538 @@
+{
+  "pipeline_run_id": "export_dse020_full_2026_06_04",
+  "git_commit": "f27c334d8006cdd1fbaf44100a4d7f17e15d4172",
+  "date": "2026-06-04",
+  "output_root": "data/export/dse020",
+  "policies_exported": 566,
+  "policies_total": 591,
+  "policy_results": [
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_floater_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_energy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_senior_health_advantage_policy_terms_and_conditions_effective_from_29_september_2024",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_covid_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_hospi_care_pw",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_classic_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_family_plus_pw",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_arogya_top_up_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_kavach_policykotak_general_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_medicare_protect",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_my_optima_secure",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_individual_health_insurance_policy_platinum_gold_senior_citizen_plans",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_first_optima",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_medi_classic_insurance_policy_individual",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_medicare_premier",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_niva_bupa_health_plus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_critical_illness_multipay_insurance_policyweb",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_ican_cancer_enhance",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_suraksha_top_up_plus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_well_baby_well_mother_addon_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_corona_rakshak_policy_hdfc_ergo",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_corona_kavach_policy_hdfc_ergo",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_hospital_cash_healthline_revision",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_arogya_sanjeevani_policy_tata_aig_general_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_sncv_n_cocovid_19_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_ms_covid_19_cover_group",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_corona_kavach_policy_magma_hdi",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_credit_linked_cancer_care_insurance",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_corona_kavach_irdai",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_covid_19_secure_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_sixty_plus_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_arogya_bima",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_health_grameen_care_plus_micro_insurance_product",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_poorna_suraksha_group_0bc8ea4f",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_group_health_assure_irdai",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_total_health",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_vector_care_group",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "oriental_cancer_protect",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_new_born_care_addon_pw",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_alpa_bima_group_0d3b4271",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotakcovid_19_secure",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_group_covid_indemnity",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_cancer_care_gold_pilot_product",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_cardiac_care_insurance_policy_platinumweb",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_senior_citizen_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_bharat_bhraman_insurance_policy_for_scheduled_airline_operators",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_group_criticare_gold_policy_wording_27_9_2024",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_domestic_staff_insurance_add_on_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_group_arogya_sanjeevani_policy_star_health_and_allied_insurance_co_ltd_1142adfa",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_mediclassic_accident_care_individual_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_global_health_care",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_saral_suraksha_bima_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cancer_care_gold_pilot_product",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_family_health_protector",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_tax_gain",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_health_guard",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_sampoorna_suraksha",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_premier_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_suraskha",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_corona_kavach_policy_chi_health_insurance_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_classic_health_family_floater",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cancer_benefit",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_myhealth_comprehensive_suraksha_group",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_plus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "tata_aig_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_critical_illness_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_outpatient_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_group_hospital_cash_policy_group_hospital_cash_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_family_health_optima_accident_care_policy",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_loan_guard",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_home_guard_plus_policy",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_advantage_topup",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_corona_kavach_policy_icici_lombard",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_rgi_boi_swasthya_bima",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_kavach_policy_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_m_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_restore",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_family_floater_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_health_shield_360_irdai",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_ms_covid_19_cover",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_assure",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_suraksha",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_takecare_insurance",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_arogya_sanjeevani_insurance_arogya_sanjeevani_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_newindia_senior_citizen_mediclaim_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_global_health_secure",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_family_delite_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_corona_kavach_policy_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "icici_lombard_family_shield",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_senior_citizen_red_carpet_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_bancassurance_indianbank_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_myhealth_critical_suraksha_plus",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_first_comprehensive",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_secure_mind",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_corona_rakshak_policy_hdfc_ergo_health",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_group_mediclaim_insurance",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_health_prime_connect",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_corona_kavach_policy_icici_lombard",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_group_topup_protect_pw",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_medicare_plus_topup",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_mosquito_disease_protection_policy_group_2eaaf149",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_healthline",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_arogya_sanjeevani_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_critical_illness_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_arogya_sanjeevanipolicy_bajaj_allianz_gi_co_ltdgroup",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_universal_health_individual_irdai",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_health_additional_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_group_covid_lumpsum",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_extra_care_plus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_comprehensive_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_arogya_supreme_pw",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_senior_citizens_red_carpet_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_flexi_floater_group_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_pw_sghi_benefit_plus_21_10_2024",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_enhance_top_up_insurance_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_retail_health_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_senior_health_advantage_brochure",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_advantage_top_up_group",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_cardiac_care_insurance_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "new_india_floater_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "kotak_mahindra_health_premier",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_grameen_care_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_covid_shield",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_tmb_uni_family_medicare_policy_group_health_insurance_scheme",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_oriental_critical_illness_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_corona_rakshak_policythe_new_india_assurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_oriental_secure_credit",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_criticare_plus_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_onehealth_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_wellsurance_executive_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_health_floater_insurance",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_golden_shield",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_niva_bupa_corona_kavach_policy_niva_bupa_health_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_corona_kavach_policy_hdfc_ergo_health",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_group_smart_cash",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_maha_bank_swasthya_yojana_group_health_insurance_scheme",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_tax_plus_healthline",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "non_policy_wordings_nivabupa_health_recharge_prospectus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_fg_health_elite",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_comprehensive_accident_hospitalisation_policy",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_classic_health_individual",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_total_health_plus_pw",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_csc_individual_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_group_accident_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_critical_suraksha_plus",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_critical_suraksha_plus",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_swasthya_kavach_family_health_policy_47fde468",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_corona_rakshak_corona_rakshak_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_alpa_bima_group_48186b84",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_group_arogya_sanjeevani_policy_star_health_and_allied_insurance_co_ltd_48a86b25",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_swasthya_raksha_bima",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_individual_accident_and_sickness_hospital_cash_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_vector_borne_diseases_insurance_retail",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_health_ensure",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_family_plus_irdai_pw",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_health_insurance_benefit_plus",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "reliance_health_gain",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_covid_19_group_health_covid_19_group_health_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_one_health",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_health_infinity_pw",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_dengue_care",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_critical_connect",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_group_health_insurancesmall_and_mid_size_groups",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_arogyasanjeevani_the_new_india_assuarnce_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_corona_kavach_policy_care_health_insurance_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_ms_family_healthline_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_super_topup_pw",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_group_assure_covid_19",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_arogya_sanjeevani_policy_iffco_tokio_general_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_critical_illness_multipay_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_super_health_plus_top_up",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_sghi_for_bank_customers_policy_wording_27_9_2024",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_domestic_staff_insurance_add_on_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_arogya_raksha_group_health_insurance_scheme_53e60b24",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_group_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_saral_bima_suraksha",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_health_241_addon_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_super_surplus_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_advantage_top_up",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_ub_arogyadaan",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_arogya_sanjeevani_policy_health_insurance_product_prospectus",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_arogyasanjeevani_policychola_ms",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_health_insurance_policy_platinum",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_super",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_lifeline_pw",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_top_up_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_credit_linked_premium_critical_illness_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_benefit_package_policy_group",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_senior_health_advantage_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_health_guard_group",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_women_specific_critical_illness_plan",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_flexi_health_protect_plan",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_arogya_sanjeevani_policy_magma_hdi",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_group_health_pw",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_hdfc_ergo_group_protect",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_corona_kavach_policychola_ms",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_sarva_shakti_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_arogyasanjeevani_policy_bajaj_allianz_general_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_corona_rakshak_policy_iffco_tokio_general_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_family_care",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_group_activ_helath",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_micro_universal_health_insurance_policy_individual",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_individual_health_insurance_policy_platinum_gold_senior_citizen_5f82b41d",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_baroda_swasthya_parivar",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_corona_kavach_policystar_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_health_care_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_corona_rakshak_policy_universal_sompo_general_insurance_company",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_family_accident_care_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cardiac_care_insurance_policy_platinum_61b79b27",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_health_shield_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_health_insurance_policy_gold_for_bank_customers",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_niva_bupa_health_pulse",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cardiac_care_insurance_policy_platinum_6326a2fe",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_group_loan_bima",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_complete_health_care_insurance",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_swastha_kutumbam",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_koti_suraksha",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_hospital_cash_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_iffco_tokio_mos_bite_protector_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_income_protect",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_group_corona_kavach_policythe_new_india_assurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_e47a7b03_7c43_9ed2_1824_dca0804d2c1a",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_criti_shield_plus_kis",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_wellsurance_woman_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_swasth_parivar_pw",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_hospital_daily_cash_rider",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_special_care",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_family_medicare_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_k_bank_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_vital",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_plus_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_flexi_health",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_group_mashak_rakshak_group_mashak_rakshak_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_health_premier_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_ace_health_advantage_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_joy_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_group_secure_shield",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_saral_suraksha_bima_saral_suraksha_bima_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_flexi_super_topup_insurance",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_mosquito_disease_protection_policy_group_71442893",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_secure_shield",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_corona_kavach_policy_bajaj_allianz_general_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_ms_critical_healthline_insurance",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_home_credit_assure_package_insurance",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_micro_health_shield_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_critical_advantage_rider",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_my_sampoorna_suraksha",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_saral_suraksha_bima_care_health_insurance_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_poorna_suraksha_group_755e8444",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_arogya_sanjeevani_policy_hdfc_ergo_group",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_diabetes_safe_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_super_healthcare_insurance",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cancer_care_platinum_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_rakshak_policykotak_mahindra_general_insurance_company_ltd",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_corona_kavach_policy_hdfc_ergo_group",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_arogyasanjeevani_policyuniversal_sompo_general_insurance_company",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_group_arogya_sanjeevani_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_hospital_cash_daily_allowance",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_care",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "royal_sundaram_advanced_topup",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_micro_swasthya_bima_policy_individual",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_mashak_mosquito_rakshak_group",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_corona_kavach_policyuniversal_sompo_general_insurance_company",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_teritiary_care_insurance_individual",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_kavach_group_policy_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_swasthya_kavach_family_health_policy_7fe76295",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_csc_sr_citizen_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_kavach_group_policykotak_mahindra_general_insurance_company_ltd",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_corona_rakshak_policy_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_arogya_sanjeevani_older_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_oriental_insurance_bank_saathi_policy_group",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_healthwise_pw",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_group_accident_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_niva_bupa_group_corona_kavach_policy_niva_bupa_health_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "star_medi_classic_accident_care_individual",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_income_shield_insurance_group",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_csc_complete_healthcare_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_flexi_group_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_arogya_raksha_group_health_insurance_scheme_849fbb9a",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_group_mediclaim_policy_2007",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_good_health_group_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_extra_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_vector_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_day2daycare",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_group_assurance_health",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_health_assure_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_tmb_happy_family_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_first_micro_care",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "hdfc_ergo_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_hospi_shield",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_7ffca177_f197_0cff_3092_7b108d37ce7b",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_happy_family_floater_2021_irdai",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_medisure_super_top_up_insurance",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_net_plus",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_secure_mind",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_criti_medicare",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_health_gain_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_family_accident_care_insurance_policyweb",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_women_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_yuva_bharat_health_policy",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_group_health_insurance_small_and_mid_size_groups",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "niva_bupa_health_recharge",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_wellsurance_family_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_arogya_bima_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_health_assure",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_group_corona_kavach_policy_oriental_insurance",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_corona_kavach_policy_oriental",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_79fc880c_2c03_e5e9_3a02_dc751307afff",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_hdfc_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "sbi_general_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_corona_rakshak_policy_icici_lombard",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_total_health_advantage_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_plus_health_insurance_product_brochure",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_personal_accident_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_arogya_sanjeevani_policystar_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "cholamandalam_flexi_max_protect",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_enhance_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_master_product_pw",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_crtical_illness",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_health_booster",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_nivabupa_group_health_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_young_star_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_critical_illness_add_on",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_obc_oriental_mediclaim_policy_2017_96a6c37c",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_corona_kavach_pw",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_saral_suraksha_bima",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_group_health_insurancerevised",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_plus_health_insurance_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_group_arogya_sanjeevani_policy_care_health_insurance_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_surakshit_loan_bima",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_criticare_pw",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_arogya_sanjeevani_policy_icici_lombard",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_medicalssic_accident_care_individual_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_corona_rakshak_policy_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_group_mediclaim_policy_for_workers",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_asha_kiran_policy",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_cash",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_classic_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_cancer_guard",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_health_gain_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_corona_rakshak_policy_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_group_medicare_360",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_women_suraksha",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_health_care_classic",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_cancer_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_sghi_bank_customer_gold_pw_30_9_2024",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_arogya_sanjeevani_policy_care_health_insurance_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_family_delite_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_corona_kavach_policy_aditya_birla_health_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_criticare",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_hospi_shield_plus",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_mediclassic_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_myhealth_women_suraksha",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_criticare_plus_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_super_mediclaim_policy_terms_and_conditions_effective_from_29_september_2024",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_individual_health_pw",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_joy_maternity_insurance_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_befit",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_easy_health",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_health_surplus",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "15_magma_hdi_magma_hdi_onehealth_senior",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_hospital_cash",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_wordings_star_net_plus",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_plus_policy_terms_and_conditions_effective_from_29_september_2024",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_swasth_parivar_insurance",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_super_topup_insurance",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_iob_health_care_plus_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_hospicash",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_health_insurance_policy_for_bank_customers",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_criti_medicare",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_aarogya_bima",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_health_platinum",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_health_advantedge_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_true_value_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_maxima_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_corona_rakshak_policy_chola",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_niva_bupa_health_companion",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_health_senior_health_advantage",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_group_critical_illness",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_group_hospital_cash",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_health_2021",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_individual_healthline_insurance",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_group_health_pw",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_health_xs_super_health_xs_irdai_pw",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_super_surplusfloater_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_critical_illness",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_nivabupa_arogya_sanjeevani_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_comprehensive_suraksha_group",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_global_health_secure_older",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_cirticare_gold",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_medicare",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cardiac_care",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_rashtriya_swasthya_bima_yojana",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_my_health_medisure_super_topup",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_protector_rider",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_icici_lombard_mashak_mosquito_rakshak",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cardiac_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_health_infinity",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_super_surplus_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_add_on_explore_plus_policy_terms_conditions",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_corona_rakshak_policy_aditya_birla_health_insurance_co_limited",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_group_hospi_cash_connect_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_retail_health_old_pw",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_women_s_cancer_shield",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_group_health_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_swasthakutumbam",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_befit_rider_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_young_india_digi_health",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_group_hospital_cash",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_global_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_mediclassic_insurance_policy_individual",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_critical_illness_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_young_star_insuarnce_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_group_corona_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_icici_complete_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_saral_suraksha_group_pw",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_sarv_suraksha_plus_group",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "07_oriental_insurance_oriental_oriental_dengue_kavach",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_group_hospital_cash_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_saral_suraksha_bima",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_mediraksha",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_icanenhance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_critical_illness",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_new_india_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_super_surplus_floater_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_micro_rural_and_farmers_care",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_personal_protect_irdai",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_care_freedom_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "iffco_tokio_health_protector",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_individual_medishield_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_on",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_arogya_sanjeevani_irdai",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_out_patient_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_home_credit_assure",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_corona_kavach",
+      "status": "ok",
+      "concepts_resolved": 2,
+      "concepts_not_found": 18,
+      "fill_rate": 0.1,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_special_care",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_newindia_universal_health_irdai",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_super_mediclaim_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_corona_kavach_policy_tata_aig_general_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_saral_suraksha_bima_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_kotak_group_health_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_top_up_protect",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_group_health_old_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_medisenior",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_family_health_optima",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_health_super_topup_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_first_delite",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_family_medicare_v2_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_group_personal_accident_and_business_travel_accident_policy",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_novel_corona_virus_n_covcovid_19_insurance_policypilot_product",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_group_health_irdai_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_mycredit_comprehensive_suraksha",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_arogya_sanjeevani_pw",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_group_protect",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_silver_health",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_hospifund_insurance",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_care_micro_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_true_value_health_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_group_medishield_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "16_kotak_mahindra_kotak_arogya_sanjeevani_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_flexi_plus",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_credit_comprehensive_suraksha",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_family_health_optima_insurance_plan",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_senior_combined",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_superhealth_insurance_pw",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_health_super_top_up_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "liberty_critical_connect",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_group_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_super_surplus_floater_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_care_micro_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_hospital_cash_insurance_policyweb",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_family_mediclaim_2012_policy",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_cancer_insurance_pw",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_assure_critical_illness_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_sghi_platinum",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_comprehensive_accident_hospitalization_policy",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_health",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_02c526cb_d2a3_3706_729e_cc645ca06934",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_group_health_insurance_wording_27_9_2024",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_criti_shield_plus_policy_wording",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_nivabupa_health_premia_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_arogya_sanjeevani_policy_star_health_and_allied_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_health_protector_plus",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_indian_bank_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_super_topup_insurance",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_janata_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_healthprime_connect",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_health_premier_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_privilege_group_health_insurance",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_corora_rakshak_group_chola",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "care_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_emi_protect",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "21_royal_sundaram_royal_sundaram_arogya_sanjeevani_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_health_care_plus_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "17_reliance_reliance_group_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_loan_secure_insurance_policy_loan_secure_insurance_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_group_health_super_top_up_pw",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_jan_arogya_bima_policy",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_top_up_healthline",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_inome_protect",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_take_care_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_credit_link_group_hospital_cash_insurance",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_corona_kavach_policy_group_chola",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_group_criticare_platinum",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_saral_suraksha_bima_chi_personal_accident_product_prospectus_cum_sales_literature",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_complete_healthcare_insurance",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_hospital_cash_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "aditya_birla_activ_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_group_health_irdai",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_arogya_sanjeevani_policy_future_generali_india_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "22_edelweiss_edelweiss_group_health_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_iffco_tokio_critical_illness_benefit_policy",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_individual_personal_accident",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_corona_kavach_policy_iffco_tokio_general_insurance_co_ltd",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_group_saral_suraksha_bima_chi_personal_accident_product_policy_terms_conditions",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_corona_kavach_corona_kavach_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_product_list",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_arogyasanjeevani_policy_aditya_birla_health_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_health_wallet",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_star_group_criticare_platinum_policy_wording_27_9_2024",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_total_health_plan",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_health_qube_super_top_up_pw",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "universal_sompo_loan_secure",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_cancer_medical_expenses_group",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "12_iffco_tokio_iffco_tokio_iffco_tokio_hospital_daily_cash_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_group_credit_linked_critical_illness_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "19_liberty_liberty_health_connect_supra",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_health_care_supreme",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_senior",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "united_india_individual_health",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_m_care_group",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_super_surplus_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_csc_hospital_cash_insurance",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_group_medicare",
+      "status": "ok",
+      "concepts_resolved": 5,
+      "concepts_not_found": 15,
+      "fill_rate": 0.25,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_restore_cis",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "04_icici_lombard_icici_lombard_group_health_assure_super_top_up",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "11_aditya_birla_aditya_birla_activ_assure_irdai",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_out_patient_care_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_optima_super_combined",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_health_total",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "20_sbi_general_sbi_arogya_premier_pw",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_unitedindia_mahila_health_irdai",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "08_bajaj_allianz_bajaj_allianz_family_health_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_varishta_bima",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_policy_star_cancer_care_platinum_insurance_policy",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "01_new_india_assurance_new_india_standard_group_janata_mediclaim_policy",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_mosquito_disease_protection_policy_group_f94fc428",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "23_raheja_qbe_raheja_qbe_corona_kavach_pw",
+      "status": "ok",
+      "concepts_resolved": 3,
+      "concepts_not_found": 17,
+      "fill_rate": 0.15,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "09_hdfc_ergo_hdfc_ergo_hdfc_ergo_hospital_cash_insurance",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "05_niva_bupa_nivabupa_heartbeat_policy_irdai",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_mediplus",
+      "status": "ok",
+      "concepts_resolved": 8,
+      "concepts_not_found": 12,
+      "fill_rate": 0.4,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "10_tata_aig_tata_aig_tata_aig_medicare_plus",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "18_cholamandalam_cholamandalam_chola_flexi_health_supreme",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_varista_bima",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_corona_rakshak_policy_future_generali_india_insurance_company_limited",
+      "status": "ok",
+      "concepts_resolved": 1,
+      "concepts_not_found": 19,
+      "fill_rate": 0.05,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_health_protect_group",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "13_future_generali_future_generali_future_health_suraksha",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "02_star_health_star_health_star_cancer_care_goldpilot_product",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "03_care_health_assure_t_c_effective_from_12_september_2024",
+      "status": "ok",
+      "concepts_resolved": 7,
+      "concepts_not_found": 13,
+      "fill_rate": 0.35,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "14_universal_sompo_universal_sompo_senior_citizen_health_insurance_policy_senior_citizen_health_insurance_policy_wordings",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "06_united_india_united_india_super_top_up_medicare_policy",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "dse020_scale_triage_report.v1",
+  "task_id": "DSE-020",
+  "date": "2026-06-03",
+  "inputs": {
+    "manifest": "data/manifests/dse020_run_manifest_v1.json",
+    "progress_summary": "data/interim/dse020/progress/summary.json",
+    "output_root": "data/interim/dse020",
+    "db": "data/engine_dse020_smoke.sqlite",
+    "export_root": "data/export/dse020"
+  },
+  "metrics": {
+    "manifest_policy_count": 647,
+    "attempted_count": 39,
+    "skipped_count": 0,
+    "completed_all_per_policy_stages": 39,
+    "per_stage": {
+      "physical": {
+        "ok": 39,
+        "failed": 0
+      },
+      "heading": {
+        "ok": 39,
+        "failed": 0
+      },
+      "section": {
+        "ok": 39,
+        "failed": 0
+      },
+      "tables": {
+        "ok": 39,
+        "failed": 0
+      },
+      "facts": {
+        "ok": 39,
+        "failed": 0
+      }
+    },
+    "failure_by_category": {},
+    "failure_by_insurer": {},
+    "failure_by_exception": {},
+    "zero_headings": [
+      "tata_aig_arogya_sanjeevani",
+      "aditya_birla_activ_care"
+    ],
+    "zero_clauses": [
+      "tata_aig_arogya_sanjeevani",
+      "aditya_birla_activ_care"
+    ],
+    "zero_facts": [
+      "tata_aig_arogya_sanjeevani",
+      "aditya_birla_activ_care"
+    ],
+    "table_failures": [],
+    "exported_policy_count": 20,
+    "not_found_by_concept": {
+      "claim_intimation_timeline": 20,
+      "deductible": 20,
+      "icu_limit": 20,
+      "modern_treatment_coverage": 20,
+      "newborn_coverage": 20,
+      "restoration_benefit": 20,
+      "room_rent_limit": 20,
+      "co_pay": 11,
+      "organ_donor_coverage": 11,
+      "maternity_waiting": 9,
+      "ayush_coverage": 8,
+      "cumulative_bonus_ncb": 8,
+      "initial_waiting_period": 6,
+      "specific_disease_waiting_periods": 6,
+      "ambulance_coverage": 5,
+      "ped_waiting_period": 5,
+      "claim_settlement_timeline": 3,
+      "free_look_period": 3,
+      "grace_period": 2,
+      "renewability": 2
+    },
+    "fill_rates": [
+      {
+        "policy_id": "aditya_birla_activ_care",
+        "resolved": 0,
+        "total": 20,
+        "fill_rate": 0.0
+      },
+      {
+        "policy_id": "bajaj_allianz_silver_health",
+        "resolved": 12,
+        "total": 20,
+        "fill_rate": 0.6
+      },
+      {
+        "policy_id": "care_health_care_plus",
+        "resolved": 13,
+        "total": 20,
+        "fill_rate": 0.65
+      },
+      {
+        "policy_id": "cholamandalam_flexi_max_protect",
+        "resolved": 4,
+        "total": 20,
+        "fill_rate": 0.2
+      },
+      {
+        "policy_id": "future_generali_health_elite",
+        "resolved": 13,
+        "total": 20,
+        "fill_rate": 0.65
+      },
+      {
+        "policy_id": "hdfc_ergo_arogya_sanjeevani",
+        "resolved": 11,
+        "total": 20,
+        "fill_rate": 0.55
+      },
+      {
+        "policy_id": "icici_lombard_family_shield",
+        "resolved": 9,
+        "total": 20,
+        "fill_rate": 0.45
+      },
+      {
+        "policy_id": "iffco_tokio_health_protector",
+        "resolved": 12,
+        "total": 20,
+        "fill_rate": 0.6
+      },
+      {
+        "policy_id": "kotak_mahindra_health_premier",
+        "resolved": 13,
+        "total": 20,
+        "fill_rate": 0.65
+      },
+      {
+        "policy_id": "liberty_critical_connect",
+        "resolved": 6,
+        "total": 20,
+        "fill_rate": 0.3
+      },
+      {
+        "policy_id": "new_india_floater_mediclaim",
+        "resolved": 12,
+        "total": 20,
+        "fill_rate": 0.6
+      },
+      {
+        "policy_id": "niva_bupa_health_recharge",
+        "resolved": 11,
+        "total": 20,
+        "fill_rate": 0.55
+      },
+      {
+        "policy_id": "oriental_cancer_protect",
+        "resolved": 6,
+        "total": 20,
+        "fill_rate": 0.3
+      },
+      {
+        "policy_id": "reliance_health_gain",
+        "resolved": 12,
+        "total": 20,
+        "fill_rate": 0.6
+      },
+      {
+        "policy_id": "royal_sundaram_advanced_topup",
+        "resolved": 10,
+        "total": 20,
+        "fill_rate": 0.5
+      },
+      {
+        "policy_id": "sbi_general_arogya_sanjeevani",
+        "resolved": 11,
+        "total": 20,
+        "fill_rate": 0.55
+      },
+      {
+        "policy_id": "star_medi_classic_accident_care_individual",
+        "resolved": 11,
+        "total": 20,
+        "fill_rate": 0.55
+      },
+      {
+        "policy_id": "tata_aig_arogya_sanjeevani",
+        "resolved": 0,
+        "total": 20,
+        "fill_rate": 0.0
+      },
+      {
+        "policy_id": "united_india_individual_health",
+        "resolved": 11,
+        "total": 20,
+        "fill_rate": 0.55
+      },
+      {
+        "policy_id": "universal_sompo_loan_secure",
+        "resolved": 4,
+        "total": 20,
+        "fill_rate": 0.2
+      }
+    ],
+    "db": {
+      "exists": true,
+      "path": "data/engine_dse020_smoke.sqlite",
+      "size_bytes": 82882560,
+      "size_mb": 79.04,
+      "table_counts": {
+        "source_documents": 20,
+        "document_lines": 56854,
+        "document_sections": 3397,
+        "policy_clauses": 9202,
+        "source_spans": 25375,
+        "document_tables": 797,
+        "document_table_cells": 30491,
+        "extracted_fact_candidates": 665,
+        "extracted_facts": 181,
+        "derived_policy_features": 20
+      },
+      "foreign_key_violations": 0
+    },
+    "output_size_bytes": 2021401050,
+    "output_size_mb": 1927.76,
+    "export_size_bytes": 4216499,
+    "export_size_mb": 4.02
+  },
+  "top_recommended_fixes": [
+    "Fix parser/section-tree failures for 2 policies with zero clauses.",
+    "Audit heading scorer for 2 policies with zero headings.",
+    "Audit extractor recall/parser inputs for 2 policies with zero candidates.",
+    "Prioritize extractor/LLM strategy for top not_found concept `claim_intimation_timeline` (20).",
+    "Continue full-corpus run and classify the next largest failure cluster."
+  ]
+}

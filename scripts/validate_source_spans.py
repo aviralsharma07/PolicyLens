@@ -31,7 +31,7 @@ import os
 import pathlib
 import sqlite3
 import sys
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 _PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -82,6 +82,43 @@ def collect_source_counts(
         logical_path = os.path.join(logical_root, slug, "section_tree.json")
         if not os.path.isfile(meta_path):
             continue
+        if not os.path.isfile(physical_path):
+            raise ValidationError(f"Missing physical artifact for {slug}: {physical_path}")
+        if not os.path.isfile(logical_path):
+            raise ValidationError(f"Missing logical artifact for {slug}: {logical_path}")
+        physical = _load_json(physical_path)
+        logical = _load_json(logical_path)
+        document_id = physical["document_id"]
+        counts[document_id] = {
+            "slug": slug,
+            "lines": sum(len(page.get("lines", [])) for page in physical.get("pages", [])),
+            "sections": len(logical.get("sections", [])),
+            "clauses": len(logical.get("clauses", [])),
+        }
+    return counts
+
+
+def collect_source_counts_from_manifest(
+    manifest_path: str,
+    physical_root: str,
+    logical_root: str,
+    slugs_filter: Optional[List[str]] = None,
+    limit: Optional[int] = None,
+) -> Dict[str, dict]:
+    """Collect expected source row counts for manifest-driven DSE-020 runs."""
+    manifest = _load_json(manifest_path)
+    policies = [p for p in manifest.get("policies", []) if not p.get("skip_reason")]
+    if slugs_filter:
+        wanted = set(slugs_filter)
+        policies = [p for p in policies if p.get("slug") in wanted]
+    if limit is not None:
+        policies = policies[:limit]
+
+    counts: Dict[str, dict] = {}
+    for policy in policies:
+        slug = policy["slug"]
+        physical_path = os.path.join(physical_root, slug, "document_physical.json")
+        logical_path = os.path.join(logical_root, slug, "section_tree.json")
         if not os.path.isfile(physical_path):
             raise ValidationError(f"Missing physical artifact for {slug}: {physical_path}")
         if not os.path.isfile(logical_path):
@@ -305,8 +342,13 @@ def main() -> int:
     parser.add_argument("--db", default="data/engine.sqlite")
     parser.add_argument("--facts-root", default="data/interim/facts_resolved")
     parser.add_argument("--gold-corpus", default="gold_corpus")
+    parser.add_argument(
+        "--manifest", help="Optional DSE-020 manifest; overrides gold-corpus policy discovery"
+    )
     parser.add_argument("--physical-root", default="data/interim/physical")
     parser.add_argument("--logical-root", default="data/interim/logical")
+    parser.add_argument("--limit", type=int)
+    parser.add_argument("--slug", action="append")
     args = parser.parse_args()
 
     print(f"Validating clause store: {args.db}")
@@ -322,8 +364,28 @@ def main() -> int:
         print(f"FAIL: {exc}")
         return 1
 
-    expected_counts = collect_source_counts(args.gold_corpus, args.physical_root, args.logical_root)
+    if args.manifest:
+        expected_counts = collect_source_counts_from_manifest(
+            args.manifest,
+            args.physical_root,
+            args.logical_root,
+            slugs_filter=args.slug,
+            limit=args.limit,
+        )
+        manifest = _load_json(args.manifest)
+        total_entries = len([p for p in manifest.get("policies", []) if not p.get("skip_reason")])
+        unique_docs = len(expected_counts)
+        if unique_docs < total_entries:
+            print(
+                f"  NOTE: manifest has {total_entries} entries but {unique_docs} unique document_ids "
+                f"({total_entries - unique_docs} entries share document hashes)"
+            )
+    else:
+        expected_counts = collect_source_counts(
+            args.gold_corpus, args.physical_root, args.logical_root
+        )
     expected_policy_count = len(expected_counts)
+    print(f"  Expected source_documents: {expected_policy_count}")
 
     checks = [
         ("source_documents_count", lambda: check_source_documents(conn, expected_policy_count)),

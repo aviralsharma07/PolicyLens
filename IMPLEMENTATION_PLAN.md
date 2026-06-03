@@ -1,6 +1,6 @@
 # Document Structure Engine — Implementation Plan v2
 
-## Current State — 2026-06-02
+## Current State — 2026-06-04
 
 Product A now has:
 - 20 reviewed gold policies.
@@ -25,12 +25,14 @@ The next risks are:
 
 ## Active Roadmap After DSE-018
 
-1. DSE-019 — Canonical Insurance Concept Ontology Registry v1
-2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage
+1. DSE-019 — Canonical Insurance Concept Ontology Registry v1 — done
+2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage — in progress
 3. DSE-021 — Remaining Deterministic Extractors Wave 2
 4. DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
 5. DSE-014 — Evidence-Constrained LLM Refinement
 6. DSE-023 — Product B Export v1 Freeze + Handoff Dataset
+
+DSE-020 Phase 0/1 status: infrastructure and smoke validation are complete. The 647-policy manifest is collision-safe, DSE-020 outputs are namespaced, and 20-policy DB/export smoke passed. The full 647-policy pipeline run is complete: per-policy stages passed for all 647 policies, batch DB/export processed 591 unique docs (56 duplicate-hash skipped), 566 exported. Triage report generated. Final artifact hygiene and acceptance pending.
 
 ## Core Diagnosis
 

@@ -1,5 +1,91 @@
 # Changelog
 
+## 2026-06-04 (DSE-020 — Final Acceptance)
+
+### Changed
+- DSE-020 accepted and finalized. Status set to `done` in docs/tasks.md.
+
+## 2026-06-04 (DSE-020 — Artifact Hygiene + Final Checks)
+
+### Fixed
+- **Generic 20-policy benchmark reports overwritten**: DSE-020 batch DB/export run wrote to generic summary paths (`dse010_sqlite_build_summary.json`, `dse011_fact_scoring_summary.json`, `dse013_export_summary.json`). Restored from git.
+- **Stale export dirs**: 2 stale export directories from the pre-fix first attempt remained on disk (bajaj_allianz_silver_health, future_generali_health_elite). Removed.
+- **Export count discrepancy**: Triage report counted 568 exports (via glob, included stale dirs). Now correctly shows 566.
+
+### Added
+- `data/reports/dse020_sqlite_full_summary.json` — DSE-020-specific clause store summary (591 policies).
+- `data/reports/dse020_fact_scoring_full_summary.json` — DSE-020-specific fact scoring summary (591 policies, regenerated).
+- `data/reports/dse020_export_full_summary.json` — DSE-020-specific export summary (566 policies).
+
+### Changed
+- `docs/tasks.md` — DSE-020 status corrected from `done` to `in_progress`.
+- `IMPLEMENTATION_PLAN.md` — updated current state to 2026-06-04; full 647-policy run no longer marked pending.
+- `dse-020-tracking` — Phase 5 checklist updated with current completion status.
+
+### Validation
+- Gold corpus validator: PASSED (20/20 reviewed, 400 facts).
+- Source-span validation: ALL CHECKS PASSED (591 docs, 0 FK violations, 548135 valid spans).
+- Full pytest: 393/393 PASSED.
+- `git diff --check`: PASSED.
+
+## 2026-06-04 (DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage)
+
+### Added
+- `data/reports/dse020_scale_triage_report_v1.json` — comprehensive scale triage report with per-stage counts, top not_found concepts, structural warnings, and recommended fixes.
+- `data/reports/dse020_scale_triage_report_v1.md` — Markdown version of the scale triage report.
+
+### Changed
+- `scripts/run_clause_store.py` — added duplicate-hash skip logic in `main()`. Tracks `seen_document_ids` set; skips slugs whose document_id was already processed; cleans stale resolved facts for skipped slugs via `shutil.rmtree()`; summary now includes `policies_skipped_duplicate_hash`.
+- `scripts/validate_source_spans.py` — added diagnostic print showing manifest entry count vs unique document_id count when `--manifest` is used.
+
+### Fixed
+- **Duplicate-hash document identity issue**: The DSE-020 manifest has 647 entries but only 591 unique document hashes (56 entries share document_ids). Previously, the clause store ingested ALL 647 slugs, causing doubled sections/clauses for shared-document_id entries. Now, the second (and subsequent) slug per document_id is skipped with a recorded reason in the build summary.
+
+### Results
+- Clause store: **591/647 ingested** (56 skipped duplicate hash), DB 1938.17 MB.
+- Source-span validation: **ALL CHECKS PASSED** — 591 source_documents, 0 FK violations, count parity exact, 548135 valid source_spans, 3628 resolved facts verified.
+- Fact scoring: **598/647 policies** processed, 14792 candidates, 3759 facts, 0 conflicts, 0 FK violations.
+- Export: **566/591 policies** exported (25 had 0 resolved facts).
+- Triage report key findings:
+  - Full 647 per-policy run: 100% stage completion across all 5 stages.
+  - 132 policies with zero headings and zero clauses (parser/section-tree gap).
+  - 133 policies with zero fact candidates (extractor input coverage gap).
+  - Top not_found concepts: claim_intimation_timeline, deductible, icu_limit (568 each).
+
+### Known Issues
+- 56 duplicate-hash entries in the manifest share document_ids with other entries. The clause store skips the second occurrence to avoid double-counting sections/clauses. This is a corpus identity issue — the same PDF was obtained from different sources (IRDAI vs website) and appears under two slugs.
+- 132 policies have zero clauses and zero headings, indicating fundamental parser/section-tree gaps that need remediation before full production readiness.
+- 133 policies have zero fact candidates, likely downstream of the zero-clause issue.
+
+## 2026-06-03 (DSE-020 — Full 647-Policy Scale Triage Infrastructure)
+
+### Added
+- `scripts/build_dse020_manifest.py` — builds a collision-safe 647-policy DSE-020 run manifest with reviewed-gold source-path mapping.
+- `scripts/run_pipeline_batch_dse020.py` — DSE-020 namespaced per-policy runner for physical, heading, section, table, and fact stages with append-only progress JSONL and atomic summary writes.
+- `scripts/dse020_triage_report.py` — generates JSON/Markdown scale triage reports from manifest, progress, SQLite, and export outputs.
+- `tests/test_dse020_manifest.py` — tests slug generation, gold mapping, collision suffixing, and manifest validation.
+- `data/manifests/dse020_run_manifest_v1.json` — 647-policy manifest with 647 unique slugs, 20 reviewed-gold mappings, 0 missing PDFs, and 9 collision groups.
+- DSE-020 smoke reports under `data/reports/dse020_*_smoke*`.
+
+### Changed
+- `scripts/run_clause_store.py` — added optional manifest-driven policy discovery, metadata fallback for non-gold policies, `--limit`, `--slug`, and configurable summary output.
+- `scripts/run_fact_scoring.py` — added optional manifest-driven policy discovery, configurable physical root, `--limit`, `--slug`, and configurable summary output.
+- `scripts/run_export.py` — added configurable summary output.
+- `scripts/validate_source_spans.py` — added optional manifest-driven source artifact parity validation for DSE-020 roots.
+- `dse-020-tracking` and DSE-020 session log — updated with short-context executor packet protocol and smoke results.
+- `docs/tasks.md` — DSE-020 marked `in_progress` with Phase 0/1 progress.
+
+### Results
+- Manifest generation: **PASS** — 647 policies, 647 unique slugs, 20 reviewed-gold mappings, 0 missing PDFs.
+- Per-policy smoke: **PASS** — 39 policies processed across all five per-policy stages with 0 stage failures.
+- Clause-store/source-span smoke: **PASS** — 20 reviewed-gold policies, 0 FK violations, source artifact parity passed against DSE-020 roots.
+- Fact scoring smoke: **PASS** — 20/20 policies, 665 candidates, 181 facts, 0 conflicts, 0 FK violations.
+- Export smoke: **PASS** — 20/20 policies exported under `data/export/dse020`.
+
+### Known Issues
+- Full 647-policy run has not started yet.
+- Smoke triage reproduces known parser weaknesses for Tata AIG and Aditya Birla: zero headings, zero clauses, zero fact candidates in DSE-020 generated outputs.
+
 ## 2026-06-02 (DSE-019 — Canonical Insurance Concept Ontology Registry v1)
 
 ### Added

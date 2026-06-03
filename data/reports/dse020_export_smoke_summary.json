@@ -1,0 +1,170 @@
+{
+  "pipeline_run_id": "export_dse020_smoke_2026_06_03",
+  "git_commit": "f27c334d8006cdd1fbaf44100a4d7f17e15d4172",
+  "date": "2026-06-03",
+  "output_root": "data/export/dse020",
+  "policies_exported": 20,
+  "policies_total": 20,
+  "policy_results": [
+    {
+      "policy_id": "aditya_birla_activ_care",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "bajaj_allianz_silver_health",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "care_health_care_plus",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "cholamandalam_flexi_max_protect",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "future_generali_health_elite",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "hdfc_ergo_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "icici_lombard_family_shield",
+      "status": "ok",
+      "concepts_resolved": 9,
+      "concepts_not_found": 11,
+      "fill_rate": 0.45,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "iffco_tokio_health_protector",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "kotak_mahindra_health_premier",
+      "status": "ok",
+      "concepts_resolved": 13,
+      "concepts_not_found": 7,
+      "fill_rate": 0.65,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "liberty_critical_connect",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "new_india_floater_mediclaim",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "niva_bupa_health_recharge",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "oriental_cancer_protect",
+      "status": "ok",
+      "concepts_resolved": 6,
+      "concepts_not_found": 14,
+      "fill_rate": 0.3,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "reliance_health_gain",
+      "status": "ok",
+      "concepts_resolved": 12,
+      "concepts_not_found": 8,
+      "fill_rate": 0.6,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "royal_sundaram_advanced_topup",
+      "status": "ok",
+      "concepts_resolved": 10,
+      "concepts_not_found": 10,
+      "fill_rate": 0.5,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "sbi_general_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "star_medi_classic_accident_care_individual",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "tata_aig_arogya_sanjeevani",
+      "status": "ok",
+      "concepts_resolved": 0,
+      "concepts_not_found": 20,
+      "fill_rate": 0.0,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "united_india_individual_health",
+      "status": "ok",
+      "concepts_resolved": 11,
+      "concepts_not_found": 9,
+      "fill_rate": 0.55,
+      "validation_errors": 0
+    },
+    {
+      "policy_id": "universal_sompo_loan_secure",
+      "status": "ok",
+      "concepts_resolved": 4,
+      "concepts_not_found": 16,
+      "fill_rate": 0.2,
+      "validation_errors": 0
+    }
+  ]
+}
