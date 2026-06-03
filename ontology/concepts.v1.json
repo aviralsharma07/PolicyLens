@@ -1,0 +1,361 @@
+{
+  "schema_version": "ontology.v1",
+  "ontology_version": "1.0.0",
+  "last_updated": "2026-06-02",
+  "description": "Canonical Product A registry for the 20 priority Indian health insurance policy concepts.",
+  "fact_statuses": [
+    "present",
+    "explicitly_not_covered",
+    "not_applicable",
+    "not_found",
+    "ambiguous",
+    "conflicting",
+    "requires_manual_review"
+  ],
+  "default_evidence_required_for_statuses": [
+    "present",
+    "explicitly_not_covered"
+  ],
+  "concepts": [
+    {
+      "concept_id": "ped_waiting_period",
+      "display_name": "Pre-existing disease waiting period",
+      "category": "waiting_period",
+      "definition": "Waiting period before pre-existing diseases are covered under the policy.",
+      "value_shape": "duration_months",
+      "export_field": "ped_waiting_months",
+      "unit": "months",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Pre-existing disease waiting period not found in policy text.",
+        "explicitly_not_covered": "Pre-existing disease cover is explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "initial_waiting_period",
+      "display_name": "Initial waiting period",
+      "category": "waiting_period",
+      "definition": "Initial policy waiting period before non-accident claims are covered.",
+      "value_shape": "duration_days",
+      "export_field": "initial_waiting_days",
+      "unit": "days",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Initial waiting period not found in policy text.",
+        "explicitly_not_covered": "Initial waiting period is explicitly not applicable."
+      }
+    },
+    {
+      "concept_id": "specific_disease_waiting_periods",
+      "display_name": "Specific disease waiting periods",
+      "category": "waiting_period",
+      "definition": "Waiting periods for named diseases, treatments, or procedures, excluding PED waiting.",
+      "value_shape": "months_options",
+      "export_field": "specific_disease_waiting",
+      "unit": "months",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Specific disease waiting periods not found in policy text.",
+        "explicitly_not_covered": "Specific disease/procedure cover is explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "room_rent_limit",
+      "display_name": "Room rent limit",
+      "category": "room_rent",
+      "definition": "Limit on hospital room rent, expressed as amount, percentage of sum insured, actuals, or schedule-dependent value.",
+      "value_shape": "room_rent_limit",
+      "export_field": "room_rent_limit",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Room rent limit not found in policy text.",
+        "explicitly_not_covered": "Room rent limit is explicitly absent or unrestricted in the policy text."
+      }
+    },
+    {
+      "concept_id": "icu_limit",
+      "display_name": "ICU limit",
+      "category": "room_rent",
+      "definition": "Limit on ICU charges, expressed as amount, percentage of sum insured, actuals, or schedule-dependent value.",
+      "value_shape": "icu_limit",
+      "export_field": "icu_limit",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "ICU limit not found in policy text.",
+        "explicitly_not_covered": "ICU limit is explicitly absent or unrestricted in the policy text."
+      }
+    },
+    {
+      "concept_id": "co_pay",
+      "display_name": "Co-pay",
+      "category": "cost",
+      "definition": "The percentage or component of admissible claim amount payable by the insured.",
+      "value_shape": "percentage_or_components",
+      "export_field": "copay_percentage",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Co-pay not found in policy text.",
+        "explicitly_not_covered": "No co-pay is explicitly stated in the policy text."
+      }
+    },
+    {
+      "concept_id": "deductible",
+      "display_name": "Deductible",
+      "category": "cost",
+      "definition": "Amount or percentage payable by the insured before policy benefits apply.",
+      "value_shape": "amount_percentage_or_schedule",
+      "export_field": "deductible",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Deductible not found in policy text.",
+        "explicitly_not_covered": "No deductible is explicitly stated in the policy text."
+      }
+    },
+    {
+      "concept_id": "cumulative_bonus_ncb",
+      "display_name": "Cumulative bonus / No claim bonus",
+      "category": "benefit",
+      "definition": "Bonus or sum insured increase for claim-free years, including maximum cap where stated.",
+      "value_shape": "bonus_components",
+      "export_field": "cumulative_bonus_ncb",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Cumulative bonus / NCB not found in policy text.",
+        "explicitly_not_covered": "Cumulative bonus / NCB is explicitly not available."
+      }
+    },
+    {
+      "concept_id": "restoration_benefit",
+      "display_name": "Restoration benefit",
+      "category": "benefit",
+      "definition": "Benefit that restores sum insured after exhaustion, including conditions where stated.",
+      "value_shape": "coverage_status_or_components",
+      "export_field": "restoration_benefit",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Restoration benefit not found in policy text.",
+        "explicitly_not_covered": "Restoration benefit is explicitly not available."
+      }
+    },
+    {
+      "concept_id": "ayush_coverage",
+      "display_name": "AYUSH coverage",
+      "category": "benefit",
+      "definition": "Coverage for Ayurveda, Yoga and Naturopathy, Unani, Siddha, and Homeopathy treatment.",
+      "value_shape": "coverage_status_or_limit",
+      "export_field": "ayush_coverage",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "AYUSH coverage not found in policy text.",
+        "explicitly_not_covered": "AYUSH treatment is explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "modern_treatment_coverage",
+      "display_name": "Modern treatment coverage",
+      "category": "benefit",
+      "definition": "Coverage for listed modern treatments and advanced procedures, including sub-limits where stated.",
+      "value_shape": "coverage_status_or_limit",
+      "export_field": "modern_treatment_coverage",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Modern treatment coverage not found in policy text.",
+        "explicitly_not_covered": "Modern treatment coverage is explicitly not available."
+      }
+    },
+    {
+      "concept_id": "maternity_waiting",
+      "display_name": "Maternity waiting period",
+      "category": "waiting_period",
+      "definition": "Waiting period before maternity expenses are covered, where maternity cover exists.",
+      "value_shape": "duration_months_or_not_applicable",
+      "export_field": "maternity_waiting_months",
+      "unit": "months",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Maternity waiting period not found in policy text.",
+        "explicitly_not_covered": "Maternity expenses are explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "newborn_coverage",
+      "display_name": "Newborn coverage",
+      "category": "benefit",
+      "definition": "Coverage for newborn baby expenses or newborn treatment.",
+      "value_shape": "coverage_status_or_limit",
+      "export_field": "newborn_coverage",
+      "unit": null,
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Newborn coverage not found in policy text.",
+        "explicitly_not_covered": "Newborn coverage is explicitly not available."
+      }
+    },
+    {
+      "concept_id": "organ_donor_coverage",
+      "display_name": "Organ donor coverage",
+      "category": "benefit",
+      "definition": "Coverage for medical expenses related to organ donor treatment or harvesting.",
+      "value_shape": "coverage_status_or_limit",
+      "export_field": "organ_donor_coverage",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Organ donor coverage not found in policy text.",
+        "explicitly_not_covered": "Organ donor expenses are explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "ambulance_coverage",
+      "display_name": "Ambulance coverage",
+      "category": "benefit",
+      "definition": "Coverage for road ambulance, emergency ambulance, or transport expenses.",
+      "value_shape": "amount_or_coverage_status",
+      "export_field": "ambulance_coverage",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Ambulance coverage not found in policy text.",
+        "explicitly_not_covered": "Ambulance expenses are explicitly not covered."
+      }
+    },
+    {
+      "concept_id": "free_look_period",
+      "display_name": "Free look period",
+      "category": "regulatory",
+      "definition": "Period after receiving the policy during which the policyholder can review and cancel under free-look rules.",
+      "value_shape": "duration_days",
+      "export_field": "free_look_days",
+      "unit": "days",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Free look period not found in policy text.",
+        "explicitly_not_covered": "Free look period is explicitly not applicable."
+      }
+    },
+    {
+      "concept_id": "grace_period",
+      "display_name": "Grace period",
+      "category": "regulatory",
+      "definition": "Period after premium due date during which renewal/payment may be made while preserving continuity rules.",
+      "value_shape": "duration_days",
+      "export_field": "grace_period_days",
+      "unit": "days",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Grace period not found in policy text.",
+        "explicitly_not_covered": "Grace period is explicitly not applicable."
+      }
+    },
+    {
+      "concept_id": "renewability",
+      "display_name": "Renewability",
+      "category": "regulatory",
+      "definition": "Whether and how the policy can be renewed, including lifelong renewability where stated.",
+      "value_shape": "coverage_status",
+      "export_field": "renewability",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Renewability terms not found in policy text.",
+        "explicitly_not_covered": "Policy renewal is explicitly not available."
+      }
+    },
+    {
+      "concept_id": "claim_intimation_timeline",
+      "display_name": "Claim intimation timeline",
+      "category": "claim",
+      "definition": "Timeline for notifying the insurer or TPA about a claim, hospitalization, injury, or covered event.",
+      "value_shape": "duration_or_components",
+      "export_field": "claim_intimation_days",
+      "unit": "days",
+      "active_deterministic": false,
+      "extractor_status": "planned",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Claim intimation timeline not found in policy text.",
+        "explicitly_not_covered": "Claim intimation timeline is explicitly not applicable."
+      }
+    },
+    {
+      "concept_id": "claim_settlement_timeline",
+      "display_name": "Claim settlement timeline",
+      "category": "claim",
+      "definition": "Timeline for settlement, rejection, or repudiation of a claim after receipt of required documents.",
+      "value_shape": "duration_days_or_components",
+      "export_field": "claim_settlement_days",
+      "unit": "days",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
+      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "display_rules": {
+        "not_found": "Claim settlement timeline not found in policy text.",
+        "explicitly_not_covered": "Claim settlement timeline is explicitly not applicable."
+      }
+    }
+  ]
+}

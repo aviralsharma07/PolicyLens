@@ -14,6 +14,74 @@ Each step produces files/tables consumed by the next. These are the contracts be
 
 ---
 
+## Contract 0: Ontology Registry
+
+**Producer:** `ontology/concepts.v1.json`
+**Consumers:** extractors, validators, derived export, Product B handoff documentation
+
+The ontology registry is the canonical source of truth for Product A concept identity and Product B-facing semantics. It defines all 20 priority concepts and prevents drift between extractor targets, gold labels, and export fields.
+
+```json
+{
+  "schema_version": "ontology.v1",
+  "ontology_version": "1.0.0",
+  "last_updated": "2026-06-02",
+  "fact_statuses": [
+    "present",
+    "explicitly_not_covered",
+    "not_applicable",
+    "not_found",
+    "ambiguous",
+    "conflicting",
+    "requires_manual_review"
+  ],
+  "default_evidence_required_for_statuses": [
+    "present",
+    "explicitly_not_covered"
+  ],
+  "concepts": [
+    {
+      "concept_id": "co_pay",
+      "display_name": "Co-pay",
+      "category": "cost",
+      "definition": "The percentage or component of admissible claim amount payable by the insured.",
+      "value_shape": "percentage_or_components",
+      "export_field": "copay_percentage",
+      "unit": null,
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
+      "display_rules": {
+        "not_found": "Co-pay not found in policy text.",
+        "explicitly_not_covered": "No co-pay is explicitly stated in the policy text."
+      }
+    }
+  ]
+}
+```
+
+Rules:
+- The registry must contain exactly the 20 priority concepts until a later ontology version expands the concept set.
+- `concept_id` values must match gold `facts.json`, extractor target concepts, and derived export mappings.
+- `export_field` values must be unique.
+- `active_deterministic = true` means a deterministic extractor is currently implemented for the concept.
+- `present` and `explicitly_not_covered` require evidence by default.
+- Product B display copy must distinguish `not_found` from `explicitly_not_covered`.
+
+---
+
 ## Contract 1: Corpus Lockdown → UIN Reconciliation
 
 **Producer:** `identity/corpus_lockdown.py`

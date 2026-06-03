@@ -6,13 +6,21 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-002 | UIN Matcher v1 | done | P0 | Phase 0 |
-| DSE-003 | Gold annotation of 5 policies | done | P0 | Phase 7 |
-| DSE-004 | Physical Layout Extractor v1 | done | P1 | Phase 1 |
-| DSE-005 | Heading Candidate Scorer | done | P1 | Phase 2 |
-| DSE-006 | Section Tree Builder | done | P1 | Phase 2 |
-| DSE-007 | First 5 Extractors (free look, grace, PED, initial wait, co-pay) | done | P1 | Phase 6 |
-| DSE-008 | Normalizers Library (money, duration, percentage, age, coverage) | done | P1 | Phase 6 |
+| — | No active implementation task after DSE-019 | — | — | — |
+
+---
+
+## Current Status
+
+Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-018 expanded deterministic extraction to 13 of the 20 priority concepts and passed the full 20-policy fact extraction, scoring, export, source-span, and pytest regression chain.
+
+Product A is not yet production-proven across all 647 active policy wordings. The next work must prevent ontology drift, then validate the full corpus at scale, then close remaining extractor/table/LLM gaps.
+
+Current capability:
+- 20 reviewed gold policies.
+- 13/20 priority concepts have deterministic extractors.
+- Product B export emits all 20 concept slots with explicit status.
+- Full 647-policy production-scale quality is not yet proven.
 
 ---
 
@@ -20,14 +28,11 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-010 | Clause Store + Source Spans | done | P2 | Phase 4 |
-| DSE-011 | Fact Candidate Scoring + Conflict Resolution | done | P2 | Phase 5 |
-| DSE-012 | Expand gold corpus 5 → 20 | done | P2 | Phase 7 |
-| DSE-013 | Derived Export (20-Concept Skeleton) | done | P2 | Phase 8 |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-| DSE-015 | Insurer/Plan Normalizer Library | done | P1 | Phase 0 |
-| DSE-017 | 20-Policy Pipeline Rebuild + Scale Validation | done | P1 | Scale |
-| DSE-018 | Deterministic Extractor Expansion Wave 1 | done | P1 | Phase 6 |
+| DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | planned | P0 | Scale |
+| DSE-021 | Remaining Deterministic Extractors Wave 2 | planned | P1 | Phase 6 |
+| DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | planned | P1 | Phase 3 |
+| DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
 
 ---
 
@@ -52,10 +57,91 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 | DSE-015 | Insurer/Plan Normalizer Library | 2026-06-01 | Phase 0 |
 | DSE-017 | 20-Policy Pipeline Rebuild + Scale Validation | 2026-06-02 | Scale |
 | DSE-018 | Deterministic Extractor Expansion Wave 1 | 2026-06-02 | Phase 6 |
+| DSE-019 | Canonical Insurance Concept Ontology Registry v1 | 2026-06-02 | Ontology / Product A Control Plane |
 
 ---
 
 ## Task Detail
+
+### DSE-019 — Canonical Insurance Concept Ontology Registry v1
+
+**Status:** done
+**Priority:** P0
+**Phase:** Ontology / Product A Control Plane
+**Goal:** Create a single canonical registry for all Product A insurance concepts, value shapes, fact statuses, export mappings, evidence requirements, extractor implementation status, and Product B display semantics.
+**Acceptance criteria:**
+- `ontology/concepts.v1.json` exists and defines all 20 priority concepts.
+- Existing export mapping agrees with ontology.
+- Existing extractor target concepts agree with ontology.
+- Existing gold facts agree with ontology.
+- No behavior regression in extractors/export.
+- Gold corpus validator passes.
+- Full pytest passes.
+- Docs and session log are updated.
+- Product B remains untouched.
+- Raw PDFs remain untouched.
+**Results:** ontology registry defines all 20 priority concepts; 13 concepts marked active deterministic and 7 marked planned. Ontology tests verify agreement with export mapping, extractor target concepts, fact statuses, and all reviewed gold `facts.json` concept labels. Gold corpus validator passed and full pytest passed.
+**Branch:** feat/dse-019-ontology-registry-v1
+**Related docs:** data_contracts.md, export_contract.md, decisions.md, changelog.md, runs/sessions/2026-06-02-ontology-registry-v1.md
+
+### DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage
+
+**Status:** planned
+**Priority:** P0
+**Phase:** Scale
+**Goal:** Run the full Product A pipeline across all 647 active policy wordings and produce a scale-readiness report without manually annotating all PDFs.
+**Acceptance criteria:**
+- Every active policy wording is attempted or skipped with a recorded reason.
+- End-to-end success/failure counts are reported by stage.
+- Export production count is reported.
+- Frequent `not_found`, parser, table, and source-span failure modes are summarized.
+- Failures are classified as parser fix, extractor fix, table fix, identity/data issue, or human review.
+- Raw PDFs remain read-only.
+**Branch:** feat/dse-020-full-corpus-scale-triage
+**Related docs:** evaluation.md, risk_register.md, database_strategy.md
+
+### DSE-021 — Remaining Deterministic Extractors Wave 2
+
+**Status:** planned
+**Priority:** P1
+**Phase:** Phase 6
+**Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
+**Remaining concepts:** room rent limit, ICU limit, deductible, restoration benefit, modern treatment coverage, newborn coverage, claim intimation timeline.
+**Acceptance criteria:**
+- All 20 priority concepts have deterministic or explicitly deferred extraction strategy.
+- Precision >= 95%, evidence accuracy >= 95%, false-present count 0 on reviewed gold policies.
+- Product B export fill rate improves without weakening status/evidence rules.
+**Branch:** feat/dse-021-extractor-wave2
+**Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
+
+### DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
+
+**Status:** planned
+**Priority:** P1
+**Phase:** Phase 3
+**Goal:** Expand table-engine evaluation from the original physical-table labels to the reviewed 20-policy corpus and fix repeated table extraction/header lineage failures.
+**Acceptance criteria:**
+- DSE-009 physical-table labels/eval support all 20 reviewed policies.
+- Priority physical table detection recall >= 85%.
+- Header lineage accuracy >= 85%.
+- Table type accuracy >= 80%.
+- Prose-derived summaries remain out of the physical table hard gate.
+**Branch:** fix/dse-022-table-eval-20-policy
+**Related docs:** evaluation.md, data_contracts.md, risk_register.md
+
+### DSE-023 — Product B Export v1 Freeze + Handoff Dataset
+
+**Status:** planned
+**Priority:** P1
+**Phase:** Phase 8
+**Goal:** Freeze the first Product B consumable export package and handoff contract after ontology, scale triage, and remaining extractor decisions are stable.
+**Acceptance criteria:**
+- Export schema version and ontology version are linked.
+- Product B receives a stable JSON package with all fields, statuses, evidence, and parse quality.
+- Known limitations and display rules are documented.
+- No Product A raw parser tables are exposed to Product B.
+**Branch:** feat/dse-023-product-b-export-v1
+**Related docs:** export_contract.md, database_strategy.md, ontology/concepts.v1.json
 
 ### DSE-018 — Deterministic Extractor Expansion Wave 1
 

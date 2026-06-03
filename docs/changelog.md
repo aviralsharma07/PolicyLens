@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-06-02 (DSE-019 — Canonical Insurance Concept Ontology Registry v1)
+
+### Added
+- `ontology/concepts.v1.json` — canonical registry for the 20 priority Product A concepts, including value shapes, export fields, extractor status, evidence requirements, allowed statuses, and Product B display rules.
+- `ontology/loader.py` and `ontology/validator.py` — lightweight registry loading and validation helpers.
+- `tests/test_ontology.py` — drift tests between ontology, export mapping, extractor targets, fact statuses, and gold fact labels.
+
+### Changed
+- `docs/tasks.md` — reset active roadmap after DSE-018 and added DSE-019 through DSE-023 planning sequence.
+- `IMPLEMENTATION_PLAN.md` — updated from early 7-day execution plan to current-state roadmap with ontology as the next control-plane layer.
+- `docs/data_contracts.md` — added ontology registry contract.
+- `docs/export_contract.md` — clarified that exported concept fields are governed by the ontology registry.
+- `docs/decisions.md` — added ADR-0038 for ontology as canonical concept source.
+
+### Known Issues
+- Runtime extractor/export modules still use their existing local constants; DSE-019 validates consistency but does not refactor runtime code to read directly from ontology.
+- Full 647-policy production-scale quality remains unproven until DSE-020.
+
 ## 2026-06-02 (DSE-018 — Deterministic Extractor Expansion Wave 1)
 
 ### Added

@@ -1,5 +1,37 @@
 # Document Structure Engine — Implementation Plan v2
 
+## Current State — 2026-06-02
+
+Product A now has:
+- 20 reviewed gold policies.
+- 647 active policy wordings identified.
+- Physical layout extraction.
+- Heading/section/clause parsing.
+- Physical table engine v1.
+- SQLite clause store and source spans.
+- Fact candidate scoring and conflict infrastructure.
+- Product B export skeleton.
+- 13 active deterministic concepts passing 20-policy eval gates.
+
+Product A is not yet ready to claim reliable extraction across all 647 PDFs.
+
+The next risks are:
+- parser/clause fragmentation at full-corpus scale,
+- table reliability across 20+ policies,
+- missing extractors for 7 remaining priority concepts,
+- schedule/condition-heavy facts,
+- unresolved/ambiguous facts requiring LLM refinement,
+- Product B display semantics needing ontology-backed consistency.
+
+## Active Roadmap After DSE-018
+
+1. DSE-019 — Canonical Insurance Concept Ontology Registry v1
+2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage
+3. DSE-021 — Remaining Deterministic Extractors Wave 2
+4. DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
+5. DSE-014 — Evidence-Constrained LLM Refinement
+6. DSE-023 — Product B Export v1 Freeze + Handoff Dataset
+
 ## Core Diagnosis
 
 Based on analysis of 909 PDFs (647 active policy wordings) and 1,099 IRDAI UIN records:
@@ -358,6 +390,25 @@ document_issues
 
 ---
 
+## Canonical Ontology Registry
+
+The ontology registry is the canonical source for Product A concept identity, value shapes, export mapping, evidence requirements, and Product B display semantics.
+
+Registry location:
+
+```text
+ontology/
+├── concepts.v1.json
+├── loader.py
+└── validator.py
+```
+
+The registry must define all 20 priority concepts. Existing extractor target concepts, export field mappings, and gold corpus fact labels must agree with the registry. Product B display rules must come from ontology-backed fact status semantics, especially the distinction between `not_found` and `explicitly_not_covered`.
+
+The registry does not replace extractors, normalizers, source spans, or evals. It prevents drift between them.
+
+---
+
 ## Normalizers Library
 
 ```text
@@ -460,7 +511,9 @@ pdfplumber has built-in visual debugging utilities.
 
 ---
 
-## Concrete 7-Day Sprint
+## Historical Initial Sprint Plan
+
+This section records the original build plan. The current active roadmap is listed near the top of this document.
 
 ### Day 1: Corpus Lockdown
 

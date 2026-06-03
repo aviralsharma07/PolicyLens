@@ -1,0 +1,11 @@
+{
+  "task_id": "DSE-019",
+  "date": "2026-06-02",
+  "ontology_version": "1.0.0",
+  "schema_version": "ontology.v1",
+  "total_concepts": 20,
+  "active_deterministic_concepts": 13,
+  "planned_concepts": 7,
+  "purpose": "Canonical registry for Product A concept identity, value shapes, export mappings, evidence requirements, allowed statuses, extractor status, and Product B display semantics.",
+  "next_recommended_task": "DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage"
+}

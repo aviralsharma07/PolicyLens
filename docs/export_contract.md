@@ -3,8 +3,8 @@
 ## Contract Version
 
 **Version:** 1.0
-**Last updated:** 2026-06-01
-**Status:** active (DSE-013 implemented)
+**Last updated:** 2026-06-02
+**Status:** active (DSE-013 implemented; DSE-019 ontology-governed concept registry added)
 
 ---
 
@@ -57,6 +57,8 @@ data/export/batch_{run_id}.json  # Deferred — not produced by DSE-013 v1. Per-
 ---
 
 ## Feature Object Shape
+
+The exported feature set is governed by `ontology/concepts.v1.json`. The ontology defines the canonical concept ID, Product B export field name, value shape, unit, evidence requirements, and display semantics for every priority concept.
 
 Every feature in the `features` map follows this structure:
 

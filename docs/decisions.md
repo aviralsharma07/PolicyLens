@@ -25,6 +25,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0035 | Scale eval gates derive reviewed policy count dynamically | 2026-06-02 | Accepted |
 | 0036 | Fact value comparison allows metadata supersets only | 2026-06-02 | Accepted |
 | 0037 | Wave 1 deterministic fact value shapes | 2026-06-02 | Accepted |
+| 0038 | Ontology registry is canonical concept source | 2026-06-02 | Accepted |
 
 ---
 
@@ -46,6 +47,28 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 ---
 
 ## Decision Records
+
+### 2026-06-02 — ADR-0038: Ontology Registry Is Canonical Concept Source
+
+**Status:** accepted
+
+**Decision:** Product A concept identity, value shape, export field mapping, active deterministic status, evidence requirements, allowed fact statuses, and Product B display semantics are governed by `ontology/concepts.v1.json`.
+
+**Context:** By DSE-018, ontology knowledge existed across extractor target lists, export mapping, gold facts, fact schemas, decisions, and docs. That was workable while concept shapes were still being discovered, but it risks drift before full-corpus scale runs and Product B handoff.
+
+**Options considered:**
+1. Keep concept definitions distributed across extractors and export mapping.
+2. Make the export mapping the canonical ontology.
+3. Create a dedicated ontology registry and validate existing mappings against it.
+
+**Reasoning:** The export mapping is Product B-facing but too narrow to express evidence requirements, display semantics, extractor status, and future LLM/table responsibilities. A dedicated registry gives Product A one concept control plane while allowing conservative wiring through tests before larger refactors.
+
+**Consequences:**
+- Positive: Drift between gold facts, extractor targets, and export fields becomes test-detectable.
+- Positive: Product B display semantics can be tied to fact status and concept definition.
+- Negative: Future concept additions must update ontology first, then code/docs.
+
+**Revisit when:** Product B requires fields beyond the 20 priority concepts or the 91-field export needs a richer nested ontology.
 
 ### 2026-06-02 — ADR-0037: Wave 1 Deterministic Fact Value Shapes
 
