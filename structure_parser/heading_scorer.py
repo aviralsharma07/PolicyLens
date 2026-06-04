@@ -34,6 +34,8 @@ class HeadingScorer:
 
     def __init__(self, threshold: float = 0.5):
         self.threshold = threshold
+        self.fallback_min_score = 0.42
+        self.fallback_max_promotions = 40
 
     def compute_document_stats(self, doc: Dict[str, Any]) -> Dict[str, Any]:
         all_sizes = []
@@ -262,6 +264,101 @@ class HeadingScorer:
         score = sum(self.feature_contributions(features).values())
         return round(score, 4)
 
+    def _fallback_guard_reasons(self, candidate: Dict[str, Any]) -> List[str]:
+        text = candidate.get("text", "").strip()
+        features = candidate.get("features", {})
+        reasons: List[str] = []
+
+        if features.get("has_toc_dots", 0.0):
+            reasons.append("toc_dot_leader")
+        if features.get("position_penalty", 0.0):
+            reasons.append("header_footer_region")
+        if re.match(r"^\s*(?:S\.?\s*No\.?|Sr\.?\s*No\.?|Sl\.?\s*No\.?)\b", text, re.I):
+            reasons.append("serial_number_row")
+        if "\t" in text:
+            reasons.append("tabular_text")
+        if re.search(r"(?:₹|Rs\.?|INR)\s*\d|\d+\s*%|\b\d+\s*(?:lakh|lac|crore)\b", text, re.I):
+            reasons.append("price_or_benefit_value_row")
+        if len(text) > 110:
+            reasons.append("long_text")
+        if re.match(r"^\s*\d+\s+[A-Z][A-Z\s/&().,-]{2,}$", text) and not features.get(
+            "matches_heading_dict", 0.0
+        ):
+            reasons.append("procedure_or_item_list")
+        if re.search(r"\b(?:page\s+\d+|uin\s*:|irda|certificate\s+of\s+insurance)\b", text, re.I):
+            reasons.append("boilerplate_or_page_artifact")
+
+        return reasons
+
+    def _fallback_promotion_reasons(self, candidate: Dict[str, Any]) -> List[str]:
+        text = candidate.get("text", "").strip()
+        features = candidate.get("features", {})
+        token = candidate.get("numbering_token")
+        reasons: List[str] = []
+
+        numbered = features.get("matches_numbering", 0.0) == 1.0
+        bold = features.get("is_bold", 0.0) == 1.0
+        all_caps = features.get("is_all_caps", 0.0) == 1.0
+        dict_match = features.get("matches_heading_dict", 0.0) == 1.0
+        spacing = features.get("spacing_signal", 0.0) == 1.0
+        enlarged = features.get("font_size_ratio", 0.0) >= 1.05
+
+        upper_token = token.upper() if isinstance(token, str) else ""
+        if upper_token.startswith(("SECTION", "PART")):
+            reasons.append("section_or_part_token")
+        if re.match(r"^[A-Z]\.$", upper_token) and (dict_match or bold or all_caps):
+            reasons.append("letter_heading_with_support")
+        if numbered and dict_match:
+            reasons.append("numbered_dictionary_heading")
+        if numbered and bold:
+            reasons.append("bold_numbered_heading")
+        if numbered and all_caps:
+            reasons.append("all_caps_numbered_heading")
+        if numbered and spacing:
+            reasons.append("numbered_spacing_signal")
+        if numbered and enlarged:
+            reasons.append("numbered_enlarged_font")
+
+        # Allow compact policy heading forms like "10.Renewal" when the token parser
+        # recognizes numbering but dictionary matching misses due to punctuation.
+        if numbered and re.match(r"^\s*\d+(?:\.\d+)*\.?[A-Z][A-Za-z ]{2,40}:?\s*$", text):
+            reasons.append("compact_numbered_heading")
+
+        return reasons
+
+    def _apply_zero_heading_fallback(self, candidates: List[Dict[str, Any]]) -> int:
+        if any(c.get("decision") == "heading" for c in candidates):
+            return 0
+
+        promoted = 0
+        for candidate in sorted(candidates, key=lambda c: c.get("score", 0.0), reverse=True):
+            score = candidate.get("score", 0.0)
+            if score < self.fallback_min_score or score >= self.threshold:
+                continue
+
+            guards = self._fallback_guard_reasons(candidate)
+            reasons = self._fallback_promotion_reasons(candidate)
+            candidate["fallback_evaluation"] = {
+                "eligible_score_band": True,
+                "guard_reasons": guards,
+                "promotion_reasons": reasons,
+            }
+
+            if guards or not reasons:
+                continue
+
+            candidate["original_decision"] = candidate.get("decision")
+            candidate["original_score"] = score
+            candidate["decision"] = "heading"
+            candidate["promotion_source"] = "fallback_zero_heading"
+            candidate["promotion_reason"] = ";".join(reasons)
+            promoted += 1
+
+            if promoted >= self.fallback_max_promotions:
+                break
+
+        return promoted
+
     def _numbering_token(self, text: str) -> Optional[str]:
         match = re.match(
             r"^\s*((?:SECTION|PART)\s+[A-Z0-9]+|[IVX]+[\.\)]|\d+(?:\.\d+)*[\.\)]?|[A-Z]\.)",
@@ -324,10 +421,18 @@ class HeadingScorer:
                 )
                 candidate_index += 1
 
+        fallback_promotions = self._apply_zero_heading_fallback(candidates)
+
         return {
             "candidates": candidates,
             "config": {
                 "threshold": self.threshold,
+                "fallback_zero_heading": {
+                    "enabled": True,
+                    "min_score": self.fallback_min_score,
+                    "max_promotions": self.fallback_max_promotions,
+                    "promotions": fallback_promotions,
+                },
                 "weights": dict(self.WEIGHTS),
                 "body_font_mode": doc_stats["body_font_mode"],
                 "median_line_length": doc_stats["median_line_length"],
@@ -337,4 +442,5 @@ class HeadingScorer:
             "policy_id": doc.get("policy_id", ""),
             "total_lines_scored": len(candidates),
             "total_headings": sum(1 for c in candidates if c["decision"] == "heading"),
+            "fallback_promotions": fallback_promotions,
         }

@@ -846,3 +846,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Positive: Backward compatible — `normalize("HDFC_ERGO")` still returns `"HDFC ERGO"`.
 
 **Revisit when:** A new insurer appears in the corpus.
+
+---
+
+## 2026-06-04 — Zero-heading fallback promotion over global threshold lowering (ADR-0033)
+
+**Status:** accepted
+
+**Decision:** Add a conservative fallback heading promotion layer that activates only when normal heading scoring finds zero headings for a document. Do not lower the global heading threshold.
+
+**Context:** DSE-024 Phase D2 recovered the Phase C regression and reduced zero-clause policies to 122, but many remaining failures had plausible structural headings just below the 0.5 threshold. Threshold experiments showed global lowering creates too much false-positive risk.
+
+**Options considered:**
+1. Lower global threshold from 0.5 to 0.45.
+2. Add insurer-specific hardcoded heading rules.
+3. Add a zero-heading-only fallback promotion layer with explicit false-positive guards.
+
+**Reasoning:** Option 3 improves full-corpus parser coverage while preserving the 20-policy gold heading gate. It is auditable because promoted candidates store `promotion_source`, `promotion_reason`, original score, and guard evaluation details.
+
+**Consequences:**
+- Positive: Zero-clause policies reduced from 122 to 110 without new zero-clause regressions versus D2.
+- Positive: Gold heading eval remained 20/20 PASS.
+- Negative: 110 policies still need parser remediation or corpus filtering.
+
+**Revisit when:** False-positive review of promoted headings shows unsafe promotions, or remaining zero-clause policies require format-specific logic beyond this fallback.

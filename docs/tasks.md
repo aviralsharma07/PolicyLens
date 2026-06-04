@@ -13,13 +13,13 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 ## Current Status
 
-Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution but identified 132 policies with zero headings/clauses — a hard blocker for extraction coverage. Parser remediation must come before new extractors can improve fill rate.
+Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 has reduced zero-heading/zero-clause policies from 132 to 110. Parser remediation must continue before new extractors can materially improve full-corpus fill rate.
 
 Current capability:
 - 20 reviewed gold policies.
 - 13/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
-- DSE-020 triage: 132 policies with zero clauses, 566/591 unique docs exported.
+- DSE-024 current triage: 110 policies with zero clauses, 566/591 unique docs exported.
 
 ---
 
@@ -168,17 +168,27 @@ Current capability:
 - **Focused pytest: 41/41 PASS** (heading scorer + DSE-020 manifest).
 - **Triage report regenerated:** reflects 122 zero-clause / zero-heading policies.
 - **Recommendation:** stop global weight/threshold tuning; continue with a fallback heading promotion layer for low-confidence but structurally plausible headings.
+**Fallback Promotion Results (2026-06-04):**
+- **Zero-clause count reduced further:** D2 `122` → fallback `110`.
+- **Zero-heading count reduced:** D2 `122` → fallback `84`.
+- **No new regressions versus D2:** 12 policies improved and 0 new zero-clause policies appeared.
+- **Fallback scope:** activates only when normal scoring finds 0 headings; no global threshold lowering.
+- **Audit metadata emitted:** promoted candidates include `promotion_source`, `promotion_reason`, `original_score`, and fallback evaluation details.
+- **Gold heading eval: 20/20 PASS.**
+- **Gold section tree eval: 19/20 FAIL** — unchanged pre-existing `oriental_cancer_protect` tree-accuracy issue.
+- **Triage report regenerated:** reflects 110 zero-clause policies.
+- **Recommendation:** continue DSE-024 with remaining zero-clause classification/corpus filtering or more format-specific fallback guards. DSE-021 remains blocked.
 **Acceptance Criteria:**
 - [x] 132 zero-clause list classified 100% by root cause (Phase A — DONE).
 - [x] 20 representative failures documented with exact failure mechanism (Phase B — DONE).
-- [x] Zero-clause policies reduced from 132 to a measurable lower target (D2 — 122).
-- [x] Gold heading scorer eval: no regression vs current 20-policy pass (D2 — 20/20 PASS).
-- [x] Gold section tree eval: no regression vs current 20-policy pass (D2 — 19/20 PASS, pre-existing `oriental_cancer_protect` unchanged).
-- [x] Full pytest passes (D2 focused — 41/41 PASS).
+- [x] Zero-clause policies reduced from 132 to a measurable lower target (fallback — 110).
+- [x] Gold heading scorer eval: no regression vs current 20-policy pass (fallback — 20/20 PASS).
+- [x] Gold section tree eval: no regression vs current 20-policy pass (fallback — 19/20 PASS, pre-existing `oriental_cancer_protect` unchanged).
+- [x] Full pytest passes after fallback (400/400 PASS).
 - [x] Raw PDFs remain read-only (DONE).
 - [x] Product B files untouched (DONE).
-- [x] DSE-020 triage report regenerated after fixes (D2 — DONE, zero-clause: 122).
-- [x] Session log, changelog, risk register updated (D2 — DONE).
+- [x] DSE-020 triage report regenerated after fixes (fallback — DONE, zero-clause: 110).
+- [x] Session log, changelog, risk register updated after fallback.
 **Branch:** feat/dse-024-parser-remediation
 **Related docs:** evaluation.md, risk_register.md, data/reports/dse020_scale_triage_report_v1.md, data/reports/dse024_zero_clause_policy_audit_plan.md
 

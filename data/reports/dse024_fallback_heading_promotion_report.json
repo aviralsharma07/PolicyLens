@@ -1,0 +1,1205 @@
+{
+  "schema_version": "dse024_fallback_heading_promotion.v1",
+  "task_id": "DSE-024",
+  "date": "2026-06-04",
+  "baseline": {
+    "dse020_original_zero_clause_count": 132,
+    "d2_zero_clause_count": 122,
+    "d2_zero_heading_count": 122
+  },
+  "fallback_result": {
+    "zero_clause_count": 110,
+    "zero_heading_count": 84,
+    "zero_fact_count": 133,
+    "delta_vs_d2_zero_clause": -12,
+    "improved_policy_count_vs_d2": 12,
+    "new_regression_count_vs_d2": 0,
+    "improved_policies_vs_d2": [
+      "02_star_health_star_health_medi_classic_insurance_policy_individual",
+      "02_star_health_star_health_star_care_micro_insurance_policy",
+      "02_star_health_star_health_star_health_assure_insurance_policy",
+      "02_star_health_star_health_young_star_insurance_policy",
+      "02_star_health_star_policy_star_health_gain_insurance_policy",
+      "02_star_health_star_star_care_micro_insurance_policy",
+      "03_care_health_add_on_explore_plus_policy_terms_conditions",
+      "03_care_health_care_freedom_policy",
+      "03_care_health_enhance_t_c_effective_from_12_september_2024",
+      "04_icici_lombard_befit_rider_policy_wording",
+      "04_icici_lombard_icici_lombard_corona_kavach_policy_icici_lombard",
+      "04_icici_lombard_icici_lombard_golden_shield"
+    ],
+    "new_regressions_vs_d2": []
+  },
+  "fallback_promotions": {
+    "policies_with_promotions": 52,
+    "total_promoted_headings": 207,
+    "promotions_by_insurer": {
+      "Bajaj_Allianz": 5,
+      "Care_Health": 3,
+      "Future_Generali": 3,
+      "HDFC_ERGO": 13,
+      "ICICI_Lombard": 5,
+      "IFFCO_Tokio": 4,
+      "Magma_HDI": 1,
+      "Niva_Bupa": 2,
+      "Oriental_Insurance": 2,
+      "Star_Health": 6,
+      "Tata_AIG": 5,
+      "United_India": 2,
+      "Universal_Sompo": 1
+    },
+    "improved_by_insurer": {
+      "Care_Health": 3,
+      "ICICI_Lombard": 3,
+      "Star_Health": 6
+    },
+    "promotion_reason_counts": {
+      "bold_numbered_heading": 158,
+      "numbered_dictionary_heading": 127,
+      "all_caps_numbered_heading": 62,
+      "numbered_spacing_signal": 59,
+      "section_or_part_token": 40,
+      "letter_heading_with_support": 34,
+      "compact_numbered_heading": 11,
+      "numbered_enlarged_font": 2
+    },
+    "guard_reason_counts": {
+      "procedure_or_item_list": 28,
+      "price_or_benefit_value_row": 2,
+      "boilerplate_or_page_artifact": 1
+    },
+    "sample_policies": {
+      "02_star_health_star_health_medi_classic_insurance_policy_individual": {
+        "insurer": "Star_Health",
+        "promotion_count": 5,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4676,
+            "line_id": "p3l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. COVERAGE",
+            "page_number": 4,
+            "score": 0.4794,
+            "line_id": "p4l_131",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. OPTIONAL COVERS",
+            "page_number": 5,
+            "score": 0.4324,
+            "line_id": "p5l_80",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. EXCLUSIONS",
+            "page_number": 7,
+            "score": 0.4676,
+            "line_id": "p7l_94",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "V. CONDITIONS",
+            "page_number": 8,
+            "score": 0.4735,
+            "line_id": "p8l_112",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_star_care_micro_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 4,
+        "sample_promoted_headings": [
+          {
+            "text": "I. COVERAGE",
+            "page_number": 3,
+            "score": 0.4988,
+            "line_id": "p3l_15",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4802,
+            "line_id": "p3l_62",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. EXCLUSIONS",
+            "page_number": 4,
+            "score": 0.4802,
+            "line_id": "p4l_137",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "V. CONDITIONS",
+            "page_number": 6,
+            "score": 0.4895,
+            "line_id": "p6l_18",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_star_health_assure_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 6,
+        "sample_promoted_headings": [
+          {
+            "text": "2 1",
+            "page_number": 3,
+            "score": 0.4269,
+            "line_id": "p3l_705",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "5 4",
+            "page_number": 3,
+            "score": 0.4269,
+            "line_id": "p3l_702",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "A. DEFINITIONS",
+            "page_number": 4,
+            "score": 0.4423,
+            "line_id": "p4l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "B. COVERAGE",
+            "page_number": 6,
+            "score": 0.4654,
+            "line_id": "p6l_18",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "C. EXCLUSIONS",
+            "page_number": 11,
+            "score": 0.45,
+            "line_id": "p11l_6",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_young_star_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 5,
+        "sample_promoted_headings": [
+          {
+            "text": "9.Digital Health Vault",
+            "page_number": 4,
+            "score": 0.4522,
+            "line_id": "p4l_166",
+            "reason": "bold_numbered_heading;numbered_spacing_signal;compact_numbered_heading"
+          },
+          {
+            "text": "V. MORATORIUM PERIOD",
+            "page_number": 9,
+            "score": 0.4611,
+            "line_id": "p9l_14",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "VI. CONDITIONS",
+            "page_number": 9,
+            "score": 0.4878,
+            "line_id": "p9l_24",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "B. For Cashless Treatment",
+            "page_number": 9,
+            "score": 0.4389,
+            "line_id": "p9l_30",
+            "reason": "letter_heading_with_support;bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "10. Cancellation",
+            "page_number": 10,
+            "score": 0.4789,
+            "line_id": "p10l_33",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "02_star_health_star_policy_star_health_gain_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 1,
+            "score": 0.48,
+            "line_id": "p1l_6",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. COVERAGE",
+            "page_number": 2,
+            "score": 0.49,
+            "line_id": "p2l_102",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. CONDITIONS",
+            "page_number": 4,
+            "score": 0.48,
+            "line_id": "p4l_103",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_star_care_micro_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4817,
+            "line_id": "p3l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. EXCLUSIONS",
+            "page_number": 5,
+            "score": 0.4768,
+            "line_id": "p5l_2",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. CONDITIONS",
+            "page_number": 6,
+            "score": 0.4817,
+            "line_id": "p6l_44",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "03_care_health_add_on_explore_plus_policy_terms_conditions": {
+        "insurer": "Care_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "1. Definitions",
+            "page_number": 2,
+            "score": 0.4904,
+            "line_id": "p2l_51",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.7 Policy Disputes",
+            "page_number": 8,
+            "score": 0.4691,
+            "line_id": "p8l_63",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.14 Grievances",
+            "page_number": 10,
+            "score": 0.4862,
+            "line_id": "p10l_18",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "03_care_health_care_freedom_policy": {
+        "insurer": "Care_Health",
+        "promotion_count": 10,
+        "sample_promoted_headings": [
+          {
+            "text": "2. Definitions",
+            "page_number": 2,
+            "score": 0.4743,
+            "line_id": "p2l_53",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.6 Fraud",
+            "page_number": 17,
+            "score": 0.4905,
+            "line_id": "p17l_75",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "5.1.8 Migration:",
+            "page_number": 18,
+            "score": 0.4635,
+            "line_id": "p18l_64",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.9 Portability:",
+            "page_number": 18,
+            "score": 0.4527,
+            "line_id": "p18l_75",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.12 Moratorium Period",
+            "page_number": 19,
+            "score": 0.4203,
+            "line_id": "p19l_21",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      },
+      "03_care_health_enhance_t_c_effective_from_12_september_2024": {
+        "insurer": "Care_Health",
+        "promotion_count": 6,
+        "sample_promoted_headings": [
+          {
+            "text": "2. Definitions",
+            "page_number": 2,
+            "score": 0.48,
+            "line_id": "p2l_42",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "4. Exclusions",
+            "page_number": 8,
+            "score": 0.485,
+            "line_id": "p8l_34",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.8. Migration:",
+            "page_number": 13,
+            "score": 0.465,
+            "line_id": "p13l_34",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.2.3. Policy Disputes",
+            "page_number": 15,
+            "score": 0.44,
+            "line_id": "p15l_23",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "6.2. Special Conditions",
+            "page_number": 18,
+            "score": 0.435,
+            "line_id": "p18l_23",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_befit_rider_policy_wording": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 10,
+        "sample_promoted_headings": [
+          {
+            "text": "1. Outpatient Consultations",
+            "page_number": 3,
+            "score": 0.4244,
+            "line_id": "p3l_27",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "3. Pharmacy Cover",
+            "page_number": 4,
+            "score": 0.4709,
+            "line_id": "p4l_36",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "5. Tele -Consultation",
+            "page_number": 5,
+            "score": 0.4523,
+            "line_id": "p5l_17",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "6. e-Counseling",
+            "page_number": 5,
+            "score": 0.4802,
+            "line_id": "p5l_43",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "8. Preventive Care",
+            "page_number": 6,
+            "score": 0.4663,
+            "line_id": "p6l_13",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_corona_kavach_policy_icici_lombard": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 4,
+        "sample_promoted_headings": [
+          {
+            "text": "1. PREAMBLE",
+            "page_number": 2,
+            "score": 0.4532,
+            "line_id": "p2l_14",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "3. DEFINITIONS",
+            "page_number": 2,
+            "score": 0.4404,
+            "line_id": "p2l_34",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "4. COVERAGE",
+            "page_number": 4,
+            "score": 0.4532,
+            "line_id": "p4l_29",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "6. WAITING PERIOD",
+            "page_number": 4,
+            "score": 0.4277,
+            "line_id": "p4l_134",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_golden_shield": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 7,
+        "sample_promoted_headings": [
+          {
+            "text": "10 Lacs",
+            "page_number": 9,
+            "score": 0.4202,
+            "line_id": "p9l_61",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "19.  Care Management Program",
+            "page_number": 11,
+            "score": 0.4309,
+            "line_id": "p11l_66",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "9. Portability",
+            "page_number": 22,
+            "score": 0.4904,
+            "line_id": "p22l_17",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "12. Moratorium Period",
+            "page_number": 23,
+            "score": 0.4606,
+            "line_id": "p23l_62",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "17. Nomination:",
+            "page_number": 24,
+            "score": 0.4862,
+            "line_id": "p24l_61",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_group_take_care_insurance": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 4,
+        "sample_promoted_headings": [
+          {
+            "text": "PART II OF THE POLICY",
+            "page_number": 1,
+            "score": 0.4481,
+            "line_id": "p1l_7",
+            "reason": "section_or_part_token;numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "Section A: HOSPIFUND BENEFIT",
+            "page_number": 6,
+            "score": 0.4309,
+            "line_id": "p6l_13",
+            "reason": "section_or_part_token;numbered_dictionary_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "Section B : OUTPATIENT BENEFIT",
+            "page_number": 21,
+            "score": 0.4259,
+            "line_id": "p21l_60",
+            "reason": "section_or_part_token;numbered_dictionary_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "Section C: WELLNESS COVER",
+            "page_number": 27,
+            "score": 0.4383,
+            "line_id": "p27l_56",
+            "reason": "section_or_part_token;numbered_dictionary_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_health_care_plus_policy": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 5,
+        "sample_promoted_headings": [
+          {
+            "text": "PART I OF THE SCHEDULE",
+            "page_number": 1,
+            "score": 0.4842,
+            "line_id": "p1l_25",
+            "reason": "section_or_part_token;numbered_dictionary_heading;all_caps_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "1. DEFINITIONS",
+            "page_number": 4,
+            "score": 0.4263,
+            "line_id": "p4l_11",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "2.1  SCOPE OF THE COVER",
+            "page_number": 9,
+            "score": 0.4289,
+            "line_id": "p9l_38",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "0.25 years",
+            "page_number": 11,
+            "score": 0.4974,
+            "line_id": "p11l_21",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "2.2 EXCLUSIONS APPLICABLE TO POLICY",
+            "page_number": 11,
+            "score": 0.4658,
+            "line_id": "p11l_41",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "05_niva_bupa_niva_bupa_health_plus": {
+        "insurer": "Niva_Bupa",
+        "promotion_count": 1,
+        "sample_promoted_headings": [
+          {
+            "text": "2.Definitions & Interpretation",
+            "page_number": 1,
+            "score": 0.4466,
+            "line_id": "p1l_38",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      },
+      "05_niva_bupa_niva_bupa_health_pulse": {
+        "insurer": "Niva_Bupa",
+        "promotion_count": 7,
+        "sample_promoted_headings": [
+          {
+            "text": "2. Definitions",
+            "page_number": 1,
+            "score": 0.4904,
+            "line_id": "p1l_16",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "3.4. Day Care Treatment",
+            "page_number": 7,
+            "score": 0.4521,
+            "line_id": "p7l_56",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "3.14. HIV / AIDS",
+            "page_number": 12,
+            "score": 0.4819,
+            "line_id": "p12l_57",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "4. Optional Benefits",
+            "page_number": 13,
+            "score": 0.4649,
+            "line_id": "p13l_59",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "4.1.1 Accident Death (AD)",
+            "page_number": 14,
+            "score": 0.4436,
+            "line_id": "p14l_26",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      },
+      "06_united_india_united_india_arogya_sanjeevani_policy_united_india_insurance_company_limited": {
+        "insurer": "United_India",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "8. 5",
+            "page_number": 2,
+            "score": 0.4326,
+            "line_id": "p2l_14",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "9. conditions 10.10",
+            "page_number": 2,
+            "score": 0.4674,
+            "line_id": "p2l_21",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "10. 9",
+            "page_number": 2,
+            "score": 0.4283,
+            "line_id": "p2l_30",
+            "reason": "bold_numbered_heading"
+          }
+        ]
+      },
+      "06_united_india_unitedindia_arogya_sanjeevani_irdai": {
+        "insurer": "United_India",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "8. 5",
+            "page_number": 2,
+            "score": 0.4326,
+            "line_id": "p2l_14",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "9. conditions 10.10",
+            "page_number": 2,
+            "score": 0.4674,
+            "line_id": "p2l_21",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "10. 9",
+            "page_number": 2,
+            "score": 0.4283,
+            "line_id": "p2l_30",
+            "reason": "bold_numbered_heading"
+          }
+        ]
+      },
+      "07_oriental_insurance_oriental_mediclaim_individual_policy": {
+        "insurer": "Oriental_Insurance",
+        "promotion_count": 2,
+        "sample_promoted_headings": [
+          {
+            "text": "A. HOSPITALISATION",
+            "page_number": 1,
+            "score": 0.47,
+            "line_id": "p1l_41",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "3.EXCLUSIONS: Waiting Period:",
+            "page_number": 11,
+            "score": 0.4211,
+            "line_id": "p11l_36",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      },
+      "07_oriental_insurance_oriental_mediclaim_insurance_policy_individual": {
+        "insurer": "Oriental_Insurance",
+        "promotion_count": 2,
+        "sample_promoted_headings": [
+          {
+            "text": "A. HOSPITALISATION",
+            "page_number": 1,
+            "score": 0.47,
+            "line_id": "p1l_42",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "3.EXCLUSIONS: Waiting Period:",
+            "page_number": 11,
+            "score": 0.4211,
+            "line_id": "p11l_36",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      }
+    },
+    "improved_policy_samples": {
+      "02_star_health_star_health_medi_classic_insurance_policy_individual": {
+        "insurer": "Star_Health",
+        "promotion_count": 5,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4676,
+            "line_id": "p3l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. COVERAGE",
+            "page_number": 4,
+            "score": 0.4794,
+            "line_id": "p4l_131",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. OPTIONAL COVERS",
+            "page_number": 5,
+            "score": 0.4324,
+            "line_id": "p5l_80",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. EXCLUSIONS",
+            "page_number": 7,
+            "score": 0.4676,
+            "line_id": "p7l_94",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "V. CONDITIONS",
+            "page_number": 8,
+            "score": 0.4735,
+            "line_id": "p8l_112",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_star_care_micro_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 4,
+        "sample_promoted_headings": [
+          {
+            "text": "I. COVERAGE",
+            "page_number": 3,
+            "score": 0.4988,
+            "line_id": "p3l_15",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4802,
+            "line_id": "p3l_62",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. EXCLUSIONS",
+            "page_number": 4,
+            "score": 0.4802,
+            "line_id": "p4l_137",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "V. CONDITIONS",
+            "page_number": 6,
+            "score": 0.4895,
+            "line_id": "p6l_18",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_star_health_assure_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 6,
+        "sample_promoted_headings": [
+          {
+            "text": "2 1",
+            "page_number": 3,
+            "score": 0.4269,
+            "line_id": "p3l_705",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "5 4",
+            "page_number": 3,
+            "score": 0.4269,
+            "line_id": "p3l_702",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "A. DEFINITIONS",
+            "page_number": 4,
+            "score": 0.4423,
+            "line_id": "p4l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "B. COVERAGE",
+            "page_number": 6,
+            "score": 0.4654,
+            "line_id": "p6l_18",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "C. EXCLUSIONS",
+            "page_number": 11,
+            "score": 0.45,
+            "line_id": "p11l_6",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_health_young_star_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 5,
+        "sample_promoted_headings": [
+          {
+            "text": "9.Digital Health Vault",
+            "page_number": 4,
+            "score": 0.4522,
+            "line_id": "p4l_166",
+            "reason": "bold_numbered_heading;numbered_spacing_signal;compact_numbered_heading"
+          },
+          {
+            "text": "V. MORATORIUM PERIOD",
+            "page_number": 9,
+            "score": 0.4611,
+            "line_id": "p9l_14",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "VI. CONDITIONS",
+            "page_number": 9,
+            "score": 0.4878,
+            "line_id": "p9l_24",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "B. For Cashless Treatment",
+            "page_number": 9,
+            "score": 0.4389,
+            "line_id": "p9l_30",
+            "reason": "letter_heading_with_support;bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "10. Cancellation",
+            "page_number": 10,
+            "score": 0.4789,
+            "line_id": "p10l_33",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "02_star_health_star_policy_star_health_gain_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 1,
+            "score": 0.48,
+            "line_id": "p1l_6",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "II. COVERAGE",
+            "page_number": 2,
+            "score": 0.49,
+            "line_id": "p2l_102",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. CONDITIONS",
+            "page_number": 4,
+            "score": 0.48,
+            "line_id": "p4l_103",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "02_star_health_star_star_care_micro_insurance_policy": {
+        "insurer": "Star_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "I. DEFINITIONS",
+            "page_number": 3,
+            "score": 0.4817,
+            "line_id": "p3l_5",
+            "reason": "letter_heading_with_support;bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "III. EXCLUSIONS",
+            "page_number": 5,
+            "score": 0.4768,
+            "line_id": "p5l_2",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "IV. CONDITIONS",
+            "page_number": 6,
+            "score": 0.4817,
+            "line_id": "p6l_44",
+            "reason": "bold_numbered_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "03_care_health_add_on_explore_plus_policy_terms_conditions": {
+        "insurer": "Care_Health",
+        "promotion_count": 3,
+        "sample_promoted_headings": [
+          {
+            "text": "1. Definitions",
+            "page_number": 2,
+            "score": 0.4904,
+            "line_id": "p2l_51",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.7 Policy Disputes",
+            "page_number": 8,
+            "score": 0.4691,
+            "line_id": "p8l_63",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.14 Grievances",
+            "page_number": 10,
+            "score": 0.4862,
+            "line_id": "p10l_18",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "03_care_health_care_freedom_policy": {
+        "insurer": "Care_Health",
+        "promotion_count": 10,
+        "sample_promoted_headings": [
+          {
+            "text": "2. Definitions",
+            "page_number": 2,
+            "score": 0.4743,
+            "line_id": "p2l_53",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.6 Fraud",
+            "page_number": 17,
+            "score": 0.4905,
+            "line_id": "p17l_75",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "5.1.8 Migration:",
+            "page_number": 18,
+            "score": 0.4635,
+            "line_id": "p18l_64",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.9 Portability:",
+            "page_number": 18,
+            "score": 0.4527,
+            "line_id": "p18l_75",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.12 Moratorium Period",
+            "page_number": 19,
+            "score": 0.4203,
+            "line_id": "p19l_21",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          }
+        ]
+      },
+      "03_care_health_enhance_t_c_effective_from_12_september_2024": {
+        "insurer": "Care_Health",
+        "promotion_count": 6,
+        "sample_promoted_headings": [
+          {
+            "text": "2. Definitions",
+            "page_number": 2,
+            "score": 0.48,
+            "line_id": "p2l_42",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "4. Exclusions",
+            "page_number": 8,
+            "score": 0.485,
+            "line_id": "p8l_34",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.1.8. Migration:",
+            "page_number": 13,
+            "score": 0.465,
+            "line_id": "p13l_34",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "5.2.3. Policy Disputes",
+            "page_number": 15,
+            "score": 0.44,
+            "line_id": "p15l_23",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "6.2. Special Conditions",
+            "page_number": 18,
+            "score": 0.435,
+            "line_id": "p18l_23",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_befit_rider_policy_wording": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 10,
+        "sample_promoted_headings": [
+          {
+            "text": "1. Outpatient Consultations",
+            "page_number": 3,
+            "score": 0.4244,
+            "line_id": "p3l_27",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "3. Pharmacy Cover",
+            "page_number": 4,
+            "score": 0.4709,
+            "line_id": "p4l_36",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "5. Tele -Consultation",
+            "page_number": 5,
+            "score": 0.4523,
+            "line_id": "p5l_17",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "6. e-Counseling",
+            "page_number": 5,
+            "score": 0.4802,
+            "line_id": "p5l_43",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          },
+          {
+            "text": "8. Preventive Care",
+            "page_number": 6,
+            "score": 0.4663,
+            "line_id": "p6l_13",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_corona_kavach_policy_icici_lombard": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 4,
+        "sample_promoted_headings": [
+          {
+            "text": "1. PREAMBLE",
+            "page_number": 2,
+            "score": 0.4532,
+            "line_id": "p2l_14",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "3. DEFINITIONS",
+            "page_number": 2,
+            "score": 0.4404,
+            "line_id": "p2l_34",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "4. COVERAGE",
+            "page_number": 4,
+            "score": 0.4532,
+            "line_id": "p4l_29",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          },
+          {
+            "text": "6. WAITING PERIOD",
+            "page_number": 4,
+            "score": 0.4277,
+            "line_id": "p4l_134",
+            "reason": "numbered_dictionary_heading;all_caps_numbered_heading"
+          }
+        ]
+      },
+      "04_icici_lombard_icici_lombard_golden_shield": {
+        "insurer": "ICICI_Lombard",
+        "promotion_count": 7,
+        "sample_promoted_headings": [
+          {
+            "text": "10 Lacs",
+            "page_number": 9,
+            "score": 0.4202,
+            "line_id": "p9l_61",
+            "reason": "bold_numbered_heading"
+          },
+          {
+            "text": "19.  Care Management Program",
+            "page_number": 11,
+            "score": 0.4309,
+            "line_id": "p11l_66",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "9. Portability",
+            "page_number": 22,
+            "score": 0.4904,
+            "line_id": "p22l_17",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "12. Moratorium Period",
+            "page_number": 23,
+            "score": 0.4606,
+            "line_id": "p23l_62",
+            "reason": "numbered_dictionary_heading;bold_numbered_heading"
+          },
+          {
+            "text": "17. Nomination:",
+            "page_number": 24,
+            "score": 0.4862,
+            "line_id": "p24l_61",
+            "reason": "bold_numbered_heading;numbered_spacing_signal"
+          }
+        ]
+      }
+    }
+  },
+  "gold_heading_eval": {
+    "artifact": "runs/evals/2026-06-04-heading-scorer-dse024-fallback.json",
+    "passed": true,
+    "metrics": {
+      "policies_processed": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    "failures": []
+  },
+  "gold_section_tree_eval": {
+    "artifact": "runs/evals/2026-06-04-section-tree-dse024-fallback.json",
+    "passed": false,
+    "metrics": {
+      "policies_processed": 20,
+      "passed": 19,
+      "failed": 1
+    },
+    "failures": [
+      "oriental_cancer_protect"
+    ],
+    "note": "oriental_cancer_protect remains the known pre-existing tree-accuracy failure."
+  },
+  "acceptance": {
+    "zero_clause_improved_below_122": true,
+    "no_new_zero_clause_regressions_vs_d2": true,
+    "gold_heading_eval_20_of_20": true,
+    "section_tree_recorded_honestly": true,
+    "no_global_threshold_lowering": true,
+    "no_db_or_export_rerun": true,
+    "raw_pdfs_untouched": true,
+    "product_b_untouched": true
+  },
+  "conclusion": "Fallback promotion reduced DSE-020 zero-clause policies from 122 to 110 without adding new zero-clause regressions versus D2 and without regressing the 20-policy heading gate."
+}

@@ -12,9 +12,9 @@ Product A now has:
 - Fact candidate scoring and conflict infrastructure.
 - Product B export skeleton.
 - 13 active deterministic concepts passing 20-policy eval gates.
-- DSE-020 full-corpus scale triage completed: 132 zero-clause policies identified.
+- DSE-020 full-corpus scale triage completed: 132 zero-clause policies identified; DSE-024 fallback heading promotion reduced the active zero-clause set to 110.
 
-Product A is not yet ready to claim reliable extraction across all 647 PDFs. The primary blocker is parser coverage: 132 policies produce zero headings and zero clauses, which means zero input for fact extraction. DSE-021 extractor wave 2 is blocked until DSE-024 parser remediation reduces zero-clause failures.
+Product A is not yet ready to claim reliable extraction across all 647 PDFs. The primary blocker is parser coverage: 110 policies still produce zero headings and zero clauses, which means zero input for fact extraction. DSE-021 extractor wave 2 is blocked until DSE-024 parser remediation reduces zero-clause failures further or classifies remaining documents as non-policy/unsupported.
 
 The next risks are:
 - parser/clause fragmentation at full-corpus scale — **active (DSE-024)**
@@ -34,7 +34,7 @@ The next risks are:
 6. DSE-014 — Evidence-Constrained LLM Refinement
 7. DSE-023 — Product B Export v1 Freeze + Handoff Dataset
 
-**Why parser remediation before remaining extractors:** DSE-020 showed that 132 of 647 policies (20.4%) produce zero headings and zero clauses. Without clauses, extractors receive no structured input and emit `not_found` for all concepts. Adding new extractors to DSE-021 would not improve fill rate for these policies. Parser/section-tree fixes must come first to unlock clause coverage, after which extractor wave 2 can increase fill rate across the full corpus.
+**Why parser remediation before remaining extractors:** DSE-020 showed that 132 of 647 policies (20.4%) produced zero headings and zero clauses. DSE-024 has reduced this to 110, but those documents still provide no structured input and emit `not_found` for all concepts. Adding new extractors to DSE-021 would not improve fill rate for these policies. Parser/section-tree fixes or corpus filtering must come first to unlock clause coverage, after which extractor wave 2 can increase fill rate across the full corpus.
 
 DSE-020 infrastructure and smoke validation were completed. The 647-policy manifest is collision-safe, DSE-020 outputs are namespaced, and 20-policy DB/export smoke passed. The full 647-policy pipeline run completed: per-policy stages passed for all 647 policies, batch DB/export processed 591 unique docs (56 duplicate-hash skipped), 566 exported. Triage report generated and accepted.
 

@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Fallback Heading Promotion Layer)
+
+### Added
+- `HeadingScorer` zero-heading fallback promotion layer for low-confidence but structurally plausible headings.
+- Fallback audit metadata in `heading_candidates.json`: `promotion_source`, `promotion_reason`, `original_decision`, `original_score`, and `fallback_evaluation`.
+- `data/reports/dse024_fallback_heading_promotion_report.json` — machine-readable report comparing D2 to fallback results.
+- `data/reports/dse024_fallback_heading_promotion_report.md` — Markdown fallback promotion report.
+- `runs/evals/2026-06-04-heading-scorer-dse024-fallback.json` — gold heading eval after fallback.
+- `runs/evals/2026-06-04-section-tree-dse024-fallback.json` — gold section tree eval after fallback.
+- `runs/sessions/2026-06-04-dse024-fallback-heading-promotion.md` — fallback session log.
+
+### Changed
+- `data/interim/dse020/logical/*/heading_candidates.json` and `section_tree.json` — regenerated parser outputs for the 647-policy DSE-020 corpus.
+- `data/reports/dse020_scale_triage_report_v1.json` and `.md` — regenerated after fallback promotion.
+- `docs/data_contracts.md` — documented optional fallback promotion audit fields in Contract 3A.
+- `docs/tasks.md`, `IMPLEMENTATION_PLAN.md`, and `docs/risk_register.md` — updated parser blocker count from 122 to 110.
+
+### Results
+- **Zero-clause count improved:** D2 `122` → fallback `110`.
+- **Zero-heading count improved:** D2 `122` → fallback `84`.
+- **No new zero-clause regressions vs D2:** 12 policies improved, 0 regressed.
+- **Gold heading eval:** 20/20 PASS.
+- **Gold section tree eval:** 19/20 FAIL, unchanged pre-existing `oriental_cancer_protect` tree-accuracy issue.
+
+### Known Issues
+- 110 policies still have zero headings/clauses.
+- DSE-021 remains blocked until remaining parser coverage improves or unsupported/non-policy documents are filtered.
+
 ## 2026-06-04 (DSE-024 — Phase D2 Regression Recovery)
 
 ### Added

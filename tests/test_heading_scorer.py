@@ -420,6 +420,167 @@ class TestHeadingScorerUnit:
         assert cand["features"]["matches_numbering"] == 1.0
         assert cand["feature_contributions"]["is_sentence_case"] == -0.1
 
+    def test_zero_heading_fallback_promotes_structural_headings(self):
+        scorer = HeadingScorer(threshold=0.6)
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [
+                {
+                    "line_id": "l0",
+                    "text": "This is ordinary policy body text before the heading section starts.",
+                    "bbox": [50, 100, 450, 112],
+                    "region": "body",
+                    "span_ids": ["s0"],
+                },
+                {
+                    "line_id": "l1",
+                    "text": "1. PREAMBLE",
+                    "bbox": [50, 150, 170, 162],
+                    "region": "body",
+                    "span_ids": ["s1"],
+                },
+                {
+                    "line_id": "l2",
+                    "text": "This is a long body line used to keep the document median line length stable.",
+                    "bbox": [50, 172, 500, 184],
+                    "region": "body",
+                    "span_ids": ["s2"],
+                },
+                {
+                    "line_id": "l3",
+                    "text": "A. DEFINITIONS",
+                    "bbox": [50, 225, 180, 237],
+                    "region": "body",
+                    "span_ids": ["s3"],
+                },
+                {
+                    "line_id": "l4",
+                    "text": "This is another long body line after the definitions heading.",
+                    "bbox": [50, 247, 500, 259],
+                    "region": "body",
+                    "span_ids": ["s4"],
+                },
+                {
+                    "line_id": "l5",
+                    "text": "PART I: DEFINITIONS",
+                    "bbox": [50, 300, 220, 312],
+                    "region": "body",
+                    "span_ids": ["s5"],
+                },
+                {
+                    "line_id": "l6",
+                    "text": "This is a final long body line after the part heading.",
+                    "bbox": [50, 322, 500, 334],
+                    "region": "body",
+                    "span_ids": ["s6"],
+                },
+            ],
+            "spans": [
+                {"span_id": f"s{i}", "font_size": 10.0, "is_bold": False}
+                for i in range(7)
+            ],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        result = scorer.score_document(doc)
+        promoted = [c for c in result["candidates"] if c.get("promotion_source")]
+
+        assert result["fallback_promotions"] >= 3
+        assert {c["text"] for c in promoted} >= {
+            "1. PREAMBLE",
+            "A. DEFINITIONS",
+            "PART I: DEFINITIONS",
+        }
+        for candidate in promoted:
+            assert candidate["promotion_source"] == "fallback_zero_heading"
+            assert candidate["original_decision"] == "non-heading"
+            assert candidate["fallback_evaluation"]["promotion_reasons"]
+
+    def test_zero_heading_fallback_does_not_activate_when_normal_heading_exists(self):
+        scorer = HeadingScorer()
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [
+                {
+                    "line_id": "l0",
+                    "text": "This ordinary body line establishes the document body font.",
+                    "bbox": [50, 70, 420, 84],
+                    "region": "body",
+                    "span_ids": ["s0"],
+                },
+                {
+                    "line_id": "l1",
+                    "text": "1. PREAMBLE",
+                    "bbox": [50, 100, 180, 114],
+                    "region": "body",
+                    "span_ids": ["s1"],
+                },
+                {
+                    "line_id": "l2",
+                    "text": "A. DEFINITIONS",
+                    "bbox": [50, 160, 200, 174],
+                    "region": "body",
+                    "span_ids": ["s2"],
+                },
+                {
+                    "line_id": "l3",
+                    "text": "Another ordinary body line keeps the body font as the mode.",
+                    "bbox": [50, 190, 450, 204],
+                    "region": "body",
+                    "span_ids": ["s3"],
+                },
+            ],
+            "spans": [
+                {"span_id": "s0", "font_size": 10.0, "is_bold": False},
+                {"span_id": "s1", "font_size": 12.0, "is_bold": True},
+                {"span_id": "s2", "font_size": 10.0, "is_bold": False},
+                {"span_id": "s3", "font_size": 10.0, "is_bold": False},
+            ],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        result = scorer.score_document(doc)
+
+        assert result["total_headings"] >= 1
+        assert result["fallback_promotions"] == 0
+        assert not any(c.get("promotion_source") for c in result["candidates"])
+
+    def test_fallback_rejects_common_false_positive_rows(self):
+        scorer = HeadingScorer()
+        candidates = [
+            {"text": "S. No.", "features": {}, "numbering_token": None, "score": 0.45},
+            {
+                "text": "1. Preamble ............................................",
+                "features": {"has_toc_dots": 1.0, "matches_numbering": 1.0},
+                "numbering_token": "1.",
+                "score": 0.45,
+            },
+            {
+                "text": "Room Rent\t1% of Sum Insured\tPer Day",
+                "features": {"matches_numbering": 0.0},
+                "numbering_token": None,
+                "score": 0.45,
+            },
+            {
+                "text": "43 SPLINT",
+                "features": {"matches_numbering": 1.0, "is_all_caps": 1.0},
+                "numbering_token": "43",
+                "score": 0.45,
+            },
+        ]
+
+        guard_reasons = [scorer._fallback_guard_reasons(c) for c in candidates]
+
+        assert "serial_number_row" in guard_reasons[0]
+        assert "toc_dot_leader" in guard_reasons[1]
+        assert "tabular_text" in guard_reasons[2]
+        assert "price_or_benefit_value_row" in guard_reasons[2]
+        assert "procedure_or_item_list" in guard_reasons[3]
+
 
 class TestHeadingEvalMatching:
     def test_one_candidate_cannot_match_many_labels(self):

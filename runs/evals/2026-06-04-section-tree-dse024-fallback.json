@@ -1,0 +1,2820 @@
+{
+  "eval_name": "section-tree-v3",
+  "date": "2026-05-30",
+  "task_id": "DSE-006",
+  "git_commit": "f23ea0ce53a77c4a3dca9f334e598b995aa08564",
+  "git_dirty": true,
+  "input_manifest": "gold_corpus (5 policies)",
+  "metrics": {
+    "policies_processed": 20,
+    "passed": 19,
+    "failed": 1
+  },
+  "policy_results": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "status": "passed",
+      "total_predicted_sections": 699,
+      "total_predicted_clauses": 854,
+      "total_gold_sections": 80,
+      "total_gold_clauses": 400,
+      "metrics": {
+        "total_gold_non_toc_sections": 79,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 34,
+        "total_predicted_non_root_sections": 698,
+        "true_positives": 69,
+        "false_positives": 2,
+        "false_negatives": 10,
+        "section_tree_accuracy": 87.34,
+        "section_boundary_accuracy": 87.34,
+        "section_precision": 97.18,
+        "section_recall": 87.34,
+        "section_f1": 92.0,
+        "clause_precision": 99.42,
+        "clause_recall": 86.36,
+        "clause_f1": 92.43,
+        "clause_excluded_toc": 0,
+        "tree_correct": 69,
+        "page_correct": 69,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0001",
+            "pred_id": "aditya_birla_activ_care_sec_0002",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0002",
+            "pred_id": "aditya_birla_activ_care_sec_0003",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0003",
+            "pred_id": "aditya_birla_activ_care_sec_0004",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0004",
+            "pred_id": "aditya_birla_activ_care_sec_0005",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0005",
+            "pred_id": "aditya_birla_activ_care_sec_0006",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0006",
+            "pred_id": "aditya_birla_activ_care_sec_0007",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0007",
+            "pred_id": "aditya_birla_activ_care_sec_0008",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0008",
+            "pred_id": "aditya_birla_activ_care_sec_0009",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0009",
+            "pred_id": "aditya_birla_activ_care_sec_0010",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0010",
+            "pred_id": "aditya_birla_activ_care_sec_0011",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0011",
+            "pred_id": "aditya_birla_activ_care_sec_0012",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0012",
+            "pred_id": "aditya_birla_activ_care_sec_0013",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0013",
+            "pred_id": "aditya_birla_activ_care_sec_0014",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0014",
+            "pred_id": "aditya_birla_activ_care_sec_0015",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0015",
+            "pred_id": "aditya_birla_activ_care_sec_0016",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0016",
+            "pred_id": "aditya_birla_activ_care_sec_0017",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0017",
+            "pred_id": "aditya_birla_activ_care_sec_0018",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0018",
+            "pred_id": "aditya_birla_activ_care_sec_0019",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0019",
+            "pred_id": "aditya_birla_activ_care_sec_0020",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "aditya_birla_activ_care_review_sec_0021",
+            "pred_id": "aditya_birla_activ_care_sec_0021",
+            "match_score": 0.9
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "status": "passed",
+      "total_predicted_sections": 253,
+      "total_predicted_clauses": 544,
+      "total_gold_sections": 253,
+      "total_gold_clauses": 477,
+      "metrics": {
+        "total_gold_non_toc_sections": 252,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 30,
+        "total_predicted_non_root_sections": 252,
+        "true_positives": 252,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 252,
+        "page_correct": 252,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0001",
+            "pred_id": "bajaj_allianz_silver_health_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0002",
+            "pred_id": "bajaj_allianz_silver_health_sec_0002",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0014",
+            "pred_id": "bajaj_allianz_silver_health_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0015",
+            "pred_id": "bajaj_allianz_silver_health_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0016",
+            "pred_id": "bajaj_allianz_silver_health_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0017",
+            "pred_id": "bajaj_allianz_silver_health_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0018",
+            "pred_id": "bajaj_allianz_silver_health_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0019",
+            "pred_id": "bajaj_allianz_silver_health_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0020",
+            "pred_id": "bajaj_allianz_silver_health_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0021",
+            "pred_id": "bajaj_allianz_silver_health_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0022",
+            "pred_id": "bajaj_allianz_silver_health_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0023",
+            "pred_id": "bajaj_allianz_silver_health_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0024",
+            "pred_id": "bajaj_allianz_silver_health_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0025",
+            "pred_id": "bajaj_allianz_silver_health_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0026",
+            "pred_id": "bajaj_allianz_silver_health_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0027",
+            "pred_id": "bajaj_allianz_silver_health_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0028",
+            "pred_id": "bajaj_allianz_silver_health_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0003",
+            "pred_id": "bajaj_allianz_silver_health_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0004",
+            "pred_id": "bajaj_allianz_silver_health_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "bajaj_allianz_silver_health_sec_0029",
+            "pred_id": "bajaj_allianz_silver_health_sec_0029",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "care_health_care_plus",
+      "status": "passed",
+      "total_predicted_sections": 280,
+      "total_predicted_clauses": 554,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 94,
+      "metrics": {
+        "total_gold_non_toc_sections": 90,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 10,
+        "total_predicted_non_root_sections": 121,
+        "true_positives": 87,
+        "false_positives": 1,
+        "false_negatives": 3,
+        "section_tree_accuracy": 96.67,
+        "section_boundary_accuracy": 96.67,
+        "section_precision": 98.86,
+        "section_recall": 96.67,
+        "section_f1": 97.75,
+        "clause_precision": 98.86,
+        "clause_recall": 96.67,
+        "clause_f1": 97.75,
+        "clause_excluded_toc": 0,
+        "tree_correct": 87,
+        "page_correct": 87,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "care_health_care_plus_sec_001",
+            "pred_id": "care_health_care_plus_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_002",
+            "pred_id": "care_health_care_plus_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_003",
+            "pred_id": "care_health_care_plus_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_004",
+            "pred_id": "care_health_care_plus_sec_0050",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_005",
+            "pred_id": "care_health_care_plus_sec_0051",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_006",
+            "pred_id": "care_health_care_plus_sec_0052",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_007",
+            "pred_id": "care_health_care_plus_sec_0053",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_008",
+            "pred_id": "care_health_care_plus_sec_0054",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_009",
+            "pred_id": "care_health_care_plus_sec_0055",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_010",
+            "pred_id": "care_health_care_plus_sec_0056",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_011",
+            "pred_id": "care_health_care_plus_sec_0057",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_012",
+            "pred_id": "care_health_care_plus_sec_0058",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_013",
+            "pred_id": "care_health_care_plus_sec_0059",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_014",
+            "pred_id": "care_health_care_plus_sec_0060",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_015",
+            "pred_id": "care_health_care_plus_sec_0061",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_016",
+            "pred_id": "care_health_care_plus_sec_0062",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_017",
+            "pred_id": "care_health_care_plus_sec_0063",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_018",
+            "pred_id": "care_health_care_plus_sec_0064",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_019",
+            "pred_id": "care_health_care_plus_sec_0065",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "care_health_care_plus_sec_020",
+            "pred_id": "care_health_care_plus_sec_0066",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "status": "passed",
+      "total_predicted_sections": 174,
+      "total_predicted_clauses": 427,
+      "total_gold_sections": 174,
+      "total_gold_clauses": 444,
+      "metrics": {
+        "total_gold_non_toc_sections": 173,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 40,
+        "total_predicted_non_root_sections": 173,
+        "true_positives": 173,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 173,
+        "page_correct": 173,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0001",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0002",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0003",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0004",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0005",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0006",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0007",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0008",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0009",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0010",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0017",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0018",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0019",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0020",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0021",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0022",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0023",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0024",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0025",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "cholamandalam_flexi_max_protect_sec_0026",
+            "pred_id": "cholamandalam_flexi_max_protect_sec_0026",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "status": "passed",
+      "total_predicted_sections": 64,
+      "total_predicted_clauses": 832,
+      "total_gold_sections": 63,
+      "total_gold_clauses": 361,
+      "metrics": {
+        "total_gold_non_toc_sections": 62,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 25,
+        "max_gold_eval_page": 34,
+        "total_predicted_non_root_sections": 63,
+        "true_positives": 62,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 98.41,
+        "section_recall": 100.0,
+        "section_f1": 99.2,
+        "clause_precision": 99.76,
+        "clause_recall": 100.0,
+        "clause_f1": 99.88,
+        "clause_excluded_toc": 0,
+        "tree_correct": 62,
+        "page_correct": 62,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "future_generali_health_elite_sec_0001",
+            "pred_id": "future_generali_health_elite_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0002",
+            "pred_id": "future_generali_health_elite_sec_0003",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0003",
+            "pred_id": "future_generali_health_elite_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0011",
+            "pred_id": "future_generali_health_elite_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0012",
+            "pred_id": "future_generali_health_elite_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0013",
+            "pred_id": "future_generali_health_elite_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0014",
+            "pred_id": "future_generali_health_elite_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0015",
+            "pred_id": "future_generali_health_elite_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0016",
+            "pred_id": "future_generali_health_elite_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0017",
+            "pred_id": "future_generali_health_elite_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0018",
+            "pred_id": "future_generali_health_elite_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0019",
+            "pred_id": "future_generali_health_elite_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0020",
+            "pred_id": "future_generali_health_elite_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0021",
+            "pred_id": "future_generali_health_elite_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0022",
+            "pred_id": "future_generali_health_elite_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0023",
+            "pred_id": "future_generali_health_elite_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0024",
+            "pred_id": "future_generali_health_elite_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0025",
+            "pred_id": "future_generali_health_elite_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0026",
+            "pred_id": "future_generali_health_elite_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "future_generali_health_elite_sec_0027",
+            "pred_id": "future_generali_health_elite_sec_0028",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "status": "passed",
+      "total_predicted_sections": 115,
+      "total_predicted_clauses": 435,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 90,
+      "metrics": {
+        "total_gold_non_toc_sections": 80,
+        "total_gold_toc_sections": 10,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 2,
+        "max_gold_eval_page": 12,
+        "total_predicted_non_root_sections": 83,
+        "true_positives": 76,
+        "false_positives": 0,
+        "false_negatives": 4,
+        "section_tree_accuracy": 95.0,
+        "section_boundary_accuracy": 95.0,
+        "section_precision": 100.0,
+        "section_recall": 95.0,
+        "section_f1": 97.44,
+        "clause_precision": 100.0,
+        "clause_recall": 95.0,
+        "clause_f1": 97.44,
+        "clause_excluded_toc": 0,
+        "tree_correct": 76,
+        "page_correct": 76,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_011",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_012",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_013",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_014",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_015",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_016",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_017",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_018",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_019",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_020",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_021",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_022",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_023",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_024",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_025",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_026",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_027",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0029",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_028",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0030",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_029",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0031",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "hdfc_arogya_sanjeevani_sec_030",
+            "pred_id": "hdfc_arogya_sanjeevani_sec_0032",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "icici_family_shield",
+      "status": "passed",
+      "total_predicted_sections": 187,
+      "total_predicted_clauses": 589,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 89,
+      "metrics": {
+        "total_gold_non_toc_sections": 89,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 15,
+        "total_predicted_non_root_sections": 99,
+        "true_positives": 86,
+        "false_positives": 11,
+        "false_negatives": 3,
+        "section_tree_accuracy": 92.13,
+        "section_boundary_accuracy": 96.63,
+        "section_precision": 88.66,
+        "section_recall": 96.63,
+        "section_f1": 92.47,
+        "clause_precision": 88.66,
+        "clause_recall": 96.63,
+        "clause_f1": 92.47,
+        "clause_excluded_toc": 0,
+        "tree_correct": 82,
+        "page_correct": 86,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "icici_family_shield_sec_001",
+            "pred_id": "icici_family_shield_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "icici_family_shield_sec_003",
+            "pred_id": "icici_family_shield_sec_0016",
+            "match_score": 0.724
+          },
+          {
+            "gold_id": "icici_family_shield_sec_004",
+            "pred_id": "icici_family_shield_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_006",
+            "pred_id": "icici_family_shield_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_007",
+            "pred_id": "icici_family_shield_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_008",
+            "pred_id": "icici_family_shield_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_009",
+            "pred_id": "icici_family_shield_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_010",
+            "pred_id": "icici_family_shield_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_011",
+            "pred_id": "icici_family_shield_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_012",
+            "pred_id": "icici_family_shield_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_013",
+            "pred_id": "icici_family_shield_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_014",
+            "pred_id": "icici_family_shield_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_015",
+            "pred_id": "icici_family_shield_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_016",
+            "pred_id": "icici_family_shield_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_017",
+            "pred_id": "icici_family_shield_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_018",
+            "pred_id": "icici_family_shield_sec_0029",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_019",
+            "pred_id": "icici_family_shield_sec_0030",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_020",
+            "pred_id": "icici_family_shield_sec_0031",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_021",
+            "pred_id": "icici_family_shield_sec_0032",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "icici_family_shield_sec_022",
+            "pred_id": "icici_family_shield_sec_0033",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "status": "passed",
+      "total_predicted_sections": 249,
+      "total_predicted_clauses": 449,
+      "total_gold_sections": 249,
+      "total_gold_clauses": 337,
+      "metrics": {
+        "total_gold_non_toc_sections": 248,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 45,
+        "total_predicted_non_root_sections": 248,
+        "true_positives": 248,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 248,
+        "page_correct": 248,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0001",
+            "pred_id": "iffco_tokio_health_protector_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0002",
+            "pred_id": "iffco_tokio_health_protector_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0003",
+            "pred_id": "iffco_tokio_health_protector_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0004",
+            "pred_id": "iffco_tokio_health_protector_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0005",
+            "pred_id": "iffco_tokio_health_protector_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0006",
+            "pred_id": "iffco_tokio_health_protector_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0007",
+            "pred_id": "iffco_tokio_health_protector_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0008",
+            "pred_id": "iffco_tokio_health_protector_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0009",
+            "pred_id": "iffco_tokio_health_protector_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0010",
+            "pred_id": "iffco_tokio_health_protector_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0011",
+            "pred_id": "iffco_tokio_health_protector_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0012",
+            "pred_id": "iffco_tokio_health_protector_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0013",
+            "pred_id": "iffco_tokio_health_protector_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0014",
+            "pred_id": "iffco_tokio_health_protector_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0015",
+            "pred_id": "iffco_tokio_health_protector_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0016",
+            "pred_id": "iffco_tokio_health_protector_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0017",
+            "pred_id": "iffco_tokio_health_protector_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0018",
+            "pred_id": "iffco_tokio_health_protector_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0019",
+            "pred_id": "iffco_tokio_health_protector_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "iffco_tokio_health_protector_sec_0020",
+            "pred_id": "iffco_tokio_health_protector_sec_0020",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "status": "passed",
+      "total_predicted_sections": 136,
+      "total_predicted_clauses": 856,
+      "total_gold_sections": 136,
+      "total_gold_clauses": 828,
+      "metrics": {
+        "total_gold_non_toc_sections": 135,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 39,
+        "total_predicted_non_root_sections": 135,
+        "true_positives": 135,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 135,
+        "page_correct": 135,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0001",
+            "pred_id": "kotak_mahindra_health_premier_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0002",
+            "pred_id": "kotak_mahindra_health_premier_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0003",
+            "pred_id": "kotak_mahindra_health_premier_sec_0003",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0007",
+            "pred_id": "kotak_mahindra_health_premier_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0008",
+            "pred_id": "kotak_mahindra_health_premier_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0009",
+            "pred_id": "kotak_mahindra_health_premier_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0010",
+            "pred_id": "kotak_mahindra_health_premier_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0011",
+            "pred_id": "kotak_mahindra_health_premier_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0012",
+            "pred_id": "kotak_mahindra_health_premier_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0013",
+            "pred_id": "kotak_mahindra_health_premier_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0014",
+            "pred_id": "kotak_mahindra_health_premier_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0015",
+            "pred_id": "kotak_mahindra_health_premier_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0016",
+            "pred_id": "kotak_mahindra_health_premier_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0017",
+            "pred_id": "kotak_mahindra_health_premier_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0018",
+            "pred_id": "kotak_mahindra_health_premier_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0019",
+            "pred_id": "kotak_mahindra_health_premier_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0020",
+            "pred_id": "kotak_mahindra_health_premier_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0021",
+            "pred_id": "kotak_mahindra_health_premier_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0022",
+            "pred_id": "kotak_mahindra_health_premier_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "kotak_mahindra_health_premier_sec_0023",
+            "pred_id": "kotak_mahindra_health_premier_sec_0023",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "status": "passed",
+      "total_predicted_sections": 39,
+      "total_predicted_clauses": 482,
+      "total_gold_sections": 38,
+      "total_gold_clauses": 356,
+      "metrics": {
+        "total_gold_non_toc_sections": 37,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 21,
+        "max_gold_eval_page": 50,
+        "total_predicted_non_root_sections": 38,
+        "true_positives": 37,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 97.37,
+        "section_recall": 100.0,
+        "section_f1": 98.67,
+        "clause_precision": 99.72,
+        "clause_recall": 100.0,
+        "clause_f1": 99.86,
+        "clause_excluded_toc": 0,
+        "tree_correct": 37,
+        "page_correct": 37,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "liberty_critical_connect_sec_0001",
+            "pred_id": "liberty_critical_connect_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0002",
+            "pred_id": "liberty_critical_connect_sec_0003",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0006",
+            "pred_id": "liberty_critical_connect_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0007",
+            "pred_id": "liberty_critical_connect_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0003",
+            "pred_id": "liberty_critical_connect_sec_0004",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0008",
+            "pred_id": "liberty_critical_connect_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0009",
+            "pred_id": "liberty_critical_connect_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0010",
+            "pred_id": "liberty_critical_connect_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0004",
+            "pred_id": "liberty_critical_connect_sec_0005",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0011",
+            "pred_id": "liberty_critical_connect_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0012",
+            "pred_id": "liberty_critical_connect_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0013",
+            "pred_id": "liberty_critical_connect_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0014",
+            "pred_id": "liberty_critical_connect_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0015",
+            "pred_id": "liberty_critical_connect_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0016",
+            "pred_id": "liberty_critical_connect_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0017",
+            "pred_id": "liberty_critical_connect_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0018",
+            "pred_id": "liberty_critical_connect_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0019",
+            "pred_id": "liberty_critical_connect_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0020",
+            "pred_id": "liberty_critical_connect_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "liberty_critical_connect_sec_0021",
+            "pred_id": "liberty_critical_connect_sec_0022",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "new_india_floater",
+      "status": "passed",
+      "total_predicted_sections": 187,
+      "total_predicted_clauses": 525,
+      "total_gold_sections": 81,
+      "total_gold_clauses": 91,
+      "metrics": {
+        "total_gold_non_toc_sections": 77,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 3,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 10,
+        "total_predicted_non_root_sections": 117,
+        "true_positives": 77,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 77,
+        "page_correct": 77,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "new_india_floater_sec_004",
+            "pred_id": "new_india_floater_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_005",
+            "pred_id": "new_india_floater_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_006",
+            "pred_id": "new_india_floater_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_007",
+            "pred_id": "new_india_floater_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_008",
+            "pred_id": "new_india_floater_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_009",
+            "pred_id": "new_india_floater_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_010",
+            "pred_id": "new_india_floater_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_011",
+            "pred_id": "new_india_floater_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_012",
+            "pred_id": "new_india_floater_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_013",
+            "pred_id": "new_india_floater_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_014",
+            "pred_id": "new_india_floater_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_015",
+            "pred_id": "new_india_floater_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_016",
+            "pred_id": "new_india_floater_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_017",
+            "pred_id": "new_india_floater_sec_0114",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_018",
+            "pred_id": "new_india_floater_sec_0141",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_019",
+            "pred_id": "new_india_floater_sec_0142",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_020",
+            "pred_id": "new_india_floater_sec_0115",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_021",
+            "pred_id": "new_india_floater_sec_0152",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_022",
+            "pred_id": "new_india_floater_sec_0156",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "new_india_floater_sec_023",
+            "pred_id": "new_india_floater_sec_0116",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "status": "passed",
+      "total_predicted_sections": 232,
+      "total_predicted_clauses": 452,
+      "total_gold_sections": 232,
+      "total_gold_clauses": 365,
+      "metrics": {
+        "total_gold_non_toc_sections": 231,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 41,
+        "total_predicted_non_root_sections": 231,
+        "true_positives": 231,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 231,
+        "page_correct": 231,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0001",
+            "pred_id": "niva_bupa_health_recharge_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0003",
+            "pred_id": "niva_bupa_health_recharge_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0004",
+            "pred_id": "niva_bupa_health_recharge_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0005",
+            "pred_id": "niva_bupa_health_recharge_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0006",
+            "pred_id": "niva_bupa_health_recharge_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0007",
+            "pred_id": "niva_bupa_health_recharge_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0008",
+            "pred_id": "niva_bupa_health_recharge_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0009",
+            "pred_id": "niva_bupa_health_recharge_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0010",
+            "pred_id": "niva_bupa_health_recharge_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0011",
+            "pred_id": "niva_bupa_health_recharge_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0012",
+            "pred_id": "niva_bupa_health_recharge_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0013",
+            "pred_id": "niva_bupa_health_recharge_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0014",
+            "pred_id": "niva_bupa_health_recharge_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0015",
+            "pred_id": "niva_bupa_health_recharge_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0016",
+            "pred_id": "niva_bupa_health_recharge_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0017",
+            "pred_id": "niva_bupa_health_recharge_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0018",
+            "pred_id": "niva_bupa_health_recharge_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0019",
+            "pred_id": "niva_bupa_health_recharge_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0020",
+            "pred_id": "niva_bupa_health_recharge_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "niva_bupa_health_recharge_sec_0021",
+            "pred_id": "niva_bupa_health_recharge_sec_0021",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "status": "failed",
+      "total_predicted_sections": 49,
+      "total_predicted_clauses": 336,
+      "total_gold_sections": 49,
+      "total_gold_clauses": 398,
+      "metrics": {
+        "total_gold_non_toc_sections": 48,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 35,
+        "total_predicted_non_root_sections": 48,
+        "true_positives": 48,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 83.33,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 40,
+        "page_correct": 48,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "oriental_cancer_protect_sec_0001",
+            "pred_id": "oriental_cancer_protect_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0002",
+            "pred_id": "oriental_cancer_protect_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0003",
+            "pred_id": "oriental_cancer_protect_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0004",
+            "pred_id": "oriental_cancer_protect_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0005",
+            "pred_id": "oriental_cancer_protect_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0006",
+            "pred_id": "oriental_cancer_protect_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0007",
+            "pred_id": "oriental_cancer_protect_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0008",
+            "pred_id": "oriental_cancer_protect_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0009",
+            "pred_id": "oriental_cancer_protect_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0010",
+            "pred_id": "oriental_cancer_protect_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0027",
+            "pred_id": "oriental_cancer_protect_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0028",
+            "pred_id": "oriental_cancer_protect_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0029",
+            "pred_id": "oriental_cancer_protect_sec_0029",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0030",
+            "pred_id": "oriental_cancer_protect_sec_0030",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0031",
+            "pred_id": "oriental_cancer_protect_sec_0031",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0032",
+            "pred_id": "oriental_cancer_protect_sec_0032",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0033",
+            "pred_id": "oriental_cancer_protect_sec_0033",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0034",
+            "pred_id": "oriental_cancer_protect_sec_0034",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0035",
+            "pred_id": "oriental_cancer_protect_sec_0035",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "oriental_cancer_protect_sec_0036",
+            "pred_id": "oriental_cancer_protect_sec_0036",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": false,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "reliance_health_gain",
+      "status": "passed",
+      "total_predicted_sections": 392,
+      "total_predicted_clauses": 771,
+      "total_gold_sections": 391,
+      "total_gold_clauses": 607,
+      "metrics": {
+        "total_gold_non_toc_sections": 390,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 5,
+        "max_gold_eval_page": 36,
+        "total_predicted_non_root_sections": 391,
+        "true_positives": 390,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "section_tree_accuracy": 97.95,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 99.74,
+        "section_recall": 100.0,
+        "section_f1": 99.87,
+        "clause_precision": 99.87,
+        "clause_recall": 100.0,
+        "clause_f1": 99.93,
+        "clause_excluded_toc": 0,
+        "tree_correct": 382,
+        "page_correct": 390,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "reliance_health_gain_sec_0001",
+            "pred_id": "reliance_health_gain_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0012",
+            "pred_id": "reliance_health_gain_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0013",
+            "pred_id": "reliance_health_gain_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0014",
+            "pred_id": "reliance_health_gain_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0015",
+            "pred_id": "reliance_health_gain_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0016",
+            "pred_id": "reliance_health_gain_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0017",
+            "pred_id": "reliance_health_gain_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0018",
+            "pred_id": "reliance_health_gain_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0019",
+            "pred_id": "reliance_health_gain_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0020",
+            "pred_id": "reliance_health_gain_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0021",
+            "pred_id": "reliance_health_gain_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0022",
+            "pred_id": "reliance_health_gain_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0023",
+            "pred_id": "reliance_health_gain_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0024",
+            "pred_id": "reliance_health_gain_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0025",
+            "pred_id": "reliance_health_gain_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0026",
+            "pred_id": "reliance_health_gain_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0027",
+            "pred_id": "reliance_health_gain_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0028",
+            "pred_id": "reliance_health_gain_sec_0029",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0029",
+            "pred_id": "reliance_health_gain_sec_0030",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "reliance_health_gain_sec_0030",
+            "pred_id": "reliance_health_gain_sec_0031",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "status": "passed",
+      "total_predicted_sections": 184,
+      "total_predicted_clauses": 466,
+      "total_gold_sections": 139,
+      "total_gold_clauses": 415,
+      "metrics": {
+        "total_gold_non_toc_sections": 138,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 38,
+        "total_predicted_non_root_sections": 176,
+        "true_positives": 138,
+        "false_positives": 37,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 78.86,
+        "section_recall": 100.0,
+        "section_f1": 88.18,
+        "clause_precision": 81.31,
+        "clause_recall": 100.0,
+        "clause_f1": 89.69,
+        "clause_excluded_toc": 0,
+        "tree_correct": 138,
+        "page_correct": 138,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0001",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0016",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0017",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0018",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0019",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0020",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0021",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0022",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0023",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0024",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0025",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0026",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0027",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0028",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0029",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0029",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0030",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0030",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0031",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0031",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0032",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0032",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0033",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0033",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "royal_sundaram_advanced_topup_sec_0034",
+            "pred_id": "royal_sundaram_advanced_topup_sec_0034",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "status": "passed",
+      "total_predicted_sections": 216,
+      "total_predicted_clauses": 387,
+      "total_gold_sections": 216,
+      "total_gold_clauses": 253,
+      "metrics": {
+        "total_gold_non_toc_sections": 215,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 26,
+        "total_predicted_non_root_sections": 215,
+        "true_positives": 215,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 215,
+        "page_correct": 215,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0001",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0001",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0002",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0004",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0207",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0207",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0005",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0006",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0007",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0008",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0009",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0009",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0010",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0011",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0211",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0211",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0212",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0212",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0213",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0213",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0214",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0214",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0215",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0215",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0012",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0013",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0014",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "sbi_general_arogya_sanjeevani_sec_0015",
+            "pred_id": "sbi_general_arogya_sanjeevani_sec_0015",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "status": "passed",
+      "total_predicted_sections": 388,
+      "total_predicted_clauses": 445,
+      "total_gold_sections": 91,
+      "total_gold_clauses": 89,
+      "metrics": {
+        "total_gold_non_toc_sections": 69,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 4,
+        "max_gold_eval_page": 13,
+        "total_predicted_non_root_sections": 69,
+        "true_positives": 62,
+        "false_positives": 7,
+        "false_negatives": 7,
+        "section_tree_accuracy": 88.41,
+        "section_boundary_accuracy": 86.96,
+        "section_precision": 89.86,
+        "section_recall": 89.86,
+        "section_f1": 89.86,
+        "clause_precision": 89.86,
+        "clause_recall": 89.86,
+        "clause_f1": 89.86,
+        "clause_excluded_toc": 0,
+        "tree_correct": 61,
+        "page_correct": 60,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "star_medi_classic_accident_sec_022",
+            "pred_id": "star_medi_classic_accident_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_024",
+            "pred_id": "star_medi_classic_accident_sec_0004",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_025",
+            "pred_id": "star_medi_classic_accident_sec_0005",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_026",
+            "pred_id": "star_medi_classic_accident_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_027",
+            "pred_id": "star_medi_classic_accident_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_028",
+            "pred_id": "star_medi_classic_accident_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_029",
+            "pred_id": "star_medi_classic_accident_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_030",
+            "pred_id": "star_medi_classic_accident_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_031",
+            "pred_id": "star_medi_classic_accident_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_032",
+            "pred_id": "star_medi_classic_accident_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_033",
+            "pred_id": "star_medi_classic_accident_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_034",
+            "pred_id": "star_medi_classic_accident_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_035",
+            "pred_id": "star_medi_classic_accident_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_036",
+            "pred_id": "star_medi_classic_accident_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_037",
+            "pred_id": "star_medi_classic_accident_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_038",
+            "pred_id": "star_medi_classic_accident_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_039",
+            "pred_id": "star_medi_classic_accident_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_040",
+            "pred_id": "star_medi_classic_accident_sec_0027",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_041",
+            "pred_id": "star_medi_classic_accident_sec_0028",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "star_medi_classic_accident_sec_042",
+            "pred_id": "star_medi_classic_accident_sec_0029",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "status": "passed",
+      "total_predicted_sections": 96,
+      "total_predicted_clauses": 274,
+      "total_gold_sections": 25,
+      "total_gold_clauses": 99,
+      "metrics": {
+        "total_gold_non_toc_sections": 24,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 21,
+        "total_predicted_non_root_sections": 95,
+        "true_positives": 22,
+        "false_positives": 1,
+        "false_negatives": 2,
+        "section_tree_accuracy": 91.67,
+        "section_boundary_accuracy": 91.67,
+        "section_precision": 95.65,
+        "section_recall": 91.67,
+        "section_f1": 93.62,
+        "clause_precision": 98.81,
+        "clause_recall": 85.57,
+        "clause_f1": 91.71,
+        "clause_excluded_toc": 0,
+        "tree_correct": 22,
+        "page_correct": 22,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0001",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0002",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0002",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0003",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0003",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0004",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0004",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0005",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0005",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0006",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0006",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0007",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0007",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0008",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0008",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0009",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0009",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0010",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0010",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0011",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0011",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0012",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0012",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0013",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0013",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0014",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0014",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0015",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0015",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0016",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0016",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0017",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0019",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0018",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0020",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0019",
+            "match_score": 0.75
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0021",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0020",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "tata_aig_arogya_sanjeevani_review_sec_0022",
+            "pred_id": "tata_aig_arogya_sanjeevani_sec_0021",
+            "match_score": 0.9
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "united_india_individual_health",
+      "status": "passed",
+      "total_predicted_sections": 185,
+      "total_predicted_clauses": 393,
+      "total_gold_sections": 185,
+      "total_gold_clauses": 343,
+      "metrics": {
+        "total_gold_non_toc_sections": 184,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 1,
+        "max_gold_eval_page": 23,
+        "total_predicted_non_root_sections": 184,
+        "true_positives": 184,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 100.0,
+        "section_recall": 100.0,
+        "section_f1": 100.0,
+        "clause_precision": 100.0,
+        "clause_recall": 100.0,
+        "clause_f1": 100.0,
+        "clause_excluded_toc": 0,
+        "tree_correct": 184,
+        "page_correct": 184,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "united_india_individual_health_sec_0001",
+            "pred_id": "united_india_individual_health_sec_0001",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0002",
+            "pred_id": "united_india_individual_health_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0003",
+            "pred_id": "united_india_individual_health_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0011",
+            "pred_id": "united_india_individual_health_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0012",
+            "pred_id": "united_india_individual_health_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0013",
+            "pred_id": "united_india_individual_health_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0014",
+            "pred_id": "united_india_individual_health_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0015",
+            "pred_id": "united_india_individual_health_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0016",
+            "pred_id": "united_india_individual_health_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0017",
+            "pred_id": "united_india_individual_health_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0018",
+            "pred_id": "united_india_individual_health_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0019",
+            "pred_id": "united_india_individual_health_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0020",
+            "pred_id": "united_india_individual_health_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0021",
+            "pred_id": "united_india_individual_health_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0022",
+            "pred_id": "united_india_individual_health_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0023",
+            "pred_id": "united_india_individual_health_sec_0023",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0024",
+            "pred_id": "united_india_individual_health_sec_0024",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0025",
+            "pred_id": "united_india_individual_health_sec_0025",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0026",
+            "pred_id": "united_india_individual_health_sec_0026",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "united_india_individual_health_sec_0027",
+            "pred_id": "united_india_individual_health_sec_0027",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "status": "passed",
+      "total_predicted_sections": 65,
+      "total_predicted_clauses": 259,
+      "total_gold_sections": 64,
+      "total_gold_clauses": 115,
+      "metrics": {
+        "total_gold_non_toc_sections": 63,
+        "total_gold_toc_sections": 0,
+        "total_gold_header_sections_excluded": 0,
+        "min_predicted_visual_page": 11,
+        "max_gold_eval_page": 30,
+        "total_predicted_non_root_sections": 64,
+        "true_positives": 63,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "section_tree_accuracy": 100.0,
+        "section_boundary_accuracy": 100.0,
+        "section_precision": 98.44,
+        "section_recall": 100.0,
+        "section_f1": 99.21,
+        "clause_precision": 99.2,
+        "clause_recall": 100.0,
+        "clause_f1": 99.6,
+        "clause_excluded_toc": 0,
+        "tree_correct": 63,
+        "page_correct": 63,
+        "missed_critical_sections": 0,
+        "matched_examples": [
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0001",
+            "pred_id": "universal_sompo_loan_secure_sec_0002",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0002",
+            "pred_id": "universal_sompo_loan_secure_sec_0003",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0005",
+            "pred_id": "universal_sompo_loan_secure_sec_0006",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0006",
+            "pred_id": "universal_sompo_loan_secure_sec_0007",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0007",
+            "pred_id": "universal_sompo_loan_secure_sec_0008",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0009",
+            "pred_id": "universal_sompo_loan_secure_sec_0010",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0010",
+            "pred_id": "universal_sompo_loan_secure_sec_0011",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0011",
+            "pred_id": "universal_sompo_loan_secure_sec_0012",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0012",
+            "pred_id": "universal_sompo_loan_secure_sec_0013",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0013",
+            "pred_id": "universal_sompo_loan_secure_sec_0014",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0014",
+            "pred_id": "universal_sompo_loan_secure_sec_0015",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0015",
+            "pred_id": "universal_sompo_loan_secure_sec_0016",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0016",
+            "pred_id": "universal_sompo_loan_secure_sec_0017",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0017",
+            "pred_id": "universal_sompo_loan_secure_sec_0018",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0018",
+            "pred_id": "universal_sompo_loan_secure_sec_0019",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0019",
+            "pred_id": "universal_sompo_loan_secure_sec_0020",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0008",
+            "pred_id": "universal_sompo_loan_secure_sec_0009",
+            "match_score": 0.9
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0020",
+            "pred_id": "universal_sompo_loan_secure_sec_0021",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0021",
+            "pred_id": "universal_sompo_loan_secure_sec_0022",
+            "match_score": 1.0
+          },
+          {
+            "gold_id": "universal_sompo_loan_secure_sec_0022",
+            "pred_id": "universal_sompo_loan_secure_sec_0023",
+            "match_score": 1.0
+          }
+        ]
+      },
+      "gates": {
+        "section_tree_accuracy_ge_85": true,
+        "section_f1_ge_80": true,
+        "section_recall_ge_80": true,
+        "clause_f1_ge_80": true,
+        "critical_misses_eq_0": true
+      }
+    }
+  ],
+  "passed": false,
+  "failures": [
+    "oriental_cancer_protect"
+  ],
+  "notes": "DSE-006 Section Tree eval with page-aware compact-text matching. TOC/header rows and predicted sections beyond the gold annotation page window are excluded. Gates: section_tree_accuracy >= 85%, section_f1 >= 80%, section_recall >= 80%, clause_f1 >= 80%, missed_critical_sections == 0."
+}

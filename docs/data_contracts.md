@@ -193,6 +193,12 @@ Rules:
   "total_headings": 15,
   "config": {
     "threshold": 0.5,
+    "fallback_zero_heading": {
+      "enabled": true,
+      "min_score": 0.42,
+      "max_promotions": 40,
+      "promotions": 0
+    },
     "body_font_mode": 11.04,
     "pipeline_run_id": "physical_v1_fixed"
   },
@@ -211,7 +217,16 @@ Rules:
       "features": {},
       "feature_contributions": {},
       "decision": "heading",
-      "threshold_applied": 0.5
+      "threshold_applied": 0.5,
+      "promotion_source": "fallback_zero_heading",
+      "promotion_reason": "numbered_dictionary_heading;numbered_spacing_signal",
+      "original_decision": "non-heading",
+      "original_score": 0.4481,
+      "fallback_evaluation": {
+        "eligible_score_band": true,
+        "guard_reasons": [],
+        "promotion_reasons": ["numbered_dictionary_heading"]
+      }
     }
   ]
 }
@@ -221,6 +236,8 @@ Rules:
 - DSE-005 candidates are visual-heading candidates only.
 - DSE-006 must not treat all candidates as final sections without applying tree logic.
 - `heading_labels.json` is the DSE-005 visual-heading eval target; `sections.json` remains the logical structure eval target.
+- `promotion_*`, `original_*`, and `fallback_evaluation` fields are optional and appear only when the zero-heading fallback promotion layer evaluates or promotes a below-threshold candidate.
+- The fallback layer must only activate when normal thresholding finds zero headings for a document.
 
 ---
 
