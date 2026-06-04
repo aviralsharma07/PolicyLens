@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Section Tree Rebuild for 44 section_tree_fail Policies)
+
+### Added
+- `data/reports/dse024_section_tree_fail_investigation_v1.md` — investigation report with root cause analysis and edge case verification.
+- `runs/evals/2026-06-04-heading-scorer-dse024-e2.json` — gold heading eval (20/20 PASS, no regression).
+- `runs/evals/2026-06-04-section-tree-dse024-e2.json` — gold section tree eval (19/20 FAIL, pre-existing `oriental_cancer_protect` unchanged).
+
+### Changed
+- `data/interim/dse020/logical/*/section_tree.json` — regenerated for all 647 policies using post-fallback heading candidates.
+- `data/interim/dse020/logical/section_tree_run_summary.json` — regenerated summary.
+- `data/reports/dse020_scale_triage_report_v1.json` and `.md` — regenerated after section tree rebuild.
+
+### Results
+- **All 44 section_tree_fail policies resolved.** Root cause confirmed: section tree was built before fallback heading promotion. No code changes needed — section tree builder already filters by `decision == "heading"`.
+- **Zero-clause count: 110 → 58** (52 policies gained clauses).
+- **Zero-heading count: 84 → 58** (tied to zero-clause; all remaining are heading_miss/duplicate/needs_review/non-policy/unsupported buckets).
+- **Gold heading eval: 20/20 PASS** — no regression.
+- **Gold section tree eval: 19/20 FAIL** — pre-existing `oriental_cancer_protect` unchanged.
+- **Gold corpus validation: PASS** — 20 policies, 400 facts, 2739 sections, 6251 clauses.
+- **Full pytest: 400/400 PASS** — no regressions.
+- **647/647 section trees** built successfully, 0 errors.
+- **No code changes** — section_tree.py heading filter already handles fallback-promoted headings, compact headings (`10.Renewal`), and alpha headings (`D. BENEFITS:`).
+- **58 remaining zero-clause policies** are heading_miss (34), duplicate_or_superseded (14), needs_manual_review (10), non_policy_or_rider (6), unsupported_format (2).
+
+### Known Issues
+- 34 heading_miss policies need format-specific heading pattern additions (not section tree fixes).
+- Section tree rebuild revealed pre-existing heading scorer quality gap between gold pipeline (`data/interim/logical`) and full-corpus pipeline (`data/interim/dse020/logical`) for some gold policies (aditya_birla_activ_care, tata_aig_arogya_sanjeevani).
+
 ## 2026-06-04 (DSE-024 — Residual Zero-Clause Classification)
 
 ### Added

@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | in_progress | P0 | Phase 2 |
+| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | in_progress | P0 | Phase 2 (E2 done, heading_miss next) |
 | DSE-021 | Remaining Deterministic Extractors Wave 2 | blocked | P1 | Phase 6 |
 
 ---
@@ -19,7 +19,8 @@ Current capability:
 - 20 reviewed gold policies.
 - 13/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
-- DSE-024 current triage: 110 policies with zero clauses, 566/591 unique docs exported.
+- DSE-024 current triage: 58 policies with zero clauses (down from 110), 566/591 unique docs exported.
+- All 44 section_tree_fail policies resolved by section tree rebuild.
 
 ---
 
@@ -190,17 +191,38 @@ Current capability:
 - **0 unclassified, 0 code behavior changes** in this packet.
 - **Outputs:** `data/reports/dse024_residual_zero_clause_classification_v1.json`, `.md`.
 - **Next step:** Fix 44 section_tree_fail policies (rebuild section tree after fallback), then tackle 34 heading_miss policies.
+**Phase E2 — Section Tree Rebuild for section_tree_fail Policies (2026-06-04):**
+- **All 44 section_tree_fail policies resolved** by rebuilding section tree from post-fallback heading candidates.
+- **No code changes needed** — verified section tree builder already handles fallback-promoted headings, compact headings (`10.Renewal`), and alpha headings (`D. BENEFITS:`).
+- **647/647 section trees built successfully**, 0 errors.
+- **Zero-clause count: 110 → 58** (52 policies gained clauses).
+- **Zero-heading count: 84 → 58** (tied with zero-clause).
+- **Investigation report:** `data/reports/dse024_section_tree_fail_investigation_v1.md` documents edge case verification (compact headings, alpha headings, ICICI 0.25-years data quality).
+- **Gold heading eval: 20/20 PASS** — no regression.
+- **Gold section tree eval: 19/20 FAIL** — unchanged pre-existing `oriental_cancer_protect` tree-accuracy issue.
+- **Gold corpus validation: PASS** — 20 policies, 400 facts, 2739 sections, 6251 clauses.
+- **Full pytest: 400/400 PASS** — no regressions.
+- **Triage report regenerated:** reflects 58 zero-clause policies.
+- **Raw PDFs untouched:** verified.
+- **Product B untouched:** verified.
+- **Recommendation:** section_tree_fail bucket resolved. Next: tackle 34 heading_miss policies with format-specific heading pattern additions, then deduplicate 14 duplicates, then review 10 needs_manual_review.
 **Acceptance Criteria:**
-- [x] 132 zero-clause list classified 100% by root cause (Phase A — DONE).
-- [x] 20 representative failures documented with exact failure mechanism (Phase B — DONE).
-- [x] Zero-clause policies reduced from 132 to a measurable lower target (fallback — 110).
-- [x] Gold heading scorer eval: no regression vs current 20-policy pass (fallback — 20/20 PASS).
-- [x] Gold section tree eval: no regression vs current 20-policy pass (fallback — 19/20 PASS, pre-existing `oriental_cancer_protect` unchanged).
-- [x] Full pytest passes after fallback (400/400 PASS).
-- [x] Raw PDFs remain read-only (DONE).
-- [x] Product B files untouched (DONE).
-- [x] DSE-020 triage report regenerated after fixes (fallback — DONE, zero-clause: 110).
-- [x] Session log, changelog, risk register updated after fallback.
+- [x] Phase A — 132 zero-clause list classified 100% by root cause (DONE).
+- [x] Phase B — 20 representative failures documented (DONE).
+- [x] Phase C — Heading scorer/section tree improvements within gold eval thresholds (DONE, reverted in D2).
+- [x] Phase D1 — Zero-clause reduction from 132 (156 — regression, reverted in D2).
+- [x] Phase D2 — Regression recovered, zero-clause 122, beating original baseline (DONE).
+- [x] Fallback promotion — Zero-clause 110, gold heading 20/20 (DONE).
+- [x] Phase E1 — Residual zero-clause classification into 6 buckets (DONE).
+- [x] **Phase E2 — Section tree rebuild for 44 section_tree_fail policies (DONE).**
+  - [x] All 44 resolved (zero-clause: 110 → 58).
+  - [x] No code changes needed.
+  - [x] Gold heading eval: 20/20 PASS (no regression).
+  - [x] Gold section tree eval: 19/20 FAIL (pre-existing `oriental_cancer_protect` unchanged).
+  - [x] Full pytest: 400/400 PASS.
+  - [x] DSE-020 triage report regenerated (zero-clause: 58).
+  - [x] Raw PDFs read-only, Product B untouched.
+  - [x] Session log, changelog updated.
 **Branch:** feat/dse-024-parser-remediation
 **Related docs:** evaluation.md, risk_register.md, data/reports/dse020_scale_triage_report_v1.md, data/reports/dse024_zero_clause_policy_audit_plan.md
 
