@@ -6,20 +6,21 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | in_progress | P0 | Phase 2 (E2 done, heading_miss next) |
+| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | in_progress | P0 | Phase 2 (E3B inspection done, E3C safe fixes pending) |
 | DSE-021 | Remaining Deterministic Extractors Wave 2 | blocked | P1 | Phase 6 |
 
 ---
 
 ## Current Status
 
-Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 has reduced zero-heading/zero-clause policies from 132 to 110. Parser remediation must continue before new extractors can materially improve full-corpus fill rate.
+Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 has reduced zero-heading/zero-clause policies from 132 to 58. Parser remediation must continue before new extractors can materially improve full-corpus fill rate.
 
 Current capability:
 - 20 reviewed gold policies.
 - 13/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
 - DSE-024 current triage: 58 policies with zero clauses (down from 110), 566/591 unique docs exported.
+- DSE-024 E3B recovery abandoned a bad broad scorer attempt and produced an inspection-only safe-candidate audit for 33 residual `heading_miss` policies. Next parser changes must be narrow and evidence-backed.
 - All 44 section_tree_fail policies resolved by section tree rebuild.
 
 ---
@@ -221,6 +222,18 @@ Current capability:
 - **No stale E1 counts carried forward.**
 - **Outputs:** `scripts/dse024_classify_residual58.py`, `data/reports/dse024_residual58_classification_v1.json`, `.md`.
 - **Next step:** Tackle 33 heading_miss policies with format-specific heading pattern additions, or investigate 8 physical_text_issue policies for pdfplumber extraction quality.
+**Phase E3B — Recovery + Heading-Miss Safe Candidate Inspection (2026-06-04):**
+- **Bad E3B attempt abandoned:** broad heading scorer/test edits and stray report artifacts were removed before commit.
+- **DSE-020 parser artifacts regenerated** from the restored scorer state.
+- **Current DSE-020 triage restored:** 58 zero-heading / 58 zero-clause policies.
+- **33 residual `heading_miss` policies audited** without code behavior changes:
+  - **27 `safe_pattern_fix` candidates** — narrow structural patterns only.
+  - **6 `false_top_candidate` policies** — top candidates are percentage rows, table fragments, procedure/list rows, or bare numbers and must not be promoted blindly.
+- **Safe pattern candidates:** numbered short-title headings, section-token headings, roman policy-section headings, numbered named policy headings, lettered named headings, and part headings.
+- **High-risk rejected patterns:** generic `POLICY WORDINGS`, generic `Contents`, address-like dotted initials, percentage rows (`4 80%`), procedure/item rows (`5 BUDS`), duration table rows (`1 Month 75%`), and bare numbers.
+- **Important reproducibility finding:** regenerating 20-policy gold heading candidates from the restored scorer produced **17/20 PASS**, failing `aditya_birla_activ_care`, `care_health_care_plus`, and `tata_aig_arogya_sanjeevani`. Earlier 20/20 heading eval artifacts are not currently reproducible from regenerated artifacts and must not be used as blind E3C acceptance evidence.
+- **Outputs:** `data/reports/dse024_heading_miss_safe_candidates_v1.json`, `.md`; `runs/evals/2026-06-04-heading-scorer-dse024-e3b-recovery-baseline.json`.
+- **Next step:** E3C must first reconcile the gold heading reproducibility gap, then implement only inspection-backed narrow heading fixes.
 **Acceptance Criteria:**
 - [x] Phase A — 132 zero-clause list classified 100% by root cause (DONE).
 - [x] Phase B — 20 representative failures documented (DONE).
@@ -244,6 +257,19 @@ Current capability:
   - [x] "Fix parser" vs "Filter/defer" clearly separated.
   - [x] Reports: `dse024_residual58_classification_v1.json` and `.md`.
   - [x] Session log, changelog, tasks.md updated.
+- [x] **Phase E3B — Recovery + inspection-only heading-miss audit (DONE).**
+  - [x] Failed broad scorer attempt abandoned before commit.
+  - [x] DSE-020 triage restored to 58 zero-heading / 58 zero-clause policies.
+  - [x] 33 `heading_miss` policies audited.
+  - [x] Safe candidates separated from false top candidates.
+  - [x] No parser behavior changes implemented in this packet.
+  - [x] Session log, changelog, tasks.md updated.
+- [ ] **Phase E3C — Safe heading fixes (PENDING).**
+  - [ ] Reconcile current 17/20 regenerated gold heading eval before accepting new parser changes.
+  - [ ] Implement only narrow patterns backed by E3B inspection.
+  - [ ] Regenerate DSE-020 parser artifacts and triage.
+  - [ ] Gold heading eval and section tree eval documented honestly.
+  - [ ] Full pytest and gold validator pass.
 **Branch:** feat/dse-024-parser-remediation
 **Related docs:** evaluation.md, risk_register.md, data/reports/dse020_scale_triage_report_v1.md, data/reports/dse024_zero_clause_policy_audit_plan.md
 

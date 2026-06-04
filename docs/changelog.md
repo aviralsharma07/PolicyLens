@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Phase E3B Recovery + Heading-Miss Inspection)
+
+### Added
+- `data/reports/dse024_heading_miss_safe_candidates_v1.json` — inspection-only audit of 33 residual `heading_miss` policies.
+- `data/reports/dse024_heading_miss_safe_candidates_v1.md` — Markdown summary with top candidates, false-positive classes, and narrow safe-pattern candidates.
+- `runs/evals/2026-06-04-heading-scorer-dse024-e3b-recovery-baseline.json` — regenerated clean heading eval after abandoning the bad E3B attempt.
+- `runs/sessions/2026-06-04-dse024-phase-e3b-heading-miss-inspection.md` — recovery and inspection session log.
+
+### Fixed
+- Removed the failed uncommitted E3B scorer/test edits that lowered fallback safety and regressed gold heading eval.
+- Removed stray failed-report artifacts under `data/reports/reports/` and `data/reports/eval_dse024_phase_e3b_heading.json`.
+- Regenerated DSE-020 heading candidates, section trees, and triage report from the restored scorer state.
+
+### Results
+- Current DSE-020 triage is back to **58 zero-heading / 58 zero-clause policies**.
+- All 33 `heading_miss` policies were audited:
+  - **27** classified as `safe_pattern_fix` candidates.
+  - **6** classified as `false_top_candidate`.
+- Safe candidate patterns were narrowed to structural forms such as numbered short titles, section-token headings, roman policy-section headings, and part headings.
+- High-risk top candidates such as percentage rows, table header fragments, procedure rows, bare numbers, and generic document titles were explicitly rejected.
+
+### Known Issues
+- Regenerating the 20-policy gold heading candidates from the restored scorer produced **17/20 PASS**, with failures on `aditya_birla_activ_care`, `care_health_care_plus`, and `tata_aig_arogya_sanjeevani`. Earlier 20/20 heading eval artifacts were not reproducible from the current regenerated artifacts and must not be used as a blind acceptance claim for E3C.
+- E3C must implement only inspection-backed narrow fixes and must first reconcile or account for the gold heading reproducibility gap.
+
 ## 2026-06-04 (DSE-024 — Phase E3A: Classify Remaining 58 Zero-Clause Policies)
 
 ### Added
