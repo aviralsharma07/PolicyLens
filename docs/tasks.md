@@ -206,6 +206,21 @@ Current capability:
 - **Raw PDFs untouched:** verified.
 - **Product B untouched:** verified.
 - **Recommendation:** section_tree_fail bucket resolved. Next: tackle 34 heading_miss policies with format-specific heading pattern additions, then deduplicate 14 duplicates, then review 10 needs_manual_review.
+**Phase E3A — Residual 58 Classification (2026-06-04):**
+- **58 remaining zero-clause policies classified into 6 buckets (0 unclassified):**
+  - **heading_miss (33):** plausible near-miss headings below t=0.5; need format-specific heading pattern additions.
+  - **duplicate_or_superseded (8):** same-hash duplicates; deduplication removes them.
+  - **physical_text_issue (8):** max_score ≤ 0 (negative/zero); pdfplumber extraction quality issue (Aditya Birla 5, Kotak Mahindra 3).
+  - **non_policy_or_rider (4):** brochures/prospectuses; document-type filtering.
+  - **unsupported_format (3):** very short or product-list documents.
+  - **manual_review_required (2):** unclear without human PDF inspection.
+  - **section_tree_fail (0):** confirmed resolved by E2.
+- **Fix parser:** 41 (33 heading_miss + 8 physical_text_issue).
+- **Filter/defer corpus:** 15 (8 duplicate + 4 non_policy + 3 unsupported).
+- **Manual review:** 2.
+- **No stale E1 counts carried forward.**
+- **Outputs:** `scripts/dse024_classify_residual58.py`, `data/reports/dse024_residual58_classification_v1.json`, `.md`.
+- **Next step:** Tackle 33 heading_miss policies with format-specific heading pattern additions, or investigate 8 physical_text_issue policies for pdfplumber extraction quality.
 **Acceptance Criteria:**
 - [x] Phase A — 132 zero-clause list classified 100% by root cause (DONE).
 - [x] Phase B — 20 representative failures documented (DONE).
@@ -223,6 +238,12 @@ Current capability:
   - [x] DSE-020 triage report regenerated (zero-clause: 58).
   - [x] Raw PDFs read-only, Product B untouched.
   - [x] Session log, changelog updated.
+- [x] **Phase E3A — Residual 58 classification (DONE).**
+  - [x] 58 policies classified into 6 buckets (0 unclassified).
+  - [x] No stale E1 counts.
+  - [x] "Fix parser" vs "Filter/defer" clearly separated.
+  - [x] Reports: `dse024_residual58_classification_v1.json` and `.md`.
+  - [x] Session log, changelog, tasks.md updated.
 **Branch:** feat/dse-024-parser-remediation
 **Related docs:** evaluation.md, risk_register.md, data/reports/dse020_scale_triage_report_v1.md, data/reports/dse024_zero_clause_policy_audit_plan.md
 

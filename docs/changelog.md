@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Phase E3A: Classify Remaining 58 Zero-Clause Policies)
+
+### Added
+- `scripts/dse024_classify_residual58.py` — classification script for 58 post-E2 zero-clause policies.
+- `data/reports/dse024_residual58_classification_v1.json` — per-policy classification into 6 buckets.
+- `data/reports/dse024_residual58_classification_v1.md` — Markdown report with top fix candidates.
+
+### Results
+- **58 residual zero-clause policies classified (0 unclassified).**
+- **33 heading_miss** — plausible near-miss headings (max_score 0.3-0.5); need format-specific heading patterns.
+- **8 duplicate_or_superseded** — same-hash duplicates; deduplication removes them.
+- **8 physical_text_issue** — max_score ≤ 0 (negative/zero); pdfplumber extraction quality issue.
+- **4 non_policy_or_rider** — brochures/prospectuses; document-type filtering.
+- **3 unsupported_format** — very short or product-list documents.
+- **2 manual_review_required** — unclear without human PDF inspection.
+- **0 section_tree_fail** — confirms E2 rebuild resolved all 44.
+- **Fix parser:** 41 (heading_miss + physical_text_issue).
+- **Filter/defer corpus:** 15 (duplicate + non_policy + unsupported).
+- **No stale E1 counts carried forward.**
+
 ## 2026-06-04 (DSE-024 — Section Tree Rebuild for 44 section_tree_fail Policies)
 
 ### Added
