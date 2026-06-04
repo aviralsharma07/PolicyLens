@@ -1,0 +1,82 @@
+{
+  "schema_version": "dse024_phase_d2_regression_recovery.v1",
+  "task_id": "DSE-024",
+  "phase": "D2 regression recovery",
+  "date": "2026-06-04",
+  "goal": "Recover from Phase C heading scorer regression without lowering threshold or weakening evals.",
+  "baseline_zero_clause_count": 132,
+  "phase_d1_regressed_zero_clause_count": 156,
+  "phase_d2_recovered_zero_clause_count": 122,
+  "phase_d2_zero_heading_count": 122,
+  "phase_d2_zero_fact_count": 133,
+  "delta_vs_baseline": -10,
+  "delta_vs_d1": -34,
+  "threshold": 0.5,
+  "harmful_penalties_reverted": [
+    {
+      "feature": "has_toc_dots",
+      "recovery_action": "restored non-harmful +0.10 behavior from Phase C -0.30 penalty"
+    },
+    {
+      "feature": "short_all_caps_numbered",
+      "recovery_action": "removed Phase C -0.25 penalty"
+    },
+    {
+      "feature": "has_tab_char",
+      "recovery_action": "removed Phase C -0.30 penalty"
+    }
+  ],
+  "safe_changes_retained": [
+    "letter-numbering support for A. Definitions style headings",
+    "S. No. / serial-number rows excluded from letter-heading pattern",
+    "reduced sentence-case penalty for bold + numbered lines"
+  ],
+  "comparison_to_phase_a_baseline": {
+    "baseline_zero_clause_count": 132,
+    "d2_zero_clause_count": 122,
+    "improved_policy_count": 10,
+    "new_regression_count": 0,
+    "improved_policies": [
+      "02_star_health_star_group_accident_insurance",
+      "02_star_health_star_health_star_cancer_benefit",
+      "02_star_health_star_health_star_group_health_insurance_benefit_plus",
+      "02_star_health_star_health_star_group_health_insurance_policy_platinum",
+      "02_star_health_star_policy_star_cancer_care_platinum_insurance_policy",
+      "02_star_health_star_policy_star_critical_illness_multipay_insurance_policyweb",
+      "03_care_health_assure_critical_illness_product_prospectus_cum_sales_literature",
+      "14_universal_sompo_universal_sompo_corona_rakshak_corona_rakshak_policy_wordings",
+      "14_universal_sompo_universal_sompo_group_mashak_rakshak_group_mashak_rakshak_policy_wordings",
+      "21_royal_sundaram_royal_sundaram_micro_health_shield_pw"
+    ],
+    "new_regressions": []
+  },
+  "gold_heading_eval": {
+    "artifact": "runs/evals/2026-06-04-heading-scorer-dse024-phase-d2.json",
+    "passed": true,
+    "policies_processed": 20,
+    "policies_passed": 20,
+    "policies_failed": 0,
+    "failures": []
+  },
+  "gold_section_tree_eval": {
+    "artifact": "runs/evals/2026-06-04-section-tree-dse024-phase-d2.json",
+    "passed": false,
+    "policies_processed": 20,
+    "policies_passed": 19,
+    "policies_failed": 1,
+    "failures": [
+      "oriental_cancer_protect"
+    ],
+    "note": "oriental_cancer_protect remains the known pre-existing tree-accuracy failure."
+  },
+  "acceptance": {
+    "zero_clause_count_lte_132": true,
+    "gold_heading_eval_20_of_20": true,
+    "section_tree_recorded_honestly": true,
+    "no_threshold_lowering": true,
+    "no_db_or_export_rerun": true,
+    "raw_pdfs_untouched": true,
+    "product_b_untouched": true
+  },
+  "conclusion": "D2 recovered the Phase C regression and improved zero-clause count below the original baseline. Stop global weight/threshold tuning; next strategy should be a separate fallback heading promotion layer for low-confidence but structurally plausible headings."
+}

@@ -1,0 +1,2221 @@
+{
+  "eval_name": "heading-scorer-v2",
+  "date": "2026-05-30",
+  "task_id": "DSE-005",
+  "git_commit": "9ab0a1b3c0a300555ecc0c981ad8955ada29ffd0",
+  "git_dirty": true,
+  "input_manifest": "gold_corpus (5 policies)",
+  "metrics": {
+    "policies_processed": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "policy_results": [
+    {
+      "slug": "aditya_birla_activ_care",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 8.5,
+      "total_lines_scored": 3486,
+      "metrics": {
+        "total_candidates_above_threshold": 71,
+        "total_gold_visual_headings": 80,
+        "true_positives": 70,
+        "false_positives": 1,
+        "false_negatives": 10,
+        "count_invariant_ok": true,
+        "precision": 98.59,
+        "recall": 87.5,
+        "f1_score": 92.72,
+        "matched_examples": [
+          {
+            "candidate_text": "Section D. DEFINITIONS",
+            "label_text": "Section D. DEFINITIONS",
+            "page": 19,
+            "line_id": "p19l_7",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Z. Payment of premium in case of instalment",
+            "label_text": "Z. Payment of premium in case of instalment",
+            "page": 18,
+            "line_id": "p18l_64",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Y. Sequence of Sum Insured Utilisation",
+            "label_text": "Y. Sequence of Sum Insured Utilisation",
+            "page": 18,
+            "line_id": "p18l_57",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "X. Territorial Jurisdiction",
+            "label_text": "X. Territorial Jurisdiction",
+            "page": 18,
+            "line_id": "p18l_55",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "W. Duty of Disclosure",
+            "label_text": "W. Duty of Disclosure",
+            "page": 18,
+            "line_id": "p18l_50",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "V. Assignment",
+            "label_text": "V. Assignment",
+            "page": 18,
+            "line_id": "p18l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "U. Grievances Redressal Procedure",
+            "label_text": "U. Grievances Redressal Procedure",
+            "page": 18,
+            "line_id": "p18l_32",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "T. Complete Discharge",
+            "label_text": "T. Complete Discharge",
+            "page": 18,
+            "line_id": "p18l_28",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "S. Policy Dispute",
+            "label_text": "S. Policy Dispute",
+            "page": 18,
+            "line_id": "p18l_25",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "R. Electronic Transactions",
+            "label_text": "R. Electronic Transactions",
+            "page": 18,
+            "line_id": "p18l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Q. Communications & Notices",
+            "label_text": "Q. Communications & Notices",
+            "page": 18,
+            "line_id": "p18l_6",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "P. Renewal Terms",
+            "label_text": "P. Renewal Terms",
+            "page": 17,
+            "line_id": "p17l_44",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "O. Grace Period",
+            "label_text": "O. Grace Period",
+            "page": 17,
+            "line_id": "p17l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "N. Endorsements",
+            "label_text": "N. Endorsements",
+            "page": 17,
+            "line_id": "p17l_5",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "M. Cancellation (other than Free Look Cancellation)",
+            "label_text": "M. Cancellation (other than Free Look Cancellation)",
+            "page": 16,
+            "line_id": "p16l_42",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "L. Records to be maintained",
+            "label_text": "L. Records to be maintained",
+            "page": 16,
+            "line_id": "p16l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "K. Special Provisions",
+            "label_text": "K. Special Provisions",
+            "page": 16,
+            "line_id": "p16l_34",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "J. Multiple Policies",
+            "label_text": "J. Multiple Policies",
+            "page": 16,
+            "line_id": "p16l_18",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "I. No Constructive Notice",
+            "label_text": "I. No Constructive Notice",
+            "page": 16,
+            "line_id": "p16l_14",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "H. Alterations in the Policy",
+            "label_text": "H. Alterations in the Policy",
+            "page": 16,
+            "line_id": "p16l_11",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [
+          {
+            "text": "II. Claims Documentation:",
+            "page": 14,
+            "line_id": "p14l_41",
+            "score": 1.15,
+            "features": {
+              "font_size_ratio": 1.0,
+              "max_font_size": 8.5,
+              "is_bold": 0.0,
+              "is_all_caps": 0.0,
+              "is_sentence_case": 0.0,
+              "matches_numbering": 1.0,
+              "matches_heading_dict": 0.0,
+              "section_alpha_heading": 0.0,
+              "lettered_clause_heading": 0.0,
+              "colon_label_heading": 1.0,
+              "same_font_structural_heading": 1.0,
+              "strong_structural_heading": 1.0,
+              "expanded_structural_mode": 1.0,
+              "has_toc_dots": 0.0,
+              "line_length_ratio": 0.9259,
+              "is_header_region": 0.0,
+              "is_footer_region": 0.0,
+              "position_penalty": 0.0,
+              "all_caps_fp_penalty": 0.0,
+              "boilerplate_company_penalty": 0.0,
+              "spacing_signal": 1.0,
+              "gap_before": 11.5602,
+              "gap_after": 1.4105,
+              "median_line_gap": 1.089,
+              "gap_before_ratio": 10.6154,
+              "gap_after_ratio": 1.2952
+            }
+          }
+        ],
+        "missed_heading_examples": [
+          {
+            "expected_text": "We will not provide the foregoing services in the following instances:",
+            "page": 4,
+            "line_id": "p4l_59",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0020"
+          },
+          {
+            "expected_text": "We will not provide the foregoing services in the following instances:",
+            "page": 5,
+            "line_id": "p5l_20",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0022"
+          },
+          {
+            "expected_text": "Schedule/ Product Benefit Table in accordance with the table below :",
+            "page": 6,
+            "line_id": "p6l_14",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0027"
+          },
+          {
+            "expected_text": "I. The Comprehensive Health Check-up shall be arranged by Us only on cashless ba",
+            "page": 6,
+            "line_id": "p6l_21",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0028"
+          },
+          {
+            "expected_text": "How can one spend HealthReturnsTM:",
+            "page": 8,
+            "line_id": "p8l_9",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0032"
+          },
+          {
+            "expected_text": "Documents to be submitted for any Claim under this Benefit:",
+            "page": 9,
+            "line_id": "p9l_32",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0041"
+          },
+          {
+            "expected_text": "Documents to be submitted for any Claim under this Benefit:",
+            "page": 9,
+            "line_id": "p9l_56",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0044"
+          },
+          {
+            "expected_text": "In case of Multiple Policy claims:",
+            "page": 14,
+            "line_id": "p14l_73",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0052"
+          },
+          {
+            "expected_text": "LUCKNOW - Districts of Uttar Pradesh :",
+            "page": 23,
+            "line_id": "p23l_1",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0078"
+          },
+          {
+            "expected_text": "Contact us:",
+            "page": 34,
+            "line_id": "p34l_1",
+            "source_section_id": "aditya_birla_activ_care_review_sec_0079"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "bajaj_allianz_silver_health",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.96,
+      "total_lines_scored": 1880,
+      "metrics": {
+        "total_candidates_above_threshold": 13,
+        "total_gold_visual_headings": 13,
+        "true_positives": 13,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "SECTION E) GENERAL TERMS AND CLAUSES \u2013 SPECIFIC TERMS AND CLAUSES",
+            "label_text": "SECTION E) GENERAL TERMS AND CLAUSES \u2013 SPECIFIC TERMS AND CLAUSES",
+            "page": 17,
+            "line_id": "p17l_56",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION E) GENERAL TERMS AND CLAUSES - STANDARD GENERAL TERMS AND CLAUSES",
+            "label_text": "SECTION E) GENERAL TERMS AND CLAUSES - STANDARD GENERAL TERMS AND CLAUSES",
+            "page": 13,
+            "line_id": "p13l_36",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION D) EXCLUSIONS UNDER THE POLICY - STANDARD EXCLUSIONS",
+            "label_text": "SECTION D) EXCLUSIONS UNDER THE POLICY - STANDARD EXCLUSIONS",
+            "page": 10,
+            "line_id": "p10l_10",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "II. ADD-ON COVERAGE",
+            "label_text": "II. ADD-ON COVERAGE",
+            "page": 9,
+            "line_id": "p9l_52",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "I. BASE COVERAGE",
+            "label_text": "I. BASE COVERAGE",
+            "page": 7,
+            "line_id": "p7l_64",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION C) COVERAGE",
+            "label_text": "SECTION C) COVERAGE",
+            "page": 7,
+            "line_id": "p7l_20",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6. Injury",
+            "label_text": "6. Injury",
+            "page": 6,
+            "line_id": "p6l_30",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION B) DEFINITIONS- SPECIFIC DEFINITIONS",
+            "label_text": "SECTION B) DEFINITIONS- SPECIFIC DEFINITIONS",
+            "page": 5,
+            "line_id": "p5l_51",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "42. Renewal",
+            "label_text": "42. Renewal",
+            "page": 5,
+            "line_id": "p5l_33",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "19. Injury",
+            "label_text": "19. Injury",
+            "page": 3,
+            "line_id": "p3l_38",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "18. Illness",
+            "label_text": "18. Illness",
+            "page": 3,
+            "line_id": "p3l_24",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION B) DEFINITIONS- STANDARD DEFINITIONS",
+            "label_text": "SECTION B) DEFINITIONS- STANDARD DEFINITIONS",
+            "page": 1,
+            "line_id": "p1l_28",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A) PREAMBLE",
+            "label_text": "SECTION A) PREAMBLE",
+            "page": 1,
+            "line_id": "p1l_15",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "care_health_care_plus",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 2755,
+      "metrics": {
+        "total_candidates_above_threshold": 49,
+        "total_gold_visual_headings": 49,
+        "true_positives": 49,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "6.2.1Early Bird Discount:",
+            "label_text": "6.2.1Early Bird Discount:",
+            "page": 47,
+            "line_id": "p47l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.2SPECIAL CONDITIONS:",
+            "label_text": "6.2SPECIAL CONDITIONS:",
+            "page": 47,
+            "line_id": "p47l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.1.7Payment Terms",
+            "label_text": "6.1.7Payment Terms",
+            "page": 46,
+            "line_id": "p46l_58",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.1.6Claim Assessment",
+            "label_text": "6.1.6Claim Assessment",
+            "page": 46,
+            "line_id": "p46l_14",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.1.4Claims Intimation",
+            "label_text": "6.1.4Claims Intimation",
+            "page": 44,
+            "line_id": "p44l_58",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.1CLAIMS PROCEDURE AND MANAGEMENT",
+            "label_text": "6.1CLAIMS PROCEDURE AND MANAGEMENT",
+            "page": 42,
+            "line_id": "p42l_9",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2.9Electronic Transactions",
+            "label_text": "5.2.9Electronic Transactions",
+            "page": 41,
+            "line_id": "p41l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2.6Communication",
+            "label_text": "5.2.6Communication",
+            "page": 41,
+            "line_id": "p41l_14",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2.4Policy Disputes",
+            "label_text": "5.2.4Policy Disputes",
+            "page": 40,
+            "line_id": "p40l_49",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2.1Material Change",
+            "label_text": "5.2.1Material Change",
+            "page": 40,
+            "line_id": "p40l_27",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2Specific General Terms & Clauses",
+            "label_text": "5.2Specific General Terms & Clauses",
+            "page": 40,
+            "line_id": "p40l_23",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.17Nomination:",
+            "label_text": "5.1.17Nomination:",
+            "page": 40,
+            "line_id": "p40l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.16Grievances",
+            "label_text": "5.1.16Grievances",
+            "page": 39,
+            "line_id": "p39l_30",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.15Free Look Period",
+            "label_text": "5.1.15Free Look Period",
+            "page": 39,
+            "line_id": "p39l_9",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.12Moratorium Period",
+            "label_text": "5.1.12Moratorium Period",
+            "page": 38,
+            "line_id": "p38l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.9Portability",
+            "label_text": "5.1.9Portability",
+            "page": 37,
+            "line_id": "p37l_31",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.8Migration",
+            "label_text": "5.1.8Migration",
+            "page": 37,
+            "line_id": "p37l_19",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.7Cancellation / Termination",
+            "label_text": "5.1.7Cancellation / Termination",
+            "page": 36,
+            "line_id": "p36l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.6Fraud",
+            "label_text": "5.1.6Fraud",
+            "page": 35,
+            "line_id": "p35l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.1.5Multiple Policies",
+            "label_text": "5.1.5Multiple Policies",
+            "page": 35,
+            "line_id": "p35l_21",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "cholamandalam_flexi_max_protect",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.96,
+      "total_lines_scored": 2028,
+      "metrics": {
+        "total_candidates_above_threshold": 16,
+        "total_gold_visual_headings": 16,
+        "true_positives": 16,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "4. DEFINITIONS",
+            "label_text": "4. DEFINITIONS",
+            "page": 39,
+            "line_id": "p39l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3. COVERAGE",
+            "label_text": "3. COVERAGE",
+            "page": 37,
+            "line_id": "p37l_61",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION 6: GRIEVANCE REDRESSAL MECHANISM",
+            "label_text": "SECTION 6: GRIEVANCE REDRESSAL MECHANISM",
+            "page": 34,
+            "line_id": "p34l_54",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "24. Migration",
+            "label_text": "24. Migration",
+            "page": 33,
+            "line_id": "p33l_55",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "23. Portability:",
+            "label_text": "23. Portability:",
+            "page": 33,
+            "line_id": "p33l_47",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION 5: GENERAL CONDITIONS",
+            "label_text": "SECTION 5: GENERAL CONDITIONS",
+            "page": 26,
+            "line_id": "p26l_74",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION 3: DEFINITIONS",
+            "label_text": "SECTION 3: DEFINITIONS",
+            "page": 9,
+            "line_id": "p9l_26",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.1 BASE COVER",
+            "label_text": "2.1 BASE COVER",
+            "page": 2,
+            "line_id": "p2l_57",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION 2: POLICY COVERAGE",
+            "label_text": "SECTION 2: POLICY COVERAGE",
+            "page": 2,
+            "line_id": "p2l_55",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION 1: PERSONS WHO CAN BE COVERED",
+            "label_text": "SECTION 1: PERSONS WHO CAN BE COVERED",
+            "page": 2,
+            "line_id": "p2l_21",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 7: Medical Second Opinion-Add-on Cover",
+            "label_text": "Section 7: Medical Second Opinion-Add-on Cover",
+            "page": 1,
+            "line_id": "p1l_71",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 6: Grievance Redressal Mechanism",
+            "label_text": "Section 6: Grievance Redressal Mechanism",
+            "page": 1,
+            "line_id": "p1l_70",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 5: General Conditions",
+            "label_text": "Section 5: General Conditions",
+            "page": 1,
+            "line_id": "p1l_69",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 3: Definitions",
+            "label_text": "Section 3: Definitions",
+            "page": 1,
+            "line_id": "p1l_67",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 2: Policy Coverage",
+            "label_text": "Section 2: Policy Coverage",
+            "page": 1,
+            "line_id": "p1l_66",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "POLICY SECTIONS:",
+            "label_text": "POLICY SECTIONS:",
+            "page": 1,
+            "line_id": "p1l_64",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "future_generali_health_elite",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 7.36,
+      "total_lines_scored": 2503,
+      "metrics": {
+        "total_candidates_above_threshold": 10,
+        "total_gold_visual_headings": 10,
+        "true_positives": 10,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "4. Residential Address:",
+            "label_text": "4. Residential Address:",
+            "page": 34,
+            "line_id": "p34l_42",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4. Permanent Account Number (PAN)",
+            "label_text": "4. Permanent Account Number (PAN)",
+            "page": 34,
+            "line_id": "p34l_25",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3. Mobile No.",
+            "label_text": "3. Mobile No.",
+            "page": 34,
+            "line_id": "p34l_24",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "409. Orchiectomy",
+            "label_text": "409. Orchiectomy",
+            "page": 30,
+            "line_id": "p30l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "406. Surgery For Watering Can Perineum",
+            "label_text": "406. Surgery For Watering Can Perineum",
+            "page": 30,
+            "line_id": "p30l_10",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "405. Surgery Filarial Scrotum",
+            "label_text": "405. Surgery Filarial Scrotum",
+            "page": 30,
+            "line_id": "p30l_9",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "404. Surgery For Fournier's Gangrene Scrotum",
+            "label_text": "404. Surgery For Fournier's Gangrene Scrotum",
+            "page": 30,
+            "line_id": "p30l_8",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "51. ERCP 120. URS + LL",
+            "label_text": "51. ERCP 120. URS + LL",
+            "page": 27,
+            "line_id": "p27l_66",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "II. ENT Related:",
+            "label_text": "II. ENT Related:",
+            "page": 27,
+            "line_id": "p27l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "0 to 35 years",
+            "label_text": "0 to 35 years",
+            "page": 25,
+            "line_id": "p25l_69",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "hdfc_arogya_sanjeevani",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 1392,
+      "metrics": {
+        "total_candidates_above_threshold": 15,
+        "total_gold_visual_headings": 15,
+        "true_positives": 15,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "10.14 Migration",
+            "label_text": "10.14 Migration",
+            "page": 21,
+            "line_id": "p21l_38",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "10.9 Fraud",
+            "label_text": "10.9 Fraud",
+            "page": 19,
+            "line_id": "p19l_39",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "10. General Terms &Conditions",
+            "label_text": "10. General Terms &Conditions",
+            "page": 18,
+            "line_id": "p18l_21",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "9.4 Co-payment",
+            "label_text": "9.4 Co-payment",
+            "page": 17,
+            "line_id": "p17l_47",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "8. Moratorium Period",
+            "label_text": "8. Moratorium Period",
+            "page": 16,
+            "line_id": "p16l_10",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "7. Exclusions",
+            "label_text": "7. Exclusions",
+            "page": 13,
+            "line_id": "p13l_16",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2. Age-related Osteoarthritis & Osteoporosis",
+            "label_text": "2. Age-related Osteoarthritis & Osteoporosis",
+            "page": 13,
+            "line_id": "p13l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "13. Hydrocele",
+            "label_text": "13. Hydrocele",
+            "page": 12,
+            "line_id": "p12l_51",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6. Hysterectomy",
+            "label_text": "6. Hysterectomy",
+            "page": 12,
+            "line_id": "p12l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6. Waiting Period",
+            "label_text": "6. Waiting Period",
+            "page": 11,
+            "line_id": "p11l_38",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5. Cumulative Bonus (CB)",
+            "label_text": "5. Cumulative Bonus (CB)",
+            "page": 10,
+            "line_id": "p10l_52",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4. Coverage",
+            "label_text": "4. Coverage",
+            "page": 9,
+            "line_id": "p9l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3. Definitions",
+            "label_text": "3. Definitions",
+            "page": 2,
+            "line_id": "p2l_33",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2. Operative Clause",
+            "label_text": "2. Operative Clause",
+            "page": 2,
+            "line_id": "p2l_20",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1. Preamble",
+            "label_text": "1. Preamble",
+            "page": 2,
+            "line_id": "p2l_12",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "icici_family_shield",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 2785,
+      "metrics": {
+        "total_candidates_above_threshold": 15,
+        "total_gold_visual_headings": 15,
+        "true_positives": 15,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "10. Notices",
+            "label_text": "10. Notices",
+            "page": 59,
+            "line_id": "p59l_22",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "9. Portability",
+            "label_text": "9. Portability",
+            "page": 49,
+            "line_id": "p49l_25",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "8. Migration",
+            "label_text": "8. Migration",
+            "page": 49,
+            "line_id": "p49l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5. Fraud",
+            "label_text": "5. Fraud",
+            "page": 47,
+            "line_id": "p47l_50",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "PART III OF THE POLICY SCHEDULE",
+            "label_text": "PART III OF THE POLICY SCHEDULE",
+            "page": 47,
+            "line_id": "p47l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION C \u2013 ACCIDENTAL INJURY BENEFITS",
+            "label_text": "SECTION C \u2013 ACCIDENTAL INJURY BENEFITS",
+            "page": 18,
+            "line_id": "p18l_22",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION B \u2013 HOSPITAL DAILY CASH - ILLNESS",
+            "label_text": "SECTION B \u2013 HOSPITAL DAILY CASH - ILLNESS",
+            "page": 12,
+            "line_id": "p12l_36",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A.5: SPECIFIC NERVOUS SYSTEM INFECTIONS BENEFIT",
+            "label_text": "SECTION A.5: SPECIFIC NERVOUS SYSTEM INFECTIONS BENEFIT",
+            "page": 11,
+            "line_id": "p11l_45",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A.3: SPECIFIC GASTRO INTESTINAL INFECTIONS BENEFIT",
+            "label_text": "SECTION A.3: SPECIFIC GASTRO INTESTINAL INFECTIONS BENEFIT",
+            "page": 9,
+            "line_id": "p9l_34",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A.2: RABIES AND TETANUS BENEFIT",
+            "label_text": "SECTION A.2: RABIES AND TETANUS BENEFIT",
+            "page": 8,
+            "line_id": "p8l_18",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A.1: SPECIFIC VECTOR BORNE DISEASE BENEFIT",
+            "label_text": "SECTION A.1: SPECIFIC VECTOR BORNE DISEASE BENEFIT",
+            "page": 7,
+            "line_id": "p7l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "SECTION A: SPECIFIC INFECTIOUS DISEASES BENEFIT",
+            "label_text": "SECTION A: SPECIFIC INFECTIOUS DISEASES BENEFIT",
+            "page": 7,
+            "line_id": "p7l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.  DEFINITIONS",
+            "label_text": "2.  DEFINITIONS",
+            "page": 1,
+            "line_id": "p1l_19",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "PART II OF THE POLICY SCHEDULE",
+            "label_text": "PART II OF THE POLICY SCHEDULE",
+            "page": 1,
+            "line_id": "p1l_7",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "FAMILY SHIELD",
+            "label_text": "FAMILY SHIELD",
+            "page": 1,
+            "line_id": "p1l_5",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "iffco_tokio_health_protector",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 1999,
+      "metrics": {
+        "total_candidates_above_threshold": 9,
+        "total_gold_visual_headings": 9,
+        "true_positives": 9,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "74. Waiting Period",
+            "label_text": "74. Waiting Period",
+            "page": 10,
+            "line_id": "p10l_24",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "63. Renewal",
+            "label_text": "63. Renewal",
+            "page": 9,
+            "line_id": "p9l_16",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "50.Policy",
+            "label_text": "50.Policy",
+            "page": 7,
+            "line_id": "p7l_45",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "44.Migration",
+            "label_text": "44.Migration",
+            "page": 7,
+            "line_id": "p7l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "33.Injury",
+            "label_text": "33.Injury",
+            "page": 5,
+            "line_id": "p5l_56",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "32. Illness",
+            "label_text": "32. Illness",
+            "page": 5,
+            "line_id": "p5l_39",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "22. Disease",
+            "label_text": "22. Disease",
+            "page": 4,
+            "line_id": "p4l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.Age",
+            "label_text": "3.Age",
+            "page": 1,
+            "line_id": "p1l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1. Accident",
+            "label_text": "1. Accident",
+            "page": 1,
+            "line_id": "p1l_36",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "kotak_mahindra_health_premier",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.96,
+      "total_lines_scored": 2956,
+      "metrics": {
+        "total_candidates_above_threshold": 6,
+        "total_gold_visual_headings": 6,
+        "true_positives": 6,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "17. Migration",
+            "label_text": "17. Migration",
+            "page": 39,
+            "line_id": "p39l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "PART III",
+            "label_text": "PART III",
+            "page": 35,
+            "line_id": "p35l_39",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5. CLAIMS PROCEDURE",
+            "label_text": "5. CLAIMS PROCEDURE",
+            "page": 26,
+            "line_id": "p26l_10",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "PART II",
+            "label_text": "PART II",
+            "page": 7,
+            "line_id": "p7l_46",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1. DEFINITIONS",
+            "label_text": "1. DEFINITIONS",
+            "page": 1,
+            "line_id": "p1l_23",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "PART I",
+            "label_text": "PART I",
+            "page": 1,
+            "line_id": "p1l_21",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "liberty_critical_connect",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 11.04,
+      "total_lines_scored": 2745,
+      "metrics": {
+        "total_candidates_above_threshold": 5,
+        "total_gold_visual_headings": 5,
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "9 Cover 25 Cover 43 Cover",
+            "label_text": "9 Cover 25 Cover 43 Cover",
+            "page": 50,
+            "line_id": "p50l_63",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Part E: General Conditions",
+            "label_text": "Part E: General Conditions",
+            "page": 35,
+            "line_id": "p35l_64",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Part A: Medical Exclusions",
+            "label_text": "Part A: Medical Exclusions",
+            "page": 32,
+            "line_id": "p32l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Part C: \u201cRelated\u201d",
+            "label_text": "Part C: \u201cRelated\u201d",
+            "page": 30,
+            "line_id": "p30l_53",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "9 Cover 25 Cover 43 Cover",
+            "label_text": "9 Cover 25 Cover 43 Cover",
+            "page": 21,
+            "line_id": "p21l_29",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "new_india_floater",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 12.0,
+      "total_lines_scored": 1413,
+      "metrics": {
+        "total_candidates_above_threshold": 11,
+        "total_gold_visual_headings": 11,
+        "true_positives": 11,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "5.15PORTABILITY AND MIGRATION:",
+            "label_text": "5.15PORTABILITY AND MIGRATION:",
+            "page": 26,
+            "line_id": "p26l_7",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.14ARBITRATION:",
+            "label_text": "5.14ARBITRATION:",
+            "page": 25,
+            "line_id": "p25l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.13FREE LOOK PERIOD:",
+            "label_text": "5.13FREE LOOK PERIOD:",
+            "page": 25,
+            "line_id": "p25l_36",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.10RENEWAL CLAUSE:",
+            "label_text": "5.10RENEWAL CLAUSE:",
+            "page": 24,
+            "line_id": "p24l_12",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.2PREMIUM:",
+            "label_text": "5.2PREMIUM:",
+            "page": 22,
+            "line_id": "p22l_14",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5. CONDITIONS",
+            "label_text": "5. CONDITIONS",
+            "page": 22,
+            "line_id": "p22l_9",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4.4EXCLUSIONS",
+            "label_text": "4.4EXCLUSIONS",
+            "page": 18,
+            "line_id": "p18l_35",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4. WHAT ARE EXCLUDED UNDER THIS POLICY",
+            "label_text": "4. WHAT ARE EXCLUDED UNDER THIS POLICY",
+            "page": 16,
+            "line_id": "p16l_54",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.HOW MUCH WE WILL REIMBURSE",
+            "label_text": "3.HOW MUCH WE WILL REIMBURSE",
+            "page": 10,
+            "line_id": "p10l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.DEFINITIONS",
+            "label_text": "2.DEFINITIONS",
+            "page": 1,
+            "line_id": "p1l_31",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1.WHAT WE COVER",
+            "label_text": "1.WHAT WE COVER",
+            "page": 1,
+            "line_id": "p1l_20",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "niva_bupa_health_recharge",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.96,
+      "total_lines_scored": 2343,
+      "metrics": {
+        "total_candidates_above_threshold": 2,
+        "total_gold_visual_headings": 2,
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "X. Multiple Policies",
+            "label_text": "X. Multiple Policies",
+            "page": 29,
+            "line_id": "p29l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2. Definitions",
+            "label_text": "2. Definitions",
+            "page": 1,
+            "line_id": "p1l_16",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "oriental_cancer_protect",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 12.0,
+      "total_lines_scored": 1700,
+      "metrics": {
+        "total_candidates_above_threshold": 26,
+        "total_gold_visual_headings": 26,
+        "true_positives": 26,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "6.17 SINGLE POLICY:",
+            "label_text": "6.17 SINGLE POLICY:",
+            "page": 35,
+            "line_id": "p35l_23",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.11 QUALITY OF TREATMENT:",
+            "label_text": "6.11 QUALITY OF TREATMENT:",
+            "page": 33,
+            "line_id": "p33l_39",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.10 CHANGE OF ADDRESS:",
+            "label_text": "6.10 CHANGE OF ADDRESS:",
+            "page": 33,
+            "line_id": "p33l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.9 PORTABILITY:",
+            "label_text": "6.9 PORTABILITY:",
+            "page": 33,
+            "line_id": "p33l_30",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.8 RENEWAL OF POLICY:",
+            "label_text": "6.8 RENEWAL OF POLICY:",
+            "page": 32,
+            "line_id": "p32l_40",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.7 GRACE PERIOD:",
+            "label_text": "6.7 GRACE PERIOD:",
+            "page": 32,
+            "line_id": "p32l_36",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.6 FREE LOOK PERIOD:",
+            "label_text": "6.6 FREE LOOK PERIOD:",
+            "page": 32,
+            "line_id": "p32l_21",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "6.2 SUM INSURED:",
+            "label_text": "6.2 SUM INSURED:",
+            "page": 31,
+            "line_id": "p31l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.14 CANCELLATION CLAUSE:",
+            "label_text": "5.14 CANCELLATION CLAUSE:",
+            "page": 29,
+            "line_id": "p29l_41",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.13 MEDICAL RECORDS:",
+            "label_text": "5.13 MEDICAL RECORDS:",
+            "page": 29,
+            "line_id": "p29l_27",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.11 ARBITRATION CLAUSE :",
+            "label_text": "5.11 ARBITRATION CLAUSE :",
+            "page": 28,
+            "line_id": "p28l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.10 DISCLAIMER OF CLAIM:",
+            "label_text": "5.10 DISCLAIMER OF CLAIM:",
+            "page": 28,
+            "line_id": "p28l_31",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.9 REPUDIATION/REJECTION OF CLAIM:",
+            "label_text": "5.9 REPUDIATION/REJECTION OF CLAIM:",
+            "page": 28,
+            "line_id": "p28l_14",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.7 CONTRIBUTION:",
+            "label_text": "5.7 CONTRIBUTION:",
+            "page": 27,
+            "line_id": "p27l_33",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.6 CLAIMS PROCEDURE:",
+            "label_text": "5.6 CLAIMS PROCEDURE:",
+            "page": 21,
+            "line_id": "p21l_45",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5. CONDITIONS",
+            "label_text": "5. CONDITIONS",
+            "page": 20,
+            "line_id": "p20l_41",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4. GENERAL EXCLUSIONS:",
+            "label_text": "4. GENERAL EXCLUSIONS:",
+            "page": 18,
+            "line_id": "p18l_30",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.21 ILLNESS:",
+            "label_text": "3.21 ILLNESS:",
+            "page": 15,
+            "line_id": "p15l_13",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3. DEFINITIONS",
+            "label_text": "3. DEFINITIONS",
+            "page": 11,
+            "line_id": "p11l_31",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.15 WAITING PERIOD:",
+            "label_text": "2.15 WAITING PERIOD:",
+            "page": 11,
+            "line_id": "p11l_27",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "reliance_health_gain",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.0,
+      "total_lines_scored": 4719,
+      "metrics": {
+        "total_candidates_above_threshold": 11,
+        "total_gold_visual_headings": 11,
+        "true_positives": 11,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "5.1.12. MORATORIUM PERIOD",
+            "label_text": "5.1.12. MORATORIUM PERIOD",
+            "page": 21,
+            "line_id": "p21l_122",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4.1.   STANDARD EXCLUSIONS",
+            "label_text": "4.1.   STANDARD EXCLUSIONS",
+            "page": 17,
+            "line_id": "p17l_105",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.7.7  HOSPITAL CASH",
+            "label_text": "3.7.7  HOSPITAL CASH",
+            "page": 13,
+            "line_id": "p13l_67",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.7.1  ENHANCED COVERS",
+            "label_text": "3.7.1  ENHANCED COVERS",
+            "page": 12,
+            "line_id": "p12l_47",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.7  OPTIONAL COVERS",
+            "label_text": "3.7  OPTIONAL COVERS",
+            "page": 12,
+            "line_id": "p12l_42",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.5.3.4  HOSPITAL CASH",
+            "label_text": "3.5.3.4  HOSPITAL CASH",
+            "page": 10,
+            "line_id": "p10l_139",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.5.3.1  ACCIDENTAL DEATH",
+            "label_text": "3.5.3.1  ACCIDENTAL DEATH",
+            "page": 10,
+            "line_id": "p10l_53",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.5.1  CUMULATIVE BONUS",
+            "label_text": "3.5.1  CUMULATIVE BONUS",
+            "page": 8,
+            "line_id": "p8l_107",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.5  RENEWAL BENEFITS",
+            "label_text": "3.5  RENEWAL BENEFITS",
+            "page": 8,
+            "line_id": "p8l_106",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.2   COVER",
+            "label_text": "3.2   COVER",
+            "page": 7,
+            "line_id": "p7l_44",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.1.1  HOSPITALIZATION EXPENSES",
+            "label_text": "3.1.1  HOSPITALIZATION EXPENSES",
+            "page": 5,
+            "line_id": "p5l_132",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "royal_sundaram_advanced_topup",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 10.36,
+      "total_lines_scored": 2080,
+      "metrics": {
+        "total_candidates_above_threshold": 1,
+        "total_gold_visual_headings": 1,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "Part II- Policy Document",
+            "label_text": "Part II- Policy Document",
+            "page": 1,
+            "line_id": "p1l_13",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "sbi_general_arogya_sanjeevani",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 10.36,
+      "total_lines_scored": 1238,
+      "metrics": {
+        "total_candidates_above_threshold": 3,
+        "total_gold_visual_headings": 3,
+        "true_positives": 3,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "7. EXCLUSIONS",
+            "label_text": "7. EXCLUSIONS",
+            "page": 11,
+            "line_id": "p11l_32",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4. COVERAGE",
+            "label_text": "4. COVERAGE",
+            "page": 7,
+            "line_id": "p7l_32",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2) OPERATIVECLAUSE",
+            "label_text": "2) OPERATIVECLAUSE",
+            "page": 1,
+            "line_id": "p1l_15",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "star_medi_classic_accident",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 10.0,
+      "total_lines_scored": 2130,
+      "metrics": {
+        "total_candidates_above_threshold": 11,
+        "total_gold_visual_headings": 11,
+        "true_positives": 11,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "V.  CUMULATIVE BONUS",
+            "label_text": "V.  CUMULATIVE BONUS",
+            "page": 13,
+            "line_id": "p13l_49",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "IV.  OPTIONAL BENEFITS",
+            "label_text": "IV.  OPTIONAL BENEFITS",
+            "page": 13,
+            "line_id": "p13l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1. EDUCATIONAL GRANT:",
+            "label_text": "1. EDUCATIONAL GRANT:",
+            "page": 12,
+            "line_id": "p12l_5",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "III.  ADDITIONAL BENEFITS",
+            "label_text": "III.  ADDITIONAL BENEFITS",
+            "page": 12,
+            "line_id": "p12l_58",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "II.  SCOPE OF COVER",
+            "label_text": "II.  SCOPE OF COVER",
+            "page": 11,
+            "line_id": "p11l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "I.  DEFINITIONS OF WORDS AND EXPRESSIONS",
+            "label_text": "I.  DEFINITIONS OF WORDS AND EXPRESSIONS",
+            "page": 10,
+            "line_id": "p10l_10",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4.   CONDITIONS:",
+            "label_text": "4.   CONDITIONS:",
+            "page": 7,
+            "line_id": "p7l_46",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3. EXCLUSIONS",
+            "label_text": "3. EXCLUSIONS",
+            "page": 6,
+            "line_id": "p6l_38",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2. DEFINITIONS",
+            "label_text": "2. DEFINITIONS",
+            "page": 5,
+            "line_id": "p5l_16",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1.0.  COVERAGE",
+            "label_text": "1.0.  COVERAGE",
+            "page": 4,
+            "line_id": "p4l_15",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section I \u2013 Health Insurance Coverage",
+            "label_text": "Section I \u2013 Health Insurance Coverage",
+            "page": 4,
+            "line_id": "p4l_5",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "tata_aig_arogya_sanjeevani",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.5,
+      "total_lines_scored": 3847,
+      "metrics": {
+        "total_candidates_above_threshold": 23,
+        "total_gold_visual_headings": 25,
+        "true_positives": 23,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 92.0,
+        "f1_score": 95.83,
+        "matched_examples": [
+          {
+            "candidate_text": "Section 6 \u2022 Dispute Resolution",
+            "label_text": "Section 6 \u2022 Dispute Resolution",
+            "page": 21,
+            "line_id": "p21l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Note:",
+            "label_text": "Note:",
+            "page": 20,
+            "line_id": "p20l_85",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "X.MLR(Medico Legal Report copy if",
+            "label_text": "X.MLR(Medico Legal Report copy if",
+            "page": 20,
+            "line_id": "p20l_69",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Procedure for Cashless Claims:",
+            "label_text": "Procedure for Cashless Claims:",
+            "page": 19,
+            "line_id": "p19l_72",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 5 -Claims Procedure and Claims",
+            "label_text": "Section 5 -Claims Procedure and Claims",
+            "page": 19,
+            "line_id": "p19l_69",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Bima Bharosa Grievance Redressal Portal:",
+            "label_text": "Bima Bharosa Grievance Redressal Portal:",
+            "page": 19,
+            "line_id": "p19l_48",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Nomination:",
+            "label_text": "Nomination:",
+            "page": 15,
+            "line_id": "p15l_34",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 4-General Terms and Clauses",
+            "label_text": "Section 4-General Terms and Clauses",
+            "page": 13,
+            "line_id": "p13l_111",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 3 -Exclusions",
+            "label_text": "Section 3 -Exclusions",
+            "page": 9,
+            "line_id": "p9l_44",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "G.Robotic surgeries",
+            "label_text": "G.Robotic surgeries",
+            "page": 8,
+            "line_id": "p8l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "F.Intra vitreal injections",
+            "label_text": "F.Intra vitreal injections",
+            "page": 8,
+            "line_id": "p8l_42",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "D.Oral chemotherapy",
+            "label_text": "D.Oral chemotherapy",
+            "page": 8,
+            "line_id": "p8l_39",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "C.Deep Brain stimulation",
+            "label_text": "C.Deep Brain stimulation",
+            "page": 8,
+            "line_id": "p8l_38",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Notes:",
+            "label_text": "Notes:",
+            "page": 8,
+            "line_id": "p8l_84",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "B.Balloon Sinoplasty",
+            "label_text": "B.Balloon Sinoplasty",
+            "page": 8,
+            "line_id": "p8l_37",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "A.Uterine Artery Embolization and HIFU",
+            "label_text": "A.Uterine Artery Embolization and HIFU",
+            "page": 8,
+            "line_id": "p8l_35",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "K.ION M -(Intra Operative Neuro",
+            "label_text": "K.ION M -(Intra Operative Neuro",
+            "page": 8,
+            "line_id": "p8l_53",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "H.Stereotactic radio surgeries",
+            "label_text": "H.Stereotactic radio surgeries",
+            "page": 8,
+            "line_id": "p8l_46",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Note:",
+            "label_text": "Note:",
+            "page": 7,
+            "line_id": "p7l_56",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Section 2 -Benefits",
+            "label_text": "Section 2 -Benefits",
+            "page": 7,
+            "line_id": "p7l_9",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": [
+          {
+            "expected_text": "Section 3 shall be reduced by the",
+            "page": 15,
+            "line_id": "p15l_92",
+            "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0017"
+          },
+          {
+            "expected_text": "Section 3 shall be reduced by the",
+            "page": 16,
+            "line_id": "p16l_42",
+            "source_section_id": "tata_aig_arogya_sanjeevani_review_sec_0018"
+          }
+        ]
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "united_india_individual_health",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 9.96,
+      "total_lines_scored": 1281,
+      "metrics": {
+        "total_candidates_above_threshold": 10,
+        "total_gold_visual_headings": 10,
+        "true_positives": 10,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "5.21 Claims Procedure",
+            "label_text": "5.21 Claims Procedure",
+            "page": 16,
+            "line_id": "p16l_33",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.19 Discount",
+            "label_text": "5.19 Discount",
+            "page": 15,
+            "line_id": "p15l_66",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.18 Premium",
+            "label_text": "5.18 Premium",
+            "page": 15,
+            "line_id": "p15l_56",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.8 Migration",
+            "label_text": "5.8 Migration",
+            "page": 13,
+            "line_id": "p13l_47",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "5.GENERAL TERMS & CLAUSES",
+            "label_text": "5.GENERAL TERMS & CLAUSES",
+            "page": 12,
+            "line_id": "p12l_21",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "4.PERMANENT EXCLUSIONS & WAITING PERIODS",
+            "label_text": "4.PERMANENT EXCLUSIONS & WAITING PERIODS",
+            "page": 9,
+            "line_id": "p9l_16",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.COVERAGE",
+            "label_text": "3.COVERAGE",
+            "page": 5,
+            "line_id": "p5l_57",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.DEFINITIONS",
+            "label_text": "2.DEFINITIONS",
+            "page": 1,
+            "line_id": "p1l_32",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "1.PREAMBLE",
+            "label_text": "1.PREAMBLE",
+            "page": 1,
+            "line_id": "p1l_17",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "Policy Terms & Conditions",
+            "label_text": "Policy Terms & Conditions",
+            "page": 1,
+            "line_id": "p1l_14",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    },
+    {
+      "slug": "universal_sompo_loan_secure",
+      "status": "passed",
+      "threshold": 0.5,
+      "body_font_mode": 12.0,
+      "total_lines_scored": 1791,
+      "metrics": {
+        "total_candidates_above_threshold": 4,
+        "total_gold_visual_headings": 4,
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "count_invariant_ok": true,
+        "precision": 100.0,
+        "recall": 100.0,
+        "f1_score": 100.0,
+        "matched_examples": [
+          {
+            "candidate_text": "15.Renewal",
+            "label_text": "15.Renewal",
+            "page": 30,
+            "line_id": "p30l_51",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "12.Subrogation",
+            "label_text": "12.Subrogation",
+            "page": 29,
+            "line_id": "p29l_43",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "3.SECTION III: LOSS OF JOB",
+            "label_text": "3.SECTION III: LOSS OF JOB",
+            "page": 12,
+            "line_id": "p12l_58",
+            "match_score": 1.0
+          },
+          {
+            "candidate_text": "2.SECTION II: PERSONAL ACCIDENT:",
+            "label_text": "2.SECTION II: PERSONAL ACCIDENT:",
+            "page": 11,
+            "line_id": "p11l_49",
+            "match_score": 1.0
+          }
+        ],
+        "false_positive_examples": [],
+        "missed_heading_examples": []
+      },
+      "gates": {
+        "precision_ge_90": true,
+        "recall_ge_80": true,
+        "tp_plus_fn_equals_gold": true
+      }
+    }
+  ],
+  "passed": true,
+  "failures": [],
+  "notes": "Heading scorer v2 eval on 5 gold PDFs. Gates: precision >= 90%, recall >= 80%, one-to-one page-aware visual-heading label matching, and TP+FN=count(gold visual headings). DSE-006 handles logical section tree and clause boundaries separately."
+}

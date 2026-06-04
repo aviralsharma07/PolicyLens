@@ -12,6 +12,7 @@ NUMBERING_PATTERNS = [
     re.compile(r"^\d+\.[a-z]"),
     re.compile(r"^\d+\.\d+[A-Z]"),
     re.compile(r"^\d+\.\d+\.\d+[A-Za-z]"),
+    re.compile(r"^[A-Z]\.\s+(?!No\b|no\b)[^\t]"),
 ]
 
 TOC_DOT_PATTERN = re.compile(r"\.\s*\.\s*\.\s*\.\s*\.")

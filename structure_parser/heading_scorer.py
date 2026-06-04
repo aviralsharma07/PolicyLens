@@ -165,11 +165,17 @@ class HeadingScorer:
         all_caps_fp = 1.0 if (all_caps and line_len > 80) else 0.0
         gap_features = self._line_gap_features(page.get("lines", []), line_index)
         looks_heading_like = numbered or dict_match or all_caps or bold or toc
-        spacing_signal = 1.0 if looks_heading_like and gap_features["gap_before_ratio"] >= 1.5 else 0.0
-        boilerplate_company = 1.0 if (
-            not numbered
-            and re.search(r"\b(?:insurance|assurance)\s+(?:company\s+)?limited\.?$", text, re.I)
-        ) else 0.0
+        spacing_signal = (
+            1.0 if looks_heading_like and gap_features["gap_before_ratio"] >= 1.5 else 0.0
+        )
+        boilerplate_company = (
+            1.0
+            if (
+                not numbered
+                and re.search(r"\b(?:insurance|assurance)\s+(?:company\s+)?limited\.?$", text, re.I)
+            )
+            else 0.0
+        )
 
         return {
             "font_size_ratio": font_size_ratio,
@@ -206,18 +212,23 @@ class HeadingScorer:
         return 0.0
 
     def feature_contributions(self, features: Dict[str, float]) -> Dict[str, float]:
+        sentence = features.get("is_sentence_case", 0.0)
+        numbered = features.get("matches_numbering", 0.0)
+        bold = features.get("is_bold", 0.0)
+        sentence_penalty = (
+            -0.10
+            if (sentence and bold and numbered)
+            else self.WEIGHTS["is_sentence_case"] * sentence
+        )
         return {
             "font_size_ratio": round(self._font_contribution(features), 4),
             "is_bold": round(features.get("is_bold", 0.0) * self.WEIGHTS["is_bold"], 4),
-            "is_all_caps": round(
-                features.get("is_all_caps", 0.0) * self.WEIGHTS["is_all_caps"], 4
-            ),
+            "is_all_caps": round(features.get("is_all_caps", 0.0) * self.WEIGHTS["is_all_caps"], 4),
             "matches_numbering": round(
                 features.get("matches_numbering", 0.0) * self.WEIGHTS["matches_numbering"], 4
             ),
             "matches_heading_dict": round(
-                features.get("matches_heading_dict", 0.0)
-                * self.WEIGHTS["matches_heading_dict"],
+                features.get("matches_heading_dict", 0.0) * self.WEIGHTS["matches_heading_dict"],
                 4,
             ),
             "has_toc_dots": round(
@@ -226,12 +237,9 @@ class HeadingScorer:
             "spacing_signal": round(
                 features.get("spacing_signal", 0.0) * self.WEIGHTS["spacing_signal"], 4
             ),
-            "is_sentence_case": round(
-                features.get("is_sentence_case", 0.0) * self.WEIGHTS["is_sentence_case"], 4
-            ),
+            "is_sentence_case": round(sentence_penalty, 4),
             "line_length_penalty": round(
-                -features.get("line_length_ratio", 0.0)
-                * abs(self.WEIGHTS["line_length_penalty"]),
+                -features.get("line_length_ratio", 0.0) * abs(self.WEIGHTS["line_length_penalty"]),
                 4,
             ),
             "position_penalty": round(
@@ -239,8 +247,7 @@ class HeadingScorer:
                 4,
             ),
             "all_caps_fp_penalty": round(
-                features.get("all_caps_fp_penalty", 0.0)
-                * self.WEIGHTS["all_caps_fp_penalty"],
+                features.get("all_caps_fp_penalty", 0.0) * self.WEIGHTS["all_caps_fp_penalty"],
                 4,
             ),
             "boilerplate_company_penalty": round(
@@ -257,7 +264,7 @@ class HeadingScorer:
 
     def _numbering_token(self, text: str) -> Optional[str]:
         match = re.match(
-            r"^\s*((?:SECTION|PART)\s+[A-Z0-9]+|[IVX]+[\.\)]|\d+(?:\.\d+)*[\.\)]?)",
+            r"^\s*((?:SECTION|PART)\s+[A-Z0-9]+|[IVX]+[\.\)]|\d+(?:\.\d+)*[\.\)]?|[A-Z]\.)",
             text,
             flags=re.IGNORECASE,
         )
@@ -271,6 +278,8 @@ class HeadingScorer:
             return 1
         upper = token.upper()
         if upper.startswith(("SECTION", "PART")):
+            return 1
+        if re.match(r"^[A-Z]\.$", upper):
             return 1
         numbers = re.findall(r"\d+", token)
         if numbers:

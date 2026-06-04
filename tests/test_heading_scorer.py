@@ -60,6 +60,14 @@ class TestNumberingPatterns:
         assert matches_numbering("IV.  OPTIONAL BENEFITS")
         assert matches_numbering("V.  CUMULATIVE BONUS")
 
+    def test_letter_numbered_heading(self):
+        assert matches_numbering("A. Definitions")
+        assert matches_numbering("B. Coverage")
+
+    def test_serial_number_row_not_letter_heading(self):
+        assert not matches_numbering("S. No.")
+        assert not matches_numbering("S. No.\tBenefits\tPayment Basis")
+
     def test_non_heading_does_not_match(self):
         assert not matches_numbering("This is body text")
         assert not matches_numbering("The policy covers")
@@ -342,6 +350,75 @@ class TestHeadingScorerUnit:
         assert heading["normalized_text"] == "4. coverage"
         assert heading["numbering_token"] == "4."
         assert heading["level_hint"] == 1
+
+    def test_letter_numbering_token_and_level(self):
+        scorer = HeadingScorer()
+        line = {
+            "line_id": "l1",
+            "text": "A. Definitions",
+            "region": "body",
+            "is_header_candidate": False,
+            "is_footer_candidate": False,
+            "span_ids": ["s1"],
+        }
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [line],
+            "spans": [
+                {
+                    "span_id": "s1",
+                    "text": "A. Definitions",
+                    "font_size": 11.0,
+                    "font_name": "Helvetica-Bold",
+                    "is_bold": True,
+                    "bbox": [0, 0, 120, 15],
+                }
+            ],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        cand = scorer.score_document(doc)["candidates"][0]
+
+        assert cand["features"]["matches_numbering"] == 1.0
+        assert cand["numbering_token"] == "A."
+        assert cand["level_hint"] == 1
+
+    def test_bold_numbered_sentence_case_penalty_reduced(self):
+        scorer = HeadingScorer()
+        line = {
+            "line_id": "l1",
+            "text": "6. Claim procedure",
+            "region": "body",
+            "is_header_candidate": False,
+            "is_footer_candidate": False,
+            "span_ids": ["s1"],
+        }
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [line],
+            "spans": [
+                {
+                    "span_id": "s1",
+                    "text": "6. Claim procedure",
+                    "font_size": 11.0,
+                    "font_name": "Helvetica-Bold",
+                    "is_bold": True,
+                    "bbox": [0, 0, 120, 15],
+                }
+            ],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        cand = scorer.score_document(doc)["candidates"][0]
+
+        assert cand["features"]["is_sentence_case"] == 1.0
+        assert cand["features"]["is_bold"] == 1.0
+        assert cand["features"]["matches_numbering"] == 1.0
+        assert cand["feature_contributions"]["is_sentence_case"] == -0.1
 
 
 class TestHeadingEvalMatching:

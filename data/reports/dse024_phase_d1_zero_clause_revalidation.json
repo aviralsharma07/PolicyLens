@@ -1,0 +1,87 @@
+{
+  "schema_version": "dse024_phase_d1_revalidation.v1",
+  "task_id": "DSE-024",
+  "phase": "D1",
+  "date": "2026-06-04",
+  "heading_threshold": 0.5,
+  "gold_corpus_policies": 20,
+  "full_corpus_policies": 647,
+  "pre_phase_c_baseline": {
+    "reference_commit": "9ab0a1b",
+    "reference_file": "data/reports/dse020_scale_triage_report_v1.json (git commit 9ab0a1b)",
+    "zero_headings": 132,
+    "zero_clauses": 132,
+    "zero_fact_candidates": 133,
+    "gold_heading_eval": {
+      "passed": "20/20 (from DSE-020 pipeline run, prior to git commit)",
+      "details": "Original DSE-020 heading scorer run before Phase C feature changes"
+    },
+    "gold_section_tree_eval": {
+      "passed": "19/20 (from DSE-020 pipeline run)"
+    }
+  },
+  "post_phase_c_current": {
+    "heading_run_summary": "data/interim/dse020/logical/heading_run_summary.json",
+    "heading_threshold": 0.5,
+    "heading_run_timestamp": "2026-06-04T06:49",
+    "section_tree_timestamp": "2026-06-04T07:29",
+    "triage_report": "data/reports/dse020_scale_triage_report_v1.json",
+    "zero_headings": 156,
+    "zero_clauses": 156,
+    "zero_fact_candidates": 133,
+    "gold_heading_eval": {
+      "artifact": "runs/evals/2026-06-04-heading-scorer-dse024-phase-d1.json",
+      "passed": "20/20",
+      "overall_precision": 99.7,
+      "overall_recall": 96.3,
+      "overall_f1": 98.0,
+      "total_fp": 1,
+      "total_fn": 12,
+      "regression": false
+    },
+    "gold_section_tree_eval": {
+      "artifact": "runs/evals/2026-06-04-section-tree-dse024-phase-d1.json",
+      "passed": "19/20",
+      "failed_policies": ["oriental_cancer_protect"],
+      "oriental_cancer_protect_tree_acc": 83.33,
+      "oriental_cancer_protect_section_f1": 100.0,
+      "oriental_cancer_protect_clause_f1": 100.0,
+      "pre_existing_failure": true,
+      "regression": false
+    }
+  },
+  "delta": {
+    "zero_heading_change": 24,
+    "zero_clause_change": 24,
+    "zero_heading_change_description": "Increased (regression — Phase C stricter penalties pushed marginal headings below 0.5)",
+    "improved_policies": 0,
+    "regressed_policies_count": 24,
+    "regressed_by_insurer": {
+      "Star_Health": 15,
+      "United_India": 2,
+      "Bajaj_Allianz": 2,
+      "IFFCO_Tokio": 2,
+      "Niva_Bupa": 1,
+      "HDFC_ERGO": 1,
+      "Raheja_QBE": 1
+    },
+    "regressed_headings_profile": "Near-miss headings (0.48-0.50) that dropped below threshold — mainly Star Health numbered items like '5. Cancellation:', '2. Claim Procedure:', all-caps titles like 'FAMILY ACCIDENT CARE INSURANCE POLICY', and marginal numbered lines",
+    "permissive_changes_effect": "Letter-numbering pattern and reduced sentence-case penalty did NOT help any zero-heading policies at t=0.5. All Phase C permissive changes targeted features absent from the zero-heading policies (letter-numbering requires 'A.' prefix; reduced sentence-case requires bold+numbered style).",
+    "strict_changes_effect": "TOC dot penalty (+0.10→-0.30, net -0.40), tab penalty (-0.30), and short all-caps penalty (-0.25) pushed 24 policies' marginal headings below 0.5 threshold. These policies had 1-2 marginal headings pre-Phase-C scoring."
+  },
+  "acceptance_criteria": {
+    "zero_clause_reduction_achieved": false,
+    "zero_clause_reduction_value": -24,
+    "zero_clause_reduction_note": "Zero-clause policies increased from 132 to 156. Phase C heading scorer changes at threshold 0.5 did NOT reduce zero-clause count — stricter penalties outweighed permissive additions for non-gold policies.",
+    "gold_heading_no_regression": true,
+    "gold_section_tree_no_regression": true,
+    "triage_report_regenerated": true,
+    "pytest_passed": "pending"
+  },
+  "conclusion": "Phase C heading scorer feature changes at threshold 0.5 do NOT reduce the zero-clause count. Zero-clause policies increased from 132 to 156 (+24). The three stricter penalties (TOC dots, tab, short all-caps) were more impactful than the two permissive additions (letter-numbering, reduced sentence-case). 15/24 regressed policies are Star Health — their format relies on marginal numbered headings that the new penalties push below threshold. Gold heading eval remains 20/20 PASS and gold section tree remains 19/20 FAIL (pre-existing). Zero-clause reduction requires a different strategy — either threshold lowering (t=0.45 with FP suppression infra) or targeted scorer additions that specifically address the 132 zero-heading policies (e.g., format-specific detectors for Star Health, HDFC ERGO, Aditya Birla layouts).",
+  "next_recommended_steps": [
+    "DSE-024 Phase D2: Investigate format-specific heading features for top insurers (Star Health 15/24 regressed, HDFC ERGO 21/132 original)",
+    "Alternatively: DSE-024 Phase E: Threshold lowering to t=0.45 with classifier-based FP filtering (requires TOC/list-item classifier infra)",
+    "Alternatively: Close DSE-024 and move to DSE-021 extractors (zero-clause is a parser limitation that threshold changes can't fully resolve)"
+  ]
+}

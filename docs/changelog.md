@@ -1,5 +1,149 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Phase D2 Regression Recovery)
+
+### Added
+- `data/reports/dse024_phase_d2_regression_recovery.json` — machine-readable recovery report comparing DSE-020 baseline, D1 regression, and D2 recovery.
+- `data/reports/dse024_phase_d2_regression_recovery.md` — Markdown recovery report with changed features, eval results, and next decision.
+- `runs/evals/2026-06-04-heading-scorer-dse024-phase-d2.json` — gold heading eval after recovery.
+- `runs/evals/2026-06-04-section-tree-dse024-phase-d2.json` — gold section tree eval after recovery.
+- `runs/sessions/2026-06-04-dse024-phase-d2-regression-recovery.md` — D2 recovery session log.
+
+### Changed
+- `structure_parser/heading_scorer.py` — reverted harmful Phase C penalties for TOC dot leaders, short all-caps numbered lines, and tab-containing lines.
+- `structure_parser/heading_scorer.py` — retained reduced sentence-case penalty for bold numbered headings.
+- `structure_parser/heading_patterns.py` — retained letter-numbered heading support while keeping `S. No.` / serial rows excluded.
+- `tests/test_heading_scorer.py` — added regression coverage for letter headings, serial-number rows, and bold numbered sentence-case headings.
+- `data/interim/dse020/logical/*/heading_candidates.json` and `section_tree.json` — regenerated parser outputs for the 647-policy DSE-020 corpus.
+- `data/reports/dse020_scale_triage_report_v1.json` and `.md` — regenerated after D2 recovery.
+- `docs/tasks.md` — DSE-024 D2 recovery results recorded.
+
+### Results
+- **Zero-clause count recovered:** D1 `156` → D2 `122`, improving beyond the original DSE-020 baseline of `132`.
+- **No new baseline regressions:** 10 policies improved from the original 132 zero-clause set; 0 new zero-clause policies appeared.
+- **Gold heading eval:** 20/20 PASS.
+- **Gold section tree eval:** 19/20 FAIL, unchanged pre-existing `oriental_cancer_protect` tree-accuracy issue.
+- **Focused pytest:** 41/41 PASS.
+
+### Known Issues
+- 122 policies still have zero headings/clauses and require a new fallback heading promotion strategy.
+- Further global threshold lowering remains rejected until false-positive controls are explicit and tested.
+
+## 2026-06-04 (DSE-024 — Phase D1 Zero-Clause Revalidation)
+
+### Added
+- `data/reports/dse024_phase_d1_zero_clause_revalidation.json` — D1 revalidation report with pre/post Phase C comparison.
+- `data/reports/dse024_phase_d1_zero_clause_revalidation.md` — Markdown report with delta analysis.
+- `runs/evals/2026-06-04-heading-scorer-dse024-phase-d1.json` — gold heading eval (20/20 PASS, no regression).
+- `runs/evals/2026-06-04-section-tree-dse024-phase-d1.json` — gold section tree eval (19/20 FAIL, pre-existing).
+- `runs/sessions/2026-06-04-dse024-phase-d1-revalidation.md` — D1 session log.
+
+### Changed
+- `data/interim/dse020/logical/*/section_tree.json` — regenerated 647 section trees to pick up Phase C heading candidates.
+- `data/interim/dse020/logical/section_tree_run_summary.json` — new run summary after section tree rebuild.
+- `data/reports/dse020_scale_triage_report_v1.json` — regenerated (zero-clause: 132→156, zero-heading: 132→156).
+- `data/reports/dse020_scale_triage_report_v1.md` — regenerated.
+- `docs/tasks.md` — DSE-024 Phase D1 results recorded.
+
+### Results
+- **Zero-clause reduction: NOT achieved** — count increased from 132 to 156 (+24).
+- **Root cause:** Phase C stricter penalties (TOC dots, tab character, short all-caps) pushed 24 marginal headings below t=0.5.
+- **15/24 regressed are Star Health** — their format relies on numbered headings (score 0.48-0.50).
+- **0 policies gained headings** — permissive Phase C additions (letter-numbering, reduced sentence-case) did not help zero-heading policies at t=0.5.
+- **Gold heading eval: 20/20 PASS** — no regression.
+- **Gold section tree: 19/20 FAIL** — pre-existing `oriental_cancer_protect` unchanged.
+- **Full heading+manifest pytest: 37/37 PASS.**
+
+### Known Issues
+- Zero-clause count at 156 is worse than original 132 baseline.
+- Section tree eval at 19/20 remains pre-existing `oriental_cancer_protect` issue.
+- Zero-clause reduction requires new approach: format-specific heading additions or threshold lowering with FP suppression.
+
+## 2026-06-04 (DSE-024 — Phase C Targeted Heading Scorer Fixes)
+
+### Added
+- **TOC suppression**: `has_toc_dots` weight changed from +0.10 to -0.30. Lines with dot leaders (TOC entries) now get a -0.30 penalty instead of a +0.10 boost.
+- **Short all-caps numbered penalty**: New `short_all_caps_numbered` feature (-0.25) penalizes short (<30 chars) all-caps numbered items that don't match the heading dictionary. Targets medical supply codes ("43 SPLINT") and procedure codes.
+- **Tab character penalty**: New `has_tab_char` feature (-0.30) penalizes lines containing tab characters (table data leaked into line text).
+- **Letter-numbering pattern**: Added `^[A-Z]\.\s(?!No|no)` pattern to NUMBERING_PATTERNS for single-letter section markers ("A. Definitions", "B. Coverage"). Excludes "S. No." (serial number) false positives.
+- **Reduced sentence-case penalty**: Bold+numbered+sentence-case lines now get -0.10 instead of -0.30. Prevents definition headings ("6. Exclusions") from being penalized as body text.
+- `data/reports/dse024_threshold_experiment_v3.md` — corrected post-fix threshold experiment report.
+- `runs/sessions/2026-06-04-dse024-parser-remediation-phase-c.md` — Phase C session log.
+
+### Changed
+- `structure_parser/heading_patterns.py` — added letter-numbering pattern to NUMBERING_PATTERNS.
+- `structure_parser/heading_scorer.py` — added WEIGHTS entries for `has_toc_dots` (-0.30), `short_all_caps_numbered` (-0.25), `has_tab_char` (-0.30). Added `short_all_caps_numbered` and `has_tab` to `compute_features()`. Added sentence-case penalty reduction for bold+numbered in `feature_contributions()`. Added letter-numbering to `_numbering_token()` and `_level_hint()`.
+- `data/interim/dse020/logical/` — all 647 heading_candidates.json files regenerated with new scorer.
+
+### Results
+- **Gold heading eval: 20/20 PASS** (no regression at threshold 0.5)
+- **FP ratio improved**: at t=0.45, from 54.2% (pre-fix) to 44.4% (post-fix)
+- **List/Item Risk reduced 46%**: 61 → 33
+- **TOC Risk reduced 9%**: 55 → 50
+- **Real headings minimally affected**: 136 → 134 (-1.5%)
+- **Full pytest: 393/393 PASS**
+
+### Known Issues
+- 56/132 zero-clause policies gain ≥1 heading at t=0.45, but FP ratio (44.4%) is still above 25% target.
+- Aditya Birla and Tata AIG gold policies still have 0 headings at t=0.5 in DSE-020 pipeline (different physical extraction than gold corpus).
+- Section tree builder has not been updated to handle the 134 real headings at t=0.45.
+
+## 2026-06-04 (DSE-024 — Phase A Classification Complete)
+
+### Added
+- `scripts/dse024_classify_zero_clause_policies.py` — automated classifier for 132 zero-clause policies using conservative heuristics (document_type, slug keywords, heading score, duplicate hash groups).
+- `data/reports/dse024_zero_clause_classification_v1.json` — full JSON classification output.
+- `data/reports/dse024_zero_clause_classification_v1.md` — Markdown classification summary.
+
+### Changed
+- `data/reports/dse024_zero_clause_policy_audit_plan.md` — appended Phase A results and recommended 20-policy sample for Phase B.
+- `runs/sessions/2026-06-04-dse024-full-corpus-parser-remediation-plan.md` — updated with Phase A completion.
+
+### Classification Results
+- HEADING_MISS: 117 (88.6%) — heading scorer produces candidates but none above 0.5
+- NON_POLICY: 9 (6.8%) — brochures, CIS, prospectus, product list
+- DUPLICATE: 6 (4.5%) — duplicate-hash entries
+- SECTION_FAIL: 0 — no headings above threshold for section tree to fail on
+- PHYSICAL_BAD: 0 — all 132 had successful physical extraction
+- UNSUPPORTED: 0 — all remaining had usable text
+- UNKNOWN: 0 — all classified
+
+Key finding: 53/117 HEADING_MISS policies have max heading score >= 0.45,
+meaning a small threshold reduction from 0.50 to ~0.45 would capture nearly half.
+
+## 2026-06-04 (DSE-024 — Phase B Sample Inspection Complete)
+
+### Added
+- `scripts/dse024_inspect_zero_clause_sample.py` — deep inspection script for 20 representative zero-clause policies.
+- `data/reports/dse024_zero_clause_sample_inspection_v1.json` — full JSON inspection output with per-policy top-20 candidates, classification, root cause, and false-positive risk.
+- `data/reports/dse024_zero_clause_sample_inspection_v1.md` — Markdown inspection summary with per-policy deep dives, concrete heading examples, and recommended parser changes.
+
+### Changed
+- `data/reports/dse024_zero_clause_policy_audit_plan.md` — appended Phase B results with root cause distribution, key findings, and recommended parser changes ranked by impact.
+
+### Phase B Findings
+- **threshold_too_high**: 9/20 policies (real headings at 0.45-0.499 but miss 0.5)
+- **needs_manual_review**: 5/20 policies (need human inspection of physical text)
+- **missing_feature_spacing**: 2/20 (headings lack gap-based spacing signal)
+- **missing_feature_numbered_heading**: 1/20 (letter prefixes A., B. not matched)
+- **missing_feature_all_caps**: 1/20 (all-caps headings not bold/not numbered)
+- **non_policy/duplicate**: 2/20 (already classified in Phase A)
+
+Highest-leverage fix: lower threshold to 0.45 (helps 12/20 inspected policies).
+**Warning:** Do NOT blindly lower — TOC-dominated and procedure-code-dominated documents would admit false positives.
+
+## 2026-06-04 (DSE-024 — Full-Corpus Parser Remediation Planning)
+
+### Added
+- DSE-024 planned: classify and fix 132 zero-clause policies from DSE-020 triage. Blocks DSE-021 (extractor wave 2).
+- `runs/sessions/2026-06-04-dse024-full-corpus-parser-remediation-plan.md` — planning session log.
+- `data/reports/dse024_zero_clause_policy_audit_plan.md` — audit plan for classifying zero-clause failures.
+
+### Changed
+- `docs/tasks.md` — DSE-020 moved to Completed; DSE-024 added as active; DSE-021 set to blocked.
+- `IMPLEMENTATION_PLAN.md` — roadmap reordered: DSE-024 before DSE-021; rationale documented.
+- `docs/risk_register.md` — added R25 for 132 zero-clause policies.
+
 ## 2026-06-04 (DSE-020 — Final Acceptance)
 
 ### Changed
