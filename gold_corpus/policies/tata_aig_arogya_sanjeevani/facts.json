@@ -135,10 +135,16 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "schedule_dependent": true
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "normalized_value_json": {
-      "schedule_dependent": true
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "fact_status": "present",
     "scope_json": {
@@ -149,8 +155,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 6,
-    "evidence_text": "d for all waiting 4. Non- Network Provider means any periods. hospital that is not part of the network. 39. Room Rent means the amount charged 5. Policy means these Policy wordings, by a hospital towards Room and Boarding the Policy Schedule and any applicable expenses and shall include the associated endorsements or extensions attaching to medical expenses. or forming part thereof. The Policy contains",
+    "evidence_page": 7,
+    "evidence_text": "i.Room Rent, Boarding, Nursing shall be effected in the same proportion Expenses as provided by the Hospital as the admissible rate per day bears to / Nursing Home up to 2% of the the actual rate per day of Room Rent/ICU/ sum insured subject to maximum of ICCU charges. Rs.5000/-, per day. AYUSH Treatment 2.",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -161,7 +167,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -172,25 +178,40 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"
   },
   {
     "concept": "icu_limit",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "percentage": 5,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 10000,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "percentage": 5,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 10000,
+      "currency": "INR"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 7,
+    "evidence_text": "ii.Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) expenses We will cover Medical Expenses incurred up to 5% of sum insured subject to for treatment as In-Patient or Day Care maximum of Rs.10,000/-per day. Treatment in an AYUSH Hospital/ AYUSH day care centre.",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -201,7 +222,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -212,6 +233,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"

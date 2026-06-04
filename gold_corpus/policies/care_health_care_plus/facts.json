@@ -160,14 +160,13 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "basis": "policy_schedule",
-      "variants": [
-        "1% of SI per day",
-        "single private AC room",
-        "no limit option"
-      ]
+      "percentage": 1,
+      "unit": "percent_of_sum_insured_per_day",
+      "basis": "policy_schedule"
     },
     "normalized_value_json": {
+      "percentage": 1,
+      "unit": "percent_of_sum_insured_per_day",
       "basis": "policy_schedule"
     },
     "fact_status": "present",
@@ -179,8 +178,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 28,
-    "evidence_text": "son or all Insured Persons (in case of Floater) as specified in the Policy Schedule , in accordance with C lause 6.1.6 and Company’s liability shall be restricted to the balance amount payable. The Co -payment shall be applic able to each and every claim for each Insured Person as defined in the Policy 3.2.7 Optional Benefit : Room Rent Modification Notwithstanding anything to the contrary in the Policy, by choosing this Optional Benefit, the Company agrees to upgrade the eligibility of Room Rent / Room Category from ‘1% of SI per day’ to ‘Single Private AC Room’, similarly ICU Charges limit from ‘2% of SI per day’ to ‘No limit’ Note: This Optional Benef",
+    "evidence_page": 11,
+    "evidence_text": "Rent, it means the maximum eligible Room Rent of the Insured Person payable by the Company is limited to 1% of the Sum Insured per day of Hospitalization. Any amount accrued under “No Claim Bonus Protect” or “Inflation Shield”, shall not be considered under this “Room Rent” limit.",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -191,7 +190,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -202,6 +201,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal",
@@ -214,13 +218,13 @@
   {
     "concept": "icu_limit",
     "value_json": {
-      "basis": "policy_schedule",
-      "variants": [
-        "2% of SI per day",
-        "no limit option"
-      ]
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "basis": "policy_schedule"
     },
     "normalized_value_json": {
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
       "basis": "policy_schedule"
     },
     "fact_status": "present",
@@ -232,8 +236,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 28,
-    "evidence_text": "laim for each Insured Person as defined in the Policy 3.2.7 Optional Benefit : Room Rent Modification Notwithstanding anything to the contrary in the Policy, by choosing this Optional Benefit, the Company agrees to upgrade the eligibility of Room Rent / Room Category from ‘1% of SI per day’ to ‘Single Private AC Room’, similarly ICU Charges limit from ‘2% of SI per day’ to ‘No limit’ Note: This Optional Benefit is applicable only for Insured Person whose SI is less than 5Lakhs. 4. EXCLUSIONS 4.1. Standard Exclusions: (a) Waiting Periods: (i) Pre-Existing Diseases: Code- Excl01 a. Expenses related to the treatment of a pre -existing Disease (PED) and it",
+    "evidence_page": 12,
+    "evidence_text": "Hence, the final consideration will be as per the definition of the Rooms mentioned in the Policy. b)Intensive Care Unit Charges (ICU Charges): The Policy Schedule will specify the Limit of ICU Charges applicable for the Insured Person under the Policy. The ICU Charges available under this Policy are as follows: If the Policy Schedule states ‘up to 2% of the Sum Insured per day’ as eligible ICU i. Charges per day of Hospitalization, it means the maximum eligible ICU charges of the Insured Person payable by the Company is limited to 2% of the Sum Insured per day of Hospitalization. If the Policy Schedule states the eligibility of ICU Charges of the Insured Person as ‘no ii. limit’, it means t",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -244,7 +248,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -255,6 +259,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal",

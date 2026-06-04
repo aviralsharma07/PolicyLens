@@ -149,10 +149,16 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "schedule_dependent": true
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "normalized_value_json": {
-      "schedule_dependent": true
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "fact_status": "present",
     "scope_json": {
@@ -164,7 +170,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 7,
-    "evidence_text": "for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and tor all waiting periods. 3.47. Room Rent means the amount charged by a hospital towards Room and Boarding expenses and shall include the associated medical expenses. 3.48. Sub-limit means a cost sharing requirement under a health insurance policy in which an insurer would not be liable to pay any amount in excess of the pre-defined limit 3.49. Sum Insured means the pre-defined limit specified in the Policy Schedule. Sum Insured and Cumulative Bonus represents the maximum, total and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person (on I",
+    "evidence_text": "i.Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/ per day.",
     "source_document": {
       "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
       "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
@@ -175,7 +181,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -186,25 +192,40 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"
   },
   {
     "concept": "icu_limit",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "percentage": 5,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 10000,
+      "currency": "INR"
+    },
+    "normalized_value_json": {
+      "percentage": 5,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 10000,
+      "currency": "INR"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 7,
+    "evidence_text": "ii.Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of sum insured subject to maximum of Rs.10,000/- per day.",
     "source_document": {
       "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
       "source_pdf_path": "20_SBI_General/SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
@@ -215,7 +236,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -226,6 +247,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"

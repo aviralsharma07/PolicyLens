@@ -378,3 +378,70 @@ git diff --check
 
 ### Next Step
 Implement Packet 2B — paired `room_rent_limit` and `icu_limit` extractors plus only the source-backed gold corrections documented in the Packet 2A audit.
+
+---
+
+## Packet 2B Closeout — Room Rent + ICU Extractors
+
+Date: 2026-06-04
+
+### Goal
+Implement conservative deterministic extractors for `room_rent_limit` and `icu_limit`, using the Packet 2A audit as the source-backed truth.
+
+### Files Changed
+- `extractors/deterministic.py`
+- `extractors/models.py`
+- `ontology/concepts.v1.json`
+- `tests/test_fact_extractors.py`
+- `gold_corpus/policies/*/facts.json` for source-backed room/ICU corrections only
+- `data/reports/dse021_room_icu_gold_audit.md`
+- `runs/evals/2026-06-04-fact-extraction-dse021-room-icu.json`
+- `docs/changelog.md`
+- `docs/tasks.md`
+- `docs/evaluation.md`
+- `docs/decisions.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_fact_extractors.py --tb=short
+PYTHONPATH=. .venv/bin/python scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-06-04-fact-extraction-dse021-room-icu.json
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+git diff --check
+```
+
+### Results
+```text
+passed: true
+policies_passed: 20/20
+precision: 100.00%
+recall: 99.61%
+normalized_value_accuracy: 100.00%
+status_accuracy: 97.65%
+evidence_accuracy: 100.00%
+false_present_for_gold_not_found: 0
+full pytest: 453/453 passed
+gold corpus validator: passed
+```
+
+### Source-Backed Gold Corrections
+- Bajaj, Oriental: converted room/ICU table-row bleed into actuals or component-shaped limits.
+- Care, SBI, Tata AIG, United India: normalized explicit percentage/unit room and ICU limits.
+- Future Generali, Reliance, Royal Sundaram, ICICI, Kotak: corrected schedule-dependent room/ICU limits where the policy wording points to schedule/certificate/product-benefit-table values.
+- IFFCO: represented conditional room/ICU values as components instead of a misleading scalar.
+- Liberty and Star: rejected unsupported ICU labels where source wording did not contain an operative ICU limit.
+- Niva Bupa: corrected room schedule dependency and ICU 1% SI/day table value.
+
+### Generated Artifacts
+- `runs/evals/2026-06-04-fact-extraction-dse021-room-icu.json`
+
+### Decisions Made
+- `room_rent_limit` and `icu_limit` now use explicit value shapes for percentage limits, actuals/no fixed limit, schedule-dependent limits, and conditional components.
+
+### Known Limitations
+- The room/ICU extractors consume existing clause/table-like text. They do not fix physical table extraction, header lineage, or schedule-table parsing; that remains DSE-022/DSE-023 work.
+
+### Next Step
+Proceed to Packet 3A: source audit for `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` before implementing the final three DSE-021 extractors.

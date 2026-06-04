@@ -170,16 +170,14 @@
   {
     "concept": "icu_limit",
     "value_json": {
+      "schedule_dependent": true,
       "benefit_type": "icu_cash",
-      "daily_amount": null,
-      "max_days": null,
-      "policy_certificate_dependent": true
+      "basis": "policy_certificate"
     },
     "normalized_value_json": {
-      "coverage_status": "present_schedule_dependent",
+      "schedule_dependent": true,
       "benefit_type": "icu_cash",
-      "daily_amount": null,
-      "max_days": null
+      "basis": "policy_certificate"
     },
     "fact_status": "present",
     "scope_json": {
@@ -195,8 +193,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 12,
-    "evidence_text": "Intensive Care Unit (ICU) Cash Benefit If an Insured Person contracts an Illness or suffers an Injury due to an Accident that occurs during the Period of Cover and which solely and directly requires the Insured Person to be Hospitalized in an Intensive Care Unit, then We will pay the daily amount specified in the Policy Certificate for each continuous and completed day of confinement in the Intensive Care Unit.",
+    "evidence_page": 13,
+    "evidence_text": "ii. We shall not be liable to pay the daily amount for more than the maximum number of days specified in the Policy Certificate for each period of Hospitalization within the Period of Cover. iii. Our liability to make any payment under this Benefit shall be in excess of the Deductible stated in the Policy Certificate. However, the Deductible shall not apply to the extent of days in respect of which the Insured Person has already been admitted in the Hospital in a non- ICU room.",
     "source_document": {
       "filename": "ICICI_Family_Shield_IRDAI.pdf",
       "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
@@ -207,7 +205,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: ICU benefit is present as certificate-defined ICU cash, not as ICU room-rent percentage.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -218,6 +216,11 @@
         "pass_id": "pass_5_human_style_manual_review_patch",
         "result": "resolved",
         "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal",

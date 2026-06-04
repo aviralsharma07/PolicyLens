@@ -10,6 +10,8 @@ TARGET_CONCEPTS = [
     "initial_waiting_period",
     "co_pay",
     "deductible",
+    "room_rent_limit",
+    "icu_limit",
     # Wave 1 — DSE-018
     "renewability",
     "claim_settlement_timeline",

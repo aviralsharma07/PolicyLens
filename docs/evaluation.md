@@ -762,7 +762,7 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-As of DSE-021 Packet 1C, the active deterministic target concepts are:
+As of DSE-021 Packet 2B, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
@@ -778,6 +778,8 @@ As of DSE-021 Packet 1C, the active deterministic target concepts are:
 - `maternity_waiting`
 - `organ_donor_coverage`
 - `claim_intimation_timeline`
+- `room_rent_limit`
+- `icu_limit`
 
 ### Metrics
 - Deterministic present precision
@@ -820,7 +822,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-021 Packet 1C PASS on 2026-06-04 across 20 reviewed policies)
+active (DSE-021 Packet 2B PASS on 2026-06-04 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -925,6 +927,36 @@ DSE-021 Packet 1C added `deductible`, bringing the active deterministic concept 
 Deductible canonical value note:
 
 - `deductible` emits `{"schedule_dependent": true}` for operative deductible clauses where the amount is only in the policy schedule/certificate. It may include direct metadata such as `basis` or `hours` when stated in the same evidence clause. Pure definitions are not `present`.
+
+### Current DSE-021 Packet 2B Result
+
+DSE-021 Packet 2B added `room_rent_limit` and `icu_limit`, bringing the active deterministic concept set from 15 to 17 concepts. Gold labels were source-reviewed before implementation, and definition-only room/ICU text was rejected as non-operative.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 340,
+  "gold_present": 254,
+  "present_tp": 253,
+  "present_fp": 0,
+  "present_fn": 1,
+  "policies_passed": 20,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 0.996063,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 0.976471,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0,
+  "passed": true
+}
+```
+
+Room/ICU canonical value note:
+
+- `room_rent_limit` and `icu_limit` emit explicit percentage limits as `{"percentage": N, "unit": "percent_of_sum_insured_per_day"}` with optional `max_amount` and `currency` when directly stated.
+- `{"coverage_status": "actuals"}` represents actuals/no fixed limit.
+- `{"schedule_dependent": true, "basis": "policy_schedule"}` or `{"schedule_dependent": true, "basis": "product_benefits_table"}` represents operative limits whose numeric value is outside the wording clause.
+- Conditional room/ICU limits use `components` instead of collapsing distinct sum-insured/city conditions into one scalar.
 
 ### Current DSE-017 Result
 

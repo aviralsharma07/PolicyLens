@@ -918,3 +918,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Exact deductible amounts remain unavailable when the wording points only to the policy schedule/certificate.
 
 **Revisit when:** DSE-022/DSE-023 can reliably parse policy schedules or Product B needs exact deductible amounts beyond schedule-dependent status.
+
+---
+
+## 2026-06-04 — Room and ICU limits use explicit status/value shapes (ADR-0036)
+
+**Status:** accepted
+
+**Decision:** `room_rent_limit` and `icu_limit` use distinct value shapes for explicit percentage limits, actuals/no fixed limit, schedule-dependent limits, and conditional components. Definition-only text is not enough to emit `present`.
+
+**Context:** DSE-021 Packet 2A/2B found that reviewed gold labels mixed table-row bleed, definition clauses, policy-schedule dependencies, actuals/no-limit rows, and conditional sum-insured/city-specific limits. Collapsing these into one scalar would mislead Product B comparisons.
+
+**Options considered:**
+1. Store only one scalar percentage/amount when any room/ICU text is found.
+2. Store broad text snippets and defer normalization.
+3. Use explicit normalized shapes: percentage + unit, `coverage_status: actuals`, `schedule_dependent` with basis, or `components` for conditional limits.
+
+**Reasoning:** Option 3 preserves comparable values without inventing missing schedule data. It also supports policies like IFFCO and Oriental where multiple conditional limits are materially different.
+
+**Consequences:**
+- Positive: DSE-021 Packet 2B eval passes with 20/20 policies, 100% precision, 100% value accuracy, and 0 false-present facts.
+- Positive: Product B can distinguish actuals/no fixed limit from schedule-dependent unknowns.
+- Negative: Exact schedule amounts still require table/schedule remediation where the policy wording references external schedules.
+
+**Revisit when:** DSE-022 table remediation or Product B export freeze needs richer display semantics for component-shaped room/ICU limits.

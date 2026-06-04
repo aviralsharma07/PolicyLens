@@ -140,10 +140,12 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "schedule_dependent": true
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
     },
     "normalized_value_json": {
-      "schedule_dependent": true
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
     },
     "fact_status": "present",
     "scope_json": {
@@ -154,8 +156,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 2,
-    "evidence_text": "llness the date of last consultation with the Hospital/Nursing Home where treatment was taken Associated Medical means Room Rent, nursing charges, operation theatre charges, fees of Expenses Medical Practitioners (including surgeons, anesthetists and specialists) a. For Individual sum insured basis (Individual Policy), the amount specifi",
+    "evidence_page": 20,
+    "evidence_text": "2.25 Cap on Room Rent If We have accepted a Claim for In-patient Hospitalization under the Policy and if the Insured Person incurs Room Rent that is higher than the eligible Room Rent as specified in the Policy Schedule then We will be liable to pay only a rateable proportion of the Associated Medical Expenses incurred in the proportion of the difference between the eligible Room Rent and the Room Rent actually incurred.",
     "source_document": {
       "filename": "Kotak_Kotak_Health_premier.pdf",
       "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
@@ -163,10 +165,10 @@
       "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
       "uin": "KOTHLIP21065V032021"
     },
-    "value_type": "money_or_schedule",
+    "value_type": "schedule_dependent",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: room rent limit search",
+    "notes": "DSE-021 Packet 2B source-backed correction: page 20 cap clause ties eligible Room Rent to the Policy Schedule.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -177,25 +179,36 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "Corrected to schedule-dependent room rent limit based on the Cap on Room Rent clause."
       }
     ],
     "human_review_priority": "normal"
   },
   {
     "concept": "icu_limit",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 7,
+    "evidence_text": "The Covers available under this Policy are described below. Covers will be available to the Insured Person, only if that particular cover is specifically mentioned in the Policy Schedule as per the Plan opted by You, subject to (a) availability of Base Sum Insured and Cumulative Bonus(if any) (b) the terms, conditions and exclusions of this Policy and (c) any sum insured or sub-limits specified in respect of that Cover and any limits applicable under the Plan in force for the Insured Person as specified in the Policy Schedule 2.1 In-patient Treatment We will indemnify the Medical Expenses incurred on the Insured Person's Hospitalization that occurs during the Policy Period following an Illness or Injury provided that: (c) the Medical Expenses incurred are Reasonable and Customary and may be for one or more of the following: i. Room Rent and other boarding charges; ii. ICU Charges;",
     "source_document": {
       "filename": "Kotak_Kotak_Health_premier.pdf",
       "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
@@ -203,10 +216,10 @@
       "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
       "uin": "KOTHLIP21065V032021"
     },
-    "value_type": null,
+    "value_type": "schedule_dependent",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 2B source-backed correction: page 7 What We Will Pay section lists ICU Charges under inpatient treatment and ties applicable cover limits to the Policy Schedule.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -217,6 +230,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "Corrected to schedule-dependent ICU limit based on the What We Will Pay inpatient treatment clause."
       }
     ],
     "human_review_priority": "normal"

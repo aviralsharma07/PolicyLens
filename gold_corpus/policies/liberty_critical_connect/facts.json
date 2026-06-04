@@ -165,13 +165,9 @@
   },
   {
     "concept": "icu_limit",
-    "value_json": {
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -180,8 +176,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 4,
-    "evidence_text": "inical examination and expected to last throughout your life. Symptoms that are covered include numbness, increased sensitivity, paralysis, localized weakness, difficulty with speech, inability to speak, difficulty in swallowing, visual impairment, difficulty in walking, lack of coordination, tremor, seizures, lethargy, dementia, delirium and coma. 29. Nominee means the person named in the proposal or schedule to whom the benefits under the Policy is nominated by the Insured Person. 30. Notification of Claim is the process of intimating a claim to the Insurer or TPA through any of the recognized modes of comm",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
       "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
@@ -192,7 +188,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "notes": "DSE-021 Packet 2B source-backed correction: no operative ICU limit found; prior label was definition/irrelevant evidence.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -203,6 +199,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed correction: no operative ICU limit found; prior label was definition/irrelevant evidence."
       }
     ],
     "human_review_priority": "normal"

@@ -58,14 +58,14 @@ Several current gold values need correction in Packet 2B. The most important iss
 | `icici_family_shield` | ICU | present noncanonical `present_schedule_dependent` | `gold_fix_required` | Normalize to schedule-dependent ICU cash benefit. Source pages 12-13 say daily ICU cash amount and max days are specified in Policy Certificate. |
 | `iffco_tokio_health_protector` | room | present `{"amount": 5, "currency": "INR"}` | `gold_fix_required` | Fix to conditional components. Source page 13: SI >= Rs. 5 lakhs has actual expenses without room-rent capping; SI below Rs. 5 lakhs has 1.75% SI/day in Class A cities and 1.50% in other cities. |
 | `iffco_tokio_health_protector` | ICU | not_found | `gold_fix_required` | Fix to conditional components. Source page 13: ICU/therapeutic expenses 3% SI/day in Class A cities and 2.5% SI/day in other cities for SI below Rs. 5 lakhs; no ICU cap for SI >= Rs. 5 lakhs implied by the same room-rent capping structure. |
-| `kotak_mahindra_health_premier` | room | present `schedule_dependent` | `schedule_dependent_present` | Keep. Source page 20 caps room rent to eligible Room Rent specified in Policy Schedule. |
-| `kotak_mahindra_health_premier` | ICU | not_found | `not_found_after_search` | Keep. ICU appears in definitions/records but no operative ICU limit found. |
+| `kotak_mahindra_health_premier` | room | present `schedule_dependent` | `gold_fix_required` | Keep status but fix evidence/value shape. Source page 20 caps room rent to eligible Room Rent specified in Policy Schedule. |
+| `kotak_mahindra_health_premier` | ICU | not_found | `gold_fix_required` | Fix to schedule-dependent. Packet 2B source review found operative source page 7 wording: the What We Will Pay section lists ICU Charges under inpatient treatment and says applicable cover limits are specified in the Policy Schedule. |
 | `liberty_critical_connect` | room | not_found | `not_applicable_product_type` | Keep. Critical illness product, no operative room rent limit. |
 | `liberty_critical_connect` | ICU | present `schedule_dependent` | `gold_fix_required` | Fix to not_found. Current evidence is neurological-symptom wording, not an ICU benefit limit. |
 | `new_india_floater` | room | present `1%` | `operative_limit_present` | Keep. Source page 10 says room rent/boarding/nursing not exceeding 1% SI per day. |
 | `new_india_floater` | ICU | present `2%` | `operative_limit_present` | Keep. Source page 10 says ICU/ICCU not exceeding 2% SI per day. |
-| `niva_bupa_health_recharge` | room | not_found | `gold_fix_required` | Fix to schedule-dependent / eligible room category. Source page 6 lists Room Rent under inpatient care and says eligibility is as specified in Policy Schedule; page 22 has optional modification to Single Private Room. |
-| `niva_bupa_health_recharge` | ICU | not_found | `gold_fix_required` | Fix to schedule-dependent. Source page 6 lists Intensive Care Unit Charges under inpatient care and schedule-based limits. |
+| `niva_bupa_health_recharge` | room | not_found | `gold_fix_required` | Fix to product-benefits-table dependent room category/limit. Source page 37 product table says `Single private room; up to Sum Insured` for Room Rent. |
+| `niva_bupa_health_recharge` | ICU | not_found | `gold_fix_required` | Fix to explicit product table limit. Source page 37 says ICU charges up to 1% of Base Sum Insured; normalized value intentionally omits nonessential `basis` metadata. |
 | `oriental_cancer_protect` | room | present `schedule_dependent` | `gold_fix_required` | Fix to explicit conditional components. Source page 2: 1% SI with max INR 10,000/day for SI 5/10/15 lakh, and max INR 25,000/day for SI 20/25/50 lakh, actuals if lower. |
 | `oriental_cancer_protect` | ICU | present `schedule_dependent` | `gold_fix_required` | Fix to `{"coverage_status": "actuals"}`. Source page 2 says ICU or specialised expenses are `Actuals`. |
 | `reliance_health_gain` | room | not_found | `gold_fix_required` | Fix to schedule-dependent. Source pages 5-6 list Room Rent under hospitalization expenses and say limits are specified in Policy Schedule. |
@@ -74,8 +74,8 @@ Several current gold values need correction in Packet 2B. The most important iss
 | `royal_sundaram_advanced_topup` | ICU | not_found | `gold_fix_required` | Fix to schedule-dependent. Source page 12 explicitly lists ICU/ICCU expenses under inpatient care subject to Product Benefits Table / schedule sub-limits. |
 | `sbi_general_arogya_sanjeevani` | room | present `schedule_dependent` | `gold_fix_required` | Fix to 2% SI/day. Source page 7 says room rent up to 2% SI, max Rs. 5,000 per day. |
 | `sbi_general_arogya_sanjeevani` | ICU | not_found | `gold_fix_required` | Fix to 5% SI/day. Source page 7 says ICU/ICCU up to 5% SI, max Rs. 10,000 per day. |
-| `star_medi_classic_accident` | room | present `policy_schedule` | `gold_fix_required` | Fix to actuals/no specific sub-limit. Source page 3 CIS says room/ICU charges beyond sublimit: Nil; no operative room-rent cap was found. |
-| `star_medi_classic_accident` | ICU | present `policy_schedule` | `gold_fix_required` | Fix to actuals/no specific sub-limit for the same source reason. |
+| `star_medi_classic_accident` | room | present `policy_schedule` | `gold_fix_required` | Fix to explicit 2% SI/day, max Rs. 5,000/day. Packet 2B implementation review found the operative wording on source page 4: `Room, boarding, nursing expenses ... at 2% of the Sum Insured, subject to a maximum of Rs.5,000/- per day`. |
+| `star_medi_classic_accident` | ICU | present `policy_schedule` | `gold_fix_required` | Fix to not_found. The CIS row mentions `Room/ICU charges beyond Nil`, but no operative ICU limit clause was found in the policy wording; do not infer present from the CIS shorthand alone. |
 | `tata_aig_arogya_sanjeevani` | room | present `schedule_dependent` | `gold_fix_required` | Fix to 2% SI/day. Source page 7 says room rent up to 2% SI, max Rs. 5,000 per day. |
 | `tata_aig_arogya_sanjeevani` | ICU | not_found | `gold_fix_required` | Fix to 5% SI/day. Source page 7 says ICU/ICCU up to 5% SI, max Rs. 10,000 per day. |
 | `united_india_individual_health` | room | present `1%` | `operative_limit_present` | Keep; add canonical unit if patched. Source pages 6 and 20 say 1% SI per day. |
@@ -92,13 +92,14 @@ Packet 2B should apply only the source-backed fixes listed above. High-confidenc
 - Future Generali: room and ICU schedule-dependent.
 - ICICI: normalize ICU cash schedule-dependent shape.
 - IFFCO Tokio: room and ICU conditional components.
+- Kotak: add policy-schedule basis to room rent and fix ICU to schedule-dependent.
 - Liberty: ICU to not_found.
-- Niva Bupa: room and ICU schedule-dependent.
+- Niva Bupa: room product-benefits-table dependent; ICU 1% SI/day from product benefits table.
 - Oriental: room conditional components, ICU actuals.
 - Reliance: room and ICU schedule-dependent.
 - Royal Sundaram: ICU schedule-dependent.
 - SBI: room 2% SI/day, ICU 5% SI/day.
-- Star: room and ICU actuals/no fixed sub-limit.
+- Star: room 2% SI/day, max Rs. 5,000/day; ICU not_found because the policy wording lacks an operative ICU limit.
 - Tata AIG: room 2% SI/day, ICU 5% SI/day.
 - United India: ICU 2% SI/day; room unit normalization optional.
 

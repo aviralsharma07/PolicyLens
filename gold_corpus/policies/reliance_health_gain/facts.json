@@ -144,19 +144,25 @@
   },
   {
     "concept": "room_rent_limit",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 5,
+    "evidence_text": "23) means assisting an Insured Person who, Rehabilitation following a medical condition, requires assistance in physical, If any of the is diagnosed with any or suffers InsuredPersonIllness vocational, independent living and educational pursuits to any that requires , (including InjuryHospitalizationHospitalization restore him to the position in which he was in, prior to such under ), during the , then the AYUSHTreatmentPolicyPeriod medical condition occurring. shall pay incurred by the CompanyMedicalExpensesPolicyholder/ 24) means an additional medical opinion obtained , subject to the limits, terms, conditions and exclusions Second OpinionInsured Person from a solely on the or mentioned un",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -167,7 +173,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -178,25 +184,36 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"
   },
   {
     "concept": "icu_limit",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true,
+      "basis": "policy_schedule"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 5,
+    "evidence_text": "23) means assisting an Insured Person who, Rehabilitation following a medical condition, requires assistance in physical, If any of the is diagnosed with any or suffers InsuredPersonIllness vocational, independent living and educational pursuits to any that requires , (including InjuryHospitalizationHospitalization restore him to the position in which he was in, prior to such under ), during the , then the AYUSHTreatmentPolicyPeriod medical condition occurring. shall pay incurred by the CompanyMedicalExpensesPolicyholder/ 24) means an additional medical opinion obtained , subject to the limits, terms, conditions and exclusions Second OpinionInsured Person from a solely on the or mentioned un",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -207,7 +224,7 @@
     "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -218,6 +235,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"

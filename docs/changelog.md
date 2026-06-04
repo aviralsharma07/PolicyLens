@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 2B: Room Rent + ICU Extractors)
+
+### Added
+- `RoomRentLimitExtractor` and `IcuLimitExtractor` with conservative handling for operative percentage limits, actuals/no fixed limits, schedule-dependent limits, and conditional component values.
+- Regression tests for Arogya-style percentage limits, actuals, schedule-dependent wording, definition-only rejection, paired table-like room/ICU clauses, and IFFCO conditional components.
+- `runs/evals/2026-06-04-fact-extraction-dse021-room-icu.json` final passing eval artifact.
+
+### Changed
+- `room_rent_limit` and `icu_limit` are now active deterministic concepts in `TARGET_CONCEPTS` and the ontology registry.
+- Room/ICU gold labels were corrected only where Packet 2A/2B source review proved the old label/value/evidence wrong or noncanonical.
+
+### Fixed
+- Corrected Kotak ICU from `not_found` to schedule-dependent after source review found ICU Charges under the operative What We Will Pay inpatient-treatment clause.
+- Corrected Kotak room-rent evidence from a definition-like snippet to the operative Cap on Room Rent clause.
+
+### Known Issues
+- These extractors read clauses/table-like text from existing section trees. They do not remediate physical table extraction or header lineage; DSE-022 remains responsible for table-engine quality.
+
 ## 2026-06-04 (DSE-021 — Packet 2A: Room Rent + ICU Gold Audit)
 
 ### Added

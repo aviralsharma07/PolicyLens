@@ -109,8 +109,8 @@
       "value_shape": "room_rent_limit",
       "export_field": "room_rent_limit",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": [
         "present",
         "explicitly_not_covered"
@@ -137,8 +137,8 @@
       "value_shape": "icu_limit",
       "export_field": "icu_limit",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": [
         "present",
         "explicitly_not_covered"

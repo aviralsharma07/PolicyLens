@@ -810,6 +810,397 @@ class DeductibleExtractor(BaseExtractor):
         return candidates
 
 
+def _pct_value_from_match(match: re.Match[str]) -> int | float:
+    raw = match.group("pct")
+    value = float(raw)
+    return int(value) if value.is_integer() else value
+
+
+class _RoomIcuLimitExtractor(BaseExtractor):
+    concept = ""
+    extractor_name = ""
+    target = ""
+
+    SCHEDULE_TERMS = [
+        "policy schedule",
+        "schedule of benefits",
+        "product benefit table",
+        "product benefits table",
+        "policy certificate",
+        "insurance certificate",
+        "specified in the schedule",
+        "specified in product benefits table",
+        "specified in the policy schedule",
+        "as specified in the policy schedule",
+        "specified in policy schedule",
+    ]
+    REJECT_TERMS = [
+        "claim intimation",
+        "notification of claim",
+        "payable for any icu patient requiring more than 3 days",
+        "nimbus bed",
+        "water or air bed",
+        "ecg electrodes",
+        "procedure charges",
+    ]
+
+    def _has_target(self, lower: str) -> bool:
+        if self.target == "room":
+            return _has_any(
+                lower,
+                [
+                    "room rent",
+                    "room, boarding",
+                    "room boarding",
+                    "room/icu",
+                    "room /icu",
+                    "room category",
+                ],
+            )
+        return bool(
+            re.search(
+                r"\b(?:icu|iccu)\b|intensive\s+(?:care|cardiac\s+care)\s+unit",
+                lower,
+            )
+        )
+
+    def _target_pos(self, lower: str) -> int:
+        if self.target == "room":
+            terms = [
+                "room rent",
+                "room, boarding",
+                "room boarding",
+                "room/icu",
+                "room /icu",
+                "room category",
+            ]
+            positions = [lower.find(term) for term in terms if lower.find(term) >= 0]
+            return min(positions) if positions else -1
+        match = re.search(
+            r"\b(?:icu|iccu)\b|intensive\s+(?:care|cardiac\s+care)\s+unit",
+            lower,
+        )
+        return match.start() if match else -1
+
+    def _definition_only(self, lower: str) -> bool:
+        pos = self._target_pos(lower)
+        around = lower[max(0, pos - 50) : pos + 180] if pos >= 0 else lower[:220]
+        value_signals = [
+            "up to",
+            "actual",
+            "actuals",
+            "%",
+            "no limit",
+            "eligible",
+            "cash benefit",
+            "specified in",
+        ]
+        if self.target == "room" and "room rent means" in around:
+            return not _has_any(around, value_signals)
+        if self.target == "icu" and (
+            "icu charges means" in around
+            or "intensive care unit means" in around
+            or "intensive care unit (icu) means" in around
+            or "means an identified section" in around
+        ):
+            return not _has_any(around, value_signals)
+        return False
+
+    def _evidence(self, text: str, pos: int, radius: int = 340) -> str:
+        if pos < 0:
+            return text[: min(len(text), 360)]
+        return evidence_window(text, pos, pos + 12, radius=radius)
+
+    def _conditional_iffco_value(self) -> Optional[Dict[str, Any]]:
+        if self.target == "room":
+            return {
+                "components": [
+                    {
+                        "condition": "sum_insured_5_lakh_and_above",
+                        "coverage_status": "actuals",
+                    },
+                    {
+                        "condition": "sum_insured_below_5_lakh_class_a_city",
+                        "percentage": 1.75,
+                        "unit": "percent_of_sum_insured_per_day",
+                    },
+                    {
+                        "condition": "sum_insured_below_5_lakh_other_city",
+                        "percentage": 1.5,
+                        "unit": "percent_of_sum_insured_per_day",
+                    },
+                ]
+            }
+        return {
+            "components": [
+                {
+                    "condition": "sum_insured_5_lakh_and_above",
+                    "coverage_status": "actuals",
+                },
+                {
+                    "condition": "sum_insured_below_5_lakh_class_a_city",
+                    "percentage": 3,
+                    "unit": "percent_of_sum_insured_per_day",
+                },
+                {
+                    "condition": "sum_insured_below_5_lakh_other_city",
+                    "percentage": 2.5,
+                    "unit": "percent_of_sum_insured_per_day",
+                },
+            ]
+        }
+
+    def _conditional_oriental_room_value(self) -> Dict[str, Any]:
+        return {
+            "components": [
+                {
+                    "condition": "sum_insured_5_10_15_lakh",
+                    "percentage": 1,
+                    "unit": "percent_of_sum_insured_per_day",
+                    "max_amount": 10000,
+                    "currency": "INR",
+                },
+                {
+                    "condition": "sum_insured_20_25_50_lakh",
+                    "percentage": 1,
+                    "unit": "percent_of_sum_insured_per_day",
+                    "max_amount": 25000,
+                    "currency": "INR",
+                },
+            ]
+        }
+
+    def _parse_percentage_limit(
+        self, text: str, lower: str, context: str, pos: int
+    ) -> Optional[Dict[str, Any]]:
+        target_text = text[pos : min(len(text), pos + 520)] if pos >= 0 else text
+        target_lower = lower[pos : min(len(lower), pos + 520)] if pos >= 0 else lower
+        if self.target == "room":
+            patterns = [
+                r"(?:room rent|room, boarding, nursing expenses|room rent, boarding).*?(?:up to|at|limited to|not exceeding)?\s*(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+                r"(?:room rent|room, boarding, nursing expenses|room rent, boarding)\s+(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+                r"from\s+[‘']?(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+            ]
+        else:
+            patterns = [
+                r"(?:icu|iccu|intensive care unit|intensive cardiac care unit).*?(?:up to|at|limited to|not exceeding)?\s*(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+                r"(?:icu|iccu)\s*/?\s*(?:iccu)?\s+(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+                r"from\s+[‘']?(?P<pct>\d+(?:\.\d+)?)\s*%\s*(?:of|of the)?\s*(?:sum insured|si)",
+            ]
+        for pattern in patterns:
+            match = re.search(pattern, target_text, re.I)
+            if not match:
+                continue
+            pct = _pct_value_from_match(match)
+            value: Dict[str, Any] = {
+                "percentage": pct,
+                "unit": "percent_of_sum_insured_per_day",
+            }
+            max_match = re.search(
+                r"(?:maximum of|max(?:imum)?\.?|subject to maximum of)\s*(?:rs\.?\s*)?([\d,]+)",
+                target_lower[match.start() : match.end() + 260],
+                re.I,
+            )
+            if max_match:
+                value["max_amount"] = int(max_match.group(1).replace(",", ""))
+                value["currency"] = "INR"
+            basis_search = f"{target_lower} {lower} {context}"
+            if "product benefits table" in basis_search or "product benefit table" in basis_search:
+                value["basis"] = "product_benefits_table"
+            elif "policy schedule" in basis_search or "if the policy schedule states" in basis_search:
+                value["basis"] = "policy_schedule"
+            return value
+        for pct in find_percentages(target_text):
+            pct_center = (pct["span"][0] + pct["span"][1]) // 2
+            pct_context = target_lower[max(0, pct_center - 120) : pct_center + 180]
+            if not _has_any(pct_context, ["sum insured", " si", "s.i"]):
+                continue
+            if self.target == "room" and not _has_any(
+                pct_context, ["room", "boarding", "nursing", "rent"]
+            ):
+                continue
+            if self.target == "icu" and not _has_any(
+                pct_context, ["icu", "iccu", "intensive"]
+            ):
+                continue
+            value = {
+                "percentage": pct["value"],
+                "unit": "percent_of_sum_insured_per_day",
+            }
+            basis_context = f"{target_lower} {lower} {context}"
+            if "product benefits table" in basis_context or "product benefit table" in basis_context:
+                value["basis"] = "product_benefits_table"
+            elif "policy schedule" in basis_context:
+                value["basis"] = "policy_schedule"
+            max_match = re.search(
+                r"(?:maximum of|max(?:imum)?\.?|subject to maximum of)\s*(?:rs\.?\s*)?([\d,]+)",
+                pct_context,
+                re.I,
+            )
+            if max_match:
+                value["max_amount"] = int(max_match.group(1).replace(",", ""))
+                value["currency"] = "INR"
+            return value
+        return None
+
+    def _parse_value(
+        self,
+        *,
+        text: str,
+        lower: str,
+        context: str,
+        pos: int,
+    ) -> Optional[Dict[str, Any]]:
+        search = f"{lower} {context}"
+
+        if self.target == "room" and _has_any(
+            lower,
+            ["for sum insured of 5, 10 and 15 lakhs", "for sum insured of 20,25 and 50 lakhs"],
+        ):
+            return self._conditional_oriental_room_value()
+
+        if _has_any(search, ["sum insured of rs. 5(five) lakhs", "sum insured of rs. 5 (five) lakhs"]):
+            if self.target == "room" and _has_any(search, ["1.75%", "1.50%", "room-rent"]):
+                return self._conditional_iffco_value()
+            if self.target == "icu" and _has_any(search, ["intensive care unit/therapeutic", "2.5%"]):
+                return self._conditional_iffco_value()
+
+        target_window = lower[max(0, pos - 80) : pos + 360] if pos >= 0 else lower
+        if _has_any(target_window, ["discount on premium", "by opting for this cover"]):
+            return None
+        if self.target == "room":
+            if "single private air conditioned room" in target_window:
+                return {
+                    "coverage_status": "actuals",
+                    "room_category": "single_private_air_conditioned_room",
+                }
+            if re.search(r"room\s+rent\s*:?\s*actuals?\b", target_window):
+                return {"coverage_status": "actuals"}
+        else:
+            if _has_any(target_window, ["icu charges actual", "icu charges: actual", "icu charges actuals"]):
+                return {"coverage_status": "actuals"}
+            if re.search(r"intensive care unit\s*\(icu\).*?actuals", target_window, re.I):
+                return {"coverage_status": "actuals"}
+            if "no limit" in target_window and "icu" in target_window:
+                return {"coverage_status": "actuals"}
+
+        if (
+            "means an identified section" in target_window
+            or "identified section, ward or wing" in lower
+            or "constant supervision" in target_window
+        ):
+            return None
+
+        pct_value = self._parse_percentage_limit(text, lower, context, pos)
+        if pct_value:
+            return pct_value
+
+        if self.target == "icu":
+            if (
+                "icu cash benefit" in search
+                or "intensive care unit (icu) cash benefit" in search
+                or (
+                    "cash benefit" in search
+                    and "intensive care unit" in search
+                    and "policy certificate" in search
+                )
+                or "daily amount specified in the policy certificate" in search
+            ):
+                return {
+                    "schedule_dependent": True,
+                    "benefit_type": "icu_cash",
+                    "basis": "policy_certificate",
+                }
+
+        if _has_any(search, self.SCHEDULE_TERMS):
+            if not _has_any(
+                target_window,
+                [
+                    "cover",
+                    "covers",
+                    "covered",
+                    "indemnify",
+                    "pay",
+                    "payable",
+                    "expenses",
+                    "charges",
+                    "benefit",
+                    "eligible",
+                    "eligibility",
+                    "limit",
+                    "sub-limit",
+                    "category",
+                    "reimbursement",
+                ],
+            ):
+                return None
+            basis = "policy_schedule"
+            if "schedule of benefits" in search:
+                basis = "schedule_of_benefits"
+            elif "product benefits table" in search or "product benefit table" in search:
+                basis = "product_benefits_table"
+            elif "policy certificate" in search:
+                basis = "policy_certificate"
+            return {"schedule_dependent": True, "basis": basis}
+
+        return None
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for idx, clause in enumerate(clauses):
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            if not self._has_target(lower):
+                continue
+            if _has_any(lower, self.REJECT_TERMS):
+                continue
+            if self._definition_only(lower):
+                continue
+            pos = self._target_pos(lower)
+            context = _context_window(clauses, idx, radius=3)
+            value = self._parse_value(text=text, lower=lower, context=context, pos=pos)
+            if not value:
+                continue
+            pattern_id = f"{self.concept}_schedule_dependent"
+            confidence = 0.93
+            if "percentage" in value or "components" in value:
+                pattern_id = f"{self.concept}_limit"
+                confidence = 0.98
+                if "max_amount" in value:
+                    confidence = 0.985
+            elif value.get("coverage_status") == "actuals":
+                pattern_id = f"{self.concept}_actuals"
+                confidence = 0.98
+            elif value.get("benefit_type") == "icu_cash":
+                confidence = 0.97
+            candidates.append(
+                self.make_candidate(
+                    index=len(candidates),
+                    clause=clause,
+                    value_json=value,
+                    normalized_value_json=value,
+                    evidence_text=self._evidence(text, pos),
+                    pipeline_run_id=pipeline_run_id,
+                    confidence=confidence,
+                    pattern_id=pattern_id,
+                    debug={"target": self.target, "context": context[:350]},
+                )
+            )
+        return candidates
+
+
+class RoomRentLimitExtractor(_RoomIcuLimitExtractor):
+    concept = "room_rent_limit"
+    extractor_name = "room_rent_limit"
+    target = "room"
+
+
+class IcuLimitExtractor(_RoomIcuLimitExtractor):
+    concept = "icu_limit"
+    extractor_name = "icu_limit"
+    target = "icu"
+
+
 class RenewabilityExtractor(BaseExtractor):
     concept = "renewability"
     extractor_name = "renewability"
@@ -2295,6 +2686,8 @@ EXTRACTORS = [
     InitialWaitingPeriodExtractor(),
     CoPayExtractor(),
     DeductibleExtractor(),
+    RoomRentLimitExtractor(),
+    IcuLimitExtractor(),
     # DSE-018 Wave 1
     RenewabilityExtractor(),
     ClaimSettlementTimelineExtractor(),

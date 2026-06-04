@@ -122,54 +122,40 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "schedule_dependent": true
+      "components": [
+        {
+          "condition": "sum_insured_5_10_15_lakh",
+          "percentage": 1,
+          "unit": "percent_of_sum_insured_per_day",
+          "max_amount": 10000,
+          "currency": "INR"
+        },
+        {
+          "condition": "sum_insured_20_25_50_lakh",
+          "percentage": 1,
+          "unit": "percent_of_sum_insured_per_day",
+          "max_amount": 25000,
+          "currency": "INR"
+        }
+      ]
     },
     "normalized_value_json": {
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
-    "scope_json": {
-      "policy_scope": "base_policy"
-    },
-    "condition_json": null,
-    "extraction_method": "manual",
-    "confidence": 1.0,
-    "evidence_span_id": null,
-    "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 4,
-    "evidence_text": "4 NOTE – A . PROPORTIONATE CLAUSE: If the Insured Person is admitted in the hospital in a room where the room category or the Room Rent incurred is higher than the eligibility as specified in the Policy Schedule/ Certificate of Insurance, then the Policyholder/ Insured Person shall bear a rateable proportion of the total & specified Associated Medical Expenses (including surcharge or taxes thereon) in the proportion of the difference between the Room Rent of the entitled room ca",
-    "source_document": {
-      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
-      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
-      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
-      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
-      "uin": "OICHLIP21007V012122"
-    },
-    "value_type": "money_or_schedule",
-    "annotator": "Codex DSE-012 source-PDF human review",
-    "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: room rent limit search",
-    "quality_passes": [
-      {
-        "pass_id": "pass_3_fact_precision_review",
-        "result": "reviewed",
-        "note": "Retained for compatibility with gold corpus validation."
-      },
-      {
-        "pass_id": "pass_dse012_source_pdf_human_review",
-        "result": "reviewed",
-        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
-      }
-    ],
-    "human_review_priority": "normal"
-  },
-  {
-    "concept": "icu_limit",
-    "value_json": {
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "schedule_dependent": true
+      "components": [
+        {
+          "condition": "sum_insured_5_10_15_lakh",
+          "percentage": 1,
+          "unit": "percent_of_sum_insured_per_day",
+          "max_amount": 10000,
+          "currency": "INR"
+        },
+        {
+          "condition": "sum_insured_20_25_50_lakh",
+          "percentage": 1,
+          "unit": "percent_of_sum_insured_per_day",
+          "max_amount": 25000,
+          "currency": "INR"
+        }
+      ]
     },
     "fact_status": "present",
     "scope_json": {
@@ -181,7 +167,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 2,
-    "evidence_text": "25000/- per Day or actual expenses incurred, whichever is less iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home. iv. Surgeon, Anesthetist, Medical Practitioner, As per the limits of Sum Insured & subject to Consultants, Specialists Fees Proportionate Clause wherever applicable v. Anesthesia, Blood, Oxygen, Operation",
+    "evidence_text": "iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home.",
     "source_document": {
       "filename": "Oriental_Oriental_Cancer_Protect.pdf",
       "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
@@ -192,7 +178,7 @@
     "value_type": "money_or_schedule",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: ICU limit search",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -203,6 +189,60 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
+      }
+    ],
+    "human_review_priority": "normal"
+  },
+  {
+    "concept": "icu_limit",
+    "value_json": {
+      "coverage_status": "actuals"
+    },
+    "normalized_value_json": {
+      "coverage_status": "actuals"
+    },
+    "fact_status": "present",
+    "scope_json": {
+      "policy_scope": "base_policy"
+    },
+    "condition_json": null,
+    "extraction_method": "manual",
+    "confidence": 1.0,
+    "evidence_span_id": null,
+    "pipeline_run_id": "gold_manual_dse012",
+    "evidence_page": 2,
+    "evidence_text": "iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home.",
+    "source_document": {
+      "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+      "source_pdf_path": "07_Oriental_Insurance/Oriental_Oriental_Cancer_Protect.pdf",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "document_id": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "uin": "OICHLIP21007V012122"
+    },
+    "value_type": "money_or_schedule",
+    "annotator": "Codex DSE-012 source-PDF human review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
+    "quality_passes": [
+      {
+        "pass_id": "pass_3_fact_precision_review",
+        "result": "reviewed",
+        "note": "Retained for compatibility with gold corpus validation."
+      },
+      {
+        "pass_id": "pass_dse012_source_pdf_human_review",
+        "result": "reviewed",
+        "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal"

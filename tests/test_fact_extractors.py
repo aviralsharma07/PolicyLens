@@ -8,8 +8,10 @@ from extractors.deterministic import (
     FreeLookExtractor,
     GracePeriodExtractor,
     InitialWaitingPeriodExtractor,
+    IcuLimitExtractor,
     MaternityWaitingExtractor,
     PedWaitingPeriodExtractor,
+    RoomRentLimitExtractor,
     SpecificDiseaseWaitingPeriodsExtractor,
 )
 from extractors.models import TARGET_CONCEPTS
@@ -653,6 +655,100 @@ def test_deductible_detects_time_deductible_hours():
         "hours": 48,
         "basis": "daily_cash_allowance",
     }
+
+
+def test_room_rent_extracts_one_percent_si_limit():
+    fact = accepted_for(
+        "room_rent_limit",
+        [
+            clause(
+                "Room Rent, boarding and nursing expenses as provided by the Hospital "
+                "not exceeding 1% of the Sum Insured per day."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {
+        "percentage": 1,
+        "unit": "percent_of_sum_insured_per_day",
+    }
+
+
+def test_icu_extracts_two_percent_si_limit():
+    fact = accepted_for(
+        "icu_limit",
+        [
+            clause(
+                "Charges for accommodation in Intensive Care Unit (ICU)/ICCU up to "
+                "2% of Sum Insured per day or actual expenses whichever is less."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {
+        "percentage": 2,
+        "unit": "percent_of_sum_insured_per_day",
+    }
+
+
+def test_room_and_icu_extract_actuals_from_table_like_clause():
+    clauses = [
+        clause(
+            "Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual "
+            "Pre Hospitalization 30 Days 3% of hospital expenses."
+        )
+    ]
+    room_fact = accepted_for("room_rent_limit", clauses)
+    icu_fact = accepted_for("icu_limit", clauses)
+    assert room_fact["normalized_value_json"] == {
+        "coverage_status": "actuals",
+        "room_category": "single_private_air_conditioned_room",
+    }
+    assert icu_fact["normalized_value_json"] == {"coverage_status": "actuals"}
+
+
+def test_room_and_icu_extract_schedule_dependent_limits():
+    clauses = [
+        clause(
+            "The Policy covers room rent and ICU charges subject to the limits "
+            "specified in the Policy Schedule."
+        )
+    ]
+    assert accepted_for("room_rent_limit", clauses)["normalized_value_json"] == {
+        "schedule_dependent": True,
+        "basis": "policy_schedule",
+    }
+    assert accepted_for("icu_limit", clauses)["normalized_value_json"] == {
+        "schedule_dependent": True,
+        "basis": "policy_schedule",
+    }
+
+
+def test_room_and_icu_reject_definition_only_clauses():
+    clauses = [
+        clause("Room Rent means the amount charged by a Hospital towards Room and Boarding expenses."),
+        clause("ICU Charges means the amount charged by a Hospital towards ICU expenses."),
+    ]
+    assert accepted_for("room_rent_limit", clauses)["fact_status"] == "not_found"
+    assert accepted_for("icu_limit", clauses)["fact_status"] == "not_found"
+
+
+def test_iffco_room_and_icu_components_are_preserved():
+    clauses = [
+        clause(
+            "Room Rent Expenses: In respect of sum insured of Rs. 5(five) lakhs and "
+            "above, room-rent expenses will be payable according to actual expenses "
+            "without any room rent expenses capping limits. In respect of sum insured "
+            "less than Rs.5 lakhs, class A cities have a limit of 1.75% of the sum "
+            "insured per day and other cities have a limit of 1.50%. For Intensive "
+            "Care Unit/Therapeutic Expenses: class A cities have 3% of the sum insured "
+            "per day and other cities 2.5% of the sum insured per day."
+        )
+    ]
+    room_fact = accepted_for("room_rent_limit", clauses)
+    icu_fact = accepted_for("icu_limit", clauses)
+    assert room_fact["normalized_value_json"]["components"][1]["percentage"] == 1.75
+    assert icu_fact["normalized_value_json"]["components"][1]["percentage"] == 3
 
 
 def test_registry_emits_not_found_for_missing_safe_candidate():

@@ -155,10 +155,16 @@
   {
     "concept": "room_rent_limit",
     "value_json": {
-      "type": "policy_schedule_or_plan_limit"
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "normalized_value_json": {
-      "basis": "policy_schedule"
+      "percentage": 2,
+      "unit": "percent_of_sum_insured_per_day",
+      "max_amount": 5000,
+      "currency": "INR"
     },
     "fact_status": "present",
     "scope_json": {
@@ -169,8 +175,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 3,
-    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 3 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. Loss Sharing Section I In case of a claim, this policy requires you to share the following costs: Expenses exceeding the followings Sublimits 1. Room/ICU charges beyond 2. For the following speciﬁed diseases: 3. Deductible 4. Co-Payment 1.0(A) Nil Nil 3 (21) Loss Sharing Section II In case of a claim, this policy required you to share the costs No cost sharing applicable for this policy Renewal Condition (Section I) Lifelong renewal subject to payment of renew",
+    "evidence_page": 4,
+    "evidence_text": "A) Room, boarding, nursing expenses as provided by the Hospital / Nursing Home at 2% of the Sum Insured, subject to a maximum of Rs.5,000/- per day B) Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees. C) Anesthesia, blood, oxygen, operation theatre charges, surgical appliances, medicines and drugs, diagnostic materials and X-ray, diagnostic imaging modalities, dialysis, chemotherapy, radiotherapy, cost of pacemaker, stent, similar expenses. With regard to coronary stenting, the company will pay such amount up to the extent of cost of bare metal stent/drug eluting cobalt-chromium stent/drug eluting stainless steel stent. D) Emergency ambulance charges up-to a sum of Rs",
     "source_document": {
       "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
       "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
@@ -181,7 +187,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -192,6 +198,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed room/ICU correction from audited source wording."
       }
     ],
     "human_review_priority": "normal",
@@ -203,13 +214,9 @@
   },
   {
     "concept": "icu_limit",
-    "value_json": {
-      "type": "policy_schedule_or_plan_limit"
-    },
-    "normalized_value_json": {
-      "basis": "policy_schedule"
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -218,8 +225,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 3,
-    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 3 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. Loss Sharing Section I In case of a claim, this policy requires you to share the following costs: Expenses exceeding the followings Sublimits 1. Room/ICU charges beyond 2. For the following speciﬁed diseases: 3. Deductible 4. Co-Payment 1.0(A) Nil Nil 3 (21) Loss Sharing Section II In case of a claim, this policy required you to share the costs No cost sharing applicable for this policy Renewal Condition (Section I) Lifelong renewal subject to payment of renew",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
       "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
@@ -230,7 +237,7 @@
     "value_type": "percentage_or_policy_limit",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-021 Packet 2B source-backed correction: no operative ICU limit found; prior label was definition/irrelevant evidence.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -241,6 +248,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_room_icu_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 2B source-backed correction: no operative ICU limit found; prior label was definition/irrelevant evidence."
       }
     ],
     "human_review_priority": "normal",
