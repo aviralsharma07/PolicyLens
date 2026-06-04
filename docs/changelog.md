@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Residual Zero-Clause Classification)
+
+### Added
+- `scripts/dse024_classify_residual_zero_clause.py` — diagnostic-only script to classify 110 zero-clause policies.
+- `data/reports/dse024_residual_zero_clause_classification_v1.json` — per-policy classification into 6 buckets.
+- `data/reports/dse024_residual_zero_clause_classification_v1.md` — Markdown report with top 20 fix candidates.
+
+### Results
+- 110 zero-clause policies classified:
+  - **section_tree_fail** (44): fallback headings exist, need section tree rebuild
+  - **heading_miss** (34): plausible near-miss headings below t=0.5
+  - **duplicate_or_superseded** (14): duplicate-hash policies from same PDF
+  - **needs_manual_review** (10): unclear without human inspection
+  - **non_policy_or_rider** (6): brochures, riders, prospectuses
+  - **unsupported_format** (2): very short or product-list documents
+- 0 unclassified, 0 code behavior changes in this packet.
+- Top 20 highest-confidence parser-fix candidates listed with per-policy evidence.
+
+### Known Issues
+- 44 section_tree_fail policies could be resolved simply by rebuilding section tree after fallback promotion (headings already computed, no scorer changes needed).
+- 34 heading_miss policies need format-specific heading pattern additions (not threshold lowering).
+- 14 duplicate_or_superseded policies don't need parser fixes — deduplication will remove them.
+
 ## 2026-06-04 (DSE-024 — Fallback Heading Promotion Layer)
 
 ### Added

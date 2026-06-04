@@ -178,6 +178,18 @@ Current capability:
 - **Gold section tree eval: 19/20 FAIL** — unchanged pre-existing `oriental_cancer_protect` tree-accuracy issue.
 - **Triage report regenerated:** reflects 110 zero-clause policies.
 - **Recommendation:** continue DSE-024 with remaining zero-clause classification/corpus filtering or more format-specific fallback guards. DSE-021 remains blocked.
+**Phase E1 — Residual Zero-Clause Classification Results (2026-06-04):**
+- **110 remaining zero-clause policies classified into 6 actionable buckets:**
+  - **section_tree_fail (44):** fallback-headings exist, section tree not rebuilt; highest-confidence fix (just re-run section tree with fallback headings)
+  - **heading_miss (34):** plausible near-miss headings below t=0.5; need format-specific heading pattern additions
+  - **duplicate_or_superseded (14):** same-hash duplicates; deduplication removes them
+  - **needs_manual_review (10):** unclear without human PDF inspection
+  - **non_policy_or_rider (6):** brochures, riders, prospectuses; document-type filtering
+  - **unsupported_format (2):** very short (<6 pages) or product-list documents
+- **Top 20 parser-fix candidates** identified: highest max_score (0.4738–0.499) among section_tree_fail + heading_miss categories.
+- **0 unclassified, 0 code behavior changes** in this packet.
+- **Outputs:** `data/reports/dse024_residual_zero_clause_classification_v1.json`, `.md`.
+- **Next step:** Fix 44 section_tree_fail policies (rebuild section tree after fallback), then tackle 34 heading_miss policies.
 **Acceptance Criteria:**
 - [x] 132 zero-clause list classified 100% by root cause (Phase A — DONE).
 - [x] 20 representative failures documented with exact failure mechanism (Phase B — DONE).
