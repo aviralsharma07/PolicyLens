@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-06-05 (DSE-021 — Final Full Chain)
+
+### Added
+- `runs/evals/2026-06-05-fact-extraction-dse021-final.json` — final 20-concept deterministic extraction eval.
+- `runs/evals/2026-06-05-fact-scoring-dse021-final.json` — final SQLite fact scoring eval.
+- `runs/evals/2026-06-05-export-dse021-final.json` — final Product B export eval.
+
+### Changed
+- DSE-021 marked done after all 20 priority concepts passed the full 20-policy chain: extraction, clause store/source spans, fact scoring, export, gold validation, and full pytest.
+
+### Fixed
+- Completed deterministic concept coverage for the 20-policy benchmark without adding LLM, table remediation, Product B code, or raw PDF changes.
+
+### Known Issues
+- Some exact limits remain intentionally conservative when the current section-tree evidence cannot safely carry source-PDF percentages; parser/table remediation remains a separate DSE-022 concern.
+
 ## 2026-06-05 (DSE-021 — Packet 3B: Coverage Wave Extractors)
 
 ### Added

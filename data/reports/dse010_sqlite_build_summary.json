@@ -1,17 +1,18 @@
 {
-  "pipeline_run_id": "clause_store_dse018_final_2026_06_02",
-  "git_commit": "94d8680239b52b605e658a7f4a59247193bf13f8",
-  "date": "2026-06-02",
+  "pipeline_run_id": "clause_store_dse021_final_2026_06_05",
+  "git_commit": "225fa87864fa7251e18ed3ad8aca49aa5c7f139d",
+  "date": "2026-06-05",
   "db_path": "data/engine.sqlite",
   "db_gitignored": true,
   "policies_ingested": 20,
   "policies_total": 20,
-  "db_size_bytes": 86450176,
-  "db_size_mb": 82.45,
+  "policies_skipped_duplicate_hash": 0,
+  "db_size_bytes": 86798336,
+  "db_size_mb": 82.78,
   "table_row_counts": {
     "derived_policy_features": 0,
     "document_blocks": 66,
-    "document_issues": 1683,
+    "document_issues": 1744,
     "document_lines": 56854,
     "document_pages": 813,
     "document_sections": 4190,
@@ -26,7 +27,7 @@
     "product_versions": 20,
     "products": 20,
     "source_documents": 20,
-    "source_spans": 26525,
+    "source_spans": 26602,
     "sqlite_sequence": 1,
     "validation_labels": 0
   },
@@ -41,14 +42,14 @@
       "clauses": 854,
       "clause_body_spans": 854,
       "table_cell_spans": 1988,
-      "fact_evidence_spans": 12,
-      "total_source_spans": 2854,
+      "fact_evidence_spans": 16,
+      "total_source_spans": 2858,
       "tables": 37,
       "table_cells": 2145,
       "tables_parent_clause_resolved": 19,
-      "present_facts": 12,
-      "resolved_present_facts": 12,
-      "issues_logged": 408
+      "present_facts": 16,
+      "resolved_present_facts": 16,
+      "issues_logged": 411
     },
     {
       "slug": "bajaj_allianz_silver_health",
@@ -60,14 +61,14 @@
       "clauses": 544,
       "clause_body_spans": 544,
       "table_cell_spans": 2227,
-      "fact_evidence_spans": 12,
-      "total_source_spans": 2783,
+      "fact_evidence_spans": 17,
+      "total_source_spans": 2788,
       "tables": 51,
       "table_cells": 10262,
       "tables_parent_clause_resolved": 32,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 117
+      "present_facts": 16,
+      "resolved_present_facts": 16,
+      "issues_logged": 122
     },
     {
       "slug": "care_health_care_plus",
@@ -79,14 +80,14 @@
       "clauses": 554,
       "clause_body_spans": 554,
       "table_cell_spans": 932,
-      "fact_evidence_spans": 13,
-      "total_source_spans": 1499,
+      "fact_evidence_spans": 20,
+      "total_source_spans": 1506,
       "tables": 61,
       "table_cells": 1120,
       "tables_parent_clause_resolved": 54,
-      "present_facts": 13,
-      "resolved_present_facts": 13,
-      "issues_logged": 14
+      "present_facts": 20,
+      "resolved_present_facts": 20,
+      "issues_logged": 19
     },
     {
       "slug": "cholamandalam_flexi_max_protect",
@@ -98,14 +99,14 @@
       "clauses": 427,
       "clause_body_spans": 427,
       "table_cell_spans": 381,
-      "fact_evidence_spans": 4,
-      "total_source_spans": 812,
+      "fact_evidence_spans": 5,
+      "total_source_spans": 813,
       "tables": 40,
       "table_cells": 912,
       "tables_parent_clause_resolved": 37,
-      "present_facts": 4,
-      "resolved_present_facts": 4,
-      "issues_logged": 5
+      "present_facts": 5,
+      "resolved_present_facts": 5,
+      "issues_logged": 6
     },
     {
       "slug": "future_generali_health_elite",
@@ -117,14 +118,14 @@
       "clauses": 832,
       "clause_body_spans": 832,
       "table_cell_spans": 938,
-      "fact_evidence_spans": 13,
-      "total_source_spans": 1783,
+      "fact_evidence_spans": 18,
+      "total_source_spans": 1788,
       "tables": 46,
       "table_cells": 1906,
       "tables_parent_clause_resolved": 29,
-      "present_facts": 13,
-      "resolved_present_facts": 13,
-      "issues_logged": 62
+      "present_facts": 18,
+      "resolved_present_facts": 18,
+      "issues_logged": 65
     },
     {
       "slug": "hdfc_arogya_sanjeevani",
@@ -136,14 +137,14 @@
       "clauses": 435,
       "clause_body_spans": 435,
       "table_cell_spans": 426,
-      "fact_evidence_spans": 11,
-      "total_source_spans": 872,
+      "fact_evidence_spans": 15,
+      "total_source_spans": 876,
       "tables": 24,
       "table_cells": 589,
       "tables_parent_clause_resolved": 14,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 23
+      "present_facts": 15,
+      "resolved_present_facts": 15,
+      "issues_logged": 27
     },
     {
       "slug": "icici_family_shield",
@@ -155,14 +156,14 @@
       "clauses": 589,
       "clause_body_spans": 589,
       "table_cell_spans": 291,
-      "fact_evidence_spans": 9,
-      "total_source_spans": 889,
+      "fact_evidence_spans": 11,
+      "total_source_spans": 891,
       "tables": 40,
       "table_cells": 373,
       "tables_parent_clause_resolved": 35,
-      "present_facts": 8,
-      "resolved_present_facts": 8,
-      "issues_logged": 56
+      "present_facts": 10,
+      "resolved_present_facts": 10,
+      "issues_logged": 57
     },
     {
       "slug": "iffco_tokio_health_protector",
@@ -174,14 +175,14 @@
       "clauses": 449,
       "clause_body_spans": 449,
       "table_cell_spans": 563,
-      "fact_evidence_spans": 12,
-      "total_source_spans": 1024,
+      "fact_evidence_spans": 15,
+      "total_source_spans": 1027,
       "tables": 37,
       "table_cells": 713,
       "tables_parent_clause_resolved": 24,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 151
+      "present_facts": 14,
+      "resolved_present_facts": 14,
+      "issues_logged": 153
     },
     {
       "slug": "kotak_mahindra_health_premier",
@@ -193,14 +194,14 @@
       "clauses": 856,
       "clause_body_spans": 856,
       "table_cell_spans": 1530,
-      "fact_evidence_spans": 13,
-      "total_source_spans": 2399,
+      "fact_evidence_spans": 18,
+      "total_source_spans": 2404,
       "tables": 61,
       "table_cells": 1948,
       "tables_parent_clause_resolved": 40,
-      "present_facts": 13,
-      "resolved_present_facts": 13,
-      "issues_logged": 33
+      "present_facts": 18,
+      "resolved_present_facts": 18,
+      "issues_logged": 36
     },
     {
       "slug": "liberty_critical_connect",
@@ -212,14 +213,14 @@
       "clauses": 482,
       "clause_body_spans": 482,
       "table_cell_spans": 963,
-      "fact_evidence_spans": 6,
-      "total_source_spans": 1451,
+      "fact_evidence_spans": 7,
+      "total_source_spans": 1452,
       "tables": 50,
       "table_cells": 2936,
       "tables_parent_clause_resolved": 39,
-      "present_facts": 5,
-      "resolved_present_facts": 5,
-      "issues_logged": 7
+      "present_facts": 6,
+      "resolved_present_facts": 6,
+      "issues_logged": 8
     },
     {
       "slug": "new_india_floater",
@@ -231,14 +232,14 @@
       "clauses": 525,
       "clause_body_spans": 525,
       "table_cell_spans": 675,
-      "fact_evidence_spans": 12,
-      "total_source_spans": 1212,
+      "fact_evidence_spans": 17,
+      "total_source_spans": 1217,
       "tables": 34,
       "table_cells": 679,
       "tables_parent_clause_resolved": 23,
-      "present_facts": 12,
-      "resolved_present_facts": 12,
-      "issues_logged": 13
+      "present_facts": 17,
+      "resolved_present_facts": 17,
+      "issues_logged": 17
     },
     {
       "slug": "niva_bupa_health_recharge",
@@ -250,14 +251,14 @@
       "clauses": 452,
       "clause_body_spans": 452,
       "table_cell_spans": 546,
-      "fact_evidence_spans": 11,
-      "total_source_spans": 1009,
+      "fact_evidence_spans": 16,
+      "total_source_spans": 1014,
       "tables": 41,
       "table_cells": 637,
       "tables_parent_clause_resolved": 34,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 156
+      "present_facts": 16,
+      "resolved_present_facts": 16,
+      "issues_logged": 158
     },
     {
       "slug": "oriental_cancer_protect",
@@ -269,14 +270,14 @@
       "clauses": 336,
       "clause_body_spans": 336,
       "table_cell_spans": 279,
-      "fact_evidence_spans": 6,
-      "total_source_spans": 621,
+      "fact_evidence_spans": 8,
+      "total_source_spans": 623,
       "tables": 42,
       "table_cells": 299,
       "tables_parent_clause_resolved": 35,
-      "present_facts": 6,
-      "resolved_present_facts": 6,
-      "issues_logged": 11
+      "present_facts": 8,
+      "resolved_present_facts": 8,
+      "issues_logged": 13
     },
     {
       "slug": "reliance_health_gain",
@@ -288,14 +289,14 @@
       "clauses": 771,
       "clause_body_spans": 771,
       "table_cell_spans": 1306,
-      "fact_evidence_spans": 12,
-      "total_source_spans": 2089,
+      "fact_evidence_spans": 18,
+      "total_source_spans": 2095,
       "tables": 54,
       "table_cells": 1731,
       "tables_parent_clause_resolved": 37,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 152
+      "present_facts": 17,
+      "resolved_present_facts": 17,
+      "issues_logged": 157
     },
     {
       "slug": "royal_sundaram_advanced_topup",
@@ -307,14 +308,14 @@
       "clauses": 466,
       "clause_body_spans": 466,
       "table_cell_spans": 445,
-      "fact_evidence_spans": 10,
-      "total_source_spans": 921,
+      "fact_evidence_spans": 15,
+      "total_source_spans": 926,
       "tables": 41,
       "table_cells": 476,
       "tables_parent_clause_resolved": 37,
-      "present_facts": 10,
-      "resolved_present_facts": 10,
-      "issues_logged": 77
+      "present_facts": 15,
+      "resolved_present_facts": 15,
+      "issues_logged": 81
     },
     {
       "slug": "sbi_general_arogya_sanjeevani",
@@ -326,14 +327,14 @@
       "clauses": 387,
       "clause_body_spans": 387,
       "table_cell_spans": 375,
-      "fact_evidence_spans": 11,
-      "total_source_spans": 773,
+      "fact_evidence_spans": 15,
+      "total_source_spans": 777,
       "tables": 25,
       "table_cells": 379,
       "tables_parent_clause_resolved": 17,
-      "present_facts": 11,
-      "resolved_present_facts": 11,
-      "issues_logged": 138
+      "present_facts": 15,
+      "resolved_present_facts": 15,
+      "issues_logged": 142
     },
     {
       "slug": "star_medi_classic_accident",
@@ -345,14 +346,14 @@
       "clauses": 445,
       "clause_body_spans": 445,
       "table_cell_spans": 1267,
-      "fact_evidence_spans": 11,
-      "total_source_spans": 1723,
+      "fact_evidence_spans": 15,
+      "total_source_spans": 1727,
       "tables": 38,
       "table_cells": 1537,
       "tables_parent_clause_resolved": 23,
-      "present_facts": 10,
-      "resolved_present_facts": 10,
-      "issues_logged": 170
+      "present_facts": 14,
+      "resolved_present_facts": 14,
+      "issues_logged": 173
     },
     {
       "slug": "tata_aig_arogya_sanjeevani",
@@ -364,14 +365,14 @@
       "clauses": 274,
       "clause_body_spans": 274,
       "table_cell_spans": 0,
-      "fact_evidence_spans": 10,
-      "total_source_spans": 284,
+      "fact_evidence_spans": 13,
+      "total_source_spans": 287,
       "tables": 28,
       "table_cells": 0,
       "tables_parent_clause_resolved": 27,
-      "present_facts": 10,
-      "resolved_present_facts": 10,
-      "issues_logged": 18
+      "present_facts": 13,
+      "resolved_present_facts": 13,
+      "issues_logged": 21
     },
     {
       "slug": "united_india_individual_health",
@@ -383,14 +384,14 @@
       "clauses": 393,
       "clause_body_spans": 393,
       "table_cell_spans": 614,
-      "fact_evidence_spans": 11,
-      "total_source_spans": 1018,
+      "fact_evidence_spans": 16,
+      "total_source_spans": 1023,
       "tables": 21,
       "table_cells": 1588,
       "tables_parent_clause_resolved": 15,
-      "present_facts": 10,
-      "resolved_present_facts": 10,
-      "issues_logged": 64
+      "present_facts": 15,
+      "resolved_present_facts": 15,
+      "issues_logged": 69
     },
     {
       "slug": "universal_sompo_loan_secure",
@@ -402,14 +403,14 @@
       "clauses": 259,
       "clause_body_spans": 259,
       "table_cell_spans": 246,
-      "fact_evidence_spans": 4,
-      "total_source_spans": 509,
+      "fact_evidence_spans": 5,
+      "total_source_spans": 510,
       "tables": 26,
       "table_cells": 261,
       "tables_parent_clause_resolved": 24,
-      "present_facts": 4,
-      "resolved_present_facts": 4,
-      "issues_logged": 8
+      "present_facts": 5,
+      "resolved_present_facts": 5,
+      "issues_logged": 9
     }
   ]
 }

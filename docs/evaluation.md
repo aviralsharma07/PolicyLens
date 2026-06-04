@@ -762,7 +762,7 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-As of DSE-021 Packet 3B, the active deterministic target concepts are:
+As of DSE-021 final validation, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
@@ -825,7 +825,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-021 Packet 3B PASS on 2026-06-05 across 20 reviewed policies)
+active (DSE-021 final full-chain PASS on 2026-06-05 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -988,6 +988,56 @@ Coverage-wave canonical value note:
 
 - `restoration_benefit` emits `coverage_status: covered`, optional direct `percentage`, or schedule dependency for operative health sum-insured restoration/recharge/reload clauses.
 - `modern_treatment_coverage` emits covered, schedule-dependent, or a direct 50% Sum Insured limit when safely carried in section-tree evidence.
+- `newborn_coverage` emits covered or conditional coverage only when tied to operative maternity/family/newborn coverage clauses; baby-item annexure rows and administrative claim text are rejected.
+
+### Current DSE-021 Final Full-Chain Result
+
+DSE-021 final validation completed the 20-concept deterministic benchmark and then rebuilt the 20-policy SQLite/export chain.
+
+```json
+{
+  "fact_extraction": {
+    "policies_passed": 20,
+    "target_facts": 400,
+    "gold_present": 275,
+    "present_tp": 273,
+    "present_fp": 0,
+    "present_fn": 2,
+    "deterministic_present_precision": 1.0,
+    "deterministic_present_recall": 0.992727,
+    "normalized_value_accuracy": 1.0,
+    "status_accuracy": 0.9775,
+    "evidence_accuracy": 1.0,
+    "false_present_for_gold_not_found": 0
+  },
+  "fact_scoring": {
+    "candidate_parity": "PASS",
+    "fact_parity": "PASS",
+    "total_candidates_in_db": 937,
+    "total_facts_in_db": 280,
+    "fk_violations": 0,
+    "fact_status_accuracy": 0.978,
+    "normalized_value_accuracy": 0.982,
+    "evidence_accuracy": 1.0,
+    "false_present": 0,
+    "conflicts": 0
+  },
+  "export": {
+    "policies_exported": 20,
+    "concepts_per_policy": "20/20",
+    "schema_validation_errors": 0,
+    "present_missing_evidence": 0,
+    "invalid_fact_statuses": 0,
+    "false_present": 0,
+    "passed": true
+  }
+}
+```
+
+Final artifacts:
+- `runs/evals/2026-06-05-fact-extraction-dse021-final.json`
+- `runs/evals/2026-06-05-fact-scoring-dse021-final.json`
+- `runs/evals/2026-06-05-export-dse021-final.json`
 - `newborn_coverage` emits conditional coverage when newborn cover depends on maternity, schedule, renewal declaration, or minimum age conditions.
 - If exact source PDF percentages are not carried in verified section-tree evidence, deterministic v1 keeps a conservative covered value and leaves exact recovery to parser/table remediation.
 

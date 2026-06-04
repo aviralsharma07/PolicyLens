@@ -553,3 +553,88 @@ gold corpus validator: passed
 
 ### Next Step
 Run Packet 4 final full-chain DSE-021 validation: fact extraction, clause store/source spans, fact scoring, export, full pytest, docs, and final commit.
+
+---
+
+## Packet 4 Closeout — Final Full-Chain Validation
+
+Date: 2026-06-05
+
+### Goal
+Prove all 20 priority concepts work end-to-end through deterministic extraction, SQLite clause/source-span storage, fact scoring, Product B export, gold validation, and full pytest.
+
+### Files Changed
+- `data/reports/dse010_sqlite_build_summary.json`
+- `data/reports/dse011_fact_scoring_summary.json`
+- `data/reports/dse013_export_summary.json`
+- `runs/evals/2026-06-05-fact-extraction-dse021-final.json`
+- `runs/evals/2026-06-05-fact-scoring-dse021-final.json`
+- `runs/evals/2026-06-05-export-dse021-final.json`
+- `docs/tasks.md`
+- `docs/changelog.md`
+- `docs/evaluation.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-06-05-fact-extraction-dse021-final.json
+rm -f data/engine.sqlite data/engine.sqlite-wal data/engine.sqlite-shm
+PYTHONPATH=. .venv/bin/python scripts/run_clause_store.py --gold-corpus gold_corpus --physical-root data/interim/physical --logical-root data/interim/logical --tables-root data/interim/tables --facts-root data/interim/facts --output-db data/engine.sqlite --output-facts-resolved data/interim/facts_resolved --pipeline-run-id clause_store_dse021_final_2026_06_05
+PYTHONPATH=. .venv/bin/python scripts/validate_source_spans.py --db data/engine.sqlite --facts-root data/interim/facts_resolved
+PYTHONPATH=. .venv/bin/python scripts/run_fact_scoring.py --gold-corpus gold_corpus --candidates-root data/interim/facts --resolved-root data/interim/facts_resolved --db data/engine.sqlite --pipeline-run-id fact_scoring_dse021_final_2026_06_05
+PYTHONPATH=. .venv/bin/python scripts/run_export.py --db data/engine.sqlite --output-root data/export --pipeline-run-id export_dse021_final_2026_06_05
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_scoring.py --db data/engine.sqlite --candidates-root data/interim/facts --resolved-root data/interim/facts_resolved --gold-corpus gold_corpus --output runs/evals/2026-06-05-fact-scoring-dse021-final.json
+PYTHONPATH=. .venv/bin/python scripts/eval_export.py --db data/engine.sqlite --export-root data/export --gold-corpus gold_corpus --output runs/evals/2026-06-05-export-dse021-final.json
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+git diff --check
+```
+
+### Results
+```text
+fact extraction eval: PASS
+policies_passed: 20/20
+precision: 100.00%
+recall: 99.27%
+normalized_value_accuracy: 100.00%
+status_accuracy: 97.75%
+evidence_accuracy: 100.00%
+false_present_for_gold_not_found: 0
+
+source-span validation: ALL CHECKS PASSED
+fact scoring eval: PASS
+total candidates in DB: 937
+total facts in DB: 280
+FK violations: 0
+normalized value accuracy: 98.2%
+evidence accuracy: 100.0%
+false present: 0
+conflicts: 0
+
+export eval: PASS
+policies exported: 20
+concepts per policy: 20/20
+schema validation errors: 0
+present missing evidence: 0
+invalid fact statuses: 0
+
+gold corpus validator: PASS
+full pytest: 460/460 passed
+```
+
+### Generated Artifacts
+- `runs/evals/2026-06-05-fact-extraction-dse021-final.json`
+- `runs/evals/2026-06-05-fact-scoring-dse021-final.json`
+- `runs/evals/2026-06-05-export-dse021-final.json`
+
+### Decisions Made
+- DSE-021 is complete: all 20 priority concepts are now active deterministic concepts for the reviewed 20-policy benchmark.
+- Remaining value specificity gaps caused by missing table/section evidence stay outside DSE-021 and should be handled by DSE-022 table/parser remediation or later LLM refinement.
+
+### Known Limitations
+- Exact limits that are source-visible but absent from verified section-tree evidence are still emitted conservatively, not guessed.
+- Full 647-policy semantic quality remains unproven until the DSE-020 scale outputs are rerun through the completed 20-concept extractor set.
+
+### Next Step
+Start DSE-022 table eval expansion/remediation, or run a DSE-020 refresh with the completed 20-concept extractor set if scale fill-rate is the immediate priority.

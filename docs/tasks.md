@@ -296,13 +296,13 @@ Current capability:
 
 ### DSE-021 — Remaining Deterministic Extractors Wave 2
 
-**Status:** in_progress
+**Status:** done
 **Priority:** P1
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
 **Unblocked by:** DSE-024 — full-corpus parser-target zero-clause failures are now 0.
 **Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04), deductible (Packet 1C — 2026-06-04), room rent limit and ICU limit (Packet 2B — 2026-06-04), restoration benefit, modern treatment coverage, and newborn coverage (Packet 3B — 2026-06-05).
-**Remaining concepts:** none before final full-chain DSE-021 validation.
+**Remaining concepts:** none.
 **Acceptance criteria:**
 - All 20 priority concepts have deterministic or explicitly deferred extraction strategy.
 - Precision >= 95%, evidence accuracy >= 95%, false-present count 0 on reviewed gold policies.
@@ -314,6 +314,7 @@ Current capability:
 **Packet 2B result (2026-06-04):** `room_rent_limit` and `icu_limit` extractors implemented. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.61%, normalized value accuracy 100.00%, status accuracy 97.65%, evidence accuracy 100.00%, and false-present count 0. Gold corrections were source-backed and limited to room/ICU labels.
 **Packet 3A result (2026-06-05):** `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` gold/evidence audit completed before extractor implementation. Audit classified all 60 concept-policy rows and identified source-backed fixes for final coverage-wave labels in `data/reports/dse021_coverage_wave_gold_audit.md`.
 **Packet 3B result (2026-06-05):** final coverage-wave extractors implemented. Fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.27%, normalized value accuracy 100.00%, status accuracy 97.75%, evidence accuracy 100.00%, and false-present count 0.
+**Packet 4 final result (2026-06-05):** DSE-021 full chain passed. All 20 priority concepts are active; fact extraction passed on 20/20 policies with precision 100.00%, recall 99.27%, normalized value accuracy 100.00%, status accuracy 97.75%, evidence accuracy 100.00%, and false-present count 0. Clause store/source-span validation passed; fact scoring passed with 937 candidates, 280 facts, 0 conflicts, 0 FK violations, 98.2% normalized value accuracy, and 100.0% evidence accuracy. Export eval passed for 20/20 policies with 20/20 concept fields per policy and 0 present facts missing evidence.
 **Branch:** feat/dse-021-extractor-wave2
 **Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
 
