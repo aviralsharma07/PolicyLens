@@ -140,3 +140,65 @@ Checks run:
 **Branch:** feat/dse-021-extractor-wave2
 
 **Next:** Start Packet 0B — shared extractor utilities, when instructed.
+
+---
+
+## Packet 0B Closeout
+
+Date: 2026-06-04
+
+### Goal
+Add shared Wave 2 extractor utility helpers without implementing any new concept extractor.
+
+### Files Created
+- `extractors/wave2_utils.py` — 8 utility functions
+- `tests/test_wave2_utils.py` — 18 tests covering all 7 utility categories
+
+### Docs Updated
+- `docs/changelog.md` — Packet 0B changelog entry
+- `runs/sessions/2026-06-04-extractor-wave2.md` — this closeout section
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_wave2_utils.py --tb=short
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_fact_extractors.py --tb=short
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+git diff --check
+git status --short
+```
+
+### Results
+- **Wave 2 utility tests:** PASS (18/18)
+- **Existing fact extractor tests:** PASS (all existing tests pass, no behavioral changes)
+- **Gold validator:** PASS (400 facts, 20 reviewed policies, 0 draft)
+- **diff --check:** PASS (no whitespace errors)
+- **Working tree:** clean after commit
+
+### Commit
+```
+feat(extractors): add wave 2 utility helpers
+```
+
+### Latest Context Capsule
+
+#### Open tasks
+- DSE-021: in_progress — Packet 0B complete, Packet 0C (shared registry) optional, Packet A extractors next
+- DSE-022: planned — table eval expansion
+- DSE-023: planned — LLM refinement layer
+
+#### Current branch
+feat/dse-021-extractor-wave2, clean working tree
+
+#### Pipeline health (unchanged)
+- Corpus identity: 647 processed, 566 exported, 80 excluded, 0 skipped
+- Parser targets: 0 zero-heading, 0 zero-clause (after DSE-024)
+- Full corpus fill: 13 extractors active; mean fill rate ~10/20
+
+#### Extractors implemented (13, unchanged)
+free_look_period, grace_period, ped_waiting_period, initial_waiting_period, co_pay, renewability, claim_settlement_timeline, ayush_coverage, ambulance_coverage, cumulative_bonus_ncb, specific_disease_waiting_periods, maternity_waiting, organ_donor_coverage
+
+#### New shared utilities (8)
+clean_lower, has_any, evidence_window, near_terms, reject_if_context, find_duration_near_terms, schedule_dependent_value, coverage_value
+
+#### Next
+Start Packet A (claim_intimation_timeline + deductible extractors).

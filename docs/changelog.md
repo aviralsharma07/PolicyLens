@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 0B: Shared Wave 2 Utilities)
+
+### Added
+- `extractors/wave2_utils.py` — shared utility helpers for Wave 2 extractors:
+  - `clean_lower` — clean space + ligature fix + lower (wraps `evidence.clean_space`)
+  - `has_any` — text substring check against an iterable of terms
+  - `evidence_window` — compact source text window around a span
+  - `near_terms` — detect signal terms near a span within a configurable radius
+  - `reject_if_context` — return rejection reason if reject terms found near a span
+  - `find_duration_near_terms` — filter `find_durations` results by nearby signal terms and allowed units
+  - `schedule_dependent_value` — standard shape for schedule-dependent concepts
+  - `coverage_value` — standard shape for coverage-status concepts (supports `covered` and `conditional`; raises `ValueError` for unsupported statuses)
+- `tests/test_wave2_utils.py` — comprehensive unit tests for all 7 utility categories (18 tests).
+
+### Known Issues
+- No extractors use these utilities yet; they are tested but not integrated.
+
 ## 2026-06-04 (DSE-021 — Wave 2 Baseline Audit + Kickoff)
 
 ### Added
