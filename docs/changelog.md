@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 1B: Deductible Gold Audit)
+
+### Added
+- `data/reports/dse021_deductible_gold_audit.md` — source-backed classification for all 20 deductible gold labels before extractor implementation.
+
+### Changed
+- DSE-021 session log now records Packet 1B audit results and Packet 1C implementation rules.
+
+### Known Issues
+- Deductible extractor is not implemented yet.
+- Packet 1C must correct three source-backed deductible gold issues before using eval as a hard gate: Future Generali and Kotak should be `not_found`; Reliance should be `present`.
+
 ## 2026-06-04 (DSE-021 — Packet 1A: Claim Intimation Timeline Extractor Remediation)
 
 ### Added

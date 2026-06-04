@@ -253,3 +253,40 @@ Implement the next DSE-021 packet for `deductible` with the same source-backed a
 
 #### Next exact packet
 Packet 1B — source-backed deductible gold/evidence audit only. Do not implement the deductible extractor before the audit is complete.
+
+---
+
+## Packet 1B Closeout — Deductible Gold/Evidence Audit
+
+Date: 2026-06-04
+
+### Goal
+Audit all 20 `deductible` gold labels against source PDF text and parsed section/tree outputs before implementing the deductible extractor.
+
+### Files Changed
+- `data/reports/dse021_deductible_gold_audit.md`
+- `docs/changelog.md`
+- `docs/tasks.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+pdftotext -layout ../policy_data/<policy_pdf> -  # all 20 reviewed policies, searched for "deduct"
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+git diff --check
+```
+
+### Results
+- All 20 deductible rows classified.
+- Pure definition-only deductible text was separated from operative deductible clauses.
+- Required Packet 1C gold fixes identified:
+  - `future_generali_health_elite`: change deductible to `not_found`.
+  - `kotak_mahindra_health_premier`: change deductible to `not_found`.
+  - `reliance_health_gain`: change deductible to `present`.
+- Packet 1C extractor rules are now locked in the audit report.
+
+### Generated Artifacts
+- `data/reports/dse021_deductible_gold_audit.md`
+
+### Next Step
+Implement Packet 1C — deductible extractor plus source-backed deductible gold corrections.
