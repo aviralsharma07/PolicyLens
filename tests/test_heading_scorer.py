@@ -50,6 +50,8 @@ class TestNumberingPatterns:
     def test_section_prefix(self):
         assert matches_numbering("SECTION A: SPECIFIC INFECTIOUS DISEASES BENEFIT")
         assert matches_numbering("SECTION A.2: RABIES AND TETANUS BENEFIT")
+        assert matches_numbering("Section A. PREAMBLE")
+        assert matches_numbering("Section I: Basic Covers:")
 
     def test_part_prefix(self):
         assert matches_numbering("PART II OF THE POLICY SCHEDULE")
@@ -63,6 +65,7 @@ class TestNumberingPatterns:
     def test_letter_numbered_heading(self):
         assert matches_numbering("A. Definitions")
         assert matches_numbering("B. Coverage")
+        assert matches_numbering("(a) In-patient Hospitalization:")
 
     def test_serial_number_row_not_letter_heading(self):
         assert not matches_numbering("S. No.")
@@ -421,7 +424,7 @@ class TestHeadingScorerUnit:
         assert cand["feature_contributions"]["is_sentence_case"] == -0.1
 
     def test_zero_heading_fallback_promotes_structural_headings(self):
-        scorer = HeadingScorer(threshold=0.6)
+        scorer = HeadingScorer(threshold=0.9)
         page = {
             "page_number": 1,
             "width": 612,
@@ -580,6 +583,119 @@ class TestHeadingScorerUnit:
         assert "tabular_text" in guard_reasons[2]
         assert "price_or_benefit_value_row" in guard_reasons[2]
         assert "procedure_or_item_list" in guard_reasons[3]
+
+    def test_zero_heading_fallback_promotes_section_alpha_heading(self):
+        scorer = HeadingScorer()
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [
+                {
+                    "line_id": "l1",
+                    "text": "Section A. PREAMBLE",
+                    "bbox": [50, 100, 220, 112],
+                    "region": "body",
+                    "span_ids": ["s1"],
+                }
+            ],
+            "spans": [{"span_id": "s1", "font_size": 10.0, "is_bold": False}],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        cand = scorer.score_document(doc)["candidates"][0]
+
+        assert cand["features"]["section_token_heading"] == 1.0
+        assert cand["promotion_source"] == "fallback_zero_heading"
+        assert cand["decision"] == "heading"
+
+    def test_zero_heading_fallback_promotes_parenthesized_letter_heading(self):
+        scorer = HeadingScorer()
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [
+                {
+                    "line_id": "l1",
+                    "text": "(a) In-patient Hospitalization:",
+                    "bbox": [50, 100, 260, 112],
+                    "region": "body",
+                    "span_ids": ["s1"],
+                }
+            ],
+            "spans": [{"span_id": "s1", "font_size": 10.0, "is_bold": False}],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        cand = scorer.score_document(doc)["candidates"][0]
+
+        assert cand["features"]["parenthesized_letter_heading"] == 1.0
+        assert cand["numbering_token"] == "(a"
+        assert cand["promotion_source"] == "fallback_zero_heading"
+        assert cand["decision"] == "heading"
+
+    def test_zero_heading_fallback_promotes_short_bold_dictionary_heading(self):
+        scorer = HeadingScorer()
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": [
+                {
+                    "line_id": "l0",
+                    "text": "Body text before the preamble.",
+                    "bbox": [50, 100, 260, 112],
+                    "region": "body",
+                    "span_ids": ["s0"],
+                },
+                {
+                    "line_id": "l1",
+                    "text": "Preamble",
+                    "bbox": [50, 150, 130, 162],
+                    "region": "body",
+                    "span_ids": ["s1"],
+                },
+            ],
+            "spans": [
+                {"span_id": "s0", "font_size": 12.0, "is_bold": False},
+                {"span_id": "s1", "font_size": 10.0, "is_bold": True},
+            ],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        cand = next(c for c in scorer.score_document(doc)["candidates"] if c["line_id"] == "l1")
+
+        assert cand["features"]["short_dictionary_heading"] == 1.0
+        assert cand["promotion_source"] == "fallback_zero_heading"
+        assert cand["decision"] == "heading"
+
+    def test_safe_patterns_do_not_promote_known_bad_rows(self):
+        scorer = HeadingScorer()
+        lines = [
+            {"line_id": "l1", "text": "4    80%", "bbox": [50, 100, 120, 112], "region": "body", "span_ids": ["s1"]},
+            {"line_id": "l2", "text": "S. Item S. Item", "bbox": [50, 120, 180, 132], "region": "body", "span_ids": ["s2"]},
+            {"line_id": "l3", "text": "5 BUDS 39 STEAM INHALER", "bbox": [50, 140, 250, 152], "region": "body", "span_ids": ["s3"]},
+            {"line_id": "l4", "text": "1 Month 75%", "bbox": [50, 160, 160, 172], "region": "body", "span_ids": ["s4"]},
+            {"line_id": "l5", "text": "POLICY WORDINGS", "bbox": [50, 180, 200, 192], "region": "body", "span_ids": ["s5"]},
+        ]
+        page = {
+            "page_number": 1,
+            "width": 612,
+            "height": 792,
+            "lines": lines,
+            "spans": [{"span_id": f"s{i}", "font_size": 10.0, "is_bold": False} for i in range(1, 6)],
+        }
+        doc = {"document_id": "test", "policy_id": "test", "pages": [page]}
+
+        result = scorer.score_document(doc)
+
+        by_text = {c["text"]: c for c in result["candidates"]}
+        assert by_text["4    80%"]["decision"] == "non-heading"
+        assert by_text["S. Item S. Item"]["decision"] == "non-heading"
+        assert by_text["5 BUDS 39 STEAM INHALER"]["decision"] == "non-heading"
+        assert by_text["1 Month 75%"]["decision"] == "non-heading"
+        assert by_text["POLICY WORDINGS"]["decision"] == "non-heading"
 
 
 class TestHeadingEvalMatching:

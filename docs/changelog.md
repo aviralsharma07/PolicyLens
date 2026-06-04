@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — Phase E3C Safe Heading Fixes)
+
+### Added
+- `data/reports/dse024_gold_heading_reproducibility_audit_v1.md` — audit explaining why regenerated 20-policy heading eval is 17/20 instead of the older reported 20/20.
+- `data/reports/dse024_phase_e3c_safe_heading_fixes.md` — E3C report with full-corpus parser results and remaining residual policy.
+- `runs/evals/2026-06-04-heading-scorer-dse024-e3c-safe-fixes.json` — current regenerated gold heading eval after E3C.
+- `runs/evals/2026-06-04-section-tree-dse024-e3c-safe-fixes.json` — current regenerated gold section-tree eval after E3C.
+- `runs/sessions/2026-06-04-dse024-phase-e3c1-gold-heading-repro.md` — E3C1 reproducibility audit session.
+- `runs/sessions/2026-06-04-dse024-phase-e3c-safe-heading-fixes.md` — E3C safe-fix session.
+
+### Changed
+- Heading scorer now has fallback-only structural recognition for section-token headings, part-token headings, parenthesized letter headings, roman policy-section headings, compact lettered headings, short colon labels, and short dictionary headings.
+- New structural heading signals have zero global score weight and only affect the zero-heading fallback layer.
+- DSE-020 heading candidates, section trees, and scale triage report were regenerated after E3C.
+
+### Fixed
+- Full-corpus zero-heading / zero-clause policies dropped from **58** to **1** without lowering the global heading threshold.
+- Added fallback guards for known high-risk false positives: percentage rows, serial/table rows, duration-percentage rows, procedure/item rows, and generic `POLICY WORDINGS`.
+
+### Known Issues
+- Current regenerated gold heading eval is **17/20 PASS**, failing `aditya_birla_activ_care`, `care_health_care_plus`, and `tata_aig_arogya_sanjeevani`; this is documented as a reproducibility/eval-label issue, not hidden.
+- Current regenerated gold section-tree eval is **19/20 PASS**, with only the pre-existing `oriental_cancer_protect` tree-accuracy issue.
+- The only remaining full-corpus zero-clause item is `23_raheja_qbe_raheja_qbe_product_list`, a 4-page product-list style document with pending match status; this should be handled by corpus/identity filtering.
+
 ## 2026-06-04 (DSE-024 — Phase E3B Recovery + Heading-Miss Inspection)
 
 ### Added

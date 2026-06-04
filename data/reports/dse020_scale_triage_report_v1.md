@@ -63,14 +63,14 @@ DB size MB: 1963.63
 
 ## Structural Warnings
 
-- Zero headings: 58
-- Zero clauses: 58
+- Zero headings: 1
+- Zero clauses: 1
 - Zero fact candidates: 133
 
 ## Top Recommended Fixes
 
-1. Fix parser/section-tree failures for 58 policies with zero clauses.
-2. Audit heading scorer for 58 policies with zero headings.
+1. Fix parser/section-tree failures for 1 policies with zero clauses.
+2. Audit heading scorer for 1 policies with zero headings.
 3. Audit extractor recall/parser inputs for 133 policies with zero candidates.
 4. Prioritize extractor/LLM strategy for top not_found concept `claim_intimation_timeline` (566).
 5. Continue full-corpus run and classify the next largest failure cluster.

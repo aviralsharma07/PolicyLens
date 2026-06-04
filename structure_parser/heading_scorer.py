@@ -9,7 +9,14 @@ from structure_parser.heading_patterns import (
     has_toc_dots,
     is_all_caps,
     is_bold_line,
+    is_lettered_named_heading,
+    is_numbered_short_title_heading,
+    is_parenthesized_letter_heading,
+    is_part_token_heading,
+    is_roman_policy_section_heading,
+    is_section_token_heading,
     is_sentence_case,
+    is_short_colon_label_heading,
     matches_heading_dict,
     matches_numbering,
     normalize_heading_text,
@@ -25,6 +32,14 @@ class HeadingScorer:
         "matches_heading_dict": 0.10,
         "has_toc_dots": 0.10,
         "spacing_signal": 0.10,
+        "section_token_heading": 0.0,
+        "part_token_heading": 0.0,
+        "parenthesized_letter_heading": 0.0,
+        "short_colon_label_heading": 0.0,
+        "numbered_short_title_heading": 0.0,
+        "roman_policy_section_heading": 0.0,
+        "lettered_named_heading": 0.0,
+        "short_dictionary_heading": 0.0,
         "is_sentence_case": -0.30,
         "line_length_penalty": -0.20,
         "position_penalty": -0.30,
@@ -35,7 +50,7 @@ class HeadingScorer:
     def __init__(self, threshold: float = 0.5):
         self.threshold = threshold
         self.fallback_min_score = 0.42
-        self.fallback_max_promotions = 40
+        self.fallback_max_promotions = 90
 
     def compute_document_stats(self, doc: Dict[str, Any]) -> Dict[str, Any]:
         all_sizes = []
@@ -155,6 +170,13 @@ class HeadingScorer:
         numbered = matches_numbering(text)
         dict_match = matches_heading_dict(text)
         toc = has_toc_dots(text)
+        section_token = is_section_token_heading(text)
+        part_token = is_part_token_heading(text)
+        parenthesized_letter = is_parenthesized_letter_heading(text)
+        short_colon_label = is_short_colon_label_heading(text)
+        numbered_short_title = is_numbered_short_title_heading(text)
+        roman_policy_section = is_roman_policy_section_heading(text)
+        lettered_named = is_lettered_named_heading(text)
 
         line_len = len(text)
         length_ratio = line_len / median_len if median_len > 0 else 1.0
@@ -178,6 +200,17 @@ class HeadingScorer:
             )
             else 0.0
         )
+        short_dictionary_heading = (
+            1.0
+            if (
+                dict_match
+                and (bold or spacing_signal)
+                and not numbered
+                and not toc
+                and line_len <= 45
+            )
+            else 0.0
+        )
 
         return {
             "font_size_ratio": font_size_ratio,
@@ -195,6 +228,14 @@ class HeadingScorer:
             "all_caps_fp_penalty": all_caps_fp,
             "boilerplate_company_penalty": boilerplate_company,
             "spacing_signal": spacing_signal,
+            "section_token_heading": 1.0 if section_token else 0.0,
+            "part_token_heading": 1.0 if part_token else 0.0,
+            "parenthesized_letter_heading": 1.0 if parenthesized_letter else 0.0,
+            "short_colon_label_heading": 1.0 if short_colon_label else 0.0,
+            "numbered_short_title_heading": 1.0 if numbered_short_title else 0.0,
+            "roman_policy_section_heading": 1.0 if roman_policy_section else 0.0,
+            "lettered_named_heading": 1.0 if lettered_named else 0.0,
+            "short_dictionary_heading": short_dictionary_heading,
             **gap_features,
         }
 
@@ -208,7 +249,16 @@ class HeadingScorer:
         numbered = features.get("matches_numbering", 0.0)
         long_line = features.get("line_length_ratio", 0.0) > 0.8
         all_caps = features.get("is_all_caps", 0.0)
-        sentence = features.get("is_sentence_case", 0.0)
+        structural = any(
+            features.get(name, 0.0)
+            for name in (
+                "section_token_heading",
+                "part_token_heading",
+                "parenthesized_letter_heading",
+                "numbered_short_title_heading",
+                "roman_policy_section_heading",
+            )
+        )
         if numbered and long_line and not all_caps:
             return -0.15
         return 0.0
@@ -221,6 +271,9 @@ class HeadingScorer:
             -0.10
             if (sentence and bold and numbered)
             else self.WEIGHTS["is_sentence_case"] * sentence
+        )
+        length_penalty = -features.get("line_length_ratio", 0.0) * abs(
+            self.WEIGHTS["line_length_penalty"]
         )
         return {
             "font_size_ratio": round(self._font_contribution(features), 4),
@@ -239,11 +292,47 @@ class HeadingScorer:
             "spacing_signal": round(
                 features.get("spacing_signal", 0.0) * self.WEIGHTS["spacing_signal"], 4
             ),
-            "is_sentence_case": round(sentence_penalty, 4),
-            "line_length_penalty": round(
-                -features.get("line_length_ratio", 0.0) * abs(self.WEIGHTS["line_length_penalty"]),
+            "section_token_heading": round(
+                features.get("section_token_heading", 0.0)
+                * self.WEIGHTS["section_token_heading"],
                 4,
             ),
+            "part_token_heading": round(
+                features.get("part_token_heading", 0.0) * self.WEIGHTS["part_token_heading"],
+                4,
+            ),
+            "parenthesized_letter_heading": round(
+                features.get("parenthesized_letter_heading", 0.0)
+                * self.WEIGHTS["parenthesized_letter_heading"],
+                4,
+            ),
+            "short_colon_label_heading": round(
+                features.get("short_colon_label_heading", 0.0)
+                * self.WEIGHTS["short_colon_label_heading"],
+                4,
+            ),
+            "numbered_short_title_heading": round(
+                features.get("numbered_short_title_heading", 0.0)
+                * self.WEIGHTS["numbered_short_title_heading"],
+                4,
+            ),
+            "roman_policy_section_heading": round(
+                features.get("roman_policy_section_heading", 0.0)
+                * self.WEIGHTS["roman_policy_section_heading"],
+                4,
+            ),
+            "lettered_named_heading": round(
+                features.get("lettered_named_heading", 0.0)
+                * self.WEIGHTS["lettered_named_heading"],
+                4,
+            ),
+            "short_dictionary_heading": round(
+                features.get("short_dictionary_heading", 0.0)
+                * self.WEIGHTS["short_dictionary_heading"],
+                4,
+            ),
+            "is_sentence_case": round(sentence_penalty, 4),
+            "line_length_penalty": round(length_penalty, 4),
             "position_penalty": round(
                 features.get("position_penalty", 0.0) * self.WEIGHTS["position_penalty"],
                 4,
@@ -306,6 +395,22 @@ class HeadingScorer:
         upper_token = token.upper() if isinstance(token, str) else ""
         if upper_token.startswith(("SECTION", "PART")):
             reasons.append("section_or_part_token")
+        if features.get("section_token_heading", 0.0):
+            reasons.append("section_token_heading")
+        if features.get("part_token_heading", 0.0):
+            reasons.append("part_token_heading")
+        if features.get("parenthesized_letter_heading", 0.0):
+            reasons.append("parenthesized_letter_heading")
+        if features.get("short_colon_label_heading", 0.0):
+            reasons.append("short_colon_label_heading")
+        if features.get("numbered_short_title_heading", 0.0):
+            reasons.append("numbered_short_title_heading")
+        if features.get("roman_policy_section_heading", 0.0):
+            reasons.append("roman_policy_section_heading")
+        if features.get("lettered_named_heading", 0.0):
+            reasons.append("lettered_named_heading")
+        if features.get("short_dictionary_heading", 0.0):
+            reasons.append("short_dictionary_heading")
         if re.match(r"^[A-Z]\.$", upper_token) and (dict_match or bold or all_caps):
             reasons.append("letter_heading_with_support")
         if numbered and dict_match:
@@ -330,20 +435,58 @@ class HeadingScorer:
         if any(c.get("decision") == "heading" for c in candidates):
             return 0
 
-        promoted = 0
-        for candidate in sorted(candidates, key=lambda c: c.get("score", 0.0), reverse=True):
-            score = candidate.get("score", 0.0)
-            if score < self.fallback_min_score or score >= self.threshold:
-                continue
+        structural_override_reasons = {
+            "section_token_heading",
+            "part_token_heading",
+            "parenthesized_letter_heading",
+            "short_colon_label_heading",
+            "roman_policy_section_heading",
+            "lettered_named_heading",
+            "short_dictionary_heading",
+        }
+        priority_order = {
+            "section_token_heading": 0,
+            "part_token_heading": 1,
+            "roman_policy_section_heading": 2,
+            "parenthesized_letter_heading": 3,
+            "lettered_named_heading": 4,
+            "short_dictionary_heading": 5,
+            "short_colon_label_heading": 6,
+            "numbered_short_title_heading": 7,
+        }
 
+        prepared = []
+        for candidate in candidates:
             guards = self._fallback_guard_reasons(candidate)
             reasons = self._fallback_promotion_reasons(candidate)
+            structural_override = any(reason in structural_override_reasons for reason in reasons)
+            eligible_score_band = candidate.get("score", 0.0) >= self.fallback_min_score
+            best_priority = min(
+                (priority_order[reason] for reason in reasons if reason in priority_order),
+                default=99,
+            )
             candidate["fallback_evaluation"] = {
-                "eligible_score_band": True,
+                "eligible_score_band": eligible_score_band,
+                "structural_override": structural_override,
                 "guard_reasons": guards,
                 "promotion_reasons": reasons,
             }
+            prepared.append((best_priority, -candidate.get("score", 0.0), candidate))
 
+        promoted = 0
+        for _, _, candidate in sorted(prepared, key=lambda item: (item[0], item[1])):
+            score = candidate.get("score", 0.0)
+            if score >= self.threshold:
+                continue
+
+            evaluation = candidate["fallback_evaluation"]
+            guards = evaluation["guard_reasons"]
+            reasons = evaluation["promotion_reasons"]
+            structural_override = evaluation["structural_override"]
+            eligible_score_band = evaluation["eligible_score_band"]
+
+            if not eligible_score_band and not structural_override:
+                continue
             if guards or not reasons:
                 continue
 
@@ -361,7 +504,7 @@ class HeadingScorer:
 
     def _numbering_token(self, text: str) -> Optional[str]:
         match = re.match(
-            r"^\s*((?:SECTION|PART)\s+[A-Z0-9]+|[IVX]+[\.\)]|\d+(?:\.\d+)*[\.\)]?|[A-Z]\.)",
+            r"^\s*((?:SECTION|PART)\s+[A-Z0-9]+|[IVX]+[\.\)]|\([a-z]\)|\d+(?:\.\d+)*[\.\)]?|[A-Z]\.)",
             text,
             flags=re.IGNORECASE,
         )

@@ -5,6 +5,7 @@ NUMBERING_PATTERNS = [
     re.compile(r"^SECTION\s+[A-Z0-9]", re.IGNORECASE),
     re.compile(r"^PART\s+[A-Z0-9]", re.IGNORECASE),
     re.compile(r"^(?:I|II|III|IV|V|VI|VII|VIII|IX|X)[\.\)]\s"),
+    re.compile(r"^\([a-z]\)\s+[A-Z]", re.IGNORECASE),
     re.compile(r"^\d+\s+\w+"),
     re.compile(r"^\d+\.[\d\.]*\s+\w+"),
     re.compile(r"^\d+[\.\)]\s+[A-Z]"),
@@ -141,3 +142,87 @@ def normalize_heading_text(text: str) -> str:
     text = re.sub(r"\.\s*\.\s*\.+\s*\.*", "", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip().lower()
+
+
+def is_section_token_heading(text: str) -> bool:
+    return bool(
+        re.match(
+            r"^\s*SECTION\s+(?:[A-Z]+|[IVX]+|\d+)(?:[\s\.:_-]|$)",
+            text,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
+def is_part_token_heading(text: str) -> bool:
+    return bool(
+        re.match(
+            r"^\s*PART\s+(?:[A-Z]+|[IVX]+|\d+)(?:[\s\.:_-]|$)",
+            text,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
+def is_parenthesized_letter_heading(text: str) -> bool:
+    stripped = text.strip()
+    if not re.match(r"^\([a-z]\)\s+[A-Z]", stripped, flags=re.IGNORECASE):
+        return False
+    if len(stripped) > 95:
+        return False
+    if re.search(r"[.;]\s*$", stripped):
+        return False
+    if re.match(r"^\([a-z]\)\s+The\b", stripped, flags=re.IGNORECASE):
+        return False
+    if re.search(r"\b(?:shall|will|means|means that|provided that|subject to)\b", stripped, re.I):
+        return False
+    return True
+
+
+def is_short_colon_label_heading(text: str) -> bool:
+    stripped = text.strip()
+    if not stripped.endswith(":"):
+        return False
+    if len(stripped) > 55:
+        return False
+    if re.search(r"\d+\s*%|(?:Rs\.?|INR|₹)\s*\d", stripped, re.I):
+        return False
+    return bool(re.match(r"^[A-Z][A-Za-z0-9\s/&().,\-–]+:$", stripped))
+
+
+def is_numbered_short_title_heading(text: str) -> bool:
+    stripped = text.strip()
+    if len(stripped) > 70:
+        return False
+    if re.search(r"\d+\s*%|(?:Rs\.?|INR|₹)\s*\d", stripped, re.I):
+        return False
+    if re.match(r"^\d+\s+[A-Z][A-Z\s/&().,-]{2,}$", stripped):
+        return False
+    if re.match(r"^\d+\s+[A-Z]{2,}\b", stripped) and re.search(r"\b\d+\b", stripped):
+        return False
+    return bool(
+        re.match(
+            r"^\d+(?:\.\d+)*\.?\s*[A-Z][A-Za-z][A-Za-z0-9\s/&().,\-–:]{1,60}$",
+            stripped,
+        )
+    )
+
+
+def is_roman_policy_section_heading(text: str) -> bool:
+    return bool(
+        re.match(
+            r"^\s*(?:I|II|III|IV|V|VI|VII|VIII|IX|X)[\.\)]\s+[A-Z][A-Za-z0-9\s/&().,\-–:]{2,80}$",
+            text.strip(),
+        )
+    )
+
+
+def is_lettered_named_heading(text: str) -> bool:
+    stripped = text.strip()
+    if len(stripped) > 90:
+        return False
+    if re.match(r"^[A-Z]\.\s", stripped):
+        return False
+    if re.match(r"^S\.\s*(?:No|Item)\b", stripped, flags=re.IGNORECASE):
+        return False
+    return bool(re.match(r"^[A-Z]\.[A-Z][A-Za-z0-9\s/&().,\-–:]{2,85}$", stripped))
