@@ -312,6 +312,7 @@ Current capability:
 **Packet 1C result (2026-06-04):** `deductible` extractor implemented. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.55%, normalized value accuracy 100.00%, status accuracy 97.67%, evidence accuracy 100.00%, and false-present count 0.
 **Packet 2A result (2026-06-04):** `room_rent_limit` and `icu_limit` gold/evidence audit completed before extractor implementation. Audit classified all 40 concept-policy rows and locked canonical value shapes for percentages, actuals/no fixed limits, schedule-dependent limits, and conditional components. Packet 2B must apply only the source-backed gold corrections listed in `data/reports/dse021_room_icu_gold_audit.md`.
 **Packet 2B result (2026-06-04):** `room_rent_limit` and `icu_limit` extractors implemented. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.61%, normalized value accuracy 100.00%, status accuracy 97.65%, evidence accuracy 100.00%, and false-present count 0. Gold corrections were source-backed and limited to room/ICU labels.
+**Packet 3A result (2026-06-05):** `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` gold/evidence audit completed before extractor implementation. Audit classified all 60 concept-policy rows and identified source-backed fixes for final coverage-wave labels in `data/reports/dse021_coverage_wave_gold_audit.md`.
 **Branch:** feat/dse-021-extractor-wave2
 **Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
 

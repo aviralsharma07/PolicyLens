@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-05 (DSE-021 — Packet 3A: Coverage Wave Gold Audit)
+
+### Added
+- `data/reports/dse021_coverage_wave_gold_audit.md` — source-backed classification for all 20 `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` gold labels before extractor implementation.
+
+### Changed
+- Packet 3B implementation rules are locked: accept only operative coverage clauses, reject reconstruction/property-restoration/baby-item false positives, and use canonical covered/conditional/schedule-dependent value shapes.
+
+### Known Issues
+- `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` extractors are not implemented yet.
+- Packet 3B must apply only source-backed gold corrections from the audit; no gold label should be changed just to satisfy eval.
+
 ## 2026-06-04 (DSE-021 — Packet 2B: Room Rent + ICU Extractors)
 
 ### Added

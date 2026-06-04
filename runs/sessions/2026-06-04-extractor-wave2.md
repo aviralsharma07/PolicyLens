@@ -445,3 +445,44 @@ gold corpus validator: passed
 
 ### Next Step
 Proceed to Packet 3A: source audit for `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` before implementing the final three DSE-021 extractors.
+
+---
+
+## Packet 3A Closeout — Coverage Wave Gold/Evidence Audit
+
+Date: 2026-06-05
+
+### Goal
+Audit all 20 `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` gold labels against source PDF text, section trees, and table-like policy wording before implementing the final DSE-021 extractors.
+
+### Files Changed
+- `data/reports/dse021_coverage_wave_gold_audit.md`
+- `docs/changelog.md`
+- `docs/tasks.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+pdftotext -layout ../policy_data/<policy_pdf> -  # targeted coverage concept source review
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+git diff --check
+```
+
+### Results
+- All 60 concept-policy rows classified.
+- Coverage concepts were separated from common false positives:
+  - body-part reconstruction is not sum-insured restoration,
+  - home/property restoration is not health restoration,
+  - baby-item annexure rows are not newborn coverage,
+  - generic procedure lists/exclusions are not modern-treatment coverage.
+- Packet 3B source-backed gold fixes identified for Aditya Birla newborn, Bajaj modern treatment, Care modern treatment, Future Generali restoration/newborn, IFFCO modern treatment, Kotak restoration/newborn, Niva Bupa modern treatment, Oriental restoration, Reliance newborn, SBI modern treatment, Tata AIG modern treatment, United India modern treatment, and Universal Sompo restoration.
+
+### Generated Artifacts
+- `data/reports/dse021_coverage_wave_gold_audit.md`
+
+### Known Limitations
+- This packet did not apply gold fixes or implement extractors.
+- Some exact component-level modern treatment limits remain procedure-specific and should not be collapsed into one misleading scalar unless Packet 3B can support that shape safely.
+
+### Next Step
+Implement Packet 3B — `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` extractors plus only the source-backed gold corrections documented in the Packet 3A audit.
