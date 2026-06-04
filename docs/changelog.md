@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 2A: Room Rent + ICU Gold Audit)
+
+### Added
+- `data/reports/dse021_room_icu_gold_audit.md` — source-backed classification for all 20 `room_rent_limit` and `icu_limit` gold labels before extractor implementation.
+
+### Changed
+- Packet 2B implementation rules are locked: reject definitions, accept only operative room/ICU clauses/tables, represent actuals and schedule-dependent limits explicitly, and preserve conditional components when one scalar would be misleading.
+
+### Known Issues
+- `room_rent_limit` and `icu_limit` extractors are not implemented yet.
+- Packet 2B must apply several source-backed gold corrections where current labels are table-row bleed, definition-only evidence, missing operative limits, or noncanonical value shapes.
+
 ## 2026-06-04 (DSE-021 — Packet 1C: Deductible Extractor)
 
 ### Added

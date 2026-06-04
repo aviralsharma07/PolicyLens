@@ -340,3 +340,41 @@ false_present_for_gold_not_found: 0
 
 ### Next Step
 Proceed to Packet 2A: `room_rent_limit` and `icu_limit` audit, because both are table-heavy and should be planned together before implementation.
+
+---
+
+## Packet 2A Closeout — Room Rent + ICU Gold/Evidence Audit
+
+Date: 2026-06-04
+
+### Goal
+Audit all 20 `room_rent_limit` and `icu_limit` gold labels against source PDF text, section trees, and table-like policy wording before implementing paired extractors.
+
+### Files Changed
+- `data/reports/dse021_room_icu_gold_audit.md`
+- `docs/changelog.md`
+- `docs/tasks.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+pdftotext -layout ../policy_data/<policy_pdf> -  # targeted room/ICU source review
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+git diff --check
+```
+
+### Results
+- All 40 concept-policy rows classified.
+- Definition-only room/ICU clauses were separated from operative benefit limits.
+- Canonical value shapes were locked for percentage limits, actuals/no fixed limit, schedule/certificate-dependent values, and conditional components.
+- Packet 2B source-backed gold fixes identified for Bajaj, Care, Future Generali, ICICI ICU, IFFCO, Liberty ICU, Niva Bupa, Oriental, Reliance, Royal ICU, SBI, Star, Tata AIG, and United India ICU.
+
+### Generated Artifacts
+- `data/reports/dse021_room_icu_gold_audit.md`
+
+### Known Limitations
+- The audit does not implement table remediation. It uses existing source text and table-like clauses only.
+- Conditional limits such as IFFCO and Oriental require component-shaped values; Packet 2B should avoid collapsing them into one misleading scalar.
+
+### Next Step
+Implement Packet 2B — paired `room_rent_limit` and `icu_limit` extractors plus only the source-backed gold corrections documented in the Packet 2A audit.
