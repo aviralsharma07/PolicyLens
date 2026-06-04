@@ -707,22 +707,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "planned_or_detected_disease_or_injury": {
-        "immediate": true,
-        "hours_before_hospitalisation": 48
-      },
-      "emergency_hospitalisation": {
-        "hours_from_hospitalisation": 24
-      }
+      "hours": 24
     },
     "normalized_value_json": {
-      "planned_or_detected_disease_or_injury": {
-        "immediate": true,
-        "hours_before_hospitalisation": 48
-      },
-      "emergency_hospitalisation": {
-        "hours_from_hospitalisation": 24
-      }
+      "hours": 24
     },
     "fact_status": "present",
     "scope_json": {
@@ -738,7 +726,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 22,
-    "evidence_text": "If You intend to make any claim under this Policy You must: a. Intimate TPA in writing on detection of any Disease/Injury being suffered immediately or forty-eight hours before Hospitalisation. b. In case of Hospitalisation due to medical emergency, intimate TPA within twenty-four hours from the time of Hospitalisation.",
+    "evidence_text": "f You intend to make any claim under this Policy You must: a.Intimate TPA in writing on detection of any Disease/Injury being suffered immediately or forty-eight hours before Hospitalisation. b.In case of Hospitalisation due to medical emergency, intimate TPA within twenty-four hours from the time of Hospitalisation. c.Submit following supporting documents TPA/Policy issuing office (as the case may be) relating to the claim within seven days from the date of discharge from the Hospital",
     "source_document": {
       "filename": "NewIndia_Floater_Mediclaim_IRDAI.pdf",
       "source_pdf_path": "01_New_India_Assurance/NewIndia_Floater_Mediclaim_IRDAI.pdf",
@@ -747,9 +735,9 @@
       "uin": "NIAHLIP21278V042021"
     },
     "value_type": "duration",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: notice timelines are explicit for detected/planned hospitalization and emergency hospitalization.",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -760,6 +748,11 @@
         "pass_id": "pass_5_human_style_manual_review_patch",
         "result": "resolved",
         "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal",

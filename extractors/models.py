@@ -18,6 +18,8 @@ TARGET_CONCEPTS = [
     "specific_disease_waiting_periods",
     "maternity_waiting",
     "organ_donor_coverage",
+    # Wave 2 — DSE-021
+    "claim_intimation_timeline",
 ]
 
 FACT_STATUSES = {

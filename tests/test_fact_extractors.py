@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from extractors.deterministic import (
+    ClaimIntimationTimelineExtractor,
     ClaimSettlementTimelineExtractor,
     CoPayExtractor,
     FreeLookExtractor,
@@ -226,7 +227,11 @@ def test_copay_extracts_hdfc_admissible_claim_basis():
 def test_copay_extracts_star_age_based_percentage():
     fact = accepted_for(
         "co_pay",
-        [clause("21. 10% of each and every claim amount for insured persons beyond 60 years at entry level.")],
+        [
+            clause(
+                "21. 10% of each and every claim amount for insured persons beyond 60 years at entry level."
+            )
+        ],
     )
     assert fact["fact_status"] == "present"
     assert fact["normalized_value_json"] == {"percentage": 10}
@@ -237,8 +242,12 @@ def test_care_copay_components_are_merged():
     fact = accepted_for(
         "co_pay",
         [
-            clause("Smart Select: Co-Payment of 20% shall apply if treatment is taken outside Annexure III hospital."),
-            clause("Optional Co-payment for persons aged 61 years and above shall be as specified in the Policy Schedule."),
+            clause(
+                "Smart Select: Co-Payment of 20% shall apply if treatment is taken outside Annexure III hospital."
+            ),
+            clause(
+                "Optional Co-payment for persons aged 61 years and above shall be as specified in the Policy Schedule."
+            ),
         ],
     )
     assert fact["fact_status"] == "present"
@@ -355,8 +364,218 @@ def test_maternity_not_covered_until_duration_is_waiting_period():
     assert fact["normalized_value_json"] == {"months": 36}
 
 
+def test_claim_intimation_detects_48_hours():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "In the event of Hospitalisation, We shall be given written notice of "
+                "the claim within 48 hours of admission to the Hospital."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 48}
+
+
+def test_claim_intimation_detects_within_30_days():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "Notice of claim with full particulars shall be sent to the Company "
+                "within 30 days from the date of occurrence of the event."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"days": 30}
+
+
+def test_claim_intimation_rejects_settlement_timeline():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "The Company shall settle the claim within 30 days from the date of "
+                "receipt of last necessary document."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_rejects_free_look():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "A free look period of 15 days from receipt of policy is available "
+                "for the insured to review the terms."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_rejects_grace_period():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "A grace period of 30 days from the date of expiry is available "
+                "for renewal of the policy."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_handles_written_notice_of_claim():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "We shall be given written notice of the claim along with the "
+                "following details within 48 hours of admission."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 48}
+
+
+def test_claim_intimation_not_found_when_no_safe_candidate():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [clause("This policy has no requirement for claim notification or intimation.")],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_rejects_cancellation_timeline():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "The Company reserves the right to cancel the policy by giving "
+                "30 days written notice."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_detects_notified_pattern():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "the Company shall be notified with full particulars within 48 "
+                "hours of Hospitalization commencing."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 48}
+
+
+def test_claim_intimation_detects_notice_shall_be_sent():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "Notice with full particulars shall be sent to the Company as under: "
+                "Within 24 hours from the date of emergency hospitalization required."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 24}
+
+
+def test_claim_intimation_detects_must_be_given_notification():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "We must be given Notification of Claim in writing immediately "
+                "and in any event within 48 hours of the diagnosis."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 48}
+
+
+def test_claim_intimation_detects_at_least_hours_prior():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "Notice with full particulars shall be sent to the Company as under: "
+                "Within 24 hours from the date of emergency hospitalization required "
+                "or before discharge, whichever is earlier. "
+                "At least 48 hours prior to admission in Hospital in case of "
+                "a planned Hospitalization."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 24}
+
+
+def test_claim_intimation_detects_split_notification_bullets():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause("9.2 Notification of Claim Notice with full particulars shall be sent as under:"),
+            clause(
+                "i. Within 24 hours from the date of emergency hospitalization required "
+                "or before the Insured Person's discharge from Hospital, whichever is earlier."
+            ),
+            clause(
+                "ii. At least 48 hours prior to admission in Hospital in case of "
+                "a planned Hospitalization."
+            ),
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"hours": 24}
+
+
+def test_claim_intimation_rejects_adjacent_reimbursement_document_rows():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause("9.2 Notification of Claim Notice with full particulars shall be sent as under:"),
+            clause(
+                "Reimbursement of post hospitalization expenses within fifteen days "
+                "from completion of post hospitalization treatment."
+            ),
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_claim_intimation_rejects_death_document_submission_deadline():
+    fact = accepted_for(
+        "claim_intimation_timeline",
+        [
+            clause(
+                "The immediate family member claiming on behalf of the Insured Person "
+                "must inform Us in writing immediately and send a copy of all the required "
+                "documents to prove the cause of death within 30 days of the death."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
 def test_registry_emits_not_found_for_missing_safe_candidate():
-    _, accepted = run_extractors([clause("This policy has no relevant co-payment percentage.")], "test_run")
+    _, accepted = run_extractors(
+        [clause("This policy has no relevant co-payment percentage.")], "test_run"
+    )
     facts = {fact["concept"]: fact for fact in accepted}
     assert set(facts) == set(TARGET_CONCEPTS)
     assert facts["co_pay"]["fact_status"] == "not_found"

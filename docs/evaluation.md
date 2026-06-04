@@ -762,7 +762,7 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-As of DSE-018, the active deterministic target concepts are:
+As of DSE-021 Packet 1A, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
@@ -776,6 +776,7 @@ As of DSE-018, the active deterministic target concepts are:
 - `specific_disease_waiting_periods`
 - `maternity_waiting`
 - `organ_donor_coverage`
+- `claim_intimation_timeline`
 
 ### Metrics
 - Deterministic present precision
@@ -818,7 +819,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-018 Wave 1 PASS on 2026-06-02 across 20 reviewed policies)
+active (DSE-021 Packet 1A PASS on 2026-06-04 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -869,6 +870,33 @@ Wave 1 canonical value notes:
 - `maternity_waiting` treats language such as `not covered until 36 months` as a waiting-period `present` fact, not as `explicitly_not_covered`.
 
 Known limitation: Reliance Health Gain source PDF contains the normal 30-day claim-settlement clause, but the current section-tree clauses omit that duration and retain only a 45-day investigation fragment. DSE-018 emits `not_found` instead of a wrong-present 45-day value; this is retained as a parser-quality follow-up.
+
+### Current DSE-021 Packet 1A Result
+
+DSE-021 Packet 1A added `claim_intimation_timeline`, bringing the active deterministic concept set from 13 to 14 concepts. The claim-intimation gold labels were source-reviewed and corrected only where the old label/value was demonstrably wrong or non-comparable.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 280,
+  "gold_present": 214,
+  "present_tp": 213,
+  "present_fp": 0,
+  "present_fn": 1,
+  "policies_passed": 20,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 0.995327,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 0.985714,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0,
+  "passed": true
+}
+```
+
+Claim-intimation canonical value note:
+
+- `claim_intimation_timeline` uses the primary/earliest claim notification deadline as `{"hours": N}` or `{"days": N}`. Separate document filing timelines are not included in this concept.
 
 ### Current DSE-017 Result
 

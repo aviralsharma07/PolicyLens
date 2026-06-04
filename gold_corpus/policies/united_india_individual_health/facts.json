@@ -798,10 +798,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "days": 30
+      "hours": 24
     },
     "normalized_value_json": {
-      "days": 30
+      "hours": 24
     },
     "fact_status": "present",
     "scope_json": {
@@ -812,8 +812,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 14,
-    "evidence_text": "ion, non-disclosure of material facts by the Insured Person. i. The Company shall endeavour to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii. Renewal shall not be denied on the ground that the Insured Person had made a claim or claims in the preceding policy years. iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period. iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience. 5.11 Withdrawal of Policy i. In the likelihood of",
+    "evidence_page": 16,
+    "evidence_text": "5.21 Claims Procedure i.Within 24 hours from the date of emergency hospitalization required or before the Insured Person’s discharge from Hospital, whichever is earlier.",
     "source_document": {
       "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
       "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
@@ -822,9 +822,9 @@
       "uin": "UIIHLIP22180V042122"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -835,6 +835,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

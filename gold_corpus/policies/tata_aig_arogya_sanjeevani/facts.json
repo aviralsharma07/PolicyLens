@@ -769,10 +769,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "timeline_text": "treatment and cancelled cheque xii. KYC (Identity proof with Address) of 3. Notification of Claim the proposer, where claim liability is above Rs 1 Lakh as per "
+      "hours": 24
     },
     "normalized_value_json": {
-      "timeline_text": "treatment and cancelled cheque xii. KYC (Identity proof with Address) of 3. Notification of Claim the proposer, where claim liability is above Rs 1 Lakh as per "
+      "hours": 24
     },
     "fact_status": "present",
     "scope_json": {
@@ -784,7 +784,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 20,
-    "evidence_text": "treatment and cancelled cheque xii. KYC (Identity proof with Address) of 3. Notification of Claim the proposer, where claim liability is above Rs 1 Lakh as per AML Notice with full particulars shall be sent to Guidelines the Company/TPA (if applicable) as under: xiii. Legal heir/succession certificate, i. Within 24 hours from the date of wherever applicable emergency hospitalization required or before the Insured Person's xiv. Any other relevant document discharge from Hospital, whichever",
+    "evidence_text": "X.MLR(Medico Legal Report copy if i.Within 24 hours from the date of wherever applicable emergency hospitalization required xiv.Any other relevant document or before the Insured Person's required by Company/TPA for discharge from Hospital, whichever assessment of the claim. is earlier.",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -793,9 +793,9 @@
       "uin": "TATHLIP20169V011920"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -806,6 +806,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

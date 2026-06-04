@@ -745,19 +745,23 @@
   },
   {
     "concept": "claim_intimation_timeline",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "hours": 48
+    },
+    "normalized_value_json": {
+      "hours": 48
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 40,
+    "evidence_text": "the assignee shall be deemed to be absolute iii) Conditions when a claim arises Part F: How do I Make a Claim? What are the Terms for Claim Payment? a)Summary of Claim Procedure: • You, or someone claiming on your behalf, must inform us in writing immediately within 48 hours of diagnosis of any of the listed insured conditions / critical illnesses. See “How Do I Notify You of a Claim?” below. • You must immediately consult a Doctor / Medical Practitioner and follow the advice and treatment that he/she recommends. • You or someone",
     "source_document": {
       "filename": "Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
       "source_pdf_path": "19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf",
@@ -765,10 +769,10 @@
       "document_id": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
       "uin": "LIBHLIP20100V011920"
     },
-    "value_type": null,
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "duration",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -779,6 +783,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

@@ -6,6 +6,7 @@ from typing import Any, Dict, Iterable, List, Optional
 from extractors.base import BaseExtractor
 from extractors.evidence import clean_space
 from extractors.models import FactCandidate
+from extractors.wave2_utils import evidence_window
 from normalizers.duration import find_durations, normalize_duration, parse_number_token
 from normalizers.percentage import find_percentages
 
@@ -811,7 +812,9 @@ class ClaimSettlementTimelineExtractor(BaseExtractor):
                 for t in settlement_terms:
                     if t in d_window:
                         settle_score += 3
-                if _has_any(d_window, ["deficiency", "reminder", "initial request"]) and not _has_any(
+                if _has_any(
+                    d_window, ["deficiency", "reminder", "initial request"]
+                ) and not _has_any(
                     d_window, ["investigation", "settle or repudiate", "settle or reject"]
                 ):
                     settle_score -= 5
@@ -830,13 +833,17 @@ class ClaimSettlementTimelineExtractor(BaseExtractor):
                 is_investigation_settlement = (
                     has_investigation
                     and days >= 45
-                    and _has_any(d_window, ["settle the claim", "settle or reject", "settle or repudiate"])
+                    and _has_any(
+                        d_window, ["settle the claim", "settle or reject", "settle or repudiate"]
+                    )
                 )
                 is_investigation_completion = (
                     has_investigation
                     and days <= 30
                     and _has_any(d_window, ["complete such investigation", "complete such"])
-                    and not _has_any(d_window, ["settle or reject a claim", "settle or repudiate a claim"])
+                    and not _has_any(
+                        d_window, ["settle or reject a claim", "settle or repudiate a claim"]
+                    )
                 )
                 if is_investigation_completion:
                     continue
@@ -872,7 +879,9 @@ class ClaimSettlementTimelineExtractor(BaseExtractor):
                 value_json["investigation_days"] = all_others[0][0]
                 normalized["investigation_days"] = all_others[0][0]
             has_inv = "investigation_days" in value_json
-            evidence_start = min([primary_dur["span"][0]] + [dur["span"][0] for _, dur in all_others])
+            evidence_start = min(
+                [primary_dur["span"][0]] + [dur["span"][0] for _, dur in all_others]
+            )
             evidence_end = max([primary_dur["span"][1]] + [dur["span"][1] for _, dur in all_others])
             confidence = 0.96
             if primary_days >= 45 and _has_any(_lower(text), ["investigation", "settle the claim"]):
@@ -1874,6 +1883,261 @@ class OrganDonorCoverageExtractor(BaseExtractor):
         return candidates
 
 
+class ClaimIntimationTimelineExtractor(BaseExtractor):
+    concept = "claim_intimation_timeline"
+    extractor_name = "claim_intimation_timeline"
+
+    INTIMATION_TERMS = [
+        "intimation",
+        "intimate",
+        "notify",
+        "notification",
+        "notified",
+        "notice of claim",
+        "written notice",
+        "claim notice",
+        "claim must be notified",
+        "notification of claim",
+        "claim intimation",
+        "notice shall be",
+        "notice with full particulars",
+        "must be given notification",
+        "must inform us",
+        "must inform",
+        "notice of claim",
+    ]
+
+    CONTEXT_INTIMATION_TERMS = [
+        "notification of claim",
+        "notice of claim",
+        "notice with full particulars",
+        "claims intimation",
+        "claim intimation",
+    ]
+
+    REJECT_TERMS = [
+        "free look",
+        "free-look",
+        "grace period",
+        "settle the claim",
+        "cancellation",
+        "arbitration",
+        "portability",
+        "migration",
+        "premium",
+        "policy issuance",
+        "withdrawal",
+        "prior to expiry",
+    ]
+
+    _WITHIN_TIME_RE = re.compile(
+        r"(?:within|not later than|as soon as possible but not later than|at least)\s+"
+        r"(?P<num>\d+|twenty[ -]?four|forty[ -]?eight|seventy[ -]?two|fifteen|thirty)"
+        r"\s*(?P<unit>hours?|days?)",
+        re.I,
+    )
+
+    _ACCEPTABLE_DAYS = frozenset({15, 30})
+    _ACCEPTABLE_HOURS = frozenset({24, 48, 72})
+
+    def _parse_duration_value(self, num_text: str, unit: str) -> Optional[Dict[str, Any]]:
+        unit = unit.lower().rstrip("s")
+        if unit == "hour":
+            if num_text.isdigit():
+                v = int(num_text)
+            else:
+                mapping = {
+                    "twenty four": 24,
+                    "twenty-four": 24,
+                    "forty eight": 48,
+                    "forty-eight": 48,
+                    "seventy two": 72,
+                    "seventy-two": 72,
+                }
+                v = mapping.get(num_text.lower().strip())
+                if v is None:
+                    return None
+            if v not in self._ACCEPTABLE_HOURS:
+                return None
+            return {"value": v, "unit": "hours", "normalized": {"hours": v}}
+        elif unit == "day":
+            if num_text.isdigit():
+                v = int(num_text)
+            else:
+                mapping = {
+                    "fifteen": 15,
+                    "thirty": 30,
+                }
+                v = mapping.get(num_text.lower().strip())
+                if v is None:
+                    return None
+            if v not in self._ACCEPTABLE_DAYS:
+                return None
+            return {"value": v, "unit": "days", "normalized": {"days": v}}
+        return None
+
+    def _is_contextual_notice_duration_clause(self, lower: str) -> bool:
+        """Accept adjacent duration bullets only when they describe notice timing.
+
+        Arogya-style PDFs often split "Notification of Claim" from the following
+        bullets, but nearby reimbursement tables also contain "within 15/30 days".
+        Those document-submission rows are claim filing, not claim intimation.
+        """
+        if "post hospitalization" in lower or "post-hospitalization" in lower:
+            return False
+        if "documents" in lower or "claim form" in lower or "submit" in lower:
+            return False
+        return _has_any(
+            lower,
+            [
+                "emergency hospitalization",
+                "emergency hospitalisation",
+                "planned hospitalization",
+                "planned hospitalisation",
+                "prior to admission",
+                "before admission",
+                "before discharge",
+                "date of admission",
+                "diagnosis",
+                "occurrence",
+                "event",
+                "injury",
+                "illness",
+            ],
+        )
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for idx, clause in enumerate(clauses):
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            context = _context_window(clauses, idx, radius=1)
+
+            # Notification headings and the actual duration are often split into adjacent
+            # bullet clauses, e.g. "Notification of Claim" followed by "Within 24 hours".
+            has_intimation = _has_any(lower, self.INTIMATION_TERMS)
+            context_intimation = _has_any(context, self.CONTEXT_INTIMATION_TERMS)
+            if not has_intimation:
+                if not context_intimation or not self._WITHIN_TIME_RE.search(text):
+                    continue
+                if not self._is_contextual_notice_duration_clause(lower):
+                    continue
+            search = f"{lower} {context}"
+
+            # Must have claim context in the clause itself, or in an adjacent claim
+            # notification heading when the current clause only carries the bullet duration.
+            if not _has_any(
+                lower if has_intimation else search,
+                [
+                    "claim",
+                    "hospitalisation",
+                    "hospitalization",
+                    "admission",
+                    "cashless",
+                    "reimbursement",
+                    "event",
+                    "occurrence",
+                    "injury",
+                    "illness",
+                    "diagnosis",
+                ],
+            ):
+                continue
+
+            # Reject if a non-claim-intimation context term outweighs the intimation signal
+            if "cause of death" in lower and "required documents" in lower:
+                continue
+            clause_reject = [t for t in self.REJECT_TERMS if t in lower]
+            if clause_reject:
+                intimation_hits_local = [t for t in self.INTIMATION_TERMS if t in lower]
+                if len(clause_reject) >= len(intimation_hits_local) + 1:
+                    continue
+
+            # Reject only if non-claim-intimation context dominates in the clause itself
+            clause_reject = [t for t in self.REJECT_TERMS if t in lower]
+            if clause_reject and not _has_any(lower, self.INTIMATION_TERMS):
+                continue
+
+            # Reject if strong non-claim-intimation context
+            reject_hits = [t for t in self.REJECT_TERMS if t in search]
+            intimation_hits = [t for t in self.INTIMATION_TERMS if t in lower]
+            if len(reject_hits) > len(intimation_hits):
+                continue
+
+            # Find intimation signal positions in lower
+            sig_positions: List[int] = []
+            for term in self.INTIMATION_TERMS:
+                pos = 0
+                while True:
+                    found = lower.find(term, pos)
+                    if found < 0:
+                        break
+                    sig_positions.append(found + len(term) // 2)
+                    pos = found + 1
+            duration_only_claim_bullet = bool(context_intimation and not sig_positions)
+
+            # Find within-time expressions and check proximity to intimation signals
+            found_durations: List[Dict[str, Any]] = []
+            for match in self._WITHIN_TIME_RE.finditer(text):
+                dur_center = (match.start() + match.end()) // 2
+                if duration_only_claim_bullet:
+                    near_signal = True
+                else:
+                    near_signal = any(abs(dur_center - sp) <= 240 for sp in sig_positions)
+                if near_signal:
+                    dur_info = self._parse_duration_value(
+                        match.group("num"), match.group("unit")
+                    )
+                    if dur_info is not None:
+                        dur_info["span"] = match.span()
+                        dur_info["text"] = match.group(0)
+                        found_durations.append(dur_info)
+
+            if not found_durations:
+                continue
+
+            hour_durs = [d for d in found_durations if d["unit"] == "hours"]
+            day_durs = [d for d in found_durations if d["unit"] == "days"]
+
+            if hour_durs:
+                primary = hour_durs[0]
+                value_json: Dict[str, Any] = {"hours": primary["value"]}
+                candidates.append(
+                    self.make_candidate(
+                        index=len(candidates),
+                        clause=clause,
+                        value_json=value_json,
+                        normalized_value_json=value_json,
+                        evidence_text=evidence_window(
+                            text, primary["span"][0], primary["span"][1], radius=260
+                        ),
+                        pipeline_run_id=pipeline_run_id,
+                        confidence=0.96,
+                        pattern_id="claim_intimation_hours",
+                        debug={"found_durations": found_durations},
+                    )
+                )
+            elif day_durs:
+                primary = day_durs[0]
+                value_json = {"days": primary["value"]}
+                candidates.append(
+                    self.make_candidate(
+                        index=len(candidates),
+                        clause=clause,
+                        value_json=value_json,
+                        normalized_value_json=value_json,
+                        evidence_text=evidence_window(
+                            text, primary["span"][0], primary["span"][1], radius=260
+                        ),
+                        pipeline_run_id=pipeline_run_id,
+                        confidence=0.96,
+                        pattern_id="claim_intimation_days",
+                        debug={"found_durations": found_durations},
+                    )
+                )
+        return candidates
+
+
 EXTRACTORS = [
     FreeLookExtractor(),
     GracePeriodExtractor(),
@@ -1889,4 +2153,6 @@ EXTRACTORS = [
     SpecificDiseaseWaitingPeriodsExtractor(),
     MaternityWaitingExtractor(),
     OrganDonorCoverageExtractor(),
+    # DSE-021 Wave 2
+    ClaimIntimationTimelineExtractor(),
 ]

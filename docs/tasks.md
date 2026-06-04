@@ -301,11 +301,13 @@ Current capability:
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
 **Unblocked by:** DSE-024 — full-corpus parser-target zero-clause failures are now 0.
-**Remaining concepts:** room rent limit, ICU limit, deductible, restoration benefit, modern treatment coverage, newborn coverage, claim intimation timeline.
+**Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04, source-backed remediation complete).
+**Remaining concepts:** room rent limit, ICU limit, deductible, restoration benefit, modern treatment coverage, newborn coverage.
 **Acceptance criteria:**
 - All 20 priority concepts have deterministic or explicitly deferred extraction strategy.
 - Precision >= 95%, evidence accuracy >= 95%, false-present count 0 on reviewed gold policies.
 - Product B export fill rate improves without weakening status/evidence rules.
+**Packet 1A result (2026-06-04):** `claim_intimation_timeline` implemented and remediated. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.53%, normalized value accuracy 100.00%, status accuracy 98.57%, evidence accuracy 100.00%, and false-present count 0. Gold corrections were source-backed and limited to this concept.
 **Branch:** feat/dse-021-extractor-wave2
 **Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
 

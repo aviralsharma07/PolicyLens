@@ -793,10 +793,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "timeline_text": "rized or for which treatment has not been taken at a Network Provider/Service Provider or for which Cashless Facility is not available, We shall be given writte"
+      "hours": 48
     },
     "normalized_value_json": {
-      "timeline_text": "rized or for which treatment has not been taken at a Network Provider/Service Provider or for which Cashless Facility is not available, We shall be given writte"
+      "hours": 48
     },
     "fact_status": "present",
     "scope_json": {
@@ -808,7 +808,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 34,
-    "evidence_text": "rized or for which treatment has not been taken at a Network Provider/Service Provider or for which Cashless Facility is not available, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hospital or before discharge from the Hospital, whichever is earlier: i. The Policy Number; ii. Name of the Policyholder; iii. Name and address of the Insured Person in respect of whom the request is",
+    "evidence_text": "hich Cashless Facility has not been pre-authorized or for which treatment has not been taken at a Network Provider/Service Provider or for which Cashless Facility is not available, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hospital or before discharge from the Hospital, whichever is earlier",
     "source_document": {
       "filename": "NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
       "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
@@ -817,9 +817,9 @@
       "uin": "NBHHLIP22156V032122"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -830,6 +830,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

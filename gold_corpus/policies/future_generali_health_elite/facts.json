@@ -811,10 +811,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "timeline_text": "taken in a Hospital other than a Network Provider or if You/ Insured Person does not wish to avail of the Cashless Facility, then: (i) We must be given Notifica"
+      "hours": 48
     },
     "normalized_value_json": {
-      "timeline_text": "taken in a Hospital other than a Network Provider or if You/ Insured Person does not wish to avail of the Cashless Facility, then: (i) We must be given Notifica"
+      "hours": 48
     },
     "fact_status": "present",
     "scope_json": {
@@ -825,8 +825,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 21,
-    "evidence_text": "taken in a Hospital other than a Network Provider or if You/ Insured Person does not wish to avail of the Cashless Facility, then: (i) We must be given Notification of Claim in writing immediately and in any event within 48 hours of the diagnosis of/sustaining the Illness or Injury. The Insured Person must immediately consult a Medical Practitioner and follow the medical advice and treatment that he/she recommends. (ii) The Insure",
+    "evidence_page": 20,
+    "evidence_text": "on request is denied by Us or if treatment is taken in a Hospital other than a Network Provider or if You/ Insured Person does not wish to avail of the Cashless Facility, then: (i) We must be given Notification of Claim in writing immediately and in any event within 48 hours of the diagnosis of/sustaining the Illness or Injury. The Insured Person must immediately consult a Medical Practitioner and follow the medical advice and treatment that he/she recommends. (ii) The Insured Person must take reasonable steps or measures in good",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -835,9 +835,9 @@
       "uin": "FGIHLIP22234V012122"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -848,6 +848,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

@@ -722,10 +722,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "days": 30
+      "hours": 24
     },
     "normalized_value_json": {
-      "days": 30
+      "hours": 24
     },
     "fact_status": "present",
     "scope_json": {
@@ -737,7 +737,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 16,
-    "evidence_text": "Sl No Type of Claim Prescribed Time limit 1. Reimbursement of hospitalization, day care and pre hospitalization expenses Within thirty days of date of discharge from hospital 2. Reimbursement of post hospitalization expenses Within fifteen days from completion of post hospitalization treatment 9.2 Notification of Claim Notice with full particulars shall be sent to the Company as under: i. Within 24 hours from the date of emergency hospitalization required or before the Insured Person‘s discharge from Hospital, whichever is earlier. ii. At least 48 hours prior to admission in Hospital in case of a planned Hospitalization.",
+    "evidence_text": "8. Moratorium Period i. Within 24 hours from the date of emergency hospitalization required or before the Insured discharge from Hospital, whichever is earlier. Person‘s",
     "source_document": {
       "filename": "HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
       "source_pdf_path": "09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf",
@@ -746,14 +746,19 @@
       "uin": "HDFHLIP20175V011920"
     },
     "value_type": "duration",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
         "result": "reviewed",
         "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

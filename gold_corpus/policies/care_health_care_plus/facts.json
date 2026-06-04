@@ -962,12 +962,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "hours": 48,
-      "filing_days": 30
+      "hours": 48
     },
     "normalized_value_json": {
-      "hours": 48,
-      "filing_days": 30
+      "hours": 48
     },
     "fact_status": "present",
     "scope_json": {
@@ -978,8 +976,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 45,
-    "evidence_text": "Care Plus – Policy Terms and Conditions 45 of 47 Care Health Insurance Limited UIN: CHIHLIP22047V012122 shall be notified with full particulars within 48 hours from the date of occurrence of event either at the Company’s call center or in writing. (ii) Claim mus t be filed within 30 days from the date of discharge from the hospital in case of hospitalization and actual date of loss in case of non-hospitalization Benefits. Note: 6.1.4 (i) and 6.1",
+    "evidence_page": 44,
+    "evidence_text": "following shall be undertaken: (i)If any Illness is diagnosed or discovered or any Injury is suffered or any other contingency occurs which has resulted in a Claim or may result in a Claim under the Policy, the Company shall be notified with full particulars within 48 hours from the date of occurrence of event either at the Company’s call center or in writing. (ii)Claim must be filed within 30 days from the date of discharge from the hospital in case of hospitalization and actual date of loss in case of non-hospitalization Benef",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -988,9 +986,9 @@
       "uin": "CHIHLIP22047V012122"
     },
     "value_type": "duration",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -1001,6 +999,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal",

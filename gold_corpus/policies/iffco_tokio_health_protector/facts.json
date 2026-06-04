@@ -90,10 +90,14 @@
   {
     "concept": "specific_disease_waiting_periods",
     "value_json": {
-      "months_options": [12]
+      "months_options": [
+        12
+      ]
     },
     "normalized_value_json": {
-      "months_options": [12]
+      "months_options": [
+        12
+      ]
     },
     "fact_status": "present",
     "scope_json": {
@@ -785,13 +789,9 @@
   },
   {
     "concept": "claim_intimation_timeline",
-    "value_json": {
-      "days": 30
-    },
-    "normalized_value_json": {
-      "days": 30
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -800,8 +800,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 33,
-    "evidence_text": "misrepresentation by You/the insured person. i. The Company shall endeavor to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. ii. Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. v. No loading shall apply on renewals based on individual claims experience 11. Withdrawal of Policy Policy Wording – Health Prot",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "IFFCO_Tokio_Health_Protector.pdf",
       "source_pdf_path": "12_IFFCO_Tokio/IFFCO_Tokio_Health_Protector.pdf",
@@ -809,10 +809,10 @@
       "document_id": "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0",
       "uin": "IFFHLIP22197V042122"
     },
-    "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "none",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "Source review found only a Notification of Claim definition and renewal/grace text, not a concrete claim intimation deadline.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -823,6 +823,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Source review found only a Notification of Claim definition and renewal/grace text, not a concrete claim intimation deadline."
       }
     ],
     "human_review_priority": "normal"

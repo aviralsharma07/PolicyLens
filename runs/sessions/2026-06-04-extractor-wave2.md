@@ -179,26 +179,77 @@ git status --short
 feat(extractors): add wave 2 utility helpers
 ```
 
+---
+
+## Packet 1A Remediation Closeout — Claim Intimation Timeline
+
+Date: 2026-06-04
+
+### Goal
+Implement and remediate the first Wave 2 extractor, `claim_intimation_timeline`, after the initial executor attempt left the fact extraction gate failing.
+
+### What Was Corrected
+- Added `claim_intimation_timeline` to `TARGET_CONCEPTS`.
+- Added `ClaimIntimationTimelineExtractor`.
+- Registered the extractor in the deterministic extractor registry.
+- Marked the ontology concept as active deterministic.
+- Added regression tests for claim-intimation phrasing, split notification bullets, and document-submission false positives.
+- Re-ran source-backed review for the mismatching 20-policy gold labels.
+- Corrected only `claim_intimation_timeline` gold labels where source text proved the old label/value was wrong or non-comparable.
+
+### Source-Backed Gold Corrections
+- Corrected real present facts previously marked `not_found`: Bajaj Allianz, Liberty, Reliance, Universal Sompo.
+- Corrected incorrect present facts to `not_found`: ICICI Family Shield and IFFCO Tokio Health Protector.
+- Normalized truncated `timeline_text` and over-broad multi-component values to the primary/earliest claim-notification deadline for the claim-intimation concept.
+
+### Commands Run
+```bash
+pdftotext -layout -f 18 -l 18 ../policy_data/08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf -
+pdftotext -layout -f 40 -l 40 ../policy_data/19_Liberty/Liberty_2297fe19-f723-b779-1a48-2741add34d6b.pdf -
+pdftotext -layout -f 23 -l 23 ../policy_data/17_Reliance/Reliance_Health_Gain_PW.pdf -
+pdftotext -layout -f 14 -l 14 ../policy_data/14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf -
+pdftotext -layout -f 16 -l 16 ../policy_data/09_HDFC_ERGO/HDFC_ERGO_Arogya_Sanjeevani_Policy_HDFC_ERGO.pdf -
+pdftotext -layout -f 20 -l 20 ../policy_data/10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf -
+pdftotext -layout -f 32 -l 32 ../policy_data/21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf -
+PYTHONPATH=. .venv/bin/python scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-06-04-fact-extraction-dse021-claim-intimation.json
+```
+
+### Final Eval Result
+```text
+passed: true
+policies_passed: 20/20
+precision: 100.00%
+recall: 99.53%
+normalized_value_accuracy: 100.00%
+status_accuracy: 98.57%
+evidence_accuracy: 100.00%
+false_present_for_gold_not_found: 0
+```
+
+### Generated Artifacts
+- `data/reports/dse021_claim_intimation_mismatch_audit.md`
+- `runs/evals/2026-06-04-fact-extraction-dse021-claim-intimation.json`
+
+### Known Limitations
+- `claim_intimation_timeline` records the primary/earliest claim-notification deadline.
+- Separate claim-document filing deadlines remain a future concept and are not included here.
+
+### Next Step
+Implement the next DSE-021 packet for `deductible` with the same source-backed audit discipline.
+
 ### Latest Context Capsule
 
-#### Open tasks
-- DSE-021: in_progress — Packet 0B complete, Packet 0C (shared registry) optional, Packet A extractors next
-- DSE-022: planned — table eval expansion
-- DSE-023: planned — LLM refinement layer
-
 #### Current branch
-feat/dse-021-extractor-wave2, clean working tree
+`feat/dse-021-extractor-wave2`
 
-#### Pipeline health (unchanged)
-- Corpus identity: 647 processed, 566 exported, 80 excluded, 0 skipped
-- Parser targets: 0 zero-heading, 0 zero-clause (after DSE-024)
-- Full corpus fill: 13 extractors active; mean fill rate ~10/20
+#### Completed packets
+- Packet 0A — baseline audit committed.
+- Packet 0B — shared Wave 2 utilities committed.
+- Packet 1A — `claim_intimation_timeline` implemented/remediated, pending commit.
 
-#### Extractors implemented (13, unchanged)
-free_look_period, grace_period, ped_waiting_period, initial_waiting_period, co_pay, renewability, claim_settlement_timeline, ayush_coverage, ambulance_coverage, cumulative_bonus_ncb, specific_disease_waiting_periods, maternity_waiting, organ_donor_coverage
+#### Current active concept count
+14 deterministic concepts after Packet 1A.
 
-#### New shared utilities (8)
-clean_lower, has_any, evidence_window, near_terms, reject_if_context, find_duration_near_terms, schedule_dependent_value, coverage_value
-
-#### Next
-Start Packet A (claim_intimation_timeline + deductible extractors).
+#### Next exact packet
+Packet 1B — source-backed deductible gold/evidence audit only. Do not implement the deductible extractor before the audit is complete.

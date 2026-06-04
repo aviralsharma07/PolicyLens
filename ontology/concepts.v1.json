@@ -331,8 +331,8 @@
       "value_shape": "duration_or_components",
       "export_field": "claim_intimation_days",
       "unit": "days",
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
       "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
       "display_rules": {

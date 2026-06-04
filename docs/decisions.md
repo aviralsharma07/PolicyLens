@@ -870,3 +870,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: 110 policies still need parser remediation or corpus filtering.
 
 **Revisit when:** False-positive review of promoted headings shows unsafe promotions, or remaining zero-clause policies require format-specific logic beyond this fallback.
+
+---
+
+## 2026-06-04 — Claim intimation stores primary notification deadline (ADR-0034)
+
+**Status:** accepted
+
+**Decision:** `claim_intimation_timeline` stores the primary or earliest claim-notification deadline as `{"hours": N}` or `{"days": N}`. Claim document filing/submission timelines are not included in this concept.
+
+**Context:** DSE-021 Packet 1A found that reviewed gold labels mixed claim notification, claim filing, and truncated `timeline_text` values. Several policies contain multiple deadlines in the same claims procedure section, but Product A needs a stable comparable value for the claim-intimation concept.
+
+**Options considered:**
+1. Store the entire claims procedure as `timeline_text`.
+2. Store a multi-component object for every scenario.
+3. Store the primary/earliest notification deadline and defer filing timelines to a separate concept.
+
+**Reasoning:** Option 3 is deterministic, comparable, and aligned with the concept name. It avoids conflating intimation with document submission while preserving evidence for the selected deadline.
+
+**Consequences:**
+- Positive: DSE-021 Packet 1A fact extraction eval passes with 20/20 policies, 100% precision, 100% value accuracy, and 0 false-present facts.
+- Positive: Product B gets a stable field instead of opaque text snippets.
+- Negative: Rich scenario-specific filing schedules are not represented yet.
+
+**Revisit when:** Product B needs scenario-specific claim filing/display timelines or a separate `claim_document_submission_timeline` concept is added.

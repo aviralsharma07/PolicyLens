@@ -783,10 +783,10 @@
   {
     "concept": "claim_intimation_timeline",
     "value_json": {
-      "timeline_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of cla"
+      "hours": 72
     },
     "normalized_value_json": {
-      "timeline_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of cla"
+      "hours": 72
     },
     "fact_status": "present",
     "scope_json": {
@@ -797,8 +797,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 32,
-    "evidence_text": "Policy Document G.1.2 For admission in Non-Network Hospital or into Network Hospital if cashless facility is not availed (Re-imbursement Claims)  Notice of claim: Preliminary notice of claim with particulars relating to Policy number, Name of the Insured Person in respect of whom claim is made, nature of illness/injury and name and address of the attending hospital, should be given to the Insurer within 72 hours before admission in case of planned hospitalization, and not later than 48 hours or before discharge, in case of emergency hospitalization.  Submission of claim: The insured shall submit the claim form along with attending physician’s certificate duly filled and signed in all respects with the following claim documents",
+    "evidence_page": 31,
+    "evidence_text": "bursement both Claims will be settled through TPA. The Claims Procedure is as follows: G.1.1For admission in Network Hospital (Cashless Claims) Insured Person shall call the TPA helpline and furnish Membership Number, Policy Number and the Name of the Patient within 72 hours before admission to hospital for planned hospitalization and not later than 48 hours of admission in case of emergency hospitalization. The insured shall also provide to the TPA by e-mail or through TPA’s web portal, the details of hospitalization like diagno",
     "source_document": {
       "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
       "source_pdf_path": "21_Royal_Sundaram/Royal_Sundaram_Advanced_Top_Up_PW.pdf",
@@ -807,9 +807,9 @@
       "uin": "RSAHLIP23029V012223"
     },
     "value_type": "duration",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: claim intimation timeline search",
+    "notes": "DSE-021 claim-intimation correction: normalized to primary/earliest claim notification deadline; claim document filing timelines are not included in this concept.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -820,6 +820,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Claim-intimation value/status/evidence verified against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

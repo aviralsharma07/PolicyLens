@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 1A: Claim Intimation Timeline Extractor Remediation)
+
+### Added
+- `ClaimIntimationTimelineExtractor` for `claim_intimation_timeline`.
+- Regression tests for claim-intimation phrasing, adjacent notification bullets, and false-positive document/death submission rows.
+- `data/reports/dse021_claim_intimation_mismatch_audit.md` with source-backed gold corrections and extractor remediation notes.
+- `runs/evals/2026-06-04-fact-extraction-dse021-claim-intimation.json` final passing eval artifact.
+
+### Changed
+- `extractors/models.py` and `ontology/concepts.v1.json` now mark `claim_intimation_timeline` as an active deterministic concept.
+- `extractors/deterministic.py` handles notification terms split across adjacent clauses, including Arogya-style `Notification of Claim` headings followed by 24/48-hour bullets.
+- Gold `facts.json` labels for `claim_intimation_timeline` were corrected only where source text proved the previous label/value was wrong or non-comparable.
+
+### Fixed
+- DSE-021 claim-intimation eval now passes: 20/20 policies, precision 100.00%, recall 99.53%, normalized value accuracy 100.00%, status accuracy 98.57%, evidence accuracy 100.00%, false-present count 0.
+- Rejected reimbursement document-submission rows and death-document deadlines that previously looked like claim-intimation timelines.
+
+### Known Issues
+- `claim_intimation_timeline` records the primary/earliest claim-notification deadline. Separate document filing timelines remain deferred.
+
 ## 2026-06-04 (DSE-021 — Packet 0B: Shared Wave 2 Utilities)
 
 ### Added

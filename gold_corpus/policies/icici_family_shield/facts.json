@@ -719,13 +719,9 @@
   },
   {
     "concept": "claim_intimation_timeline",
-    "value_json": {
-      "days": 30
-    },
-    "normalized_value_json": {
-      "days": 30
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -734,8 +730,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 18,
-    "evidence_text": "2000PLC129408 18 Claim Documents for Section B (Applicable for Benefit B.1 and B.2)  On the occurrence of an Insured Event which may give rise to a claim under Section B of the Policy, We shall be provided with the following necessary and mandatory information and documentation specified in relation to the Benefit being claimed within 30 days of the occurrence of the Insured Event: Duly filled claim form  Hospital Discharge summary filled and attested by Hospital  In case of incomplete and / or inconclusive Discharge Summary, Certificate from Treating Doctor (under whom the insured was admitted) mentioning the details of Diagnosis, Investigations and Date",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "ICICI_Family_Shield_IRDAI.pdf",
       "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
@@ -743,15 +739,20 @@
       "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
       "uin": "ICIHLIP22092V032122"
     },
-    "value_type": "duration",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "value_type": "none",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "Source review found only a Notification of Claim definition, not a concrete claim intimation deadline.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
         "result": "reviewed",
         "note": "Evidence and status checked for precision-first gold corpus use."
+      },
+      {
+        "pass_id": "dse021_claim_intimation_source_review",
+        "result": "corrected",
+        "note": "Source review found only a Notification of Claim definition, not a concrete claim intimation deadline."
       }
     ],
     "human_review_priority": "normal"
