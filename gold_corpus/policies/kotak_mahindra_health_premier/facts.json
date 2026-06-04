@@ -267,13 +267,9 @@
   },
   {
     "concept": "deductible",
-    "value_json": {
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -282,8 +278,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 3,
-    "evidence_text": "means a cost sharing requirement under a health insurance policy that provides that the insurer will not be liable for a specified rupee amount in Deductible case of indemnity policies and for a specified number of days/hours in case of hospital cash policies which will apply before any benefits are payable by the insurer. A deductible does not reduce the Sum Insured. means a treatment",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Kotak_Kotak_Health_premier.pdf",
       "source_pdf_path": "16_Kotak_Mahindra/Kotak_Kotak_Health_premier.pdf",
@@ -291,10 +287,10 @@
       "document_id": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
       "uin": "KOTHLIP21065V032021"
     },
-    "value_type": "money_or_schedule",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "none",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: deductible search",
+    "notes": "DSE-021 deductible audit found only the standard deductible definition and unrelated deduction language, not an operative deductible clause.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -305,6 +301,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "DSE-021 deductible audit found only the standard deductible definition and unrelated deduction language, not an operative deductible clause."
       }
     ],
     "human_review_priority": "normal"

@@ -894,3 +894,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Rich scenario-specific filing schedules are not represented yet.
 
 **Revisit when:** Product B needs scenario-specific claim filing/display timelines or a separate `claim_document_submission_timeline` concept is added.
+
+---
+
+## 2026-06-04 — Deductible requires operative policy language (ADR-0035)
+
+**Status:** accepted
+
+**Decision:** `deductible` is `present` only when policy wording contains operative language showing a deductible applies. Standard definitions such as `Deductible means...` are not enough.
+
+**Context:** DSE-021 Packet 1B found that several gold labels marked definition-only deductible text as present. This creates a false user-facing impression that the policy has a deductible when the wording only defines the term.
+
+**Options considered:**
+1. Treat any `Deductible means...` definition as present.
+2. Emit `present` only from operative language and schedule/certificate dependency clauses.
+3. Defer deductible until table/schedule parsing improves.
+
+**Reasoning:** Option 2 preserves precision and still captures true schedule-dependent deductibles. It also follows the Product B display rule that `not_found` must not be shown as `No deductible`.
+
+**Consequences:**
+- Positive: DSE-021 Packet 1C eval passes with 100% precision, 100% value accuracy, and 0 false-present facts.
+- Positive: Definition-only clauses no longer create misleading deductible facts.
+- Negative: Exact deductible amounts remain unavailable when the wording points only to the policy schedule/certificate.
+
+**Revisit when:** DSE-022/DSE-023 can reliably parse policy schedules or Product B needs exact deductible amounts beyond schedule-dependent status.

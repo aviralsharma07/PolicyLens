@@ -572,6 +572,89 @@ def test_claim_intimation_rejects_death_document_submission_deadline():
     assert fact["fact_status"] == "not_found"
 
 
+def test_deductible_detects_policy_schedule_dependent_clause():
+    fact = accepted_for(
+        "deductible",
+        [
+            clause(
+                "Claim under this Policy will be payable only after exhaustion of "
+                "Deductible amount as opted by the insured and as specified in the "
+                "policy schedule."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"]["schedule_dependent"] is True
+    assert fact["normalized_value_json"]["basis"] == "policy_schedule"
+
+
+def test_deductible_rejects_definition_only_clause():
+    fact = accepted_for(
+        "deductible",
+        [
+            clause(
+                "Deductible means a cost sharing requirement under a health insurance "
+                "policy. A deductible does not reduce the Sum Insured."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_deductible_rejects_free_look_premium_deduction():
+    fact = accepted_for(
+        "deductible",
+        [
+            clause(
+                "If the policy is cancelled during free look, premium shall be refunded "
+                "after deduction towards proportionate risk premium and stamp duty."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_deductible_detects_explicit_amount():
+    fact = accepted_for(
+        "deductible",
+        [clause("A deductible of Rs. 5,00,000 shall apply to each admissible claim.")],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"amount": 500000, "currency": "INR"}
+
+
+def test_deductible_detects_top_up_exhaustion_clause():
+    fact = accepted_for(
+        "deductible",
+        [
+            clause(
+                "The top-up claim is payable only after exhaustion of Deductible "
+                "specified in the Policy Schedule."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"]["schedule_dependent"] is True
+
+
+def test_deductible_detects_time_deductible_hours():
+    fact = accepted_for(
+        "deductible",
+        [
+            clause(
+                "Deductible equivalent to Daily Cash Allowance for the first 48 hours "
+                "Hospitalization will be levied on each Hospitalisation during the Policy Period."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {
+        "schedule_dependent": True,
+        "hours": 48,
+        "basis": "daily_cash_allowance",
+    }
+
+
 def test_registry_emits_not_found_for_missing_safe_candidate():
     _, accepted = run_extractors(
         [clause("This policy has no relevant co-payment percentage.")], "test_run"

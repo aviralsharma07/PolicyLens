@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Packet 1C: Deductible Extractor)
+
+### Added
+- `DeductibleExtractor` for operative deductible clauses.
+- Regression tests for schedule-dependent deductible, definition-only rejection, free-look deduction rejection, explicit amount parsing, top-up deductible, and time deductible hours.
+- `runs/evals/2026-06-04-fact-extraction-dse021-deductible.json` final passing eval artifact.
+
+### Changed
+- `deductible` is now an active deterministic concept in `TARGET_CONCEPTS` and ontology.
+- Deductible gold labels corrected only where Packet 1B source audit proved the current label/value wrong or non-canonical.
+
+### Fixed
+- Fact extraction eval now passes with 15 active deterministic concepts: 20/20 policies, precision 100.00%, normalized value accuracy 100.00%, evidence accuracy 100.00%, false-present count 0.
+
+### Known Issues
+- Exact deductible amount remains schedule-dependent when the source clause points to policy schedule/certificate rather than stating an amount in the wording.
+
 ## 2026-06-04 (DSE-021 — Packet 1B: Deductible Gold Audit)
 
 ### Added

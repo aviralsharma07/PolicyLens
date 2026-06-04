@@ -268,19 +268,23 @@
   },
   {
     "concept": "deductible",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "schedule_dependent": true
+    },
+    "normalized_value_json": {
+      "schedule_dependent": true
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 11,
+    "evidence_text": "IV. Time Deductible shall be applicable on each and every where the (who are also an ) In-PolicyholdersInsuredPerson claim reported under the .were different, the Loyalty Cover shall be the higher count of Patient TreatmentPolicy Loyalty benefits of the two policies and granted only to the B. ICU CASH of the renewal . PolicyholderPolicy If the has accepted a",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -288,10 +292,10 @@
       "document_id": "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176",
       "uin": "RELHLIP22229V032122"
     },
-    "value_type": null,
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "deductible_schedule",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 deductible correction: normalized to canonical schedule-dependent deductible shape after source-backed audit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -302,6 +306,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "Deductible status/value/evidence checked against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal"

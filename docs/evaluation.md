@@ -762,12 +762,13 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-As of DSE-021 Packet 1A, the active deterministic target concepts are:
+As of DSE-021 Packet 1C, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
 - `initial_waiting_period`
 - `co_pay`
+- `deductible`
 - `renewability`
 - `claim_settlement_timeline`
 - `ayush_coverage`
@@ -819,7 +820,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-021 Packet 1A PASS on 2026-06-04 across 20 reviewed policies)
+active (DSE-021 Packet 1C PASS on 2026-06-04 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -897,6 +898,33 @@ DSE-021 Packet 1A added `claim_intimation_timeline`, bringing the active determi
 Claim-intimation canonical value note:
 
 - `claim_intimation_timeline` uses the primary/earliest claim notification deadline as `{"hours": N}` or `{"days": N}`. Separate document filing timelines are not included in this concept.
+
+### Current DSE-021 Packet 1C Result
+
+DSE-021 Packet 1C added `deductible`, bringing the active deterministic concept set from 14 to 15 concepts. Gold labels were source-reviewed before implementation, and definition-only deductible text was rejected as non-operative.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 300,
+  "gold_present": 222,
+  "present_tp": 221,
+  "present_fp": 0,
+  "present_fn": 1,
+  "policies_passed": 20,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 0.995495,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 0.976667,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0,
+  "passed": true
+}
+```
+
+Deductible canonical value note:
+
+- `deductible` emits `{"schedule_dependent": true}` for operative deductible clauses where the amount is only in the policy schedule/certificate. It may include direct metadata such as `basis` or `hours` when stated in the same evidence clause. Pure definitions are not `present`.
 
 ### Current DSE-017 Result
 

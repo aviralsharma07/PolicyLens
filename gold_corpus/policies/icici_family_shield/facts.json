@@ -267,25 +267,12 @@
   {
     "concept": "deductible",
     "value_json": {
-      "applies": true,
-      "amount": null,
-      "policy_certificate_dependent": true,
-      "basis_options": [
-        "per_year",
-        "per_life",
-        "per_event",
-        "benefit_specific"
-      ]
+      "schedule_dependent": true,
+      "basis": "policy_certificate"
     },
     "normalized_value_json": {
-      "deductible_status": "present_schedule_dependent",
-      "amount": null,
-      "basis_options": [
-        "per_year",
-        "per_life",
-        "per_event",
-        "benefit_specific"
-      ]
+      "schedule_dependent": true,
+      "basis": "policy_certificate"
     },
     "fact_status": "present",
     "scope_json": {
@@ -300,7 +287,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 1,
-    "evidence_text": "Deductible shall be applicable per year, per life or per event as stated in the policy certificate and specific benefit based deductible shall be applied if specified in the policy certificate.",
+    "evidence_text": "4. Deductible means a cost sharing requirement under a health insurance policy that provides that the insurer will not be liable for a specified rupee amount in case of indemnity policies and for a specified number of days/hours in case of hospital cash policies, which will apply before any benefits are payable by the insurer. A deductible does not reduce th",
     "source_document": {
       "filename": "ICICI_Family_Shield_IRDAI.pdf",
       "source_pdf_path": "04_ICICI_Lombard/ICICI_Family_Shield_IRDAI.pdf",
@@ -308,10 +295,10 @@
       "document_id": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
       "uin": "ICIHLIP22092V032122"
     },
-    "value_type": "coverage_status_or_typed_value",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: deductible is present but amount and basis are Policy Certificate-dependent.",
+    "value_type": "deductible_schedule",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 deductible correction: normalized to canonical schedule-dependent deductible shape after source-backed audit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -322,6 +309,11 @@
         "pass_id": "pass_5_human_style_manual_review_patch",
         "result": "resolved",
         "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "Deductible status/value/evidence checked against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal",

@@ -290,3 +290,53 @@ git diff --check
 
 ### Next Step
 Implement Packet 1C — deductible extractor plus source-backed deductible gold corrections.
+
+---
+
+## Packet 1C Closeout — Deductible Extractor
+
+Date: 2026-06-04
+
+### Goal
+Implement a precision-first deterministic extractor for `deductible` using the Packet 1B audit as the source of truth.
+
+### Files Changed
+- `extractors/models.py`
+- `extractors/deterministic.py`
+- `ontology/concepts.v1.json`
+- `tests/test_fact_extractors.py`
+- `gold_corpus/policies/*/facts.json` for source-backed deductible corrections
+- `data/reports/dse021_deductible_gold_audit.md`
+- `runs/evals/2026-06-04-fact-extraction-dse021-deductible.json`
+- `docs/changelog.md`, `docs/tasks.md`, `docs/evaluation.md`, `docs/decisions.md`
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_fact_extractors.py --tb=short
+PYTHONPATH=. .venv/bin/python scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-06-04-fact-extraction-dse021-deductible.json
+```
+
+### Results
+```text
+passed: true
+policies_passed: 20/20
+precision: 100.00%
+recall: 99.55%
+normalized_value_accuracy: 100.00%
+status_accuracy: 97.67%
+evidence_accuracy: 100.00%
+false_present_for_gold_not_found: 0
+```
+
+### Source-Backed Gold Corrections
+- `future_generali_health_elite`: deductible changed from `present` to `not_found`.
+- `kotak_mahindra_health_premier`: deductible changed from `present` to `not_found`.
+- `reliance_health_gain`: deductible changed from `not_found` to `present`.
+- Care, ICICI, and Star deductible values normalized to canonical schedule-dependent shapes.
+
+### Known Limitations
+- The extractor records operative deductible presence and schedule dependency. It does not parse full benefit schedule tables into exact deductible amounts when the amount is only in the policy schedule/certificate.
+
+### Next Step
+Proceed to Packet 2A: `room_rent_limit` and `icu_limit` audit, because both are table-heavy and should be planned together before implementation.

@@ -8,6 +8,7 @@ from extractors.evidence import clean_space
 from extractors.models import FactCandidate
 from extractors.wave2_utils import evidence_window
 from normalizers.duration import find_durations, normalize_duration, parse_number_token
+from normalizers.money import find_money_values
 from normalizers.percentage import find_percentages
 
 
@@ -657,6 +658,155 @@ class CoPayExtractor(BaseExtractor):
                     )
                 )
 
+        return candidates
+
+
+class DeductibleExtractor(BaseExtractor):
+    concept = "deductible"
+    extractor_name = "deductible"
+
+    OPERATIVE_TERMS = [
+        "deductible option",
+        "annual aggregate deductible",
+        "voluntary aggregate deductible",
+        "in excess of the amount of the deductible",
+        "in excess of the per event deductible",
+        "in excess of the deductible",
+        "deductible shall be applicable",
+        "deductible will apply",
+        "deductible under this benefit",
+        "deductible of",
+        "exhaustion of deductible",
+        "over and above the deductible",
+        "deductible amount as opted",
+        "deductible equivalent to",
+        "deductible stated in the policy certificate",
+        "deductible specified in the policy schedule",
+        "deductible as specified in the policy schedule",
+        "deductible as specified in the policy certificate",
+        "deductible for each policy period",
+        "deductibles for each policy period",
+    ]
+    DEFINITION_TERMS = [
+        "deductible means",
+        "cost sharing requirement",
+        "a deductible does not reduce the sum insured",
+    ]
+    REJECT_TERMS = [
+        "deduction towards the proportionate risk premium",
+        "deduction of the co-payment",
+        "after deduction of the co-payment",
+        "deduct all the pending installments",
+        "deduct all the pending instalments",
+        "deficiency documents",
+        "free look",
+        "premium paid less",
+        "medical check",
+        "stamp duty",
+        "proportionate risk premium",
+    ]
+    GENERIC_ONLY_TERMS = [
+        "deductibles as per the policy contract",
+        "co-payments, deductibles as per the policy contract",
+    ]
+    _TIME_DEDUCTIBLE_RE = re.compile(
+        r"first\s+(?P<num>\d+|twenty[ -]?four|forty[ -]?eight|seventy[ -]?two)\s+hours?",
+        re.I,
+    )
+
+    def _near_deductible(self, text: str, span: tuple[int, int], radius: int = 140) -> bool:
+        lower = _lower(text)
+        start = max(0, span[0] - radius)
+        end = min(len(lower), span[1] + radius)
+        return "deductible" in lower[start:end]
+
+    def _value_from_text(self, text: str, lower: str) -> Dict[str, Any]:
+        value: Dict[str, Any] = {"schedule_dependent": True}
+
+        time_match = self._TIME_DEDUCTIBLE_RE.search(text)
+        if "daily cash allowance" in lower and time_match:
+            parsed = parse_number_token(time_match.group("num"))
+            if parsed is not None:
+                value["hours"] = parsed
+                value["basis"] = "daily_cash_allowance"
+                return value
+
+        money_values = [
+            item for item in find_money_values(text) if self._near_deductible(text, item["span"])
+        ]
+        if (
+            money_values
+            and "specified in the policy schedule" not in lower
+            and "specified in policy schedule" not in lower
+            and "policy certificate" not in lower
+            and "illustration" not in lower
+        ):
+            return dict(money_values[0]["normalized"])
+
+        percentages = [
+            item for item in find_percentages(text) if self._near_deductible(text, item["span"])
+        ]
+        if percentages:
+            return dict(percentages[0]["normalized"])
+
+        if "aggregate" in lower and "policy year" in lower:
+            value["basis"] = "aggregate_per_policy_year"
+        elif "policy certificate" in lower:
+            value["basis"] = "policy_certificate"
+        elif "policy schedule" in lower:
+            value["basis"] = "policy_schedule"
+        elif "over and above the deductible" in lower or "after exhaustion of deductible" in lower:
+            value["basis"] = "top_up"
+
+        if "if opted" in lower or "opts for" in lower:
+            value["condition"] = "if_opted"
+        return value
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for clause in clauses:
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            if "deductible" not in lower:
+                continue
+            if _has_any(lower, self.REJECT_TERMS):
+                continue
+
+            has_operative = _has_any(lower, self.OPERATIVE_TERMS)
+            definition_only = _has_any(lower, self.DEFINITION_TERMS) and not has_operative
+            generic_only = _has_any(lower, self.GENERIC_ONLY_TERMS) and not has_operative
+            if definition_only or generic_only:
+                continue
+            if not has_operative:
+                continue
+
+            value_json = self._value_from_text(text, lower)
+            pattern_id = "deductible_schedule_dependent"
+            if "amount" in value_json:
+                pattern_id = "deductible_amount"
+            elif "percentage" in value_json:
+                pattern_id = "deductible_percentage"
+            elif "hours" in value_json:
+                pattern_id = "deductible_time"
+            confidence = 0.96
+            if value_json.get("condition") == "if_opted":
+                confidence = 0.94
+            candidates.append(
+                self.make_candidate(
+                    index=len(candidates),
+                    clause=clause,
+                    value_json=value_json,
+                    normalized_value_json=value_json,
+                    evidence_text=text[: min(len(text), 360)],
+                    pipeline_run_id=pipeline_run_id,
+                    confidence=confidence,
+                    pattern_id=pattern_id,
+                    condition_json={"option": "if_opted"}
+                    if value_json.get("condition") == "if_opted"
+                    else None,
+                    debug={"operative_terms": [t for t in self.OPERATIVE_TERMS if t in lower]},
+                )
+            )
         return candidates
 
 
@@ -2144,6 +2294,7 @@ EXTRACTORS = [
     PedWaitingPeriodExtractor(),
     InitialWaitingPeriodExtractor(),
     CoPayExtractor(),
+    DeductibleExtractor(),
     # DSE-018 Wave 1
     RenewabilityExtractor(),
     ClaimSettlementTimelineExtractor(),

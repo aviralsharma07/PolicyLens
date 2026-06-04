@@ -304,13 +304,10 @@
   {
     "concept": "deductible",
     "value_json": {
-      "applies": true,
-      "amount": null,
       "schedule_dependent": true
     },
     "normalized_value_json": {
-      "deductible_status": "present_schedule_dependent",
-      "amount": null
+      "schedule_dependent": true
     },
     "fact_status": "present",
     "scope_json": {
@@ -326,7 +323,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 8,
-    "evidence_text": "If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two policy periods, including the deductibles for each policy period.",
+    "evidence_text": "6. If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two policy periods, including the deductibles for each policy period. Such eligible claim amount to be payable to the insured shall be reduced to the extent of premium to be received for the renewal/due date of premium of",
     "source_document": {
       "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
       "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
@@ -334,10 +331,10 @@
       "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
       "uin": "SHAHLIP18029V031718"
     },
-    "value_type": "coverage_status_or_typed_value",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: deductible is present but no numeric amount is safely extractable from the wording.",
+    "value_type": "deductible_schedule",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 deductible correction: normalized to canonical schedule-dependent deductible shape after source-backed audit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -353,6 +350,11 @@
         "pass_id": "pass_5_human_style_manual_review_patch",
         "result": "resolved",
         "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "Deductible status/value/evidence checked against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal",

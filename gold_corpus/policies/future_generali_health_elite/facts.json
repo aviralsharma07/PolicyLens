@@ -277,13 +277,9 @@
   },
   {
     "concept": "deductible",
-    "value_json": {
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -292,8 +288,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 18,
-    "evidence_text": "testable except for proven fraud and permanent exclusions specified in the policy contract. The policies would however be subject to all limits, sub limits, co-payments, deductibles as per the policy contract. 9. Nomination The policyholder is required at the inception of the policy to make a nomination for the purpose of payment of claims under the policy in the event of death of the policyholder. Any change of nomination shall be communicated to the company in writing and such change shall be effective only when an endorsement on the policy is made. ln the event of death of the policyholder, the Company will pay the nominee {as named in the Policy Schedule/Policy Certificate/Endorsement (if any)} and in case there is no subsisting nominee, to the legal heirs or legal",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -301,10 +297,10 @@
       "document_id": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
       "uin": "FGIHLIP22234V012122"
     },
-    "value_type": "money_or_schedule",
-    "annotator": "Codex DSE-012 source-PDF human review",
+    "value_type": "none",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: deductible search",
+    "notes": "DSE-021 deductible audit found only generic moratorium/limits language, not an operative deductible clause.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -315,6 +311,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "DSE-021 deductible audit found only generic moratorium/limits language, not an operative deductible clause."
       }
     ],
     "human_review_priority": "normal"

@@ -355,14 +355,10 @@
   {
     "concept": "deductible",
     "value_json": {
-      "applies_if_opted": true,
-      "amount": null,
       "schedule_dependent": true,
       "basis": "aggregate_per_policy_year"
     },
     "normalized_value_json": {
-      "deductible_status": "present_if_opted",
-      "amount": null,
       "schedule_dependent": true,
       "basis": "aggregate_per_policy_year"
     },
@@ -380,7 +376,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
     "evidence_page": 27,
-    "evidence_text": "Deductible Option If this Optional Benefit is opted, then Policyholder is entitled for a discount on the Premium payable. The claim amount assessed by the Company for a particular claim shall be reduced by the Deductible as specified in the Policy Schedule and the Company shall be liable to make payment under the Policy for any Claim only when the Deductible on that Claim is exhausted.",
+    "evidence_text": "3.2.5Optional Benefit : Deductible Option If this Optional Benefit is opted, then Policyholder is entitled for a discount on the Premium payable. (i)The claim amount assessed by the Company for a particular claim shall be reduced by the Deductible as specified in the Policy Schedule and the Company shall be liable to make payment under the Policy for any Cla",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -388,10 +384,10 @@
       "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
       "uin": "CHIHLIP22047V012122"
     },
-    "value_type": "coverage_status_or_typed_value",
-    "annotator": "Codex manual text-layer review",
-    "review_status": "gold_v1_manual_review_resolved",
-    "notes": "Manual review resolved: deductible is present when optional benefit is opted; amount is Policy Schedule-dependent and basis is aggregate per Policy Year.",
+    "value_type": "deductible_schedule",
+    "annotator": "Codex source-PDF-backed DSE-021 review",
+    "review_status": "gold_v2_agent_reviewed",
+    "notes": "DSE-021 deductible correction: normalized to canonical schedule-dependent deductible shape after source-backed audit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -407,6 +403,11 @@
         "pass_id": "pass_5_human_style_manual_review_patch",
         "result": "resolved",
         "note": "Resolved from source-PDF-only manual review report data/reports/gold_corpus_manual_review_11_facts_v1.md."
+      },
+      {
+        "pass_id": "dse021_deductible_source_review",
+        "result": "corrected",
+        "note": "Deductible status/value/evidence checked against source text and normalized for deterministic eval."
       }
     ],
     "human_review_priority": "normal",

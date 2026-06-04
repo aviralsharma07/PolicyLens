@@ -9,6 +9,7 @@ TARGET_CONCEPTS = [
     "ped_waiting_period",
     "initial_waiting_period",
     "co_pay",
+    "deductible",
     # Wave 1 — DSE-018
     "renewability",
     "claim_settlement_timeline",

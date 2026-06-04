@@ -10,6 +10,23 @@ This packet audited all 20 reviewed gold policies for `deductible` before implem
 
 Important decision for Packet 1C: pure definitions such as `Deductible means...` must not be emitted as `present` unless the same policy also has operative language saying the deductible applies.
 
+## Packet 1C Final Result
+
+Final eval: `runs/evals/2026-06-04-fact-extraction-dse021-deductible.json`
+
+| Metric | Result |
+|---|---:|
+| Policies evaluated | 20 |
+| Policies passed | 20 |
+| Precision | 100.00% |
+| Recall | 99.55% |
+| Normalized value accuracy | 100.00% |
+| Status accuracy | 97.67% |
+| Evidence accuracy | 100.00% |
+| False present for gold `not_found` | 0 |
+
+Packet 1C implemented the `DeductibleExtractor`, applied the three required source-backed gold fixes, and normalized custom deductible value shapes to canonical schedule-dependent values where needed.
+
 ## Classification Counts
 
 | Classification | Count |

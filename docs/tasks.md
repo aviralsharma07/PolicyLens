@@ -16,7 +16,7 @@ Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span
 
 Current capability:
 - 20 reviewed gold policies.
-- 13/20 priority concepts have deterministic extractors.
+- 15/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
 - DSE-024 final triage: 0 parser-target policies with zero clauses; 1 excluded parser target; 566/591 unique docs exported.
 - DSE-024 E3B recovery abandoned a bad broad scorer attempt and produced an inspection-only safe-candidate audit for 33 residual `heading_miss` policies. E3C then implemented narrow fallback-only structural heading fixes, and E3D excluded the remaining product-list document from parser failure counts without changing corpus identity history.
@@ -301,14 +301,15 @@ Current capability:
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
 **Unblocked by:** DSE-024 — full-corpus parser-target zero-clause failures are now 0.
-**Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04, source-backed remediation complete).
-**Remaining concepts:** room rent limit, ICU limit, deductible, restoration benefit, modern treatment coverage, newborn coverage.
+**Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04), deductible (Packet 1C — 2026-06-04).
+**Remaining concepts:** room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage.
 **Acceptance criteria:**
 - All 20 priority concepts have deterministic or explicitly deferred extraction strategy.
 - Precision >= 95%, evidence accuracy >= 95%, false-present count 0 on reviewed gold policies.
 - Product B export fill rate improves without weakening status/evidence rules.
 **Packet 1A result (2026-06-04):** `claim_intimation_timeline` implemented and remediated. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.53%, normalized value accuracy 100.00%, status accuracy 98.57%, evidence accuracy 100.00%, and false-present count 0. Gold corrections were source-backed and limited to this concept.
 **Packet 1B result (2026-06-04):** `deductible` gold/evidence audit completed before extractor implementation. Audit classified all 20 reviewed policies and identified three required source-backed gold fixes for Packet 1C: Future Generali and Kotak should be `not_found`; Reliance should be `present`.
+**Packet 1C result (2026-06-04):** `deductible` extractor implemented. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.55%, normalized value accuracy 100.00%, status accuracy 97.67%, evidence accuracy 100.00%, and false-present count 0.
 **Branch:** feat/dse-021-extractor-wave2
 **Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
 

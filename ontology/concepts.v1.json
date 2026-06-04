@@ -27,8 +27,19 @@
       "unit": "months",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Pre-existing disease waiting period not found in policy text.",
         "explicitly_not_covered": "Pre-existing disease cover is explicitly not covered."
@@ -44,8 +55,19 @@
       "unit": "days",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Initial waiting period not found in policy text.",
         "explicitly_not_covered": "Initial waiting period is explicitly not applicable."
@@ -61,8 +83,19 @@
       "unit": "months",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Specific disease waiting periods not found in policy text.",
         "explicitly_not_covered": "Specific disease/procedure cover is explicitly not covered."
@@ -78,8 +111,19 @@
       "unit": null,
       "active_deterministic": false,
       "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Room rent limit not found in policy text.",
         "explicitly_not_covered": "Room rent limit is explicitly absent or unrestricted in the policy text."
@@ -95,8 +139,19 @@
       "unit": null,
       "active_deterministic": false,
       "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "ICU limit not found in policy text.",
         "explicitly_not_covered": "ICU limit is explicitly absent or unrestricted in the policy text."
@@ -112,8 +167,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Co-pay not found in policy text.",
         "explicitly_not_covered": "No co-pay is explicitly stated in the policy text."
@@ -127,10 +193,21 @@
       "value_shape": "amount_percentage_or_schedule",
       "export_field": "deductible",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "active_deterministic": true,
+      "extractor_status": "implemented",
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Deductible not found in policy text.",
         "explicitly_not_covered": "No deductible is explicitly stated in the policy text."
@@ -146,8 +223,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Cumulative bonus / NCB not found in policy text.",
         "explicitly_not_covered": "Cumulative bonus / NCB is explicitly not available."
@@ -163,8 +251,19 @@
       "unit": null,
       "active_deterministic": false,
       "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Restoration benefit not found in policy text.",
         "explicitly_not_covered": "Restoration benefit is explicitly not available."
@@ -180,8 +279,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "AYUSH coverage not found in policy text.",
         "explicitly_not_covered": "AYUSH treatment is explicitly not covered."
@@ -197,8 +307,19 @@
       "unit": null,
       "active_deterministic": false,
       "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Modern treatment coverage not found in policy text.",
         "explicitly_not_covered": "Modern treatment coverage is explicitly not available."
@@ -214,8 +335,19 @@
       "unit": "months",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Maternity waiting period not found in policy text.",
         "explicitly_not_covered": "Maternity expenses are explicitly not covered."
@@ -231,8 +363,19 @@
       "unit": null,
       "active_deterministic": false,
       "extractor_status": "planned",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Newborn coverage not found in policy text.",
         "explicitly_not_covered": "Newborn coverage is explicitly not available."
@@ -248,8 +391,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Organ donor coverage not found in policy text.",
         "explicitly_not_covered": "Organ donor expenses are explicitly not covered."
@@ -265,8 +419,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Ambulance coverage not found in policy text.",
         "explicitly_not_covered": "Ambulance expenses are explicitly not covered."
@@ -282,8 +447,19 @@
       "unit": "days",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Free look period not found in policy text.",
         "explicitly_not_covered": "Free look period is explicitly not applicable."
@@ -299,8 +475,19 @@
       "unit": "days",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Grace period not found in policy text.",
         "explicitly_not_covered": "Grace period is explicitly not applicable."
@@ -316,8 +503,19 @@
       "unit": null,
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Renewability terms not found in policy text.",
         "explicitly_not_covered": "Policy renewal is explicitly not available."
@@ -333,8 +531,19 @@
       "unit": "days",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Claim intimation timeline not found in policy text.",
         "explicitly_not_covered": "Claim intimation timeline is explicitly not applicable."
@@ -350,8 +559,19 @@
       "unit": "days",
       "active_deterministic": true,
       "extractor_status": "implemented",
-      "evidence_required_for_statuses": ["present", "explicitly_not_covered"],
-      "allowed_statuses": ["present", "explicitly_not_covered", "not_applicable", "not_found", "ambiguous", "conflicting", "requires_manual_review"],
+      "evidence_required_for_statuses": [
+        "present",
+        "explicitly_not_covered"
+      ],
+      "allowed_statuses": [
+        "present",
+        "explicitly_not_covered",
+        "not_applicable",
+        "not_found",
+        "ambiguous",
+        "conflicting",
+        "requires_manual_review"
+      ],
       "display_rules": {
         "not_found": "Claim settlement timeline not found in policy text.",
         "explicitly_not_covered": "Claim settlement timeline is explicitly not applicable."

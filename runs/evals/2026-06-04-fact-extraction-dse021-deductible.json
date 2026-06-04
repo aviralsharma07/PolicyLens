@@ -1,0 +1,4648 @@
+{
+  "eval_name": "fact-extraction-dse007-v1",
+  "date": "2026-06-04",
+  "task_id": "DSE-007",
+  "git_commit": "c480276aa209873a0cddbc1ee52c838337c72027",
+  "input_manifest": "data/interim/logical/*/section_tree.json",
+  "target_concepts": [
+    "free_look_period",
+    "grace_period",
+    "ped_waiting_period",
+    "initial_waiting_period",
+    "co_pay",
+    "deductible",
+    "renewability",
+    "claim_settlement_timeline",
+    "ayush_coverage",
+    "ambulance_coverage",
+    "cumulative_bonus_ncb",
+    "specific_disease_waiting_periods",
+    "maternity_waiting",
+    "organ_donor_coverage",
+    "claim_intimation_timeline"
+  ],
+  "metrics": {
+    "gold_present": 222,
+    "present_tp": 221,
+    "present_fp": 0,
+    "present_fn": 1,
+    "status_correct": 293,
+    "status_total": 300,
+    "value_correct": 221,
+    "value_total": 221,
+    "evidence_verified": 221,
+    "evidence_total": 221,
+    "false_present_for_gold_not_found": 0,
+    "policy_count": 20,
+    "policies_passed": 20,
+    "deterministic_present_precision": 1.0,
+    "deterministic_present_recall": 0.995495,
+    "normalized_value_accuracy": 1.0,
+    "status_accuracy": 0.976667,
+    "evidence_accuracy": 1.0
+  },
+  "policies": [
+    {
+      "policy_slug": "aditya_birla_activ_care",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 15
+          },
+          "predicted_normalized_value": {
+            "percentage": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30,
+            "investigation_days": 45
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 13,
+        "present_tp": 13,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 13,
+        "value_total": 13,
+        "evidence_verified": 13,
+        "evidence_total": 13,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "bajaj_allianz_silver_health",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 12
+          },
+          "predicted_normalized_value": {
+            "months": 12
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 20
+          },
+          "predicted_normalized_value": {
+            "percentage": 20
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "policy_schedule"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount": 1000,
+            "currency": "INR"
+          },
+          "predicted_normalized_value": {
+            "amount": 1000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 10,
+            "maximum_percent": 100,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              12
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              12
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 13,
+        "present_tp": 13,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 13,
+        "value_total": 13,
+        "evidence_verified": 13,
+        "evidence_total": 13,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "care_health_care_plus",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "components": [
+              {
+                "scope": "smart_select_non_annexure_iii_hospital",
+                "percentage": 20
+              },
+              {
+                "scope": "age_61_plus_optional_copayment",
+                "percentage": null,
+                "schedule_dependent": true
+              }
+            ]
+          },
+          "predicted_normalized_value": {
+            "components": [
+              {
+                "scope": "smart_select_non_annexure_iii_hospital",
+                "percentage": 20
+              },
+              {
+                "scope": "age_61_plus_optional_copayment",
+                "percentage": null,
+                "schedule_dependent": true
+              }
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "aggregate_per_policy_year"
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "aggregate_per_policy_year"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "renewable"
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "maximum_percent": 200
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 50,
+            "maximum_percent": 200,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 24
+          },
+          "predicted_normalized_value": {
+            "months": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 15,
+        "present_tp": 15,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 15,
+        "value_total": 15,
+        "evidence_verified": 15,
+        "evidence_total": 15,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "cholamandalam_flexi_max_protect",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 5,
+        "present_tp": 5,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 5,
+        "value_total": 5,
+        "evidence_verified": 5,
+        "evidence_total": 5,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "future_generali_health_elite",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 24
+          },
+          "predicted_normalized_value": {
+            "months": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 20
+          },
+          "predicted_normalized_value": {
+            "percentage": 20
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30,
+            "investigation_days": 45
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "amount": 50000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 10,
+            "maximum_percent": 100,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 14,
+        "present_tp": 14,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 14,
+        "value_total": 14,
+        "evidence_verified": 14,
+        "evidence_total": 14,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "hdfc_arogya_sanjeevani",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "predicted_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "renewable"
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount_inr": 2000
+          },
+          "predicted_normalized_value": {
+            "amount": 2000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 12,
+        "present_tp": 12,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 12,
+        "value_total": 12,
+        "evidence_verified": 12,
+        "evidence_total": 12,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "icici_family_shield",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 24
+          },
+          "predicted_normalized_value": {
+            "months": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "policy_certificate"
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "policy_certificate"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "renewable"
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_applicable",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 9,
+        "present_tp": 9,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 9,
+        "value_total": 9,
+        "evidence_verified": 9,
+        "evidence_total": 9,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "iffco_tokio_health_protector",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 10
+          },
+          "predicted_normalized_value": {
+            "percentage": 10
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              12
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              12
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 11,
+        "present_tp": 11,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 11,
+        "value_total": 11,
+        "evidence_verified": 11,
+        "evidence_total": 11,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "kotak_mahindra_health_premier",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 24
+          },
+          "predicted_normalized_value": {
+            "months": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 10
+          },
+          "predicted_normalized_value": {
+            "percentage": 10
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 14,
+        "present_tp": 14,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 14,
+        "value_total": 14,
+        "evidence_verified": 14,
+        "evidence_total": 14,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "liberty_critical_connect",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_applicable",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 6,
+        "present_tp": 6,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 6,
+        "value_total": 6,
+        "evidence_verified": 6,
+        "evidence_total": 6,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "new_india_floater",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "renewable"
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 1,
+            "unit": "percent_of_sum_insured"
+          },
+          "predicted_normalized_value": {
+            "percentage": 1,
+            "unit": "percent_of_sum_insured"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "increase_percent": 25,
+            "maximum_percent": 50
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 25,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "covered"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 13,
+        "present_tp": 13,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 13,
+        "value_total": 13,
+        "evidence_verified": 13,
+        "evidence_total": 13,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "niva_bupa_health_recharge",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30,
+            "investigation_days": 45
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "amount": 1500,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "maximum_percent": 5,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "not_found",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 13,
+        "present_tp": 13,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 13,
+        "value_total": 13,
+        "evidence_verified": 13,
+        "evidence_total": 13,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "oriental_cancer_protect",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_applicable",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount": 3000,
+            "currency": "INR"
+          },
+          "predicted_normalized_value": {
+            "amount": 3000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 6,
+        "present_tp": 6,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 6,
+        "value_total": 6,
+        "evidence_verified": 6,
+        "evidence_total": 6,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "reliance_health_gain",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 20
+          },
+          "predicted_normalized_value": {
+            "percentage": 20
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "not_found",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": [
+            "gold_present_predicted_not_present"
+          ]
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "percentage": 5
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 20,
+            "maximum_percent": 430,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 48
+          },
+          "predicted_normalized_value": {
+            "hours": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 14,
+        "present_tp": 13,
+        "present_fp": 0,
+        "present_fn": 1,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 13,
+        "value_total": 13,
+        "evidence_verified": 13,
+        "evidence_total": 13,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 0.928571,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "royal_sundaram_advanced_topup",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true,
+            "basis": "top_up"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 72
+          },
+          "predicted_normalized_value": {
+            "hours": 72
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 12,
+        "present_tp": 12,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 12,
+        "value_total": 12,
+        "evidence_verified": 12,
+        "evidence_total": 12,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "sbi_general_arogya_sanjeevani",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 5
+          },
+          "predicted_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount": 2000,
+            "currency": "INR"
+          },
+          "predicted_normalized_value": {
+            "amount": 2000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 12,
+        "present_tp": 12,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 12,
+        "value_total": 12,
+        "evidence_verified": 12,
+        "evidence_total": 12,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "star_medi_classic_accident",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 10
+          },
+          "predicted_normalized_value": {
+            "percentage": 10
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "coverage_status": "renewable"
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 7
+          },
+          "predicted_normalized_value": {
+            "days": 7
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount_inr": 750
+          },
+          "predicted_normalized_value": {
+            "amount": 750,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 12,
+        "present_tp": 12,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 12,
+        "value_total": 12,
+        "evidence_verified": 12,
+        "evidence_total": 12,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "tata_aig_arogya_sanjeevani",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 36
+          },
+          "predicted_normalized_value": {
+            "months": 36
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "percentage": 5
+          },
+          "predicted_normalized_value": {
+            "percentage": 5,
+            "basis": "admissible_claim_amount"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount": 2000,
+            "currency": "INR"
+          },
+          "predicted_normalized_value": {
+            "amount": 2000,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "increase_percent": 5,
+            "maximum_percent": 50,
+            "schedule_dependent": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 11,
+        "present_tp": 11,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 11,
+        "value_total": 11,
+        "evidence_verified": 11,
+        "evidence_total": 11,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "united_india_individual_health",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months": 48
+          },
+          "predicted_normalized_value": {
+            "months": 48
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "schedule_dependent": true
+          },
+          "predicted_normalized_value": {
+            "schedule_dependent": true,
+            "hours": 48,
+            "basis": "daily_cash_allowance"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true
+          },
+          "predicted_normalized_value": {
+            "covered": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "amount": 2500,
+            "currency": "INR"
+          },
+          "predicted_normalized_value": {
+            "amount": 2500,
+            "currency": "INR"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "predicted_normalized_value": {
+            "months_options": [
+              24,
+              48
+            ]
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "explicitly_not_covered",
+          "predicted_status": "explicitly_not_covered",
+          "gold_normalized_value": {
+            "covered": false
+          },
+          "predicted_normalized_value": {
+            "covered": false
+          },
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "predicted_normalized_value": {
+            "covered": true,
+            "scope": "organ_donor_expenses"
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "hours": 24
+          },
+          "predicted_normalized_value": {
+            "hours": 24
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 12,
+        "present_tp": 12,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 15,
+        "status_total": 15,
+        "value_correct": 12,
+        "value_total": 12,
+        "evidence_verified": 12,
+        "evidence_total": 12,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 1.0,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    },
+    {
+      "policy_slug": "universal_sompo_loan_secure",
+      "passed": true,
+      "errors": [],
+      "concepts": {
+        "free_look_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 15
+          },
+          "predicted_normalized_value": {
+            "days": 15
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "grace_period": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ped_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "initial_waiting_period": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "co_pay": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "deductible": {
+          "gold_status": "not_applicable",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": false,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "renewability": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "renewable": true
+          },
+          "predicted_normalized_value": {
+            "renewable": true
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "claim_settlement_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        },
+        "ayush_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "ambulance_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "cumulative_bonus_ncb": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "specific_disease_waiting_periods": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "maternity_waiting": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "organ_donor_coverage": {
+          "gold_status": "not_found",
+          "predicted_status": "not_found",
+          "gold_normalized_value": null,
+          "predicted_normalized_value": null,
+          "status_match": true,
+          "value_match": false,
+          "evidence_verified": false,
+          "issues": []
+        },
+        "claim_intimation_timeline": {
+          "gold_status": "present",
+          "predicted_status": "present",
+          "gold_normalized_value": {
+            "days": 30
+          },
+          "predicted_normalized_value": {
+            "days": 30
+          },
+          "status_match": true,
+          "value_match": true,
+          "evidence_verified": true,
+          "issues": []
+        }
+      },
+      "metrics": {
+        "gold_present": 5,
+        "present_tp": 5,
+        "present_fp": 0,
+        "present_fn": 0,
+        "status_correct": 14,
+        "status_total": 15,
+        "value_correct": 5,
+        "value_total": 5,
+        "evidence_verified": 5,
+        "evidence_total": 5,
+        "false_present_for_gold_not_found": 0,
+        "deterministic_present_precision": 1.0,
+        "deterministic_present_recall": 1.0,
+        "normalized_value_accuracy": 1.0,
+        "status_accuracy": 0.933333,
+        "evidence_accuracy": 1.0,
+        "attempted_all_target_concepts": true
+      }
+    }
+  ],
+  "passed": true,
+  "failures": [],
+  "notes": "DSE-007/DSE-018 evaluates deterministic extractors (13 concepts in Wave 1). Evidence is verified against clause text enriched with section heading context."
+}
