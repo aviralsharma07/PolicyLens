@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-06-04 (DSE-021 — Wave 2 Baseline Audit + Kickoff)
+
+### Added
+- `data/reports/dse021_wave2_baseline_audit.md` — baseline audit for the 7 remaining deterministic extractors, with gold status counts, evidence snippets, DSE-020 not_found pressure, and recommended implementation packets.
+- `runs/sessions/2026-06-04-extractor-wave2.md` — DSE-021 kickoff session log.
+
+### Changed
+- DSE-021 in `docs/tasks.md` moved from `planned` to `in_progress`.
+- Branch created: `feat/dse-021-extractor-wave2`.
+
+### Known Issues
+- All 7 planned concepts currently at 566 `not_found` in full corpus; zero extractors exist for any of these.
+- Gold coverage varies: restoration_benefit (7/20 present) and newborn_coverage (3/20 present) are the sparsest.
+
 ## 2026-06-04 (DSE-024 — E3D Parser-Target Closeout)
 
 ### Added

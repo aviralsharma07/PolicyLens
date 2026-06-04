@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-021 | Remaining Deterministic Extractors Wave 2 | planned | P1 | Phase 6 |
+| DSE-021 | Remaining Deterministic Extractors Wave 2 | in_progress | P1 | Phase 6 |
 
 ---
 
@@ -296,7 +296,7 @@ Current capability:
 
 ### DSE-021 — Remaining Deterministic Extractors Wave 2
 
-**Status:** planned
+**Status:** in_progress
 **Priority:** P1
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
