@@ -1,0 +1,16 @@
+{
+  "schema_version": "parser_target_overrides.v1",
+  "task_id": "DSE-024",
+  "generated_at": "2026-06-04",
+  "overrides": [
+    {
+      "slug": "23_raheja_qbe_raheja_qbe_product_list",
+      "file_hash": "sha256:eefe0c121c408e15622b670c6e0fe5915f6c49b8f24f437c335c344423321ecb",
+      "file_path": "23_Raheja_QBE/Raheja_QBE_Product_List.pdf",
+      "parser_target": false,
+      "reason_code": "non_policy_product_list",
+      "classification": "identity_data_issue",
+      "reviewer_note": "4-page product-list style document; not a policy wording parser target."
+    }
+  ]
+}

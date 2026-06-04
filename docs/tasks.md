@@ -6,21 +6,20 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | in_progress | P0 | Phase 2 (E3C safe fixes done; corpus-filter closeout pending) |
-| DSE-021 | Remaining Deterministic Extractors Wave 2 | blocked | P1 | Phase 6 |
+| DSE-021 | Remaining Deterministic Extractors Wave 2 | planned | P1 | Phase 6 |
 
 ---
 
 ## Current Status
 
-Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 has reduced zero-heading/zero-clause policies from 132 to 1. The remaining item is a 4-page product-list style Raheja QBE document and should be handled by corpus/identity filtering, not broad parser tuning.
+Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 reduced zero-heading/zero-clause parser-target failures from 132 to 0. One 4-page Raheja QBE product-list document remains in corpus history but is explicitly excluded from legal-policy parser targets.
 
 Current capability:
 - 20 reviewed gold policies.
 - 13/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
-- DSE-024 current triage: 1 policy with zero clauses (down from 58 after E3C), 566/591 unique docs exported.
-- DSE-024 E3B recovery abandoned a bad broad scorer attempt and produced an inspection-only safe-candidate audit for 33 residual `heading_miss` policies. E3C then implemented narrow fallback-only structural heading fixes and recovered the full-corpus parser gap without lowering the global heading threshold.
+- DSE-024 final triage: 0 parser-target policies with zero clauses; 1 excluded parser target; 566/591 unique docs exported.
+- DSE-024 E3B recovery abandoned a bad broad scorer attempt and produced an inspection-only safe-candidate audit for 33 residual `heading_miss` policies. E3C then implemented narrow fallback-only structural heading fixes, and E3D excluded the remaining product-list document from parser failure counts without changing corpus identity history.
 - All 44 section_tree_fail policies resolved by section tree rebuild.
 
 ---
@@ -30,7 +29,6 @@ Current capability:
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-| DSE-021 | Remaining Deterministic Extractors Wave 2 | blocked | P1 | Phase 6 |
 | DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | planned | P1 | Phase 3 |
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
 
@@ -59,6 +57,7 @@ Current capability:
 | DSE-018 | Deterministic Extractor Expansion Wave 1 | 2026-06-02 | Phase 6 |
 | DSE-019 | Canonical Insurance Concept Ontology Registry v1 | 2026-06-02 | Ontology / Product A Control Plane |
 | DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | 2026-06-04 | Scale |
+| DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | 2026-06-04 | Phase 2 |
 
 ---
 
@@ -117,7 +116,7 @@ Current capability:
 
 ### DSE-024 — Full-Corpus Parser Remediation for Zero-Clause Policies
 
-**Status:** in_progress
+**Status:** done
 **Priority:** P0
 **Phase:** Phase 2
 **Goal:** Classify and fix 132 policies with zero headings and zero clauses found by DSE-020 scale triage. Reduce zero-clause count without weakening 20-policy gold heading/section evals.
@@ -245,6 +244,12 @@ Current capability:
 - **Gold section tree eval:** 19/20 PASS, only pre-existing `oriental_cancer_protect`; Aditya Birla, Tata AIG, and Care all pass section-tree eval after E3C.
 - **Report:** `data/reports/dse024_phase_e3c_safe_heading_fixes.md`.
 - **Next step:** close DSE-024 with a small corpus-filter packet for the single residual product-list document, then unblock DSE-021 extractor Wave 2.
+**Phase E3D — Parser-Target Closeout (2026-06-04):**
+- **Parser-target override added:** `data/manifests/parser_target_overrides_v1.json`.
+- **Excluded parser target:** `23_raheja_qbe_raheja_qbe_product_list` (`Raheja_QBE_Product_List.pdf`, 4 pages), classified as `non_policy_product_list`.
+- **DSE-020 triage updated:** zero headings `0`, zero clauses `0`, excluded parser targets `1`.
+- **Parser-fix recommendations removed** when there are no zero-clause parser targets.
+- **Result:** DSE-024 parser zero-clause remediation is complete; DSE-021 is unblocked.
 **Acceptance Criteria:**
 - [x] Phase A — 132 zero-clause list classified 100% by root cause (DONE).
 - [x] Phase B — 20 representative failures documented (DONE).
@@ -281,21 +286,21 @@ Current capability:
   - [x] Regenerate DSE-020 parser artifacts and triage.
   - [x] Gold heading eval and section tree eval documented honestly.
   - [x] Full pytest and gold validator pass.
-- [ ] **Phase E3D — Corpus-filter closeout for final residual zero-clause item.**
-  - [ ] Classify `23_raheja_qbe_raheja_qbe_product_list` as product-list/non-policy or document-type issue.
-  - [ ] Update manifest/reporting behavior if needed so this item is skipped with an explicit reason.
-  - [ ] Regenerate DSE-020 triage.
-  - [ ] Mark DSE-024 done if zero-clause parser target count is 0 after filtering.
+- [x] **Phase E3D — Corpus-filter closeout for final residual zero-clause item (DONE).**
+  - [x] Classify `23_raheja_qbe_raheja_qbe_product_list` as product-list/non-policy or document-type issue.
+  - [x] Update manifest/reporting behavior so this item is excluded with an explicit reason.
+  - [x] Regenerate DSE-020 triage.
+  - [x] Mark DSE-024 done after zero-clause parser target count reached 0.
 **Branch:** feat/dse-024-parser-remediation
 **Related docs:** evaluation.md, risk_register.md, data/reports/dse020_scale_triage_report_v1.md, data/reports/dse024_zero_clause_policy_audit_plan.md
 
 ### DSE-021 — Remaining Deterministic Extractors Wave 2
 
-**Status:** blocked
+**Status:** planned
 **Priority:** P1
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
-**Blocked by:** DSE-024 — parser remediation must reduce zero-clause policies before extractor wave 2 can improve fill rate.
+**Unblocked by:** DSE-024 — full-corpus parser-target zero-clause failures are now 0.
 **Remaining concepts:** room rent limit, ICU limit, deductible, restoration benefit, modern treatment coverage, newborn coverage, claim intimation timeline.
 **Acceptance criteria:**
 - All 20 priority concepts have deterministic or explicitly deferred extraction strategy.

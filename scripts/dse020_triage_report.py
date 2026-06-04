@@ -9,7 +9,7 @@ import os
 import sqlite3
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List
+from typing import Any, Dict, Iterable, List, Optional
 
 
 FAILURE_CATEGORIES = {
@@ -54,6 +54,19 @@ def _load_progress(path: Path) -> Dict[str, Any]:
     if not path.is_file():
         return {"policy_results": {}}
     return _read_json(path)
+
+
+def _load_parser_target_overrides(path: Optional[Path]) -> Dict[str, Dict[str, Any]]:
+    if path is None or not path.is_file():
+        return {}
+    payload = _read_json(path)
+    overrides = {}
+    for override in payload.get("overrides", []):
+        if override.get("parser_target") is False:
+            slug = override.get("slug")
+            if slug:
+                overrides[slug] = override
+    return overrides
 
 
 def _db_counts(db_path: Path) -> Dict[str, Any]:
@@ -147,10 +160,14 @@ def _stage_failure_category(stage: str, stage_result: Dict[str, Any]) -> str:
 
 
 def _analyze_progress(
-    manifest: Dict[str, Any], progress: Dict[str, Any], output_root: Path
+    manifest: Dict[str, Any],
+    progress: Dict[str, Any],
+    output_root: Path,
+    parser_target_overrides: Dict[str, Dict[str, Any]] | None = None,
 ) -> Dict[str, Any]:
     manifest_by_slug = {policy["slug"]: policy for policy in manifest.get("policies", [])}
     results = progress.get("policy_results", {})
+    parser_target_overrides = parser_target_overrides or {}
 
     per_stage = defaultdict(lambda: {"ok": 0, "failed": 0})
     failure_by_category = Counter()
@@ -160,10 +177,24 @@ def _analyze_progress(
     zero_clauses = []
     zero_facts = []
     table_failures = []
+    excluded_parser_targets = []
 
     for slug, result in results.items():
         policy = manifest_by_slug.get(slug, {})
         insurer = policy.get("insurer", "unknown")
+        parser_override = parser_target_overrides.get(slug)
+        parser_excluded = parser_override is not None
+        if parser_excluded:
+            excluded_parser_targets.append(
+                {
+                    "slug": slug,
+                    "file_path": parser_override.get("file_path") or policy.get("file_path"),
+                    "file_hash": parser_override.get("file_hash") or policy.get("file_hash"),
+                    "reason_code": parser_override.get("reason_code"),
+                    "classification": parser_override.get("classification"),
+                    "reviewer_note": parser_override.get("reviewer_note"),
+                }
+            )
         for stage_result in result.get("stages", []):
             stage = stage_result.get("stage")
             status = stage_result.get("status")
@@ -179,13 +210,13 @@ def _analyze_progress(
         heading_path = output_root / "logical" / slug / "heading_candidates.json"
         if heading_path.is_file():
             heading = _read_json(heading_path)
-            if heading.get("total_headings", 0) == 0:
+            if heading.get("total_headings", 0) == 0 and not parser_excluded:
                 zero_headings.append(slug)
 
         section_path = output_root / "logical" / slug / "section_tree.json"
         if section_path.is_file():
             section = _read_json(section_path)
-            if section.get("total_clauses", 0) == 0:
+            if section.get("total_clauses", 0) == 0 and not parser_excluded:
                 zero_clauses.append(slug)
 
         facts_path = output_root / "facts" / slug / "fact_candidates.json"
@@ -208,6 +239,7 @@ def _analyze_progress(
         "zero_clauses": zero_clauses,
         "zero_facts": zero_facts,
         "table_failures": table_failures,
+        "excluded_parser_targets": excluded_parser_targets,
     }
 
 
@@ -263,6 +295,7 @@ def _markdown_report(report: Dict[str, Any]) -> str:
         "",
         f"- Zero headings: {len(metrics['zero_headings'])}",
         f"- Zero clauses: {len(metrics['zero_clauses'])}",
+        f"- Excluded parser targets: {len(metrics.get('excluded_parser_targets', []))}",
         f"- Zero fact candidates: {len(metrics['zero_facts'])}",
         "",
         "## Top Recommended Fixes",
@@ -276,7 +309,12 @@ def _markdown_report(report: Dict[str, Any]) -> str:
 def build_report(args: argparse.Namespace) -> Dict[str, Any]:
     manifest = _read_json(args.manifest)
     progress = _load_progress(args.progress_summary)
-    progress_analysis = _analyze_progress(manifest, progress, args.output_root)
+    parser_target_overrides = _load_parser_target_overrides(
+        getattr(args, "parser_target_overrides", None)
+    )
+    progress_analysis = _analyze_progress(
+        manifest, progress, args.output_root, parser_target_overrides
+    )
     db = _db_counts(args.db)
     exports = _export_stats(args.export_root)
     output_size = _directory_size(args.output_root)
@@ -304,6 +342,11 @@ def build_report(args: argparse.Namespace) -> Dict[str, Any]:
             "output_root": str(args.output_root),
             "db": str(args.db),
             "export_root": str(args.export_root),
+            "parser_target_overrides": (
+                str(args.parser_target_overrides)
+                if getattr(args, "parser_target_overrides", None)
+                else None
+            ),
         },
         "metrics": metrics,
         "top_recommended_fixes": _recommend_fixes(progress_analysis, exports, db),
@@ -319,6 +362,7 @@ def main() -> int:
     parser.add_argument("--export-root", type=Path, default=Path("data/export/dse020"))
     parser.add_argument("--json-output", type=Path, required=True)
     parser.add_argument("--md-output", type=Path, required=True)
+    parser.add_argument("--parser-target-overrides", type=Path)
     parser.add_argument("--date", default="2026-06-03")
     args = parser.parse_args()
 

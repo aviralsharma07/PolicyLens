@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-06-04 (DSE-024 — E3D Parser-Target Closeout)
+
+### Added
+- `data/manifests/parser_target_overrides_v1.json` — explicit parser-target override manifest.
+- `tests/test_dse020_triage_report.py` — regression coverage for parser-target exclusions in the DSE-020 triage report.
+- `runs/sessions/2026-06-04-dse024-e3d-parser-target-closeout.md` — DSE-024 closeout session log.
+
+### Changed
+- `scripts/dse020_triage_report.py` now accepts `--parser-target-overrides`.
+- DSE-020 triage separates excluded parser targets from zero-heading / zero-clause parser failures.
+- DSE-021 moved from blocked to planned.
+
+### Fixed
+- `23_raheja_qbe_raheja_qbe_product_list` is now recorded as a non-policy product-list parser exclusion instead of a parser failure.
+- DSE-020 triage now reports **0 zero-heading parser targets**, **0 zero-clause parser targets**, and **1 excluded parser target**.
+
+### Known Issues
+- 133 policies still have zero fact candidates; this is now an extractor coverage/input recall issue for DSE-021, not a zero-clause parser blocker.
+- Current regenerated gold heading eval remains 17/20; section-tree eval remains 19/20 with the known `oriental_cancer_protect` issue.
+
 ## 2026-06-04 (DSE-024 — Phase E3C Safe Heading Fixes)
 
 ### Added

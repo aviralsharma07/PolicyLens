@@ -7,7 +7,8 @@
     "progress_summary": "data/interim/dse020/progress/summary.json",
     "output_root": "data/interim/dse020",
     "db": "data/engine_dse020.sqlite",
-    "export_root": "data/export/dse020"
+    "export_root": "data/export/dse020",
+    "parser_target_overrides": "data/manifests/parser_target_overrides_v1.json"
   },
   "metrics": {
     "manifest_policy_count": 647,
@@ -39,12 +40,8 @@
     "failure_by_category": {},
     "failure_by_insurer": {},
     "failure_by_exception": {},
-    "zero_headings": [
-      "23_raheja_qbe_raheja_qbe_product_list"
-    ],
-    "zero_clauses": [
-      "23_raheja_qbe_raheja_qbe_product_list"
-    ],
+    "zero_headings": [],
+    "zero_clauses": [],
     "zero_facts": [
       "tata_aig_arogya_sanjeevani",
       "aditya_birla_activ_care",
@@ -181,6 +178,16 @@
       "non_policy_wordings_nivabupa_health_recharge_prospectus"
     ],
     "table_failures": [],
+    "excluded_parser_targets": [
+      {
+        "slug": "23_raheja_qbe_raheja_qbe_product_list",
+        "file_path": "23_Raheja_QBE/Raheja_QBE_Product_List.pdf",
+        "file_hash": "sha256:eefe0c121c408e15622b670c6e0fe5915f6c49b8f24f437c335c344423321ecb",
+        "reason_code": "non_policy_product_list",
+        "classification": "identity_data_issue",
+        "reviewer_note": "4-page product-list style document; not a policy wording parser target."
+      }
+    ],
     "exported_policy_count": 566,
     "not_found_by_concept": {
       "claim_intimation_timeline": 566,
@@ -3627,10 +3634,10 @@
     "export_size_mb": 77.94
   },
   "top_recommended_fixes": [
-    "Fix parser/section-tree failures for 1 policies with zero clauses.",
-    "Audit heading scorer for 1 policies with zero headings.",
     "Audit extractor recall/parser inputs for 133 policies with zero candidates.",
     "Prioritize extractor/LLM strategy for top not_found concept `claim_intimation_timeline` (566).",
+    "Continue full-corpus run and classify the next largest failure cluster.",
+    "Continue full-corpus run and classify the next largest failure cluster.",
     "Continue full-corpus run and classify the next largest failure cluster."
   ]
 }
