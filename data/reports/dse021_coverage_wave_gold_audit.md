@@ -90,11 +90,11 @@ No extractor code or gold labels were changed in Packet 3A.
 | `sbi_general_arogya_sanjeevani` | restoration | not_found | `not_found_after_search` | Keep. No restoration/recharge cover found. |
 | `sbi_general_arogya_sanjeevani` | modern treatment | not_found | `gold_fix_required` | Fix to present 50% limit. Source pages 8-9 list covered modern procedures up to 50% SI. |
 | `sbi_general_arogya_sanjeevani` | newborn | not_found | `not_found_after_search` | Keep. No newborn-cover source hit found; baby rows are non-medical items. |
-| `star_medi_classic_accident` | restoration | present 200% | `covered_present` | Keep. Source page 9 says automatic restoration of Basic SI by 200% once during policy period. |
+| `star_medi_classic_accident` | restoration | present 200% | `gold_fix_required` | Keep present but normalize to `covered` for deterministic v1. Source PDF page 9 says 200%, but current section-tree evidence safely preserves only automatic restoration presence; exact 200% is deferred to parser/table remediation. |
 | `star_medi_classic_accident` | modern treatment | not_found | `not_found_after_search` | Keep. Source hits are exclusions/stem-cell item rows, not operative modern-treatment coverage. |
 | `star_medi_classic_accident` | newborn | not_found | `not_found_after_search` | Keep. Source hits are vaccination and non-medical baby-item rows only. |
 | `tata_aig_arogya_sanjeevani` | restoration | not_found | `not_found_after_search` | Keep. No restoration/recharge cover found. |
-| `tata_aig_arogya_sanjeevani` | modern treatment | not_found | `gold_fix_required` | Fix to present 50% limit. Source page 8 lists covered modern procedures up to 50% SI. |
+| `tata_aig_arogya_sanjeevani` | modern treatment | not_found | `gold_fix_required` | Fix to present covered. Source PDF page 8 says the modern-treatment list is covered up to 50% SI, but current section-tree evidence safely preserves only the hematopoietic stem-cell list item; exact 50% is deferred to parser/table remediation. |
 | `tata_aig_arogya_sanjeevani` | newborn | not_found | `not_found_after_search` | Keep. No newborn-cover source hit found; baby rows are non-medical items. |
 | `united_india_individual_health` | restoration | not_found | `not_found_after_search` | Keep. Source hits are PED/policy reinstatement only. |
 | `united_india_individual_health` | modern treatment | present noncanonical `{"covered": true}` | `gold_fix_required` | Fix to canonical covered shape. Source pages 7-8 cover modern treatment methods with procedure-specific sub-limits. |
@@ -116,7 +116,9 @@ Packet 3B should apply only the source-backed fixes listed above. High-confidenc
 - Niva Bupa modern treatment: canonicalize to covered shape.
 - Oriental restoration: change from present to `not_found` or `not_applicable`; body-part reconstruction is not sum-insured restoration.
 - Reliance newborn: change from covered to conditional.
-- SBI and Tata AIG modern treatment: change from `not_found` to present 50% SI limit.
+- SBI modern treatment: change from `not_found` to present 50% SI limit.
+- Star restoration and Tata AIG modern treatment: keep present but use conservative `coverage_status: covered` values because current section-tree clauses do not carry the exact source PDF percentages.
+- Tata AIG modern treatment: change from `not_found` to present covered.
 - United India modern treatment: canonicalize to covered shape.
 - Universal Sompo restoration: change from present to `not_applicable`; source is property/home-cover restoration.
 

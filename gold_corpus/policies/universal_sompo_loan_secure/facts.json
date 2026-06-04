@@ -326,25 +326,19 @@
   },
   {
     "concept": "restoration_benefit",
-    "value_json": {
-      "benefit": "restoration_or_reload",
-      "schedule_dependent": true
-    },
-    "normalized_value_json": {
-      "benefit": "restoration_or_reload",
-      "schedule_dependent": true
-    },
-    "fact_status": "present",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": 1.0,
+    "confidence": null,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 23,
-    "evidence_text": "Sum Insured will be automatically increased each day by an amount representing 1/365th of 10% of Sum Insured at the Policy Commencement Date for annual policies. d. Restoration of Sum Insured : Except as stated in Clause G (III) (3) (b) of this Policy, the insurance cover will at all times be maintained during the Policy Period to the full extent of the respective Sum Insured. This means that after We have paid for any loss",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
       "source_pdf_path": "14_Universal_Sompo/Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
@@ -352,10 +346,10 @@
       "document_id": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
       "uin": "UNIHLIP22139V032122"
     },
-    "value_type": "coverage_status",
+    "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: restoration/reload/recharge benefit search",
+    "notes": "DSE-021 Packet 3B source-backed correction: source restoration clauses are property/home cover restoration after loss, not health restoration benefit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -366,6 +360,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

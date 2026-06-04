@@ -474,10 +474,10 @@
   {
     "concept": "modern_treatment_coverage",
     "value_json": {
-      "covered": true
+      "coverage_status": "covered"
     },
     "normalized_value_json": {
-      "covered": true
+      "coverage_status": "covered"
     },
     "fact_status": "present",
     "scope_json": {
@@ -489,7 +489,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 12,
-    "evidence_text": "eness to all forms of stimulation; or b. Absent pupillary light reaction; or c. Absent oculovestibular and corneal reflexes; or d. Complete apnea. XV. Modern Treatments What is covered: Product- Health Recharge UIN- NBHHLIP22156V032122 Page 12 of 45",
+    "evidence_text": "XV. Modern Treatments What is covered: Modern Treatments are covered. Product Benefits table states Modern Treatments Covered up to Sum Insured with sub-limit applicable on few conditions.",
     "source_document": {
       "filename": "NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
       "source_pdf_path": "05_Niva_Bupa/NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
@@ -500,7 +500,7 @@
     "value_type": "coverage_status",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: canonicalized covered shape for modern treatments.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -511,6 +511,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

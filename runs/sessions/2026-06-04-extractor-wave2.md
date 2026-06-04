@@ -486,3 +486,70 @@ git diff --check
 
 ### Next Step
 Implement Packet 3B — `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` extractors plus only the source-backed gold corrections documented in the Packet 3A audit.
+
+---
+
+## Packet 3B Closeout — Coverage Wave Extractors
+
+Date: 2026-06-05
+
+### Goal
+Implement conservative deterministic extractors for `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage`, using the Packet 3A audit as source-backed truth.
+
+### Files Changed
+- `extractors/deterministic.py`
+- `extractors/models.py`
+- `ontology/concepts.v1.json`
+- `tests/test_fact_extractors.py`
+- `gold_corpus/policies/*/facts.json` for source-backed coverage-wave corrections only
+- `data/reports/dse021_coverage_wave_gold_audit.md`
+- `runs/evals/2026-06-05-fact-extraction-dse021-coverage-wave.json`
+- `docs/changelog.md`
+- `docs/tasks.md`
+- `docs/evaluation.md`
+- `docs/decisions.md`
+- `runs/sessions/2026-06-04-extractor-wave2.md`
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_fact_extractors.py --tb=short
+PYTHONPATH=. .venv/bin/python scripts/run_fact_extractors.py --section-root data/interim/logical --output-root data/interim/facts
+PYTHONPATH=. .venv/bin/python scripts/eval_fact_extractors.py --facts-root data/interim/facts --gold-corpus gold_corpus --section-root data/interim/logical --output runs/evals/2026-06-05-fact-extraction-dse021-coverage-wave.json
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+```
+
+### Results
+```text
+passed: true
+policies_passed: 20/20
+precision: 100.00%
+recall: 99.27%
+normalized_value_accuracy: 100.00%
+status_accuracy: 97.75%
+evidence_accuracy: 100.00%
+false_present_for_gold_not_found: 0
+focused pytest: 60/60 passed
+gold corpus validator: passed
+```
+
+### Source-Backed Gold Corrections
+- Aditya Birla newborn changed from `explicitly_not_covered` to `not_found`; baby/vaccine charge rows are not newborn-cover exclusions.
+- Care, SBI, and Tata AIG modern treatment changed from `not_found` to present based on operative source clauses.
+- Bajaj, IFFCO, Niva Bupa, and United India modern-treatment values canonicalized.
+- Future Generali restoration/newborn, Kotak restoration/newborn, and Reliance newborn corrected to source-backed status/value shapes.
+- Oriental restoration changed from present to `not_found`; body-part reconstruction is not sum-insured restoration.
+- Universal Sompo restoration changed from present to `not_found`; source clauses are property/home restoration, not health restoration.
+- Star restoration and Tata AIG modern treatment remain present but use conservative covered values because current section-tree evidence does not safely carry the exact source PDF percentages.
+
+### Generated Artifacts
+- `runs/evals/2026-06-05-fact-extraction-dse021-coverage-wave.json`
+
+### Decisions Made
+- Coverage-wave extractors must not invent exact limits that are visible in source PDFs but absent from verified section-tree evidence.
+
+### Known Limitations
+- Star restoration exact 200% and Tata AIG modern-treatment exact 50% are source-visible but not safely carried in current section-tree clauses.
+- This packet does not remediate parser/table extraction; it only keeps deterministic facts evidence-verified.
+
+### Next Step
+Run Packet 4 final full-chain DSE-021 validation: fact extraction, clause store/source spans, fact scoring, export, full pytest, docs, and final commit.

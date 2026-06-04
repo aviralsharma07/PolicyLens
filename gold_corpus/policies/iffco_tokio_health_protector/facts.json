@@ -513,10 +513,12 @@
   {
     "concept": "modern_treatment_coverage",
     "value_json": {
-      "percentage": 50
+      "coverage_status": "covered",
+      "limit_percent_of_sum_insured": 50
     },
     "normalized_value_json": {
-      "percentage": 50
+      "coverage_status": "covered",
+      "limit_percent_of_sum_insured": 50
     },
     "fact_status": "present",
     "scope_json": {
@@ -528,7 +530,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 21,
-    "evidence_text": "al Expenses incurred during period up to 90(Ninety) days after Hospitalization on disease/illness/injury sustained, which will be part of Hospitalization expenses claim. 4. Modern Treatment Methods and Advancement in Technologies: The following procedures will be covered (wherever medically indicated) either as in patient or as part of Domiciliary Hospitalization or as part of day care treatment in a hospital upto 50% of Sum Insured, during the policy period: A. Uterine Artery Embolization and HIFU (High intens",
+    "evidence_text": "Modern Treatment Methods and Advancement in Technologies: The following procedures will be covered (wherever medically indicated) either as in patient or as part of Domiciliary Hospitalization or as part of day care treatment in a hospital upto 50% of Sum Insured, during the policy period.",
     "source_document": {
       "filename": "IFFCO_Tokio_Health_Protector.pdf",
       "source_pdf_path": "12_IFFCO_Tokio/IFFCO_Tokio_Health_Protector.pdf",
@@ -536,10 +538,10 @@
       "document_id": "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0",
       "uin": "IFFHLIP22197V042122"
     },
-    "value_type": "money_or_schedule",
+    "value_type": "coverage_status_or_limit",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: canonicalized modern treatment coverage to 50% Sum Insured limit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -550,6 +552,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

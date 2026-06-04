@@ -762,7 +762,7 @@ The primary quality gate for the engine. Ensures extracted facts are correct, ev
 - `data/interim/facts/{policy_slug}/accepted_facts.json`
 - `gold_corpus/policies/{policy_slug}/facts.json`
 
-As of DSE-021 Packet 2B, the active deterministic target concepts are:
+As of DSE-021 Packet 3B, the active deterministic target concepts are:
 - `free_look_period`
 - `grace_period`
 - `ped_waiting_period`
@@ -780,6 +780,9 @@ As of DSE-021 Packet 2B, the active deterministic target concepts are:
 - `claim_intimation_timeline`
 - `room_rent_limit`
 - `icu_limit`
+- `restoration_benefit`
+- `modern_treatment_coverage`
+- `newborn_coverage`
 
 ### Metrics
 - Deterministic present precision
@@ -822,7 +825,7 @@ runs/evals/2026-05-30-fact-extraction-dse007-v1.json
 ```
 
 ### Current Status
-active (DSE-021 Packet 2B PASS on 2026-06-04 across 20 reviewed policies)
+active (DSE-021 Packet 3B PASS on 2026-06-05 across 20 reviewed policies)
 
 ### Current DSE-007 Result
 
@@ -957,6 +960,36 @@ Room/ICU canonical value note:
 - `{"coverage_status": "actuals"}` represents actuals/no fixed limit.
 - `{"schedule_dependent": true, "basis": "policy_schedule"}` or `{"schedule_dependent": true, "basis": "product_benefits_table"}` represents operative limits whose numeric value is outside the wording clause.
 - Conditional room/ICU limits use `components` instead of collapsing distinct sum-insured/city conditions into one scalar.
+
+### Current DSE-021 Packet 3B Result
+
+DSE-021 Packet 3B added `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage`, bringing the active deterministic concept set from 17 to 20 concepts. Gold labels were source-reviewed before implementation, and common false positives such as body-part reconstruction, property restoration, and baby-item annexure rows were rejected.
+
+```json
+{
+  "policies_evaluated": 20,
+  "target_facts": 400,
+  "gold_present": 275,
+  "present_tp": 273,
+  "present_fp": 0,
+  "present_fn": 2,
+  "policies_passed": 20,
+  "deterministic_present_precision": 1.0,
+  "deterministic_present_recall": 0.992727,
+  "normalized_value_accuracy": 1.0,
+  "status_accuracy": 0.9775,
+  "evidence_accuracy": 1.0,
+  "false_present_for_gold_not_found": 0,
+  "passed": true
+}
+```
+
+Coverage-wave canonical value note:
+
+- `restoration_benefit` emits `coverage_status: covered`, optional direct `percentage`, or schedule dependency for operative health sum-insured restoration/recharge/reload clauses.
+- `modern_treatment_coverage` emits covered, schedule-dependent, or a direct 50% Sum Insured limit when safely carried in section-tree evidence.
+- `newborn_coverage` emits conditional coverage when newborn cover depends on maternity, schedule, renewal declaration, or minimum age conditions.
+- If exact source PDF percentages are not carried in verified section-tree evidence, deterministic v1 keeps a conservative covered value and leaves exact recovery to parser/table remediation.
 
 ### Current DSE-017 Result
 

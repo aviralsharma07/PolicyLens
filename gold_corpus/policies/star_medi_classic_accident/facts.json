@@ -437,13 +437,10 @@
   {
     "concept": "restoration_benefit",
     "value_json": {
-      "type": "automatic",
-      "percent_of_basic_sum_insured": 200,
-      "frequency": "once during policy period"
+      "coverage_status": "covered"
     },
     "normalized_value_json": {
-      "coverage_status": "covered",
-      "percentage": 200
+      "coverage_status": "covered"
     },
     "fact_status": "present",
     "scope_json": {
@@ -454,8 +451,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": 9,
-    "evidence_text": "Medi Classic Accident Care Individual Insurance Policy Unique Identiﬁcation No. : SHAHLIP18029V031718 9 of 28 Policy WordingsStar Health and Allied Insurance Co. Ltd. 12. Automatic restoration of sum insured There shall be automatic restoration of the Basic Sum Insured by 200%, once during the policy period, immediately upon exhaustion of the limit of coverage which has otherwise been deﬁned. It is made clear that such restored sum insured can be utilized only for illness /disease directly or remotely u",
+    "evidence_page": 1,
+    "evidence_text": "Restoration of Sum Insured : Automatic restoration of sum insured once during the currency of the policy period on exhaustion of the sum insured.",
     "source_document": {
       "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
       "source_pdf_path": "02_Star_Health/Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
@@ -463,10 +460,10 @@
       "document_id": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
       "uin": "SHAHLIP18029V031718"
     },
-    "value_type": "coverage_status_or_typed_value",
+    "value_type": "coverage_status",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained as present because evidence contains a concrete value or coverage statement.",
+    "notes": "DSE-021 Packet 3B correction: source PDF states 200%, but current section_tree evidence safely preserves only operative restoration presence; exact percentage is deferred to parser/table remediation.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -477,6 +474,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal",

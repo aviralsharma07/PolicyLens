@@ -301,8 +301,8 @@ Current capability:
 **Phase:** Phase 6
 **Goal:** Implement deterministic extractors for the remaining priority concepts not covered by DSE-018.
 **Unblocked by:** DSE-024 — full-corpus parser-target zero-clause failures are now 0.
-**Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04), deductible (Packet 1C — 2026-06-04), room rent limit and ICU limit (Packet 2B — 2026-06-04).
-**Remaining concepts:** restoration benefit, modern treatment coverage, newborn coverage.
+**Completed concepts:** claim intimation timeline (Packet 1A — 2026-06-04), deductible (Packet 1C — 2026-06-04), room rent limit and ICU limit (Packet 2B — 2026-06-04), restoration benefit, modern treatment coverage, and newborn coverage (Packet 3B — 2026-06-05).
+**Remaining concepts:** none before final full-chain DSE-021 validation.
 **Acceptance criteria:**
 - All 20 priority concepts have deterministic or explicitly deferred extraction strategy.
 - Precision >= 95%, evidence accuracy >= 95%, false-present count 0 on reviewed gold policies.
@@ -313,6 +313,7 @@ Current capability:
 **Packet 2A result (2026-06-04):** `room_rent_limit` and `icu_limit` gold/evidence audit completed before extractor implementation. Audit classified all 40 concept-policy rows and locked canonical value shapes for percentages, actuals/no fixed limits, schedule-dependent limits, and conditional components. Packet 2B must apply only the source-backed gold corrections listed in `data/reports/dse021_room_icu_gold_audit.md`.
 **Packet 2B result (2026-06-04):** `room_rent_limit` and `icu_limit` extractors implemented. Final fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.61%, normalized value accuracy 100.00%, status accuracy 97.65%, evidence accuracy 100.00%, and false-present count 0. Gold corrections were source-backed and limited to room/ICU labels.
 **Packet 3A result (2026-06-05):** `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` gold/evidence audit completed before extractor implementation. Audit classified all 60 concept-policy rows and identified source-backed fixes for final coverage-wave labels in `data/reports/dse021_coverage_wave_gold_audit.md`.
+**Packet 3B result (2026-06-05):** final coverage-wave extractors implemented. Fact extraction eval passed on 20/20 policies with precision 100.00%, recall 99.27%, normalized value accuracy 100.00%, status accuracy 97.75%, evidence accuracy 100.00%, and false-present count 0.
 **Branch:** feat/dse-021-extractor-wave2
 **Related docs:** evaluation.md, ontology/concepts.v1.json, export_contract.md
 

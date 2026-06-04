@@ -10,7 +10,10 @@ from extractors.deterministic import (
     InitialWaitingPeriodExtractor,
     IcuLimitExtractor,
     MaternityWaitingExtractor,
+    ModernTreatmentCoverageExtractor,
+    NewbornCoverageExtractor,
     PedWaitingPeriodExtractor,
+    RestorationBenefitExtractor,
     RoomRentLimitExtractor,
     SpecificDiseaseWaitingPeriodsExtractor,
 )
@@ -749,6 +752,130 @@ def test_iffco_room_and_icu_components_are_preserved():
     icu_fact = accepted_for("icu_limit", clauses)
     assert room_fact["normalized_value_json"]["components"][1]["percentage"] == 1.75
     assert icu_fact["normalized_value_json"]["components"][1]["percentage"] == 3
+
+
+def test_restoration_detects_automatic_recharge():
+    fact = accepted_for(
+        "restoration_benefit",
+        [
+            clause(
+                "Benefit: Unlimited Automatic Recharge. If a Claim is payable under "
+                "the Policy, the Company agrees to automatically make the re-instatement "
+                "of up to the base Sum Insured unlimited times in a policy year."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {"coverage_status": "covered"}
+
+
+def test_restoration_extracts_percentage_and_rejects_reconstruction():
+    good_fact = accepted_for(
+        "restoration_benefit",
+        [
+            clause(
+                "Restoration Benefit: We will provide a 100% restoration of the Base "
+                "Sum Insured amount once in a Policy Year."
+            )
+        ],
+    )
+    bad_fact = accepted_for(
+        "restoration_benefit",
+        [
+            clause(
+                "Reconstruction of affected body part post surgery covers expenses "
+                "to restore essential physical functioning after cancer surgery."
+            )
+        ],
+    )
+    assert good_fact["normalized_value_json"] == {
+        "coverage_status": "covered",
+        "percentage": 100,
+    }
+    assert bad_fact["fact_status"] == "not_found"
+
+
+def test_restoration_rejects_home_property_restoration():
+    fact = accepted_for(
+        "restoration_benefit",
+        [
+            clause(
+                "Restoration of Sum Insured: after We have paid for damage to Your "
+                "Home Building, the policy shall be restored to the full original amount."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_modern_treatment_detects_fifty_percent_limit():
+    fact = accepted_for(
+        "modern_treatment_coverage",
+        [
+            clause(
+                "Modern Treatment Methods and Advancement in Technologies shall be "
+                "covered up to 50% of Sum Insured. Uterine Artery Embolization and "
+                "HIFU, Balloon Sinuplasty, Deep Brain stimulation, Oral chemotherapy, "
+                "Immunotherapy, Intra vitreal injections and Robotic surgeries are covered."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {
+        "coverage_status": "covered",
+        "limit_percent_of_sum_insured": 50,
+    }
+
+
+def test_modern_treatment_rejects_exclusion_only_stem_cell_reference():
+    fact = accepted_for(
+        "modern_treatment_coverage",
+        [
+            clause(
+                "Stem cell implantation and / or therapy and expenses related to any "
+                "kind of Advance Technology Methods other than mentioned in the policy "
+                "are excluded."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "not_found"
+
+
+def test_newborn_detects_conditional_maternity_cover():
+    fact = accepted_for(
+        "newborn_coverage",
+        [
+            clause(
+                "Optional Benefit: Maternity and New Born Baby Cover. The Company shall "
+                "indemnify Medical Expenses associated with Hospitalization for delivery "
+                "up to the amount specified in the Policy Schedule after a 24 month "
+                "waiting period."
+            )
+        ],
+    )
+    assert fact["fact_status"] == "present"
+    assert fact["normalized_value_json"] == {
+        "coverage_status": "conditional",
+        "waiting_months": 24,
+    }
+
+
+def test_newborn_rejects_definition_and_baby_item_rows():
+    definition_fact = accepted_for(
+        "newborn_coverage",
+        [clause("Newborn baby means baby born during the Policy Period and aged up to 90 days.")],
+    )
+    item_fact = accepted_for(
+        "newborn_coverage",
+        [
+            clause(
+                "List of non-medical items: Baby Charges unless specified, Baby Food, "
+                "Vaccine Charges for Baby and Cradle Charges are Not Payable."
+            )
+        ],
+    )
+    assert definition_fact["fact_status"] == "not_found"
+    assert item_fact["fact_status"] == "not_found"
 
 
 def test_registry_emits_not_found_for_missing_safe_candidate():

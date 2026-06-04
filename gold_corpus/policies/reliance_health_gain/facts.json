@@ -561,10 +561,12 @@
   {
     "concept": "newborn_coverage",
     "value_json": {
-      "covered": true
+      "coverage_status": "conditional",
+      "min_age_days": 90
     },
     "normalized_value_json": {
-      "covered": true
+      "coverage_status": "conditional",
+      "min_age_days": 90
     },
     "fact_status": "present",
     "scope_json": {
@@ -576,7 +578,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 23,
-    "evidence_text": "missibility of the Claim, the Policyholder/ Insured Person shall members shall be allowed in the event of following: undertake the following: a) Newborn baby covered from 90 days 6.1.1. CLAIMS INTIMATION b) Spouse in the event of marriage. In the event of any Disease or Illness/ Injury or occurrence of any",
+    "evidence_text": "Mid-Term Addition of Family: Mid-term addition of Family members shall be allowed in the event of following: a) Newborn baby covered from 90 days b) Spouse in the event of marriage.",
     "source_document": {
       "filename": "Reliance_Health_Gain_PW.pdf",
       "source_pdf_path": "17_Reliance/Reliance_Health_Gain_PW.pdf",
@@ -587,7 +589,7 @@
     "value_type": "coverage_status",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: newborn coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: newborn coverage is conditional from 90 days.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -598,6 +600,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

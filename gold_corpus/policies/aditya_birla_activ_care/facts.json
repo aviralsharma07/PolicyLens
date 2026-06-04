@@ -534,23 +534,19 @@
   },
   {
     "concept": "newborn_coverage",
-    "value_json": {
-      "covered": false
-    },
-    "normalized_value_json": {
-      "covered": false
-    },
-    "fact_status": "explicitly_not_covered",
+    "value_json": null,
+    "normalized_value_json": null,
+    "fact_status": "not_found",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": 1.0,
+    "confidence": null,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 27,
-    "evidence_text": "SWABES Not Payable 166 SCRUB SOLUTION/STERILLIUM Not Payable OTHERS 167 VACCINE CHARGES FOR BABY Not Payable 168 TPA CHARGES Not Payable 169 VISCO BELT CHARGES Not Payable 170 ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, Not Payable ORTHOKIT, RECOVERY KIT, ETC] 171 EXAMINATION GLOVES Not Payable 172 KIDNEY TRAY Not Payable 173 MASK",
+    "evidence_page": null,
+    "evidence_text": null,
     "source_document": {
       "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
       "source_pdf_path": "11_Aditya_Birla/Aditya_Birla_Activ_Care_IRDAI.pdf",
@@ -558,10 +554,10 @@
       "document_id": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
       "uin": "ADIHLIP20001V011920"
     },
-    "value_type": "coverage_status",
+    "value_type": null,
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: newborn coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: baby/vaccine charge annexure rows are not operative newborn coverage or explicit newborn-cover exclusion.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -572,6 +568,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

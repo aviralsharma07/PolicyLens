@@ -249,8 +249,8 @@
       "value_shape": "coverage_status_or_components",
       "export_field": "restoration_benefit",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": [
         "present",
         "explicitly_not_covered"
@@ -305,8 +305,8 @@
       "value_shape": "coverage_status_or_limit",
       "export_field": "modern_treatment_coverage",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": [
         "present",
         "explicitly_not_covered"
@@ -361,8 +361,8 @@
       "value_shape": "coverage_status_or_limit",
       "export_field": "newborn_coverage",
       "unit": null,
-      "active_deterministic": false,
-      "extractor_status": "planned",
+      "active_deterministic": true,
+      "extractor_status": "implemented",
       "evidence_required_for_statuses": [
         "present",
         "explicitly_not_covered"

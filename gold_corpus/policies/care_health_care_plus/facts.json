@@ -582,17 +582,21 @@
   },
   {
     "concept": "modern_treatment_coverage",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "coverage_status": "covered"
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
     "scope_json": null,
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": 0.0,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_v1",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 12,
+    "evidence_text": "Advance Technology Methods: The Company will indemnify the Insured Person for expenses incurred under Benefit Hospitalization Expenses for treatment taken through following advance technology methods: A. Uterine Artery Embolization and HIFU B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy E. Immunotherapy- Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries.",
     "source_document": {
       "filename": "Care_Health_Care_Plus.pdf",
       "source_pdf_path": "03_Care_Health/Care_Health_Care_Plus.pdf",
@@ -600,10 +604,10 @@
       "document_id": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
       "uin": "CHIHLIP22047V012122"
     },
-    "value_type": "coverage_status_or_typed_value",
+    "value_type": "coverage_status",
     "annotator": "Codex manual text-layer review",
     "review_status": "gold_v1_agent_reviewed",
-    "notes": "Pass 3 retained null-status label; concept should not be displayed as covered/not covered without future evidence.",
+    "notes": "DSE-021 Packet 3B source-backed correction: source page 12 contains operative advance technology methods coverage.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -614,6 +618,11 @@
         "pass_id": "pass_4_generated_docling_crosscheck_missing_policies",
         "result": "reviewed",
         "note": "Generated Docling markdown was used as a secondary structure/table/fact cross-check for this policy; no fact status was loosened."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal",

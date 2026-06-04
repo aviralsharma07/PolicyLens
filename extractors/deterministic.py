@@ -2424,6 +2424,291 @@ class OrganDonorCoverageExtractor(BaseExtractor):
         return candidates
 
 
+class RestorationBenefitExtractor(BaseExtractor):
+    concept = "restoration_benefit"
+    extractor_name = "restoration_benefit"
+
+    POSITIVE_TERMS = [
+        "restoration benefit",
+        "automatic recharge",
+        "unlimited automatic recharge",
+        "reload of sum insured",
+        "restoration of sum insured",
+        "restoration of the sum insured",
+        "restoration of the sum additional sum insured",
+        "restore sum insured",
+        "restored sum insured",
+        "re-instatement of up to the base sum insured",
+        "reinstatement of up to the base sum insured",
+    ]
+    REJECT_TERMS = [
+        "reconstruction of affected body part",
+        "restore essential physical functioning",
+        "home building",
+        "home contents",
+        "general contents",
+        "property",
+        "policy shall be restored",
+        "not applicable for this cover",
+        "reinstatement of employment",
+        "policy reinstatement",
+        "pre-existing disease",
+        "rehabilitation means",
+        "restore him to the position",
+    ]
+
+    def _value(self, lower: str, pos: int) -> Dict[str, Any]:
+        target_window = lower[max(0, pos - 120) : pos + 520] if pos >= 0 else lower[:620]
+        if "200%" in target_window or "200 %" in target_window:
+            return {"coverage_status": "covered", "percentage": 200}
+        if "100%" in target_window or "100 %" in target_window:
+            return {"coverage_status": "covered", "percentage": 100}
+        if "reload of sum insured" in target_window:
+            return {"benefit": "restoration_or_reload", "schedule_dependent": True}
+        if _has_any(target_window, ["policy schedule", "product benefit table", "schedule of benefits"]):
+            return {"benefit": "restoration_or_reload", "schedule_dependent": True}
+        return {"coverage_status": "covered"}
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for clause in clauses:
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            if not _has_any(lower, self.POSITIVE_TERMS):
+                continue
+            if _has_any(lower, self.REJECT_TERMS):
+                continue
+            pos = min(
+                [lower.find(term) for term in self.POSITIVE_TERMS if lower.find(term) >= 0],
+                default=-1,
+            )
+            value = self._value(lower, pos)
+            confidence = 0.94
+            if "percentage" in value:
+                confidence = 0.97
+            elif value.get("schedule_dependent"):
+                confidence = 0.96
+            candidates.append(
+                self.make_candidate(
+                    index=len(candidates),
+                    clause=clause,
+                    value_json=value,
+                    normalized_value_json=value,
+                    evidence_text=evidence_window(text, pos, pos + 12, radius=360),
+                    pipeline_run_id=pipeline_run_id,
+                    confidence=confidence,
+                    pattern_id="restoration_benefit_present",
+                    debug={"positive_terms": [t for t in self.POSITIVE_TERMS if t in lower]},
+                )
+            )
+        return candidates
+
+
+class ModernTreatmentCoverageExtractor(BaseExtractor):
+    concept = "modern_treatment_coverage"
+    extractor_name = "modern_treatment_coverage"
+
+    HEADING_TERMS = [
+        "modern treatment methods",
+        "modern treatments",
+        "modern treatment",
+        "advancement in technologies",
+        "advance technology methods",
+        "coverage for modern treatments",
+    ]
+    PROCEDURE_TERMS = [
+        "uterine artery embolization",
+        "hifu",
+        "balloon sinuplasty",
+        "deep brain stimulation",
+        "oral chemotherapy",
+        "immunotherapy",
+        "im m uno",
+        "intra vitreal",
+        "intravitreal",
+        "robotic surgeries",
+        "stereotactic radio",
+        "bronchial thermoplasty",
+        "bronchical thermoplastic",
+        "vaporisation of the prostate",
+        "vaporisation of the prostrate",
+        "intra operative neuro monitoring",
+        "ionm",
+        "ion m",
+        "hematopoietic stem cells",
+        "balloon sinoplasty",
+    ]
+    REJECT_TERMS = [
+        "expenses related to any kind of advance technology methods other than",
+        "stem cell implantation and / or therapy",
+        "stem cell implantation and/or therapy",
+        "not payable",
+        "not covered",
+        "excluded",
+    ]
+
+    def _procedure_count(self, lower: str) -> int:
+        return sum(1 for term in self.PROCEDURE_TERMS if term in lower)
+
+    def _value(self, lower: str) -> Dict[str, Any]:
+        if re.search(r"50\s*%\s*(?:of|of the)?\s*sum insured", lower, re.I):
+            return {"coverage_status": "covered", "limit_percent_of_sum_insured": 50}
+        if _has_any(
+            lower,
+            [
+                "specified in the policy schedule",
+                "limit as specified in the policy schedule",
+                "up to sum insured as specified in the policy schedule",
+                "as specified in the policyschedule",
+                "specified in the policyschedule",
+                "policyschedule",
+            ],
+        ):
+            return {"schedule_dependent": True}
+        return {"coverage_status": "covered"}
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for clause in clauses:
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            has_heading = _has_any(lower, self.HEADING_TERMS)
+            procedure_count = self._procedure_count(lower)
+            has_fifty_limit = re.search(r"50\s*%\s*(?:of|of the)?\s*sum insured", lower, re.I)
+            hematopoietic_stem_cell_cover = (
+                "stem cell therapy" in lower
+                and "hematopoietic" in lower
+                and "bone marrow transplant" in lower
+            )
+            if (
+                not has_heading
+                and procedure_count < 4
+                and not (has_fifty_limit and procedure_count >= 2)
+                and not hematopoietic_stem_cell_cover
+            ):
+                continue
+            if _has_any(lower, self.REJECT_TERMS) and not _has_any(
+                lower,
+                ["shall be covered", "will be covered", "will indemnify", "covered up to"],
+            ):
+                continue
+            coverage_window = lower[:]
+            if not _has_any(
+                coverage_window,
+                [
+                    "covered",
+                    "cover",
+                    "coverage",
+                    "indemnify",
+                    "reimburse",
+                    "pay",
+                    "expenses incurred",
+                    "up to",
+                    "upto",
+                ],
+            ):
+                continue
+            pos = -1
+            for term in self.HEADING_TERMS + self.PROCEDURE_TERMS:
+                found = lower.find(term)
+                if found >= 0:
+                    pos = found
+                    break
+            value = self._value(lower)
+            candidates.append(
+                self.make_candidate(
+                    index=len(candidates),
+                    clause=clause,
+                    value_json=value,
+                    normalized_value_json=value,
+                    evidence_text=evidence_window(text, pos, pos + 16, radius=420),
+                    pipeline_run_id=pipeline_run_id,
+                    confidence=0.97 if "limit_percent_of_sum_insured" in value else 0.94,
+                    pattern_id="modern_treatment_coverage_present",
+                    debug={
+                        "has_heading": has_heading,
+                        "procedure_count": procedure_count,
+                    },
+                )
+            )
+        return candidates
+
+
+class NewbornCoverageExtractor(BaseExtractor):
+    concept = "newborn_coverage"
+    extractor_name = "newborn_coverage"
+
+    POSITIVE_TERMS = [
+        "new born baby coverage",
+        "new born baby cover",
+        "newborn baby expenses",
+        "new born baby expenses",
+        "maternity and new born baby cover",
+        "maternity & new born cover",
+        "maternity and new born cover",
+        "newborn baby covered",
+        "new born baby is covered",
+        "we will cover the newborn baby",
+    ]
+    REJECT_TERMS = [
+        "newborn baby means",
+        "new born baby means",
+        "baby charges",
+        "baby food",
+        "baby utilities",
+        "baby utilites",
+        "baby set",
+        "baby bottle",
+        "vaccine charges for baby",
+        "vaccination charges",
+        "cradle charges",
+        "infant food",
+    ]
+
+    def extract(self, clauses: List[Dict[str, Any]], pipeline_run_id: str) -> List[FactCandidate]:
+        candidates: List[FactCandidate] = []
+        for clause in clauses:
+            text = clean_space(clause.get("text", ""))
+            lower = _lower(text)
+            if not _has_any(lower, self.POSITIVE_TERMS):
+                continue
+            if _has_any(lower, self.REJECT_TERMS) and not _has_any(
+                lower, ["maternity", "covered", "indemnify", "we will cover"]
+            ):
+                continue
+            if "no coverage for the new born baby would be available during subsequent renewals" in lower:
+                # This is a condition on renewal declaration, not an absolute exclusion.
+                pass
+            elif _has_any(
+                lower,
+                ["not covered", "not payable", "excluded"],
+            ) and not _has_any(lower, ["unless", "provided", "subject to", "maternity"]):
+                continue
+            pos = min(
+                [lower.find(term) for term in self.POSITIVE_TERMS if lower.find(term) >= 0],
+                default=-1,
+            )
+            value: Dict[str, Any] = {"coverage_status": "conditional"}
+            if "from 90 days" in lower:
+                value["min_age_days"] = 90
+            if "24 month waiting period" in lower or "twenty-four months" in lower:
+                value["waiting_months"] = 24
+            candidates.append(
+                self.make_candidate(
+                    index=len(candidates),
+                    clause=clause,
+                    value_json=value,
+                    normalized_value_json=value,
+                    evidence_text=evidence_window(text, pos, pos + 16, radius=420),
+                    pipeline_run_id=pipeline_run_id,
+                    confidence=0.95,
+                    pattern_id="newborn_coverage_conditional",
+                    debug={"positive_terms": [t for t in self.POSITIVE_TERMS if t in lower]},
+                )
+            )
+        return candidates
+
+
 class ClaimIntimationTimelineExtractor(BaseExtractor):
     concept = "claim_intimation_timeline"
     extractor_name = "claim_intimation_timeline"
@@ -2699,4 +2984,7 @@ EXTRACTORS = [
     OrganDonorCoverageExtractor(),
     # DSE-021 Wave 2
     ClaimIntimationTimelineExtractor(),
+    RestorationBenefitExtractor(),
+    ModernTreatmentCoverageExtractor(),
+    NewbornCoverageExtractor(),
 ]

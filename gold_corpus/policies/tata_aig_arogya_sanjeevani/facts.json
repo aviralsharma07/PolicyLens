@@ -456,19 +456,23 @@
   },
   {
     "concept": "modern_treatment_coverage",
-    "value_json": null,
-    "normalized_value_json": null,
-    "fact_status": "not_found",
+    "value_json": {
+      "coverage_status": "covered"
+    },
+    "normalized_value_json": {
+      "coverage_status": "covered"
+    },
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
     "condition_json": null,
     "extraction_method": "manual",
-    "confidence": null,
+    "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": null,
-    "evidence_text": null,
+    "evidence_page": 8,
+    "evidence_text": "L. Stem Cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered.",
     "source_document": {
       "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
       "source_pdf_path": "10_Tata_AIG/Tata_AIG_Arogya_Sanjeevani.pdf",
@@ -476,10 +480,10 @@
       "document_id": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
       "uin": "TATHLIP20169V011920"
     },
-    "value_type": null,
+    "value_type": "coverage_status",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review found no safe supporting policy text.",
+    "notes": "DSE-021 Packet 3B correction: source PDF states 50% SI for the modern treatment list, but current section_tree evidence safely preserves only operative modern-treatment presence; exact limit is deferred to parser/table remediation.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -490,6 +494,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

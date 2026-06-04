@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-06-05 (DSE-021 — Packet 3B: Coverage Wave Extractors)
+
+### Added
+- `RestorationBenefitExtractor`, `ModernTreatmentCoverageExtractor`, and `NewbornCoverageExtractor`.
+- Focused regression tests for restoration/recharge, body-part/property restoration rejection, modern-treatment coverage and exclusions, newborn conditional coverage, definitions, and baby-item annexure rejection.
+- `runs/evals/2026-06-05-fact-extraction-dse021-coverage-wave.json` passing eval artifact.
+
+### Changed
+- `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` are now active deterministic concepts in `TARGET_CONCEPTS` and the ontology registry.
+- Coverage-wave gold labels corrected only where Packet 3A source review proved the prior label/value/evidence wrong or too specific for verified section-tree evidence.
+
+### Known Issues
+- Star restoration and Tata AIG modern-treatment exact source PDF percentages are not carried safely by the current section-tree clauses; deterministic v1 emits conservative `covered` values for those rows until parser/table remediation improves source context.
+
 ## 2026-06-05 (DSE-021 — Packet 3A: Coverage Wave Gold Audit)
 
 ### Added

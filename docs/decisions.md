@@ -942,3 +942,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Exact schedule amounts still require table/schedule remediation where the policy wording references external schedules.
 
 **Revisit when:** DSE-022 table remediation or Product B export freeze needs richer display semantics for component-shaped room/ICU limits.
+
+---
+
+## 2026-06-05 — Coverage-wave extractors must not invent missing exact limits (ADR-0037)
+
+**Status:** accepted
+
+**Decision:** `restoration_benefit`, `modern_treatment_coverage`, and `newborn_coverage` may emit conservative covered/conditional values when exact source PDF percentages or sub-limits are not carried in verified section-tree evidence.
+
+**Context:** DSE-021 Packet 3B found source PDF percentages for Star restoration and Tata AIG modern treatment, but the current section-tree clauses do not safely preserve those exact values. Product B needs evidence-backed facts, not values inferred from inaccessible context.
+
+**Options considered:**
+1. Hardcode exact values from source-PDF manual review.
+2. Emit `not_found` whenever exact limits are missing from section-tree clauses.
+3. Emit evidence-backed covered/conditional status and defer exact limits to parser/table remediation.
+
+**Reasoning:** Option 3 preserves truthful coverage presence without inventing unsupported exact limits. It keeps deterministic precision high while exposing parser/table remediation as the correct layer for exact value recovery.
+
+**Consequences:**
+- Positive: DSE-021 Packet 3B passes with 20/20 policies, 100% precision, 100% value accuracy, and 0 false-present facts.
+- Positive: Product B can display safe covered/conditional status without overstating exact limits.
+- Negative: Some exact limits remain absent until section-tree/table extraction carries the needed evidence.
+
+**Revisit when:** DSE-022 or later parser/table remediation recovers the missing exact source context for these rows.

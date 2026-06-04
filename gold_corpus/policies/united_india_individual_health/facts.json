@@ -454,10 +454,10 @@
   {
     "concept": "modern_treatment_coverage",
     "value_json": {
-      "covered": true
+      "coverage_status": "covered"
     },
     "normalized_value_json": {
-      "covered": true
+      "coverage_status": "covered"
     },
     "fact_status": "present",
     "scope_json": {
@@ -469,7 +469,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 7,
-    "evidence_text": "t to the condition that the hospitalisation expenses are admissible only when the treatment has been undergone in an AYUSH Hospital as defined in Clause 2.A.3 above. 3.5 Modern Treatment Methods & Advancement in Technologies In case of an admissible claim under section 3.1, expenses incurred on the following procedures (wherever medically indicated) either as in-patient or as part of day care treatment in a hospital, shall be covered. The claim shall be subject to additional sub- limits indicated against them in the table below: Sr. No. Modern Treatment Methods & Limits Advancem",
+    "evidence_text": "3.5 Modern Treatment Methods & Advancement in Technologies In case of an admissible claim under section 3.1, expenses incurred on the following procedures wherever medically indicated either as in-patient or as part of day care treatment in a hospital, shall be covered.",
     "source_document": {
       "filename": "UnitedIndia_Individual_Health_IRDAI.pdf",
       "source_pdf_path": "06_United_India/UnitedIndia_Individual_Health_IRDAI.pdf",
@@ -480,7 +480,7 @@
     "value_type": "coverage_status",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: canonicalized covered shape for procedure-specific modern treatment sub-limits.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -491,6 +491,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

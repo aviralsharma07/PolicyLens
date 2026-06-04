@@ -389,12 +389,12 @@
   {
     "concept": "restoration_benefit",
     "value_json": {
-      "benefit": "restoration_or_reload",
-      "schedule_dependent": true
+      "coverage_status": "covered",
+      "percentage": 100
     },
     "normalized_value_json": {
-      "benefit": "restoration_or_reload",
-      "schedule_dependent": true
+      "coverage_status": "covered",
+      "percentage": 100
     },
     "fact_status": "present",
     "scope_json": {
@@ -405,8 +405,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 11,
-    "evidence_text": "e of the Policy Year in which the Newborn Baby is born, up to the sum insured as applicable for the Insured Person (mother) without any additional premium. b) Benefit 19 (Restoration of Sum insured) is not applicable for this cover. c) Costs incurred for vaccination of the Newborn Baby up to the specified sub-limit under the Schedule of Benefits for vaccinations, until the Newborn Baby completes one year of age. In the event that the Policy exp",
+    "evidence_page": 24,
+    "evidence_text": "Restoration Of The Sum Insured Additional Sum Insured Up To 100% Of Base SI Applicable to all the subsequent claims in the current policy year but for different/unrelated illness only.",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -414,10 +414,10 @@
       "document_id": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
       "uin": "FGIHLIP22234V012122"
     },
-    "value_type": "coverage_status",
+    "value_type": "coverage_status_or_limit",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: restoration/reload/recharge benefit search",
+    "notes": "DSE-021 Packet 3B source-backed correction: moved evidence from newborn clause to operative restoration schedule row.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -428,6 +428,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"
@@ -563,12 +568,12 @@
   {
     "concept": "newborn_coverage",
     "value_json": {
-      "covered": false
+      "coverage_status": "conditional"
     },
     "normalized_value_json": {
-      "covered": false
+      "coverage_status": "conditional"
     },
-    "fact_status": "explicitly_not_covered",
+    "fact_status": "present",
     "scope_json": {
       "policy_scope": "base_policy"
     },
@@ -578,7 +583,7 @@
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
     "evidence_page": 11,
-    "evidence_text": "years of age. The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. Benefit 16. Newborn Baby Expenses If We have accepted a claim under Benefit 9 (Maternity Expenses), then We will also pay the Reasonable and Customary Charges incurred by the Insured Person during the Policy Year towards the following: a) Medical Expenses incurred towards the Medically Necessary Treatment of the Insured Person’s Newborn Baby w",
+    "evidence_text": "Benefit 16. Newborn Baby Expenses If We have accepted a claim under Benefit 9 (Maternity Expenses), then We will also pay the Reasonable and Customary Charges incurred by the Insured Person during the Policy Year towards Medical Expenses incurred towards the Medically Necessary Treatment of the Insured Person’s Newborn Baby while the Insured Person is Hospitalized for delivery and We will cover the Newborn Baby until the expiry date of the Policy Year in which the Newborn Baby is born.",
     "source_document": {
       "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
       "source_pdf_path": "13_Future_Generali/Future_Generali_Health_Elite_IRDAI.pdf",
@@ -589,7 +594,7 @@
     "value_type": "coverage_status",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: newborn coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: newborn is conditionally covered; only restoration is not applicable to the newborn cover.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -600,6 +605,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"

@@ -23,6 +23,9 @@ TARGET_CONCEPTS = [
     "organ_donor_coverage",
     # Wave 2 — DSE-021
     "claim_intimation_timeline",
+    "restoration_benefit",
+    "modern_treatment_coverage",
+    "newborn_coverage",
 ]
 
 FACT_STATUSES = {

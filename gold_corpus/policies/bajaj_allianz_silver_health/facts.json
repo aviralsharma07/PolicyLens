@@ -459,10 +459,12 @@
   {
     "concept": "modern_treatment_coverage",
     "value_json": {
-      "percentage": 50
+      "coverage_status": "covered",
+      "limit_percent_of_sum_insured": 50
     },
     "normalized_value_json": {
-      "percentage": 50
+      "coverage_status": "covered",
+      "limit_percent_of_sum_insured": 50
     },
     "fact_status": "present",
     "scope_json": {
@@ -473,8 +475,8 @@
     "confidence": 1.0,
     "evidence_span_id": null,
     "pipeline_run_id": "gold_manual_dse012",
-    "evidence_page": 7,
-    "evidence_text": "ntive Health Check Up After every 4 Claim Free Year max 5000 Whichever is lower Modern Treatment Methods and Covered, up to 50% of Sum Insured or Maximum upto 5 Lacs whichever is lower Advancement in Technologies Domiciliary Expense Not Covered Covered up to 10% of Sum Insured",
+    "evidence_page": 9,
+    "evidence_text": "Modern Treatment Methods and Advancement in Technologies (as per below list) shall be restricted to 50% of Sum Insured or Maximum upto 5 Lacs whichever is lower. A. Uterine Artery Embolization and HIFU B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy E. Immunotherapy- Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries.",
     "source_document": {
       "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
       "source_pdf_path": "08_Bajaj_Allianz/Bajaj_Silver_Health_Full_IRDAI.pdf",
@@ -482,10 +484,10 @@
       "document_id": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
       "uin": "BAJHLIP22192V032122"
     },
-    "value_type": "money_or_schedule",
+    "value_type": "coverage_status_or_limit",
     "annotator": "Codex DSE-012 source-PDF human review",
     "review_status": "gold_v2_agent_reviewed",
-    "notes": "DSE-012 source-PDF review: modern treatment coverage search",
+    "notes": "DSE-021 Packet 3B source-backed correction: canonicalized modern treatment coverage to 50% Sum Insured limit.",
     "quality_passes": [
       {
         "pass_id": "pass_3_fact_precision_review",
@@ -496,6 +498,11 @@
         "pass_id": "pass_dse012_source_pdf_human_review",
         "result": "reviewed",
         "note": "Source PDF text searched for this concept; status/value/evidence set by review pass."
+      },
+      {
+        "pass_id": "dse021_coverage_wave_source_review",
+        "result": "reviewed",
+        "note": "DSE-021 Packet 3A/3B source-backed coverage-wave correction."
       }
     ],
     "human_review_priority": "normal"
