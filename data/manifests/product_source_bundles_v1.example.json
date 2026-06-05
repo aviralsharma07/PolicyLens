@@ -1,0 +1,87 @@
+{
+  "schema_version": "product_source_bundle.v1",
+  "task_id": "DSE-025",
+  "generated_at": "2026-06-05T00:00:00Z",
+  "source_manifests": [
+    "example"
+  ],
+  "bundle_count": 1,
+  "source_quality_counts": {
+    "complete": 1
+  },
+  "document_type_counts": {
+    "cis": 1,
+    "policy_wording": 1,
+    "product_benefit_table": 1
+  },
+  "known_limitations": [
+    "Example only; not a real product bundle."
+  ],
+  "bundles": [
+    {
+      "product_id": "example_insurer_example_health_plan",
+      "insurer": "Example Insurer",
+      "product_name": "Example Health Plan",
+      "uin": "EXAHLIP25001V012526",
+      "uin_base": "EXAHLIP25001",
+      "product_version": "V012526",
+      "effective_date": "2026-01-01",
+      "variants": [
+        "Base",
+        "Plus"
+      ],
+      "source_quality": "complete",
+      "source_quality_notes": "Example contains wording, PBT, and CIS with reviewed hashes.",
+      "documents": [
+        {
+          "document_id": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+          "document_type": "policy_wording",
+          "source_url": "https://example.com/example-health-plan-wording.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+          "filename": "example-health-plan-wording.pdf",
+          "file_path": "example/example-health-plan-wording.pdf",
+          "page_count": 30,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": "2026-06-05T00:00:00Z",
+          "review_status": "reviewed",
+          "notes": "Example policy wording."
+        },
+        {
+          "document_id": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+          "document_type": "product_benefit_table",
+          "source_url": "https://example.com/example-health-plan-pbt.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+          "filename": "example-health-plan-pbt.pdf",
+          "file_path": "example/example-health-plan-pbt.pdf",
+          "page_count": 4,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": "2026-06-05T00:00:00Z",
+          "review_status": "reviewed",
+          "notes": "Example Product Benefit Table."
+        },
+        {
+          "document_id": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+          "document_type": "cis",
+          "source_url": "https://example.com/example-health-plan-cis.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+          "filename": "example-health-plan-cis.pdf",
+          "file_path": "example/example-health-plan-cis.pdf",
+          "page_count": 4,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": "2026-06-05T00:00:00Z",
+          "review_status": "reviewed",
+          "notes": "Example Customer Information Sheet."
+        }
+      ]
+    }
+  ]
+}

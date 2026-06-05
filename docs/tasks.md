@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-025 | Product Source Bundle Registry | planned | P0 | Product Identity / MVP Readiness |
+| DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | planned | P0 | Product Strategy / Corpus |
 
 ---
 
@@ -32,7 +32,8 @@ MVP direction:
 - Each product must be represented as a source bundle: policy wording + Product Benefit Table / table of benefits + CIS + brochure/prospectus + rider/add-on docs where relevant.
 - Product B should recommend 1-3 policies for a user profile, not show a giant undifferentiated comparison table.
 - Accuracy, citations, source quality, and user education are the moat.
-- Next Product A target: DSE-025 Product Source Bundle Registry.
+- Product source-bundle registry v1 exists, and the baseline is blunt: 504/507 draft bundles are missing PBTs.
+- Next Product A target: DSE-026 Top 10 Insurer Universe + MVP Top 5 Selection.
 
 ---
 
@@ -40,7 +41,6 @@ MVP direction:
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | planned | P0 | Product Strategy / Corpus |
 | DSE-027 | MVP Source Bundle Sprint: Insurer 1 | planned | P0 | Corpus / Source Collection |
 | DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
@@ -82,6 +82,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 | DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | 2026-06-04 | Phase 2 |
 | DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | 2026-06-05 | Phase 3 |
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | 2026-06-05 | Phase 8 |
+| DSE-025 | Product Source Bundle Registry | 2026-06-05 | Product Identity / MVP Readiness |
 
 ---
 
@@ -89,7 +90,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 
 ### DSE-025 — Product Source Bundle Registry
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Product Identity / MVP Readiness
 **Goal:** Model one insurance product as a bundle of official documents, not as one policy wording PDF. This registry becomes the source of truth for launch-grade Product B recommendations.
@@ -107,13 +108,25 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - `variants[]` with names such as Standard, Classic, Premier, Plus, Elite, etc.
 - `source_quality` values such as `complete`, `missing_pbt`, `missing_cis`, `missing_brochure`, `uin_mismatch`, `variant_unclear`, `stale_version`, and `rejected`.
 **Acceptance criteria:**
-- Registry schema documented and validated.
-- One product can link multiple official documents.
-- Product wording, PBT, CIS, brochure/prospectus, and rider documents are classified separately.
-- UIN/version and product-name mismatches are recorded, not silently accepted.
-- Source quality prevents Product B from making confident recommendations from incomplete bundles.
-- No raw PDFs are mutated.
-- Product B still consumes compiled Product A exports only.
+- [x] Registry schema documented and validated.
+- [x] One product can link multiple official documents.
+- [x] Product wording, PBT, CIS, brochure/prospectus, and rider documents are classified separately.
+- [x] UIN/version and product-name mismatches are recorded, not silently accepted.
+- [x] Source quality prevents Product B from making confident recommendations from incomplete bundles.
+- [x] No raw PDFs are mutated.
+- [x] Product B still consumes compiled Product A exports only.
+**Results:**
+- Added `schemas/product_source_bundle.schema.json`.
+- Added dependency-free source-bundle validator and draft registry builder.
+- Generated `data/manifests/product_source_bundles_v1.draft.json` from active policy wordings and UIN report.
+- Draft registry contains 507 bundles: 504 `missing_pbt`, 1 `acceptable_with_known_gap`, 2 `rejected`.
+- Added `data/manifests/product_source_bundle_manual_overrides_v1.json` with source-identified Aditya Birla Activ Care official wording, CIS, and Product Benefit Table URLs.
+- Added `data/reports/dse025_source_bundle_baseline_audit.md`.
+- Focused tests and registry validation passed.
+**Known limitations:**
+- The draft registry is not launch-ready. Remote source-identified documents still need download, hash, and review.
+- Current active manifest has no `source_url` values.
+- PBT/CIS collection remains DSE-027 work.
 **Branch:** feat/dse-025-product-source-bundles
 **Related docs:** data_contracts.md, export_contract.md, decisions.md, product_b_mvp_gtm_strategy.md
 

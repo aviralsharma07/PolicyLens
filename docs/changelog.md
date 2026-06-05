@@ -1,5 +1,34 @@
 # Changelog
 
+## 2026-06-05 (DSE-025 — Product Source Bundle Registry v1)
+
+### Added
+- `schemas/product_source_bundle.schema.json` — source-bundle registry schema.
+- `source_bundles/validator.py` — dependency-free registry validator.
+- `source_bundles/builder.py` — draft registry builder from active policy wordings and UIN report.
+- `scripts/build_source_bundle_registry.py` and `scripts/validate_source_bundles.py`.
+- `tests/test_source_bundles.py` — focused validation and builder tests.
+- `data/manifests/product_source_bundles_v1.example.json` — compact example registry.
+- `data/manifests/product_source_bundle_manual_overrides_v1.json` — manual source-identified Activ Care bundle override.
+- `data/manifests/product_source_bundles_v1.draft.json` — generated 507-bundle draft registry.
+- `data/reports/dse025_source_bundle_baseline_audit.md` — current-state source-bundle audit.
+- `runs/sessions/2026-06-05-product-source-bundle-registry.md`.
+
+### Changed
+- `docs/tasks.md` — DSE-025 marked done and DSE-026 made the next active Product A task.
+- `IMPLEMENTATION_PLAN.md` — source-bundle baseline result added to the active roadmap.
+
+### Results
+- Draft registry: 507 bundles.
+- Source quality: 504 `missing_pbt`, 1 `acceptable_with_known_gap`, 2 `rejected`.
+- Document types in registry: 630 policy wordings, 18 brochures, 1 CIS, 1 Product Benefit Table.
+- Activ Care source bundle now records official wording, CIS, and PBT URLs as source-identified documents.
+
+### Known Issues
+- Source-identified remote documents are not launch-complete until downloaded, hashed, and reviewed.
+- Current active manifest still has no `source_url` values.
+- DSE-027 must perform actual source collection for selected MVP insurers/products.
+
 ## 2026-06-05 (Product Strategy Reset — Source-Bundled MVP)
 
 ### Added

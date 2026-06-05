@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://policylens.local/schemas/product_source_bundle.schema.json",
+  "title": "Product Source Bundle Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "generated_at",
+    "bundle_count",
+    "bundles"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "product_source_bundle.v1"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "source_manifests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bundle_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_quality_counts": {
+      "type": "object"
+    },
+    "document_type_counts": {
+      "type": "object"
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bundles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/bundle"
+      }
+    }
+  },
+  "$defs": {
+    "bundle": {
+      "type": "object",
+      "required": [
+        "product_id",
+        "insurer",
+        "product_name",
+        "uin",
+        "uin_base",
+        "documents",
+        "variants",
+        "source_quality",
+        "source_quality_notes"
+      ],
+      "properties": {
+        "product_id": {
+          "type": "string"
+        },
+        "insurer": {
+          "type": "string"
+        },
+        "product_name": {
+          "type": "string"
+        },
+        "uin": {
+          "type": ["string", "null"]
+        },
+        "uin_base": {
+          "type": ["string", "null"]
+        },
+        "product_version": {
+          "type": ["string", "null"]
+        },
+        "effective_date": {
+          "type": ["string", "null"]
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_quality": {
+          "enum": [
+            "complete",
+            "acceptable_with_known_gap",
+            "missing_pbt",
+            "missing_cis",
+            "missing_brochure",
+            "uin_mismatch",
+            "variant_unclear",
+            "stale_version",
+            "rejected"
+          ]
+        },
+        "source_quality_notes": {
+          "type": "string"
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/document"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "document": {
+      "type": "object",
+      "required": [
+        "document_type",
+        "source_domain",
+        "source_url",
+        "file_hash",
+        "filename",
+        "file_path",
+        "page_count",
+        "uin_match_status",
+        "product_name_match_status",
+        "review_status"
+      ],
+      "properties": {
+        "document_id": {
+          "type": ["string", "null"]
+        },
+        "document_type": {
+          "enum": [
+            "policy_wording",
+            "product_benefit_table",
+            "cis",
+            "brochure",
+            "prospectus",
+            "rider",
+            "premium_table",
+            "proposal_form",
+            "endorsement",
+            "unknown"
+          ]
+        },
+        "source_url": {
+          "type": ["string", "null"]
+        },
+        "source_domain": {
+          "type": ["string", "null"]
+        },
+        "source_authority": {
+          "type": ["string", "null"]
+        },
+        "file_hash": {
+          "type": ["string", "null"]
+        },
+        "filename": {
+          "type": ["string", "null"]
+        },
+        "file_path": {
+          "type": ["string", "null"]
+        },
+        "page_count": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "uin_match_status": {
+          "type": "string"
+        },
+        "product_name_match_status": {
+          "type": "string"
+        },
+        "downloaded_at": {
+          "type": ["string", "null"]
+        },
+        "review_status": {
+          "enum": [
+            "machine_imported",
+            "source_identified",
+            "downloaded_unreviewed",
+            "reviewed",
+            "rejected"
+          ]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

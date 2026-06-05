@@ -1,0 +1,80 @@
+{
+  "schema_version": "product_source_bundle_manual_overrides.v1",
+  "task_id": "DSE-025",
+  "generated_at": "2026-06-05",
+  "notes": [
+    "Manual source-identified overrides are not launch-complete until remote documents are downloaded, hashed, and reviewed.",
+    "Aditya Birla Activ Care is included because Product B prototype review exposed the policy-wording/PBT split for co-pay."
+  ],
+  "bundles": [
+    {
+      "match": {
+        "uin_base": "ADIHLIP20001"
+      },
+      "product_id": "aditya_birla_activ_care",
+      "insurer": "Aditya Birla Health",
+      "product_name": "Activ Care",
+      "uin": "ADIHLIP20001V011920",
+      "uin_base": "ADIHLIP20001",
+      "product_version": "V011920",
+      "effective_date": null,
+      "variants": [
+        "Standard",
+        "Classic",
+        "Premier"
+      ],
+      "source_quality": "acceptable_with_known_gap",
+      "source_quality_notes": "Official policy wording, CIS, and Product Benefit Table URLs are identified, but the remote CIS/PBT files still need to be downloaded, hashed, and reviewed before launch-grade recommendation use.",
+      "documents": [
+        {
+          "document_id": null,
+          "document_type": "policy_wording",
+          "source_url": "https://www.adityabirlacapital.com/healthinsurance/buy-insurance-online/assets/policy-wording/activ-care.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": null,
+          "filename": "activ-care.pdf",
+          "file_path": null,
+          "page_count": 34,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": null,
+          "review_status": "source_identified",
+          "notes": "Official insurer policy wording URL confirms Activ Care wording and Product UIN ADIHLIP20001V011920."
+        },
+        {
+          "document_id": null,
+          "document_type": "cis",
+          "source_url": "https://www.adityabirlacapital.com/healthinsurance/assets/PDF/20190502T124611.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": null,
+          "filename": "20190502T124611.pdf",
+          "file_path": null,
+          "page_count": 4,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": null,
+          "review_status": "source_identified",
+          "notes": "Official insurer Customer Information Sheet URL identified during DSE-025 strategy reset."
+        },
+        {
+          "document_id": null,
+          "document_type": "product_benefit_table",
+          "source_url": "https://www.adityabirlacapital.com/healthinsurance/assets/pdf/20190502T123917.pdf",
+          "source_domain": "insurer_website",
+          "source_authority": "official_insurer",
+          "file_hash": null,
+          "filename": "20190502T123917.pdf",
+          "file_path": null,
+          "page_count": 4,
+          "uin_match_status": "matched",
+          "product_name_match_status": "matched",
+          "downloaded_at": null,
+          "review_status": "source_identified",
+          "notes": "Official insurer Product Benefit Table URL identified. This is where variant-specific values such as Standard/Classic/Premier provisions belong."
+        }
+      ]
+    }
+  ]
+}
