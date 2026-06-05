@@ -47,6 +47,7 @@ _KEYWORDS: dict = {
         "% of the sum insured",
         "percentage of sum insured",
         "sum insured payable",
+        "sum insured",
         "continuous hospitalization",
         "fracture",
         "treatment or procedure",
@@ -230,8 +231,10 @@ def classify(
         "cataract",
     ]
     premium_markers = ["premium", "period on risk", "rate of premium", "cancellation"]
-    if best_type == TableType.premium and any(marker in combined for marker in benefit_grid_markers):
-        if not any(marker in combined for marker in premium_markers):
+    if best_type == TableType.premium and any(
+        marker in combined for marker in benefit_grid_markers
+    ):
+        if not any(marker in cell_text for marker in premium_markers):
             best_type = TableType.schedule_of_benefits
             best_score = max(best_score, scores[TableType.schedule_of_benefits])
 

@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-06-05 (DSE-022 — Packet 3: Cataract Sublimit Table Type Fix)
+
+### Added
+- `table_engine/table_type_classifier.py` — "sum insured" added as schedule_of_benefits keyword; premium-marker disambiguation now checks cell text (not heading context) so heading noise does not block benefit→schedule reclassification.
+- `tests/test_table_engine.py` — 5 new tests: cataract as schedule_of_benefits, cataract with premium heading, premium retention not reclassified, premium retention with benefit heading, generic percent not schedule.
+- `runs/evals/2026-06-05-table-engine-dse022-final.json` — DSE-022 final eval artifact.
+
+### Changed
+- `data/interim/tables/new_india_floater/document_tables.json` — cataract sublimit table (page 14) reclassified from `premium` to `schedule_of_benefits`.
+- `docs/evaluation.md` — DSE-022 Final Result section added.
+- `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 3 section added.
+- `docs/changelog.md` — Packet 3 entry added.
+
+### Fixed
+- new_india_floater phys_table_002 cataract sublimit table no longer misclassified as `premium`. Type accuracy is now 100% (was 99.74%).
+
+### Audit-only scope
+No gold labels, table detection logic, eval thresholds, or physical labels were changed.
+
 ## 2026-06-05 (DSE-022 — Packet 2: Physical Table Label Quality Audit)
 
 ### Added

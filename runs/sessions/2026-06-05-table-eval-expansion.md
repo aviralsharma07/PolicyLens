@@ -140,6 +140,59 @@ git restore --source HEAD~1 -- data/reports/dse009_gold_table_source_review.json
 - DSE-012 empty headers/rows accepted as known limitation — no fix needed
 - No gold label corrections required
 
+## Packet 3 — Cataract Sublimit Table Type Fix
+
+### Goal
+Fix the single type misclassification found by Packet 2: new_india_floater phys_table_002 (cataract sublimit, page 14) was classified as `premium` instead of `schedule_of_benefits`.
+
+### Relevant Docs Read
+- `table_engine/table_type_classifier.py` — existing classifier logic
+- `data/interim/tables/new_india_floater/document_tables.json` — extracted table data
+- `tests/test_table_engine.py` — existing test patterns
+- `runs/evals/2026-06-05-table-engine-dse022-baseline.json` — baseline eval
+
+### Root Cause
+The cataract table's cell text ("sum insured", "additional cataract limit", rupee amounts) contained no premium keywords. However, heading context from the PDF page contained "premium", boosting the premium score above `schedule_of_benefits`. The existing disambiguation (benefit→schedule reclassification) was blocked because the premium-marker check used the combined text (heading context + cell text), and "premium" in the heading context prevented reclassification.
+
+### Changes
+
+**`table_engine/table_type_classifier.py`:**
+1. Added `"sum insured"` as a standalone schedule_of_benefits keyword (matches the cataract table's column header directly).
+2. Changed the premium-marker disambiguation from `combined` (heading + cell) to `cell_text` only. Heading context should not decide whether a table is premium — only the actual cell content matters.
+
+**`data/interim/tables/new_india_floater/document_tables.json`:**
+- Updated `new_india_floater_mediclaim_p14_t1` `table_type` from `premium` to `schedule_of_benefits` with confidence 0.0625.
+
+### Tests Added (5 new)
+- `test_classify_cataract_sublimit_as_schedule_of_benefits` — cataract grid → SOB
+- `test_classify_cataract_sublimit_with_premium_heading` — cataract grid + premium heading context → SOB (was premium before fix)
+- `test_classify_premium_retention_not_reclassified` — premium retention → premium (unchanged)
+- `test_classify_premium_retention_with_benefit_heading` — premium + SOB heading → premium (premium markers in cell text)
+- `test_classify_generic_percent_not_schedule` — generic rate table → unknown
+
+### Commands Run
+```bash
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_table_engine.py tests/test_gold_corpus_validator.py --tb=short
+PYTHONPATH=. .venv/bin/python scripts/eval_table_engine.py --gold-corpus gold_corpus --tables-root data/interim/tables --output runs/evals/2026-06-05-table-engine-dse022-final.json
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+git diff --check
+git status --short
+```
+
+### Results
+- **78/78 tests passed** (73 existing + 5 new).
+- **Table eval PASSED**, type accuracy 100% (was 99.74%).
+- Priority type accuracy: 100% (was 96.67% due to New India mismatch).
+- Detection recall: 100%, header lineage: 100%, unrecorded missing cell bboxes: 0.
+- Gold corpus validator: PASSED.
+- `git diff --check`: PASSED (no whitespace issues).
+
+### Generated Artifacts
+- `runs/evals/2026-06-05-table-engine-dse022-final.json`
+
+### Known Limitations
+- The cataract table confidence (0.0625) is low but above the 0.05 threshold. Limited by only 2/35 SOB keywords matching ("sum insured", "cataract"). Acceptable for now.
+
 ## Next Step
 
-Packet 3: fix the single New India cataract sublimit table type misclassification, rerun table eval, then close DSE-022 if gates pass.
+DSE-022 Packet 3 complete. 20-policy table eval gate passes with 100% type accuracy. DSE-022 can be closed or moved to done.

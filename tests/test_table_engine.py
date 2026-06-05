@@ -265,6 +265,54 @@ class TestTableTypeClassifier:
         t_type, conf = classify_from_cells(cells_text)
         assert t_type == TableType.waiting_period
 
+    def test_classify_cataract_sublimit_as_schedule_of_benefits(self):
+        grid = [
+            ["Sum Insured", "Additional Cataract limit"],
+            ["Rs. 8,00,000", "Rs. 80,000"],
+            ["Rs. 10,00,000", "Rs. 1,00,000"],
+            ["Rs. 12,00,000", "Rs. 1,20,000"],
+            ["Rs. 15,00,000", "Rs. 1,50,000"],
+        ]
+        t_type, conf = classify(grid)
+        assert t_type == TableType.schedule_of_benefits
+
+    def test_classify_cataract_sublimit_with_premium_heading(self):
+        grid = [
+            ["Sum Insured", "Additional Cataract limit"],
+            ["Rs. 8,00,000", "Rs. 80,000"],
+            ["Rs. 10,00,000", "Rs. 1,00,000"],
+            ["Rs. 12,00,000", "Rs. 1,20,000"],
+            ["Rs. 15,00,000", "Rs. 1,50,000"],
+        ]
+        t_type, conf = classify(grid, heading_context="premium rates and premium")
+        assert t_type == TableType.schedule_of_benefits
+
+    def test_classify_premium_retention_not_reclassified(self):
+        grid = [
+            ["Period on risk", "Rate of premium to be charged"],
+            ["Up to one month", "1/4th of the annual rate"],
+            ["Up to two months", "1/2th of the annual rate"],
+        ]
+        t_type, conf = classify(grid)
+        assert t_type == TableType.premium
+
+    def test_classify_premium_retention_with_benefit_heading(self):
+        grid = [
+            ["Period on risk", "Rate of premium to be charged"],
+            ["Up to one month", "1/4th of the annual rate"],
+        ]
+        t_type, conf = classify(grid, heading_context="schedule of benefits cataract")
+        assert t_type == TableType.premium
+
+    def test_classify_generic_percent_not_schedule(self):
+        grid = [
+            ["Discount", "Rate"],
+            ["5%", "10%"],
+            ["10%", "15%"],
+        ]
+        t_type, conf = classify(grid)
+        assert t_type == TableType.unknown
+
 
 # ---------------------------------------------------------------------------
 # TestCellExtractor

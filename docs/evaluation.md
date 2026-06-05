@@ -642,6 +642,31 @@ Notes:
 - Physical table matching remains one-to-one; thresholds unchanged.
 - Legacy semantic table dispositions are documented in `data/reports/dse022_legacy_table_dispositions_v1.md`.
 
+### DSE-022 Final Result (Packet 3)
+
+Packet 3 fixed the single type misclassification found in Packet 2: the new_india_floater
+cataract sublimit table (page 14) is now correctly classified as `schedule_of_benefits`.
+Type accuracy reached 100%; no other metrics changed.
+
+```json
+{
+  "eval_name": "table-engine-dse022-final",
+  "date": "2026-06-05",
+  "task_id": "DSE-022",
+  "input_manifest": "gold_corpus physical_table_labels.json (20 policies)",
+  "passed": true,
+  "metrics": {
+    "total_physical_table_labels": 387,
+    "physical_table_detection_recall_all": 1.0,
+    "type_accuracy_on_content_detected": 1.0,
+    "priority_physical_detection_recall": 1.0,
+    "priority_type_accuracy": 1.0,
+    "header_lineage_pass_rate": 1.0,
+    "unrecorded_missing_cell_bboxes": 0
+  }
+}
+```
+
 ### Commands
 
 ```bash
