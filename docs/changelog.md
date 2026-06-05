@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-06-06 (DSE-026 — MVP Insurer Universe Selection)
+
+### Added
+- `scripts/analyze_dse026_insurer_universe.py` — local-corpus readiness analysis by canonical insurer.
+- `data/reports/dse026_insurer_selection_rubric.md` — weighted insurer-selection rubric.
+- `data/reports/dse026_corpus_availability_analysis.json` and `.md` — Product A corpus readiness analysis for the insurer universe.
+- `data/reports/dse026_market_trust_evidence.md` — external market/source-availability evidence writeup.
+- `data/reports/dse026_top10_top5_selection.md` — final top 10 and MVP top 5 decision report.
+- `data/reports/dse026_mvp_product_candidate_rationale.md` — first 30-product DSE-027 collection target rationale.
+- `data/manifests/mvp_insurer_selection_v1.json` — machine-readable insurer ranking manifest.
+- `data/manifests/mvp_product_candidates_v1.json` — machine-readable product candidate manifest.
+- `runs/sessions/2026-06-06-mvp-insurer-selection.md`.
+
+### Changed
+- `docs/tasks.md` — DSE-026 marked done; DSE-027 promoted as the next active Product A task.
+- `IMPLEMENTATION_PLAN.md` — DSE-026 result recorded and HDFC ERGO named as the first source-bundle sprint target.
+- `docs/product_b_mvp_gtm_strategy.md` — preliminary shortlist replaced with the finalized DSE-026 insurer universe.
+
+### Results
+- MVP top 5 locked: HDFC ERGO, Star Health, ICICI Lombard, Care Health, Niva Bupa.
+- Later-wave top 10 additions locked: Tata AIG, Bajaj Allianz, New India Assurance, Aditya Birla Health, SBI General.
+- Deferred from first-wave MVP scope: ManipalCigna, United India, Oriental Insurance, Reliance General, Future Generali.
+- DSE-027 initial collection set locked at 30 product targets across the MVP top 5.
+
+### Known Issues
+- DSE-026 is a build-order decision, not a consumer-facing insurer-quality verdict.
+- Some candidate products still need exact current sellability and UIN re-verification during DSE-027.
+
 ## 2026-06-05 (DSE-025 — Product Source Bundle Registry v1)
 
 ### Added

@@ -1,0 +1,283 @@
+{
+  "schema_version": "mvp_insurer_selection.v1",
+  "task_id": "DSE-026",
+  "generated_at": "2026-06-06",
+  "rubric_version": "2026-06-06",
+  "selection_notes": [
+    "This ranking is an MVP build-order decision, not an absolute insurer quality ranking.",
+    "Source-document availability was used as a hard tie-break because DSE-027 depends on it.",
+    "The selected MVP top 5 optimize for retail relevance plus source-bundle collectability."
+  ],
+  "insurers": [
+    {
+      "insurer_id": "hdfc_ergo",
+      "display_name": "HDFC ERGO",
+      "rank": 1,
+      "tier": "mvp_top5",
+      "score_total": 88,
+      "score_breakdown": {
+        "retail_relevance": 23,
+        "market_presence_userbase": 18,
+        "public_source_document_availability": 19,
+        "product_breadth_for_retail_buyers": 12,
+        "trust_service_claim_signal": 8,
+        "existing_product_a_corpus_readiness": 8
+      },
+      "source_availability_risk": "low",
+      "rationale": "High retail visibility, strong official CIS/download structure, broad product lineup, and a large enough local wording corpus to start DSE-027 efficiently.",
+      "defer_reason": null
+    },
+    {
+      "insurer_id": "star_health",
+      "display_name": "Star Health",
+      "rank": 2,
+      "tier": "mvp_top5",
+      "score_total": 87,
+      "score_breakdown": {
+        "retail_relevance": 25,
+        "market_presence_userbase": 18,
+        "public_source_document_availability": 19,
+        "product_breadth_for_retail_buyers": 13,
+        "trust_service_claim_signal": 6,
+        "existing_product_a_corpus_readiness": 6
+      },
+      "source_availability_risk": "low",
+      "rationale": "Pure-play health focus, very high retail encounter rate, and one of the cleanest public downloads surfaces for brochures and CIS documents.",
+      "defer_reason": null
+    },
+    {
+      "insurer_id": "icici_lombard",
+      "display_name": "ICICI Lombard",
+      "rank": 3,
+      "tier": "mvp_top5",
+      "score_total": 84,
+      "score_breakdown": {
+        "retail_relevance": 22,
+        "market_presence_userbase": 18,
+        "public_source_document_availability": 17,
+        "product_breadth_for_retail_buyers": 12,
+        "trust_service_claim_signal": 8,
+        "existing_product_a_corpus_readiness": 7
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Major private insurer with strong retail visibility and enough public product-document access to justify first-wave bundle collection.",
+      "defer_reason": null
+    },
+    {
+      "insurer_id": "care_health",
+      "display_name": "Care Health",
+      "rank": 4,
+      "tier": "mvp_top5",
+      "score_total": 83,
+      "score_breakdown": {
+        "retail_relevance": 24,
+        "market_presence_userbase": 16,
+        "public_source_document_availability": 20,
+        "product_breadth_for_retail_buyers": 13,
+        "trust_service_claim_signal": 6,
+        "existing_product_a_corpus_readiness": 4
+      },
+      "source_availability_risk": "low",
+      "rationale": "Excellent official CIS/public-disclosure ergonomics and strong family-health relevance make Care Health especially collectable for a citation-first MVP.",
+      "defer_reason": null
+    },
+    {
+      "insurer_id": "niva_bupa",
+      "display_name": "Niva Bupa",
+      "rank": 5,
+      "tier": "mvp_top5",
+      "score_total": 78,
+      "score_breakdown": {
+        "retail_relevance": 23,
+        "market_presence_userbase": 15,
+        "public_source_document_availability": 16,
+        "product_breadth_for_retail_buyers": 12,
+        "trust_service_claim_signal": 7,
+        "existing_product_a_corpus_readiness": 5
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Current retail importance is too high to ignore; source discovery is split across portals but still workable for MVP.",
+      "defer_reason": null
+    },
+    {
+      "insurer_id": "tata_aig",
+      "display_name": "Tata AIG",
+      "rank": 6,
+      "tier": "top10_later",
+      "score_total": 76,
+      "score_breakdown": {
+        "retail_relevance": 18,
+        "market_presence_userbase": 15,
+        "public_source_document_availability": 18,
+        "product_breadth_for_retail_buyers": 12,
+        "trust_service_claim_signal": 8,
+        "existing_product_a_corpus_readiness": 5
+      },
+      "source_availability_risk": "low",
+      "rationale": "Strong later-wave candidate with a useful official download surface and broad enough retail health lineup.",
+      "defer_reason": "Lower first-wave urgency than the selected MVP top 5."
+    },
+    {
+      "insurer_id": "bajaj_allianz",
+      "display_name": "Bajaj Allianz",
+      "rank": 7,
+      "tier": "top10_later",
+      "score_total": 74,
+      "score_breakdown": {
+        "retail_relevance": 18,
+        "market_presence_userbase": 15,
+        "public_source_document_availability": 18,
+        "product_breadth_for_retail_buyers": 12,
+        "trust_service_claim_signal": 6,
+        "existing_product_a_corpus_readiness": 5
+      },
+      "source_availability_risk": "low",
+      "rationale": "Strong product-document availability and wide retail product set justify long-term top-10 inclusion.",
+      "defer_reason": "Strong, but not as central to first-wave MVP as the chosen five."
+    },
+    {
+      "insurer_id": "new_india_assurance",
+      "display_name": "New India Assurance",
+      "rank": 8,
+      "tier": "top10_later",
+      "score_total": 72,
+      "score_breakdown": {
+        "retail_relevance": 17,
+        "market_presence_userbase": 16,
+        "public_source_document_availability": 20,
+        "product_breadth_for_retail_buyers": 11,
+        "trust_service_claim_signal": 4,
+        "existing_product_a_corpus_readiness": 4
+      },
+      "source_availability_risk": "low",
+      "rationale": "Public-sector retail relevance plus unusually strong current official download structure make it the best later-wave PSU candidate.",
+      "defer_reason": "Useful for later expansion, but not needed in the first five-insurer MVP."
+    },
+    {
+      "insurer_id": "aditya_birla_health",
+      "display_name": "Aditya Birla Health",
+      "rank": 9,
+      "tier": "top10_later",
+      "score_total": 71,
+      "score_breakdown": {
+        "retail_relevance": 18,
+        "market_presence_userbase": 12,
+        "public_source_document_availability": 18,
+        "product_breadth_for_retail_buyers": 11,
+        "trust_service_claim_signal": 5,
+        "existing_product_a_corpus_readiness": 7
+      },
+      "source_availability_risk": "medium",
+      "rationale": "DSE-025 already proved a working wording+CIS+PBT path for Activ Care, which gives Aditya Birla strategic value beyond its raw market rank.",
+      "defer_reason": "Important later, but first-wave coverage benefit is still better with larger top-five brands."
+    },
+    {
+      "insurer_id": "sbi_general",
+      "display_name": "SBI General",
+      "rank": 10,
+      "tier": "top10_later",
+      "score_total": 68,
+      "score_breakdown": {
+        "retail_relevance": 17,
+        "market_presence_userbase": 14,
+        "public_source_document_availability": 18,
+        "product_breadth_for_retail_buyers": 10,
+        "trust_service_claim_signal": 5,
+        "existing_product_a_corpus_readiness": 4
+      },
+      "source_availability_risk": "low",
+      "rationale": "Mass retail distribution and usable official downloads justify inclusion, even though the current Product A base is thinner than peers.",
+      "defer_reason": "Needs more source-bundle proof before it can displace any MVP top-five insurer."
+    },
+    {
+      "insurer_id": "manipalcigna",
+      "display_name": "ManipalCigna",
+      "rank": 11,
+      "tier": "deferred",
+      "score_total": 57,
+      "score_breakdown": {
+        "retail_relevance": 16,
+        "market_presence_userbase": 11,
+        "public_source_document_availability": 14,
+        "product_breadth_for_retail_buyers": 11,
+        "trust_service_claim_signal": 5,
+        "existing_product_a_corpus_readiness": 0
+      },
+      "source_availability_risk": "high",
+      "rationale": "Reasonable health-specialist candidate, but DSE-026 did not find enough source-bundle ergonomics or local corpus grounding to justify top-10 inclusion today.",
+      "defer_reason": "No local corpus foothold and weaker document-discovery path than the selected top 10."
+    },
+    {
+      "insurer_id": "united_india",
+      "display_name": "United India",
+      "rank": 12,
+      "tier": "deferred",
+      "score_total": 56,
+      "score_breakdown": {
+        "retail_relevance": 13,
+        "market_presence_userbase": 14,
+        "public_source_document_availability": 17,
+        "product_breadth_for_retail_buyers": 10,
+        "trust_service_claim_signal": 2,
+        "existing_product_a_corpus_readiness": 0
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Official CIS/policy docs are reachable, but the insurer does not beat the selected top 10 on MVP value per QA hour.",
+      "defer_reason": "Public-sector candidate with lower first-wave priority than New India and SBI."
+    },
+    {
+      "insurer_id": "oriental_insurance",
+      "display_name": "Oriental Insurance",
+      "rank": 13,
+      "tier": "deferred",
+      "score_total": 54,
+      "score_breakdown": {
+        "retail_relevance": 12,
+        "market_presence_userbase": 13,
+        "public_source_document_availability": 16,
+        "product_breadth_for_retail_buyers": 9,
+        "trust_service_claim_signal": 2,
+        "existing_product_a_corpus_readiness": 2
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Usable official health pages exist, but source navigation is older and the insurer does not justify first-wave MVP effort.",
+      "defer_reason": "Lower collectability and lower MVP urgency than the selected top 10."
+    },
+    {
+      "insurer_id": "reliance_general",
+      "display_name": "Reliance General",
+      "rank": 14,
+      "tier": "deferred",
+      "score_total": 53,
+      "score_breakdown": {
+        "retail_relevance": 14,
+        "market_presence_userbase": 12,
+        "public_source_document_availability": 15,
+        "product_breadth_for_retail_buyers": 10,
+        "trust_service_claim_signal": 1,
+        "existing_product_a_corpus_readiness": 1
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Still visible in retail health, but the combined source-quality and prioritization case is weaker than the selected set.",
+      "defer_reason": "Did not beat the top-10 cut on retail relevance plus source-bundle collectability."
+    },
+    {
+      "insurer_id": "future_generali",
+      "display_name": "Future Generali",
+      "rank": 15,
+      "tier": "deferred",
+      "score_total": 52,
+      "score_breakdown": {
+        "retail_relevance": 13,
+        "market_presence_userbase": 11,
+        "public_source_document_availability": 15,
+        "product_breadth_for_retail_buyers": 9,
+        "trust_service_claim_signal": 1,
+        "existing_product_a_corpus_readiness": 3
+      },
+      "source_availability_risk": "medium",
+      "rationale": "Usable health-document path exists, but DSE-026 still ranks it behind higher-value insurers for a focused MVP.",
+      "defer_reason": "Lower market pull and lower first-wave payoff than the selected top 10."
+    }
+  ]
+}

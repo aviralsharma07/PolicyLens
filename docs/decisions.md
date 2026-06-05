@@ -1071,3 +1071,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Some exact limits remain absent until section-tree/table extraction carries the needed evidence.
 
 **Revisit when:** DSE-022 or later parser/table remediation recovers the missing exact source context for these rows.
+
+---
+
+## 2026-06-06 — Curated insurer universe for Product B MVP (ADR-0038)
+
+**Status:** accepted
+
+**Decision:** Product B MVP will launch against a curated insurer universe rather than the full 647-document corpus. The locked MVP top 5 are HDFC ERGO, Star Health, ICICI Lombard, Care Health, and Niva Bupa. Later-wave top-10 additions are Tata AIG, Bajaj Allianz, New India Assurance, Aditya Birla Health, and SBI General.
+
+**Context:** DSE-025 proved that the current corpus is excellent for policy-wording parsing but weak for launch-grade product truth because 504/507 draft bundles are still `missing_pbt`. DSE-026 therefore had to optimize for user-facing trust and source-bundle collectability, not document count.
+
+**Options considered:**
+1. Keep Product B open to the full 647-document universe.
+2. Launch with a curated top-10 / top-5 insurer universe and a 30-product first collection set.
+3. Launch with only a few hand-picked policies without a formal insurer-selection system.
+
+**Reasoning:** Option 2 preserves rigor without over-scaling. It gives Product B enough coverage to be useful while keeping DSE-027 source-bundle collection and QA tractable. It also keeps the selection reproducible through a weighted rubric and explicit evidence artifacts.
+
+**Consequences:**
+- Positive: Product A now has a stable insurer/product target list for DSE-027 instead of a vague "collect everything" mandate.
+- Positive: Product B can focus on trust, citations, and recommendation quality instead of breadth theater.
+- Negative: Some credible insurers are deferred even though they remain reasonable later-wave candidates.
+
+**Revisit when:** DSE-027 source-bundle collection completes for the MVP top 5 or when user traction justifies expanding beyond the locked top 10.

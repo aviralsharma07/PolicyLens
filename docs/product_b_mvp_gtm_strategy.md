@@ -92,25 +92,36 @@ Initial long-term shortlist:
 9. Aditya Birla Health
 10. ManipalCigna or New India Assurance
 
-This list must be finalized by DSE-026 using evidence: market presence, retail relevance, product quality, public source availability, and buyer demand.
+This list was finalized in DSE-026 using evidence from Product A corpus readiness plus current public source-document availability:
+
+1. HDFC ERGO
+2. Star Health
+3. ICICI Lombard
+4. Care Health
+5. Niva Bupa
+6. Tata AIG
+7. Bajaj Allianz
+8. New India Assurance
+9. Aditya Birla Health
+10. SBI General
 
 ---
 
 ## Top 5 MVP Insurer Shortlist
 
-Recommended MVP top 5:
+Locked MVP top 5 after DSE-026:
 
 1. HDFC ERGO
-2. ICICI Lombard
-3. Star Health
-4. Niva Bupa
-5. Care Health
+2. Star Health
+3. ICICI Lombard
+4. Care Health
+5. Niva Bupa
 
 Rationale:
 
 - These are commonly encountered by Indian retail health buyers.
 - They include both standalone health insurers and large general insurers.
-- They are likely to provide enough public product documents for a meaningful MVP.
+- They have the strongest combination of retail relevance and source-bundle collectability.
 - They cover different product philosophies, allowing Product B to explain real tradeoffs.
 
 Star Health should not be excluded merely because users report pain points. It is widely encountered, so Product B should cover it honestly and surface caveats with evidence.
@@ -302,9 +313,6 @@ Avoid:
 
 ## Immediate Next Steps
 
-1. DSE-025 — implement Product Source Bundle Registry.
-2. DSE-026 — finalize top 10 and MVP top 5 insurer selection.
-3. DSE-027 — run first insurer source-bundle sprint.
-4. DSE-028 — update Product B export to carry bundle, variant, source-quality, and condition semantics.
-5. Update Product B advisor prototype to recommend from complete/acceptable source bundles only.
-
+1. DSE-027 — run the first insurer source-bundle sprint for HDFC ERGO.
+2. DSE-028 — update Product B export to carry bundle, variant, source-quality, and condition semantics.
+3. Update Product B advisor prototype to recommend from complete/acceptable source bundles only.

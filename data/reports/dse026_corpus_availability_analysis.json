@@ -1,0 +1,1673 @@
+{
+  "report_type": "dse026_corpus_availability_analysis",
+  "task_id": "DSE-026",
+  "inputs": {
+    "active_manifest": "data/manifests/active_policy_wordings_v1.json",
+    "uin_report": "data/manifests/uin_match_report_v1.json",
+    "bundle_manifest": "data/manifests/product_source_bundles_v1.draft.json"
+  },
+  "target_insurers": [
+    {
+      "insurer": "HDFC ERGO",
+      "display_name": "HDFC ERGO",
+      "active_policy_wording_count": 67,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 67
+      },
+      "source_domain_counts": {
+        "website": 67
+      },
+      "bundle_count": 60,
+      "source_quality_counts": {
+        "missing_pbt": 60
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 60
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 60,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 18,
+      "document_count_with_missing_source_url": 67,
+      "raw_active_document_count": 67,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "ICICI Lombard",
+      "display_name": "ICICI Lombard",
+      "active_policy_wording_count": 40,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 40,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 2,
+        "website_kis": 1,
+        "irdai": 5,
+        "website": 33
+      },
+      "bundle_count": 34,
+      "source_quality_counts": {
+        "missing_pbt": 34
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 34,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 34,
+      "duplicate_uin_base_count": 6,
+      "group_like_document_count": 20,
+      "document_count_with_missing_source_url": 41,
+      "raw_active_document_count": 41,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Star Health",
+      "display_name": "Star Health",
+      "active_policy_wording_count": 101,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 101,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website": 96,
+        "website_policy_wording": 6
+      },
+      "bundle_count": 68,
+      "source_quality_counts": {
+        "missing_pbt": 68
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 68,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 68,
+      "duplicate_uin_base_count": 32,
+      "group_like_document_count": 29,
+      "document_count_with_missing_source_url": 102,
+      "raw_active_document_count": 102,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Niva Bupa",
+      "display_name": "Niva Bupa",
+      "active_policy_wording_count": 13,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 13
+      },
+      "source_domain_counts": {
+        "irdai": 5,
+        "website": 8
+      },
+      "bundle_count": 10,
+      "source_quality_counts": {
+        "missing_pbt": 10
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 10
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 10,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 4,
+      "document_count_with_missing_source_url": 13,
+      "raw_active_document_count": 13,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Care Health",
+      "display_name": "Care Health",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 12,
+      "active_document_types": {
+        "policy_wording": 22,
+        "brochure": 12
+      },
+      "source_domain_counts": {
+        "irdai": 2,
+        "website": 32
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 18
+      },
+      "bundle_document_type_counts": {
+        "brochure": 10,
+        "policy_wording": 18
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 10,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 11,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 34,
+      "raw_active_document_count": 34,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Tata AIG General Insurance",
+      "display_name": "Tata AIG",
+      "active_policy_wording_count": 25,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 25
+      },
+      "source_domain_counts": {
+        "website": 25
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 25,
+      "raw_active_document_count": 25,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Bajaj Allianz General Insurance",
+      "display_name": "Bajaj Allianz",
+      "active_policy_wording_count": 27,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 27
+      },
+      "source_domain_counts": {
+        "website": 24,
+        "irdai": 3
+      },
+      "bundle_count": 24,
+      "source_quality_counts": {
+        "missing_pbt": 24
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 24
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 24,
+      "duplicate_uin_base_count": 2,
+      "group_like_document_count": 6,
+      "document_count_with_missing_source_url": 27,
+      "raw_active_document_count": 27,
+      "readiness_band": "medium",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "SBI General Insurance",
+      "display_name": "SBI General",
+      "active_policy_wording_count": 9,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 9
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 8,
+        "irdai": 1
+      },
+      "bundle_count": 7,
+      "source_quality_counts": {
+        "missing_pbt": 7
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 7
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 7,
+      "duplicate_uin_base_count": 1,
+      "group_like_document_count": 1,
+      "document_count_with_missing_source_url": 9,
+      "raw_active_document_count": 9,
+      "readiness_band": "far",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Aditya Birla Health Insurance",
+      "display_name": "Aditya Birla",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 22
+      },
+      "source_domain_counts": {
+        "website": 19,
+        "irdai": 3
+      },
+      "bundle_count": 16,
+      "source_quality_counts": {
+        "acceptable_with_known_gap": 1,
+        "missing_pbt": 15
+      },
+      "bundle_document_type_counts": {
+        "cis": 1,
+        "product_benefit_table": 1,
+        "policy_wording": 16
+      },
+      "known_pbt_bundle_count": 1,
+      "known_cis_bundle_count": 1,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 16,
+      "duplicate_uin_base_count": 5,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 22,
+      "raw_active_document_count": 22,
+      "readiness_band": "close",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "ManipalCigna Health Insurance",
+      "display_name": "ManipalCigna Health Insurance",
+      "missing_from_local_corpus": true
+    },
+    {
+      "insurer": "New India Assurance",
+      "display_name": "New India",
+      "active_policy_wording_count": 31,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 31
+      },
+      "source_domain_counts": {
+        "irdai": 3,
+        "website": 28
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 8,
+      "document_count_with_missing_source_url": 31,
+      "raw_active_document_count": 31,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "United India Insurance",
+      "display_name": "United India",
+      "active_policy_wording_count": 24,
+      "active_brochure_count": 2,
+      "active_document_types": {
+        "brochure": 2,
+        "policy_wording": 24
+      },
+      "source_domain_counts": {
+        "irdai": 9,
+        "website": 17
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 17,
+        "rejected": 1
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 11,
+      "document_count_with_missing_source_url": 26,
+      "raw_active_document_count": 26,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Oriental Insurance",
+      "display_name": "Oriental",
+      "active_policy_wording_count": 29,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 29
+      },
+      "source_domain_counts": {
+        "irdai": 7,
+        "website": 22
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 7,
+      "document_count_with_missing_source_url": 29,
+      "raw_active_document_count": 29,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Future Generali India Insurance",
+      "display_name": "Future Generali",
+      "active_policy_wording_count": 32,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 32
+      },
+      "source_domain_counts": {
+        "website": 28,
+        "website_policy_wording": 3,
+        "irdai": 1
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 12,
+      "document_count_with_missing_source_url": 32,
+      "raw_active_document_count": 32,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Reliance General Insurance",
+      "display_name": "Reliance",
+      "active_policy_wording_count": 21,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 21
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 6,
+        "website": 15
+      },
+      "bundle_count": 14,
+      "source_quality_counts": {
+        "missing_pbt": 14
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 14
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 14,
+      "duplicate_uin_base_count": 6,
+      "group_like_document_count": 4,
+      "document_count_with_missing_source_url": 21,
+      "raw_active_document_count": 21,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    }
+  ],
+  "top_15_by_bundle_count": [
+    {
+      "insurer": "Star Health",
+      "display_name": "Star Health",
+      "active_policy_wording_count": 101,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 101,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website": 96,
+        "website_policy_wording": 6
+      },
+      "bundle_count": 68,
+      "source_quality_counts": {
+        "missing_pbt": 68
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 68,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 68,
+      "duplicate_uin_base_count": 32,
+      "group_like_document_count": 29,
+      "document_count_with_missing_source_url": 102,
+      "raw_active_document_count": 102,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "HDFC ERGO",
+      "display_name": "HDFC ERGO",
+      "active_policy_wording_count": 67,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 67
+      },
+      "source_domain_counts": {
+        "website": 67
+      },
+      "bundle_count": 60,
+      "source_quality_counts": {
+        "missing_pbt": 60
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 60
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 60,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 18,
+      "document_count_with_missing_source_url": 67,
+      "raw_active_document_count": 67,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Cholamandalam MS General Insurance",
+      "display_name": "Cholamandalam",
+      "active_policy_wording_count": 46,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 46
+      },
+      "source_domain_counts": {
+        "website": 41,
+        "website_policy_wording": 5
+      },
+      "bundle_count": 42,
+      "source_quality_counts": {
+        "missing_pbt": 42
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 42
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 42,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 23,
+      "document_count_with_missing_source_url": 46,
+      "raw_active_document_count": 46,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "ICICI Lombard",
+      "display_name": "ICICI Lombard",
+      "active_policy_wording_count": 40,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 40,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 2,
+        "website_kis": 1,
+        "irdai": 5,
+        "website": 33
+      },
+      "bundle_count": 34,
+      "source_quality_counts": {
+        "missing_pbt": 34
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 34,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 34,
+      "duplicate_uin_base_count": 6,
+      "group_like_document_count": 20,
+      "document_count_with_missing_source_url": 41,
+      "raw_active_document_count": 41,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Future Generali India Insurance",
+      "display_name": "Future Generali",
+      "active_policy_wording_count": 32,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 32
+      },
+      "source_domain_counts": {
+        "website": 28,
+        "website_policy_wording": 3,
+        "irdai": 1
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 12,
+      "document_count_with_missing_source_url": 32,
+      "raw_active_document_count": 32,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "New India Assurance",
+      "display_name": "New India",
+      "active_policy_wording_count": 31,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 31
+      },
+      "source_domain_counts": {
+        "irdai": 3,
+        "website": 28
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 8,
+      "document_count_with_missing_source_url": 31,
+      "raw_active_document_count": 31,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Bajaj Allianz General Insurance",
+      "display_name": "Bajaj Allianz",
+      "active_policy_wording_count": 27,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 27
+      },
+      "source_domain_counts": {
+        "website": 24,
+        "irdai": 3
+      },
+      "bundle_count": 24,
+      "source_quality_counts": {
+        "missing_pbt": 24
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 24
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 24,
+      "duplicate_uin_base_count": 2,
+      "group_like_document_count": 6,
+      "document_count_with_missing_source_url": 27,
+      "raw_active_document_count": 27,
+      "readiness_band": "medium",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Oriental Insurance",
+      "display_name": "Oriental",
+      "active_policy_wording_count": 29,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 29
+      },
+      "source_domain_counts": {
+        "irdai": 7,
+        "website": 22
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 7,
+      "document_count_with_missing_source_url": 29,
+      "raw_active_document_count": 29,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Tata AIG General Insurance",
+      "display_name": "Tata AIG",
+      "active_policy_wording_count": 25,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 25
+      },
+      "source_domain_counts": {
+        "website": 25
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 25,
+      "raw_active_document_count": 25,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Universal Sompo General Insurance",
+      "display_name": "Universal Sompo",
+      "active_policy_wording_count": 25,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 25
+      },
+      "source_domain_counts": {
+        "website": 25
+      },
+      "bundle_count": 19,
+      "source_quality_counts": {
+        "missing_pbt": 19
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 19
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 19,
+      "duplicate_uin_base_count": 5,
+      "group_like_document_count": 3,
+      "document_count_with_missing_source_url": 25,
+      "raw_active_document_count": 25,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "United India Insurance",
+      "display_name": "United India",
+      "active_policy_wording_count": 24,
+      "active_brochure_count": 2,
+      "active_document_types": {
+        "brochure": 2,
+        "policy_wording": 24
+      },
+      "source_domain_counts": {
+        "irdai": 9,
+        "website": 17
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 17,
+        "rejected": 1
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 11,
+      "document_count_with_missing_source_url": 26,
+      "raw_active_document_count": 26,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Care Health",
+      "display_name": "Care Health",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 12,
+      "active_document_types": {
+        "policy_wording": 22,
+        "brochure": 12
+      },
+      "source_domain_counts": {
+        "irdai": 2,
+        "website": 32
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 18
+      },
+      "bundle_document_type_counts": {
+        "brochure": 10,
+        "policy_wording": 18
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 10,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 11,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 34,
+      "raw_active_document_count": 34,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "IFFCO Tokio General Insurance",
+      "display_name": "IFFCO Tokio",
+      "active_policy_wording_count": 20,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 20
+      },
+      "source_domain_counts": {
+        "website": 18,
+        "irdai": 2
+      },
+      "bundle_count": 17,
+      "source_quality_counts": {
+        "missing_pbt": 17
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 17,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 20,
+      "raw_active_document_count": 20,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Liberty General Insurance",
+      "display_name": "Liberty",
+      "active_policy_wording_count": 20,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 20
+      },
+      "source_domain_counts": {
+        "website": 20
+      },
+      "bundle_count": 17,
+      "source_quality_counts": {
+        "missing_pbt": 17
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 17,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 7,
+      "document_count_with_missing_source_url": 20,
+      "raw_active_document_count": 20,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Aditya Birla Health Insurance",
+      "display_name": "Aditya Birla",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 22
+      },
+      "source_domain_counts": {
+        "website": 19,
+        "irdai": 3
+      },
+      "bundle_count": 16,
+      "source_quality_counts": {
+        "acceptable_with_known_gap": 1,
+        "missing_pbt": 15
+      },
+      "bundle_document_type_counts": {
+        "cis": 1,
+        "product_benefit_table": 1,
+        "policy_wording": 16
+      },
+      "known_pbt_bundle_count": 1,
+      "known_cis_bundle_count": 1,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 16,
+      "duplicate_uin_base_count": 5,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 22,
+      "raw_active_document_count": 22,
+      "readiness_band": "close",
+      "noise_risk": "high"
+    }
+  ],
+  "all_insurers": [
+    {
+      "insurer": "Aditya Birla Health Insurance",
+      "display_name": "Aditya Birla",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 22
+      },
+      "source_domain_counts": {
+        "website": 19,
+        "irdai": 3
+      },
+      "bundle_count": 16,
+      "source_quality_counts": {
+        "acceptable_with_known_gap": 1,
+        "missing_pbt": 15
+      },
+      "bundle_document_type_counts": {
+        "cis": 1,
+        "product_benefit_table": 1,
+        "policy_wording": 16
+      },
+      "known_pbt_bundle_count": 1,
+      "known_cis_bundle_count": 1,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 16,
+      "duplicate_uin_base_count": 5,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 22,
+      "raw_active_document_count": 22,
+      "readiness_band": "close",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Bajaj Allianz General Insurance",
+      "display_name": "Bajaj Allianz",
+      "active_policy_wording_count": 27,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 27
+      },
+      "source_domain_counts": {
+        "website": 24,
+        "irdai": 3
+      },
+      "bundle_count": 24,
+      "source_quality_counts": {
+        "missing_pbt": 24
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 24
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 24,
+      "duplicate_uin_base_count": 2,
+      "group_like_document_count": 6,
+      "document_count_with_missing_source_url": 27,
+      "raw_active_document_count": 27,
+      "readiness_band": "medium",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Care Health",
+      "display_name": "Care Health",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 12,
+      "active_document_types": {
+        "policy_wording": 22,
+        "brochure": 12
+      },
+      "source_domain_counts": {
+        "irdai": 2,
+        "website": 32
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 18
+      },
+      "bundle_document_type_counts": {
+        "brochure": 10,
+        "policy_wording": 18
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 10,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 11,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 34,
+      "raw_active_document_count": 34,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Cholamandalam MS General Insurance",
+      "display_name": "Cholamandalam",
+      "active_policy_wording_count": 46,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 46
+      },
+      "source_domain_counts": {
+        "website": 41,
+        "website_policy_wording": 5
+      },
+      "bundle_count": 42,
+      "source_quality_counts": {
+        "missing_pbt": 42
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 42
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 42,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 23,
+      "document_count_with_missing_source_url": 46,
+      "raw_active_document_count": 46,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Edelweiss General Insurance",
+      "display_name": "Edelweiss",
+      "active_policy_wording_count": 5,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 5,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 6
+      },
+      "bundle_count": 5,
+      "source_quality_counts": {
+        "missing_pbt": 5
+      },
+      "bundle_document_type_counts": {
+        "brochure": 1,
+        "policy_wording": 5
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 5,
+      "duplicate_uin_base_count": 1,
+      "group_like_document_count": 3,
+      "document_count_with_missing_source_url": 6,
+      "raw_active_document_count": 6,
+      "readiness_band": "far",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Future Generali India Insurance",
+      "display_name": "Future Generali",
+      "active_policy_wording_count": 32,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 32
+      },
+      "source_domain_counts": {
+        "website": 28,
+        "website_policy_wording": 3,
+        "irdai": 1
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 12,
+      "document_count_with_missing_source_url": 32,
+      "raw_active_document_count": 32,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "HDFC ERGO",
+      "display_name": "HDFC ERGO",
+      "active_policy_wording_count": 67,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 67
+      },
+      "source_domain_counts": {
+        "website": 67
+      },
+      "bundle_count": 60,
+      "source_quality_counts": {
+        "missing_pbt": 60
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 60
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 60,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 18,
+      "document_count_with_missing_source_url": 67,
+      "raw_active_document_count": 67,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "ICICI Lombard",
+      "display_name": "ICICI Lombard",
+      "active_policy_wording_count": 40,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 40,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 2,
+        "website_kis": 1,
+        "irdai": 5,
+        "website": 33
+      },
+      "bundle_count": 34,
+      "source_quality_counts": {
+        "missing_pbt": 34
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 34,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 34,
+      "duplicate_uin_base_count": 6,
+      "group_like_document_count": 20,
+      "document_count_with_missing_source_url": 41,
+      "raw_active_document_count": 41,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "IFFCO Tokio General Insurance",
+      "display_name": "IFFCO Tokio",
+      "active_policy_wording_count": 20,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 20
+      },
+      "source_domain_counts": {
+        "website": 18,
+        "irdai": 2
+      },
+      "bundle_count": 17,
+      "source_quality_counts": {
+        "missing_pbt": 17
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 17,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 20,
+      "raw_active_document_count": 20,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Kotak Mahindra General Insurance",
+      "display_name": "Kotak Mahindra",
+      "active_policy_wording_count": 22,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 22
+      },
+      "source_domain_counts": {
+        "irdai": 4,
+        "website": 14,
+        "website_policy_wording": 4
+      },
+      "bundle_count": 14,
+      "source_quality_counts": {
+        "missing_pbt": 14
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 14
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 14,
+      "duplicate_uin_base_count": 8,
+      "group_like_document_count": 10,
+      "document_count_with_missing_source_url": 22,
+      "raw_active_document_count": 22,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Liberty General Insurance",
+      "display_name": "Liberty",
+      "active_policy_wording_count": 20,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 20
+      },
+      "source_domain_counts": {
+        "website": 20
+      },
+      "bundle_count": 17,
+      "source_quality_counts": {
+        "missing_pbt": 17
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 17,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 7,
+      "document_count_with_missing_source_url": 20,
+      "raw_active_document_count": 20,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Magma HDI General Insurance",
+      "display_name": "Magma HDI",
+      "active_policy_wording_count": 10,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 10
+      },
+      "source_domain_counts": {
+        "website": 6,
+        "irdai": 1,
+        "website_policy_wording": 3
+      },
+      "bundle_count": 7,
+      "source_quality_counts": {
+        "missing_pbt": 7
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 7
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 7,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 2,
+      "document_count_with_missing_source_url": 10,
+      "raw_active_document_count": 10,
+      "readiness_band": "far",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "New India Assurance",
+      "display_name": "New India",
+      "active_policy_wording_count": 31,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 31
+      },
+      "source_domain_counts": {
+        "irdai": 3,
+        "website": 28
+      },
+      "bundle_count": 28,
+      "source_quality_counts": {
+        "missing_pbt": 28
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 28
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 28,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 8,
+      "document_count_with_missing_source_url": 31,
+      "raw_active_document_count": 31,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Niva Bupa",
+      "display_name": "Niva Bupa",
+      "active_policy_wording_count": 13,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 13
+      },
+      "source_domain_counts": {
+        "irdai": 5,
+        "website": 8
+      },
+      "bundle_count": 10,
+      "source_quality_counts": {
+        "missing_pbt": 10
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 10
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 10,
+      "duplicate_uin_base_count": 3,
+      "group_like_document_count": 4,
+      "document_count_with_missing_source_url": 13,
+      "raw_active_document_count": 13,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Oriental Insurance",
+      "display_name": "Oriental",
+      "active_policy_wording_count": 29,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 29
+      },
+      "source_domain_counts": {
+        "irdai": 7,
+        "website": 22
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 7,
+      "document_count_with_missing_source_url": 29,
+      "raw_active_document_count": 29,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Raheja QBE General Insurance",
+      "display_name": "Raheja QBE",
+      "active_policy_wording_count": 6,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 6
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 5,
+        "website": 1
+      },
+      "bundle_count": 6,
+      "source_quality_counts": {
+        "missing_pbt": 6
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 6
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 6,
+      "duplicate_uin_base_count": 0,
+      "group_like_document_count": 3,
+      "document_count_with_missing_source_url": 6,
+      "raw_active_document_count": 6,
+      "readiness_band": "far",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Reliance General Insurance",
+      "display_name": "Reliance",
+      "active_policy_wording_count": 21,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 21
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 6,
+        "website": 15
+      },
+      "bundle_count": 14,
+      "source_quality_counts": {
+        "missing_pbt": 14
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 14
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 14,
+      "duplicate_uin_base_count": 6,
+      "group_like_document_count": 4,
+      "document_count_with_missing_source_url": 21,
+      "raw_active_document_count": 21,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Royal Sundaram General Insurance",
+      "display_name": "Royal Sundaram",
+      "active_policy_wording_count": 12,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 12
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 9,
+        "irdai": 3
+      },
+      "bundle_count": 12,
+      "source_quality_counts": {
+        "missing_pbt": 12
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 12
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 12,
+      "duplicate_uin_base_count": 0,
+      "group_like_document_count": 1,
+      "document_count_with_missing_source_url": 12,
+      "raw_active_document_count": 12,
+      "readiness_band": "medium",
+      "noise_risk": "low"
+    },
+    {
+      "insurer": "SBI General Insurance",
+      "display_name": "SBI General",
+      "active_policy_wording_count": 9,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 9
+      },
+      "source_domain_counts": {
+        "website_policy_wording": 8,
+        "irdai": 1
+      },
+      "bundle_count": 7,
+      "source_quality_counts": {
+        "missing_pbt": 7
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 7
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 7,
+      "duplicate_uin_base_count": 1,
+      "group_like_document_count": 1,
+      "document_count_with_missing_source_url": 9,
+      "raw_active_document_count": 9,
+      "readiness_band": "far",
+      "noise_risk": "medium"
+    },
+    {
+      "insurer": "Star Health",
+      "display_name": "Star Health",
+      "active_policy_wording_count": 101,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "policy_wording": 101,
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website": 96,
+        "website_policy_wording": 6
+      },
+      "bundle_count": 68,
+      "source_quality_counts": {
+        "missing_pbt": 68
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 68,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 68,
+      "duplicate_uin_base_count": 32,
+      "group_like_document_count": 29,
+      "document_count_with_missing_source_url": 102,
+      "raw_active_document_count": 102,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Tata AIG General Insurance",
+      "display_name": "Tata AIG",
+      "active_policy_wording_count": 25,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 25
+      },
+      "source_domain_counts": {
+        "website": 25
+      },
+      "bundle_count": 21,
+      "source_quality_counts": {
+        "missing_pbt": 21
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 21
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 21,
+      "duplicate_uin_base_count": 4,
+      "group_like_document_count": 5,
+      "document_count_with_missing_source_url": 25,
+      "raw_active_document_count": 25,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "United India Insurance",
+      "display_name": "United India",
+      "active_policy_wording_count": 24,
+      "active_brochure_count": 2,
+      "active_document_types": {
+        "brochure": 2,
+        "policy_wording": 24
+      },
+      "source_domain_counts": {
+        "irdai": 9,
+        "website": 17
+      },
+      "bundle_count": 18,
+      "source_quality_counts": {
+        "missing_pbt": 17,
+        "rejected": 1
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 17,
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 18,
+      "duplicate_uin_base_count": 7,
+      "group_like_document_count": 11,
+      "document_count_with_missing_source_url": 26,
+      "raw_active_document_count": 26,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "Universal Sompo General Insurance",
+      "display_name": "Universal Sompo",
+      "active_policy_wording_count": 25,
+      "active_brochure_count": 0,
+      "active_document_types": {
+        "policy_wording": 25
+      },
+      "source_domain_counts": {
+        "website": 25
+      },
+      "bundle_count": 19,
+      "source_quality_counts": {
+        "missing_pbt": 19
+      },
+      "bundle_document_type_counts": {
+        "policy_wording": 19
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 19,
+      "duplicate_uin_base_count": 5,
+      "group_like_document_count": 3,
+      "document_count_with_missing_source_url": 25,
+      "raw_active_document_count": 25,
+      "readiness_band": "medium",
+      "noise_risk": "high"
+    },
+    {
+      "insurer": "non policy wordings",
+      "display_name": "non policy wordings",
+      "active_policy_wording_count": 0,
+      "active_brochure_count": 1,
+      "active_document_types": {
+        "brochure": 1
+      },
+      "source_domain_counts": {
+        "website": 1
+      },
+      "bundle_count": 0,
+      "source_quality_counts": {},
+      "bundle_document_type_counts": {},
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 0,
+      "unique_uin_base_count": 1,
+      "duplicate_uin_base_count": 0,
+      "group_like_document_count": 0,
+      "document_count_with_missing_source_url": 1,
+      "raw_active_document_count": 1,
+      "readiness_band": "far",
+      "noise_risk": "low"
+    },
+    {
+      "insurer": "non_policy_wordings",
+      "display_name": "non_policy_wordings",
+      "active_policy_wording_count": 0,
+      "active_brochure_count": 0,
+      "active_document_types": {},
+      "source_domain_counts": {},
+      "bundle_count": 1,
+      "source_quality_counts": {
+        "rejected": 1
+      },
+      "bundle_document_type_counts": {
+        "brochure": 1
+      },
+      "known_pbt_bundle_count": 0,
+      "known_cis_bundle_count": 0,
+      "known_brochure_bundle_count": 1,
+      "unique_uin_base_count": 0,
+      "duplicate_uin_base_count": 0,
+      "group_like_document_count": 0,
+      "document_count_with_missing_source_url": 0,
+      "raw_active_document_count": 0,
+      "readiness_band": "far",
+      "noise_risk": "low"
+    }
+  ],
+  "local_corpus_limitations": [
+    "Active manifest entries do not carry source_url values; source-domain is present but precise official URL provenance is mostly missing.",
+    "Draft source bundles are policy-wording heavy and mostly marked missing_pbt.",
+    "Local corpus strength should not be confused with MVP desirability; DSE-026 uses separate external market/source research for that."
+  ]
+}

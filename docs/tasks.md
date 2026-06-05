@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | planned | P0 | Product Strategy / Corpus |
+| DSE-027 | MVP Source Bundle Sprint: Insurer 1 | planned | P0 | Corpus / Source Collection |
 
 ---
 
@@ -33,7 +33,7 @@ MVP direction:
 - Product B should recommend 1-3 policies for a user profile, not show a giant undifferentiated comparison table.
 - Accuracy, citations, source quality, and user education are the moat.
 - Product source-bundle registry v1 exists, and the baseline is blunt: 504/507 draft bundles are missing PBTs.
-- Next Product A target: DSE-026 Top 10 Insurer Universe + MVP Top 5 Selection.
+- DSE-026 is done. The MVP insurer universe is locked and DSE-027 should start with HDFC ERGO as the first source-bundle sprint.
 
 ---
 
@@ -132,7 +132,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 
 ### DSE-026 — Top 10 Insurer Universe + MVP Top 5 Selection
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Product Strategy / Corpus
 **Goal:** Define the long-term top 10 Indian health insurer universe and the first top 5 MVP insurers with transparent rationale.
@@ -144,15 +144,34 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - Public availability of official PBT/CIS/brochure/wording documents.
 - Trust/service perception and claim-related public concerns.
 - Coverage of standalone health insurers and large general insurers.
-**Expected shortlist:**
-- Long-term top 10: HDFC ERGO, ICICI Lombard, Star Health, Niva Bupa, Care Health, Tata AIG, Bajaj Allianz, SBI General, Aditya Birla Health, and ManipalCigna or New India Assurance after evidence review.
-- MVP top 5: HDFC ERGO, ICICI Lombard, Star Health, Niva Bupa, and Care Health unless DSE-026 source-availability research proves a substitution is better.
 **Acceptance criteria:**
-- Top 10 insurer rationale is documented with evidence.
-- MVP top 5 are selected and justified.
-- Exclusions are explicit.
-- Each selected insurer has an initial candidate product list.
-- Source availability risk is recorded for each insurer.
+- [x] Top 10 insurer rationale is documented with evidence.
+- [x] MVP top 5 are selected and justified.
+- [x] Exclusions are explicit.
+- [x] Each selected insurer has an initial candidate product list.
+- [x] Source availability risk is recorded for each insurer.
+**Results:**
+- Added `data/reports/dse026_insurer_selection_rubric.md`.
+- Added `data/reports/dse026_corpus_availability_analysis.json` and `.md`.
+- Added `data/reports/dse026_market_trust_evidence.md`.
+- Added `data/reports/dse026_top10_top5_selection.md`.
+- Added `data/manifests/mvp_insurer_selection_v1.json`.
+- Added `data/reports/dse026_mvp_product_candidate_rationale.md`.
+- Added `data/manifests/mvp_product_candidates_v1.json`.
+- Locked MVP top 5: HDFC ERGO, Star Health, ICICI Lombard, Care Health, and Niva Bupa.
+- Locked long-term top 10 later-wave additions: Tata AIG, Bajaj Allianz, New India Assurance, Aditya Birla Health, and SBI General.
+- Deferred ManipalCigna, United India, Oriental Insurance, Reliance General, and Future Generali from first-wave MVP scope.
+**Known limitations:**
+- This ranking is a build-order decision, not a consumer-facing "best insurer" verdict.
+- Some product candidates still need exact current sellability and UIN verification in DSE-027.
+**Artifacts:**
+- `data/reports/dse026_insurer_selection_rubric.md`
+- `data/reports/dse026_corpus_availability_analysis.md`
+- `data/reports/dse026_market_trust_evidence.md`
+- `data/reports/dse026_top10_top5_selection.md`
+- `data/reports/dse026_mvp_product_candidate_rationale.md`
+- `data/manifests/mvp_insurer_selection_v1.json`
+- `data/manifests/mvp_product_candidates_v1.json`
 **Branch:** feat/dse-026-mvp-insurer-selection
 **Related docs:** product_b_mvp_gtm_strategy.md, risk_register.md
 
@@ -162,7 +181,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 **Priority:** P0
 **Phase:** Corpus / Source Collection
 **Goal:** Prove the source-bundle workflow on one insurer before scaling to all top 5 MVP insurers.
-**Recommended first insurer:** HDFC ERGO or Aditya Birla. HDFC ERGO is strategically useful for MVP popularity; Aditya Birla is useful as a known failure case because Activ Care has separate wording, CIS, and PBT sources.
+**Recommended first insurer:** HDFC ERGO. Aditya Birla remains the best secondary proof-of-problem case because Activ Care already exposed the wording/PBT split.
 **Scope:**
 - Select 6-7 important retail products/variants for the insurer.
 - Collect official policy wording, PBT/table of benefits, CIS, brochure/prospectus, and rider/add-on docs where available.
@@ -175,6 +194,9 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - PBT/CIS absence is visible as a blocker for final Product B recommendation.
 - Search/download process is reproducible.
 - No private/credentialed/hostile access methods are used.
+**Initial DSE-027 focus set (from DSE-026):**
+- HDFC ERGO candidates: Optima Secure, Optima Restore, my:health Medisure Super Top Up, my:health Koti Suraksha, Energy, and Arogya Sanjeevani.
+- Source-collection order after HDFC ERGO: Star Health, ICICI Lombard, Care Health, then Niva Bupa.
 **Branch:** feat/dse-027-source-bundle-sprint-insurer-1
 **Related docs:** data_contracts.md, product_b_mvp_gtm_strategy.md
 
