@@ -1,0 +1,368 @@
+{
+  "policy_id": "sbi_general_arogya_sanjeevani",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:21Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "SBI_Arogya_Sanjeevani_IRDAI_PW.pdf",
+    "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+    "source_domain": "policy_wording",
+    "page_count": 29
+  },
+  "product_identity": {
+    "insurer": "SBI General",
+    "plan_name": "Arogya Sanjeevani",
+    "display_name": "SBI General Arogya Sanjeevani",
+    "uin": "SBIHLIP20180V011920",
+    "uin_base": "SBIHLIP20180",
+    "product_version": 1,
+    "effective_date": "04-01-2020",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 2000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "V. Expenses incurred on road Ambulance subject to a maximum of Rs.2000/- per hospitalisation Note",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0386",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "4.2. AYUSH Treatment The Company shall indemnify medical expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems of medicines during each Policy Year up to the limit of sum insured as ",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0094",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_ayush_coverage_0003_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 24
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. Reimbursement of post hospitalization Within fifteen days from of 9.1 Notification of Claim Notice with full particulars shall be sent to the Company/TPA (if applicable) as under: i. Within 24 hours from the date of emergency hospitalization required or before the Insured Person’s discharge from Hospital, whichever is earlier. ii. At least 48 hours prior to admission in Hospital in case of a planned Hospitalization.",
+      "evidence_page": 14,
+      "evidence_clause": "9.1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "1. The company shall only accept bills/invoices/medical treatment related documents only in the 9.4 Claim Settlement (provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the ban",
+      "evidence_page": 15,
+      "evidence_clause": "9.4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 5,
+        "basis": "admissible_claim_amount"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "1. The company shall only accept bills/invoices/medical treatment related documents only in the 9.3 Co-payment Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment.",
+      "evidence_page": 15,
+      "evidence_clause": "9.3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 5,
+        "maximum_percent": 50,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "is lower, per eye, under one Treatment policy year. Expenses incurred for Inpatient Care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and I-homeopathy systems of medicines shall be AYUSH covered up to sum insured, during each Policy year as specified in the policy schedule. Pre-Exis",
+      "evidence_page": 22,
+      "evidence_clause": "clause_0229",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_cumulative_bonus_ncb_0005_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "2. Upon exhaustion of sum insured and cumulative bonus, for the policy year. However, the policy is The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable.",
+      "evidence_page": 18,
+      "evidence_clause": "clause_0222",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_free_look_period_0001_evidence"
+    },
+    "grace_period_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "s of age is financially independent, he or she shall be ineligible for coverage in the subsequent renewals Grace Period Period and for all other modes of payment a fixed period of 15 days be allowed as grace period. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be admissible Hospitalisation Expenses Time limit of 24 hrs shall n",
+      "evidence_page": 18,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "percentage": 5,
+        "unit": "percent_of_sum_insured_per_day",
+        "max_amount": 10000,
+        "currency": "INR",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.985,
+      "method": "deterministic",
+      "evidence": "4.1. Hospitalization ii.Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of sum insured subject to maximum of Rs.10,000/- per day.",
+      "evidence_page": 7,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6.2. First Thirty Days Waiting Period Code Excl03) i.Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered.",
+      "evidence_page": 10,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "coverage_status": "covered",
+        "limit_percent_of_sum_insured": 50
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "4.6. The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to 50% of Sum Insured, specified in the policy schedule, during the policy period A Uterine Artery Embolization and HIFU (High intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy E. Immunotherapy- Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0098",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": 48,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "6.1. Pre-Existing Diseases (Code- Excl01) a)Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. b)In case of enhancement of sum insured the exclusion shall apply afresh to the extent of Sum insured increase. c)If the insured Person is continuously covered",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0377",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_ped_waiting_period_0005_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2) OPERATIVECLAUSE 3.46. Renewal: Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and tor all waiting pe",
+      "evidence_page": 1,
+      "evidence_clause": "3.46",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "percentage": 2,
+        "unit": "percent_of_sum_insured_per_day",
+        "max_amount": 5000,
+        "currency": "INR",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.985,
+      "method": "deterministic",
+      "evidence": "4.1. Hospitalization i.Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/ per day.",
+      "evidence_page": 7,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24,
+          48
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6.3. Specific Waiting Period: (Code- Excl02) a)Expenses related to the treatment of the following listed conditions, Surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable for claims arising due to an accident. b)In case of enhancement of sum insured the exclusion shall apply",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0381",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_sbi_general_arogya_sanjeevani_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "deductible",
+    "maternity_waiting",
+    "newborn_coverage",
+    "organ_donor_coverage",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 15,
+    "concepts_not_found": 5,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.75,
+    "average_confidence": 0.96
+  }
+}

@@ -1,0 +1,765 @@
+{
+  "policy_id": "new_india_floater_mediclaim",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0390",
+          "clause_title": "",
+          "evidence_text_snippet": "3.7. PAYMENT OF AMBULANCE CHARGES We will pay You the charges for Ambulance services not exceeding 1% of the Sum Insured, Medically Necessarily incurred for shifting any Insured Person to Hospital for admission in Emergency Wa",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_percentage_sum_insured",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0006",
+          "clause_number": "clause_0387",
+          "clause_title": "",
+          "evidence_text_snippet": "3.4. TREATMENTS UNDER AYURVEDIC/HOMEOPATHIC/UNANI SYSTEMS Our liability for expenses incurred for Ayurvedic/Homeopathic/Unani treatments shall not exceed 25% of the Sum Insured in respect of all such treatments admitted during the Period of Insurance",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0311",
+          "clause_title": "",
+          "evidence_text_snippet": "2.4. AYUSH TREATMENT refers to Hospitalisation treatments given under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems.",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "clause_0317",
+          "clause_title": "",
+          "evidence_text_snippet": "2.6. AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local authorities, wherever ",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "I",
+          "clause_title": "Having qualified registered AYUSH Medical Practitioner(s) in charge;",
+          "evidence_text_snippet": "2.6. AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health i.Having qualified registered AYUSH Medical Practitioner(s) in charge;",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0003",
+          "clause_number": "II",
+          "clause_title": "Having dedicated AYUSH therapy sections as required and/or has equipped operation",
+          "evidence_text_snippet": "2.6. AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health ii.Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0004",
+          "clause_number": "III",
+          "clause_title": "Maintaining daily records of the patients and making them accessible to the insurance",
+          "evidence_text_snippet": "2.6. AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health iii.Maintaining daily records of the patients and making them accessible to the insurance company’s authorized representative.",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0005",
+          "clause_number": "clause_0352",
+          "clause_title": "",
+          "evidence_text_snippet": "2.30. MEDICAL PRACTITIONER means a person who holds a valid registration from the Medical Council of any state or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of Indi",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0006"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "5.5",
+          "clause_title": "NOTICE OF CLAIM:",
+          "evidence_text_snippet": "f You intend to make any claim under this Policy You must: a.Intimate TPA in writing on detection of any Disease/Injury being suffered immediately or forty-eight hours before Hospitalisation. b.In case of Hospitalisation due to medical emergency, intimate TPA within twenty-four hours from the time o",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "We shall settle or reject a claim, as may be the case, within thirty days of the receipt of the",
+          "evidence_text_snippet": "5.15PORTABILITY AND MIGRATION: i.We shall settle or reject a claim, as may be the case, within thirty days of the receipt of the last ‘necessary’ document.",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "V",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation in the opinion of the",
+          "evidence_text_snippet": "warrant an investigation in the opinion of the Insurer, We shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, We shall settle the claim within 45 days from the date of receipt of last ",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0002",
+          "clause_number": "clause_0394",
+          "clause_title": "",
+          "evidence_text_snippet": "3.10. CUMULATIVE BONUS Cumulative Bonus shall be increased by 25% at each renewal in respect of each claim free year of insurance, subject to maximum of 50%. If a claim is made in any particular year; the Cumulative Bonus accrued shall be reduced at the same rate at which it is accrued.",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0001",
+          "clause_number": "clause_0380",
+          "clause_title": "",
+          "evidence_text_snippet": "3.1. Our liability for all claims admitted during the Period of Insurance in respect of all Insured Persons Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1% 3.1 (a) of the Sum Insured (without Cumulative Bonus) per day Intensive Care Unit (ICU) / Intensive Cardia",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "clause_0370",
+          "clause_title": "",
+          "evidence_text_snippet": "2.47. SUM INSURED means the pre-defined limit specified in the Policy Schedule. Sum Insured and Cumulative Bonus represents the maximum, total and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person (on Individual basis) or all Insured",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0003",
+          "clause_number": "II",
+          "clause_title": "If the Insured Persons in the expiring policy are covered on an individual basis as specified",
+          "evidence_text_snippet": "3.10. CUMULATIVE BONUS ii.If the Insured Persons in the expiring policy are covered on an individual basis as specified in the Policy Schedule and there is an accumulated Cumulative Bonus for each Insured Person under the expiring policy, and such expiring policy has been Renewed on a floater policy",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0002"
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0071",
+          "clause_title": "",
+          "evidence_text_snippet": "5.13FREE LOOK PERIOD: The free look period shall be applicable at the inception of the first policy. You will be allowed a period of 15 days from the date of receipt of the policy to review the terms and conditions of the policy and to return the same if not acceptable. If You have not made any clai",
+          "page": 25,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "3",
+          "clause_title": "You fail to remit Premium for renewal before expiry of the Period of Insurance. We will",
+          "evidence_text_snippet": "5.10RENEWAL CLAUSE: 3.You fail to remit Premium for renewal before expiry of the Period of Insurance. We will accept renewal of the Policy if it is effected within thirty days of the expiry of the Period of Insurance. On such acceptance of renewal, We, however shall not be liable for any claim arisi",
+          "page": 24,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "clause_0395",
+          "clause_title": "",
+          "evidence_text_snippet": "3.10. CUMULATIVE BONUS Cumulative Bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case Sum Insured under the policy is reduced at the time of renewal, the applicable Cumulative Bonus percentage shall be applied on the reduced Sum Ins",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0001"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "clause_0380",
+          "clause_title": "",
+          "evidence_text_snippet": "3.1. Our liability for all claims admitted during the Period of Insurance in respect of all Insured Persons Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1% 3.1 (a) of the Sum Insured (without Cumulative Bonus) per day Intensive Care Unit (ICU) / Intensive Cardia",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_limit",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "4.3",
+          "clause_title": "FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03)",
+          "evidence_text_snippet": "4. WHAT ARE EXCLUDED UNDER THIS POLICY 4.3FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03) a.Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b.This exclu",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "initial_waiting_period_0001",
+          "clause_number": "4.3",
+          "clause_title": "FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03)",
+          "evidence_text_snippet": "4. WHAT ARE EXCLUDED UNDER THIS POLICY 4.3FIRST THIRTY DAYS WAITING PERIOD (Code- Excl03) a.Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b.This exclus",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [
+        {
+          "candidate_id": "maternity_waiting_0000",
+          "clause_number": "clause_0403",
+          "clause_title": "",
+          "evidence_text_snippet": "3.12. OPTIONAL COVER II : MATERNITY EXPENSES BENEFIT On the payment of additional Premium as mentioned in Schedule, it is hereby agreed and declared that Clause 4.4.15 stands deleted for Insured Person as mentioned in the Schedule. Our liability for claim admitted for Maternity shall not exceed 10% ",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_present",
+          "candidate_score": 0.985,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "maternity_waiting_0001",
+          "clause_number": "2",
+          "clause_title": "A waiting period of thirty-six months is applicable, from the date of opting this cover, for",
+          "evidence_text_snippet": "3.12. OPTIONAL COVER II : MATERNITY EXPENSES BENEFIT 2.A waiting period of thirty-six months is applicable, from the date of opting this cover, for payment of any claim relating to normal delivery or caesarian section or abdominal operation for extra uterine pregnancy. The waiting period may be rela",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_present",
+          "candidate_score": 0.985,
+          "confidence": 0.97,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "maternity_waiting_0002",
+          "clause_number": "4",
+          "clause_title": "Expenses incurred in connection with voluntary medical termination of pregnancy during",
+          "evidence_text_snippet": "3.12. OPTIONAL COVER II : MATERNITY EXPENSES BENEFIT 4.Expenses incurred in connection with voluntary medical termination of pregnancy during the first 12 weeks from the date of conception are not covered.",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_excluded",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "maternity_waiting_0003",
+          "clause_number": "clause_0409",
+          "clause_title": "",
+          "evidence_text_snippet": "3.12. OPTIONAL COVER II : MATERNITY EXPENSES BENEFIT Pre-natal and post-natal expenses are not covered unless admitted in Hospital and treatment is taken there. The maternity limit mentioned above shall be applicable per event for all the Policies of",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_excluded",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "maternity_waiting_0000"
+    },
+    "modern_treatment_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "modern_treatment_coverage_0002",
+          "clause_number": "clause_0473",
+          "clause_title": "",
+          "evidence_text_snippet": "3.15.9. Bronchial Thermoplasty Maximum of Rs. 2.5 Lakh. Vaporisation of the prostrate (Green laser treatment or Upto 50% of Sum Insured subject to 3.15.10 holmium laser treatment). Maximum of Rs. 2.5 Lakh. Upto 10% of Sum Insured subject to",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.91,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0003",
+          "clause_number": "clause_0474",
+          "clause_title": "",
+          "evidence_text_snippet": "3.15.11. IONM - (Intra Operative Neuro Monitoring) Maximum of Rs. 50,000. Stem cell therapy: Hematopoietic stem cells for bone marrow Upto 50% of Sum Insured subject to 3.15.12 transplant for haematological conditions to be covered. Maximum of Rs. 2.5 Lakh.",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.91,
+          "confidence": 0.97,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0000",
+          "clause_number": "clause_0415",
+          "clause_title": "",
+          "evidence_text_snippet": "3.15. COVERAGE FOR MODERN TREATMENTS or PROCEDURES: The following procedures will be covered (wherever medically indicated) either as in patient or as part of day care treatment in a hospital up to the limit specified against each procedure during the policy period.",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0001",
+          "clause_number": "clause_0416",
+          "clause_title": "",
+          "evidence_text_snippet": "3.15. COVERAGE FOR MODERN TREATMENTS or PROCEDURES: The following procedures will be S No Treatment or Procedure Limit (Per Policy Period) Uterine Artery Embolization and HIFU (High intensity focused Upto 20% of Sum Insured subject to 3.15.1 ultrasound) a Maximum upto Rs. 2 Lakh Upto 20% of Sum Insu",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "modern_treatment_coverage_0002"
+    },
+    "newborn_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "newborn_coverage_0000",
+          "clause_number": "clause_0384",
+          "clause_title": "",
+          "evidence_text_snippet": "3.3. NEW BORN BABY COVERAGE A New Born Baby is covered for any Illness or Injury from the date of birth till the expiry of this Policy, within the terms of this Policy. Any expense incurred towards post-natal care, pre-term or pre-mature care or any such expense incurred in connection with delivery ",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "newborn_coverage",
+          "pattern_id": "newborn_coverage_conditional",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "newborn_coverage_0001",
+          "clause_number": "clause_0385",
+          "clause_title": "",
+          "evidence_text_snippet": "3.3. NEW BORN BABY COVERAGE No coverage for the New Born Baby would be available during subsequent renewals unless the child is declared for insurance and covered as an Insured Person.",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "newborn_coverage",
+          "pattern_id": "newborn_coverage_conditional",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "newborn_coverage_0000"
+    },
+    "organ_donor_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "organ_donor_coverage_0000",
+          "clause_number": "clause_0381",
+          "clause_title": "",
+          "evidence_text_snippet": "3.1. Our liability for all claims admitted during the Period of Insurance in respect of all Insured Persons MEDICAL EXPENSES FOR ORGAN TRANSPLANT: If treatment involves Organ Transplant to Insured Person, then We will also pay Hospitalisation Expense",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "organ_donor_coverage_0000"
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "4.1",
+          "clause_title": "PRE-EXISTING DISEASES (Code- Excl01)",
+          "evidence_text_snippet": "4. WHAT ARE EXCLUDED UNDER THIS POLICY 4.1PRE-EXISTING DISEASES (Code- Excl01) a.Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with ",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "4.1",
+          "clause_title": "PRE-EXISTING DISEASES (Code- Excl01)",
+          "evidence_text_snippet": "4. WHAT ARE EXCLUDED UNDER THIS POLICY 4.1PRE-EXISTING DISEASES (Code- Excl01) a.Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with ",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "II",
+          "clause_title": "Having dedicated AYUSH therapy sections as required and/or has equipped operation",
+          "evidence_text_snippet": "2.6. AYUSH DAY CARE CENTRE means and includes Community Health Centre (CHC), Primary Health ii.Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "clause_0330",
+          "clause_title": "",
+          "evidence_text_snippet": "2.13. DAY CARE CENTRE means any institution established for Day Care Treatment of Illness or Injury, - Has qualified nursing staff under its employment - Has qualified Medical Practitioner(s) in charge - Has a fully equi",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0346",
+          "clause_title": "",
+          "evidence_text_snippet": "2.25. INTENSIVE CARE UNIT (ICU) means an identified section, ward or wing of a Hospital which is under the constant supervision of a dedicated medical practitioner(s), and which is specially equipped for the continuous m",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "clause_0358",
+          "clause_title": "",
+          "evidence_text_snippet": "2.35. PRE-EXISTING DISEASE (PED) means any condition, ailment, Injury or Illness a.That is/are diagnosed by a physician within 48 months prior to the effective date of the Policy issued by Us and its reinstatement or b.F",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0000"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "3",
+          "clause_title": "You fail to remit Premium for renewal before expiry of the Period of Insurance. We will",
+          "evidence_text_snippet": "5.10RENEWAL CLAUSE: 3.You fail to remit Premium for renewal before expiry of the Period of Insurance. We will accept renewal of the Policy if it is effected within thirty days of the expiry of the Period of Insurance. On such acceptance of renewal, We, however shall not be liable for any claim arisi",
+          "page": 24,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0075",
+          "clause_title": "",
+          "evidence_text_snippet": "5.15PORTABILITY AND MIGRATION: Migration: You will have the option to migrate the policy to other Health Insurance products/plans offered by the company by applying for migration of the policy at-least 30 days before the policy renewal date as per IRDAI guidelines on Migration. If You are presently ",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0367",
+          "clause_title": "",
+          "evidence_text_snippet": "2.44. RENEWAL means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0002"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "clause_0380",
+          "clause_title": "",
+          "evidence_text_snippet": "3.1. Our liability for all claims admitted during the Period of Insurance in respect of all Insured Persons Room Rent, boarding and nursing expenses as provided by the Hospital not exceeding 1% 3.1 (a) of the Sum Insured (without Cumulative Bonus) per day Intensive Care Unit (ICU) / Intensive Cardia",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "clause_0368",
+          "clause_title": "",
+          "evidence_text_snippet": "2.45. ROOM RENTmeans the amount charged by a hospital towards Room and Boarding expenses and shall include the associated medical expenses.",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0001"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "4.2",
+          "clause_title": "SPECIFIC WAITING PERIOD (Code- Excl02)",
+          "evidence_text_snippet": "4. WHAT ARE EXCLUDED UNDER THIS POLICY 4.2SPECIFIC WAITING PERIOD (Code- Excl02) a.Expenses related to the treatment of the following listed conditions, surgeries / treatments shall be excluded until the expiry of Ninety Days / 24 / 48 months of continuous coverage, as may be the case after the date",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_multi",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0000"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

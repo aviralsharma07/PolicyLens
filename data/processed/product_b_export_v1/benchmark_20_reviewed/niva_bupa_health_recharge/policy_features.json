@@ -1,0 +1,363 @@
+{
+  "policy_id": "niva_bupa_health_recharge",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "NivaBupa_Health_Recharge_IRDAI_Policy.pdf",
+    "file_hash": "sha256:8e692c4c84b8eb44c403268ff99d85035daf5b92571e852d22d2e4e5bfee39f9",
+    "source_domain": "policy_wording",
+    "page_count": 45
+  },
+  "product_identity": {
+    "insurer": "Niva Bupa",
+    "plan_name": "Health Recharge",
+    "display_name": "Niva Bupa Health Recharge",
+    "uin": "NBHHLIP22156V032122",
+    "uin_base": "NBHHLIP22156",
+    "product_version": 3,
+    "effective_date": "03-09-2021",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 1500,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "t Covered up to Sum Insured Domiciliary treatment Covered up to Sum Insured Alternative treatment Covered up to Sum Insured Living Organ Donor Transplant Covered up to Sum Insured Emergency Ambulance Up to Rs.1,500 per hospitalization e-Consultation Unlimited tele / online consultations Pharmacy and diagnostic services Available through our empanelled service provider Increase of 5% of expiring Ba",
+      "evidence_page": 37,
+      "evidence_clause": "clause_0288",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_ambulance_coverage_0001_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "2.2. Specific Definitions VI. Alternative Treatments What is covered: We will indemnify the Medical Expenses incurred on the Insured Person’s Hospitalization for Inpatient Care during the Policy Period on treatment taken under Ayurveda, Unani, Siddha",
+      "evidence_page": 4,
+      "evidence_clause": "VI",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_ayush_coverage_0002_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 48
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "hich Cashless Facility has not been pre-authorized or for which treatment has not been taken at a Network Provider/Service Provider or for which Cashless Facility is not available, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hospital or before discharge from the Hospital, whichever is earlier",
+      "evidence_page": 29,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30,
+        "investigation_days": 45
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "vestigate claims to determine the validity of a claim. All costs of investigation will be borne by Us and all investigations will be carried out by those individuals/entities that are authorized by Us in writing. b. We shall settle or repudiate a claim within 30 days of the receipt of the last necessary information and documentation set out above. However, where the circumstances of a claim warrant an investigation in Our opinion, We shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, Insurer shall settle the claim within 45 days from the date of receipt of last necessary document. In case of delay in payment, We shall be liable to pay interest at a rate which is 2% above the bank rate prevalent at the beginning of the financial year in which the claim has fallen due. c. Payment for R",
+      "evidence_page": 35,
+      "evidence_clause": "clause_0280",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "maximum_percent": 5,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "iling diagnostic services shall be borne by You. b. Further it is made clear that purchase of medicines from Our Service Provider is Your absolute discretion and choice. XI. Loyalty Additions (applicable only for Base Sum Insured up to Rs. 25 Lac) What is covered: nd a. If the Policy is Renewed with Us without a break or if the Policy continues to be in force for the 2 Policy Year in the 2 year / 3 year Policy Period respectively (if applicable), We will provide Loyalty Additions in the form of Cumulative Bonus by increasing the Sum Insured applicable under the Policy by 5% of the Base Sum Insured of the immediately preceding Policy Year subject to a maximum of 50% of the Base Sum Insured. There will be no change in the sub-limits applicable to various benefits due to increase in Sum Insured under this benefit. Conditions: a. If the Insured Person in the expiring Policy is covered under an Individual Policy and has an accumulated Cumulative Bonus in the expiring Policy under this benefit, and such expiring Policy i",
+      "evidence_page": 4,
+      "evidence_clause": "X",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "45. L / 65L / 70L / 90L / 95L E-saver: 10k, 25k, 50k Annual aggregate Deductible Super Top-up: 1L to 10L in multiples of 1L Baseline cover benefits",
+      "evidence_page": 37,
+      "evidence_clause": "clause_0285",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_deductible_0000_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "d shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days (thirty days for policies with a term of 3 years, if sold through distance marketing) from date of receipt of the policy document to review the terms and conditions of the policy, and to re",
+      "evidence_page": 27,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "eriod of gap that occurs at the end of the existing policy term, when the IV. premium due for renewal on a given policy is not paid on or before the premium renewal date or within 30 days thereof. Critical Illness, an Illness, medical event or Surgical Procedure specifically defined in Section V. 4.2. Diagnostic Services means those diagnostic tests and exploratory",
+      "evidence_page": 4,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "percentage": 1,
+        "unit": "percent_of_sum_insured_per_day"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "current admission Covered up to Sum Insured Medicines, drugs and consumables as prescribed by the treating Medical Practitioner Intravenous fluids, blood transfusion, injection administration charges and /or consumables Operation theatre charges The cost of prosthetics and other devices or equipment if implanted internally during Surgery Intensive Care Unit charges Up to 1% of Base Sum Insured Single private room; up to Sum Room Rent (per day) per day Insured Pre-Hospitalization Medical Expenses (60 days) Covered up to Sum Insured Post-Hospitalization Medical Expenses (90 days) Covered up to Sum Insured Day Care Treatment Covered up to Sum Insured Domiciliary treatment Covered up to",
+      "evidence_page": 37,
+      "evidence_clause": "clause_0288",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_icu_limit_0001_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "uded a. until the expiry of 24 months of continuous coverage after the date of inception of the first Policy with us. This exclusion shall not be applicable for claims arising due to an Accident (covered from day 1 or Cancer (covered after 30-day waiting period). In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum b. Insured increase. If any of the specified disease/procedure falls under the waiting period specified for pre-Existing c. diseas",
+      "evidence_page": 23,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "coverage_status": "covered"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "life maintenance is Medically Necessary and prescribed by the treating Medical Practitioner. What is not covered: Artificial life maintenance for the Insured Person who has been declared brain dead or in vegetative state as demonstrated by: a. Deep coma and unresponsiveness to all forms of stimulation; or b. Absent pupillary light reaction; or c. Absent oculovestibular and corneal reflexes; or d. Complete apnea. XV. Modern Treatments What is covered: Care Treatment in a hospital up to the limit as specified in Your Policy Schedule. a. Uterine Artery Embolization and HIFU (High intensity focused ultrasound) b. Balloon Sinuplasty c. Deep Brain stimulation d. Oral chemotherapy e. Immunotherapy- Monoclonal Antibody to be given as injection f. Intra vitreal injections g. Robotic surgeries h. Stereotactic radio surgeries",
+      "evidence_page": 4,
+      "evidence_clause": "X",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "2.2. Specific Definitions VII. Living Organ Donor Transplant What is covered: We will indemnify the Medical Expenses incurred for a living organ donor’s treatment as an Inpatient for the harvesting of the organ donated. Conditions: a. The donation co",
+      "evidence_page": 4,
+      "evidence_clause": "VII",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 48,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "tis i. Pre-existing Diseases: a.All the listed Critical Illnesses under the optional benefit, which occurs or manifests itself as a result of any Pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first Policy with Us. b. In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c. If the Insured Person is continuously cover",
+      "evidence_page": 21,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_ped_waiting_period_0001_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2.1. Standard Definitions v. it recurs or is likely to recur Injury means Accidental physical bodily harm excluding Illness or disease solely and directly caused XXII. by external, violent and visible and evident means which is verified and certified by a Medical Practitioner. Intensive Care Unit me",
+      "evidence_page": 1,
+      "evidence_clause": "V",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_renewability_0002_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "product_benefits_table"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "2.2. Specific Definitions ii. Room boarding and nursing charges during Hospitalization as charged by the Hospital where the Insured Person availed medical treatment",
+      "evidence_page": 4,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6. Exclusions II. Specified disease/procedure waiting period- Code- Excl02 Expenses related to the treatment of the listed conditions, surgeries/treatments shall be excluded a. until the expiry of 24 months of continuous coverage after the date of inception of the first Policy with us. This exclusion shall not be applicable for claims arising due to an Accident (covered from day 1 or Cancer (covered after 30-day waiting period). In case of enhancement of",
+      "evidence_page": 23,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_niva_bupa_health_recharge_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "co_pay",
+    "maternity_waiting",
+    "newborn_coverage",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 16,
+    "concepts_not_found": 4,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.8,
+    "average_confidence": 0.95
+  }
+}

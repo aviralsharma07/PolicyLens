@@ -1,0 +1,369 @@
+{
+  "policy_id": "reliance_health_gain",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Reliance_Health_Gain_PW.pdf",
+    "file_hash": "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176",
+    "source_domain": "policy_wording",
+    "page_count": 36
+  },
+  "product_identity": {
+    "insurer": "Reliance",
+    "plan_name": "Health Gain",
+    "display_name": "Reliance Health Gain",
+    "uin": "RELHLIP22229V032122",
+    "uin_base": "RELHLIP22229",
+    "product_version": 3,
+    "effective_date": "23-03-2022",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "percentage": 5
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "VIII. The Company will only be liable to pay for such Benefits for ii 3.7.8.2 Air Ambulance7.5% of Base Sum Insured or Rs 5 Lakhs whichever is Indemnity3.1.1.1 - In Patient higherTreatment",
+      "evidence_page": 27,
+      "evidence_clause": "3.7.8.2",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_ambulance_coverage_0007_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text This Policy is a contract of insurance issued by Reliance General ii. Teaching attached to colleges recognized HospitalAYUSH Insurance Company Limited (hereinafter called the 'Company') to by the Central Government/Central Counc",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0003",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_ayush_coverage_0000_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 48
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "sis only in the event of Death of immediately, in the event of : the Insured or his/her members subject to PersonFamily no claim has been made against the deleted person.i. Planned Hospitalization, the Policyholder /Insured Person will intimate such admission at least 48 hours prior to the",
+      "evidence_page": 23,
+      "evidence_clause": "clause_0450",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 20
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "iable to pay for such Benefits for ii 6.2.Co-Payment Mumbai & Suburbs, MMR (Mumbai Metropolitan Region), The Policyholder/Insured Person shall bear a Co-Payment Navi Mumbai & Suburbs, Thane City & Suburbs, Mira Road, of 20% on the Assessed Claim Amount, if at the time of Bhayandar, Panvel, Kalyan & Dombivali, State of Gujarat, inception of the first Policy with the Company, the age of the Kolkata & Suburbs. Insured Person (or eldest Insure",
+      "evidence_page": 27,
+      "evidence_clause": "6.2",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_co_pay_0000_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 20,
+        "maximum_percent": 430,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3.5.1 CUMULATIVE BONUS Year 430% of Base 20% of Daily Cash Conditions applicable to Accidental Death and Permanent Total Sum InsuredBase Sum amount (Plan Disability Insuredwise) of: Plus: Rs. 1000",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0098",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_cumulative_bonus_ncb_0004_evidence"
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "IV. Time Deductible shall be applicable on each and every where the (who are also an ) In-PolicyholdersInsuredPerson claim reported under the .were different, the Loyalty Cover shall be the higher count of Patient TreatmentPolicy Loyalty benefits of the two policies and granted only to the B. ICU CASH of the renewal . PolicyholderPolicy If the has accepted a",
+      "evidence_page": 11,
+      "evidence_clause": "clause_0289",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_deductible_0001_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "e methods, the Insured Person may also approach migrating the policy. the office of Insurance Ombudsman of the respective area/region The Insured Person shall be allowed free look period of fifteen days for redressal of grievance as per Insurance Ombudsman Rules 2017. from date of receipt of the policy document to review the terms and The contact details of the Insurance Ombudsman offices",
+      "evidence_page": 22,
+      "evidence_clause": "5.1.15",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "4.1. STANDARD EXCLUSIONS v. At the end of the , the policy shall terminate PolicyPeriod below: and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Retention % to be applied on Policy Premium Coverage is not available during the grace period. Cancellation date up to",
+      "evidence_page": 17,
+      "evidence_clause": "V",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "III. Intensive care Unit (ICU) charges, any amount in excess of the pre-defined limit",
+      "evidence_page": 5,
+      "evidence_clause": "clause_0228",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "4.1. STANDARD EXCLUSIONS i. Expenses related to the treatment of any illness within 30 days ¥ Endometriosis from the first policy commencement date shall be excluded ¥ Prolapsed uterus except claims arising due to an , provided the same Accident ¥¥ Orthopaedic Non-infective Joint replacement are covered. arthritissurgery",
+      "evidence_page": 17,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": {
+        "covered": false
+      },
+      "unit": "months",
+      "fact_status": "explicitly_not_covered",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "4.1. STANDARD EXCLUSIONS 4.1.7. CHANGE-OF-GENDER TREATMENTS (CODE: EXCL 07): 4.1.18. MATERNITY EXPENSES (CODE - EXCL 18) to change characteristics of the body to those of the opposite sex.complicated deliveries and caesarean sections incurred during ",
+      "evidence_page": 17,
+      "evidence_clause": "4.1.7",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "X. Pyrexia of unknown origin for less than 10 days 3.1.4 MODERN TREATMENT that selected under optional Benefit-3.7.3 Change in Room The shall indemnify the up to the limit CompanyInsuredPerson Rent Limits as specified in the for the PolicyScheduleMedicalExpenses d. The daily amount mentioned above shall not be payable incurred during the on or PolicyYearInpatientTreatmentDayCare for the Room Category opted by the Insured Person Benefit or of below mentioned Modern TreatmentDomiciliaryTrea",
+      "evidence_page": 6,
+      "evidence_clause": "3.1.4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": {
+        "coverage_status": "conditional",
+        "min_age_days": 90
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "III. Where only a part of the insurance coverage has a) Newborn baby covered from 90 days",
+      "evidence_page": 22,
+      "evidence_clause": "clause_0447",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_newborn_coverage_0000_evidence"
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "I. For a claim to be admissible under this benefit it should be 3.1.7 ORGAN DONOR EXPENSES admissible under the Benefit- 3.1 Hospitalization Covers The shall indemnify the CompanyPolicyholder/Insured Person Sum Insured",
+      "evidence_page": 7,
+      "evidence_clause": "3.1.7",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "I. The additional Daily Cash amount shall be payable for 3.7.4 REDUCTION IN PRE-EXISTING WAITING PERIODICU In-Patient Hospitalization Under this option, the shall reduce the 36 months CompanyWaiting for as mentioned in Clause 4.1.1, to 24 ii. In a given , the amount under this benefit shall be PeriodPre-Existing DiseasesPolicy Year or 12 months (as opted). Such reduction, if allowed, shall be expressly payable for a max",
+      "evidence_page": 13,
+      "evidence_clause": "3.7.4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_ped_waiting_period_0009_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "4.1. STANDARD EXCLUSIONS 5.1.10.RENEWAL OF POLICY",
+      "evidence_page": 17,
+      "evidence_clause": "5.1.10",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_renewability_0001_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "IX. This benefit supersedes the existing Benefit no-3.2.2 Extra Sum claim reported under the 3.7.3 CHANGE IN ROOM RENT LIMITS the Company has accepted and paid a claim under Benefit - If Under this option, the shall be allowed to opt the 3.1.1.1 In-Patient Treatment where the is admitted PolicyholderInsuredPerson Room Rent category (as specified in the Coverage Summary) in an of a on the written advice Intensive Care Unit (ICU)Hospital for hospitalizations",
+      "evidence_page": 13,
+      "evidence_clause": "3.7.3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.92,
+      "method": "deterministic",
+      "evidence": "4.1. STANDARD EXCLUSIONS iv. The amount shall be payable towards expenses incurred by conditions, surgeries/treatments shall be excluded until the the Companion towards accommodation, transportation, food expiry of 24 months of continuous coverage, as may be the or any other miscellaneous expenses. case after the date of inception of the first with the Policy",
+      "evidence_page": 17,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_reliance_health_gain_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "claim_settlement_timeline",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 18,
+    "concepts_not_found": 2,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.9,
+    "average_confidence": 0.95
+  }
+}

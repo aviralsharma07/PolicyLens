@@ -146,3 +146,38 @@ Results:
 - `git diff --check`: passed.
 
 Next step: Packet 3 — run final export eval, rebuild package with the eval artifact, run full gates, then mark DSE-023 done.
+
+## Packet 3 — Final Export Eval + Handoff Acceptance
+
+Commands:
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/eval_export.py --db data/engine.sqlite --export-root data/export --gold-corpus gold_corpus --output runs/evals/2026-06-05-export-dse023-final.json
+PYTHONPATH=. .venv/bin/python scripts/build_product_b_handoff.py --export-root data/export --gold-corpus gold_corpus --output-root data/processed/product_b_export_v1 --export-eval runs/evals/2026-06-05-export-dse023-final.json
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+git diff --check
+```
+
+Results:
+
+- Export eval: PASS.
+- Policies exported: 20.
+- Concepts per policy: 20/20.
+- Schema validation errors: 0.
+- Present missing evidence: 0.
+- Span IDs missing from DB: 0/280.
+- Gold status accuracy: 97.8%.
+- Gold value accuracy: 98.2%.
+- False present: 0.
+- Cross-file page disagreement: 0.
+- Handoff package: `data/processed/product_b_export_v1`, 20 policies, 67 files, checksums generated.
+- Gold corpus validator: PASS.
+- Full pytest: 480/480 PASS.
+
+Generated artifacts:
+
+- `runs/evals/2026-06-05-export-dse023-final.json`
+- `data/processed/product_b_export_v1/`
+
+DSE-023 is complete.

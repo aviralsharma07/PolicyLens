@@ -1,0 +1,358 @@
+{
+  "policy_id": "royal_sundaram_advanced_topup",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Royal_Sundaram_Advanced_Top_Up_PW.pdf",
+    "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+    "source_domain": "policy_wording",
+    "page_count": 45
+  },
+  "product_identity": {
+    "insurer": "Royal Sundaram",
+    "plan_name": "Advanced Topup Health Insurance",
+    "display_name": "Royal Sundaram Advanced Topup Health Insurance",
+    "uin": "RSAHLIP23029V012223",
+    "uin_base": "RSAHLIP23029",
+    "product_version": 1,
+    "effective_date": "02-06-2022",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy system of medicines during each Policy Year up to sum insured in any AYUSH Hospital. Ambulance Cover including App-based Cab cover We wi",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0164",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "13. UIN- RSAHLIP23029V012223 If a claim has been accepted under this Benefit, the claims for Pre and Post-hospitalization Medical Expenses are payable up to 60 days and 90 days respectively under this benefit. AYUSH Treatment The Company shall indemn",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0164",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_ayush_coverage_0004_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 72
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "bursement both Claims will be settled through TPA. The Claims Procedure is as follows: G.1.1For admission in Network Hospital (Cashless Claims) Insured Person shall call the TPA helpline and furnish Membership Number, Policy Number and the Name of the Patient within 72 hours before admission to hospital for planned hospitalization and not later than 48 hours of admission in case of emergency hospitalization. The insured shall also provide to the TPA by e-mail or through TPA’s web portal, the details of hospitalization like diagno",
+      "evidence_page": 30,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "23. UIN- RSAHLIP23029V012223 i.The Company shall settle or reject a claim, as the case may be, within 30 days from the",
+      "evidence_page": 23,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "top_up"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Part II- Policy Document If any claim arising as a result of an Illness or Injury that occurred during the Policy Period becomes payable, then we shall pay the benefits in accordance with terms, conditions and exclusions of the Policy over and above the deductible amount subject to availability of Sum Insured.",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0001",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_deductible_0000_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "27. UIN- RSAHLIP23029V012223 The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable.",
+      "evidence_page": 27,
+      "evidence_clause": "clause_0308",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_free_look_period_0001_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "26. UIN- RSAHLIP23029V012223 iii. At the end of the Policy Period, the policy shall terminate and can be renewed with in the Grace Period of 30 days to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period.",
+      "evidence_page": 26,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "product_benefits_table"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "11. UIN- RSAHLIP23029V012223 ii.Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses.",
+      "evidence_page": 11,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "16. UIN- RSAHLIP23029V012223 i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an Accident, provided the same are covered.",
+      "evidence_page": 16,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "12. UIN- RSAHLIP23029V012223 Modern Treatments The following procedures will be covered (whichever medically indicated) either as in patient or as part of day care treatment in a hospital up to Sum Insured as specified in the policy schedule, during the policy period: A.Uterine Artery Embolization and HIFU (High intensity focused ultrasound) B.Balloon Sinuplasty C.Deep Brain stimulation D.Oral chemotherapy E.Immunotherapy - Monoclonal Antibody to be given as in",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0154",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "12. UIN- RSAHLIP23029V012223 Organ Donor Expenses We will cover Inpatient Care Medical Expenses towards the donor for the harvesting of the organ donated provided that: (a)the organ donor is any person in accordance with the Transplantation of Human",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0159",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "16. UIN- RSAHLIP23029V012223 E.1.1 Pre-Existing Diseases (Code- Excl01) a)Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b)In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c) lf the Insured Person is continuously covere",
+      "evidence_page": 16,
+      "evidence_clause": "clause_0215",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_ped_waiting_period_0003_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "9. UIN- RSAHLIP23029V012223 C.1.37 Reasonable and Customary Charges Reasonable and Customary charges mean the charges for services or supplies, which are the standard charges for the specific provider and consistent with the prevailing charges in the geographical area for identical or similar servic",
+      "evidence_page": 9,
+      "evidence_clause": "clause_0140",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "product_benefits_table"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "11. UIN- RSAHLIP23029V012223 i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home.",
+      "evidence_page": 11,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "16. UIN- RSAHLIP23029V012223 E.1.3 Specific Waiting Period: (Code- Excl02) a)Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. The exclusion shall not be applicable for claims arising due to an Accident. b)ln case of enhancement of sum insured the exclusion shall apply",
+      "evidence_page": 16,
+      "evidence_clause": "clause_0219",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_royal_sundaram_advanced_topup_specific_disease_waiting_periods_0001_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "co_pay",
+    "cumulative_bonus_ncb",
+    "maternity_waiting",
+    "newborn_coverage",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 15,
+    "concepts_not_found": 5,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.75,
+    "average_confidence": 0.95
+  }
+}

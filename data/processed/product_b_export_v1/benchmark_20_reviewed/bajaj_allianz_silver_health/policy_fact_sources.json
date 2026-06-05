@@ -1,0 +1,855 @@
+{
+  "policy_id": "bajaj_allianz_silver_health",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0108",
+          "clause_title": "",
+          "evidence_text_snippet": "3. Road Ambulance (Applicable for Plan A & Plan B) We will pay the reasonable cost to a maximum of Rs. 1000/- per claim incurred on an ambulance offered by a healthcare or ambulance service provider for transferring Yo",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "III",
+          "clause_title": "Total limit of indemnity shall be maximum of Rs. 1000/- per claim irrespective of multiple transfers",
+          "evidence_text_snippet": "3. Road Ambulance (Applicable for Plan A & Plan B) iii. Total limit of indemnity shall be maximum of Rs. 1000/- per claim irrespective of multiple transfers in an ambulance offered by a healthcare or ambulance service",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "clause_0452",
+          "clause_title": "",
+          "evidence_text_snippet": "Payable 45 KNEE BRACES (LONG/ SHORT/ HINGED) Not Payable 46 KNEE IMMOBILIZER/S HOULDER IMMOBILIZER Not Payable 47 LUMBOSACRAL BELT Not Payable 48 NIMBUS BED OR WATER OR AIR BED CHARGES Not Payable 49 AMBULANCE COLLAR Not Payable 50 AMBULANCE EQUIPMEN",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "clause_0068",
+          "clause_title": "",
+          "evidence_text_snippet": "4. AYUSH Day Care Centre: AYUSH Day Care Centre means and includes Community Health Centre (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local authorities, wherever applicabl",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_implied_by_definition",
+          "candidate_score": 0.875,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "27",
+          "clause_title": "Medical Practitioner/Doctor/ Physician:",
+          "evidence_text_snippet": "19. Injury 27. Medical Practitioner/Doctor/ Physician: Medical Practitioner means a person who holds a valid registration from the Medical Council of any State or Medical Council of India or Council for Indian Medicine o",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "clause_0068",
+          "clause_title": "",
+          "evidence_text_snippet": "4. AYUSH Day Care Centre: AYUSH Day Care Centre means and includes Community Health Centre (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local a",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0002"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "IV",
+          "clause_title": "In case any treatment or procedure is to be taken on an Emergency basis, You or Your representative ",
+          "evidence_text_snippet": "4. Claims Procedure iv. In case any treatment or procedure is to be taken on an Emergency basis, You or Your representative must intimate Us in writing immediately within 24 hours of hospitalization. B. Reimbursement Claims Procedure: If Pre-authorisation as per Cashless Claims Procedure above is de",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_intimation_timeline_0001",
+          "clause_number": "I",
+          "clause_title": "You or someone claiming on Your behalf must inform Us in writing immediately within 48 hours of hosp",
+          "evidence_text_snippet": "4. Claims Procedure i. You or someone claiming on Your behalf must inform Us in writing immediately within 48 hours of hospitalization in case of emergency hospitalization and 48 hours prior to hospitalization in case of planned hospitalization",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_intimation_timeline_0002",
+          "clause_number": "VI",
+          "clause_title": "In the event of the death of the Insured, someone claiming on his behalf must inform Us in writing i",
+          "evidence_text_snippet": "4. Claims Procedure vi. In the event of the death of the Insured, someone claiming on his behalf must inform Us in writing immediately and send Us a copy of the post mortem report (if any) within 30 days*",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "The Company shall settle or reject a claim, as the case may be, within 30 days from the date of rece",
+          "evidence_text_snippet": "3. Claim Settlement. (provision for Penal interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0002",
+          "clause_number": "III",
+          "clause_title": "On receipt of all the documents and on being satisfied with regard to the admissibility of the claim",
+          "evidence_text_snippet": "the claim as per Policy terms and conditions, the Company will settle the claim within 30 (thirty) days of the receipt of the last necessary document. Upon acceptance of an offer of settlement by the Insured, the payment of the amount due shall be made within 7 days from the date of acceptance of th",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0003",
+          "clause_number": "V",
+          "clause_title": "If the insurer, for any reasons decides to reject the claim under the Policy the reasons regarding t",
+          "evidence_text_snippet": "5. Paying a Claim v. If the insurer, for any reasons decides to reject the claim under the Policy the reasons regarding the rejection shall be communicated to the Insured in writing within 30 days of the receipt of documents. The Insured may take recourse to the Grievance Redressal procedure stated ",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "III",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation in the opinion of the Company, ",
+          "evidence_text_snippet": "gation in the opinion of the Company, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document- ln such cases, the Company shall settle or reject the claim within 45 days from the date of receipt of last",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [
+        {
+          "candidate_id": "co_pay_0001",
+          "clause_number": "II",
+          "clause_title": "Cost Sharing:",
+          "evidence_text_snippet": "7. Cost Sharing and Sub limits ii. Cost Sharing: This policy is subject to Cost sharing mentioned below; Plan A Plan B 20% co-payment PED co-payment NA (Note: Each and every admissible claim arising out of Pre-Existing Diseases) 10% co-payment Co-payment on all other NA (Each and every admissible cl",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.97,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0002",
+          "clause_number": "I",
+          "clause_title": "Waiver of Co-Payment on Non-Network Hospital-",
+          "evidence_text_snippet": "8. Discounts and Loadings: i. Waiver of Co-Payment on Non-Network Hospital- Waiver of Co-Payment for treatment availed in Non-Network Hospital, as mentioned under Section-D, 9) Cost Sharing, is available subject to 15% loading on the final premium.",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.97,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0000",
+          "clause_number": "clause_0075",
+          "clause_title": "",
+          "evidence_text_snippet": "8. Co-Payment: A co-payment means a cost-sharing requirement under a health insurance Policy that provides that the Policyholder/Insured will bear a specified percentage of the admissible claim amount. A co-payment does ",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_percentage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "co_pay_0001"
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "clause_0053",
+          "clause_title": "",
+          "evidence_text_snippet": "The Company hereby agrees to pay reasonable and customary expenses in respect of an admissible claim, any or all of the following covers subject to the Sum Insured, sub-limits, terms, conditions and definitions, exclusions contained or otherwise expressed in this Policy. Silver Health Features Plan ",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0000"
+    },
+    "deductible": {
+      "provenance": [
+        {
+          "candidate_id": "deductible_0000",
+          "clause_number": "clause_0000",
+          "clause_title": "",
+          "evidence_text_snippet": "SECTION A) PREAMBLE Whereas the insured described in the Policy Schedule hereto (hereinafter called the ‘Insured’) has made to Bajaj Allianz General Insurance Company ) a proposal Limited (hereinafter called the “Company” or “Insurer”or “Insurance Company” or Proposal as mentioned in the transcript ",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "deductible",
+          "pattern_id": "deductible_schedule_dependent",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "deductible_0000"
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "I",
+          "clause_title": "tice and in such an event, the Company shall",
+          "evidence_text_snippet": "mium received on annual basis or full premium received at policy inception are as under  Premium Refund Policy Period in Risk Policy Period 1 Policy Period 2 Period 3 Year Year Year Within 15 Days As per Free Look Period Condition Exceeding 15 days but less than or equal to 3 65.00% 75.00% 80.00% m",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "free_look_period_0001",
+          "clause_number": "clause_0190",
+          "clause_title": "",
+          "evidence_text_snippet": "7. Cancellation Upto 15 days from 1st Instalment Date As per Free Look Period Condition",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "free_look_period_0002",
+          "clause_number": "clause_0206",
+          "clause_title": "",
+          "evidence_text_snippet": "d shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "IV",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace Peri",
+          "evidence_text_snippet": "10. Renewal of Policy iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "clause_0204",
+          "clause_title": "",
+          "evidence_text_snippet": "ly, as mentioned in the policy Schedule/Certificate of Insurance, the following Conditions shall apply (notwithstanding any terms contrary elsewhere in the policy) Grace Period of 15 days would be given to pay the instalment premium due for the policy. i. During such grace period, coverage will not ",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.965,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "3",
+          "clause_title": "Lacs / 4 Lacs / 5 Lacs",
+          "evidence_text_snippet": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or P",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_actuals",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "I",
+          "clause_title": "Joint replacement surgeries unless necessitated by accidental Bodily Injury",
+          "evidence_text_snippet": "periods shall apply. Note: If You switch from existing Silver Health policy to Plan B of the Silver Health Policy, the above listed procedure will be covered only after completion of 48 consecutive months under the Silver Health Policy. 4. 30-day waiting period (Excl03) a) Expenses related to the tr",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "initial_waiting_period_0001",
+          "clause_number": "I",
+          "clause_title": "Joint replacement surgeries unless necessitated by accidental Bodily Injury",
+          "evidence_text_snippet": "he Silver Health Policy, the above listed procedure will be covered only after completion of 48 consecutive months under the Silver Health Policy. 4. 30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be exc",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [
+        {
+          "candidate_id": "maternity_waiting_0000",
+          "clause_number": "clause_0163",
+          "clause_title": "",
+          "evidence_text_snippet": "14. Maternity (Excl 18) : Medical Treatment Expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy. UIN- BAJHLIP22192V032122) Silver Health (/Policy Wording/",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_excluded",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "maternity_waiting_0000"
+    },
+    "modern_treatment_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "modern_treatment_coverage_0000",
+          "clause_number": "3",
+          "clause_title": "Lacs / 4 Lacs / 5 Lacs",
+          "evidence_text_snippet": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or P",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.91,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0001",
+          "clause_number": "clause_0114",
+          "clause_title": "",
+          "evidence_text_snippet": "6. Modern Treatment Methods and Advancement in Technologies (Applicable for Plan A & Plan B): Modern Treatment Methods and Advancement in Technologies (as per below list) shall be restricted to 50% of Sum Insured or Maximum upto 5 Lacs whichever is lower. A. Uterine Artery Embolization and HIFU B. B",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.91,
+          "confidence": 0.97,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0002",
+          "clause_number": "I",
+          "clause_title": "Bronchical Thermoplasty",
+          "evidence_text_snippet": "6. Modern Treatment Methods and Advancement in Technologies (Applicable for Plan A & Plan B): I. Bronchical Thermoplasty J. Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K. IONM -(Intra Operative Neuro Monitoring) L. Stem cell therapy: Hematopoietic stem cells for ",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "modern_treatment_coverage_0000"
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "clause_0120",
+          "clause_title": "",
+          "evidence_text_snippet": "1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver H",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "clause_0120",
+          "clause_title": "",
+          "evidence_text_snippet": "without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the Policy after the expiry of 12 months for any pre-existing disease is subject to the sam",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0120",
+          "clause_title": "",
+          "evidence_text_snippet": "1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver H",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "clause_0120",
+          "clause_title": "",
+          "evidence_text_snippet": "without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the Policy after the expiry of 12 months for any pre-existing disease is subject to the sam",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0006",
+          "clause_number": "I",
+          "clause_title": "Joint replacement surgeries unless necessitated by accidental Bodily Injury",
+          "evidence_text_snippet": "3. We will not pay any Medical Expenses incurred during the first 48 consecutive months for Plan A during which i. Joint replacement surgeries unless necessitated by accidental Bodily Injury If above mentioned disease/procedure falls under the waiting period specified for Pre-Existing diseases, then",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "21",
+          "clause_title": "Intensive Care Unit",
+          "evidence_text_snippet": "19. Injury 21. Intensive Care Unit Intensive care unit means an identified section, ward or wing of a hospital which is under the constant supervision of a dedicated medical practitioner(s), and which is specially equipp",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "36",
+          "clause_title": "Portability:",
+          "evidence_text_snippet": "19. Injury 36. Portability: Portability means the right accorded to an individual health insurance policyholder (including all members under family cover) to transfer the credit gained for pre-existing conditions and tim",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0002"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "clause_0035",
+          "clause_title": "",
+          "evidence_text_snippet": "42. Renewal Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0193",
+          "clause_title": "",
+          "evidence_text_snippet": "8. Migration The Insured beneficiary will have the option to migrate the policy to other health insurance products/plans offered by the company by applying for migration of the policy atleast 30 days before the policy renewal date as per IRDAI guidelines on Migration. If such person is presently cov",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0194",
+          "clause_title": "",
+          "evidence_text_snippet": "9. Portability The Insured beneficiary will have the option to port the policy to other insurers by applying to such insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI gui",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "clause_0195",
+          "clause_title": "",
+          "evidence_text_snippet": "10. Renewal of Policy The policy shall ordinarily be renewable except on misrepresentation by the insured person. grounds of fraud, misrepresentation by the insured person.",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "I",
+          "clause_title": "The Company shall endeavor to give notice for renewal. However, the Company is not under obligation ",
+          "evidence_text_snippet": "10. Renewal of Policy i. The Company shall endeavor to give notice for renewal. However, the Company is not under obligation to give any notice for renewal.",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "II",
+          "clause_title": "Renewal shall not be denied on the ground that the insured person had made a claim or claims in the ",
+          "evidence_text_snippet": "10. Renewal of Policy ii. Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0006",
+          "clause_number": "III",
+          "clause_title": "Request for renewal along with requisite premium shall be received by the Company before the end of ",
+          "evidence_text_snippet": "10. Renewal of Policy iii. Request for renewal along with requisite premium shall be received by the Company before the end of the policy",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0007",
+          "clause_number": "IV",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace Peri",
+          "evidence_text_snippet": "10. Renewal of Policy iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0008",
+          "clause_number": "V",
+          "clause_title": "No loading shall apply on renewals based on individual claims experience",
+          "evidence_text_snippet": "10. Renewal of Policy v. No loading shall apply on renewals based on individual claims experience",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "3",
+          "clause_title": "Lacs / 4 Lacs / 5 Lacs",
+          "evidence_text_snippet": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or P",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_actuals",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0002",
+          "clause_number": "I",
+          "clause_title": "Sub Limits- Our liability to make payment under Section A Coverage will be as below:",
+          "evidence_text_snippet": "7. Cost Sharing and Sub limits i. Sub Limits- Our liability to make payment under Section A Coverage will be as below: Plan Plan A Plan B* Room Rent Single Pvt AC Room Pre Hospitalization 30 days 3% of Hospitalization Expenses Post Hospitalization 60 days",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "I",
+          "clause_title": "Room rent and Boarding expenses as provided by the Hospital/Nursing Home subject to maximum eligible",
+          "evidence_text_snippet": "1. In-patient Hospitalization Treatment – (Applicable for Plan A & Plan B) i. Room rent and Boarding expenses as provided by the Hospital/Nursing Home subject to maximum eligible room",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "clause_0121",
+          "clause_title": "",
+          "evidence_text_snippet": "2. Specified disease/procedure waiting period (Excl02) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver Health Po",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_single",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0000"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

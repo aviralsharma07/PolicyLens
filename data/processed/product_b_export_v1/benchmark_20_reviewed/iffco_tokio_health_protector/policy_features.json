@@ -1,0 +1,385 @@
+{
+  "policy_id": "iffco_tokio_health_protector",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "IFFCO_Tokio_Health_Protector.pdf",
+    "file_hash": "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0",
+    "source_domain": "policy_wording",
+    "page_count": 45
+  },
+  "product_identity": {
+    "insurer": "IFFCO Tokio",
+    "plan_name": "Health Protector",
+    "display_name": "IFFCO Tokio Health Protector",
+    "uin": "IFFHLIP22197V042122",
+    "uin_base": "IFFHLIP22197",
+    "product_version": 4,
+    "effective_date": "27-01-2022",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "The additional sum insured available for critical illness under this extension cover will not qualify for the limit of Room/Boarding/Nursing Expenses and Additional Benefits No.1) Daily Allowance 2) Ambulance charges 4) Cumulative bonus 7) Cost of he",
+      "evidence_page": 29,
+      "evidence_clause": "clause_0263",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_ambulance_coverage_0001_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "4. AYUSH expenses including pre-hospitalization and If the Insured Person is continuously covered post hospitalization expenses up to the limit of the without any break as defined under the applicable Sum Insured of the insured person per policy peri",
+      "evidence_page": 14,
+      "evidence_clause": "clause_0152",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_ayush_coverage_0003_evidence"
+    },
+    "claim_intimation_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "3. Co-Payment: - i.We shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+      "evidence_page": 29,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 10
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "3. Co-Payment: - The following Co-pay options are available: 10%, 20% or 25% under the product. The Co-pay percentage as per the schedule, shall be applied on each and every admissible claim. Once the Co-Pay is opted under the policy, it cannot be opted out during the policy period..",
+      "evidence_page": 29,
+      "evidence_clause": "clause_0265",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "63. Renewal 68. Sum Insured It means the pre-defined limit specified in the Policy Schedule. Sum Insured and Cumulative Bonus represents the maximum, total and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person (on Individual basis) or all Insured Pe",
+      "evidence_page": 9,
+      "evidence_clause": "68",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "iod The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting/ migrating the policy. You/the insured shall be allowed a period of fifteen days from date of receipt of the Policy document to review the terms and conditions of the Policy, and to return the same if not acceptable. If the insured has not made any claim during the Free",
+      "evidence_page": 31,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "GENERAL CONDITIONS iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+      "evidence_page": 31,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "components": [
+          {
+            "condition": "sum_insured_5_lakh_and_above",
+            "coverage_status": "actuals"
+          },
+          {
+            "condition": "sum_insured_below_5_lakh_class_a_city",
+            "percentage": 3,
+            "unit": "percent_of_sum_insured_per_day"
+          },
+          {
+            "condition": "sum_insured_below_5_lakh_other_city",
+            "percentage": 2.5,
+            "unit": "percent_of_sum_insured_per_day"
+          }
+        ]
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "the treatment of any illness limit of 1.50% (one and half of a percent) of the within 30 days from the first policy commencement sum insured on per day basis or actual, date shall be excluded except claims arising due to whichever is less. an accident, provided the same are covered. ii. This exclusion shall not, however, apply if the For Intensive Care Unit/Therapeutic Expenses: Insured Person has Continuous Coverage for more In respect of class “A” cities, a limit of 3% (three  than twelve months. percent) of the sum insured on per day basis or iii. The within referred waiting period is made actual, whichever is less. applicable to the enhanced sum insured in the event In respect o",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0148",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. First Thirty Days Waiting Period(Code- Excl03) In respect of cities other than class “A” cities, a  i. Expenses related to the treatment of any illness limit of 1.50% (one and half of a percent) of the within 30 days from the first policy commencement sum",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0148",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": {
+        "covered": false
+      },
+      "unit": "months",
+      "fact_status": "explicitly_not_covered",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "3. The emergency assistance services are available subject to certain limited exclusions as set forth below: Emergency assistance service will not be provided in the following instances: b) Services sought outside India. c) Injuries resulting from pa",
+      "evidence_page": 23,
+      "evidence_clause": "clause_0216",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "coverage_status": "covered",
+        "limit_percent_of_sum_insured": 50
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "4. Modern Treatment Methods and Advancement in Technologies: The following procedures will be covered (wherever medically indicated) either as in patient or as part of Domiciliary Hospitalization or as part of day care treatment in a hospital upto 50% of Sum Insured, during the policy period: A. Uterine Artery Embolization and HIFU (High intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy",
+      "evidence_page": 21,
+      "evidence_clause": "clause_0206",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "ry, he/she has to a) Expenses related to the treatment of a pre-existing incur Hospitalization expenses, then we will pay Disease (PED) and its direct complications shall be reasonable and customary charges of: excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0146",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_ped_waiting_period_0003_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "63. Renewal Defines the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods.",
+      "evidence_page": 9,
+      "evidence_clause": "clause_0103",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "components": [
+          {
+            "condition": "sum_insured_5_lakh_and_above",
+            "coverage_status": "actuals"
+          },
+          {
+            "condition": "sum_insured_below_5_lakh_class_a_city",
+            "percentage": 1.75,
+            "unit": "percent_of_sum_insured_per_day"
+          },
+          {
+            "condition": "sum_insured_below_5_lakh_other_city",
+            "percentage": 1.5,
+            "unit": "percent_of_sum_insured_per_day"
+          }
+        ]
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "1. Room Rent Expenses: with us a) In respect of sum insured of Rs. 5(five) lakhs and b) In case of enhancement of sum insured the above (excluding the higher sum insured for critical exclusion shall apply afresh to the extent of sum illness but including cumulative bonus), the room-rent insured increase. expenses as mentioned in 1(b)below will be payabl",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0147",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_room_rent_limit_0001_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          12
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "eriod: (Code- Excl02) a) Expenses related to the treatment of the following c) Service charges and Surcharge on actual basis listed conditions, surgeries/treatments shall be subject to a maximum limit of 0.5% (half percent) of Sum excluded until the expiry of 12 months of continuous Insured for each hospitalization. coverage, as may be the case after the date of inception of the first policy with Us. This exclusion",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0149",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_iffco_tokio_health_protector_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "claim_intimation_timeline",
+    "deductible",
+    "newborn_coverage",
+    "organ_donor_coverage",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 15,
+    "concepts_not_found": 5,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.75,
+    "average_confidence": 0.95
+  }
+}

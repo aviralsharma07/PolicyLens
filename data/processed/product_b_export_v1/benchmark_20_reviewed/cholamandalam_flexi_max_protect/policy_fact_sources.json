@@ -1,0 +1,394 @@
+{
+  "policy_id": "cholamandalam_flexi_max_protect",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ayush_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "III",
+          "clause_title": "CONDITIONS WHEN A CLAIM ARISES",
+          "evidence_text_snippet": "nt: III. CONDITIONS WHEN A CLAIM ARISES 17. i. Claim Notification: a.It shall be a condition precedent for any claim to be made by the Insured Person under this policy or for liability attaching to us hereunder that claim intimation is provided to the Insurer within 30 days from the date of diagnosi",
+          "page": 29,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "We shall settle claims, including its rejection, within thirty days of the receipt of last `necessar",
+          "evidence_text_snippet": "16. Assignment: i.We shall settle claims, including its rejection, within thirty days of the receipt of last `necessary’ document.",
+          "page": 29,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "II",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation in the opinion of the insurer, ",
+          "evidence_text_snippet": "ant an investigation in the opinion of the insurer, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, Insurer shall settle the claim within 45 days from the date of receipt of last",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0359",
+          "clause_title": "",
+          "evidence_text_snippet": "7. Free Look Period: The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable.",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "II",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace peri",
+          "evidence_text_snippet": "18. Renewal of Policy: ii.At the end of the policy period, the policy shall terminate and can be renewed within the Grace period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "initial_waiting_period": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "clause_0152",
+          "clause_title": "",
+          "evidence_text_snippet": "15. Hospital means any institution established for inpatient care and day care treatment of illness and/or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "clause_0155",
+          "clause_title": "",
+          "evidence_text_snippet": "18. Migration means the right accorded to health insurance policyholders (including all members under family cover and members of group health insurance policy, to transfer the credit gained for pre-existing conditions a",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "clause_0157",
+          "clause_title": "",
+          "evidence_text_snippet": "20. Pre-existing Disease(PED) means any condition, ailment, injury or disease: a)That is/are diagnosed by a physician within 48 months prior to the effective date of the policy issued by the Insurer or its reinstatement ",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "clause_0162",
+          "clause_title": "",
+          "evidence_text_snippet": "24. Portability means the right accorded to an individual health insurance policyholders (including all members under family cover), to transfer the credit gained for pre-existing conditions and time bound exclusions, fr",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0418",
+          "clause_title": "",
+          "evidence_text_snippet": "2. Medical Records shall mean the written medical files regarding the Insured as developed and maintained by an Attending Physician or other involved medical professionals or facilities. Typically, they include a written",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": null
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "clause_0106",
+          "clause_title": "",
+          "evidence_text_snippet": "23. Portability: The insured person will have the option to port the policy to other insurers by applying to such insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidel",
+          "page": 33,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0108",
+          "clause_title": "",
+          "evidence_text_snippet": "24. Migration E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings The insured person will have the option to migrate the policy to other Critical illness products/plan",
+          "page": 34,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0165",
+          "clause_title": "",
+          "evidence_text_snippet": "27. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods.",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "clause_0385",
+          "clause_title": "",
+          "evidence_text_snippet": "18. Renewal of Policy: The policy shall ordinarily be renewable except on grounds of fraud, misrepresentation by the insured person.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "I",
+          "clause_title": "The Company shall endeavour to give notice for renewal. However, the Company is not under obligation",
+          "evidence_text_snippet": "18. Renewal of Policy: i.The Company shall endeavour to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "II",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace peri",
+          "evidence_text_snippet": "18. Renewal of Policy: ii.At the end of the policy period, the policy shall terminate and can be renewed within the Grace period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0006",
+          "clause_number": "III",
+          "clause_title": "No loading shall apply on renewals based on individual claims experience.",
+          "evidence_text_snippet": "18. Renewal of Policy: iii.No loading shall apply on renewals based on individual claims experience.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0007",
+          "clause_number": "IV",
+          "clause_title": "If a claim was paid under the Base Cover during the policy period for anyone of the covered critical",
+          "evidence_text_snippet": "18. Renewal of Policy: iv.If a claim was paid under the Base Cover during the policy period for anyone of the covered critical illness, then this policy stands terminated and shall not be subsequently renewed. However, the optional covers other than Double Protection Cover, shall continue till the e",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0008",
+          "clause_number": "V",
+          "clause_title": "When an insured Person is added to this Policy either by way of endorsement or at the time of renewa",
+          "evidence_text_snippet": "18. Renewal of Policy: v.When an insured Person is added to this Policy either by way of endorsement or at the time of renewal the waiting periods will be applicable to that insured person considering such policy period as the first policy with us.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0009",
+          "clause_number": "VI",
+          "clause_title": "Maximum Renewal age for dependent children is 26 years. On renewal, such insured person shall be",
+          "evidence_text_snippet": "18. Renewal of Policy: vi.Maximum Renewal age for dependent children is 26 years. On renewal, such insured person shall be migrated into a separate similar Health policy with continuity benefits.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0002"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

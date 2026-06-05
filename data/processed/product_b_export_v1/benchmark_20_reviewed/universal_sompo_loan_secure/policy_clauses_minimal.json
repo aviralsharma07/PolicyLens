@@ -1,0 +1,2145 @@
+{
+  "policy_id": "universal_sompo_loan_secure",
+  "total_sections": 65,
+  "total_clauses": 259,
+  "sections": [
+    {
+      "number": null,
+      "title": "Document root",
+      "level": 0,
+      "page_start": 1,
+      "page_end": 40,
+      "clauses": []
+    },
+    {
+      "number": null,
+      "title": "Pre-heading body text",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy Wordings Universal Sompo General Insurance Company Limited (“the Company”), having received a Proposal and the premium from the Proposer named in the Schedule referred to herein below, and the said Proposal and declaration together with any statement, report or other document leading to the issue of this Policy and referred to therein having been accepted and agreed to by the Company and the Proposer as the basis of this contract do, by this Policy agree, in consideration of and subject t...",
+          "page": 1
+        },
+        {
+          "number": "1",
+          "title": "Accident means a sudden unforeseen and involuntary event caused by external, visible and",
+          "text": "1.Accident means a sudden unforeseen and involuntary event caused by external, visible and violent means.",
+          "page": 1
+        },
+        {
+          "number": "2",
+          "title": "Bank means a banking Company which transacts the business of banking in India and is",
+          "text": "2.Bank means a banking Company which transacts the business of banking in India and is regulated by the policies of Reserve Bank of India and other banking laws.",
+          "page": 1
+        },
+        {
+          "number": "3",
+          "title": "Beneficiary: In case of Death of the Insured Person, the Beneficiary means, unless stipulated",
+          "text": "3.Beneficiary: In case of Death of the Insured Person, the Beneficiary means, unless stipulated otherwise by the Insured Person, the surviving Spouse or immediate blood relative of the Insured Person, mentally capable and not divorced, followed by the children recognized or adopted followed by the Insured Person‟s legal heirs. For all other benefits, the Beneficiary means the Insured Person himself unless stipulated otherwise.",
+          "page": 1
+        },
+        {
+          "number": "4",
+          "title": "Civil War means armed opposition, whether declared or not, between two or more parties",
+          "text": "4.Civil War means armed opposition, whether declared or not, between two or more parties belonging to the same country where the opposing parties are of different ethnic, religious or ideological groups. Included in the definition: armed rebellion, revolution, sedition, insurrection, Coup d‟état, and the consequences of Martial law.",
+          "page": 1
+        },
+        {
+          "number": "5",
+          "title": "Compensation means Sum Insured, Total Sum Insured or percentage of the Sum Insured, as",
+          "text": "5.Compensation means Sum Insured, Total Sum Insured or percentage of the Sum Insured, as appropriate.",
+          "page": 1
+        },
+        {
+          "number": "6",
+          "title": "Confirmation means Confirmation of Availability of Insurance issued by the Company to",
+          "text": "6.Confirmation means Confirmation of Availability of Insurance issued by the Company to the insured confirming that the Insured is entitled to insurance coverage under this Policy.",
+          "page": 1
+        },
+        {
+          "number": "7",
+          "title": "Contribution is essentially the right of an insurer to call upon other insurers liable to the",
+          "text": "7.Contribution is essentially the right of an insurer to call upon other insurers liable to the same insured to share the cost of an indemnity claim on a ratable proportion of Sum Insured. This clause shall not apply to any Benefit offered on fixed benefit basis.",
+          "page": 1
+        },
+        {
+          "number": "8",
+          "title": "EMI or EMI Amount means and includes the amount of monthly payment required to",
+          "text": "8.EMI or EMI Amount means and includes the amount of monthly payment required to repay the principal amount of Loan and Interest by the Insured as set forth in the amortization chart referred to in the loan agreement (or any amendments thereto) between the Bank/Financial Institution and the Insured prior to the date of occurrence of the Insured Event under this Policy. For the purpose of avoidance of doubt, it is clarified that any monthly payments that are overdue and unpaid by the Insured prio...",
+          "page": 2
+        },
+        {
+          "number": "9",
+          "title": "Financial Institution shall have the same meaning assigned to the term under section 45 I of",
+          "text": "9.Financial Institution shall have the same meaning assigned to the term under section 45 I of the Reserve Bank of India Act, 1934 and shall include a Non-Banking Financial Company as defined under section 45 I of the Reserve Bank of India Act, 1934",
+          "page": 2
+        },
+        {
+          "number": "10",
+          "title": "Illness means a sickness or a disease or pathological condition leading to the impairment of",
+          "text": "10.Illness means a sickness or a disease or pathological condition leading to the impairment of normal physiological function and requires medical treatment. a)Acute Condition is a disease, Illness or Injury that is likely to respond quickly to treatment which aims to return the person to his or her state of health immediately before suffering the disease/Illness/Injury which leads to full recovery. b)Chronic condition is defined as a disease, Illness, or Injury that has one or more of the follo...",
+          "page": 2
+        },
+        {
+          "number": "11",
+          "title": "Injury means accidental physical bodily harm excluding Illness or disease solely and",
+          "text": "11.Injury means accidental physical bodily harm excluding Illness or disease solely and directly caused by external, violent and visible and evident means which is verified and certified by a Medical Practitioner.",
+          "page": 2
+        },
+        {
+          "number": "12",
+          "title": "Insured means the Individual(s) whose name(s) are specifically appearing as such in Section",
+          "text": "12.Insured means the Individual(s) whose name(s) are specifically appearing as such in Section 1 of the Schedule to this Policy and are referred to as “You”/”Your”/”Yours”/”Yourself”. For the purpose of avoidance of doubt it is clarified that the heirs, executors, administrators, successors or legal representatives of the Insured may present a claim on behalf of the Insured to the Company.",
+          "page": 2
+        },
+        {
+          "number": "13",
+          "title": "Insured Event means any event specifically mentioned as covered under this Policy.",
+          "text": "13.Insured Event means any event specifically mentioned as covered under this Policy.",
+          "page": 2
+        },
+        {
+          "number": "14",
+          "title": "Loan means the sum of money lent at interest or otherwise to the Insured by any",
+          "text": "14.Loan means the sum of money lent at interest or otherwise to the Insured by any Bank/Financial Institution as identified by the Loan Account Number referred to in Section 1 of this Policy",
+          "page": 2
+        },
+        {
+          "number": "15",
+          "title": "Medical Advice Any consultation or advice from a Medical Practitioner including the issue",
+          "text": "15.Medical Advice Any consultation or advice from a Medical Practitioner including the issue of any prescription or follow-up prescription.",
+          "page": 2
+        },
+        {
+          "number": "16",
+          "title": "Medical Practitioner is a person who holds a valid registration from the Medical Council of",
+          "text": "16.Medical Practitioner is a person who holds a valid registration from the Medical Council of any State or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is thereby entitled to practice is not a member of the Insured Person‟s Family.",
+          "page": 2
+        },
+        {
+          "number": "17",
+          "title": "Nominee means the person(s) nominated by the Insured to receive the insurance benefits",
+          "text": "17.Nominee means the person(s) nominated by the Insured to receive the insurance benefits under this Policy payable on the death of the Insured. For the purpose of avoidance of doubt it is clarified that if the Insured is a minor, his guardian shall appoint the Nominee.",
+          "page": 3
+        },
+        {
+          "number": "18",
+          "title": "Permanent Total Disablement means disablement, as the result of a Bodily Injury, which:",
+          "text": "18.Permanent Total Disablement means disablement, as the result of a Bodily Injury, which: a)continues for a period of twelve (12) consecutive months, and b)is confirmed as total, continuous and permanent by a Medical Practitioner after the twelve (12) consecutive months, and c)entirely prevents an Insured Person from engaging in or giving attention to gainful occupation of any and every kind for the remainder of his/her life.",
+          "page": 3
+        },
+        {
+          "number": "19",
+          "title": "Physical Separation means as regards the hand actual separation at or above the wrists, and",
+          "text": "19.Physical Separation means as regards the hand actual separation at or above the wrists, and as regards the foot means actual separation at or above the ankle.",
+          "page": 3
+        },
+        {
+          "number": "20",
+          "title": "Policy means the Policy booklet, the Schedule, any Extension and applicable endorsements",
+          "text": "20.Policy means the Policy booklet, the Schedule, any Extension and applicable endorsements under the Policy. The Policy contains details of the extent of cover available to the Insured, the exclusions under the cover and the terms and conditions of the issue of the Policy",
+          "page": 3
+        },
+        {
+          "number": "21",
+          "title": "Policyholder means the entity or person named as such in the Schedule",
+          "text": "21.Policyholder means the entity or person named as such in the Schedule",
+          "page": 3
+        },
+        {
+          "number": "22",
+          "title": "Policy Period means the period commencing from Policy start date and hour as specified in",
+          "text": "22.Policy Period means the period commencing from Policy start date and hour as specified in the Schedule and terminating at midnight on the Policy end date as specified in of the Schedule to this Policy.",
+          "page": 3
+        },
+        {
+          "number": "23",
+          "title": "Portability means the right accorded to an individual health insurance Policy holder",
+          "text": "23.Portability means the right accorded to an individual health insurance Policy holder (including Family cover) of the credit gained for pre-existing conditions and time bound exclusions, from one insurer to another or from one plan to another plan of the same insurer.",
+          "page": 3
+        },
+        {
+          "number": "24",
+          "title": "Pre-Existing Disease means any condition, ailment or Injury or related condition(s) for",
+          "text": "24.Pre-Existing Disease means any condition, ailment or Injury or related condition(s) for which there were signs or symptoms, and / or were diagnosed, and / or for which Medical Advice / treatment was received within 48 months to prior to the first Policy issued by the Company and renewed continuously thereafter.",
+          "page": 3
+        },
+        {
+          "number": "25",
+          "title": "Principal Outstanding means the principal amount of the Loan outstanding as on the date",
+          "text": "25.Principal Outstanding means the principal amount of the Loan outstanding as on the date of occurrence of Insured Event less the portion of principal component included in the EMIs payable but not paid from the date of the loan agreement till the date of the Insured Event/s. For the purpose of avoidance of doubt, it is clarified that any EMIs that are overdue and unpaid to the Bank prior to the occurrence of the Insured Event will not be considered for the purpose of this Policy and shall be d...",
+          "page": 3
+        },
+        {
+          "number": "26",
+          "title": "Professional Sports means a sport, which would remunerate a player in excess of 50% of",
+          "text": "26.Professional Sports means a sport, which would remunerate a player in excess of 50% of his or her annual income as a means of their livelihood.",
+          "page": 3
+        },
+        {
+          "number": "27",
+          "title": "Public Authority means any governmental, quasi-governmental organization or any",
+          "text": "27.Public Authority means any governmental, quasi-governmental organization or any statutory body or duly authorized organization with the power to enforce laws, exact obedience, and command, determine or judge.",
+          "page": 3
+        },
+        {
+          "number": "28",
+          "title": "Renewal means the terms on which the contract of insurance can be renewed on mutual",
+          "text": "28.Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the Renewal continuous for the purpose of gaining the credit for pre-existing diseases, time bound exclusions and for all waiting periods.",
+          "page": 4
+        },
+        {
+          "number": "29",
+          "title": "Schedule means this Schedule and parts thereof, and any other annexure(s) appended,",
+          "text": "29.Schedule means this Schedule and parts thereof, and any other annexure(s) appended, attached and / or forming part of this Policy.",
+          "page": 4
+        },
+        {
+          "number": "30",
+          "title": "Scheduled Airline means any civilian aircraft operated by a civilian scheduled air carrier",
+          "text": "30.Scheduled Airline means any civilian aircraft operated by a civilian scheduled air carrier holding a certificate, license or similar authorization for civilian scheduled air carrier transport issued by the country of the aircraft‟s registry, and which in accordance therewith flies, maintains and publishes tariffs for regular passenger service between named cities at regular and specified times, on regular or chartered flights operated by such carrier and is flown by authorized licensed pilot.",
+          "page": 4
+        },
+        {
+          "number": "31",
+          "title": "Spouse means an Insured Person‟s husband or wife who is recognized as such by the laws of",
+          "text": "31.Spouse means an Insured Person‟s husband or wife who is recognized as such by the laws of the jurisdiction in which they reside.",
+          "page": 4
+        },
+        {
+          "number": "32",
+          "title": "Subrogation means the company‟s rights to assume insured‟s rights to recover expenses",
+          "text": "32.Subrogation means the company‟s rights to assume insured‟s rights to recover expenses paid out under the policy that may be recovered from any other source.",
+          "page": 4
+        },
+        {
+          "number": "33",
+          "title": "Sum Insured means and denotes the amount of cover available to the Insured subject to the",
+          "text": "33.Sum Insured means and denotes the amount of cover available to the Insured subject to the terms and conditions of this Policy and as stated in the Table of Benefits given in the Schedule of this Policy which is the maximum liability of the Company under this Policy.",
+          "page": 4
+        },
+        {
+          "number": "34",
+          "title": "Surgery or Surgical Procedure means manual and / or operative procedure(s) required for",
+          "text": "34.Surgery or Surgical Procedure means manual and / or operative procedure(s) required for treatment of an Illness or Injury, correction of deformities and defects, diagnosis and cure of diseases, relief of suffering or prolongation of life, performed in a hospital or day care centre by a Medical Practitioner",
+          "page": 4
+        },
+        {
+          "number": "35",
+          "title": "Terrorism means activities against persons, organizations or property of any nature:",
+          "text": "35.Terrorism means activities against persons, organizations or property of any nature: A.that involve the following or preparation for the following: a)use or threat of force or violence; or b)commission or threat of a dangerous act; or c)commission or threat of an act that interferes with or disrupts an electronic, communication, information or mechanical system; and B.when one or both of the following applies: a)the effect is to intimidate or coerce a government or the civilian population or ...",
+          "page": 4
+        },
+        {
+          "number": "36",
+          "title": "You/Your/Yours/Yourself means the person(s) that We insure and is/are specifically named",
+          "text": "36.You/Your/Yours/Yourself means the person(s) that We insure and is/are specifically named as Insured in the Schedule.",
+          "page": 4
+        },
+        {
+          "number": "37",
+          "title": "We/Our/Ours/Us means Universal Sompo General Insurance Company Limited.",
+          "text": "37.We/Our/Ours/Us means Universal Sompo General Insurance Company Limited.",
+          "page": 4
+        },
+        {
+          "number": "38",
+          "title": "War means War, whether declared or not or any warlike activities, including use of the",
+          "text": "38.War means War, whether declared or not or any warlike activities, including use of the military force by any sovereign nations to achieve economic, geographic, nationalistic, political racial religious or other ends. BENEFITS UNDER THE POLICY",
+          "page": 5
+        },
+        {
+          "number": "1",
+          "title": "SECTION I: MAJOR MEDICAL ILLNESSES & SURGICAL PROCEDURES",
+          "text": "1.SECTION I: MAJOR MEDICAL ILLNESSES & SURGICAL PROCEDURES Insured Event: For the purposes of this Section and the determination of the Company‟s liability under it, the Insured Event in relation to the Insured person, shall mean any Illness, medical event or Surgical Procedure as specifically defined below whose signs or symptoms first commence more than 90 days after the commencement of Period of Insurance and shall only include: Silver Plan a)First Diagnosis of the below-mentioned Illnesses m...",
+          "page": 5
+        },
+        {
+          "number": "1",
+          "title": "Cancer of Specified Severity",
+          "text": "1.Cancer of Specified Severity",
+          "page": 5
+        },
+        {
+          "number": "2",
+          "title": "Kidney failure requiring regular dialysis",
+          "text": "2.Kidney failure requiring regular dialysis",
+          "page": 5
+        },
+        {
+          "number": "3",
+          "title": "Multiple Sclerosis with Persisting Symptoms",
+          "text": "3.Multiple Sclerosis with Persisting Symptoms",
+          "page": 5
+        },
+        {
+          "number": "4",
+          "title": "Benign Brain Tumor",
+          "text": "4.Benign Brain Tumor",
+          "page": 5
+        },
+        {
+          "number": "5",
+          "title": "Parkinson‟s Disease",
+          "text": "5.Parkinson‟s Disease b)Undergoing for the first time of the following Surgical Procedures, more specifically described below:",
+          "page": 5
+        },
+        {
+          "number": "1",
+          "title": "Major Organ / Bone Marrow Transplant",
+          "text": "1.Major Organ / Bone Marrow Transplant",
+          "page": 5
+        },
+        {
+          "number": "2",
+          "title": "Open Heart Replacement Or Repair Of Heart Valves",
+          "text": "2.Open Heart Replacement Or Repair Of Heart Valves",
+          "page": 5
+        },
+        {
+          "number": "3",
+          "title": "Coronary Artery Bypass Graft",
+          "text": "3.Coronary Artery Bypass Graft c)Occurrence for the first time of the following medical events more specifically described below:",
+          "page": 5
+        },
+        {
+          "number": "1",
+          "title": "Stroke resulting in Permanent Symptoms",
+          "text": "1.Stroke resulting in Permanent Symptoms",
+          "page": 6
+        },
+        {
+          "number": "2",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "2.Permanent Paralysis of Limbs",
+          "page": 6
+        },
+        {
+          "number": "3",
+          "title": "Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "text": "3.Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "page": 6
+        },
+        {
+          "number": "4",
+          "title": "Coma of Specified Severity",
+          "text": "4.Coma of Specified Severity Platinum Plan a)First Diagnosis of the below-mentioned Illnesses more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "1",
+          "title": "Cancer of Specified Severity",
+          "text": "1.Cancer of Specified Severity",
+          "page": 6
+        },
+        {
+          "number": "2",
+          "title": "Kidney Failure requiring regular dialysis",
+          "text": "2.Kidney Failure requiring regular dialysis",
+          "page": 6
+        },
+        {
+          "number": "3",
+          "title": "Multiple Sclerosis with Persisting Symptoms",
+          "text": "3.Multiple Sclerosis with Persisting Symptoms",
+          "page": 6
+        },
+        {
+          "number": "4",
+          "title": "Benign Brain Tumor",
+          "text": "4.Benign Brain Tumor",
+          "page": 6
+        },
+        {
+          "number": "5",
+          "title": "Parkinson‟s Disease",
+          "text": "5.Parkinson‟s Disease",
+          "page": 6
+        },
+        {
+          "number": "6",
+          "title": "End Stage Liver Failure",
+          "text": "6.End Stage Liver Failure",
+          "page": 6
+        },
+        {
+          "number": "7",
+          "title": "Alzheimer‟s Disease",
+          "text": "7.Alzheimer‟s Disease b)Undergoing for the first time of the following Surgical Procedures, more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "8",
+          "title": "Major Organ/ Bone Marrow Transplant",
+          "text": "8.Major Organ/ Bone Marrow Transplant",
+          "page": 6
+        },
+        {
+          "number": "9",
+          "title": "Open Heart Replacement Or Repair Of Heart Valves",
+          "text": "9.Open Heart Replacement Or Repair Of Heart Valves",
+          "page": 6
+        },
+        {
+          "number": "10",
+          "title": "Coronary Artery Bypass Graft",
+          "text": "10.Coronary Artery Bypass Graft",
+          "page": 6
+        },
+        {
+          "number": "11",
+          "title": "Surgery of Aorta",
+          "text": "11.Surgery of Aorta c)Occurrence for the first time of the following medical events more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "12",
+          "title": "Stroke resulting in Permanent Symptoms",
+          "text": "12.Stroke resulting in Permanent Symptoms",
+          "page": 6
+        },
+        {
+          "number": "13",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "13.Permanent Paralysis of Limbs",
+          "page": 6
+        },
+        {
+          "number": "14",
+          "title": "Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "text": "14.Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "page": 6
+        },
+        {
+          "number": "15",
+          "title": "Coma of Specified Severity",
+          "text": "15.Coma of Specified Severity Diamond Plan a)First Diagnosis of the below-mentioned Illnesses more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "1",
+          "title": "Cancer of Specified Severity",
+          "text": "1.Cancer of Specified Severity",
+          "page": 6
+        },
+        {
+          "number": "2",
+          "title": "Kidney Failure requiring regular dialysis",
+          "text": "2.Kidney Failure requiring regular dialysis",
+          "page": 6
+        },
+        {
+          "number": "3",
+          "title": "Multiple Sclerosis with Persisting Symptoms or",
+          "text": "3.Multiple Sclerosis with Persisting Symptoms or",
+          "page": 6
+        },
+        {
+          "number": "4",
+          "title": "Benign Brain Tumor",
+          "text": "4.Benign Brain Tumor",
+          "page": 6
+        },
+        {
+          "number": "5",
+          "title": "Parkinson‟s Disease",
+          "text": "5.Parkinson‟s Disease",
+          "page": 6
+        },
+        {
+          "number": "6",
+          "title": "End Stage Liver Failure",
+          "text": "6.End Stage Liver Failure",
+          "page": 6
+        },
+        {
+          "number": "7",
+          "title": "Alzheimer‟s Disease",
+          "text": "7.Alzheimer‟s Disease b)Undergoing for the first time of the following Surgical Procedures, more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "8",
+          "title": "Major Organ / Bone Marrow Transplant",
+          "text": "8.Major Organ / Bone Marrow Transplant",
+          "page": 6
+        },
+        {
+          "number": "9",
+          "title": "Open Heart Replacement Or Repair Of Heart Valves",
+          "text": "9.Open Heart Replacement Or Repair Of Heart Valves",
+          "page": 6
+        },
+        {
+          "number": "10",
+          "title": "Coronary Artery Bypass Graft",
+          "text": "10.Coronary Artery Bypass Graft",
+          "page": 6
+        },
+        {
+          "number": "11",
+          "title": "Surgery of Aorta",
+          "text": "11.Surgery of Aorta c)Occurrence for the first time of the following medical events more specifically described below:",
+          "page": 6
+        },
+        {
+          "number": "12",
+          "title": "Stroke resulting in Persisting Symptoms",
+          "text": "12.Stroke resulting in Persisting Symptoms",
+          "page": 7
+        },
+        {
+          "number": "13",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "13.Permanent Paralysis of Limbs",
+          "page": 7
+        },
+        {
+          "number": "14",
+          "title": "Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "text": "14.Myocardial Infarction (First Heart Attack of Specified Severity)",
+          "page": 7
+        },
+        {
+          "number": "15",
+          "title": "Coma of Specified Severity",
+          "text": "15.Coma of Specified Severity",
+          "page": 7
+        },
+        {
+          "number": "16",
+          "title": "Third Degree Burns",
+          "text": "16.Third Degree Burns",
+          "page": 7
+        },
+        {
+          "number": "17",
+          "title": "Deafness",
+          "text": "17.Deafness",
+          "page": 7
+        },
+        {
+          "number": "18",
+          "title": "Loss of Speech",
+          "text": "18.Loss of Speech",
+          "page": 7
+        },
+        {
+          "number": "1.1",
+          "title": "Specified Critical Illnesses and Surgical Procedures",
+          "text": "1.1Specified Critical Illnesses and Surgical Procedures The Insured Event under this Section I and the conditions applicable to the same are more particularly defined below:",
+          "page": 7
+        },
+        {
+          "number": "1",
+          "title": "Cancer of specified severity",
+          "text": "1.Cancer of specified severity A malignant tumour characterised by the uncontrolled growth & spread of malignant cells with invasion & destruction of normal tissues. This diagnosis must be supported by histological evidence of malignancy. The term cancer includes leukemia, lymphoma and sarcoma. The following are excluded –",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "All tumours which are histologically described as carcinoma in situ, benign, borderline",
+          "text": "i.All tumours which are histologically described as carcinoma in situ, benign, borderline malignant, low malignant potential, neoplasm of unknown behavior or non-invasive, including but not limited to: Carcinoma in situ of breasts, Cervical dysplasia CIN-1, CIN -2 & CIN-3.",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes",
+          "text": "ii.Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes or beyond;",
+          "page": 7
+        },
+        {
+          "number": "III",
+          "title": "Malignant melanoma that has not caused invasion beyond the epidermis All tumours of",
+          "text": "iii.Malignant melanoma that has not caused invasion beyond the epidermis All tumours of the prostate unless histological classified as having a Gleason score greater than 6 or having progressed to at least clinical TNM classification T2NOMO",
+          "page": 7
+        },
+        {
+          "number": "IV",
+          "title": "All Thyroid cancers histologically classified as T1N0M0 (TNM Classification) or below;",
+          "text": "iv.All Thyroid cancers histologically classified as T1N0M0 (TNM Classification) or below;",
+          "page": 7
+        },
+        {
+          "number": "V",
+          "title": "Chronic lymphocytic leukaemia less than RAI stage 3",
+          "text": "v.Chronic lymphocytic leukaemia less than RAI stage 3",
+          "page": 7
+        },
+        {
+          "number": "VI",
+          "title": "Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a",
+          "text": "vi.Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a lesser classification,",
+          "page": 7
+        },
+        {
+          "number": "VII",
+          "title": "All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM",
+          "text": "vii.All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM Classification) or below and with mitotic count of less than or equal to 5/50 HPFs.",
+          "page": 7
+        },
+        {
+          "number": "VIII",
+          "title": "All tumours in the presence of HIV infection",
+          "text": "viii.All tumours in the presence of HIV infection",
+          "page": 7
+        },
+        {
+          "number": "2",
+          "title": "Myocardial Infraction (First Heart Attack of Specified Severity)",
+          "text": "2.Myocardial Infraction (First Heart Attack of Specified Severity) The first occurrence of myocardial infarction which means the death of a portion of the heart muscle as a result of inadequate blood supply to the relevant area .  The diagnosis for this will be evidenced by all of the following criteria:",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "History of typical clinical symptoms consistent with the diagnosis of Acute Myocardial",
+          "text": "i)History of typical clinical symptoms consistent with the diagnosis of Acute Myocardial Infarction (for e.g. typical chest pain)",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "New characteristic electrocardiogram changes",
+          "text": "ii)New characteristic electrocardiogram changes",
+          "page": 7
+        },
+        {
+          "number": "III",
+          "title": "Elevation of infarction specific enzymes, Troponins or other specific biochemical",
+          "text": "iii)Elevation of infarction specific enzymes, Troponins or other specific biochemical markers. The following are excluded:",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "Non-ST-segment elevation myocardial infarction (NSTEMI) with elevation of Troponin",
+          "text": "i)Non-ST-segment elevation myocardial infarction (NSTEMI) with elevation of Troponin I or T",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "Other acute Coronary Syndromes",
+          "text": "ii)Other acute Coronary Syndromes",
+          "page": 7
+        },
+        {
+          "number": "III",
+          "title": "Any type of angina pectoris",
+          "text": "iii)Any type of angina pectoris",
+          "page": 8
+        },
+        {
+          "number": "3",
+          "title": "Open Chest CABG",
+          "text": "3.Open Chest CABG The actual undergoing of heart surgery to correct blockage or narrowing in one or more coronary artery(s), by coronary artery bypass grafting  done via a sternotomy (cutting through the breast bone) or minimally invasive keyhole coronary artery bypass procedures. The diagnosis must be supported by a coronary angiography and the realization of Surgery has to be confirmed by a cardiologist. The following are excluded:",
+          "page": 8
+        },
+        {
+          "number": "I",
+          "title": "Angioplasty and/or any other intra-arterial procedures",
+          "text": "i)Angioplasty and/or any other intra-arterial procedures",
+          "page": 8
+        },
+        {
+          "number": "4",
+          "title": "Open Heart Replacements Or Repair Of Heart Valves",
+          "text": "4.Open Heart Replacements Or Repair Of Heart Valves The actual undergoing of open-heart valve Surgery is to replace or repair one or more heart valves, as a consequence of defects in, abnormalities of, or disease-affected cardiac valve(s). The diagnosis of the valve abnormality must be supported by an echocardiography and the realization of Surgery has to be confirmed by a specialist Medical Practitioner. Catheter based techniques including but not limited to, balloon valvotomy/ valvuloplasty ar...",
+          "page": 8
+        },
+        {
+          "number": "5",
+          "title": "Coma of Specified Severity",
+          "text": "5.Coma of Specified Severity A state of unconsciousness with no reaction or response to external stimuli or internal needs. This diagnosis must be supported by evidence of all of the following:",
+          "page": 8
+        },
+        {
+          "number": "I",
+          "title": "No response to external stimuli continuously for at least 96 hours;",
+          "text": "i.No response to external stimuli continuously for at least 96 hours;",
+          "page": 8
+        },
+        {
+          "number": "II",
+          "title": "Life support measures are necessary to sustain life; and",
+          "text": "ii.Life support measures are necessary to sustain life; and",
+          "page": 8
+        },
+        {
+          "number": "III",
+          "title": "Permanent neurological deficit which must be assessed at least 30 days after the onset",
+          "text": "iii.Permanent neurological deficit which must be assessed at least 30 days after the onset of the coma. The condition has to be confirmed by a specialist Medical Practitioner. Coma resulting directly from alcohol or drug abuse is excluded.",
+          "page": 8
+        },
+        {
+          "number": "6",
+          "title": "Kidney Failure requiring regular dialysis",
+          "text": "6.Kidney Failure requiring regular dialysis End stage renal disease presenting as chronic irreversible failure of both kidneys to function, as a result of which either regular renal dialysis (haemodialysis or peritoneal dialysis) is instituted or renal transplantation is carried out. Diagnosis has to be confirmed by a specialist Medical Practitioner.",
+          "page": 8
+        },
+        {
+          "number": "7",
+          "title": "Stroke resulting in permanent symptoms",
+          "text": "7.Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction of brain tissue, thrombosis in an intracranial vessel, haemorrhage and embolization from an extra cranial source. Diagnosis has to be confirmed by a specialist Medical Practitioner and evidenced by typical clinical symptoms as well as typical findings in CT Scan or MRI of the brain. Evidence of permanent neurological deficit lasting for at least 3 months has t...",
+          "page": 8
+        },
+        {
+          "number": "I",
+          "title": "Transient ischemic attacks (TIA)",
+          "text": "i)Transient ischemic attacks (TIA)",
+          "page": 8
+        },
+        {
+          "number": "II",
+          "title": "Traumatic Injury of the brain",
+          "text": "ii)Traumatic Injury of the brain",
+          "page": 8
+        },
+        {
+          "number": "III",
+          "title": "Vascular disease affecting only the eye or optic nerve or vestibular functions",
+          "text": "iii)Vascular disease affecting only the eye or optic nerve or vestibular functions",
+          "page": 8
+        },
+        {
+          "number": "8",
+          "title": "Major Organ /Bone Marrow Transplant",
+          "text": "8.Major Organ /Bone Marrow Transplant",
+          "page": 8
+        },
+        {
+          "number": "I",
+          "title": "One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted",
+          "text": "I.One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted from irreversible end-stage failure of the relevant organ, or",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has",
+          "text": "II.Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner. The following are excluded:",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Other stem-cell transplants",
+          "text": "i)Other stem-cell transplants",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Where only islets of langerhans are transplanted",
+          "text": "ii)Where only islets of langerhans are transplanted",
+          "page": 9
+        },
+        {
+          "number": "9",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "9.Permanent Paralysis of Limbs Total and irreversible loss of use of two or more limbs as a result of Injury or disease of the brain or spinal cord. A specialist Medical Practitioner must be of the opinion that the paralysis will be permanent with no hope of recovery and must be present for more than 3 months.",
+          "page": 9
+        },
+        {
+          "number": "10",
+          "title": "Multiple Sclerosis with persisting symptoms",
+          "text": "10.Multiple Sclerosis with persisting symptoms The unequivocally diagnosis of Definite Multiple Sclerosis and evidenced by all of the following:",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Investigations including typical MRI findings, which unequivocally confirm the diagnosis",
+          "text": "i.Investigations including typical MRI findings, which unequivocally confirm the diagnosis to be multiple sclerosis; and",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "There must be current clinical impairment of motor or sensory function, which must have",
+          "text": "ii.There must be current clinical impairment of motor or sensory function, which must have persisted for a continuous period of at least 6 months, Exclusion Other causes of neurological damage such as SLE and HIV",
+          "page": 9
+        },
+        {
+          "number": "11",
+          "title": "Benign Brain Tumor",
+          "text": "11.Benign Brain Tumor",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Benign brain tumor is defined as a life threatening, non-cancerous tumor in the brain,",
+          "text": "i.Benign brain tumor is defined as a life threatening, non-cancerous tumor in the brain, cranial nerves or meninges within the skull. The presence of the underlying tumor must be confirmed by imaging studies such as CT scan or MRI.",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "This brain tumor must result in at least one of the following and must be confirmed by the",
+          "text": "ii.This brain tumor must result in at least one of the following and must be confirmed by the relevant medical specialist Permanent Neurological deficit with persisting clinical symptoms for a continuous period of at least 90 consecutive days or Undergone surgical resection or radiation therapy to treat the brain tumor. The following are excluded Cysts, Granulomas, malformations in the arteries or veins of the brain, hematomas, abscesses, pituitary tumors, tumors of skull bones and tumors of the...",
+          "page": 9
+        },
+        {
+          "number": "12",
+          "title": "Parkinson’s Disease",
+          "text": "12. Parkinson’s Disease The occurrence of Parkinson‟s disease where there is an associated neurological deficit that results in permanent inability to perform independently at least three of the activities of daily living as defined below.",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Transfer: Getting in and out of bed without requiring external physical assistance",
+          "text": "i)Transfer: Getting in and out of bed without requiring external physical assistance",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Mobility: The ability to move from one room to another without requiring any external",
+          "text": "ii)Mobility: The ability to move from one room to another without requiring any external physical assistance",
+          "page": 9
+        },
+        {
+          "number": "III",
+          "title": "Dressing: Putting on and taking of all necessary items of clothing without requiring any",
+          "text": "iii)Dressing: Putting on and taking of all necessary items of clothing without requiring any external physical assistance",
+          "page": 9
+        },
+        {
+          "number": "IV",
+          "title": "Bathing/Washing: The ability to wash in the bath or shower (including getting in and out of",
+          "text": "iv)Bathing/Washing: The ability to wash in the bath or shower (including getting in and out of the bath or shower) or wash by other means",
+          "page": 9
+        },
+        {
+          "number": "V",
+          "title": "Eating: All tasks of getting food into the body once it has been prepared",
+          "text": "v)Eating: All tasks of getting food into the body once it has been prepared Parkinson‟s disease secondary to drug and/or alcohol abuse is excluded.",
+          "page": 10
+        },
+        {
+          "number": "12",
+          "title": "End Stage Liver Disease",
+          "text": "12.End Stage Liver Disease",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "Permanent and irreversible failure of liver function that has resulted in all three of the",
+          "text": "i)Permanent and irreversible failure of liver function that has resulted in all three of the following: Permanent jaundice, and",
+          "page": 10
+        },
+        {
+          "number": "II",
+          "title": "Ascites, and",
+          "text": "ii)Ascites, and",
+          "page": 10
+        },
+        {
+          "number": "III",
+          "title": "Hepatic Encephalopathy,",
+          "text": "iii)Hepatic Encephalopathy, Liver disease secondary to alcohol or drug abuse is excluded.",
+          "page": 10
+        },
+        {
+          "number": "13",
+          "title": "Alzheimer's Disease",
+          "text": "13.Alzheimer's Disease Clinically established diagnosis of Alzheimer‟s Disease (presenile dementia) resulting in a permanent inability to perform independently three or more activities of daily living- bathing, dressing/undressing, getting to and using the toilet, transferring from bed to chair or chair to bed, continence, eating/drinking and taking medication- or resulting in need of supervision and permanent presence of care staff due to the disease. These conditions have to be medically docum...",
+          "page": 10
+        },
+        {
+          "number": "14",
+          "title": "Surgery of Aorta",
+          "text": "14.Surgery of Aorta The actual undergoing of medically necessary Surgery for a disease of the aorta needing excision and surgical replacement of the diseased aorta with a graft. For the purpose of this definition aorta shall mean the thoracic and abdominal aorta but not its branches. Traumatic Injury of the aorta is excluded",
+          "page": 10
+        },
+        {
+          "number": "15",
+          "title": "Third Degree Burns",
+          "text": "15.Third Degree Burns There must be third-degree burns with scarring that cover at least 20% of the body‟s surface area. The diagnosis must confirm the total area involved using standardized, clinically accepted, body surface area charts covering 20% of the body surface area.",
+          "page": 10
+        },
+        {
+          "number": "16",
+          "title": "Deafness",
+          "text": "16.Deafness Total and irreversible loss of hearing in both ears as a result of Illness or Injury. The diagnosis must be supported by pure tone audiogram test and certified by an Ear, Nose and Throat (ENT) specialist. Total means “the loss of hearing to the extent that the loss is greater than 90decibels across all frequencies of hearing” in both ears.",
+          "page": 10
+        },
+        {
+          "number": "17",
+          "title": "Loss of Speech",
+          "text": "17.Loss of Speech",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "Total and irreversible loss of the ability to speak as a result of injury or disease to the",
+          "text": "i.Total and irreversible loss of the ability to speak as a result of injury or disease to the vocal cords. The inability to speak must be established for a continuous period of 12 months. This diagnosis must be supported by medical evidence furnished by an Ear, Nose, and Throat (ENT) specialist.",
+          "page": 10
+        },
+        {
+          "number": "II",
+          "title": "All psychiatric related causes are excluded.",
+          "text": "ii.All psychiatric related causes are excluded. Benefit Payable under Section I The Company hereby agrees, subject to the terms, conditions and exclusions applicable to this Section and the terms, conditions, General Exclusions stated in this Policy, to pay the Sum Insured in relation to the Insured person as stated against Section I under Schedule on the occurrence of an Insured Event as stated above, under this Section.",
+          "page": 10
+        },
+        {
+          "number": "1.2",
+          "title": "Exclusions Applicable To Section I",
+          "text": "1.2Exclusions Applicable To Section I The Company shall not be liable to make any payment directly or indirectly arising out of the following events: a)Any Pre-Existing Illness- Any Insured Event arising on account of or in connection with any Pre-Existing Illness b)If the Insured does not submit a medical certificate from the Medical Practitioner evidencing diagnosis of Illness or Injury or occurrence of the medical event or the undergoing of the medical / Surgical Procedure in relation to the ...",
+          "page": 11
+        },
+        {
+          "number": "I",
+          "title": "Treatment by a family member and self-medication or any treatment that is not",
+          "text": "i)Treatment by a family member and self-medication or any treatment that is not scientifically recognized.",
+          "page": 11
+        },
+        {
+          "number": "1.3",
+          "title": "Specific Conditions Applicable To Section I:",
+          "text": "1.3Specific Conditions Applicable To Section I: The coverages under this Policy, for the specific Insured Person, shall terminate in the event of claim in respect of such Insured becoming admissible and accepted by the Company under this Section In consequence thereof no benefit shall be payable under any other Section of this Policy except under Section iv: fire and allied perils- dwelling & household contents, coverage under which shall be continued till the expiry of the policy.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2.SECTION II: PERSONAL ACCIDENT:",
+      "level": 1,
+      "page_start": 11,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured Event:  For the purposes of this Section and the determination of the Company‟s liability under it, Insured Event in relation to any Insured Person, shall mean Injury sustained during the Policy Period which shall within twelve months of its occurrence be the sole and direct cause of a)Death or b)Permanent Total Disablement (more specifically defined herein below). For the purposes of this Section, Permanent Total Disablement shall mean total and irrecoverable:",
+          "page": 11
+        },
+        {
+          "number": "I",
+          "title": "Loss of sight of both eyes; or",
+          "text": "i)Loss of sight of both eyes; or",
+          "page": 11
+        },
+        {
+          "number": "II",
+          "title": "Actual loss by Physical Separation of both hands or both feet or one entire hand and one",
+          "text": "ii)Actual loss by Physical Separation of both hands or both feet or one entire hand and one entire foot; or",
+          "page": 11
+        },
+        {
+          "number": "III",
+          "title": "Loss of use of both hands or both feet or of one hand and one foot without Physical",
+          "text": "iii)Loss of use of both hands or both feet or of one hand and one foot without Physical Separation; the Insured person from resuming his normal occupation or engaging in similar gainful employment.",
+          "page": 11
+        },
+        {
+          "number": "2.1",
+          "title": "Benefit Payable Under Section II:",
+          "text": "2.1     Benefit Payable Under Section II: The Company hereby agrees, subject to the terms, conditions and exclusions applicable to this Section and the terms, conditions, General Exclusions stated in the Policy, to pay the Sum Insured as stated against Section II under Schedule, on occurrence of the Insured Event as stated above under this Section.",
+          "page": 12
+        },
+        {
+          "number": "2.2.1",
+          "title": "Exclusions Applicable To Section II:",
+          "text": "2.2.1 Exclusions Applicable To Section II: The Company shall not be liable under this Section for:",
+          "page": 12
+        },
+        {
+          "number": "I",
+          "title": "We shall not be liable for Payment under more than one of the categories specified (Death",
+          "text": "i.We shall not be liable for Payment under more than one of the categories specified (Death or Permanent Total Disablement) in the Benefit Payable in respect of the Insured Person.",
+          "page": 12
+        },
+        {
+          "number": "II",
+          "title": "Payment of Compensation in respect of Insured Event which occurs whilst the Insured",
+          "text": "ii.Payment of Compensation in respect of Insured Event which occurs whilst the Insured person is operating or learning to operate any aircraft, or performing duties as a member of the crew on any aircraft, or Scheduled Airlines or is engaging in aviation or ballooning, or whilst the Insured person is mounting into, or dismounting from or traveling in any balloon or aircraft other than as a passenger (fare-paying or otherwise) in any Scheduled Airline anywhere in the world;",
+          "page": 12
+        },
+        {
+          "number": "III",
+          "title": "Payment of Compensation in respect of death, Injury or disablement of Insured person (a)",
+          "text": "iii.Payment of Compensation in respect of death, Injury or disablement of Insured person (a) from engaging in or participation in adventure sports including but not limited to winter sports, skydiving/parachuting, hang gliding, bungee jumping, scuba diving, mountain climbing (where ropes or guides are customarily used), riding or driving in races or rallies using a motorized vehicle or bicycle, caving or pot-holing, hunting or equestrian activities, skin diving or other underwater activity, raft...",
+          "page": 12
+        },
+        {
+          "number": "IV",
+          "title": "Payment of Compensation in respect of death or Permanent Total Disablement arising",
+          "text": "iv.Payment of Compensation in respect of death or Permanent Total Disablement arising from or resulting directly or indirectly from any Illness to any Insured Person.",
+          "page": 12
+        },
+        {
+          "number": "V",
+          "title": "No sum shall be payable under this Section in case of any Permanent Total Disability for",
+          "text": "v.No sum shall be payable under this Section in case of any Permanent Total Disability for which medical care, treatment, or advice was recommended by or received from a Medical Practitioner or from which the Insured person suffered or which was present before the commencement of the Policy Period",
+          "page": 12
+        },
+        {
+          "number": "2.2.2",
+          "title": "Special Conditions Applicable To Section II:",
+          "text": "2.2.2Special Conditions Applicable To Section II:",
+          "page": 12
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The coverages under this Policy, for the specific Insured Person, shall terminate in the event of claim in respect of that Insured Person becoming admissible and accepted by the Company under this Section. In consequence thereof no benefit shall be payable under any other section of this Policy except under Section iv: fire and allied perils- dwelling & household contents, coverage under which shall be continued till the expiry of the policy. .",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3.SECTION III: LOSS OF JOB",
+      "level": 1,
+      "page_start": 12,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "liability under it, Insured Event in relation to any Insured Person, shall mean termination from employment of the Insured Person or his dismissal, temporary suspension or retrenchment from employment imposed on him by the employer during the Policy Period as per the employer‟s rules/regulations or executed/implemented by the employer in compliance of any laws for the time being in force or any directives by any Public Authority.",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "3.1",
+      "title": "3.1. Benefit Payable Under Section III:",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company hereby agrees, subject to the terms, conditions and exclusions applicable to this Section and the terms, conditions, General Exclusions stated in the Policy, to pay, on occurrence of the Insured Event as stated above under this Section, in relation to the Insured Person maximum of 3 EMI Amount(s) falling  due in respect of the Loan (Loan account number as stated in Schedule  of this Policy) after the commencement of the Insured Event till the reinstatement of employment with the same...",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "3.2",
+      "title": "3.2. Exclusions Applicable to Section III:",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The Company shall not be liable to make any payment under this Section in the event of",
+          "text": "i)The Company shall not be liable to make any payment under this Section in the event of termination, dismissal, temporary suspension or retrenchment from employment of the Insured person being attributed to any dishonesty or fraud or poor performance on the part of the Insured person or his willful violation of any rules of the employer or laws for the time being in force or any disciplinary action against the Insured person by the employer.",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "The Company shall not be liable to make any payment under this Policy in connection with",
+          "text": "ii)The Company shall not be liable to make any payment under this Policy in connection with or in respect of: a)Self-employed persons; b)Any claim relating to unemployment from a job which is casual, temporary, seasonal or contractual in nature or any claim relating to an employee not on the direct rolls of the employer; c)Any voluntary unemployment; d)Unemployment at the time of inception of the Policy Period or arising within the first 90 days of inception of the Policy Period (Waiting period ...",
+          "page": 13
+        },
+        {
+          "number": "III",
+          "title": "Any unemployment from a job under which no salary or any remuneration is provided to",
+          "text": "iii)Any unemployment from a job under which no salary or any remuneration is provided to the Insured person.",
+          "page": 13
+        },
+        {
+          "number": "IV",
+          "title": "Any suspension from employment on account of any pending enquiry being conducted by",
+          "text": "iv)Any suspension from employment on account of any pending enquiry being conducted by the employer/ Public Authority",
+          "page": 13
+        },
+        {
+          "number": "V",
+          "title": "Any unemployment due to resignation, retirement whether voluntary or otherwise",
+          "text": "v)Any unemployment due to resignation, retirement whether voluntary or otherwise",
+          "page": 13
+        },
+        {
+          "number": "VI",
+          "title": "Any unemployment due to non-confirmation of employment after or during such period",
+          "text": "vi)Any unemployment due to non-confirmation of employment after or during such period under which the Insured was under probation.",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "3.3",
+      "title": "3.3. Specific Conditions Applicable to Section III",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "A claim under this section shall become admissible provided the period of termination,",
+          "text": "i)A claim under this section shall become admissible provided the period of termination, dismissal, temporary suspension or retrenchment from employment of the Insured Person",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "The benefit under Section III is available only for salaried employees.",
+          "text": "ii)The benefit under Section III is available only for salaried employees.",
+          "page": 14
+        },
+        {
+          "number": "III",
+          "title": "The cover as described under this Section, for specific Insured Person, shall terminate in the",
+          "text": "iii)The cover as described under this Section, for specific Insured Person, shall terminate in the event of claim in respect of that Insured becoming admissible and accepted by the Company under this Section and the Company admitting liability against Section III for the Insured Person under Schedule. CLAIMS SETTLEMENT PROCESS APPLICABLE TO SECTION I, SECTION II and SECTION III Claim Documents for Section I CLAIMS SETTLEMENT PROCESS APPLICABLE TO SECTION I In the event of a claim arising out of ...",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Certificate from the attending Doctor of the Insured Person confirming, inter alia,",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a.name of the Insured person; b.name, date of occurrence and medical details of the Insured Event c.confirmation that the Insured Event does not relate to any Pre-Existing Illness or any Illness or Injury which existed within the first 90 days of commencement of Period of Insurance.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Certificate, if applicable, from the Bank/Financial Institution stating the amortization",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "schedule, the EMI Amounts, Principal Outstanding, etc.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Duly completed claim forms;",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Original Discharge Certificate/ Card from the hospital/ Doctor or their copies;",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Original investigation test reports or their copies,",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Indoor case papers, if required",
+      "level": 3,
+      "page_start": 14,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Claims documents for Section II (i)Upon the happening of any Injury giving rise or likely to give rise to a claim under this Policy, the Injury as described above shall be intimated to the Company as soon as possible but not later than 30 days from the date of its occurrence. (ii)The Insured shall deliver to the Company, within 30 days of the date of occurrence of the Insured Event, a detailed statement in writing as per the claim form and any other material particular, relevant to the making of...",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "Certificate if applicable from the Bank stating the amortization schedule, the EMI Amounts,",
+          "text": "i)Certificate if applicable from the Bank stating the amortization schedule, the EMI Amounts, Principal Outstanding, etc.",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "Certificate from the employer of the Insured person confirming the termination, dismissal,",
+          "text": "ii)Certificate from the employer of the Insured person confirming the termination, dismissal, temporary suspension or retrenchment from employment of the Insured person furnishing the date of termination, dismissal, temporary suspension or retrenchment from employment of the Insured person with the reasons for the same. In case of temporary suspension the period of suspension should also be mentioned in such certificate Insurer’s obligations",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Insurer shall settle claim(s), including its rejection, within 30 (thirty days) of the receipt of",
+      "level": 3,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the last necessary claim document",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Insurer shall have no liability under this Policy, once the Sum Insured (Maximum Limit of",
+      "level": 3,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Liability) with respect to any of the Sections, is exhausted by Insured.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. All admissible claim under this Policy shall be paid by Insurer within 7 working days from",
+      "level": 3,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "date of acceptance of such a claim. In case of delay in the payment, Insurer shall be liable to pay interest at a rate which is 2% above bank rate prevalent at the beginning of the financial year in which claim is reviewed by Insurer.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Insurer shall condone delay on merit for delayed claims where the delay is proved to be beyond",
+      "level": 3,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured‟s control. EXCLUSIONS APPLICABLE TO SECTION I, SECTION II AND SECTION III The Company shall not be liable for any loss or damage under this Policy:",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Arising or resulting from the Insured person committing any breach of the law with criminal",
+      "level": 3,
+      "page_start": 15,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "intent rebellion, evolution, insurrection, mutiny, military or usurped power, seizure, capture, arrests, restraints and detainment of all Heads of State and citizens of whatever nation and all kind and acts of Terrorism, Nuclear weapon induced treatment or taking active part in Riot, Strike, malicious acts”.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": null,
+      "title": "GENERAL CONDITIONS APPLICABLE TO THE SECTION I, II and III",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Age Limit: To be eligible to be covered under the Policy or get any benefits under the Policy, the Insured should have attained the age of at least 20 years and maximum entry age under policy is 65 years on the date of commencement of the Policy Period as applicable to such Insured. CONTENTS",
+          "page": 16
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Clause A. This Policy and the Insurance Contract 1. Your Policy: This Policy is a contract between You and Us as stated in the following: a. This Policy document, b. The Policy Schedule attached to this Policy document, c. Any Endorsement attached to and forming part of this Policy document, d. Any Add-on to this Policy that You may have purchased from Us, e. The proposals and all declarations made by You or on Your behalf. 2. To whom this Policy is issued and what it covers: a. This Policy is i...",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Directly or indirectly caused by or contributed to/by or arising from ionising radiation or",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "contamination by radioactivity from any nuclear fuel or from any nuclear waste or from the combustion of nuclear fuel. For the purpose of this exclusion, combustion shall include any self-sustaining process of nuclear fission",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Directly or indirectly caused by or contributed to/by or arising from nuclear weapon",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "materials.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Directly or indirectly caused by or contributed to/by or arising out of usage, consumption or",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "abuse of alcohol and/or drugs.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Arising out of or as a result of any act of self-destruction or self-inflicted Injury, attempted",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "suicide or suicide.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Any consequential or indirect loss or expenses arising out of or related to any Insured Event",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "unless otherwise covered in the policy.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Arising out of or resulting directly or indirectly due to or as a consequence of pregnancy or",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "treatment traceable to pregnancy and childbirth, abortion, miscarriage and its consequences except if arises out of an accident, tests and treatment relating to infertility and in vitro fertilization.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Arising out of or resulting directly or indirectly while serving in any branch of the Military or",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Armed Forces of any country during War or warlike operations.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Arising out of or resulting directly or indirectly caused by, resulting from or in connection",
+      "level": 3,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "with any act of Terrorism/sabotage regardless of any other cause or event contributing concurrently or in any other sequence to the loss. The Policy also excludes loss, damage, cost or expenses of whatsoever nature directly or indirectly caused by, resulting from or in connection with any action taken in controlling, preventing, suppressing or in any way relating to action taken in respect of any act of Terrorism/sabotage.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Fire",
+      "level": 3,
+      "page_start": 20,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "caused by burning of Insured Property by order of any Public Authority.",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Explosion or Implosion -",
+      "level": 3,
+      "page_start": 20,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": "2",
+          "title": "2. Explosion or Implosion -",
+          "text": "",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Lightning -",
+      "level": 3,
+      "page_start": 20,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": "3",
+          "title": "3. Lightning -",
+          "text": "",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Earthquake, volcanic eruption, or -",
+      "level": 3,
+      "page_start": 20,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "other convulsions of nature",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Storm, Cyclone, Typhoon, Tempest, -",
+      "level": 3,
+      "page_start": 20,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Hurricane, Tornado, Tsunami, Flood and Inundation",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Subsidence of the land on which caused by",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a. normal cracking, settlement or Your Home Building stands, Landslide, Rockslide bedding down of new structures, b. the settlement or movement of made up ground, c. coastal or river erosion, d. defective design or workmanship or use of defective materials, or e. demolition, construction, structural alterations or repair of any property, or groundworks or excavations.",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Bush fire, Forest fire, Jungle fire -",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": "7",
+          "title": "7. Bush fire, Forest fire, Jungle fire -",
+          "text": "",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Impact damage of any kind, i.e., caused by pressure waves caused by",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "damage caused by impact of, or aircraft or other aerial or space collision caused by any external devices travelling at sonic or physical object (e.g. vehicle, falling supersonic speeds. trees, aircraft, wall etc.)",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Missile testing operations -",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": "9",
+          "title": "9. Missile testing operations -",
+          "text": "",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Riot, Strikes, Malicious Damages caused by",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a. temporary or permanent dispossession, confiscation, commandeering, requisition or destruction by order of the government or any lawful authority, or b. temporary or permanent dispossession of Your Home by unlawful occupation by any person.",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Acts of terrorism Exclusions and Excess as per",
+      "level": 3,
+      "page_start": 21,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "(Coverage as per Terrorism Clause Terrorism Clause attached. attached) 12. Bursting or overflowing of water - tanks, apparatus and pipes.",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Leakage from automatic sprinkler a.repairs or alterations in Your Home",
+      "level": 3,
+      "page_start": 22,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "installations. or the building in which Your Home is located, b.repairs, removal or extension of any sprinkler installation, or c.defects in the construction known to You.",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "title": "14. Theft within 7 (seven) days from the if it is",
+      "level": 3,
+      "page_start": 22,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "occurrence of and proximately a.of any article or thing outside Your caused by any of the above Insured Home, or Events. b. of any article or thing attached from the outside of the outer walls or the roof of Your Home, unless securely mounted. Clause C: Home Building Cover 1. What We cover We cover physical loss or damage, or destruction of Your Home Building because of any Insured Event listed in Clause B of this Policy. We also cover architect‟s, surveyor‟s, consulting engineer‟s fees, cost of...",
+          "page": 22
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Clause D: Home Contents Cover 1. What We cover: We cover the physical loss or damage to or destruction of the General Contents of Your Home caused by an Insured Event as listed in Clause B of this Policy. Valuable Contents of Your Home are not covered under this Policy unless You have purchased the optional cover for the Valuable Contents. 2. Sum Insured: a. The Sum Insured for the Home Contents Cover is shown in the Policy Schedule destroyed/lost completely. b. The policy has a built-in cover f...",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "a. Cover for Valuable Contents on Agreed Value Basis (under Home Contents cover): valuation certificate submitted by You and accepted by Us. However, We shall waive the requirement of valuation certificate if the Sum Insured opted for is up to ₹₹",
+          "page": 25
+        },
+        {
+          "number": "5",
+          "title": "Lakh (Rupees Five Lakh) and Individual item value does not exceed  1 Lakh",
+          "text": "5 Lakh (Rupees Five Lakh) and Individual item value does not exceed  1 Lakh (Rupees One Lakh).",
+          "page": 26
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "i. If the Valuable Contents of Your Home are physically damaged by any Insured Event, We will pay the cost of repairing the item/s.",
+          "page": 26
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "ii. If the Valuable Contents of Your Home are a Total Loss We will pay the Sum Insured shown in the Policy Schedule for the Valuable item/s. If the Policy Schedule shows any limit for any item, or category or groups of items, such limit is the maximum We will pay for that item. Loss to only one item of a pair or set does not constitute loss or damage to the entire pair or set.",
+          "page": 26
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Clause F. Exclusions (What We do not cover) for all covers under this policy We do not cover losses and expenses for any loss or damage or destruction of the Insured Property that is directly or indirectly as a result of or is caused by or arising from events, stated below:",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Your deliberate, wilful or intentional act or ommission, or of anyone on Your behalf, or",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "with Your connivance.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. War, invasion, act of foreign enemy hostilities or war-like operations (whether war is",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "declared or not), civil war, mutiny, civil commotion amounting to a popular rising, military rising, rebellion, revolution, insurrection or military or usurped power.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Ionising radiation or contamination by radioactivity from any nuclear fuel or from any",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "nuclear waste from combustion of nuclear fuel, or the radioactive, toxic, explosive or other hazardous properties of any explosive nuclear assembly or nuclear component that is part of it.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Pollution or contamination, unless",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "i. the pollution or contamination itself has resulted from an Insured Event, or ii. an Insured Event itself results from pollution or contamination.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Loss, damage or destruction to any electrical/electronic machine, apparatus, fixture, or",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "fitting by over-running, excessive pressure, short circuiting, arcing, self- heating or leakage of electricity from whatever cause (lightning included). This exclusion applies only to the particular machine so lost, damaged or destroyed.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Loss or damage to bullion or unset precious stones, manuscripts, plans, drawings,",
+      "level": 3,
+      "page_start": 26,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "securities, obligations or documents of any kind, coins or paper money, cheques, vehicles, and explosive substances unless otherwise expressly stated in the policy.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Loss of any Insured Property which is missing or has been mislaid, or its",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "disappearance cannot be linked to any single identifiable event.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Loss or damage to any Insured Property removed from Your Home to any other place",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Loss of earnings, loss by delay, loss of market or other consequential or indirect loss",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "or damage of any kind or description whatsoever.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Any reduction in market value of any Insured Property after its repair or reinstatement",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Any addition, extension, or alteration to any structure of Your Home Building that",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "increases its Carpet Area by more than 10% of the Carpet Area existing at the Commencement Date or on the date of renewal of this Policy, unless You have paid additional premium and such addition, extension or alteration is added by Endorsement.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12. Costs, fees or expenses for preparing any claim",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Clause I. Waiver of Underinsurance",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Underinsurance does not apply to the Policy. Thus, if Your Sum Insured calculated on the basis of the information that You  provided, is less than the actual value at risk, the difference will not affect the amount We pay. Conditions Change of use of Your Home Building or Home Contents: The Cover will end",
+          "page": 27
+        },
+        {
+          "number": "I",
+          "title": "if You change the use of Your Home Building from personal residence to any other",
+          "text": "i.if You change the use of Your Home Building from personal residence to any other purpose, or",
+          "page": 27
+        },
+        {
+          "number": "II",
+          "title": "if You use any item of Home Contents for use that is not personal.",
+          "text": "ii.if You use any item of Home Contents for use that is not personal. Effect of death In the event of the unfortunate death of the Insured during the Policy Period, the Home Building Cover and the Home Contents Cover that You have purchased will continue for the benefit of Your legal representative/s during the Policy Period subject to all the terms and conditions of this Policy. STANDARD TERMS AND CONDITIONS",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Geographical Limits",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Geographical Limit of this Policy and jurisdiction shall be India except Personal accident cover, under which Accidental Bodily Injuries sustained during the Policy Period anywhere in the World (subject to the travel and other restrictions that the Indian Government may impose) are covered. All claims under this Policy shall be settled in Indian Rupees only.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Incontestability and Duty of Disclosure",
+      "level": 3,
+      "page_start": 27,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "incorrect statements, misrepresentation, mis-description or on non-disclosure in any material particular in the proposal form, personal statement, declaration and connected documents, or any material information having been withheld, or a claim being fraudulent or any fraudulent means or devices being used by the Insured or any one acting on his behalf to obtain any benefit under this Policy.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Observance of terms and conditions",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The due observance and fulfillment of the terms, conditions and endorsement of this Policy in so far as they relate to anything to be done or complied with by the Insured, shall be a Condition Precedent to any liability of the Company to make any payment under this Policy.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. No constructive notice",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Any of the circumstances in relation to these conditions coming to the knowledge of any official of the Company shall not be construed as notice to or be held to bind or prejudicially affect the Company notwithstanding subsequent acceptance of any premium. Every notice and other communication required must be given in written to the company.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Notice of charge etc",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall not be bound to notice or be affected by any notice of any trust, charge, lien, assignment or other dealing with or relating to this Policy but the receipt of the Insured or his legal personal representative shall in all cases be an effectual discharge to the Company. The condition shall not be applicable for Section IV.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Special Provisions",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Any special provisions subject to which this Policy has been entered into and endorsed in the Policy or in any separate instrument shall be deemed to be part of this Policy and shall have effect accordingly.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Right to Inspect",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If required by the Company, an agent/representative of the Company including a loss assessor or a Surveyor appointed in that behalf shall, in case of any loss or any circumstances that have given rise to the claim to the Insured be permitted at all reasonable times to examine into the circumstances of such loss. The Insured shall on being required to do so by the Company produce all books of accounts, receipts, documents relating to or containing entries relating to the loss or such circumstance...",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Fraudulent claims",
+      "level": 3,
+      "page_start": 28,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If any claim is in any respect fraudulent, or if any false statement, or declaration is made or used in support thereof, or if any fraudulent means or devices are used by the Insured, or anyone acting on his/her behalf to obtain any benefit under this Policy, or if a claim is made and rejected and no court action or suit is commenced within twelve months after such rejection or, in case of arbitration taking place as provided therein, within twelve (12) calendar months after the Arbitrator or Ar...",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12.Subrogation",
+      "level": 1,
+      "page_start": 29,
+      "page_end": 30,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured shall do or concur in doing or permit to be done all such acts and things that may be necessary or reasonably required by the company for the purpose of enforcing and/or securing any civil or criminal rights and remedies or obtaining relief or indemnity from any other party to which the company are or would become entitled upon the company making reimbursement under this Policy, whether such acts or things shall be or become necessary or required before or after Our payment. Insured shal...",
+          "page": 29
+        },
+        {
+          "number": "13",
+          "title": "Free Look period",
+          "text": "13.Free Look period",
+          "page": 29
+        },
+        {
+          "number": "1",
+          "title": "Insured will be allowed a period of at least 15 days from the date of receipt of the Policy",
+          "text": "1.Insured will be allowed a period of at least 15 days from the date of receipt of the Policy to review the terms and conditions of the Policy and to return the same if not acceptable.",
+          "page": 30
+        },
+        {
+          "number": "2",
+          "title": "If insured have not made any claim during the Free Look period, insured shall be entitled",
+          "text": "2.If insured have not made any claim during the Free Look period, insured shall be entitled to a)A refund of the premium paid less any expenses incurred by the company on insured‟s medical examination and the stamp duty charges or; b)where the risk has already commenced and the option of return of the Policy is exercised by insured, a deduction towards the proportionate risk premium for period on cover or; c)Where only a part of the risk has commenced, such proportionate risk premium commensurat...",
+          "page": 30
+        },
+        {
+          "number": "14",
+          "title": "Cancellation/Termination",
+          "text": "14.Cancellation/Termination The Company may at any time cancel this Policy on the grounds of mis-representation, fraud, non-disclosure of material facts as sought to be declared on the Proposal Form or non- cooperation by the Insured/ Policyholder, by giving fifteen(15) days‟ notice in writing by registered post / acknowledgement due post to the Insured at his last known address in which case the Company shall be liable to repay on demand a rateable proportion of the premium for the unexpired te...",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Policy Disputes",
+      "level": 3,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Any dispute concerning the interpretation of the terms, conditions, limitations and/or exclusions contained herein is understood and agreed to by both the Insured and the Company to be subject to Indian Law. Each party agrees to submit such dispute to a Court of competent jurisdiction and to comply with all requirements necessary to give such Court the jurisdiction. All matters arising hereunder shall be determined in accordance with the law and practice of such Court.",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Arbitration Clause",
+      "level": 3,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If any dispute or difference shall arise as to the quantum to be paid under this Policy (liability being otherwise admitted) such difference shall independently of all other questions be referred to the decision of a sole arbitrator to be appointed in writing by the parties to the dispute/ difference, or if they cannot agree upon a single arbitrator within 30 days of any party invoking arbitration, the same shall be referred to a panel of three arbitrators, comprising of two arbitrators, one to ...",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Contribution",
+      "level": 3,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If at the time of a claim there is another insurance Policy or other contract in the insured‟s name which covers insured for the same expense or loss, the company will only pay it‟s proportionate share of the loss. The company‟s Proportionate share will be calculated by determining the percentage Our Policy maximum bears to the total amount of insurance in force as to the loss. This clause will not be applicable for Section I, II and III under the policy.",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "15.Renewal",
+      "level": 1,
+      "page_start": 30,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a.All the covers opted for shall be renewed till the loan tenure or lifetime of  insured whichever is earlier, except on grounds of fraud, moral hazard or misrepresentation or non‐cooperation by any Insured Persons b.The Renewal of a Policy sought by Insured shall not be denied arbitrarily. If denied, Company shall provide Insured with cogent reasons for such denial of Renewal. policy(ies) if the claim is paid or admitted  under section I or section II. d.The company may condone delay in Renewal...",
+          "page": 30
+        },
+        {
+          "number": "I",
+          "title": "The basic premium applicable under the Policy may be revised at a later stage subject to",
+          "text": "i.The basic premium applicable under the Policy may be revised at a later stage subject to approval from IRDAI. j.If a claim is ascertained in case of loss of employment cover and the insured is eligible for renewal, the insured can renew the loss of employment cover subject to him/her being employed at the time of renewal.",
+          "page": 31
+        },
+        {
+          "number": "16",
+          "title": "Continuity",
+          "text": "16.Continuity In the event of the Policy where insured have attained maximum Renewal age under the Policy, Insured shall have the option of taking a substitute health insurance Policy from the company without any benefit of continuity of cover for any additional benefits that insured may have enjoyed under the Loan Secure Insurance Policy and for which additional premium has been charged. In such an event, all the waiting periods as stipulated under the substitute policy will be applicable with ...",
+          "page": 31
+        },
+        {
+          "number": "17",
+          "title": "Substitute Product",
+          "text": "17.Substitute Product In case the company may decide to withdraw this product under which this Policy is issued to insured or where insured have reached the maximum renewal age under the Policy issued by the company, The company shall provide insured with an option to buy a substitute health insurance Policy from the company. Insured will be given the Portability credit based on the number of years of continuous and uninterrupted insurance cover under this Policy towards the waiting periods in t...",
+          "page": 31
+        },
+        {
+          "number": "23",
+          "title": "Withdrawal/Modifications:",
+          "text": "23. Withdrawal/Modifications: We shall give insured notice in the event the company may decide to revise, modify or withdraw the product. Such notice shall be given to insured at least three months prior the promise insured that",
+          "page": 31
+        },
+        {
+          "number": "I",
+          "title": "In case of modification or revision, the notice given to insured shall detail the reasons",
+          "text": "i.In case of modification or revision, the notice given to insured shall detail the reasons for such revision or modification, in particular the reason for an increase in premium (if any) and the quantum of such increase.",
+          "page": 32
+        },
+        {
+          "number": "II",
+          "title": "The product shall be withdrawn only after due approval from the Insurance",
+          "text": "ii.The product shall be withdrawn only after due approval from the Insurance Regulatory and Development Authority of India. However, if insured do not respond to the company‟s intimation in case of such withdrawal, the Policy shall be withdrawn on the Renewal date and the company shall provide insured with an option to migrate to a substitute product offered by the company, subject to portability conditions",
+          "page": 32
+        },
+        {
+          "number": "III",
+          "title": "Policies whose renewal will be within 90 days of withdrawal will be given choice for",
+          "text": "iii.Policies whose renewal will be within 90 days of withdrawal will be given choice for one time renewal of existing policy, others will have the choice to migration to substitute health insurance policy/modified product.",
+          "page": 32
+        },
+        {
+          "number": "24",
+          "title": "Notices and Claims",
+          "text": "24. Notices and Claims",
+          "page": 32
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Any notice, direction or instruction given under this Policy shall be in writing and delivered by hand, post, or facsimile to: In case of any grievance the insured person may contact the company through:",
+          "page": 32
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Website : www.universalsompo.com Toll free : 1 - 800 - 224030 (For MTNL/BSNL Users) or 1 - 800 – 2004030 or on chargeable numbers at +91-22-27639800/+91-22-39133700 E-mail : contactus@universalsompo.com Fax :     (022) 39171419 Courier :  Universal Sompo General Insurance Co. Ltd, Unit No- 601 & 602 A Wing, 6th Floor, Reliable Tech Park, Cloud City Campus; Thane- Belapur Road, Airoli- 400708 Insured person may also approach the grievance cell at any of the company‟s branches with the details of ...",
+          "page": 32
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Insurance Ombudsman, Gujarat , UT of Dadra and Nagar Haveli, JeevanPrakash Building, 6th floor, Daman and Diu TilakMarg, Relief Road, Ahmedabad – 380 001. Tel.: 079 - 25501201/02/05/06 Email: bimalokpal.ahmedabad@ecoi.co.in Office of the Insurance Ombudsman, Karnataka JeevanSoudhaBuilding,PID No. 57-27-N- 19, Ground Floor, 19/19, 24th Main Road,JP Nagar, Ist Phase, Bengaluru – 560 078. Tel.: 080 - 26652048 / 26652049 Email: bimalokpal.bengaluru@ecoi.co.in Madhya Pradesh and Chhatti...",
+          "page": 33
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "ADDITIONAL CLAUSES AC1: For Reducing Sum Insured covers Notwithstanding anything contrary stated in the Policy, the Sum Insured under the Policy on the date of the Insured Event covered under Sections I & II for the purpose of calculation of claim shall be the least of the following:",
+          "page": 36
+        },
+        {
+          "number": "I",
+          "title": "The Principal Outstanding in the books of the Bank/Financial Institution as on the date of",
+          "text": "i)The Principal Outstanding in the books of the Bank/Financial Institution as on the date of occurrence of the Insured Event; or",
+          "page": 36
+        },
+        {
+          "number": "II",
+          "title": "The Principal Outstanding as per the amortization Schedule prepared by Bank/Financial",
+          "text": "ii)The Principal Outstanding as per the amortization Schedule prepared by Bank/Financial Institution. In the event the Sum Insured as appearing against Section I & II of the Schedule  of the Policy is less than the total of the actual Loan disbursed upto the date of the occurrence of the Insured Event, then the Amortization Schedule shall be calculated as if the actual Loan disbursed was equivalent to the Sum Insured; or",
+          "page": 36
+        },
+        {
+          "number": "III",
+          "title": "The Sum Insured as appearing against Section I & II of the Schedule",
+          "text": "iii)The Sum Insured as appearing against Section I & II of the Schedule N.B. Reducing Sum Insured option is available only for 3 year policy tenure. AC2: Premium Refunds: Notwithstanding anything to the contrary contained in the Policy, the refund of premium under the Policy shall be as under In the event of full prepayment of the Loan by the Insured, the Company shall refund a portion of the premium subject to the terms and conditions of the Policy as per the rates mentioned below: Particulars ...",
+          "page": 36
+        }
+      ]
+    }
+  ]
+}

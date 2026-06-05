@@ -6,7 +6,6 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-023 | Product B Export v1 Freeze + Handoff Dataset | in_progress | P1 | Phase 8 |
 
 
 ---
@@ -60,6 +59,7 @@ Current capability:
 | DSE-021 | Remaining Deterministic Extractors Wave 2 | 2026-06-05 | Phase 6 |
 | DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | 2026-06-04 | Phase 2 |
 | DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | 2026-06-05 | Phase 3 |
+| DSE-023 | Product B Export v1 Freeze + Handoff Dataset | 2026-06-05 | Phase 8 |
 
 ---
 
@@ -349,7 +349,7 @@ Current capability:
 
 ### DSE-023 — Product B Export v1 Freeze + Handoff Dataset
 
-**Status:** in_progress
+**Status:** done
 **Priority:** P1
 **Phase:** Phase 8
 **Goal:** Freeze the first Product B consumable export package and handoff contract after ontology, scale triage, and remaining extractor decisions are stable.
@@ -364,6 +364,11 @@ Current capability:
 - Audit result: current export is a structurally valid 20-policy, 20-concept ontology-backed Product B v1 candidate; stale 91-field docs must be clarified before package building.
 - Packet 1 froze the v1 docs: Product B consumes compiled JSON only; v1 is the 20-concept ontology-backed schema, not the future 91-field schema.
 - Packet 2 added `scripts/build_product_b_handoff.py` and tests. Builder produces a reviewed 20-policy package with manifest, README, contract, ontology, coverage summary, and checksums.
+**Results:**
+- Final export eval passed: 20/20 policies, 20 concept fields per policy, 0 schema errors, 0 present facts missing evidence, 0 invalid statuses, 0 missing span IDs, 0 false-present, 0 cross-file page disagreement.
+- Handoff package generated at `data/processed/product_b_export_v1`.
+- Package contains 20 reviewed policies and 67 files, including `manifest.json`, `README.md`, `export_contract.md`, `ontology_concepts.v1.json`, `quality/export_eval.json`, `quality/coverage_summary.json`, and `checksums.sha256`.
+- Full pytest passed: 480/480.
 **Branch:** feat/dse-023-product-b-export-v1
 **Related docs:** export_contract.md, database_strategy.md, ontology/concepts.v1.json
 

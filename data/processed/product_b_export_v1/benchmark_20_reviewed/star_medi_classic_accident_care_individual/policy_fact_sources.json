@@ -1,0 +1,674 @@
+{
+  "policy_id": "star_medi_classic_accident_care_individual",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0004",
+          "clause_title": "",
+          "evidence_text_snippet": "Pre-heading body text Clause no. of TITLE Description the policy 1.0 (A) (B) & (C) a In-patient Treatment- Covers hospitalisation expenses for period more than 24 hrs. Emergency Ambulance- Up to Rs. 750/- per hospitalization for utilizing ambulance service for b 1.0 (D) transporting insured person t",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "clause_0027",
+          "clause_title": "",
+          "evidence_text_snippet": "o the extent of cost of bare metal stent/drug eluting cobalt-chromium stent/drug eluting stainless steel stent. D) Emergency ambulance charges up-to a sum of Rs. 750/- per hospitalization and overall limit of Rs. 1,500/- per policy period for transportation of the insured person by private ambulance",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "clause_0094",
+          "clause_title": "",
+          "evidence_text_snippet": "r a claim has been admitted by the Company and becomes payable for Death or Permanent Total Disablement, as mentioned in Table of Benefits B1. This would not apply to payment under Educational Grant, Ambulance Charges/Transportation of mortal remains",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0006",
+          "clause_number": "clause_0361",
+          "clause_title": "",
+          "evidence_text_snippet": "19. Turbinoplasty PAYABLE-AMBULANCE FROM HOME TO",
+          "page": 25,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0003",
+          "clause_number": "clause_0105",
+          "clause_title": "",
+          "evidence_text_snippet": "im, in which case the amount payable is 150% of the sum insured. This exclusion will not apply to payments made under medical expenses extension, Hospital cash, Home Convalescence, Educational Grant, Ambulance Charges /Transportation of mortal remain",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0004",
+          "clause_number": "152",
+          "clause_title": "152. AMBULANCE COLLARNOT PAYABLE",
+          "evidence_text_snippet": "152. AMBULANCE COLLARNOT PAYABLE",
+          "page": 24,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0005",
+          "clause_number": "clause_0310",
+          "clause_title": "",
+          "evidence_text_snippet": "153. AMBULANCE EQUIPMENTNOT PAYABLE PAYABLE",
+          "page": 24,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0032",
+          "clause_title": "",
+          "evidence_text_snippet": "I. DEFINITIONS OF WORDS AND EXPRESSIONS In this Policy, the following words and expressions shall have the following meanings, as set forth, unless the context otherwise requires: Accident / Accidental mean a sudden, unf",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_practitioner_qualification",
+          "candidate_score": 0.525,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "ayush_term_in_practitioner_qualification_not_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": null
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "clause_0068",
+          "clause_title": "",
+          "evidence_text_snippet": "2. Upon the happening of any event, which may give rise to a claim under this policy, notice with full particulars shall be sent to the Company within 24 hours from the date of occurrence of the event.",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_intimation_timeline_0001",
+          "clause_number": "clause_0119",
+          "clause_title": "",
+          "evidence_text_snippet": "1. Obligations of the Insured Person: Intimation about an event or occurrence that may give rise to a claim under this policy must be given within 30 days of its happening. Claims for insurance benefits must be submitted to the Company not later than one (1) month after the completion of the treatme",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "clause_0122",
+          "clause_title": "",
+          "evidence_text_snippet": "2. Claims Settlement: Benefits payable under this policy will be paid within 7 days from the time of receipt of all documents the Company requires. Note: In case of delay in payment of any claim that has been admitted as payable under the Policy terms and conditions, beyond the time period as prescr",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [
+        {
+          "candidate_id": "co_pay_0001",
+          "clause_number": "clause_0065",
+          "clause_title": "",
+          "evidence_text_snippet": "curred for treatment of diseases/illness/accidental injuries by system of medicines other than allopathic shall be restricted to 25% of the sum insured subject to a maximum of Rs 25000/- during entire policy period. 21. 10% of each and every claim amount for insured persons beyond 60 years at entry ",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "star_age_based_copay",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0000",
+          "clause_number": "4",
+          "clause_title": "Co-Payment",
+          "evidence_text_snippet": "ifelong renewal subject to payment of renewal premium in full before the due date VIII (11) Renewal Condition Grace period of 30 days for renewing the policy is provided (Section II) VIII (11) Renewal Bonus eligibility: 5% subject to a maximum of 25% of the basic sum insured for every claim free yea",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.97,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "co_pay_0001"
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0003",
+          "clause_number": "clause_0075",
+          "clause_title": "",
+          "evidence_text_snippet": "9. Bonus: The insured person will be eligible for Bonus calculated at 5% of the basic sum insured for every claim free year subject to a maximum of 25% .Such Bonus will be available on that part of the basic sum insured which is continuously renewed without any break. In the event of a claim, the Bo",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "4",
+          "clause_title": "Co-Payment",
+          "evidence_text_snippet": "olicy required you to share the costs Section II this policy Renewal Lifelong renewal subject to payment of renewal premium Condition 4 (8) Grace period of 120 days for renewing the policy is provided (Section I) Lifelong renewal subject to payment of renewal premium in full before the due date VIII",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0001",
+          "clause_number": "clause_0032",
+          "clause_title": "",
+          "evidence_text_snippet": "FINITIONS OF WORDS AND EXPRESSIONS In this Policy, the following words and expressions shall have the following meanings, as set forth, unless the context otherwise requires: Accident / Accidental mean a sudden, unforeseen and involuntary event caused by external visible and violent means. Age means",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0002",
+          "clause_number": "clause_0045",
+          "clause_title": "",
+          "evidence_text_snippet": "V. CUMULATIVE BONUS Compensation payable for an admissible claim for Death or Permanent Total disablement arising out of accidental injuries shall be increased by 5% thereof in respect of each completed year during which the policy shall have been in force prior to the occurrence of an accident for ",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_with_pct",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0002"
+    },
+    "deductible": {
+      "provenance": [
+        {
+          "candidate_id": "deductible_0000",
+          "clause_number": "clause_0072",
+          "clause_title": "",
+          "evidence_text_snippet": "6. If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two policy periods, including the deductibles for each policy period. Such eligible claim amount to be payable to the insured shall be reduced to the extent of p",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "deductible",
+          "pattern_id": "deductible_schedule_dependent",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "deductible_0000"
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0076",
+          "clause_title": "",
+          "evidence_text_snippet": "10. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisfied with the terms and conditions, the",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "free_look_period_0001",
+          "clause_number": "clause_0129",
+          "clause_title": "",
+          "evidence_text_snippet": "5. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisfied with the terms and conditions, the",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "4",
+          "clause_title": "Co-Payment",
+          "evidence_text_snippet": "days for renewing the policy is provided (Section I) Lifelong renewal subject to payment of renewal premium in full before the due date VIII (11) Renewal Condition Grace period of 30 days for renewing the policy is provided (Section II) VIII (11) Renewal Bonus eligibility: 5% subject to a maximum of",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0002",
+          "clause_number": "clause_0074",
+          "clause_title": "",
+          "evidence_text_snippet": "difference. In other words the enhanced sum insured will not be available for an illness, disease, injury already contracted under the preceding policy periods. A grace period of 30 days from the date of expiry of the policy is available for renewal. If renewal is made within this 30 days period the",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0003",
+          "clause_number": "clause_0074",
+          "clause_title": "",
+          "evidence_text_snippet": "ury already contracted under the preceding policy periods. A grace period of 30 days from the date of expiry of the policy is available for renewal. If renewal is made within this 30 days period the continuity of benefits will be allowed. However the actual period of cover will start only from the d",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "4",
+          "clause_title": "Co-Payment",
+          "evidence_text_snippet": "case of a claim, this policy required you to share the costs Section II this policy Renewal Lifelong renewal subject to payment of renewal premium Condition 4 (8) Grace period of 120 days for renewing the policy is provided (Section I) Lifelong renewal subject to payment of renewal premium in full b",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.79,
+          "confidence": 0.58,
+          "accepted": false,
+          "rejection_reason": "non_primary_grace_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0001"
+    },
+    "icu_limit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "clause_0048",
+          "clause_title": "",
+          "evidence_text_snippet": "2. Any disease contracted by the insured person during the first 30 days from the commencement date of the policy. This exclusion shall not apply in case of the insured person having been covered under any health insurance policy (Individual or Group insurance policy) with any of the Indian Insuranc",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [
+        {
+          "candidate_id": "maternity_waiting_0000",
+          "clause_number": "clause_0094",
+          "clause_title": "",
+          "evidence_text_snippet": "6. Where a claim for less than 100% of the Sum Insured is admitted / admissible, the coverage under the policy will continue until expiry for the balance sum insured and Company would exclude such disability on renewal in respect of such relevant per",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_excluded",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "maternity_waiting_0000"
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "clause_0047",
+          "clause_title": "",
+          "evidence_text_snippet": "1. Pre Existing Diseases as defined in the policy until 48 consecutive months of continuous coverage have elapsed, since inception of the first policy with any Indian Insurer. However the limit of the Company's liability in respect of claim for pre-existing diseases under such portability shall be l",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "clause_0049",
+          "clause_title": "",
+          "evidence_text_snippet": "for Uterine prolapse, Dysfunctional Uterine Bleeding, Fibroids, Pelvic Inflammatory Diseases, all diseases of fallopian tubes and ovaries, d. Conservative and operative treatment of joint diseases [other than caused by accident] preceding 24 months policy only and where there is a change in the sum ",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.87,
+          "confidence": 0.74,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0000"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "4",
+          "clause_title": "Co-Payment",
+          "evidence_text_snippet": "Pre-heading body text 4. Co-Payment No cost sharing Loss Sharing applicable for In case of a claim, this policy required you to share the costs Section II this policy Renewal Lifelong renewal subject to payment of renewal premium Condition 4 (8) Grace period of 120 days for renewing the policy is pr",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0074",
+          "clause_title": "",
+          "evidence_text_snippet": "8. Renewal: The policy will be renewed except on grounds of misrepresentation / fraud committed, non-disclosure of material facts as declared in the proposal form. If the policy is to be renewed or ported from other Indian Insurance Company for enhanced sum insured then the waiting period as applica",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0076",
+          "clause_title": "",
+          "evidence_text_snippet": "10. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisfied with the terms and conditions, the insured may seek cancellation of the policy and in such an ",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "clause_0129",
+          "clause_title": "",
+          "evidence_text_snippet": "5. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisfied with the terms and conditions, the insured may seek cancellation of the policy and in such an e",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [
+        {
+          "candidate_id": "restoration_benefit_0000",
+          "clause_number": "clause_0004",
+          "clause_title": "",
+          "evidence_text_snippet": "xpenses incurred up to 60 days after discharge from the hospital 1.0 (F) covered for e Day-Care procedures- Medical Expenses for enlisted 101 Day care procedures Attached Section I f Cost of engaging one attendant Rs.400/- per day for each completed day 1.0 (H) g Cash benefit for each completed day ",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "restoration_benefit_0001",
+          "clause_number": "clause_0078",
+          "clause_title": "",
+          "evidence_text_snippet": "12. Automatic restoration of sum insured It is made clear that such restored sum insured can be utilized only for illness /disease directly or remotely unrelated to the illness /diseases for which claim/s was /were made. This facility is not available for Family Package Plan. Further, this restorati",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "restoration_benefit_0002",
+          "clause_number": "clause_0083",
+          "clause_title": "",
+          "evidence_text_snippet": "lth check- up benefit will be calculated on the policy sum insured and equally divided among all the insured persons. • Where any insured member has made a claim then he/she would not be eligible for his/her share of Health check-up benefit. However the other insured members can avail the health che",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "restoration_benefit_0000"
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "clause_0027",
+          "clause_title": "",
+          "evidence_text_snippet": "1.0. COVERAGE A) Room, boarding, nursing expenses as provided by the Hospital / Nursing Home at 2% of the Sum Insured, subject to a maximum of Rs.5,000/- per day B) Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees. C) Anesthesia, blood, oxygen, operation theatre charges, surg",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.9175,
+          "confidence": 0.985,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "I",
+          "clause_title": "Cash Beneﬁt of Rs 1000/-for each completed day of hospitalization subject to a maximum of 7 days per",
+          "evidence_text_snippet": "shall lie with the Company where the admission is for physiotherapy and/or any epidemic Note: Benefits given under H and I above are optional and effective only if specifically opted for and shown in the Policy Schedule. Where Package rates are charged by the hospitals the Post-Hospitalization benef",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "clause_0049",
+          "clause_title": "",
+          "evidence_text_snippet": "3. During the First two Years of continuous operation of insurance cover, a. The expenses for treatment of cataract, glaucoma, retinal detachment/ macular degeneration, prolapse of intervertebral disc (other than caused by accident), varicose veins and varicose ulcers, benign prostatic hypertrophy, ",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_single",
+          "candidate_score": 0.96,
+          "confidence": 0.92,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0000"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

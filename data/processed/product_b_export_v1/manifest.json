@@ -1,0 +1,318 @@
+{
+  "schema_version": "product_b_handoff_manifest.v1",
+  "created_at": "2026-06-05T07:04:14Z",
+  "source_export_root": "data/export",
+  "gold_corpus": "gold_corpus",
+  "policy_count": 20,
+  "export_schema_version": "1.0",
+  "ontology_version": "1.0.0",
+  "package_scope": "benchmark_20_reviewed",
+  "policies": [
+    {
+      "policy_id": "aditya_birla_activ_care",
+      "insurer": "Aditya Birla",
+      "plan_name": "Active Care",
+      "uin": "ADIHLIP20001V011920",
+      "uin_base": "ADIHLIP20001",
+      "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+      "export_path": "benchmark_20_reviewed/aditya_birla_activ_care/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.8,
+      "status_counts": {
+        "not_found": 4,
+        "present": 16
+      }
+    },
+    {
+      "policy_id": "bajaj_allianz_silver_health",
+      "insurer": "Bajaj Allianz",
+      "plan_name": "Silver Health",
+      "uin": "BAJHLIP22192V032122",
+      "uin_base": "BAJHLIP22192",
+      "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+      "export_path": "benchmark_20_reviewed/bajaj_allianz_silver_health/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.85,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 3,
+        "present": 16
+      }
+    },
+    {
+      "policy_id": "care_health_care_plus",
+      "insurer": "Care Health",
+      "plan_name": "Care Plus",
+      "uin": "CHIHLIP22047V012122",
+      "uin_base": "CHIHLIP22047",
+      "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+      "export_path": "benchmark_20_reviewed/care_health_care_plus/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 1.0,
+      "status_counts": {
+        "present": 20
+      }
+    },
+    {
+      "policy_id": "cholamandalam_flexi_max_protect",
+      "insurer": "Cholamandalam",
+      "plan_name": "Flexi Max Protect",
+      "uin": "CHOHLIP21017V012122",
+      "uin_base": "CHOHLIP21017",
+      "file_hash": "sha256:92f450a5307b0a323d54739ecc0ef064efa1ddf1dcda5eeabd1f837a49a64a29",
+      "export_path": "benchmark_20_reviewed/cholamandalam_flexi_max_protect/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.25,
+      "status_counts": {
+        "not_found": 15,
+        "present": 5
+      }
+    },
+    {
+      "policy_id": "future_generali_health_elite",
+      "insurer": "Future Generali",
+      "plan_name": "FG Health Elite",
+      "uin": "FGIHLIP22234V012122",
+      "uin_base": "FGIHLIP22234",
+      "file_hash": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
+      "export_path": "benchmark_20_reviewed/future_generali_health_elite/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.9,
+      "status_counts": {
+        "not_found": 2,
+        "present": 18
+      }
+    },
+    {
+      "policy_id": "hdfc_ergo_arogya_sanjeevani",
+      "insurer": "HDFC ERGO",
+      "plan_name": "Arogya Sanjeevani Policy, HDFC ERGO",
+      "uin": "HDFHLIP20175V011920",
+      "uin_base": "HDFHLIP20175",
+      "file_hash": "sha256:88ea70b71626ba1eed81e1237eda4b343c2f9c6a69c035ada1e8dacdff66baa0",
+      "export_path": "benchmark_20_reviewed/hdfc_ergo_arogya_sanjeevani/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.75,
+      "status_counts": {
+        "not_found": 5,
+        "present": 15
+      }
+    },
+    {
+      "policy_id": "icici_lombard_family_shield",
+      "insurer": "ICICI Lombard",
+      "plan_name": "Family Shield",
+      "uin": "ICIHLIP22092V032122",
+      "uin_base": "ICIHLIP22092",
+      "file_hash": "sha256:26a06e80f2a38dc23e4cdb61ad08164d3be374837517f5019fc59fc2fcf836f7",
+      "export_path": "benchmark_20_reviewed/icici_lombard_family_shield/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.55,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 9,
+        "present": 10
+      }
+    },
+    {
+      "policy_id": "iffco_tokio_health_protector",
+      "insurer": "IFFCO Tokio",
+      "plan_name": "Health Protector",
+      "uin": "IFFHLIP22197V042122",
+      "uin_base": "IFFHLIP22197",
+      "file_hash": "sha256:c42ebefc9c4b2534531167ee4cf5332f5100e59f5d5cf206a96545f0ee4cc0d0",
+      "export_path": "benchmark_20_reviewed/iffco_tokio_health_protector/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.75,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 5,
+        "present": 14
+      }
+    },
+    {
+      "policy_id": "kotak_mahindra_health_premier",
+      "insurer": "Kotak Mahindra",
+      "plan_name": "Kotak Health premier",
+      "uin": "KOTHLIP21065V032021",
+      "uin_base": "KOTHLIP21065",
+      "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+      "export_path": "benchmark_20_reviewed/kotak_mahindra_health_premier/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.9,
+      "status_counts": {
+        "not_found": 2,
+        "present": 18
+      }
+    },
+    {
+      "policy_id": "liberty_critical_connect",
+      "insurer": "Liberty",
+      "plan_name": "Critical Connect",
+      "uin": "LIBHLIP20100V011920",
+      "uin_base": "LIBHLIP20100",
+      "file_hash": "sha256:d67327b2dae287d0c2ac6bcd3e67416f33266aa6e75d06a23a704e37539e2940",
+      "export_path": "benchmark_20_reviewed/liberty_critical_connect/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.35,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 13,
+        "present": 6
+      }
+    },
+    {
+      "policy_id": "new_india_floater_mediclaim",
+      "insurer": "New India Assurance",
+      "plan_name": "New India Floater Mediclaim Policy",
+      "uin": "NIAHLIP21278V042021",
+      "uin_base": "NIAHLIP21278",
+      "file_hash": "sha256:370da97a7f00e88244cb372b512ea9d76b653c742a06018d4fb0faf5f47a3885",
+      "export_path": "benchmark_20_reviewed/new_india_floater_mediclaim/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.85,
+      "status_counts": {
+        "not_found": 3,
+        "present": 17
+      }
+    },
+    {
+      "policy_id": "niva_bupa_health_recharge",
+      "insurer": "Niva Bupa",
+      "plan_name": "Health Recharge",
+      "uin": "NBHHLIP22156V032122",
+      "uin_base": "NBHHLIP22156",
+      "file_hash": "sha256:8e692c4c84b8eb44c403268ff99d85035daf5b92571e852d22d2e4e5bfee39f9",
+      "export_path": "benchmark_20_reviewed/niva_bupa_health_recharge/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.8,
+      "status_counts": {
+        "not_found": 4,
+        "present": 16
+      }
+    },
+    {
+      "policy_id": "oriental_cancer_protect",
+      "insurer": "Oriental",
+      "plan_name": "Cancer Protect",
+      "uin": "OICHLIP21007V012122",
+      "uin_base": "OICHLIP21007",
+      "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+      "export_path": "benchmark_20_reviewed/oriental_cancer_protect/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.4,
+      "status_counts": {
+        "not_found": 12,
+        "present": 8
+      }
+    },
+    {
+      "policy_id": "reliance_health_gain",
+      "insurer": "Reliance",
+      "plan_name": "Health Gain",
+      "uin": "RELHLIP22229V032122",
+      "uin_base": "RELHLIP22229",
+      "file_hash": "sha256:4b267dc869ff83f35e3a8ba9fe7b0958cf44c86a9cbedcbec3f8f7c999fc7176",
+      "export_path": "benchmark_20_reviewed/reliance_health_gain/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.9,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 2,
+        "present": 17
+      }
+    },
+    {
+      "policy_id": "royal_sundaram_advanced_topup",
+      "insurer": "Royal Sundaram",
+      "plan_name": "Advanced Topup Health Insurance",
+      "uin": "RSAHLIP23029V012223",
+      "uin_base": "RSAHLIP23029",
+      "file_hash": "sha256:7c0b3047bea21f2c84135108cad9504750419de285c85d52f1185e9cafd505a2",
+      "export_path": "benchmark_20_reviewed/royal_sundaram_advanced_topup/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.75,
+      "status_counts": {
+        "not_found": 5,
+        "present": 15
+      }
+    },
+    {
+      "policy_id": "sbi_general_arogya_sanjeevani",
+      "insurer": "SBI General",
+      "plan_name": "Arogya Sanjeevani",
+      "uin": "SBIHLIP20180V011920",
+      "uin_base": "SBIHLIP20180",
+      "file_hash": "sha256:9068d3b9c53eb86b2f3f8ac9d15565daa69746a738d978e029edaa82c98f3fc7",
+      "export_path": "benchmark_20_reviewed/sbi_general_arogya_sanjeevani/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.75,
+      "status_counts": {
+        "not_found": 5,
+        "present": 15
+      }
+    },
+    {
+      "policy_id": "star_medi_classic_accident_care_individual",
+      "insurer": "Star Health",
+      "plan_name": "Medi Classic Accident Care Individual Insurance Policy",
+      "uin": "SHAHLIP18029V031718",
+      "uin_base": "SHAHLIP18029",
+      "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+      "export_path": "benchmark_20_reviewed/star_medi_classic_accident_care_individual/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.75,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 5,
+        "present": 14
+      }
+    },
+    {
+      "policy_id": "tata_aig_arogya_sanjeevani",
+      "insurer": "Tata AIG",
+      "plan_name": "Arogya Sanjeevani",
+      "uin": "TATHLIP20169V011920",
+      "uin_base": "TATHLIP20169",
+      "file_hash": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
+      "export_path": "benchmark_20_reviewed/tata_aig_arogya_sanjeevani/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.65,
+      "status_counts": {
+        "not_found": 7,
+        "present": 13
+      }
+    },
+    {
+      "policy_id": "united_india_individual_health",
+      "insurer": "United India",
+      "plan_name": "Individual Health Insurance Policy - Platinum / Gold / Senior Citizen",
+      "uin": "UIIHLIP22180V042122",
+      "uin_base": "UIIHLIP22180",
+      "file_hash": "sha256:f3a39815f349484238068d82d1047cceb32ba5cf2d0bded94960f5627abe4803",
+      "export_path": "benchmark_20_reviewed/united_india_individual_health/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.8,
+      "status_counts": {
+        "explicitly_not_covered": 1,
+        "not_found": 4,
+        "present": 15
+      }
+    },
+    {
+      "policy_id": "universal_sompo_loan_secure",
+      "insurer": "Universal Sompo",
+      "plan_name": "Loan Secure",
+      "uin": "UNIHLIP22139V032122",
+      "uin_base": "UNIHLIP22139",
+      "file_hash": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
+      "export_path": "benchmark_20_reviewed/universal_sompo_loan_secure/policy_features.json",
+      "feature_count": 20,
+      "fill_rate": 0.25,
+      "status_counts": {
+        "not_found": 15,
+        "present": 5
+      }
+    }
+  ]
+}

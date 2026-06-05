@@ -1,0 +1,356 @@
+{
+  "policy_id": "oriental_cancer_protect",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Oriental_Oriental_Cancer_Protect.pdf",
+    "file_hash": "sha256:0c2106ccc82088786c719256f9b7fa964a3b691d427adf22b3388e47874ed6af",
+    "source_domain": "policy_wording",
+    "page_count": 44
+  },
+  "product_identity": {
+    "insurer": "Oriental",
+    "plan_name": "Cancer Protect",
+    "display_name": "Oriental Cancer Protect",
+    "uin": "OICHLIP21007V012122",
+    "uin_base": "OICHLIP21007",
+    "product_version": 1,
+    "effective_date": "08-04-2021",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 3000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "2. COVERAGE/BENEFITS vi. Road Ambulance Cover a)For Sum Insured of 5, 10 and 15 Lakhs – INR 3000/- per Hospitalization or actuals, whichever is less b)For Sum Insured of 20, 25 and 50 Lakhs - INR 5000/- per Hospitalization or actuals whiche",
+      "evidence_page": 1,
+      "evidence_clause": "VI",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "claim_intimation_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "5.6 CLAIMS PROCEDURE: ii. The Company shall settle the claim within 30 days from the date of the receipt of last/Final necessary documents in accordance with the provisions of Regulation 27 of IRDAI (Health Insurance) Regulations, 2016.",
+      "evidence_page": 21,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 5,
+        "maximum_percent": 50,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "2.12 CUMULATIVE BONUS: The Sum Insured under Policy shall be increased by 5% at each renewal in respect of each claim free year of Insurance, subject to maximum of 50%. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it is accrued. Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case Sum Insured under the policy is reduced at the time of renewal, the percentage of Cumulative Bonus shall be applicable on s",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0067",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it is accrued. Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case Sum Insured under the policy is reduced at the time of renewal, the percentage of Cumulative Bonus shall be applicable on such reduced Sum Insured",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0067",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "coverage_status": "actuals"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "2. COVERAGE/BENEFITS iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home.",
+      "evidence_page": 1,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "2. COVERAGE/BENEFITS x. Organ Donor Expenses – When Insured Person Within the aggregate of the Sum Insured and is Recipient Cumulative Bonus, if any, of the Insured Person receiving the organ. ** Detailed terms & conditions as per Clause 2.6 PRE AND ",
+      "evidence_page": 1,
+      "evidence_clause": "X",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "3.21 ILLNESS: 3.47 RENEWAL means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+      "evidence_page": 15,
+      "evidence_clause": "3.47",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "components": [
+          {
+            "condition": "sum_insured_5_10_15_lakh",
+            "percentage": 1,
+            "unit": "percent_of_sum_insured_per_day",
+            "max_amount": 10000,
+            "currency": "INR"
+          },
+          {
+            "condition": "sum_insured_20_25_50_lakh",
+            "percentage": 1,
+            "unit": "percent_of_sum_insured_per_day",
+            "max_amount": 25000,
+            "currency": "INR"
+          }
+        ]
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "2. COVERAGE/BENEFITS ii. Room, Boarding and Nursing Expenses as a) For Sum Insured of 5, 10 and 15 Lakhs - 1% provided by the Hospital /Nursing Home of Sum Insured subject to maximum of INR including nursing care, RMO charges,BMW 10000/- per Day or actual expenses incurred, Charges, IV Fluids/Blood whichever is less transfusion/injection & administration b) For Sum Insured o",
+      "evidence_page": 1,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_oriental_cancer_protect_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    }
+  },
+  "unresolved_concepts": [
+    "ayush_coverage",
+    "claim_intimation_timeline",
+    "co_pay",
+    "deductible",
+    "free_look_period",
+    "initial_waiting_period",
+    "maternity_waiting",
+    "modern_treatment_coverage",
+    "newborn_coverage",
+    "ped_waiting_period",
+    "restoration_benefit",
+    "specific_disease_waiting_periods"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 8,
+    "concepts_not_found": 12,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.4,
+    "average_confidence": 0.96
+  }
+}

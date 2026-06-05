@@ -1,0 +1,370 @@
+{
+  "policy_id": "future_generali_health_elite",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Future_Generali_Health_Elite_IRDAI.pdf",
+    "file_hash": "sha256:41c79923d5061906357fc4499c121ce2e30bffc30d04714fc1b45096372b5394",
+    "source_domain": "policy_wording",
+    "page_count": 38
+  },
+  "product_identity": {
+    "insurer": "Future Generali",
+    "plan_name": "FG Health Elite",
+    "display_name": "Future Generali FG Health Elite",
+    "uin": "FGIHLIP22234V012122",
+    "uin_base": "FGIHLIP22234",
+    "product_version": 1,
+    "effective_date": "31-03-2022",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 50000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text 3 Emergency Ambulance In Base Sum Insured 1. Up To Rs 50,000 For Road Ambulance Expenses (Within India And 2. Up To Rs 5,00,000 For Air Ambulance Outside India)",
+      "evidence_page": 24,
+      "evidence_clause": "3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_ambulance_coverage_0012_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text iii. Organ donor expenses shall not be covered under Benefit 2 (Medical Treatment Abroad). Benefit 11. Day Care Treatment Expenses We will pay the Reasonable and Customary Charges up to the sub-Limit specified in the Schedule of",
+      "evidence_page": 10,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_ayush_coverage_0004_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 48
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "on request is denied by Us or if treatment is taken in a Hospital other than a Network Provider or if You/ Insured Person does not wish to avail of the Cashless Facility, then: (i) We must be given Notification of Claim in writing immediately and in any event within 48 hours of the diagnosis of/sustaining the Illness or Injury. The Insured Person must immediately consult a Medical Practitioner and follow the medical advice and treatment that he/she recommends. (ii) The Insured Person must take reasonable steps or measures in good",
+      "evidence_page": 20,
+      "evidence_clause": "1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30,
+        "investigation_days": 45
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "body text 11. Claim settlement (provisions on Penal Interest) i. Our Claims team will scrutinize the claims on the receipt of the last necessary documents specified in Section V.2.C.1. ii. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document. iii. ln the case of delay in the payment of a claim, the Company shall be liable to pay interest to the policyholder from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the Bank Rate. iv. However, where the circumstances of a claim warrant an investigation in the opinion of the Company, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. ln such cases, the Company shall settle or reject the claim within 45 days from the date of receipt of last necessary document.",
+      "evidence_page": 22,
+      "evidence_clause": "11",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 20
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "essarily incurred by the Insured Person for treatment of the Insured Person outside India, in the manner specified and subject to the terms and conditions below. All claims admitted under this Benefit will be subject to 20% Co-payment.",
+      "evidence_page": 4,
+      "evidence_clause": "X",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 10,
+        "maximum_percent": 100,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text iv. Uncontrolled Type2 Diabetes The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. B. Renewal Cover The additional Benefits available under the Policy are listed below and shall be available to all Insured Persons upon Renewal, with no additional premium payable, in accordance with the procedures set out in this Policy. Benefit 22. Cumulative Bonus Cumulative Bonus will be increased by 10% in respect of each claim free policy year (where no claims are reported) with the exception of any claim under Benefit 4 (OPD treatment ) and Benefit 23 (Wellness Benefits), provided the policy is renewed with Us without a break subject to maximum of 100% of the sum insured under the current policy year. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it has accrued. However, Sum Insured will be maint",
+      "evidence_page": 12,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_cumulative_bonus_ncb_0001_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy.. The Insured Person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. lf the insured has not made any claim during the Free",
+      "evidence_page": 17,
+      "evidence_clause": "3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy.",
+      "evidence_page": 23,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_grace_period_0001_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "schedule_of_benefits"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text ii. ICU Charges",
+      "evidence_page": 4,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "inter vertebral disc unless arising from Accident m) Surgery of varicose veins and varicose ulcers n) Any types of gastric or duodenal ulcers o) Stones in the urinary and biliary systems p) Surgery on ears and tonsils. q) Genetic Disorders 30 days waiting period Excl -03 c) a) Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due c) The within referred waiting period is made applicable to t",
+      "evidence_page": 15,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": 48,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "ses) and Benefit 2.1 (Listed Critical illness treatment), for up to 180 days immediately following the Insured Person’s discharge from Hospital. The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. Benefit 9. Maternity Expenses under the Policy in respect of You and Your Spouse and provided that at least 24 months of continuous coverage has elapsed from the inception of the first Policy with Us. If only You are covered and Your Spouse is not covered under the Policy, this Benefit will be applicable provided that We have received at least 5 continuous b) annual premiums under the Policy in respect of You and provided that at least 48 months of continuous coverage have elapsed from",
+      "evidence_page": 9,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": {
+        "coverage_status": "conditional"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "le in case Benefit 25 (Treatment including US & Canada) is opted. Benefit 15. Child Vaccination Benefits We will pay the Reasonable and Customary Charges incurred by the Insured Person for vaccinations of the Insured Person up to the per annum sub-limit specified The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. Benefit 16. Newborn Baby Expenses If We have accepted a claim under Benefit 9 (Maternity Expenses), then We will also pay the Reasonable and Customary Charges incurred by the Insured Person during the Policy Year towards the following: a) Medical Expenses incurred towards the Medically Necessary Treatment of the Insured Person’s Newborn Baby while the Insured Person is Hospitalized for delivery and We will cover the Newborn Baby until the expir",
+      "evidence_page": 10,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_newborn_coverage_0000_evidence"
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text ii. Expenses incurred by the Insured Person for medical treatment for the below conditions: (i) Asthma, Bronchitis, Tonsillitis and Upper Respiratory Tract Infection including Laryngitis and Pharyngitis, cough and cold or Influe",
+      "evidence_page": 9,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 24,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text i. Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with Us.",
+      "evidence_page": 15,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_ped_waiting_period_0005_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text 42. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+      "evidence_page": 3,
+      "evidence_clause": "42",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": {
+        "coverage_status": "covered",
+        "percentage": 100
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text 24 Restoration Of The Sum Additional Sum Insured Up To 100% Of Base SI Applicable to all the subsequent claims in the current policy year Insured but for different/unrelated illness only",
+      "evidence_page": 24,
+      "evidence_clause": "24",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_restoration_benefit_0001_evidence"
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "schedule_of_benefits"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text i. Reasonable and Customary Charges for Room Rent for accommodation in Hospital room and other boarding charges",
+      "evidence_page": 4,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24,
+          48
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.92,
+      "method": "deterministic",
+      "evidence": "pay the Reasonable and Customary Charges for Pre- hospitalization Medical Expenses that are incurred by the Insured Person related to any claim admitted under Benefit 1 (Hospitalization Expenses) and Benefit 2.1 (Listed Critical illness treatment), for up to 60 days immediately prior to the date of the Insured Person’s admission to Hospital. The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. Benefit 8. Post-hospitalization Medical Expenses We will pay the Reasonable and Customary Charges for Post- hospitalization Medical Expenses that are incurred by the Insured Person related to any claim admitted under Benefit 1 (Hospitalization Expenses) and Benefit 2.1 (Listed Critical illness treatment), for up to 180 days immediately following the Insured Person’s discharge from Hospital. The specific terms and conditions applicable to this Benefit are: a) This Benefit is available within the geographical territory of India only. Benefit 9. Maternity Expenses under the Policy in respect of You and Your Spouse and provided that at least 24 months of continuous coverage has elapsed from the inception of the first Policy with Us. If only You are covered and Your Spouse is not covered under the Policy, this Benefit will be applicable provided that We have received at least 5 continuous b) annual premiums under the Policy in respect of You and provided that at least 48 months of continuous coverage have elapsed from the inception of the first Policy with Us. Our maximum liability per pregnancy (delivery/termination) will be subject to the sub-limit specified in the Schedule of Benefits. c) We will cover Reasonable and Customary Charges incurred by the Insured Person for Pre- Natal Medical Expenses incurred on Hospitalization for a period d) of 90 days immediately prior to the date of delivery, and the Reasonable and Customary Charges incurred by the Insured Person for Post-Natal Medical Expenses incurred on Hospitalization for up to a period of 45 days immediately following the date of delivery. The charges covered under this clause are restricted up to the sub limit specified against this Benefit in the Schedule of Benefits. We will also cover the Medical Expenses incurred towards Miscarriage and lawful me",
+      "evidence_page": 9,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_future_generali_health_elite_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "deductible",
+    "modern_treatment_coverage"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 18,
+    "concepts_not_found": 2,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.9,
+    "average_confidence": 0.95
+  }
+}

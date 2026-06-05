@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-06-05 (DSE-023 — Packet 3: Final Handoff Acceptance)
+
+### Added
+- `runs/evals/2026-06-05-export-dse023-final.json` — final export eval artifact.
+- `data/processed/product_b_export_v1/` — Product B handoff package for the reviewed 20-policy benchmark.
+
+### Changed
+- `docs/tasks.md` — DSE-023 marked `done`.
+- `docs/evaluation.md` — Derived Export eval marked active with DSE-023 final results.
+- `runs/sessions/2026-06-05-product-b-export-v1.md` — final closeout appended.
+
+### Final Metrics
+- 20/20 reviewed policies exported.
+- 20/20 concept fields per policy.
+- Schema validation errors: 0.
+- Present facts missing evidence: 0.
+- Evidence span IDs missing from DB: 0.
+- False present: 0.
+- Gold status accuracy: 97.8%.
+- Gold value accuracy: 98.2%.
+- Full pytest: 480/480 passed.
+
 ## 2026-06-05 (DSE-023 — Packet 2: Handoff Package Builder)
 
 ### Added

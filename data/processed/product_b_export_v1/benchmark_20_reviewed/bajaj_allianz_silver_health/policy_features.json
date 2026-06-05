@@ -1,0 +1,366 @@
+{
+  "policy_id": "bajaj_allianz_silver_health",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Bajaj_Silver_Health_Full_IRDAI.pdf",
+    "file_hash": "sha256:ce1f8dce257c6ef5c23b2406648f219fd359d2187e5c4a6c6a02baa95b43b472",
+    "source_domain": "policy_wording",
+    "page_count": 33
+  },
+  "product_identity": {
+    "insurer": "Bajaj Allianz",
+    "plan_name": "Silver Health",
+    "display_name": "Bajaj Allianz Silver Health",
+    "uin": "BAJHLIP22192V032122",
+    "uin_base": "BAJHLIP22192",
+    "product_version": 3,
+    "effective_date": "01-04-2021",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 1000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3. Road Ambulance (Applicable for Plan A & Plan B) We will pay the reasonable cost to a maximum of Rs. 1000/- per claim incurred on an ambulance offered by a healthcare or ambulance service provider for transferring Yo",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0108",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "4. AYUSH Day Care Centre: AYUSH Day Care Centre means and includes Community Health Centre (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local authorities, wherever applicabl",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0068",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_ayush_coverage_0002_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 24
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "4. Claims Procedure iv. In case any treatment or procedure is to be taken on an Emergency basis, You or Your representative must intimate Us in writing immediately within 24 hours of hospitalization. B. Reimbursement Claims Procedure: If Pre-authorisation as per Cashless Claims Procedure above is denied by Us or if treatment is taken in a Hospital other than a Network Hospital or if You do not wish to avail cashless facility, then",
+      "evidence_page": 18,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "3. Claim Settlement. (provision for Penal interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+      "evidence_page": 13,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 20
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "7. Cost Sharing and Sub limits ii. Cost Sharing: This policy is subject to Cost sharing mentioned below; Plan A Plan B 20% co-payment PED co-payment NA (Note: Each and every admissible claim arising out of Pre-Existing Diseases) 10% co-payment Co-payment on all other NA (Each and every admissible claim, other claims (other than PED) than PE",
+      "evidence_page": 19,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 10,
+        "maximum_percent": 100,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "The Company hereby agrees to pay reasonable and customary expenses in respect of an admissible claim, any or all of the following covers subject to the Sum Insured, sub-limits, terms, conditions and definitions, exclusions contained or otherwise expressed in this Policy. Silver Health Features Plan A Plan B Entry age Min 46 Years Entry age Max 80 Years Renewal age Life Long Family definition Self and Spouse Self + Spouse + Parents/Parents-in-law Sum insured type Individual Individual & Floater Cumulative bonus 10%, Max upto 100% 50,000 / 1 Lacs /1.5 Lacs / 2 Lacs / Sum Insured 3 Lacs / 5 Lacs / 7.5 Lacs / 10 Lacs",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0053",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "SECTION A) PREAMBLE Whereas the insured described in the Policy Schedule hereto (hereinafter called the ‘Insured’) has made to Bajaj Allianz General Insurance Company ) a proposal Limited (hereinafter called the “Company” or “Insurer”or “Insurance Company” or Proposal as mentioned in the transcript of the Proposal, which shall be the basis of this Contract a",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0000",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_deductible_0000_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "mium received on annual basis or full premium received at policy inception are as under  Premium Refund Policy Period in Risk Policy Period 1 Policy Period 2 Period 3 Year Year Year Within 15 Days As per Free Look Period Condition Exceeding 15 days but less than or equal to 3 65.00% 75.00% 80.00% months Exceeding 3 months but less than or equal to 6 45.00% 65.00% 75.00% months Exceed",
+      "evidence_page": 14,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "10. Renewal of Policy iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+      "evidence_page": 15,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "coverage_status": "actuals"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or Preventive Health Check Up After every 4 Claim Free Year max 5000 Whichever is lower Modern Treatment Methods and Covered, up to 50% of Sum Insured or Maximu",
+      "evidence_page": 7,
+      "evidence_clause": "3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "periods shall apply. Note: If You switch from existing Silver Health policy to Plan B of the Silver Health Policy, the above listed procedure will be covered only after completion of 48 consecutive months under the Silver Health Policy. 4. 30-day waiting period (Excl03) a) Expenses related to the treatment of any illness within 30 days from the first Policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This exclusion",
+      "evidence_page": 11,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": {
+        "covered": false
+      },
+      "unit": "months",
+      "fact_status": "explicitly_not_covered",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "14. Maternity (Excl 18) : Medical Treatment Expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy. UIN- BAJHLIP22192V032122) Silver Health (/Policy Wording/",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0163",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "coverage_status": "covered",
+        "limit_percent_of_sum_insured": 50
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or Preventive Health Check Up After every 4 Claim Free Year max 5000 Whichever is lower Modern Treatment Methods and Covered, up to 50% of Sum Insured or Maximum upto 5 Lacs whichever is lower Advancement in Technologies Domiciliary Expense Not Covered Covered up to 10% of Sum Insured",
+      "evidence_page": 7,
+      "evidence_clause": "3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": 12,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "1. Pre-existing Diseases waiting period (Excl01) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver Health Policy with us. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the extent of Sum Insured increase. c) If the Insured is continuousl",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0120",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_ped_waiting_period_0002_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "42. Renewal Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+      "evidence_page": 5,
+      "evidence_clause": "clause_0035",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "coverage_status": "actuals",
+        "room_category": "single_private_air_conditioned_room"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "SECTION C) COVERAGE 3 Lacs / 4 Lacs / 5 Lacs Room Rent Actual Up to Single Private Air Conditioned room ICU Charges Actual Pre Hospitalization 30 Days 3% of hospital expenses Post Hospitalization 60 Days Road Ambulance 1000 Per claim Day Care Procedures Covered After every 2 Year, Limit upto 1% or Preventive Health Check Up After every 4 Claim Free Year max 5000 Whichever is lower Modern Treatm",
+      "evidence_page": 7,
+      "evidence_clause": "3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          12
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. Specified disease/procedure waiting period (Excl02) (Applicable for Plan A & Plan B) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 12 months of continuous coverage after the date of inception of the first Silver Health Policy with Us. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of Sum Insured the exclusion shall apply afresh to the",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0121",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_bajaj_allianz_silver_health_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "newborn_coverage",
+    "organ_donor_coverage",
+    "restoration_benefit"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 17,
+    "concepts_not_found": 3,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.85,
+    "average_confidence": 0.96
+  }
+}

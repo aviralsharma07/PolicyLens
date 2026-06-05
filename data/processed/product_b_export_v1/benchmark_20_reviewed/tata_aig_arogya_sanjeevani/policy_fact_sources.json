@@ -1,0 +1,836 @@
+{
+  "policy_id": "tata_aig_arogya_sanjeevani",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0007",
+          "clause_title": "",
+          "evidence_text_snippet": "Section 2 -Benefits Ambulance subject to a maximum of Rs.2000/-per hospitalisation. The covers listed below are in-built Policy benefits and shall be available to all Insured",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0003",
+          "clause_number": "II",
+          "clause_title": "Intensive Care Unit (ICU)/ Intensive",
+          "evidence_text_snippet": "Note: ii.Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) expenses We will cover Medical Expenses incurred up to 5% of sum insured subject to for treatment as In-Patient or Day Care maximum of Rs.10,000/-per day. Treatment in an AYUSH Ho",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0004",
+          "clause_number": "III",
+          "clause_title": "Surgeon, Anesthetist, Medical",
+          "evidence_text_snippet": "Note: iii.Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist This benefit shall also cover Pre­ Fees whether paid directly to the Hospitalization medical expenses for a treating doctor / surgeon or to the period of upto 30 days befor",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0005",
+          "clause_number": "IV",
+          "clause_title": "Anesthesia, blood, oxygen, operation",
+          "evidence_text_snippet": "Note: iv.Anesthesia, blood, oxygen, operation Medical Expenses for a period upto 60 days, theatre charges, surgical appliances, subject to AYUSH In-Patient hospitalization medicines and drugs, costs towards or AYUSH day care treatment claim being dia",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0006",
+          "clause_number": "I",
+          "clause_title": "Expenses incurred on treatment of",
+          "evidence_text_snippet": "Note: i.Expenses incurred on treatment of I (https:/ ayush next.ayush.gov. in/site/ cataract subject to the sub limits insurance-guidelines-related-to-ayush).",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0007",
+          "clause_number": "clause_0017",
+          "clause_title": "",
+          "evidence_text_snippet": "H.Stereotactic radio surgeries For your reference, the document has been uploaded on Our website under \"Annexure BronchialThermoplasty I. B for AYUSH Benefit\" (www.tataaig.com). .Vaporisation of the prostrate (Green J 3. Cataract Treatment laser trea",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0008",
+          "clause_number": "2",
+          "clause_title": "Medical Expenses incurred for AYUSH",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution 2 Medical Expenses incurred for AYUSH shall be 15 days during the treatment shall be assessed only under policy period and 30 days benefit 2 of this policy and shall be in all other cases (Annually admissible only if in",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0009",
+          "clause_number": "clause_0084",
+          "clause_title": "",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution We will cover Medical Expenses Hospitalisation Expenses of Hospitalization AYUSH incurred for treatment as In­ Expenses for a minimum period of 24 Patient or Day Care Treatment consecutive hours only shall in an AYUSH H",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0010",
+          "clause_number": "1",
+          "clause_title": "Room Rent, Boarding,",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution 1.Room Rent, Boarding, Expenses for a period upto room/doctors Nursing Expenses all inclusive 60 days, subject to AYUSH fee as provided by the Hospital In-Patient hospitalization or / Nursing Home up to 2% of AYUSH day ",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "clause_0001",
+          "clause_title": "",
+          "evidence_text_snippet": "Operative Clause a.Central or State Government AYUSH Hospital or If during the Policy Period one or more Insured Person(s) is required to be hospitalized for b.Teaching hospital attached to AYUSH treatment of an Illness or Injury at a Hospital/ Colle",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_far_from_term",
+          "candidate_score": 0.85,
+          "confidence": 0.85,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "I",
+          "clause_title": "Room Rent, Boarding, Nursing",
+          "evidence_text_snippet": "Note: i.Room Rent, Boarding, Nursing shall be effected in the same proportion Expenses as provided by the Hospital as the admissible rate per day bears to / Nursing Home up to 2% of the the actual rate per day of Room Rent/ICU/ sum insured subject to",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_far_from_term",
+          "candidate_score": 0.85,
+          "confidence": 0.85,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0000",
+          "clause_title": "",
+          "evidence_text_snippet": "Preamble means continuous period of illness and it includes relapse This Policy is a contract of insurance issued within forty five days from the date of by TATA AIG General Insurance Company last consultation with the h",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0011",
+          "clause_number": "clause_0140",
+          "clause_title": "",
+          "evidence_text_snippet": "4. AYUSH Day Care Centre 8. Condition Precedent means andmeans a Policy term includes Community Health Centreor condition upon which the Company's (CHC), Primary Health Centre (PHC),liability under the Policy is conditio",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0012",
+          "clause_number": "clause_0141",
+          "clause_title": "",
+          "evidence_text_snippet": "9. Congenital Anomaly refers to a local authorities, wherever applicable and condition(s) which is present since birth, having facilities for carrying out treatment and which is abnormal with reference to procedures and ",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0013",
+          "clause_number": "clause_0147",
+          "clause_title": "",
+          "evidence_text_snippet": "5. AYUSH Treatment refers to the medical addition in the Sum Insured granted by the and / or hospitalisation treatments given insurer without an associated increase in under Ayurveda, Yoga and Naturopathy, premium. Unani",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0014",
+          "clause_number": "clause_0170",
+          "clause_title": "",
+          "evidence_text_snippet": "21. Injury means accidental physical bodily holds a valid registration from the Medical harm excluding illness or disease solely Council of any state or Medical Council of and directly caused by external, violent and Ind",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0003"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "Within 24 hours from the date of",
+          "evidence_text_snippet": "X.MLR(Medico Legal Report copy if i.Within 24 hours from the date of wherever applicable emergency hospitalization required xiv.Any other relevant document or before the Insured Person's required by Company/TPA for discharge from Hospital, whichever assessment of the claim. is earlier.",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "The grace period for payment of the",
+          "evidence_text_snippet": "13. Fraud i.The grace period for payment of the premium during the Policy Period, for (c)any other act fitted to deceive; and instalment premium shall be fifteen days where premium payment mode is (d)any such act or omission as the law monthly and thirty days in all other cases specially declares to",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [
+        {
+          "candidate_id": "co_pay_0000",
+          "clause_number": "clause_0073",
+          "clause_title": "",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution INR Each and every claim under the Policy Sum insured shall be subject to a Co-payment of 5% On Individual basis -SI shall applicable to claim amount admissible apply to each individual and payable as per the terms and family member conditions of the Policy. The amount",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.985,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0001",
+          "clause_number": "clause_0144",
+          "clause_title": "",
+          "evidence_text_snippet": "10. Co-payment means a cost sharing out; requirement under a health insurance policy that provides that the policyholder/",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_percentage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "co_pay_0000"
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "2",
+          "clause_title": "Intensive Care Unit (ICU)",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution 2.Intensive Care Unit (ICU) charges I Intensive Cardiac Pre Existing Only PEDs declared in the Care Unit (ICCU) charges all Disease Proposal Form and accepted inclusive as provided by the for coverage by the company Hospital / Nursing Home up to shall be covered after ",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0001",
+          "clause_number": "clause_0202",
+          "clause_title": "",
+          "evidence_text_snippet": "8. Cumulative Bonus (CB) hospitalization medical expenses incurred, related to an admissible hospitalization Cumulative Bonus will be increased by 5% requiring inpatient care, for a fixed period in respect of each claim free policy year of 60 days from the date of discharge (where no claims are repo",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0002",
+          "clause_number": "clause_0203",
+          "clause_title": "",
+          "evidence_text_snippet": "6. The following procedures will be covered current policy year. If a claim is made in (wherever medically indicated) either as any particular year, the cumulative bonus in patient or as part of day care treatment accrued shall be reduced at the same rate in a hospital up to 50% of Sum Insured, at w",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0003",
+          "clause_number": "clause_0247",
+          "clause_title": "",
+          "evidence_text_snippet": "e Insured this policy shall be repaid by all person(s) Person under the previous health named in the policy schedule, who shall insurance Policy. be jointly and severally liable for such ii. Portability benefit will be offered to repayment. the extent of sum of previous sum For the purpose of this c",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0000"
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "9",
+          "clause_title": "Moratorium Period",
+          "evidence_text_snippet": "od 7. migration) in health insurance policy, no policy and claim shall be contestable by The insured person shall be provided a the insurer on grounds of non-disclosure, free look period of thirty days beginning misrepresentation, except on grounds of from the date of receipt of the Policy establish",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_30_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "I",
+          "clause_title": "The grace period for payment of the",
+          "evidence_text_snippet": "olicy Period, for (c)any other act fitted to deceive; and instalment premium shall be fifteen days where premium payment mode is (d)any such act or omission as the law monthly and thirty days in all other cases specially declares to be fraudulent (Annually/ Half- The company shall not repudiate the ",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0002",
+          "clause_number": "clause_0249",
+          "clause_title": "",
+          "evidence_text_snippet": "all ordinarily be renewable -the policy shall terminate and can except on grounds of established fraud be renewed within the Grace misrepresentation or non-disclosure by Period of 30 days to maintain the insured person. continuity of benefits without break in policy. Coverage is not available i. Ren",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0003",
+          "clause_number": "III",
+          "clause_title": "Single premium payment mode",
+          "evidence_text_snippet": "14. Renewal of Policy iii.Single premium payment mode premium within the stipulated grace Policy can be renewed within the Period. Grace Period of 30 days to maintain",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "I",
+          "clause_title": "The grace period for payment of the",
+          "evidence_text_snippet": "13. Fraud i.The grace period for payment of the premium during the Policy Period, for (c)any other act fitted to deceive; and instalment premium shall be fifteen days where premium payment mode is (d)any such act or omission as the law monthly and thirty days in all other cases specially declares to",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.965,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0001"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0002",
+          "clause_number": "II",
+          "clause_title": "Intensive Care Unit (ICU)/ Intensive",
+          "evidence_text_snippet": "Note: ii.Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) expenses We will cover Medical Expenses incurred up to 5% of sum insured subject to for treatment as In-Patient or Day Care maximum of Rs.10,000/-per day. Treatment in an AYUSH Hospital/ AYUSH day care centre.",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_limit",
+          "candidate_score": 0.9175,
+          "confidence": 0.985,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "icu_limit_0003",
+          "clause_number": "2",
+          "clause_title": "Intensive Care Unit (ICU)",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution 2.Intensive Care Unit (ICU) charges I Intensive Cardiac Pre Existing Only PEDs declared in the Care Unit (ICCU) charges all Disease Proposal Form and accepted inclusive as provided by the for coverage by the company Hospital / Nursing Home up to shall be covered after ",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_limit",
+          "candidate_score": 0.9175,
+          "confidence": 0.985,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "1",
+          "clause_title": "Hospitalization",
+          "evidence_text_snippet": "Note: 1. Hospitalization be admissible. However, the time limit shall not apply in respect of Day Care Treatment The Company shall indemnify medical expenses incurred for Hospitalization of In case of admission to a room/ICU/ 2. the Insured Person during the Policy year, ICCU at rates exceeding the ",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "icu_limit_0001",
+          "clause_number": "I",
+          "clause_title": "Room Rent, Boarding, Nursing",
+          "evidence_text_snippet": "Note: i.Room Rent, Boarding, Nursing shall be effected in the same proportion Expenses as provided by the Hospital as the admissible rate per day bears to / Nursing Home up to 2% of the the actual rate per day of Room Rent/ICU/ sum insured subject to maximum of ICCU charges. Rs.5000/-, per day. AYUS",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0002"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "clause_0219",
+          "clause_title": "",
+          "evidence_text_snippet": "7. All internal and external any illness within 30 days from the benign tumours, cysts, first policy commencement date shall polyps of any kind, be excluded except claims arising due including benign breast to an accident, provided the same are lumps covered. B e n i g n p r o s t a t e 8. ii.",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "IV",
+          "clause_title": "If the Insured Persons in the expiring",
+          "evidence_text_snippet": "surgeries iv.If the Insured Persons in the expiring of a pre-existing Disease (PED) policy are covered on an individual basis as and its direct complications shall specified in the Policy Schedule and there be excluded until the expiry of 36 is an accumulated CB for such Insured months of continuous",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "2",
+          "clause_title": "Intensive Care Unit (ICU)",
+          "evidence_text_snippet": "rges I Intensive Cardiac Pre Existing Only PEDs declared in the Care Unit (ICCU) charges all Disease Proposal Form and accepted inclusive as provided by the for coverage by the company Hospital / Nursing Home up to shall be covered after a 5% of the sum insured subject waiting period of 4 years to m",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.86,
+          "confidence": 0.72,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "clause_0172",
+          "clause_title": "",
+          "evidence_text_snippet": "23. Intensive Care Unit means an identified hospital or part of a stay in hospital which section, ward or wing of a hospital which is under the constant supervision of i. is required for the medical a dedicated medical p",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "clause_0182",
+          "clause_title": "",
+          "evidence_text_snippet": "32. Out means - i 36. \"Portability\" means a facility provded treatment in which the insured vsits a i r to the health insurance policyholders clinic / hospital oassociated facility like i (including all members under fam",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0188",
+          "clause_title": "",
+          "evidence_text_snippet": "38. Renewal: Insured Person 3. provision of grace period for treating the means person(s) named in the schedule of the Policy. renewal continuous for the purpose of gaining credit for pre-existing diseases, Non-Network P",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0000"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0249",
+          "clause_title": "",
+          "evidence_text_snippet": "14. Renewal of Policy At the end of the policy period b) The policy shall ordinarily be renewable -the policy shall terminate and can except on grounds of established fraud be renewed within the Grace misrepresentation or non-disclosure by Period of 30 days to maintain the insured person. continuity",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "II",
+          "clause_title": "Request for renewal along with",
+          "evidence_text_snippet": "14. Renewal of Policy ii.Request for renewal along with Insured, No Claim Bonus, Specified requisite premium shall be received Waiting Periods, waiting periods for pre­ by the Company before the end of existing diseases, Moratorium period, as the Policy Period. applicable, in the event of payment of",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "III",
+          "clause_title": "Single premium payment mode",
+          "evidence_text_snippet": "14. Renewal of Policy iii.Single premium payment mode premium within the stipulated grace Policy can be renewed within the Period. Grace Period of 30 days to maintain",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "IV",
+          "clause_title": "No interest will be charged If the",
+          "evidence_text_snippet": "14. Renewal of Policy iv.No interest will be charged If the continuity of benefits without break installment premium is not paid on due in policy. Coverage is not available date. during the grace period after the",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "V",
+          "clause_title": "In case of installment premium due not",
+          "evidence_text_snippet": "14. Renewal of Policy v.In case of installment premium due not end of the policy period. If not renewed during the Grace Period, received within the grace Period, the Policy the Policy shall terminate at the end will get cancelled. of the Grace period.",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0006",
+          "clause_number": "clause_0257",
+          "clause_title": "",
+          "evidence_text_snippet": "20. Notice & Communication the policy shall be renewed only through any one of his/her naturali.Any notice, direction, instruction or guardian or guardian appointed any other communication related to by court. All relevant particulars in the Policy should be made in writing. respect of such person (",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "clause_0184",
+          "clause_title": "",
+          "evidence_text_snippet": "38. Renewal: Renewal means the terms issued by the insurer; o i nsurance can on which the contract of r r i fowhich medical advice otreatment b) be renewed on mutual consent wth a",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_renewal_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0001"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0002",
+          "clause_number": "1",
+          "clause_title": "Room Rent, Boarding,",
+          "evidence_text_snippet": "Section 6 • Dispute Resolution 1.Room Rent, Boarding, Expenses for a period upto room/doctors Nursing Expenses all inclusive 60 days, subject to AYUSH fee as provided by the Hospital In-Patient hospitalization or / Nursing Home up to 2% of AYUSH day care treatment the sum insured subject to claim be",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.9175,
+          "confidence": 0.985,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "I",
+          "clause_title": "Room Rent, Boarding, Nursing",
+          "evidence_text_snippet": "Note: i.Room Rent, Boarding, Nursing shall be effected in the same proportion Expenses as provided by the Hospital as the admissible rate per day bears to / Nursing Home up to 2% of the the actual rate per day of Room Rent/ICU/ sum insured subject to maximum of ICCU charges. Rs.5000/-, per day. AYUS",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "1",
+          "clause_title": "Hospitalization",
+          "evidence_text_snippet": "Note: 1. Hospitalization be admissible. However, the time limit shall not apply in respect of Day Care Treatment The Company shall indemnify medical expenses incurred for Hospitalization of In case of admission to a room/ICU/ 2. the Insured Person during the Policy year, ICCU at rates exceeding the ",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0002"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

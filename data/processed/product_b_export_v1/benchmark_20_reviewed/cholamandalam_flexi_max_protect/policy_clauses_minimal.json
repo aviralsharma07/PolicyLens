@@ -1,0 +1,4134 @@
+{
+  "policy_id": "cholamandalam_flexi_max_protect",
+  "total_sections": 174,
+  "total_clauses": 427,
+  "sections": [
+    {
+      "number": null,
+      "title": "Document root",
+      "level": 0,
+      "page_start": 1,
+      "page_end": 40,
+      "clauses": []
+    },
+    {
+      "number": null,
+      "title": "POLICY SECTIONS:",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Section 1: Persons who can be covered",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Section 2: Policy Coverage",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Section 3: Definitions",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Section 4: Waiting Periods & General Exclusions",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Section 5: General Conditions",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "Section 6: Grievance Redressal Mechanism",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "Section 7: Medical Second Opinion-Add-on Cover",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings We issue this insurance policy to You and/or Your Family based on the information provided by You / Proposer in the proposal form and premium paid by You/ Proposer. This insurance is subject to the following terms and conditions. The term You/ Your /Insured Person /Insured/ Policyholder/ Proposer in this document ...",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "SECTION 1: PERSONS WHO CAN BE COVERED",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": " This Insurance is available to persons aged between 05 years and 65 years (Completed age) at the commencement date of this policy.  The Proposer should be minimum 18 years on the Commencement date of the policy.  The proposer can avail the policy for Self, his or her Spouse, Children upto 3, Parents and Parents-in-law on Individual Sum Insured Basis  Each covered person will have an independent Sum Insured limit within the same policy.  Minimum and Maximum entry age for Self, Spouse, Paren...",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "SECTION 2: POLICY COVERAGE",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "2.1",
+      "title": "2.1 BASE COVER",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured has to mandatorily opt for the Base cover to be eligible to take this policy a.Diagnosis Benefit: If at any time during the currency of this Policy, the Insured Person is diagnosed as suffering from a Critical Illness (CI) listed and defined in the Policy for the first time, during the Policy Period mentioned in the Policy Schedule, the Company shall pay a Lumpsum Benefit equal to the Sum Insured specified in the Policy Schedule provided the critical illness is diagnosed after 90 day...",
+          "page": 2
+        },
+        {
+          "number": "1",
+          "title": "Cancer of specified severity",
+          "text": "1.Cancer of specified severity",
+          "page": 2
+        },
+        {
+          "number": "2",
+          "title": "Stroke resulting in permanent",
+          "text": "2.Stroke resulting in permanent  symptoms",
+          "page": 2
+        },
+        {
+          "number": "3",
+          "title": "Myocardial Infarction (First heart",
+          "text": "3.Myocardial Infarction (First heart  attack of specified severity) ",
+          "page": 2
+        },
+        {
+          "number": "4",
+          "title": "Open chest CABG",
+          "text": "4.Open chest CABG E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings ",
+          "page": 2
+        },
+        {
+          "number": "5",
+          "title": "Kidney failure requiring regular dialysis",
+          "text": "5.Kidney failure requiring regular dialysis",
+          "page": 3
+        },
+        {
+          "number": "6",
+          "title": "Multiple sclerosis with persisting",
+          "text": "6.Multiple sclerosis with persisting  symptoms ",
+          "page": 3
+        },
+        {
+          "number": "7",
+          "title": "Major organ/bone marrow transplant",
+          "text": "7.Major organ/bone marrow transplant ",
+          "page": 3
+        },
+        {
+          "number": "8",
+          "title": "Permanent paralysis of limbs",
+          "text": "8.Permanent paralysis of limbs ",
+          "page": 3
+        },
+        {
+          "number": "9",
+          "title": "Aorta Graft surgery",
+          "text": "9.Aorta Graft surgery",
+          "page": 3
+        },
+        {
+          "number": "10",
+          "title": "Primary (Idiopathic) pulmonary",
+          "text": "10.Primary (Idiopathic) pulmonary  hypertension ",
+          "page": 3
+        },
+        {
+          "number": "11",
+          "title": "Primary parkinson’s disease",
+          "text": "11.Primary parkinson’s disease",
+          "page": 3
+        },
+        {
+          "number": "12",
+          "title": "Motor neuron disease with permanent",
+          "text": "12.Motor neuron disease with permanent  symptoms",
+          "page": 3
+        },
+        {
+          "number": "13",
+          "title": "Open heart replacement or repair of",
+          "text": "13.Open heart replacement or repair of  heart valve ",
+          "page": 3
+        },
+        {
+          "number": "14",
+          "title": "Third Degree Burns",
+          "text": "14.Third Degree Burns ",
+          "page": 3
+        },
+        {
+          "number": "15",
+          "title": "Aplastic anaemia",
+          "text": "15.Aplastic anaemia ",
+          "page": 3
+        },
+        {
+          "number": "16",
+          "title": "Bacterial meningitis",
+          "text": "16.Bacterial meningitis ",
+          "page": 3
+        },
+        {
+          "number": "17",
+          "title": "COMA of specified severity",
+          "text": "17.COMA of specified severity ",
+          "page": 3
+        },
+        {
+          "number": "18",
+          "title": "Loss of speech",
+          "text": "18.Loss of speech ",
+          "page": 3
+        },
+        {
+          "number": "19",
+          "title": "End stage liver failure",
+          "text": "19.End stage liver failure ",
+          "page": 3
+        },
+        {
+          "number": "20",
+          "title": "Deafness",
+          "text": "20.Deafness ",
+          "page": 3
+        },
+        {
+          "number": "21",
+          "title": "End stage lung failure",
+          "text": "21.End stage lung failure ",
+          "page": 3
+        },
+        {
+          "number": "22",
+          "title": "Goodpasture’s syndrome",
+          "text": "22.Goodpasture’s syndrome",
+          "page": 3
+        },
+        {
+          "number": "23",
+          "title": "Apallic syndrome or Persistent",
+          "text": "23.Apallic syndrome or Persistent  Vegetative State (PVS)",
+          "page": 3
+        },
+        {
+          "number": "24",
+          "title": "Systemic lupus Erythematosus with",
+          "text": "24.Systemic lupus Erythematosus with  Lupus Nephritis ",
+          "page": 3
+        },
+        {
+          "number": "25",
+          "title": "Multiple system atrophy",
+          "text": "25.Multiple system atrophy ",
+          "page": 3
+        },
+        {
+          "number": "26",
+          "title": "Progressive scleroderma",
+          "text": "26.Progressive scleroderma ",
+          "page": 3
+        },
+        {
+          "number": "27",
+          "title": "Pneumonectomy",
+          "text": "27.Pneumonectomy ",
+          "page": 3
+        },
+        {
+          "number": "28",
+          "title": "Pulmonary artery graft surgery",
+          "text": "28.Pulmonary artery graft surgery ",
+          "page": 3
+        },
+        {
+          "number": "29",
+          "title": "Alzheimer’s disease",
+          "text": "29.Alzheimer’s disease",
+          "page": 3
+        },
+        {
+          "number": "30",
+          "title": "Benign brain tumour [resulting in",
+          "text": "30.Benign brain tumour [resulting in  permanent neurological symptoms] ",
+          "page": 3
+        },
+        {
+          "number": "31",
+          "title": "Cardiomyopathy",
+          "text": "31.Cardiomyopathy ",
+          "page": 3
+        },
+        {
+          "number": "32",
+          "title": "Progressive supranuclear palsy",
+          "text": "32.Progressive supranuclear palsy ",
+          "page": 3
+        },
+        {
+          "number": "33",
+          "title": "Creutzfeldt-jakob disease (CJD)",
+          "text": "33.Creutzfeldt-jakob disease (CJD) ",
+          "page": 3
+        },
+        {
+          "number": "34",
+          "title": "Major head trauma",
+          "text": "34.Major head trauma ",
+          "page": 3
+        },
+        {
+          "number": "35",
+          "title": "Encephalitis",
+          "text": "35.Encephalitis ",
+          "page": 3
+        },
+        {
+          "number": "36",
+          "title": "Blindness",
+          "text": "36.Blindness ",
+          "page": 3
+        },
+        {
+          "number": "37",
+          "title": "Brain surgery",
+          "text": "37.Brain surgery ",
+          "page": 3
+        },
+        {
+          "number": "38",
+          "title": "Fulminant Viral Hepatitis",
+          "text": "38.Fulminant Viral Hepatitis ",
+          "page": 3
+        },
+        {
+          "number": "39",
+          "title": "Muscular Dystrophy",
+          "text": "39.Muscular Dystrophy E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings ",
+          "page": 3
+        },
+        {
+          "number": "40",
+          "title": "Medullary Cystic Disease",
+          "text": "40.Medullary Cystic Disease ",
+          "page": 4
+        },
+        {
+          "number": "41",
+          "title": "Hemiplegia",
+          "text": "41.Hemiplegia ",
+          "page": 4
+        },
+        {
+          "number": "42",
+          "title": "Severe Rheumatoid Arthritis",
+          "text": "42.Severe Rheumatoid Arthritis ",
+          "page": 4
+        },
+        {
+          "number": "43",
+          "title": "Dissecting Aortic aneurysm",
+          "text": "43.Dissecting Aortic aneurysm ",
+          "page": 4
+        },
+        {
+          "number": "44",
+          "title": "Myasthenia Gravis",
+          "text": "44.Myasthenia Gravis ",
+          "page": 4
+        },
+        {
+          "number": "45",
+          "title": "Infective Endocarditis",
+          "text": "45.Infective Endocarditis ",
+          "page": 4
+        },
+        {
+          "number": "46",
+          "title": "Pheochromocytoma",
+          "text": "46.Pheochromocytoma ",
+          "page": 4
+        },
+        {
+          "number": "47",
+          "title": "Eisenmenger's Syndrome",
+          "text": "47.Eisenmenger's Syndrome ",
+          "page": 4
+        },
+        {
+          "number": "48",
+          "title": "Chronic Adrenal Insufficiency",
+          "text": "48.Chronic Adrenal Insufficiency ",
+          "page": 4
+        },
+        {
+          "number": "49",
+          "title": "Myelofibrosis",
+          "text": "49.Myelofibrosis ",
+          "page": 4
+        },
+        {
+          "number": "50",
+          "title": "Chronic Relapsing Pancreatitis",
+          "text": "50.Chronic Relapsing Pancreatitis The benefit applicable to the insured under the policy will depend on the Plan and Sum Insured opted and as mentioned in the Policy Schedule. List of Critical Illness applicable for Children from 05 to 17 years of age shall be as follows, irrespective of the plan opted under the policy. Any Critical Illness other than the below listed, shall not be payable under the policy for Claims relating to Children upto the age of 17 years.",
+          "page": 4
+        },
+        {
+          "number": "1",
+          "title": "Acquired Brain Damage",
+          "text": "1.Acquired Brain Damage",
+          "page": 4
+        },
+        {
+          "number": "2",
+          "title": "Aplastic Anaemia",
+          "text": "2.Aplastic Anaemia",
+          "page": 4
+        },
+        {
+          "number": "3",
+          "title": "Bone Marrow Transplant",
+          "text": "3.Bone Marrow Transplant",
+          "page": 4
+        },
+        {
+          "number": "4",
+          "title": "Brain Surgery",
+          "text": "4.Brain Surgery",
+          "page": 4
+        },
+        {
+          "number": "5",
+          "title": "Glomerulonephritis",
+          "text": "5.Glomerulonephritis",
+          "page": 4
+        },
+        {
+          "number": "6",
+          "title": "Permanent paralysis of limbs",
+          "text": "6.Permanent paralysis of limbs",
+          "page": 4
+        },
+        {
+          "number": "7",
+          "title": "Leukaemia",
+          "text": "7.Leukaemia",
+          "page": 4
+        },
+        {
+          "number": "8",
+          "title": "Osteogenesis Imperfecta- Type III",
+          "text": "8.Osteogenesis Imperfecta- Type III",
+          "page": 4
+        },
+        {
+          "number": "9",
+          "title": "Tuberculosis Meningitis",
+          "text": "9.Tuberculosis Meningitis",
+          "page": 4
+        },
+        {
+          "number": "10",
+          "title": "Third Degree Burns",
+          "text": "10.Third Degree Burns",
+          "page": 4
+        },
+        {
+          "number": "11",
+          "title": "Blindness",
+          "text": "11.Blindness",
+          "page": 4
+        },
+        {
+          "number": "12",
+          "title": "Deafness",
+          "text": "12.Deafness",
+          "page": 4
+        },
+        {
+          "number": "13",
+          "title": "Loss of speech",
+          "text": "13.Loss of speech b.Survival period: Survival period of 30 days or NIL days as opted and mentioned in the policy schedule would be applicable from the date of diagnosis of a condition to be eligible for this benefit. The insured has to survive for a period of 30/NIL days from the date of diagnosis to be eligible for the benefit under the policy. We will not be liable for payment of any claim in the scenario where the insured person expires within the survival period. c.Specific Condition:",
+          "page": 4
+        },
+        {
+          "number": "1",
+          "title": "Upon the diagnosis of the defined Critical Illness, the Base cover shall immediately cease to exist ",
+          "text": "1.Upon the diagnosis of the defined Critical Illness, the Base cover shall immediately cease to exist with reference to that Insured. It is not permissible to renew the policy after diagnosis of any insured critical illness under Base Cover. However, the optional covers other than Double Protection Cover, if opted and mentioned in the policy schedule shall continue for the Insured until a claim becoming admissible or upto the policy period mentioned in the policy schedule, whichever is earlier. ...",
+          "page": 4
+        },
+        {
+          "number": "2.2",
+          "title": "OPTIONAL COVERS (on payment of additional premium)",
+          "text": "2.2 OPTIONAL COVERS (on payment of additional premium) Notwithstanding anything to the contrary contained in the Policy, In consideration of payment of additional premium, the Policy is extended to cover the optional covers listed below upto the Sum Insured’s mentioned against the covers shown within the Policy Schedule.",
+          "page": 5
+        },
+        {
+          "number": "1",
+          "title": "DOUBLE PROTECTION COVER",
+          "text": "1.DOUBLE PROTECTION COVER a.Coverage: In consideration of payment of additional premium, it is hereby understood and agreed that this policy will pay a Lumpsum benefit equal to 50% of the Base Sum Insured, in the event of diagnosis of a second Critical illness as defined in the policy during the same policy year in which the first Critical Illness was diagnosed and which is not related to the Critical Illness diagnosed and paid under Base Cover. A 30-day cooling off period is applicable between ...",
+          "page": 5
+        },
+        {
+          "number": "I",
+          "title": "The same Critical Illness for which a claim was paid under Base Cover",
+          "text": "I. The same Critical Illness for which a claim was paid under Base Cover",
+          "page": 5
+        },
+        {
+          "number": "II",
+          "title": "A Critical Illness which, in our opinion (as confirmed by a relevant medical specialist acceptable t",
+          "text": "II. A Critical Illness which, in our opinion (as confirmed by a relevant medical specialist acceptable to us): a. Arises in connection with, b. Is a complication of, c. Results from; or d. Is a treatment for the condition for which the first claim was paid for",
+          "page": 5
+        },
+        {
+          "number": "III",
+          "title": "A heart or vascular conditions (as defined below) if the first CI claim was also for a heart or vasc",
+          "text": "III. A heart or vascular conditions (as defined below) if the first CI claim was also for a heart or vascular condition.",
+          "page": 5
+        },
+        {
+          "number": "IV",
+          "title": "Paralysis of Limbs or Hemiplegia resulting from a Stroke or Cerebrovascular Accident if the claim un",
+          "text": "IV. Paralysis of Limbs or Hemiplegia resulting from a Stroke or Cerebrovascular Accident if the claim under Base cover was for a heart or vascular condition.",
+          "page": 5
+        },
+        {
+          "number": "V",
+          "title": "A heart or vascular condition if the claim under Base cover was for Paralysis of Limbs or Hemiplegia",
+          "text": "V. A heart or vascular condition if the claim under Base cover was for Paralysis of Limbs or Hemiplegia resulting from a Stroke or Cerebrovascular Accident.",
+          "page": 5
+        },
+        {
+          "number": "VI",
+          "title": "Kidney failure requiring regular dialysis if the claim under Base cover was for heart or vascular co",
+          "text": "VI. Kidney failure requiring regular dialysis if the claim under Base cover was for heart or vascular condition",
+          "page": 5
+        },
+        {
+          "number": "VII",
+          "title": "A heart or vascular condition if the claim under Base cover was for Kidney failure requiring regular",
+          "text": "VII. A heart or vascular condition if the claim under Base cover was for Kidney failure requiring regular dialysis Heart or Vascular condition means any of the following defined medical events:  Myocardial Infarction (First Heart Attack of specified severity)  Open Chest CABG  Stroke resulting in permanent symptoms  Primary Pulmonary Hypertension  Cardiomyopathy d. Specific Conditions applicable to Double Protection Cover: a. Survival period as opted and applicable under Base cover shall be...",
+          "page": 5
+        },
+        {
+          "number": "2",
+          "title": "LOSS OF JOB COVER",
+          "text": "2.LOSS OF JOB COVER a.Coverage: In consideration of payment of additional premium, it is hereby understood and agreed that this policy will pay the Sum Insured equal to 10% of Base Sum Insured or Gross Monthly Salary of the Insured upto a maximum of three months, whichever is lower as a Lumpsum benefit, in case of Loss of Job of the Insured Person subject to the terms, conditions and exclusions mentioned below. b.Definitions applicable to Loss of Job Cover: For the purpose of this cover,",
+          "page": 6
+        },
+        {
+          "number": "1",
+          "title": "Loss of Job means involuntary termination from employment of the insured or his/her permanent",
+          "text": "1.Loss of Job means involuntary termination from employment of the insured or his/her permanent dismissal or temporary suspension from employment imposed on him/her by the employer during the policy period due to the following reason: First time diagnosis of any covered critical illness for which a claim is admissible and payable under Base Cover.",
+          "page": 6
+        },
+        {
+          "number": "2",
+          "title": "Sum Insured means and denotes 10% of Base Sum Insured or the amount opted by the Insured",
+          "text": "2.Sum Insured means and denotes 10% of Base Sum Insured or the amount opted by the Insured Person not exceeding his/her Gross Monthly Salary against Loss of Job cover, whichever is lower and mentioned in the Policy Schedule.",
+          "page": 6
+        },
+        {
+          "number": "3",
+          "title": "Gross Monthly Salary will be as per the Salary slip or Certificate issued by the employer to that",
+          "text": "3.Gross Monthly Salary will be as per the Salary slip or Certificate issued by the employer to that extent or the Form 16 Certificate for the relevant year. c.Specific Conditions applicable to Loss of Job Cover:",
+          "page": 6
+        },
+        {
+          "number": "I",
+          "title": "The Insured should be a salaried employee",
+          "text": "i.The Insured should be a salaried employee",
+          "page": 6
+        },
+        {
+          "number": "II",
+          "title": "Insured shall be a permanent employee of the organization working on a full time basis and such",
+          "text": "ii.Insured shall be a permanent employee of the organization working on a full time basis and such employment has been in force for a continuous period of 12 months as at the date of termination of employment or his/her permanent dismissal or temporary suspension from employment.",
+          "page": 6
+        },
+        {
+          "number": "III",
+          "title": "A claim under this section shall become admissible provided the period of termination, dismissal",
+          "text": "iii.A claim under this section shall become admissible provided the period of termination, dismissal or temporary suspension from employment of the Insured shall not be less than 30 consecutive days.",
+          "page": 6
+        },
+        {
+          "number": "IV",
+          "title": "The policy shall pay 10% of Base Sum Insured or the Gross Monthly Salary, whichever is lower,",
+          "text": "iv.The policy shall pay 10% of Base Sum Insured or the Gross Monthly Salary, whichever is lower, after the commencement of Loss of Job till the reinstatement of employment with the same employer or new employer subject to a maximum of 3 months. v. This would be a Lumpsum payment at the end of the continuous period of unemployment upto a maximum of 3 months, for which claim has been made and is admissible under the Policy.’ If the unemployment period is beyond 30 days, is part of a month, the amo...",
+          "page": 6
+        },
+        {
+          "number": "VI",
+          "title": "Benefit under this cover shall be payable subject to admissibility of claim under Base Cover.",
+          "text": "vi.Benefit under this cover shall be payable subject to admissibility of claim under Base Cover. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 6
+        },
+        {
+          "number": "VII",
+          "title": "No claim under Loss of Job shall be admissible for a listed Critical Illness, diagnosed and become",
+          "text": "vii.No claim under Loss of Job shall be admissible for a listed Critical Illness, diagnosed and become payable/paid under the optional Double protection cover",
+          "page": 7
+        },
+        {
+          "number": "VIII",
+          "title": "This is a onetime benefit applicable for the entire tenure of the Policy and the cover shall termina",
+          "text": "viii.This is a onetime benefit applicable for the entire tenure of the Policy and the cover shall terminate upon payment of this benefit.",
+          "page": 7
+        },
+        {
+          "number": "IX",
+          "title": "The benefit payable under Loss of Job is over and above the claim payable under Base sum Insured",
+          "text": "ix.The benefit payable under Loss of Job is over and above the claim payable under Base sum Insured d. Specific Exclusions applicable to Loss of Job Cover: a.The Company shall not be liable to make any payment under this Section in the event of termination, dismissal or temporary suspension from employment of the Insured being attributed to any dishonesty or fraud or poor performance on the part of the Insured or his willful violation of any rules of the employer or laws for the time being in fo...",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "Self employed persons;",
+          "text": "i.Self employed persons;",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "Any claim relating to unemployment from a job which is casual, temporary, seasonal or",
+          "text": "ii.Any claim relating to unemployment from a job which is casual, temporary, seasonal or contractual in nature or any claim relating to an employee not on the direct rolls of the employer;",
+          "page": 7
+        },
+        {
+          "number": "III",
+          "title": "Any voluntary unemployment",
+          "text": "iii.Any voluntary unemployment",
+          "page": 7
+        },
+        {
+          "number": "IV",
+          "title": "Unemployment at the time of inception of the Policy or arising within the first 90 days of",
+          "text": "iv.Unemployment at the time of inception of the Policy or arising within the first 90 days of inception of the Policy Period.",
+          "page": 7
+        },
+        {
+          "number": "V",
+          "title": "Unemployment due to downsizing, cost cutting closure.",
+          "text": "v.Unemployment due to downsizing, cost cutting closure.",
+          "page": 7
+        },
+        {
+          "number": "VI",
+          "title": "Retrenchment and Lay offs",
+          "text": "vi.Retrenchment and Lay offs c.Any unemployment from a job under which no salary or any remuneration is provided to the Insured d.Any suspension from employment on account of any pending enquiry being conducted by the employer/Public Authority e.Any unemployment due to resignation, retirement whether voluntary or otherwise f.Any unemployment due to non-confirmation of employment after or during such period under which the Insured was under probation. e.Claim documentation applicable for this cov...",
+          "page": 7
+        },
+        {
+          "number": "3",
+          "title": "LOSS OF INCOME FOR SELF EMPLOYED",
+          "text": "3.LOSS OF INCOME FOR SELF EMPLOYED a.Coverage: In consideration of payment of additional premium, it is hereby understood and agreed that this policy will pay 5% of Base Sum or Rupees Ten Lakhs whichever is lower per month, in case of Loss of income of the Insured Person subject to the terms, conditions and exclusions mentioned below. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V0...",
+          "page": 7
+        },
+        {
+          "number": "1",
+          "title": "Loss of income refers to the situation in which a person's source of money for expenses or lifestyle",
+          "text": "1.Loss of income refers to the situation in which a person's source of money for expenses or lifestyle, such as income from a business or profession, is terminated during the policy period due to the following reason: First time diagnosis of any covered critical illness for which a claim is admissible and payable under Base Cover.",
+          "page": 8
+        },
+        {
+          "number": "2",
+          "title": "Sum Insured means the amount shown in the Policy Schedule against this cover and which shall",
+          "text": "2.Sum Insured means the amount shown in the Policy Schedule against this cover and which shall be our maximum liability for any and all benefits claimed for during the policy period.",
+          "page": 8
+        },
+        {
+          "number": "3",
+          "title": "Income of the Insured will be as per the Income Tax returns filed for the relevant year.",
+          "text": "3.Income of the Insured will be as per the Income Tax returns filed for the relevant year. c.Specific Conditions applicable to Loss of Income for Self Employed: iThe Insured should have a legal source of Income iiInsured shall file Income Tax on Regular basis as required under law iiiA claim under this section shall become admissible provided, the Insured person was unable to attend to his Business/Profession for not less than 30 consecutive days and the Income from his/her Business/Profession h...",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "SECTION 3: DEFINITIONS",
+      "level": 1,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The terms defined below and at other junctures in the Policy Wording have the meanings ascribed to them wherever they appear in the Policy and where appropriate, references to the singular include references to the plural; references to the male include the female and references to any statutory enactment include subsequent changes to the same:",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Age means completed years on Your last birthday as per the English Calendar regardless of the actual time of",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "birth, at the time of commencement of Policy Period or the date of commencement of cover in case of midterm inclusion.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Activities of Daily Living refer to daily self care activities within an individual`s place of residence, in outdoor",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "environment or both. The Activities of Daily Living are:",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Bathing : the ability to wash in the bath or shower (including getting into and out of the bath or s",
+          "text": "I. Bathing : the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any",
+          "text": "II. Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 9
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "III. Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 9
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "IV. Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 9
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to ",
+          "text": "V. Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 9
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "VI. Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Base Sum Insured means the Sum Insured as specified in the Policy Schedule against the respective base covers",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Commencement Date means the commencement date of the coverage under this Policy as specified in the Policy",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Schedule",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Condition Precedent shall mean a Policy term or condition upon which the Insurer’s liability under the Policy is",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "conditional upon.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Congenital Anomaly means a condition(s) which is present since birth, which is abnormal with reference to form,",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "structure or position. a)Internal Congenital Anomaly: Congenital anomaly which is not in the visible and accessible parts of the body. b)External Congenital Anomaly: Congenital anomaly which is in the visible and accessible parts of the body. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Critical Illness means an illness or condition as defined in the Policy that occurs or manifests itself during the Policy",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Period as a first incidence.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Date of Diagnosis For the purpose of this Policy, the date of diagnosis of the Insured illness is the date on which",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the consultant/Medical Practitioner certifies the diagnosis of the first occurrence of Insured illness. Provided, the date is not earlier than the date of diagnostic report based on which the final diagnosis is arrived at by the consultant/Medical Practitioner.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Diagnosis means the identification of a disease/illness/medical condition made by a Medical Practitioner",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "supported by clinical, radiological and histological, histopathological and laboratory evidence and also surgical evidence wherever applicable, acceptable to us.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Diagnostic Test means investigations such as X-ray or blood tests to find the cause of Your symptoms and medical",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "condition.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Disclosure to information norm: The Policy shall be void and all premium paid thereon shall be forfeited to the",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Company, in the event of misrepresentation, mis-description or non-disclosure of any material fact.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12. Endorsement means written evidence of change to the insurance Policy including but not limited to increase or",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "decrease in the Policy Period, extent and nature of the cover agreed by the Company in writing.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Family means, the Family that consists of the proposer and any one or more of the family members as mentioned",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "below:",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "Legally wedded spouse",
+          "text": "i.Legally wedded spouse",
+          "page": 10
+        },
+        {
+          "number": "II",
+          "title": "Children (i.e natural or legally adopted)",
+          "text": "ii.Children (i.e natural or legally adopted)",
+          "page": 10
+        },
+        {
+          "number": "III",
+          "title": "Parents and",
+          "text": "iii.Parents and",
+          "page": 10
+        },
+        {
+          "number": "IV",
+          "title": "Parents in law",
+          "text": "iv.Parents in law",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "title": "14. Grace Period means the specified period of time immediately following the premium due date during which a",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "payment can be made to renew or continue a policy in force without loss of continuity benefits such as waiting periods and coverage of preexisting diseases. Coverage is not available for the period for which no premium is received.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "15. Hospital means any institution established for inpatient care and day care treatment of illness and/or injuries",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and which has been registered as a hospital with the local authorities under the Clinical Establishments (Registration and Regulation) Act 2010 or under the enactments specified under the Schedule of Section 56(1) of the said Act OR complies with all minimum criteria as under: a.has qualified nursing staff under its employment round the clock; b.has at least 10 in-patient beds in towns having a population of less than 10,00,000 and at least 15 in-patient beds in all other places; c.has qualified...",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "title": "16. Medical Advice means any consultation or advice from a Medical Practitioner including the issuance of any",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "prescription or follow-up prescription.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "title": "17. Medical Practitioner is a person who holds a valid registration from the Medical Council of any State or Medical",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is thereby entitled to practice medicine within its jurisdiction; and is acting within the scope and jurisdiction of license. The registered Medical practitioner should not be the Insured or Close Family Members of the Insured. For the purpose of this definition, Close Family Members would mean and include the Insured person’s Spouse, children (including adopted and step ...",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "18",
+      "title": "18. Migration means the right accorded to health insurance policyholders (including all members under family cover and",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "members of group health insurance policy, to transfer the credit gained for pre-existing conditions and time bound exclusions, with the same insurer.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "19",
+      "title": "19. Notification of claim means the process of intimating a claim to the insurer or TPA through any of the recognized",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "modes of communication.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "20",
+      "title": "20. Pre-existing Disease(PED) means any condition, ailment, injury or disease:",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a)That is/are diagnosed by a physician within 48 months prior to the effective date of the policy issued by the Insurer or its reinstatement b)For which medical advice or treatment was recommended by, or received from, a physician within 48 months prior to the effective date of the policy issued by the insurer or its reinstatement.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "21",
+      "title": "21. Policy means these Policy wordings, the Policy Schedule and any applicable endorsements or extensions",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "attaching to or forming part thereof. The Policy contains details of the extent of cover available to the Insured Person, what is excluded from the cover and the terms and conditions on which the policy is issued to the Insured person",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "22",
+      "title": "22. Policy Period/Policy Term means the period between the commencement date specified in the Policy Schedule",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "in respect of any Insured person and earlier of 1.the expiry date specified in the Policy Schedule;",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. The date of cancellation of this Policy by either Policyholder or Insured or Insurer in accordance with",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "General Condition on Cancellation as below; 3.the diagnosis of Covered Critical Illness under Base Cover. However the cover in respect of optional cover other than Double Protection cover shall continue till the expiry date mentioned in the Policy Schedule or occurrence of a claim under optional cover upto 100% SI, whichever is earlier.",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "23",
+      "title": "23. Policy Schedule means that portion of the Policy which sets out Your personal details, the type and plan of",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "insurance cover in force, the Policy duration and sum insured etc. Any Annexure or Endorsement to the Schedule shall also be a part of the Schedule. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "24",
+      "title": "24. Portability means the right accorded to an individual health insurance policyholders (including all members under",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "family cover), to transfer the credit gained for pre-existing conditions and time bound exclusions, from one insurer to another insurer.",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "25",
+      "title": "25. Proposal Form: The form in which the details of the insured person are obtained for a Health Insurance Policy",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "This also includes information obtained over phone or on the internet and stored on any electronic media and forms basis of issuance of the policy",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "26",
+      "title": "26. Qualified Nurse means a person who holds a valid registration from the Nursing Council of India or the Nursing",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Council of any state in India.",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "27",
+      "title": "27. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods.",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "28",
+      "title": "28. Sum Insured means the amount shown in the Policy Schedule which shall be our maximum liability for each",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured Person for any and all benefits claimed for during the Policy Period",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "29",
+      "title": "29. Survival Period means a period as provided in the policy document which is calculated from the date of diagnosis",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "of the covered critical illness/s, for which the insured person has to survive after the diagnosis of the covered critical illness/s. We will not be liable for the payment of any claim in the scenario where the insured person expires within the survival period",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "30",
+      "title": "30. Waiting period means a period from the inception of this Policy during which specified diseases/treatments are",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "not covered. On Completion of the period, diseases/treatments shall be covered provided the Policy has been continuously renewed without any break",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "31",
+      "title": "31. List of Critical Illness and their definitions",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Cancer of Specified Severity",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A malignant tumor characterised by the uncontrolled growth & spread of malignant cells with invasion and destruction of normal tissues. This diagnosis must be supported by histological evidence of malignancy. The term cancer includes leukemia, lymphoma and sarcoma. The following are excluded –",
+          "page": 12
+        },
+        {
+          "number": "I",
+          "title": "All tumors which are histologically described as carcinoma in situ, benign, pre-malignant, borderlin",
+          "text": "i.All tumors which are histologically described as carcinoma in situ, benign, pre-malignant, borderline malignant, low malignant potential, neoplasm of unknown behaviour, or non-invasive, including but not limited to: Carcinoma in situ of breasts, Cervical dysplasia CIN-1, CIN-2 and CIN-3.",
+          "page": 12
+        },
+        {
+          "number": "II",
+          "title": "Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes or beyond;",
+          "text": "ii.Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes or beyond;",
+          "page": 12
+        },
+        {
+          "number": "III",
+          "title": "Malignant melanoma that has not caused invasion beyond the epidermis;",
+          "text": "iii.Malignant melanoma that has not caused invasion beyond the epidermis;",
+          "page": 12
+        },
+        {
+          "number": "IV",
+          "title": "All tumors of the prostate unless histologically classified as having a Gleason score greater than 6",
+          "text": "iv.All tumors of the prostate unless histologically classified as having a Gleason score greater than 6 or having progressed to at least clinical TNM classification T2N0M0",
+          "page": 12
+        },
+        {
+          "number": "V",
+          "title": "All Thyroid cancers histologically classified as T1N0M0 (TNM classification) or below;",
+          "text": "v.All Thyroid cancers histologically classified as T1N0M0 (TNM classification) or below;",
+          "page": 12
+        },
+        {
+          "number": "VI",
+          "title": "Chronic lymphocytic leukaemia less than RAI stage 3",
+          "text": "vi.Chronic lymphocytic leukaemia less than RAI stage 3",
+          "page": 12
+        },
+        {
+          "number": "VII",
+          "title": "Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a lesser",
+          "text": "vii.Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a lesser classification, E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 12
+        },
+        {
+          "number": "VIII",
+          "title": "All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM Classification) or bel",
+          "text": "viii.All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM Classification) or below and with mitotic count of less than  or equal to 5/50 HPFs;",
+          "page": 13
+        },
+        {
+          "number": "IX",
+          "title": "All tumours in the presence of HIV infection",
+          "text": "ix.All tumours in the presence of HIV infection",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Stroke Resulting In Permanent Symptoms",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction of brain tissue, thrombosis in an intracranial vessel, haemorrhage and embolisation from an extracranial source. Diagnosis has to be confirmed by a specialist medical practitioner and evidenced by typical clinical symptoms as well as typical findings in CT Scan or MRI of the brain. Evidence of permanent neurological deficit lasting for atleast 3 months has to be produced. The following are excluded: ...",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Myocardial Infarction (First Heart Attack - of Specified Severity )",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The first occurrence of heart attack or myocardial infarction, which means the death of a portion of",
+          "text": "I.The first occurrence of heart attack or myocardial infarction, which means the death of a portion of the heart muscle as a result of inadequate blood supply to the relevant area. The diagnosis for Myocardial Infarction should be evidenced by all of the following criteria:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "A history of typical clinical symptoms consistent with the diagnosis of Acute Myocardial Infarction",
+          "text": "i.A history of typical clinical symptoms consistent with the diagnosis of Acute Myocardial Infarction (for e.g. typical chest pain)",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "New characteristic electrocardiogram changes",
+          "text": "ii.New characteristic electrocardiogram changes",
+          "page": 13
+        },
+        {
+          "number": "III",
+          "title": "Elevation of infarction specific enzymes, Troponins or other specific biochemical markers.",
+          "text": "iii.Elevation of infarction specific enzymes, Troponins or other specific biochemical markers.",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "The following are excluded:",
+          "text": "II.The following are excluded:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "Other acute Coronary Syndromes",
+          "text": "i.Other acute Coronary Syndromes",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "Any type of angina pectoris",
+          "text": "ii.Any type of angina pectoris",
+          "page": 13
+        },
+        {
+          "number": "III",
+          "title": "A rise in cardiac biomarkers or Troponin T or I in absence of overt ischemic heart disease OR",
+          "text": "iii.A rise in cardiac biomarkers or Troponin T or I in absence of overt ischemic heart disease OR following an intra-arterial cardiac procedure.",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Open Chest CABG",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The actual undergoing of heart surgery to correct blockage or narrowing in one or more coronary arte",
+          "text": "I.The actual undergoing of heart surgery to correct blockage or narrowing in one or more coronary artery(s), by coronary artery bypass grafting done via a sternotomy (cutting through the breast bone) or minimally invasive keyhole coronary artery bypass procedures. The diagnosis must be supported by a coronary angiography and the realization of surgery has to be confirmed by a cardiologist.",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "The following are excluded:",
+          "text": "II.The following are excluded:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "Angioplasty and/or any other intra-arterial procedures",
+          "text": "i.Angioplasty and/or any other intra-arterial procedures",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Kidney Failure Requiring Regular Dialysis",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "End stage renal disease presenting as chronic irreversible failure of both kidneys to function, as a result of which either regular renal dialysis (hemodialysis or peritoneal dialysis) is instituted or renal transplantation is carried out. Diagnosis has to be confirmed by a specialist medical practitioner",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Multiple Sclerosis With Persisting Symptoms",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The unequivocal diagnosis of Definite Multiple Sclerosis confirmed and evidenced by all of the follo",
+          "text": "I.The unequivocal diagnosis of Definite Multiple Sclerosis confirmed and evidenced by all of the following: E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "investigations including typical MRI findings which unequivocally confirm the diagnosis to be",
+          "text": "i.investigations including typical MRI findings which unequivocally confirm the diagnosis to be multiple sclerosis and",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "there must be current clinical impairment of motor or sensory function, which must have persisted",
+          "text": "ii.there must be current clinical impairment of motor or sensory function, which must have persisted for a continuous period of at least 6 months",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "Other causes of neurological damage such as SLE and HIV are excluded",
+          "text": "II.Other causes of neurological damage such as SLE and HIV are excluded",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Major Organ /Bone Marrow Transplant",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The actual undergoing of a transplant of:",
+          "text": "I.The actual undergoing of a transplant of:",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted from",
+          "text": "i.One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted from irreversible end-stage failure of the relevant organ, or",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "Human bone marrow using haematopoietic stem cells The undergoing of a transplant has to be",
+          "text": "ii.Human bone marrow using haematopoietic stem cells The undergoing of a transplant has to be confirmed by a specialist medical practitioner.",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "The following are excluded:",
+          "text": "II.The following are excluded:",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "Other stem-cell transplants",
+          "text": "i.Other stem-cell transplants",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "Where only islets of langerhans are transplanted",
+          "text": "ii.Where only islets of langerhans are transplanted",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Permanent Paralysis of Limbs",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Total and irreversible loss of use of two or more limbs as a result of injury or disease of the brain or spinal cord. A specialist medical practitioner must be of the opinion that the paralysis will be permanent with no hope of recovery and must be present for more than 3 months",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Aorta Graft Surgery",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The actual undergoing of major Surgery to repair or correct aneurysm, narrowing, obstruction or dissection of the Aorta through surgical opening of the chest or abdomen. For the purpose of this cover the definition of “Aorta” shall mean the thoracic and abdominal aorta but not its branches. The Insured Person understands and agrees that we will not cover:  Surgery performed using only minimally invasive or intra arterial techniques.  Angioplasty and all other intra arterial, catheter based tec...",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Primary (Idiopathic) Pulmonary Hypertension",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "An unequivocal diagnosis of Primary (Idiopathic) Pulmonary Hypertension by a Cardiologist or Special",
+          "text": "I.An unequivocal diagnosis of Primary (Idiopathic) Pulmonary Hypertension by a Cardiologist or Specialist in respiratory medicine with evidence of right ventricular enlargement and the pulmonary artery pressure above 30 mm of Hg on cardiac Cauterization. There must be permanent irreversible physical impairment to the degree of at least Class IV of the New York Heart Association Classification of cardiac impairment.",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "The NYHA Classification of Cardiac Impairment are as follows:",
+          "text": "II.The NYHA Classification of Cardiac Impairment are as follows:",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "Class III: Marked limitation of physical activity. Comfortable at rest, but less than ordinary",
+          "text": "i.Class III: Marked limitation of physical activity. Comfortable at rest, but less than ordinary activity causes symptoms.",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "Class IV: Unable to engage in any physical activity without discomfort. Symptoms may be",
+          "text": "ii.Class IV: Unable to engage in any physical activity without discomfort. Symptoms may be present event at rest.",
+          "page": 14
+        },
+        {
+          "number": "III",
+          "title": "Pulmonary hypertension associated with lung disease, chronic hypoventilation, pulmonary",
+          "text": "III.Pulmonary hypertension associated with lung disease, chronic hypoventilation, pulmonary thromboembolic disease, drugs and toxins, diseases of the left side of the heart, congenital heart disease and any secondary cause are specifically excluded. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Parkinson’s Disease",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The unequivocal diagnosis of progressive degenerative idiopathic Parkinson’s disease by a consultant Neurologist acceptable to us. This diagnosis must be supported by all of the following conditions: a.The disease cannot be controlled with medication; b.Signs of progressive impairment; and c.inability of the Insured Person to perform at least 3 of the 6 activities of daily living as listed below (either with or without the use of mechanical equipment, special devices or other aids and adaptation...",
+          "page": 15
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or sh",
+          "text": "I.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take-off, secure and unfasten all garments and, as appropriate, any",
+          "text": "II.Dressing: the ability to put on, take-off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 15
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa",
+          "text": "III.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa",
+          "page": 15
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "IV.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 15
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to",
+          "text": "V.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 15
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "VI.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 15
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Exclusions: Parkinson’s disease secondary to drug and/or alcohol abuse is excluded.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12. Motor Neuron Disease with Permanent Symptoms",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Motor neurone disease diagnosed by a specialist medical practitioner as spinal muscular atrophy, progressive bulbar palsy, amyotrophic lateral sclerosis or primary lateral sclerosis. There must be progressive degeneration of corticospinal tracts and anterior horn cells or bulbar efferent neurons. There must be current significant and permanent functional neurological impairment with objective evidence of motor dysfunction that has persisted for a continuous period of at least 3 months.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Open Heart Replacement OR Repair of Heart Valves",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "the actual undergoing of open-heart valve surgery is to replace or repair one or more heart valves, ",
+          "text": "I. the actual undergoing of open-heart valve surgery is to replace or repair one or more heart valves, as a consequence of defects in, abnormalities of, or disease-affected cardiac valve(s). The diagnosis of the valve abnormality must be supported by an echocardiography and the realization of surgery has to be confirmed by a specialist medical practitioner. Catheter based techniques including but not limited to, balloon valvotomy/valvuloplasty are excluded.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "title": "14. Third Degree Burns",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "There must be third-degree burns with scarring that cover at least 20% of the body’s surface area. T",
+          "text": "I. There must be third-degree burns with scarring that cover at least 20% of the body’s surface area. The diagnosis must confirm the total area involved using standardized, clinically accepted, body surface area charts covering 20% of the body surface area.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "15. Aplastic Anaemia",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A chronic persistent bone marrow failure which results in anaemia, neutropenia and thrombocytopenia requiring treatment with at least one of the following: a)Blood product transfusion b)Marrow stimulating agents E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings c)Immunosuppressive agents or d)Bone marrow transplantation The diagnosis must be confirmed by a Haemat...",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Absolute Neutrophil count of less than 500 per cubic millimeter or less;",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Platelet count less than 20,000 per cubic millimeter or less",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Reticulocyte count of less than 20,000 per cubic millimeter or less",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Temporary or reversible Aplastic Anaemia is excluded.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "title": "16. Bacterial Meningitis",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Bacterial infection resulting in severe inflammation of the membranes of the brain or spinal cord resulting in significant, irreversible and permanent neurological deficit. The neurological deficit must persist for at least 6 weeks resulting in permanent inability to perform three or more Activities of daily Living. This diagnosis must be confirmed by: a.The presence of bacterial infection in cerebrospinal fluid by lumbar puncture; and b.A consultant neurologist. Bacterial Meningitis in the pres...",
+          "page": 16
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or sh",
+          "text": "i.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any",
+          "text": "ii.Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 16
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "iii.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 16
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "iv.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 16
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to",
+          "text": "v.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 16
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "vi.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "title": "17. COMA of specified severity",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "A state of unconsciousness with no reaction or response to external stimuli or internal needs. This ",
+          "text": "I. A state of unconsciousness with no reaction or response to external stimuli or internal needs. This diagnosis must be supported by evidence of all of the following:",
+          "page": 16
+        },
+        {
+          "number": "I",
+          "title": "no response to external stimuli continuously for at least 96 hours;",
+          "text": "i. no response to external stimuli continuously for at least 96 hours;",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "life support measures are necessary to sustain life; and",
+          "text": "ii. life support measures are necessary to sustain life; and",
+          "page": 16
+        },
+        {
+          "number": "III",
+          "title": "permanent neurological deficit which must be assessed at least 30 days after the onset of the coma",
+          "text": "iii. permanent neurological deficit which must be assessed at least 30 days after the onset of the coma",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "The condition has to be confirmed by a specialist medical practitioner. Coma resulting directly from",
+          "text": "II. The condition has to be confirmed by a specialist medical practitioner. Coma resulting directly from alcohol or drug abuse is excluded.",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "18",
+      "title": "18. Loss of Speech",
+      "level": 2,
+      "page_start": 16,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Total and irrecoverable loss of the ability to speak as a result of injury or disease to the vocal c",
+          "text": "I. Total and irrecoverable loss of the ability to speak as a result of injury or disease to the vocal cords. The inability to speak must be established for a continuous period of 12 months. This diagnosis must be supported by medical evidence furnished by an Ear, Nose, Throat (ENT) specialist.",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "All psychiatric related causes are excluded.",
+          "text": "II. All psychiatric related causes are excluded. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "number": "19",
+      "title": "19. End Stage Liver Failure",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Permanent and irreversible failure of liver function that has resulted in all three of the following",
+          "text": "I. Permanent and irreversible failure of liver function that has resulted in all three of the following:",
+          "page": 17
+        },
+        {
+          "number": "I",
+          "title": "Permanent jaundice; and",
+          "text": "i. Permanent jaundice; and",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "Ascites; and",
+          "text": "ii. Ascites; and",
+          "page": 17
+        },
+        {
+          "number": "III",
+          "title": "Hepatic encephalopathy",
+          "text": "iii. Hepatic encephalopathy",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "Liver failure secondary to drug or alcohol abuse is excluded.",
+          "text": "II. Liver failure secondary to drug or alcohol abuse is excluded.",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "20",
+      "title": "20. Deafness",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Total and irreversible loss of hearing in both ears as a result of illness or accident. This diagnos",
+          "text": "I. Total and irreversible loss of hearing in both ears as a result of illness or accident. This diagnosis must be supported by pure tone audiogram test and certified by an Ear, Nose and Throat (ENT) specialist. Total means ‘the loss of hearing to the extent that the loss is greater than 90 decibels across all frequencies of hearing’ in both ears.",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "21",
+      "title": "21. End stage lung Failure",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "End stage lung disease, causing chronic respiratory failure, as confirmed and evidenced by all of th",
+          "text": "I. End stage lung disease, causing chronic respiratory failure, as confirmed and evidenced by all of the following:",
+          "page": 17
+        },
+        {
+          "number": "I",
+          "title": "FEV1 test results consistently less than 1 litre measured on 3 occasions 3 months apart; and",
+          "text": "i. FEV1 test results consistently less than 1 litre measured on 3 occasions 3 months apart; and",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "Requiring continuous permanent supplementary oxygen therapy for hypoxemia; and",
+          "text": "ii. Requiring continuous permanent supplementary oxygen therapy for hypoxemia; and",
+          "page": 17
+        },
+        {
+          "number": "III",
+          "title": "Arterial blood gas analysis with partial oxygen pressure of 55 mmHg or less (PaO2<55mmHg); and",
+          "text": "iii. Arterial blood gas analysis with partial oxygen pressure of 55 mmHg or less (PaO2<55mmHg); and",
+          "page": 17
+        },
+        {
+          "number": "IV",
+          "title": "Dyspnea at rest",
+          "text": "iv. Dyspnea at rest",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "22",
+      "title": "22. Goodpasture’s syndrome",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Goodpasture’s syndrome is an autoimmune disease in which antibodies attack the lungs and kidneys, leading to permanent lung and kidney damage. The permanent damage should be for a continuous period of atleast 30 days. The diagnosis must be proven by Kidney biopsy and confirmed by a Specialist Medical Practitioner (Rheumatologist or Nephrologist)",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "23",
+      "title": "23. Apallic syndrome or Persistent Vegetative State",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Apallic Syndrome or Persistent vegetative state (PVS) or unresponsive wakefulness syndrome (UWS) is a Universal necrosis of the brain cortex with the brainstem remaining intact. The diagnosis must be confirmed by a Neurologist acceptable to us and the patient should be documented to be in a vegetative state for a minimum of at least one month in order to be classified as UWS, PVS, Apallic Syndrome.",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "24",
+      "title": "24. Systemic lupus Erythematosus with Lupus Nephritis",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A multi-system autoimmune disorder characterised by the development of autoantibodies directed against various self-antigens. In respect of this Policy, systemic lupus erythematosus will be restricted to those forms of systemic lupus erythematosus which involve the kidneys (Class III to Class V Lupus Nephritis, established by renal biopsy, and in accordance with the WHO Classification). The final diagnosis must be confirmed by a Registered Doctor specialising in Rheumatology and Immunology. The ...",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "25",
+      "title": "25. Multiple system atrophy",
+      "level": 2,
+      "page_start": 18,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A diagnosis of multiple system atrophy by a Specialist Medical Practitioner (Neurologist). There must be evidence of permanent clinical impairment for a minimum period of 30 days of either:",
+          "page": 18
+        },
+        {
+          "number": "I",
+          "title": "Motor function with associated rigidity of movement; or",
+          "text": "i.Motor function with associated rigidity of movement; or",
+          "page": 18
+        },
+        {
+          "number": "II",
+          "title": "The ability to coordinate muscle movement; or",
+          "text": "ii.The ability to coordinate muscle movement; or",
+          "page": 18
+        },
+        {
+          "number": "III",
+          "title": "Bladder control and postural hypotension",
+          "text": "iii.Bladder control and postural hypotension",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "26",
+      "title": "26. Progressive scleroderma",
+      "level": 2,
+      "page_start": 18,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A systemic collagen-vascular disease causing progressive diffuse fibrosis in the skin, blood vessels and visceral organs. This diagnosis must be unequivocally supported by biopsy and serological evidence and the disorder must have reached systemic proportions to involve the heart, lungs or kidneys. The following conditions are excluded:",
+          "page": 18
+        },
+        {
+          "number": "I",
+          "title": "Localized scleroderma (linear scleroderma or morphea);",
+          "text": "i.Localized scleroderma (linear scleroderma or morphea);",
+          "page": 18
+        },
+        {
+          "number": "II",
+          "title": "Eosinophilicfascitis; and",
+          "text": "ii.Eosinophilicfascitis; and",
+          "page": 18
+        },
+        {
+          "number": "III",
+          "title": "CREST syndrome",
+          "text": "iii.CREST syndrome",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "27",
+      "title": "27. Pneumonectomy",
+      "level": 2,
+      "page_start": 18,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The undergoing of surgery on the advice of an appropriate Medical Specialist to remove an entire lung for disease or traumatic injury suffered by the life assured. The following conditions are excluded: a.Removal of a lobe of the lungs (lobectomy) b.Lung resection or incision",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "28",
+      "title": "28. Pulmonary artery graft surgery",
+      "level": 2,
+      "page_start": 18,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The undergoing of surgery requiring median sternotomy on the advice of a cardiologist for disease of the pulmonary artery to excise and replace the diseased pulmonary artery with a graft.",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "29",
+      "title": "29. Alzheimer’s disease",
+      "level": 2,
+      "page_start": 18,
+      "page_end": 19,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Alzheimer’s (presenile dementia) disease is a progressive degenerative disease of the brain, characterised by diffuse atrophy throughout the cerebral cortex with distinctive histopathological changes. It affects the brain, causing symptoms like memory loss, confusion, communication problems, and general impairment of mental function, which gradually worsens leading to changes in personality. Deterioration or loss of intellectual capacity, as confirmed by clinical evaluation and imaging tests, ar...",
+          "page": 18
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or",
+          "text": "i.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 19
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any",
+          "text": "ii.Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 19
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "iii.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 19
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "iv.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 19
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to",
+          "text": "v.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 19
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "vi.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "30",
+      "title": "30. Benign brain tumor",
+      "level": 2,
+      "page_start": 19,
+      "page_end": 19,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Benign brain tumor is defined as a life threatening, non-cancerous tumor in the brain, cranial nerve",
+          "text": "I. Benign brain tumor is defined as a life threatening, non-cancerous tumor in the brain, cranial nerves or meninges within the skull. The presence of the underlying tumor must be confirmed by imaging studies such as CT Scan or MRI.",
+          "page": 19
+        },
+        {
+          "number": "II",
+          "title": "This brain tumor must result in at least one of the following and must be confirmed by the relevant ",
+          "text": "II. This brain tumor must result in at least one of the following and must be confirmed by the relevant medical specialist.",
+          "page": 19
+        },
+        {
+          "number": "I",
+          "title": "Permanent Neurological deficit with persisting clinical symptoms for a continuous period of at least",
+          "text": "i.Permanent Neurological deficit with persisting clinical symptoms for a continuous period of at least 90 consecutive days or",
+          "page": 19
+        },
+        {
+          "number": "II",
+          "title": "Undergone surgical resection or radiation therapy to treat the brain tumor.",
+          "text": "ii.Undergone surgical resection or radiation therapy to treat the brain tumor.",
+          "page": 19
+        },
+        {
+          "number": "III",
+          "title": "The following conditions are excluded:",
+          "text": "III. The following conditions are excluded: Cysts, Granulomas, malformations in the arteries or veins of the brain, hematomas, abscesses, pituitary tumors, tumors of skull bones and tumors of the spinal cord.",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "31",
+      "title": "31. Cardiomyopathy",
+      "level": 2,
+      "page_start": 19,
+      "page_end": 19,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "An impaired function of the heart muscle, unequivocally diagnosed as Cardiomyopathy by a Registered Doctor who is a cardiologist, and which results in permanent physical impairment to the degree of New York Heart Association (NYHA) Classification Class IV, or its equivalent, for at least six (6) months based on the following classification criteria:  NYHA Class IV – inability to carry out an activity without discomfort. Symptoms of congestive cardiac failure are present even at rest. With any i...",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "32",
+      "title": "32. Progressive supranuclear palsy",
+      "level": 2,
+      "page_start": 19,
+      "page_end": 19,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A diagnosis of progressive supranuclear palsy confirmed by a Registered Doctor who is a specialist in neurology of a definite diagnosis of progressive supranuclear palsy. There must be permanent clinical impairment of motor function, eye movement disorder and postural instability",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "33",
+      "title": "33. Creutzfeldt-jakob disease (CJD)",
+      "level": 2,
+      "page_start": 19,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings Creutzfeldt-Jacob disease is an incurable brain infection that causes rapidly progressivedeterioration of mental function and movement. A Registered Doctor, who is a neurologist, must make a definite diagnosis of Creutzfeldt- Jacob disease based on clinical assessment, EEG and imaging. There must be objective neur...",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "34",
+      "title": "34. Major head trauma",
+      "level": 2,
+      "page_start": 20,
+      "page_end": 20,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Accidental head injury resulting in permanent Neurological deficit to be assessed no sooner than 3 m",
+          "text": "I. Accidental head injury resulting in permanent Neurological deficit to be assessed no sooner than 3 months from the date of the accident. This diagnosis must be supported by unequivocal findings on Magnetic Resonance Imaging, Computerised Tomography, or other reliable imaging techniques. The accident must be caused solely and directly by accidental, violent, external and visible means and independently of all other causes.",
+          "page": 20
+        },
+        {
+          "number": "II",
+          "title": "The Accidental Head Injury must result in an inability to perform at least three (3) of the followin",
+          "text": "II. The Accidental Head Injury must result in an inability to perform at least three (3) of the following Activities of Daily Living either with or without the use of mechanical equipment, special devices or other aids and adaptations in use for disabled persons. For the purpose of this benefit, the word ‘permanent’ shall mean beyond the scope of recovery with current medical knowledge and technology.",
+          "page": 20
+        },
+        {
+          "number": "III",
+          "title": "Activities of Daily Living:",
+          "text": "III. Activities of Daily Living:",
+          "page": 20
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or sh",
+          "text": "I.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 20
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take-off, secure and unfasten all garments and, as appropriate, any",
+          "text": "II.Dressing: the ability to put on, take-off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 20
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa",
+          "text": "III.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa",
+          "page": 20
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "IV.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 20
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to ",
+          "text": "V.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 20
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "VI.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 20
+        },
+        {
+          "number": "IV",
+          "title": "The following are excluded:",
+          "text": "IV. The following are excluded:",
+          "page": 20
+        },
+        {
+          "number": "I",
+          "title": "Spinal cord injury;",
+          "text": "i.Spinal cord injury;",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "35",
+      "title": "35. Encephalitis",
+      "level": 2,
+      "page_start": 20,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Severe inflammation of brain substance (cerebral hemisphere, brainstem or cerebellum) caused by viral infection and resulting in permanent neurological deficit. This diagnosis must be certified by a Registered Doctor who is a consultant neurologist and the permanent neurological deficit must be documented for at least 6 weeks. The permanent deficit should result in permanent inability to perform three or more Activities for Daily Living (listed below). Encephalitis caused by HIV infection is exc...",
+          "page": 20
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or",
+          "text": "i.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 20
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any",
+          "text": "ii.Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 20
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "iii.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 20
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "iv.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 20
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to",
+          "text": "v.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 20
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "vi.Feeding: the ability to feed oneself once food has been prepared and made available. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "36",
+      "title": "36. Blindness",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Total, permanent and irreversible loss of all vision in both eyes as a result of illness or accident",
+          "text": "I. Total, permanent and irreversible loss of all vision in both eyes as a result of illness or accident.",
+          "page": 21
+        },
+        {
+          "number": "II",
+          "title": "The Blindness is evidenced by:",
+          "text": "II. The Blindness is evidenced by:",
+          "page": 21
+        },
+        {
+          "number": "I",
+          "title": "corrected visual acuity being 3/60 or less in both eyes or;",
+          "text": "i.corrected visual acuity being 3/60 or less in both eyes or;",
+          "page": 21
+        },
+        {
+          "number": "II",
+          "title": "The field of vision being less than 10 degrees in both eyes",
+          "text": "ii.The field of vision being less than 10 degrees in both eyes",
+          "page": 21
+        },
+        {
+          "number": "III",
+          "title": "The diagnosis of blindness must be confirmed and must not be correctable by aids or surgical procedu",
+          "text": "III. The diagnosis of blindness must be confirmed and must not be correctable by aids or surgical procedure.",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "37",
+      "title": "37. Brain surgery",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The actual undergoing of surgery to the brain under general anaesthesia during which a craniotomy is performed. Keyhole surgery is included however, minimally invasive treatment where no surgical incision is performed to expose the target, such as irradiation by gamma knife or endovascular neuroradiological interventions such as embolizations, thrombolysis and stereotactic biopsy are all excluded. Brain surgery as a result of an Accident is also excluded. The procedure must be considered medical...",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "38",
+      "title": "38. Fulminant Viral Hepatitis",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A sub-massive to massive necrosis of the liver by any virus, leading precipitously to liver failure. This diagnosis must be supported by all of the following: a.rapid decreasing of liver size; b.necrosis involving entire lobules, leaving only a collapsed reticular framework; c.rapid deterioration of liver functions tests; d.deepening jaundice; and e.hepatic encephalopathy Acute Hepatitis infection or carrier status alone, does not meet the diagnostic criteria",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "39",
+      "title": "39. Muscular Dystrophy",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A group of hereditary degenerative diseases of muscle characterised by weakness and atrophy of muscle. The diagnosis of muscular dystrophy must be unequivocal and made by a Registered Doctor who is a consultant neurologist. The condition must result in the inability of the Life Insured to perform (whether aided or unaided) at least 3 of the 6 “Activities of Daily Living” for a continuous period of at least 6 months. Activities of daily living are:  Washing: the ability to wash in the bath or sh...",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "40",
+      "title": "40. Medullary Cystic Disease",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Medullary Cystic Disease where the following criteria are met: E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings a) the presence in the kidney of multiple cysts in the renal medulla accompanied by the presence of tubular atrophy and intestinal fibrosis; b) Clinical manifestation of anaemia, polyuria and progressive deterioration in kidney function; and c) the dia...",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "41",
+      "title": "41. Hemiplegia",
+      "level": 2,
+      "page_start": 22,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The total and permanent loss of the use of one side of the body through paralysis persisting for a period of at least 6 weeks and with no foreseeable possibility of recovery caused by illness or injury. Self-inflicted injuries are excluded.",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "42",
+      "title": "42. Severe Rheumatoid Arthritis",
+      "level": 2,
+      "page_start": 22,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Unequivocal Diagnosis of systemic immune disorder of rheumatoid arthritis where all of the following criteria are met: • Diagnostic criteria of the American College of Rheumatology for Rheumatoid Arthritis; • Permanent inability to perform at least two (2) “Activities of Daily Living”; • Widespread joint destruction and major clinical deformity of three (3) or more of the following joint areas: hands, wrists, elbows, knees, hips, ankle, cervical spine or feet; and • The foregoing conditions have...",
+          "page": 22
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The Activities of Daily Living are:",
+          "page": 22
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath or",
+          "text": "i.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 22
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any",
+          "text": "ii.Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 22
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "iii.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 22
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "iv.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 22
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to",
+          "text": "v.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 22
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "vi.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "43",
+      "title": "43. Dissecting Aortic aneurysm",
+      "level": 2,
+      "page_start": 22,
+      "page_end": 22,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A condition where the inner lining of the aorta (intima layer) is interrupted so that blood enters the wall of the aorta and separates its layers. For the purpose of this definition, aorta shall mean the thoracic and abdominal aorta but not its branches. The diagnosis must be made by a registered Medical Practitioner who is a specialist with computed tomography (CT) scan, magnetic resonance imaging (MRI), magnetic resonance angiograph (MRA) or angiogram. Emergency surgical repair is required.",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "44",
+      "title": "44. Myasthenia Gravis",
+      "level": 2,
+      "page_start": 22,
+      "page_end": 23,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "An acquired autoimmune disorder of neuromuscular transmission leading to fluctuating muscle weakness and fatigability, where all of the following criteria are met: • Presence of permanent muscle weakness categorized as Class IV or V according to the Myasthenia Gravis Foundation of America Clinical Classification below; and • The Diagnosis of Myasthenia Gravis and categorization are confirmed by a registered Medical Practitioner who is a neurologist. Myasthenia Gravis Foundation of America Clinic...",
+          "page": 22
+        }
+      ]
+    },
+    {
+      "number": "45",
+      "title": "45. Infective Endocarditis",
+      "level": 2,
+      "page_start": 23,
+      "page_end": 23,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Inflammation of the inner lining of the heart caused by infectious organisms, where all of the following criteria are met: • Positive result of the blood culture proving presence of the infectious organism(s); • Presence of at least moderate heart valve incompetence (meaning regurgitant fraction of 20% or above) or moderate heart  valve stenosis (resulting in heart valve area of 30% or less of normal value) attributable to Infective Endocarditis; and • The Diagnosis of Infective Endocarditis and...",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "number": "46",
+      "title": "46. Pheochromocytoma",
+      "level": 2,
+      "page_start": 23,
+      "page_end": 23,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Presence of a neuroendocrine tumour of the adrenal or extra‐chromaffin tissue that secretes excess catecholamines requiring the actual undergoing of surgery to remove the tumour. The Diagnosis of Pheochromocytoma must be supported by plasma metanephrine levels and / or urine catecholamines and metanephrines and confirmed by a registered doctor who is an endocrinologist.",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "number": "47",
+      "title": "47. Eisenmenger's Syndrome",
+      "level": 2,
+      "page_start": 23,
+      "page_end": 23,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Development of severe pulmonary hypertension and shunt reversal resulting from heart condition. The diagnosis must be made by a registered Medical Practitioner who is a specialist with echocardiography and cardiac catheterisation and supported by the following criteria: - Mean pulmonary artery pressure > 40 mm Hg; - Pulmonary vascular resistance > 3mm/L/min (Wood units); and - Normal pulmonary wedge pressure < 15 mm Hg",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "number": "48",
+      "title": "48. Chronic Adrenal Insufficiency",
+      "level": 2,
+      "page_start": 23,
+      "page_end": 23,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "An autoimmune disorder causing a gradual destruction of the adrenal gland resulting in the need for life long glucocorticoid and mineral corticoid replacement therapy. The disorder must be confirmed by a registered Medical Practitioner who is a specialist in endocrinology through one of the following: • ACTH simulation tests; • insulin-induced hypoglycemia test; • plasma ACTH level measurement; • Plasma Renin Activity (PRA) level measurement. Only autoimmune cause of primary adrenal insufficienc...",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "number": "49",
+      "title": "49. Myelofibrosis",
+      "level": 2,
+      "page_start": 23,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A disorder which can cause fibrous tissue to replace the normal bone marrow and results in anaemia, low levels of white blood cells and platelets and enlargement of the spleen. The condition must have progressed to the point that it is permanent and the severity is such that the Insured Person requires a blood transfusion at least monthly. The E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHL...",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "number": "50",
+      "title": "50. Chronic Relapsing Pancreatitis",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "An unequivocal diagnosis of Chronic Relapsing Pancreatitis made by a Registered Doctor who is a specialist in gastroenterology and confirmed as a continuing inflammatory disease of the pancreas characterised by irreversible morphological change and typically causing pain and/or permanent impairment of function. The condition must be confirmed by pancreatic function tests and radiographic and imaging evidence. Relapsing Pancreatitis caused directly or indirectly, wholly or partly, by alcohol is e...",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "51",
+      "title": "51. Acquired Brain Damage",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Acquired Brain Damage refers to a medical condition where all of the following criteria must be met:  the Insured has attained the age of four (4) years old or above;  brain imaging studies and neuro-psychological testing appropriate to the Insured’s age have confirmed the presence of moderate to severe brain damage; and  the development of the Insured is delayed by the equivalent of at least two (2) years and there is a need for special childcare and special schooling as confirmed by a speci...",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "52",
+      "title": "52. Glomerulonephritis",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Glomerulonephritis refers to a medical condition whereby all of the following diagnostic criteria must be met:  Kidney biopsy has confirmed a progressive form of glomerulonephritis;  Serial renal function tests demonstrate a continuing progressive decline in renal function; and  The serum creatinine is persistently above 140 mmol/Litre for a period of not less than 6 months.",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "53",
+      "title": "53. Leukaemia",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Leukaemia refers to the occurrence of an acute or chronic myeloid leukaemia or acute lymphocytic leukaemia where all of the following diagnostic criteria must be met:  Unequivocal diagnosis has been confirmed by histology by a consultant haematologist or pathologist; and  the leukaemia has required treatment with chemotherapy or Bone Marrow Transplant",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "54",
+      "title": "54. Osteogenesis Imperfecta – Type III",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 24,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "This is characterized by brittle, osteoporotic, easily fractured bone. The insured must be unequivocally Diagnosed as a type III osteogenesis Imperfecta confirmed by the occurrence of all of the following conditions:  The result of physical examination of the Insured by a Specialist in the relevant field that the Insured suffers from growth retardation; and  The result of X-ray studies reveals multiple fractures of bones and progressive kyphoscoliosis; and  Positive result of skin biopsy Uneq...",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "55",
+      "title": "55. Tuberculous Meningitis",
+      "level": 2,
+      "page_start": 24,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Tuberculous Meningitis refers to meningitis proven to be caused by mycobacterium tuberculosis that causes a significant, irreversible and Permanent neurological deficit with persisting clinical symptoms that results in either: E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings a.severe cognitive impairment documented by standard neuro-psychological that results in...",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Waiting Period: Any Critical Illness diagnosed within the first 90 days from the date of commencement of the",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy is excluded.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. General Exclusions:",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "This Policy does not provide for any loss resulting in whole or in part from, or expenses incurred in respect of: Any Critical Illness for which treatment, or advice was recommended by or received from a Medical practitioner 1. or was diagnosed before the inception date of the policy with Us.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Any illness, sickness or disease other than those specified as Critical Illness under this Policy;",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Any Critical Illness directly caused due to treatment for, Alcoholism, drug unless prescribed by a Medical",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Practitioner or substance abuse or any addictive condition and consequences thereof.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Narcotics used by the Insured Person unless taken as prescribed by a registered Medical Practitioner",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Any Critical Illness directly caused due to intentional self-injury, suicide or attempted suicide, whether the",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "person is medically sane or insane.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Any Critical Illness directly caused by or arising from or attributable to a foreign invasion, act of foreign enemies,",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "hostilities, warlike operations (whether war be declared or not or while performing duties in the armed forces of any country during war or at peace time), civil war, public defense, rebellion, revolution, insurrection, military or usurped power.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Any Critical Illness caused by ionizing radiation or contamination by radioactivity from any nuclear fuel",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "(explosive or hazardous form) or from any nuclear waste from the combustion of nuclear fuel, nuclear, chemical or biological attack.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Working in underground mines, tunneling or involving electrical installations with high tension supply, or as race",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "jockeys or circus personnel.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Congenital external diseases, defects or anomalies or in consequence thereof",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Any Critical Illness directly caused by any treatment necessitated due to participation as a professional in",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "hazardous or adventure sport, including but not limited to, para jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep sea diving and selfie accident.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Participation by the Insured Person in any flying activity, except as a bona fide, fare paying passenger of a",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 25,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "recognized airline on regular routes and on a scheduled timetable.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12. Any Critical Illness directly caused by Medical treatment traceable to childbirth (including complicated deliveries",
+      "level": 2,
+      "page_start": 25,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and caesarean sections incurred during hospitalization) except ectopic pregnancy. Any Critical Illness directly E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings due to miscarriages (unless due to an accident) and lawful medical termination of pregnancy during the policy period.",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "SECTION 5: GENERAL CONDITIONS",
+      "level": 1,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "CONDITIONS PRECEDENT TO THE CONTRACT",
+          "text": "I. CONDITIONS PRECEDENT TO THE CONTRACT",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Any Critical Illness directly caused by any unproven/ experimental treatment, service and supplies for or in",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "connection with any treatment. Unproven/ experimental treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "title": "14. Any Critical Illness based on certification/diagnosis/treatment from persons not registered as Medical",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Practitioners, or from a Medical Practitioner who is practicing outside the discipline that he/ she is licensed for.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "15. Any Critical Illness directly caused due to any treatment, including surgical management, to change",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "characteristics of the body to those of opposite sex.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "title": "16. Any Critical Illness directly caused due to cosmetic or plastic surgery or any treatment to change the appearance",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "unless for reconstruction following an Accident, Burn(s), or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "title": "17. Any Critical Illness directly caused due to surgical treatment of obesity that does not fulfil all the below",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "conditions: a.Surgery to be conducted is upon the advice of the Doctor b.The Surgery / Procedure conducted should be supported by clinical protocols c.The member has to be 18 years of age or older and d.Body Mass Index (BMI):  greater than or equal to 40 or  greater than or equal to 35 in conjunction with any of the following severe co-morbidities following failure of less invasive methods of weight loss:",
+          "page": 26
+        },
+        {
+          "number": "I",
+          "title": "Obesity related cardiomyopathy",
+          "text": "i.Obesity related cardiomyopathy",
+          "page": 26
+        },
+        {
+          "number": "II",
+          "title": "Coronary heart disease",
+          "text": "ii.Coronary heart disease",
+          "page": 26
+        },
+        {
+          "number": "III",
+          "title": "Severe Sleep Apnea",
+          "text": "iii.Severe Sleep Apnea",
+          "page": 26
+        },
+        {
+          "number": "IV",
+          "title": "Uncontrolled Type 2 Diabetes despite optimal therapy",
+          "text": "iv.Uncontrolled Type 2 Diabetes despite optimal therapy",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "18",
+      "title": "18. Any Critical Illness directly caused by treatment directly arising from or consequent upon any Insured Person",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "committing or attempting to commit a breach of law with criminal intent.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "19",
+      "title": "19. In the event of the death of the Insured Person within the stipulated survival period as set out above",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "20",
+      "title": "20. Any Critical Illness directly caused by sterility and infertility. This includes:",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a.Any type of contraception, sterilization b.Assisted Reproductive services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI c.Gestational Surrogacy d.Reversal of sterilization",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Condition precedent to Admission of Liability:",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 26,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "It is a condition precedent to our liability that the Insured person shall comply in all respects with the terms and conditions of this Policy in so far as they require anything to be done or complied with by his/her dependent.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Due care:",
+      "level": 2,
+      "page_start": 26,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings The Insured Person / persons shall take or procure to be taken all reasonable care and precautions to prevent a claim arising under this Policy and, in the event of a claim arising, to minimize its financial consequences",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Consideration:",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "This Policy is issued subject to payment of premium in advance.  No payment shall be valid unless made under our official receipt. The cover shall not be available prior to the date and time of receipt of premium.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Disclosure to information:",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The policy shall be void and all premium paid thereon shall be forfeited to the Company in the event of misrepresentation, mis description or non-disclosure of any material fact by the policyholder. (Explanation: “Material facts” for the purpose of this policy shall mean all relevant information sought by the company in the proposal form and other connected documents to enable it to take informed decision in the context of underwriting the risk)",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Change of Address / Contact details:",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "It is in the Insured Person’s interest to intimate us if there is any change in contact address and phone numbers.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Cost of Pre Policy Medical Check up",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a.Pre policy Medical Check up for the proposed customers will be arranged by our Designated Service Provider on Cashless basis. b.No cost will be collected from the Customers towards the same. c.In case after undergoing the Pre Policy Medical Check up, the Proposal gets rejected by us or Insured decides not to take the policy, the expenses incurred by the Insurer for the purpose of Pre Policy Medical Check up will be deducted from the Insured’s premium and the balance premium would be refunded.",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Free Look Period:",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 27,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Free Look Period shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy.",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable.",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "lf the insured has not made any claim during the Free Look Period, the insured shall be entitled to",
+          "page": 27
+        },
+        {
+          "number": "I",
+          "title": "A refund of premium paid less any expenses incurred by the company on medical examination of the",
+          "text": "i.A refund of premium paid less any expenses incurred by the company on medical examination of the insured person and the stamp duty charges or",
+          "page": 27
+        },
+        {
+          "number": "II",
+          "title": "where the risk has already commenced and the option of return of the policy is exercised by the",
+          "text": "ii.where the risk has already commenced and the option of return of the policy is exercised by the insured person, a deduction towards the proportionate risk premium for period of cover or",
+          "page": 27
+        },
+        {
+          "number": "III",
+          "title": "Where only a part of the insurance coverage has commenced, such proportionate premium",
+          "text": "iii.Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Moratorium Period:",
+      "level": 2,
+      "page_start": 27,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "After completion of eight continuous years under this policy no look back would be applied. This period of eight years is called as moratorium period. The moratorium would be applicable for the sums insured of the first policy and subsequently completion of eight continuous years would be applicable from date of enhancement of sums insured only on the enhanced limits. After the expiry of Moratorium Period no claim under this policy shall be E: customercare@cholams.murugappa.com; website: www.cho...",
+          "page": 27
+        },
+        {
+          "number": "II",
+          "title": "CONDITIONS APPLICABLE DURING THE CONTRACT",
+          "text": "II. CONDITIONS APPLICABLE DURING THE CONTRACT",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Notice and Communication:",
+      "level": 2,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Any notice ,direction ,instruction or any other communication related to the Policy should be made i",
+          "text": "i.Any notice ,direction ,instruction or any other communication related to the Policy should be made in writing",
+          "page": 28
+        },
+        {
+          "number": "II",
+          "title": "Such communication shall be sent to the address of the Company or through any other electronic modes",
+          "text": "ii.Such communication shall be sent to the address of the Company or through any other electronic modes specified in the Policy Schedule",
+          "page": 28
+        },
+        {
+          "number": "III",
+          "title": "The Company shall communicate to the Insured Person at the address or through any other electronic m",
+          "text": "iii.The Company shall communicate to the Insured Person at the address or through any other electronic mode mentioned in the schedule",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Transfer:",
+      "level": 2,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Transferring of interest in this Policy to anyone else is not allowed.",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. Nomination:",
+      "level": 2,
+      "page_start": 28,
+      "page_end": 28,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The policyholder is required at the inception of the policy to make a nomination for the purpose of payment of claims under the policy in the event of death of the policyholder. Any change of nomination shall be communicated to the company in writing and such change shall be effective only when an endorsement on the policy is made. In the event of death of the policyholder, the Company will pay the nominee (as named in the Policy Schedule/Policy Certificate/Endorsement (if any)) and in case ther...",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "title": "12. Fraud:",
+      "level": 2,
+      "page_start": 28,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If any claim made by the Insured Person, is in any respect fraudulent, or if any false statement, or declaration is made or used in support thereof, or if any fraudulent means or devices are used by the insured person or anyone acting on his/her behalf to obtain any benefit under this policy, all benefits under this policy and the premium paid shall be forfeited.",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Any amount already paid against claims made under this policy but which are found fraudulent later shall be repaid by all recipient(s)/policyholder(s), who has made that particular claim, who shall be jointly and severally liable for such repayment to the insurer.",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "For the purpose of this clause, the expression “fraud” means any of the following acts committed by the insured person or by his agent or the hospital/doctor/any other party acting on behalf of the insured person, with intent to deceive the insurer or to induce the insurer to issue an insurance policy: a)the suggestion, as a fact of that which is not true and which the insured person does not believe to be true; b)the active concealment of a fact by the insured person having knowledge or belief ...",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Governing Law:",
+      "level": 2,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The construction, interpretation and meaning of the provisions of this Policy shall be determined in accordance with Indian law. The section headings of this Policy are descriptive only and do not form part of this Policy for the purpose of its construction or interpretation.",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "title": "14. Entire Contract:",
+      "level": 2,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Policy constitutes the complete contract of insurance. Only the Insurer may alter the terms and conditions of this Policy. Any alteration that may be made by the Insurer shall be evidenced by a duly signed and sealed endorsement on the Policy.",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "title": "15. Territorial Limits:",
+      "level": 2,
+      "page_start": 29,
+      "page_end": 29,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insurer’s liability to make any payment towards illness shall be to make payment within India.",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "title": "16. Assignment:",
+      "level": 2,
+      "page_start": 29,
+      "page_end": 31,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The policy can be assigned subject to applicable laws.",
+          "page": 29
+        },
+        {
+          "number": "III",
+          "title": "CONDITIONS WHEN A CLAIM ARISES",
+          "text": "III. CONDITIONS WHEN A CLAIM ARISES 17. i. Claim Notification: a.It shall be a condition precedent for any claim to be made by the Insured Person under this policy or for liability attaching to us hereunder that claim intimation is provided to the Insurer within 30 days from the date of diagnosis/occurrence of the event by telephone through toll free number (1800-208-5544) or in writing by email (customercare@cholams.murugappa.com) / letter). The intimation should contain the following informati...",
+          "page": 29
+        },
+        {
+          "number": "I",
+          "title": "We shall settle claims, including its rejection, within thirty days of the receipt of last `necessar",
+          "text": "i.We shall settle claims, including its rejection, within thirty days of the receipt of last `necessary’ document.",
+          "page": 30
+        },
+        {
+          "number": "II",
+          "title": "However, where the circumstances of a claim warrant an investigation in the opinion of the insurer, ",
+          "text": "ii.However, where the circumstances of a claim warrant an investigation in the opinion of the insurer, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, Insurer shall settle the claim within 45 days from the date of receipt of last necessary document.",
+          "page": 30
+        },
+        {
+          "number": "III",
+          "title": "In case of delay in the payment, the Company shall be liable to pay penal interest at a rate which i",
+          "text": "iii.In case of delay in the payment, the Company shall be liable to pay penal interest at a rate which is 2% above the Bank rate prevalent at the beginning of the financial year in which the claim is reviewed.",
+          "page": 30
+        },
+        {
+          "number": "IV",
+          "title": "There is no TPA tie –up envisaged for this product. Any arrangement in future will be disclosed in t",
+          "text": "iv.There is no TPA tie –up envisaged for this product. Any arrangement in future will be disclosed in the Policy to the Policy holders",
+          "page": 30
+        },
+        {
+          "number": "V",
+          "title": "Any claim payable under the policy will be in Indian Rupees Only.",
+          "text": "v.Any claim payable under the policy will be in Indian Rupees Only. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings 17.iv. Delay in intimation of claim: It is essential and imperative that any loss or claim under the Policy has to be intimated to us strictly as per the Policy conditions to enable us to appoint investigator wherever deemed necessary for loss ass...",
+          "page": 30
+        },
+        {
+          "number": "IV",
+          "title": "CONDITIONS FOR RENEWAL OF THE CONTRACT",
+          "text": "IV. CONDITIONS FOR RENEWAL OF THE CONTRACT",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": "18",
+      "title": "18. Renewal of Policy:",
+      "level": 2,
+      "page_start": 31,
+      "page_end": 31,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The policy shall ordinarily be renewable except on grounds of fraud, misrepresentation by the insured person.",
+          "page": 31
+        },
+        {
+          "number": "I",
+          "title": "The Company shall endeavour to give notice for renewal. However, the Company is not under obligation",
+          "text": "i.The Company shall endeavour to give notice for renewal. However, the Company is not under obligation to give any notice for renewal. Request for renewal along with requisite premium shall be received by the Company before the end of the policy period.",
+          "page": 31
+        },
+        {
+          "number": "II",
+          "title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace peri",
+          "text": "ii.At the end of the policy period, the policy shall terminate and can be renewed within the Grace period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period.",
+          "page": 31
+        },
+        {
+          "number": "III",
+          "title": "No loading shall apply on renewals based on individual claims experience.",
+          "text": "iii.No loading shall apply on renewals based on individual claims experience.",
+          "page": 31
+        },
+        {
+          "number": "IV",
+          "title": "If a claim was paid under the Base Cover during the policy period for anyone of the covered critical",
+          "text": "iv.If a claim was paid under the Base Cover during the policy period for anyone of the covered critical illness, then this policy stands terminated and shall not be subsequently renewed. However, the optional covers other than Double Protection Cover, shall continue till the expiry of the policy period as mentioned in the Policy Schedule or occurrence of a claim under optional cover opted, whichever is earlier.",
+          "page": 31
+        },
+        {
+          "number": "V",
+          "title": "When an insured Person is added to this Policy either by way of endorsement or at the time of renewa",
+          "text": "v.When an insured Person is added to this Policy either by way of endorsement or at the time of renewal the waiting periods will be applicable to that insured person considering such policy period as the first policy with us.",
+          "page": 31
+        },
+        {
+          "number": "VI",
+          "title": "Maximum Renewal age for dependent children is 26 years. On renewal, such insured person shall be",
+          "text": "vi.Maximum Renewal age for dependent children is 26 years. On renewal, such insured person shall be migrated into a separate similar Health policy with continuity benefits.",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": "19",
+      "title": "19. Enhancement of Sum Insured:",
+      "level": 2,
+      "page_start": 31,
+      "page_end": 32,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Sum Insured under Base Cover can be enhanced only at the time of renewal subject to reported claim status and health condition of the insured. If the Insured Person/Policy holder decides to increase the sum insured at the time of renewal, the Sum Insured revision is subject to the conditions mentioned below and our acceptance of the Sum Insured enhancement request a.Written application, E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U...",
+          "page": 31
+        },
+        {
+          "number": "I",
+          "title": "Any Insured Person over 65 years of age.",
+          "text": "i.Any Insured Person over 65 years of age.",
+          "page": 32
+        },
+        {
+          "number": "II",
+          "title": "Any Insured Person who had undergone more than one Hospitalisation in the preceding two years.",
+          "text": "ii.Any Insured Person who had undergone more than one Hospitalisation in the preceding two years.",
+          "page": 32
+        },
+        {
+          "number": "III",
+          "title": "Any Insured Person suffering from one or more of the following Illnesses / Conditions:",
+          "text": "iii.Any Insured Person suffering from one or more of the following Illnesses / Conditions: o Any chronic Illness o Any recurring Illness o Any Critical Illness",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "number": "20",
+      "title": "20. Possibility of Revision of Terms of the policy including the Premium Rates:",
+      "level": 2,
+      "page_start": 32,
+      "page_end": 32,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The company, with prior approval of IRDAI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are effected.",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "number": "21",
+      "title": "21. Withdrawal of the Product",
+      "level": 2,
+      "page_start": 32,
+      "page_end": 32,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "In the likelihood of this product being withdrawn in future, the company will intimate the insured p",
+          "text": "i.In the likelihood of this product being withdrawn in future, the company will intimate the insured person about the same 90 days prior to expiry of the policy.",
+          "page": 32
+        },
+        {
+          "number": "II",
+          "title": "Insured person will have the option to migrate to similar health insurance product available with th",
+          "text": "ii.Insured person will have the option to migrate to similar health insurance product available with the company at the time of renewal with all the accrued continuity benefits such as cumulative bonus, waiver of waiting period as per IRDAI guidelines, provided the policy has been maintained without a break.",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "number": "22",
+      "title": "22. Cancellation of cover:",
+      "level": 2,
+      "page_start": 32,
+      "page_end": 33,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "The policyholder may cancel this policy by giving 15 days written notice and in such an event, the C",
+          "text": "i. The policyholder may cancel this policy by giving 15 days written notice and in such an event, the Company shall refund premium for the unexpired policy period as per the below short period table.",
+          "page": 32
+        },
+        {
+          "number": "1",
+          "title": "Yr Policy Term 2 Yrs Policy Term 3 Yrs Policy Term",
+          "text": "1 Yr Policy Term 2 Yrs Policy Term 3 Yrs Policy Term Premium Premium Premium Month Month Month Retained Retained Retained 1 8% 1 4% 1 3% 2 17% 2 8% 2 6% 3 25% 3 13% 3 8% 4 33% 4 17% 4 11% 5 42% 5 21% 5 14% 6 50% 6 25% 6 17% 7 58% 7 29% 7 19% 8 67% 8 33% 8 22% 9 75% 9 38% 9 25% 10 83% 10 42% 10 28% 11 92% 11 46% 11 31% 12 100% 12 50% 12 33% E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21...",
+          "page": 32
+        },
+        {
+          "number": "II",
+          "title": "The Company may cancel the policy at any time on grounds of misrepresentation, non-disclosure of mat",
+          "text": "ii. The Company may cancel the policy at any time on grounds of misrepresentation, non-disclosure of material facts, fraud by the insured person by giving 15 days written notice. There would be no refund of premium on cancellation on grounds of misrepresentation, non-disclosure of material facts or fraud.",
+          "page": 33
+        }
+      ]
+    },
+    {
+      "number": "23",
+      "title": "23. Portability:",
+      "level": 1,
+      "page_start": 33,
+      "page_end": 33,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The insured person will have the option to port the policy to other insurers by applying to such insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guidelines related to portability. If such person is presently covered and has been continuously covered without any lapses under any Critical illness insurance policy with an Indian General/Health insurer, the proposed ins...",
+          "page": 33
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "For Detailed guidelines on Portability, kindly refer the link: www.cholainsurance.com",
+          "page": 33
+        }
+      ]
+    },
+    {
+      "number": "24",
+      "title": "24. Migration",
+      "level": 1,
+      "page_start": 33,
+      "page_end": 34,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings The insured person will have the option to migrate the policy to other Critical illness products/plans offered by the company by applying for migration of the policy atleast 30 days before the policy renewal date as per IRDAI guidelines on Migration. If such person is presently covered and has been continuously co...",
+          "page": 34
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "For Detailed guidelines on migration, kindly refer the link: www.cholainsurance.com",
+          "page": 34
+        },
+        {
+          "number": "25",
+          "title": "Underwriting Loading",
+          "text": "25. Underwriting Loading Risk loading may be applied on premium payable (excluding taxes and cess) based on the details of the Insured Persons, including the health status, habits and lifestyle, past medical records, declarations on the Proposal Form and results of the Pre-Policy medical check-up. The maximum risk loading for an individual shall not exceed 100%.",
+          "page": 34
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "These loadings are applicable from commencement date of policy including subsequent renewal(s).",
+          "page": 34
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "These loadings may only be applied if the proposal is accepted with the declared illness/ with the deviated value of medical test report, at the time of underwriting and only if the proposed policyholder accepts these loadings being applied for the underlying illness/condition at the time of underwriting",
+          "page": 34
+        },
+        {
+          "number": "26",
+          "title": "Arbitration",
+          "text": "26. Arbitration a. Any dispute or difference between the Insurer and the Insured Person or the Policyholder will be resolved in accordance with Arbitration & Conciliation Act 1996 or any modification or amendment of it. The arbitration proceedings shall be conducted in the English language. b. It is agreed as a condition precedent to any right of action or suit on this Policy that a final arbitration award shall be first obtained. c. If this arbitration clause is held to be invalid in whole or i...",
+          "page": 34
+        },
+        {
+          "number": "27",
+          "title": "Automatic Termination",
+          "text": "27. Automatic Termination This policy shall terminate immediately on the earlier of the following events irrespective of the expiry date mentioned in the policy schedule • Upon the demise of the Insured person, in which case the Company will refund premium calculated on pro-rata basis for the unexpired period subject there being no claim under the policy. • Upon payment of an admissible claim and settlement of 100% of Sum Insured specified in the Policy Schedule under Base cover. However the cov...",
+          "page": 34
+        },
+        {
+          "number": "28",
+          "title": "Disclaimer",
+          "text": "28. Disclaimer It is also hereby further expressly agreed and declared that if we shall disclaim liability to You for any claim hereunder and such claim shall not within 12 calendar months from the date of such disclaimer have been made the subject matter of a suit in a Court of law or pending reference before Ombudsman, then the claim shall for all purposes be deemed to have been abandoned and shall not thereafter be recoverable hereunder.",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "SECTION 6: GRIEVANCE REDRESSAL MECHANISM",
+      "level": 1,
+      "page_start": 34,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "In case of any grievance the insured person may contact the company through E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings Website  : www.cholainsurance.com Toll free  : 1800 208 5544 E-Mail  : customercare@cholams.murugappa.com Fax  : 044 -4044 5550 Courier  : Cholamandalam MS General Insurance Company Limited, Customer services, Head Office Dare House 2nd fl...",
+          "page": 34
+        },
+        {
+          "number": "2",
+          "title": "Floor, 6, Malviya Nagar, Opp. Airtel Office, Near New",
+          "text": "2 Floor, 6, Malviya Nagar, Opp. Airtel Office, Near New Market, Bhopal – 462003. Tel.: 0755-2769201/2769202, Fax.: 0755-2769203, Email.: bimalokpal.bhopal@ecoi.co.in Odisha Office of the Insurance Ombudsman, 62, Foresh Partk, Bhubhaneshwar – 750009. Tel.: 0674-2596461/2586455. Fax.: 0674-2596429. Email.: bimalokpal.bhubaneswar@ecoi.co.in E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP2101...",
+          "page": 35
+        },
+        {
+          "number": "160017",
+          "title": "Tel.: 0172-2706196/2706468. Fax.: 0172-",
+          "text": "160017. Tel.: 0172-2706196/2706468. Fax.: 0172- 2708274, Email.: bimalokpal.chandigarh@ecoi.co.in Tamilnadu, UT-Pondicherry Town and Karaikal Office of the Insurance Ombudsman,Fatima Akhtar Court, th (which are part of UT of Pondicherry) 4 Floor, 453, Anna Salai, Teynampet, Chennai 600 018. Tel. 044 – 24333668/24335284. Fax. 044-24333664, Email.: bimalokpal.chennai@ecoi.co.in Delhi Office of the Insurance Ombudsman, 2/2 A, Universal Insurance Building, Asaf Ali Road, New Delhi – 110002. Tel. 011...",
+          "page": 36
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Section 7: Medical Second Opinion-Add-on Cover (on payment of additional premium) CHOHLIA19048V011920",
+          "page": 37
+        },
+        {
+          "number": "1",
+          "title": "GENERAL CONDITIONS",
+          "text": "1. GENERAL CONDITIONS",
+          "page": 37
+        },
+        {
+          "number": "1",
+          "title": "It is agreed and understood that this Add On Cover can only be bought along with the Underlying Plan",
+          "text": "1.It is agreed and understood that this Add On Cover can only be bought along with the Underlying Plan and cannot be bought in isolation or as a separate product.",
+          "page": 37
+        },
+        {
+          "number": "2",
+          "title": "The Add On Cover is subject to the terms and conditions stated below and the Policy terms, condition",
+          "text": "2.The Add On Cover is subject to the terms and conditions stated below and the Policy terms, conditions and applicable endorsements of the Underlying Plan.",
+          "page": 37
+        },
+        {
+          "number": "3",
+          "title": "The Add On Cover shall be available under your policy only if the same is specifically opted on paym",
+          "text": "3.The Add On Cover shall be available under your policy only if the same is specifically opted on payment of applicable premium and specified in the Policy Schedule.",
+          "page": 37
+        },
+        {
+          "number": "4",
+          "title": "All applicable Terms and Conditions of the Underlying Policy shall apply to the Add on Cover.",
+          "text": "4.All applicable Terms and Conditions of the Underlying Policy shall apply to the Add on Cover.",
+          "page": 37
+        },
+        {
+          "number": "2",
+          "title": "APPLICABILITY",
+          "text": "2. APPLICABILITY On opting for the Medical Second Opinion cover by paying applicable premium, the same will be applicable for all the Individual Insured members under the base policy. The proposer will not have an option to exclude the insured members from this cover.",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. COVERAGE",
+      "level": 1,
+      "page_start": 37,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings In the event of any Insured Person, being diagnosed with any Medical Condition during the Policy Year, he or she can obtain the Medical Second Opinion from the World’s Leading Medical Centers (WLMC) tied up with our Service Provider. On the basis of the Diagnosis, a choice of 3 world leading medical centers will b...",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. This policy shall not provide medical second opinion in respect of illnesses for which the Insured member is",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "undergoing treatment at the time of taking the policy.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Medical Second Opinion should be specifically requested for by the Insured",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. The Insured is free to choose whether or not to obtain the Second Opinion and, if obtained under this cover,",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "then whether or not to act on it.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. This opinion is given based only on the medical records submitted without examining the patient, who is",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "covered under the policy.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. This benefit is for additional information purposes only and does not and should not be deemed to",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "substitute the Insured’s visit or consultation to an independent Medical Practitioner.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Any Medical Second Opinion provided hereunder shall not be valid for any medico-legal purposes or any",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "insurance claim purposes.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Medical Second Opinion under this cover is facilitated by the Service Provider from the WLMC and not",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "provided by the Company.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. The Company does not make any representation as to the adequacy or accuracy of the Medical Second",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Opinion or the Insured’s or any other person’s reliance on the same or the use to which the Second Opinion is put.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. The Company is not liable for any claims due to any errors or omission or consequences of any action taken",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "or not taken in reliance of the Medical Second Opinion provided under this cover.",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Utilizing this facility alone will not amount to making a claim under any health insurance policy",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "title": "11. No medical Second Opinion can be availed during the break in insurance",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "3. b. Specific Exclusions The Service Provider will not facilitate Medical Second Opinion with the WLMC in the following circumstances where the",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Insured has not received a diagnosis",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Insured has not been evaluated by an attending physician within the last 12 months",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Physical Evaluation of the Insured is required",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 38,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Condition of the Insured is acute or emergency in nature. Medical Second Opinion for the Insured in such",
+      "level": 2,
+      "page_start": 38,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "cases can be initiated or the process can be continued after the patient is stabilised. E: customercare@cholams.murugappa.com; website: www.cholainsurance.com IRDA Regn. No.123; PAN AABCC6633K CIN U66030TN2001PLC047977 FLEXI MAX PROTECT CHOHLIP21017V012122 Policy Wordings",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. DEFINITIONS",
+      "level": 1,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The terms defined below and at other junctures in the Add-on cover  Wording have the meanings ascribed to them wherever they appear in the Add-on cover Wording and where appropriate, references to the singular include references to the plural; references to the male include the female and references to any statutory enactment include subsequent changes to the same:",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Attending Physician shall mean the Medical Practitioner/Physician who has locally been attending to the",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured’s relevant medical needs and is typically the medical professional who has been involved in providing the first diagnosis of the relevant medical condition for the Insured Person.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Medical Records shall mean the written medical files regarding the Insured as developed and maintained",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "by an Attending Physician or other involved medical professionals or facilities.  Typically, they include a written summary of the primary diagnosis, an outline of the recommended treatment approach, as well as associated materials such as X-rays, pathology blocks or slides, computer imaging data, lab test results, and additional information reached through clinical evaluation.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Medical Second Opinion (MSO) shall mean the written opinion of a physician practicing at a World",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Leading Medical Center provided to the Insured and the Attending Physician regarding his or her diagnosis and course of treatment.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Service Provider shall mean and include all or any legal entity, who is engaged by the Insurer and named in",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the policy schedule to provide access to the services that are designed to assist the Insured in their decision making in non emergency medical conditions by facilitating Medical Second Opinion through its unique relationships with World Leading Medical Centers.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. World Leading Medical Center (WLMC) shall mean a health care facility that is widely known and",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "identified as providing specialized medical care that is recognized within the broad medical community as highly respected in its fields of clinical care.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. GENERAL CONDITIONS",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "5.1",
+      "title": "5.1. Procedure to obtain Medical Second Opinion",
+      "level": 3,
+      "page_start": 39,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "In order to obtain the Medical Second opinion,  Insured has to contact the Service Provider through the Toll Free number mentioned on the Policy Schedule and provide the - Clinical information details, - Authorisation to collect medical records from the hospital or attending physician or health care provider and - Consent to share the medical records with the WLMC for review and provide Medical Second Opinion by email.  Based on the Clinical information shared by the Insured, Service Provider ...",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "5.2",
+      "title": "5.2. Territorial Limits",
+      "level": 3,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured can avail Medical Second Opinion from the World Leading Medical Centers under this policy.",
+          "page": 40
+        }
+      ]
+    },
+    {
+      "number": "5.3",
+      "title": "5.3. Service Provider",
+      "level": 3,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Service under this Add-on cover is provided by MediGuide International, an independent Company not affiliated to us. Cholamandalam MS General Insurance Company has entered into an agreement with ‘MediGuide International, LLC’ and ‘MediGuide India Services Private Limited’ to provide Medical Second Opinion program through the WLMC empanelled with MediGuide International, LLC.  ‘MediGuide India’ provides local administrative support in India for MediGuide Medical Second Opinion program and nec...",
+          "page": 40
+        }
+      ]
+    },
+    {
+      "number": "5.4",
+      "title": "5.4. Disclaimer",
+      "level": 3,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured hereby understands and agrees that the Services provided under the Medical Second Opinion cover is not independent treatment or diagnosis and should not be solely relied upon as such by the Insured and those Physicians who provide the medical services contemplated by this Policy do not have the benefit of information that would be obtained by examining the Insured in person and observing his or her physical condition.  Therefore, the Physician may not be aware of facts or information...",
+          "page": 40
+        }
+      ]
+    }
+  ]
+}

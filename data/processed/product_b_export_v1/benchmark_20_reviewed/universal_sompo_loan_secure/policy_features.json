@@ -1,0 +1,326 @@
+{
+  "policy_id": "universal_sompo_loan_secure",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:21Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Universal_Sompo_Loan_Secure_Insurance_Policy.pdf",
+    "file_hash": "sha256:f0d996d297b4dd93de907281947f8befea7a4697fcaab8bebf21cdcb4a2b67f2",
+    "source_domain": "policy_wording",
+    "page_count": 40
+  },
+  "product_identity": {
+    "insurer": "Universal Sompo",
+    "plan_name": "Loan Secure",
+    "display_name": "Universal Sompo Loan Secure",
+    "uin": "UNIHLIP22139V032122",
+    "uin_base": "UNIHLIP22139",
+    "product_version": 3,
+    "effective_date": "05-08-2021",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ayush_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "claim_intimation_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6. Indoor case papers, if required Claims documents for Section II (i)Upon the happening of any Injury giving rise or likely to give rise to a claim under this Policy, the Injury as described above shall be intimated to the Company as soon as possible but not later than 30 days from the date of its occurrence. (ii)The Insured shall deliver to the Company, within 30 days of the date of occurrence of the Insured Event, a detailed statement in writing as per the claim form and any other material particular, relevant to the making of su",
+      "evidence_page": 14,
+      "evidence_clause": "clause_0198",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_universal_sompo_loan_secure_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "1. Insurer shall settle claim(s), including its rejection, within 30 (thirty days) of the receipt of the last necessary claim document",
+      "evidence_page": 15,
+      "evidence_clause": "clause_0201",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_universal_sompo_loan_secure_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "12.Subrogation 1.Insured will be allowed a period of at least 15 days from the date of receipt of the Policy to review the terms and conditions of the Policy and to return the same if not acceptable.",
+      "evidence_page": 29,
+      "evidence_clause": "1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_universal_sompo_loan_secure_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "nsured with cogent reasons for such denial of Renewal. policy(ies) if the claim is paid or admitted under section I or section II. d.The company may condone delay in Renewal up to 30 days from the due date of Renewal without deeming such condo nation as a Break in Policy. However coverage shall not be available for such period. e.If the insured move into a higher a",
+      "evidence_page": 30,
+      "evidence_clause": "clause_0165",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_universal_sompo_loan_secure_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "initial_waiting_days": {
+      "value": null,
+      "unit": "days",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text 28.Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the Renewal continuous for the purpose of gaining the credit for pre-existing diseases, time bound exclusions and for all waiting periods",
+      "evidence_page": 4,
+      "evidence_clause": "28",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_universal_sompo_loan_secure_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "specific_disease_waiting": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    }
+  },
+  "unresolved_concepts": [
+    "ambulance_coverage",
+    "ayush_coverage",
+    "co_pay",
+    "cumulative_bonus_ncb",
+    "deductible",
+    "icu_limit",
+    "initial_waiting_period",
+    "maternity_waiting",
+    "modern_treatment_coverage",
+    "newborn_coverage",
+    "organ_donor_coverage",
+    "ped_waiting_period",
+    "restoration_benefit",
+    "room_rent_limit",
+    "specific_disease_waiting_periods"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 5,
+    "concepts_not_found": 15,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.25,
+    "average_confidence": 0.96
+  }
+}

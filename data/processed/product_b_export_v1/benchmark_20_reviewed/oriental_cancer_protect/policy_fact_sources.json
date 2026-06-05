@@ -1,0 +1,607 @@
+{
+  "policy_id": "oriental_cancer_protect",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "VI",
+          "clause_title": "Road Ambulance Cover a)For Sum Insured of 5, 10 and 15  Lakhs –",
+          "evidence_text_snippet": "2. COVERAGE/BENEFITS vi. Road Ambulance Cover a)For Sum Insured of 5, 10 and 15 Lakhs – INR 3000/- per Hospitalization or actuals, whichever is less b)For Sum Insured of 20, 25 and 50 Lakhs - INR 5000/- per Hospitalization or actuals whiche",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_amount_inr",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0003",
+          "clause_number": "2.3",
+          "clause_title": "AIR AMBULANCE COVER :",
+          "evidence_text_snippet": "2.1TREATMENT METHODS : 2.3AIR AMBULANCE COVER : The Policy covers Reasonable and Customary Charges incurred during the Policy period towards emergency transportation of the Insured Person to a Hospital by an air ambulance or to move the Ins",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0004",
+          "clause_number": "VII",
+          "clause_title": "Transportation must be undertaken by medically equipped specialty aircraft,",
+          "evidence_text_snippet": "2.4 EMERGENCY EVACUATION COVER: vii.Transportation must be undertaken by medically equipped specialty aircraft, commercial airline, train or Ambulance depending upon the medical needs and available transportation specific to each case.",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "2.2",
+          "clause_title": "ROAD AMBULANCE COVER :",
+          "evidence_text_snippet": "2.1TREATMENT METHODS : 2.2ROAD AMBULANCE COVER : The Policy covers the costs incurred up to the limit as specified in the Policy Schedule or Certificate of Insurance on transportation of the Insured Person by road Ambulance to a Hospital for",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "VII",
+          "clause_title": "Air Ambulance Cover 5% of Sum Insured",
+          "evidence_text_snippet": "2. COVERAGE/BENEFITS vii. Air Ambulance Cover 5% of Sum Insured",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_percentage_sum_insured",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0005",
+          "clause_number": "3.3",
+          "clause_title": "AMBULANCE SERVICES means ambulance service charges reasonably and necessarily",
+          "evidence_text_snippet": "3. DEFINITIONS 3.3 AMBULANCE SERVICES means ambulance service charges reasonably and necessarily incurred in shifting the Insured Person from residence to Hospital for admission in emergency ward / ICU or from one Hospit",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_ambulance_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "claim_intimation_timeline": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "II",
+          "clause_title": "The Company shall settle the claim within 30 days from the date of the receipt of",
+          "evidence_text_snippet": "5.6 CLAIMS PROCEDURE: ii. The Company shall settle the claim within 30 days from the date of the receipt of last/Final necessary documents in accordance with the provisions of Regulation 27 of IRDAI (Health Insurance) Regulations, 2016.",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "III",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation, in the",
+          "evidence_text_snippet": "n investigation, in the opinion of the Company, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, the Company shall settle the claim within 45 days from the date of receipt of last",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "clause_0067",
+          "clause_title": "",
+          "evidence_text_snippet": "2.12 CUMULATIVE BONUS: The Sum Insured under Policy shall be increased by 5% at each renewal in respect of each claim free year of Insurance, subject to maximum of 50%. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it is accrued. C",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_percentage",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0000"
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "clause_0067",
+          "clause_title": "",
+          "evidence_text_snippet": "any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it is accrued. Cumulative bonus will be lost if policy is not renewed before or within 30 days from the date of expiry. In case Sum Insured under the policy is reduced at the time of renewal, the percentage ",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "clause_0261",
+          "clause_title": "",
+          "evidence_text_snippet": "6.7 GRACE PERIOD: In the event of delay in renewal of the Policy, a grace period of 30 days is allowed. However, no coverage shall be available during the grace period and any disease/Injury contracted during the break period shall not be covered and shall be treated as",
+          "page": 32,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0002",
+          "clause_number": "I",
+          "clause_title": "The Company shall not  be  responsible  or  liable for non-renewal  of  Policy  due  to",
+          "evidence_text_snippet": "OF POLICY: i. The Company shall not be responsible or liable for non-renewal of Policy due to non-receipt or delayed receipt (i.e. after the due date including the grace period of 30 days) of premium or the proposal form or of the Medical Practitioner’s report wherever required or due to any other r",
+          "page": 32,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "III",
+          "clause_title": "Intensive Care Unit (ICU) or Specialised                              Actuals",
+          "evidence_text_snippet": "2. COVERAGE/BENEFITS iii. Intensive Care Unit (ICU) or Specialised Actuals Expenses as provided by the Hospital /Nursing Home.",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_actuals",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "organ_donor_coverage_0000",
+          "clause_number": "X",
+          "clause_title": "Organ Donor Expenses – When Insured Person Within the aggregate of the Sum Insured and",
+          "evidence_text_snippet": "2. COVERAGE/BENEFITS x. Organ Donor Expenses – When Insured Person Within the aggregate of the Sum Insured and is Recipient Cumulative Bonus, if any, of the Insured Person receiving the organ. ** Detailed terms & conditions as per Clause 2.6 PRE AND ",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0002",
+          "clause_number": "2.6",
+          "clause_title": "ORGAN DONOR EXPENSES- WHEN INSURED PERSON IS THE",
+          "evidence_text_snippet": "2.4 EMERGENCY EVACUATION COVER: 2.6ORGAN DONOR EXPENSES- WHEN INSURED PERSON IS THE RECIPIENT : The policy covers in-patient hospitalisation expenses in respect of the person donating the organ to the insured person, provided that the donation confor",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0001",
+          "clause_number": "3",
+          "clause_title": "Organ transplant, as part of Cancer treatment",
+          "evidence_text_snippet": "2.1TREATMENT METHODS : 3. Organ transplant, as part of Cancer treatment",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_critical_illness_list",
+          "candidate_score": 0.575,
+          "confidence": 0.3,
+          "accepted": false,
+          "rejection_reason": "organ_transplant_in_critical_illness_list_not_donor_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0003",
+          "clause_number": "I",
+          "clause_title": "the organ donated is for the use of the Insured Person who has been medically",
+          "evidence_text_snippet": "2.4 EMERGENCY EVACUATION COVER: i. the organ donated is for the use of the Insured Person who has been medically advised to undergo organ transplant solely as a part of Cancer Treatment",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_critical_illness_list",
+          "candidate_score": 0.575,
+          "confidence": 0.3,
+          "accepted": false,
+          "rejection_reason": "organ_transplant_in_critical_illness_list_not_donor_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "organ_donor_coverage_0000"
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "3.12",
+          "clause_title": "DAY CARE CENTRE means any institution established for Day Care Treatment of",
+          "evidence_text_snippet": "3. DEFINITIONS 3.12 DAY CARE CENTRE means any institution established for Day Care Treatment of Cancer or a medical setup within a Hospital and which has been registered with the local authorities, wherever applicable, a",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "3.18",
+          "clause_title": "HOSPITAL means any institution established for Inpatient Care and Day Care",
+          "evidence_text_snippet": "3. DEFINITIONS 3.18 HOSPITAL means any institution established for Inpatient Care and Day Care Treatment of Cancer and which has been registered as a Hospital with the local authorities under the Clinical Establishment (",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "3.25",
+          "clause_title": "INTENSIVE CARE UNIT (ICU) means an identified section, ward or wing of a",
+          "evidence_text_snippet": "3.21 ILLNESS: 3.25 INTENSIVE CARE UNIT (ICU) means an identified section, ward or wing of a Hospital which is under the constant supervision of a dedicated Medical Practitioner(s), and which is specially equipped for the",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "3.39",
+          "clause_title": "PERIOD OF INSURANCE means the period for which this Policy is issued, as",
+          "evidence_text_snippet": "3.21 ILLNESS: 3.39 PERIOD OF INSURANCE means the period for which this Policy is issued, as specified in the Schedule. Pre-existing Disease means any condition,",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "3.40",
+          "clause_title": "Pre-Existing Disease (PED):",
+          "evidence_text_snippet": "3.21 ILLNESS: 3.40 Pre-Existing Disease (PED): ailment, injury or disease: a)That is/are diagnosed by a physician within 48 months prior to the effective date of the policy issued by the insurer or its reinstatement or b",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "clause_0312",
+          "clause_title": "",
+          "evidence_text_snippet": "4.2. Pre-Existing Condition for Cancer for which Insured Person : a) was diagnosed by a physician within 48 months prior to the effective date of the policy issued by the insurer, or its reinstatement. b) for which medic",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": null
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "3.47",
+          "clause_title": "RENEWAL means the terms on which the contract of insurance can be renewed on",
+          "evidence_text_snippet": "3.21 ILLNESS: 3.47 RENEWAL means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "I",
+          "clause_title": "Newlywed spouse within 90 days of marriage or at the time of renewal of the",
+          "evidence_text_snippet": "6.2 SUM INSURED: i.Newlywed spouse within 90 days of marriage or at the time of renewal of the Policy. st",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "II",
+          "clause_title": "Newborn child from 91day of birth or at the time of renewal of the Policy.",
+          "evidence_text_snippet": "6.2 SUM INSURED: ii. Newborn child from 91day of birth or at the time of renewal of the Policy. For members subsequently added, Exclusion No. 4.1, 4.2 and 4.3 shall apply from the date of their inclusion in the policy.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "clause_0261",
+          "clause_title": "",
+          "evidence_text_snippet": "6.7 GRACE PERIOD: In the event of delay in renewal of the Policy, a grace period of 30 days is allowed. However, no coverage shall be available during the grace period and any disease/Injury contracted during the break period shall not be covered and shall be treated as Pre-existing.",
+          "page": 32,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "I",
+          "clause_title": "The Company shall not  be  responsible  or  liable for non-renewal  of  Policy  due  to",
+          "evidence_text_snippet": "6.8 RENEWAL OF POLICY: i. The Company shall not be responsible or liable for non-renewal of Policy due to non-receipt or delayed receipt (i.e. after the due date including the grace period of 30 days) of premium or the proposal form or of the Medical Practitioner’s report wherever required or due to",
+          "page": 32,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "III",
+          "clause_title": "The Company shall not  ordinarily  deny  the  renewal  of  this  policy  unless  on  grounds",
+          "evidence_text_snippet": "6.8 RENEWAL OF POLICY: iii. The Company shall not ordinarily deny the renewal of this policy unless on grounds of fraud, moral hazard, misrepresentation or non-cooperation by the insured.",
+          "page": 33,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0006",
+          "clause_number": "IV",
+          "clause_title": "If the Policy is renewed  for  enhanced  Sum Insured  then  the  clauses  (4.1,  4.2  &",
+          "evidence_text_snippet": "6.8 RENEWAL OF POLICY: iv. If the Policy is renewed for enhanced Sum Insured then the clauses (4.1, 4.2 & 4.3) as applicable to a fresh policy shall apply to additional Sum Insured as if a separate Policy has been issued for the difference .Enhanced Sum Insured will be available only after four cont",
+          "page": 33,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0007",
+          "clause_number": "clause_0265",
+          "clause_title": "",
+          "evidence_text_snippet": "6.8 RENEWAL OF POLICY: Note: In case of revision including the premium, modification, or withdrawal of the Policy a notice, by suitable mode of communication, will be provided to insured 90 days before such revision, modification or withdrawal. Insured will have the option to migrate to similar Heal",
+          "page": 33,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0008",
+          "clause_number": "clause_0266",
+          "clause_title": "",
+          "evidence_text_snippet": "6.8 RENEWAL OF POLICY: There will be no loading on renewals on Individual claims experience basis.",
+          "page": 33,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0009",
+          "clause_number": "6.12",
+          "clause_title": "ID CARD:",
+          "evidence_text_snippet": "6.11 QUALITY OF TREATMENT: 6.12 ID CARD: The card is issued to the Insured Person by the TPA to avail Cashless facility in the Network Hospital only. Upon the cancellation or nonrenewal of this Policy, all ID cards shall immediately be returned to the TPA at the insured’s expense and each Insured Pe",
+          "page": 34,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "II",
+          "clause_title": "Room, Boarding  and Nursing Expenses as a) For Sum Insured of 5, 10 and 15  Lakhs  - 1%",
+          "evidence_text_snippet": "2. COVERAGE/BENEFITS ii. Room, Boarding and Nursing Expenses as a) For Sum Insured of 5, 10 and 15 Lakhs - 1% provided by the Hospital /Nursing Home of Sum Insured subject to maximum of INR including nursing care, RMO charges,BMW 10000/- per Day or actual expenses incurred, Charges, IV Fluids/Blood ",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_limit",
+          "candidate_score": 0.915,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "product_b_handoff_quality.v1",
+  "policy_count": 20,
+  "aggregate_status_counts": {
+    "explicitly_not_covered": 7,
+    "not_found": 120,
+    "present": 273
+  },
+  "concept_status_counts": {
+    "ambulance_coverage": {
+      "not_found": 3,
+      "present": 17
+    },
+    "ayush_coverage": {
+      "not_found": 6,
+      "present": 14
+    },
+    "claim_intimation_days": {
+      "not_found": 3,
+      "present": 17
+    },
+    "claim_settlement_days": {
+      "not_found": 1,
+      "present": 19
+    },
+    "copay_percentage": {
+      "not_found": 9,
+      "present": 11
+    },
+    "cumulative_bonus_ncb": {
+      "not_found": 6,
+      "present": 14
+    },
+    "deductible": {
+      "not_found": 12,
+      "present": 8
+    },
+    "free_look_days": {
+      "not_found": 1,
+      "present": 19
+    },
+    "grace_period_days": {
+      "present": 20
+    },
+    "icu_limit": {
+      "not_found": 4,
+      "present": 16
+    },
+    "initial_waiting_days": {
+      "not_found": 4,
+      "present": 16
+    },
+    "maternity_waiting_months": {
+      "explicitly_not_covered": 7,
+      "not_found": 9,
+      "present": 4
+    },
+    "modern_treatment_coverage": {
+      "not_found": 10,
+      "present": 10
+    },
+    "newborn_coverage": {
+      "not_found": 15,
+      "present": 5
+    },
+    "organ_donor_coverage": {
+      "not_found": 10,
+      "present": 10
+    },
+    "ped_waiting_months": {
+      "not_found": 3,
+      "present": 17
+    },
+    "renewability": {
+      "present": 20
+    },
+    "restoration_benefit": {
+      "not_found": 15,
+      "present": 5
+    },
+    "room_rent_limit": {
+      "not_found": 4,
+      "present": 16
+    },
+    "specific_disease_waiting": {
+      "not_found": 5,
+      "present": 15
+    }
+  },
+  "fill_rate": {
+    "aditya_birla_activ_care": 0.8,
+    "bajaj_allianz_silver_health": 0.85,
+    "care_health_care_plus": 1.0,
+    "cholamandalam_flexi_max_protect": 0.25,
+    "future_generali_health_elite": 0.9,
+    "hdfc_ergo_arogya_sanjeevani": 0.75,
+    "icici_lombard_family_shield": 0.55,
+    "iffco_tokio_health_protector": 0.75,
+    "kotak_mahindra_health_premier": 0.9,
+    "liberty_critical_connect": 0.35,
+    "new_india_floater_mediclaim": 0.85,
+    "niva_bupa_health_recharge": 0.8,
+    "oriental_cancer_protect": 0.4,
+    "reliance_health_gain": 0.9,
+    "royal_sundaram_advanced_topup": 0.75,
+    "sbi_general_arogya_sanjeevani": 0.75,
+    "star_medi_classic_accident_care_individual": 0.75,
+    "tata_aig_arogya_sanjeevani": 0.65,
+    "united_india_individual_health": 0.8,
+    "universal_sompo_loan_secure": 0.25
+  }
+}

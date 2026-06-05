@@ -1,0 +1,363 @@
+{
+  "policy_id": "star_medi_classic_accident_care_individual",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:21Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Star_Health_Medi_Classic_Accident_Care_Individual_Insurance_Policy.pdf",
+    "file_hash": "sha256:82a291e2a9a74b9cd48de1550d4095f2ad8ac108d95b8b4864c02fdf108e8976",
+    "source_domain": "policy_wording",
+    "page_count": 28
+  },
+  "product_identity": {
+    "insurer": "Star Health",
+    "plan_name": "Medi Classic Accident Care",
+    "display_name": "Star Health Medi Classic Accident Care",
+    "uin": "SHAHLIP18029V031718",
+    "uin_base": "SHAHLIP18029",
+    "product_version": 3,
+    "effective_date": "28-08-2017",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 750,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text Clause no. of TITLE Description the policy 1.0 (A) (B) & (C) a In-patient Treatment- Covers hospitalisation expenses for period more than 24 hrs. Emergency Ambulance- Up to Rs. 750/- per hospitalization for utilizing ambulance service for b 1.0 (D) transporting insured person to hospital in case of an emergency. c Pre-Hospitalisation- Medical Expenses incurred up",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0004",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 24
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. Upon the happening of any event, which may give rise to a claim under this policy, notice with full particulars shall be sent to the Company within 24 hours from the date of occurrence of the event.",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0068",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 7
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. Claims Settlement: Benefits payable under this policy will be paid within 7 days from the time of receipt of all documents the Company requires. Note: In case of delay in payment of any claim that has been admitted as payable under the Policy terms and conditions, beyond the time period as prescribed under IRDA (Protection of Policyholder",
+      "evidence_page": 15,
+      "evidence_clause": "clause_0122",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 10
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "curred for treatment of diseases/illness/accidental injuries by system of medicines other than allopathic shall be restricted to 25% of the sum insured subject to a maximum of Rs 25000/- during entire policy period. 21. 10% of each and every claim amount for insured persons beyond 60 years at entry level and renewals thereafter",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0065",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": {
+        "entry_age": "beyond_60_years"
+      },
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 5,
+        "maximum_percent": 50,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "V. CUMULATIVE BONUS Compensation payable for an admissible claim for Death or Permanent Total disablement arising out of accidental injuries shall be increased by 5% thereof in respect of each completed year during which the policy shall have been in force prior to the occurrence of an accident for ",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0045",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_cumulative_bonus_ncb_0002_evidence"
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6. If the claim event falls within two policy periods, the claims shall be paid taking into consideration the available sum insured in the two policy periods, including the deductibles for each policy period. Such eligible claim amount to be payable to the insured shall be reduced to the extent of premium to be received for the renewal/due date of premium of",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0072",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_deductible_0000_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "10. Free Look Period: A free look period of 15 days from the date of receipt of the policy is available to the insured to review the terms and conditions of the policy. In case the insured is not satisfied with the terms and conditions, the",
+      "evidence_page": 8,
+      "evidence_clause": "clause_0076",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "days for renewing the policy is provided (Section I) Lifelong renewal subject to payment of renewal premium in full before the due date VIII (11) Renewal Condition Grace period of 30 days for renewing the policy is provided (Section II) VIII (11) Renewal Bonus eligibility: 5% subject to a maximum of 25% of the basic sum insured for every claim free year 4(9) Benefi",
+      "evidence_page": 3,
+      "evidence_clause": "4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_grace_period_0001_evidence"
+    },
+    "icu_limit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2. Any disease contracted by the insured person during the first 30 days from the commencement date of the policy. This exclusion shall not apply in case of the insured person having been covered under any health insurance policy (Individual or Group insurance policy) with any of the Indian Insurance companies",
+      "evidence_page": 6,
+      "evidence_clause": "clause_0048",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": {
+        "covered": false
+      },
+      "unit": "months",
+      "fact_status": "explicitly_not_covered",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "6. Where a claim for less than 100% of the Sum Insured is admitted / admissible, the coverage under the policy will continue until expiry for the balance sum insured and Company would exclude such disability on renewal in respect of such relevant per",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0094",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": 48,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "1. Pre Existing Diseases as defined in the policy until 48 consecutive months of continuous coverage have elapsed, since inception of the first policy with any Indian Insurer. However the limit of the Company's liability in respect of claim for pre-existing diseases under such portability shall be limited to the sum",
+      "evidence_page": 6,
+      "evidence_clause": "clause_0047",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_ped_waiting_period_0000_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Pre-heading body text 4. Co-Payment No cost sharing Loss Sharing applicable for In case of a claim, this policy required you to share the costs Section II this policy Renewal Lifelong renewal subject to payment of renewal premium Condition 4 (8) Grace period of 120 days for renewing the policy is pr",
+      "evidence_page": 3,
+      "evidence_clause": "4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": {
+        "coverage_status": "covered"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "xpenses incurred up to 60 days after discharge from the hospital 1.0 (F) covered for e Day-Care procedures- Medical Expenses for enlisted 101 Day care procedures Attached Section I f Cost of engaging one attendant Rs.400/- per day for each completed day 1.0 (H) g Cash benefit for each completed day of hospitalisation Rs.1000/- for each completed day 1.0 (I) Restoration of Sum Insured : Automatic restoration of sum insured once during the currency of the h 4 (12) policy period on exhaustion of the sum insured a Table A Benefit: Accidental death Table A What am I Table B Health b Table B Benefit: Accidental Death/Permanent disablement arising out of accident covered for (1 and 2) Section II Table C Benefit: Accidental Death/",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0004",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_restoration_benefit_0000_evidence"
+    },
+    "room_rent_limit": {
+      "value": {
+        "percentage": 2,
+        "unit": "percent_of_sum_insured_per_day",
+        "max_amount": 5000,
+        "currency": "INR",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.985,
+      "method": "deterministic",
+      "evidence": "1.0. COVERAGE A) Room, boarding, nursing expenses as provided by the Hospital / Nursing Home at 2% of the Sum Insured, subject to a maximum of Rs.5,000/- per day B) Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees. C) Anesthesia, blood, oxygen, operation theatre charges, surgical appliances, medicines and drugs, diagnostic materials and X-ray",
+      "evidence_page": 4,
+      "evidence_clause": "clause_0027",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.92,
+      "method": "deterministic",
+      "evidence": "3. During the First two Years of continuous operation of insurance cover, a. The expenses for treatment of cataract, glaucoma, retinal detachment/ macular degeneration, prolapse of intervertebral disc (other than caused by accident), varicose veins and varicose ulcers, benign prostatic hypertrophy, deviated nasal septum, sinusitis, tonsillitis, nasal polyps, Chronic Supparative Otitis Media and related disorders, stapedectomy, hernia, hydrocele, fistula / fissure in ano and hemorrhoids, congenital internal disease/defect . b. All treatments (conservative, interventional, laparoscopic and open) for Hepatobilary gall bladder and pancreatic calculi and genitourinary calculi. c. All treatments (conservative, interventional, laparoscopic and open) for Uterine prolapse, Dysfunctional Uterine Bleeding, Fibroids, Pelvic Inflammatory Diseases, all diseases of fallopian tubes and ovaries, d. Conservative and operative treatment of joint diseases [other than caused by accident] preceding 24 months policy only and where there is a change in the sum insured in the second continuous policy year the lower of the sum insured will apply. If these are pre-existing at the time of proposal they will be covered subject to the waiting period mentioned in exclusio",
+      "evidence_page": 6,
+      "evidence_clause": "clause_0049",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_star_medi_classic_accident_care_individual_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "ayush_coverage",
+    "icu_limit",
+    "modern_treatment_coverage",
+    "newborn_coverage",
+    "organ_donor_coverage"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 15,
+    "concepts_not_found": 5,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.75,
+    "average_confidence": 0.96
+  }
+}

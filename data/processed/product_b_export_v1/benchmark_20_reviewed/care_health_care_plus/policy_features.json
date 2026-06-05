@@ -1,0 +1,396 @@
+{
+  "policy_id": "care_health_care_plus",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Care_Health_Care_Plus.pdf",
+    "file_hash": "sha256:e383d25e1678f25d38e3b1fc7ae594fdb0c9a647d41175ef598363b3b6a30c95",
+    "source_domain": "policy_wording",
+    "page_count": 66
+  },
+  "product_identity": {
+    "insurer": "Care Health",
+    "plan_name": "Care Plus",
+    "display_name": "Care Health Care Plus",
+    "uin": "CHIHLIP22047V012122",
+    "uin_base": "CHIHLIP22047",
+    "product_version": 1,
+    "effective_date": "10-06-2021",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "shall be borne by the Insured Person on each Claim which will be applicable on Benefit namely Hospitalization Expenses, Pre Hospitalization Medical Expenses and Post Hospitalization Medical Expenses, Ambulance Cover, Organ Donor Cover, Domiciliary Ho",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0198",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_ambulance_coverage_0004_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3. The Co-payment proportion (if applicable) shall be borne by the Insured Person on each Claim which will be applicable on Benefit namely Hospitalization Expenses, Pre Hospitalization Medical Expenses and Post Hospitalization Medical Expenses, Ambul",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0198",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_ayush_coverage_0003_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 48
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "following shall be undertaken: (i)If any Illness is diagnosed or discovered or any Injury is suffered or any other contingency occurs which has resulted in a Claim or may result in a Claim under the Policy, the Company shall be notified with full particulars within 48 hours from the date of occurrence of event either at the Company’s call center or in writing. (ii)Claim must be filed within 30 days from the date of discharge from the hospital in case of hospitalization and actual date of loss in case of non-hospitalization Benef",
+      "evidence_page": 44,
+      "evidence_clause": "clause_0110",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "5.1Standard General Terms & Clauses i.The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+      "evidence_page": 34,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "components": [
+          {
+            "scope": "smart_select_non_annexure_iii_hospital",
+            "percentage": 20
+          },
+          {
+            "scope": "age_61_plus_optional_copayment",
+            "percentage": null,
+            "schedule_dependent": true
+          }
+        ]
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "III. The member added age should be less than 36 years 2.Only in case of a medical emergency, Claims would be payable if admitted in the above Hospitals on a reimbursement basis. Annexure III –List of Hospitals where Co-Payment of 20% is not applicable under Optional Benefit “Smart Select”",
+      "evidence_page": 47,
+      "evidence_clause": "2",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": {
+        "components": [
+          {
+            "scope": "smart_select_non_annexure_iii_hospital",
+            "percentage": 20
+          },
+          {
+            "scope": "age_61_plus_optional_copayment",
+            "percentage": null,
+            "schedule_dependent": true
+          }
+        ]
+      },
+      "source_span_id": "ss_care_health_care_plus_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 50,
+        "maximum_percent": 200,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3.1.11Benefit : No Claim Bonus Protect: At the end of each Policy Year, the Company will enhance the Sum Insured by 50% flat, on a cumulative basis, as a Cumulative Bonus for each completed and continuous Policy Year, provided that no Claim has been paid by the Company or total claim amount payable does not exceed the 25% of the base Sum Insured in the expiring Policy Year, and subject to the conditions specified below: (i)In any Policy Year, the accrued Cumulative Bonus, shall not exceed 200% of the Sum Insured available in the expiring Po",
+      "evidence_page": 17,
+      "evidence_clause": "clause_0028",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "aggregate_per_policy_year"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "3.2.5Optional Benefit : Deductible Option If this Optional Benefit is opted, then Policyholder is entitled for a discount on the Premium payable. (i)The claim amount assessed by the Company for a particular claim shall be reduced by the Deductible as specified in the Policy Schedule and the Company shall be liable to make payment under the Policy for any Cla",
+      "evidence_page": 27,
+      "evidence_clause": "clause_0060",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_deductible_0000_evidence"
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "5.1.15Free Look Period The insured person shall be allowed free look period of fifteen days (Thirty days in case of distance marketing) from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable.",
+      "evidence_page": 39,
+      "evidence_clause": "clause_0087",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "IV. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period",
+      "evidence_page": 37,
+      "evidence_clause": "clause_0328",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_grace_period_0001_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "percentage": 2,
+        "unit": "percent_of_sum_insured_per_day",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "IV. The nomenclature of Room categories may vary from one hospital to the other Hence, the final consideration will be as per the definition of the Rooms mentioned in the Policy. b)Intensive Care Unit Charges (ICU Charges): The Policy Schedule will specify the Limit of ICU Charges applicable for the Insured Person under the Policy. The ICU Charges available under this Policy are as follows: If the Policy Schedule states ‘up to 2% of the Sum Insured per day’ as eligible ICU i. Charges per day of Hospitalization, it means the max",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0211",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_icu_limit_0002_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "14. Parkinson's or Alzheimer's disease or Dementia (iii)30-day waiting period- Code- Excl03 a.Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b.This exclus",
+      "evidence_page": 29,
+      "evidence_clause": "clause_0271",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": 24,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "15. Maternity: (Code Excl18) 4.2.Specific Exclusions: (a) Waiting Periods: (i)Maternity & New Born Cover (Optional Benefit) : a.Claims will not be admissible for any expenses incurred for diagnosis / treatment related to any Maternity & New Born Expenses until 24 months of continuous coverage has elapsed, under this Benefit. b.In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. The Waiting Periods as defined in Clauses 4.2",
+      "evidence_page": 32,
+      "evidence_clause": "4.2",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_maternity_waiting_0002_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": {
+        "coverage_status": "covered"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "ible ICU i. Charges per day of Hospitalization, it means the maximum eligible ICU charges of the Insured Person payable by the Company is limited to 2% of the Sum Insured per day of Hospitalization. If the Policy Schedule states the eligibility of ICU Charges of the Insured Person as ‘no ii. limit’, it means that there is no separate restriction on ICU Charges incurred towards stay in ICU during Hospitalization. (iv)Advance Technology Methods: The Company will indemnify the Insured Person for expenses incurred under Benefit ‘Hospitalization Expenses’ for treatment taken through following advance technology methods: A.Uterine Artery Embolization and HIFU B.Balloon Sinuplasty C.Deep Brain stimulation D.Oral chemotherapy E.Immunotherapy- Monoclonal Antibody to be given as injection F.Intra vitreal injections G.Robotic surgeries H.Stereotactic radi",
+      "evidence_page": 12,
+      "evidence_clause": "clause_0211",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_modern_treatment_coverage_0000_evidence"
+    },
+    "newborn_coverage": {
+      "value": {
+        "coverage_status": "conditional"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3. The Co-payment proportion (if applicable) shall be borne by the Insured Person on each Claim which will be applicable on Benefit namely Hospitalization Expenses, Pre Hospitalization Medical Expenses and Post Hospitalization Medical Expenses, Ambulance Cover, Organ Donor Cover, Domiciliary Hospitalization, AYUSH Treatments, Air Ambulance Cover, OPD Cover, Optional Benefit: Maternity and New Born Cover.",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0198",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_newborn_coverage_0005_evidence"
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "3. The Co-payment proportion (if applicable) shall be borne by the Insured Person on each Claim which will be applicable on Benefit namely Hospitalization Expenses, Pre Hospitalization Medical Expenses and Post Hospitalization Medical Expenses, Ambul",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0198",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_organ_donor_coverage_0003_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "EXCLUSIONS 4.1.Standard Exclusions: (a)Waiting Periods: (i)Pre-Existing Diseases: Code- Excl01 a.Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with insurer. b.In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c.If the Insured Person is continuously co",
+      "evidence_page": 28,
+      "evidence_clause": "4.1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_ped_waiting_period_0000_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "2.1.42. Renewal defines the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0157",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_renewability_0004_evidence"
+    },
+    "restoration_benefit": {
+      "value": {
+        "coverage_status": "covered"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "3.1.8Benefit : Unlimited Automatic Recharge If a Claim is payable under the Policy, then the Company agrees to automatically make the re- instatement of up to the base Sum Insured unlimited times in a policy year which is valid for that Policy Year only, subject to the conditions specified below: (i)The Recharge shall be utilized only after the base Sum Insured, ‘Cumulative Bonus’, ‘I",
+      "evidence_page": 16,
+      "evidence_clause": "clause_0027",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_restoration_benefit_0000_evidence"
+    },
+    "room_rent_limit": {
+      "value": {
+        "percentage": 1,
+        "unit": "percent_of_sum_insured_per_day",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "III. If the Policy Schedule states ‘up to 1% of the Sum Insured per day’ as eligible Room Rent, it means the maximum eligible Room Rent of the Insured Person payable by the Company is limited to 1% of the Sum Insured per day of Hospitalization. Any amount accrued under “No Claim Bonus Protect” or “Inflation Shield”, shall not be considered under this “Room Rent” limit.",
+      "evidence_page": 11,
+      "evidence_clause": "clause_0210",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_room_rent_limit_0007_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "EXCLUSIONS 4.1.Standard Exclusions: (a)Waiting Periods: (i)Pre-Existing Diseases: Code- Excl01 a.Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with insurer. b.In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c.If the Insured Person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, then waiting period for the same would be reduced to the extent of prior coverage. d.Coverage under the policy after the expiry of 36months for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer. (ii)Specific Waiting Period: Code- Excl02 a.Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage, as may be the case after the date of inception of the first policy with the Company. This exclusion shall not be applicable for claims arising due to an accident. b.In case of enhancement of sum insured the exclusion shall apply",
+      "evidence_page": 28,
+      "evidence_clause": "4.1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_care_health_care_plus_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 20,
+    "concepts_not_found": 0,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 1.0,
+    "average_confidence": 0.96
+  }
+}

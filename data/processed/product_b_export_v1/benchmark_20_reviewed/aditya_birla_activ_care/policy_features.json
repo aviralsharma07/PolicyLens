@@ -1,0 +1,365 @@
+{
+  "policy_id": "aditya_birla_activ_care",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Aditya_Birla_Activ_Care_IRDAI.pdf",
+    "file_hash": "sha256:ec4f8835285f09bd83ab240760d0428df4e3dc86f5e80f7d484a66ef43f37d56",
+    "source_domain": "policy_wording",
+    "page_count": 34
+  },
+  "product_identity": {
+    "insurer": "Aditya Birla",
+    "plan_name": "Active Care",
+    "display_name": "Aditya Birla Active Care",
+    "uin": "ADIHLIP20001V011920",
+    "uin_base": "ADIHLIP20001",
+    "product_version": 1,
+    "effective_date": "04-03-2019",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "(f) Road Ambulance Cover: What is covered We shall cover the costs incurred up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards transportation of the Insured Person by ro",
+      "evidence_page": 2,
+      "evidence_clause": "clause_0011",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "(i) Ayush (In-patient Hospitalization) What is covered We shall cover on a reimbursement basis, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards the Medical Expenses for In-patient Hospitalization i",
+      "evidence_page": 3,
+      "evidence_clause": "clause_0016",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_ayush_coverage_0000_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 48
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "rocedure d. For Reimbursement Claims: (i) For all claims for which Cashless Facilities have not been pre-authorized or for which treatment has not been taken at a Network Provider, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hospital or before discharge from the Hospital, whichever is earlier: (1) The Policy Number; (2) Name of the Policyholder; (3) Name and address of the Insured Person in respect of whom the request is being made; (4) Health Card, Photo ID",
+      "evidence_page": 13,
+      "evidence_clause": "clause_0140",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30,
+        "investigation_days": 45
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "son and settle the claim if We observe that such a claim is otherwise valid under the Policy. However, documents/ details received beyond such period shall be considered if there are valid reasons for any delay. (c) We shall settle or repudiate a claim within 30 days of the receipt of the last necessary information and documentation set out above (in case of investigation being carried out, 45 days from the date of receipt of last necessary document) in the manner prescribed under applicable Regulations. In case of any suspected fraud, the last “necessary” documents will include the receipt of the investigation report from Our investigator/representativ",
+      "evidence_page": 14,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 15
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "rson takes Inpatient hospitalization treatment as applicable under section B(I)(a) in a Hospital other than those listed as “Preferred Provider Network”, then the Policyholder / Insured Person shall bear a Co-Payment of 15% on each and every claim arising in such regard, which will be in addition to any other Co-Payment applicable under the Policy.",
+      "evidence_page": 10,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_co_pay_0000_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "(l) No Claim Bonus: What is covered We shall apply a Cumulative Bonus in the form of No Claim Bonus at such rates as specified in the Policy Schedule/ Product Benefit table of this Policy on the Sum Insured of the expiring Policy as specified for Section B(I) in the Policy Schedule on a cumulative b",
+      "evidence_page": 4,
+      "evidence_clause": "clause_0031",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "E. Free Look Period c u d We shall provide You a period of 15 days (30 days if the Policy is sold through distance marketing), from the date of receipt of the Policy o r P document to review the terms and conditions of this Policy. If You have any objectio",
+      "evidence_page": 15,
+      "evidence_clause": "clause_0145",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "ay be Renewed by mutual consent and in such event the Renewal premium should be paid to Us on or before the expiry date of the Policy and in no case later than the Grace Period of 30 days from the expiry date. We shall not be liable to pay for any claim arising out of an Illness/Injury/ Accident that occurred during the Grace Period. The provisions of Section 64VB",
+      "evidence_page": 17,
+      "evidence_clause": "clause_0157",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "product_benefits_table"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "an Insured Person’s Hospitalization during the Policy Period following an Illness or Injury that occurs during the Policy Period: (1) Reasonable and Customary Charges for Room Rent for accommodation in Hospital room and other boarding charges up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy; (2) ICU Charges; (3) Operation theatre expenses; (4) Medical Practitioner’s fees, including fees of surgeon, consultants, physicians, specialists and anaesthetists treating the Insured Person; (5) Qualified Nurses charges; (6) Medicines, drugs and other allowable consumables prescribed by the treating Medical Practitioner; (7) Investigative tests or diag",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0005",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "B. Waiting periods and Permanent Exclusions i. First 30 days Waiting Period 1 1 0 We shall not be liable for any claim arising due to any condition for which consultation, investigation, diagnosis, treatment or admission V 1 commencing within 30 days from Policy Commencement Date, except for the cla",
+      "evidence_page": 10,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "(g) Organ Donor Expenses: What is covered We shall cover the Medical Expenses, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, incurred by or in respect of the organ donor, for organ transplant Surgery acc",
+      "evidence_page": 2,
+      "evidence_clause": "clause_0013",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "B. Waiting periods and Permanent Exclusions iii. Pre-Existing Disease waiting Period Pre-Existing Diseases shall not be covered until the time period specified in the Policy Schedule / Product Benefit Table of this Policy in this regard has elapsed since the inception of the first Policy with Us, provided that the Insu",
+      "evidence_page": 10,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_ped_waiting_period_0000_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "(q) Comprehensive Health Check-up What is covered All Insured Person(s) may avail a comprehensive health check-up once in a Policy Year on successful Renewal of the Policy, as specified in Policy Schedule/ Product Benefit Table in accordance with the table below :",
+      "evidence_page": 6,
+      "evidence_clause": "clause_0059",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": {
+        "benefit": "restoration_or_reload",
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "(h) Reload of Sum Insured: N I (v) The reloaded Sum Insured shall not be considered while calculating the No Claim Bonus. (vi) In case of an Individual Policy, reloading of the Sum Insured is available to each Insured Person and can be utilised by Insured Persons who are covered under the Policy. (vii) In case of a Family Floater Policy, the reload of Sum Insured shall be a",
+      "evidence_page": 2,
+      "evidence_clause": "clause_0015",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_restoration_benefit_0000_evidence"
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "product_benefits_table"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "(a) In-patient Hospitalization: What is covered We shall cover the Medical Expenses for one or more of the following arising out of an Insured Person’s Hospitalization during the Policy Period following an Illness or Injury that occurs during the Policy Period: (1) Reasonable and Customary Charges for Room Rent for accommodation in Hospital room and other boarding charges up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy; (2) ICU Charges; (3) Operation theatre expenses; (4) Medical Practitioner’s fees, including fees of surgeon, consultants, physicians, specialists and anaesthetists treating the Insured Pe",
+      "evidence_page": 1,
+      "evidence_clause": "clause_0005",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24,
+          48
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.92,
+      "method": "deterministic",
+      "evidence": "B. Waiting periods and Permanent Exclusions ii. Two Year Waiting Periods D A The conditions listed below, whether medical or surgical and of the Illness/conditions and their complications mentioned below, will be subject : N I to a waiting period of 24 months from the commencement of the 1st Policy Year and will be covered from the commencement of the 3rd Policy RhinitisMedical & Surgical Treatment Tonsillitis & AdenitisMedical & Surgical Treatment Tympanitis & Non Traumatic Perforation Medical & Surgical T",
+      "evidence_page": 10,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_aditya_birla_activ_care_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "deductible",
+    "maternity_waiting",
+    "modern_treatment_coverage",
+    "newborn_coverage"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 16,
+    "concepts_not_found": 4,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.8,
+    "average_confidence": 0.94
+  }
+}

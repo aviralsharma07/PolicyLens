@@ -1,0 +1,3651 @@
+{
+  "policy_id": "hdfc_ergo_arogya_sanjeevani",
+  "total_sections": 115,
+  "total_clauses": 435,
+  "sections": [
+    {
+      "number": null,
+      "title": "Document root",
+      "level": 0,
+      "page_start": 2,
+      "page_end": 31,
+      "clauses": []
+    },
+    {
+      "number": "1",
+      "title": "1. Preamble",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "This Policy is a contract of insurance issued by HDFC ERGO (hereinafter called the ‗Company‘) to the proposer mentioned in the schedule (hereinafter called the ‗Insured‘) to cover the person(s) named in the schedule (hereinafter called the ‗Insured Persons‘). The policy is based on the statements and declaration provided in the proposal Form by the proposer and is subject to receipt of the requisite premium.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Operative Clause",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If during the policy period one or more Insured Person(s) is required to be hospitalized for treatment of an Illness or Injury at a Hospital/ Day Care Centre, following Medical Advice of a duly qualified Medical Practitioner, the Company shall indemnify Medically necessary, expenses towards the Coverage mentioned in the policy schedule. Provided further that, any amount payable under the policy shall be subject to the terms of coverage (including any co-pay, sub limits), exclusions, conditions a...",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Definitions",
+      "level": 1,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The terms defined below and at other junctures in the Policy have the meanings ascribed to them wherever they appear in this Policy and, where, the context so requires, references to the singular include references to the plural; references to the male includes the female and references to any statutory enactment includes subsequent changes to the same.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3.1",
+      "title": "3.1. Accident means a sudden, unforeseen and involuntary event caused by external,",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "visible and violent means.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3.2",
+      "title": "3.2. Age means age of the Insured person on last birthday as on date of",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "commencement of the Policy.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3.3",
+      "title": "3.3. Any One Illness means continuous period of illness and it includes relapse within",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "forty-five days from the date of last consultation with the hospital where treatment has been taken.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3.4",
+      "title": "3.4. AYUSH Treatment refers to hospitalisation treatments given under Ayurveda, Yoga",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 2,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and Naturopathy, Unani, Siddha and Homeopathy systems.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "number": "3.5",
+      "title": "3.5. An AYUSH Hospital is a healthcare facility wherein medical/surgical/para-surgical",
+      "level": 2,
+      "page_start": 2,
+      "page_end": 3,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "treatment procedures and interventions are carried out by AYUSH Medical a) Central or State Government AYUSH Hospital or b) Teaching hospital attached to AYUSH College recognized by the Central Government/Central Council of Indian Medicine/Central Council for Homeopathy; or c) AYUSH Hospital, standalone or co-located with in-patient healthcare facility of any recognized system of medicine, registered with the local authorities, wherever applicable, and is under the supervision of a qualified reg...",
+          "page": 2
+        },
+        {
+          "number": "I",
+          "title": "Having at least 5 in-patient beds;",
+          "text": "i. Having at least 5 in-patient beds;",
+          "page": 3
+        },
+        {
+          "number": "II",
+          "title": "Having qualified AYUSH Medical Practitioner in charge round the clock;",
+          "text": "ii. Having qualified AYUSH Medical Practitioner in charge round the clock;",
+          "page": 3
+        },
+        {
+          "number": "III",
+          "title": "Having dedicated AYUSH therapy sections as required and/or has equipped",
+          "text": "iii. Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be carried out;",
+          "page": 3
+        },
+        {
+          "number": "IV",
+          "title": "Maintaining daily records of the patients and making them accessible to the",
+          "text": "iv. Maintaining daily records of the patients and making them accessible to the insurance company‘s authorized representative.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.6",
+      "title": "3.6. AYUSH Day Care Centre means and includes Community Health Centre (CHC),",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 3,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the local authorities, wherever applicable and having facilities for carrying out treatment procedures and medical or surgical/para-surgical interventions or both under the supervision of registered AYUSH Medical Practitioner (s) on day care basis without in-patient services and must comply with all the following criterion:",
+          "page": 3
+        },
+        {
+          "number": "I",
+          "title": "Having qualified registered AYUSH Medical Practitioner(s) in charge;",
+          "text": "i. Having qualified registered AYUSH Medical Practitioner(s) in charge;",
+          "page": 3
+        },
+        {
+          "number": "II",
+          "title": "Having dedicated AYUSH therapy sections as required and/or has equipped",
+          "text": "ii. Having dedicated AYUSH therapy sections as required and/or has equipped operation theatre where surgical procedures are to be carried out;",
+          "page": 3
+        },
+        {
+          "number": "III",
+          "title": "Maintaining daily records of the patients and making them accessible to the",
+          "text": "iii. Maintaining daily records of the patients and making them accessible to the insurance company‘s authorized representative.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.7",
+      "title": "3.7. Break in Policy means the period of gap that occurs at the end of the existing",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 3,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "policy term, when the premium due for renewal on a given policy is not paid on or before the premium renewal date or within 30 days thereof",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.8",
+      "title": "3.8. Cashless Facility means a facility extended by the insurer to the insured where the",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 3,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "payments, of the costs of treatment undergone by the insured person in accordance with the Policy terms and conditions, are directly made to the network provider by the insurer to the extent pre-authorization is approved.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.9",
+      "title": "3.9. Condition Precedent",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 3,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "means a Policy term or condition upon which the Company‘s liability under the Policy is conditional upon.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.10",
+      "title": "3.10. Congenital Anomaly refers to a condition(s) which is present since birth, and",
+      "level": 2,
+      "page_start": 3,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "which is abnormal with reference to form, structure or position. a) Internal Congenital Anomaly b) External Congenital Anomaly Congenital anomaly which is in the visible and accessible parts of the body.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "number": "3.11",
+      "title": "3.11. Co-payment means a cost sharing requirement under a health insurance policy",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "that provides that the policyholder/insured will bear a specified percentage of the admissible claims amount. A co-payment does not reduce the Sum Insured.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.12",
+      "title": "3.12. Cumulative Bonus means any increase or addition in the Sum Insured granted by",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the insurer without an associated increase in premium.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.13",
+      "title": "3.13. Day Care Centre means any institution established for day care treatment of",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "disease/ injuries or a medical setup within a hospital and which has been registered with the local authorities, wherever applicable, and is under the supervision of a registered and qualified medical practitioner AND must comply with all minimum criteria as under:",
+          "page": 4
+        },
+        {
+          "number": "I",
+          "title": "has qualified nursing staff under its employment;",
+          "text": "i. has qualified nursing staff under its employment;",
+          "page": 4
+        },
+        {
+          "number": "II",
+          "title": "has qualified medical practitioner (s) in charge;",
+          "text": "ii. has qualified medical practitioner (s) in charge;",
+          "page": 4
+        },
+        {
+          "number": "III",
+          "title": "has a fully equipped operation theatre of its own where surgical procedures are",
+          "text": "iii. has a fully equipped operation theatre of its own where surgical procedures are carried out",
+          "page": 4
+        },
+        {
+          "number": "IV",
+          "title": "maintains daily records of patients and shall make these accessible to the",
+          "text": "iv. maintains daily records of patients and shall make these accessible to the Company‘s authorized personnel.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.14",
+      "title": "3.14. Day Care Treatment means medical treatment, and/or surgical procedure which is:",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "undertaken under general or local anesthesia in a hospital/day care centre in less",
+          "text": "i. undertaken under general or local anesthesia in a hospital/day care centre in less than twenty four hours because of technological advancement, and",
+          "page": 4
+        },
+        {
+          "number": "II",
+          "title": "which would have otherwise required a hospitalisation of more than twenty four",
+          "text": "ii. which would have otherwise required a hospitalisation of more than twenty four hours.",
+          "page": 4
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Treatment normally taken on an out-patient basis is not included in the scope of this definition.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.15",
+      "title": "3.15. Dental Treatment means a treatment carried out by a dental practitioner including",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "examinations, fillings (where appropriate), crowns, extractions and surgery.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.16",
+      "title": "3.16. Disclosure to information norm: The policy shall be void and all premium paid",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "thereon shall be forfeited to the Company in the event of misrepresentation, mis-description or non-disclosure of any material fact.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.17",
+      "title": "3.17. Emergency Care: Emergency care means management for an illness or injury",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 4,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "which results in symptoms which occur suddenly and unexpectedly, and requires immediate care by a medical practitioner to prevent death or serious long term impairment of the insured person‘s health.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "number": "3.18",
+      "title": "3.18. Family means, the Family that consists of the proposer and any one or more of the",
+      "level": 2,
+      "page_start": 4,
+      "page_end": 5,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "family members as mentioned below:",
+          "page": 4
+        },
+        {
+          "number": "I",
+          "title": "legally wedded spouse.",
+          "text": "i. legally wedded spouse.",
+          "page": 5
+        },
+        {
+          "number": "II",
+          "title": "Parents and Parents-in-law.",
+          "text": "ii. Parents and Parents-in-law.",
+          "page": 5
+        },
+        {
+          "number": "III",
+          "title": "dependent Children (i.e. natural or legally adopted) between the age 3 months to 25",
+          "text": "iii. dependent Children (i.e. natural or legally adopted) between the age 3 months to 25 years. If the child above 18 years of age is financially independent, he or she shall be ineligible for coverage in the subsequent renewals.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "number": "3.19",
+      "title": "3.19. Grace Period means specified period of time immediately following the premium",
+      "level": 2,
+      "page_start": 5,
+      "page_end": 5,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "due date during which a payment can be made to renew or continue the Policy in force without loss of continuity benefits such as waiting period and coverage of pre- existing diseases. Coverage is not available for the period for which no premium is received.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "number": "3.20",
+      "title": "3.20. Hospital means any institution established for in-patient care and day care",
+      "level": 2,
+      "page_start": 5,
+      "page_end": 5,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "treatment of disease/ injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments (Registration and Regulation) Act, 2010 or under the enactments specified under Schedule of Section 56(1) of the said Act, OR complies with all minimum criteria as under:",
+          "page": 5
+        },
+        {
+          "number": "I",
+          "title": "has qualified nursing staff under its employment round the clock;",
+          "text": "i. has qualified nursing staff under its employment round the clock;",
+          "page": 5
+        },
+        {
+          "number": "II",
+          "title": "has at least ten inpatient beds, in those towns having a population of less than ten",
+          "text": "ii. has at least ten inpatient beds, in those towns having a population of less than ten lakhs and fifteen inpatient beds in all other places;",
+          "page": 5
+        },
+        {
+          "number": "III",
+          "title": "has qualified medical practitioner (s) in charge round the clock;",
+          "text": "iii. has qualified medical practitioner (s) in charge round the clock;",
+          "page": 5
+        },
+        {
+          "number": "IV",
+          "title": "has a fully equipped operation theatre of its own where surgical procedures are",
+          "text": "iv. has a fully equipped operation theatre of its own where surgical procedures are carried out",
+          "page": 5
+        },
+        {
+          "number": "V",
+          "title": "maintains daily records of patients and shall make these accessible to the",
+          "text": "v. maintains daily records of patients and shall make these accessible to the Company‘s authorized personnel.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "number": "3.21",
+      "title": "3.21. Hospitalisation means admission in a hospital for a minimum period of twenty-four",
+      "level": 2,
+      "page_start": 5,
+      "page_end": 5,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "(24) consecutive ‗In-patient care‘ hours except for specified procedures/ treatments, where such admission could be for a period of less than twenty-four (24) consecutive hours.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "number": "3.22",
+      "title": "3.22. Illness means a sickness or a disease or pathological condition leading to the",
+      "level": 2,
+      "page_start": 5,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "impairment of normal physiological function which manifests itself during the policy period and requires medical treatment.",
+          "page": 5
+        },
+        {
+          "number": "I",
+          "title": "Acute Condition means a disease, illness or injury that is likely to response quickly",
+          "text": "i. Acute Condition means a disease, illness or injury that is likely to response quickly to treatment which aims to return the person to his or her state of health immediately before suffering the disease/ illness/ injury which leads to full recovery.",
+          "page": 5
+        },
+        {
+          "number": "II",
+          "title": "Chronic Condition means a disease, illness, or injury that has one or more of the",
+          "text": "ii. Chronic Condition means a disease, illness, or injury that has one or more of the following characteristics: a) it needs on going or long-term monitoring through consultations, examinations, check-ups, and / or tests b) it needs on going or long-term control or relief of symptoms c) it requires rehabilitation for the patient or for the patient to be special d) it continues indefinitely e) it recurs or is likely to recur",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "number": "3.23",
+      "title": "3.23. Injury means accidental physical bodily harm excluding illness or disease solely",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and directly caused by external, violent and visible and evident means which is verified and certified by a medical practitioner.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.24",
+      "title": "3.24. In-Patient Care means treatment for which the insured person has to stay in a",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "hospital for more than 24 hours for a covered event.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.25",
+      "title": "3.25. Insured Person means person(s) named in the schedule of the Policy",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.26",
+      "title": "3.26. Intensive Care Unit means an identified section, ward or wing of a hospital which is",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "under the constant supervision of a dedicated medical practitioner(s), and which is specially equipped for the continuous monitoring and treatment of patients who are in a critical condition, or require life support facilities and where the level of care and supervision is considerably more sophisticated and intensive than in the ordinary and other wards.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.27",
+      "title": "3.27. ICU (Intensive Care Unit) Charges means the amount charged by a Hospital",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "towards ICU expenses on a per day basis which shall include the expenses for ICU bed, general medical support services provided to any ICU patient including monitoring devices, critical care nursing and intensivist charges.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.28",
+      "title": "3.28. Medical Advice means any consultation or advice from a Medical Practitioner",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "including the issue of any prescription or follow up prescription.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.29",
+      "title": "3.29. Medical Expenses means those expenses that an insured person has necessarily",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and actually incurred for medical treatment on account of illness or accident on the advice of a medical practitioner, as long as these are no more than would have been payable if the insured person had not been insured and no more than other hospitals or doctors in the same locality would have charged for the same medical treatment.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.30",
+      "title": "3.30. Medical Practitioner means a person who holds a valid registration from the",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 6,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Medical Council of any state or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is thereby entitled to practice medicine within its jurisdiction; and is acting within the scope and jurisdiction of the licence.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.31",
+      "title": "3.31. Medically Necessary Treatment means any treatment, tests, medication, or stay",
+      "level": 2,
+      "page_start": 6,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "in hospital or part of a stay in hospital which",
+          "page": 6
+        },
+        {
+          "number": "I",
+          "title": "is required for the medical management of illness or injury suffered by the insured;",
+          "text": "i. is required for the medical management of illness or injury suffered by the insured;",
+          "page": 6
+        },
+        {
+          "number": "II",
+          "title": "must not exceed the level of care necessary to provide safe, adequate and",
+          "text": "ii. must not exceed the level of care necessary to provide safe, adequate and appropriate medical care in scope, duration, or intensity;",
+          "page": 6
+        },
+        {
+          "number": "III",
+          "title": "must have been prescribed by a medical practitioner;",
+          "text": "iii. must have been prescribed by a medical practitioner;",
+          "page": 6
+        },
+        {
+          "number": "IV",
+          "title": "must conform to the professional standards widely accepted in international medical",
+          "text": "iv. must conform to the professional standards widely accepted in international medical practice or by the medical community in India.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "number": "3.32",
+      "title": "3.32. Migration means, the right accorded to health insurance policyholders (including all",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "members under family cover and members of group Health insurance policy), to transfer the credit gained for pre-existing conditions and time bound exclusions, with the same insurer.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.33",
+      "title": "3.33. Network Provider means hospitals enlisted by insurer, TPA or jointly by an insurer",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and TPA to provide medical services to an insured by a cashless facility.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.34",
+      "title": "3.34. Non- Network Provider means any hospital that is not part of the network",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.35",
+      "title": "3.35. Notification of Claim means the process of intimating a claim to the Insurer or TPA",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "through any of the recognized modes of communication.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.36",
+      "title": "3.36. Out-Patient (OPD) Treatment means treatment in which the insured visits a clinic /",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "hospital or associated facility like a consultation room for diagnosis and treatment based on the advice of a medical practitioner. The insured is not admitted as a day care or in-patient.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.37",
+      "title": "3.37. Pre-Existing Disease (PED): Pre existing disease means any condition, ailment,",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "injury or disease a) That is/are diagnosed by a physician within 48 months prior to the effective date of the policy issued by the insurer or its reinstatement or b) For which medical advice or treatment was recommended by, or received from, a physician within 48 months prior to the effective date of the policy or its reinstatement.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.38",
+      "title": "3.38. Pre-hospitalisation Medical Expenses means medical expenses incurred during",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the period of 30days preceding the hospitalisation of the Insured Person, provided that:",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "Such Medical Expenses are incurred for the same condition for which the Insured",
+          "text": "i. Such Medical Expenses are incurred for the same condition for which the Insured Person‘s Hospitalisation was required, and",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "The In-patient Hospitalisation claim for such Hospitalisation is admissible by the",
+          "text": "ii. The In-patient Hospitalisation claim for such Hospitalisation is admissible by the Insurance Company.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.39",
+      "title": "3.39. Post-hospitalisation Medical Expenses means medical expenses incurred during",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 7,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the period of 60days immediately after the insured person is discharged from the hospital provided that:",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "Such Medical Expenses are for the same condition for which the insured person‘s",
+          "text": "i. Such Medical Expenses are for the same condition for which the insured person‘s hospitalisation was required, and",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "The inpatient hospitalisation claim for such hospitalisation is admissible by the",
+          "text": "ii. The inpatient hospitalisation claim for such hospitalisation is admissible by the Insurance Company.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.40",
+      "title": "3.40. Policy means these Policy wordings, the Policy Schedule and any applicable",
+      "level": 2,
+      "page_start": 7,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "endorsements or extensions attaching to or forming part thereof. The Policy contains details of the extent of cover available to the Insured person, what is excluded from the cover and the terms & conditions on which the Policy is issued to The Insured person.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "number": "3.41",
+      "title": "3.41. Policy period means period of one policy year as mentioned in the schedule for",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "which the Policy is issued.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.42",
+      "title": "3.42. Policy Schedule means the Policy Schedule attached to and forming part of Policy",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.43",
+      "title": "3.43. Policy year means a period of twelve months beginning from the date of",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "commencement of the policy period and ending on the last day of such twelve- month period. For the purpose of subsequent years, policy year shall mean a period of twelve months commencing from the end of the previous policy year and lapsing on the last day of such twelve-month period, till the policy period, as mentioned in the schedule",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.44",
+      "title": "3.44. Portability means the right accorded to an individual health insurance policyholder",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "(including all members under family cover), to transfer the credit gained for pre- existing conditions and time bound exclusions, from one insurer to another insurer.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.45",
+      "title": "3.45. Qualified Nurse means a person who holds a valid registration from the Nursing",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Council of India or the Nursing Council of any state in India.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.46",
+      "title": "3.46. Renewal means the terms on which the contract of insurance can be renewed on",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.47",
+      "title": "3.47. Room Rent means the amount charged by a hospital towards Room and Boarding",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "expenses and shall include the Associated Medical Expenses.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.48",
+      "title": "3.48. Sub-limit means a cost sharing requirement under a health insurance policy in",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "which an insurer would not be liable to pay any amount in excess of the pre-defined limit",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.49",
+      "title": "3.49. Sum Insured means the pre-defined limit specified in the Policy Schedule. Sum",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Insured and Cumulative Bonus represents the maximum, total and cumulative liability for any and all claims made under the Policy, in respect of that Insured Person (on Individual basis) or all Insured Persons (on Floater basis) during the Policy Year.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.50",
+      "title": "3.50. Surgery or Surgical Procedure means manual and / or operative procedure (s)",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "required for treatment of an illness or injury, correction of deformities and defects, diagnosis and cure of diseases, relief of suffering and prolongation of life, performed in a hospital or day care centre by a medical practitioner.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.51",
+      "title": "3.51. Third Party Administrator (TPA) means a Company registered with the Authority,",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 8,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and engaged by an insurer, for a fee or by whatever name called and as may be mentioned in the health services agreement, for providing health services.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "3.52",
+      "title": "3.52. Waiting Period means a period from the inception of this Policy during which",
+      "level": 2,
+      "page_start": 8,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "specified diseases/treatments are not covered. On completion of the period, diseases/treatments shall be covered provided the Policy has been continuously renewed without any break.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Coverage",
+      "level": 1,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The covers listed below are in-built Policy benefits and shall be available to all Insured Persons in accordance with the procedures set out in this Policy.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "4.1",
+      "title": "4.1. Hospitalization",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall indemnify medical expenses incurred for Hospitalization of the Insured Person during the Policy year, up to the Sum Insured and Cumulative Bonus specified in the policy schedule, for,",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing",
+          "text": "i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/-, per day.",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5%",
+          "text": "ii. Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses up to 5% of sum insured subject to maximum of Rs.10,000/- per day.",
+          "page": 9
+        },
+        {
+          "number": "III",
+          "title": "Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees whether",
+          "text": "iii. Surgeon, Anesthetist, Medical Practitioner, Consultants, Specialist Fees whether paid directly to the treating doctor / surgeon or to the hospital",
+          "page": 9
+        },
+        {
+          "number": "IV",
+          "title": "Anesthesia, blood, oxygen, operation theatre charges, surgical appliances,",
+          "text": "iv. Anesthesia, blood, oxygen, operation theatre charges, surgical appliances, medicines and drugs, costs towards diagnostics, diagnostic imaging modalities and such similar other expenses.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shall be",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "admissible. However, the time limit shall not apply in respect of Day Care Treatment",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. In case of admission to a room/ICU/ICCU at rates exceeding the aforesaid limits, the",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "reimbursement/payment of all other expenses incurred at the Hospital, with the exception of cost of medicines, shall be effected in the same proportion as the admissible rate per day bears to the actual rate per day of Room Rent/ICU/ICCU charges.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "4.2",
+      "title": "4.2. AYUSH Treatment",
+      "level": 2,
+      "page_start": 9,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall indemnify medical expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems of medicines during each Policy Year up to the limit of sum insured as specified in the policy schedule in any AYUSH Hospital.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "4.1.1",
+      "title": "4.1.1. Other expenses",
+      "level": 3,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "I",
+      "title": "I. Expenses incurred on treatment of cataract subject to the sub limits",
+      "level": 4,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "I. Expenses incurred on treatment of cataract subject to the sub limits",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "II",
+      "title": "II. Dental treatment, necessitated due to disease or injury",
+      "level": 4,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": "II",
+          "title": "II. Dental treatment, necessitated due to disease or injury",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "III",
+      "title": "III. Plastic surgery necessitated due to disease or injury",
+      "level": 4,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": "III",
+          "title": "III. Plastic surgery necessitated due to disease or injury",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "IV",
+      "title": "IV. All the day care treatments",
+      "level": 4,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": "IV",
+          "title": "IV. All the day care treatments",
+          "text": "",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "V",
+      "title": "V. Expenses incurred on road Ambulance subject to a maximum of Rs.2000/- per",
+      "level": 4,
+      "page_start": 9,
+      "page_end": 9,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "hospitalisation.",
+          "page": 9
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Note:",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Cumulative Bonus (CB)",
+      "level": 1,
+      "page_start": 10,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Cumulative Bonus will be increased by 5% in respect of each claim free policy year (where no claims are reported), provided the policy is renewed with the company without a break subject to maximum of 50% of the sum insured under the current policy year. If a claim is made in any particular year, the cumulative bonus accrued shall be reduced at the same rate at which it has accrued. However, sum insured will be maintained and will not be reduced in the policy Notes:",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "In case where the policy is on individual basis, the CB shall be added and available",
+          "text": "i. In case where the policy is on individual basis, the CB shall be added and available individually to the insured person if no claim has been reported. CB shall reduce only in case of claim from the same Insured Person.",
+          "page": 11
+        },
+        {
+          "number": "II",
+          "title": "In case where the policy is on floater basis, the CB shall be added and available to the",
+          "text": "ii. In case where the policy is on floater basis, the CB shall be added and available to the family on floater basis, provided no claim has been reported from any member of the family. CB shall reduce in case of claim from any of the Insured Persons.",
+          "page": 11
+        },
+        {
+          "number": "III",
+          "title": "CB shall be available only if the Policy is renewed/ premium paid within the Grace Period.",
+          "text": "iii. CB shall be available only if the Policy is renewed/ premium paid within the Grace Period.",
+          "page": 11
+        },
+        {
+          "number": "IV",
+          "title": "If the Insured Persons in the expiring policy are covered on an individual basis as specified",
+          "text": "iv. If the Insured Persons in the expiring policy are covered on an individual basis as specified in the Policy Schedule and there is an accumulated CB for such Insured Person under the expiring policy, and such expiring policy has been Renewed on a floater policy basis as specified in the Policy Schedule then the CB to be carried forward for credit in such Renewed Policy shall be the one that is applicable to the lowest among all the Insured Persons",
+          "page": 11
+        },
+        {
+          "number": "V",
+          "title": "In case of floater policies where Insured Persons Renew their expiring policy by splitting",
+          "text": "v. In case of floater policies where Insured Persons Renew their expiring policy by splitting the Sum Insured in to two or more floater policies/individual policies or in cases where the policy is split due to the child attaining the age of 25 years, the CB of the expiring policy shall be apportioned to such Renewed Policies in the proportion of the Sum Insured of each Renewed Policy",
+          "page": 11
+        },
+        {
+          "number": "VI",
+          "title": "If the Sum Insured has been reduced at the time of Renewal, the applicable CB shall be",
+          "text": "vi. If the Sum Insured has been reduced at the time of Renewal, the applicable CB shall be reduced in the same proportion to the Sum Insured in current Policy.",
+          "page": 11
+        },
+        {
+          "number": "VII",
+          "title": "If the Sum Insured under the Policy has been increased at the time of Renewal the CB",
+          "text": "vii. If the Sum Insured under the Policy has been increased at the time of Renewal the CB shall be calculated on the Sum Insured of the last completed Policy Year.",
+          "page": 11
+        },
+        {
+          "number": "VIII",
+          "title": "If a claim is made in the expiring Policy Year, and is notified to Us after the acceptance of",
+          "text": "viii. If a claim is made in the expiring Policy Year, and is notified to Us after the acceptance of Renewal premium any awarded CB shall be withdrawn",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "4.3",
+      "title": "4.3. Cataract Treatment",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall indemnify medical expenses incurred for treatment of Cataract, subject to a limit of 25% of Sum Insured or Rs.40,000/-, whichever is lower, per each eye in one policy year.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "4.4",
+      "title": "4.4. Pre Hospitalization",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The company shall indemnify pre-hospitalization medical expenses incurred, related to an admissible hospitalization requiring inpatient care, for a fixed period of 30 days prior to the date of admissible hospitalization covered under the policy.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "4.5",
+      "title": "4.5. Post Hospitalisation",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The company shall indemnify post hospitalization medical expenses incurred, related to an admissible hospitalization requiring inpatient care, for a fixed period of 60 days from the date of discharge from the hospital, following an admissible hospitalization covered under the policy.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "4.6",
+      "title": "4.6. The following procedures will be covered (wherever medically indicated) either as in",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "patient or as part of day care treatment in a hospital up to 50% of Sum Insured, specified in the policy schedule, during the policy period: A. Uterine Artery Embolization and HIFU (High intensity focused ultrasound) B. Balloon Sinuplasty C. Deep Brain stimulation D. Oral chemotherapy E. Immunotherapy- Monoclonal Antibody to be given as injection F. Intra vitreal injections G. Robotic surgeries H. Stereotactic radio surgeries",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "BronchicalThermoplasty",
+          "text": "I. BronchicalThermoplasty J. Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K. IONM - (Intra Operative Neuro Monitoring) L. Stem cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covered.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "4.7",
+      "title": "4.7. The expenses that are not covered in this policy are placed under List-I of Annexure",
+      "level": 2,
+      "page_start": 10,
+      "page_end": 10,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "A. The list of expenses that are to be subsumed into room charges, or procedure charges or costs of treatment are placed under List-II, List-III and List-IV of Annexure-A respectively.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Waiting Period",
+      "level": 1,
+      "page_start": 11,
+      "page_end": 11,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall not be liable to make any payment under the policy in connection with or in respect of following expenses till the expiry of waiting period mentioned below:",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "6.1",
+      "title": "6.1. Pre-Existing Diseases(Code- Excl01)",
+      "level": 2,
+      "page_start": 11,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48 months of continuous coverage after the date of inception of the first policy with us. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c) If the Insured Person is continuously covered without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then...",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Hysterectomy",
+      "level": 1,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "7",
+          "title": "All internal and external benign tumours, cysts, polyps of any kind, including benign",
+          "text": "7. All internal and external benign tumours, cysts, polyps of any kind, including benign breast lumps",
+          "page": 12
+        },
+        {
+          "number": "8",
+          "title": "Benign prostate hypertrophy",
+          "text": "8. Benign prostate hypertrophy",
+          "page": 12
+        },
+        {
+          "number": "9",
+          "title": "Cataract and age related eye ailments",
+          "text": "9. Cataract and age related eye ailments",
+          "page": 12
+        },
+        {
+          "number": "10",
+          "title": "Gastric/ Duodenal Ulcer",
+          "text": "10. Gastric/ Duodenal Ulcer",
+          "page": 12
+        },
+        {
+          "number": "11",
+          "title": "Gout and Rheumatism",
+          "text": "11. Gout and Rheumatism",
+          "page": 12
+        },
+        {
+          "number": "12",
+          "title": "Hernia of all types",
+          "text": "12. Hernia of all types",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "title": "13. Hydrocele",
+      "level": 1,
+      "page_start": 12,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "14",
+          "title": "Non Infective Arthritis",
+          "text": "14. Non Infective Arthritis",
+          "page": 12
+        },
+        {
+          "number": "15",
+          "title": "Piles, Fissures and Fistula in anus",
+          "text": "15. Piles, Fissures and Fistula in anus",
+          "page": 12
+        },
+        {
+          "number": "16",
+          "title": "Pilonidal sinus, Sinusitis and related disorders",
+          "text": "16. Pilonidal sinus, Sinusitis and related disorders",
+          "page": 12
+        },
+        {
+          "number": "17",
+          "title": "Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident",
+          "text": "17. Prolapse inter Vertebral Disc and Spinal Diseases unless arising from accident",
+          "page": 12
+        },
+        {
+          "number": "18",
+          "title": "Calculi in urinary system,Gall Bladder and Bile duct, excluding malignancy.",
+          "text": "18. Calculi in urinary system,Gall Bladder and Bile duct, excluding malignancy.",
+          "page": 12
+        },
+        {
+          "number": "19",
+          "title": "Varicose Veins and Varicose Ulcers",
+          "text": "19. Varicose Veins and Varicose Ulcers",
+          "page": 12
+        },
+        {
+          "number": "20",
+          "title": "InternalCongenitalAnomalies",
+          "text": "20. InternalCongenitalAnomalies ii.48 Months waiting period",
+          "page": 12
+        },
+        {
+          "number": "1",
+          "title": "Treatment for joint replacement unless arising from accident",
+          "text": "1. Treatment for joint replacement unless arising from accident",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "6.2",
+      "title": "6.2. First Thirty Days Waiting Period(Code- Excl03)",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Expenses related to the treatment of any illness within 30 days from the first policy",
+          "text": "i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered.",
+          "page": 12
+        },
+        {
+          "number": "II",
+          "title": "This exclusion shall not, however, apply if the Insured Person has Continuous",
+          "text": "ii. This exclusion shall not, however, apply if the Insured Person has Continuous Coverage for more than twelve months.",
+          "page": 12
+        },
+        {
+          "number": "III",
+          "title": "The within referred waiting period is made applicable to the enhanced sum insured in",
+          "text": "iii. The within referred waiting period is made applicable to the enhanced sum insured in the event of granting higher sum insured subsequently.",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "6.3",
+      "title": "6.3. Specific Waiting Period: (Code- Excl02)",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a) Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24/48 months of continuous coverage, as may be the case after the date of inception of the first policy with the insurer. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c) If any of the specified disease/procedure falls unde...",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Benign ENT disorders",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "1",
+          "title": "1. Benign ENT disorders",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Tonsillectomy",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "2",
+          "title": "2. Tonsillectomy",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Adenoidectomy",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "3",
+          "title": "3. Adenoidectomy",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Mastoidectomy",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "4",
+          "title": "4. Mastoidectomy",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Tympanoplasty",
+      "level": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "clauses": [
+        {
+          "number": "5",
+          "title": "5. Tympanoplasty",
+          "text": "",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Age-related Osteoarthritis & Osteoporosis",
+      "level": 1,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "2",
+          "title": "2. Age-related Osteoarthritis & Osteoporosis",
+          "text": "",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. Exclusions",
+      "level": 1,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company shall not be liable to make any payment under the policy, in respect of any expenses incurred in connection with or in respect of:",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7.1",
+      "title": "7.1. Investigation & Evaluation(Code- Excl04)",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a) Expenses related to any admission primarily for diagnostics and evaluation purposes. b) Any diagnostic expenses which are not related or not incidental to the current diagnosis and treatment",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7.2",
+      "title": "7.2. Rest Cure, rehabilitation and respite care(Code- Excl05)",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a) Expenses related to any admission primarily for enforced bed rest and not for receiving treatment.This also includes:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "Custodial care either at home or in a nursing facility for personal care such as",
+          "text": "i. Custodial care either at home or in a nursing facility for personal care such as help with activities of daily living such as bathing, dressing, moving around either by skilled nurses or assistant or non-skilled persons.",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "Any services for people who are terminally ill to address physical, social,",
+          "text": "ii. Any services for people who are terminally ill to address physical, social, emotional and spiritual needs.",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7.3",
+      "title": "7.3. Obesity/ Weight Control(Code- Excl06)",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to the surgical treatment of obesity that does not fulfil all the below conditions:",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Surgery to be conducted is upon the advice of the Doctor",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "1",
+          "title": "1. Surgery to be conducted is upon the advice of the Doctor",
+          "text": "",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. The surgery/Procedure conducted should be supported by clinical protocols",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "2",
+          "title": "2. The surgery/Procedure conducted should be supported by clinical protocols",
+          "text": "",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. The member has to be 18 years of age or older and",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": "3",
+          "title": "3. The member has to be 18 years of age or older and",
+          "text": "",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Body Mass Index (BMI);",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 13,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a) greater than or equal to 40 or b) greater than or equal to 35 in conjunction with any of the following severe co- morbidities following failure of less invasive methods of weight loss:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "Obesity-related cardiomyopathy",
+          "text": "i. Obesity-related cardiomyopathy",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "Coronary heart disease",
+          "text": "ii. Coronary heart disease",
+          "page": 13
+        },
+        {
+          "number": "III",
+          "title": "Severe Sleep Apnea",
+          "text": "iii. Severe Sleep Apnea",
+          "page": 13
+        },
+        {
+          "number": "IV",
+          "title": "Uncontrolled Type2 Diabetes",
+          "text": "iv. Uncontrolled Type2 Diabetes",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7.4",
+      "title": "7.4. Change-of-Gender treatments: (Code- Excl07)",
+      "level": 2,
+      "page_start": 13,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to any treatment, including surgical management, to change characteristics of the body to those of the opposite sex.",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "number": "7.5",
+      "title": "7.5. Cosmetic or plastic Surgery: (Code- Excl08)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.6",
+      "title": "7.6. Hazardous or Adventure sports: (Code- Excl09)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.7",
+      "title": "7.7. Breach of law: (Code- Excl10)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.8",
+      "title": "7.8. Excluded Providers: (Code-Excl11)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses incurred towards treatment in any hospital or by any Medical Practitioner or any other provider specifically excluded by the Insurer and disclosed in its website / notified to the policyholders are not admissible.  However, in case of life threatening situations following an accident, expenses up to the stage of stabilization are payable but not the complete claim.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.9",
+      "title": "7.9. Treatment for, Alcoholism, drug or substance abuse or any addictive condition and",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "consequences thereof.(Code- Excl12)",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.10",
+      "title": "7.10. Treatments received in heath hydros, nature cure clinics, spas or similar",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons. (Code- Excl13)",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.11",
+      "title": "7.11. Dietary supplements and substances that can be purchased without prescription,",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "including but not limited to Vitamins, minerals and organic substances unless prescribed by a medical practitioner as part of hospitalization claim or day care procedure (Code- Excl14)",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.12",
+      "title": "7.12. Refractive Error:(Code- Excl15)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 14,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "number": "7.13",
+      "title": "7.13. Unproven Treatments:(Code- Excl16)",
+      "level": 2,
+      "page_start": 14,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.14",
+      "title": "7.14. Sterility and Infertility: (Code- Excl17)",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses related to sterility and infertility. This includes:",
+          "page": 15
+        },
+        {
+          "number": "I",
+          "title": "Any type of sterilization",
+          "text": "i. Any type of sterilization",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "Assisted Reproduction services including artificial insemination and advanced",
+          "text": "ii. Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI",
+          "page": 15
+        },
+        {
+          "number": "III",
+          "title": "Gestational Surrogacy",
+          "text": "iii. Gestational Surrogacy",
+          "page": 15
+        },
+        {
+          "number": "IV",
+          "title": "Reversal of sterilization",
+          "text": "iv. Reversal of sterilization",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.15",
+      "title": "7.15. Maternity Expenses (Code - Excl 18):",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Medical treatment expenses traceable to childbirth (including complicated deliveries",
+          "text": "i. Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during hospitalization) except ectopic pregnancy;",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "expenses towards miscarriage (unless due to an accident) and lawful medical",
+          "text": "ii. expenses towards miscarriage (unless due to an accident) and lawful medical termination of pregnancy during the policy period.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.16",
+      "title": "7.16. War (whether declared or not) and war like occurrence or invasion, acts of foreign",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "enemies, hostilities, civil war, rebellion, revolutions, insurrections, mutiny, military or usurped power, seizure, capture, arrest, restraints and detainment of all kinds.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.17",
+      "title": "7.17. Nuclear, chemical or biological attack or weapons, contributed to, caused by,",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "resulting from or from any other cause or event contributing concurrently or in any other sequence to the loss, claim or expense. For the purpose of this exclusion: a) Nuclear attack or weapons means the use of any nuclear weapon or device or waste or combustion of nuclear fuel or the emission, discharge, dispersal, release or escape of fissile/ fusion material emitting a level of radioactivity capable of causing any Illness, incapacitating disablement or death.",
+          "page": 15
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "b) Chemical attack or weapons means the emission, discharge, dispersal, release or escape of any solid, liquid or gaseous chemical compound which, when suitably distributed, is capable of causing any Illness, incapacitating disablement or death.",
+          "page": 15
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "c) Biological attack or weapons means the emission, discharge, dispersal, release or escape of any pathogenic (disease producing) micro-organisms and/or biologically produced toxins (including genetically modified organisms and chemically synthesized toxins) which are capable of causing any Illness, incapacitating disablement or death.",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.18",
+      "title": "7.18. Any expenses incurred on Domiciliary Hospitalization and OPD treatment",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.19",
+      "title": "7.19. Treatment taken outside the geographical limits of India",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 15,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "7.20",
+      "title": "7.20. In respect of the existing diseases, disclosed by the insured and mentioned in the",
+      "level": 2,
+      "page_start": 15,
+      "page_end": 16,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "policy schedule(based on insured‘s consent), policyholder is not entitled to get the",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. Moratorium Period",
+      "level": 1,
+      "page_start": 16,
+      "page_end": 17,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "After completion of eight continuous years under this policy no look back would be applied. This period of eight years is called as moratorium period. The moratorium would be applicable for the sums insured of the first policy and subsequently completion of eight continuous years would be applicable from date of enhancement of sums insured only on the enhanced limits. After the expiry of Moratorium Period no claim under this policy shall be contestable except for proven fraud and permanent exclu...",
+          "page": 16
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "9. Claim Procedure",
+          "page": 16
+        },
+        {
+          "number": "9.1",
+          "title": "Procedure for Cashless claims:",
+          "text": "9.1 Procedure for Cashless claims: (i) Treatment may be taken in a network provider and is subject to pre authorization by the Company (ii) Cashless request form available with the network provider and shall be completed and sent to the Company for authorization. (iii) The Company upon getting cashless request form and related medical information from the insured person/ network provider will issue pre-authorization letter to the hospital after verification. (iv) At the time of discharge, the in...",
+          "page": 16
+        },
+        {
+          "number": "9.2",
+          "title": "Procedure for reimbursement of claims:",
+          "text": "9.2 Procedure for reimbursement of claims:",
+          "page": 16
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "For reimbursement of claims the insured person may submit the necessary documents to the Company within the prescribed time limit as specified hereunder.",
+          "page": 16
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Sl Type of Claim Prescribed Time limit No",
+          "page": 16
+        },
+        {
+          "number": "1",
+          "title": "Reimbursement of hospitalization, day Within thirty days of date of",
+          "text": "1. Reimbursement of hospitalization, day Within thirty days of date of care and pre hospitalization expenses discharge from hospital",
+          "page": 16
+        },
+        {
+          "number": "2",
+          "title": "Reimbursement of post hospitalization Within fifteen days from",
+          "text": "2. Reimbursement of post hospitalization Within fifteen days from expenses completion of post hospitalization treatment",
+          "page": 16
+        },
+        {
+          "number": "9.2",
+          "title": "Notification of Claim",
+          "text": "9.2 Notification of Claim Notice with full particulars shall be sent to the Company as under:",
+          "page": 16
+        },
+        {
+          "number": "I",
+          "title": "Within 24 hours from the date of emergency hospitalization required or before the Insured",
+          "text": "i. Within 24 hours from the date of emergency hospitalization required or before the Insured discharge from Hospital, whichever is earlier. Person‘s",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "At least 48 hours prior to admission in Hospital in case of a planned Hospitalization.",
+          "text": "ii. At least 48 hours prior to admission in Hospital in case of a planned Hospitalization.",
+          "page": 16
+        },
+        {
+          "number": "9.3",
+          "title": "Documents to be submitted",
+          "text": "9.3 Documents to be submitted The reimbursement claim is to be supported with the following documents and submitted within the prescribed time limit.",
+          "page": 17
+        },
+        {
+          "number": "I",
+          "title": "Duly Completed claim form",
+          "text": "i. Duly Completed claim form",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "Photo Identity proof of the patient",
+          "text": "ii. Photo Identity proof of the patient",
+          "page": 17
+        },
+        {
+          "number": "III",
+          "title": "Medical practitioner‘s prescription advising admission",
+          "text": "iii. Medical practitioner‘s prescription advising admission",
+          "page": 17
+        },
+        {
+          "number": "IV",
+          "title": "Original bills with itemized break-up",
+          "text": "iv. Original bills with itemized break-up",
+          "page": 17
+        },
+        {
+          "number": "V",
+          "title": "Payment receipts",
+          "text": "v. Payment receipts",
+          "page": 17
+        },
+        {
+          "number": "VI",
+          "title": "Discharge summary including complete medical history of the patient along with other",
+          "text": "vi. Discharge summary including complete medical history of the patient along with other details.",
+          "page": 17
+        },
+        {
+          "number": "VII",
+          "title": "Investigation/ Diagnostic  test reports etc. supported by the prescription from attending",
+          "text": "vii. Investigation/ Diagnostic  test reports etc. supported by the prescription from attending medical practitioner",
+          "page": 17
+        },
+        {
+          "number": "VIII",
+          "title": "OT notes or Surgeon‘s certificate giving details of the operation performed (for surgical",
+          "text": "viii. OT notes or Surgeon‘s certificate giving details of the operation performed (for surgical cases).",
+          "page": 17
+        },
+        {
+          "number": "IX",
+          "title": "Sticker/Invoice of the Implants, wherever applicable.",
+          "text": "ix. Sticker/Invoice of the Implants, wherever applicable.",
+          "page": 17
+        },
+        {
+          "number": "X",
+          "title": "MLR(Medico Legal Report copyif carried out and FIR (First information report) if",
+          "text": "x. MLR(Medico Legal Report copyif carried out and FIR (First information report) if registered, where ever applicable. xi. NEFT Details (to enable direct credit of claim amount in bank account)  and cancelled cheque xii. KYC (Identity proof with Address) of the proposer, where  claim liability is above Rs 1 Lakh as per AML Guidelines xiii. Legal heir/succession certificate , wherever applicable xiv. Any other relevant document required by Company for assessment of the claim. Note:",
+          "page": 17
+        },
+        {
+          "number": "1",
+          "title": "The company shall only accept bills/invoices/medical treatment related documents only in",
+          "text": "1. The company shall only accept bills/invoices/medical treatment related documents only in the Insured Person‘s name for whom the claim is submitted",
+          "page": 17
+        },
+        {
+          "number": "2",
+          "title": "In the event of a claim lodged under the Policy and the original documents having been",
+          "text": "2. In the event of a claim lodged under the Policy and the original documents having been submitted to any other insurer, the Company shall accept the copy of the documents and claim settlement advice, duly certified by the other insurer subject to satisfaction of the Company",
+          "page": 17
+        },
+        {
+          "number": "3",
+          "title": "Any delay in notification or submission may be condoned on merit where delay is proved",
+          "text": "3. Any delay in notification or submission may be condoned on merit where delay is proved to be for reasons beyond the control of the Insured Person",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "number": "9.4",
+      "title": "9.4 Co-payment",
+      "level": 2,
+      "page_start": 17,
+      "page_end": 18,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Each and every claim under the Policy shall be subject to a Co-payment of 5% applicable to claim amount admissible and payable as per the terms and conditions of the Policy. The amount payable shall be after deduction of the co-payment.",
+          "page": 17
+        },
+        {
+          "number": "9.5",
+          "title": "Claim Settlement (provision for Penal Interest)",
+          "text": "9.5 Claim Settlement (provision for Penal Interest)",
+          "page": 17
+        },
+        {
+          "number": "I",
+          "title": "The Company shall settle or reject a claim, as the case may be, within 30 days from the",
+          "text": "i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "In the case of delay in the payment of a claim, the Company shall be liable to pay interest",
+          "text": "ii. In the case of delay in the payment of a claim, the Company shall be liable to pay interest from the date of receipt of last necessary document to the date of payment of claim at a rate 2% above the bank rate.",
+          "page": 17
+        },
+        {
+          "number": "III",
+          "title": "However, where the circumstances of a claim warrant an investigation in the opinion of",
+          "text": "iii. However, where the circumstances of a claim warrant an investigation in the opinion of not later than 30 days from the date of receipt of last necessary document. In such cases, the Company shall settle the claim within 45 days from the date of receipt of last necessary document.",
+          "page": 17
+        },
+        {
+          "number": "IV",
+          "title": "In case of delay beyond stipulated 45 days the company shall be liable to pay interest at a",
+          "text": "iv. In case of delay beyond stipulated 45 days the company shall be liable to pay interest at a rate 2% above the bank rate from the date of receipt of last necessary document to the date of payment of claim.",
+          "page": 18
+        },
+        {
+          "number": "9.6",
+          "title": "Payment of Claim",
+          "text": "9.6 Payment of Claim All claims under the policy shall be payable in Indian currency only.",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. General Terms &Conditions",
+      "level": 1,
+      "page_start": 18,
+      "page_end": 19,
+      "clauses": [
+        {
+          "number": "10.1",
+          "title": "Disclosure of Information",
+          "text": "10.1 Disclosure of Information The Policy shall be void and all premium paid thereon shall be forfeited to the Company in the event of misrepresentation, mis-description or non-disclosure of any material fact.",
+          "page": 18
+        },
+        {
+          "number": "10.2",
+          "title": "Condition Precedent to Admission of Liability",
+          "text": "10.2 Condition Precedent to Admission of Liability The due observance and fulfilment of the terms and conditions of the policy, by the insured person, shall be a condition precedent to any liability of the Company to make any payment for claim(s) arising under the policy.",
+          "page": 18
+        },
+        {
+          "number": "10.3",
+          "title": "Material Change",
+          "text": "10.3 Material Change The Insured shall  notify the Company in writing of any material change in the risk in relation to the declaration made in the proposal form or medical examination report at each Renewal and the Company may, adjust the scope of cover and / or premium, if necessary, accordingly.",
+          "page": 18
+        },
+        {
+          "number": "10.4",
+          "title": "Records to be Maintained",
+          "text": "10.4 Records to be Maintained The Insured Person shall keep an accurate record containing all relevant medical records and shall allow the Company or its representatives to inspect such records. The Policyholder or Insured Person shall furnish such information as the Company may require for settlement of any claim under the Policy, within reasonable time limit and within the time limit specified in the Policy",
+          "page": 18
+        },
+        {
+          "number": "10.5",
+          "title": "Complete Discharge",
+          "text": "10.5 Complete Discharge Any payment to the Insured Person or his/ her nominees or his/ her legal representative or to the Hospital/Nursing Home or Assignee, as the case may be, for any benefit under the Policy shall in all cases be a full, valid and an effectual discharge towards payment of claim by the Company to the extent of that amount for the particular claim",
+          "page": 18
+        },
+        {
+          "number": "10.6",
+          "title": "Notice & Communication",
+          "text": "10.6 Notice & Communication",
+          "page": 18
+        },
+        {
+          "number": "I",
+          "title": "Any notice, direction, instruction or any other communication related to the Policy should",
+          "text": "i. Any notice, direction, instruction or any other communication related to the Policy should",
+          "page": 18
+        },
+        {
+          "number": "II",
+          "title": "Such communication shall be sent to the address of the Company or through any other",
+          "text": "ii. Such communication shall be sent to the address of the Company or through any other electronic modes specified in the Policy Schedule.",
+          "page": 19
+        },
+        {
+          "number": "III",
+          "title": "The Company shall communicate to the Insured at the address or through any other",
+          "text": "iii. The Company shall communicate to the Insured at the address or through any other electronic mode mentioned in the schedule.",
+          "page": 19
+        },
+        {
+          "number": "10.7",
+          "title": "Territorial Limit",
+          "text": "10.7 Territorial Limit All medical treatment for the purpose of this insurance will have to be taken in India only.",
+          "page": 19
+        },
+        {
+          "number": "10.8",
+          "title": "Multiple Policies",
+          "text": "10.8 Multiple Policies",
+          "page": 19
+        },
+        {
+          "number": "1",
+          "title": "In case of multiple policies taken by an insured during a period from the same or one or",
+          "text": "1. In case of multiple policies taken by an insured during a period from the same or one or more insurers to indemnify treatment costs, the policyholder shall have the right to require a settlement of his/her claim in terms of any of his/her policies. In all such cases the insurer if chosen by the policy holder shall be obliged to settle the claim as long as the claim is within the limits of and according to the terms of the chosen policy.",
+          "page": 19
+        },
+        {
+          "number": "2",
+          "title": "Policyholder having multiple policies shall also have the right to prefer claims under this",
+          "text": "2. Policyholder having multiple policies shall also have the right to prefer claims under this policy for the amounts disallowed under any other policy / policies, even if the sum insured is not exhausted. Then the Insurer(s) shall independently settle the claim subject to the terms and conditions of this policy.",
+          "page": 19
+        },
+        {
+          "number": "3",
+          "title": "If the amount to be claimed exceeds the sum insured under a single policy after, the",
+          "text": "3. If the amount to be claimed exceeds the sum insured under a single policy after, the policyholder shall have the right to choose insurers from whom he/she wants to claim the balance amount.",
+          "page": 19
+        },
+        {
+          "number": "4",
+          "title": "Where an insured has policies from more than one insurer to cover the same risk on",
+          "text": "4. Where an insured has policies from more than one insurer to cover the same risk on indemnity basis, the insured shall only be indemnified the hospitalization costs in accordance with the terms and conditions of the chosen policy.",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "number": "10.9",
+      "title": "10.9 Fraud",
+      "level": 2,
+      "page_start": 19,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "If any claim made by the insured person, is in any respect fraudulent, or if any false statement, or declaration is made or used in support thereof, or if any fraudulent means or devices are used by the insured person or anyone acting on his/her behalf to obtain any benefit under this policy, all benefits under this policy shall be forfeited. Any amount already paid against claims which are found fraudulent later under this policy shall be repaid by all person(s) named in the policy schedule, wh...",
+          "page": 19
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "(a) the suggestion ,as a fact of that which is not true and which the Insured Person does not believe to be true;",
+          "page": 19
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "(b) the active concealment of a fact by the Insured Person having knowledge or belief of the fact;",
+          "page": 19
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "(c) any other act fitted to deceive; and The company shall not repudiate the policy on the ground of fraud, if the insured person / beneficiary can prove that the misstatement was true to the best of his knowledge and there was no deliberate intention to suppress the fact or that such mis-statement of or suppression of material fact are within the knowledge of the insurer. Onus of disproving is upon the policyholder, if alive, or beneficiaries.",
+          "page": 19
+        },
+        {
+          "number": "10.10",
+          "title": "Cancellation",
+          "text": "10.10 Cancellation a) The Insured may cancel this Policy by giving 15days‘ written notice, and in such an event, the Company shall refund premium on short term rates for the unexpired Policy Period as per the rates detailed below. Refund % Refund of Premium (basis Policy Period) Timing of Cancellation 1 Yr Up to 30 days  75.00% 31 to 90 days  50.00% 3 to 6 months  25.00% 6 to 12 months  0.00% Notwithstanding anything contained herein or otherwise, no refunds of premium shall be made in respect o...",
+          "page": 20
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "b) The Company may cancel the Policy at any time on grounds of mis-represenation, non- disclosure of material facts ,fraud by the Insured Person, by giving 15 days‘ written notice. There would be no refund of premium on cancellation on grounds of mis-represenation ,non-disclosure of material facts or fraud.",
+          "page": 20
+        },
+        {
+          "number": "10.11",
+          "title": "Automatic change in Coverage under the policy",
+          "text": "10.11 Automatic change in Coverage under the policy The coverage for the Insured Person(s) shall automatically terminate:",
+          "page": 20
+        },
+        {
+          "number": "1",
+          "title": "In the case of his/ her (Insured Person) demise.",
+          "text": "1. In the case of his/ her (Insured Person) demise. However the cover shall continue for the remaining Insured Persons till the end of Policy Period. The other insured persons may also apply to renew the policy. In case, the other insured person is minor, the policy shall be renewed only through any one of his/her natural guardian or guardian appointed by court. All relevant particulars in respect of such person (including his/her relationship with the insured person) must be submitted to the co...",
+          "page": 20
+        },
+        {
+          "number": "2",
+          "title": "Upon exhaustion of sum insured and cumulative bonus, for the policy year. However, the",
+          "text": "2. Upon exhaustion of sum insured and cumulative bonus, for the policy year. However, the policy is subject to renewal on the due date as per the applicable terms and conditions.",
+          "page": 20
+        },
+        {
+          "number": "10.12",
+          "title": "Territorial Jurisdiction",
+          "text": "10.12 Territorial Jurisdiction All disputes or differences under or in relation to the interpretation of the terms, conditions, validity, construct, limitations and/or exclusions contained in the Policy shall be determined by the Indian court and according to Indian law.",
+          "page": 21
+        },
+        {
+          "number": "10.13",
+          "title": "Arbitration",
+          "text": "10.13 Arbitration",
+          "page": 21
+        },
+        {
+          "number": "I",
+          "title": "If any dispute or difference shall arise as to the quantum to be paid by the Policy,",
+          "text": "i. If any dispute or difference shall arise as to the quantum to be paid by the Policy, (liability being otherwise admitted) such difference shall independently of all other questions, be referred to the decision of a sole arbitrator to be appointed in writing by the parties here to or if they cannot agree upon a single arbitrator within thirty days of any party invoking arbitration, the same shall be referred to a panel of three arbitrators, comprising two arbitrators, one to be appointed by ea...",
+          "page": 21
+        },
+        {
+          "number": "II",
+          "title": "It is clearly agreed and understood that no difference or dispute shall be preferable to",
+          "text": "ii. It is clearly agreed and understood that no difference or dispute shall be preferable to arbitration as herein before provided, if the Company has disputed or not accepted liability under or in respect of the policy.",
+          "page": 21
+        },
+        {
+          "number": "III",
+          "title": "It is hereby expressly stipulated and declared that it shall be a condition precedent to",
+          "text": "iii. It is hereby expressly stipulated and declared that it shall be a condition precedent to any right of action or suit upon the policy that award by such arbitrator/arbitrators of the amount of expenses shall be first obtained.",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "number": "10.14",
+      "title": "10.14 Migration",
+      "level": 2,
+      "page_start": 21,
+      "page_end": 31,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured Person will have the option to migrate the Policy to other health insurance products/plans offered by the company as per extant Guidelines related to Migration. If such person is presently covered and has been continuously covered without any lapses under any health insurance product/plan offered by the company, as per Guidelines on migration, the proposed Insured Person will get all the accrued continuity benefits in waiting periods as per below:",
+          "page": 21
+        },
+        {
+          "number": "I",
+          "title": "The waiting periods specified in Section 6 shall be reduced by the number of continuous",
+          "text": "i. The waiting periods specified in Section 6 shall be reduced by the number of continuous preceding years of coverage of the Insured Person under the previous health insurance Policy.",
+          "page": 21
+        },
+        {
+          "number": "II",
+          "title": "Migration benefit will be offered to the extent of sum of previous sum insured and accrued",
+          "text": "ii. Migration benefit will be offered to the extent of sum of previous sum insured and accrued bonus/multiplier benefit (as part of the base sum insured), migration benefit shall not apply to any other additional increased Sum Insured. For Detailed Guidelines on Migration, kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGuidelines_Layout.aspx?page=PageNo3987",
+          "page": 21
+        },
+        {
+          "number": "10.15",
+          "title": "Portability",
+          "text": "10.15 Portability The Insured Person will have the option to port the Policy to other insurers as per extant Guidelines related to portability. If such person is presently covered and has been continuously covered without any lapses under any health insurance plan with an Indian General/Health insurer as per Guidelines on portability, the proposed Insured Person will get all the accrued continuity benefits in waiting periods as under:",
+          "page": 21
+        },
+        {
+          "number": "I",
+          "title": "The waiting periods specified in Section 6 shall be reduced by the number of continuous",
+          "text": "i. The waiting periods specified in Section 6 shall be reduced by the number of continuous preceding years of coverage of the Insured Person under the previous health insurance Policy.",
+          "page": 22
+        },
+        {
+          "number": "II",
+          "title": "Portability benefit will be offered to the extent of sum of previous sum insured and",
+          "text": "ii. Portability benefit will be offered to the extent of sum of previous sum insured and accrued bonus (as part of the base sum insured), portability benefit shall not apply to any other additional increased Sum Insured. For Detailed Guidelines on Portability, kindly refer the link https://www.irdai.gov.in/ADMINCMS/cms/frmGuidelines_Layout.aspx?page=PageNo3987",
+          "page": 22
+        },
+        {
+          "number": "10.16",
+          "title": "Renewal of Policy",
+          "text": "10.16 Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, moral hazard, misrepresentation by the insured person. The Company is not bound to give notice that it is due for renewal.",
+          "page": 22
+        },
+        {
+          "number": "I",
+          "title": "Renewal shall not be denied on the ground that the insured had made a claim or claims in",
+          "text": "i. Renewal shall not be denied on the ground that the insured had made a claim or claims in the preceding policy years",
+          "page": 22
+        },
+        {
+          "number": "II",
+          "title": "Request for renewal along with requisite premium shall be received by the Company",
+          "text": "ii. Request for renewal along with requisite premium shall be received by the Company before the end of the Policy Period.",
+          "page": 22
+        },
+        {
+          "number": "III",
+          "title": "At the end of the Policy Period, the policy shall terminate and can be renewed within the",
+          "text": "iii. At the end of the Policy Period, the policy shall terminate and can be renewed within the Grace Period to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period.",
+          "page": 22
+        },
+        {
+          "number": "IV",
+          "title": "If not renewed within Grace Period after due renewal date, the Policy shall terminate.",
+          "text": "iv. If not renewed within Grace Period after due renewal date, the Policy shall terminate.",
+          "page": 22
+        },
+        {
+          "number": "10.17",
+          "title": "Premium Payment in Installments",
+          "text": "10.17 Premium Payment in Installments If the insured person has opted for Payment of Premium on an installment basis i.e. Half Yearly, Quarterly or Monthly, as mentioned in Your Policy Schedule/Certificate of Insurance, the following Conditions shall apply (notwithstanding any terms contrary elsewhere in the Policy)",
+          "page": 22
+        },
+        {
+          "number": "I",
+          "title": "Grace Period of 15 days would be given to pay the installment premium due for the",
+          "text": "i. Grace Period of 15 days would be given to pay the installment premium due for the Policy.",
+          "page": 22
+        },
+        {
+          "number": "II",
+          "title": "During such grace period, Coverage will not be available from the installment premium",
+          "text": "ii. During such grace period, Coverage will not be available from the installment premium payment due date till the date of receipt of premium by Company.",
+          "page": 22
+        },
+        {
+          "number": "III",
+          "title": "The Benefits provided under – ―Waiting Periods‖, ―Specific Waiting Periods‖ Sections shall",
+          "text": "iii. The Benefits provided under – ―Waiting Periods‖, ―Specific Waiting Periods‖ Sections shall continue in the event of payment of premium within the stipulated grace Period.",
+          "page": 22
+        },
+        {
+          "number": "IV",
+          "title": "No interest will be charged If the installment premium is not paid on due date.",
+          "text": "iv. No interest will be charged If the installment premium is not paid on due date. In case of installment premium due not received within the grace Period, the Policy will get cancelled.",
+          "page": 22
+        },
+        {
+          "number": "10.18",
+          "title": "Possibility of Revision of Terms of the Policy Including the Premium Rates",
+          "text": "10.18 Possibility of Revision of Terms of the Policy Including the Premium Rates The Company, with prior approval of IRDAI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected.",
+          "page": 23
+        },
+        {
+          "number": "10.19",
+          "title": "Free look period",
+          "text": "10.19 Free look period The Free Look Period shall be applicable at the inception of the Policy and not on renewals or at the time of porting the policy. The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable. If the insured has not made any claim during the Free Look Period, the insured shall be entitled to",
+          "page": 23
+        },
+        {
+          "number": "I",
+          "title": "a refund of the premium paid less any expenses incurred by the Company on medical",
+          "text": "i. a refund of the premium paid less any expenses incurred by the Company on medical examination of the insured person and the stamp duty charges; or",
+          "page": 23
+        },
+        {
+          "number": "II",
+          "title": "where the risk has already commenced and the option of return of the Policy is exercised",
+          "text": "ii. where the risk has already commenced and the option of return of the Policy is exercised by the insured, a deduction towards the proportionate risk premium for period of cover or",
+          "page": 23
+        },
+        {
+          "number": "III",
+          "title": "Where only a part of the insurance coverage has commenced, such proportionate",
+          "text": "iii. Where only a part of the insurance coverage has commenced, such proportionate premium commensurate with the insurance coverage during such period;",
+          "page": 23
+        },
+        {
+          "number": "10.20",
+          "title": "Endorsements (Changes in Policy)",
+          "text": "10.20 Endorsements (Changes in Policy)",
+          "page": 23
+        },
+        {
+          "number": "I",
+          "title": "This policy constitutes the complete contract of insurance. This Policy cannot be modified",
+          "text": "i. This policy constitutes the complete contract of insurance. This Policy cannot be modified by anyone (including an insurance agent or broker) except the company. Any change made by the company  shall be  evidenced by a written endorsement signed and stamped.",
+          "page": 23
+        },
+        {
+          "number": "II",
+          "title": "The policyholder may be changed only at the time of renewal. The new policyholder must",
+          "text": "ii. The policyholder may be changed only at the time of renewal. The new policyholder must be  thelegal heir/immediate family member. Such change would be subject to acceptance by the company and payment of premium (if any). The renewed Policy shall be treated as having been renewed without break. The policyholder may be changed during the Policy Period only in case of his/her demise or him/her moving out of India .",
+          "page": 23
+        },
+        {
+          "number": "10.21",
+          "title": "Change of Sum Insured",
+          "text": "10.21 Change of Sum Insured Sum insured can be changed (increased/ decreased) only at the time of renewal or at any time, subject to underwriting by the Company. For any increase in SI, the waiting period shall start afresh only for the enhanced portion of the sum insured.",
+          "page": 23
+        },
+        {
+          "number": "10.22",
+          "title": "Terms and conditions of the Policy",
+          "text": "10.22 Terms and conditions of the Policy The terms and conditions contained herein and in the Policy Schedule shall be deemed to form part of the Policy and shall be read together as one document.",
+          "page": 23
+        },
+        {
+          "number": "10.23",
+          "title": "Nomination",
+          "text": "10.23 Nomination The policyholder is required at the inception of the policy to make a nomination for the purpose of payment of claims under the policy in the event of death of the policyholder. Any change of nomination shall be communicated to the company in writing and such change shall be effective only when an endorsement on the policy is made. For Claim settlement under reimbursement, the Company will pay the policyholder. In the event of death of the policyholder, the Company will pay the ...",
+          "page": 24
+        },
+        {
+          "number": "11",
+          "title": "Redressal Of Grievance",
+          "text": "11 Redressal Of Grievance GrievanceIn case of any grievance relating to servicing the Policy, the insured person – may submit in writing to the Policy issuing office or regional office for redressal. For details of grievance officer, kindly refer the link………. https://www.hdfcergo.com/customer-voice/grievances IRDAI Integrated Grievance Management System - https://igms.irda.gov.in/ Insurance Ombudsman –The insured person may also approach the office of Insurance Ombudsman of the respective area/r...",
+          "page": 24
+        },
+        {
+          "number": "12",
+          "title": "Table Of Benefits",
+          "text": "12  Table Of Benefits Name Arogya Sanjeevani Policy, HDFC ERGO",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Product Type Individual/ Floater",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Category of Cover Indemnity",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "INR Sum insured On Individual basis – SI shall apply to each individual family member On Floater basis – SI shall apply to the entire family Policy Period 1 year",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy can be availed by persons between the age of 18 years and 65years, as Proposer. Proposer with higher age can obtain policy for family, without covering self. Policy can be availed for Self and the following family members",
+          "page": 24
+        },
+        {
+          "number": "I",
+          "title": "legally wedded spouse",
+          "text": "i. legally wedded spouse Eligibility",
+          "page": 24
+        },
+        {
+          "number": "II",
+          "title": "Parents and Parents-in-law .",
+          "text": "ii. Parents and Parents-in-law .",
+          "page": 24
+        },
+        {
+          "number": "III",
+          "title": "Dependent Children (i.e. natural or legally adopted) between",
+          "text": "iii. Dependent Children (i.e. natural or legally adopted) between the age 3 months to 25 years. If the child above 18 years of age is financially independent, he or she shall be ineligible for coverage in the subsequent renewals For Yearly payment of mode, a fixed period of 30 days is to be Grace Period allowed as Grace Period and for all other modes of payment a fixed period of 15 days be allowed as grace period. Expenses of Hospitalization for a minimum period of 24 consecutive hours only shal...",
+          "page": 24
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Pre Hospitalisation For 30 days prior to the date of hospitalization",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Post Hospitalisation For 60 days from the date of discharge from the hospital",
+          "page": 25
+        },
+        {
+          "number": "1",
+          "title": "Room Rent, Boarding, Nursing Expenses all inclusive as provided",
+          "text": "1. Room Rent, Boarding, Nursing Expenses all inclusive as provided by the Hospital / Nursing Home up to 2% of the sum insured subject to maximum of Rs.5000/- per day. Sublimit for",
+          "page": 25
+        },
+        {
+          "number": "2",
+          "title": "Intensive Care Unit (ICU) charges/ Intensive Cardiac Care Unit",
+          "text": "2. Intensive Care Unit (ICU) charges/ Intensive Cardiac Care Unit room/doctors fee (ICCU) charges all inclusive as provided by the Hospital / Nursing Home up to 5% of the sum insured subject to maximum of Rs.10,000/-, per day Up to 25% of Sum insured or Rs.40,000/-, whichever is lower, per eye, Cataract Treatment under one policy year.",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Expenses incurred for Inpatient Care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems of AYUSH medicines shall be covered upto sum insured, during each Policy year as specified in the policy schedule.",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Only PEDs declared in the Proposal Form and accepted for coverage Pre Existing Disease by the company shall be covered after a waiting period of 4 years",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Increase in the sum insured by 5% in respect of each claim free year Cumulative bonus subject to a maximum of 50% of SI. In the event of claim the cumulative bonus shall be reduced at the same rate.",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Co Pay 5% co pay on all claims Annexure-A List  I – Items for which coverage is not available in the policy Sl No Item",
+          "page": 25
+        },
+        {
+          "number": "1",
+          "title": "BABY FOOD",
+          "text": "1 BABY FOOD",
+          "page": 26
+        },
+        {
+          "number": "2",
+          "title": "BABY UTILITIES CHARGES",
+          "text": "2 BABY UTILITIES CHARGES",
+          "page": 26
+        },
+        {
+          "number": "3",
+          "title": "BEAUTY SERVICES",
+          "text": "3 BEAUTY SERVICES",
+          "page": 26
+        },
+        {
+          "number": "4",
+          "title": "BELTS/ BRACES",
+          "text": "4 BELTS/ BRACES",
+          "page": 26
+        },
+        {
+          "number": "5",
+          "title": "BUDS",
+          "text": "5 BUDS",
+          "page": 26
+        },
+        {
+          "number": "6",
+          "title": "COLD PACK/HOT PACK",
+          "text": "6 COLD PACK/HOT PACK",
+          "page": 26
+        },
+        {
+          "number": "7",
+          "title": "CARRY BAGS",
+          "text": "7 CARRY BAGS",
+          "page": 26
+        },
+        {
+          "number": "8",
+          "title": "EMAIL / INTERNET CHARGES",
+          "text": "8 EMAIL / INTERNET CHARGES",
+          "page": 26
+        },
+        {
+          "number": "9",
+          "title": "FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY HOSPITAL)",
+          "text": "9 FOOD CHARGES (OTHER THAN PATIENT's DIET PROVIDED BY HOSPITAL)",
+          "page": 26
+        },
+        {
+          "number": "10",
+          "title": "LEGGINGS",
+          "text": "10 LEGGINGS",
+          "page": 26
+        },
+        {
+          "number": "11",
+          "title": "LAUNDRY CHARGES",
+          "text": "11 LAUNDRY CHARGES",
+          "page": 26
+        },
+        {
+          "number": "12",
+          "title": "MINERAL WATER",
+          "text": "12 MINERAL WATER",
+          "page": 26
+        },
+        {
+          "number": "13",
+          "title": "SANITARY PAD",
+          "text": "13 SANITARY PAD",
+          "page": 26
+        },
+        {
+          "number": "14",
+          "title": "TELEPHONE CHARGES",
+          "text": "14 TELEPHONE CHARGES",
+          "page": 26
+        },
+        {
+          "number": "15",
+          "title": "GUEST SERVICES",
+          "text": "15 GUEST SERVICES",
+          "page": 26
+        },
+        {
+          "number": "16",
+          "title": "CREPE BANDAGE",
+          "text": "16 CREPE BANDAGE",
+          "page": 26
+        },
+        {
+          "number": "17",
+          "title": "DIAPER OF ANY TYPE",
+          "text": "17 DIAPER OF ANY TYPE",
+          "page": 26
+        },
+        {
+          "number": "18",
+          "title": "EYELET COLLAR",
+          "text": "18 EYELET COLLAR",
+          "page": 26
+        },
+        {
+          "number": "19",
+          "title": "SLINGS",
+          "text": "19 SLINGS",
+          "page": 26
+        },
+        {
+          "number": "20",
+          "title": "BLOOD GROUPING AND CROSS MATCHING OF DONORS SAMPLES",
+          "text": "20 BLOOD GROUPING AND CROSS MATCHING OF DONORS SAMPLES",
+          "page": 26
+        },
+        {
+          "number": "21",
+          "title": "SERVICE CHARGES WHERE NURSING CHARGE ALSO CHARGED",
+          "text": "21 SERVICE CHARGES WHERE NURSING CHARGE ALSO CHARGED",
+          "page": 26
+        },
+        {
+          "number": "22",
+          "title": "Television Charges",
+          "text": "22 Television Charges",
+          "page": 26
+        },
+        {
+          "number": "23",
+          "title": "SURCHARGES",
+          "text": "23 SURCHARGES",
+          "page": 26
+        },
+        {
+          "number": "24",
+          "title": "ATTENDANT CHARGES",
+          "text": "24 ATTENDANT CHARGES",
+          "page": 26
+        },
+        {
+          "number": "25",
+          "title": "EXTRA DIET OF PATIENT (OTHER THAN THAT WHICH FORMS PART OF BED",
+          "text": "25 EXTRA DIET OF PATIENT (OTHER THAN THAT WHICH FORMS PART OF BED CHARGE)",
+          "page": 26
+        },
+        {
+          "number": "26",
+          "title": "BIRTH CERTIFICATE",
+          "text": "26 BIRTH CERTIFICATE",
+          "page": 26
+        },
+        {
+          "number": "27",
+          "title": "CERTIFICATE CHARGES",
+          "text": "27 CERTIFICATE CHARGES",
+          "page": 26
+        },
+        {
+          "number": "28",
+          "title": "COURIER CHARGES",
+          "text": "28 COURIER CHARGES",
+          "page": 26
+        },
+        {
+          "number": "29",
+          "title": "CONVEYANCE CHARGES",
+          "text": "29 CONVEYANCE CHARGES",
+          "page": 26
+        },
+        {
+          "number": "30",
+          "title": "MEDICAL CERTIFICATE",
+          "text": "30 MEDICAL CERTIFICATE",
+          "page": 26
+        },
+        {
+          "number": "31",
+          "title": "MEDICAL RECORDS",
+          "text": "31 MEDICAL RECORDS",
+          "page": 26
+        },
+        {
+          "number": "32",
+          "title": "PHOTOCOPIES CHARGES",
+          "text": "32 PHOTOCOPIES CHARGES",
+          "page": 26
+        },
+        {
+          "number": "33",
+          "title": "MORTUARY CHARGES",
+          "text": "33 MORTUARY CHARGES",
+          "page": 26
+        },
+        {
+          "number": "34",
+          "title": "WALKING AIDS CHARGES",
+          "text": "34 WALKING AIDS CHARGES",
+          "page": 26
+        },
+        {
+          "number": "35",
+          "title": "OXYGEN CYLINDER (FOR USAGE OUTSIDE THE HOSPITAL)",
+          "text": "35 OXYGEN CYLINDER (FOR USAGE OUTSIDE THE HOSPITAL)",
+          "page": 26
+        },
+        {
+          "number": "36",
+          "title": "SPACER",
+          "text": "36 SPACER",
+          "page": 26
+        },
+        {
+          "number": "37",
+          "title": "SPIROMETRE",
+          "text": "37 SPIROMETRE",
+          "page": 26
+        },
+        {
+          "number": "38",
+          "title": "NEBULIZER KIT",
+          "text": "38 NEBULIZER KIT",
+          "page": 26
+        },
+        {
+          "number": "39",
+          "title": "STEAM INHALER",
+          "text": "39 STEAM INHALER",
+          "page": 26
+        },
+        {
+          "number": "40",
+          "title": "ARMSLING",
+          "text": "40 ARMSLING",
+          "page": 26
+        },
+        {
+          "number": "41",
+          "title": "THERMOMETER",
+          "text": "41 THERMOMETER",
+          "page": 26
+        },
+        {
+          "number": "42",
+          "title": "CERVICAL COLLAR",
+          "text": "42 CERVICAL COLLAR",
+          "page": 26
+        },
+        {
+          "number": "43",
+          "title": "SPLINT",
+          "text": "43 SPLINT",
+          "page": 26
+        },
+        {
+          "number": "44",
+          "title": "DIABETIC FOOT WEAR",
+          "text": "44 DIABETIC FOOT WEAR",
+          "page": 27
+        },
+        {
+          "number": "45",
+          "title": "KNEE BRACES (LONG/ SHORT/ HINGED)",
+          "text": "45 KNEE BRACES (LONG/ SHORT/ HINGED)",
+          "page": 27
+        },
+        {
+          "number": "46",
+          "title": "KNEE IMMOBILIZER/SHOULDER IMMOBILIZER",
+          "text": "46 KNEE IMMOBILIZER/SHOULDER IMMOBILIZER",
+          "page": 27
+        },
+        {
+          "number": "47",
+          "title": "LUMBO SACRAL BELT",
+          "text": "47 LUMBO SACRAL BELT",
+          "page": 27
+        },
+        {
+          "number": "48",
+          "title": "NIMBUS BED OR WATER OR AIR BED CHARGES",
+          "text": "48 NIMBUS BED OR WATER OR AIR BED CHARGES",
+          "page": 27
+        },
+        {
+          "number": "49",
+          "title": "AMBULANCE COLLAR",
+          "text": "49 AMBULANCE COLLAR",
+          "page": 27
+        },
+        {
+          "number": "50",
+          "title": "AMBULANCE EQUIPMENT",
+          "text": "50 AMBULANCE EQUIPMENT",
+          "page": 27
+        },
+        {
+          "number": "51",
+          "title": "ABDOMINAL BINDER",
+          "text": "51 ABDOMINAL BINDER",
+          "page": 27
+        },
+        {
+          "number": "52",
+          "title": "PRIVATE NURSES CHARGES- SPECIAL NURSING CHARGES",
+          "text": "52 PRIVATE NURSES CHARGES- SPECIAL NURSING CHARGES",
+          "page": 27
+        },
+        {
+          "number": "53",
+          "title": "SUGAR FREE Tablets",
+          "text": "53  SUGAR FREE Tablets",
+          "page": 27
+        },
+        {
+          "number": "54",
+          "title": "CREAMS POWDERS LOTIONS (Toiletries are not payable, only prescribed",
+          "text": "54 CREAMS POWDERS LOTIONS (Toiletries are not payable, only prescribed medical pharmaceuticals payable)",
+          "page": 27
+        },
+        {
+          "number": "55",
+          "title": "ECG ELECTRODES",
+          "text": "55 ECG ELECTRODES",
+          "page": 27
+        },
+        {
+          "number": "56",
+          "title": "GLOVES",
+          "text": "56 GLOVES",
+          "page": 27
+        },
+        {
+          "number": "57",
+          "title": "NEBULISATION KIT",
+          "text": "57 NEBULISATION KIT",
+          "page": 27
+        },
+        {
+          "number": "58",
+          "title": "ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, ORTHOKIT,",
+          "text": "58 ANY KIT WITH NO DETAILS MENTIONED [DELIVERY KIT, ORTHOKIT, RECOVERY KIT, ETC]",
+          "page": 27
+        },
+        {
+          "number": "59",
+          "title": "KIDNEY TRAY",
+          "text": "59 KIDNEY TRAY",
+          "page": 27
+        },
+        {
+          "number": "60",
+          "title": "MASK",
+          "text": "60 MASK",
+          "page": 27
+        },
+        {
+          "number": "61",
+          "title": "OUNCE GLASS",
+          "text": "61 OUNCE GLASS",
+          "page": 27
+        },
+        {
+          "number": "62",
+          "title": "OXYGEN MASK",
+          "text": "62 OXYGEN MASK",
+          "page": 27
+        },
+        {
+          "number": "63",
+          "title": "PELVIC TRACTION BELT",
+          "text": "63 PELVIC TRACTION BELT",
+          "page": 27
+        },
+        {
+          "number": "64",
+          "title": "PAN CAN",
+          "text": "64 PAN CAN",
+          "page": 27
+        },
+        {
+          "number": "65",
+          "title": "TROLLY COVER",
+          "text": "65 TROLLY COVER",
+          "page": 27
+        },
+        {
+          "number": "66",
+          "title": "UROMETER, URINE JUG",
+          "text": "66 UROMETER, URINE JUG",
+          "page": 27
+        },
+        {
+          "number": "67",
+          "title": "AMBULANCE",
+          "text": "67 AMBULANCE",
+          "page": 27
+        },
+        {
+          "number": "68",
+          "title": "VASOFIX SAFETY",
+          "text": "68 VASOFIX SAFETY List II – Items that are to be subsumed into Room Charges Sl No Item",
+          "page": 27
+        },
+        {
+          "number": "1",
+          "title": "BABY CHARGES (UNLESS SPECIFIED/INDICATED)",
+          "text": "1 BABY CHARGES (UNLESS SPECIFIED/INDICATED)",
+          "page": 27
+        },
+        {
+          "number": "2",
+          "title": "HAND WASH",
+          "text": "2 HAND WASH",
+          "page": 27
+        },
+        {
+          "number": "3",
+          "title": "SHOE COVER",
+          "text": "3 SHOE COVER",
+          "page": 27
+        },
+        {
+          "number": "4",
+          "title": "CAPS",
+          "text": "4 CAPS",
+          "page": 27
+        },
+        {
+          "number": "5",
+          "title": "CRADLE CHARGES",
+          "text": "5 CRADLE CHARGES",
+          "page": 27
+        },
+        {
+          "number": "6",
+          "title": "COMB",
+          "text": "6 COMB",
+          "page": 27
+        },
+        {
+          "number": "7",
+          "title": "EAU-DE-COLOGNE / ROOM FRESHNERS",
+          "text": "7 EAU-DE-COLOGNE / ROOM FRESHNERS",
+          "page": 27
+        },
+        {
+          "number": "8",
+          "title": "FOOT COVER",
+          "text": "8 FOOT COVER",
+          "page": 27
+        },
+        {
+          "number": "9",
+          "title": "GOWN",
+          "text": "9 GOWN",
+          "page": 27
+        },
+        {
+          "number": "10",
+          "title": "SLIPPERS",
+          "text": "10 SLIPPERS",
+          "page": 27
+        },
+        {
+          "number": "11",
+          "title": "TISSUE PAPER",
+          "text": "11 TISSUE PAPER",
+          "page": 27
+        },
+        {
+          "number": "12",
+          "title": "TOOTH PASTE",
+          "text": "12 TOOTH PASTE",
+          "page": 27
+        },
+        {
+          "number": "13",
+          "title": "TOOTH BRUSH",
+          "text": "13 TOOTH BRUSH",
+          "page": 27
+        },
+        {
+          "number": "14",
+          "title": "BED PAN",
+          "text": "14 BED PAN",
+          "page": 27
+        },
+        {
+          "number": "15",
+          "title": "FACE MASK",
+          "text": "15 FACE MASK",
+          "page": 27
+        },
+        {
+          "number": "16",
+          "title": "FLEXI MASK",
+          "text": "16 FLEXI MASK",
+          "page": 27
+        },
+        {
+          "number": "17",
+          "title": "HAND HOLDER",
+          "text": "17 HAND HOLDER",
+          "page": 27
+        },
+        {
+          "number": "18",
+          "title": "SPUTUM CUP",
+          "text": "18 SPUTUM CUP",
+          "page": 28
+        },
+        {
+          "number": "19",
+          "title": "DISINFECTANT LOTIONS",
+          "text": "19 DISINFECTANT LOTIONS",
+          "page": 28
+        },
+        {
+          "number": "20",
+          "title": "LUXURY TAX",
+          "text": "20 LUXURY TAX",
+          "page": 28
+        },
+        {
+          "number": "21",
+          "title": "HVAC",
+          "text": "21 HVAC",
+          "page": 28
+        },
+        {
+          "number": "22",
+          "title": "HOUSE KEEPING CHARGES",
+          "text": "22 HOUSE KEEPING CHARGES",
+          "page": 28
+        },
+        {
+          "number": "23",
+          "title": "AIR CONDITIONER CHARGES",
+          "text": "23 AIR CONDITIONER CHARGES",
+          "page": 28
+        },
+        {
+          "number": "24",
+          "title": "IM IV INJECTION CHARGES",
+          "text": "24 IM IV INJECTION CHARGES",
+          "page": 28
+        },
+        {
+          "number": "25",
+          "title": "CLEAN SHEET",
+          "text": "25 CLEAN SHEET",
+          "page": 28
+        },
+        {
+          "number": "26",
+          "title": "BLANKET/WARMER BLANKET",
+          "text": "26 BLANKET/WARMER BLANKET",
+          "page": 28
+        },
+        {
+          "number": "27",
+          "title": "ADMISSION KIT",
+          "text": "27 ADMISSION KIT",
+          "page": 28
+        },
+        {
+          "number": "28",
+          "title": "DIABETIC CHART CHARGES",
+          "text": "28 DIABETIC CHART CHARGES",
+          "page": 28
+        },
+        {
+          "number": "29",
+          "title": "DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+          "text": "29 DOCUMENTATION CHARGES / ADMINISTRATIVE EXPENSES",
+          "page": 28
+        },
+        {
+          "number": "30",
+          "title": "DISCHARGE PROCEDURE CHARGES",
+          "text": "30 DISCHARGE PROCEDURE CHARGES",
+          "page": 28
+        },
+        {
+          "number": "31",
+          "title": "DAILY CHART CHARGES",
+          "text": "31 DAILY CHART CHARGES",
+          "page": 28
+        },
+        {
+          "number": "32",
+          "title": "ENTRANCE PASS / VISITORS PASS CHARGES",
+          "text": "32 ENTRANCE PASS / VISITORS PASS CHARGES",
+          "page": 28
+        },
+        {
+          "number": "33",
+          "title": "EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+          "text": "33 EXPENSES RELATED TO PRESCRIPTION ON DISCHARGE",
+          "page": 28
+        },
+        {
+          "number": "34",
+          "title": "FILE OPENING CHARGES",
+          "text": "34 FILE OPENING CHARGES",
+          "page": 28
+        },
+        {
+          "number": "35",
+          "title": "INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+          "text": "35 INCIDENTAL EXPENSES / MISC. CHARGES (NOT EXPLAINED)",
+          "page": 28
+        },
+        {
+          "number": "36",
+          "title": "PATIENT IDENTIFICATION BAND / NAME TAG",
+          "text": "36 PATIENT IDENTIFICATION BAND / NAME TAG",
+          "page": 28
+        },
+        {
+          "number": "37",
+          "title": "PULSEOXYMETER CHARGES",
+          "text": "37 PULSEOXYMETER CHARGES",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "List III – Items that are to be subsumed into Procedure Charges Sl No. Item",
+          "page": 28
+        },
+        {
+          "number": "1",
+          "title": "HAIR REMOVAL CREAM",
+          "text": "1 HAIR REMOVAL CREAM",
+          "page": 28
+        },
+        {
+          "number": "2",
+          "title": "DISPOSABLES RAZORS CHARGES (for site preparations)",
+          "text": "2 DISPOSABLES RAZORS CHARGES (for site preparations)",
+          "page": 28
+        },
+        {
+          "number": "3",
+          "title": "EYE PAD",
+          "text": "3 EYE PAD",
+          "page": 28
+        },
+        {
+          "number": "4",
+          "title": "EYE SHEILD",
+          "text": "4 EYE SHEILD",
+          "page": 28
+        },
+        {
+          "number": "5",
+          "title": "CAMERA COVER",
+          "text": "5 CAMERA COVER",
+          "page": 28
+        },
+        {
+          "number": "6",
+          "title": "DVD, CD CHARGES",
+          "text": "6 DVD, CD CHARGES",
+          "page": 28
+        },
+        {
+          "number": "7",
+          "title": "GAUSE SOFT",
+          "text": "7 GAUSE SOFT",
+          "page": 28
+        },
+        {
+          "number": "8",
+          "title": "GAUZE",
+          "text": "8 GAUZE",
+          "page": 28
+        },
+        {
+          "number": "9",
+          "title": "WARD AND THEATRE BOOKING CHARGES",
+          "text": "9 WARD AND THEATRE BOOKING CHARGES",
+          "page": 28
+        },
+        {
+          "number": "10",
+          "title": "ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+          "text": "10 ARTHROSCOPY AND ENDOSCOPY INSTRUMENTS",
+          "page": 28
+        },
+        {
+          "number": "11",
+          "title": "MICROSCOPE COVER",
+          "text": "11 MICROSCOPE COVER",
+          "page": 28
+        },
+        {
+          "number": "12",
+          "title": "SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+          "text": "12 SURGICAL BLADES, HARMONICSCALPEL,SHAVER",
+          "page": 28
+        },
+        {
+          "number": "13",
+          "title": "SURGICAL DRILL",
+          "text": "13 SURGICAL DRILL",
+          "page": 28
+        },
+        {
+          "number": "14",
+          "title": "EYE KIT",
+          "text": "14 EYE KIT",
+          "page": 28
+        },
+        {
+          "number": "15",
+          "title": "EYE DRAPE",
+          "text": "15 EYE DRAPE",
+          "page": 28
+        },
+        {
+          "number": "16",
+          "title": "X-RAY FILM",
+          "text": "16 X-RAY FILM",
+          "page": 28
+        },
+        {
+          "number": "17",
+          "title": "BOYLES APPARATUS CHARGES",
+          "text": "17 BOYLES APPARATUS CHARGES",
+          "page": 28
+        },
+        {
+          "number": "18",
+          "title": "COTTON",
+          "text": "18 COTTON",
+          "page": 28
+        },
+        {
+          "number": "19",
+          "title": "COTTON BANDAGE",
+          "text": "19 COTTON BANDAGE",
+          "page": 28
+        },
+        {
+          "number": "20",
+          "title": "SURGICAL TAPE",
+          "text": "20 SURGICAL TAPE",
+          "page": 28
+        },
+        {
+          "number": "21",
+          "title": "APRON",
+          "text": "21 APRON",
+          "page": 28
+        },
+        {
+          "number": "22",
+          "title": "TORNIQUET",
+          "text": "22 TORNIQUET",
+          "page": 28
+        },
+        {
+          "number": "23",
+          "title": "ORTHOBUNDLE, GYNAEC BUNDLE",
+          "text": "23 ORTHOBUNDLE, GYNAEC BUNDLE",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "List IV – Items that are to be subsumed into costs of treatment Sl No. Item",
+          "page": 29
+        },
+        {
+          "number": "1",
+          "title": "ADMISSION/REGISTRATION CHARGES",
+          "text": "1 ADMISSION/REGISTRATION CHARGES",
+          "page": 29
+        },
+        {
+          "number": "2",
+          "title": "HOSPITALISATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+          "text": "2 HOSPITALISATION FOR EVALUATION/ DIAGNOSTIC PURPOSE",
+          "page": 29
+        },
+        {
+          "number": "3",
+          "title": "URINE CONTAINER",
+          "text": "3 URINE CONTAINER",
+          "page": 29
+        },
+        {
+          "number": "4",
+          "title": "BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+          "text": "4 BLOOD RESERVATION CHARGES AND ANTE NATAL BOOKING CHARGES",
+          "page": 29
+        },
+        {
+          "number": "5",
+          "title": "BIPAP MACHINE",
+          "text": "5 BIPAP MACHINE",
+          "page": 29
+        },
+        {
+          "number": "6",
+          "title": "CPAP/ CAPD EQUIPMENTS",
+          "text": "6 CPAP/ CAPD EQUIPMENTS",
+          "page": 29
+        },
+        {
+          "number": "7",
+          "title": "INFUSION PUMP– COST",
+          "text": "7 INFUSION PUMP– COST",
+          "page": 29
+        },
+        {
+          "number": "8",
+          "title": "HYDROGEN PEROXIDE\\SPIRIT\\ DISINFECTANTS ETC",
+          "text": "8 HYDROGEN PEROXIDE\\SPIRIT\\ DISINFECTANTS ETC",
+          "page": 29
+        },
+        {
+          "number": "9",
+          "title": "NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET CHARGES",
+          "text": "9 NUTRITION PLANNING CHARGES - DIETICIAN CHARGES- DIET CHARGES",
+          "page": 29
+        },
+        {
+          "number": "10",
+          "title": "HIV KIT",
+          "text": "10 HIV KIT",
+          "page": 29
+        },
+        {
+          "number": "11",
+          "title": "ANTISEPTIC MOUTHWASH",
+          "text": "11 ANTISEPTIC MOUTHWASH",
+          "page": 29
+        },
+        {
+          "number": "12",
+          "title": "LOZENGES",
+          "text": "12 LOZENGES",
+          "page": 29
+        },
+        {
+          "number": "13",
+          "title": "MOUTH PAINT",
+          "text": "13 MOUTH PAINT",
+          "page": 29
+        },
+        {
+          "number": "14",
+          "title": "VACCINATION CHARGES",
+          "text": "14 VACCINATION CHARGES",
+          "page": 29
+        },
+        {
+          "number": "15",
+          "title": "ALCOHOL SWABES",
+          "text": "15 ALCOHOL SWABES",
+          "page": 29
+        },
+        {
+          "number": "16",
+          "title": "SCRUB SOLUTION/STERILLIUM",
+          "text": "16 SCRUB SOLUTION/STERILLIUM",
+          "page": 29
+        },
+        {
+          "number": "17",
+          "title": "Glucometer& Strips",
+          "text": "17 Glucometer& Strips",
+          "page": 29
+        },
+        {
+          "number": "18",
+          "title": "URINE BAG",
+          "text": "18 URINE BAG The contact details of the Insurance Ombudsman offices are as below- Areas of Jurisdiction Office of the Insurance Ombudsman",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Insurance Ombudsman, Gujarat , UT of Dadra and Nagar Haveli, Daman 2nd floor, Ambica House, and Diu Near C.U. Shah College, 5, Navyug Colony, Ashram Road, Ahmedabad – 380 014. Tel.: 079 - 27546150 / 27546139 Fax: 079 - 27546142 Email: bimalokpal.ahmedabad@gbic.co.in Office of the Insurance Ombudsman, Karnataka JeevanSoudhaBuilding,PID No. 57-27-N-19 Ground Floor, 19/19, 24th Main Road, JP Nagar, Ist Phase, Bengaluru – 560 078. Tel.: 080 - 26652048 / 26652049 Email: bimalokpal.benga...",
+          "page": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "policy_id": "tata_aig_arogya_sanjeevani",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:21Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Tata_AIG_Arogya_Sanjeevani.pdf",
+    "file_hash": "sha256:1a81e3bcb4c09eecd0da92af2eae4e7e8f1efd0fc883b4df910ba9612ce6155f",
+    "source_domain": "policy_wording",
+    "page_count": 28
+  },
+  "product_identity": {
+    "insurer": "Tata AIG",
+    "plan_name": "Arogya Sanjeevani",
+    "display_name": "Tata AIG Arogya Sanjeevani",
+    "uin": "TATHLIP20169V011920",
+    "uin_base": "TATHLIP20169",
+    "product_version": 1,
+    "effective_date": "31-03-2020",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "amount": 2000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Section 2 -Benefits Ambulance subject to a maximum of Rs.2000/-per hospitalisation. The covers listed below are in-built Policy benefits and shall be available to all Insured",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0007",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_ambulance_coverage_0000_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Note: ii.Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) expenses We will cover Medical Expenses incurred up to 5% of sum insured subject to for treatment as In-Patient or Day Care maximum of Rs.10,000/-per day. Treatment in an AYUSH Ho",
+      "evidence_page": 7,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_ayush_coverage_0003_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "hours": 24
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "X.MLR(Medico Legal Report copy if i.Within 24 hours from the date of wherever applicable emergency hospitalization required xiv.Any other relevant document or before the Insured Person's required by Company/TPA for discharge from Hospital, whichever assessment of the claim. is earlier.",
+      "evidence_page": 20,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 15
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "13. Fraud i.The grace period for payment of the premium during the Policy Period, for (c)any other act fitted to deceive; and instalment premium shall be fifteen days where premium payment mode is (d)any such act or omission as the law monthly and thirty days in all other cases specially declares to be fraudulent (Annually/ Half- The company shall not repudiate the policy Yearly/Quarterly/Limited Premium on the ground of f",
+      "evidence_page": 16,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 5,
+        "basis": "admissible_claim_amount"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "Section 6 • Dispute Resolution INR Each and every claim under the Policy Sum insured shall be subject to a Co-payment of 5% On Individual basis -SI shall applicable to claim amount admissible apply to each individual and payable as per the terms and family member conditions of the Policy. The amount On Floater basis -SI shall payable shall b",
+      "evidence_page": 21,
+      "evidence_clause": "clause_0073",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_co_pay_0000_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "increase_percent": 5,
+        "maximum_percent": 50,
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Section 6 • Dispute Resolution 2.Intensive Care Unit (ICU) charges I Intensive Cardiac Pre Existing Only PEDs declared in the Care Unit (ICCU) charges all Disease Proposal Form and accepted inclusive as provided by the for coverage by the company Hospital / Nursing Home up to shall be covered after a 5% of the sum insured subject waiting period of 4 years to maximum of Rs.10,000/-, Cumulative Increase in the sum insured perday bonus by 5% in respect of each Cataract Up to 25% of Sum insured claim free year subject to a Treatment or Rs.40,000/-, whichever is maximum of 50% of SI. In the lower, per eye, under one event of claim the cumulative policy year. bonus shall be reduced at the same rate. Cumulative Bonus shall be provided only if No Claim Discount has not been availed for the claim free previous Policy Year. Co Pay 5% co pay on all claims",
+      "evidence_page": 21,
+      "evidence_clause": "2",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "od 7. migration) in health insurance policy, no policy and claim shall be contestable by The insured person shall be provided a the insurer on grounds of non-disclosure, free look period of thirty days beginning misrepresentation, except on grounds of from the date of receipt of the Policy established fraud. This continuous period document, whether received of five years is called as mora",
+      "evidence_page": 13,
+      "evidence_clause": "9",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "olicy Period, for (c)any other act fitted to deceive; and instalment premium shall be fifteen days where premium payment mode is (d)any such act or omission as the law monthly and thirty days in all other cases specially declares to be fraudulent (Annually/ Half- The company shall not repudiate the policy Yearly/Quarterly/Limited Premium on the ground of fraud, if the",
+      "evidence_page": 16,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_grace_period_0001_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "percentage": 5,
+        "unit": "percent_of_sum_insured_per_day",
+        "max_amount": 10000,
+        "currency": "INR",
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.985,
+      "method": "deterministic",
+      "evidence": "Note: ii.Intensive Care Unit (ICU)/ Intensive Cardiac Care Unit (ICCU) expenses We will cover Medical Expenses incurred up to 5% of sum insured subject to for treatment as In-Patient or Day Care maximum of Rs.10,000/-per day. Treatment in an AYUSH Hospital/ AYUSH day care centre.",
+      "evidence_page": 7,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_icu_limit_0002_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "7. All internal and external any illness within 30 days from the benign tumours, cysts, first policy commencement date shall polyps of any kind, be excluded except claims arising due including benign breast to an accident, provided the same are lumps covered. B e n i g n p r o s t a t e 8. ii.",
+      "evidence_page": 10,
+      "evidence_clause": "clause_0219",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "organ_donor_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "ped_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "surgeries iv.If the Insured Persons in the expiring of a pre-existing Disease (PED) policy are covered on an individual basis as and its direct complications shall specified in the Policy Schedule and there be excluded until the expiry of 36 is an accumulated CB for such Insured months of continuous coverage after Person under the expiring policy, and the date of inception of the first policy such expiring policy has been Renewed with us. on a floater policy basis as specified",
+      "evidence_page": 8,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_ped_waiting_period_0000_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "14. Renewal of Policy At the end of the policy period b) The policy shall ordinarily be renewable -the policy shall terminate and can except on grounds of established fraud be renewed within the Grace misrepresentation or non-disclosure by Period of 30 days to maintain the insured person. continuity",
+      "evidence_page": 17,
+      "evidence_clause": "clause_0249",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_renewability_0001_evidence"
+    },
+    "restoration_benefit": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "room_rent_limit": {
+      "value": {
+        "percentage": 2,
+        "unit": "percent_of_sum_insured_per_day",
+        "max_amount": 5000,
+        "currency": "INR"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.985,
+      "method": "deterministic",
+      "evidence": "Section 6 • Dispute Resolution 1.Room Rent, Boarding, Expenses for a period upto room/doctors Nursing Expenses all inclusive 60 days, subject to AYUSH fee as provided by the Hospital In-Patient hospitalization or / Nursing Home up to 2% of AYUSH day care treatment the sum insured subject to claim being admissible under maximum of Rs.5000/-per day. this benefit.",
+      "evidence_page": 21,
+      "evidence_clause": "1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_tata_aig_arogya_sanjeevani_room_rent_limit_0002_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": null,
+      "unit": "months",
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    }
+  },
+  "unresolved_concepts": [
+    "deductible",
+    "maternity_waiting",
+    "modern_treatment_coverage",
+    "newborn_coverage",
+    "organ_donor_coverage",
+    "restoration_benefit",
+    "specific_disease_waiting_periods"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 13,
+    "concepts_not_found": 7,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.65,
+    "average_confidence": 0.97
+  }
+}

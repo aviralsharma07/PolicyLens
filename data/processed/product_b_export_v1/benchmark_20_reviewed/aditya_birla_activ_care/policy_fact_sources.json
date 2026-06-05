@@ -1,0 +1,824 @@
+{
+  "policy_id": "aditya_birla_activ_care",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "clause_0012",
+          "clause_title": "",
+          "evidence_text_snippet": "(f) Road Ambulance Cover: Coverage shall also be provided under the below circumstances, if the Medical Practitioner certifies in writing that: (i) it is medically necessary to transfer the Insured Person to another Hos",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "clause_0032",
+          "clause_title": "",
+          "evidence_text_snippet": "(m) Domestic Emergency Assistance Services (including Air Ambulance) What is covered We will provide the Emergency medical assistance as described below when an Insured Person is travelling, within India for 150 (one hundred and fifty) kilometres or ",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0003",
+          "clause_number": "I",
+          "clause_title": "No claims for reimbursement of expenses incurred for services arranged by Insured Person will be all",
+          "evidence_text_snippet": "(m) Domestic Emergency Assistance Services (including Air Ambulance) i. No claims for reimbursement of expenses incurred for services arranged by Insured Person will be allowed unless agreed by Us or Our authorized representative.",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0004",
+          "clause_number": "I",
+          "clause_title": "No claims for reimbursement of expenses incurred for services arranged by Insured Person will be all",
+          "evidence_text_snippet": "(n) International Emergency Assistance Services (including Air Ambulance) i. No claims for reimbursement of expenses incurred for services arranged by Insured Person will be allowed unless agreed by Us or Our authorized representative.",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0009",
+          "clause_number": "clause_0563",
+          "clause_title": "",
+          "evidence_text_snippet": "185. AMBULANCE Payable - Ambulance from home to hospital or interhospital shifts I D A : is payable/ RTA as specific requirement is payable N I",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0011",
+          "clause_title": "",
+          "evidence_text_snippet": "(f) Road Ambulance Cover: What is covered We shall cover the costs incurred up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards transportation of the Insured Person by ro",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0007",
+          "clause_number": "143",
+          "clause_title": "143. AMBULANCE COLLAR Not Payable",
+          "evidence_text_snippet": "143. AMBULANCE COLLAR Not Payable",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0008",
+          "clause_number": "clause_0522",
+          "clause_title": "",
+          "evidence_text_snippet": "144. AMBULANCE EQUIPMENT Not Payable .",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0005",
+          "clause_number": "III",
+          "clause_title": "Claims Assessment & Repudiation:",
+          "evidence_text_snippet": "Road Ambulance Cover: III. Claims Assessment & Repudiation: reminders following which We will send a rejection letter or make a part-payment if We have not received the deficiency documents after 45 days from the date of",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_ambulance_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0006",
+          "clause_number": "clause_0278",
+          "clause_title": "",
+          "evidence_text_snippet": "4. Ambulance means a road vehicle or aircraft operated by a licenced/authorised service provider and equipped for the transport and paramedical treatment of the person requiring medical attention.",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_ambulance_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0016",
+          "clause_title": "",
+          "evidence_text_snippet": "(i) Ayush (In-patient Hospitalization) What is covered We shall cover on a reimbursement basis, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, towards the Medical Expenses for In-patient Hospitalization i",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "clause_0039",
+          "clause_title": "",
+          "evidence_text_snippet": "(o) OPD Treatment What is covered We will cover the Reasonable and Customary Charges incurred for medically required consultations, visit(s) to a Medical Practitioner who is a qualified doctor and diagnostic tests which are incurred on an out-patient",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "clause_0181",
+          "clause_title": "",
+          "evidence_text_snippet": "2. First Successful interaction in a Policy Year with Health Coach / Personal Health Coach as specified in the Policy Schedule / Product benefit Earned HealthReturns can be utilized by any covered Insured Person under a Policy. How can one spend Heal",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0003",
+          "clause_number": "10",
+          "clause_title": "10. Non allopathic treatment, except where expressly stated to be covered under the Policy",
+          "evidence_text_snippet": "10. Non allopathic treatment, except where expressly stated to be covered under the Policy",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0004",
+          "clause_number": "clause_0280",
+          "clause_title": "",
+          "evidence_text_snippet": "6. Ayush Treatment refers to the medical and / or hospitalization treatments given under ‘Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy systems.",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0005",
+          "clause_number": "clause_0330",
+          "clause_title": "",
+          "evidence_text_snippet": "35. Medical Practitioner means a person who holds a valid registration from the Medical Council of any State or Medical Council of India or Council t c u for Indian Medicine or for Homeopathy set up by the Government of ",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0000"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "clause_0140",
+          "clause_title": "",
+          "evidence_text_snippet": "rocedure d. For Reimbursement Claims: (i) For all claims for which Cashless Facilities have not been pre-authorized or for which treatment has not been taken at a Network Provider, We shall be given written notice of the claim along with the following details within 48 hours of admission to the Hosp",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "III",
+          "clause_title": "Claims Assessment & Repudiation:",
+          "evidence_text_snippet": "son and settle the claim if We observe that such a claim is otherwise valid under the Policy. However, documents/ details received beyond such period shall be considered if there are valid reasons for any delay. (c) We shall settle or repudiate a claim within 30 days of the receipt of the last neces",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_investigation_days",
+          "candidate_score": 0.965,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [
+        {
+          "candidate_id": "co_pay_0000",
+          "clause_number": "I",
+          "clause_title": "If the Insured Person takes Inpatient hospitalization treatment as applicable under section B(I)(a) ",
+          "evidence_text_snippet": "rson takes Inpatient hospitalization treatment as applicable under section B(I)(a) in a Hospital other than those listed as “Preferred Provider Network”, then the Policyholder / Insured Person shall bear a Co-Payment of 15% on each and every claim arising in such regard, which will be in addition to",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.97,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0001",
+          "clause_number": "clause_0282",
+          "clause_title": "",
+          "evidence_text_snippet": "8. Co-payment means a cost sharing requirement under a health insurance policy that provides that the policyholder/insured will bear a specified percentage of the admissible claims amount. A co-payment does not reduce th",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_percentage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "co_pay_0000"
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "clause_0031",
+          "clause_title": "",
+          "evidence_text_snippet": "(l) No Claim Bonus: What is covered We shall apply a Cumulative Bonus in the form of No Claim Bonus at such rates as specified in the Policy Schedule/ Product Benefit table of this Policy on the Sum Insured of the expiring Policy as specified for Section B(I) in the Policy Schedule on a cumulative b",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0001",
+          "clause_number": "clause_0181",
+          "clause_title": "",
+          "evidence_text_snippet": "2. First Successful interaction in a Policy Year with Health Coach / Personal Health Coach as specified in the Policy Schedule / Product benefit Earned HealthReturns can be utilized by any covered Insured Person under a Policy. How can one spend HealthReturnsTM: Funds under HealthReturnsTM may be ut",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0000"
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0145",
+          "clause_title": "",
+          "evidence_text_snippet": "E. Free Look Period c u d We shall provide You a period of 15 days (30 days if the Policy is sold through distance marketing), from the date of receipt of the Policy o r P document to review the terms and conditions of this Policy. If You have any objectio",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "clause_0157",
+          "clause_title": "",
+          "evidence_text_snippet": "ay be Renewed by mutual consent and in such event the Renewal premium should be paid to Us on or before the expiry date of the Policy and in no case later than the Grace Period of 30 days from the expiry date. We shall not be liable to pay for any claim arising out of an Illness/Injury/ Accident tha",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "clause_0158",
+          "clause_title": "",
+          "evidence_text_snippet": "s on or before the Policy Period end date and in any event before the expiry of the Grace Period. Policy would be considered as a fresh policy if there would be break of more than 30 days between the previous Policy expiry date and current Policy Start Date. (iii) We however shall not be liable for ",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "clause_0005",
+          "clause_title": "",
+          "evidence_text_snippet": "an Insured Person’s Hospitalization during the Policy Period following an Illness or Injury that occurs during the Policy Period: (1) Reasonable and Customary Charges for Room Rent for accommodation in Hospital room and other boarding charges up to the limits as specified in the Policy Schedule / Pr",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "icu_limit_0001",
+          "clause_number": "clause_0319",
+          "clause_title": "",
+          "evidence_text_snippet": "28. ICU (Intensive Care Unit) Charges means the amount charged by a Hospital towards ICU expenses which shall include the expenses for ICU bed, general medical support services provided to any ICU patient including monitoring devices, critical care nursing and intensivist charges.",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "I",
+          "clause_title": "First 30 days Waiting Period",
+          "evidence_text_snippet": "B. Waiting periods and Permanent Exclusions i. First 30 days Waiting Period 1 1 0 We shall not be liable for any claim arising due to any condition for which consultation, investigation, diagnosis, treatment or admission V 1 commencing within 30 days from Policy Commencement Date, except for the cla",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "initial_waiting_period_0001",
+          "clause_number": "I",
+          "clause_title": "First 30 days Waiting Period",
+          "evidence_text_snippet": "Waiting periods and Permanent Exclusions i. First 30 days Waiting Period 1 1 0 We shall not be liable for any claim arising due to any condition for which consultation, investigation, diagnosis, treatment or admission V 1 commencing within 30 days from Policy Commencement Date, except for the claims",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "organ_donor_coverage_0000",
+          "clause_number": "clause_0013",
+          "clause_title": "",
+          "evidence_text_snippet": "(g) Organ Donor Expenses: What is covered We shall cover the Medical Expenses, up to the limits as specified in the Policy Schedule / Product Benefit Table of this Policy, incurred by or in respect of the organ donor, for organ transplant Surgery acc",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0001",
+          "clause_number": "clause_0014",
+          "clause_title": "",
+          "evidence_text_snippet": "(g) Organ Donor Expenses: . (1) Pre-hospitalization Medical Expenses or Post-Hospitalization Medical Expenses of the organ donor. 0 2 (2) Screening expenses of the organ donor. 9 1 (3) Any other Medical Expenses as a result of the harvesting from the",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0002",
+          "clause_number": "clause_0228",
+          "clause_title": "",
+          "evidence_text_snippet": "28. Expenses for organ donor screening, and to the extent provided for the treatment of the donor (including Surgery to remove organs from a donor 0 0 in the case of transplant Surgery). 2 P I",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "organ_donor_coverage_0000"
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "III",
+          "clause_title": "Pre-Existing Disease waiting Period",
+          "evidence_text_snippet": "B. Waiting periods and Permanent Exclusions iii. Pre-Existing Disease waiting Period Pre-Existing Diseases shall not be covered until the time period specified in the Policy Schedule / Product Benefit Table of this Policy in this regard has elapsed since the inception of the first Policy with Us, pr",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_schedule_dependent",
+          "candidate_score": 0.94,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "clause_0278",
+          "clause_title": "",
+          "evidence_text_snippet": "4. Ambulance means a road vehicle or aircraft operated by a licenced/authorised service provider and equipped for the transport and paramedical treatment of the person requiring medical attention.",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "III",
+          "clause_title": "has fully equipped operation theatre of its own where surgical procedures are carried out;",
+          "evidence_text_snippet": "13. Day Care Centre - means any institution established for day care treatment of illness and / or injuries or a medical setup within a hospital and iii) has fully equipped operation theatre of its own where surgical pro",
+          "page": 19,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "IV",
+          "clause_title": "has a fully equipped operation theatre of its own where surgical procedures are carried out;",
+          "evidence_text_snippet": "22. Hospital means any institution established for in- patient care and day care treatment of illness and/or injuries and which has been registered iv) has a fully equipped operation theatre of its own where surgical pro",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0318",
+          "clause_title": "",
+          "evidence_text_snippet": "27. Intensive Care Unit (ICU) means an identified section, ward or wing of a hospital which is under the constant supervision of a dedicated medical practitioner(s), and which is specially equipped for the continuous mon",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "clause_0347",
+          "clause_title": "",
+          "evidence_text_snippet": "48. Portability means transfer by an individual health insurance policyholder (including family cover) of the credit gained for pre-existing conditions and time- bound exclusions if he/she chooses to switch from one insu",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0000"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "clause_0059",
+          "clause_title": "",
+          "evidence_text_snippet": "(q) Comprehensive Health Check-up What is covered All Insured Person(s) may avail a comprehensive health check-up once in a Policy Year on successful Renewal of the Policy, as specified in Policy Schedule/ Product Benefit Table in accordance with the table below :",
+          "page": 6,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0157",
+          "clause_title": "",
+          "evidence_text_snippet": "O. Grace Period The Policy may be Renewed by mutual consent and in such event the Renewal premium should be paid to Us on or before the expiry date of the Policy and in no case later than the Grace Period of 30 days from the expiry date. We shall not be liable to pay for any claim arising out of an ",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0158",
+          "clause_title": "",
+          "evidence_text_snippet": "P. Renewal Terms (i) The Policy will automatically terminate at the end of the Policy Period. The Policy is ordinarily renewable on mutual consent for life, subject to realization of Renewal premium. (ii) The premium payable on Renewal shall be paid to Us on or before the Policy Period end date and ",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "clause_0350",
+          "clause_title": "",
+          "evidence_text_snippet": "51. Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods.",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [
+        {
+          "candidate_id": "restoration_benefit_0000",
+          "clause_number": "clause_0015",
+          "clause_title": "",
+          "evidence_text_snippet": "(h) Reload of Sum Insured: N I (v) The reloaded Sum Insured shall not be considered while calculating the No Claim Bonus. (vi) In case of an Individual Policy, reloading of the Sum Insured is available to each Insured Person and can be utilised by Insured Persons who are covered under the Policy. (v",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "restoration_benefit_0001",
+          "clause_number": "clause_0274",
+          "clause_title": "",
+          "evidence_text_snippet": "3. Reload of Sum Insured D A In the aforesaid sequence of utilization of Sum Insured, in case insured person has utilized a specific limit or is not eligible for a specific limit, : N I then may choose to utilize from the next available limit in the given sequence as may be applicable.",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "restoration_benefit_0000"
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "clause_0005",
+          "clause_title": "",
+          "evidence_text_snippet": "(a) In-patient Hospitalization: What is covered We shall cover the Medical Expenses for one or more of the following arising out of an Insured Person’s Hospitalization during the Policy Period following an Illness or Injury that occurs during the Policy Period: (1) Reasonable and Customary Charges f",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "clause_0119",
+          "clause_title": "",
+          "evidence_text_snippet": "Section V: Optional Covers (aa) Room Upgrade What is covered The Insured Person shall be eligible to upgrade the room category eligibility as specified in the Policy Schedule/ Product Benefit Table of the Policy.",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0002",
+          "clause_number": "clause_0175",
+          "clause_title": "",
+          "evidence_text_snippet": "2. If the Insured Person is admitted in a room category/limit that is higher than the one that is specified in the Policy Schedule / Product Benefit Table of this Policy, then the Insured Person shall bear a rateable proportion of the total Associated Medical Expenses (including surcharge or taxes t",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "II",
+          "clause_title": "Two Year Waiting Periods",
+          "evidence_text_snippet": "B. Waiting periods and Permanent Exclusions ii. Two Year Waiting Periods D A The conditions listed below, whether medical or surgical and of the Illness/conditions and their complications mentioned below, will be subject : N I to a waiting period of 24 months from the commencement of the 1st Policy ",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_multi",
+          "candidate_score": 0.96,
+          "confidence": 0.92,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0000"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

@@ -1,0 +1,3249 @@
+{
+  "policy_id": "liberty_critical_connect",
+  "total_sections": 39,
+  "total_clauses": 482,
+  "sections": [
+    {
+      "number": null,
+      "title": "Document root",
+      "level": 0,
+      "page_start": 1,
+      "page_end": 52,
+      "clauses": []
+    },
+    {
+      "number": null,
+      "title": "Pre-heading body text",
+      "level": 1,
+      "page_start": 1,
+      "page_end": 21,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy Wordings It is important that you read your entire policy carefully so you understand how this insurance works. Please retain these Policy Wordings for current and future use. Any change to the contract wordings at the time of renewal, after approval from the Regulator, will be updated and available on our website: www.libertyinsurance.in",
+          "page": 1
+        },
+        {
+          "number": "I",
+          "title": "Conditions precedent to the contract",
+          "text": "i)Conditions precedent to the contract Insuring Agreement In consideration of your application for insurance and of the payment of premiums when due, we have issued this policy to you.  In this policy, “you”, “your”, or “yourself” means the Insured Person(s) in the Policy Schedule.  “We”, “our” or “us” means Liberty General Insurance Limited.  To help you understand the insurance terms used in this policy, please refer to the explanations in Section 4. We agree to pay the benefits in this policy...",
+          "page": 1
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Part A: What are the General Terms Used in this Policy?",
+          "page": 1
+        },
+        {
+          "number": "1",
+          "title": "Accident is a sudden, unforeseen and involuntary event caused by external, visible and violent means",
+          "text": "1.Accident is a sudden, unforeseen and involuntary event caused by external, visible and violent means.",
+          "page": 1
+        },
+        {
+          "number": "2",
+          "title": "AIDS” means Acquired Immune Deficiency Syndrome, a condition characterised by a combination of",
+          "text": "2.AIDS” means Acquired Immune Deficiency Syndrome, a condition characterised by a combination of signs and symptoms, caused by Human Immunodeficiency Virus, which attacks and weakens the body’s immune system making the HIV-positive person susceptible to life threatening conditions or other conditions",
+          "page": 1
+        },
+        {
+          "number": "3",
+          "title": "Age means your completed age as of your last birthday",
+          "text": "3.Age means your completed age as of your last birthday",
+          "page": 1
+        },
+        {
+          "number": "4",
+          "title": "Activities of daily living are:",
+          "text": "4.Activities of daily living are:",
+          "page": 1
+        },
+        {
+          "number": "I",
+          "title": "Washing: the ability to wash in the bath or shower (including getting into and out of the bath",
+          "text": "i.Washing: the ability to wash in the bath or shower (including getting into and out of the bath or shower) or wash satisfactorily by other means;",
+          "page": 1
+        },
+        {
+          "number": "II",
+          "title": "Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate,",
+          "text": "ii.Dressing: the ability to put on, take off, secure and unfasten all garments and, as appropriate, any braces, artificial limbs or other surgical appliances;",
+          "page": 1
+        },
+        {
+          "number": "III",
+          "title": "Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "text": "iii.Transferring: the ability to move from a bed to an upright chair or wheelchair and vice versa;",
+          "page": 1
+        },
+        {
+          "number": "IV",
+          "title": "Mobility: the ability to move indoors from room to room on level surfaces;",
+          "text": "iv.Mobility: the ability to move indoors from room to room on level surfaces;",
+          "page": 1
+        },
+        {
+          "number": "V",
+          "title": "Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so",
+          "text": "v.Toileting: the ability to use the lavatory or otherwise manage bowel and bladder functions so as to maintain a satisfactory level of personal hygiene;",
+          "page": 1
+        },
+        {
+          "number": "VI",
+          "title": "Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "text": "vi.Feeding: the ability to feed oneself once food has been prepared and made available.",
+          "page": 1
+        },
+        {
+          "number": "5",
+          "title": "Bank means a banking Company which transacts the business of banking in India.",
+          "text": "5.Bank means a banking Company which transacts the business of banking in India. Policy Wordings",
+          "page": 1
+        },
+        {
+          "number": "6",
+          "title": "Commencement/Inception Date means the commencement/inception date of this Policy as",
+          "text": "6.Commencement/Inception Date means the commencement/inception date of this Policy as specified in the Schedule.",
+          "page": 2
+        },
+        {
+          "number": "7",
+          "title": "Condition Precedent shall mean a policy term or condition upon which the Insurer's liability under",
+          "text": "7.Condition Precedent shall mean a policy term or condition upon which the Insurer's liability under the Policy is conditional upon.",
+          "page": 2
+        },
+        {
+          "number": "8",
+          "title": "Congenital Anomaly refers to a condition(s) which is present since birth, and which is abnormal with",
+          "text": "8.Congenital Anomaly refers to a condition(s) which is present since birth, and which is abnormal with reference to form, structure or position. • “Internal Congenital Anomaly” means congenital anomaly which is not in the visible and accessible parts of the body • “External Congenital Anomaly” means congenital anomaly which is in the visible and accessible parts of the body",
+          "page": 2
+        },
+        {
+          "number": "9",
+          "title": "Day Care Centre means any institution established for day care treatment of illness and /or injuries",
+          "text": "9.Day Care Centre means any institution established for day care treatment of illness and /or injuries or a medical set up within a hospital and which has been registered with the local authorities, wherever applicable, and is under the supervision  of a registered and qualified medical practitioner AND must comply with all minimum criteria as under- a)has qualified nursing staff under its employment; b)has qualified medical practitioner/s in charge; c)has a fully equipped operation theater of i...",
+          "page": 2
+        },
+        {
+          "number": "10",
+          "title": "Disclosure to information norm The Policy shall be void and all premium paid hereon shall be",
+          "text": "10.Disclosure to information norm The Policy shall be void and all premium paid hereon shall be forfeited to the Company, in the event of misrepresentation, mis-description or non-disclosure of any material fact.",
+          "page": 2
+        },
+        {
+          "number": "11",
+          "title": "EMI or EMI Amount means the fixed payment amount required to repay the principal amount of",
+          "text": "11.EMI or EMI Amount means the fixed payment amount required to repay the principal amount of Loan and Interest by the Insured at a specified date each calendar month, as set forth in the amortization chart referred to in the Loan agreement (or any amendments thereto) between the Bank/Financial Institution and the Insured prior to the date of occurrence of the Insured Event under this Policy. For the purpose of avoidance of doubt, it is clarified that any monthly payments that are overdue and un...",
+          "page": 2
+        },
+        {
+          "number": "12",
+          "title": "Endorsement means written evidence of change to the Policy, increase or decrease in the period, exte",
+          "text": "12.Endorsement means written evidence of change to the Policy, increase or decrease in the period, extent and nature of the cover agreed by Us in writing.",
+          "page": 2
+        },
+        {
+          "number": "13",
+          "title": "Expiry Date means the date on which this Policy expires as specified in the Policy Schedule.",
+          "text": "13.Expiry Date means the date on which this Policy expires as specified in the Policy Schedule.",
+          "page": 2
+        },
+        {
+          "number": "14",
+          "title": "Family/Family Member means the Primary Insured Person whose name forms the first Insured",
+          "text": "14.Family/Family Member means the Primary Insured Person whose name forms the first Insured Person, his/her lawful spouse, child/children, parents/ parent-in-laws, Son-in-law, Daughter-in-law, grandchildren, grandparents, siblings who are specifically mentioned in the Schedule to this Policy. Policy Wordings",
+          "page": 2
+        },
+        {
+          "number": "15",
+          "title": "Financial Institution shall have the same meaning assigned to the term under section 45 I of the",
+          "text": "15.Financial Institution shall have the same meaning assigned to the term under section 45 I of the Reserve Bank of India Act, 1934 and shall include a Non-Banking Financial Company as defined under section 45 I of the Reserve Bank of India Act, 1934.",
+          "page": 3
+        },
+        {
+          "number": "16",
+          "title": "Grace Period is the specified period of time immediately following the premium due date during which",
+          "text": "16.Grace Period is the specified period of time immediately following the premium due date during which a payment can be made to renew or continue a Policy in force without loss of continuity benefits such as waiting periods and coverage of pre-existing diseases. Coverage is not available for the period for which no premium is received.",
+          "page": 3
+        },
+        {
+          "number": "17",
+          "title": "HIV means Human Immunodeficiency Virus",
+          "text": "17.HIV means Human Immunodeficiency Virus",
+          "page": 3
+        },
+        {
+          "number": "18",
+          "title": "Hospital means any institution established for in- patient care and day care treatment of illness an",
+          "text": "18.Hospital means any institution established for in- patient care and day care treatment of illness and / or injuries and which has been registered as a hospital with the local authorities under the Clinical Establishments (Registration and Regulation) Act, 2010 or under the enactments specified under the Schedule of Section 56(1) of the said Act OR complies with all minimum criteria as under: a)has qualified nursing staff under its employment round the clock; b)has at least 10 inpatient beds i...",
+          "page": 3
+        },
+        {
+          "number": "19",
+          "title": "Illness means a sickness or a disease or pathological condition leading to the impairment of normal",
+          "text": "19.Illness means a sickness or a disease or pathological condition leading to the impairment of normal physiological function and requires medical treatment. a)Acute Condition - Acute condition is a disease, illness or injury that is likely to respond quickly to treatment which aims to return the person to his or her state of health immediately before suffering the disease/illness/injury which leads to full recovery. b)Chronic Condition - A chronic condition is defined as a disease, illness or i...",
+          "page": 3
+        },
+        {
+          "number": "20",
+          "title": "Injury means accidental physical bodily harm excluding illness or disease solely and directly caused",
+          "text": "20.Injury means accidental physical bodily harm excluding illness or disease solely and directly caused by external, violent and visible and evident means which is verified and certified by a Medical Practitioner.",
+          "page": 3
+        },
+        {
+          "number": "21",
+          "title": "Insured/ Policyholder/You/ Your/ Yourself means an individual, who has proposed for Insurance",
+          "text": "21.Insured/ Policyholder/You/ Your/ Yourself means an individual, who has proposed for Insurance and on whose name the Policy is issued",
+          "page": 3
+        },
+        {
+          "number": "22",
+          "title": "Insured Person/s means the person/s named in the Schedule to the Policy, for whom the insurance",
+          "text": "22.Insured Person/s means the person/s named in the Schedule to the Policy, for whom the insurance is also proposed and appropriate premium paid. Policy Wordings",
+          "page": 3
+        },
+        {
+          "number": "23",
+          "title": "Insured Condition / Critical Illness means any one of the illnesses, medical events, or procedures",
+          "text": "23.Insured Condition / Critical Illness means any one of the illnesses, medical events, or procedures specified in Section 1, Part B; the condition must occur itself during the policy period as a first incidence of diagnosis and/or undergoing the procedure for the first time as per the terms and conditions specified thereon.",
+          "page": 4
+        },
+        {
+          "number": "24",
+          "title": "IRDAI means the Insurance Regulatory and Development Authority of India",
+          "text": "24.IRDAI means the Insurance Regulatory and Development Authority of India",
+          "page": 4
+        },
+        {
+          "number": "25",
+          "title": "Loan means the sum of money lent at interest or otherwise to the Insured Person/s by any",
+          "text": "25.Loan means the sum of money lent at interest or otherwise to the Insured Person/s by any Bank/Financial Institution as identified by the Loan Account Number.",
+          "page": 4
+        },
+        {
+          "number": "26",
+          "title": "Medical Practitioner means a person who holds a valid registration from the medical council of any",
+          "text": "26.Medical Practitioner means a person who holds a valid registration from the medical council of any state or Medical Council of India or Council for Indian Medicine or for Homeopathy set up by the Government of India or a State Government and is thereby entitled to practice medicine within its jurisdiction; and is acting within the scope and jurisdiction of his license provided that this person is not a member of the Insured Person’s family.",
+          "page": 4
+        },
+        {
+          "number": "27",
+          "title": "Network Provider means hospital enlisted by an Insurer, TPA or jointly by an Insurer and TPA to",
+          "text": "27.Network Provider means hospital enlisted by an Insurer, TPA or jointly by an Insurer and TPA to provide medical services to an Insured by a cashless facility.",
+          "page": 4
+        },
+        {
+          "number": "28",
+          "title": "Neurological deficit means symptoms of dysfunction in the nervous system that is present on clinical",
+          "text": "28.Neurological deficit means symptoms of dysfunction in the nervous system that is present on clinical examination and expected to last throughout your life. Symptoms that are covered include numbness, increased sensitivity, paralysis, localized weakness, difficulty with speech, inability to speak, difficulty in swallowing, visual impairment, difficulty in walking, lack of coordination, tremor, seizures, lethargy, dementia, delirium and coma.",
+          "page": 4
+        },
+        {
+          "number": "29",
+          "title": "Nominee means the person named in the proposal or schedule to whom the benefits under the Policy",
+          "text": "29.Nominee means the person named in the proposal or schedule to whom the benefits under the Policy is nominated by the Insured Person.",
+          "page": 4
+        },
+        {
+          "number": "30",
+          "title": "Notification of Claim is the process of intimating  a claim to the Insurer or TPA through any of the",
+          "text": "30.Notification of Claim is the process of intimating  a claim to the Insurer or TPA through any of the recognized modes of communication 31.“Policy\" means this document of Policy describing the terms and conditions of this contract of insurance including the Company’s covering letter to the Insured if any, the Schedule attached to and forming part of this Policy, the Insured’s Proposal form and any applicable endorsement attaching to and forming part thereof either at inception or during the pe...",
+          "page": 4
+        },
+        {
+          "number": "32",
+          "title": "Policy Period means the period between the Commencement Date and the Expiry Date specified in",
+          "text": "32.Policy Period means the period between the Commencement Date and the Expiry Date specified in the Schedule or the date of cancellation of this Policy, whichever is earlier.",
+          "page": 4
+        },
+        {
+          "number": "33",
+          "title": "Policy Year means a year following the Commencement Date and its subsequent annual anniversary.",
+          "text": "33.Policy Year means a year following the Commencement Date and its subsequent annual anniversary.",
+          "page": 4
+        },
+        {
+          "number": "34",
+          "title": "Portability means the right accorded to an individual health insurance policy holder (including fami",
+          "text": "34.Portability means the right accorded to an individual health insurance policy holder (including family cover) to transfer the credit gained by the insured for pre-existing conditions and time bound exclusions if the policyholder chooses to switch from one insurer to another insurer or from one plan to another plan of the same insurer, provided the previous policy has been maintained without any break. Policy Wordings",
+          "page": 4
+        },
+        {
+          "number": "35",
+          "title": "Pre-Existing  any condition, ailment or injury or related condition(s) for which there were signs or",
+          "text": "35.Pre-Existing  any condition, ailment or injury or related condition(s) for which there were signs or symptoms, and / or were diagnosed, and / or for which medical advice / treatment was received within 48 months prior to the first policy issued by the insurer and renewed continuously thereafter.",
+          "page": 5
+        },
+        {
+          "number": "36",
+          "title": "Principal Outstanding means the principal amount of the Loan outstanding as on the date of",
+          "text": "36.Principal Outstanding means the principal amount of the Loan outstanding as on the date of occurrence of Insured Event less the portion of principal component included in the EMIs payable but not paid from the date of the loan agreement till the date of the Insured Event/s. For the purpose of avoidance of doubt, it is clarified that any EMIs that are overdue and unpaid to the Bank prior to the occurrence of the Insured Event will not be considered for the purpose of this Policy and shall be d...",
+          "page": 5
+        },
+        {
+          "number": "37",
+          "title": "Proposal and Declaration Form means any initial or subsequent declaration made by the Insured/",
+          "text": "37.Proposal and Declaration Form means any initial or subsequent declaration made by the Insured/ Insured Person/s and is deemed to be attached and forming part of this Policy.",
+          "page": 5
+        },
+        {
+          "number": "38",
+          "title": "Renewal means the terms on which the contract of insurance can be renewed on mutual consent with",
+          "text": "38.Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal continuous for the purpose of gaining credit for pre-existing diseases, time-bound exclusions and for all waiting periods.",
+          "page": 5
+        },
+        {
+          "number": "39",
+          "title": "Schedule means Schedule attached to and forming part of this Policy mentioning the details of the",
+          "text": "39.Schedule means Schedule attached to and forming part of this Policy mentioning the details of the Insured/ Insured Persons, the Sum Insured in respect of each Insured Person (s), the period, Coverage and the limits to which benefits under the Policy are subject to.",
+          "page": 5
+        },
+        {
+          "number": "40",
+          "title": "Sum Insured means the sum shown in the Schedule which represents our maximum liability for each",
+          "text": "40.Sum Insured means the sum shown in the Schedule which represents our maximum liability for each Insured Person for any and all benefits claimed for during the Policy Period.",
+          "page": 5
+        },
+        {
+          "number": "41",
+          "title": "Surgery or Surgical Procedure means manual and / or operative procedure (s) required for treatment",
+          "text": "41.Surgery or Surgical Procedure means manual and / or operative procedure (s) required for treatment of an illness or injury, correction of deformities and defects, diagnosis and cure of diseases, relief from suffering and prolongation of life, performed in a hospital or day care centre by a medical practitioner.",
+          "page": 5
+        },
+        {
+          "number": "42",
+          "title": "Survival Period is the period after an insured event that you have to survive before a claim becomes",
+          "text": "42.Survival Period is the period after an insured event that you have to survive before a claim becomes valid following the first diagnosis of the Critical Illness/undergoing the Surgical Procedure for the first time. For this policy it is limited to 30 days.",
+          "page": 5
+        },
+        {
+          "number": "43",
+          "title": "Third Party Administrator or TPA means a company registered with the Authority, and engaged by",
+          "text": "43.Third Party Administrator or TPA means a company registered with the Authority, and engaged by an insurer, for a fee or remuneration, by whatever name called and as may be mentioned in the agreement, for providing health services as mentioned under ‘Third Party Administrators - Health Services’ Regulation 2016 of  Insurance Regulatory and Development Authority of India.",
+          "page": 5
+        },
+        {
+          "number": "44",
+          "title": "Unproven/Experimental treatmentmeans the Treatment, including drug Experimental therapy,",
+          "text": "44.Unproven/Experimental treatmentmeans the Treatment, including drug Experimental therapy, which is not based on established medical practice in India, is treatment experimental or unproven. We/Our/Us 45.means the Liberty General Insurance Limited. Part B: Descriptions of Critical Illnesses / Insured Conditions Policy Wordings Angioplasty (for Plan B: Heart Protect) 1. • Coronary Angioplasty is defined as percutaneous coronary intervention by way of balloon angioplasty with or without stenting ...",
+          "page": 5
+        },
+        {
+          "number": "I",
+          "title": "Regular blood product transfusion",
+          "text": "i)Regular blood product transfusion",
+          "page": 6
+        },
+        {
+          "number": "II",
+          "title": "Marrow stimulating agents",
+          "text": "ii)Marrow stimulating agents",
+          "page": 6
+        },
+        {
+          "number": "III",
+          "title": "Immunosuppressive agents",
+          "text": "iii)Immunosuppressive agents",
+          "page": 6
+        },
+        {
+          "number": "IV",
+          "title": "Bone marrow transplantation",
+          "text": "iv)Bone marrow transplantation • The diagnosis and suggested line of treatment must be confirmed by a Haematologist using relevant laboratory investigations including Bone Marrow Biopsy resulting in bone marrow cellularity of less than 25% which is evidenced by two out of the following three values:",
+          "page": 6
+        },
+        {
+          "number": "I",
+          "title": "Absolute Neutrophil count of 500 per cubic millimetre or less;",
+          "text": "i)Absolute Neutrophil count of 500 per cubic millimetre or less;",
+          "page": 6
+        },
+        {
+          "number": "II",
+          "title": "Absolute Reticulocyte count of 20,000 per cubic millimetre or less; and",
+          "text": "ii)Absolute Reticulocyte count of 20,000 per cubic millimetre or less; and Policy Wordings",
+          "page": 6
+        },
+        {
+          "number": "III",
+          "title": "Platelet count of 20,000 per cubic millimetre or less.",
+          "text": "iii)Platelet count of 20,000 per cubic millimetre or less. Bacterial Meningitis 5. • Bacterial meningitis causing inflammation of the membranes of the brain or spinal cord resulting in permanent neurological deficit lasting for a minimum period of 30 days. It should result in a permanent inability to perform at least three of the Activities of Daily Living either with or without the use of mechanical equipment, special devices or other aids and adaptations in use for disabled persons • This diag...",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "The presence of bacterial infection in cerebrospinal fluid by lumbar puncture; and",
+          "text": "i)The presence of bacterial infection in cerebrospinal fluid by lumbar puncture; and",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "A consultant neurologist certifying the diagnosis of bacterial meningitis.",
+          "text": "ii)A consultant neurologist certifying the diagnosis of bacterial meningitis. • The following are excluded: o Bacterial Meningitis in the presence of HIV infection is excluded Balloon Valvotomy or Valvuloplasty (for Plan B: Heart Protect) 6. • The actual undergoing of Valvotomy or Valvuloplasty necessitated by damage of the heart valve as confirmed by a consultant Cardiologist where the procedure is performed totally via intravascular catheter based techniques. • The diagnosis of heart valve abn...",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "Permanent Neurological deficit with persisting clinical symptoms for a continuous period of at",
+          "text": "i)Permanent Neurological deficit with persisting clinical symptoms for a continuous period of at least 90 consecutive days or",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "Undergone surgical resection or radiation therapy to treat the brain tumor.",
+          "text": "ii)Undergone surgical resection or radiation therapy to treat the brain tumor. • The following conditions are excluded: o Cysts, Granulomas, malformations in the arteries or veins of the brain, hematomas, abscesses, pituitary tumors, tumors of skull bones and tumors of the spinal cord. Blindness 8. • Total, permanent and irreversible loss of all vision in both eyes as a result of illness or accident • The Blindness is evidenced by:",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "corrected visual acuity being 3/60 or less in both eyes or;",
+          "text": "i)corrected visual acuity being 3/60 or less in both eyes or;",
+          "page": 7
+        },
+        {
+          "number": "II",
+          "title": "the field of vision being less than 10 degrees in both eyes.",
+          "text": "ii)the field of vision being less than 10 degrees in both eyes. • The diagnosis of blindness must be confirmed and must not be correctable by aids or surgical procedure. Brain Surgery 9. • The actual undergoing of surgery to the brain under general anesthesia during which a craniotomy is Policy Wordings • The procedure must be considered necessary by a qualified specialist. • The following are excluded: o Minimally invasive treatment where no surgical incision is performed to expose the target, ...",
+          "page": 7
+        },
+        {
+          "number": "I",
+          "title": "All tumors which are histologically described as carcinoma in situ, benign, pre-malignant,",
+          "text": "i)All tumors which are histologically described as carcinoma in situ, benign, pre-malignant, borderline malignant, low malignant potential, neoplasm of unknown behavior, or non-invasive, including but not limited to: Carcinoma in situ of breasts, Cervical dysplasia CIN-1, CIN-2 and CIN-3.",
+          "page": 8
+        },
+        {
+          "number": "II",
+          "title": "Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes or",
+          "text": "ii)Any non-melanoma skin carcinoma unless there is evidence of metastases to lymph nodes or beyond;",
+          "page": 8
+        },
+        {
+          "number": "III",
+          "title": "Malignant melanoma that has not caused invasion beyond the epidermis;",
+          "text": "iii)Malignant melanoma that has not caused invasion beyond the epidermis;",
+          "page": 8
+        },
+        {
+          "number": "IV",
+          "title": "All tumors of the prostate unless histologically classified as having a Gleason score greater than",
+          "text": "iv)All tumors of the prostate unless histologically classified as having a Gleason score greater than 6 or having progressed to at least clinical TNM classification T2N0M0",
+          "page": 8
+        },
+        {
+          "number": "V",
+          "title": "All Thyroid cancers histologically classified as T1N0M0 (TNM Classification) or below;",
+          "text": "v)All Thyroid cancers histologically classified as T1N0M0 (TNM Classification) or below;",
+          "page": 8
+        },
+        {
+          "number": "VI",
+          "title": "Chronic lymphocytic leukemia less than RAI stage 3",
+          "text": "vi)Chronic lymphocytic leukemia less than RAI stage 3",
+          "page": 8
+        },
+        {
+          "number": "VII",
+          "title": "Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a lesser",
+          "text": "vii)Non-invasive papillary cancer of the bladder histologically described as TaN0M0 or of a lesser classification,",
+          "page": 8
+        },
+        {
+          "number": "VIII",
+          "title": "All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM Classification)",
+          "text": "viii)All Gastro-Intestinal Stromal Tumors histologically classified as T1N0M0 (TNM Classification) or below and with mitotic count of less than or equal to 5/50 HPFs;",
+          "page": 8
+        },
+        {
+          "number": "IX",
+          "title": "All tumors in the presence of HIV infection",
+          "text": "ix)All tumors in the presence of HIV infection Carcinoma in-Situ (for Plan B: Cancer Protect) 11. • Carcinoma-in-situ means a histologically proven, localized pre-invasion lesion where cancer cells have not yet penetrated the basement membrane or invaded (in the sense of infiltrating and / or actively destroying) the surrounding tissues or stroma in any one of the following covered organ groups, and subject to any classification stated:",
+          "page": 8
+        },
+        {
+          "number": "I",
+          "title": "Breast, where the tumour is classified as Tis according to the TNM Staging method;",
+          "text": "i)Breast, where the tumour is classified as Tis according to the TNM Staging method;",
+          "page": 8
+        },
+        {
+          "number": "II",
+          "title": "Corpus Uteri, vagina, vulva or fallopian tubes where the tumour is classified as Tis according to",
+          "text": "ii)Corpus Uteri, vagina, vulva or fallopian tubes where the tumour is classified as Tis according to the TNM Staging method or FIGO* Stage 0;",
+          "page": 8
+        },
+        {
+          "number": "III",
+          "title": "Cervix Uteri, classified as cervical intraepithelial neoplasia grade III (CIN III) or as Tis accordi",
+          "text": "iii)Cervix Uteri, classified as cervical intraepithelial neoplasia grade III (CIN III) or as Tis according to the TNM Staging method or FIGO* Stage 0;",
+          "page": 8
+        },
+        {
+          "number": "IV",
+          "title": "Ovary include borderline ovarian tumours with intact capsule, no tumour on the ovarian surface,",
+          "text": "iv)Ovary include borderline ovarian tumours with intact capsule, no tumour on the ovarian surface, classified as T1aN0M0, T1bN0M0 (TMN Staging) or FIGO 1A, FIGO 1B",
+          "page": 8
+        },
+        {
+          "number": "V",
+          "title": "Colon and rectum;",
+          "text": "v)Colon and rectum;",
+          "page": 8
+        },
+        {
+          "number": "VI",
+          "title": "Penis;",
+          "text": "vi)Penis;",
+          "page": 8
+        },
+        {
+          "number": "VII",
+          "title": "Testis;",
+          "text": "vii)Testis;",
+          "page": 8
+        },
+        {
+          "number": "VIII",
+          "title": "Lung;",
+          "text": "viii)Lung;",
+          "page": 8
+        },
+        {
+          "number": "IX",
+          "title": "Liver;",
+          "text": "ix)Liver; Policy Wordings",
+          "page": 8
+        },
+        {
+          "number": "X",
+          "title": "Stomach and Esophagus;",
+          "text": "x)Stomach and Esophagus; xi)Urinary Tract, for the purpose of in-situ cancers of the bladder, stage Ta of papillary carcinoma is included xii)Nasopharynx • For this policy, Carcinoma-in-situ must be confirmed by a biopsy. • *FIGO refers to the staging method of the Federation Internationale de Gynecologie et d'Obstetrique. • Pre-malignant lesions and Carcinoma-in-situ of any organ unless listed above are excluded. Cardiomyopathy 12. • A diagnosis of cardiomyopathy by a Specialist Medical Practit...",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Cardiomyopathy secondary to alcohol or drug abuse.",
+          "text": "i)Cardiomyopathy secondary to alcohol or drug abuse.",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "All other forms of heart disease, heart enlargement and myocarditis.",
+          "text": "ii)All other forms of heart disease, heart enlargement and myocarditis. Carotid Artery Surgery (for Plan B: Heart Protect) 13. • The actual undergoing of surgery to the Carotid Artery to treat carotid artery stenosis of fifty percent (50%) and above, as proven by angiographic evidence, of one (1) or more carotid arteries. Both criteria below must be met: o Either: ▪ Actual undergoing of endarterectomy to alleviate the symptoms; or ▪ Actual undergoing of an endovascular intervention such as angio...",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "No response to external stimuli continuously for at least 96 hours;",
+          "text": "i)No response to external stimuli continuously for at least 96 hours;",
+          "page": 9
+        },
+        {
+          "number": "II",
+          "title": "Life support measures are necessary to sustain life; and",
+          "text": "ii)Life support measures are necessary to sustain life; and",
+          "page": 9
+        },
+        {
+          "number": "III",
+          "title": "Permanent neurological deficit which must be assessed at least 30 days after the onset of the",
+          "text": "iii)Permanent neurological deficit which must be assessed at least 30 days after the onset of the coma. • The condition has to be confirmed by a specialist medical practitioner • Coma resulting from alcohol or drug abuse is excluded. Creutzfeldt-Jakob Disease (CJD) 15. • A Diagnosis of Creutzfeldt-Jakob disease must be made by a Specialist Medical Practitioner (Neurologist) based on clinical assessment, EEG and imaging. There must be permanent clinical loss of the ability in mental and social fu...",
+          "page": 9
+        },
+        {
+          "number": "I",
+          "title": "Any malignant tumor of the thyroid, positively diagnosed with histological confirmation and",
+          "text": "i)Any malignant tumor of the thyroid, positively diagnosed with histological confirmation and characterized by the uncontrolled growth of malignant cells and invasion of tissue, which is histologically classified as T1N0M0 according to the TNM classification system, or another equivalent classification",
+          "page": 10
+        },
+        {
+          "number": "II",
+          "title": "Prostate tumor should be histologically described as TNM Classification T1a or T1b or T1c are",
+          "text": "ii)Prostate tumor should be histologically described as TNM Classification T1a or T1b or T1c are of another equivalent classification.",
+          "page": 10
+        },
+        {
+          "number": "III",
+          "title": "Chronic lymphocytic leukemia classified as RAI Stage I or II;.",
+          "text": "iii)Chronic lymphocytic leukemia classified as RAI Stage I or II;.",
+          "page": 10
+        },
+        {
+          "number": "IV",
+          "title": "Hodgkin’s lymphoma Stage I by the Cotswold’s classification staging system.",
+          "text": "iv)Hodgkin’s lymphoma Stage I by the Cotswold’s classification staging system.",
+          "page": 10
+        },
+        {
+          "number": "V",
+          "title": "All tumors of the urinary bladder histologically classified as T1N0M0 (TNM Classification)",
+          "text": "v)All tumors of the urinary bladder histologically classified as T1N0M0 (TNM Classification)",
+          "page": 10
+        },
+        {
+          "number": "VI",
+          "title": "Basal cell and squamous skin cancer that has spread to distant organs beyond the skin",
+          "text": "vi)Basal cell and squamous skin cancer that has spread to distant organs beyond the skin • The Diagnosis must be based on histopathological features and confirmed by a specialist consultant (Oncologist). • Pre-malignant lesions and conditions, unless listed above, are excluded. Encephalitis 18. • It is a severe inflammation of brain tissue, resulting in permanent neurological deficit lasting for a minimum period of 30 days. This must be certified by a Specialist Medical Practitioner (Neurologist...",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "Encephalitis as a result of HIV infection",
+          "text": "i)  Encephalitis as a result of HIV infection End-Stage Liver Failure 19. • Permanent and irreversible failure of liver function that has resulted in all three of the following:",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "Permanent jaundice; and",
+          "text": "i)Permanent jaundice; and",
+          "page": 10
+        },
+        {
+          "number": "II",
+          "title": "Ascites; and",
+          "text": "ii)Ascites; and",
+          "page": 10
+        },
+        {
+          "number": "III",
+          "title": "Hepatic encephalopathy.",
+          "text": "iii)Hepatic encephalopathy. • Liver failure secondary to drug or alcohol abuse is excluded. Policy Wordings End-Stage Lung Failure 20. • End stage lung disease, causing chronic respiratory failure, as confirmed and evidenced by all of the following:",
+          "page": 10
+        },
+        {
+          "number": "I",
+          "title": "FEV1 test results consistently less than 1 litre measured on 3 occasions 3 months apart; and",
+          "text": "i)FEV1 test results consistently less than 1 litre measured on 3 occasions 3 months apart; and",
+          "page": 11
+        },
+        {
+          "number": "II",
+          "title": "Requiring continuous permanent supplementary oxygen therapy for hypoxemia; and",
+          "text": "ii)Requiring continuous permanent supplementary oxygen therapy for hypoxemia; and",
+          "page": 11
+        },
+        {
+          "number": "III",
+          "title": "Arterial blood gas analysis with partial oxygen pressure of 55mmHg or less (PaO2 < 55mmHg);",
+          "text": "iii)Arterial blood gas analysis with partial oxygen pressure of 55mmHg or less (PaO2 < 55mmHg); and",
+          "page": 11
+        },
+        {
+          "number": "IV",
+          "title": "Dyspnea at rest.",
+          "text": "iv)Dyspnea at rest. Fulminant Viral Hepatitis 21. • A sub-massive to massive necrosis of the liver by a Hepatitis virus, leading precipitously to liver failure where the following criteria are met:",
+          "page": 11
+        },
+        {
+          "number": "I",
+          "title": "Rapid decrease in liver size associated with necrosis involving entire lobules;",
+          "text": "i)Rapid decrease in liver size associated with necrosis involving entire lobules;",
+          "page": 11
+        },
+        {
+          "number": "II",
+          "title": "Rapid degeneration of liver enzymes;",
+          "text": "ii)Rapid degeneration of liver enzymes;",
+          "page": 11
+        },
+        {
+          "number": "III",
+          "title": "Deepening jaundice; and",
+          "text": "iii)Deepening jaundice; and",
+          "page": 11
+        },
+        {
+          "number": "IV",
+          "title": "Hepatic encephalopathy",
+          "text": "iv)Hepatic encephalopathy • Hepatitis infection or carrier status alone, does not meet the diagnostic criteria. Goodpasture's Syndrome 22. • Goodpasture’s syndrome is an autoimmune disease in which antibodies attack the lungs and kidneys, leading to permanent lung and kidney damage. The permanent damage should be for a continuous period of at least 30 days. The Diagnosis must be proven by Kidney biopsy and confirmed by a Specialist Medical Practitioner (Rheumatologist). Heart Transplant (for Pla...",
+          "page": 11
+        },
+        {
+          "number": "I",
+          "title": "One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted from",
+          "text": "i)One of the following human organs: heart, lung, liver, kidney, pancreas, that resulted from irreversible end-stage failure of the relevant organ, or",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be",
+          "text": "ii)Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist medical practitioner. • The following are excluded:",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "Other stem-cell transplants",
+          "text": "i)Other stem-cell transplants",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "Where only islets of langerhans are transplanted",
+          "text": "ii)Where only islets of langerhans are transplanted Medullary Cystic Disease 34. • A progressive hereditary disease of the kidneys characterized by the presence of cysts in the medulla, tubular atrophy and interstitial fibrosis with the clinical manifestations of anemia, polyuria and renal loss of sodium, progressing to chronic renal failure. • The diagnosis must be supported by renal biopsy. Minimally Invasive Surgery of Aorta (for Plan B: Heart Protect) 35. • The actual undergoing of minimally...",
+          "page": 13
+        },
+        {
+          "number": "I",
+          "title": "investigations including typical MRI findings which unequivocally confirm the diagnosis to be",
+          "text": "i)investigations including typical MRI findings which unequivocally confirm the diagnosis to be multiple sclerosis and Policy Wordings",
+          "page": 13
+        },
+        {
+          "number": "II",
+          "title": "there must be current clinical impairment of motor or sensory function, which must have",
+          "text": "ii)there must be current clinical impairment of motor or sensory function, which must have persisted for a continuous period of at least 6 months. • Other causes of neurological damage such as SLE and HIV are excluded. Multiple System Atrophy 38. • A diagnosis of multiple system atrophy by a Specialist Medical Practitioner (Neurologist). There must be evidence of permanent clinical impairment for a minimum period of 30 days of either:",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "motor function with associated rigidity of movement; or",
+          "text": "i)motor function with associated rigidity of movement; or",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "The ability to coordinate muscle movement; or",
+          "text": "ii)The ability to coordinate muscle movement; or",
+          "page": 14
+        },
+        {
+          "number": "III",
+          "title": "Bladder control and postural hypotension.",
+          "text": "iii)Bladder control and postural hypotension. Muscular Dystrophy 39. • Muscular Dystrophy is a group of hereditary degenerative diseases of muscle characterised by progressive and permanent weakness and atrophy of certain muscle groups. The diagnosis of muscular dystrophy must be made by a consultant neurologist, and confirmed with the appropriate laboratory, biochemical, histological, and electromyographic evidence. • The disease must result in the permanent inability of the insured to perform ...",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "A history of typical clinical symptoms consistent with the diagnosis of acute myocardial infarction",
+          "text": "i)A history of typical clinical symptoms consistent with the diagnosis of acute myocardial infarction (For e.g. typical chest pain)",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "New characteristic electrocardiogram changes",
+          "text": "ii)New characteristic electrocardiogram changes",
+          "page": 14
+        },
+        {
+          "number": "III",
+          "title": "Elevation of infarction specific enzymes, Troponins or other specific biochemical markers.",
+          "text": "iii)Elevation of infarction specific enzymes, Troponins or other specific biochemical markers. • The following are excluded:",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "Other acute Coronary Syndromes",
+          "text": "i)Other acute Coronary Syndromes",
+          "page": 14
+        },
+        {
+          "number": "II",
+          "title": "Any type of angina pectoris",
+          "text": "ii)Any type of angina pectoris",
+          "page": 14
+        },
+        {
+          "number": "III",
+          "title": "A rise in cardiac biomarkers or Troponin T or I in absence of overt ischemic heart disease OR",
+          "text": "iii)A rise in cardiac biomarkers or Troponin T or I in absence of overt ischemic heart disease OR following an intra-arterial cardiac procedure. Open Chest CABG / Coronary Artery Bypass Surgery 41. • The actual undergoing of heart surgery to correct blockage or narrowing in one or more coronary artery(s), by coronary artery bypass grafting done via a sternotomy (cutting through the breast bone) or minimally invasive keyhole coronary artery bypass procedures. The diagnosis must be supported by a ...",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "Angioplasty and/or any other intra-arterial procedures.",
+          "text": "i)  Angioplasty and/or any other intra-arterial procedures. Open Heart Replacement or Repair of Heart Valves 42. • The actual undergoing of open-heart valve surgery is to replace or repair one or more heart valves, as a Policy Wordings valve abnormality must be supported by an echocardiography and the realization of surgery has to be confirmed by a specialist medical practitioner. • Catheter based techniques including but not limited to, balloon valvotomy/valvuloplasty are excluded. Parkinson’s ...",
+          "page": 14
+        },
+        {
+          "number": "I",
+          "title": "The disease cannot be controlled with medication; and",
+          "text": "i)The disease cannot be controlled with medication; and",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "There are objective signs of progressive deterioration; and",
+          "text": "ii)There are objective signs of progressive deterioration; and",
+          "page": 15
+        },
+        {
+          "number": "III",
+          "title": "There is an inability of the Life Assured to perform (whether aided or unaided) at least three of",
+          "text": "iii)There is an inability of the Life Assured to perform (whether aided or unaided) at least three of the five “Activities of Daily Living” for a continuous period of at least 6 months: • Drug-induced or toxic causes of Parkinsonism are excluded. Pericardiectomy (for Plan B: Heart Protect) 44. • The undergoing of a pericardiectomy performed by open heart surgery or keyhole techniques as a result of pericardial disease. The surgical procedures must be certified to be medically necessary by a cons...",
+          "page": 15
+        },
+        {
+          "number": "I",
+          "title": "Removal of a lobe of the lungs (lobectomy)",
+          "text": "i) Removal of a lobe of the lungs (lobectomy)",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "Lung resection or incision",
+          "text": "ii) Lung resection or incision Primary (Idiopathic) Pulmonary Hypertension 47. • An unequivocal diagnosis of Primary (Idiopathic) Pulmonary Hypertension by a Cardiologist or specialist in respiratory medicine with evidence of right ventricular enlargement and the pulmonary artery pressure above 30 mm of Hg on Cardiac Cauterization. There must be permanent irreversible physical impairment to the degree of at least Class IV of the New York Heart Association Classification of cardiac impairment. • ...",
+          "page": 15
+        },
+        {
+          "number": "I",
+          "title": "Class III: Marked limitation of physical activity. Comfortable at rest, but less than ordinary activ",
+          "text": "i)Class III: Marked limitation of physical activity. Comfortable at rest, but less than ordinary activity causes symptoms. Policy Wordings",
+          "page": 15
+        },
+        {
+          "number": "II",
+          "title": "Class IV: Unable to engage in any physical activity without discomfort.  Symptoms may be present",
+          "text": "ii)Class IV: Unable to engage in any physical activity without discomfort.  Symptoms may be present even at rest. • Pulmonary hypertension associated with lung disease, chronic hypoventilation, pulmonary thromboembolic disease, drugs and toxins, diseases of the left side of the heart, congenital heart disease and any secondary cause are specifically excluded. Progressive Scleroderma 48. • A systemic collagen-vascular disease causing progressive diffuse fibrosis in the skin, blood vessels and vis...",
+          "page": 16
+        },
+        {
+          "number": "I",
+          "title": "Localised scleroderma (linear scleroderma or morphea);",
+          "text": "i)Localised scleroderma (linear scleroderma or morphea);",
+          "page": 16
+        },
+        {
+          "number": "II",
+          "title": "Eosinophilic fascitis; and",
+          "text": "ii)Eosinophilic fascitis; and",
+          "page": 16
+        },
+        {
+          "number": "III",
+          "title": "CREST syndrome",
+          "text": "iii)CREST syndrome Progressive Supranuclear Palsy 49. • A diagnosis of progressive supranuclear palsy by a Specialist Medical Practitioner (Neurologist). There must be permanent clinical impairment of eye movements and motor function for a minimum period of 30 days. Pulmonary Artery Graft Surgery 50. • The undergoing of surgery requiring median sternotomy (surgery to divide the breastbone) on the advice of a Cardiologist for disease of the pulmonary artery to excise and replace the diseased pulm...",
+          "page": 16
+        },
+        {
+          "number": "I",
+          "title": "Transient ischemic attacks (TIA)",
+          "text": "i)Transient ischemic attacks (TIA)",
+          "page": 17
+        },
+        {
+          "number": "II",
+          "title": "Traumatic injury of the brain",
+          "text": "ii)Traumatic injury of the brain",
+          "page": 17
+        },
+        {
+          "number": "III",
+          "title": "Vascular disease affecting only the eye or optic nerve or vestibular functions.",
+          "text": "iii)Vascular disease affecting only the eye or optic nerve or vestibular functions. Surgery to Aorta / Aorta Graft Surgery 55. • The actual undergoing of major surgery to repair or correct aneurysm, narrowing, obstruction or dissection of the aorta through surgical opening of the chest or abdomen. Undergoing of a laporotomy or thoracotomy to repair or correct an aneurysm, narrowing, obstruction or dissection of the aortic artery. • For the purpose of this definition, aorta means the thoracic and...",
+          "page": 17
+        },
+        {
+          "number": "I",
+          "title": "Permanent neurological deficit with persisting clinical symptoms for a continuous period of 30",
+          "text": "i)Permanent neurological deficit with persisting clinical symptoms for a continuous period of 30 days; or",
+          "page": 18
+        },
+        {
+          "number": "II",
+          "title": "The permanent impairment of kidney function tests as follows; Glomerular Filtration Rate (GFR)",
+          "text": "ii)The permanent impairment of kidney function tests as follows; Glomerular Filtration Rate (GFR) below 30 ml/min.",
+          "page": 18
+        },
+        {
+          "number": "III",
+          "title": "Other forms, discoid lupus, and those forms with only haematological and joint involvement are",
+          "text": "iii)Other forms, discoid lupus, and those forms with only haematological and joint involvement are however not excluded. The WHO lupus classification is as follows: a. Class I: Minimal change – Negative, normal urine. b. Class II: Mesangial – Moderate proteinuria, active sediment. c. Class III: Focal Segmental – Proteinuria, active sediment. d. Class IV: Diffuse – Acute nephritis with active sediment and/or nephritic syndrome. e. Class V: Membranous – Nephrotic Syndrome or severe proteinuria. Th...",
+          "page": 18
+        },
+        {
+          "number": "1",
+          "title": "HEART a)Cardiomyopathy",
+          "text": "1. HEART a)Cardiomyopathy Policy Wordings b)Heart Transplant c)Open Chest CABG d)Open Heart Replacement or Repair of Heart Valves e)Myocardial Infraction (First Heart Attack of Specified Severity) f)Primary (Idiopathic) Pulmonary Hypertension g)Pulmonary Artery Graft Surgery h)Surgery to Aorta / Aorta Graft Surgery",
+          "page": 18
+        },
+        {
+          "number": "I",
+          "title": "Angioplasty",
+          "text": "i)Angioplasty j)Balloon Valvotomyor Valvuloplasty k)Carotid Artery Surgery l)Implantable Cardioverter Defibrillator m)Implantation of Pacemaker of Heart n)Infective Endocarditis o)Minimally Invasive Surgery of Aorta p)Pericardiectomy q)Pulmonary Thromboembolism r)Surgery for Cardiac Arrhythmia s)Surgery to Place Ventricular Assist Devices or Total Artificial Hearts t)Primary (Idiopathic) Pulmonary Hypertension",
+          "page": 19
+        },
+        {
+          "number": "2",
+          "title": "CANCER a)Cancer of Specified Severity",
+          "text": "2. CANCER a)Cancer of Specified Severity b)Early-Stage Cancers c)Carcinoma in-Situ d)Related Major organ transplant e)Related End stage organ failure ( Lung/Liver/Kidney )",
+          "page": 19
+        },
+        {
+          "number": "3",
+          "title": "BRAIN a)Apallic Syndrome",
+          "text": "3. BRAIN a)Apallic Syndrome b)Benign Brain Tumor c)Brain Surgery d)Coma of Specified Severity e)Creutzfeldt-Jakob disease (CJD) f)Encephalitis g)Stroke Resulting In Permanent Symptoms",
+          "page": 19
+        },
+        {
+          "number": "4",
+          "title": "LUNG a)Pneumonectomy",
+          "text": "4. LUNG a)Pneumonectomy b)Pulmonary Artery Graft Surgery c)Pulmonary-Renal Syndrome d)End-Stage Lung Failure",
+          "page": 19
+        },
+        {
+          "number": "5",
+          "title": "LIVER a)End-Stage Liver Failure",
+          "text": "5. LIVER a)End-Stage Liver Failure b)Liver transplant c)Fulminant Viral Hepatitis",
+          "page": 19
+        },
+        {
+          "number": "6",
+          "title": "KIDNEY a)Kidney Failure Requiring Regular Dialysis",
+          "text": "6. KIDNEY a)Kidney Failure Requiring Regular Dialysis b)Kidney transplant c)Goodpasture's Syndrome d)Pulmonary-Renal Syndrome e)Medullary Cystic Disease Policy Wordings",
+          "page": 19
+        },
+        {
+          "number": "7",
+          "title": "TRAUMA a)Major Head Trauma",
+          "text": "7. TRAUMA a)Major Head Trauma b)Loss of Speech arising due to Trauma c)Loss of Limbs arising due to Trauma d)Blindness arising due to Trauma e)Deafness arising due to Trauma f)Stroke Resulting In Permanent Symptoms arising due to Trauma g)Permanent Paralysis of Limbs due to Trauma",
+          "page": 20
+        },
+        {
+          "number": "8",
+          "title": "BURNS a)Third-Degree Burns (Major Burns)",
+          "text": "8. BURNS a)Third-Degree Burns (Major Burns) b)Deafness due to Burn c)Blindness due to Burn d)Loss of Speech due to Burn",
+          "page": 20
+        },
+        {
+          "number": "9",
+          "title": "ANEMIA a)Aplastic Anaemia",
+          "text": "9. ANEMIA a)Aplastic Anaemia b)Major Organ / Bone Marrow Transplant",
+          "page": 20
+        },
+        {
+          "number": "10",
+          "title": "OTHER a)Progressive Scleroderma",
+          "text": "10. OTHER a)Progressive Scleroderma DISORDERS  b)Systemic Lupus Erythematosus c)Parkinson’s Disease d)Alzheimer’s Disease e)Severe Rheumatoid Arthritis",
+          "page": 20
+        },
+        {
+          "number": "11",
+          "title": "HIV/AIDS Critical illnesses resulting from complications of HIV/AIDS:",
+          "text": "11. HIV/AIDS Critical illnesses resulting from complications of HIV/AIDS: a)Tumors b)Encephalitis c)SLE d)Chronic constrictive pericarditis e)Cancer f)Pulmonary Hypertension g)Pulmonary renal syndrome h)Organ Transplant",
+          "page": 20
+        },
+        {
+          "number": "I",
+          "title": "Related conditions as specified above under ‘ Lung’, ‘Liver’, & ‘ Kidney’",
+          "text": "i)Related conditions as specified above under ‘ Lung’, ‘Liver’, & ‘ Kidney’ The Policy shall be ordinarily renewable for the ‘Related’ critical illnesses mentioned under HIV/AIDS unlike other Related Critical illnesses specified in this Table.",
+          "page": 20
+        },
+        {
+          "number": "II",
+          "title": "Conditions applicable during the contract",
+          "text": "ii) Conditions applicable during the contract",
+          "page": 20
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Section 2: What Benefits are Provided by this Policy? This policy provides you with the following insurance coverage and additional benefits: A.Payment of the Benefit Amount for an Insured Condition B.Continuation for Second and Third Events (for Plan A) C.Multiple Claims up to Sum Insured Amount (for Plan B) D.Second Medical Opinion / Tele-Consult E.Health Checkups Every 2 Years F.Health 360° Policy Wordings Optional Covers a)Loan Protector Cover b)Option to Waive 30-Day Survival Period A) Paym...",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9 Cover 25 Cover 43 Cover",
+      "level": 1,
+      "page_start": 21,
+      "page_end": 30,
+      "clauses": [
+        {
+          "number": "1",
+          "title": "Cancer of 1.Alzheimer’s Disease 1.Alzheimer's Disease",
+          "text": "1.Cancer of 1.Alzheimer’s Disease 1.Alzheimer's Disease Specified",
+          "page": 21
+        },
+        {
+          "number": "2",
+          "title": "Benign Brain Tumor 2.Apallic Syndrome",
+          "text": "2.Benign Brain Tumor 2.Apallic Syndrome Severity",
+          "page": 21
+        },
+        {
+          "number": "3",
+          "title": "Cancer of Specified Severity 3.Aplastic Anemia",
+          "text": "3.Cancer of Specified Severity 3.Aplastic Anemia",
+          "page": 21
+        },
+        {
+          "number": "2",
+          "title": "Kidney Failure",
+          "text": "2.Kidney Failure",
+          "page": 21
+        },
+        {
+          "number": "4",
+          "title": "Coma of Specified Severity 4.Bacterial Meningitis",
+          "text": "4.Coma of Specified Severity 4.Bacterial Meningitis Requiring",
+          "page": 21
+        },
+        {
+          "number": "5",
+          "title": "Deafness  5.Benign Brain Tumor",
+          "text": "5.Deafness  5.Benign Brain Tumor Regular Dialysis",
+          "page": 21
+        },
+        {
+          "number": "6",
+          "title": "End Stage Liver Failure 6.Blindness",
+          "text": "6.End Stage Liver Failure 6.Blindness",
+          "page": 21
+        },
+        {
+          "number": "3",
+          "title": "Open Chest",
+          "text": "3.Open Chest",
+          "page": 21
+        },
+        {
+          "number": "7",
+          "title": "Kidney Failure Requiring Regular 7.Brain Surgery",
+          "text": "7.Kidney Failure Requiring Regular 7.Brain Surgery CABG Dialysis",
+          "page": 21
+        },
+        {
+          "number": "8",
+          "title": "Cancer of Specified Severity",
+          "text": "8.Cancer of Specified Severity",
+          "page": 21
+        },
+        {
+          "number": "4",
+          "title": "Major Organ /",
+          "text": "4.Major Organ /",
+          "page": 21
+        },
+        {
+          "number": "8",
+          "title": "Loss of Speech",
+          "text": "8.Loss of Speech",
+          "page": 21
+        },
+        {
+          "number": "9",
+          "title": "Cardiomyopathy",
+          "text": "9.Cardiomyopathy Bone Marrow",
+          "page": 21
+        },
+        {
+          "number": "9",
+          "title": "Major Organ / Bone Marrow",
+          "text": "9.Major Organ / Bone Marrow",
+          "page": 21
+        },
+        {
+          "number": "10",
+          "title": "Coma of Specified Severity",
+          "text": "10.Coma of Specified Severity Transplant Transplant",
+          "page": 21
+        },
+        {
+          "number": "11",
+          "title": "Creutzfeldt-Jakob Disease (CJD)",
+          "text": "11.Creutzfeldt-Jakob Disease (CJD)",
+          "page": 21
+        },
+        {
+          "number": "5",
+          "title": "Multiple",
+          "text": "5.Multiple",
+          "page": 21
+        },
+        {
+          "number": "10",
+          "title": "Medullary Cystic Disease",
+          "text": "10.Medullary Cystic Disease Sclerosis With",
+          "page": 21
+        },
+        {
+          "number": "12",
+          "title": "Deafness",
+          "text": "12.Deafness",
+          "page": 21
+        },
+        {
+          "number": "11",
+          "title": "Motor Neuron Disease with",
+          "text": "11.Motor Neuron Disease with Persisting",
+          "page": 21
+        },
+        {
+          "number": "13",
+          "title": "Encephalitis",
+          "text": "13.Encephalitis Permanent Symptoms Symptoms",
+          "page": 21
+        },
+        {
+          "number": "14",
+          "title": "End-Stage Liver Failure",
+          "text": "14.End-Stage Liver Failure",
+          "page": 21
+        },
+        {
+          "number": "12",
+          "title": "Multiple Sclerosis with Persisting",
+          "text": "12.Multiple Sclerosis with Persisting",
+          "page": 21
+        },
+        {
+          "number": "6",
+          "title": "Myocardial",
+          "text": "6.Myocardial",
+          "page": 21
+        },
+        {
+          "number": "15",
+          "title": "End-Stage Lung Failure",
+          "text": "15.End-Stage Lung Failure Symptoms Infraction (First",
+          "page": 21
+        },
+        {
+          "number": "16",
+          "title": "Fulminant Viral Hepatitis",
+          "text": "16.Fulminant Viral Hepatitis Heart Attack of",
+          "page": 21
+        },
+        {
+          "number": "13",
+          "title": "Muscular Dystrophy",
+          "text": "13.Muscular Dystrophy",
+          "page": 21
+        },
+        {
+          "number": "17",
+          "title": "Goodpasture's Syndrome",
+          "text": "17.Goodpasture's Syndrome Specified",
+          "page": 21
+        },
+        {
+          "number": "14",
+          "title": "Myocardial Infraction (First",
+          "text": "14.Myocardial Infraction (First",
+          "page": 21
+        },
+        {
+          "number": "18",
+          "title": "Kidney Failure Requiring Regular Dialysis",
+          "text": "18.Kidney Failure Requiring Regular Dialysis Severity) Heart Attack of Specified",
+          "page": 21
+        },
+        {
+          "number": "19",
+          "title": "Loss of Speech",
+          "text": "19.Loss of Speech",
+          "page": 21
+        },
+        {
+          "number": "7",
+          "title": "Permanent",
+          "text": "7.Permanent Severity) Paralysis of",
+          "page": 21
+        },
+        {
+          "number": "20",
+          "title": "Loss of Limbs",
+          "text": "20.Loss of Limbs",
+          "page": 21
+        },
+        {
+          "number": "15",
+          "title": "Open Chest CABG",
+          "text": "15.Open Chest CABG Limbs",
+          "page": 21
+        },
+        {
+          "number": "21",
+          "title": "Major Head Trauma",
+          "text": "21.Major Head Trauma",
+          "page": 21
+        },
+        {
+          "number": "16",
+          "title": "Open Heart Replacement or",
+          "text": "16.Open Heart Replacement or",
+          "page": 21
+        },
+        {
+          "number": "8",
+          "title": "Stroke Resulting",
+          "text": "8.Stroke Resulting",
+          "page": 21
+        },
+        {
+          "number": "22",
+          "title": "Major Organ / Bone Marrow Transplant",
+          "text": "22.Major Organ / Bone Marrow Transplant Repair of Heart Valves In Permanent",
+          "page": 21
+        },
+        {
+          "number": "23",
+          "title": "Medullary Cystic Disease",
+          "text": "23.Medullary Cystic Disease",
+          "page": 21
+        },
+        {
+          "number": "17",
+          "title": "Parkinson’s Disease",
+          "text": "17.Parkinson’s Disease Symptoms",
+          "page": 21
+        },
+        {
+          "number": "24",
+          "title": "Motor Neuron Disease with Permanent",
+          "text": "24.Motor Neuron Disease with Permanent",
+          "page": 21
+        },
+        {
+          "number": "18",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "18.Permanent Paralysis of Limbs Symptoms",
+          "page": 21
+        },
+        {
+          "number": "19",
+          "title": "Pneumonectomy",
+          "text": "19.Pneumonectomy Policy Wordings",
+          "page": 21
+        },
+        {
+          "number": "9",
+          "title": "Surgery to Aorta 20.Primary (Idiopathic) Pulmonary 25.Multiple Sclerosis with Persisting",
+          "text": "9.Surgery to Aorta 20.Primary (Idiopathic) Pulmonary 25.Multiple Sclerosis with Persisting / Aorta Graft Hypertension Symptoms Surgery",
+          "page": 22
+        },
+        {
+          "number": "21",
+          "title": "Pulmonary Artery Graft Surgery 26.Multiple System Atrophy",
+          "text": "21.Pulmonary Artery Graft Surgery 26.Multiple System Atrophy",
+          "page": 22
+        },
+        {
+          "number": "22",
+          "title": "Stroke Resulting In Permanent 27.Muscular Dystrophy",
+          "text": "22.Stroke Resulting In Permanent 27.Muscular Dystrophy Symptoms",
+          "page": 22
+        },
+        {
+          "number": "28",
+          "title": "Myocardial Infarction (First Heart Attack",
+          "text": "28.Myocardial Infarction (First Heart Attack",
+          "page": 22
+        },
+        {
+          "number": "23",
+          "title": "Surgery to Aorta / Aorta Graft of Specified Severity)",
+          "text": "23.Surgery to Aorta / Aorta Graft of Specified Severity) Surgery",
+          "page": 22
+        },
+        {
+          "number": "29",
+          "title": "Open Chest CABG / Coronary Artery",
+          "text": "29.Open Chest CABG / Coronary Artery",
+          "page": 22
+        },
+        {
+          "number": "24",
+          "title": "Systemic Lupus Erythematosus Bypass Surgery",
+          "text": "24.Systemic Lupus Erythematosus Bypass Surgery",
+          "page": 22
+        },
+        {
+          "number": "25",
+          "title": "Third-Degree Burns (Major 30.Open Heart Replacement or Repair of",
+          "text": "25.Third-Degree Burns (Major 30.Open Heart Replacement or Repair of Burns) Heart Valves",
+          "page": 22
+        },
+        {
+          "number": "31",
+          "title": "Parkinson’s Disease",
+          "text": "31.Parkinson’s Disease",
+          "page": 22
+        },
+        {
+          "number": "32",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "32.Permanent Paralysis of Limbs",
+          "page": 22
+        },
+        {
+          "number": "33",
+          "title": "Pneumonectomy",
+          "text": "33.Pneumonectomy",
+          "page": 22
+        },
+        {
+          "number": "34",
+          "title": "Primary (Idiopathic) Pulmonary",
+          "text": "34.Primary (Idiopathic) Pulmonary Hypertension",
+          "page": 22
+        },
+        {
+          "number": "35",
+          "title": "Progressive Supranuclear Palsy",
+          "text": "35.Progressive Supranuclear Palsy",
+          "page": 22
+        },
+        {
+          "number": "36",
+          "title": "Progressive Scleroderma",
+          "text": "36.Progressive Scleroderma",
+          "page": 22
+        },
+        {
+          "number": "37",
+          "title": "Pulmonary Artery Graft Surgery",
+          "text": "37.Pulmonary Artery Graft Surgery",
+          "page": 22
+        },
+        {
+          "number": "38",
+          "title": "Pulmonary-Renal Syndrome",
+          "text": "38.Pulmonary-Renal Syndrome",
+          "page": 22
+        },
+        {
+          "number": "39",
+          "title": "Severe Rheumatoid Arthritis",
+          "text": "39.Severe Rheumatoid Arthritis",
+          "page": 22
+        },
+        {
+          "number": "40",
+          "title": "Stroke Resulting In Permanent Symptoms",
+          "text": "40.Stroke Resulting In Permanent Symptoms",
+          "page": 22
+        },
+        {
+          "number": "41",
+          "title": "Surgery to Aorta / Aorta Graft Surgery",
+          "text": "41.Surgery to Aorta / Aorta Graft Surgery",
+          "page": 22
+        },
+        {
+          "number": "42",
+          "title": "Systemic Lupus Erythematosus",
+          "text": "42.Systemic Lupus Erythematosus",
+          "page": 22
+        },
+        {
+          "number": "43",
+          "title": "Third-Degree Burns (Major Burns)",
+          "text": "43.Third-Degree Burns (Major Burns) For Plan B, we will pay you a lump sum amount that is a percentage of Sum Insured, based on whether a condition is a “Major Condition” or “Minor Condition”:",
+          "page": 22
+        },
+        {
+          "number": "1",
+          "title": "For Major Conditions, the policy pays out 100% of the Sum Insured.",
+          "text": "1.For Major Conditions, the policy pays out 100% of the Sum Insured.",
+          "page": 22
+        },
+        {
+          "number": "2",
+          "title": "For Minor Conditions, the policy pays out 25% of the Sum Insured and continues until the policy term",
+          "text": "2.For Minor Conditions, the policy pays out 25% of the Sum Insured and continues until the policy term. If, during the policy term, you are diagnosed with one of the Major Conditions in that same cover, we will pay out the remaining 75% of the Sum Insured to you.",
+          "page": 22
+        },
+        {
+          "number": "3",
+          "title": "With the Heart and Cancer Protect cover, you can raise multiple claims under each cover until the to",
+          "text": "3.With the Heart and Cancer Protect cover, you can raise multiple claims under each cover until the total payout for that cover is exhausted.  In any case, the total payout in the policy cannot exceed 100% of the Sum Insured.",
+          "page": 22
+        },
+        {
+          "number": "4",
+          "title": "Plan ‘B’ has an option to choose one or more from the given ‘ with a Sum Insured",
+          "text": "4.Plan ‘B’ has an option to choose one or more from the given ‘ with a Sum Insured Disease-specific Bundles’ applicable to each selected ‘ Disease-specific Bundle’. Please refer to the following Benefit Schedule for a list of insured conditions (illnesses, medical events, and surgical procedures). Benefit Schedule for Plan B: Disease-Specific Bundles (Sum Insured amounts: 1 lac, 2, 3, 4, 5, 7.5, 10, 15, 20, 25, 30, 40, 50, or 75 lacs, 1 crore) Heart Protect Cancer Protect RenoLiv Protect Brain P...",
+          "page": 22
+        },
+        {
+          "number": "1",
+          "title": "Cardiomyopathy 1.Cancer of 1.End-Stage Liver 1.Apallic Syndrome",
+          "text": "1.Cardiomyopathy 1.Cancer of 1.End-Stage Liver 1.Apallic Syndrome Specified failure",
+          "page": 23
+        },
+        {
+          "number": "2",
+          "title": "Heart Transplant 2.Bacterial Meningitis",
+          "text": "2.Heart Transplant 2.Bacterial Meningitis Severity",
+          "page": 23
+        },
+        {
+          "number": "2",
+          "title": "Kidney Failure",
+          "text": "2.Kidney Failure",
+          "page": 23
+        },
+        {
+          "number": "3",
+          "title": "Open Chest CABG 3.Benign Brain Tumor",
+          "text": "3.Open Chest CABG 3.Benign Brain Tumor Requiring",
+          "page": 23
+        },
+        {
+          "number": "4",
+          "title": "Open Heart 4.Brain Surgery",
+          "text": "4.Open Heart 4.Brain Surgery Regular Dialysis Replacement or",
+          "page": 23
+        },
+        {
+          "number": "5",
+          "title": "Coma of Specified",
+          "text": "5.Coma of Specified",
+          "page": 23
+        },
+        {
+          "number": "3",
+          "title": "Kidney",
+          "text": "3.Kidney Repair of Heart Severity Transplant Valves",
+          "page": 23
+        },
+        {
+          "number": "6",
+          "title": "Creutzfeldt-Jakob disease",
+          "text": "6.Creutzfeldt-Jakob disease",
+          "page": 23
+        },
+        {
+          "number": "4",
+          "title": "Liver Transplant",
+          "text": "4.Liver Transplant",
+          "page": 23
+        },
+        {
+          "number": "5",
+          "title": "Myocardial",
+          "text": "5.Myocardial (CJD) Infraction (First 5.Medullary Cystic",
+          "page": 23
+        },
+        {
+          "number": "7",
+          "title": "Encephalitis",
+          "text": "7.Encephalitis Heart Attack of Disease",
+          "page": 23
+        },
+        {
+          "number": "8",
+          "title": "Stroke Resulting In",
+          "text": "8.Stroke Resulting In Specified Severity)",
+          "page": 23
+        },
+        {
+          "number": "6",
+          "title": "Pulmonary-Renal",
+          "text": "6.Pulmonary-Renal Permanent Symptoms",
+          "page": 23
+        },
+        {
+          "number": "6",
+          "title": "Primary Syndrome",
+          "text": "6.Primary Syndrome",
+          "page": 23
+        },
+        {
+          "number": "9",
+          "title": "Motor Neuron Disease",
+          "text": "9.Motor Neuron Disease (Idiopathic) With Permanent Pulmonary Symptoms Hypertension",
+          "page": 23
+        },
+        {
+          "number": "10",
+          "title": "Multiple Sclerosis With",
+          "text": "10.Multiple Sclerosis With",
+          "page": 23
+        },
+        {
+          "number": "7",
+          "title": "Pulmonary Artery",
+          "text": "7.Pulmonary Artery Persisting Symptoms Graft Surgery",
+          "page": 23
+        },
+        {
+          "number": "11",
+          "title": "Progressive Supranuclear",
+          "text": "11.Progressive Supranuclear",
+          "page": 23
+        },
+        {
+          "number": "8",
+          "title": "Surgery to Aorta /",
+          "text": "8.Surgery to Aorta / Palsy Aorta Graft Surgery",
+          "page": 23
+        },
+        {
+          "number": "12",
+          "title": "Permanent Paralysis of",
+          "text": "12.Permanent Paralysis of Limbs Minor Conditions: Minor Conditions:",
+          "page": 23
+        },
+        {
+          "number": "9",
+          "title": "Angioplasty  2.Early-Stage",
+          "text": "9.Angioplasty  2.Early-Stage Cancers",
+          "page": 23
+        },
+        {
+          "number": "10",
+          "title": "Balloon Valvotomy",
+          "text": "10.Balloon Valvotomy or Valvuloplasty 3.Carcinoma in- Situ",
+          "page": 23
+        },
+        {
+          "number": "11",
+          "title": "Carotid Artery",
+          "text": "11.Carotid Artery Surgery",
+          "page": 23
+        },
+        {
+          "number": "12",
+          "title": "Implantable",
+          "text": "12.Implantable Cardioverter Defibrillator",
+          "page": 23
+        },
+        {
+          "number": "13",
+          "title": "Implantation of",
+          "text": "13.Implantation of Pacemaker of Heart",
+          "page": 23
+        },
+        {
+          "number": "14",
+          "title": "Infective",
+          "text": "14.Infective Endocarditis",
+          "page": 23
+        },
+        {
+          "number": "15",
+          "title": "Minimally Invasive",
+          "text": "15.Minimally Invasive Surgery of Aorta",
+          "page": 23
+        },
+        {
+          "number": "16",
+          "title": "Pericardiectomy",
+          "text": "16.Pericardiectomy",
+          "page": 23
+        },
+        {
+          "number": "17",
+          "title": "Pulmonary",
+          "text": "17.Pulmonary Thromboembolism",
+          "page": 23
+        },
+        {
+          "number": "18",
+          "title": "Surgery for Cardiac",
+          "text": "18.Surgery for Cardiac Arrhythmia",
+          "page": 23
+        },
+        {
+          "number": "19",
+          "title": "Surgery to Place",
+          "text": "19.Surgery to Place Ventricular Assist Devices or Total Artificial Hearts Policy Wordings Please refer to Section 1 for the terms used in this policy, and for the descriptions of these insured conditions that result in a benefit payment.  The Survival Period refers to the period after an insured event that you have to survive before a claim is payable. B) Continuation for Second and Third Events (for Plan A) If you have one of the covers in Plan A, we will pay a lump sum benefit for any conditio...",
+          "page": 23
+        },
+        {
+          "number": "1",
+          "title": "Coverage shall be given for a second and third insured condition, or maximum of 3 conditions over a",
+          "text": "1.Coverage shall be given for a second and third insured condition, or maximum of 3 conditions over a lifetime 2.24-month waiting period shall apply between the occurrences of each condition (i.e. between the first and second insured condition, or between the second and third condition)",
+          "page": 24
+        },
+        {
+          "number": "3",
+          "title": "You have maintained or renewed the policy and the second or third event occurs during the policy",
+          "text": "3.You have maintained or renewed the policy and the second or third event occurs during the policy period",
+          "page": 24
+        },
+        {
+          "number": "4",
+          "title": "Coverage shall not be given for a second or third insured condition that is “Related” to the previou",
+          "text": "4.Coverage shall not be given for a second or third insured condition that is “Related” to the previous event.  For a full list of “Related” conditions that we will not provide continuous coverage for, please see Section 1 (Part C) C) Multiple Claims up to Sum Insured Amount (for Plan B) We will pay you a lump sum amount that is a percentage of Sum Insured, based on whether a condition is a “Major Condition” or “Minor Condition” as listed in the Benefit Schedule.",
+          "page": 24
+        },
+        {
+          "number": "1",
+          "title": "For Major Conditions, the policy pays out 100% of the Sum Insured.",
+          "text": "1.For Major Conditions, the policy pays out 100% of the Sum Insured.",
+          "page": 24
+        },
+        {
+          "number": "2",
+          "title": "For Minor Conditions, the policy pays out 25% of the Sum Insured and continues until the policy term",
+          "text": "2.For Minor Conditions, the policy pays out 25% of the Sum Insured and continues until the policy term. If, during the policy term or on renewal of the Policy with same benefits, you are diagnosed with one of the Major Conditions in that same cover, we will pay out the remaining 75% of the Sum Insured to you.",
+          "page": 24
+        },
+        {
+          "number": "3",
+          "title": "With the Heart and Cancer Protect, you can raise multiple claims under each cover until the total pa",
+          "text": "3.With the Heart and Cancer Protect, you can raise multiple claims under each cover until the total payout for that cover is exhausted.",
+          "page": 24
+        },
+        {
+          "number": "4",
+          "title": "In any case, the total payout in the policy cannot exceed 100% of the Sum Insured.",
+          "text": "4.In any case, the total payout in the policy cannot exceed 100% of the Sum Insured. D) Second Medical Opinion / Tele-Consult We will arrange and pay for a second opinion through our empaneled network providers.  This is on the condition that you suffer one of the insured conditions during the Policy Period, and decide to avail this benefit.  The medical specialist will directly send you the e-opinion.  Please note that this benefit can be claimed only once in a policy year. The Second Opinion s...",
+          "page": 24
+        },
+        {
+          "number": "1",
+          "title": "Lac to 1 Crore Complete blood Count, Fasting Blood Sugar, S. Cholesterol, S. Creatinine, ECG",
+          "text": "1 Lac to 1 Crore Complete blood Count, Fasting Blood Sugar, S. Cholesterol, S. Creatinine, ECG F) Health 360° The Company covers below listed benefits to ensure the Insured person/s Health & Wellness under this Policy by offering services & incentivizing rewards as mentioned below A.Delight Healthcare",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured Person/s can avail discounts on outpatient consultation, pharmaceuticals and Diagnostic tests through our empaneled Network Providers. The list of such Network Providers will be updated from time to time and can be obtained from Our website, mobile application or by calling Our call centre. We will assist in scheduling appointments for consultation and diagnostic tests at a time convenient to the Insured Person. Alternatively the Insured Person may also schedule his/her own appointme...",
+          "page": 25
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "In all cases the medical professional suggested by the Company shall act in a medical or legal capacity on behalf of You only. The Company assumes no responsibility for any medical advice given by the medical professional. You shall not have any recourse to the Company by reason of its suggestion of a medical professional or due to any legal or other determination resulting therefrom. The services are on arrangement basis and utilizing these services from the Company’s empaneled network provider...",
+          "page": 25
+        },
+        {
+          "number": "1",
+          "title": "OPD consultation-",
+          "text": "1.OPD consultation- The Company arranges family physician as well as specialist consultations at discounted rates from the Network Providers. The Insured Person/s can also store the prescription letters and bills in the electronic health portal system.",
+          "page": 25
+        },
+        {
+          "number": "2",
+          "title": "Diagnostic services-",
+          "text": "2.Diagnostic services- The Company arranges diagnostic facilities at discounted rates from the Network Providers. The insured person can avail this facility as many number of times as the person wishes to avail. The insured person can also store these medical test reports and bills in the electronic Health portal system.",
+          "page": 25
+        },
+        {
+          "number": "3",
+          "title": "Pharmacies",
+          "text": "3.Pharmacies Policy Wordings If the Insured Person/s wants to obtain medicines and consumables prescribed by a Medical practitioners, he/she can avail home delivery facilities through our web portal or mobile application. These medicines and consumables are available at discounted rates subject to a valid prescription. B.Concierge Healthcare- The Company offers integrated healthcare services inculcating the advancement in technology and with a member centric approach. The Insured Person/s is pro...",
+          "page": 25
+        },
+        {
+          "number": "1",
+          "title": "Health Risk Assessment ( HRA)",
+          "text": "1.Health Risk Assessment ( HRA) Step 1 - Health questionnaire- Once the Profile of the Insured Persons is created on the Health Portal or Mobile application, this questionnaire will be available for doing own Health Risk assessment. We will aid the Insured Person/s to complete the questionnaire whenever required. Step 2- Electronic Health records- Insured Person/s can store the medical tests reports, prescriptions and other consultation papers in the personalized portal and which gets digitalize...",
+          "page": 26
+        },
+        {
+          "number": "2",
+          "title": "Disease Management Program-",
+          "text": "2.Disease Management Program-",
+          "page": 26
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Those who get detected or get assessed as high risk in the health risk assessment or are already suffering from chronic diseases, the Company offers variety of disease management programs. This service aims to help the Policy Wordings Insured Person/s cope with their disease and to show them ways of dealing with them in everyday life. The Disease management Program aim to improve the Insured Person/s quality of life.",
+          "page": 26
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Following are the names of Disease Management programs.",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Asthma Management",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Pre-Diabetes / Diabetes Management",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Hypertension",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Heart Related Management",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Maternity Management",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Tropical Disease Management",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Based on the Disease Management Program identified, we will assign a Health Coach for online Diet consultation & tracking mechanism, indulging the Insured Person/s into physical activities, encouraging for meditation & breathing techniques at home or online counselling through our health portal/mobile application.",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Health coach- The Insured Person/s will be assigned a dedicated health coach who will take care of the complete wellbeing of the Insured person. This service will offer immediate and complete assistance to the person looking after his/her day-to- day health care. Post the complete profile building of the Insured Person/s done on online portal, health coach will interact with the Insured Person/s as per health requirements.",
+          "page": 27
+        },
+        {
+          "number": "3",
+          "title": "Dedicated Health Professional",
+          "text": "3.Dedicated Health Professional",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The Company offers 24/7 live Health Chat via online Health portal and telephonic call service to discuss health and other various lifestyle related issues from expert panel of empaneled doctors and health professionals. The below services may be availed anytime during the policy period and there are no restrictions on the number of times the facility can be utilized.",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "o Ask Doctor – for basic health related conditions and medications o Ask Nutritionist – for diet and nutrition considerations depending on lifestyle o Ask Counselor – confidential counseling by professionals, crisis intervention etc.",
+          "page": 27
+        },
+        {
+          "number": "4",
+          "title": "Wellness Rewards :",
+          "text": "4.Wellness Rewards : The Company has kept a provision to Earn & Burn Rewards individually by way of ‘Wellness Reward Program’. The Rewards can be earned by performing various activities as listed below ‘Table 1. Wellness Reward’ upto the maximum limits as specified under every category during every continuous Policy year and Burn it whenever required without any waiting period against array of our facilities provided as mentioned hereunder which would help you to improve your overall Health stat...",
+          "page": 27
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Max Rewards Sr. Rewards/ unit earned by NActivities for Earning Wellness Rewards earned by Individual Per o. Individual Policy Year",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "HRA outcome without any Cover 2.5 to 3.5 lakhs steps 100/month 500 adverse report in a month",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Cover minimum 2  lakhs 100/month 500 steps in a month HRA Outcome of having Large waist size ( > 40 inches) Cover above 2 lakh steps in a 150/month 1000 month Solution Blood Pressure is below or to equal to - I Sedentary SBP:120-140 mm/Hg Blood pressure for a known Lifestyle DBP: 80-90 mm/Hg 150/month 500 case of Hypertension SBP- Systolic Blood Pressure; DBP – Diastolic Blood Pressure Blood sugar levels for a known HBA1C within normal limits case of Diabetes 150/quarterly 500 ≤ 5.6",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Lipid level are normal within Lipid profile Level for a range as applicable to the 150/quarterly 500 known case of Dyslipidemia Laboratory Policy Wordings",
+          "page": 28
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "BMI between 31 to 35 and reduce your BMI to the 100/quarterly 200 Optimum range",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Body Mass Index (BMI) for a known case of High BMI BMI between 35 to 39 and Insured Person /s reduce your BMI to the 150/quarterly 300 >=30 optimum BMI optimum range",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "BMI between 40 to 42 and reduce your BMI to the 250/quarterly 500 optimum range",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Get active Rewards: Participate in professional sport events like II Marathon/Cyclothon/Swimathon and Earn the Rewards by providing 100 /event 500 medal/trophies/BIB number (as applicable) from the respective facility provider.",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Online Screening: III On completion of HRA on Health Portal/Mobile application within a 200 200 month from Policy Inception Date",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The Insured person (s) can earn wellness reward by undergoing the below listed medical tests at his own cost, irrespective of the results of screen tests performed.",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "a. ECG 50/quarterly 100 Heart Related Monitoring b. 2D echo/ TMT 100/ quarterly 200",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "a. FBS & PPBS 50/ quarterly 100 Blood Sugar Monitoring b. HbA1C 75/ quarterly 200 a. TFT ( Thyroid Function 100/ quarterly 200 Test ) Thyroid/Lipid Monitoring Prophylac IV b. Lipid Profile 100/ quarterly 200 tic Screening a. PAP Smear 200/ quarterly 300 Tests for Female Insured Person b. USG Abdomen & Pelvis 150/ quarterly 300",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "c. Mammogram 250/ quarterly 500",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "a. Prostate Specific Antigen 150/ quarterly 300 (PSA) Test For Male b. Any other test as suggested in Health 150/ quarterly 300 Screening by Us.",
+          "page": 29
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Family Fit Kid (Age: 5-18 years): It is V a. School level 20/sport 50 Rewards an additional criteria of earning Policy Wordings Reward available for a child participating in the Sports at b. State level 50/sport 100 multiple levels. Can be availed by providing Sports Certificate provided by the School/State/National c. National level 100/sport 200 Sports authorities. f.The Insured Person can Burn these accumulated Rewards without any Waiting period against categories as mentioned in Table 2 Well...",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "number": null,
+      "title": "Part C: “Related”",
+      "level": 1,
+      "page_start": 30,
+      "page_end": 31,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Conditions not Covered by Continuation Feature’ ii)24-months waiting period shall apply between the occurrences of the Insured condition i.e. between the first and second insured condition, or between the second and third Insured condition and so on Related to HIV/ AIDS until 100% of the Sum Insured fully exhausted in a lifetime. iii)48-months Waiting Period shall apply for the Insured condition Related to HIV / AIDS and its complications, from policy commencement date. Policy Wordings",
+          "page": 30
+        },
+        {
+          "number": "IV",
+          "title": "In case of occurrence of the Insured condition which is not related to HIV/ AIDS, the claim shall be",
+          "text": "iv)In case of occurrence of the Insured condition which is not related to HIV/ AIDS, the claim shall be payable up to the Sum Insured as specified in the Policy Schedule less the amount paid during a Policy year.",
+          "page": 31
+        },
+        {
+          "number": "V",
+          "title": "Total payout in a policy year cannot exceed 100% of the Sum Insured.",
+          "text": "v)Total payout in a policy year cannot exceed 100% of the Sum Insured. vi)‘Maximum 3 no. of claims in a lifetime’ as mentioned under Section 2.B. Continuation for Second and Third Events (for Plan A) is not applicable for a valid claim related to HIV/AIDS.",
+          "page": 31
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The diagnosis of HIV/AIDS must be supported by evidence of the following conditions and confirmed by a specialist medical practitioner. 1.enzyme-linked immunosorbent assay (ELISA) testing is repeatedly ELISA reactive Or",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Western blot testing is reactive",
+      "level": 2,
+      "page_start": 31,
+      "page_end": 31,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Sr. No. Category Critical illnesses resulting from complications of HIV/AIDS",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. HIV/AIDS j)Tumors",
+      "level": 2,
+      "page_start": 31,
+      "page_end": 32,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "k)Encephalitis l)SLE m)Chronic constrictive pericarditis n)Cancer o)Pulmonary Hypertension p)Pulmonary renal syndrome q)Organ Transplant r)Related conditions as specified in the Table Part C with coverage of “Related” Conditions under ‘ Lung’, ‘Liver’, & ‘ Kidney’ The Policy shall be ordinarily renewable for the critical illnesses mentioned above Optional Cover(s) The Optional Covers as stated below shall be available only if the same is specifically mentioned in the Policy Schedule and availabl...",
+          "page": 31
+        },
+        {
+          "number": "I",
+          "title": "the Equated Monthly Installment (EMI) of a loan obtained through a Financial",
+          "text": "i.the Equated Monthly Installment (EMI) of a loan obtained through a Financial Institution/Bank, for 12 months; or",
+          "page": 31
+        },
+        {
+          "number": "II",
+          "title": "the lump sum amount as specified in the Policy Schedule (3 percentage of Sum Insured amount) and",
+          "text": "ii.the lump sum amount as specified in the Policy Schedule (3 percentage of Sum Insured amount) and",
+          "page": 31
+        },
+        {
+          "number": "III",
+          "title": "after the commencement of the Insured Event till the Principal Outstanding loan amount or expiry of",
+          "text": "iii.after the commencement of the Insured Event till the Principal Outstanding loan amount or expiry of Policy Period, whichever is earlier/lower. This is subject to submission of sanction letter, repayment track record, and bank account statement reflecting EMI or Loan account statement. b)Option to Waive 30-Day Survival Period Policy Wordings If you specify that you would like to opt this cover for waiving the Survival Period from the date of diagnosis, we will apply an additional pricing to t...",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "number": null,
+      "title": "Part A: Medical Exclusions",
+      "level": 1,
+      "page_start": 32,
+      "page_end": 34,
+      "clauses": [
+        {
+          "number": "I",
+          "title": "Substance abuse and de-addiction programs: Abuse or the consequences of the abuse of intoxicants",
+          "text": "i.Substance abuse and de-addiction programs: Abuse or the consequences of the abuse of intoxicants or hallucinogenic substances , intoxicating drugs and alcohol , smoking cessation programs, the treatment of nicotine addiction, substance abuse treatment or services, or supplies.",
+          "page": 32
+        },
+        {
+          "number": "II",
+          "title": "Certain types of treatment, defined illnesses / conditions / supplies as otherwise specified in",
+          "text": "ii.Certain types of treatment, defined illnesses / conditions / supplies as otherwise specified in the Policy: o Congenital external diseases, defects or anomalies o Treatment arising from pregnancy (including voluntary termination), miscarriage, maternity or birth (including caesarean section)",
+          "page": 32
+        },
+        {
+          "number": "III",
+          "title": "Time bound exclusion(s) applied by us and specified in the Policy Schedule and accepted by you, as",
+          "text": "iii.Time bound exclusion(s) applied by us and specified in the Policy Schedule and accepted by you, as per the board approved underwriting policy of the Company o Any insured condition or critical illness diagnosed within the first 90 days of the date of commencement of the Policy is excluded. This exclusion will not apply to you if your coverage has been renewed, without a break, for subsequent years. o Any insured condition or critical illness for which care, treatment, or advice was recommend...",
+          "page": 32
+        },
+        {
+          "number": "IV",
+          "title": "Medical procedure or treatment, which is not medically necessary or not performed by a medical",
+          "text": "iv.Medical procedure or treatment, which is not medically necessary or not performed by a medical practitioner  as specified under each insured condition.",
+          "page": 32
+        },
+        {
+          "number": "V",
+          "title": "Treatment by a family member, self-medication or experimental or unproven treatment.",
+          "text": "v.Treatment by a family member, self-medication or experimental or unproven treatment. Part B: Non-Medical Exclusions Policy Wordings",
+          "page": 32
+        },
+        {
+          "number": "I",
+          "title": "Natural peril, storm, tempest, avalanche, earthquake, volcanic eruptions, hurricane, natural hazard",
+          "text": "i.Natural peril, storm, tempest, avalanche, earthquake, volcanic eruptions, hurricane, natural hazard",
+          "page": 33
+        },
+        {
+          "number": "II",
+          "title": "War: Treatment directly or indirectly arising from or consequent upon war or any act of war, invasio",
+          "text": "ii.War: Treatment directly or indirectly arising from or consequent upon war or any act of war, invasion, act of foreign enemy, war like operations (whether war be declared or not or caused during service in the armed forces of any country), civil war, public defence, rebellion, revolution, insurrection, military or usurped acts, nuclear weapons/materials, chemical and biological weapons, radiation.",
+          "page": 33
+        },
+        {
+          "number": "III",
+          "title": "Breach of law: You commit or attempt to commit a breach of law with criminal intent, intentional sel",
+          "text": "iii.Breach of law: You commit or attempt to commit a breach of law with criminal intent, intentional self- injury, attempted suicide while sane or insane, or the use or misuse of intoxicating drugs and/or alcohol unless prescribed / used as part of the treatment.",
+          "page": 33
+        },
+        {
+          "number": "IV",
+          "title": "Dangerous acts (including sports): You are participating or involved in naval, military or air force",
+          "text": "iv.Dangerous acts (including sports): You are participating or involved in naval, military or air force operation, racing, diving, aviation, scuba diving, parachuting, hang-gliding, rock or mountain climbing in a professional or semi-professional nature. Section 4: Terms and Conditions Part A: Do I have to undergo Pre Policy Health Check-up? The Company may require Individuals to undergo Pre Policy health check-up based on the Sum Insured and/or age bands and/or an adverse medical history reveal...",
+          "page": 33
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Year Policy",
+      "level": 2,
+      "page_start": 34,
+      "page_end": 34,
+      "clauses": [
+        {
+          "number": "3",
+          "title": "3. Year Policy",
+          "text": "",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Year Policy",
+      "level": 2,
+      "page_start": 34,
+      "page_end": 34,
+      "clauses": [
+        {
+          "number": "2",
+          "title": "2. Year Policy",
+          "text": "",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Year Policy",
+      "level": 2,
+      "page_start": 34,
+      "page_end": 35,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Cancellation period MontQuarteHalf-MontQuarteHalf-MontQuarteHalf- hly rly Yearly hly rly Yearly hly rly Yearly NILNIL20%NILNIL25% Up to 1 Month NIL 10% 35% NILNILNILNILNIL25% Up to 3 Months NIL 10% 30% NILNILNIL10%10%10% Up to 6 Months 20% 20% 25% NILNILNIL20%25%30% Up to 9 Months 30% 30% 45% Up to 12 NILNILNIL35%40%40% Months 35% 35% 40% Up to 15 NILNILNILNILNILNIL Months 30% 30% 30% Up to 18 NILNILNILNILNILNIL Months 30% 30% 30% Up to 24 NILNILNILNILNILNIL Months 20% 20% 20% Up to 30 NILNILNIL...",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "number": null,
+      "title": "Part E: General Conditions",
+      "level": 1,
+      "page_start": 35,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a)Free Look Period of 15 days: A period of 15 days from the date of receipt of the Policy document is available to review the Terms and Conditions of this Policy. You have the option of cancelling the Policy by stating the reasons for cancellation in writing. If there are no Claims reported (paid/outstanding) under the Policy, we shall refund the Premium paid by you after deducting the amount spent on any pre-policy Health check –ups, stamp duty charges and proportionate risk premium for the per...",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Fulfillment of the terms and conditions of this policy, as far as they relate to anything that you must do",
+      "level": 2,
+      "page_start": 37,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "or comply with, are precedent conditions to our liability.  That includes payment of premium by the due dates mentioned in the policy schedule.",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. The premium will remain the same for the policy period mentioned in the policy schedule",
+      "level": 2,
+      "page_start": 37,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. The policy will be issued for 1, 2 and 3 year(s) based on the Policy Period selected and mentioned on",
+      "level": 2,
+      "page_start": 37,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the Policy Schedule.  The Sum Insured & benefits will be applicable on a Policy Year basis.",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. The policy shall cover the Insured condition/critical illnesses diagnosis within India and all the benefits",
+      "level": 2,
+      "page_start": 37,
+      "page_end": 37,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "under the policy shall be payable in Indian rupees only. In case of the Critical illness diagnosed outside India, the Policy shall cover it unless reaffirmed by the specialist Medical Practitioner. The cost of the medical checkup supporting the Critical illness diagnosis outside India shall be initiated and paid by the Company.",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Entry Age:",
+      "level": 2,
+      "page_start": 37,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Adult Children Minimum Age at Entry 18 Years 5 years Maximum Age at Entry 65 Years 25 Years Children above 5 years up to 18 years can be insured provided either of the parents are insured under the Policy",
+          "page": 37
+        },
+        {
+          "number": "I",
+          "title": "Non-Disclosure or Misrepresentation of Information / Incontestability:",
+          "text": "i)Non-Disclosure or Misrepresentation of Information / Incontestability: • If at the time of policy issuance or during continuation of the policy, the information given to us in the proposal form or otherwise (by you or anyone acting on your behalf) is found to be incorrect, incomplete, suppressed or not disclosed (willfully or otherwise), the policy will be: o Cancelled ab-initio from inception date or the renewal date (as the case may be), upon 15 day notice by sending Policy termination lette...",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. Family Discount: A Family discount of 10% will be given if 2 or more family members are",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "covered. It is available to each member under the policy insured at start date of the Policy. Family members can include: Spouse, Children, Parents & In-laws, Siblings, Son/Daughter-in-law, Grandchildren, and Grandparents.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Long Term Policy Discount: A discount of 7.5% and 10% will be given on selection of 2 year or 3 year",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "tenure policies respectively",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Employee Discount: 10% discount will be given if you are an employee of the Company at start date of the",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy. This discount is applicable to your family members insured in the same policy.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Direct Policy Purchase Discount- 10% discount will be given if you are purchasing this Policy as a New or",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Renewal Policy through Our Website. Either of Employee/Direct Discount shall be applied. q)Assignment : You can assign this policy under intimation to Us. Assignment of a policy shall be in accordance with Section 38 of the Insurance Act, 1938 as amended by Insurance Laws (Amendment) Ordinance dated 26.12.2014. The extant provisions in this regard are as follows:",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. This policy may be assigned, wholly or in part, with or without consideration",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. An Assignment may be effected in a policy by an endorsement upon the policy itself or by a separate",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "instrument under notice to the Insurer.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. The instrument of assignment should indicate the fact of transfer or assignment and the reasons for the",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "assignment or transfer, antecedents of the assignee and terms on which assignment is made.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. The assignment must be signed by the assignor or duly authorized agent and attested by at least one witness",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 39,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "and should be delivered to Insurer along with the applicable fee.",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "5. Upon receipt of request, the insurer may accept or decline to act upon any assignment or endorsement, if it",
+      "level": 2,
+      "page_start": 39,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "has sufficient reasons to believe that it is a. not bonafide or b. not in the interest of the policyholder or c. not in public interest or d. is for the purpose of trading of the insurance policy. Policy Wordings",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. Before refusing to act upon endorsement, the Insurer should record the reasons in writing and communicate",
+      "level": 2,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "the same in writing to Policyholder within 30 days from the date of policyholder giving a notice of transfer or assignment.",
+          "page": 40
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "title": "7. In case of refusal to act upon the endorsement by the Insurer, any person aggrieved by the refusal may",
+      "level": 2,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "prefer a claim to IRDAI within 30 days of receipt of the refusal letter from the Insurer.",
+          "page": 40
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "8. The priority of claims of persons interested in an insurance policy would depend on the date on which the",
+      "level": 2,
+      "page_start": 40,
+      "page_end": 40,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "notices of assignment or transfer is delivered to the insurer; where there are more than one instruments of transfer or assignment, the priority will depend on dates of delivery of such notices. Any dispute in this regard as to priority should be referred to Authority.",
+          "page": 40
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9. Every assignment shall be deemed to be absolute assignment and the assignee shall be deemed to be absolute",
+      "level": 2,
+      "page_start": 40,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "assignee, except a. where assignment is subject to terms and conditions of assignment OR b. where the assignment is made upon condition that",
+          "page": 40
+        },
+        {
+          "number": "I",
+          "title": "the proceeds under the policy shall become payable to policyholder or nominee(s) in the event of",
+          "text": "i. the proceeds under the policy shall become payable to policyholder or nominee(s) in the event of assignee dying before the insured OR",
+          "page": 40
+        },
+        {
+          "number": "II",
+          "title": "the insured surviving the term of the policy Such conditional assignee will not be entitled to obtai",
+          "text": "ii. the insured surviving the term of the policy Such conditional assignee will not be entitled to obtain a loan on policy or surrender the policy. This provision will prevail notwithstanding any law or custom having force of law which is contrary to the above position. r)Communication and Notice: • Any communication or notice or instruction under this Policy shall be in writing and will be sent to: a)Your address as specified in Policy Schedule; b)To us, at the address specified in the Policy S...",
+          "page": 40
+        },
+        {
+          "number": "III",
+          "title": "Conditions when a claim arises",
+          "text": "iii) Conditions when a claim arises Part F: How do I Make a Claim?  What are the Terms for Claim Payment? a)Summary of Claim Procedure: • You, or someone claiming on your behalf, must inform us in writing immediately within 48 hours of diagnosis of any of the listed insured conditions / critical illnesses.  See “How Do I Notify You of a Claim?” below. • You must immediately consult a Doctor / Medical Practitioner and follow the advice and treatment that he/she recommends. • You or someone claimi...",
+          "page": 40
+        },
+        {
+          "number": "IV",
+          "title": "Conditions for renewal of the contract",
+          "text": "iv) Conditions for renewal of the contract Part G: Can I Renew this Policy after the Policy Period?",
+          "page": 42
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Renewal Terms: Policy Wordings",
+          "page": 42
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "title": "1. This Policy is ordinarily renewable unless you or anyone acting on your behalf has acted in an improper,",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "dishonest or fraudulent manner or there has been any misrepresentation under or in relation to this Policy or the renewal of the Policy poses a moral hazard.",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. We are not under any obligation to:",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "a.Send renewal notice or reminders. b.Renew your expiring policy on the same terms or premium.",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. We shall be entitled to call for any information or documentation before agreeing to renew the Policy. Your",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Policy terms may be altered based on the information received.",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. All applications for renewal of the policy must be received by us before the end of the Policy Period. A",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Grace Period of 30 days for renewing the policy is available under this policy. Any insured condition or critical illness diagnosed, or any claim incurred, during this break-in period will not be payable under this policy. Sum Insured Enhancement: Your Sum Insured can be enhanced only at the time of renewal subject to 5. Company approval.  In case of increase in sum insured, all waiting periods will apply afresh in relation to the amount by which the sum insured has been increased. In case of a ...",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "title": "6. We will not apply any additional loading on your policy premium at renewalbased on claim experience",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 43,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Any change in benefits or premium (other than due to change in Age) will be done with the approval of the Insurance Regulatory and Development Authority and will be intimated to you at least 90 days in advance. In the likelihood of this policy being withdrawn in future, we will intimate you about the revisions or modifications affected, and the changes in premium, if any, 90 days prior to expiry of the policy. Part H: What if I have an Installment Premium Policy? Revival Period • For instalment ...",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "title": "10. Floor, Tower A, Peninsula Business Park, Lower Parel, Mumbai",
+      "level": 2,
+      "page_start": 43,
+      "page_end": 48,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "• Send a letter to your nearest Liberty General Insurance branch • E-mail us at the following ID: care@libertyinsurance.in • Phone our Call Center at this Toll Free number: 1800-266-5844 (8:00 AM to 8:00 PM, 7 days of the week) Please include your Policy number when communicating with us, to help us resolve the issue more quickly. Policy Wordings Step 2 If our response or resolution does not meet your expectations, you can escalate at Manager@libertyinsurance.in Step 3 If you are still not satis...",
+          "page": 43
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "In case you are not satisfied with the decision or resolution provided by the company you may approach the Insurance Ombudsman for redressal. The details of Insurance Ombudsman offices are given below:",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Ombudsman and Contact Details Areas of Jurisdiction",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "AHMEDABAD  Gujarat, Dadra & Nagar Haveli, Office of the Insurance Ombudsman, Daman and Diu. Jeevan Prakash Building, 6th floor, Tilak Marg,",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Relief Road, Ahmedabad – 380 001. Tel.: 079 - 25501201/02/05/06 Email: bimalokpal.ahmedabad@ecoi.co.in",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "BENGALURU – Smt. Neerja Shah Karnataka. Office of the Insurance Ombudsman, Jeevan Soudha Building, PID No. 57-27-N-19, Ground Floor, 19/19, 24th Main Road, JP Nagar, Ist Phase, Bengaluru – 560 078. Tel.: 080 - 26652048 / 26652049 Email: bimalokpal.bengaluru@ecoi.co.in",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "BHOPAL – Shri Guru Saran Shrivastava Madhya Pradesh Chattisgarh. Office of the Insurance Ombudsman, Janak Vihar Complex, 2nd Floor, 6, Malviya Nagar, Policy Wordings",
+          "page": 44
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Ombudsman and Contact Details Areas of Jurisdiction",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Opp. Airtel Office,Near New Market, Bhopal – 462 003. Tel.: 0755 - 2769201 / 2769202. Fax: 0755 - 2769203 Email: bimalokpal.bhopal@ecoi.co.in",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "BHUBANESHWAR Orissa Office of the Insurance Ombudsman, 62, Forest park, Bhubneshwar – 751 009. Tel.: 0674 - 2596461 /2596455 Fax: 0674 - 2596429 Email: bimalokpal.bhubaneswar@ecoi.co.in",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "CHANDIGARH – Dr. Dinesh Kumar Verma Punjab, Haryana, Office of the Insurance Ombudsman, Himachal Pradesh, S.C.O. No. 101, 102 & 103, 2nd Floor, Batra Building, Sector Jammu & Kashmir, 17 – D, Chandigarh – 160 017. Chandigarh. Tel.: 0172 - 2706196 / 2706468 Fax: 0172 - 2708274 Email: bimalokpal.chandigarh@ecoi.co.in",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "CHENNAI – Shri. M. Vasantha Krishna Tamil Nadu, Office of the Insurance Ombudsman, Pondicherry Town and Fatima Akhtar Court, 4th Floor, 453,  Karaikal (which are part of Pondicherry). Anna Salai, Teynampet, CHENNAI – 600 018. Tel.: 044 - 24333668 / 24335284 Fax: 044 - 24333664 Email: bimalokpal.chennai@ecoi.co.in",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "DELHI Delhi. Office of the Insurance Ombudsman, 2/2 A, Universal Insurance Building, Asaf Ali Road, New Delhi – 110 002. Tel.: 011 - 2323481/23213504 Email: bimalokpal.delhi@ecoi.co.in",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "ERNAKULAM Kerala, Lakshadweep, Office of the Insurance Ombudsman, Mahe-a part of Pondicherry. 2nd Floor, Pulinat Bldg., Opp. Cochin Shipyard,",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "M. G. Road, Ernakulam - 682 015. Tel.: 0484 - 2358759 / 2359338 Policy Wordings",
+          "page": 45
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Ombudsman and Contact Details Areas of Jurisdiction",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Fax: 0484 - 2359336 Email: bimalokpal.ernakulam@ecoi.co.in",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "GUWAHATI – Shri Kiriti. B. Saha Assam, Meghalaya, Office of the Insurance Ombudsman, Manipur, Jeevan Nivesh, 5th Floor, Nr. Panbazar over bridge, Mizoram, Arunachal Pradesh, S.S. Road, Guwahati – 781001(ASSAM). Nagaland and Tripura. Tel.: 0361 - 2132204 / 2132205 Email: bimalokpal.guwahati@ecoi.co.in",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "HYDERABAD – Shri L Suresh Babu Andhra Pradesh, Office of the Insurance Ombudsman, Telangana, 6-2-46, 1st floor, \"Moin Court\", Lane Opp. Saleem Function Yanam and Palace,  A. C. Guards, Lakdi-Ka-Pool, part of Territory of Pondicherry. Hyderabad - 500 004. Tel.: 040 - 65504123 / 23312122 Fax: 040 - 23376599 Email: bimalokpal.hyderabad@ecoi.co.in",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "JAIPUR – Smt. Sandhya Baliga Rajasthan. Office of the Insurance Ombudsman, Jeevan Nidhi – II Bldg., Gr. Floor, Bhawani Singh Marg, Jaipur - 302 005. Tel.: 0141 - 2740363 Email: Bimalokpal.jaipur@ecoi.co.in",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "KOLKATA West Bengal, Office of the Insurance Ombudsman, Sikkim, Hindustan Bldg. Annexe, 4th Floor,  Andaman & Nicobar Islands. 4, C.R. Avenue, KOLKATA - 700 072. Tel.: 033 - 22124339 / 22124340 Fax : 033 - 22124341 Email: bimalokpal.kolkata@ecoi.co.in",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "LUCKNOW Districts of Uttar Pradesh : Office of the Insurance Ombudsman, Laitpur, Jhansi, Mahoba, Hamirpur, Banda, 6th Floor, Jeevan Bhawan, Phase-II, Chitrakoot, Allahabad, Mirzapur, Policy Wordings",
+          "page": 46
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Office of the Ombudsman and Contact Details Areas of Jurisdiction",
+          "page": 47
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Nawal Kishore Road, Hazratganj,  Sonbhabdra, Fatehpur, Pratapgarh, Lucknow - 226 001.  Jaunpur,Varanasi, Gazipur, Jalaun, Kanpur, Tel.: 0522 - 2231330 / 2231331 Lucknow, Unnao, Sitapur, Lakhimpur, Fax: 0522 - 2231310 Bahraich, Barabanki, Raebareli, Sravasti, Email: bimalokpal.lucknow@ecoi.co.in Gonda, Faizabad, Amethi, Kaushambi, Balrampur, Basti, Ambedkarnagar, Sultanpur, Maharajgang, Santkabirnagar, Azamgarh, Kushinagar, Gorkhpur, Deoria, Mau, Ghazipur, Chandauli, Ballia, Sidharathnagar.",
+          "page": 47
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "MUMBAI – Shri Milind A. Kharat Goa, Office of the Insurance Ombudsman, Mumbai Metropolitan Region 3rd Floor, Jeevan Seva Annexe,  excluding Navi Mumbai & Thane. S. V. Road, Santacruz (W), Mumbai - 400 054. Tel.: 022 - 26106552 / 26106960. Fax: 022 - 26106052 Email: bimalokpal.mumbai@ecoi.co.in",
+          "page": 47
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "NOIDA State of Uttaranchal and the following Office of the Insurance Ombudsman, Districts of Uttar Pradesh: Bhagwan Sahai Palace  Agra, Aligarh, Bagpat, Bareilly, Bijnor, 4th Floor, Main Road, Naya Bans, Sector 15, Budaun, Bulandshehar, Etah, Kanooj, Distt: Gautam Buddh Nagar, U.P-201301. Mainpuri, Mathura, Meerut, Moradabad, Tel.: 0120-2514250 / 2514252 / 2514253 Muzaffarnagar, Oraiyya, Pilibhit, Etawah, Email: bimalokpal.noida@ecoi.co.in  Farrukhabad, Firozbad, Gautambodhanagar, Ghaziabad, Har...",
+          "page": 47
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "PATNA Bihar, Jharkhand. Office of the Insurance Ombudsman, 1st Floor, Kalpana Arcade Building,, Bazar Samiti Road, Bahadurpur, Patna 800 006. Tel.: 0612-2680952 Email: bimalokpal.patna@ecoi.co.in Policy Wordings Office of the Ombudsman and Contact Details Areas of Jurisdiction",
+          "page": 47
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "PUNE Maharashtra, Office of the Insurance Ombudsman, Area of Navi Mumbai and Thane Jeevan Darshan Bldg., 3rd Floor, excluding Mumbai Metropolitan Region. C.T.S. No.s. 195 to 198, N.C. Kelkar Road, Narayan Peth, Pune – 411 030. Tel.: 020-41312555 Email: bimalokpal.pune@ecoi.co.in EXECUTIVE COUNCIL OF INSURERS, rd",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "3. Floor, Jeevan Seva Annexe, S. V. Road, Santacruz (W), Mumbai – 400 054",
+      "level": 2,
+      "page_start": 48,
+      "page_end": 50,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Tel: 022 – 26106889 / 671 / 980. Fax: 022 – 26106949 Email: inscoun@ecoi.co.in Shri M.M.L. Verma, Secretary General Smt Moushumi Mukherji, Secretary For updated details of Insurance Ombudsman Offices you may visit Office of the Executive Council of Insurers website at http://ecoi.co.in/ombudsman.html  or our website at https://www.libertyinsurance.in/customer-support/grievance-redressal Critical Connect: Benefit Schedule Critical Connect : Benefit Schedule General Details Minimum Age at Entry - ...",
+          "page": 48
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "10% if two or more family members are covered on Individual Sum Insured Family discount basis",
+          "page": 49
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Tenure 1/ 2/ 3 years",
+          "page": 49
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Plan A Plan B",
+          "page": 49
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "Sum Insured Sum Insured Coverage’s Description 1 lakh to 1 1 lakh to 1 crore crore",
+          "page": 49
+        },
+        {
+          "number": null,
+          "title": "",
+          "text": "The Plan has an option to choose one or more from the following four The Plan has an covers option to choose from the bundle • Heart Protect of 9 CIs, 25 CIs Pays Lump Sum amount on diagnosis • Cancer CI Claim and 43 CIs. of a CI covered in the plan Protect • RenoLiv Protect • Brain Protect The list of CIs covered in each group is as per the Benefit Schedule of each Plan Continuation of the Policy for ' Continuation for Second Unrelated CI's ' even after getting the ✓ × and Third Events  full cl...",
+          "page": 49
+        },
+        {
+          "number": "2",
+          "title": "Years 2 Years between two claims ×",
+          "text": "2 Years 2 Years between two claims × ✓ ✓",
+          "page": 50
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "title": "9 Cover 25 Cover 43 Cover",
+      "level": 1,
+      "page_start": 50,
+      "page_end": 52,
+      "clauses": [
+        {
+          "number": "1",
+          "title": "Cancer of 1.Alzheimer’s Disease 1.Alzheimer's Disease",
+          "text": "1.Cancer of 1.Alzheimer’s Disease 1.Alzheimer's Disease Specified Severity",
+          "page": 50
+        },
+        {
+          "number": "2",
+          "title": "Benign Brain Tumor 2.Apallic Syndrome",
+          "text": "2.Benign Brain Tumor 2.Apallic Syndrome",
+          "page": 50
+        },
+        {
+          "number": "2",
+          "title": "Kidney Failure",
+          "text": "2.Kidney Failure",
+          "page": 50
+        },
+        {
+          "number": "3",
+          "title": "Cancer of Specified Severity 3.Aplastic Anemia",
+          "text": "3.Cancer of Specified Severity 3.Aplastic Anemia Requiring Regular",
+          "page": 50
+        },
+        {
+          "number": "4",
+          "title": "Coma of Specified Severity 4.Bacterial Meningitis",
+          "text": "4.Coma of Specified Severity 4.Bacterial Meningitis Dialysis",
+          "page": 50
+        },
+        {
+          "number": "5",
+          "title": "Deafness  5.Benign Brain Tumor",
+          "text": "5.Deafness  5.Benign Brain Tumor",
+          "page": 50
+        },
+        {
+          "number": "3",
+          "title": "Open Chest",
+          "text": "3.Open Chest",
+          "page": 50
+        },
+        {
+          "number": "6",
+          "title": "End Stage Liver Failure 6.Blindness",
+          "text": "6.End Stage Liver Failure 6.Blindness CABG",
+          "page": 50
+        },
+        {
+          "number": "7",
+          "title": "Kidney Failure Requiring Regular 7.Brain Surgery",
+          "text": "7.Kidney Failure Requiring Regular 7.Brain Surgery",
+          "page": 50
+        },
+        {
+          "number": "4",
+          "title": "Major Organ /",
+          "text": "4.Major Organ / Dialysis",
+          "page": 50
+        },
+        {
+          "number": "8",
+          "title": "Cancer of Specified Severity",
+          "text": "8.Cancer of Specified Severity Bone Marrow",
+          "page": 50
+        },
+        {
+          "number": "8",
+          "title": "Loss of Speech",
+          "text": "8.Loss of Speech",
+          "page": 50
+        },
+        {
+          "number": "9",
+          "title": "Cardiomyopathy",
+          "text": "9.Cardiomyopathy Transplant",
+          "page": 50
+        },
+        {
+          "number": "9",
+          "title": "Major Organ / Bone Marrow",
+          "text": "9.Major Organ / Bone Marrow",
+          "page": 50
+        },
+        {
+          "number": "10",
+          "title": "Coma of Specified Severity",
+          "text": "10.Coma of Specified Severity",
+          "page": 50
+        },
+        {
+          "number": "5",
+          "title": "Multiple Sclerosis",
+          "text": "5.Multiple Sclerosis Transplant",
+          "page": 50
+        },
+        {
+          "number": "11",
+          "title": "Creutzfeldt-Jakob Disease (CJD)",
+          "text": "11.Creutzfeldt-Jakob Disease (CJD) With Persisting",
+          "page": 50
+        },
+        {
+          "number": "10",
+          "title": "Medullary Cystic Disease",
+          "text": "10.Medullary Cystic Disease Symptoms",
+          "page": 50
+        },
+        {
+          "number": "12",
+          "title": "Deafness",
+          "text": "12.Deafness",
+          "page": 50
+        },
+        {
+          "number": "11",
+          "title": "Motor Neuron Disease with",
+          "text": "11.Motor Neuron Disease with",
+          "page": 50
+        },
+        {
+          "number": "6",
+          "title": "Myocardial",
+          "text": "6.Myocardial",
+          "page": 50
+        },
+        {
+          "number": "13",
+          "title": "Encephalitis",
+          "text": "13.Encephalitis Permanent Symptoms Infraction (First",
+          "page": 50
+        },
+        {
+          "number": "14",
+          "title": "End-Stage Liver Failure",
+          "text": "14.End-Stage Liver Failure",
+          "page": 50
+        },
+        {
+          "number": "12",
+          "title": "Multiple Sclerosis with Persisting",
+          "text": "12.Multiple Sclerosis with Persisting Heart Attack of",
+          "page": 50
+        },
+        {
+          "number": "15",
+          "title": "End-Stage Lung Failure",
+          "text": "15.End-Stage Lung Failure Symptoms Specified Severity)",
+          "page": 50
+        },
+        {
+          "number": "16",
+          "title": "Fulminant Viral Hepatitis",
+          "text": "16.Fulminant Viral Hepatitis",
+          "page": 50
+        },
+        {
+          "number": "13",
+          "title": "Muscular Dystrophy",
+          "text": "13.Muscular Dystrophy",
+          "page": 50
+        },
+        {
+          "number": "7",
+          "title": "Permanent",
+          "text": "7.Permanent",
+          "page": 50
+        },
+        {
+          "number": "17",
+          "title": "Goodpasture's Syndrome",
+          "text": "17.Goodpasture's Syndrome Paralysis of Limbs",
+          "page": 50
+        },
+        {
+          "number": "18",
+          "title": "Kidney Failure Requiring Regular Dialysis",
+          "text": "18.Kidney Failure Requiring Regular Dialysis Policy Wordings",
+          "page": 50
+        },
+        {
+          "number": "8",
+          "title": "Stroke Resulting 14.Myocardial Infraction (First 19.Loss of Speech",
+          "text": "8.Stroke Resulting 14.Myocardial Infraction (First 19.Loss of Speech In Permanent Heart Attack of Specified",
+          "page": 51
+        },
+        {
+          "number": "20",
+          "title": "Loss of Limbs",
+          "text": "20.Loss of Limbs Symptoms Severity)",
+          "page": 51
+        },
+        {
+          "number": "21",
+          "title": "Major Head Trauma",
+          "text": "21.Major Head Trauma",
+          "page": 51
+        },
+        {
+          "number": "9",
+          "title": "Surgery to Aorta / 15.Open Chest CABG",
+          "text": "9.Surgery to Aorta / 15.Open Chest CABG",
+          "page": 51
+        },
+        {
+          "number": "22",
+          "title": "Major Organ / Bone Marrow Transplant",
+          "text": "22.Major Organ / Bone Marrow Transplant Aorta Graft",
+          "page": 51
+        },
+        {
+          "number": "16",
+          "title": "Open Heart Replacement or",
+          "text": "16.Open Heart Replacement or",
+          "page": 51
+        },
+        {
+          "number": "23",
+          "title": "Medullary Cystic Disease",
+          "text": "23.Medullary Cystic Disease Surgery Repair of Heart Valves",
+          "page": 51
+        },
+        {
+          "number": "24",
+          "title": "Motor Neuron Disease with Permanent",
+          "text": "24.Motor Neuron Disease with Permanent",
+          "page": 51
+        },
+        {
+          "number": "17",
+          "title": "Parkinson’s Disease",
+          "text": "17.Parkinson’s Disease Symptoms",
+          "page": 51
+        },
+        {
+          "number": "18",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "18.Permanent Paralysis of Limbs",
+          "page": 51
+        },
+        {
+          "number": "25",
+          "title": "Multiple Sclerosis with Persisting",
+          "text": "25.Multiple Sclerosis with Persisting",
+          "page": 51
+        },
+        {
+          "number": "19",
+          "title": "Pneumonectomy",
+          "text": "19.Pneumonectomy Symptoms",
+          "page": 51
+        },
+        {
+          "number": "20",
+          "title": "Primary (Idiopathic) Pulmonary",
+          "text": "20.Primary (Idiopathic) Pulmonary",
+          "page": 51
+        },
+        {
+          "number": "26",
+          "title": "Multiple System Atrophy",
+          "text": "26.Multiple System Atrophy Hypertension",
+          "page": 51
+        },
+        {
+          "number": "27",
+          "title": "Muscular Dystrophy",
+          "text": "27.Muscular Dystrophy",
+          "page": 51
+        },
+        {
+          "number": "21",
+          "title": "Pulmonary Artery Graft Surgery",
+          "text": "21.Pulmonary Artery Graft Surgery",
+          "page": 51
+        },
+        {
+          "number": "28",
+          "title": "Myocardial Infarction (First Heart Attack",
+          "text": "28.Myocardial Infarction (First Heart Attack",
+          "page": 51
+        },
+        {
+          "number": "22",
+          "title": "Stroke Resulting In Permanent",
+          "text": "22.Stroke Resulting In Permanent of Specified Severity) Symptoms",
+          "page": 51
+        },
+        {
+          "number": "29",
+          "title": "Open Chest CABG / Coronary Artery",
+          "text": "29.Open Chest CABG / Coronary Artery",
+          "page": 51
+        },
+        {
+          "number": "23",
+          "title": "Surgery to Aorta / Aorta Graft",
+          "text": "23.Surgery to Aorta / Aorta Graft Bypass Surgery Surgery",
+          "page": 51
+        },
+        {
+          "number": "30",
+          "title": "Open Heart Replacement or Repair of",
+          "text": "30.Open Heart Replacement or Repair of",
+          "page": 51
+        },
+        {
+          "number": "24",
+          "title": "Systemic Lupus Erythematosus",
+          "text": "24.Systemic Lupus Erythematosus Heart Valves",
+          "page": 51
+        },
+        {
+          "number": "25",
+          "title": "Third-Degree Burns (Major",
+          "text": "25.Third-Degree Burns (Major",
+          "page": 51
+        },
+        {
+          "number": "31",
+          "title": "Parkinson’s Disease",
+          "text": "31.Parkinson’s Disease Burns)",
+          "page": 51
+        },
+        {
+          "number": "32",
+          "title": "Permanent Paralysis of Limbs",
+          "text": "32.Permanent Paralysis of Limbs",
+          "page": 51
+        },
+        {
+          "number": "33",
+          "title": "Pneumonectomy",
+          "text": "33.Pneumonectomy",
+          "page": 51
+        },
+        {
+          "number": "34",
+          "title": "Primary (Idiopathic) Pulmonary",
+          "text": "34.Primary (Idiopathic) Pulmonary Hypertension",
+          "page": 51
+        },
+        {
+          "number": "35",
+          "title": "Progressive Supranuclear Palsy",
+          "text": "35.Progressive Supranuclear Palsy",
+          "page": 51
+        },
+        {
+          "number": "36",
+          "title": "Progressive Scleroderma",
+          "text": "36.Progressive Scleroderma",
+          "page": 51
+        },
+        {
+          "number": "37",
+          "title": "Pulmonary Artery Graft Surgery",
+          "text": "37.Pulmonary Artery Graft Surgery",
+          "page": 51
+        },
+        {
+          "number": "38",
+          "title": "Pulmonary-Renal Syndrome",
+          "text": "38.Pulmonary-Renal Syndrome",
+          "page": 51
+        },
+        {
+          "number": "39",
+          "title": "Severe Rheumatoid Arthritis",
+          "text": "39.Severe Rheumatoid Arthritis",
+          "page": 51
+        },
+        {
+          "number": "40",
+          "title": "Stroke Resulting In Permanent Symptoms",
+          "text": "40.Stroke Resulting In Permanent Symptoms",
+          "page": 51
+        },
+        {
+          "number": "41",
+          "title": "Surgery to Aorta / Aorta Graft Surgery",
+          "text": "41.Surgery to Aorta / Aorta Graft Surgery",
+          "page": 51
+        },
+        {
+          "number": "42",
+          "title": "Systemic Lupus Erythematosus",
+          "text": "42.Systemic Lupus Erythematosus",
+          "page": 51
+        },
+        {
+          "number": "43",
+          "title": "Third-Degree Burns (Major Burns)",
+          "text": "43.Third-Degree Burns (Major Burns) Benefit Schedule for Plan B: Disease-Specific Bundles (Sum Insured amounts: 1 lac, 2, 3, 4, 5, 7.5, 10, 15, 20, 25, 30, 40, 50, or 75 lacs, 1 crore) Heart Protect Cancer Protect RenoLiv Protect Brain Protect Major Conditions: Major Conditions: Major Conditions: Major Conditions:",
+          "page": 51
+        },
+        {
+          "number": "1",
+          "title": "Cardiomyopathy 1.Cancer of 1.End-Stage Liver 1.Apallic Syndrome",
+          "text": "1.Cardiomyopathy 1.Cancer of 1.End-Stage Liver 1.Apallic Syndrome Specified failure",
+          "page": 51
+        },
+        {
+          "number": "2",
+          "title": "Heart Transplant 2.Bacterial Meningitis",
+          "text": "2.Heart Transplant 2.Bacterial Meningitis Severity",
+          "page": 51
+        },
+        {
+          "number": "3",
+          "title": "Open Chest CABG 3.Benign Brain Tumor",
+          "text": "3.Open Chest CABG 3.Benign Brain Tumor",
+          "page": 51
+        },
+        {
+          "number": "4",
+          "title": "Brain Surgery",
+          "text": "4.Brain Surgery Policy Wordings",
+          "page": 51
+        },
+        {
+          "number": "4",
+          "title": "Open Heart 2.Kidney Failure 5.Coma of Specified",
+          "text": "4.Open Heart 2.Kidney Failure 5.Coma of Specified Replacement or Requiring Severity Repair of Heart Regular Dialysis",
+          "page": 52
+        },
+        {
+          "number": "6",
+          "title": "Creutzfeldt-Jakob disease",
+          "text": "6.Creutzfeldt-Jakob disease Valves",
+          "page": 52
+        },
+        {
+          "number": "3",
+          "title": "Kidney (CJD)",
+          "text": "3.Kidney (CJD)",
+          "page": 52
+        },
+        {
+          "number": "5",
+          "title": "Myocardial Infraction Transplant",
+          "text": "5.Myocardial Infraction Transplant",
+          "page": 52
+        },
+        {
+          "number": "7",
+          "title": "Encephalitis",
+          "text": "7.Encephalitis (First Heart Attack of",
+          "page": 52
+        },
+        {
+          "number": "4",
+          "title": "Liver Transplant",
+          "text": "4.Liver Transplant",
+          "page": 52
+        },
+        {
+          "number": "8",
+          "title": "Stroke Resulting In",
+          "text": "8.Stroke Resulting In Specified Severity)",
+          "page": 52
+        },
+        {
+          "number": "5",
+          "title": "Medullary Cystic Permanent Symptoms",
+          "text": "5.Medullary Cystic Permanent Symptoms",
+          "page": 52
+        },
+        {
+          "number": "6",
+          "title": "Primary (Idiopathic)",
+          "text": "6.Primary (Idiopathic) Disease",
+          "page": 52
+        },
+        {
+          "number": "9",
+          "title": "Motor Neuron Disease",
+          "text": "9.Motor Neuron Disease Pulmonary",
+          "page": 52
+        },
+        {
+          "number": "6",
+          "title": "Pulmonary-Renal With Permanent",
+          "text": "6.Pulmonary-Renal With Permanent Hypertension Syndrome Symptoms",
+          "page": 52
+        },
+        {
+          "number": "7",
+          "title": "Pulmonary Artery",
+          "text": "7.Pulmonary Artery",
+          "page": 52
+        },
+        {
+          "number": "10",
+          "title": "Multiple Sclerosis With",
+          "text": "10.Multiple Sclerosis With Graft Surgery Persisting Symptoms",
+          "page": 52
+        },
+        {
+          "number": "8",
+          "title": "Surgery to Aorta /",
+          "text": "8.Surgery to Aorta /",
+          "page": 52
+        },
+        {
+          "number": "11",
+          "title": "Progressive Supranuclear",
+          "text": "11.Progressive Supranuclear Aorta Graft Surgery Palsy",
+          "page": 52
+        },
+        {
+          "number": "12",
+          "title": "Permanent Paralysis of",
+          "text": "12.Permanent Paralysis of Limbs Minor Conditions: Minor Conditions:",
+          "page": 52
+        },
+        {
+          "number": "9",
+          "title": "Angioplasty  2.Early-Stage",
+          "text": "9.Angioplasty  2.Early-Stage Cancers",
+          "page": 52
+        },
+        {
+          "number": "10",
+          "title": "Balloon Valvotomy",
+          "text": "10.Balloon Valvotomy or Valvuloplasty 3.Carcinoma in- Situ",
+          "page": 52
+        },
+        {
+          "number": "11",
+          "title": "Carotid Artery",
+          "text": "11.Carotid Artery Surgery",
+          "page": 52
+        },
+        {
+          "number": "12",
+          "title": "Implantable",
+          "text": "12.Implantable Cardioverter Defibrillator",
+          "page": 52
+        },
+        {
+          "number": "13",
+          "title": "Implantation of",
+          "text": "13.Implantation of Pacemaker of Heart",
+          "page": 52
+        },
+        {
+          "number": "14",
+          "title": "Infective",
+          "text": "14.Infective Endocarditis",
+          "page": 52
+        },
+        {
+          "number": "15",
+          "title": "Minimally Invasive",
+          "text": "15.Minimally Invasive Surgery of Aorta",
+          "page": 52
+        },
+        {
+          "number": "16",
+          "title": "Pericardiectomy",
+          "text": "16.Pericardiectomy",
+          "page": 52
+        },
+        {
+          "number": "17",
+          "title": "Pulmonary",
+          "text": "17.Pulmonary Thromboembolism",
+          "page": 52
+        },
+        {
+          "number": "18",
+          "title": "Surgery for Cardiac",
+          "text": "18.Surgery for Cardiac Arrhythmia",
+          "page": 52
+        },
+        {
+          "number": "19",
+          "title": "Surgery to Place",
+          "text": "19.Surgery to Place Ventricular Assist Devices or Total Artificial Hearts",
+          "page": 52
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "4. Years",
+      "level": 2,
+      "page_start": 50,
+      "page_end": 50,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "HIV/AIDS ✓ ✓",
+          "page": 50
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "title": "2. Years between two claims",
+      "level": 2,
+      "page_start": 50,
+      "page_end": 50,
+      "clauses": [
+        {
+          "number": null,
+          "title": "",
+          "text": "Benefit Schedule for Plan A: Critical Illness Bundles (Sum Insured amounts: 1 lac, 2, 3, 4, 5, 7.5, 10, 15, 20, 25, 30, 40, 50, or 75 lacs, 1 crore)",
+          "page": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1140,7 +1140,11 @@ Not allowed: field missing with no reason
 
 ### Commands
 ```bash
-python scripts/quality_report.py --layer export
+PYTHONPATH=. .venv/bin/python scripts/eval_export.py \
+  --db data/engine.sqlite \
+  --export-root data/export \
+  --gold-corpus gold_corpus \
+  --output runs/evals/2026-06-05-export-dse023-final.json
 ```
 
 ### Output Artifacts
@@ -1149,7 +1153,27 @@ runs/evals/<date>-export-<version>.json
 ```
 
 ### Current Status
-planned
+active — DSE-023 final PASS
+
+### Current Result
+
+Artifact: `runs/evals/2026-06-05-export-dse023-final.json`
+
+```text
+policies_exported: 20
+concepts_missing_fields: 0
+schema_validation_errors: 0
+present_missing_evidence: 0
+not_found_with_value: 0
+invalid_fact_status_count: 0
+span_ids_missing_from_db: 0
+gold_status_accuracy: 97.8%
+gold_value_accuracy: 98.2%
+false_present: 0
+derived_policy_features_count: 20
+present_missing_evidence_clause: 0
+cross_file_page_disagreement: 0
+```
 
 ---
 

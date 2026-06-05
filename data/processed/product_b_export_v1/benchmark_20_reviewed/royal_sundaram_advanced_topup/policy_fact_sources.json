@@ -1,0 +1,808 @@
+{
+  "policy_id": "royal_sundaram_advanced_topup",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "clause_0164",
+          "clause_title": "",
+          "evidence_text_snippet": "expenses incurred for inpatient care treatment under Ayurveda, Yoga and Naturopathy, Unani, Siddha and Homeopathy system of medicines during each Policy Year up to sum insured in any AYUSH Hospital. Ambulance Cover including App-based Cab cover We wi",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "clause_0377",
+          "clause_title": "",
+          "evidence_text_snippet": "WITH NO DETAILS MENTIONED [DELIVERY KIT, 58 ORTHOKIT, RECOVERY KIT, ETC] KIDNEY TRAY 59 MASK 60 OUNCE GLASS 61 OXYGEN MASK 62 PELVIC TRACTION BELT 63 PAN CAN 64 TROLLY COVER 65 UROMETER, URINE JUG 66 AMBULANCE 67 VASOFIX SAFETY 68 List II — Items tha",
+          "page": 36,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "clause_0376",
+          "clause_title": "",
+          "evidence_text_snippet": "ETER 41 CERVICAL COLLAR 42 SPLINT 43 DIABETIC FOOT WEAR 44 KNEE BRACES (LONG/ SHORT/ HINGED) 45 KNEE IMMOBILIZER/SHOULDER IMMOBILIZER 46 LUMBO SACRAL BELT 47 NIMBUS BED OR WATER OR AIR BED CHARGES 48 AMBULANCE COLLAR 49 AMBULANCE EQUIPMENT 50 ABDOMIN",
+          "page": 35,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0000"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0004",
+          "clause_number": "clause_0164",
+          "clause_title": "",
+          "evidence_text_snippet": "13. UIN- RSAHLIP23029V012223 If a claim has been accepted under this Benefit, the claims for Pre and Post-hospitalization Medical Expenses are payable up to 60 days and 90 days respectively under this benefit. AYUSH Treatment The Company shall indemn",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0005",
+          "clause_number": "clause_0268",
+          "clause_title": "",
+          "evidence_text_snippet": "15. Avascular necrosis Any Alternative Treatment except for the benefits under Section D.8 (AYUSH Treatment) E.2.2Circumcision",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0003",
+          "clause_title": "",
+          "evidence_text_snippet": "Part II- Policy Document Standard Definitions C.1.1Accident means a sudden, unforeseen and involuntary event caused by external, visible and violent means. C.1.2An AYUSH Hospital is a health care facility wherein medical",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "clause_0008",
+          "clause_title": "",
+          "evidence_text_snippet": "1. UIN- RSAHLIP23029V012223 C.1.3 AYUSH Day Care Centre means and includes Community Health Care (CHC), Primary Health Centre (PHC), Dispensary, Clinic, Polyclinic or any such health centre which is registered with the l",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "clause_0126",
+          "clause_title": "",
+          "evidence_text_snippet": "8. UIN- RSAHLIP23029V012223 C.1.21 Intensive Care Unit means an identified section, ward or wing of a hospital which is under the constant supervision of a dedicated medical practitioner(s), and which is specially equipp",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0003",
+          "clause_number": "clause_0143",
+          "clause_title": "",
+          "evidence_text_snippet": "10. UIN- RSAHLIP23029V012223 C.2.1 Accidental means sudden, unforeseen and involuntary event caused by external, visible and violent means. C.2.2 Alternative Treatments are forms of treatments other than treatment \"Allop",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0004"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "IV",
+          "clause_title": "Notice and instructions will be deemed served 10 days after posting or immediately",
+          "evidence_text_snippet": "bursement both Claims will be settled through TPA. The Claims Procedure is as follows: G.1.1For admission in Network Hospital (Cashless Claims) Insured Person shall call the TPA helpline and furnish Membership Number, Policy Number and the Name of the Patient within 72 hours before admission to hosp",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_intimation_timeline_0001",
+          "clause_number": "clause_0339",
+          "clause_title": "",
+          "evidence_text_snippet": "ms) Notice of claim: Preliminary notice of claim with particulars relating to Policy number, Name  of the Insured Person in respect of whom claim is made, nature of illness/injury and name and address of the attending hospital, should be given to the Insurer within 72 hours before admission in case",
+          "page": 32,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_hours",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "The Company shall settle or reject a claim, as the case may be, within 30 days from the",
+          "evidence_text_snippet": "23. UIN- RSAHLIP23029V012223 i.The Company shall settle or reject a claim, as the case may be, within 30 days from the",
+          "page": 23,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "III",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation in the opinion of",
+          "evidence_text_snippet": "an investigation in the opinion of the Company, it shall initiate and complete such investigation at the earliest in any case not later than 30 days from the date of receipt of last necessary document. In such cases, the Company shall settle the claim within 45 days from the date of receipt of last ",
+          "page": 25,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "deductible": {
+      "provenance": [
+        {
+          "candidate_id": "deductible_0000",
+          "clause_number": "clause_0001",
+          "clause_title": "",
+          "evidence_text_snippet": "Part II- Policy Document If any claim arising as a result of an Illness or Injury that occurred during the Policy Period becomes payable, then we shall pay the benefits in accordance with terms, conditions and exclusions of the Policy over and above the deductible amount subject to availability of S",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "deductible",
+          "pattern_id": "deductible_schedule_dependent",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "deductible_0001",
+          "clause_number": "II",
+          "clause_title": "Which would have otherwise required a hospitalization of more than",
+          "evidence_text_snippet": "6. UIN- RSAHLIP23029V012223 ii. Which would have otherwise required a hospitalization of more than twenty-four hours. Treatment normally taken on an out-patient basis is not included in the scope of this definition. C.1.10Deductible: Deductible means a cost sharing requirement under a health insuran",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "deductible",
+          "pattern_id": "deductible_schedule_dependent",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "deductible_0002",
+          "clause_number": "clause_0148",
+          "clause_title": "",
+          "evidence_text_snippet": "11. UIN- RSAHLIP23029V012223 D Benefits Covered Under the Policy The Policy covers Reasonable and Customary Charges incurred towards medical treatment taken during the Policy Period for an Illness, Accident or condition described below if this is contracted or sustained by an Insured Person during t",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "deductible",
+          "pattern_id": "deductible_schedule_dependent",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "deductible_0000"
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0001",
+          "clause_number": "clause_0308",
+          "clause_title": "",
+          "evidence_text_snippet": "27. UIN- RSAHLIP23029V012223 The insured shall be allowed a period of fifteen days from date of receipt of the Policy to review the terms and conditions of the Policy, and to return the same if not acceptable.",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0307",
+          "clause_title": "",
+          "evidence_text_snippet": "Policy Including the Premium Rates The Company, with prior approval of IRDAI, may revise or modify the terms of the policy including the premium rates. The insured person shall be notified three months before the changes are affected. F.1.14Free look period The Free Look Period shall be applicable a",
+          "page": 28,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_non_primary_duration",
+          "candidate_score": 0.7,
+          "confidence": 0.55,
+          "accepted": false,
+          "rejection_reason": "free_look_primary_15_days_not_found",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0001"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "III",
+          "clause_title": "At the end of the Policy Period, the policy shall terminate and can be",
+          "evidence_text_snippet": "26. UIN- RSAHLIP23029V012223 iii. At the end of the Policy Period, the policy shall terminate and can be renewed with in the Grace Period of 30 days to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period.",
+          "page": 26,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "III",
+          "clause_title": "The premium payable on renewal shall be paid to Us on or before the Policy Period",
+          "evidence_text_snippet": "all be paid to Us on or before the Policy Period End Date and in any event before the expiry of the Grace Period. For the purpose of this provision, Grace Period means a period of 30 days in case of annual payments immediately following the Policy Period End Date during which a payment can be made t",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "II",
+          "clause_title": "Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses.",
+          "evidence_text_snippet": "11. UIN- RSAHLIP23029V012223 ii.Intensive Care Unit (ICU) / Intensive Cardiac Care Unit (ICCU) expenses.",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "I",
+          "clause_title": "Expenses related to the treatment of any illness within 30 days from the first",
+          "evidence_text_snippet": "16. UIN- RSAHLIP23029V012223 i. Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an Accident, provided the same are covered.",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "modern_treatment_coverage_0000",
+          "clause_number": "clause_0154",
+          "clause_title": "",
+          "evidence_text_snippet": "12. UIN- RSAHLIP23029V012223 Modern Treatments The following procedures will be covered (whichever medically indicated) either as in patient or as part of day care treatment in a hospital up to Sum Insured as specified in the policy schedule, during the policy period: A.Uterine Artery Embolization a",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "modern_treatment_coverage_0001",
+          "clause_number": "I",
+          "clause_title": "Bronchical Thermoplastic",
+          "evidence_text_snippet": "12. UIN- RSAHLIP23029V012223 I.Bronchical Thermoplastic J. Vaporisation of the prostrate (Green laser treatment or holmium laser treatment) K.IONM - (Intra Operative Neuro Monitoring) L. Stem cell therapy: Hematopoietic stem cells for bone marrow transplant for haematological conditions to be covere",
+          "page": 13,
+          "extraction_method": "deterministic",
+          "extractor_name": "modern_treatment_coverage",
+          "pattern_id": "modern_treatment_coverage_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "modern_treatment_coverage_0000"
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "organ_donor_coverage_0000",
+          "clause_number": "clause_0159",
+          "clause_title": "",
+          "evidence_text_snippet": "12. UIN- RSAHLIP23029V012223 Organ Donor Expenses We will cover Inpatient Care Medical Expenses towards the donor for the harvesting of the organ donated provided that: (a)the organ donor is any person in accordance with the Transplantation of Human",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "organ_donor_coverage_0001",
+          "clause_number": "clause_0160",
+          "clause_title": "",
+          "evidence_text_snippet": "13. UIN- RSAHLIP23029V012223 (b)the organ donated is for the use of the Insured Person who has been asked to undergo an organ transplantation on Medical Advice; (c)We have admitted a claim under Section D.1 towards Inpatient Care. Organ donor expense",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "organ_donor_coverage_0000"
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "clause_0215",
+          "clause_title": "",
+          "evidence_text_snippet": "16. UIN- RSAHLIP23029V012223 E.1.1 Pre-Existing Diseases (Code- Excl01) a)Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b)I",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "clause_0215",
+          "clause_title": "",
+          "evidence_text_snippet": "16. UIN- RSAHLIP23029V012223 E.1.1 Pre-Existing Diseases (Code- Excl01) a)Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 36 months of continuous coverage after the date of inception of the first policy with us. b)I",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "clause_0215",
+          "clause_title": "",
+          "evidence_text_snippet": "without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the policy after the expiry of 36 months for any pre-existing disease is subject to the sam",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0006",
+          "clause_number": "clause_0215",
+          "clause_title": "",
+          "evidence_text_snippet": "without any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the policy after the expiry of 36 months for any pre-existing disease is subject to the sam",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0007",
+          "clause_number": "clause_0324",
+          "clause_title": "",
+          "evidence_text_snippet": "sement signed and stamped by Us. No one except Us can change or vary this Policy. F.2.2In case of non-disclosure of a condition which is other than list of Permanent exclusions, we can incorporate additional waiting period of not exceeding 36 months for the said undisclosed disease or condition from",
+          "page": 29,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "clause_0126",
+          "clause_title": "",
+          "evidence_text_snippet": "8. UIN- RSAHLIP23029V012223 C.1.21 Intensive Care Unit means an identified section, ward or wing of a hospital which is under the constant supervision of a dedicated medical practitioner(s), and which is specially equipp",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "clause_0134",
+          "clause_title": "",
+          "evidence_text_snippet": "8. UIN- RSAHLIP23029V012223 C.1.31 Out-Patient (OPD) Treatment means treatment in which the insured visits a clinic/ hospital or associated facility like a consultation room for diagnosis and treatment based on the advic",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "II",
+          "clause_title": "The In-patient Hospitalization claim for such Hospitalization is admissible by the Insurance",
+          "evidence_text_snippet": "9. UIN- RSAHLIP23029V012223 ii. The In-patient Hospitalization claim for such Hospitalization is admissible by the Insurance Company. C.1.35 Portability Portability means the right accorded to an individual health insura",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0003"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "clause_0140",
+          "clause_title": "",
+          "evidence_text_snippet": "9. UIN- RSAHLIP23029V012223 C.1.37 Reasonable and Customary Charges Reasonable and Customary charges mean the charges for services or supplies, which are the standard charges for the specific provider and consistent with the prevailing charges in the geographical area for identical or similar servic",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0297",
+          "clause_title": "",
+          "evidence_text_snippet": "26. UIN- RSAHLIP23029V012223 https://www.royalsundaram.in/html/files/Modification-guidelines-on-standardization-in-health- insurance-Portability.pdf F.1.10Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, moral hazard, misrepresentation by the insured person. The",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "I",
+          "clause_title": "Renewal shall not be denied on the ground that the insured had made a claim",
+          "evidence_text_snippet": "26. UIN- RSAHLIP23029V012223 i.Renewal shall not be denied on the ground that the insured had made a claim or claims in the preceding policy years.",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "III",
+          "clause_title": "At the end of the Policy Period, the policy shall terminate and can be",
+          "evidence_text_snippet": "26. UIN- RSAHLIP23029V012223 iii. At the end of the Policy Period, the policy shall terminate and can be renewed with in the Grace Period of 30 days to maintain continuity of benefits without Break in Policy. Coverage is not available during the grace period.",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "clause_0324",
+          "clause_title": "",
+          "evidence_text_snippet": "28. UIN- RSAHLIP23029V012223 F.2.1 Alteration to the Policy This Policy constitutes the complete contract of insurance. No change or alteration will be effective or valid unless approved in writing which will be evidenced by a written endorsement signed and stamped by Us. No one except Us can change",
+          "page": 29,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "I",
+          "clause_title": "This Policy will automatically terminate at the end of the Policy Period. This Policy",
+          "evidence_text_snippet": "29. UIN- RSAHLIP23029V012223 i.This Policy will automatically terminate at the end of the Policy Period. This Policy is ordinarily renewable on mutual consent for life, subject to application of Renewal and realization of Renewal premium. All Renewal application should reach Us on or before the Poli",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0006",
+          "clause_number": "III",
+          "clause_title": "The premium payable on renewal shall be paid to Us on or before the Policy Period",
+          "evidence_text_snippet": "29. UIN- RSAHLIP23029V012223 iii.The premium payable on renewal shall be paid to Us on or before the Policy Period End Date and in any event before the expiry of the Grace Period. For the purpose of this provision, Grace Period means a period of 30 days in case of annual payments immediately followi",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0007",
+          "clause_number": "IV",
+          "clause_title": "Renewal of the Policy will not ordinarily be denied other than on grounds of moral",
+          "evidence_text_snippet": "29. UIN- RSAHLIP23029V012223 iv.Renewal of the Policy will not ordinarily be denied other than on grounds of moral",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0008",
+          "clause_number": "clause_0332",
+          "clause_title": "",
+          "evidence_text_snippet": "30. UIN- RSAHLIP23029V012223 members, addition/deletion of Medical Conditions, request at the time of Renewal of the Policy. Any request for acceptance of changes on renewal will be subject to underwriting. The terms and conditions of the existing Policy will not be altered.",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0009",
+          "clause_number": "VI",
+          "clause_title": "This product may be withdrawn by Us after due approval from the IRDAI. In case this",
+          "evidence_text_snippet": "30. UIN- RSAHLIP23029V012223 vi. This product may be withdrawn by Us after due approval from the IRDAI. In case this product is withdrawn by Us, this Policy can be renewed under the then prevailing Health Insurance Product or its nearest substitute approved by IRDAI. We shall duly intimate You regar",
+          "page": 31,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "I",
+          "clause_title": "Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home.",
+          "evidence_text_snippet": "11. UIN- RSAHLIP23029V012223 i. Room Rent, Boarding, Nursing Expenses as provided by the Hospital / Nursing Home.",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0001",
+          "clause_number": "clause_0219",
+          "clause_title": "",
+          "evidence_text_snippet": "16. UIN- RSAHLIP23029V012223 E.1.3 Specific Waiting Period: (Code- Excl02) a)Expenses related to the treatment of the following listed conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage, as may be the case after the date of inception of the first ",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_single",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "clause_0147",
+          "clause_title": "",
+          "evidence_text_snippet": "Summary Sheet and the policy wording (including endorsements, if any). C.2.14 Policy Period means the period between the date of commencement and the expiry date specified shown in the Schedule of Insurance Certificate. C.2.15 Policy Year means the period of one year commencing on the date of commen",
+          "page": 12,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_single",
+          "candidate_score": 0.96,
+          "confidence": 0.92,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0001"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

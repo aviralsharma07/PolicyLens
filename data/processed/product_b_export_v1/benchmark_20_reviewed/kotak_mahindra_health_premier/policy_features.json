@@ -1,0 +1,365 @@
+{
+  "policy_id": "kotak_mahindra_health_premier",
+  "export_schema_version": "1.0",
+  "exported_at": "2026-06-05T05:08:20Z",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "source_document": {
+    "filename": "Kotak_Kotak_Health_premier.pdf",
+    "file_hash": "sha256:379faa65753362564ba581b74986ebede7edeb6ed5486e84e1623cc581473154",
+    "source_domain": "policy_wording",
+    "page_count": 60
+  },
+  "product_identity": {
+    "insurer": "Kotak Mahindra",
+    "plan_name": "Kotak Health premier",
+    "display_name": "Kotak Mahindra Kotak Health premier",
+    "uin": "KOTHLIP21065V032021",
+    "uin_base": "KOTHLIP21065",
+    "product_version": 3,
+    "effective_date": "07-03-2020",
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
+  },
+  "features": {
+    "ambulance_coverage": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.4 Ambulance Cover We will indemnify the amount incurred up to the limit specified in the Policy Schedule for the reasonable expenses incurred by You on availing ambula",
+      "evidence_page": 7,
+      "evidence_clause": "2.4",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_ambulance_coverage_0005_evidence"
+    },
+    "ayush_coverage": {
+      "value": {
+        "covered": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.6 Alternative Treatment We will indemnify the Medical Expenses incurred on the Insured Person’s Alternative Treatment",
+      "evidence_page": 8,
+      "evidence_clause": "2.6",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_ayush_coverage_0003_evidence"
+    },
+    "claim_intimation_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "Gen. AK Vaidya Marg, Dindoshi, Malad (E), (d) Notwithstanding any provision to the contrary in the Policy, this Cover will be applicable on a worldwide basis; (e) In the event of a Claim arising under this Cover, We shall be given written notice of the Claim within 30 days from the date of the first diagnosis of the Critical Illness and We shall be provided the following information and documentation: (i) The Claim documents stated in the Policy, provided that We will accept duly certified copies of the listed documents if the",
+      "evidence_page": 18,
+      "evidence_clause": "clause_0562",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_claim_intimation_timeline_0000_evidence"
+    },
+    "claim_settlement_days": {
+      "value": {
+        "days": 30
+      },
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "7. CLAIM SETTLEMENT (Provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+      "evidence_page": 35,
+      "evidence_clause": "I",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_claim_settlement_timeline_0000_evidence"
+    },
+    "copay_percentage": {
+      "value": {
+        "percentage": 10
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "evidence": "one In case of treatment taken in a city, in a Zone higher than the eligible Zone for the Insured Person, the Co- payment percentages as below shall apply: Applicable Zone Treatment Taken at Co-payment applicable Zone I 10% Zone II Zone I 20% Zone III Zone II 10% Zone III Kotak Health Premier UIN: KOTHLIP21065V032021 Page 37 of 60",
+      "evidence_page": 37,
+      "evidence_clause": "clause_0844",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_co_pay_0001_evidence"
+    },
+    "cumulative_bonus_ncb": {
+      "value": {
+        "schedule_dependent": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.9,
+      "method": "deterministic",
+      "evidence": "2. WHAT WE WILL PAY (COVERS AVAILABLE UNDER THE POLICY) The Covers available under this Policy are described below. Covers will be available to the Insured Person, only if that particular cover is specifically mentioned in the Policy Schedule as per the Plan opted by You, subject to (a) availability",
+      "evidence_page": 7,
+      "evidence_clause": "clause_0509",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_cumulative_bonus_ncb_0000_evidence"
+    },
+    "deductible": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "free_look_days": {
+      "value": 15,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "d shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and to return the same if not acceptable. If the insured has not made any claim during the Free",
+      "evidence_page": 38,
+      "evidence_clause": "clause_0847",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_free_look_period_0000_evidence"
+    },
+    "grace_period_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "17. Migration iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of atleast 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. Kotak Health Premier UIN: KOTHLIP21065V032021 Page 39 of 60",
+      "evidence_page": 39,
+      "evidence_clause": "IV",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_grace_period_0000_evidence"
+    },
+    "icu_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "2. WHAT WE WILL PAY (COVERS AVAILABLE UNDER THE POLICY) ii. ICU Charges",
+      "evidence_page": 7,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_icu_limit_0000_evidence"
+    },
+    "initial_waiting_days": {
+      "value": 30,
+      "unit": "days",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "coverage. d) Coverage under the policy after the expiry of 48 / 36/ 24 months (as mentioned in the Policy Schedule) for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer. 3.2 30 Day Waiting Period (Code – Excl03) a) Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be excluded except claims arising due to an accident, provided the same are covered. b) This ex",
+      "evidence_page": 20,
+      "evidence_clause": "3.1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_initial_waiting_period_0000_evidence"
+    },
+    "maternity_waiting_months": {
+      "value": 36,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.19 Maternity Benefit We will indemnify the Medical Expenses incurred up to the Maternity Benefit Sum Insured specified in the Policy Schedule for the delivery of the Insured Person’s child (including cesarean section) or the Medically Necessary and lawful medical termination of pregnancy during the Policy Period provided that: (a) The treatment is taken as an In-patient in a Hospital; (b) The cover shall be available to the Insured Person who has been continuously covered for at",
+      "evidence_page": 16,
+      "evidence_clause": "2.19",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_maternity_waiting_0000_evidence"
+    },
+    "modern_treatment_coverage": {
+      "value": null,
+      "unit": null,
+      "fact_status": "not_found",
+      "confidence": null,
+      "method": null,
+      "evidence": null,
+      "evidence_page": null,
+      "evidence_clause": null,
+      "scope": null,
+      "condition": null,
+      "source_span_id": null
+    },
+    "newborn_coverage": {
+      "value": {
+        "coverage_status": "conditional"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "Persons in the expiring Policy are covered on a floater basis and such Insured Persons renew their expiring Policy with Us into two or more floater/individual policies then the Cumulative Bonus of the expiring Policy shall be apportioned to such Renewed Policies in the proportion of the Base Sum Insured of each Renewed Policy. (g) Any earned Cumulative Bonus shall not be available for claims under Maternity Benefit, New Born Baby Cover, Vaccination Expenses, Critical Illness Cover and Personal Accident Cover. (h) The Cumulative Bonus is provisional and is subject to revision if a Claim is made after the acceptance of renewal premium in respect of the expiring Policy Year. . Such awarded Cumulative Bonus shall be withdrawn only in respect of the expiring year in which the Claim was admitted. Cumulative Bonus will be provided if any Claim made un",
+      "evidence_page": 10,
+      "evidence_clause": "2.10",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_newborn_coverage_0000_evidence"
+    },
+    "organ_donor_coverage": {
+      "value": {
+        "covered": true,
+        "scope": "organ_donor_expenses"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.95,
+      "method": "deterministic",
+      "evidence": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.5 Organ Donor Cover We will indemnify the In-patient Hospitalisation Medical Expenses towards the donor for harvestin",
+      "evidence_page": 8,
+      "evidence_clause": "2.5",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_organ_donor_coverage_0000_evidence"
+    },
+    "ped_waiting_months": {
+      "value": 24,
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.98,
+      "method": "deterministic",
+      "evidence": "k, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.1 Pre-Existing Diseases (Code – Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48/ 36/ 24 months (as mentioned in the Policy Schedule) of continuous coverage after the date of inception of the first policy with insurer. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum insured increase. c)",
+      "evidence_page": 20,
+      "evidence_clause": "3.1",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_ped_waiting_period_0004_evidence"
+    },
+    "renewability": {
+      "value": {
+        "renewable": true
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": "1. DEFINITIONS ii. The inpatient hospitalization claim for such hospitalization is admissible by the Insurance Company. means a person who holds a valid registration from the Nursing Council of Qualified Nurse India or the Nursing Council of any state in India means the charges for services or suppl",
+      "evidence_page": 1,
+      "evidence_clause": "II",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_renewability_0000_evidence"
+    },
+    "restoration_benefit": {
+      "value": {
+        "coverage_status": "covered",
+        "percentage": 100
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.97,
+      "method": "deterministic",
+      "evidence": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.9 Restoration Benefit We will provide a 100% restoration of the Base Sum Insured amount once in a Policy Year if the Base Sum Insured and the Cumulative Bonus (if any) is insufficient as a result of previous Claims in that Policy Year, provided that: (a) The restored sum insured will not be available in respect of any Illness (including its complications) for which a Clai",
+      "evidence_page": 9,
+      "evidence_clause": "2.9",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_restoration_benefit_0000_evidence"
+    },
+    "room_rent_limit": {
+      "value": {
+        "schedule_dependent": true,
+        "basis": "policy_schedule"
+      },
+      "unit": null,
+      "fact_status": "present",
+      "confidence": 0.93,
+      "method": "deterministic",
+      "evidence": "ambulance service provider Ambulance and equipped for the transport and paramedical treatment of the person requiring medical attention means continuous period of illness and includes relapse within 45 days from Any one Illness the date of last consultation with the Hospital/Nursing Home where treatment was taken Associated Medical means Room Rent, nursing charges, operation theatre charges, fees of Expenses Medical Practitioners (including surgeons, anesthetists and specialists) a. For Individual sum insured basis (Individual Policy), the amount specified in the Policy Schedule against an Insured Person which is Our maximum, total and cumulative liability for any and all claims aris",
+      "evidence_page": 1,
+      "evidence_clause": "III",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_room_rent_limit_0000_evidence"
+    },
+    "specific_disease_waiting": {
+      "value": {
+        "months_options": [
+          24
+        ]
+      },
+      "unit": "months",
+      "fact_status": "present",
+      "confidence": 0.96,
+      "method": "deterministic",
+      "evidence": ". 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.3 Specified disease/ procedure waiting period (Code – Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after the date of inception of the first policy with us. This exclusion shall not be applicable for claims arising due to an accident. b) In case of enhancement of sum insured the exclusion shall apply afresh to the extent of sum",
+      "evidence_page": 20,
+      "evidence_clause": "3.3",
+      "scope": {
+        "cover": "base_policy"
+      },
+      "condition": null,
+      "source_span_id": "ss_kotak_mahindra_health_premier_specific_disease_waiting_periods_0000_evidence"
+    }
+  },
+  "unresolved_concepts": [
+    "deductible",
+    "modern_treatment_coverage"
+  ],
+  "parse_quality": {
+    "total_concepts_attempted": 20,
+    "concepts_resolved": 18,
+    "concepts_not_found": 2,
+    "concepts_not_applicable": 0,
+    "overall_fill_rate": 0.9,
+    "average_confidence": 0.95
+  }
+}

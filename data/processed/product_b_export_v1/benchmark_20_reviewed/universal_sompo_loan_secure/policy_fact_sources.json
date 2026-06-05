@@ -1,0 +1,214 @@
+{
+  "policy_id": "universal_sompo_loan_secure",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ayush_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "clause_0198",
+          "clause_title": "",
+          "evidence_text_snippet": "6. Indoor case papers, if required Claims documents for Section II (i)Upon the happening of any Injury giving rise or likely to give rise to a claim under this Policy, the Injury as described above shall be intimated to the Company as soon as possible but not later than 30 days from the date of its ",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "clause_0201",
+          "clause_title": "",
+          "evidence_text_snippet": "1. Insurer shall settle claim(s), including its rejection, within 30 (thirty days) of the receipt of the last necessary claim document",
+          "page": 15,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "1",
+          "clause_title": "Insured will be allowed a period of at least 15 days from the date of receipt of the Policy",
+          "evidence_text_snippet": "12.Subrogation 1.Insured will be allowed a period of at least 15 days from the date of receipt of the Policy to review the terms and conditions of the Policy and to return the same if not acceptable.",
+          "page": 29,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "clause_0165",
+          "clause_title": "",
+          "evidence_text_snippet": "nsured with cogent reasons for such denial of Renewal. policy(ies) if the claim is paid or admitted under section I or section II. d.The company may condone delay in Renewal up to 30 days from the due date of Renewal without deeming such condo nation as a Break in Policy. However coverage shall not ",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "initial_waiting_period": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "maternity_waiting": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "organ_donor_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "23",
+          "clause_title": "Portability means the right accorded to an individual health insurance Policy holder",
+          "evidence_text_snippet": "Pre-heading body text 23.Portability means the right accorded to an individual health insurance Policy holder (including Family cover) of the credit gained for pre-existing conditions and time bound exclusions, from one ",
+          "page": 3,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": null
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "28",
+          "clause_title": "Renewal means the terms on which the contract of insurance can be renewed on mutual",
+          "evidence_text_snippet": "Pre-heading body text 28.Renewal means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the Renewal continuous for the purpose of gaining the credit for pre-existing diseases, time bound exclusions and for all waiting periods",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0165",
+          "clause_title": "",
+          "evidence_text_snippet": "15.Renewal a.All the covers opted for shall be renewed till the loan tenure or lifetime of insured whichever is earlier, except on grounds of fraud, moral hazard or misrepresentation or non‐cooperation by any Insured Persons b.The Renewal of a Policy sought by Insured shall not be denied arbitrarily",
+          "page": 30,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "clause_0243",
+          "clause_title": "",
+          "evidence_text_snippet": "11. Any addition, extension, or alteration to any structure of Your Home Building that increases its Carpet Area by more than 10% of the Carpet Area existing at the Commencement Date or on the date of renewal of this Policy, unless You have paid additional premium and such addition, extension or alt",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "room_rent_limit": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}

@@ -1,0 +1,946 @@
+{
+  "policy_id": "kotak_mahindra_health_premier",
+  "pipeline_run_id": "export_dse021_final_2026_06_05",
+  "sources": {
+    "ambulance_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ambulance_coverage_0004",
+          "clause_number": "67",
+          "clause_title": "Ambulance is Payable/ RTA - As Specific Requirement for critical injury is",
+          "evidence_text_snippet": "17. Migration 67 Ambulance is Payable/ RTA - As Specific Requirement for critical injury is Payable",
+          "page": 54,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_covered",
+          "candidate_score": 0.95,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0005",
+          "clause_number": "2.4",
+          "clause_title": "Ambulance Cover",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.4 Ambulance Cover We will indemnify the amount incurred up to the limit specified in the Policy Schedule for the reasonable expenses incurred by You on availing ambula",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0006",
+          "clause_number": "2.22",
+          "clause_title": "Air Ambulance Cover",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.22 Air Ambulance Cover We will indemnify the amount up to the limit specified in the Policy Schedule for the reasonable expenses incurred by You for ambulance transpor",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0001",
+          "clause_number": "49",
+          "clause_title": "Ambulance Collar Not Payable",
+          "evidence_text_snippet": "17. Migration 49 Ambulance Collar Not Payable",
+          "page": 53,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0002",
+          "clause_number": "50",
+          "clause_title": "Ambulance Equipment Not Payable",
+          "evidence_text_snippet": "17. Migration 50 Ambulance Equipment Not Payable Payable in case of post-surgery patients of Major Abdominal Surgery Including TAH, LSCS, Incisional Hernia Repair",
+          "page": 53,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0003",
+          "clause_number": "66",
+          "clause_title": "Urometer, Urine Jug Not Payable",
+          "evidence_text_snippet": "17. Migration 66 Urometer, Urine Jug Not Payable Payable - Ambulance from home to Hospital or inter-hospital shifts",
+          "page": 54,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_conditional",
+          "candidate_score": 0.775,
+          "confidence": 0.7,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ambulance_coverage_0000",
+          "clause_number": "III",
+          "clause_title": "Maintaining daily records of the patients and making them accessible",
+          "evidence_text_snippet": "1. DEFINITIONS iii. Maintaining daily records of the patients and making them accessible to the insurance company’s authorized representative. means a road vehicle operated by a healthcare/ ambulance service provider Amb",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ambulance_coverage",
+          "pattern_id": "ambulance_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_ambulance_coverage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ambulance_coverage_0005"
+    },
+    "ayush_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "ayush_coverage_0003",
+          "clause_number": "2.6",
+          "clause_title": "Alternative Treatment",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.6 Alternative Treatment We will indemnify the Medical Expenses incurred on the Insured Person’s Alternative Treatment",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_coverage_present",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0000",
+          "clause_number": "clause_0001",
+          "clause_title": "",
+          "evidence_text_snippet": "1. DEFINITIONS For the purposes of this Policy, the terms specified below shall have the meaning set forth wherever appearing/specified in this Policy or related Endorsements: Where the context so requires, references to",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0001",
+          "clause_number": "4000051",
+          "clause_title": "Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg,",
+          "evidence_text_snippet": "1. DEFINITIONS 4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), means and includes Community Health Centre (CHC), Primary Health Centre (P",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ayush_coverage_0002",
+          "clause_number": "IV",
+          "clause_title": "must conform to the professional standards widely accepted in",
+          "evidence_text_snippet": "1. DEFINITIONS iv. must conform to the professional standards widely accepted in international medical practice or by the medical community in India means a person who holds a valid registration from the Medical Council ",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ayush_coverage",
+          "pattern_id": "ayush_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_coverage_language",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ayush_coverage_0003"
+    },
+    "claim_intimation_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_intimation_timeline_0000",
+          "clause_number": "clause_0562",
+          "clause_title": "",
+          "evidence_text_snippet": "Gen. AK Vaidya Marg, Dindoshi, Malad (E), (d) Notwithstanding any provision to the contrary in the Policy, this Cover will be applicable on a worldwide basis; (e) In the event of a Claim arising under this Cover, We shall be given written notice of the Claim within 30 days from the date of the first",
+          "page": 18,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_intimation_timeline_0001",
+          "clause_number": "clause_0648",
+          "clause_title": "",
+          "evidence_text_snippet": "5.2. For Reimbursement Claims We shall be given written notice of the Claim for reimbursement along with the following details at least within 30 days of the Insured Person’s discharge from Hospital: (i) The Policy Number; (ii) Name of the Policyholder; (iii) Name and address of the Insured Person i",
+          "page": 27,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_intimation_timeline",
+          "pattern_id": "claim_intimation_days",
+          "candidate_score": 0.905,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_intimation_timeline_0000"
+    },
+    "claim_settlement_timeline": {
+      "provenance": [
+        {
+          "candidate_id": "claim_settlement_timeline_0000",
+          "clause_number": "I",
+          "clause_title": "The Company shall settle or reject a claim, as the case may be, within 30 days from the date of rece",
+          "evidence_text_snippet": "7. CLAIM SETTLEMENT (Provision for Penal Interest) i. The Company shall settle or reject a claim, as the case may be, within 30 days from the date of receipt of last necessary document.",
+          "page": 35,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "claim_settlement_timeline_0001",
+          "clause_number": "III",
+          "clause_title": "However, where the circumstances of a claim warrant an investigation in the opinion of the Company, ",
+          "evidence_text_snippet": "gation in the opinion of the Company, it shall initiate and complete such investigation at the earliest, in any case not later than 30 days from the date of receipt of last necessary document. In such cases, the Company shall settle or reject the claim within 45 days from the date of receipt of last",
+          "page": 35,
+          "extraction_method": "deterministic",
+          "extractor_name": "claim_settlement_timeline",
+          "pattern_id": "claim_settlement_days",
+          "candidate_score": 0.955,
+          "confidence": 0.91,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "claim_settlement_timeline_0000"
+    },
+    "co_pay": {
+      "provenance": [
+        {
+          "candidate_id": "co_pay_0001",
+          "clause_number": "clause_0844",
+          "clause_title": "",
+          "evidence_text_snippet": "one In case of treatment taken in a city, in a Zone higher than the eligible Zone for the Insured Person, the Co- payment percentages as below shall apply: Applicable Zone Treatment Taken at Co-payment applicable Zone I 10% Zone II Zone I 20% Zone III Zone II 10% Zone III Kotak Health Premier UIN: K",
+          "page": 37,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_percentage",
+          "candidate_score": 0.97,
+          "confidence": 0.94,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "co_pay_0000",
+          "clause_number": "4000051",
+          "clause_title": "Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg,",
+          "evidence_text_snippet": "1. DEFINITIONS 4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), means a cost sharing requirement under a health insurance policy that Co-P",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "co_pay",
+          "pattern_id": "copay_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_percentage",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "co_pay_0001"
+    },
+    "cumulative_bonus_ncb": {
+      "provenance": [
+        {
+          "candidate_id": "cumulative_bonus_ncb_0000",
+          "clause_number": "clause_0509",
+          "clause_title": "",
+          "evidence_text_snippet": "2. WHAT WE WILL PAY (COVERS AVAILABLE UNDER THE POLICY) The Covers available under this Policy are described below. Covers will be available to the Insured Person, only if that particular cover is specifically mentioned in the Policy Schedule as per the Plan opted by You, subject to (a) availability",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0001",
+          "clause_number": "2.10",
+          "clause_title": "Cumulative Bonus",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.10 Cumulative Bonus We will increase Your Base Sum Insured by 10% subject to the maximum limit specified in the Policy Schedule at the end of the Policy Year if the Po",
+          "page": 11,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "cumulative_bonus_ncb_0002",
+          "clause_number": "2.13",
+          "clause_title": "Value Added Benefits",
+          "evidence_text_snippet": "WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.13 Value Added Benefits The Benefits listed below are Value Added Benefits and shall be available to the Insured Persons specified in the Policy Schedule. Benefits under this Section are subject to the terms, conditions and exclusions of this Policy. ",
+          "page": 14,
+          "extraction_method": "deterministic",
+          "extractor_name": "cumulative_bonus_ncb",
+          "pattern_id": "cumulative_bonus_schedule_dependent",
+          "candidate_score": 0.92,
+          "confidence": 0.9,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "cumulative_bonus_ncb_0000"
+    },
+    "deductible": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "free_look_period": {
+      "provenance": [
+        {
+          "candidate_id": "free_look_period_0000",
+          "clause_number": "clause_0847",
+          "clause_title": "",
+          "evidence_text_snippet": "d shall be applicable on new individual health insurance policies and not on renewals or at the time of porting/migrating the policy. The insured person shall be allowed free look period of fifteen days from date of receipt of the policy document to review the terms and conditions of the policy, and",
+          "page": 38,
+          "extraction_method": "deterministic",
+          "extractor_name": "free_look_period",
+          "pattern_id": "free_look_15_days",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "free_look_period_0000"
+    },
+    "grace_period": {
+      "provenance": [
+        {
+          "candidate_id": "grace_period_0000",
+          "clause_number": "IV",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace Peri",
+          "evidence_text_snippet": "17. Migration iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of atleast 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. Kotak Health Premier UIN: KOTHLIP21065V032021 Pag",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0001",
+          "clause_number": "I",
+          "clause_title": "Grace Period of 15 days would be given to pay the instalment premium due for the policy.",
+          "evidence_text_snippet": "17. Migration i. Grace Period of 15 days would be given to pay the instalment premium due for the policy.",
+          "page": 40,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.965,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0002",
+          "clause_number": "24",
+          "clause_title": "ECS/ Auto Debit Payment Facility:",
+          "evidence_text_snippet": "e Policy and/or non-receipt of premium within the Grace Period under the Policy The renewal premium amount under the Policy shall be communicated to you in advance i.e. minimum c. 45 days before the renewal date You have the right to withdraw the ECS /Auto Debit mandate by giving Us at least 15 days",
+          "page": 41,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.79,
+          "confidence": 0.58,
+          "accepted": false,
+          "rejection_reason": "non_primary_grace_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "grace_period_0003",
+          "clause_number": "24",
+          "clause_title": "ECS/ Auto Debit Payment Facility:",
+          "evidence_text_snippet": "the Policy shall be communicated to you in advance i.e. minimum c. 45 days before the renewal date You have the right to withdraw the ECS /Auto Debit mandate by giving Us at least 15 days’ notice d. before the due date of next premium due under the Policy The term ECS / Auto Debit herein shall be go",
+          "page": 41,
+          "extraction_method": "deterministic",
+          "extractor_name": "grace_period",
+          "pattern_id": "renewal_grace_days",
+          "candidate_score": 0.79,
+          "confidence": 0.58,
+          "accepted": false,
+          "rejection_reason": "non_primary_grace_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "grace_period_0000"
+    },
+    "icu_limit": {
+      "provenance": [
+        {
+          "candidate_id": "icu_limit_0000",
+          "clause_number": "II",
+          "clause_title": "ICU Charges;",
+          "evidence_text_snippet": "2. WHAT WE WILL PAY (COVERS AVAILABLE UNDER THE POLICY) ii. ICU Charges",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "icu_limit_0001",
+          "clause_number": "2.25",
+          "clause_title": "Cap on Room Rent",
+          "evidence_text_snippet": "be reimbursed based on the actual amounts incurred. Proportionate deductions will not be applied in respect of the hospitals which do not follow differential billing or for those expenses in respect of which differential billing is not adopted based on the room category. Further, proportionate deduc",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "icu_limit",
+          "pattern_id": "icu_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "icu_limit_0000"
+    },
+    "initial_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "initial_waiting_period_0000",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "coverage. d) Coverage under the policy after the expiry of 48 / 36/ 24 months (as mentioned in the Policy Schedule) for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer. 3.2 30 Day Waiting Period (Code – Excl03) a) Expenses related to ",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "initial_waiting_period_0001",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "he Policy Schedule) for any pre-existing disease is subject to the same being declared at the time of application and accepted by Insurer. 3.2 30 Day Waiting Period (Code – Excl03) a) Expenses related to the treatment of any illness within 30 days from the first policy commencement date shall be exc",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "initial_waiting_period",
+          "pattern_id": "initial_wait_30_days",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "initial_waiting_period_0000"
+    },
+    "maternity_waiting": {
+      "provenance": [
+        {
+          "candidate_id": "maternity_waiting_0000",
+          "clause_number": "2.19",
+          "clause_title": "Maternity Benefit",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.19 Maternity Benefit We will indemnify the Medical Expenses incurred up to the Maternity Benefit Sum Insured specified in the Policy Schedule for the delivery of the I",
+          "page": 16,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_present",
+          "candidate_score": 0.985,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "maternity_waiting_0001",
+          "clause_number": "3.4",
+          "clause_title": "Maternity Benefit Waiting Period",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.4 Maternity Benefit Waiting Period Any treatment arising from or traceable to pregnancy, childbirth including caesarean section will not be covered until 36 months of ",
+          "page": 22,
+          "extraction_method": "deterministic",
+          "extractor_name": "maternity_waiting",
+          "pattern_id": "maternity_waiting_present",
+          "candidate_score": 0.985,
+          "confidence": 0.97,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "maternity_waiting_0000"
+    },
+    "modern_treatment_coverage": {
+      "provenance": [],
+      "accepted_candidate_id": null
+    },
+    "newborn_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "newborn_coverage_0000",
+          "clause_number": "2.10",
+          "clause_title": "Cumulative Bonus",
+          "evidence_text_snippet": "Persons in the expiring Policy are covered on a floater basis and such Insured Persons renew their expiring Policy with Us into two or more floater/individual policies then the Cumulative Bonus of the expiring Policy shall be apportioned to such Renewed Policies in the proportion of the Base Sum Ins",
+          "page": 10,
+          "extraction_method": "deterministic",
+          "extractor_name": "newborn_coverage",
+          "pattern_id": "newborn_coverage_conditional",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "newborn_coverage_0001",
+          "clause_number": "2.20",
+          "clause_title": "New Born Baby Cover",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.20 New Born Baby Cover We will indemnify the Medical Expenses incurred on the Hospitalization of the Insured Person’s New Born Baby during the Policy Period within the",
+          "page": 17,
+          "extraction_method": "deterministic",
+          "extractor_name": "newborn_coverage",
+          "pattern_id": "newborn_coverage_conditional",
+          "candidate_score": 0.9,
+          "confidence": 0.95,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "newborn_coverage_0000"
+    },
+    "organ_donor_coverage": {
+      "provenance": [
+        {
+          "candidate_id": "organ_donor_coverage_0000",
+          "clause_number": "2.5",
+          "clause_title": "Organ Donor Cover",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.5 Organ Donor Cover We will indemnify the In-patient Hospitalisation Medical Expenses towards the donor for harvestin",
+          "page": 8,
+          "extraction_method": "deterministic",
+          "extractor_name": "organ_donor_coverage",
+          "pattern_id": "organ_donor_covered",
+          "candidate_score": 0.975,
+          "confidence": 0.95,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "organ_donor_coverage_0000"
+    },
+    "ped_waiting_period": {
+      "provenance": [
+        {
+          "candidate_id": "ped_waiting_period_0004",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "k, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.1 Pre-Existing Diseases (Code – Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48/ 36/ 24 months (as mentioned in the Policy Schedule) of continuou",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0006",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "y IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.1 Pre-Existing Diseases (Code – Excl01) a) Expenses related to the treatment of a pre-existing Disease (PED) and its direct complications shall be excluded until the expiry of 48/ 36/ 24 months (as mentioned in the Policy Schedule) of c",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.99,
+          "confidence": 0.98,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0005",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "y break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the policy after the expiry of 48 / 36/ 24 months (as mentioned in the Policy Schedule) for any pre-",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0007",
+          "clause_number": "3.1",
+          "clause_title": "Pre-Existing Diseases (Code – Excl01)",
+          "evidence_text_snippet": "ithout any break as defined under the portability norms of the extant IRDAI (Health Insurance) Regulations, then waiting period for the same would be reduced to the extent of prior coverage. d) Coverage under the policy after the expiry of 48 / 36/ 24 months (as mentioned in the Policy Schedule) for",
+          "page": 21,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0008",
+          "clause_number": "clause_0846",
+          "clause_title": "",
+          "evidence_text_snippet": "offer letter and We will only issue the Policy once We receive your consent on the applicable additional premium. In case policies are accepted with loadings, waiting period for Pre-Existing Disease Waiting Period (Section 3.1) as well as 2 Year Waiting Period (Section 3.3) shall continue to be appl",
+          "page": 38,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_waiting_duration",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0000",
+          "clause_number": "III",
+          "clause_title": "Maintaining daily records of the patients and making them accessible",
+          "evidence_text_snippet": "1. DEFINITIONS iii. Maintaining daily records of the patients and making them accessible to the insurance company’s authorized representative. means a road vehicle operated by a healthcare/ ambulance service provider Amb",
+          "page": 2,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0001",
+          "clause_number": "4000051",
+          "clause_title": "Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg,",
+          "evidence_text_snippet": "1. DEFINITIONS 4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), means the persons named in the Policy Schedule, who is/are covered under I",
+          "page": 4,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0002",
+          "clause_number": "IV",
+          "clause_title": "must conform to the professional standards widely accepted in",
+          "evidence_text_snippet": "1. DEFINITIONS iv. must conform to the professional standards widely accepted in international medical practice or by the medical community in India means a person who holds a valid registration from the Medical Council ",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_only_without_waiting_duration",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "ped_waiting_period_0003",
+          "clause_number": "4000051",
+          "clause_title": "Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg,",
+          "evidence_text_snippet": "1. DEFINITIONS 4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), New born baby means baby born during the Policy Period and is aged upto Ne",
+          "page": 5,
+          "extraction_method": "deterministic",
+          "extractor_name": "ped_waiting_period",
+          "pattern_id": "ped_definition_only",
+          "candidate_score": 0.48,
+          "confidence": 0.2,
+          "accepted": false,
+          "rejection_reason": "definition_duration_not_waiting_period",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "ped_waiting_period_0004"
+    },
+    "renewability": {
+      "provenance": [
+        {
+          "candidate_id": "renewability_0000",
+          "clause_number": "II",
+          "clause_title": "The inpatient hospitalization claim for such hospitalization is admissible by",
+          "evidence_text_snippet": "1. DEFINITIONS ii. The inpatient hospitalization claim for such hospitalization is admissible by the Insurance Company. means a person who holds a valid registration from the Nursing Council of Qualified Nurse India or the Nursing Council of any state in India means the charges for services or suppl",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0001",
+          "clause_number": "clause_0036",
+          "clause_title": "",
+          "evidence_text_snippet": "17. Migration The insured person will have the option to migrate the policy to other health insurance products/plans offered by the company by applying for migration of the policy atleast 30 days before the policy renewal date as per IRDAI guidelines on Migration. If such person is presently covered",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0002",
+          "clause_number": "18",
+          "clause_title": "Renewal of Policy",
+          "evidence_text_snippet": "17. Migration 18. Renewal of Policy The policy shall ordinarily be renewable except on grounds of fraud, misrepresentation by the insured person.",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0003",
+          "clause_number": "II",
+          "clause_title": "Renewal shall not be denied on the ground that the insured person had made a claim or claims in the",
+          "evidence_text_snippet": "17. Migration ii. Renewal shall not be denied on the ground that the insured person had made a claim or claims in the preceding policy years.",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0004",
+          "clause_number": "IV",
+          "clause_title": "At the end of the policy period, the policy shall terminate and can be renewed within the Grace Peri",
+          "evidence_text_snippet": "17. Migration iv. At the end of the policy period, the policy shall terminate and can be renewed within the Grace Period of atleast 30 days to maintain continuity of benefits without break in policy. Coverage is not available during the grace period. Kotak Health Premier UIN: KOTHLIP21065V032021 Pag",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "renewability_0005",
+          "clause_number": "clause_0855",
+          "clause_title": "",
+          "evidence_text_snippet": "16. Portability The insured person will have the option to port the policy to other insurers by applying to such insurer to port the entire policy along with all the members of the family, if any, at least 45 days before, but not earlier than 60 days from the policy renewal date as per IRDAI guideli",
+          "page": 39,
+          "extraction_method": "deterministic",
+          "extractor_name": "renewability",
+          "pattern_id": "renewability_lifetime",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "renewability_0000"
+    },
+    "restoration_benefit": {
+      "provenance": [
+        {
+          "candidate_id": "restoration_benefit_0000",
+          "clause_number": "2.9",
+          "clause_title": "Restoration Benefit",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.9 Restoration Benefit We will provide a 100% restoration of the Base Sum Insured amount once in a Policy Year if the Base Sum Insured and the Cumulative Bonus (if any)",
+          "page": 9,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.91,
+          "confidence": 0.97,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "restoration_benefit_0001",
+          "clause_number": "2.25",
+          "clause_title": "Cap on Room Rent",
+          "evidence_text_snippet": "ling or for those expenses in respect of which differential billing is not adopted based on the room category. Further, proportionate deductions will not be applied in respect of ICU Charges. In case this Cover is not opted for, Insured will get the eligible Room Rent and Associated Medical Expenses",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "restoration_benefit",
+          "pattern_id": "restoration_benefit_present",
+          "candidate_score": 0.895,
+          "confidence": 0.94,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "restoration_benefit_0000"
+    },
+    "room_rent_limit": {
+      "provenance": [
+        {
+          "candidate_id": "room_rent_limit_0000",
+          "clause_number": "III",
+          "clause_title": "Maintaining daily records of the patients and making them accessible",
+          "evidence_text_snippet": "ambulance service provider Ambulance and equipped for the transport and paramedical treatment of the person requiring medical attention means continuous period of illness and includes relapse within 45 days from Any one Illness the date of last consultation with the Hospital/Nursing Home where treat",
+          "page": 1,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0001",
+          "clause_number": "II",
+          "clause_title": "The inpatient hospitalization claim for such hospitalization is admissible by",
+          "evidence_text_snippet": ". means the terms on which the contract of insurance can be renewed on mutual consent with a provision of grace period for treating the renewal Renewal continuous for the purpose of gaining credit for pre-existing diseases, time- bound exclusions and for all waiting periods means the amount charged ",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0002",
+          "clause_number": "I",
+          "clause_title": "Room Rent and other boarding charges;",
+          "evidence_text_snippet": "2. WHAT WE WILL PAY (COVERS AVAILABLE UNDER THE POLICY) i. Room Rent and other boarding charges",
+          "page": 7,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        },
+        {
+          "candidate_id": "room_rent_limit_0003",
+          "clause_number": "2.25",
+          "clause_title": "Cap on Room Rent",
+          "evidence_text_snippet": "4000051. Office: 8th Floor, Zone IV, Kotak Infiniti, Bldg. 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 2.25 Cap on Room Rent If We have accepted a Claim for In-patient Hospitalization under the Policy and if the Insured Person incurs Room Rent that is higher than the elig",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "room_rent_limit",
+          "pattern_id": "room_rent_limit_schedule_dependent",
+          "candidate_score": 0.89,
+          "confidence": 0.93,
+          "accepted": false,
+          "rejection_reason": "lower_scoring_candidate",
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "room_rent_limit_0000"
+    },
+    "specific_disease_waiting_periods": {
+      "provenance": [
+        {
+          "candidate_id": "specific_disease_waiting_periods_0000",
+          "clause_number": "3.3",
+          "clause_title": "Specified disease/ procedure waiting period (Code – Excl02)",
+          "evidence_text_snippet": ". 21,Infinity IT Park, Off WEH, Gen. AK Vaidya Marg, Dindoshi, Malad (E), 3.3 Specified disease/ procedure waiting period (Code – Excl02) a) Expenses related to the treatment of the listed Conditions, surgeries/treatments shall be excluded until the expiry of 24 months of continuous coverage after t",
+          "page": 20,
+          "extraction_method": "deterministic",
+          "extractor_name": "specific_disease_waiting_periods",
+          "pattern_id": "specific_disease_waiting_single",
+          "candidate_score": 0.98,
+          "confidence": 0.96,
+          "accepted": true,
+          "rejection_reason": null,
+          "pipeline_run_id": "export_dse021_final_2026_06_05"
+        }
+      ],
+      "accepted_candidate_id": "specific_disease_waiting_periods_0000"
+    }
+  },
+  "conflicts_resolved": [],
+  "unresolved_conflicts": []
+}
