@@ -505,7 +505,7 @@ Provisional evidence rule:
 ## Contract 5B: Fact Candidate & Fact Persistence (DSE-011)
 
 **Producer:** `scripts/run_fact_scoring.py`
-**Consumer:** `scripts/eval_fact_scoring.py`, DSE-013 (91-Field Export)
+**Consumer:** `scripts/eval_fact_scoring.py`, DSE-013/DSE-023 Product B JSON export
 **Task:** DSE-011
 **Date:** 2026-06-01
 
@@ -833,6 +833,18 @@ The strict DSE-009 eval treats same-page table presence as diagnostic only. A ph
 ## Contract 6: Accepted Facts → Derived Export
 
 **Producer:** `extractors/` (after conflict resolution)
-**Consumer:** `derived/policy_feature_builder.py`
+**Consumer:** `derived/export_builder.py`
 
 See `docs/export_contract.md` for the full export contract. This is the Product A → Product B boundary.
+
+DSE-023 freezes the v1 boundary as compiled JSON only:
+
+```text
+data/export/{policy_id}/policy_features.json
+data/export/{policy_id}/policy_fact_sources.json
+data/export/{policy_id}/policy_clauses_minimal.json
+```
+
+The handoff package copies these compiled files under
+`data/processed/product_b_export_v1/`. It must not include SQLite, raw PDFs,
+physical/logical/table interim outputs, or raw parser tables.

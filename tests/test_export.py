@@ -1,5 +1,5 @@
 """
-Tests for DSE-013 Derived 91-Field Export
+Tests for DSE-013/DSE-023 Product B JSON Export
 
 All tests use in-memory SQLite and synthetic data — no PDF or external file access.
 """

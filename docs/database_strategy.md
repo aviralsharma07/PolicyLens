@@ -93,7 +93,7 @@ After a pipeline run completes, the engine exports compiled JSON:
 
 ```
 data/export/{policy_id}/
-  policy_features.json       # 91-field derived view per policy
+  policy_features.json       # 20-concept ontology-backed v1 derived view per policy
   policy_fact_sources.json   # evidence chain per fact
   policy_clauses_minimal.json # clauses without spans (lighter)
 ```
@@ -106,6 +106,10 @@ JSON is the API boundary between Product A and Product B. It is:
 - Versioned (schema version in every file)
 - Git-trackable (JSON files in version control)
 - Non-breaking (old versions of the contract remain valid)
+
+DSE-023 freezes the first Product B handoff as a 20-concept ontology-backed
+JSON package. The broader 91-field comparison schema remains a future expansion,
+not the `export_schema_version = "1.0"` contract.
 
 ---
 

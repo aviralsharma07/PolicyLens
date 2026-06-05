@@ -3,8 +3,8 @@
 ## Contract Version
 
 **Version:** 1.0
-**Last updated:** 2026-06-02
-**Status:** active (DSE-013 implemented; DSE-019 ontology-governed concept registry added)
+**Last updated:** 2026-06-05
+**Status:** active (DSE-023 Product B Export v1 freeze)
 
 ---
 
@@ -14,6 +14,7 @@
 **Role:** Document intelligence pipeline. Owns PDF parsing, structure extraction, fact extraction, provenance tracking.
 **Output format:** JSON files per policy
 **Output location:** `data/export/{policy_id}/`
+**Handoff package:** `data/processed/product_b_export_v1/`
 
 ---
 
@@ -29,12 +30,18 @@
 
 ```
 data/export/{policy_id}/
-  policy_features.json         # 20-concept derived view (expandable to full Product B schema)
+  policy_features.json         # 20-concept ontology-backed v1 derived view
   policy_fact_sources.json     # Evidence mapping for every field
   policy_clauses_minimal.json  # Clauses for context (lighter, no spans)
 
 data/export/batch_{run_id}.json  # Deferred — not produced by DSE-013 v1. Per-policy files are the primary export.
 ```
+
+## V1 Scope
+
+DSE-023 freezes Product B Export v1 as the ontology-backed 20-concept JSON contract. It is the first Product B-consumable package and is intentionally narrower than the earlier planned 91-field comparison schema.
+
+The 91-field view remains a future Product B schema expansion. It must not be assumed present in `export_schema_version = "1.0"`.
 
 ---
 
@@ -121,6 +128,7 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
 4. **Changing the structure of `value` is breaking** — increment the schema version.
 5. **Adding new fields inside `value` is non-breaking** — Product B should ignore unknown sub-fields.
 6. **Old exports remain valid** — never delete old export files when the schema changes. Keep them with their schema version.
+7. **Product B reads compiled JSON only** — Product B must not query Product A SQLite, raw parser tables, physical/logical/table interim files, or raw PDFs.
 
 ---
 
@@ -147,8 +155,8 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
     "uin_base": "HDFHLIP...",
     "product_version": 1,
     "effective_date": "2024-04-01",
-    "match_confidence": 0.94,
-    "match_method": "fuzzy_insurer_plan"
+    "match_confidence": "high",
+    "match_method": "uin_insurer_plan_verified"
   },
   "features": {
     "ped_waiting_months": {
@@ -284,5 +292,6 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
 
 | Version | Changes | Date | Status |
 |---------|---------|------|--------|
-| 1.0 | Initial contract | 2026-05-29 | Current |
-| 1.0 | DSE-013 implements 20-concept export skeleton | 2026-06-01 | Active — 5/20 concepts populated |
+| 1.0 | Initial contract | 2026-05-29 | Superseded by DSE-023 wording |
+| 1.0 | DSE-013 implements 20-concept export skeleton | 2026-06-01 | Historical — 5/20 concepts populated |
+| 1.0 | DSE-023 freezes 20-concept ontology-backed Product B handoff contract | 2026-06-05 | Current |

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-05 (DSE-023 — Packet 1: Export Contract Freeze)
+
+### Changed
+- `docs/export_contract.md` — DSE-023 v1 scope added: Product B Export v1 is the 20-concept ontology-backed JSON contract, not the future 91-field schema.
+- `docs/database_strategy.md` — JSON export description updated from 91-field view to 20-concept v1 package.
+- `docs/data_contracts.md` — derived export consumer corrected to `derived/export_builder.py`; handoff package boundary documented.
+- `docs/evaluation.md` — Derived Export eval purpose updated to v1 20-concept wording.
+- Export test/module docstrings updated away from stale 91-field wording.
+
+### Decision
+- Product B consumes compiled JSON only. SQLite, raw parser tables, interim parser outputs, and raw PDFs remain internal to Product A.
+
 ## 2026-06-05 (DSE-023 — Packet 0: Export Freeze Audit)
 
 ### Added

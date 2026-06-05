@@ -91,3 +91,23 @@ Packet 0 audit confirms DSE-023 should proceed as a contract/package freeze task
 ## Next Step
 
 Packet 1 — freeze the Product B export v1 contract in docs and decision history.
+
+## Packet 1 — Export Contract Freeze
+
+Updated the active Product A → Product B contract docs:
+
+- `docs/export_contract.md`
+- `docs/data_contracts.md`
+- `docs/database_strategy.md`
+- `docs/evaluation.md`
+- `docs/tasks.md`
+- `docs/changelog.md`
+
+Clarifications:
+
+- `export_schema_version = "1.0"` is the 20-concept ontology-backed JSON contract.
+- The earlier 91-field language is future expansion, not part of v1.
+- Product B consumes compiled JSON only.
+- SQLite, raw parser tables, physical/logical/table interim outputs, and raw PDFs remain Product A internals.
+
+Next step: Packet 2 — implement the reproducible Product B handoff package builder.

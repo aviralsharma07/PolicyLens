@@ -1,5 +1,5 @@
 """
-derived — DSE-013: Derived 91-Field Export
+derived — DSE-013/DSE-023: Product B JSON Export
 
 Builds Product B consumable JSON from SQLite engine data.
 Produces three files per policy:

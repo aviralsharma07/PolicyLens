@@ -1105,7 +1105,7 @@ Value comparison rule added in DSE-017: predicted normalized values may include 
 ## Eval: Derived Export
 
 ### Purpose
-Ensures the 91-field export contract is complete and no field is silently empty. This is the final gate before Product B consumes the data.
+Ensures the 20-concept ontology-backed export v1 contract is complete and no field is silently empty. This is the final gate before Product B consumes the first reviewed-benchmark handoff package.
 
 ### Inputs
 - `derived_policy_features` (compiled view)

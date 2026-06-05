@@ -27,6 +27,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0037 | Wave 1 deterministic fact value shapes | 2026-06-02 | Accepted |
 | 0038 | Ontology registry is canonical concept source | 2026-06-02 | Accepted |
 | 0039 | Duplicate-hash entries skipped at clause store ingestion | 2026-06-04 | Accepted |
+| 0040 | Product B Export v1 is compiled 20-concept JSON | 2026-06-05 | Accepted |
 
 ---
 
@@ -36,6 +37,31 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 |----|-------|------|--------|
 | 0009 | Separate Supabase project for engine in production | TBD | Proposed |
 | 0010 | Regulatory compliance engine deferred | TBD | Proposed |
+
+---
+
+## 2026-06-05 — ADR-0040: Product B Export v1 is compiled 20-concept JSON
+
+**Status:** accepted
+
+**Decision:** DSE-023 freezes Product B Export v1 as compiled JSON files containing the 20 ontology-backed priority concepts. Product B consumes `policy_features.json`, `policy_fact_sources.json`, and `policy_clauses_minimal.json` from a handoff package. Product B must not query Product A SQLite, raw parser tables, physical/logical/table interim outputs, or raw PDFs.
+
+**Context:** Product A now has 20 reviewed gold policies, all 20 priority deterministic concepts active, source spans, fact scoring, table eval, and a working export. Older planning docs referred to a 91-field export, but the actual stable v1 export is the 20-concept ontology-backed schema. Product B needs a stable handoff boundary before broader schema expansion or LLM refinement.
+
+**Options considered:**
+1. Freeze the current 20-concept JSON export as Product B v1.
+2. Wait until a full 91-field schema exists.
+3. Let Product B read Product A SQLite directly.
+
+**Reasoning:** Option 1 gives Product B a truthful, evidence-backed dataset now while preserving explicit statuses for missing or non-applicable facts. Option 2 delays integration without improving the current contract. Option 3 violates the Product A/Product B boundary and would expose raw, volatile parser internals to a user-facing app.
+
+**Consequences:**
+- Positive: Product B gets a stable, versioned, evidence-backed JSON boundary.
+- Positive: Product A can keep evolving SQLite/parser schemas without breaking Product B.
+- Positive: The 91-field idea remains available as a future schema expansion.
+- Negative: Product B v1 comparison coverage is limited to the 20 priority concepts.
+
+**Revisit when:** Product B requires additional comparison fields beyond the 20 priority concepts, or a later ontology version defines the broader 91-field schema.
 
 ---
 

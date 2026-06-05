@@ -362,6 +362,7 @@ Current capability:
 - Packet -1 restored DSE-022 historical report residue and left the tree clean before DSE-023.
 - Packet 0 audit created `data/reports/dse023_export_freeze_audit.md`.
 - Audit result: current export is a structurally valid 20-policy, 20-concept ontology-backed Product B v1 candidate; stale 91-field docs must be clarified before package building.
+- Packet 1 froze the v1 docs: Product B consumes compiled JSON only; v1 is the 20-concept ontology-backed schema, not the future 91-field schema.
 **Branch:** feat/dse-023-product-b-export-v1
 **Related docs:** export_contract.md, database_strategy.md, ontology/concepts.v1.json
 
