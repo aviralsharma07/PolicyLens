@@ -27,6 +27,7 @@ debug/
 data/reports/physical_debug/
 
 # Local databases
+data/engine*.sqlite*
 *.sqlite
 *.sqlite3
 *.db
@@ -43,11 +44,29 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
 
 # Env
 .env
 .env.*
 !.env.example
+.envrc
+
+# Logs, local scratch, and generated build artifacts
+*.log
+*.tmp
+*.bak
+tmp/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+*.zip
+*.tar
+*.tar.gz
 
 # OS/editor
 .DS_Store
