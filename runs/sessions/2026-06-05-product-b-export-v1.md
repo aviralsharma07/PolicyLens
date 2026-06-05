@@ -111,3 +111,38 @@ Clarifications:
 - SQLite, raw parser tables, physical/logical/table interim outputs, and raw PDFs remain Product A internals.
 
 Next step: Packet 2 — implement the reproducible Product B handoff package builder.
+
+## Packet 2 — Handoff Package Builder
+
+Added:
+
+- `scripts/build_product_b_handoff.py`
+- handoff tests in `tests/test_export.py`
+
+Builder behavior:
+
+- Reads reviewed policy metadata from `gold_corpus/policies/*/metadata.json`.
+- Copies only compiled export JSON files from `data/export/{policy_id}/`.
+- Writes `manifest.json`, `README.md`, `export_contract.md`, `ontology_concepts.v1.json`, `quality/coverage_summary.json`, and `checksums.sha256`.
+- Refuses missing `policy_features.json` or schema-invalid exports.
+- Refuses forbidden package contents such as raw PDFs, SQLite files, or interim parser paths.
+
+Important fix:
+
+- Original 5 gold policies do not all carry the newer `label_status: reviewed` marker. The builder now excludes only `label_status: draft`, matching the reviewed benchmark reality and packaging all 20 policies.
+
+Commands:
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/build_product_b_handoff.py --export-root data/export --gold-corpus gold_corpus --output-root data/processed/product_b_export_v1
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_export.py --tb=short
+git diff --check
+```
+
+Results:
+
+- Builder produced `data/processed/product_b_export_v1` with 20 reviewed policies.
+- `tests/test_export.py`: 47/47 passed.
+- `git diff --check`: passed.
+
+Next step: Packet 3 — run final export eval, rebuild package with the eval artifact, run full gates, then mark DSE-023 done.

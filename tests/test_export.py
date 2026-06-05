@@ -48,6 +48,7 @@ from derived.field_mapping import (
     get_unit,
 )
 from derived.schema_validator import validate_policy_features
+from scripts.build_product_b_handoff import build_handoff
 
 DOC_ID = "sha256:test_export_001"
 POLICY_ID = "test_policy"
@@ -608,3 +609,127 @@ class TestEndToEnd:
         parsed = json.loads(json_str)
         assert parsed["policy_id"] == POLICY_ID
         assert len(parsed["features"]) == 20
+
+
+# ---------------------------------------------------------------------------
+# TestProductBHandoff
+# ---------------------------------------------------------------------------
+
+
+class TestProductBHandoff:
+    def _write_handoff_inputs(self, tmp_path, conn):
+        export_root = tmp_path / "exports"
+        policy_dir = export_root / POLICY_ID
+        policy_dir.mkdir(parents=True)
+
+        features = build_policy_features(conn, DOC_ID, POLICY_ID, RUN_ID)
+        sources = build_policy_fact_sources(conn, DOC_ID, POLICY_ID, RUN_ID)
+        clauses = build_policy_clauses_minimal(conn, DOC_ID, POLICY_ID)
+
+        (policy_dir / "policy_features.json").write_text(
+            json.dumps(features, indent=2), encoding="utf-8"
+        )
+        (policy_dir / "policy_fact_sources.json").write_text(
+            json.dumps(sources, indent=2), encoding="utf-8"
+        )
+        (policy_dir / "policy_clauses_minimal.json").write_text(
+            json.dumps(clauses, indent=2), encoding="utf-8"
+        )
+
+        gold = tmp_path / "gold"
+        metadata_dir = gold / "policies" / POLICY_ID
+        metadata_dir.mkdir(parents=True)
+        metadata = {
+            "policy_id": POLICY_ID,
+            "policy_slug": POLICY_ID,
+            "insurer": "Test Insurer",
+            "plan_name": "Test Plan",
+            "uin": "TSTHLIP00000V000000",
+            "uin_base": "TSTHLIP00000",
+            "file_hash": DOC_ID,
+            "label_status": "reviewed",
+        }
+        (metadata_dir / "metadata.json").write_text(json.dumps(metadata), encoding="utf-8")
+        return export_root, gold
+
+    def _copy_export_policy(self, export_root, old_policy_id, new_policy_id):
+        src = export_root / old_policy_id
+        dst = export_root / new_policy_id
+        dst.mkdir(parents=True)
+        for filename in (
+            "policy_features.json",
+            "policy_fact_sources.json",
+            "policy_clauses_minimal.json",
+        ):
+            data = json.loads((src / filename).read_text(encoding="utf-8"))
+            data["policy_id"] = new_policy_id
+            (dst / filename).write_text(json.dumps(data), encoding="utf-8")
+
+    def test_handoff_package_manifest_includes_reviewed_policy(self, tmp_path, conn):
+        export_root, gold = self._write_handoff_inputs(tmp_path, conn)
+        output_root = tmp_path / "data" / "processed" / "product_b_export_v1"
+
+        manifest = build_handoff(export_root, gold, output_root)
+
+        assert manifest["policy_count"] == 1
+        assert manifest["policies"][0]["policy_id"] == POLICY_ID
+        assert (output_root / "manifest.json").is_file()
+        assert (
+            output_root / "benchmark_20_reviewed" / POLICY_ID / "policy_features.json"
+        ).is_file()
+
+    def test_handoff_package_copies_no_raw_interim_or_sqlite_files(self, tmp_path, conn):
+        export_root, gold = self._write_handoff_inputs(tmp_path, conn)
+        output_root = tmp_path / "data" / "processed" / "product_b_export_v1"
+
+        build_handoff(export_root, gold, output_root)
+
+        all_files = [str(p.relative_to(output_root)) for p in output_root.rglob("*") if p.is_file()]
+        assert all(not f.endswith(".pdf") for f in all_files)
+        assert all(".sqlite" not in f for f in all_files)
+        assert all(not f.startswith("interim/") for f in all_files)
+
+    def test_handoff_package_writes_checksums(self, tmp_path, conn):
+        export_root, gold = self._write_handoff_inputs(tmp_path, conn)
+        output_root = tmp_path / "data" / "processed" / "product_b_export_v1"
+
+        build_handoff(export_root, gold, output_root)
+
+        checksums = (output_root / "checksums.sha256").read_text(encoding="utf-8")
+        assert "manifest.json" in checksums
+        assert "benchmark_20_reviewed/test_policy/policy_features.json" in checksums
+
+    def test_handoff_fails_when_policy_features_missing(self, tmp_path, conn):
+        export_root, gold = self._write_handoff_inputs(tmp_path, conn)
+        (export_root / POLICY_ID / "policy_features.json").unlink()
+        output_root = tmp_path / "data" / "processed" / "product_b_export_v1"
+
+        with pytest.raises(FileNotFoundError):
+            build_handoff(export_root, gold, output_root)
+
+    def test_handoff_includes_legacy_reviewed_metadata_without_label_status(self, tmp_path, conn):
+        export_root, gold = self._write_handoff_inputs(tmp_path, conn)
+        legacy_policy_id = "legacy_reviewed_policy"
+        self._copy_export_policy(export_root, POLICY_ID, legacy_policy_id)
+
+        metadata_dir = gold / "policies" / legacy_policy_id
+        metadata_dir.mkdir(parents=True)
+        metadata = {
+            "policy_id": legacy_policy_id,
+            "policy_slug": legacy_policy_id,
+            "insurer": "Legacy Insurer",
+            "plan_name": "Legacy Plan",
+            "uin": "LGCHLIP00000V000000",
+            "uin_base": "LGCHLIP00000",
+            "file_hash": "sha256:legacy",
+        }
+        (metadata_dir / "metadata.json").write_text(json.dumps(metadata), encoding="utf-8")
+        output_root = tmp_path / "data" / "processed" / "product_b_export_v1"
+
+        manifest = build_handoff(export_root, gold, output_root)
+
+        assert manifest["policy_count"] == 2
+        assert {row["policy_id"] for row in manifest["policies"]} == {
+            POLICY_ID,
+            legacy_policy_id,
+        }

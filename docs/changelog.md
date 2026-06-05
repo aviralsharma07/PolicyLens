@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-06-05 (DSE-023 — Packet 2: Handoff Package Builder)
+
+### Added
+- `scripts/build_product_b_handoff.py` — reproducible Product B handoff package builder.
+- `tests/test_export.py` — handoff package tests for reviewed-policy manifest, no raw/interim/SQLite files, checksums, missing `policy_features.json`, and legacy metadata without `label_status`.
+
+### Fixed
+- Handoff policy discovery includes the original reviewed gold policies whose metadata predates `label_status: reviewed`; only `label_status: draft` is excluded.
+
+### Validation
+- Builder produced `data/processed/product_b_export_v1` with 20 reviewed policies.
+- Focused export tests passed.
+
 ## 2026-06-05 (DSE-023 — Packet 1: Export Contract Freeze)
 
 ### Changed
