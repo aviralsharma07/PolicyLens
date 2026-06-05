@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | in_progress | P1 | Phase 3 |
+
 
 ---
 
@@ -20,7 +20,8 @@ Current capability:
 - Product B export emits all 20 concept slots with explicit status.
 - 0 parser-target policies with zero clauses; 1 excluded parser target (product-list document).
 - Full-corpus pipeline passes for 647 policies with 566 unique docs exported.
-- Next target: honest 20-policy table eval gate, then targeted table remediation.
+- Honest 20-policy table eval gate: PASS (DSE-022 done). 387/387 labels detected, priority recall 100%, type accuracy 100%, header lineage 100%, legacy rows documented 395/395.
+- Next target: DSE-023 Product B Export v1 Freeze + Handoff Dataset.
 
 ---
 
@@ -58,6 +59,7 @@ Current capability:
 | DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | 2026-06-04 | Scale |
 | DSE-021 | Remaining Deterministic Extractors Wave 2 | 2026-06-05 | Phase 6 |
 | DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | 2026-06-04 | Phase 2 |
+| DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | 2026-06-05 | Phase 3 |
 
 ---
 
@@ -320,7 +322,7 @@ Current capability:
 
 ### DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
 
-**Status:** in_progress
+**Status:** done
 **Priority:** P1
 **Phase:** Phase 3
 **Goal:** Expand table-engine evaluation from the original physical-table labels to the reviewed 20-policy corpus and fix repeated table extraction/header lineage failures.
@@ -330,6 +332,18 @@ Current capability:
 - Header lineage accuracy >= 85%.
 - Table type accuracy >= 80%.
 - Prose-derived summaries remain out of the physical table hard gate.
+**Results:**
+- 20/20 policies accounted for.
+- 387/387 labels detected.
+- Priority recall 100%.
+- Type accuracy 100%.
+- Header lineage 100%.
+- Unrecorded missing cell bboxes 0.
+- Legacy rows documented 395/395.
+- Tata AIG explicitly `no_physical_labels`.
+- Physical table label audit classified all 20 policies: 14 `label_ok`, 1 `needs_extractor_review`, 1 `reviewed_no_physical_labels`, 4 `nonpriority_diagnostic_only`.
+- Single type misclassification (new_india_floater cataract sublimit) fixed by classifier: added "sum insured" keyword, premium-marker disambiguation uses cell text only.
+- 370 DSE-012 labels have empty headers/rows (known annotation limitation; current gate passes because header lineage required only where gold headers exist).
 **Branch:** fix/dse-022-table-eval-20-policy
 **Related docs:** evaluation.md, data_contracts.md, risk_register.md
 

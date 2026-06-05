@@ -1,14 +1,32 @@
 # Changelog
 
+## 2026-06-05 (DSE-022 — Packet 4: Final Closeout)
+
+### Added
+- `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 4 final closeout section.
+
+### Changed
+- `docs/tasks.md` — DSE-022 status changed to `done`; moved from Active Sprint to Completed; Packet 4 results added.
+- `docs/evaluation.md` — Table Extraction current status updated to "DSE-022 final PASS"; final eval artifact path listed.
+- `docs/changelog.md` — Packet 4 entry added.
+- `docs/risk_register.md` — R20 updated from Active to Mitigated; remaining empty headers/rows limitation noted.
+
+### Final Metrics
+- 20/20 policies accounted for.
+- 387/387 labels detected at 100% recall.
+- Priority recall 100%.
+- Type accuracy 100%.
+- Header lineage 100% (required only where gold headers exist).
+- Unrecorded missing cell bboxes 0.
+- Legacy rows documented 395/395.
+- Tata AIG explicitly `no_physical_labels`.
+
 ## 2026-06-05 (DSE-022 — Packet 3: Cataract Sublimit Table Type Fix)
 
 ### Added
 - `table_engine/table_type_classifier.py` — "sum insured" added as schedule_of_benefits keyword; premium-marker disambiguation now checks cell text (not heading context) so heading noise does not block benefit→schedule reclassification.
 - `tests/test_table_engine.py` — 5 new tests: cataract as schedule_of_benefits, cataract with premium heading, premium retention not reclassified, premium retention with benefit heading, generic percent not schedule.
-- `runs/evals/2026-06-05-table-engine-dse022-final.json` — DSE-022 final eval artifact.
-
-### Changed
-- `data/interim/tables/new_india_floater/document_tables.json` — cataract sublimit table (page 14) reclassified from `premium` to `schedule_of_benefits`.
+- `runs/evals/2026-06-05-table-engine-dse022-final.json` — DSE-022 final eval artifact (generated output consumed by eval, not a committed source artifact).
 - `docs/evaluation.md` — DSE-022 Final Result section added.
 - `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 3 section added.
 - `docs/changelog.md` — Packet 3 entry added.

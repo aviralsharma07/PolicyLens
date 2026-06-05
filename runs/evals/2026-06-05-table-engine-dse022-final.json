@@ -2,7 +2,7 @@
   "eval_name": "table-engine-dse022-baseline",
   "date": "2026-06-05",
   "task_id": "DSE-022",
-  "git_commit": "e21cf57ea7fb7a0d176ce71ee80ce5787eca769c",
+  "git_commit": "d8aa428237f8de71d4586039f903e67c955f76bd",
   "input_manifest": "gold_corpus physical_table_labels.json (20 policies)",
   "hard_gates": {
     "reviewed_policies_total": 20,

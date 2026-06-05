@@ -193,6 +193,68 @@ git status --short
 ### Known Limitations
 - The cataract table confidence (0.0625) is low but above the 0.05 threshold. Limited by only 2/35 SOB keywords matching ("sum insured", "cataract"). Acceptable for now.
 
+## Packet 4 — Final Closeout
+
+### Goal
+Close DSE-022 as done. Update all docs to reflect final acceptance. Run final checks.
+
+### Relevant Docs Read
+- docs/tasks.md, docs/evaluation.md, docs/changelog.md, docs/risk_register.md
+- data/reports/dse022_physical_table_label_audit.md
+- runs/evals/2026-06-05-table-engine-dse022-final.json
+- runs/sessions/2026-06-05-table-eval-expansion.md
+
+### Files Changed
+- `docs/tasks.md` — DSE-022 status `done`; moved from Active Sprint to Completed; Packet 4 results added.
+- `docs/evaluation.md` — Table Extraction current status: "DSE-022 final PASS"; final eval artifact path listed.
+- `docs/changelog.md` — Packet 4 final acceptance entry added; Packet 3 note about generated output corrected.
+- `docs/risk_register.md` — R20 status updated to Mitigated with empty headers/rows limitation noted.
+- `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 4 closeout section added.
+
+### Commands Run
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/eval_table_engine.py \
+  --gold-corpus gold_corpus \
+  --tables-root data/interim/tables \
+  --output runs/evals/2026-06-05-table-engine-dse022-final.json
+
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+
+git diff --check
+
+git status --short
+```
+
+### Results
+
+**Table eval final check (DSE-022):**
+- 20/20 policies evaluated, 19 with labels, 1 zero-label (tata_aig_arogya_sanjeevani).
+- 387/387 labels detected (100% recall).
+- Type accuracy: 100% (was 99.74% before Packet 3 fix).
+- Priority detection recall: 100%.
+- Header lineage pass rate: 100%.
+- Unrecorded missing cell bboxes: 0.
+- Legacy rows documented: 395/395.
+
+**Gold corpus validator:** PASSED.
+**Full pytest (all tests):** PASSED.
+**`git diff --check`:** PASSED (no whitespace issues).
+
+### Generated Artifacts
+- `runs/evals/2026-06-05-table-engine-dse022-final.json` — regenerated final eval (unchanged from Packet 3; all gates already passed).
+
+### Known Limitations
+- 370 DSE-012 physical labels have empty headers/rows — current gate passes because header lineage is required only where gold headers exist.
+- The cataract table confidence (0.0625) is low but above the 0.05 threshold.
+- 196 tables across the 20-policy corpus have recorded missing cell bbox issues (pdfplumber limitation).
+- 7 legacy rows remain `deferred_needs_pdf_review` from the original DSE-009 manual review.
+
+### Next Recommended Task
+DSE-023 — Product B Export v1 Freeze + Handoff Dataset.
+
 ## Next Step
 
-DSE-022 Packet 3 complete. 20-policy table eval gate passes with 100% type accuracy. DSE-022 can be closed or moved to done.
+DSE-022 is done. 20-policy table eval gate passes with 100% type accuracy. All 4 packets complete. Proceed to DSE-023.

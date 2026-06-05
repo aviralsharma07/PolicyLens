@@ -589,7 +589,7 @@ tables/{policy_id}/document_table_cells.json
 ```
 
 ### Current Status
-active. DSE-009 legacy 5-policy gate replaced by DSE-022 20-policy baseline.
+active (DSE-022 final PASS on 2026-06-05)
 
 ### DSE-009 v3 Result (5-policy era, superseded by DSE-022)
 
@@ -641,6 +641,8 @@ Notes:
 - All 395 legacy `tables.json` rows have a documented disposition.
 - Physical table matching remains one-to-one; thresholds unchanged.
 - Legacy semantic table dispositions are documented in `data/reports/dse022_legacy_table_dispositions_v1.md`.
+
+Final eval artifact: `runs/evals/2026-06-05-table-engine-dse022-final.json`
 
 ### DSE-022 Final Result (Packet 3)
 
