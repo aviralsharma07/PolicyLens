@@ -1,5 +1,39 @@
 # Changelog
 
+## 2026-06-05 (DSE-022 — Packet 2: Physical Table Label Quality Audit)
+
+### Added
+- `data/reports/dse022_physical_table_label_audit.json` — per-policy physical table label quality audit for all 20 reviewed policies.
+- `data/reports/dse022_physical_table_label_audit.md` — Markdown audit report with classification, findings, and recommendations.
+
+### Changed
+- `docs/tasks.md` — removed blank Backlog row between DSE-014 and DSE-023; added DSE-021 to Completed table.
+- `docs/evaluation.md` — line 592: fixed "DSE-019 legacy 5-policy gate" → "DSE-009 legacy 5-policy gate".
+- `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 2 next step updated.
+- `data/reports/dse009_gold_table_source_review.json` — restored original 5-policy version from HEAD~1.
+- `data/reports/dse009_gold_table_source_review.md` — restored original 5-policy version from HEAD~1.
+
+### Fixed
+- DSE-009 historical reports restored (overwritten by Packet 1 eval regeneration).
+- docs/tasks.md Backlog table broken blank row fixed.
+- docs/evaluation.md typo: DSE-019 → DSE-009.
+
+### Audit Results
+- 387 physical labels across 20 policies examined; 79 priority labels.
+- 14 policies `label_ok`, 1 `needs_extractor_review` (new_india_floater), 1 `reviewed_no_physical_labels` (tata_aig), 4 `nonpriority_diagnostic_only`.
+- 0 gold label corrections needed.
+- 1 type mismatch found: new_india_floater phys_table_002 (gold: schedule_of_benefits, extractor: premium).
+- 370 DSE-012 labels have empty headers/rows — known annotation limitation.
+- All bboxes valid; 1 low-severity plausibility flag (bajaj_allianz phys_table_0046).
+- 373/395 legacy rows correctly auto-mapped via source_table_id.
+
+### Audit-only scope
+This packet is audit-only. No extractor files, table-engine code, gold labels, or PDFs were created or modified. All changes are limited to reports, docs, and session logs. No table extraction behavior changed.
+
+### Known Issues
+- new_india_floater phys_table_002 extractor type classification needs fixing (schedule_of_benefits → premium).
+- DSE-012 bulk-reviewed labels lack cell-level detail (370/387 labels have empty headers/rows).
+
 ## 2026-06-05 (DSE-022 — 20-Policy Table Eval Expansion, Packet 0 + Packet 1)
 
 ### Added

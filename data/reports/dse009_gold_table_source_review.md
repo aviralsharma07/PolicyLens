@@ -1,137 +1,137 @@
 # DSE-009 Gold Table Source Review
 
-This report classifies legacy DSE-003 `tables.json` rows for the physical table gate.
+This report classifies legacy DSE-003 `tables.json` rows for the DSE-009 physical table gate.
 
 | Policy | Legacy table | Page | Type | Classification | Reason |
 |---|---|---:|---|---|---|
-| aditya_birla_activ_care | aditya_birla_activ_care_p5_t1 | 5 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0004. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p6_t1 | 6 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0005. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p7_t1 | 7 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0006. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p8_t1 | 8 | premium | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0007. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p9_t1 | 9 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0008. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p11_t1 | 11 | waiting_period | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0010. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p12_t1 | 12 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0011. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p16_t1 | 16 | premium | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0015. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p22_t1 | 22 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0021. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p23_t1 | 23 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0022. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p23_t2 | 23 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0023. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p24_t1 | 24 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0024. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p25_t1 | 25 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0025. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p26_t1 | 26 | claims_documents | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0026. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p27_t1 | 27 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0027. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p28_t1 | 28 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0028. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p28_t2 | 28 | schedule_of_benefits | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0029. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p29_t1 | 29 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0030. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p30_t1 | 30 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0031. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p31_t1 | 31 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0032. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p32_t1 | 32 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0033. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p33_t1 | 33 | schedule_of_benefits | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0034. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0035. |
-| aditya_birla_activ_care | aditya_birla_activ_care_p34_t2 | 34 | unknown | physical_table_eval | Mapped to physical label: aditya_birla_activ_care_phys_table_0036. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p1_t1 | 1 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0000. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p2_t1 | 2 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0001. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p2_t2 | 2 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0002. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p3_t1 | 3 | room_rent | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0003. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p4_t1 | 4 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0004. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p5_t1 | 5 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0005. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p5_t2 | 5 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0006. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t1 | 6 | network_list | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0007. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t2 | 6 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0008. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t3 | 6 | room_rent | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0009. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p7_t1 | 7 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0010. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p8_t1 | 8 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0011. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p9_t1 | 9 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0012. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p10_t1 | 10 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0013. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p10_t2 | 10 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0014. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p11_t1 | 11 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0015. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p11_t2 | 11 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0016. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p12_t1 | 12 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0017. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p13_t1 | 13 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0018. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p13_t2 | 13 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0019. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t1 | 14 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0020. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t2 | 14 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0021. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t3 | 14 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0022. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t1 | 15 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0023. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t2 | 15 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0024. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t3 | 15 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0025. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t4 | 15 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0026. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t5 | 15 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0027. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p16_t1 | 16 | premium | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0028. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p16_t2 | 16 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0029. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p17_t1 | 17 | network_list | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0030. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p17_t2 | 17 | network_list | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0031. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p18_t1 | 18 | claims_documents | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0032. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p19_t1 | 19 | claims_documents | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0033. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p20_t1 | 20 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0034. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p21_t1 | 21 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0035. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p21_t2 | 21 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0036. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p22_t1 | 22 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0037. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p23_t1 | 23 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0038. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p24_t1 | 24 | schedule_of_benefits | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0039. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p25_t1 | 25 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0040. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p26_t1 | 26 | waiting_period | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0041. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p27_t1 | 27 | claims_documents | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0042. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p28_t1 | 28 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0043. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p29_t1 | 29 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0044. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p30_t1 | 30 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0045. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p31_t1 | 31 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0046. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p31_t2 | 31 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0047. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p32_t1 | 32 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0048. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p33_t1 | 33 | unknown | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0049. |
-| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p33_t2 | 33 | network_list | physical_table_eval | Mapped to physical label: bajaj_allianz_silver_health_phys_table_0050. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p5_t1 | 5 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p6_t1 | 6 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p7_t1 | 7 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p8_t1 | 8 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p9_t1 | 9 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p11_t1 | 11 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p12_t1 | 12 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p16_t1 | 16 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p22_t1 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p23_t1 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p23_t2 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p24_t1 | 24 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p25_t1 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p26_t1 | 26 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p27_t1 | 27 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p28_t1 | 28 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p28_t2 | 28 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p29_t1 | 29 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p30_t1 | 30 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p31_t1 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p32_t1 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p33_t1 | 33 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| aditya_birla_activ_care | aditya_birla_activ_care_p34_t2 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p1_t1 | 1 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p2_t1 | 2 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p2_t2 | 2 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p3_t1 | 3 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p4_t1 | 4 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p5_t1 | 5 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p5_t2 | 5 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t1 | 6 | network_list | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t2 | 6 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p6_t3 | 6 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p7_t1 | 7 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p8_t1 | 8 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p9_t1 | 9 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p10_t1 | 10 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p10_t2 | 10 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p11_t1 | 11 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p11_t2 | 11 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p12_t1 | 12 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p13_t1 | 13 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p13_t2 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t1 | 14 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t2 | 14 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p14_t3 | 14 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t1 | 15 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t2 | 15 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t3 | 15 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t4 | 15 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p15_t5 | 15 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p16_t1 | 16 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p16_t2 | 16 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p17_t1 | 17 | network_list | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p17_t2 | 17 | network_list | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p18_t1 | 18 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p19_t1 | 19 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p20_t1 | 20 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p21_t1 | 21 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p21_t2 | 21 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p22_t1 | 22 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p23_t1 | 23 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p24_t1 | 24 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p25_t1 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p26_t1 | 26 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p27_t1 | 27 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p28_t1 | 28 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p29_t1 | 29 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p30_t1 | 30 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p31_t1 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p31_t2 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p32_t1 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p33_t1 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| bajaj_allianz_silver_health | bajaj_allianz_silver_health_p33_t2 | 33 | network_list | deferred_needs_pdf_review | No explicit disposition recorded. |
 | care_health_care_plus | care_health_care_plus_table_001 | 4 | waiting_period | prose_summary_not_table | Waiting period summary is clause prose, not a physical cell grid. |
 | care_health_care_plus | care_health_care_plus_table_002 | 12 | room_rent | prose_summary_not_table | Room-rent schedule dependency is prose/schedule reference, not a physical table on the labelled page. |
 | care_health_care_plus | care_health_care_plus_table_003 | 1 | premium | deferred_needs_pdf_review | Premium region exists but cells were not annotated in DSE-003. |
 | care_health_care_plus | care_health_care_plus_table_004 | 13 | claims_documents | deferred_needs_pdf_review | Claims-documents region requires physical bbox/header review. |
 | care_health_care_plus | care_health_care_plus_table_005 | 57 | network_list | physical_table_eval | Mapped to network-list physical label. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p1_t1 | 1 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0000. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p2_t1 | 2 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0001. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p3_t1 | 3 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0002. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p4_t1 | 4 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0003. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p8_t1 | 8 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0007. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p32_t1 | 32 | premium | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0031. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p33_t1 | 33 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0032. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p35_t1 | 35 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0034. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p36_t1 | 36 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0035. |
-| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p37_t1 | 37 | unknown | physical_table_eval | Mapped to physical label: cholamandalam_flexi_max_protect_phys_table_0036. |
-| future_generali_health_elite | future_generali_health_elite_p13_t1 | 13 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0004. |
-| future_generali_health_elite | future_generali_health_elite_p13_t2 | 13 | room_rent | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0005. |
-| future_generali_health_elite | future_generali_health_elite_p13_t3 | 13 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0006. |
-| future_generali_health_elite | future_generali_health_elite_p13_t4 | 13 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0007. |
-| future_generali_health_elite | future_generali_health_elite_p13_t5 | 13 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0008. |
-| future_generali_health_elite | future_generali_health_elite_p13_t6 | 13 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0009. |
-| future_generali_health_elite | future_generali_health_elite_p14_t1 | 14 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0010. |
-| future_generali_health_elite | future_generali_health_elite_p14_t2 | 14 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0011. |
-| future_generali_health_elite | future_generali_health_elite_p14_t3 | 14 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0012. |
-| future_generali_health_elite | future_generali_health_elite_p19_t1 | 19 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0013. |
-| future_generali_health_elite | future_generali_health_elite_p19_t2 | 19 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0014. |
-| future_generali_health_elite | future_generali_health_elite_p20_t1 | 20 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0015. |
-| future_generali_health_elite | future_generali_health_elite_p24_t1 | 24 | schedule_of_benefits | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0017. |
-| future_generali_health_elite | future_generali_health_elite_p24_t2 | 24 | schedule_of_benefits | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0018. |
-| future_generali_health_elite | future_generali_health_elite_p24_t3 | 24 | waiting_period | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0019. |
-| future_generali_health_elite | future_generali_health_elite_p25_t1 | 25 | waiting_period | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0020. |
-| future_generali_health_elite | future_generali_health_elite_p25_t2 | 25 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0021. |
-| future_generali_health_elite | future_generali_health_elite_p25_t3 | 25 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0022. |
-| future_generali_health_elite | future_generali_health_elite_p25_t4 | 25 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0023. |
-| future_generali_health_elite | future_generali_health_elite_p25_t5 | 25 | premium | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0024. |
-| future_generali_health_elite | future_generali_health_elite_p31_t1 | 31 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0028. |
-| future_generali_health_elite | future_generali_health_elite_p32_t1 | 32 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0029. |
-| future_generali_health_elite | future_generali_health_elite_p33_t1 | 33 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0030. |
-| future_generali_health_elite | future_generali_health_elite_p33_t2 | 33 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0031. |
-| future_generali_health_elite | future_generali_health_elite_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0032. |
-| future_generali_health_elite | future_generali_health_elite_p34_t2 | 34 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0033. |
-| future_generali_health_elite | future_generali_health_elite_p34_t3 | 34 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0034. |
-| future_generali_health_elite | future_generali_health_elite_p34_t4 | 34 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0035. |
-| future_generali_health_elite | future_generali_health_elite_p34_t5 | 34 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0036. |
-| future_generali_health_elite | future_generali_health_elite_p34_t6 | 34 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0037. |
-| future_generali_health_elite | future_generali_health_elite_p35_t1 | 35 | claims_documents | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0038. |
-| future_generali_health_elite | future_generali_health_elite_p36_t1 | 36 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0039. |
-| future_generali_health_elite | future_generali_health_elite_p36_t2 | 36 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0040. |
-| future_generali_health_elite | future_generali_health_elite_p36_t3 | 36 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0041. |
-| future_generali_health_elite | future_generali_health_elite_p37_t1 | 37 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0042. |
-| future_generali_health_elite | future_generali_health_elite_p38_t1 | 38 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0043. |
-| future_generali_health_elite | future_generali_health_elite_p38_t2 | 38 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0044. |
-| future_generali_health_elite | future_generali_health_elite_p38_t3 | 38 | unknown | physical_table_eval | Mapped to physical label: future_generali_health_elite_phys_table_0045. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p1_t1 | 1 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p2_t1 | 2 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p3_t1 | 3 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p4_t1 | 4 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p8_t1 | 8 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p32_t1 | 32 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p33_t1 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p35_t1 | 35 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p36_t1 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| cholamandalam_flexi_max_protect | cholamandalam_flexi_max_protect_p37_t1 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t1 | 13 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t2 | 13 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t3 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t4 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t5 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p13_t6 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p14_t1 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p14_t2 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p14_t3 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p19_t1 | 19 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p19_t2 | 19 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p20_t1 | 20 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p24_t1 | 24 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p24_t2 | 24 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p24_t3 | 24 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p25_t1 | 25 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p25_t2 | 25 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p25_t3 | 25 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p25_t4 | 25 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p25_t5 | 25 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p31_t1 | 31 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p32_t1 | 32 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p33_t1 | 33 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p33_t2 | 33 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t2 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t3 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t4 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t5 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p34_t6 | 34 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p35_t1 | 35 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p36_t1 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p36_t2 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p36_t3 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p37_t1 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p38_t1 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p38_t2 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| future_generali_health_elite | future_generali_health_elite_p38_t3 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
 | hdfc_arogya_sanjeevani | hdfc_arogya_sanjeevani_table_001 | 24 | schedule_of_benefits | prose_summary_not_table | Room-rent/SOB values are prose/product-summary facts, not the physical table on page 24. |
 | hdfc_arogya_sanjeevani | hdfc_arogya_sanjeevani_table_002 | 8 | waiting_period | prose_summary_not_table | Waiting-period definition is prose; no reliable physical table cells. |
 | hdfc_arogya_sanjeevani | hdfc_arogya_sanjeevani_table_003 | 8 | room_rent | prose_summary_not_table | Room-rent value is prose/fact summary. |
@@ -142,260 +142,260 @@ This report classifies legacy DSE-003 `tables.json` rows for the physical table 
 | icici_family_shield | icici_family_shield_table_002 | 1 | premium | deferred_needs_pdf_review | Policy certificate/premium-like page needs separate physical schedule review. |
 | icici_family_shield | icici_family_shield_table_003 | 18 | claims_documents | deferred_needs_pdf_review | Claims-documents region requires physical bbox/header review. |
 | icici_family_shield | icici_family_shield_table_004 | 1 | network_list | wrong_page_or_wrong_type | Legacy network-list label is not a network-list physical table. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p9_t1 | 9 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0005. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p9_t2 | 9 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0006. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p13_t1 | 13 | waiting_period | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0008. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p14_t1 | 14 | waiting_period | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0009. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p15_t1 | 15 | schedule_of_benefits | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0010. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p16_t1 | 16 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0011. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p17_t1 | 17 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0012. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p18_t1 | 18 | waiting_period | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0013. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p19_t1 | 19 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0014. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p25_t1 | 25 | room_rent | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0017. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p26_t1 | 26 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0018. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p27_t1 | 27 | room_rent | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0019. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p27_t2 | 27 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0020. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p28_t1 | 28 | premium | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0021. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p28_t2 | 28 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0022. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p32_t1 | 32 | premium | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0024. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p38_t1 | 38 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0025. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p39_t1 | 39 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0026. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p40_t1 | 40 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0027. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p41_t1 | 41 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0028. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p41_t2 | 41 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0029. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p42_t1 | 42 | claims_documents | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0030. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p43_t1 | 43 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0031. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p43_t2 | 43 | claims_documents | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0032. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t1 | 44 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0033. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t2 | 44 | claims_documents | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0034. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t3 | 44 | claims_documents | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0035. |
-| iffco_tokio_health_protector | iffco_tokio_health_protector_p45_t1 | 45 | unknown | physical_table_eval | Mapped to physical label: iffco_tokio_health_protector_phys_table_0036. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p1_t1 | 1 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0000. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p2_t1 | 2 | schedule_of_benefits | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0001. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p3_t1 | 3 | schedule_of_benefits | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0002. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p4_t1 | 4 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0003. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p5_t1 | 5 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0004. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p6_t1 | 6 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0005. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p7_t1 | 7 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0006. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p12_t1 | 12 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0011. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p13_t1 | 13 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0012. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p13_t2 | 13 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0013. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p14_t1 | 14 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0014. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p37_t1 | 37 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0035. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t1 | 43 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0038. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t2 | 43 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0039. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t3 | 43 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0040. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t4 | 43 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0041. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t5 | 43 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0042. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p44_t1 | 44 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0043. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p44_t2 | 44 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0044. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p45_t1 | 45 | schedule_of_benefits | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0045. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p46_t1 | 46 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0046. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p47_t1 | 47 | waiting_period | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0047. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p48_t1 | 48 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0048. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p49_t1 | 49 | schedule_of_benefits | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0049. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p50_t1 | 50 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0050. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p51_t1 | 51 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0051. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p52_t1 | 52 | claims_documents | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0052. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p53_t1 | 53 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0053. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p54_t1 | 54 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0054. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p54_t2 | 54 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0055. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t1 | 55 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0056. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t2 | 55 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0057. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t3 | 55 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0058. |
-| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p56_t1 | 56 | unknown | physical_table_eval | Mapped to physical label: kotak_mahindra_health_premier_phys_table_0059. |
-| liberty_critical_connect | liberty_critical_connect_p18_t1 | 18 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0007. |
-| liberty_critical_connect | liberty_critical_connect_p19_t1 | 19 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0008. |
-| liberty_critical_connect | liberty_critical_connect_p20_t1 | 20 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0009. |
-| liberty_critical_connect | liberty_critical_connect_p21_t1 | 21 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0010. |
-| liberty_critical_connect | liberty_critical_connect_p22_t1 | 22 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0011. |
-| liberty_critical_connect | liberty_critical_connect_p22_t2 | 22 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0012. |
-| liberty_critical_connect | liberty_critical_connect_p22_t3 | 22 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0013. |
-| liberty_critical_connect | liberty_critical_connect_p22_t4 | 22 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0014. |
-| liberty_critical_connect | liberty_critical_connect_p23_t1 | 23 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0015. |
-| liberty_critical_connect | liberty_critical_connect_p23_t2 | 23 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0016. |
-| liberty_critical_connect | liberty_critical_connect_p23_t3 | 23 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0017. |
-| liberty_critical_connect | liberty_critical_connect_p23_t4 | 23 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0018. |
-| liberty_critical_connect | liberty_critical_connect_p23_t5 | 23 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0019. |
-| liberty_critical_connect | liberty_critical_connect_p25_t1 | 25 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0020. |
-| liberty_critical_connect | liberty_critical_connect_p26_t1 | 26 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0021. |
-| liberty_critical_connect | liberty_critical_connect_p28_t1 | 28 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0022. |
-| liberty_critical_connect | liberty_critical_connect_p29_t1 | 29 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0023. |
-| liberty_critical_connect | liberty_critical_connect_p30_t1 | 30 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0024. |
-| liberty_critical_connect | liberty_critical_connect_p30_t2 | 30 | waiting_period | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0025. |
-| liberty_critical_connect | liberty_critical_connect_p31_t1 | 31 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0026. |
-| liberty_critical_connect | liberty_critical_connect_p34_t1 | 34 | premium | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0027. |
-| liberty_critical_connect | liberty_critical_connect_p34_t2 | 34 | premium | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0028. |
-| liberty_critical_connect | liberty_critical_connect_p37_t1 | 37 | premium | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0030. |
-| liberty_critical_connect | liberty_critical_connect_p38_t1 | 38 | premium | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0031. |
-| liberty_critical_connect | liberty_critical_connect_p44_t1 | 44 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0033. |
-| liberty_critical_connect | liberty_critical_connect_p45_t1 | 45 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0034. |
-| liberty_critical_connect | liberty_critical_connect_p46_t1 | 46 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0035. |
-| liberty_critical_connect | liberty_critical_connect_p47_t1 | 47 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0036. |
-| liberty_critical_connect | liberty_critical_connect_p48_t1 | 48 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0037. |
-| liberty_critical_connect | liberty_critical_connect_p48_t2 | 48 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0038. |
-| liberty_critical_connect | liberty_critical_connect_p49_t1 | 49 | waiting_period | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0039. |
-| liberty_critical_connect | liberty_critical_connect_p50_t1 | 50 | waiting_period | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0040. |
-| liberty_critical_connect | liberty_critical_connect_p50_t2 | 50 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0041. |
-| liberty_critical_connect | liberty_critical_connect_p51_t1 | 51 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0042. |
-| liberty_critical_connect | liberty_critical_connect_p51_t2 | 51 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0043. |
-| liberty_critical_connect | liberty_critical_connect_p51_t3 | 51 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0044. |
-| liberty_critical_connect | liberty_critical_connect_p51_t4 | 51 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0045. |
-| liberty_critical_connect | liberty_critical_connect_p52_t1 | 52 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0046. |
-| liberty_critical_connect | liberty_critical_connect_p52_t2 | 52 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0047. |
-| liberty_critical_connect | liberty_critical_connect_p52_t3 | 52 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0048. |
-| liberty_critical_connect | liberty_critical_connect_p52_t4 | 52 | unknown | physical_table_eval | Mapped to physical label: liberty_critical_connect_phys_table_0049. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p9_t1 | 9 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p9_t2 | 9 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p13_t1 | 13 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p14_t1 | 14 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p15_t1 | 15 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p16_t1 | 16 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p17_t1 | 17 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p18_t1 | 18 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p19_t1 | 19 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p25_t1 | 25 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p26_t1 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p27_t1 | 27 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p27_t2 | 27 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p28_t1 | 28 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p28_t2 | 28 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p32_t1 | 32 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p38_t1 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p39_t1 | 39 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p40_t1 | 40 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p41_t1 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p41_t2 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p42_t1 | 42 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p43_t1 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p43_t2 | 43 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t1 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t2 | 44 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p44_t3 | 44 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| iffco_tokio_health_protector | iffco_tokio_health_protector_p45_t1 | 45 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p1_t1 | 1 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p2_t1 | 2 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p3_t1 | 3 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p4_t1 | 4 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p5_t1 | 5 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p6_t1 | 6 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p7_t1 | 7 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p12_t1 | 12 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p13_t1 | 13 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p13_t2 | 13 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p14_t1 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p37_t1 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t1 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t2 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t3 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t4 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p43_t5 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p44_t1 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p44_t2 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p45_t1 | 45 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p46_t1 | 46 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p47_t1 | 47 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p48_t1 | 48 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p49_t1 | 49 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p50_t1 | 50 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p51_t1 | 51 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p52_t1 | 52 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p53_t1 | 53 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p54_t1 | 54 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p54_t2 | 54 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t1 | 55 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t2 | 55 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p55_t3 | 55 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| kotak_mahindra_health_premier | kotak_mahindra_health_premier_p56_t1 | 56 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p18_t1 | 18 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p19_t1 | 19 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p20_t1 | 20 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p21_t1 | 21 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p22_t1 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p22_t2 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p22_t3 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p22_t4 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p23_t1 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p23_t2 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p23_t3 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p23_t4 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p23_t5 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p25_t1 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p26_t1 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p28_t1 | 28 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p29_t1 | 29 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p30_t1 | 30 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p30_t2 | 30 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p31_t1 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p34_t1 | 34 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p34_t2 | 34 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p37_t1 | 37 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p38_t1 | 38 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p44_t1 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p45_t1 | 45 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p46_t1 | 46 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p47_t1 | 47 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p48_t1 | 48 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p48_t2 | 48 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p49_t1 | 49 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p50_t1 | 50 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p50_t2 | 50 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p51_t1 | 51 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p51_t2 | 51 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p51_t3 | 51 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p51_t4 | 51 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p52_t1 | 52 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p52_t2 | 52 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p52_t3 | 52 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| liberty_critical_connect | liberty_critical_connect_p52_t4 | 52 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
 | new_india_floater | new_india_floater_table_001 | 6 | waiting_period | prose_summary_not_table | Waiting period is prose/definition content, not a physical waiting-period table. |
 | new_india_floater | new_india_floater_table_002 | 9 | room_rent | prose_summary_not_table | Room-rent fact is extracted from benefit-clause prose/table rows, not a legacy room-rent table. |
 | new_india_floater | new_india_floater_table_003 | 25 | premium | physical_table_eval | Mapped to premium retention physical table. |
 | new_india_floater | new_india_floater_table_004 | 23 | claims_documents | deferred_needs_pdf_review | Claims-documents region requires physical bbox/header review. |
 | new_india_floater | new_india_floater_table_005 | 2 | network_list | wrong_page_or_wrong_type | Legacy network-list label points to non-network-list page content. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p11_t1 | 11 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0008. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p12_t1 | 12 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0009. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p13_t1 | 13 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0010. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p16_t1 | 16 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0012. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p27_t1 | 27 | premium | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0019. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p37_t1 | 37 | schedule_of_benefits | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0028. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p37_t2 | 37 | schedule_of_benefits | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0029. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p38_t1 | 38 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0030. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p39_t1 | 39 | claims_documents | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0031. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p40_t1 | 40 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0032. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p40_t2 | 40 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0033. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t1 | 41 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0034. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t2 | 41 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0035. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t3 | 41 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0036. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p42_t1 | 42 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0037. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p43_t1 | 43 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0038. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p44_t1 | 44 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0039. |
-| niva_bupa_health_recharge | niva_bupa_health_recharge_p45_t1 | 45 | unknown | physical_table_eval | Mapped to physical label: niva_bupa_health_recharge_phys_table_0040. |
-| oriental_cancer_protect | oriental_cancer_protect_p2_t1 | 2 | schedule_of_benefits | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0001. |
-| oriental_cancer_protect | oriental_cancer_protect_p3_t1 | 3 | schedule_of_benefits | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0002. |
-| oriental_cancer_protect | oriental_cancer_protect_p4_t1 | 4 | schedule_of_benefits | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0003. |
-| oriental_cancer_protect | oriental_cancer_protect_p5_t1 | 5 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0004. |
-| oriental_cancer_protect | oriental_cancer_protect_p17_t1 | 17 | waiting_period | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0016. |
-| oriental_cancer_protect | oriental_cancer_protect_p17_t2 | 17 | waiting_period | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0017. |
-| oriental_cancer_protect | oriental_cancer_protect_p25_t1 | 25 | claims_documents | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0025. |
-| oriental_cancer_protect | oriental_cancer_protect_p30_t1 | 30 | premium | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0030. |
-| oriental_cancer_protect | oriental_cancer_protect_p31_t1 | 31 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0031. |
-| oriental_cancer_protect | oriental_cancer_protect_p31_t2 | 31 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0032. |
-| oriental_cancer_protect | oriental_cancer_protect_p32_t1 | 32 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0033. |
-| oriental_cancer_protect | oriental_cancer_protect_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0035. |
-| oriental_cancer_protect | oriental_cancer_protect_p35_t1 | 35 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0036. |
-| oriental_cancer_protect | oriental_cancer_protect_p36_t1 | 36 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0037. |
-| oriental_cancer_protect | oriental_cancer_protect_p37_t1 | 37 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0038. |
-| oriental_cancer_protect | oriental_cancer_protect_p42_t1 | 42 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0039. |
-| oriental_cancer_protect | oriental_cancer_protect_p43_t1 | 43 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0040. |
-| oriental_cancer_protect | oriental_cancer_protect_p44_t1 | 44 | unknown | physical_table_eval | Mapped to physical label: oriental_cancer_protect_phys_table_0041. |
-| reliance_health_gain | reliance_health_gain_p10_t1 | 10 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0009. |
-| reliance_health_gain | reliance_health_gain_p14_t1 | 14 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0013. |
-| reliance_health_gain | reliance_health_gain_p14_t2 | 14 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0014. |
-| reliance_health_gain | reliance_health_gain_p17_t1 | 17 | waiting_period | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0017. |
-| reliance_health_gain | reliance_health_gain_p18_t1 | 18 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0018. |
-| reliance_health_gain | reliance_health_gain_p18_t2 | 18 | schedule_of_benefits | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0019. |
-| reliance_health_gain | reliance_health_gain_p21_t1 | 21 | premium | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0022. |
-| reliance_health_gain | reliance_health_gain_p24_t1 | 24 | claims_documents | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0025. |
-| reliance_health_gain | reliance_health_gain_p25_t1 | 25 | waiting_period | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0026. |
-| reliance_health_gain | reliance_health_gain_p25_t2 | 25 | schedule_of_benefits | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0027. |
-| reliance_health_gain | reliance_health_gain_p26_t1 | 26 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0028. |
-| reliance_health_gain | reliance_health_gain_p26_t2 | 26 | room_rent | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0029. |
-| reliance_health_gain | reliance_health_gain_p27_t1 | 27 | premium | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0030. |
-| reliance_health_gain | reliance_health_gain_p27_t2 | 27 | room_rent | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0031. |
-| reliance_health_gain | reliance_health_gain_p28_t1 | 28 | schedule_of_benefits | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0032. |
-| reliance_health_gain | reliance_health_gain_p29_t1 | 29 | waiting_period | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0033. |
-| reliance_health_gain | reliance_health_gain_p30_t1 | 30 | schedule_of_benefits | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0034. |
-| reliance_health_gain | reliance_health_gain_p30_t2 | 30 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0035. |
-| reliance_health_gain | reliance_health_gain_p31_t1 | 31 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0036. |
-| reliance_health_gain | reliance_health_gain_p31_t2 | 31 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0037. |
-| reliance_health_gain | reliance_health_gain_p31_t3 | 31 | schedule_of_benefits | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0038. |
-| reliance_health_gain | reliance_health_gain_p31_t4 | 31 | room_rent | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0039. |
-| reliance_health_gain | reliance_health_gain_p32_t1 | 32 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0040. |
-| reliance_health_gain | reliance_health_gain_p32_t2 | 32 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0041. |
-| reliance_health_gain | reliance_health_gain_p32_t3 | 32 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0042. |
-| reliance_health_gain | reliance_health_gain_p32_t4 | 32 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0043. |
-| reliance_health_gain | reliance_health_gain_p33_t1 | 33 | claims_documents | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0044. |
-| reliance_health_gain | reliance_health_gain_p33_t2 | 33 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0045. |
-| reliance_health_gain | reliance_health_gain_p33_t3 | 33 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0046. |
-| reliance_health_gain | reliance_health_gain_p33_t4 | 33 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0047. |
-| reliance_health_gain | reliance_health_gain_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0048. |
-| reliance_health_gain | reliance_health_gain_p34_t2 | 34 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0049. |
-| reliance_health_gain | reliance_health_gain_p34_t3 | 34 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0050. |
-| reliance_health_gain | reliance_health_gain_p34_t4 | 34 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0051. |
-| reliance_health_gain | reliance_health_gain_p35_t1 | 35 | unknown | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0052. |
-| reliance_health_gain | reliance_health_gain_p36_t1 | 36 | waiting_period | physical_table_eval | Mapped to physical label: reliance_health_gain_phys_table_0053. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p20_t1 | 20 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0015. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p21_t1 | 21 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0016. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p22_t1 | 22 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0017. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p26_t1 | 26 | premium | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0020. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0026. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p35_t1 | 35 | claims_documents | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0027. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p36_t1 | 36 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0028. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p36_t2 | 36 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0029. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p37_t1 | 37 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0030. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p37_t2 | 37 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0031. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p38_t1 | 38 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0032. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p38_t2 | 38 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0033. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p39_t1 | 39 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0034. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p40_t1 | 40 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0035. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p41_t1 | 41 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0036. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p42_t1 | 42 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0037. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p43_t1 | 43 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0038. |
-| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p45_t1 | 45 | unknown | physical_table_eval | Mapped to physical label: royal_sundaram_advanced_topup_phys_table_0040. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p14_t1 | 14 | claims_documents | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0008. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p17_t1 | 17 | premium | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0009. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p18_t1 | 18 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0010. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p21_t1 | 21 | schedule_of_benefits | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0011. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p22_t1 | 22 | waiting_period | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0012. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p22_t2 | 22 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0013. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p23_t1 | 23 | claims_documents | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0014. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p24_t1 | 24 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0015. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p24_t2 | 24 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0016. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t1 | 25 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0017. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t2 | 25 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0018. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t3 | 25 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0019. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p26_t1 | 26 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0020. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p26_t2 | 26 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0021. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p27_t1 | 27 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0022. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p28_t1 | 28 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0023. |
-| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p29_t1 | 29 | unknown | physical_table_eval | Mapped to physical label: sbi_general_arogya_sanjeevani_phys_table_0024. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p11_t1 | 11 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p12_t1 | 12 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p13_t1 | 13 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p16_t1 | 16 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p27_t1 | 27 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p37_t1 | 37 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p37_t2 | 37 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p38_t1 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p39_t1 | 39 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p40_t1 | 40 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p40_t2 | 40 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t1 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t2 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p41_t3 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p42_t1 | 42 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p43_t1 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p44_t1 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| niva_bupa_health_recharge | niva_bupa_health_recharge_p45_t1 | 45 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p2_t1 | 2 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p3_t1 | 3 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p4_t1 | 4 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p5_t1 | 5 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p17_t1 | 17 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p17_t2 | 17 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p25_t1 | 25 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p30_t1 | 30 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p31_t1 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p31_t2 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p32_t1 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p35_t1 | 35 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p36_t1 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p37_t1 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p42_t1 | 42 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p43_t1 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| oriental_cancer_protect | oriental_cancer_protect_p44_t1 | 44 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p10_t1 | 10 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p14_t1 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p14_t2 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p17_t1 | 17 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p18_t1 | 18 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p18_t2 | 18 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p21_t1 | 21 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p24_t1 | 24 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p25_t1 | 25 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p25_t2 | 25 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p26_t1 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p26_t2 | 26 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p27_t1 | 27 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p27_t2 | 27 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p28_t1 | 28 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p29_t1 | 29 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p30_t1 | 30 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p30_t2 | 30 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p31_t1 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p31_t2 | 31 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p31_t3 | 31 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p31_t4 | 31 | room_rent | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p32_t1 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p32_t2 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p32_t3 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p32_t4 | 32 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p33_t1 | 33 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p33_t2 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p33_t3 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p33_t4 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p34_t2 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p34_t3 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p34_t4 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p35_t1 | 35 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| reliance_health_gain | reliance_health_gain_p36_t1 | 36 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p20_t1 | 20 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p21_t1 | 21 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p22_t1 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p26_t1 | 26 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p35_t1 | 35 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p36_t1 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p36_t2 | 36 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p37_t1 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p37_t2 | 37 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p38_t1 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p38_t2 | 38 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p39_t1 | 39 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p40_t1 | 40 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p41_t1 | 41 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p42_t1 | 42 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p43_t1 | 43 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| royal_sundaram_advanced_topup | royal_sundaram_advanced_topup_p45_t1 | 45 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p14_t1 | 14 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p17_t1 | 17 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p18_t1 | 18 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p21_t1 | 21 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p22_t1 | 22 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p22_t2 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p23_t1 | 23 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p24_t1 | 24 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p24_t2 | 24 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t1 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t2 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p25_t3 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p26_t1 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p26_t2 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p27_t1 | 27 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p28_t1 | 28 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| sbi_general_arogya_sanjeevani | sbi_general_arogya_sanjeevani_p29_t1 | 29 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
 | star_medi_classic_accident | star_medi_classic_accident_table_001 | 1 | schedule_of_benefits | prose_summary_not_table | SOB facts are embedded in policy summary/prose, not a clean physical SOB grid. |
 | star_medi_classic_accident | star_medi_classic_accident_table_002 | 2 | waiting_period | prose_summary_not_table | Waiting-period facts are prose; page 2 physical table is policy-summary/coverage index. |
 | star_medi_classic_accident | star_medi_classic_accident_table_003 | 5 | room_rent | prose_summary_not_table | Room-rent fact is prose/scope text, not a physical room-rent grid. |
 | star_medi_classic_accident | star_medi_classic_accident_table_004 | 9 | premium | physical_table_eval | Mapped to premium retention physical table. |
 | star_medi_classic_accident | star_medi_classic_accident_table_005 | 8 | claims_documents | deferred_needs_pdf_review | Claims-documents label needs source/bbox review. |
 | star_medi_classic_accident | star_medi_classic_accident_table_006 | 6 | network_list | wrong_page_or_wrong_type | Legacy network-list label points to non-network-list page content. |
-| united_india_individual_health | united_india_individual_health_p5_t1 | 5 | waiting_period | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0001. |
-| united_india_individual_health | united_india_individual_health_p6_t1 | 6 | schedule_of_benefits | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0002. |
-| united_india_individual_health | united_india_individual_health_p7_t1 | 7 | schedule_of_benefits | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0003. |
-| united_india_individual_health | united_india_individual_health_p7_t2 | 7 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0004. |
-| united_india_individual_health | united_india_individual_health_p8_t1 | 8 | schedule_of_benefits | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0005. |
-| united_india_individual_health | united_india_individual_health_p8_t2 | 8 | premium | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0006. |
-| united_india_individual_health | united_india_individual_health_p9_t1 | 9 | waiting_period | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0007. |
-| united_india_individual_health | united_india_individual_health_p9_t2 | 9 | waiting_period | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0008. |
-| united_india_individual_health | united_india_individual_health_p13_t1 | 13 | premium | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0009. |
-| united_india_individual_health | united_india_individual_health_p17_t1 | 17 | claims_documents | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0010. |
-| united_india_individual_health | united_india_individual_health_p20_t1 | 20 | schedule_of_benefits | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0011. |
-| united_india_individual_health | united_india_individual_health_p21_t1 | 21 | claims_documents | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0012. |
-| united_india_individual_health | united_india_individual_health_p22_t1 | 22 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0013. |
-| united_india_individual_health | united_india_individual_health_p22_t2 | 22 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0014. |
-| united_india_individual_health | united_india_individual_health_p22_t3 | 22 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0015. |
-| united_india_individual_health | united_india_individual_health_p23_t1 | 23 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0016. |
-| united_india_individual_health | united_india_individual_health_p23_t2 | 23 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0017. |
-| united_india_individual_health | united_india_individual_health_p24_t1 | 24 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0018. |
-| united_india_individual_health | united_india_individual_health_p25_t1 | 25 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0019. |
-| united_india_individual_health | united_india_individual_health_p26_t1 | 26 | unknown | physical_table_eval | Mapped to physical label: united_india_individual_health_phys_table_0020. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p14_t1 | 14 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0001. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p15_t1 | 15 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0002. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p17_t1 | 17 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0003. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p17_t2 | 17 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0004. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p18_t1 | 18 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0005. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p19_t1 | 19 | premium | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0006. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p20_t1 | 20 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0007. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p20_t2 | 20 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0008. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p21_t1 | 21 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0009. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p22_t1 | 22 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0010. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p29_t1 | 29 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0016. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p30_t1 | 30 | premium | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0017. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p33_t1 | 33 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0019. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p34_t1 | 34 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0020. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p35_t1 | 35 | unknown | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0021. |
-| universal_sompo_loan_secure | universal_sompo_loan_secure_p36_t1 | 36 | premium | physical_table_eval | Mapped to physical label: universal_sompo_loan_secure_phys_table_0022. |
+| united_india_individual_health | united_india_individual_health_p5_t1 | 5 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p6_t1 | 6 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p7_t1 | 7 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p7_t2 | 7 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p8_t1 | 8 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p8_t2 | 8 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p9_t1 | 9 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p9_t2 | 9 | waiting_period | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p13_t1 | 13 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p17_t1 | 17 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p20_t1 | 20 | schedule_of_benefits | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p21_t1 | 21 | claims_documents | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p22_t1 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p22_t2 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p22_t3 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p23_t1 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p23_t2 | 23 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p24_t1 | 24 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p25_t1 | 25 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| united_india_individual_health | united_india_individual_health_p26_t1 | 26 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p14_t1 | 14 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p15_t1 | 15 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p17_t1 | 17 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p17_t2 | 17 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p18_t1 | 18 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p19_t1 | 19 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p20_t1 | 20 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p20_t2 | 20 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p21_t1 | 21 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p22_t1 | 22 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p29_t1 | 29 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p30_t1 | 30 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p33_t1 | 33 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p34_t1 | 34 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p35_t1 | 35 | unknown | deferred_needs_pdf_review | No explicit disposition recorded. |
+| universal_sompo_loan_secure | universal_sompo_loan_secure_p36_t1 | 36 | premium | deferred_needs_pdf_review | No explicit disposition recorded. |

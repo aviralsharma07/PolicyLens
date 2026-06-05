@@ -589,7 +589,7 @@ tables/{policy_id}/document_table_cells.json
 ```
 
 ### Current Status
-active. DSE-019 legacy 5-policy gate replaced by DSE-022 20-policy baseline.
+active. DSE-009 legacy 5-policy gate replaced by DSE-022 20-policy baseline.
 
 ### DSE-009 v3 Result (5-policy era, superseded by DSE-022)
 

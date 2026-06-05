@@ -1,0 +1,426 @@
+{
+  "report_name": "dse022_physical_table_label_audit",
+  "date": "2026-06-05",
+  "task_id": "DSE-022",
+  "packet": "Packet 2",
+  "description": "Physical table label quality audit across all 20 reviewed policies. Classifies every physical table label by quality and flags issues for extractor or gold-label review.",
+  "policy_audits": {
+    "aditya_birla_activ_care": {
+      "policy_slug": "aditya_birla_activ_care",
+      "physical_label_count": 24,
+      "priority_label_count": 3,
+      "zero_label_status": false,
+      "extracted_table_count": 24,
+      "detected_label_count": 24,
+      "type_mismatches": [],
+      "empty_headers_count": 24,
+      "empty_rows_count": 24,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 24 labels have empty headers/rows — known annotation limitation. Bboxes valid, types correct, all 3 priority labels correctly typed as waiting_period or schedule_of_benefits."
+    },
+    "bajaj_allianz_silver_health": {
+      "policy_slug": "bajaj_allianz_silver_health",
+      "physical_label_count": 51,
+      "priority_label_count": 21,
+      "zero_label_status": false,
+      "extracted_table_count": 51,
+      "detected_label_count": 51,
+      "type_mismatches": [],
+      "empty_headers_count": 51,
+      "empty_rows_count": 51,
+      "bbox_issues": [
+        {
+          "label_id": "bajaj_allianz_silver_health_phys_table_0046",
+          "issue": "bbox_height_plausibility",
+          "detail": "bbox spans nearly full page width (34.56 to 577.54) but only 23.36pt tall. Possible very small table or annotation artifact. Height ~23pt is unusually short for a full-width table."
+        }
+      ],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 51 labels have empty headers/rows — known annotation limitation. Highest label count policy (51). 21 priority labels (waiting_period + schedule_of_benefits). One bbox plausibility concern flagged but not invalid."
+    },
+    "care_health_care_plus": {
+      "policy_slug": "care_health_care_plus",
+      "physical_label_count": 4,
+      "priority_label_count": 1,
+      "zero_label_status": false,
+      "extracted_table_count": 4,
+      "detected_label_count": 4,
+      "type_mismatches": [],
+      "empty_headers_count": 0,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-009 original labels. All headers/rows populated. Single priority label correctly typed. Bboxes valid."
+    },
+    "cholamandalam_flexi_max_protect": {
+      "policy_slug": "cholamandalam_flexi_max_protect",
+      "physical_label_count": 10,
+      "priority_label_count": 0,
+      "zero_label_status": false,
+      "extracted_table_count": 10,
+      "detected_label_count": 10,
+      "type_mismatches": [],
+      "empty_headers_count": 10,
+      "empty_rows_count": 10,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "nonpriority_diagnostic_only",
+      "notes": "DSE-012 bulk-reviewed. Zero priority labels — all 10 labels are non-priority types. Does not affect priority gate. Empty headers/rows (known DSE-012 limitation)."
+    },
+    "future_generali_health_elite": {
+      "policy_slug": "future_generali_health_elite",
+      "physical_label_count": 38,
+      "priority_label_count": 4,
+      "zero_label_status": false,
+      "extracted_table_count": 38,
+      "detected_label_count": 38,
+      "type_mismatches": [],
+      "empty_headers_count": 38,
+      "empty_rows_count": 38,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 38 labels have empty headers/rows. 4 priority labels correctly typed. Bboxes valid."
+    },
+    "hdfc_arogya_sanjeevani": {
+      "policy_slug": "hdfc_arogya_sanjeevani",
+      "physical_label_count": 2,
+      "priority_label_count": 0,
+      "zero_label_status": false,
+      "extracted_table_count": 2,
+      "detected_label_count": 2,
+      "type_mismatches": [],
+      "empty_headers_count": 0,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "nonpriority_diagnostic_only",
+      "notes": "DSE-009 original labels. Headers/rows populated. Zero priority labels — does not affect priority gate. Bboxes valid."
+    },
+    "icici_family_shield": {
+      "policy_slug": "icici_family_shield",
+      "physical_label_count": 4,
+      "priority_label_count": 3,
+      "zero_label_status": false,
+      "extracted_table_count": 4,
+      "detected_label_count": 4,
+      "type_mismatches": [],
+      "empty_headers_count": 0,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-009 original labels. All headers/rows populated. 3 priority labels correctly typed. Bboxes valid."
+    },
+    "iffco_tokio_health_protector": {
+      "policy_slug": "iffco_tokio_health_protector",
+      "physical_label_count": 28,
+      "priority_label_count": 4,
+      "zero_label_status": false,
+      "extracted_table_count": 28,
+      "detected_label_count": 28,
+      "type_mismatches": [],
+      "empty_headers_count": 28,
+      "empty_rows_count": 28,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 28 labels have empty headers/rows. 4 priority labels correctly typed. Bboxes valid."
+    },
+    "kotak_mahindra_health_premier": {
+      "policy_slug": "kotak_mahindra_health_premier",
+      "physical_label_count": 34,
+      "priority_label_count": 10,
+      "zero_label_status": false,
+      "extracted_table_count": 34,
+      "detected_label_count": 34,
+      "type_mismatches": [],
+      "empty_headers_count": 34,
+      "empty_rows_count": 34,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 34 labels have empty headers/rows. 10 priority labels correctly typed. Bboxes valid."
+    },
+    "liberty_critical_connect": {
+      "policy_slug": "liberty_critical_connect",
+      "physical_label_count": 41,
+      "priority_label_count": 3,
+      "zero_label_status": false,
+      "extracted_table_count": 41,
+      "detected_label_count": 41,
+      "type_mismatches": [],
+      "empty_headers_count": 41,
+      "empty_rows_count": 41,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 41 labels have empty headers/rows. 3 priority labels correctly typed. Bboxes valid."
+    },
+    "new_india_floater": {
+      "policy_slug": "new_india_floater",
+      "physical_label_count": 4,
+      "priority_label_count": 3,
+      "zero_label_status": false,
+      "extracted_table_count": 4,
+      "detected_label_count": 4,
+      "type_mismatches": [
+        {
+          "label_id": "new_india_floater_phys_table_002",
+          "gold_type": "schedule_of_benefits",
+          "extractor_type": "premium",
+          "page": 14,
+          "detail": "Gold labels phys_table_002 as schedule_of_benefits (cataract sublimit table on page 14). Extractor classified as premium. This is an extractor type classification error, not a gold label error."
+        }
+      ],
+      "empty_headers_count": 1,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "needs_extractor_review",
+      "notes": "DSE-009 original labels with populated headers/rows. 1 type mismatch on priority label phys_table_002. Gold says schedule_of_benefits, extractor says premium. The cataract sublimit table is genuinely a schedule_of_benefits — extractor type classifier needs fix. phys_table_001 has empty headers because the table genuinely lacks a header row (two-column benefit clause listing)."
+    },
+    "niva_bupa_health_recharge": {
+      "policy_slug": "niva_bupa_health_recharge",
+      "physical_label_count": 18,
+      "priority_label_count": 2,
+      "zero_label_status": false,
+      "extracted_table_count": 18,
+      "detected_label_count": 18,
+      "type_mismatches": [],
+      "empty_headers_count": 18,
+      "empty_rows_count": 18,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 18 labels have empty headers/rows. 2 priority labels correctly typed. Bboxes valid."
+    },
+    "oriental_cancer_protect": {
+      "policy_slug": "oriental_cancer_protect",
+      "physical_label_count": 18,
+      "priority_label_count": 5,
+      "zero_label_status": false,
+      "extracted_table_count": 18,
+      "detected_label_count": 18,
+      "type_mismatches": [],
+      "empty_headers_count": 18,
+      "empty_rows_count": 18,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 18 labels have empty headers/rows. 5 priority labels correctly typed. Bboxes valid."
+    },
+    "reliance_health_gain": {
+      "policy_slug": "reliance_health_gain",
+      "physical_label_count": 36,
+      "priority_label_count": 9,
+      "zero_label_status": false,
+      "extracted_table_count": 36,
+      "detected_label_count": 36,
+      "type_mismatches": [],
+      "empty_headers_count": 36,
+      "empty_rows_count": 36,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 36 labels have empty headers/rows. 9 priority labels correctly typed. Bboxes valid."
+    },
+    "royal_sundaram_advanced_topup": {
+      "policy_slug": "royal_sundaram_advanced_topup",
+      "physical_label_count": 18,
+      "priority_label_count": 0,
+      "zero_label_status": false,
+      "extracted_table_count": 18,
+      "detected_label_count": 18,
+      "type_mismatches": [],
+      "empty_headers_count": 18,
+      "empty_rows_count": 18,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "nonpriority_diagnostic_only",
+      "notes": "DSE-012 bulk-reviewed. Zero priority labels — all 18 labels are non-priority types. Does not affect priority gate. Empty headers/rows (known DSE-012 limitation)."
+    },
+    "sbi_general_arogya_sanjeevani": {
+      "policy_slug": "sbi_general_arogya_sanjeevani",
+      "physical_label_count": 17,
+      "priority_label_count": 2,
+      "zero_label_status": false,
+      "extracted_table_count": 17,
+      "detected_label_count": 17,
+      "type_mismatches": [],
+      "empty_headers_count": 17,
+      "empty_rows_count": 17,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 17 labels have empty headers/rows. 2 priority labels correctly typed. Bboxes valid."
+    },
+    "star_medi_classic_accident": {
+      "policy_slug": "star_medi_classic_accident",
+      "physical_label_count": 4,
+      "priority_label_count": 2,
+      "zero_label_status": false,
+      "extracted_table_count": 4,
+      "detected_label_count": 4,
+      "type_mismatches": [],
+      "empty_headers_count": 0,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-009 original labels. All headers/rows populated. 2 priority labels correctly typed. Bboxes valid."
+    },
+    "tata_aig_arogya_sanjeevani": {
+      "policy_slug": "tata_aig_arogya_sanjeevani",
+      "physical_label_count": 0,
+      "priority_label_count": 0,
+      "zero_label_status": true,
+      "extracted_table_count": 0,
+      "detected_label_count": 0,
+      "type_mismatches": [],
+      "empty_headers_count": 0,
+      "empty_rows_count": 0,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "reviewed_no_physical_labels",
+      "notes": "Zero physical labels (empty [] array). Policy genuinely has no tabular structures — confirmed by source-PDF human review during DSE-012. Not an annotation gap. Correctly handled by eval as no_physical_labels."
+    },
+    "united_india_individual_health": {
+      "policy_slug": "united_india_individual_health",
+      "physical_label_count": 20,
+      "priority_label_count": 7,
+      "zero_label_status": false,
+      "extracted_table_count": 20,
+      "detected_label_count": 20,
+      "type_mismatches": [],
+      "empty_headers_count": 20,
+      "empty_rows_count": 20,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "label_ok",
+      "notes": "DSE-012 bulk-reviewed. All 20 labels have empty headers/rows. 7 priority labels correctly typed. Bboxes valid."
+    },
+    "universal_sompo_loan_secure": {
+      "policy_slug": "universal_sompo_loan_secure",
+      "physical_label_count": 16,
+      "priority_label_count": 0,
+      "zero_label_status": false,
+      "extracted_table_count": 16,
+      "detected_label_count": 16,
+      "type_mismatches": [],
+      "empty_headers_count": 16,
+      "empty_rows_count": 16,
+      "bbox_issues": [],
+      "priority_labels_non_standard_type": [],
+      "classification": "nonpriority_diagnostic_only",
+      "notes": "DSE-012 bulk-reviewed. Zero priority labels — all 16 labels are non-priority types. Does not affect priority gate. Empty headers/rows (known DSE-012 limitation)."
+    }
+  },
+  "summary": {
+    "total_policies": 20,
+    "total_physical_labels": 387,
+    "total_priority_labels": 79,
+    "total_extracted_tables_matched": 387,
+    "detection_recall": 1.0,
+    "zero_label_policies": [
+      "tata_aig_arogya_sanjeevani"
+    ],
+    "type_mismatch_policies": [
+      {
+        "policy_slug": "new_india_floater",
+        "type": "extractor_misclassification",
+        "mismatch_count": 1,
+        "labels": [
+          "new_india_floater_phys_table_002"
+        ]
+      }
+    ],
+    "bbox_issue_policies": [
+      {
+        "policy_slug": "bajaj_allianz_silver_health",
+        "issue_count": 1,
+        "severity": "low"
+      }
+    ],
+    "empty_headers_summary": {
+      "total_labels_with_empty_headers": 370,
+      "total_labels_with_empty_rows": 370,
+      "note": "370 labels (all DSE-012 bulk-reviewed) have empty headers/rows arrays. This is a known annotation limitation — the reviewer confirmed table type, bbox, row_count, and column_count but did not populate cell-level detail. Labels are still valid for eval purposes."
+    },
+    "classifications": {
+      "label_ok": {
+        "count": 14,
+        "policies": [
+          "aditya_birla_activ_care",
+          "bajaj_allianz_silver_health",
+          "care_health_care_plus",
+          "future_generali_health_elite",
+          "icici_family_shield",
+          "iffco_tokio_health_protector",
+          "kotak_mahindra_health_premier",
+          "liberty_critical_connect",
+          "niva_bupa_health_recharge",
+          "oriental_cancer_protect",
+          "reliance_health_gain",
+          "sbi_general_arogya_sanjeevani",
+          "star_medi_classic_accident",
+          "united_india_individual_health"
+        ],
+        "note": "Labels are correct. Empty headers/rows in DSE-012 bulk-reviewed labels are known annotation limitations, not errors."
+      },
+      "needs_extractor_review": {
+        "count": 1,
+        "policies": [
+          "new_india_floater"
+        ],
+        "note": "Gold is correct; extractor type classifier misclassifies phys_table_002 (cataract sublimit) as premium instead of schedule_of_benefits."
+      },
+      "needs_gold_label_review": {
+        "count": 0,
+        "policies": [],
+        "note": "No gold label corrections needed. All gold labels are accurate."
+      },
+      "reviewed_no_physical_labels": {
+        "count": 1,
+        "policies": [
+          "tata_aig_arogya_sanjeevani"
+        ],
+        "note": "Policy genuinely has no physical tables. Handled correctly by eval."
+      },
+      "nonpriority_diagnostic_only": {
+        "count": 4,
+        "policies": [
+          "cholamandalam_flexi_max_protect",
+          "hdfc_arogya_sanjeevani",
+          "royal_sundaram_advanced_topup",
+          "universal_sompo_loan_secure"
+        ],
+        "note": "All labels are non-priority types. Useful for diagnostic eval but do not affect priority gate."
+      }
+    },
+    "legacy_row_dispositions": {
+      "total_legacy_rows": 395,
+      "physical_table_eval": 373,
+      "prose_summary_not_table": 11,
+      "wrong_page_or_wrong_type": 4,
+      "deferred_needs_pdf_review": 7,
+      "auto_mapped_via_source_table_id": 373,
+      "note": "373 of 395 legacy rows correctly auto-mapped to physical labels via source_table_id. Confirms physical_table_eval disposition is not too broad."
+    },
+    "known_limitations": [
+      "370 DSE-012 labels have empty headers:[] and rows:[] — cell-level detail not annotated during bulk review",
+      "1 bbox plausibility concern flagged (bajaj_allianz phys_table_0046) — very flat full-width bbox, likely a tiny table but visually suspicious",
+      "Legacy rows physical_table_eval (373) rely on source_table_id matching — verified correct"
+    ],
+    "recommendations": [
+      "Fix extractor type classifier for new_india_floater phys_table_002: should recognize cataract sublimit tables as schedule_of_benefits, not premium",
+      "No gold label corrections needed — all gold physical labels are accurate",
+      "No bbox corrections needed — 1 plausibility issue is low severity",
+      "DSE-012 bulk-reviewed empty headers/rows can be populated with cell-level detail in a future annotation pass if needed for header lineage eval improvement"
+    ]
+  }
+}

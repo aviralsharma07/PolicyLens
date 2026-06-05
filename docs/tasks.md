@@ -29,7 +29,6 @@ Current capability:
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
 
 ---
@@ -57,6 +56,7 @@ Current capability:
 | DSE-018 | Deterministic Extractor Expansion Wave 1 | 2026-06-02 | Phase 6 |
 | DSE-019 | Canonical Insurance Concept Ontology Registry v1 | 2026-06-02 | Ontology / Product A Control Plane |
 | DSE-020 | Full 647-Policy Pipeline Dry Run + Scale Triage | 2026-06-04 | Scale |
+| DSE-021 | Remaining Deterministic Extractors Wave 2 | 2026-06-05 | Phase 6 |
 | DSE-024 | Full-Corpus Parser Remediation for Zero-Clause Policies | 2026-06-04 | Phase 2 |
 
 ---

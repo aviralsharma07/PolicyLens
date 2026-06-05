@@ -84,10 +84,62 @@ Packet 1 — DSE-022 baseline:
 ## Issues / Limitations
 
 - Integration tests skipped unless `data/interim/tables/` is populated and `@pytest.mark.slow` is enabled.
-- DSE-009 source review files overwritten during eval (they now reflect 20-policy dispositions).
+- DSE-009 source review files restored from HEAD~1 (5-policy original versions).
 - 196 tables across the 20-policy corpus have recorded missing cell bbox issues (pdfplumber limitation, not a gold gap).
 - 7 legacy rows remain `deferred_needs_pdf_review` from the original DSE-009 manual review; all have explicit reasons.
+- 370 DSE-012 labels have empty headers/rows — known annotation limitation.
+- new_india_floater phys_table_002 type mismatch (gold: schedule_of_benefits, extractor: premium) needs extractor fix.
+
+## Packet 2 — Physical Table Label Quality Audit
+
+### Goal
+Audit all 387 physical table labels across 20 reviewed policies for quality, type mismatches, bbox issues, empty headers/rows, and priority label integrity.
+
+### Relevant Docs Read
+- All 20 `gold_corpus/policies/*/physical_table_labels.json` — full physical label data
+- `runs/evals/2026-06-05-table-engine-dse022-baseline.json` — per-policy eval metrics
+- `data/reports/dse022_legacy_table_dispositions_v1.md` — legacy row dispositions
+- `docs/tasks.md`, `docs/evaluation.md`, `docs/changelog.md`
+
+### Files Changed
+- `data/reports/dse022_physical_table_label_audit.json` — new: per-policy label quality audit
+- `data/reports/dse022_physical_table_label_audit.md` — new: markdown audit report
+- `docs/tasks.md` — fixed blank Backlog row; added DSE-021 to Completed table
+- `docs/evaluation.md` — fixed typo line 592: DSE-019 → DSE-009
+- `runs/sessions/2026-06-05-table-eval-expansion.md` — Packet 2 session log update
+- `docs/changelog.md` — Packet 2 entry added
+- `data/reports/dse009_gold_table_source_review.json` — restored (HEAD~1)
+- `data/reports/dse009_gold_table_source_review.md` — restored (HEAD~1)
+
+### Commands Run
+```bash
+git restore --source HEAD~1 -- data/reports/dse009_gold_table_source_review.json data/reports/dse009_gold_table_source_review.md
+```
+
+### Results
+- **20 policies audited, 387 labels examined, 79 priority labels.**
+- **14 label_ok** — labels correct, eval-ready
+- **1 needs_extractor_review** (new_india_floater) — phys_table_002 type mismatch
+- **1 reviewed_no_physical_labels** (tata_aig_arogya_sanjeevani) — genuine zero-table policy
+- **4 nonpriority_diagnostic_only** (chola, hdfc, royal_sundaram, universal_sompo) — zero priority labels
+- **0 needs_gold_label_review** — all gold labels accurate
+- **1 type mismatch:** new_india_floater phys_table_002 (cataract sublimit) classified as premium by extractor instead of schedule_of_benefits
+- **0 invalid/null bboxes;** 1 low-severity plausibility flag (bajaj_allianz phys_table_0046)
+- **370/387 labels** have empty headers/rows (DSE-012 annotation limitation)
+- **373/395 legacy rows** correctly auto-mapped via source_table_id
+- DSE-009 reports restored to original 5-policy versions
+- Cleanup tasks: tasks.md table fixed, evaluation.md typo fixed, session log updated
+
+### Generated Artifacts
+- `data/reports/dse022_physical_table_label_audit.json`
+- `data/reports/dse022_physical_table_label_audit.md`
+
+### Decisions Made
+- tata_aig_arogya_sanjeevani classified as `reviewed_no_physical_labels` (genuinely no tables, not an annotation gap)
+- new_india_floater type mismatch is extractor issue, not gold label issue
+- DSE-012 empty headers/rows accepted as known limitation — no fix needed
+- No gold label corrections required
 
 ## Next Step
 
-Packet 2: Run targeted table extraction fixes if the honest gate exposes real failures.
+Packet 3: fix the single New India cataract sublimit table type misclassification, rerun table eval, then close DSE-022 if gates pass.
