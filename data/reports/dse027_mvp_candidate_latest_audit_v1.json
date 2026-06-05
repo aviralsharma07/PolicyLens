@@ -1,0 +1,59 @@
+{
+  "schema_version": "dse027_mvp_candidate_latest_audit.v1",
+  "task_id": "DSE-027",
+  "generated_at": "2026-06-06T01:41:03Z",
+  "candidate_count": 30,
+  "selection_status_counts": {
+    "verified_current": 27,
+    "verified_current_with_gap": 3
+  },
+  "latest_sellability_counts": {
+    "live": 30
+  },
+  "insurer_status_counts": {
+    "Care Health": {
+      "verified_current": 6
+    },
+    "HDFC ERGO": {
+      "verified_current": 5,
+      "verified_current_with_gap": 1
+    },
+    "ICICI Lombard": {
+      "verified_current": 4,
+      "verified_current_with_gap": 2
+    },
+    "Niva Bupa": {
+      "verified_current": 6
+    },
+    "Star Health": {
+      "verified_current": 6
+    }
+  },
+  "replacement_rows": [],
+  "non_clean_rows": [
+    {
+      "candidate_id": "hdfc_ergo_arogya_sanjeevani",
+      "verified_product_name": "Arogya Sanjeevani Policy, HDFC ERGO",
+      "selection_status": "verified_current_with_gap",
+      "latest_sellability_status": "live",
+      "review_confidence": "high",
+      "verification_notes": "Current HDFC ERGO CIS page still lists the retail Arogya Sanjeevani product and the live CIS confirms the candidate UIN. Dedicated current product page was not used."
+    },
+    {
+      "candidate_id": "icici_lombard_health_advantedge",
+      "verified_product_name": "Health AdvantEdge",
+      "selection_status": "verified_current_with_gap",
+      "latest_sellability_status": "live",
+      "review_confidence": "medium",
+      "verification_notes": "Current ICICI product pages still market Health AdvantEdge, but a fresh current wording URL was not locked in this packet. Local Product A UIN is retained as a cautious placeholder pending direct doc download."
+    },
+    {
+      "candidate_id": "icici_lombard_health_booster",
+      "verified_product_name": "Health Booster",
+      "selection_status": "verified_current_with_gap",
+      "latest_sellability_status": "live",
+      "review_confidence": "medium",
+      "verification_notes": "Current ICICI Health Booster product page is live and an official brochure remains public. Current wording URL still needs locking, so the local reviewed UIN is retained conservatively."
+    }
+  ]
+}

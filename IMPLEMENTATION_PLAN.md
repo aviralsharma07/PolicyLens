@@ -16,7 +16,7 @@ Core truths from Product B prototype review:
 
 The Aditya Birla Activ Care co-pay review is the concrete failure mode: the policy wording supported a conditional 15% non-preferred-provider co-pay, while Standard/Classic/Premier variant-level co-pay values lived in a separate Product Benefit Table. Product B must not flatten those into one generic scalar.
 
-## Current State — 2026-06-05
+## Current State — 2026-06-06
 
 All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. DSE-022 passed the 20-policy table eval. DSE-023 froze the first Product B handoff package. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
 
@@ -33,6 +33,7 @@ Product A now has:
 - DSE-020 full-corpus scale triage completed and passing.
 - 0 parser-target zero-clause failures; 1 excluded parser target.
 - Product Source Bundle Registry v1 with 507 draft bundles.
+- Curated MVP source-bundle registry v1 with 30 latest-reviewed product bundles.
 
 Product A is ready for curated insurer/product selection before launch-grade Product B recommendations. The first Product B handoff package is available at `data/processed/product_b_export_v1` and should be consumed by `insurance-agent` as compiled JSON only, but it should be treated as a prototype/evidence-explorer dataset until PBT/CIS/brochure source bundles are downloaded, hashed, reviewed, and exported.
 
@@ -55,8 +56,8 @@ The next risks are:
 7. PB-001 — Local PolicyLens Prototype over Product A Export — active in `insurance-agent`
 8. DSE-025 — Product Source Bundle Registry — done
 9. DSE-026 — Top 10 Insurer Universe + MVP Top 5 Selection — done
-10. **DSE-027 — MVP Source Bundle Sprint: Insurer 1** — next Product A task
-11. DSE-028 — Bundle-Aware Product B Export
+10. DSE-027 — Curated MVP Source Bundle Sprint with Latest-Version Safety Gate — done
+11. **DSE-028 — Bundle-Aware Product B Export** — next Product A task
 12. Product B advisor flow over curated source-bundled products
 13. DSE-014 — Evidence-Constrained LLM Refinement
 
@@ -84,11 +85,20 @@ Source bundle requirement:
 - Brochure/prospectus helps product/variant discovery but must not override wording/PBT without source evidence.
 - Policy schedule is customer-specific and usually unavailable publicly; schedule-dependent facts must remain explicitly marked.
 
-Parser remediation, extractor wave 2, table eval expansion, Product B export v1, source-bundle registry v1, and DSE-026 insurer/product selection are complete. The next priority is DSE-027 curated source-bundle collection, then DSE-028 bundle-aware export. LLM refinement comes later and should refine evidence-constrained facts, not compensate for missing official product documents.
+Parser remediation, extractor wave 2, table eval expansion, Product B export v1, source-bundle registry v1, DSE-026 insurer/product selection, and DSE-027 curated MVP source-bundle collection are complete. The next priority is DSE-028 bundle-aware export. LLM refinement comes later and should refine evidence-constrained facts, not compensate for missing official product documents.
 
 DSE-025 baseline result: current manifests can generate 507 draft product bundles, but 504 are `missing_pbt`, 1 is `acceptable_with_known_gap` (Aditya Birla Activ Care with official source URLs identified but not downloaded/hash-reviewed), and 2 are `rejected`. This confirms the source-bundle pivot: the old corpus is strong as policy wording infrastructure, not as a complete Product B recommendation corpus.
 
-DSE-026 result: the MVP top 5 are locked as **HDFC ERGO, Star Health, ICICI Lombard, Care Health, and Niva Bupa**. Later-wave top 10 additions are **Tata AIG, Bajaj Allianz, New India Assurance, Aditya Birla Health, and SBI General**. The first DSE-027 source-bundle sprint should start with **HDFC ERGO** and six product candidates: Optima Secure, Optima Restore, my:health Medisure Super Top Up, my:health Koti Suraksha, Energy, and Arogya Sanjeevani.
+DSE-026 result: the MVP top 5 are locked as **HDFC ERGO, Star Health, ICICI Lombard, Care Health, and Niva Bupa**. Later-wave top 10 additions are **Tata AIG, Bajaj Allianz, New India Assurance, Aditya Birla Health, and SBI General**.
+
+DSE-027 result: the MVP universe is now pinned to **30 current/live product candidates** across the top 5 insurers. All 30 were latest-version reviewed against current official insurer surfaces. The curated registry at `data/manifests/product_source_bundles_mvp_v1.json` currently contains:
+
+- `acceptable_with_known_gap`: 18
+- `missing_cis`: 6
+- `missing_pbt`: 4
+- `stale_version`: 2
+
+The task also proved substantial version drift between older local corpus files and current live insurer documents. Product B should trust the DSE-027 curated bundle registry over historical wording files whenever the two disagree.
 
 DSE-020 infrastructure and smoke validation were completed. The 647-policy manifest is collision-safe, DSE-020 outputs are namespaced, and 20-policy DB/export smoke passed. The full 647-policy pipeline run completed: per-policy stages passed for all 647 policies, batch DB/export processed 591 unique docs (56 duplicate-hash skipped), 566 exported. Triage report generated and accepted.
 

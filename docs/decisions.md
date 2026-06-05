@@ -1095,3 +1095,27 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Some credible insurers are deferred even though they remain reasonable later-wave candidates.
 
 **Revisit when:** DSE-027 source-bundle collection completes for the MVP top 5 or when user traction justifies expanding beyond the locked top 10.
+
+---
+
+## 2026-06-06 — Latest-version gate overrides older corpus wording files for MVP truth (ADR-0039)
+
+**Status:** accepted
+
+**Decision:** For the curated MVP corpus, current official insurer product pages and current official PDFs override older local corpus wording files whenever the two disagree on product naming or UIN/version. Older local files may still be retained as reviewed evidence, but the bundle must be marked `stale_version` or otherwise downgraded until the current official source is downloaded and reviewed.
+
+**Context:** DSE-027 latest-version verification found repeated version drift across the MVP top-5 insurers. Examples included HDFC ERGO Optima Secure/Restore, multiple Star Health products, ICICI Lombard Complete Health, and multiple Niva Bupa products. Treating older local wording files as current would have made Product B recommendations look precise while being wrong on live product identity.
+
+**Options considered:**
+1. Trust the older local corpus unless a product disappears completely.
+2. Trust current official insurer sources first and treat older local corpus files as fallback/legacy evidence.
+3. Avoid current-version judgments and leave Product B to infer freshness at display time.
+
+**Reasoning:** Option 2 is the only approach compatible with a citation-first recommendation product. The local corpus remains valuable for parsing and evidence development, but it cannot be the final authority on live sellable product identity when current official insurer docs disagree.
+
+**Consequences:**
+- Positive: Product A now has a reproducible latest-version gate for the curated MVP corpus.
+- Positive: Product B can surface `stale_version`, `missing_cis`, and `missing_pbt` honestly instead of flattening old wording files into fake certainty.
+- Negative: Source-bundle collection becomes more operationally expensive because live public links must be re-verified and downloaded.
+
+**Revisit when:** DSE-028 bundle-aware export is complete and the MVP corpus reaches a stable review cadence for current official source refreshes.

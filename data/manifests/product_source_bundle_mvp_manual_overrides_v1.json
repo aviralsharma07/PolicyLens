@@ -1,0 +1,40 @@
+{
+  "schema_version": "product_source_bundle_mvp_manual_overrides.v1",
+  "task_id": "DSE-027",
+  "generated_at": "2026-06-06",
+  "notes": [
+    "This file only carries curated MVP bundle adjustments that are awkward to infer automatically.",
+    "Current-source verification still lives in mvp_product_candidate_verification_manual_v1.json."
+  ],
+  "bundles": [
+    {
+      "candidate_id": "niva_bupa_reassure_2_0",
+      "variants": [
+        "Bronze",
+        "Gold",
+        "Bronze+",
+        "Titanium+",
+        "Platinum+"
+      ]
+    },
+    {
+      "candidate_id": "niva_bupa_health_premia",
+      "variants": [
+        "Gold",
+        "Platinum"
+      ]
+    },
+    {
+      "candidate_id": "niva_bupa_senior_first",
+      "variants": [
+        "Gold"
+      ]
+    },
+    {
+      "candidate_id": "star_health_super_surplus",
+      "variants": [
+        "Silver"
+      ]
+    }
+  ]
+}

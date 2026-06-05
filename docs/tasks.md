@@ -6,7 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-027 | MVP Source Bundle Sprint: Insurer 1 | planned | P0 | Corpus / Source Collection |
+| DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
 
 ---
 
@@ -33,7 +33,7 @@ MVP direction:
 - Product B should recommend 1-3 policies for a user profile, not show a giant undifferentiated comparison table.
 - Accuracy, citations, source quality, and user education are the moat.
 - Product source-bundle registry v1 exists, and the baseline is blunt: 504/507 draft bundles are missing PBTs.
-- DSE-026 is done. The MVP insurer universe is locked and DSE-027 should start with HDFC ERGO as the first source-bundle sprint.
+- DSE-026 and DSE-027 are done. The MVP insurer universe is now locked at 30 latest-reviewed products across the top 5 insurers, and each product has a curated source-bundle row with explicit source quality.
 
 ---
 
@@ -41,7 +41,6 @@ MVP direction:
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-027 | MVP Source Bundle Sprint: Insurer 1 | planned | P0 | Corpus / Source Collection |
 | DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
 
@@ -83,6 +82,8 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 | DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | 2026-06-05 | Phase 3 |
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | 2026-06-05 | Phase 8 |
 | DSE-025 | Product Source Bundle Registry | 2026-06-05 | Product Identity / MVP Readiness |
+| DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | 2026-06-06 | Product Strategy / Corpus |
+| DSE-027 | Curated MVP Source Bundle Sprint with Latest-Version Safety Gate | 2026-06-06 | Corpus / Source Collection |
 
 ---
 
@@ -175,29 +176,43 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 **Branch:** feat/dse-026-mvp-insurer-selection
 **Related docs:** product_b_mvp_gtm_strategy.md, risk_register.md
 
-### DSE-027 — MVP Source Bundle Sprint: Insurer 1
+### DSE-027 — Curated MVP Source Bundle Sprint with Latest-Version Safety Gate
 
-**Status:** planned
+**Status:** done
 **Priority:** P0
 **Phase:** Corpus / Source Collection
-**Goal:** Prove the source-bundle workflow on one insurer before scaling to all top 5 MVP insurers.
-**Recommended first insurer:** HDFC ERGO. Aditya Birla remains the best secondary proof-of-problem case because Activ Care already exposed the wording/PBT split.
-**Scope:**
-- Select 6-7 important retail products/variants for the insurer.
-- Collect official policy wording, PBT/table of benefits, CIS, brochure/prospectus, and rider/add-on docs where available.
-- Hash every file and record source URL.
-- Classify document type and source quality.
-- Record unresolved gaps instead of forcing completeness.
+**Goal:** Verify the full 30-product DSE-026 MVP universe against current official insurer sources before collection, then assemble a curated MVP source-bundle registry with explicit latest-version and source-quality status.
 **Acceptance criteria:**
-- Every selected product has a source-bundle row.
-- Complete bundles are separated from incomplete/uncertain bundles.
-- PBT/CIS absence is visible as a blocker for final Product B recommendation.
-- Search/download process is reproducible.
-- No private/credentialed/hostile access methods are used.
-**Initial DSE-027 focus set (from DSE-026):**
-- HDFC ERGO candidates: Optima Secure, Optima Restore, my:health Medisure Super Top Up, my:health Koti Suraksha, Energy, and Arogya Sanjeevani.
-- Source-collection order after HDFC ERGO: Star Health, ICICI Lombard, Care Health, then Niva Bupa.
-**Branch:** feat/dse-027-source-bundle-sprint-insurer-1
+- [x] All 30 MVP candidates are latest-version reviewed against current official insurer surfaces.
+- [x] Curated verified manifest exists.
+- [x] Curated MVP bundle registry exists and is separate from the 507-bundle full-corpus draft.
+- [x] Current-vs-legacy drift is documented instead of silently accepted.
+- [x] Downloaded current documents are hashed and indexed where retrieval worked.
+- [x] Download failures are recorded explicitly.
+- [x] No Product B or raw PDF mutation was required.
+**Results:**
+- Added `data/manifests/mvp_product_candidate_verification_manual_v1.json`.
+- Added `data/manifests/mvp_product_candidates_verified_v1.json`.
+- Added `data/manifests/product_source_bundle_mvp_manual_overrides_v1.json`.
+- Added `data/manifests/product_source_bundles_mvp_v1.json`.
+- Added `scripts/verify_mvp_candidates.py`, `scripts/build_mvp_source_bundles.py`, and `scripts/download_mvp_source_documents.py`.
+- Added `data/reports/dse027_mvp_candidate_latest_audit_v1.json` and `.md`.
+- Added `data/reports/dse027_source_download_index_v1.json`.
+- Added `data/reports/dse027_curated_mvp_bundle_closeout_v1.md`.
+- Verified all 30 MVP candidates:
+  - `verified_current`: 27
+  - `verified_current_with_gap`: 3
+  - `live`: 30
+- Downloaded and hashed 45 current official source documents.
+- Recorded 2 source-download failures without aborting the run.
+- Curated bundle quality counts:
+  - `acceptable_with_known_gap`: 18
+  - `missing_cis`: 6
+  - `missing_pbt`: 4
+  - `stale_version`: 2
+**Key lesson:**
+- DSE-027 proved substantial current-version drift between the older local corpus and live official insurer documents. Product B must trust current verified source bundles, not historical wording files alone.
+**Branch:** feat/dse-027-curated-mvp-source-bundles
 **Related docs:** data_contracts.md, product_b_mvp_gtm_strategy.md
 
 ### DSE-028 — Bundle-Aware Product B Export
@@ -219,6 +234,9 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - Conditional facts carry explicit `condition` and display copy.
 - Missing PBT/CIS creates an honest source-quality warning.
 - Full export eval and handoff tests pass.
+**Next-task context after DSE-027:**
+- The MVP universe is now fixed at 30 current/live product candidates across the top 5 insurers.
+- Product B handoff must now consume `product_source_bundles_mvp_v1.json` semantics and stop treating the older export as recommendation-grade by itself.
 **Branch:** feat/dse-028-bundle-aware-export
 **Related docs:** export_contract.md, data_contracts.md, product_b_mvp_gtm_strategy.md
 

@@ -1,5 +1,39 @@
 # Changelog
 
+## 2026-06-06 (DSE-027 — Curated MVP Source Bundles)
+
+### Added
+- `source_bundles/mvp.py` — shared helpers for latest-version verification, curated MVP bundle assembly, and downloaded-source indexing.
+- `scripts/verify_mvp_candidates.py` — DSE-027 verified-candidate manifest builder.
+- `scripts/build_mvp_source_bundles.py` — curated MVP source-bundle registry builder.
+- `scripts/download_mvp_source_documents.py` — current official source downloader with hash/page-count index and explicit failure logging.
+- `tests/test_dse027_mvp_source_bundles.py` — focused tests for verified-manifest validation and curated bundle behavior.
+- `data/manifests/mvp_product_candidate_verification_manual_v1.json` — tracked current-source verification input for all 30 MVP candidates.
+- `data/manifests/mvp_product_candidates_verified_v1.json` — generated verified MVP candidate manifest.
+- `data/manifests/product_source_bundle_mvp_manual_overrides_v1.json` — curated MVP bundle adjustments.
+- `data/manifests/product_source_bundles_mvp_v1.json` — curated MVP source-bundle registry.
+- `data/reports/dse027_mvp_candidate_latest_audit_v1.json` and `.md`.
+- `data/reports/dse027_source_download_index_v1.json`.
+- `data/reports/dse027_curated_mvp_bundle_closeout_v1.md`.
+- `runs/sessions/2026-06-06-dse027-curated-mvp-source-bundles.md`.
+
+### Changed
+- `docs/tasks.md` — DSE-027 marked done; DSE-028 promoted as the next active Product A task.
+- `IMPLEMENTATION_PLAN.md` — DSE-027 results and current-version drift recorded in the active roadmap.
+
+### Results
+- All 30 MVP candidates latest-version reviewed against current official insurer surfaces.
+- Verification result: 27 `verified_current`, 3 `verified_current_with_gap`, 30 `live`.
+- 45 current official source documents downloaded and hashed.
+- Curated bundle quality counts: 18 `acceptable_with_known_gap`, 6 `missing_cis`, 4 `missing_pbt`, 2 `stale_version`.
+- Major current-version drift documented across HDFC ERGO, Star Health, ICICI Lombard, and Niva Bupa product lines.
+
+### Known Issues
+- Two current-source downloads failed and remain recorded in the source download index:
+  - Star Health Family Health Optima brochure: host-resolution failure
+  - Star Health Super Surplus brochure: `403 Forbidden`
+- The curated MVP corpus is now truthful and reproducible, but not yet fully recommendation-complete; DSE-028 must carry source bundle quality into Product B export semantics.
+
 ## 2026-06-06 (DSE-026 — MVP Insurer Universe Selection)
 
 ### Added
