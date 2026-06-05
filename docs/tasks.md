@@ -6,6 +6,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
+| DSE-023 | Product B Export v1 Freeze + Handoff Dataset | in_progress | P1 | Phase 8 |
 
 
 ---
@@ -30,7 +31,6 @@ Current capability:
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-| DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
 
 ---
 
@@ -349,7 +349,7 @@ Current capability:
 
 ### DSE-023 — Product B Export v1 Freeze + Handoff Dataset
 
-**Status:** planned
+**Status:** in_progress
 **Priority:** P1
 **Phase:** Phase 8
 **Goal:** Freeze the first Product B consumable export package and handoff contract after ontology, scale triage, and remaining extractor decisions are stable.
@@ -358,6 +358,10 @@ Current capability:
 - Product B receives a stable JSON package with all fields, statuses, evidence, and parse quality.
 - Known limitations and display rules are documented.
 - No Product A raw parser tables are exposed to Product B.
+**Progress:**
+- Packet -1 restored DSE-022 historical report residue and left the tree clean before DSE-023.
+- Packet 0 audit created `data/reports/dse023_export_freeze_audit.md`.
+- Audit result: current export is a structurally valid 20-policy, 20-concept ontology-backed Product B v1 candidate; stale 91-field docs must be clarified before package building.
 **Branch:** feat/dse-023-product-b-export-v1
 **Related docs:** export_contract.md, database_strategy.md, ontology/concepts.v1.json
 

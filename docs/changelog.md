@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-06-05 (DSE-023 — Packet 0: Export Freeze Audit)
+
+### Added
+- `data/reports/dse023_export_freeze_audit.md` — audit of current Product B export shape, ontology mapping, product identity, evidence fields, parse quality, and stale 91-field documentation.
+- `runs/sessions/2026-06-05-product-b-export-v1.md` — DSE-023 session log.
+
+### Changed
+- `docs/tasks.md` — DSE-023 moved to Active Sprint and marked `in_progress`.
+
+### Findings
+- Current export is a 20-policy benchmark package candidate with 20 ontology-backed concept fields per policy.
+- Product B should consume compiled JSON only, not SQLite or raw parser/interim outputs.
+- Stale “91-field” language remains in active docs/docstrings and must be clarified in Packet 1.
+
 ## 2026-06-05 (DSE-022 — Packet 4: Final Closeout)
 
 ### Added
