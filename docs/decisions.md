@@ -28,6 +28,9 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0038 | Ontology registry is canonical concept source | 2026-06-02 | Accepted |
 | 0039 | Duplicate-hash entries skipped at clause store ingestion | 2026-06-04 | Accepted |
 | 0040 | Product B Export v1 is compiled 20-concept JSON | 2026-06-05 | Accepted |
+| 0041 | Curated top-insurer MVP over 647-policy launch | 2026-06-05 | Accepted |
+| 0042 | Product identity is a source bundle, not one PDF | 2026-06-05 | Accepted |
+| 0043 | Product B recommendations require variant/condition-scoped facts | 2026-06-05 | Accepted |
 
 ---
 
@@ -62,6 +65,82 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 - Negative: Product B v1 comparison coverage is limited to the 20 priority concepts.
 
 **Revisit when:** Product B requires additional comparison fields beyond the 20 priority concepts, or a later ontology version defines the broader 91-field schema.
+
+---
+
+## 2026-06-05 — ADR-0041: Curated Top-Insurer MVP Over 647-Policy Launch
+
+**Status:** accepted
+
+**Decision:** Product B MVP will not launch as a 647-policy comparison product. The launch corpus will be curated around top Indian health insurers, starting with roughly 5 insurers and 30-40 high-value retail products/variants. The 647-policy corpus remains a Product A scale diagnostic and source of future candidates, not the launch promise.
+
+**Context:** DSE-020 proved Product A can run across 647 active policy wordings, and DSE-023 produced a 20-policy Product B handoff package. Product B prototype review then exposed a sharper product truth: buyers do not need hundreds of choices. They need a trusted shortlist with citations and caveats. Broad coverage without complete PBT/CIS/source bundles risks misleading comparisons and trust loss.
+
+**Options considered:**
+1. Launch with every exported full-corpus policy.
+2. Launch with the 20-policy gold benchmark only.
+3. Launch with a curated top-insurer, source-bundled MVP corpus.
+
+**Reasoning:** Option 1 optimizes for breadth before accuracy and would include duplicates, old products, group/custom products, and policies without complete source documents. Option 2 is too small and gold-corpus-shaped rather than user-market-shaped. Option 3 matches the product thesis: fewer trustworthy recommendations with official evidence.
+
+**Consequences:**
+- Positive: Product B can focus on trust, clarity, and user fit.
+- Positive: QA effort goes into products users are likely to consider.
+- Positive: The product can recommend 1-3 policies instead of becoming another noisy aggregator.
+- Negative: Launch coverage is intentionally narrow and may miss long-tail insurers.
+- Negative: Product selection becomes a product/editorial responsibility that must be documented.
+
+**Revisit when:** User traction shows demand for broader insurer coverage, or source-bundle collection becomes reliable enough to expand without reducing trust.
+
+---
+
+## 2026-06-05 — ADR-0042: Product Identity Is a Source Bundle, Not One PDF
+
+**Status:** accepted
+
+**Decision:** Product A will model launch-grade products as source bundles, not single policy wording PDFs. A source bundle may include policy wording, Product Benefit Table / table of benefits, CIS, brochure/prospectus, rider/add-on documents, source URLs, hashes, UIN/version evidence, and variant names.
+
+**Context:** Policy wordings often state that numeric benefits, co-pay, room rent, ICU, deductible, and variant-specific terms are "as specified in the Product Benefit Table" or "as specified in the Policy Schedule." The Aditya Birla Activ Care review showed this concretely: the local wording supported a conditional 15% non-preferred-provider co-pay, while variant-level Standard/Classic/Premier co-pay values lived outside the wording in a PBT.
+
+**Options considered:**
+1. Keep one PDF = one product.
+2. Add PBT/CIS documents as unstructured notes.
+3. Create an explicit source-bundle registry.
+
+**Reasoning:** Option 1 is incomplete for recommendation-grade comparison. Option 2 helps humans but does not give Product B reliable source quality or variant semantics. Option 3 makes document completeness and source authority first-class.
+
+**Consequences:**
+- Positive: Product B can know whether a product is recommendation-ready.
+- Positive: Missing PBT/CIS becomes visible instead of silently weakening facts.
+- Positive: UIN/version and source conflicts can be handled before user display.
+- Negative: Source collection becomes a dedicated workflow, not a side effect of policy-wording scraping.
+
+**Revisit when:** Insurer APIs or regulatory datasets expose complete product bundles directly.
+
+---
+
+## 2026-06-05 — ADR-0043: Product B Recommendations Require Variant/Condition-Scoped Facts
+
+**Status:** accepted
+
+**Decision:** Product B recommendation facts must distinguish base policy facts, variant-specific facts, schedule-dependent facts, conditional facts, and unknown facts. Product B must not flatten condition-heavy or variant-heavy values into one scalar display.
+
+**Context:** The Product B prototype displayed Aditya Birla Activ Care co-pay as a single 15% present value with high confidence. Source review showed that 15% was conditional on non-preferred-provider-network treatment, while other base/variant co-pay values come from PBT/schedule context. The value was extracted with evidence, but the display semantics were misleading.
+
+**Options considered:**
+1. Keep scalar feature fields and rely on evidence text for nuance.
+2. Add display warnings manually in Product B.
+3. Carry scope, condition, source document type, and source quality through Product A export.
+
+**Reasoning:** Option 1 creates overconfident UX. Option 2 is brittle and duplicates Product A semantics in Product B. Option 3 keeps structured truth with the evidence-producing system and allows Product B to display uncertainty honestly.
+
+**Consequences:**
+- Positive: Product B can show accurate caveats and variant context.
+- Positive: `not_found`, `schedule_dependent`, and `explicitly_not_covered` remain distinct.
+- Positive: Conditional clauses can be useful without becoming misleading recommendations.
+- Negative: Export and UI complexity increase.
+
+**Revisit when:** Bundle-aware export is implemented and Product B has enough user feedback to refine display semantics.
 
 ---
 

@@ -1,41 +1,89 @@
 # Document Structure Engine — Implementation Plan v2
 
+## Strategic Reset — 2026-06-05
+
+The 647-policy pipeline proved parser, extractor, and export capability, but Product B should **not** launch as a 647-policy comparison product. That would optimize for breadth before trust.
+
+Product B MVP will focus on **5 top insurers** and roughly **30-40 high-value retail products/variants**, each backed by complete official source bundles.
+
+Core truths from Product B prototype review:
+- Current engine parses policy wordings well.
+- Policy wording alone is insufficient for Product B recommendations.
+- Product Benefit Tables (PBTs), CIS documents, brochures/prospectuses, and schedule-like tables often hold variant-specific values missing from the wording.
+- Launch-grade recommendations require product bundles, not isolated PDFs.
+- Accuracy, source quality, citations, and user education matter more than corpus breadth.
+- The 647-policy corpus remains useful as diagnostic infrastructure, not as the MVP launch universe.
+
+The Aditya Birla Activ Care co-pay review is the concrete failure mode: the policy wording supported a conditional 15% non-preferred-provider co-pay, while Standard/Classic/Premier variant-level co-pay values lived in a separate Product Benefit Table. Product B must not flatten those into one generic scalar.
+
 ## Current State — 2026-06-05
 
-All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
+All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. DSE-022 passed the 20-policy table eval. DSE-023 froze the first Product B handoff package. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
 
 Product A now has:
 - 20 reviewed gold policies.
 - 647 active policy wordings identified.
 - Physical layout extraction.
 - Heading/section/clause parsing.
-- Physical table engine v1 (5-policy eval only).
+- Physical table engine v1 with 20-policy eval gate passing.
 - SQLite clause store and source spans.
 - Fact candidate scoring and conflict infrastructure.
-- Product B export skeleton.
+- Product B export v1 handoff package.
 - **20/20 priority concepts with active deterministic extractors**.
 - DSE-020 full-corpus scale triage completed and passing.
 - 0 parser-target zero-clause failures; 1 excluded parser target.
 
-Product A is ready for the next reliability phase: table extraction across all 20 reviewed policies. The current table engine eval only covers 5 policies with 18 physical table labels from DSE-009. DSE-022 expands this to the full 20-policy corpus and remediates repeated table detection/header lineage failures exposed by the honest gate.
+Product A is ready for source-bundle remediation before launch-grade Product B recommendations. The first Product B handoff package is available at `data/processed/product_b_export_v1` and should be consumed by `insurance-agent` as compiled JSON only, but it should be treated as a prototype/evidence-explorer dataset until PBT/CIS/brochure source bundles are added.
 
 The next risks are:
-- table reliability across 20+ policies,
 - schedule/condition-heavy facts,
 - unresolved/ambiguous facts requiring LLM refinement,
-- Product B display semantics needing ontology-backed consistency.
+- full-corpus semantic QA beyond the 20-policy gold benchmark,
+- Product B display semantics validated through the local prototype,
+- missing PBT/CIS/brochure documents causing incomplete or misleading product comparisons,
+- variant-specific facts flattened into one scalar value.
 
-## Active Roadmap After DSE-021
+## Active Roadmap After Strategic Reset
 
 1. DSE-019 — Canonical Insurance Concept Ontology Registry v1 — done
 2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage — done
 3. DSE-024 — Full-Corpus Parser Remediation for Zero-Clause Policies — done
 4. DSE-021 — Remaining Deterministic Extractors Wave 2 — done
-5. **DSE-022 — 20-Policy Table Eval Expansion + Table Remediation** — in progress
-6. DSE-014 — Evidence-Constrained LLM Refinement
-7. DSE-023 — Product B Export v1 Freeze + Handoff Dataset
+5. DSE-022 — 20-Policy Table Eval Expansion + Table Remediation — done
+6. DSE-023 — Product B Export v1 Freeze + Handoff Dataset — done
+7. PB-001 — Local PolicyLens Prototype over Product A Export — active in `insurance-agent`
+8. **DSE-025 — Product Source Bundle Registry** — next Product A task
+9. DSE-026 — Top 10 Insurer Universe + MVP Top 5 Selection
+10. DSE-027 — MVP Source Bundle Sprint: Insurer 1
+11. DSE-028 — Bundle-Aware Product B Export
+12. Product B advisor flow over curated source-bundled products
+13. DSE-014 — Evidence-Constrained LLM Refinement
 
-Parser remediation and extractor wave 2 are complete. The next priority is table engine reliability across the full 20-policy reviewed corpus, then LLM refinement for ambiguous facts, and finally Product B handoff.
+The old "full-corpus Product B export refresh" path is deferred. DSE-020 remains a valuable scale diagnostic, but the MVP launch path is curated and source-bundled.
+
+## MVP Product Strategy
+
+Product B should behave like a trustworthy advisor, not a directory.
+
+Launch scope:
+- Top 5 insurers first.
+- Roughly 6-7 important retail products/variants per insurer.
+- Total MVP corpus: 30-40 products/variants.
+- Every user-facing recommendation should cite official source text.
+- The recommendation output should be 1-3 policies max, plus explicit "why not" caveats where useful.
+
+Long-term product universe:
+- Top 10 Indian health insurers only, unless traction proves that deeper coverage is worth the QA cost.
+- No attempt to cover every old, group, rider, withdrawn, or low-signal product.
+
+Source bundle requirement:
+- Policy wording provides legal clauses.
+- Product Benefit Table / table of benefits provides variant-specific limits and co-pay/room/ICU/deductible values.
+- CIS provides consumer-facing summary and regulatory key terms.
+- Brochure/prospectus helps product/variant discovery but must not override wording/PBT without source evidence.
+- Policy schedule is customer-specific and usually unavailable publicly; schedule-dependent facts must remain explicitly marked.
+
+Parser remediation, extractor wave 2, table eval expansion, and Product B export v1 are complete. The next priority is DSE-025 source-bundle identity, then DSE-026/DSE-027 curated corpus construction, then bundle-aware export. LLM refinement comes later and should refine evidence-constrained facts, not compensate for missing official product documents.
 
 DSE-020 infrastructure and smoke validation were completed. The 647-policy manifest is collision-safe, DSE-020 outputs are namespaced, and 20-policy DB/export smoke passed. The full 647-policy pipeline run completed: per-policy stages passed for all 647 policies, batch DB/export processed 591 unique docs (56 duplicate-hash skipped), 566 exported. Triage report generated and accepted.
 

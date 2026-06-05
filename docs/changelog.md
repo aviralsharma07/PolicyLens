@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-06-05 (Product Strategy Reset — Source-Bundled MVP)
+
+### Added
+- `docs/product_b_mvp_gtm_strategy.md` — GTM and MVP strategy for a curated, citation-backed Product B advisor.
+- DSE-025 through DSE-028 roadmap tasks for source bundles, top-insurer selection, source-bundle sprint, and bundle-aware export.
+- Product source-bundle contract in `docs/data_contracts.md`.
+- ADR-0041, ADR-0042, and ADR-0043 covering curated MVP scope, source-bundle product identity, and variant/condition-scoped facts.
+- Risk register entries for missing PBTs, variant flattening, source drift, document conflicts, UIN version drift, incomplete public sources, and overconfident Product B display.
+- Session log for the Product A/Product B strategy reset.
+
+### Changed
+- `IMPLEMENTATION_PLAN.md` now treats the 647-policy pipeline as scale diagnostics, not the Product B MVP launch universe.
+- `docs/tasks.md` now makes DSE-025 Product Source Bundle Registry the next Product A task.
+- `docs/export_contract.md` now documents the v1 export limitation: policy-wording-based facts are useful for prototype evidence exploration but not launch-grade recommendations when PBT/CIS/source bundles are missing.
+
+### Known Issues
+- Product B export v1 can still display incomplete product truth if downstream UI treats policy-wording facts as final variant-level facts.
+- Product source bundles have not yet been collected for the curated MVP insurer universe.
+
 ## 2026-06-05 (DSE-023 — Packet 3: Final Handoff Acceptance)
 
 ### Added

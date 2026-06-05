@@ -6,22 +6,33 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-
+| DSE-025 | Product Source Bundle Registry | planned | P0 | Product Identity / MVP Readiness |
 
 ---
 
 ## Current Status
 
-All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures. DSE-022 begins table eval expansion from the original 5-policy physical labels to the full 20-policy reviewed corpus.
+All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures. DSE-022 expanded the table eval to the full 20-policy reviewed corpus and passed. DSE-023 froze the first Product B handoff package.
+
+The major strategic reset after Product B prototype review is that **Product A should not treat 647 policy wordings as the MVP launch universe**. DSE-020 remains valuable as scale diagnostics, but Product B should launch with a curated, source-bundled, top-insurer corpus where every recommendation is backed by official documents and clear citations.
 
 Current capability:
 - 20 reviewed gold policies.
 - 20/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
+- Product B handoff package exists at `data/processed/product_b_export_v1`.
 - 0 parser-target policies with zero clauses; 1 excluded parser target (product-list document).
 - Full-corpus pipeline passes for 647 policies with 566 unique docs exported.
 - Honest 20-policy table eval gate: PASS (DSE-022 done). 387/387 labels detected, priority recall 100%, type accuracy 100%, header lineage 100%, legacy rows documented 395/395.
-- Next target: DSE-023 Product B Export v1 Freeze + Handoff Dataset.
+- Product B local PolicyLens prototype exists in `insurance-agent` and exposed a critical product-model gap: policy wordings alone are not enough for launch-grade recommendations when Product Benefit Tables, CIS, brochures, and variant schedules carry the actual comparison values.
+
+MVP direction:
+- Long-term product universe is intentionally limited to roughly the top 10 Indian health insurers, not every insurer and not every old/group/rider PDF.
+- MVP starts with top 5 insurers and roughly 30-40 high-value retail products/variants.
+- Each product must be represented as a source bundle: policy wording + Product Benefit Table / table of benefits + CIS + brochure/prospectus + rider/add-on docs where relevant.
+- Product B should recommend 1-3 policies for a user profile, not show a giant undifferentiated comparison table.
+- Accuracy, citations, source quality, and user education are the moat.
+- Next Product A target: DSE-025 Product Source Bundle Registry.
 
 ---
 
@@ -29,7 +40,18 @@ Current capability:
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
+| DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | planned | P0 | Product Strategy / Corpus |
+| DSE-027 | MVP Source Bundle Sprint: Insurer 1 | planned | P0 | Corpus / Source Collection |
+| DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
+
+## Downstream Product B Work
+
+Product A's immediate downstream consumer task is tracked in `insurance-agent`:
+
+- `PB-001 — Local PolicyLens Prototype over Product A Export`
+
+Product B should read `data/processed/product_b_export_v1` as compiled JSON only. It must not read Product A SQLite, raw PDFs, parser interim outputs, or extractor internals.
 
 ---
 
@@ -64,6 +86,106 @@ Current capability:
 ---
 
 ## Task Detail
+
+### DSE-025 — Product Source Bundle Registry
+
+**Status:** planned
+**Priority:** P0
+**Phase:** Product Identity / MVP Readiness
+**Goal:** Model one insurance product as a bundle of official documents, not as one policy wording PDF. This registry becomes the source of truth for launch-grade Product B recommendations.
+**Context:** Product B prototype review exposed the Aditya Birla Activ Care co-pay issue: the policy wording contained a conditional 15% non-preferred-provider co-pay, while variant-level 10%/20% co-pay provisions lived in a separate Product Benefit Table. The current 20-concept export is useful for evidence exploration, but a launch-grade advisor needs product bundles with PBT/CIS/brochure coverage.
+**Inputs:**
+- Policy wording.
+- Product Benefit Table / table of benefits.
+- Customer Information Sheet (CIS).
+- Brochure/prospectus.
+- Rider/add-on documents where relevant.
+- Official source URLs, downloaded timestamps, SHA-256 file hashes, UIN/version evidence.
+**Required model:**
+- `product_id`, insurer, product name, UIN, product version/effective date where available.
+- `documents[]` with document type, source URL, file hash, page count, UIN/product-name match, source authority, and review status.
+- `variants[]` with names such as Standard, Classic, Premier, Plus, Elite, etc.
+- `source_quality` values such as `complete`, `missing_pbt`, `missing_cis`, `missing_brochure`, `uin_mismatch`, `variant_unclear`, `stale_version`, and `rejected`.
+**Acceptance criteria:**
+- Registry schema documented and validated.
+- One product can link multiple official documents.
+- Product wording, PBT, CIS, brochure/prospectus, and rider documents are classified separately.
+- UIN/version and product-name mismatches are recorded, not silently accepted.
+- Source quality prevents Product B from making confident recommendations from incomplete bundles.
+- No raw PDFs are mutated.
+- Product B still consumes compiled Product A exports only.
+**Branch:** feat/dse-025-product-source-bundles
+**Related docs:** data_contracts.md, export_contract.md, decisions.md, product_b_mvp_gtm_strategy.md
+
+### DSE-026 — Top 10 Insurer Universe + MVP Top 5 Selection
+
+**Status:** planned
+**Priority:** P0
+**Phase:** Product Strategy / Corpus
+**Goal:** Define the long-term top 10 Indian health insurer universe and the first top 5 MVP insurers with transparent rationale.
+**Context:** Product B is a side-project MVP intended to solve a real buyer problem: reduce noisy choices, avoid sales-call pressure, and recommend 1-3 suitable policies with citations. Covering every insurer and all 647 wordings is not the right launch shape.
+**Selection signals:**
+- Retail health relevance.
+- Market presence / userbase / brand recall.
+- Product availability for individuals and families.
+- Public availability of official PBT/CIS/brochure/wording documents.
+- Trust/service perception and claim-related public concerns.
+- Coverage of standalone health insurers and large general insurers.
+**Expected shortlist:**
+- Long-term top 10: HDFC ERGO, ICICI Lombard, Star Health, Niva Bupa, Care Health, Tata AIG, Bajaj Allianz, SBI General, Aditya Birla Health, and ManipalCigna or New India Assurance after evidence review.
+- MVP top 5: HDFC ERGO, ICICI Lombard, Star Health, Niva Bupa, and Care Health unless DSE-026 source-availability research proves a substitution is better.
+**Acceptance criteria:**
+- Top 10 insurer rationale is documented with evidence.
+- MVP top 5 are selected and justified.
+- Exclusions are explicit.
+- Each selected insurer has an initial candidate product list.
+- Source availability risk is recorded for each insurer.
+**Branch:** feat/dse-026-mvp-insurer-selection
+**Related docs:** product_b_mvp_gtm_strategy.md, risk_register.md
+
+### DSE-027 — MVP Source Bundle Sprint: Insurer 1
+
+**Status:** planned
+**Priority:** P0
+**Phase:** Corpus / Source Collection
+**Goal:** Prove the source-bundle workflow on one insurer before scaling to all top 5 MVP insurers.
+**Recommended first insurer:** HDFC ERGO or Aditya Birla. HDFC ERGO is strategically useful for MVP popularity; Aditya Birla is useful as a known failure case because Activ Care has separate wording, CIS, and PBT sources.
+**Scope:**
+- Select 6-7 important retail products/variants for the insurer.
+- Collect official policy wording, PBT/table of benefits, CIS, brochure/prospectus, and rider/add-on docs where available.
+- Hash every file and record source URL.
+- Classify document type and source quality.
+- Record unresolved gaps instead of forcing completeness.
+**Acceptance criteria:**
+- Every selected product has a source-bundle row.
+- Complete bundles are separated from incomplete/uncertain bundles.
+- PBT/CIS absence is visible as a blocker for final Product B recommendation.
+- Search/download process is reproducible.
+- No private/credentialed/hostile access methods are used.
+**Branch:** feat/dse-027-source-bundle-sprint-insurer-1
+**Related docs:** data_contracts.md, product_b_mvp_gtm_strategy.md
+
+### DSE-028 — Bundle-Aware Product B Export
+
+**Status:** planned
+**Priority:** P0
+**Phase:** Phase 8 / Product B Handoff
+**Goal:** Upgrade Product B export semantics from policy-wording facts to product/variant/condition-scoped facts backed by source bundles.
+**Context:** Current v1 export is useful for evidence exploration, but conditional and variant-specific facts can be misleading when flattened. For example, Aditya Birla Activ Care needs to distinguish base/variant co-pay from an additional conditional non-preferred-provider co-pay.
+**Required behavior:**
+- Export source document type for every evidence-bearing fact.
+- Distinguish policy-level, variant-level, schedule-dependent, conditional, and unknown facts.
+- Preserve `not_found` vs `explicitly_not_covered`.
+- Include source bundle quality in Product B handoff.
+- Block or warn Product B when a product lacks PBT/CIS needed for a feature.
+**Acceptance criteria:**
+- Product B can tell whether a value came from policy wording, PBT, CIS, brochure/prospectus, or rider document.
+- Variant-specific values are not flattened into a single misleading scalar.
+- Conditional facts carry explicit `condition` and display copy.
+- Missing PBT/CIS creates an honest source-quality warning.
+- Full export eval and handoff tests pass.
+**Branch:** feat/dse-028-bundle-aware-export
+**Related docs:** export_contract.md, data_contracts.md, product_b_mvp_gtm_strategy.md
 
 ### DSE-019 — Canonical Insurance Concept Ontology Registry v1
 

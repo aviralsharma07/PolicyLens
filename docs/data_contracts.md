@@ -82,6 +82,93 @@ Rules:
 
 ---
 
+## Contract 0A: Product Source Bundle Registry
+
+**Producer:** DSE-025 source-bundle collection workflow
+**Consumers:** identity, extractors, derived export, Product B handoff package
+
+Launch-grade Product B recommendations require product-level source bundles. A single policy wording PDF is not enough because Product Benefit Tables, CIS documents, brochures/prospectuses, rider documents, and schedule-like tables often carry variant-specific values.
+
+```json
+{
+  "schema_version": "product_source_bundle.v1",
+  "product_id": "aditya_birla_activ_care",
+  "insurer": "Aditya Birla Health",
+  "product_name": "Activ Care",
+  "uin": "ADIHLIP20001V011920",
+  "product_version": "v01",
+  "effective_date": null,
+  "documents": [
+    {
+      "document_id": "sha256:...",
+      "document_type": "policy_wording",
+      "source_url": "https://example.com/policy-wording.pdf",
+      "source_domain": "insurer_website",
+      "file_hash": "sha256:...",
+      "filename": "activ-care-policy-wording.pdf",
+      "page_count": 34,
+      "uin_match_status": "matched",
+      "product_name_match_status": "matched",
+      "downloaded_at": "2026-06-05T00:00:00Z",
+      "review_status": "reviewed"
+    },
+    {
+      "document_id": "sha256:...",
+      "document_type": "product_benefit_table",
+      "source_url": "https://example.com/table-of-benefits.pdf",
+      "source_domain": "insurer_website",
+      "file_hash": "sha256:...",
+      "filename": "activ-care-table-of-benefits.pdf",
+      "page_count": 8,
+      "uin_match_status": "matched",
+      "product_name_match_status": "matched",
+      "downloaded_at": "2026-06-05T00:00:00Z",
+      "review_status": "reviewed"
+    }
+  ],
+  "variants": [
+    "Standard",
+    "Classic",
+    "Premier"
+  ],
+  "source_quality": "complete",
+  "source_quality_notes": "Policy wording, Product Benefit Table, and CIS are all available from official insurer sources."
+}
+```
+
+Allowed `document_type` values:
+- `policy_wording`
+- `product_benefit_table`
+- `cis`
+- `brochure`
+- `prospectus`
+- `rider`
+- `premium_table`
+- `proposal_form`
+- `endorsement`
+- `unknown`
+
+Allowed `source_quality` values:
+- `complete`
+- `acceptable_with_known_gap`
+- `missing_pbt`
+- `missing_cis`
+- `missing_brochure`
+- `uin_mismatch`
+- `variant_unclear`
+- `stale_version`
+- `rejected`
+
+Rules:
+- Product B recommendation eligibility depends on `source_quality`.
+- `missing_pbt` blocks confident variant-specific benefit comparison.
+- `uin_mismatch`, `variant_unclear`, and `stale_version` require review before recommendation.
+- Brochures and CIS documents may support summaries, but they do not silently override policy wording or PBT evidence.
+- Every source document must have a SHA-256 hash before it is used by downstream extraction/export.
+- Raw PDFs remain read-only once collected.
+
+---
+
 ## Contract 1: Corpus Lockdown → UIN Reconciliation
 
 **Producer:** `identity/corpus_lockdown.py`

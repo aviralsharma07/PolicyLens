@@ -43,6 +43,23 @@ DSE-023 freezes Product B Export v1 as the ontology-backed 20-concept JSON contr
 
 The 91-field view remains a future Product B schema expansion. It must not be assumed present in `export_schema_version = "1.0"`.
 
+## Known V1 Limitation
+
+Export v1 is primarily policy-wording-based and is useful for evidence exploration, prototype browsing, and validating Product B display patterns. It is **not yet launch-grade for final recommendations** when Product Benefit Tables, CIS documents, brochures/prospectuses, or rider documents are missing.
+
+Many health insurance wordings delegate numeric values to a Product Benefit Table or Policy Schedule. In those cases, a policy wording can prove that a benefit exists or a condition applies, but it may not prove the exact variant-specific value.
+
+Future bundle-aware export must include:
+
+- source document type for every evidence-bearing fact;
+- variant scope;
+- condition scope;
+- source quality status;
+- document bundle completeness;
+- explicit warning/blocking behavior when PBT/CIS is missing for a comparison-critical concept.
+
+Product B must not display schedule-dependent or variant-dependent facts as simple scalar values unless the required bundle documents have been collected and matched.
+
 ---
 
 ## Top-Level JSON Shape
