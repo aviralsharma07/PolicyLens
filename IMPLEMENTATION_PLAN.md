@@ -1,40 +1,41 @@
 # Document Structure Engine — Implementation Plan v2
 
-## Current State — 2026-06-04
+## Current State — 2026-06-05
+
+All 20 priority deterministic concepts are active and passing full-corpus eval gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
 
 Product A now has:
 - 20 reviewed gold policies.
 - 647 active policy wordings identified.
 - Physical layout extraction.
 - Heading/section/clause parsing.
-- Physical table engine v1.
+- Physical table engine v1 (5-policy eval only).
 - SQLite clause store and source spans.
 - Fact candidate scoring and conflict infrastructure.
 - Product B export skeleton.
-- 13 active deterministic concepts passing 20-policy eval gates.
-- DSE-020 full-corpus scale triage completed: 132 zero-clause policies identified; DSE-024 fallback heading promotion reduced the active zero-clause set to 110.
+- **20/20 priority concepts with active deterministic extractors**.
+- DSE-020 full-corpus scale triage completed and passing.
+- 0 parser-target zero-clause failures; 1 excluded parser target.
 
-Product A is not yet ready to claim reliable extraction across all 647 PDFs. The primary blocker is parser coverage: 110 policies still produce zero headings and zero clauses, which means zero input for fact extraction. DSE-021 extractor wave 2 is blocked until DSE-024 parser remediation reduces zero-clause failures further or classifies remaining documents as non-policy/unsupported.
+Product A is ready for the next reliability phase: table extraction across all 20 reviewed policies. The current table engine eval only covers 5 policies with 18 physical table labels from DSE-009. DSE-022 expands this to the full 20-policy corpus and remediates repeated table detection/header lineage failures exposed by the honest gate.
 
 The next risks are:
-- parser/clause fragmentation at full-corpus scale — **active (DSE-024)**
 - table reliability across 20+ policies,
-- missing extractors for 7 remaining priority concepts — **blocked by DSE-024**
 - schedule/condition-heavy facts,
 - unresolved/ambiguous facts requiring LLM refinement,
 - Product B display semantics needing ontology-backed consistency.
 
-## Active Roadmap After DSE-020
+## Active Roadmap After DSE-021
 
 1. DSE-019 — Canonical Insurance Concept Ontology Registry v1 — done
 2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage — done
-3. **DSE-024 — Full-Corpus Parser Remediation for Zero-Clause Policies** — in progress (P0 — must precede extractor wave 2)
-4. DSE-021 — Remaining Deterministic Extractors Wave 2 — blocked (waiting on DSE-024)
-5. DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
+3. DSE-024 — Full-Corpus Parser Remediation for Zero-Clause Policies — done
+4. DSE-021 — Remaining Deterministic Extractors Wave 2 — done
+5. **DSE-022 — 20-Policy Table Eval Expansion + Table Remediation** — in progress
 6. DSE-014 — Evidence-Constrained LLM Refinement
 7. DSE-023 — Product B Export v1 Freeze + Handoff Dataset
 
-**Why parser remediation before remaining extractors:** DSE-020 showed that 132 of 647 policies (20.4%) produced zero headings and zero clauses. DSE-024 has reduced this to 110, but those documents still provide no structured input and emit `not_found` for all concepts. Adding new extractors to DSE-021 would not improve fill rate for these policies. Parser/section-tree fixes or corpus filtering must come first to unlock clause coverage, after which extractor wave 2 can increase fill rate across the full corpus.
+Parser remediation and extractor wave 2 are complete. The next priority is table engine reliability across the full 20-policy reviewed corpus, then LLM refinement for ambiguous facts, and finally Product B handoff.
 
 DSE-020 infrastructure and smoke validation were completed. The 647-policy manifest is collision-safe, DSE-020 outputs are namespaced, and 20-policy DB/export smoke passed. The full 647-policy pipeline run completed: per-policy stages passed for all 647 policies, batch DB/export processed 591 unique docs (56 duplicate-hash skipped), 566 exported. Triage report generated and accepted.
 

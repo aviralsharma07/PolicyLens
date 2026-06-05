@@ -6,21 +6,21 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-021 | Remaining Deterministic Extractors Wave 2 | in_progress | P1 | Phase 6 |
+| DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | in_progress | P1 | Phase 3 |
 
 ---
 
 ## Current Status
 
-Product A has a working 20-policy reviewed benchmark, a local SQLite/source-span store, and a Product B export skeleton. DSE-020 confirmed full-corpus pipeline execution and DSE-024 reduced zero-heading/zero-clause parser-target failures from 132 to 0. One 4-page Raheja QBE product-list document remains in corpus history but is explicitly excluded from legal-policy parser targets.
+All 20 priority deterministic concepts are active and passing full-corpus eval gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures. DSE-022 begins table eval expansion from the original 5-policy physical labels to the full 20-policy reviewed corpus.
 
 Current capability:
 - 20 reviewed gold policies.
-- 15/20 priority concepts have deterministic extractors.
+- 20/20 priority concepts have deterministic extractors.
 - Product B export emits all 20 concept slots with explicit status.
-- DSE-024 final triage: 0 parser-target policies with zero clauses; 1 excluded parser target; 566/591 unique docs exported.
-- DSE-024 E3B recovery abandoned a bad broad scorer attempt and produced an inspection-only safe-candidate audit for 33 residual `heading_miss` policies. E3C then implemented narrow fallback-only structural heading fixes, and E3D excluded the remaining product-list document from parser failure counts without changing corpus identity history.
-- All 44 section_tree_fail policies resolved by section tree rebuild.
+- 0 parser-target policies with zero clauses; 1 excluded parser target (product-list document).
+- Full-corpus pipeline passes for 647 policies with 566 unique docs exported.
+- Next target: honest 20-policy table eval gate, then targeted table remediation.
 
 ---
 
