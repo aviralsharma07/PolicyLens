@@ -1,4 +1,4 @@
-# DSE-009 Gold Table Source Review
+# DSE-022 Legacy Table Dispositions for 20-Policy Corpus
 
 This report classifies legacy DSE-003 `tables.json` rows for the physical table gate.
 

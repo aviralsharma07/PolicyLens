@@ -20,7 +20,13 @@ from table_engine.models import (
 )
 from table_engine.table_type_classifier import classify, classify_from_cells
 from table_engine.text_alignment_detector import try_page, _cluster_x_positions
-from scripts.eval_table_engine import _bbox_iou, _match_gold_to_extracted
+from scripts.eval_table_engine import (
+    _bbox_iou,
+    _match_gold_to_extracted,
+    _discover_reviewed_policies,
+    _build_legacy_source_review,
+    _build_physical_label_mapping,
+)
 from scripts.run_table_engine import _assign_parent_clause, _is_reliable_pdfplumber_text_table
 from scripts.validate_gold_corpus import validate_physical_table_labels
 
@@ -562,7 +568,14 @@ class TestTableDetectorUnit:
             col_count=4,
             has_header_row=True,
             cells=[
-                TableCell(cell_id="c1", table_id="t_text", row_index=0, col_index=0, text="Header", is_header=True)
+                TableCell(
+                    cell_id="c1",
+                    table_id="t_text",
+                    row_index=0,
+                    col_index=0,
+                    text="Header",
+                    is_header=True,
+                )
             ],
         )
         assert _is_reliable_pdfplumber_text_table(table, 595.0, 842.0) is False
@@ -579,7 +592,14 @@ class TestTableDetectorUnit:
             col_count=3,
             has_header_row=True,
             cells=[
-                TableCell(cell_id="c1", table_id="t_text", row_index=0, col_index=0, text="Header", is_header=True)
+                TableCell(
+                    cell_id="c1",
+                    table_id="t_text",
+                    row_index=0,
+                    col_index=0,
+                    text="Header",
+                    is_header=True,
+                )
             ],
         )
         assert _is_reliable_pdfplumber_text_table(table, 595.0, 842.0) is True
@@ -605,7 +625,9 @@ class TestTableEvalStrictMatching:
                 "cells": [{"text": "Rate of premium"}],
             }
         ]
-        match = _match_gold_to_extracted(gold, extracted, [{"table_id": "t1", "text": "Rate of premium"}])
+        match = _match_gold_to_extracted(
+            gold, extracted, [{"table_id": "t1", "text": "Rate of premium"}]
+        )
         assert match["page_region_detected"] is True
         assert match["detected"] is False
 
@@ -653,7 +675,9 @@ class TestTableEvalStrictMatching:
                 "cells": [{"text": "Period on risk"}],
             }
         ]
-        match = _match_gold_to_extracted(gold, extracted, [{"table_id": "t1", "text": "Period on risk"}], {"t1"})
+        match = _match_gold_to_extracted(
+            gold, extracted, [{"table_id": "t1", "text": "Period on risk"}], {"t1"}
+        )
         assert match["detected"] is False
         assert match["match_reason"] == "no_extracted_table_on_gold_page"
 
@@ -769,3 +793,163 @@ class TestIntegrationAgainstGoldPdf:
 
     def test_new_india_floater_tables(self):
         self._check_policy("new_india_floater")
+
+
+# ---------------------------------------------------------------------------
+# Tests for DSE-022 20-policy eval expansion
+# ---------------------------------------------------------------------------
+
+
+class TestDse022EvalExpansion:
+    def test_discover_reviewed_policies_counts_all_20(self, tmp_path):
+        slugs = _discover_reviewed_policies(str(_PROJECT_ROOT / "gold_corpus"))
+        assert len(slugs) == 20
+
+    def test_discover_reviewed_policies_finds_all_with_metadata(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        golden = gold_dir / "policies" / "policy_a"
+        golden.mkdir(parents=True)
+        (golden / "metadata.json").write_text("{}")
+        drafty = gold_dir / "policies" / "policy_b"
+        drafty.mkdir(parents=True)
+        (drafty / "metadata.json").write_text("{}")
+        slugs = _discover_reviewed_policies(str(gold_dir))
+        assert slugs == sorted(["policy_a", "policy_b"])
+
+    def test_discover_reviewed_policies_skips_dirs_without_metadata(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        has_meta = gold_dir / "policies" / "has_meta"
+        has_meta.mkdir(parents=True)
+        (has_meta / "metadata.json").write_text("{}")
+        no_meta = gold_dir / "policies" / "no_meta"
+        no_meta.mkdir(parents=True)
+        slugs = _discover_reviewed_policies(str(gold_dir))
+        assert slugs == ["has_meta"]
+
+    def test_physical_label_mapping_built_correctly(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        pol = gold_dir / "policies" / "test_pol"
+        pol.mkdir(parents=True)
+        (pol / "metadata.json").write_text('{"review_status": "reviewed"}')
+        # Create physical labels that reference legacy table IDs
+        phys = [
+            {
+                "label_id": "l1",
+                "source_table_id": "legacy_t1",
+                "page": 1,
+                "table_type": "waiting_period",
+            },
+            {"label_id": "l2", "source_table_id": None, "page": 2, "table_type": "unknown"},
+        ]
+        (pol / "physical_table_labels.json").write_text(__import__("json").dumps(phys))
+        mapping = _build_physical_label_mapping(str(gold_dir))
+        assert "legacy_t1" in mapping
+        assert mapping["legacy_t1"]["label_id"] == "l1"
+
+    def test_legacy_disposition_physical_table_eval(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        pol = gold_dir / "policies" / "test_pol"
+        pol.mkdir(parents=True)
+        (pol / "metadata.json").write_text('{"review_status": "reviewed"}')
+        phys = [
+            {
+                "label_id": "l1",
+                "source_table_id": "legacy_t1",
+                "page": 1,
+                "table_type": "waiting_period",
+            },
+        ]
+        (pol / "physical_table_labels.json").write_text(__import__("json").dumps(phys))
+        legacy = [{"table_id": "legacy_t1", "page": 1, "table_type": "waiting_period"}]
+        (pol / "tables.json").write_text(__import__("json").dumps(legacy))
+        rows = _build_legacy_source_review(str(gold_dir), str(tmp_path / "reports"))
+        assert len(rows) == 1
+        assert rows[0]["classification"] == "physical_table_eval"
+        # Verify the output file was written
+        assert (tmp_path / "reports" / "dse022_legacy_table_dispositions_v1.json").exists()
+
+    def test_legacy_disposition_nonpriority_type(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        pol = gold_dir / "policies" / "test_pol"
+        pol.mkdir(parents=True)
+        (pol / "metadata.json").write_text('{"review_status": "reviewed"}')
+        # No physical labels at all
+        (pol / "physical_table_labels.json").write_text("[]")
+        legacy = [{"table_id": "legacy_prem", "page": 1, "table_type": "premium"}]
+        (pol / "tables.json").write_text(__import__("json").dumps(legacy))
+        rows = _build_legacy_source_review(str(gold_dir), str(tmp_path / "reports"))
+        assert len(rows) == 1
+        assert rows[0]["classification"] == "diagnostic_nonpriority_table"
+
+    def test_legacy_disposition_fallback_deferred(self, tmp_path):
+        gold_dir = tmp_path / "gold"
+        pol = gold_dir / "policies" / "test_pol"
+        pol.mkdir(parents=True)
+        (pol / "metadata.json").write_text('{"review_status": "reviewed"}')
+        (pol / "physical_table_labels.json").write_text("[]")
+        legacy = [{"table_id": "legacy_unknown", "page": 5, "table_type": "waiting_period"}]
+        (pol / "tables.json").write_text(__import__("json").dumps(legacy))
+        rows = _build_legacy_source_review(str(gold_dir), str(tmp_path / "reports"))
+        assert len(rows) == 1
+        assert rows[0]["classification"] == "deferred_needs_pdf_review"
+
+    def test_no_legacy_rows_without_disposition(self, tmp_path):
+        # Verify that the real gold corpus produces no undocumented rows
+        from scripts.eval_table_engine import _LEGACY_TABLE_DISPOSITIONS
+
+        # Every legacy tables.json row must either be in _LEGACY_TABLE_DISPOSITIONS,
+        # linked via physical label source_table_id, or a non-priority type. We test
+        # this by building the full legacy review and checking for the fallback marker.
+        rows = _build_legacy_source_review(str(_PROJECT_ROOT / "gold_corpus"), str(tmp_path))
+        undocumented = [
+            r
+            for r in rows
+            if r["classification"] == "deferred_needs_pdf_review"
+            and r["reason"].startswith("Legacy type")
+        ]
+        assert len(undocumented) == 0, f"Undocumented rows: {undocumented}"
+
+    def test_same_page_wrong_content_does_not_count_as_detected(self):
+        # Already tested above; kept here for DSE-022 regression
+        gold = {
+            "page": 4,
+            "table_type": "waiting_period",
+            "headers": ["Waiting period type", "Duration"],
+            "rows": [["PED", "48 months"]],
+        }
+        extracted = [
+            {
+                "table_id": "t1",
+                "page": 4,
+                "table_type": "premium",
+                "extraction_method": "pdfplumber_lattice",
+                "cells": [{"text": "Rate of premium"}],
+            }
+        ]
+        cells = [{"table_id": "t1", "text": "Rate of premium"}]
+        match = _match_gold_to_extracted(gold, extracted, cells)
+        assert match["page_region_detected"] is True
+        assert match["detected"] is False
+
+    def test_one_to_one_matching_excludes_used_table(self):
+        gold = {
+            "page": 4,
+            "bbox": [0, 0, 100, 100],
+            "table_type": "premium",
+            "headers": ["Period on risk"],
+            "rows": [["Up to one month"]],
+        }
+        extracted = [
+            {
+                "table_id": "t1",
+                "page": 4,
+                "bbox": [0, 0, 100, 100],
+                "table_type": "premium",
+                "extraction_method": "pdfplumber_lattice",
+                "cells": [{"text": "Period on risk"}],
+            }
+        ]
+        cells = [{"table_id": "t1", "text": "Period on risk"}]
+        match = _match_gold_to_extracted(gold, extracted, cells, {"t1"})
+        assert match["detected"] is False
+        assert match["match_reason"] == "no_extracted_table_on_gold_page"

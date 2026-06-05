@@ -542,8 +542,8 @@ Tables are one of the hardest parts of the corpus. This eval ensures tables are 
 
 ### Inputs
 - Raw PDF pages with table regions
-- DSE-009 physical table labels: `gold_corpus/policies/*/physical_table_labels.json`
-- Legacy DSE-003 `tables.json` rows are audited but excluded from DSE-009 hard gates when they are prose-derived summaries.
+- DSE-009/DSE-022 physical table labels: `gold_corpus/policies/*/physical_table_labels.json`
+- Legacy DSE-003 `tables.json` rows are audited but excluded from physical table hard gates when they are prose-derived summaries or non-priority types.
 
 ### Metrics
 - Physical table detection recall
@@ -567,12 +567,12 @@ Separately test for:
 ### Hard Gates
 For waiting-period and benefit-schedule tables:
 ```
-all 5 policies evaluated
+all reviewed policies evaluated (zero-label policies are accounted for)
 priority physical table detection recall >= 85%
 header lineage accuracy >= 85%
 table type accuracy on matched physical tables >= 80%
 unrecorded missing cell bbox count = 0
-every skipped legacy tables.json row has a documented disposition
+every legacy tables.json row has a documented disposition
 ```
 
 ### Commands
@@ -589,47 +589,58 @@ tables/{policy_id}/document_table_cells.json
 ```
 
 ### Current Status
-active, passing strict physical-table gate (DSE-009 v3 on 2026-05-31)
+active. DSE-019 legacy 5-policy gate replaced by DSE-022 20-policy baseline.
 
-### DSE-009 v3 Result
+### DSE-009 v3 Result (5-policy era, superseded by DSE-022)
 
 ```json
 {
   "eval_name": "table-engine-dse009-v3",
   "date": "2026-05-31",
   "task_id": "DSE-009",
-  "git_commit": "captured in eval artifact",
   "input_manifest": "gold_corpus physical_table_labels.json (5 policies)",
   "hard_gates": {
     "priority_physical_detection_recall_target": 0.85,
-    "priority_physical_detection_recall_actual": 1.0,
-    "header_lineage_pass_rate_target": 0.85,
-    "header_lineage_pass_rate_actual": 1.0,
-    "type_accuracy_target": 0.8,
-    "type_accuracy_actual": 0.9444,
-    "unrecorded_missing_cell_bboxes_actual": 0
-  },
-  "metrics": {
-    "total_physical_table_labels": 18,
-    "physical_table_detection_recall_all": 1.0,
-    "type_accuracy_on_content_detected": 0.9444,
-    "priority_physical_tables_total": 9,
-    "priority_physical_detection_recall": 1.0,
-    "priority_type_accuracy": 0.8889,
-    "header_lineage_pass_rate": 1.0,
-    "tables_with_missing_cell_bboxes_recorded": 42,
-    "unrecorded_missing_cell_bboxes": 0,
-    "legacy_gold_rows_documented": 26
+    "priority_physical_detection_recall_actual": 1.0
   },
   "passed": true
 }
 ```
 
+### DSE-022 Baseline Result
+
+The DSE-022 baseline eval evaluates physical_table_labels.json across all 20 reviewed policies.
+Policies with zero physical labels (e.g. tata_aig_arogya_sanjeevani) are recorded as
+`no_physical_labels` and counted as evaluated. Legacy `tables.json` dispositions are
+automated for all 395 rows across the 20-policy corpus.
+
+```json
+{
+  "eval_name": "table-engine-dse022-baseline",
+  "date": "2026-06-05",
+  "task_id": "DSE-022",
+  "input_manifest": "gold_corpus physical_table_labels.json (20 policies)",
+  "hard_gates": {
+    "reviewed_policies_total": 20,
+    "policies_evaluated": 20,
+    "policies_with_labels": 19,
+    "policies_with_zero_labels": 1
+  },
+  "metrics": {
+    "total_physical_table_labels": 387,
+    "legacy_gold_rows_documented": 395,
+    "no_physical_labels_policies": ["tata_aig_arogya_sanjeevani"]
+  }
+}
+```
+
 Notes:
-- v3 uses `physical_table_labels.json` as the hard-gate target. Legacy `tables.json` rows remain semantic/manual annotation history.
-- v1 same-page matching and v2 legacy semantic matching are retained as history but superseded for DSE-009 acceptance.
-- Missing pdfplumber cell coordinates are explicit table issues (`cell_bbox_missing:<count>`); no missing cell bbox is unrecorded.
-- Legacy semantic table dispositions are documented in `data/reports/dse009_gold_table_source_review.md`.
+- DSE-022 replaced the hardcoded 5-policy gate with dynamic reviewed-policy discovery.
+- Zero-label policies (tata_aig_arogya_sanjeevani) are explicit with `no_physical_labels` status.
+- Same-page presence remains diagnostic; bbox/type/content signature is the detection gate.
+- All 395 legacy `tables.json` rows have a documented disposition.
+- Physical table matching remains one-to-one; thresholds unchanged.
+- Legacy semantic table dispositions are documented in `data/reports/dse022_legacy_table_dispositions_v1.md`.
 
 ### Commands
 
@@ -642,11 +653,11 @@ PYTHONPATH=. python scripts/run_table_engine.py \
   --section-root data/interim/logical \
   --output-root data/interim/tables
 
-# Run eval
+# Run eval (DSE-022 baseline)
 PYTHONPATH=. python scripts/eval_table_engine.py \
   --gold-corpus gold_corpus \
   --tables-root data/interim/tables \
-  --output runs/evals/2026-05-31-table-engine-dse009-v3.json
+  --output runs/evals/2026-06-05-table-engine-dse022-baseline.json
 
 # Run unit tests
 PYTHONPATH=. python -m pytest tests/test_table_engine.py -v -m "not slow"
@@ -1384,7 +1395,7 @@ active (DSE-018 final PASS on 2026-06-02 across 20 reviewed policies)
 | Physical Parser | >= 95% pages produce text blocks, 0 catastrophic reading-order failures | Section building |
 | Heading Candidates | precision >= 90%, recall >= 80% on visual-heading labels | Section tree building |
 | Sections/Clauses | section tree accuracy >= 85%, clause boundary F1 >= 80% | Building extractors |
-| Tables | priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-009 v3 PASS) |
+| Tables | all reviewed policies evaluated, priority physical table recall >= 85%, header lineage >= 85%, type accuracy >= 80% | Fact extraction from tables | active (DSE-022 baseline on 20 policies) |
 | Clause Store + Source Spans | all reviewed policies, 0 FK violations, source-count parity, 0 cross-doc span mismatches, 0 unresolved facts, span coverage >= 95%, DB < 120MB | DSE-011 (fact scoring, conflict resolution) | active (DSE-018 PASS) |
 | Fact Scoring + Conflict | candidate/fact parity 100%, status/value/evidence accuracy >= 95%, 0 false-present, conflicts resolved, 0 cross-doc links, accepted min score >= 0.85 | Expanding remaining concepts or LLM refinement | active (DSE-018 PASS) |
 | Normalizers | 100% unit tests pass | Extractor development |

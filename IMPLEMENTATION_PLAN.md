@@ -2,7 +2,7 @@
 
 ## Current State — 2026-06-05
 
-All 20 priority deterministic concepts are active and passing full-corpus eval gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
+All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures, reducing the count from 132 to 0. The full-corpus pipeline runs on 647 policies with 566 unique docs exported.
 
 Product A now has:
 - 20 reviewed gold policies.

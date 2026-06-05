@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-06-05 (DSE-022 — 20-Policy Table Eval Expansion, Packet 0 + Packet 1)
+
+### Added
+- `scripts/eval_table_engine.py` — dynamic reviewed-policy discovery, zero-label policy handling (no_physical_labels), automated legacy disposition for all 395 rows across 20 policies, DSE-022 eval gate replacing hardcoded 5-policy gate.
+- `tests/test_table_engine.py` — 10 new tests for discover_reviewed_policies, physical label mapping, legacy dispositions, no undocumented legacy rows.
+- `data/reports/dse022_legacy_table_dispositions_v1.json` — all 395 legacy tables.json rows classified.
+- `data/reports/dse022_legacy_table_dispositions_v1.md` — Markdown disposition report.
+- `runs/evals/2026-06-05-table-engine-dse022-baseline.json` — DSE-022 baseline eval: 20/20 policies evaluated, 19 with labels, 1 zero-label (tata_aig_arogya_sanjeevani), 100% detection recall, 99.74% type accuracy, 100% header lineage.
+
+### Changed
+- `docs/tasks.md` — DSE-022 removed from Backlog, detail status `planned` → `in_progress`; "full-corpus eval gates" → "20-policy gold benchmark gates".
+- `IMPLEMENTATION_PLAN.md` — "full-corpus eval gates" → "20-policy gold benchmark gates".
+- `docs/evaluation.md` — Table Extraction eval section updated: hard gates now reference all reviewed policies (not 5); DSE-022 baseline documented; summary table updated.
+- `tests/test_gold_corpus_validator.py` — physical_table_labels assertion from `>= 10` to `== 387`.
+
+### Fixed
+- Hardcoded 5-policy table eval gate replaced with dynamic discovery from gold_corpus.
+- tata_aig_arogya_sanjeevani (0 physical table labels) is now explicit `no_physical_labels` instead of being silently treated as an evaluation gap.
+- All 395 legacy `tables.json` rows receive automated or explicit dispositions; 0 undocumented rows.
+
+### Known Issues
+- 196 tables across the 20-policy corpus have recorded missing cell bbox issues (pdfplumber limitation, not a gold gap).
+- 7 legacy rows remain `deferred_needs_pdf_review` from the original DSE-009 manual review; all have explicit reasons.
+
 ## 2026-06-05 (DSE-021 — Final Full Chain)
 
 ### Added

@@ -10,7 +10,7 @@ def test_gold_corpus_validator_passes():
     assert totals["json_files"] == 140
     assert totals["facts"] == 400
     assert totals["heading_labels"] >= 25
-    assert totals["physical_table_labels"] >= 10
+    assert totals["physical_table_labels"] == 387
     assert totals["sections"] >= 25
     assert totals["clauses"] >= 25
     assert totals["status_counts"].get("requires_manual_review", 0) == 0

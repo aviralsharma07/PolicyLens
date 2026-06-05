@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
-Eval Table Engine — DSE-009.
+Eval Table Engine — DSE-022 20-Policy Baseline.
 
 This eval intentionally separates "page has any detected table" from "gold table
 matched by type/content". The first is useful diagnostics; the second is the gate.
+
+Handles zero-physical-label reviewed policies explicitly (no_physical_labels).
+Legacy tables.json rows across all 20 reviewed policies receive an automated
+disposition. Hard gates now account for all reviewed policies dynamically.
 """
 
 from __future__ import annotations
@@ -24,33 +28,113 @@ _MATCH_SCORE_THRESHOLD = 0.35
 _BBOX_IOU_THRESHOLD = 0.70
 
 _LEGACY_TABLE_DISPOSITIONS = {
-    "care_health_care_plus_table_001": ("prose_summary_not_table", "Waiting period summary is clause prose, not a physical cell grid."),
-    "care_health_care_plus_table_002": ("prose_summary_not_table", "Room-rent schedule dependency is prose/schedule reference, not a physical table on the labelled page."),
-    "care_health_care_plus_table_003": ("deferred_needs_pdf_review", "Premium region exists but cells were not annotated in DSE-003."),
-    "care_health_care_plus_table_004": ("deferred_needs_pdf_review", "Claims-documents region requires physical bbox/header review."),
-    "care_health_care_plus_table_005": ("physical_table_eval", "Mapped to network-list physical label."),
-    "hdfc_arogya_sanjeevani_table_001": ("prose_summary_not_table", "Room-rent/SOB values are prose/product-summary facts, not the physical table on page 24."),
-    "hdfc_arogya_sanjeevani_table_002": ("prose_summary_not_table", "Waiting-period definition is prose; no reliable physical table cells."),
-    "hdfc_arogya_sanjeevani_table_003": ("prose_summary_not_table", "Room-rent value is prose/fact summary."),
-    "hdfc_arogya_sanjeevani_table_004": ("deferred_needs_pdf_review", "Premium/product-summary table not part of priority physical gate."),
-    "hdfc_arogya_sanjeevani_table_005": ("physical_table_eval", "Mapped to claim timeline physical table."),
-    "hdfc_arogya_sanjeevani_table_006": ("wrong_page_or_wrong_type", "Legacy network-list label points to page content that is not a network-list physical table."),
-    "icici_family_shield_table_001": ("prose_summary_not_table", "Waiting period is a policy wording fact, not a physical table."),
-    "icici_family_shield_table_002": ("deferred_needs_pdf_review", "Policy certificate/premium-like page needs separate physical schedule review."),
-    "icici_family_shield_table_003": ("deferred_needs_pdf_review", "Claims-documents region requires physical bbox/header review."),
-    "icici_family_shield_table_004": ("wrong_page_or_wrong_type", "Legacy network-list label is not a network-list physical table."),
-    "new_india_floater_table_001": ("prose_summary_not_table", "Waiting period is prose/definition content, not a physical waiting-period table."),
-    "new_india_floater_table_002": ("prose_summary_not_table", "Room-rent fact is extracted from benefit-clause prose/table rows, not a legacy room-rent table."),
-    "new_india_floater_table_003": ("physical_table_eval", "Mapped to premium retention physical table."),
-    "new_india_floater_table_004": ("deferred_needs_pdf_review", "Claims-documents region requires physical bbox/header review."),
-    "new_india_floater_table_005": ("wrong_page_or_wrong_type", "Legacy network-list label points to non-network-list page content."),
-    "star_medi_classic_accident_table_001": ("prose_summary_not_table", "SOB facts are embedded in policy summary/prose, not a clean physical SOB grid."),
-    "star_medi_classic_accident_table_002": ("prose_summary_not_table", "Waiting-period facts are prose; page 2 physical table is policy-summary/coverage index."),
-    "star_medi_classic_accident_table_003": ("prose_summary_not_table", "Room-rent fact is prose/scope text, not a physical room-rent grid."),
-    "star_medi_classic_accident_table_004": ("physical_table_eval", "Mapped to premium retention physical table."),
-    "star_medi_classic_accident_table_005": ("deferred_needs_pdf_review", "Claims-documents label needs source/bbox review."),
-    "star_medi_classic_accident_table_006": ("wrong_page_or_wrong_type", "Legacy network-list label points to non-network-list page content."),
+    "care_health_care_plus_table_001": (
+        "prose_summary_not_table",
+        "Waiting period summary is clause prose, not a physical cell grid.",
+    ),
+    "care_health_care_plus_table_002": (
+        "prose_summary_not_table",
+        "Room-rent schedule dependency is prose/schedule reference, not a physical table on the labelled page.",
+    ),
+    "care_health_care_plus_table_003": (
+        "deferred_needs_pdf_review",
+        "Premium region exists but cells were not annotated in DSE-003.",
+    ),
+    "care_health_care_plus_table_004": (
+        "deferred_needs_pdf_review",
+        "Claims-documents region requires physical bbox/header review.",
+    ),
+    "care_health_care_plus_table_005": (
+        "physical_table_eval",
+        "Mapped to network-list physical label.",
+    ),
+    "hdfc_arogya_sanjeevani_table_001": (
+        "prose_summary_not_table",
+        "Room-rent/SOB values are prose/product-summary facts, not the physical table on page 24.",
+    ),
+    "hdfc_arogya_sanjeevani_table_002": (
+        "prose_summary_not_table",
+        "Waiting-period definition is prose; no reliable physical table cells.",
+    ),
+    "hdfc_arogya_sanjeevani_table_003": (
+        "prose_summary_not_table",
+        "Room-rent value is prose/fact summary.",
+    ),
+    "hdfc_arogya_sanjeevani_table_004": (
+        "deferred_needs_pdf_review",
+        "Premium/product-summary table not part of priority physical gate.",
+    ),
+    "hdfc_arogya_sanjeevani_table_005": (
+        "physical_table_eval",
+        "Mapped to claim timeline physical table.",
+    ),
+    "hdfc_arogya_sanjeevani_table_006": (
+        "wrong_page_or_wrong_type",
+        "Legacy network-list label points to page content that is not a network-list physical table.",
+    ),
+    "icici_family_shield_table_001": (
+        "prose_summary_not_table",
+        "Waiting period is a policy wording fact, not a physical table.",
+    ),
+    "icici_family_shield_table_002": (
+        "deferred_needs_pdf_review",
+        "Policy certificate/premium-like page needs separate physical schedule review.",
+    ),
+    "icici_family_shield_table_003": (
+        "deferred_needs_pdf_review",
+        "Claims-documents region requires physical bbox/header review.",
+    ),
+    "icici_family_shield_table_004": (
+        "wrong_page_or_wrong_type",
+        "Legacy network-list label is not a network-list physical table.",
+    ),
+    "new_india_floater_table_001": (
+        "prose_summary_not_table",
+        "Waiting period is prose/definition content, not a physical waiting-period table.",
+    ),
+    "new_india_floater_table_002": (
+        "prose_summary_not_table",
+        "Room-rent fact is extracted from benefit-clause prose/table rows, not a legacy room-rent table.",
+    ),
+    "new_india_floater_table_003": (
+        "physical_table_eval",
+        "Mapped to premium retention physical table.",
+    ),
+    "new_india_floater_table_004": (
+        "deferred_needs_pdf_review",
+        "Claims-documents region requires physical bbox/header review.",
+    ),
+    "new_india_floater_table_005": (
+        "wrong_page_or_wrong_type",
+        "Legacy network-list label points to non-network-list page content.",
+    ),
+    "star_medi_classic_accident_table_001": (
+        "prose_summary_not_table",
+        "SOB facts are embedded in policy summary/prose, not a clean physical SOB grid.",
+    ),
+    "star_medi_classic_accident_table_002": (
+        "prose_summary_not_table",
+        "Waiting-period facts are prose; page 2 physical table is policy-summary/coverage index.",
+    ),
+    "star_medi_classic_accident_table_003": (
+        "prose_summary_not_table",
+        "Room-rent fact is prose/scope text, not a physical room-rent grid.",
+    ),
+    "star_medi_classic_accident_table_004": (
+        "physical_table_eval",
+        "Mapped to premium retention physical table.",
+    ),
+    "star_medi_classic_accident_table_005": (
+        "deferred_needs_pdf_review",
+        "Claims-documents label needs source/bbox review.",
+    ),
+    "star_medi_classic_accident_table_006": (
+        "wrong_page_or_wrong_type",
+        "Legacy network-list label points to non-network-list page content.",
+    ),
 }
+
+_NON_PRIORITY_TYPES = {"premium", "claims_documents", "network_list"}
 
 
 def _load_json(path: str) -> Any:
@@ -195,7 +279,12 @@ def _cell_accuracy(gold_table: dict, matched_table: Optional[dict], all_cells: L
     if not gold_rows:
         return {"required": False, "row_match_rate": None, "rows_matched": 0, "rows_total": 0}
     if not matched_table:
-        return {"required": True, "row_match_rate": 0.0, "rows_matched": 0, "rows_total": len(gold_rows)}
+        return {
+            "required": True,
+            "row_match_rate": 0.0,
+            "rows_matched": 0,
+            "rows_total": len(gold_rows),
+        }
     table_text = _table_text(matched_table, all_cells)
     matched = 0
     for row in gold_rows:
@@ -215,15 +304,23 @@ def _score_candidate(gold_table: dict, table: dict, all_cells: List[dict]) -> di
     type_ok = table.get("table_type") == gold_table.get("table_type")
     method = table.get("extraction_method")
     bbox_iou = _bbox_iou(gold_table.get("bbox"), table.get("bbox"))
-    structured_bonus = 0.1 if method in {"pdfplumber_lattice", "pdfplumber_text"} and table.get("cells") else 0.0
-    score = (0.55 * bbox_iou) + (0.20 if type_ok else 0.0) + (0.20 * signature_overlap) + structured_bonus
+    structured_bonus = (
+        0.1 if method in {"pdfplumber_lattice", "pdfplumber_text"} and table.get("cells") else 0.0
+    )
+    score = (
+        (0.55 * bbox_iou)
+        + (0.20 if type_ok else 0.0)
+        + (0.20 * signature_overlap)
+        + structured_bonus
+    )
     return {
         "table": table,
         "score": round(score, 4),
         "type_ok": type_ok,
         "signature_overlap": round(signature_overlap, 4),
         "bbox_iou": round(bbox_iou, 4),
-        "structured_match": method in {"pdfplumber_lattice", "pdfplumber_text"} and bool(table.get("cells")),
+        "structured_match": method in {"pdfplumber_lattice", "pdfplumber_text"}
+        and bool(table.get("cells")),
     }
 
 
@@ -237,7 +334,8 @@ def _match_gold_to_extracted(
     on_page = [
         table
         for table in extracted_tables
-        if table.get("page") == gold_table.get("page") and table.get("table_id") not in used_table_ids
+        if table.get("page") == gold_table.get("page")
+        and table.get("table_id") not in used_table_ids
     ]
     if not on_page:
         return {
@@ -255,11 +353,8 @@ def _match_gold_to_extracted(
     scored.sort(key=lambda item: item["score"], reverse=True)
     best = scored[0]
     detected = (
-        best["bbox_iou"] >= _BBOX_IOU_THRESHOLD
-        or best["score"] >= _MATCH_SCORE_THRESHOLD
-    ) and (
-        best["type_ok"] or best["signature_overlap"] >= 0.25
-    )
+        best["bbox_iou"] >= _BBOX_IOU_THRESHOLD or best["score"] >= _MATCH_SCORE_THRESHOLD
+    ) and (best["type_ok"] or best["signature_overlap"] >= 0.25)
     return {
         "page_region_detected": True,
         "detected": detected,
@@ -268,15 +363,14 @@ def _match_gold_to_extracted(
         "match_score": best["score"],
         "signature_overlap": best["signature_overlap"],
         "bbox_iou": best["bbox_iou"],
-        "match_reason": "bbox_type_or_signature_match" if detected else "same_page_without_type_or_content_match",
+        "match_reason": "bbox_type_or_signature_match"
+        if detected
+        else "same_page_without_type_or_content_match",
     }
 
 
 def _unrecorded_missing_cell_bbox_count(extracted_tables: List[dict], all_cells: List[dict]) -> int:
-    issues_by_table = {
-        table.get("table_id"): table.get("issues", [])
-        for table in extracted_tables
-    }
+    issues_by_table = {table.get("table_id"): table.get("issues", []) for table in extracted_tables}
     count = 0
     for cell in all_cells:
         if cell.get("bbox") is not None:
@@ -287,13 +381,58 @@ def _unrecorded_missing_cell_bbox_count(extracted_tables: List[dict], all_cells:
     return count
 
 
+def _discover_reviewed_policies(gold_corpus: str) -> List[str]:
+    """Discover all policy slugs from gold_corpus/policies/.
+
+    This matches the canonical pattern used by eval_fact_extractors.py
+    and other DSE-017+ eval scripts: every policy directory with a
+    metadata.json is treated as reviewed.
+    """
+    policies_dir = os.path.join(gold_corpus, "policies")
+    return sorted(
+        [
+            slug
+            for slug in os.listdir(policies_dir)
+            if os.path.isfile(os.path.join(policies_dir, slug, "metadata.json"))
+        ]
+    )
+
+
 def evaluate_policy(slug: str, gold_corpus: str, tables_root: str) -> dict:
     gold_tables = _load_physical_table_labels(gold_corpus, slug)
     doc = _load_extracted_doc(tables_root, slug)
     all_cells = _load_extracted_cells(tables_root, slug)
 
     if not gold_tables:
-        return {"slug": slug, "status": "no_gold_tables", "tables": []}
+        return {
+            "slug": slug,
+            "status": "no_physical_labels",
+            "tables": [],
+            "policy_metrics": {
+                "total_gold_tables": 0,
+                "detected": 0,
+                "detection_recall": None,
+                "page_region_detected": 0,
+                "page_region_recall": None,
+                "type_ok": 0,
+                "type_accuracy": None,
+                "priority_total": 0,
+                "priority_detected": 0,
+                "priority_detection_recall": None,
+                "priority_page_region_detected": 0,
+                "priority_page_region_recall": None,
+                "priority_type_ok": 0,
+                "header_required": 0,
+                "header_passed": 0,
+                "header_lineage_pass_rate": None,
+                "structured_tables_extracted": doc.get("structured_tables", 0) if doc else 0,
+                "candidate_tables_extracted": doc.get("candidate_tables", 0) if doc else 0,
+                "total_tables_extracted": doc.get("tables_found", 0) if doc else 0,
+                "tables_with_missing_cell_bboxes": 0,
+                "unrecorded_missing_cell_bboxes": 0,
+                "false_positive_tables": 0,
+            },
+        }
     if not doc:
         return {"slug": slug, "status": "no_extracted_output", "tables": []}
 
@@ -304,7 +443,9 @@ def evaluate_policy(slug: str, gold_corpus: str, tables_root: str) -> dict:
         for table in extracted_tables
         if any(issue.startswith("cell_bbox_missing:") for issue in table.get("issues", []))
     ]
-    unrecorded_missing_cell_bboxes = _unrecorded_missing_cell_bbox_count(extracted_tables, all_cells)
+    unrecorded_missing_cell_bboxes = _unrecorded_missing_cell_bbox_count(
+        extracted_tables, all_cells
+    )
 
     used_table_ids: set[str] = set()
     for gold_table in gold_tables:
@@ -312,8 +453,12 @@ def evaluate_policy(slug: str, gold_corpus: str, tables_root: str) -> dict:
         matched_table = match["matched_table"]
         if match["detected"] and matched_table:
             used_table_ids.add(matched_table["table_id"])
-        header_lineage = _header_lineage(gold_table, matched_table if match["detected"] else None, all_cells)
-        cell_accuracy = _cell_accuracy(gold_table, matched_table if match["detected"] else None, all_cells)
+        header_lineage = _header_lineage(
+            gold_table, matched_table if match["detected"] else None, all_cells
+        )
+        cell_accuracy = _cell_accuracy(
+            gold_table, matched_table if match["detected"] else None, all_cells
+        )
         result = {
             "table_id": gold_table["label_id"],
             "source_table_id": gold_table["source_table_id"],
@@ -365,7 +510,9 @@ def evaluate_policy(slug: str, gold_corpus: str, tables_root: str) -> dict:
             if priority_tables
             else 0,
             "priority_page_region_detected": priority_page_region_detected,
-            "priority_page_region_recall": round(priority_page_region_detected / len(priority_tables), 4)
+            "priority_page_region_recall": round(
+                priority_page_region_detected / len(priority_tables), 4
+            )
             if priority_tables
             else 0,
             "priority_type_ok": priority_type_ok,
@@ -415,36 +562,74 @@ def _build_bbox_review(policy_results: List[dict]) -> List[dict]:
     return rows
 
 
-def _build_legacy_source_review(gold_corpus: str) -> List[dict]:
+def _build_physical_label_mapping(gold_corpus: str) -> dict:
+    """Build mapping of legacy table_id -> physical label for all policies."""
+    mapping = {}
+    policies_dir = os.path.join(gold_corpus, "policies")
+    for slug in sorted(os.listdir(policies_dir)):
+        phys_path = os.path.join(policies_dir, slug, "physical_table_labels.json")
+        if not os.path.isfile(phys_path):
+            continue
+        for label in _load_json(phys_path):
+            source_id = label.get("source_table_id")
+            if source_id:
+                mapping[source_id] = label
+    return mapping
+
+
+def _build_legacy_source_review(gold_corpus: str, output_dir: str) -> List[dict]:
     rows = []
+    phys_mapping = _build_physical_label_mapping(gold_corpus)
     policies_dir = os.path.join(gold_corpus, "policies")
     for slug in sorted(os.listdir(policies_dir)):
         metadata_path = os.path.join(policies_dir, slug, "metadata.json")
         if not os.path.isfile(metadata_path):
             continue
         for table in _load_gold_tables(gold_corpus, slug):
-            disposition, reason = _LEGACY_TABLE_DISPOSITIONS.get(
-                table["table_id"],
-                ("deferred_needs_pdf_review", "No explicit disposition recorded."),
-            )
+            legacy_id = table["table_id"]
+
+            if legacy_id in _LEGACY_TABLE_DISPOSITIONS:
+                disposition, reason = _LEGACY_TABLE_DISPOSITIONS[legacy_id]
+            elif legacy_id in phys_mapping:
+                disposition = "physical_table_eval"
+                reason = f"Mapped to physical label: {phys_mapping[legacy_id]['label_id']}."
+            elif table.get("table_type") in _NON_PRIORITY_TYPES:
+                disposition = "diagnostic_nonpriority_table"
+                reason = (
+                    f"Legacy type '{table['table_type']}' is not in the priority physical gate."
+                )
+            else:
+                disposition = "deferred_needs_pdf_review"
+                reason = f"Legacy type '{table.get('table_type', 'unknown')}' on page {table.get('page', '?')} needs PDF bbox/header review before classification."
+
             rows.append(
                 {
                     "policy_slug": slug,
-                    "legacy_table_id": table["table_id"],
+                    "legacy_table_id": legacy_id,
                     "legacy_page": table["page"],
                     "legacy_type": table["table_type"],
                     "classification": disposition,
                     "reason": reason,
                 }
             )
+
+    _write_json(
+        os.path.join(output_dir, "dse022_legacy_table_dispositions_v1.json"),
+        rows,
+    )
+    _write_source_review_markdown(
+        os.path.join(output_dir, "dse022_legacy_table_dispositions_v1.md"),
+        rows,
+        title="DSE-022 Legacy Table Dispositions for 20-Policy Corpus",
+    )
     return rows
 
 
-def _write_source_review_markdown(path: str, rows: List[dict]) -> None:
+def _write_source_review_markdown(path: str, rows: List[dict], title: str = None) -> None:
     lines = [
-        "# DSE-009 Gold Table Source Review",
+        f"# {title or 'DSE-009 Gold Table Source Review'}",
         "",
-        "This report classifies legacy DSE-003 `tables.json` rows for the DSE-009 physical table gate.",
+        "This report classifies legacy DSE-003 `tables.json` rows for the physical table gate.",
         "",
         "| Policy | Legacy table | Page | Type | Classification | Reason |",
         "|---|---|---:|---|---|---|",
@@ -525,12 +710,12 @@ def _build_gold_annotation_audit(policy_results: List[dict]) -> List[dict]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Eval Table Engine — DSE-009")
+    parser = argparse.ArgumentParser(description="Eval Table Engine — DSE-022")
     parser.add_argument("--gold-corpus", default="gold_corpus", help="Gold corpus directory")
     parser.add_argument("--tables-root", default="data/interim/tables")
     parser.add_argument(
         "--output",
-        default=f"runs/evals/{time.strftime('%Y-%m-%d')}-table-engine-dse009-v3.json",
+        default=f"runs/evals/{time.strftime('%Y-%m-%d')}-table-engine-dse022-baseline.json",
     )
     parser.add_argument("--report-dir", default="data/reports")
     args = parser.parse_args()
@@ -540,17 +725,26 @@ def main() -> int:
         print(f"ERROR: gold corpus policies dir not found: {policies_dir}", file=sys.stderr)
         return 1
 
+    reviewed_slugs = _discover_reviewed_policies(args.gold_corpus)
+    if not reviewed_slugs:
+        print("ERROR: no reviewed policies found in gold corpus", file=sys.stderr)
+        return 1
+
     policy_results = []
-    for slug in sorted(os.listdir(policies_dir)):
-        if not os.path.isfile(os.path.join(policies_dir, slug, "metadata.json")):
-            continue
+    for slug in reviewed_slugs:
         try:
             policy_results.append(evaluate_policy(slug, args.gold_corpus, args.tables_root))
         except Exception as exc:
             print(f"ERROR evaluating {slug}: {exc}", file=sys.stderr)
-            policy_results.append({"slug": slug, "status": "eval_error", "error": str(exc), "tables": []})
+            policy_results.append(
+                {"slug": slug, "status": "eval_error", "error": str(exc), "tables": []}
+            )
 
-    all_rows = [row for policy in policy_results for row in policy.get("tables", [])]
+    policies_ok = [p for p in policy_results if p.get("status") == "ok"]
+    policies_no_labels = [p for p in policy_results if p.get("status") == "no_physical_labels"]
+    policies_evaluated_count = len(policies_ok) + len(policies_no_labels)
+
+    all_rows = [row for policy in policies_ok for row in policy.get("tables", [])]
     priority_rows = [row for row in all_rows if row["is_priority"]]
     header_rows = [row for row in all_rows if row["header_lineage"]["required"]]
     total_gold = len(all_rows)
@@ -563,22 +757,27 @@ def main() -> int:
     header_passed = sum(1 for row in header_rows if row["header_lineage"]["passed"])
     missing_cell_bbox_tables = sum(
         policy.get("policy_metrics", {}).get("tables_with_missing_cell_bboxes", 0)
-        for policy in policy_results
+        for policy in policies_ok
     )
     unrecorded_missing_cell_bboxes = sum(
         policy.get("policy_metrics", {}).get("unrecorded_missing_cell_bboxes", 0)
-        for policy in policy_results
+        for policy in policies_ok
     )
     false_positive_tables = sum(
-        policy.get("policy_metrics", {}).get("false_positive_tables", 0)
-        for policy in policy_results
+        policy.get("policy_metrics", {}).get("false_positive_tables", 0) for policy in policies_ok
     )
-    legacy_source_review = _build_legacy_source_review(args.gold_corpus)
+
+    legacy_source_review = _build_legacy_source_review(args.gold_corpus, args.report_dir)
     undocumented_legacy_rows = [
-        row for row in legacy_source_review if row["classification"] == "deferred_needs_pdf_review" and row["reason"] == "No explicit disposition recorded."
+        row
+        for row in legacy_source_review
+        if row["classification"] == "deferred_needs_pdf_review"
+        and row["reason"].startswith("Legacy type")
     ]
 
-    priority_detection_recall = round(priority_detected / len(priority_rows), 4) if priority_rows else 0
+    priority_detection_recall = (
+        round(priority_detected / len(priority_rows), 4) if priority_rows else 0
+    )
     priority_page_region_recall = (
         round(priority_page_region_detected / len(priority_rows), 4) if priority_rows else 0
     )
@@ -586,15 +785,24 @@ def main() -> int:
     type_accuracy = round(type_ok / total_detected, 4) if total_detected else 0
 
     failures = []
-    if len([p for p in policy_results if p.get("status") == "ok"]) != 5:
-        failures.append("not_all_5_policies_evaluated")
-    if len(priority_rows) == 0:
+    if policies_evaluated_count != len(reviewed_slugs):
+        failures.append(
+            f"not_all_policies_evaluated: {policies_evaluated_count}/{len(reviewed_slugs)}"
+        )
+    all_policies_evaluated = len(
+        [p for p in policy_results if p.get("status") in ("ok", "no_physical_labels")]
+    )
+    if all_policies_evaluated != len(reviewed_slugs):
+        failures.append(
+            f"policies_with_errors: {len(reviewed_slugs) - all_policies_evaluated} policies failed"
+        )
+    if len(policies_ok) > 0 and len(priority_rows) == 0:
         failures.append("no_priority_physical_table_labels")
-    if priority_detection_recall < 0.85:
+    if len(policies_ok) > 0 and priority_detection_recall < 0.85:
         failures.append("priority_content_detection_recall_below_85pct")
-    if header_lineage_pass_rate < 0.85:
+    if len(policies_ok) > 0 and header_lineage_pass_rate < 0.85:
         failures.append("header_lineage_pass_rate_below_85pct")
-    if type_accuracy < 0.80:
+    if len(policies_ok) > 0 and type_accuracy < 0.80:
         failures.append("type_accuracy_below_80pct")
     if unrecorded_missing_cell_bboxes != 0:
         failures.append("unrecorded_missing_cell_bboxes")
@@ -602,14 +810,16 @@ def main() -> int:
         failures.append("legacy_gold_rows_without_disposition")
 
     result_doc = {
-        "eval_name": "table-engine-dse009-v3",
+        "eval_name": "table-engine-dse022-baseline",
         "date": time.strftime("%Y-%m-%d"),
-        "task_id": "DSE-009",
+        "task_id": "DSE-022",
         "git_commit": _git_commit(),
-        "input_manifest": "gold_corpus physical_table_labels.json (5 policies)",
+        "input_manifest": f"gold_corpus physical_table_labels.json ({len(reviewed_slugs)} policies)",
         "hard_gates": {
-            "policies_evaluated_target": 5,
-            "policies_evaluated_actual": len([p for p in policy_results if p.get("status") == "ok"]),
+            "reviewed_policies_total": len(reviewed_slugs),
+            "policies_evaluated": policies_evaluated_count,
+            "policies_with_labels": len(policies_ok),
+            "policies_with_zero_labels": len(policies_no_labels),
             "priority_physical_detection_recall_target": 0.85,
             "priority_physical_detection_recall_actual": priority_detection_recall,
             "header_lineage_pass_rate_target": 0.85,
@@ -647,23 +857,25 @@ def main() -> int:
             "unrecorded_missing_cell_bboxes": unrecorded_missing_cell_bboxes,
             "false_positive_tables": false_positive_tables,
             "legacy_gold_rows_documented": len(legacy_source_review),
+            "no_physical_labels_policies": [p["slug"] for p in policies_no_labels],
         },
         "per_policy": {
-            policy["slug"]: policy.get("policy_metrics", {})
-            for policy in policy_results
-            if policy.get("status") == "ok"
+            p["slug"]: p.get("policy_metrics", {})
+            for p in policy_results
+            if p.get("status") in ("ok", "no_physical_labels")
         },
         "policies": policy_results,
         "passed": not failures,
         "failures": failures,
         "notes": (
-            "v3 evaluates DSE-009 physical_table_labels.json only. Legacy semantic tables.json "
-            "rows are documented in the source review and excluded from hard gates."
+            "DSE-022 baseline evaluates physical_table_labels.json across all reviewed policies. "
+            "Legacy semantic tables.json rows are documented in the legacy dispositions report "
+            "and excluded from hard gates. Zero-label policies are explicitly accounted for."
         ),
         "known_limitations": [
             "Legacy DSE-003 tables.json still includes conceptual/non-physical table summaries.",
             "text_alignment_candidate tables preserve raw lines and cells=[] when split is unreliable.",
-            "Physical labels cover the initial 5-policy gold set; DSE-012 should expand and review more bboxes.",
+            "Physical labels cover the 20-policy gold set; some policies have zero physical labels.",
             "parent_clause_id assignment remains provisional until DSE-010 bbox/source-span overlap.",
         ],
     }
@@ -690,7 +902,17 @@ def main() -> int:
         legacy_source_review,
     )
 
-    print(json.dumps({"passed": result_doc["passed"], "metrics": result_doc["metrics"], "failures": failures}, indent=2))
+    print(
+        json.dumps(
+            {
+                "passed": result_doc["passed"],
+                "metrics": result_doc["metrics"],
+                "failures": failures,
+                "no_physical_labels_policies": [p["slug"] for p in policies_no_labels],
+            },
+            indent=2,
+        )
+    )
     return 0 if result_doc["passed"] else 1
 
 

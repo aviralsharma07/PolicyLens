@@ -12,7 +12,7 @@ Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engin
 
 ## Current Status
 
-All 20 priority deterministic concepts are active and passing full-corpus eval gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures. DSE-022 begins table eval expansion from the original 5-policy physical labels to the full 20-policy reviewed corpus.
+All 20 priority deterministic concepts are active and passing 20-policy gold benchmark gates. DSE-021 completed the remaining 7 extractors (claim intimation timeline, deductible, room rent limit, ICU limit, restoration benefit, modern treatment coverage, newborn coverage) with precision 100%, evidence accuracy 100%, false-present count 0. DSE-024 resolved all parser-target zero-clause failures. DSE-022 begins table eval expansion from the original 5-policy physical labels to the full 20-policy reviewed corpus.
 
 Current capability:
 - 20 reviewed gold policies.
@@ -29,7 +29,7 @@ Current capability:
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
 | DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
-| DSE-022 | 20-Policy Table Eval Expansion + Table Remediation | planned | P1 | Phase 3 |
+
 | DSE-023 | Product B Export v1 Freeze + Handoff Dataset | planned | P1 | Phase 8 |
 
 ---
@@ -320,7 +320,7 @@ Current capability:
 
 ### DSE-022 — 20-Policy Table Eval Expansion + Table Remediation
 
-**Status:** planned
+**Status:** in_progress
 **Priority:** P1
 **Phase:** Phase 3
 **Goal:** Expand table-engine evaluation from the original physical-table labels to the reviewed 20-policy corpus and fix repeated table extraction/header lineage failures.
