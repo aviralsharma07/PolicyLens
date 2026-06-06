@@ -69,9 +69,30 @@ So this project became a document compiler instead of a generic RAG demo.
 
 ---
 
+## Repository status
+
+This project is **complete as a learning / research / open-source artifact**.
+
+Active feature development is closed. The repository is being preserved because the underlying work is real and useful:
+
+- deterministic document parsing for complex regulated PDFs
+- evidence-linked structured extraction
+- evaluation-driven engineering discipline
+- source-bundle modeling for product-truth problems
+
+It is **not** being actively continued as a live insurance-comparison product roadmap.
+
+If you are reading this as a builder:
+
+- use the repo as a case study, reference implementation, or starting point
+- do not assume the insurer corpus will stay current without ongoing document operations
+- do not treat the exported facts as a production insurance recommendation service
+
+---
+
 ## Current status
 
-As of the latest documented state:
+As of the final documented state:
 
 - 20 reviewed gold-corpus policies
 - full parser and extractor pipeline implemented
@@ -80,6 +101,8 @@ As of the latest documented state:
 - curated MVP insurer universe selected
 - curated 30-product MVP source-bundle registry built
 - current-version drift against live insurer sources explicitly tracked
+- public open-source release hardening completed
+- project closeout documented
 
 The most important strategic lesson so far:
 
@@ -290,9 +313,10 @@ If you are new to the repo, read in this order:
 4. [docs/evaluation.md](./docs/evaluation.md)
 5. [docs/data_contracts.md](./docs/data_contracts.md)
 6. [docs/export_contract.md](./docs/export_contract.md)
-7. [docs/tasks.md](./docs/tasks.md)
-8. [docs/decisions.md](./docs/decisions.md)
-9. latest file in [runs/sessions/](./runs/sessions/)
+7. [docs/project_closeout.md](./docs/project_closeout.md)
+8. [docs/tasks.md](./docs/tasks.md)
+9. [docs/decisions.md](./docs/decisions.md)
+10. latest file in [runs/sessions/](./runs/sessions/)
 
 Most important public docs:
 
@@ -302,6 +326,7 @@ Most important public docs:
 - [export contract](./docs/export_contract.md)
 - [database strategy](./docs/database_strategy.md)
 - [product strategy / GTM notes](./docs/product_b_mvp_gtm_strategy.md)
+- [project closeout / retrospective](./docs/project_closeout.md)
 
 ---
 
@@ -312,6 +337,7 @@ This repo is being published primarily as:
 - a working document-intelligence system
 - a learning artifact in evaluation-driven AI engineering
 - a case study in structured extraction from regulated documents
+- a truthful record of where a consumer-AI product idea stopped being operationally sane
 
 It is **not** being presented as:
 

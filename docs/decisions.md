@@ -32,6 +32,7 @@ This file records key architectural decisions. Earlier work used separate `docs/
 | 0042 | Product identity is a source bundle, not one PDF | 2026-06-05 | Accepted |
 | 0043 | Product B recommendations require variant/condition-scoped facts | 2026-06-05 | Accepted |
 | 0044 | Latest-version gate overrides older corpus wording files for MVP truth | 2026-06-06 | Accepted |
+| 0045 | Project transitions from active roadmap to open-source closeout state | 2026-06-06 | Accepted |
 
 ---
 
@@ -168,6 +169,31 @@ This file records key architectural decisions. Earlier work used separate `docs/
 - Negative: Export count (566/591) is based on unique documents, not manifest entries.
 
 **Revisit when:** The corpus identity system is enhanced to detect and merge duplicate-source entries at the manifest level instead of the clause store level.
+
+---
+
+## 2026-06-06 — ADR-0045: Project Transitions From Active Roadmap To Open-Source Closeout State
+
+**Status:** accepted
+
+**Decision:** `doc-structure-engine` is no longer an active feature roadmap. The repository is preserved as a completed engineering artifact, open-source reference implementation, and project retrospective. Deferred items such as bundle-aware Product B export or LLM refinement remain historical future work, not active commitments.
+
+**Context:** The project successfully built a substantial document compiler for insurance PDFs, but the broader product thesis depended on continuously current insurer product truth assembled from fragmented public documents. That creates an ongoing operational data burden that is not reasonable for this side-project scope.
+
+**Options considered:**
+1. Continue the Product A roadmap into bundle-aware export and deeper Product B integration.
+2. Freeze the broad product ambition, preserve the engine, and close the roadmap honestly.
+3. Rewrite the repo history to present the work as if it were still a live product effort.
+
+**Reasoning:** Option 2 is the truthful choice. The technical work is real and worth preserving, but continuing to imply an active roadmap would overstate the practicality of the product path. Option 1 would continue a product direction already judged operationally unsound for the project context. Option 3 would make the public repository less honest, not more useful.
+
+**Consequences:**
+- Positive: the repository becomes a credible public artifact with a clear scope.
+- Positive: future readers can learn from both the technical achievements and the stopping point.
+- Positive: articles, talks, or future pivots can build on a clean and truthful record.
+- Negative: some planned work remains intentionally unfinished.
+
+**Revisit when:** Only if the project is deliberately reactivated with a narrower scope, explicit maintenance plan, and a fresh product/data strategy.
 
 ---
 

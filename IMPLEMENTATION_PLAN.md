@@ -1,5 +1,23 @@
 # Document Structure Engine — Implementation Plan v2
 
+## Project Closeout — 2026-06-06
+
+Active development on `doc-structure-engine` is closed.
+
+This document now serves as a **historical implementation record**, not an active roadmap. The repository is being preserved as an open-source engineering artifact and project retrospective.
+
+Important interpretation rules:
+
+- completed sections below remain part of the project record,
+- previously planned work should not be read as committed future execution,
+- any “next task” language in older sections is historical unless explicitly reactivated later.
+
+Final strategic conclusion:
+
+- the document compiler work was successful,
+- the broad insurance-comparison product thesis was not operationally sane as a solo side-project built on public insurer PDFs,
+- the repo should now be read as a reference implementation, learning artifact, and open-source case study.
+
 ## Strategic Reset — 2026-06-05
 
 The 647-policy pipeline proved parser, extractor, and export capability, but Product B should **not** launch as a 647-policy comparison product. That would optimize for breadth before trust.
@@ -45,7 +63,7 @@ The next risks are:
 - missing PBT/CIS/brochure documents causing incomplete or misleading product comparisons,
 - variant-specific facts flattened into one scalar value.
 
-## Active Roadmap After Strategic Reset
+## Historical Roadmap After Strategic Reset
 
 1. DSE-019 — Canonical Insurance Concept Ontology Registry v1 — done
 2. DSE-020 — Full 647-Policy Pipeline Dry Run + Scale Triage — done
@@ -57,11 +75,11 @@ The next risks are:
 8. DSE-025 — Product Source Bundle Registry — done
 9. DSE-026 — Top 10 Insurer Universe + MVP Top 5 Selection — done
 10. DSE-027 — Curated MVP Source Bundle Sprint with Latest-Version Safety Gate — done
-11. **DSE-028 — Bundle-Aware Product B Export** — next Product A task
-12. Product B advisor flow over curated source-bundled products
-13. DSE-014 — Evidence-Constrained LLM Refinement
+11. DSE-028 — Bundle-Aware Product B Export — deferred at project closeout
+12. Product B advisor flow over curated source-bundled products — deferred at project closeout
+13. DSE-014 — Evidence-Constrained LLM Refinement — deferred at project closeout
 
-The old "full-corpus Product B export refresh" path is deferred. DSE-020 remains a valuable scale diagnostic, but the MVP launch path is curated and source-bundled.
+The old "full-corpus Product B export refresh" path is deferred. DSE-020 remains a valuable scale diagnostic, but the MVP launch path was never taken to a maintained product state.
 
 ## MVP Product Strategy
 

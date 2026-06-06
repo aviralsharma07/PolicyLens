@@ -2,11 +2,11 @@
 
 Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engine).
 
-## Active Sprint
+## Project Status
 
-| ID | Title | Status | Priority | Phase |
-|----|-------|--------|----------|-------|
-| DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
+`doc-structure-engine` is closed as an active implementation project.
+
+There is no active sprint. Future items below are preserved as deferred ideas only.
 
 ---
 
@@ -37,12 +37,12 @@ MVP direction:
 
 ---
 
-## Backlog
+## Deferred / Historical Future Work
 
 | ID | Title | Status | Priority | Phase |
 |----|-------|--------|----------|-------|
-| DSE-028 | Bundle-Aware Product B Export | planned | P0 | Phase 8 / Product B Handoff |
-| DSE-014 | LLM Refinement Integration | planned | P3 | Phase 6 |
+| DSE-028 | Bundle-Aware Product B Export | deferred | P0 | Phase 8 / Product B Handoff |
+| DSE-014 | LLM Refinement Integration | deferred | P3 | Phase 6 |
 
 ## Downstream Product B Work
 
@@ -218,7 +218,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 
 ### DSE-028 — Bundle-Aware Product B Export
 
-**Status:** planned
+**Status:** deferred
 **Priority:** P0
 **Phase:** Phase 8 / Product B Handoff
 **Goal:** Upgrade Product B export semantics from policy-wording facts to product/variant/condition-scoped facts backed by source bundles.
@@ -240,6 +240,8 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - Product B handoff must now consume `product_source_bundles_mvp_v1.json` semantics and stop treating the older export as recommendation-grade by itself.
 **Branch:** feat/dse-028-bundle-aware-export
 **Related docs:** export_contract.md, data_contracts.md, product_b_mvp_gtm_strategy.md
+
+**Closeout note:** This task was intentionally not executed. The project was closed after the source-bundle and open-source hardening work because the broader product path was judged too operationally heavy for a solo side project built on public insurer documents.
 
 ### DSE-029 — Open-Source Release Hardening
 

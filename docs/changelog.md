@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-06-06 (Project Closeout)
+
+### Added
+- `docs/project_closeout.md` — final retrospective and closeout record.
+- `runs/sessions/2026-06-06-project-closeout.md` — closeout session log.
+
+### Changed
+- `README.md` — now marks the repository as complete as a learning / research / open-source artifact rather than an active product roadmap.
+- `IMPLEMENTATION_PLAN.md` — reframed as a historical implementation record; future roadmap items marked deferred.
+- `docs/tasks.md` — active sprint removed; deferred future work kept only as historical context.
+- `docs/decisions.md` — added project-closeout decision.
+
+### Final Position
+- The repo remains public and useful.
+- The broad insurance-product roadmap is closed.
+- The project is preserved as a reference implementation, engineering artifact, and retrospective.
+
+### Known Issues
+- Historical documents still contain milestone-era detail because they are part of the project record, not erased history.
+- Product B integration and bundle-aware export remain intentionally unfinished.
+
 ## 2026-06-06 (DSE-029 — Open-Source Release Hardening)
 
 ### Added
