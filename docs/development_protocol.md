@@ -141,9 +141,9 @@ Run relevant tests after every implementation task.
 Preferred commands:
 
 ```bash
-pytest tests/
-python scripts/quality_report.py --layer <layer>
-python scripts/corpus_lockdown.py
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python scripts/validate_source_bundles.py data/manifests/product_source_bundles_v1.draft.json
 ```
 
 If a command fails, report:

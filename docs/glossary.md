@@ -35,7 +35,7 @@
 | **Document AST** | Abstract Syntax Tree: a structured tree representation of the policy document. |
 | **Source Span** | A reference to the exact location (page, bbox, char range) where a piece of text was found. |
 | **Fact Candidate** | A potential extracted value before acceptance. Multiple candidates per concept are scored and resolved. |
-| **Derived Policy Feature** | The final compiled 91-field view of a policy, consumed by Product B. |
+| **Derived Policy Feature** | The final compiled Product B-facing export view of a policy. In the current public repo this is the ontology-backed 20-concept v1 contract, with broader schema expansion deferred. |
 | **Gold Corpus** | A manually annotated set of policies used as the ground truth for evaluation. |
 | **Fact Status** | A 7-value enum describing whether a fact was found, absent, ambiguous, conflicting, or needs review. |
 | **Scope** | The conditions under which a fact applies (base policy, optional cover, network/non-network). |

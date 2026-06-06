@@ -1,6 +1,6 @@
 # Architectural Decisions
 
-This file records key architectural decisions. Each ADR has a unique ID and links to the detailed record in `docs/adr/`.
+This file records key architectural decisions. Earlier work used separate `docs/adr/` files for some decisions; the current source of truth is this append-only document.
 
 ---
 
@@ -31,6 +31,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 | 0041 | Curated top-insurer MVP over 647-policy launch | 2026-06-05 | Accepted |
 | 0042 | Product identity is a source bundle, not one PDF | 2026-06-05 | Accepted |
 | 0043 | Product B recommendations require variant/condition-scoped facts | 2026-06-05 | Accepted |
+| 0044 | Latest-version gate overrides older corpus wording files for MVP truth | 2026-06-06 | Accepted |
 
 ---
 
@@ -1098,7 +1099,7 @@ This file records key architectural decisions. Each ADR has a unique ID and link
 
 ---
 
-## 2026-06-06 — Latest-version gate overrides older corpus wording files for MVP truth (ADR-0039)
+## 2026-06-06 — Latest-version gate overrides older corpus wording files for MVP truth (ADR-0044)
 
 **Status:** accepted
 

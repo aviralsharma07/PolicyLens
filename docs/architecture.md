@@ -56,7 +56,7 @@ Phase 7: GOLD CORPUS
   │
   ▼
 Phase 8: DERIVED EXPORT
-  91-field view → evidence chain → Product B consumes
+  20-concept Product B export v1 → evidence chain → downstream product consumes
 ```
 
 ---
@@ -72,8 +72,8 @@ Phase 8: DERIVED EXPORT
                      │ export contract
                      │
 ┌──────────────────────────────────────────┐
-│  Phase 8: Derived 91-Field Export        │
-│  Compiled view over extracted_facts       │
+│  Phase 8: Derived Product B Export v1     │
+│  Compiled ontology-backed JSON over facts │
 └──────────────────────────────────────────┘
                      ▲
 ┌──────────────────────────────────────────┐
@@ -106,7 +106,7 @@ Raw PDF
   → physical text (pdfplumber)
     → logical AST (heading scorer + section tree)
       → clause boundaries (segmenter)
-        → tables (type classifier + camelot)
+        → tables (type classifier + extraction engine)
           → source spans (bbox + char range)
             → fact candidates (all extractors run)
               → scored + ranked per concept

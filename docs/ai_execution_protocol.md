@@ -9,7 +9,7 @@ When starting a new session, the AI must read in order:
 1. `docs/development_protocol.md` — workflow, branching, definitions of done
 2. `docs/architecture.md` — pipeline overview, layered design
 3. `docs/evaluation.md` — active eval gates and metrics (check which layer you're working on)
-4. `docs/decisions.md` + `docs/adr/*` — architectural decisions made
+4. `docs/decisions.md` — architectural decisions made
 5. `docs/data_contracts.md` — module-to-module contracts
 6. Most recent `runs/sessions/*` — what happened last session
 7. `docs/tasks.md` — active task list with DSE-XXX IDs
@@ -75,14 +75,14 @@ The AI must NOT:
 
 ## Required Tests / Evals
 
-After every non-trivial change, run:
+After every non-trivial change, run the relevant repo checks. Common defaults:
 
 ```bash
-pytest tests/ --tb=short  # if tests exist
-python scripts/quality_report.py --layer <affected_layer>
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
 ```
 
-If tests cannot run because files are not implemented yet, note it in the session log.
+If the change touches source bundles, also run the relevant source-bundle validator. If tests cannot run because files are not implemented yet, note it in the session log.
 
 ---
 

@@ -4,7 +4,7 @@
 
 > Unknown is acceptable. Wrong is fatal.
 
-Every layer has hard gates. Do not proceed to the next layer until the current layer passes its gates on 5 gold PDFs.
+Every layer has hard gates. Do not proceed to the next layer until the current layer passes its gates on the reviewed gold corpus appropriate to that layer. Older 5-policy references remain in this file as historical milestone records.
 
 ---
 
@@ -49,7 +49,7 @@ Do not proceed to parsing until:
 ### Commands
 ```bash
 python scripts/corpus_lockdown.py
-python scripts/quality_report.py --layer identity
+python scripts/uin_match_report.py
 ```
 
 ### Output Artifacts
@@ -579,7 +579,7 @@ every legacy tables.json row has a documented disposition
 ```bash
 python -m table_engine.table_detector --pdf <path>
 python -m table_engine.table_type_classifier --tables <tables_path>
-python scripts/quality_report.py --layer tables
+PYTHONPATH=. .venv/bin/python -m pytest tests/test_table_engine.py --tb=short
 ```
 
 ### Output Artifacts

@@ -84,6 +84,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 | DSE-025 | Product Source Bundle Registry | 2026-06-05 | Product Identity / MVP Readiness |
 | DSE-026 | Top 10 Insurer Universe + MVP Top 5 Selection | 2026-06-06 | Product Strategy / Corpus |
 | DSE-027 | Curated MVP Source Bundle Sprint with Latest-Version Safety Gate | 2026-06-06 | Corpus / Source Collection |
+| DSE-029 | Open-Source Release Hardening | 2026-06-06 | Repo / Documentation |
 
 ---
 
@@ -239,6 +240,32 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 - Product B handoff must now consume `product_source_bundles_mvp_v1.json` semantics and stop treating the older export as recommendation-grade by itself.
 **Branch:** feat/dse-028-bundle-aware-export
 **Related docs:** export_contract.md, data_contracts.md, product_b_mvp_gtm_strategy.md
+
+### DSE-029 — Open-Source Release Hardening
+
+**Status:** done
+**Priority:** P1
+**Phase:** Repo / Documentation
+**Goal:** Make `doc-structure-engine` publishable as a public open-source repository with an accurate README, contribution guidance, license, security posture, and corrected high-level docs.
+**Acceptance criteria:**
+- [x] Public-facing README explains purpose, capabilities, limits, setup, and repo layout.
+- [x] Repository has a license.
+- [x] Repository has contributor, conduct, and security guidance.
+- [x] Public metadata and PR/issue scaffolding exist.
+- [x] High-level docs no longer point contributors to obviously missing files/commands.
+- [x] Session log and changelog updated.
+- [x] Full validation suite still passes.
+**Results:**
+- Added `README.md` rewrite suitable for public release.
+- Added `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, and `SUPPORT.md`.
+- Added `.github/ISSUE_TEMPLATE/config.yml` and `.github/pull_request_template.md`.
+- Updated `pyproject.toml` with license, author, keywords, classifiers, and project URLs.
+- Corrected stale high-level doc references in `docs/ai_execution_protocol.md`, `docs/development_protocol.md`, `docs/evaluation.md`, `docs/architecture.md`, `docs/glossary.md`, and `docs/decisions.md`.
+**Known limitations:**
+- Some lower-level historical docs still contain milestone-era references because they are preserved as project history rather than rewritten as if the early phases never happened.
+- The repository is open-source ready as an engineering artifact, not as a hosted production service.
+**Branch:** docs/dse-029-open-source-readiness
+**Related docs:** README.md, development_protocol.md, ai_execution_protocol.md, changelog.md
 
 ### DSE-019 — Canonical Insurance Concept Ontology Registry v1
 

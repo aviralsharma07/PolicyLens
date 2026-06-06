@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security issue
+    url: https://github.com/aviralsharma07/PolicyLens/blob/main/SECURITY.md
+    about: Please do not open public issues for security vulnerabilities.

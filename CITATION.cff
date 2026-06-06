@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: doc-structure-engine
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Sharma
+    given-names: Aviral
+repository-code: "https://github.com/aviralsharma07/PolicyLens"
+license: MIT
+version: 0.1.0
+date-released: 2026-06-06
+abstract: >
+  Deterministic, evidence-linked document intelligence for Indian health
+  insurance policy documents, with source-bundle tracking and a Product B
+  handoff export.

@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-06-06 (DSE-029 — Open-Source Release Hardening)
+
+### Added
+- `LICENSE` — MIT license for public release.
+- `CONTRIBUTING.md` — contributor workflow and repo boundaries.
+- `CODE_OF_CONDUCT.md` — contributor behavior expectations.
+- `SECURITY.md` — security reporting and scope.
+- `SUPPORT.md` — support expectations for an open-source side-project repo.
+- `CITATION.cff` — citation metadata.
+- `.github/ISSUE_TEMPLATE/config.yml` and `.github/pull_request_template.md`.
+- `runs/sessions/2026-06-06-dse029-open-source-readiness.md`.
+
+### Changed
+- `README.md` — fully rewritten for public open-source release with project purpose, architecture, status, limitations, setup, docs map, and contribution guidance.
+- `pyproject.toml` — added license, author, classifiers, keywords, and project URLs.
+- `docs/ai_execution_protocol.md` — removed stale `docs/adr/*` and `quality_report.py` references from top-level contributor guidance.
+- `docs/development_protocol.md` — updated default validation commands to current repo checks.
+- `docs/evaluation.md` — corrected top-level contributor-facing wording away from stale hardcoded 5-policy / `quality_report.py` guidance.
+- `docs/architecture.md` — updated high-level export and table-engine wording to match current repo reality.
+- `docs/glossary.md` — removed stale “91-field” wording from derived feature definition.
+- `docs/decisions.md` — corrected ADR index wording and added ADR-0044 to the active table.
+- `docs/tasks.md` — recorded DSE-029 completion.
+
+### Results
+- Repository now has the minimum public-facing documentation and metadata expected of a serious open-source engineering repo.
+- High-level docs are materially less confusing for first-time readers and contributors.
+
+### Known Issues
+- Some lower-level historical docs still preserve early-phase milestone wording because they are part of the project record.
+- Public release readiness does not imply hosted-service readiness or live insurer-data freshness guarantees.
+
 ## 2026-06-06 (DSE-027 — Curated MVP Source Bundles)
 
 ### Added

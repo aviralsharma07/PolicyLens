@@ -4,6 +4,26 @@ version = "0.1.0"
 description = "Document intelligence engine for Indian health insurance policy wordings"
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Aviral Sharma" },
+]
+keywords = [
+    "document-intelligence",
+    "pdf-parsing",
+    "insurance",
+    "information-extraction",
+    "document-ai",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Markup",
+]
 dependencies = [
     "pydantic>=2.7",
     "pdfplumber>=0.11",
@@ -18,6 +38,11 @@ dev = [
     "pytest>=8.2",
     "ruff>=0.5",
 ]
+
+[project.urls]
+Homepage = "https://github.com/aviralsharma07/PolicyLens"
+Repository = "https://github.com/aviralsharma07/PolicyLens"
+Issues = "https://github.com/aviralsharma07/PolicyLens/issues"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
