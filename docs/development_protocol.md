@@ -167,7 +167,7 @@ Required template:
 
 Date: YYYY-MM-DD
 Task ID: DSE-XXX
-Project: doc-structure-engine
+Project: PolicyLens
 Branch: <branch>
 AI executor: opencode + <model>
 Human reviewer: Avi

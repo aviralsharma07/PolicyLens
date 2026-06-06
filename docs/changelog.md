@@ -8,6 +8,7 @@
 
 ### Changed
 - `README.md` — now marks the repository as complete as a learning / research / open-source artifact rather than an active product roadmap.
+- Public-facing repo naming updated from `doc-structure-engine` to `PolicyLens` across major docs and metadata.
 - `IMPLEMENTATION_PLAN.md` — reframed as a historical implementation record; future roadmap items marked deferred.
 - `docs/tasks.md` — active sprint removed; deferred future work kept only as historical context.
 - `docs/decisions.md` — added project-closeout decision.

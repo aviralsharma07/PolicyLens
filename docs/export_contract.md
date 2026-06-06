@@ -1,27 +1,27 @@
-# Export Contract — Product A → Product B
+# Export Contract
 
 ## Contract Version
 
 **Version:** 1.0
 **Last updated:** 2026-06-05
-**Status:** active (DSE-023 Product B Export v1 freeze)
+**Status:** active (DSE-023 export v1 freeze)
 
 ---
 
 ## Producer
 
-**Name:** doc-structure-engine (Product A)
+**Name:** PolicyLens
 **Role:** Document intelligence pipeline. Owns PDF parsing, structure extraction, fact extraction, provenance tracking.
 **Output format:** JSON files per policy
 **Output location:** `data/export/{policy_id}/`
-**Handoff package:** `data/processed/product_b_export_v1/`
+**Compiled package:** `data/processed/product_b_export_v1/` (historical path name)
 
 ---
 
 ## Consumer
 
-**Name:** insurance-agent (Product B)
-**Role:** User-facing insurance assistant. Owns UI, comparisons, explanations, conversations.
+**Name:** Any downstream analysis, prototype, or application layer
+**Role:** Reads compiled JSON only
 **Input format:** JSON files (never queries raw engine tables directly)
 
 ---
@@ -39,13 +39,13 @@ data/export/batch_{run_id}.json  # Deferred — not produced by DSE-013 v1. Per-
 
 ## V1 Scope
 
-DSE-023 freezes Product B Export v1 as the ontology-backed 20-concept JSON contract. It is the first Product B-consumable package and is intentionally narrower than the earlier planned 91-field comparison schema.
+DSE-023 freezes export v1 as the ontology-backed 20-concept JSON contract. It is the first stable compiled package and is intentionally narrower than the earlier planned 91-field comparison schema.
 
-The 91-field view remains a future Product B schema expansion. It must not be assumed present in `export_schema_version = "1.0"`.
+The 91-field view remains a future schema expansion. It must not be assumed present in `export_schema_version = "1.0"`.
 
 ## Known V1 Limitation
 
-Export v1 is primarily policy-wording-based and is useful for evidence exploration, prototype browsing, and validating Product B display patterns. It is **not yet launch-grade for final recommendations** when Product Benefit Tables, CIS documents, brochures/prospectuses, or rider documents are missing.
+Export v1 is primarily policy-wording-based and is useful for evidence exploration, prototype browsing, and local analysis. It is **not yet launch-grade for final recommendations** when Product Benefit Tables, CIS documents, brochures/prospectuses, or rider documents are missing.
 
 Many health insurance wordings delegate numeric values to a Product Benefit Table or Policy Schedule. In those cases, a policy wording can prove that a benefit exists or a condition applies, but it may not prove the exact variant-specific value.
 
@@ -58,7 +58,7 @@ Future bundle-aware export must include:
 - document bundle completeness;
 - explicit warning/blocking behavior when PBT/CIS is missing for a comparison-critical concept.
 
-Product B must not display schedule-dependent or variant-dependent facts as simple scalar values unless the required bundle documents have been collected and matched.
+Downstream consumers must not display schedule-dependent or variant-dependent facts as simple scalar values unless the required bundle documents have been collected and matched.
 
 ---
 
@@ -82,7 +82,7 @@ Product B must not display schedule-dependent or variant-dependent facts as simp
 
 ## Feature Object Shape
 
-The exported feature set is governed by `ontology/concepts.v1.json`. The ontology defines the canonical concept ID, Product B export field name, value shape, unit, evidence requirements, and display semantics for every priority concept.
+The exported feature set is governed by `ontology/concepts.v1.json`. The ontology defines the canonical concept ID, export field name, value shape, unit, evidence requirements, and display semantics for every priority concept.
 
 Every feature in the `features` map follows this structure:
 
@@ -139,13 +139,13 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
 
 ## Backward Compatibility Rules
 
-1. **Version field is mandatory** — `export_schema_version` must be checked by Product B before processing.
-2. **Adding new features is non-breaking** — Product B must handle unknown feature keys gracefully.
+1. **Version field is mandatory** — `export_schema_version` must be checked by consumers before processing.
+2. **Adding new features is non-breaking** — consumers must handle unknown feature keys gracefully.
 3. **Removing features is breaking** — increment the schema version when removing fields.
 4. **Changing the structure of `value` is breaking** — increment the schema version.
-5. **Adding new fields inside `value` is non-breaking** — Product B should ignore unknown sub-fields.
+5. **Adding new fields inside `value` is non-breaking** — consumers should ignore unknown sub-fields.
 6. **Old exports remain valid** — never delete old export files when the schema changes. Keep them with their schema version.
-7. **Product B reads compiled JSON only** — Product B must not query Product A SQLite, raw parser tables, physical/logical/table interim files, or raw PDFs.
+7. **Consumers read compiled JSON only** — downstream code must not query raw parser tables, physical/logical/table interim files, or raw PDFs.
 
 ---
 
@@ -311,4 +311,4 @@ Facts with `fact_status = not_found` may optionally have an evidence-like note e
 |---------|---------|------|--------|
 | 1.0 | Initial contract | 2026-05-29 | Superseded by DSE-023 wording |
 | 1.0 | DSE-013 implements 20-concept export skeleton | 2026-06-01 | Historical — 5/20 concepts populated |
-| 1.0 | DSE-023 freezes 20-concept ontology-backed Product B handoff contract | 2026-06-05 | Current |
+| 1.0 | DSE-023 freezes 20-concept ontology-backed compiled export contract | 2026-06-05 | Current |

@@ -1,10 +1,10 @@
 # Tasks
 
-Lightweight local issue tracker. All IDs are `DSE-XXX` (Document Structure Engine).
+Lightweight local issue tracker. All IDs are `DSE-XXX` (the original Document Structure Engine task namespace now preserved under the public repo name `PolicyLens`).
 
 ## Project Status
 
-`doc-structure-engine` is closed as an active implementation project.
+`PolicyLens` is closed as an active implementation project.
 
 There is no active sprint. Future items below are preserved as deferred ideas only.
 
@@ -248,7 +248,7 @@ Product B should read `data/processed/product_b_export_v1` as compiled JSON only
 **Status:** done
 **Priority:** P1
 **Phase:** Repo / Documentation
-**Goal:** Make `doc-structure-engine` publishable as a public open-source repository with an accurate README, contribution guidance, license, security posture, and corrected high-level docs.
+**Goal:** Make `PolicyLens` publishable as a public open-source repository with an accurate README, contribution guidance, license, security posture, and corrected high-level docs.
 **Acceptance criteria:**
 - [x] Public-facing README explains purpose, capabilities, limits, setup, and repo layout.
 - [x] Repository has a license.

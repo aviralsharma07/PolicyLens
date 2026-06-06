@@ -176,7 +176,7 @@ This file records key architectural decisions. Earlier work used separate `docs/
 
 **Status:** accepted
 
-**Decision:** `doc-structure-engine` is no longer an active feature roadmap. The repository is preserved as a completed engineering artifact, open-source reference implementation, and project retrospective. Deferred items such as bundle-aware Product B export or LLM refinement remain historical future work, not active commitments.
+**Decision:** `PolicyLens` is no longer an active feature roadmap. The repository is preserved as a completed engineering artifact, open-source reference implementation, and project retrospective. Deferred items such as bundle-aware Product B export or LLM refinement remain historical future work, not active commitments.
 
 **Context:** The project successfully built a substantial document compiler for insurance PDFs, but the broader product thesis depended on continuously current insurer product truth assembled from fragmented public documents. That creates an ongoing operational data burden that is not reasonable for this side-project scope.
 

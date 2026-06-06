@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for taking interest in `doc-structure-engine`.
+Thanks for taking interest in `PolicyLens`.
 
 This repository is a document-intelligence system with a fairly opinionated workflow. Please read this file before opening a PR.
 
@@ -17,13 +17,13 @@ Read these first:
 
 ## Project boundaries
 
-This repo is **Product A** only.
+This repo is a standalone document-intelligence repository.
 
 Please do not:
 
 - add frontend or chat features here
-- add Product B logic here
-- move extraction logic into `insurance-agent`
+- turn this repo into an app shell instead of a document compiler
+- blur extraction logic with unrelated UI or agent workflows
 - mutate raw PDFs
 - treat brochures as legal source truth without explicit precedence rules
 

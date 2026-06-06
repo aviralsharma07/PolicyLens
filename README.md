@@ -1,17 +1,17 @@
-# doc-structure-engine
+# PolicyLens
 
 Deterministic, evidence-linked document intelligence for Indian health insurance policy documents.
 
-`doc-structure-engine` is Product A in the broader `PolicyLens` workspace. It compiles policy PDFs into structured, provenance-backed data that a downstream product can safely consume. It was built to answer a specific product problem: insurance comparison is not trustworthy if it relies on marketing copy, hidden filters, or undocumented values. The engine treats policy documents as source material and forces every extracted fact to carry evidence and status.
+`PolicyLens` is a standalone document compiler for Indian health insurance policy PDFs. It compiles policy documents into structured, provenance-backed data with explicit evidence and status fields. It was built to answer a hard document-intelligence problem: legal and product PDFs are not useful unless extracted facts stay tied to source text, structure, and context.
 
 This repository is currently optimized for:
 
 - Indian health insurance policy wordings and adjacent official product documents
 - structured extraction with explicit evidence
 - evaluation-driven development on a reviewed gold corpus
-- cautious, precision-first outputs for downstream recommendation products
+- cautious, precision-first structured outputs
 
-It is **not** a chat app, a general RAG layer, or a user-facing product.
+It is **not** a chat app, a generic RAG wrapper, or a universal “extract anything from any PDF” product.
 
 ---
 
@@ -45,14 +45,14 @@ The engine turns policy documents into a layered representation:
    - conflict handling
 
 6. **Compiled export**
-   - JSON handoff package for a downstream product
+   - JSON export package for inspection, analysis, or downstream use
    - explicit `fact_status`, confidence, and evidence
 
 ---
 
 ## Why it exists
 
-This project started from a real consumer frustration:
+This project started from a real document and product-truth frustration:
 
 - policy aggregators were noisy and opaque
 - important products were hidden or inconsistently surfaced
@@ -87,6 +87,64 @@ If you are reading this as a builder:
 - use the repo as a case study, reference implementation, or starting point
 - do not assume the insurer corpus will stay current without ongoing document operations
 - do not treat the exported facts as a production insurance recommendation service
+
+---
+
+## How to try it
+
+There are three useful ways to try `PolicyLens`.
+
+### 1. Verify the repository state
+
+This is the fastest way to confirm the project is healthy locally:
+
+```bash
+PYTHONPATH=. .venv/bin/python scripts/validate_gold_corpus.py
+PYTHONPATH=. .venv/bin/python scripts/validate_source_bundles.py data/manifests/product_source_bundles_v1.draft.json
+PYTHONPATH=. .venv/bin/python scripts/validate_source_bundles.py data/manifests/product_source_bundles_mvp_v1.json
+PYTHONPATH=. .venv/bin/python -m pytest tests/ --tb=short
+```
+
+### 2. Inspect the included artifacts
+
+If you want to understand what the engine produces, start with:
+
+```text
+gold_corpus/policies/
+data/reports/
+data/manifests/product_source_bundles_v1.draft.json
+data/manifests/product_source_bundles_mvp_v1.json
+data/processed/product_b_export_v1/   # historical path name for the compiled export package
+```
+
+Recommended reading order:
+
+1. `gold_corpus/policies/*/facts.json`
+2. `data/reports/dse025_source_bundle_baseline_audit.md`
+3. `data/reports/dse026_top10_top5_selection.md`
+4. `data/reports/dse027_curated_mvp_bundle_closeout_v1.md`
+
+### 3. Reuse the engine on your own text-layer PDFs
+
+If you want to adapt the project, the main reusable entry points are:
+
+```text
+scripts/corpus_lockdown.py
+scripts/uin_match_report.py
+scripts/run_heading_scorer.py
+scripts/run_section_tree.py
+scripts/run_table_engine.py
+scripts/run_fact_extractors.py
+scripts/run_clause_store.py
+scripts/run_export.py
+```
+
+The project is most suitable when your documents are:
+
+- text-layer PDFs,
+- structurally repetitive within a domain,
+- high-stakes enough to require evidence,
+- and better served by precision-first extraction than broad fuzzy retrieval.
 
 ---
 
@@ -173,7 +231,6 @@ Every exported concept uses explicit status values such as:
 ## What this project does not do
 
 - no user-facing UI
-- no recommendation agent
 - no consumer chat product
 - no embeddings/vector-search layer for end-user retrieval
 - no OCR-first pipeline
@@ -188,7 +245,7 @@ This repository is intentionally narrower:
 ## Repo layout
 
 ```text
-doc-structure-engine/
+PolicyLens/
 ├── README.md
 ├── IMPLEMENTATION_PLAN.md
 ├── pyproject.toml
@@ -295,7 +352,7 @@ data/manifests/mvp_product_candidates_v1.json
 data/manifests/mvp_product_candidates_verified_v1.json
 ```
 
-### Product B handoff package
+### Compiled export package
 
 ```text
 data/processed/product_b_export_v1/
@@ -325,7 +382,6 @@ Most important public docs:
 - [data contracts](./docs/data_contracts.md)
 - [export contract](./docs/export_contract.md)
 - [database strategy](./docs/database_strategy.md)
-- [product strategy / GTM notes](./docs/product_b_mvp_gtm_strategy.md)
 - [project closeout / retrospective](./docs/project_closeout.md)
 
 ---
@@ -366,26 +422,7 @@ The curated MVP source-bundle work exists precisely because “parse old PDFs on
 - Unknown is acceptable. Wrong is fatal.
 - Precision over recall.
 - No extracted fact without evidence.
-- Product B consumes compiled outputs, not raw parser internals.
-
----
-
-## Relationship to Product B
-
-This repo is Product A.
-
-The downstream user-facing product lives separately in:
-
-```text
-insurance-agent/
-```
-
-Boundary:
-
-- `doc-structure-engine` owns parsing, structure, extraction, provenance, and compiled exports.
-- `insurance-agent` owns UI, recommendation UX, comparison, and user interactions.
-
-Product B must consume compiled JSON only. It must not rebuild extraction logic from raw PDFs.
+- Compiled outputs are safer to consume than raw parser internals.
 
 ---
 

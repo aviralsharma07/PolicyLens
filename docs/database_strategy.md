@@ -4,7 +4,7 @@
 
 **Local SQLite for development, JSON export for Product B, Supabase only for compiled data.**
 
-Product A (doc-structure-engine) and Product B (insurance-agent) have different database needs:
+Product A (PolicyLens) and Product B (`insurance-agent`) have different database needs:
 - Product A = heavy write, schema evolves fast, raw parsing data, local-first
 - Product B = read-heavy, stable schema, compiled outputs, user-facing
 
@@ -27,7 +27,7 @@ Product A (doc-structure-engine) and Product B (insurance-agent) have different 
 ### Storage location
 
 ```
-doc-structure-engine/data/engine.sqlite
+PolicyLens/data/engine.sqlite
 ```
 
 ### Tables
@@ -120,7 +120,7 @@ not the `export_schema_version = "1.0"` contract.
 Only compiled, product-facing data goes into the **existing** insurance-agent Supabase project.
 
 ```
-Product A: doc-structure-engine          Product B: insurance-agent
+Product A: PolicyLens                    Product B: insurance-agent
 ┌─────────────────────────────┐          ┌──────────────────────┐
 │ Local SQLite                │          │ Supabase Project     │
 │  (all 19 raw tables)        │ ──JSON──►│  public schema:      │

@@ -32,7 +32,7 @@ Before making any changes, state:
 - Expected outputs/artifacts
 ```
 
-Do not edit until the task scope is clear. If the task involves both doc-structure-engine and insurance-agent code (forbidden), stop and ask.
+Do not edit until the task scope is clear. If the task involves both PolicyLens and insurance-agent code (forbidden), stop and ask.
 
 ---
 
@@ -40,8 +40,8 @@ Do not edit until the task scope is clear. If the task involves both doc-structu
 
 This AI is permitted to:
 
-- Read all files in `doc-structure-engine/`
-- Modify files in `doc-structure-engine/`
+- Read all files in `PolicyLens/`
+- Modify files in `PolicyLens/`
 - Run bash commands for building, testing, data analysis
 - Create session logs, eval reports, experiment logs
 - Add new ADRs when making meaningful decisions
@@ -69,7 +69,7 @@ The AI must NOT:
 11. **Commit without session log** — every session must update `runs/sessions/`.
 12. **Silently swallow exceptions** — see No Silent Failure Policy in `development_protocol.md`.
 13. **Add cross-project imports** — do not import raw extraction logic into Product B or vice versa.
-14. **Write files outside `doc-structure-engine/`** without explicit instruction.
+14. **Write files outside `PolicyLens/`** without explicit instruction.
 
 ---
 
@@ -126,7 +126,7 @@ If nothing was changed, say so clearly.
 Ask the user for input when:
 
 1. **Task scope is unclear** — "should I implement A or B?"
-2. **Ambiguous between projects** — "is this doc-structure-engine or insurance-agent work?"
+2. **Ambiguous between projects** — "is this PolicyLens or insurance-agent work?"
 3. **Schema change affects Product B** — "should I add this field to the export contract?"
 4. **Gold corpus annotation needs domain judgment** — "is this waiting period 24 months or 36?"
 5. **Manual decisions on unmatched UINs** — "this PDF can't be matched to any UIN. Should I flag it as legacy_product or ignore_for_now?"

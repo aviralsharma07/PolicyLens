@@ -5,7 +5,7 @@ Status: closed
 
 ## Summary
 
-`doc-structure-engine` is complete as a learning, research, and open-source project.
+`PolicyLens` is complete as a learning, research, and open-source project.
 
 The repository should not be read as an actively advancing product roadmap. It should be read as:
 
@@ -41,7 +41,7 @@ The project successfully built:
 - full-corpus scale pipeline over 647 active policy wordings,
 - source-bundle registry,
 - curated 30-product MVP insurer/product bundle registry,
-- Product B handoff export package.
+- compiled export package.
 
 ## What Worked
 

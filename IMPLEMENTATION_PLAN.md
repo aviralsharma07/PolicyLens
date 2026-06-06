@@ -1,8 +1,8 @@
-# Document Structure Engine — Implementation Plan v2
+# PolicyLens — Implementation Plan v2
 
 ## Project Closeout — 2026-06-06
 
-Active development on `doc-structure-engine` is closed.
+Active development on `PolicyLens` is closed.
 
 This document now serves as a **historical implementation record**, not an active roadmap. The repository is being preserved as an open-source engineering artifact and project retrospective.
 
@@ -962,7 +962,7 @@ No OCR tools. No vector DB. No orchestration frameworks.
 
 ## What Product B (insurance-agent) Receives
 
-After Phase 8, `doc-structure-engine` exports per-policy:
+After Phase 8, `PolicyLens` exports per-policy:
 
 ```json
 {

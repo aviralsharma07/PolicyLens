@@ -2,14 +2,14 @@
 
 ## Overview
 
-doc-structure-engine is a deterministic document compiler for Indian health insurance policy PDFs. It converts policy wordings into structured, provenance-tracked facts.
+PolicyLens is a deterministic document compiler for Indian health insurance policy PDFs. It converts policy wordings into structured, provenance-tracked facts.
 
 It does NOT:
-- Chat with users (that's Product B)
-- Search or retrieve (that's Product B)
-- Render UIs (that's Product B)
-- Use OCR or vision (corpus is 100% text-layer)
-- Use embeddings or vector search (not needed for extraction)
+- chat with users
+- render application UIs
+- solve generic retrieval/search problems
+- use OCR or vision (corpus is 100% text-layer)
+- use embeddings or vector search (not needed for extraction)
 
 ---
 
@@ -56,7 +56,7 @@ Phase 7: GOLD CORPUS
   │
   ▼
 Phase 8: DERIVED EXPORT
-  20-concept Product B export v1 → evidence chain → downstream product consumes
+  20-concept compiled export package → evidence chain → downstream analysis/consumption
 ```
 
 ---
@@ -65,14 +65,7 @@ Phase 8: DERIVED EXPORT
 
 ```
 ┌──────────────────────────────────────────┐
-│           Product B (insurance-agent)     │
-│  Consumes compiled policy_features.json   │
-└──────────────────────────────────────────┘
-                     ▲
-                     │ export contract
-                     │
-┌──────────────────────────────────────────┐
-│  Phase 8: Derived Product B Export v1     │
+│  Phase 8: Derived Export Package          │
 │  Compiled ontology-backed JSON over facts │
 └──────────────────────────────────────────┘
                      ▲
@@ -83,7 +76,7 @@ Phase 8: DERIVED EXPORT
 └──────────────────────────────────────────┘
                      ▲
 ┌──────────────────────────────────────────┐
-│  Phase 2-4: Document Structure Engine    │
+│  Phase 2-4: PolicyLens                   │
 │  Physical → Logical → Clause AST         │
 │  Tables + Source Spans + Provenance      │
 └──────────────────────────────────────────┘
@@ -111,22 +104,17 @@ Raw PDF
             → fact candidates (all extractors run)
               → scored + ranked per concept
                 → accepted as extracted_facts
-                  → compiled into derived_policy_features
-                    → exported as policy_features.json
+                    → compiled into derived_policy_features
+                    → exported as structured JSON package
 ```
 
 ---
 
-## Boundaries
+## Repository Boundaries
 
 ```
-doc-structure-engine (Product A)
-  ├── Owns: all parsing, extraction, storage, gold corpus
-  ├── Outputs: policy_features.json + evidence chains
-  └── Not responsible: UI, search, conversations, users
-
-insurance-agent (Product B)
-  ├── Owns: user-facing features, comparisons, explanations
-  ├── Inputs: policy_features.json from Product A
-  └── Not responsible: PDF extraction, fact verification
+PolicyLens
+  ├── Owns: parsing, extraction, storage, gold corpus, provenance
+  ├── Outputs: structured JSON exports + evidence chains
+  └── Not responsible: UI, chat, or live application workflows
 ```

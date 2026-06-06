@@ -1,7 +1,7 @@
 [project]
-name = "doc-structure-engine"
+name = "PolicyLens"
 version = "0.1.0"
-description = "Document intelligence engine for Indian health insurance policy wordings"
+description = "Evidence-linked document intelligence engine for Indian health insurance policy documents"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
